@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/StreamPrinter.class
+
+ - link:StreamPrinter-asmified.java[Asmified]
+
+== References
+

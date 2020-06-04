@@ -1,0 +1,7 @@
+= javax/ws/rs/container/ConnectionCallback.class
+
+ - link:ConnectionCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.AsyncResponse - 1

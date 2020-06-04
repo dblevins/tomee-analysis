@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/identifier/DBIdentifier$DBIdentifierType.class
+
+ - link:DBIdentifier$DBIdentifierType-asmified.java[Asmified]
+
+== References
+

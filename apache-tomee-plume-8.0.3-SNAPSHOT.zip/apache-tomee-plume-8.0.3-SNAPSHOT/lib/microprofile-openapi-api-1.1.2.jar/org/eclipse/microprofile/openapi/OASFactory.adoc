@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/OASFactory.class
+
+ - link:OASFactory-asmified.java[Asmified]
+
+== References
+

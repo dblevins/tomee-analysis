@@ -1,0 +1,7 @@
+= javax/xml/registry/CapabilityProfile.class
+
+ - link:CapabilityProfile-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 2

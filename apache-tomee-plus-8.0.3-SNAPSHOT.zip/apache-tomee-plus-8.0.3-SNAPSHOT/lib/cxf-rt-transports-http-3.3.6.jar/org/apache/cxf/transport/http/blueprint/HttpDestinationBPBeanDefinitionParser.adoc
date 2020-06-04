@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/blueprint/HttpDestinationBPBeanDefinitionParser.class
+
+ - link:HttpDestinationBPBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

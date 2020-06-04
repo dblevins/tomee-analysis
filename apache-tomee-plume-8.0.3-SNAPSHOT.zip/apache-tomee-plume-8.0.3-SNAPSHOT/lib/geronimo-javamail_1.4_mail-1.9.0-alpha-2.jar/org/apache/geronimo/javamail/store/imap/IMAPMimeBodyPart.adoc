@@ -1,0 +1,17 @@
+= org/apache/geronimo/javamail/store/imap/IMAPMimeBodyPart.class
+
+ - link:IMAPMimeBodyPart-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 36
+ - javax.mail.IllegalWriteException - 24
+ - javax.mail.internet.InternetHeaders - 19
+ - javax.activation.DataHandler - 12
+ - javax.mail.internet.ContentType - 8
+ - javax.mail.internet.MimeBodyPart - 4
+ - javax.mail.internet.ContentDisposition - 4
+ - javax.mail.internet.MimeUtility - 3
+ - javax.mail.internet.MimePart - 1
+ - javax.activation.DataSource - 1
+ - javax.mail.Multipart - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/InfoObject.class
+
+ - link:InfoObject-asmified.java[Asmified]
+
+== References
+

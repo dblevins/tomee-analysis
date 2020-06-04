@@ -1,0 +1,10 @@
+= org/apache/batchee/spi/PersistenceManagerService.class
+
+ - link:PersistenceManagerService-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 4
+ - javax.batch.runtime.JobInstance - 4
+ - javax.batch.runtime.StepExecution - 2
+ - javax.batch.operations.NoSuchJobExecutionException - 2

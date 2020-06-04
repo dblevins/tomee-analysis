@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/GroupByItemBNF.class
+
+ - link:GroupByItemBNF-asmified.java[Asmified]
+
+== References
+

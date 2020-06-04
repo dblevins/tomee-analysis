@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/StringFunctionNode.class
+
+ - link:StringFunctionNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/GlobalListenerSupport$MoniterableHashMap.class
+
+ - link:GlobalListenerSupport$MoniterableHashMap-asmified.java[Asmified]
+
+== References
+

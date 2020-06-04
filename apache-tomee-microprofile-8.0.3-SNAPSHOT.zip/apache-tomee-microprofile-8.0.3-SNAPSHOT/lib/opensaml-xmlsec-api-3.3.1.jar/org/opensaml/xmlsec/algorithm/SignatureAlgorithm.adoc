@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/SignatureAlgorithm.class
+
+ - link:SignatureAlgorithm-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

@@ -1,0 +1,37 @@
+= com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler.class
+
+ - link:CompositeComponentTagHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 39
+ - javax.faces.context.FacesContext - 27
+ - javax.faces.view.facelets.MetaRuleset - 22
+ - javax.faces.view.facelets.FaceletContext - 21
+ - javax.faces.application.Resource - 9
+ - javax.faces.view.facelets.TagAttribute - 7
+ - javax.el.VariableMapper - 7
+ - javax.faces.view.facelets.ComponentHandler - 6
+ - javax.faces.application.Application - 6
+ - javax.el.ValueExpression - 6
+ - javax.faces.view.facelets.MetaRule - 5
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.component.UIPanel - 4
+ - javax.faces.view.facelets.ComponentConfig - 3
+ - javax.faces.view.ViewDeclarationLanguage - 3
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.ViewDeclarationLanguageFactory - 2
+ - javax.faces.view.AttachedObjectHandler - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.view.facelets.TagAttributes - 2
+ - javax.el.ELContext - 2
+ - javax.faces.component.UISelectOne - 1
+ - javax.faces.component.EditableValueHolder - 1
+ - javax.faces.component.UISelectMany - 1
+ - javax.faces.view.facelets.TagHandlerDelegate - 1
+ - javax.el.ELException - 1
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.component.ValueHolder - 1
+ - javax.faces.component.ActionSource - 1
+ - javax.faces.FacesException - 1

@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/XmlChars.class
+
+ - link:XmlChars-asmified.java[Asmified]
+
+== References
+

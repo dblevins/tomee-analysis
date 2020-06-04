@@ -1,0 +1,12 @@
+= org/apache/batchee/container/jsl/JobModelResolver.class
+
+ - link:JobModelResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 6
+ - javax.xml.bind.JAXBException - 5
+ - javax.xml.bind.Unmarshaller - 4
+ - javax.xml.bind.JAXBElement - 2
+ - javax.batch.operations.BatchRuntimeException - 2
+ - javax.xml.bind.ValidationEventHandler - 1

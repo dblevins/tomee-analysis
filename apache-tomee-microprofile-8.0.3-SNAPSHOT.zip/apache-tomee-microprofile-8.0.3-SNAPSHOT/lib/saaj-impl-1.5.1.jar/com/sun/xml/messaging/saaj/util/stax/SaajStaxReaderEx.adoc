@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/util/stax/SaajStaxReaderEx.class
+
+ - link:SaajStaxReaderEx-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2
+ - javax.xml.soap.SOAPElement - 1

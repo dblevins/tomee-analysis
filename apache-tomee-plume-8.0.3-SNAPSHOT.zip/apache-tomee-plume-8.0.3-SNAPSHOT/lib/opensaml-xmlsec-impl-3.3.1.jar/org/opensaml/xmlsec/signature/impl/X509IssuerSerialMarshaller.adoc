@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509IssuerSerialMarshaller.class
+
+ - link:X509IssuerSerialMarshaller-asmified.java[Asmified]
+
+== References
+

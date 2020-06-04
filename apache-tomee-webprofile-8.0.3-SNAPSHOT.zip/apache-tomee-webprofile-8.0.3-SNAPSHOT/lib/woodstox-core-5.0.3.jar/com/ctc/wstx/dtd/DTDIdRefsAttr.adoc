@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/DTDIdRefsAttr.class
+
+ - link:DTDIdRefsAttr-asmified.java[Asmified]
+
+== References
+

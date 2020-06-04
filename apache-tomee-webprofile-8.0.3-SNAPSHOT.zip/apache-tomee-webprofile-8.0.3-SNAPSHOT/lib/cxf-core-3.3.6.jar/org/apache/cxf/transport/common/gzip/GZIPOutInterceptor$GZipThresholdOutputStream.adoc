@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/common/gzip/GZIPOutInterceptor$GZipThresholdOutputStream.class
+
+ - link:GZIPOutInterceptor$GZipThresholdOutputStream-asmified.java[Asmified]
+
+== References
+

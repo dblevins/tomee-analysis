@@ -1,0 +1,6 @@
+= org/opensaml/xacml/profile/saml/impl/XACMLPolicyStatementTypeImplBuilder.class
+
+ - link:XACMLPolicyStatementTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

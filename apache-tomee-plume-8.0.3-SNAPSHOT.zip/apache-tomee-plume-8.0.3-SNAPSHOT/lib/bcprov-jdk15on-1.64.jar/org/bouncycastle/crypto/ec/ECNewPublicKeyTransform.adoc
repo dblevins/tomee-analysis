@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/ec/ECNewPublicKeyTransform.class
+
+ - link:ECNewPublicKeyTransform-asmified.java[Asmified]
+
+== References
+

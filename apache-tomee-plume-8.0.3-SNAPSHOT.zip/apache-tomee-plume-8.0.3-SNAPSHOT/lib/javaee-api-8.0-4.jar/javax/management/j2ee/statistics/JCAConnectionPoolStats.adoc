@@ -1,0 +1,10 @@
+= javax/management/j2ee/statistics/JCAConnectionPoolStats.class
+
+ - link:JCAConnectionPoolStats-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.CountStatistic - 2
+ - javax.management.j2ee.statistics.BoundedRangeStatistic - 2
+ - javax.management.j2ee.statistics.JCAConnectionStats - 1
+ - javax.management.j2ee.statistics.RangeStatistic - 1

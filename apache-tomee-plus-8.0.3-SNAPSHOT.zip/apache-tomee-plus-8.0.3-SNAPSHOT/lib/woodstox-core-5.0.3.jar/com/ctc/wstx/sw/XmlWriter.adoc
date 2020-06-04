@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/XmlWriter.class
+
+ - link:XmlWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/compiler/MarshalCallback.class
+
+ - link:MarshalCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 1

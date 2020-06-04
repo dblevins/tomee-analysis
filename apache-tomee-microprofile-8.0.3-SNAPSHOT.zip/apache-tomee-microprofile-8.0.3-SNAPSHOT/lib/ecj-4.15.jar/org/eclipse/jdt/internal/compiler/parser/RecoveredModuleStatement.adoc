@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredModuleStatement.class
+
+ - link:RecoveredModuleStatement-asmified.java[Asmified]
+
+== References
+

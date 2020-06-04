@@ -1,0 +1,15 @@
+= org/apache/myfaces/view/facelets/tag/ui/DebugPhaseListener.class
+
+ - link:DebugPhaseListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.event.PhaseId - 8
+ - javax.faces.event.PhaseEvent - 8
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.event.PhaseListener - 1
+ - javax.faces.component.visit.VisitCallback - 1

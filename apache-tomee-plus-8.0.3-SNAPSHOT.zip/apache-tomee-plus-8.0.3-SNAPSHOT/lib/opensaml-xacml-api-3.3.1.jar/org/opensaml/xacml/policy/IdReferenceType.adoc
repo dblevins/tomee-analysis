@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/IdReferenceType.class
+
+ - link:IdReferenceType-asmified.java[Asmified]
+
+== References
+

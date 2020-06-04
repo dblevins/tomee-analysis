@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/BinaryExpressionPredicate.class
+
+ - link:BinaryExpressionPredicate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/SerializerCache.class
+
+ - link:SerializerCache-asmified.java[Asmified]
+
+== References
+

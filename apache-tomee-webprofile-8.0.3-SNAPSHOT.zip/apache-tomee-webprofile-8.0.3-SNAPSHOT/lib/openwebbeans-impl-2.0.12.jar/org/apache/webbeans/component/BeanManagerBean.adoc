@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/BeanManagerBean.class
+
+ - link:BeanManagerBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Producer - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MethodTransactionInfo.class
+
+ - link:MethodTransactionInfo-asmified.java[Asmified]
+
+== References
+

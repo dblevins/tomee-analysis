@@ -1,0 +1,6 @@
+= org/apache/commons/daemon/support/DaemonConfiguration.class
+
+ - link:DaemonConfiguration-asmified.java[Asmified]
+
+== References
+

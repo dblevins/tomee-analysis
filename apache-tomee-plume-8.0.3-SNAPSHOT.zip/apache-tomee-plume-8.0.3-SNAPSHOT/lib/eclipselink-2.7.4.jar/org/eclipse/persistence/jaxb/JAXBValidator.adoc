@@ -1,0 +1,12 @@
+= org/eclipse/persistence/jaxb/JAXBValidator.class
+
+ - link:JAXBValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventHandler - 9
+ - javax.xml.bind.PropertyException - 6
+ - javax.xml.bind.helpers.DefaultValidationEventHandler - 4
+ - javax.xml.bind.ValidationException - 4
+ - javax.xml.bind.JAXBException - 4
+ - javax.xml.bind.Validator - 1

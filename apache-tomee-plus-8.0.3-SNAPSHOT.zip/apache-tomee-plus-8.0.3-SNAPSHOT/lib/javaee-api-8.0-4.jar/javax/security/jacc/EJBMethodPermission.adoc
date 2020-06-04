@@ -1,0 +1,10 @@
+= javax/security/jacc/EJBMethodPermission.class
+
+ - link:EJBMethodPermission-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.EJBMethodPermission$MethodSpec - 29
+ - javax.security.jacc.EJBMethodPermission - 10
+ - javax.security.jacc.EJBMethodPermission$1 - 3
+ - javax.security.jacc.EJBMethodPermission$EJBMethodPermissionCollection - 2

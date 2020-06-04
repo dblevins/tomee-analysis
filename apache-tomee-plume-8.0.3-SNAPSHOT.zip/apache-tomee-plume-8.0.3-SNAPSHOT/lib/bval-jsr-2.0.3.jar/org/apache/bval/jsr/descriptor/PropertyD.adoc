@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/descriptor/PropertyD.class
+
+ - link:PropertyD-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 5
+ - javax.validation.Path - 1
+ - javax.validation.metadata.PropertyDescriptor - 1

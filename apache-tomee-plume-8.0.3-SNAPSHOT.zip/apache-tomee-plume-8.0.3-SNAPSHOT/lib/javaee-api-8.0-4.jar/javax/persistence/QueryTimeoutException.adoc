@@ -1,0 +1,8 @@
+= javax/persistence/QueryTimeoutException.class
+
+ - link:QueryTimeoutException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Query - 7
+ - javax.persistence.PersistenceException - 7

@@ -1,0 +1,8 @@
+= com/sun/faces/application/view/ViewDeclarationLanguageFactoryImpl.class
+
+ - link:ViewDeclarationLanguageFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.ViewDeclarationLanguageFactory - 3
+ - javax.faces.view.ViewDeclarationLanguage - 3

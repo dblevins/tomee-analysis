@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/Annotation.class
+
+ - link:Annotation-asmified.java[Asmified]
+
+== References
+

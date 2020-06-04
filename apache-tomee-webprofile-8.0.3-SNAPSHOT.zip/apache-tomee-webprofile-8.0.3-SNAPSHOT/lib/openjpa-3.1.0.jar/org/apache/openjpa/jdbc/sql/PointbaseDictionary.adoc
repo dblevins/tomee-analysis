@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/PointbaseDictionary.class
+
+ - link:PointbaseDictionary-asmified.java[Asmified]
+
+== References
+

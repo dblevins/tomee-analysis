@@ -1,0 +1,14 @@
+= org/apache/myfaces/context/ExternalContextFactoryImpl.class
+
+ - link:ExternalContextFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FlashFactory - 5
+ - javax.faces.FacesException - 3
+ - javax.servlet.ServletContext - 3
+ - javax.faces.context.ExternalContextFactory - 2
+ - javax.faces.context.ExternalContext - 2
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.faces.FactoryFinder - 1

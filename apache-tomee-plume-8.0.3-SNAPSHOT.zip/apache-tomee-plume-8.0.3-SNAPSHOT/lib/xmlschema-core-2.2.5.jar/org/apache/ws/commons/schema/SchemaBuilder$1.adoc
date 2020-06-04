@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/SchemaBuilder$1.class
+
+ - link:SchemaBuilder$1-asmified.java[Asmified]
+
+== References
+

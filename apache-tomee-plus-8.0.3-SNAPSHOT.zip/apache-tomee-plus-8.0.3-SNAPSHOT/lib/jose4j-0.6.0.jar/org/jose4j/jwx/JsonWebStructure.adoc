@@ -1,0 +1,6 @@
+= org/jose4j/jwx/JsonWebStructure.class
+
+ - link:JsonWebStructure-asmified.java[Asmified]
+
+== References
+

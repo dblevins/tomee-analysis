@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/ApplicationIdTool$Flags.class
+
+ - link:ApplicationIdTool$Flags-asmified.java[Asmified]
+
+== References
+

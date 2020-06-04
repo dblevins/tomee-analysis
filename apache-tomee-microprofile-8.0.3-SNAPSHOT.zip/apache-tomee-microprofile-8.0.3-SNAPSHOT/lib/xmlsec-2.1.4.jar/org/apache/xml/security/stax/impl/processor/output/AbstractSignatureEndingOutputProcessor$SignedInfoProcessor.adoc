@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/output/AbstractSignatureEndingOutputProcessor$SignedInfoProcessor.class
+
+ - link:AbstractSignatureEndingOutputProcessor$SignedInfoProcessor-asmified.java[Asmified]
+
+== References
+

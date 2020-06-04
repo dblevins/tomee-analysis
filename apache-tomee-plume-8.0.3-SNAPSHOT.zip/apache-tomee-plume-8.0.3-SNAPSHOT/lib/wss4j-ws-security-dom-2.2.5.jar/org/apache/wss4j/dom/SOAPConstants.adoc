@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/SOAPConstants.class
+
+ - link:SOAPConstants-asmified.java[Asmified]
+
+== References
+

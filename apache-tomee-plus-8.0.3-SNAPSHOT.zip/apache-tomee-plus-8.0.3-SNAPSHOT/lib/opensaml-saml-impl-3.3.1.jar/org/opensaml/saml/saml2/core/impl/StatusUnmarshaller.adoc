@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/StatusUnmarshaller.class
+
+ - link:StatusUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaMinInclusiveFacet.class
+
+ - link:XmlSchemaMinInclusiveFacet-asmified.java[Asmified]
+
+== References
+

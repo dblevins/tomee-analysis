@@ -1,0 +1,6 @@
+= org/apache/openejb/client/InjectionMetaData.class
+
+ - link:InjectionMetaData-asmified.java[Asmified]
+
+== References
+

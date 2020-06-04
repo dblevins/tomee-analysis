@@ -1,0 +1,7 @@
+= org/opensaml/security/criteria/KeyNameCriterion.class
+
+ - link:KeyNameCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

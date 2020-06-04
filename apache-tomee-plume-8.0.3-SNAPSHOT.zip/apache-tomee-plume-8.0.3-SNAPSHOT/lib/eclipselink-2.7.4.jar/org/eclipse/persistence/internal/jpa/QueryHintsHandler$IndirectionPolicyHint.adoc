@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$IndirectionPolicyHint.class
+
+ - link:QueryHintsHandler$IndirectionPolicyHint-asmified.java[Asmified]
+
+== References
+

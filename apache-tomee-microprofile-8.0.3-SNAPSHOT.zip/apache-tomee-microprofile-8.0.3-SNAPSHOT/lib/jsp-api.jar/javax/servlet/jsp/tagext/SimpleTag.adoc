@@ -1,0 +1,10 @@
+= javax/servlet/jsp/tagext/SimpleTag.class
+
+ - link:SimpleTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.JspTag - 3
+ - javax.servlet.jsp.tagext.JspFragment - 1
+ - javax.servlet.jsp.JspException - 1
+ - javax.servlet.jsp.JspContext - 1

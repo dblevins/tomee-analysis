@@ -1,0 +1,7 @@
+= org/apache/activemq/command/ActiveMQBlobMessage.class
+
+ - link:ActiveMQBlobMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 6

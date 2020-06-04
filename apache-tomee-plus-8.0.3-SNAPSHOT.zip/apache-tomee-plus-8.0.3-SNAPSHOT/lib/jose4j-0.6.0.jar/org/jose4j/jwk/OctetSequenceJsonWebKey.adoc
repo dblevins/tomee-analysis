@@ -1,0 +1,6 @@
+= org/jose4j/jwk/OctetSequenceJsonWebKey.class
+
+ - link:OctetSequenceJsonWebKey-asmified.java[Asmified]
+
+== References
+

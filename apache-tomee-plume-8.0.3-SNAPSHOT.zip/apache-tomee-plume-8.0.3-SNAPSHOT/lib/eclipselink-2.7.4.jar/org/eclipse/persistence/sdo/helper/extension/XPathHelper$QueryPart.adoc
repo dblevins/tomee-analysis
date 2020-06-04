@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/extension/XPathHelper$QueryPart.class
+
+ - link:XPathHelper$QueryPart-asmified.java[Asmified]
+
+== References
+

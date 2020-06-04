@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/StaticBucketMap$BaseIterator.class
+
+ - link:StaticBucketMap$BaseIterator-asmified.java[Asmified]
+
+== References
+

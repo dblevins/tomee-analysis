@@ -1,0 +1,14 @@
+= org/apache/openejb/jee/sun/SunWebApp.class
+
+ - link:SunWebApp-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 15
+ - javax.xml.bind.annotation.XmlAttribute - 2
+ - javax.xml.bind.annotation.adapters.NormalizedStringAdapter - 2
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

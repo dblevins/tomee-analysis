@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/SplitPackageBinding.class
+
+ - link:SplitPackageBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/OpenEjbVersion.class
+
+ - link:OpenEjbVersion-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/RC6$Poly1305KeyGen.class
+
+ - link:RC6$Poly1305KeyGen-asmified.java[Asmified]
+
+== References
+

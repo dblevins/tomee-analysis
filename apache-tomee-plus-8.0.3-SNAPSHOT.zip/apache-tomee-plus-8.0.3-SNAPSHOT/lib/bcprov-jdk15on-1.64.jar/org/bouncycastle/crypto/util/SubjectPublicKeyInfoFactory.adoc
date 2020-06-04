@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/util/SubjectPublicKeyInfoFactory.class
+
+ - link:SubjectPublicKeyInfoFactory-asmified.java[Asmified]
+
+== References
+

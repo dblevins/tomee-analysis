@@ -1,0 +1,6 @@
+= org/apache/openejb/server/webservices/saaj/SaajUniverse$Type.class
+
+ - link:SaajUniverse$Type-asmified.java[Asmified]
+
+== References
+

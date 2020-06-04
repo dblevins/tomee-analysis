@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType.class
+
+ - link:SDOWrapperType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/mtom/MTOMPolicyInterceptor.class
+
+ - link:MTOMPolicyInterceptor-asmified.java[Asmified]
+
+== References
+

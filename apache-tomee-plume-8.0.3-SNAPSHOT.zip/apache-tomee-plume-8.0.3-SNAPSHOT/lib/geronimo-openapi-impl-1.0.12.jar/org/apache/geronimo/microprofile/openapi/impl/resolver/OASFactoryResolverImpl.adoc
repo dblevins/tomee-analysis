@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/resolver/OASFactoryResolverImpl.class
+
+ - link:OASFactoryResolverImpl-asmified.java[Asmified]
+
+== References
+

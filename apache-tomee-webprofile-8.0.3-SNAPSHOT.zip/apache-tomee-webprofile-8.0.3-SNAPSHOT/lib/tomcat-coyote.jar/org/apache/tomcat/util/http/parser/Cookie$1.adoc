@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/parser/Cookie$1.class
+
+ - link:Cookie$1-asmified.java[Asmified]
+
+== References
+

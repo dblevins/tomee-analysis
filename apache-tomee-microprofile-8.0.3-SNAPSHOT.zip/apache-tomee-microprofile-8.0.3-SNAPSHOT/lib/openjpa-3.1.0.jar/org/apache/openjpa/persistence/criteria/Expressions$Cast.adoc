@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Cast.class
+
+ - link:Expressions$Cast-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 2

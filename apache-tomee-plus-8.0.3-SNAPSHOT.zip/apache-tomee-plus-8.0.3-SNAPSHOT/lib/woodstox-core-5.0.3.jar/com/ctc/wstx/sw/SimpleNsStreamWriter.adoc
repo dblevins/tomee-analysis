@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/SimpleNsStreamWriter.class
+
+ - link:SimpleNsStreamWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/MulticastConnectionFactory$URIs.class
+
+ - link:MulticastConnectionFactory$URIs-asmified.java[Asmified]
+
+== References
+

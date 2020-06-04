@@ -1,0 +1,7 @@
+= javax/faces/context/Flash.class
+
+ - link:Flash-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

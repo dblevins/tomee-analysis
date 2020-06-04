@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/StdScheduler.class
+
+ - link:StdScheduler-asmified.java[Asmified]
+
+== References
+

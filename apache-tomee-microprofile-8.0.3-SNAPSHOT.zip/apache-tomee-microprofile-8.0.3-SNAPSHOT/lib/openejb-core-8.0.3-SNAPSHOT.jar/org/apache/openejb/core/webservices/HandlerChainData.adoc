@@ -1,0 +1,6 @@
+= org/apache/openejb/core/webservices/HandlerChainData.class
+
+ - link:HandlerChainData-asmified.java[Asmified]
+
+== References
+

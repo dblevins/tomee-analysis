@@ -1,0 +1,9 @@
+= com/sun/faces/application/annotation/BehaviorConfigHandler.class
+
+ - link:BehaviorConfigHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 3
+ - javax.faces.component.behavior.FacesBehavior - 3
+ - javax.faces.context.FacesContext - 2

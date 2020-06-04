@@ -1,0 +1,7 @@
+= javax/enterprise/concurrent/ManagedTask.class
+
+ - link:ManagedTask-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedTaskListener - 1

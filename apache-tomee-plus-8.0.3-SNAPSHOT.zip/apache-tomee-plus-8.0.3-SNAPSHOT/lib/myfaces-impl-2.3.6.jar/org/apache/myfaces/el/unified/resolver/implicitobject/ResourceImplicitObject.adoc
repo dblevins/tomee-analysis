@@ -1,0 +1,10 @@
+= org/apache/myfaces/el/unified/resolver/implicitobject/ResourceImplicitObject.class
+
+ - link:ResourceImplicitObject-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ELContext - 2
+ - javax.faces.application.ResourceHandler - 1

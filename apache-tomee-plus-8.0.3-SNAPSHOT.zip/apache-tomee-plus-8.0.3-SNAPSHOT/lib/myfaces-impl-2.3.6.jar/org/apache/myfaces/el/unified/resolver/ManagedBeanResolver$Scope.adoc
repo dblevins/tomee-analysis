@@ -1,0 +1,8 @@
+= org/apache/myfaces/el/unified/resolver/ManagedBeanResolver$Scope.class
+
+ - link:ManagedBeanResolver$Scope-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 1
+ - javax.faces.context.FacesContext - 1

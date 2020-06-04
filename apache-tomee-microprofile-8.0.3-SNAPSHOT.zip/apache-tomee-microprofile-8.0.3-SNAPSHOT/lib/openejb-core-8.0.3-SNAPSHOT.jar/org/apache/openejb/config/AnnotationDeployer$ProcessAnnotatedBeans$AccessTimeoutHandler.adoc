@@ -1,0 +1,7 @@
+= org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler.class
+
+ - link:AnnotationDeployer$ProcessAnnotatedBeans$AccessTimeoutHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.AccessTimeout - 14

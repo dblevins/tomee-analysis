@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/profiler/PerformanceProfiler.class
+
+ - link:PerformanceProfiler-asmified.java[Asmified]
+
+== References
+

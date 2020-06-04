@@ -1,0 +1,7 @@
+= javax/validation/constraintvalidation/ValidationTarget.class
+
+ - link:ValidationTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraintvalidation.ValidationTarget - 21

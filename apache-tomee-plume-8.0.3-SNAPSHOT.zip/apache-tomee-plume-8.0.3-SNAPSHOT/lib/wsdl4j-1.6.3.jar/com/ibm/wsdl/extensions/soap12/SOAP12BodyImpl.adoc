@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap12/SOAP12BodyImpl.class
+
+ - link:SOAP12BodyImpl-asmified.java[Asmified]
+
+== References
+

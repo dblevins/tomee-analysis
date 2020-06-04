@@ -1,0 +1,11 @@
+= org/apache/openejb/server/cxf/ejb/EjbMessageContext.class
+
+ - link:EjbMessageContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.wsaddressing.W3CEndpointReferenceBuilder - 12
+ - javax.xml.ws.EndpointReference - 4
+ - javax.xml.ws.WebServiceException - 2
+ - javax.xml.ws.handler.MessageContext$Scope - 2
+ - javax.xml.ws.wsaddressing.W3CEndpointReference - 2

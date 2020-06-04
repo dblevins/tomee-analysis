@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/StartsWithExpression$StringLengthFilterValue.class
+
+ - link:StartsWithExpression$StringLengthFilterValue-asmified.java[Asmified]
+
+== References
+

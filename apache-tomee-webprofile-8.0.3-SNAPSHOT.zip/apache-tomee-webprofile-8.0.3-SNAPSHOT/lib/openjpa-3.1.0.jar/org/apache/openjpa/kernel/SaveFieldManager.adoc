@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/SaveFieldManager.class
+
+ - link:SaveFieldManager-asmified.java[Asmified]
+
+== References
+

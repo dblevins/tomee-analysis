@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/StringUtil.class
+
+ - link:StringUtil-asmified.java[Asmified]
+
+== References
+

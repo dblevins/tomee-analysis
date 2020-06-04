@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ServiceLocator.class
+
+ - link:ServiceLocator-asmified.java[Asmified]
+
+== References
+

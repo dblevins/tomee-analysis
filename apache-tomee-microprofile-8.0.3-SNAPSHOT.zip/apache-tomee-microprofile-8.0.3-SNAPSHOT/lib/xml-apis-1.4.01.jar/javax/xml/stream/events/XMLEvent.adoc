@@ -1,0 +1,6 @@
+= javax/xml/stream/events/XMLEvent.class
+
+ - link:XMLEvent-asmified.java[Asmified]
+
+== References
+

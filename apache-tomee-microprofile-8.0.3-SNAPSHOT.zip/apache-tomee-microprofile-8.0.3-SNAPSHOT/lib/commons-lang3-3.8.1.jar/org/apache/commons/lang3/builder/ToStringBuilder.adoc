@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/builder/ToStringBuilder.class
+
+ - link:ToStringBuilder-asmified.java[Asmified]
+
+== References
+

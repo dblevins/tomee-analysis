@@ -1,0 +1,6 @@
+= org/opensaml/soap/soap11/Body.class
+
+ - link:Body-asmified.java[Asmified]
+
+== References
+

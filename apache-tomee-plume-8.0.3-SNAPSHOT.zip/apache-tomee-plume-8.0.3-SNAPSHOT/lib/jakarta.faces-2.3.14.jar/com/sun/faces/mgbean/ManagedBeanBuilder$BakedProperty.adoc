@@ -1,0 +1,7 @@
+= com/sun/faces/mgbean/ManagedBeanBuilder$BakedProperty.class
+
+ - link:ManagedBeanBuilder$BakedProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1

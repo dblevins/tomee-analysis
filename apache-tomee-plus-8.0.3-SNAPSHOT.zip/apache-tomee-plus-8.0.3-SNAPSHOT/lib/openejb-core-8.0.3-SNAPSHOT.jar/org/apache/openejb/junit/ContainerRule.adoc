@@ -1,0 +1,6 @@
+= org/apache/openejb/junit/ContainerRule.class
+
+ - link:ContainerRule-asmified.java[Asmified]
+
+== References
+

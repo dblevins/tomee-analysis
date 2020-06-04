@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/net/URLBuilder.class
+
+ - link:URLBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 22
+ - javax.annotation.Nonnull - 3

@@ -1,0 +1,15 @@
+= org/apache/webbeans/container/InjectionTargetFactoryImpl.class
+
+ - link:InjectionTargetFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 19
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.inject.spi.InjectionTarget - 4
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.InjectionTargetFactory - 1
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

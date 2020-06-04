@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/dom/DOMWrappingWriter.class
+
+ - link:DOMWrappingWriter-asmified.java[Asmified]
+
+== References
+

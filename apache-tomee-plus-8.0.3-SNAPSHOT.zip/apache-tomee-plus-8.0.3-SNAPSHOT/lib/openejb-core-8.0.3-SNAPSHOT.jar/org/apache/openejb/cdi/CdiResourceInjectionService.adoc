@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/CdiResourceInjectionService.class
+
+ - link:CdiResourceInjectionService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 2

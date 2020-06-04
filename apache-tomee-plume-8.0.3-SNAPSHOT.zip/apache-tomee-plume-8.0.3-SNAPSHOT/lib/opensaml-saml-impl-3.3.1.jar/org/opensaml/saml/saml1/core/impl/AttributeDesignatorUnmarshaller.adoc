@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AttributeDesignatorUnmarshaller.class
+
+ - link:AttributeDesignatorUnmarshaller-asmified.java[Asmified]
+
+== References
+

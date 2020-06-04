@@ -1,0 +1,24 @@
+= org/apache/openejb/assembler/classic/ValidatorBuilder.class
+
+ - link:ValidatorBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Configuration - 35
+ - javax.validation.ValidatorFactory - 8
+ - javax.validation.valueextraction.ValueExtractor - 7
+ - javax.validation.ValidationException - 6
+ - javax.validation.executable.ExecutableType - 5
+ - javax.enterprise.inject.spi.InjectionTarget - 5
+ - javax.validation.Validation - 4
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.validation.ParameterNameProvider - 2
+ - javax.validation.ClockProvider - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.validation.TraversableResolver - 2
+ - javax.validation.bootstrap.ProviderSpecificBootstrap - 2
+ - javax.validation.MessageInterpolator - 2
+ - javax.validation.bootstrap.GenericBootstrap - 2
+ - javax.validation.ConstraintValidatorFactory - 2
+ - javax.validation.BootstrapConfiguration - 1
+ - javax.enterprise.context.spi.Contextual - 1

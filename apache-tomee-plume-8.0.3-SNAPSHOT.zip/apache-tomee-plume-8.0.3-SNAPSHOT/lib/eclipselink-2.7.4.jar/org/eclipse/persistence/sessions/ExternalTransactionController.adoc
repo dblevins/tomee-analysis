@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/ExternalTransactionController.class
+
+ - link:ExternalTransactionController-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/EncryptAttributes.class
+
+ - link:EncryptAttributes-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 3

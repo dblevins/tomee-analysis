@@ -1,0 +1,6 @@
+= org/apache/webbeans/spi/BeanArchiveService$BeanDiscoveryMode.class
+
+ - link:BeanArchiveService$BeanDiscoveryMode-asmified.java[Asmified]
+
+== References
+

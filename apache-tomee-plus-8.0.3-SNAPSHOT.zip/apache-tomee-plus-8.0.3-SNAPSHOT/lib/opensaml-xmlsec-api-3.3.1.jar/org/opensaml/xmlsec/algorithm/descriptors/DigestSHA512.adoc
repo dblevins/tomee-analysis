@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/DigestSHA512.class
+
+ - link:DigestSHA512-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

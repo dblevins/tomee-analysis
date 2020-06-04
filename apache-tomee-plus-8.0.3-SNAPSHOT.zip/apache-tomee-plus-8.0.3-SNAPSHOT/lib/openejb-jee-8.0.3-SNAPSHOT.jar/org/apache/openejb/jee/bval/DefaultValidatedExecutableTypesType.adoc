@@ -1,0 +1,12 @@
+= org/apache/openejb/jee/bval/DefaultValidatedExecutableTypesType.class
+
+ - link:DefaultValidatedExecutableTypesType-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.executable.ExecutableType - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

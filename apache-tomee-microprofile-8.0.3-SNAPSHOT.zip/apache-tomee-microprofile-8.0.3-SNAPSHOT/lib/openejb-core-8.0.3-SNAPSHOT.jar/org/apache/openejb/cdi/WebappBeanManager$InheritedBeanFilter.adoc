@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/WebappBeanManager$InheritedBeanFilter.class
+
+ - link:WebappBeanManager$InheritedBeanFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 9
+ - javax.enterprise.inject.spi.PassivationCapable - 4

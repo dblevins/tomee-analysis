@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/elgamal/BCElGamalPrivateKey.class
+
+ - link:BCElGamalPrivateKey-asmified.java[Asmified]
+
+== References
+

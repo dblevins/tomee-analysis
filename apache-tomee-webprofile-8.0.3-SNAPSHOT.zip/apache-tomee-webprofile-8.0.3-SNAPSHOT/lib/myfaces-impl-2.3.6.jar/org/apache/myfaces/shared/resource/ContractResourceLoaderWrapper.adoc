@@ -1,0 +1,9 @@
+= org/apache/myfaces/shared/resource/ContractResourceLoaderWrapper.class
+
+ - link:ContractResourceLoaderWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceVisitOption - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.FacesWrapper - 1

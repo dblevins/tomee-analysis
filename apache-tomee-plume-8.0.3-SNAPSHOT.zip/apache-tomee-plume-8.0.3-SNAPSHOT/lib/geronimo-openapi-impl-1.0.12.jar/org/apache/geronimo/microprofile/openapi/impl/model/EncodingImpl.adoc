@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/EncodingImpl.class
+
+ - link:EncodingImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbTypeAdapter - 2
+ - javax.json.bind.annotation.JsonbTypeDeserializer - 1
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.annotation.JsonbTransient - 1

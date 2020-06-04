@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/el/VariableMapperBase.class
+
+ - link:VariableMapperBase-asmified.java[Asmified]
+
+== References
+
+ - javax.el.VariableMapper - 2

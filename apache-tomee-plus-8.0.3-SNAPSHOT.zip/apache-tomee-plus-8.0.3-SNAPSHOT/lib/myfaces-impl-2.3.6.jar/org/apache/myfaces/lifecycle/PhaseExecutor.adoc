@@ -1,0 +1,8 @@
+= org/apache/myfaces/lifecycle/PhaseExecutor.class
+
+ - link:PhaseExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.PhaseId - 1

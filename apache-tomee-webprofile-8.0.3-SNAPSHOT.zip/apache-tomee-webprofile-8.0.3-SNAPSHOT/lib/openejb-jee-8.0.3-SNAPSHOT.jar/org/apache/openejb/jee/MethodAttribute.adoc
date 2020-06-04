@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/MethodAttribute.class
+
+ - link:MethodAttribute-asmified.java[Asmified]
+
+== References
+

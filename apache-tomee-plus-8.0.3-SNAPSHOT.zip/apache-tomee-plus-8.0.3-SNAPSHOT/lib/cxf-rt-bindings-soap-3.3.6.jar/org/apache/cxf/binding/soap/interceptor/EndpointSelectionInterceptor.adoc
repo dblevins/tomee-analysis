@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/EndpointSelectionInterceptor.class
+
+ - link:EndpointSelectionInterceptor-asmified.java[Asmified]
+
+== References
+

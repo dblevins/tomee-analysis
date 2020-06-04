@@ -1,0 +1,20 @@
+= org/apache/openejb/core/managed/ManagedContainer.class
+
+ - link:ManagedContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 12
+ - javax.persistence.EntityManagerFactory - 12
+ - javax.transaction.Transaction - 10
+ - javax.persistence.SynchronizationType - 9
+ - javax.enterprise.context.spi.CreationalContext - 5
+ - javax.ejb.SessionContext - 4
+ - javax.ejb.EJBException - 4
+ - javax.ejb.RemoveException - 2
+ - javax.transaction.UserTransaction - 2
+ - javax.ejb.EJBAccessException - 2
+ - javax.ejb.SessionBean - 1
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.EJBLocalHome - 1
+ - javax.ejb.EJBContext - 1

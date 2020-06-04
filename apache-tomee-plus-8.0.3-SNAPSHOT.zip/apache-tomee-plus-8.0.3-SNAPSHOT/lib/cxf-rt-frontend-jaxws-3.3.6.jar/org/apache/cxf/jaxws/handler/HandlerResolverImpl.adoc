@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/handler/HandlerResolverImpl.class
+
+ - link:HandlerResolverImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.PortInfo - 15
+ - javax.xml.ws.handler.Handler - 7
+ - javax.xml.ws.handler.HandlerResolver - 1

@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/PropertyExpression.class
+
+ - link:PropertyExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 5

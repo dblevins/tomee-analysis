@@ -1,0 +1,10 @@
+= com/sun/faces/lifecycle/LifecycleImpl$PostConstructApplicationListener.class
+
+ - link:LifecycleImpl$PostConstructApplicationListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.event.SystemEvent - 1
+ - javax.faces.event.SystemEventListener - 1

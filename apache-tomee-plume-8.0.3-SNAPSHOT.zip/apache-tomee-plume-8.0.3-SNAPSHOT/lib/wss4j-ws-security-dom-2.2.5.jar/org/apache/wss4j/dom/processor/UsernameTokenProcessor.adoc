@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/processor/UsernameTokenProcessor.class
+
+ - link:UsernameTokenProcessor-asmified.java[Asmified]
+
+== References
+

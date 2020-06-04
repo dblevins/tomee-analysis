@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod$SHA512withRSAandMGF1.class
+
+ - link:DOMSignatureMethod$SHA512withRSAandMGF1-asmified.java[Asmified]
+
+== References
+

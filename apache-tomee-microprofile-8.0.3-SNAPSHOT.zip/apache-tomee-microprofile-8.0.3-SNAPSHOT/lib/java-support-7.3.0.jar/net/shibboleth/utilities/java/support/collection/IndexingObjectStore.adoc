@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/collection/IndexingObjectStore.class
+
+ - link:IndexingObjectStore-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.concurrent.ThreadSafe - 1

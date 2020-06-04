@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/sessions/CoreSessionEventManager.class
+
+ - link:CoreSessionEventManager-asmified.java[Asmified]
+
+== References
+

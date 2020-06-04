@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/QualifiedThisReference.class
+
+ - link:QualifiedThisReference-asmified.java[Asmified]
+
+== References
+

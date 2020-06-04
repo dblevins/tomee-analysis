@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/scanner/xbean/CdiArchive$FoundClasses.class
+
+ - link:CdiArchive$FoundClasses-asmified.java[Asmified]
+
+== References
+

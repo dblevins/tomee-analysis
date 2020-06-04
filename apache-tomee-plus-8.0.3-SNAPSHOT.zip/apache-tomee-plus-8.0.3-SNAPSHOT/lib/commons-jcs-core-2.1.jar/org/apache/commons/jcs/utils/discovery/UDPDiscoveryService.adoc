@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/discovery/UDPDiscoveryService.class
+
+ - link:UDPDiscoveryService-asmified.java[Asmified]
+
+== References
+

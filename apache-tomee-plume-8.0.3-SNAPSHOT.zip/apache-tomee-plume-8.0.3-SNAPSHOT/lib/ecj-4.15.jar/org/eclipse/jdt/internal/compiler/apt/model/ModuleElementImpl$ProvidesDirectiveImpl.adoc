@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/ModuleElementImpl$ProvidesDirectiveImpl.class
+
+ - link:ModuleElementImpl$ProvidesDirectiveImpl-asmified.java[Asmified]
+
+== References
+

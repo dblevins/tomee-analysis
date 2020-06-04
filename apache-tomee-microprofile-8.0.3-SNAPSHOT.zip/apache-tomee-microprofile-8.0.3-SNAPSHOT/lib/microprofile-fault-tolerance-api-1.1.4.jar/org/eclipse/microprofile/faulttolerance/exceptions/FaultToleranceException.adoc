@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/faulttolerance/exceptions/FaultToleranceException.class
+
+ - link:FaultToleranceException-asmified.java[Asmified]
+
+== References
+

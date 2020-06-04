@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/interceptors/WebFaultOutInterceptor.class
+
+ - link:WebFaultOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebFault - 24
+ - javax.xml.ws.soap.SOAPFaultException - 11
+ - javax.xml.soap.SOAPFault - 8

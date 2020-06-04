@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/smime/SMIMEEncryptionKeyPreferenceAttribute.class
+
+ - link:SMIMEEncryptionKeyPreferenceAttribute-asmified.java[Asmified]
+
+== References
+

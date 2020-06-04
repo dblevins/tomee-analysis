@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/UnresolvedReferenceBinding.class
+
+ - link:UnresolvedReferenceBinding-asmified.java[Asmified]
+
+== References
+

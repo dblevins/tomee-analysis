@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/AbstractMethodDeclaration.class
+
+ - link:AbstractMethodDeclaration-asmified.java[Asmified]
+
+== References
+

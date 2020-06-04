@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/rop/ListResultObjectProvider.class
+
+ - link:ListResultObjectProvider-asmified.java[Asmified]
+
+== References
+

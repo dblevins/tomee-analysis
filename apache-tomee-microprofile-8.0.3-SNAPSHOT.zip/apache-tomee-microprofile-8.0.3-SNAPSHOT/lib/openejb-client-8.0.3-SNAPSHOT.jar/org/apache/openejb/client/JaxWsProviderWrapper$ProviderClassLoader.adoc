@@ -1,0 +1,6 @@
+= org/apache/openejb/client/JaxWsProviderWrapper$ProviderClassLoader.class
+
+ - link:JaxWsProviderWrapper$ProviderClassLoader-asmified.java[Asmified]
+
+== References
+

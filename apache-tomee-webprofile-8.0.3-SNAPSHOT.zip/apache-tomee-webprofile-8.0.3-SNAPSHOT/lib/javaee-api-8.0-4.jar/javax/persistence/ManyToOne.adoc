@@ -1,0 +1,8 @@
+= javax/persistence/ManyToOne.class
+
+ - link:ManyToOne-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 2
+ - javax.persistence.CascadeType - 1

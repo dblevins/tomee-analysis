@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/BeanValidationChecker.class
+
+ - link:BeanValidationChecker-asmified.java[Asmified]
+
+== References
+

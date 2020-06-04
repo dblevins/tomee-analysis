@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/EclipseLinkVersion.class
+
+ - link:EclipseLinkVersion-asmified.java[Asmified]
+
+== References
+

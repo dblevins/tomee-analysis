@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/EntityOrValueExpressionBNF.class
+
+ - link:EntityOrValueExpressionBNF-asmified.java[Asmified]
+
+== References
+

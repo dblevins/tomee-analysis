@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedMethodInvoker.class
+
+ - link:PrivilegedMethodInvoker-asmified.java[Asmified]
+
+== References
+

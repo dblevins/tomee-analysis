@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/TaggedCertificationRequest.class
+
+ - link:TaggedCertificationRequest-asmified.java[Asmified]
+
+== References
+

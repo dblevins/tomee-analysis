@@ -1,0 +1,14 @@
+= org/apache/activemq/ActiveMQConnectionConsumer.class
+
+ - link:ActiveMQConnectionConsumer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 8
+ - javax.jms.ServerSessionPool - 7
+ - javax.jms.ServerSession - 4
+ - javax.jms.Session - 2
+ - javax.jms.IllegalStateException - 2
+ - javax.jms.ConnectionConsumer - 1
+ - javax.jms.QueueSession - 1
+ - javax.jms.TopicSession - 1

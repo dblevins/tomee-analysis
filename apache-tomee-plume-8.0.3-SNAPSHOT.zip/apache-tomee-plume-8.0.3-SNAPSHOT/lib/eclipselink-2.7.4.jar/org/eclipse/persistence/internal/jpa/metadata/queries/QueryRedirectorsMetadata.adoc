@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/QueryRedirectorsMetadata.class
+
+ - link:QueryRedirectorsMetadata-asmified.java[Asmified]
+
+== References
+

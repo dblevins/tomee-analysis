@@ -1,0 +1,7 @@
+= org/apache/openjpa/kernel/AbstractBrokerFactory$RemoveTransactionSync.class
+
+ - link:AbstractBrokerFactory$RemoveTransactionSync-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 1

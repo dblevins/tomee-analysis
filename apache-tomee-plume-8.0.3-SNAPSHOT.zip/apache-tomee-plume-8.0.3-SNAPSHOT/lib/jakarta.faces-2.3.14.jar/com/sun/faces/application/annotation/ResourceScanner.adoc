@@ -1,0 +1,7 @@
+= com/sun/faces/application/annotation/ResourceScanner.class
+
+ - link:ResourceScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 13

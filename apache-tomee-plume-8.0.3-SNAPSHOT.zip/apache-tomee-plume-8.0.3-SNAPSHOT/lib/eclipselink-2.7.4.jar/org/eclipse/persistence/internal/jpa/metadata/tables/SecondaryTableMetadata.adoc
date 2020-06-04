@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/tables/SecondaryTableMetadata.class
+
+ - link:SecondaryTableMetadata-asmified.java[Asmified]
+
+== References
+

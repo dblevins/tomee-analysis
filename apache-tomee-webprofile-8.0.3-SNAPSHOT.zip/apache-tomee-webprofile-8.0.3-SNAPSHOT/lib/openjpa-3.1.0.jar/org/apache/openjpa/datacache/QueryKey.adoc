@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/QueryKey.class
+
+ - link:QueryKey-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/PLSQLRecordWrapper.class
+
+ - link:PLSQLRecordWrapper-asmified.java[Asmified]
+
+== References
+

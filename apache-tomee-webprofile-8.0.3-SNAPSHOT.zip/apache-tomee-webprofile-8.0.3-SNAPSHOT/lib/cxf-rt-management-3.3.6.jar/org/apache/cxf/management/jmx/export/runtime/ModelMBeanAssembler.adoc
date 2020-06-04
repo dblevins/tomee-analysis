@@ -1,0 +1,6 @@
+= org/apache/cxf/management/jmx/export/runtime/ModelMBeanAssembler.class
+
+ - link:ModelMBeanAssembler-asmified.java[Asmified]
+
+== References
+

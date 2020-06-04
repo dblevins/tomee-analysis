@@ -1,0 +1,7 @@
+= org/apache/catalina/ssi/SSIServletExternalResolver$ServletContextAndPath.class
+
+ - link:SSIServletExternalResolver$ServletContextAndPath-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 5

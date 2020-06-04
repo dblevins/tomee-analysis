@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/eventlistener/DatabaseEventListenerFactory.class
+
+ - link:DatabaseEventListenerFactory-asmified.java[Asmified]
+
+== References
+

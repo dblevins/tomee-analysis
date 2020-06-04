@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/NativeJDBCSeq.class
+
+ - link:NativeJDBCSeq-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= javax/enterprise/inject/spi/Interceptor.class
+
+ - link:Interceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InterceptionType - 2
+ - javax.interceptor.InvocationContext - 1
+ - javax.enterprise.inject.spi.Bean - 1

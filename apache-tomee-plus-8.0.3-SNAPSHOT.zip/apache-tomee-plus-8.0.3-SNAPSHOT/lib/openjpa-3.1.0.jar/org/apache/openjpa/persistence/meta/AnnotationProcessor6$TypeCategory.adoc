@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/meta/AnnotationProcessor6$TypeCategory.class
+
+ - link:AnnotationProcessor6$TypeCategory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/factory/WSDLFactoryImpl.class
+
+ - link:WSDLFactoryImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/artifact/impl/ExpiringSAMLArtifactMapEntryFactory.class
+
+ - link:ExpiringSAMLArtifactMapEntryFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

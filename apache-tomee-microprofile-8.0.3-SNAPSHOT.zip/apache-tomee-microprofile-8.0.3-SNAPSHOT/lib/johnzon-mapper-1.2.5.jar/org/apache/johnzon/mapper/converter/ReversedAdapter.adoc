@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/ReversedAdapter.class
+
+ - link:ReversedAdapter-asmified.java[Asmified]
+
+== References
+

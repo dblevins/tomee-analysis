@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$DateParamConverter.class
+
+ - link:DefaultParamConverterProvider$DateParamConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 1

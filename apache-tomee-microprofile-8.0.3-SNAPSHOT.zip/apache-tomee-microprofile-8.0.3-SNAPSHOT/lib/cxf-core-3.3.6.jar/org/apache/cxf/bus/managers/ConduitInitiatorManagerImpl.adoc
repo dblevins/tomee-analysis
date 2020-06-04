@@ -1,0 +1,8 @@
+= org/apache/cxf/bus/managers/ConduitInitiatorManagerImpl.class
+
+ - link:ConduitInitiatorManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.Resource - 1

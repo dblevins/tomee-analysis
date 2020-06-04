@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/emitter/Emitter$ExpectBlockMappingSimpleValue.class
+
+ - link:Emitter$ExpectBlockMappingSimpleValue-asmified.java[Asmified]
+
+== References
+

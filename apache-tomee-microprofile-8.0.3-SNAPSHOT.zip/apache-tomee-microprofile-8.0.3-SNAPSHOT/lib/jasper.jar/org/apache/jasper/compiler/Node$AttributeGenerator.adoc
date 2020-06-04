@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Node$AttributeGenerator.class
+
+ - link:Node$AttributeGenerator-asmified.java[Asmified]
+
+== References
+

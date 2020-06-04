@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/SoapBindingConfiguration.class
+
+ - link:SoapBindingConfiguration-asmified.java[Asmified]
+
+== References
+

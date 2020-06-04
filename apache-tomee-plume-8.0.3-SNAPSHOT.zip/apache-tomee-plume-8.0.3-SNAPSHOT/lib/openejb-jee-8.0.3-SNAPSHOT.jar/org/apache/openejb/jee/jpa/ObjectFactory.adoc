@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/jpa/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlRegistry - 1

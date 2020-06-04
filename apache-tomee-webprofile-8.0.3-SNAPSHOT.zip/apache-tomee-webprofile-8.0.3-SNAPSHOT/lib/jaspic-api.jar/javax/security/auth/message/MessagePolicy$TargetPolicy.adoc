@@ -1,0 +1,9 @@
+= javax/security/auth/message/MessagePolicy$TargetPolicy.class
+
+ - link:MessagePolicy$TargetPolicy-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.MessagePolicy$Target - 8
+ - javax.security.auth.message.MessagePolicy$ProtectionPolicy - 6
+ - javax.security.auth.message.MessagePolicy$TargetPolicy - 1

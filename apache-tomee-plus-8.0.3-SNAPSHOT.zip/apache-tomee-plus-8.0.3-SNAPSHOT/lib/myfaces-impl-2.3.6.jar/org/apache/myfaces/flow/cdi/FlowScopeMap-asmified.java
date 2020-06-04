@@ -1,0 +1,464 @@
+package asm.org.apache.myfaces.flow.cdi;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class FlowScopeMapDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/flow/cdi/FlowScopeMap", null, "java/lang/Object", new String[] { "java/util/Map" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_currentClientWindowFlowId", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_flowScopeBeanHolder", "Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_initOptional", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_initOptional", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_flowScopeBeanHolder", "Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/CDIUtils", "lookup", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_flowScopeBeanHolder", "Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;");
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_initOptional", "Z");
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;"));
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/cdi/util/BeanProvider", "getContextualReference", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/Class;Z[Ljava/lang/annotation/Annotation;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_flowScopeBeanHolder", "Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_initOptional", "Z");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_flowScopeBeanHolder", "Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "size", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "size", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isEmpty", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "isEmpty", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsKey", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsValue", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsValue", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Ljava/lang/Object;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "putAll", "(Ljava/util/Map;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clear", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/flow/cdi/FlowScopeBeanHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Map"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "clear", "()V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "keySet", "()Ljava/util/Set;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "values", "()Ljava/util/Collection;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "values", "()Ljava/util/Collection;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "entrySet", "()Ljava/util/Set;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/flow/cdi/FlowScopeMap", "getFlowScopeBeanHolder", "(Z)Lorg/apache/myfaces/flow/cdi/FlowScopeBeanHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_beanManager", "Ljavax/enterprise/inject/spi/BeanManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/flow/cdi/FlowScopeMap", "_currentClientWindowFlowId", "Ljava/lang/String;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/flow/cdi/FlowScopeBeanHolder", "getFlowScopeMap", "(Ljavax/enterprise/inject/spi/BeanManager;Ljava/lang/String;Z)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

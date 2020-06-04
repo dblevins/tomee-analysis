@@ -1,0 +1,6 @@
+= org/jose4j/jwa/AlgorithmInfo.class
+
+ - link:AlgorithmInfo-asmified.java[Asmified]
+
+== References
+

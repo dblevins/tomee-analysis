@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/StAXEventConnector.class
+
+ - link:StAXEventConnector-asmified.java[Asmified]
+
+== References
+

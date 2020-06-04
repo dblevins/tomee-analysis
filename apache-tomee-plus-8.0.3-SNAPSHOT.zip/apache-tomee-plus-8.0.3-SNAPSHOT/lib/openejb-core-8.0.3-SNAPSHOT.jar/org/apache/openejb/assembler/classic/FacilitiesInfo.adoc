@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/FacilitiesInfo.class
+
+ - link:FacilitiesInfo-asmified.java[Asmified]
+
+== References
+

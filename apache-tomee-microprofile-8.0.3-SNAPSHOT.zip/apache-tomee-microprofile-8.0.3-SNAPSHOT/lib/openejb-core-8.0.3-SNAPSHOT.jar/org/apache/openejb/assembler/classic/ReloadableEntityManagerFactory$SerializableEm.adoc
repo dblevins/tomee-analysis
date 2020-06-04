@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory$SerializableEm.class
+
+ - link:ReloadableEntityManagerFactory$SerializableEm-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= javax/resource/spi/endpoint/MessageEndpointFactory.class
+
+ - link:MessageEndpointFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.endpoint.MessageEndpoint - 2
+ - javax.resource.spi.UnavailableException - 2

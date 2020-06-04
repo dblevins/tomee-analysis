@@ -1,0 +1,7 @@
+= org/apache/activemq/BlobMessage.class
+
+ - link:BlobMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

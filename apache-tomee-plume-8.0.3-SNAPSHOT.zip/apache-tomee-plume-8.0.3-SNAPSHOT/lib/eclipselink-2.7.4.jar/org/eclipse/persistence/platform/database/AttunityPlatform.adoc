@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/AttunityPlatform.class
+
+ - link:AttunityPlatform-asmified.java[Asmified]
+
+== References
+

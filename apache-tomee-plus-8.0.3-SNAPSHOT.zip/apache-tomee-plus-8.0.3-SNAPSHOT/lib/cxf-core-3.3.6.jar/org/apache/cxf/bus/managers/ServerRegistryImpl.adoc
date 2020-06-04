@@ -1,0 +1,8 @@
+= org/apache/cxf/bus/managers/ServerRegistryImpl.class
+
+ - link:ServerRegistryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.Resource - 1

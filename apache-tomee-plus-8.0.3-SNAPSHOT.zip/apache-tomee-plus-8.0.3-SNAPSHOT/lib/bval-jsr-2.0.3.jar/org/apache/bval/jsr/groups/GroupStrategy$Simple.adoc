@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/groups/GroupStrategy$Simple.class
+
+ - link:GroupStrategy$Simple-asmified.java[Asmified]
+
+== References
+

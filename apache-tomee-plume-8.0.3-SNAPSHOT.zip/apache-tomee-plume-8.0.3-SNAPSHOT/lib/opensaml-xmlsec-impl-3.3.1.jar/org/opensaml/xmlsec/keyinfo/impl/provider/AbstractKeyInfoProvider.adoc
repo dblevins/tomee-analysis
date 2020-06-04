@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/keyinfo/impl/provider/AbstractKeyInfoProvider.class
+
+ - link:AbstractKeyInfoProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/output/XMLStreamWriterOutput$XmlStreamOutWriterAdapter.class
+
+ - link:XMLStreamWriterOutput$XmlStreamOutWriterAdapter-asmified.java[Asmified]
+
+== References
+

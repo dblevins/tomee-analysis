@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/FieldDefinition.class
+
+ - link:FieldDefinition-asmified.java[Asmified]
+
+== References
+

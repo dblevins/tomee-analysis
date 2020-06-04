@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/BeanValidationHelper$ConstraintsDetectorService.class
+
+ - link:BeanValidationHelper$ConstraintsDetectorService-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Constraint - 2

@@ -1,0 +1,14 @@
+= org/apache/activemq/ra/ActiveMQManagedConnectionFactory.class
+
+ - link:ActiveMQManagedConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 13
+ - javax.resource.spi.ConnectionRequestInfo - 4
+ - javax.jms.JMSException - 4
+ - javax.resource.spi.ConnectionManager - 3
+ - javax.resource.spi.ManagedConnection - 2
+ - javax.resource.spi.ResourceAdapter - 2
+ - javax.resource.spi.ResourceAdapterAssociation - 1
+ - javax.resource.spi.ManagedConnectionFactory - 1

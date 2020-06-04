@@ -1,0 +1,7 @@
+= org/apache/cxf/microprofile/client/cdi/CDIFacade.class
+
+ - link:CDIFacade-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 2

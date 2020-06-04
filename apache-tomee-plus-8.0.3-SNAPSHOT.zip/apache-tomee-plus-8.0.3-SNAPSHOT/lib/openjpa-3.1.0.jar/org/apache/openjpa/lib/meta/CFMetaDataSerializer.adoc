@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/CFMetaDataSerializer.class
+
+ - link:CFMetaDataSerializer-asmified.java[Asmified]
+
+== References
+

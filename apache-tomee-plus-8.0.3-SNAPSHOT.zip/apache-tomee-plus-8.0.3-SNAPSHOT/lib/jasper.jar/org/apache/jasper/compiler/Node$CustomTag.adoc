@@ -1,0 +1,18 @@
+= org/apache/jasper/compiler/Node$CustomTag.class
+
+ - link:Node$CustomTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagInfo - 17
+ - javax.servlet.jsp.tagext.TagFileInfo - 10
+ - javax.servlet.jsp.tagext.VariableInfo - 8
+ - javax.servlet.jsp.tagext.TagData - 6
+ - javax.servlet.jsp.tagext.TagAttributeInfo - 5
+ - javax.servlet.jsp.tagext.TagVariableInfo - 2
+ - javax.servlet.jsp.tagext.JspIdConsumer - 1
+ - javax.servlet.jsp.tagext.BodyTag - 1
+ - javax.servlet.jsp.tagext.DynamicAttributes - 1
+ - javax.servlet.jsp.tagext.IterationTag - 1
+ - javax.servlet.jsp.tagext.SimpleTag - 1
+ - javax.servlet.jsp.tagext.TryCatchFinally - 1

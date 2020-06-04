@@ -1,0 +1,7 @@
+= javax/mail/internet/InternetHeaders$InternetHeader.class
+
+ - link:InternetHeaders$InternetHeader-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Header - 3

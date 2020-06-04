@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/JsonProviderImpl$Cached.class
+
+ - link:JsonProviderImpl$Cached-asmified.java[Asmified]
+
+== References
+

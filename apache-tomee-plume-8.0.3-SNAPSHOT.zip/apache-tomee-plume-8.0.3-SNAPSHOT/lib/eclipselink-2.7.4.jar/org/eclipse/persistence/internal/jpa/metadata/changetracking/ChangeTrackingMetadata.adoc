@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/changetracking/ChangeTrackingMetadata.class
+
+ - link:ChangeTrackingMetadata-asmified.java[Asmified]
+
+== References
+

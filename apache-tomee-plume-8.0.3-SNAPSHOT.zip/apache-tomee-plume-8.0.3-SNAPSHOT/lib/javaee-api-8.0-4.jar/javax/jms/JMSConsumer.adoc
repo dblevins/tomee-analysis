@@ -1,0 +1,8 @@
+= javax/jms/JMSConsumer.class
+
+ - link:JMSConsumer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 3
+ - javax.jms.MessageListener - 2

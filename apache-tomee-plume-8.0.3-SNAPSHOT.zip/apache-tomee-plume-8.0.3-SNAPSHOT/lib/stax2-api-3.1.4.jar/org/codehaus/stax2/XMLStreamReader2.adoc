@@ -1,0 +1,6 @@
+= org/codehaus/stax2/XMLStreamReader2.class
+
+ - link:XMLStreamReader2-asmified.java[Asmified]
+
+== References
+

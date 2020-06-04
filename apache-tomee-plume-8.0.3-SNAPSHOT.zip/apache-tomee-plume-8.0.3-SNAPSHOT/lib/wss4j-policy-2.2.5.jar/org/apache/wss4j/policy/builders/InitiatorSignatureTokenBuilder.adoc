@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/InitiatorSignatureTokenBuilder.class
+
+ - link:InitiatorSignatureTokenBuilder-asmified.java[Asmified]
+
+== References
+

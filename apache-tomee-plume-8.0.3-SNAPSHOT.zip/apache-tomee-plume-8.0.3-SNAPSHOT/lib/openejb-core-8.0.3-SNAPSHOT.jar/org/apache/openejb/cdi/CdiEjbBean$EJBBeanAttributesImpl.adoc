@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/CdiEjbBean$EJBBeanAttributesImpl.class
+
+ - link:CdiEjbBean$EJBBeanAttributesImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Typed - 5
+ - javax.enterprise.inject.spi.BeanAttributes - 2

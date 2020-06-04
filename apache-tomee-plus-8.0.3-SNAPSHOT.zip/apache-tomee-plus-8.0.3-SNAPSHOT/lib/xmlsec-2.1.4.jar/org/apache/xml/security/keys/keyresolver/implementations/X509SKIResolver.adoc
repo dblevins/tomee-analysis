@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/X509SKIResolver.class
+
+ - link:X509SKIResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/xml/datatype/DatatypeConstants$Field.class
+
+ - link:DatatypeConstants$Field-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/agreement/jpake/JPAKEParticipant.class
+
+ - link:JPAKEParticipant-asmified.java[Asmified]
+
+== References
+

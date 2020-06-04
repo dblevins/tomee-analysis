@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/SizeExpression.class
+
+ - link:SizeExpression-asmified.java[Asmified]
+
+== References
+

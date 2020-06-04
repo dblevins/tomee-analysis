@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/SpringOsgiUtil.class
+
+ - link:SpringOsgiUtil-asmified.java[Asmified]
+
+== References
+

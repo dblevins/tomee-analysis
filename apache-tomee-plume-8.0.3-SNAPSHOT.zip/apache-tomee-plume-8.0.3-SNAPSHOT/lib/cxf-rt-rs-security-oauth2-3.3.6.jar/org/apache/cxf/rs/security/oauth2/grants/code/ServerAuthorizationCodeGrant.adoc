@@ -1,0 +1,12 @@
+= org/apache/cxf/rs/security/oauth2/grants/code/ServerAuthorizationCodeGrant.class
+
+ - link:ServerAuthorizationCodeGrant-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 3
+ - javax.persistence.ElementCollection - 3
+ - javax.persistence.ManyToOne - 2
+ - javax.persistence.OrderColumn - 2
+ - javax.persistence.Entity - 1
+ - javax.persistence.MapKeyColumn - 1

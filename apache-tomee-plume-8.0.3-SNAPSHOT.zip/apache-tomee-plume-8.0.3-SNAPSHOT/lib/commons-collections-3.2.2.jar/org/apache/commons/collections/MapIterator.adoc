@@ -1,0 +1,6 @@
+= org/apache/commons/collections/MapIterator.class
+
+ - link:MapIterator-asmified.java[Asmified]
+
+== References
+

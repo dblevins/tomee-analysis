@@ -1,0 +1,6 @@
+= org/joda/time/base/BasePeriod.class
+
+ - link:BasePeriod-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/emitter/Emitter$ExpectDocumentRoot.class
+
+ - link:Emitter$ExpectDocumentRoot-asmified.java[Asmified]
+
+== References
+

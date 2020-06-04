@@ -1,0 +1,6 @@
+= org/apache/openejb/core/interceptor/ReflectionInvocationContext$BeanInvocation.class
+
+ - link:ReflectionInvocationContext$BeanInvocation-asmified.java[Asmified]
+
+== References
+

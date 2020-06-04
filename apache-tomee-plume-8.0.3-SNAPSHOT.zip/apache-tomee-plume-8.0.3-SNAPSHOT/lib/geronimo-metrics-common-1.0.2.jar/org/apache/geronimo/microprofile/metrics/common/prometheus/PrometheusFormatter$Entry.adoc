@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/prometheus/PrometheusFormatter$Entry.class
+
+ - link:PrometheusFormatter$Entry-asmified.java[Asmified]
+
+== References
+

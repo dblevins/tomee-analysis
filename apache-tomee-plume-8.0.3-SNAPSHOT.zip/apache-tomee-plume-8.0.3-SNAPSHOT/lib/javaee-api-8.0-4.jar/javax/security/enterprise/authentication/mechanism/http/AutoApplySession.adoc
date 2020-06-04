@@ -1,0 +1,7 @@
+= javax/security/enterprise/authentication/mechanism/http/AutoApplySession.class
+
+ - link:AutoApplySession-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InterceptorBinding - 1

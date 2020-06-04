@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/IdentityPredicate.class
+
+ - link:IdentityPredicate-asmified.java[Asmified]
+
+== References
+

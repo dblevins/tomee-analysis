@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/cfg/BaseSettings.class
+
+ - link:BaseSettings-asmified.java[Asmified]
+
+== References
+

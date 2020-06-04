@@ -1,0 +1,6 @@
+= org/apache/catalina/mapper/Mapper$MappedWrapper.class
+
+ - link:Mapper$MappedWrapper-asmified.java[Asmified]
+
+== References
+

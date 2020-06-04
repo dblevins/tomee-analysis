@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/NotNullValidator.class
+
+ - link:NotNullValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 1
+ - javax.validation.ConstraintValidatorContext - 1
+ - javax.validation.constraints.NotNull - 1

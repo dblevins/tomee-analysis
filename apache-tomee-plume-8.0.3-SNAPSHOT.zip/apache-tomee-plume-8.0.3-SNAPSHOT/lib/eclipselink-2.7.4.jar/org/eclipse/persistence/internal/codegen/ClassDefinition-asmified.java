@@ -1,0 +1,924 @@
+package asm.org.eclipse.persistence.internal.codegen;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ClassDefinitionDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/codegen/ClassDefinition", null, "org/eclipse/persistence/internal/codegen/CodeDefinition", null);
+
+classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+classWriter.visitInnerClass("org/eclipse/persistence/internal/codegen/ClassDefinition$1", null, null, 0);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "packageName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "imports", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "type", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "CLASS_TYPE", "I", null, new Integer(1));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "INTERFACE_TYPE", "I", null, new Integer(2));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "superClass", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "interfaces", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "attributes", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "methods", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "innerClasses", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/CodeDefinition", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "packageName", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "imports", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "type", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "interfaces", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "attributes", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "methods", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "innerClasses", "Ljava/util/Vector;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addAttribute", "(Lorg/eclipse/persistence/internal/codegen/AttributeDefinition;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getAttributes", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addImport", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getImports", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "contains", "(Ljava/lang/Object;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getImports", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addImports", "(Ljava/util/Map;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label0);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/internal/codegen/ClassDefinition", "java/util/Map", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map$Entry");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label2);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/eclipse/persistence/internal/codegen/ClassDefinition", "java/util/Map", "java/util/Map$Entry", "java/util/Iterator", "java/lang/String", "java/util/Set"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 7);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/eclipse/persistence/internal/codegen/ClassDefinition", "java/util/Map", "java/util/Map$Entry", "java/util/Iterator", "java/lang/String", "java/util/Set", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitLdcInsn("java.lang");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getPackageName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/String", "valueOf", "(Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLdcInsn(".");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "addImport", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/internal/codegen/ClassDefinition", "java/util/Map", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "sortImports", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInnerClass", "(Lorg/eclipse/persistence/internal/codegen/ClassDefinition;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getInnerClasses", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "add", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addInterface", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getInterfaces", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMethod", "(Lorg/eclipse/persistence/internal/codegen/MethodDefinition;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addTypeNamesToMap", "(Ljava/util/HashMap;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getSuperClass", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/codegen/ClassDefinition", "putTypeNameInMap", "(Ljava/lang/String;Ljava/util/Map;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getInterfaces", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label0);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/codegen/ClassDefinition", "putTypeNameInMap", "(Ljava/lang/String;Ljava/util/Map;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getAttributes", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/AttributeDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/AttributeDefinition", "putTypeNamesInMap", "(Ljava/util/Map;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+Label label5 = new Label();
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/MethodDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/MethodDefinition", "putTypeNamesInMap", "(Ljava/util/Map;)V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "adjustTypeNames", "(Ljava/util/HashMap;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getSuperClass", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/codegen/ClassDefinition", "adjustTypeName", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "setSuperClass", "(Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getInterfaces", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label0);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/codegen/ClassDefinition", "adjustTypeName", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "replaceInterface", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getAttributes", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/AttributeDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/AttributeDefinition", "adjustTypeNames", "(Ljava/util/Map;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+Label label5 = new Label();
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/MethodDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/MethodDefinition", "adjustTypeNames", "(Ljava/util/Map;)V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "calculateImports", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "addTypeNamesToMap", "(Ljava/util/HashMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "adjustTypeNames", "(Ljava/util/HashMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "addImports", "(Ljava/util/Map;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsMethod", "(Lorg/eclipse/persistence/internal/codegen/MethodDefinition;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "contains", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getAttributes", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "attributes", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getImports", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "imports", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInnerClasses", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "innerClasses", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getInterfaces", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "interfaces", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMethods", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "methods", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPackageName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "packageName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSuperClass", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "superClass", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getType", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "type", "I");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isInterface", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getType", "()I", false);
+methodVisitor.visitInsn(ICONST_2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "replaceInterface", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "interfaces", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "remove", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "interfaces", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "add", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setImports", "(Ljava/util/Vector;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "imports", "Ljava/util/Vector;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setMethods", "(Ljava/util/Vector;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "methods", "Ljava/util/Vector;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPackageName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "packageName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSuperClass", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "superClass", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setType", "(I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/codegen/ClassDefinition", "type", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "sortImports", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/util/TreeSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getImports", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/TreeSet", "<init>", "(Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(Ljava/util/Collection;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "setImports", "(Ljava/util/Vector;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "sortMethods", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/helper/Helper", "arrayFromVector", "(Ljava/util/Vector;)[Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/codegen/ClassDefinition$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/ClassDefinition$1", "<init>", "(Lorg/eclipse/persistence/internal/codegen/ClassDefinition;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "sort", "([Ljava/lang/Object;Ljava/util/Comparator;)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "size", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label0);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/persistence/internal/codegen/ClassDefinition", "[Ljava/lang/Object;", "java/util/Comparator", "java/util/Vector", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitJumpInsn(IF_ICMPLT, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "setMethods", "(Ljava/util/Vector;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "write", "(Lorg/eclipse/persistence/internal/codegen/CodeGenerator;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getPackageName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("package ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getPackageName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(";");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "writeln", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getImports", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elements", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+Label label2 = new Label();
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Enumeration"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "nextElement", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("import ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(";");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "writeln", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "hasMoreElements", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getImports", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "isEmpty", "()Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/codegen/CodeDefinition", "write", "(Lorg/eclipse/persistence/internal/codegen/CodeGenerator;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "writeBody", "(Lorg/eclipse/persistence/internal/codegen/CodeGenerator;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "sortMethods", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "isInterface", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("interface ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("class ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "isInterface", "()Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getSuperClass", "()Ljava/lang/String;", false);
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(" extends ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getSuperClass", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "writeType", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getInterfaces", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elements", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, "java/util/Enumeration"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "nextElement", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "isInterface", "()Z", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(" extends");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(" implements");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(",");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(" ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "write", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "hasMoreElements", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(" {");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "writeln", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getAttributes", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elements", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label9);
+Label label10 = new Label();
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "tab", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "nextElement", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/AttributeDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/AttributeDefinition", "write", "(Lorg/eclipse/persistence/internal/codegen/CodeGenerator;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "hasMoreElements", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getAttributes", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "isEmpty", "()Z", false);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label11);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getMethods", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elements", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label12);
+Label label13 = new Label();
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Enumeration"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "nextElement", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/MethodDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/MethodDefinition", "write", "(Lorg/eclipse/persistence/internal/codegen/CodeGenerator;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "hasMoreElements", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label13);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "getInnerClasses", "()Ljava/util/Vector;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elements", "()Ljava/util/Enumeration;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label14);
+Label label15 = new Label();
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "nextElement", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/codegen/ClassDefinition");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/ClassDefinition", "write", "(Lorg/eclipse/persistence/internal/codegen/CodeGenerator;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "cr", "()V", false);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Enumeration", "hasMoreElements", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label15);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("}");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/codegen/CodeGenerator", "writeln", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

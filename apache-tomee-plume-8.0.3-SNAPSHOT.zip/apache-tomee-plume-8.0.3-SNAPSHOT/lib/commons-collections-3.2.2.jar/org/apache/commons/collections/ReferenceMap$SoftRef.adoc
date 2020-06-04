@@ -1,0 +1,6 @@
+= org/apache/commons/collections/ReferenceMap$SoftRef.class
+
+ - link:ReferenceMap$SoftRef-asmified.java[Asmified]
+
+== References
+

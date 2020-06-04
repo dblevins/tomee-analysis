@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bag/AbstractBagDecorator.class
+
+ - link:AbstractBagDecorator-asmified.java[Asmified]
+
+== References
+

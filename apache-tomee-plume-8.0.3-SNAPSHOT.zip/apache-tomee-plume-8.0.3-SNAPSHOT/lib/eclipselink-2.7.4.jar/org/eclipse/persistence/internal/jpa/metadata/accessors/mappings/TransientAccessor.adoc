@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/TransientAccessor.class
+
+ - link:TransientAccessor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/ExpressionAggregate.class
+
+ - link:ExpressionAggregate-asmified.java[Asmified]
+
+== References
+

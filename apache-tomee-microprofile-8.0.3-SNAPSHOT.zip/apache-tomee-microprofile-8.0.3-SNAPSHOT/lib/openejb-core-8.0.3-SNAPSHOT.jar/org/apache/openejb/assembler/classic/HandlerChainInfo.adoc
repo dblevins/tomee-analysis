@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/HandlerChainInfo.class
+
+ - link:HandlerChainInfo-asmified.java[Asmified]
+
+== References
+

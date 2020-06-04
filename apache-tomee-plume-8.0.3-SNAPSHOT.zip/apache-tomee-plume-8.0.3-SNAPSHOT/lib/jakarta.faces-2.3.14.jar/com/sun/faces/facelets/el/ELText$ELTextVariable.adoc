@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/el/ELText$ELTextVariable.class
+
+ - link:ELText$ELTextVariable-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 17
+ - javax.el.ELContext - 8
+ - javax.el.ELException - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.context.ResponseWriter - 2

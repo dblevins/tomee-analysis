@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/CreatorCollector.class
+
+ - link:CreatorCollector-asmified.java[Asmified]
+
+== References
+

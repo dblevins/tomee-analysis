@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/IssuedTokenInterceptorProvider$IssuedTokenInInterceptor.class
+
+ - link:IssuedTokenInterceptorProvider$IssuedTokenInInterceptor-asmified.java[Asmified]
+
+== References
+

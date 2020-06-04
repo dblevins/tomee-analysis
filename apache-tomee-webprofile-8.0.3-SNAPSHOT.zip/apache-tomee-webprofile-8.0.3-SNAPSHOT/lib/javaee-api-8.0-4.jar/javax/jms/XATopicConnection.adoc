@@ -1,0 +1,11 @@
+= javax/jms/XATopicConnection.class
+
+ - link:XATopicConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.TopicConnection - 1
+ - javax.jms.XAConnection - 1
+ - javax.jms.TopicSession - 1
+ - javax.jms.XATopicSession - 1

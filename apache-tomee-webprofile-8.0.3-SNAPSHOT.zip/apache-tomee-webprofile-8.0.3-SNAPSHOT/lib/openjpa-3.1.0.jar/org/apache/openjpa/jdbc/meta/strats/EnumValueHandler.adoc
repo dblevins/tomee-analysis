@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/EnumValueHandler.class
+
+ - link:EnumValueHandler-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/TCleanState.class
+
+ - link:TCleanState-asmified.java[Asmified]
+
+== References
+

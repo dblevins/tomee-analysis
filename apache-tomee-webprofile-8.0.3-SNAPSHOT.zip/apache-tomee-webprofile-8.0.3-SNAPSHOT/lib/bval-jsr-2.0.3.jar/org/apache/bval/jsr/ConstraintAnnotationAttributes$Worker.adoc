@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/ConstraintAnnotationAttributes$Worker.class
+
+ - link:ConstraintAnnotationAttributes$Worker-asmified.java[Asmified]
+
+== References
+

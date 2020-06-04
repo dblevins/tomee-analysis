@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/ValueDecoderFactory$DecimalDecoder.class
+
+ - link:ValueDecoderFactory$DecimalDecoder-asmified.java[Asmified]
+
+== References
+

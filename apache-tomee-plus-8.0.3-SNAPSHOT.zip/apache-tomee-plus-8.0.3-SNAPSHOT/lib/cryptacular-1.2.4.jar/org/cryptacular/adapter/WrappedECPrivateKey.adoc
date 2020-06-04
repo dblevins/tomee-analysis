@@ -1,0 +1,6 @@
+= org/cryptacular/adapter/WrappedECPrivateKey.class
+
+ - link:WrappedECPrivateKey-asmified.java[Asmified]
+
+== References
+

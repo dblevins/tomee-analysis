@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/Fault.class
+
+ - link:Fault-asmified.java[Asmified]
+
+== References
+

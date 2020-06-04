@@ -1,0 +1,8 @@
+= org/apache/openejb/core/timer/ScheduleData.class
+
+ - link:ScheduleData-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ScheduleExpression - 5
+ - javax.ejb.TimerConfig - 5

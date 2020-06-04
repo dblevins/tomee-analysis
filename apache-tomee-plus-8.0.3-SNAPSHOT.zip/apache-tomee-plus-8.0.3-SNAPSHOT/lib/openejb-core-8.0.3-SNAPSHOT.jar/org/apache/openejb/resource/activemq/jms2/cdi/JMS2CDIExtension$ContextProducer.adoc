@@ -1,0 +1,15 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$ContextProducer.class
+
+ - link:JMS2CDIExtension$ContextProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 12
+ - javax.jms.JMSPasswordCredential - 12
+ - javax.enterprise.inject.spi.InjectionPoint - 12
+ - javax.jms.JMSSessionMode - 11
+ - javax.jms.JMSConnectionFactory - 11
+ - javax.inject.Inject - 2
+ - javax.enterprise.inject.Produces - 1
+ - javax.jms.JMSContext - 1
+ - javax.enterprise.context.ApplicationScoped - 1

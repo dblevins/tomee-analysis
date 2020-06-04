@@ -1,0 +1,7 @@
+= javax/xml/rpc/holders/CalendarHolder.class
+
+ - link:CalendarHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.holders.Holder - 1

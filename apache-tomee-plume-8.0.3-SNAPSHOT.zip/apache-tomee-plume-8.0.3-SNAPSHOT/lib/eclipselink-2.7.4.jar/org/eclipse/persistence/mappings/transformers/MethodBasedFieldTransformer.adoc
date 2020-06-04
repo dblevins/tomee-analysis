@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/transformers/MethodBasedFieldTransformer.class
+
+ - link:MethodBasedFieldTransformer-asmified.java[Asmified]
+
+== References
+

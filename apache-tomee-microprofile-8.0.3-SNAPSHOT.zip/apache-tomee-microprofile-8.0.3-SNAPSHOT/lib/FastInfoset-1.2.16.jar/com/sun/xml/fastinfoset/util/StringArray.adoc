@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/StringArray.class
+
+ - link:StringArray-asmified.java[Asmified]
+
+== References
+

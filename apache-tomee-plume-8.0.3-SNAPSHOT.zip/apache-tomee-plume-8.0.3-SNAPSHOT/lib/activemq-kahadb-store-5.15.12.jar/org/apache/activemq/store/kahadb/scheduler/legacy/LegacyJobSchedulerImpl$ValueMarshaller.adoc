@@ -1,0 +1,6 @@
+= org/apache/activemq/store/kahadb/scheduler/legacy/LegacyJobSchedulerImpl$ValueMarshaller.class
+
+ - link:LegacyJobSchedulerImpl$ValueMarshaller-asmified.java[Asmified]
+
+== References
+

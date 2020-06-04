@@ -1,0 +1,1262 @@
+package asm.org.apache.openjpa.slice.jdbc;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DistributedPreparedStatementDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "Lorg/apache/openjpa/slice/jdbc/DistributedTemplate<Ljava/sql/PreparedStatement;>;Ljava/sql/PreparedStatement;", "org/apache/openjpa/slice/jdbc/DistributedTemplate", new String[] { "java/sql/PreparedStatement" });
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/slice/jdbc/DistributedConnection;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/slice/jdbc/DistributedTemplate", "<init>", "(Lorg/apache/openjpa/slice/jdbc/DistributedConnection;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clearParameters", "()V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "clearParameters", "()V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "execute", "()Z", true);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "executeQuery", "()Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/slice/jdbc/DistributedResultSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/slice/jdbc/DistributedResultSet", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openjpa/slice/jdbc/DistributedResultSet", "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "executeQuery", "()Ljava/sql/ResultSet;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedResultSet", "add", "(Ljava/sql/ResultSet;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "executeUpdate", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "executeUpdate", "()I", true);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetaData", "()Ljava/sql/ResultSetMetaData;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "master", "Ljava/sql/Statement;");
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "getMetaData", "()Ljava/sql/ResultSetMetaData;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getParameterMetaData", "()Ljava/sql/ParameterMetaData;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setArray", "(ILjava/sql/Array;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setArray", "(ILjava/sql/Array;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAsciiStream", "(ILjava/io/InputStream;I)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setAsciiStream", "(ILjava/io/InputStream;I)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBigDecimal", "(ILjava/math/BigDecimal;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setBigDecimal", "(ILjava/math/BigDecimal;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinaryStream", "(ILjava/io/InputStream;I)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setBinaryStream", "(ILjava/io/InputStream;I)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBlob", "(ILjava/sql/Blob;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setBlob", "(ILjava/sql/Blob;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBoolean", "(IZ)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setBoolean", "(IZ)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setByte", "(IB)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setByte", "(IB)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBytes", "(I[B)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setBytes", "(I[B)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCharacterStream", "(ILjava/io/Reader;I)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setCharacterStream", "(ILjava/io/Reader;I)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setClob", "(ILjava/sql/Clob;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setClob", "(ILjava/sql/Clob;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDate", "(ILjava/sql/Date;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setDate", "(ILjava/sql/Date;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDate", "(ILjava/sql/Date;Ljava/util/Calendar;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setDate", "(ILjava/sql/Date;Ljava/util/Calendar;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDouble", "(ID)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(DLOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setDouble", "(ID)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setFloat", "(IF)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(FLOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setFloat", "(IF)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setInt", "(II)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setInt", "(II)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLong", "(IJ)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setLong", "(IJ)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNull", "(II)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setNull", "(II)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNull", "(IILjava/lang/String;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setNull", "(IILjava/lang/String;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObject", "(ILjava/lang/Object;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setObject", "(ILjava/lang/Object;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObject", "(ILjava/lang/Object;I)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setObject", "(ILjava/lang/Object;I)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setObject", "(ILjava/lang/Object;II)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setObject", "(ILjava/lang/Object;II)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRef", "(ILjava/sql/Ref;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setRef", "(ILjava/sql/Ref;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setShort", "(IS)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setShort", "(IS)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setString", "(ILjava/lang/String;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setString", "(ILjava/lang/String;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTime", "(ILjava/sql/Time;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setTime", "(ILjava/sql/Time;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTime", "(ILjava/sql/Time;Ljava/util/Calendar;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setTime", "(ILjava/sql/Time;Ljava/util/Calendar;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimestamp", "(ILjava/sql/Timestamp;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setTimestamp", "(ILjava/sql/Timestamp;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTimestamp", "(ILjava/sql/Timestamp;Ljava/util/Calendar;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setTimestamp", "(ILjava/sql/Timestamp;Ljava/util/Calendar;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setURL", "(ILjava/net/URL;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setURL", "(ILjava/net/URL;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setUnicodeStream", "(ILjava/io/InputStream;I)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setUnicodeStream", "(ILjava/io/InputStream;I)V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addBatch", "()V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/slice/jdbc/DistributedPreparedStatement", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/sql/PreparedStatement");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "addBatch", "()V", true);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAsciiStream", "(ILjava/io/InputStream;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setAsciiStream", "(ILjava/io/InputStream;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinaryStream", "(ILjava/io/InputStream;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBinaryStream", "(ILjava/io/InputStream;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBlob", "(ILjava/io/InputStream;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setBlob", "(ILjava/io/InputStream;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCharacterStream", "(ILjava/io/Reader;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCharacterStream", "(ILjava/io/Reader;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setClob", "(ILjava/io/Reader;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setClob", "(ILjava/io/Reader;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNCharacterStream", "(ILjava/io/Reader;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNCharacterStream", "(ILjava/io/Reader;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNClob", "(ILjava/sql/NClob;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNClob", "(ILjava/io/Reader;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNClob", "(ILjava/io/Reader;J)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNString", "(ILjava/lang/String;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRowId", "(ILjava/sql/RowId;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSQLXML", "(ILjava/sql/SQLXML;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCloseOnCompletion", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "closeOnCompletion", "()V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

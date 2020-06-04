@@ -1,0 +1,6 @@
+= org/slf4j/helpers/NOPMDCAdapter.class
+
+ - link:NOPMDCAdapter-asmified.java[Asmified]
+
+== References
+

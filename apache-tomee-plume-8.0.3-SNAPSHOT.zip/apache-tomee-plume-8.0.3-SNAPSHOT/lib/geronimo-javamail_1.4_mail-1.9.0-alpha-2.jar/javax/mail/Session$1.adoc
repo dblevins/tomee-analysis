@@ -1,0 +1,6 @@
+= javax/mail/Session$1.class
+
+ - link:Session$1-asmified.java[Asmified]
+
+== References
+

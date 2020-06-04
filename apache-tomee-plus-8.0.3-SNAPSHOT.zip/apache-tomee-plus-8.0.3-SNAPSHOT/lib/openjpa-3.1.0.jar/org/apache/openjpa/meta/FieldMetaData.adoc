@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/FieldMetaData.class
+
+ - link:FieldMetaData-asmified.java[Asmified]
+
+== References
+

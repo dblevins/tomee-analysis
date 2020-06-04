@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/io/MacUpdatingOutputStream.class
+
+ - link:MacUpdatingOutputStream-asmified.java[Asmified]
+
+== References
+

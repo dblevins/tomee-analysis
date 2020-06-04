@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/MultiMap.class
+
+ - link:MultiMap-asmified.java[Asmified]
+
+== References
+

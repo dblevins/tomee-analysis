@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/job/ComputeConstraintValidatorClass$org_apache_bval_util_reflection_Reflection$$primitiveToWrapper$$Ljava_lang_Class$_ACTION.class
+
+ - link:ComputeConstraintValidatorClass$org_apache_bval_util_reflection_Reflection$$primitiveToWrapper$$Ljava_lang_Class$_ACTION-asmified.java[Asmified]
+
+== References
+

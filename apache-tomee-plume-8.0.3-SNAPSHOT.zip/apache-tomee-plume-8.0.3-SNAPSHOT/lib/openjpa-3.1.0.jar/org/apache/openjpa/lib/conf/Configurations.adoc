@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/conf/Configurations.class
+
+ - link:Configurations-asmified.java[Asmified]
+
+== References
+

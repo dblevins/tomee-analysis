@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/CMCFailInfo.class
+
+ - link:CMCFailInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= org/apache/myfaces/renderkit/ErrorPageWriter$ExtendedComponentTreeVisitCallback.class
+
+ - link:ErrorPageWriter$ExtendedComponentTreeVisitCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 60
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.component.visit.VisitContext - 12
+ - javax.faces.render.Renderer - 11
+ - javax.faces.component.UIData - 7
+ - javax.faces.component.UIColumn - 4
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.component.visit.VisitResult - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.EditableValueHolder - 1

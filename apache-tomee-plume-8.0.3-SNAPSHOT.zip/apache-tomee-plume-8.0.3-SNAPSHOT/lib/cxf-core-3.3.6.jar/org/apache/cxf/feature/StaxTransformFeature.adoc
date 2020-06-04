@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/StaxTransformFeature.class
+
+ - link:StaxTransformFeature-asmified.java[Asmified]
+
+== References
+

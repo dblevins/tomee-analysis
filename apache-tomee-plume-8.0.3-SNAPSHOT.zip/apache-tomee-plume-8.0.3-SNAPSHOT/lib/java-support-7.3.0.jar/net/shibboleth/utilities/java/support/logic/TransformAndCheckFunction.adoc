@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/logic/TransformAndCheckFunction.class
+
+ - link:TransformAndCheckFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

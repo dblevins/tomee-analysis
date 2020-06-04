@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/LongConverter.class
+
+ - link:LongConverter-asmified.java[Asmified]
+
+== References
+

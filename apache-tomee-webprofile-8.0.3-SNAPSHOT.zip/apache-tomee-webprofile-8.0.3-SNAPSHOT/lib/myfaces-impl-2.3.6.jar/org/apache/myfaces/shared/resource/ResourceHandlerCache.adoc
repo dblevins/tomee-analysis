@@ -1,0 +1,9 @@
+= org/apache/myfaces/shared/resource/ResourceHandlerCache.class
+
+ - link:ResourceHandlerCache-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 8
+ - javax.faces.context.ExternalContext - 5
+ - javax.faces.application.ProjectStage - 2

@@ -1,0 +1,7 @@
+= javax/annotation/Resources.class
+
+ - link:Resources-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

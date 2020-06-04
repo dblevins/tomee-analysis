@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/IdentityProofV2.class
+
+ - link:IdentityProofV2-asmified.java[Asmified]
+
+== References
+

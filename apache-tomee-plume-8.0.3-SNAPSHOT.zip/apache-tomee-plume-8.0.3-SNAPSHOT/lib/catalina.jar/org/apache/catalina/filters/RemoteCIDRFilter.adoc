@@ -1,0 +1,11 @@
+= org/apache/catalina/filters/RemoteCIDRFilter.class
+
+ - link:RemoteCIDRFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponse - 6
+ - javax.servlet.ServletRequest - 3
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.servlet.FilterChain - 2
+ - javax.servlet.ServletException - 1

@@ -1,0 +1,6 @@
+= serp/bytecode/InnerClasses.class
+
+ - link:InnerClasses-asmified.java[Asmified]
+
+== References
+

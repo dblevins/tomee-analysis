@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/EndTransactionListener.class
+
+ - link:EndTransactionListener-asmified.java[Asmified]
+
+== References
+

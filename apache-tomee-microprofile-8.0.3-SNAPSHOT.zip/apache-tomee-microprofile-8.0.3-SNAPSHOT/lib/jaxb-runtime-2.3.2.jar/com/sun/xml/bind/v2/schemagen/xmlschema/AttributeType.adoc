@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/AttributeType.class
+
+ - link:AttributeType-asmified.java[Asmified]
+
+== References
+

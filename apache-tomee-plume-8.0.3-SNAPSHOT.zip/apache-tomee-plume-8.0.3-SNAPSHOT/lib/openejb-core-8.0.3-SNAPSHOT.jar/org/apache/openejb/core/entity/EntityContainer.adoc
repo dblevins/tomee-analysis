@@ -1,0 +1,15 @@
+= org/apache/openejb/core/entity/EntityContainer.class
+
+ - link:EntityContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 33
+ - javax.transaction.TransactionSynchronizationRegistry - 3
+ - javax.ejb.EJBHome - 2
+ - javax.ejb.Timer - 2
+ - javax.ejb.EJBLocalHome - 2
+ - javax.ejb.EJBAccessException - 2
+ - javax.ejb.NoSuchEntityException - 2
+ - javax.ejb.EJBObject - 1
+ - javax.ejb.EJBLocalObject - 1

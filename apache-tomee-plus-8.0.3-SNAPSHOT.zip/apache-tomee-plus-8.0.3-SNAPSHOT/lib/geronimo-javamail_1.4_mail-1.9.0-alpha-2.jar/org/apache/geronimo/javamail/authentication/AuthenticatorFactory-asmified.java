@@ -1,0 +1,228 @@
+package asm.org.apache.geronimo.javamail.authentication;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AuthenticatorFactoryDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/javamail/authentication/AuthenticatorFactory", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "AUTHENTICATION_PLAIN", "Ljava/lang/String;", null, "PLAIN");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "AUTHENTICATION_LOGIN", "Ljava/lang/String;", null, "LOGIN");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "AUTHENTICATION_CRAMMD5", "Ljava/lang/String;", null, "CRAM-MD5");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "AUTHENTICATION_DIGESTMD5", "Ljava/lang/String;", null, "DIGEST-MD5");
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAuthenticator", "(Lorg/apache/geronimo/javamail/util/ProtocolProperties;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/apache/geronimo/javamail/authentication/ClientAuthenticator;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("sasl.enable");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/ProtocolProperties", "getBooleanProperty", "(Ljava/lang/String;Z)Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/String;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitLdcInsn("org.apache.geronimo.javamail.authentication.SASLAuthenticator");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Class", "forName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/util/Properties;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/ProtocolProperties", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/geronimo/javamail/util/ProtocolProperties", "getProtocol", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/geronimo/javamail/authentication/ClientAuthenticator");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("DIGEST-MD5");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "contains", "(Ljava/lang/Object;)Z", true);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/authentication/DigestMD5Authenticator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/authentication/DigestMD5Authenticator", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("CRAM-MD5");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "contains", "(Ljava/lang/Object;)Z", true);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/authentication/CramMD5Authenticator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/authentication/CramMD5Authenticator", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("LOGIN");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "contains", "(Ljava/lang/Object;)Z", true);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/authentication/LoginAuthenticator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/authentication/LoginAuthenticator", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("PLAIN");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "contains", "(Ljava/lang/Object;)Z", true);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label8);
+methodVisitor.visitTypeInsn(NEW, "org/apache/geronimo/javamail/authentication/PlainAuthenticator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/geronimo/javamail/authentication/PlainAuthenticator", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 11);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,18 @@
+= org/apache/cxf/jaxrs/impl/tl/ThreadLocalServletContext.class
+
+ - link:ThreadLocalServletContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 108
+ - javax.servlet.RequestDispatcher - 12
+ - javax.servlet.Servlet - 8
+ - javax.servlet.ServletRegistration$Dynamic - 6
+ - javax.servlet.FilterRegistration$Dynamic - 6
+ - javax.servlet.Filter - 5
+ - javax.servlet.ServletException - 4
+ - javax.servlet.ServletRegistration - 3
+ - javax.servlet.FilterRegistration - 3
+ - javax.servlet.SessionTrackingMode - 3
+ - javax.servlet.descriptor.JspConfigDescriptor - 2
+ - javax.servlet.SessionCookieConfig - 2

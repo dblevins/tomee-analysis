@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/XRDynamicEntityVHAccessor.class
+
+ - link:XRDynamicEntityVHAccessor-asmified.java[Asmified]
+
+== References
+

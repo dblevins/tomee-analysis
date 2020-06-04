@@ -1,0 +1,7 @@
+= org/apache/openejb/core/managed/Instance$Serialization.class
+
+ - link:Instance$Serialization-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 5

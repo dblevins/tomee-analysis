@@ -1,0 +1,7 @@
+= org/apache/myfaces/context/servlet/ApplicationMap.class
+
+ - link:ApplicationMap-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 11

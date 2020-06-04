@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/jmx/JMXAccessorInvokeTask.class
+
+ - link:JMXAccessorInvokeTask-asmified.java[Asmified]
+
+== References
+

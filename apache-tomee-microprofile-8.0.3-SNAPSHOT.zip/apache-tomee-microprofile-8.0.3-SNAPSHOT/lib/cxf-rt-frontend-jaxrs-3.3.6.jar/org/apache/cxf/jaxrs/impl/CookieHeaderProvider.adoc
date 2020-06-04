@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/impl/CookieHeaderProvider.class
+
+ - link:CookieHeaderProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Cookie - 16
+ - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

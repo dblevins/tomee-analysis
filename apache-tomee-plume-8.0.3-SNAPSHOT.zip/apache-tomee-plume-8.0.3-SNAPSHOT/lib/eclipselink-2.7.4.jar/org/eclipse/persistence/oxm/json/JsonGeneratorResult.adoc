@@ -1,0 +1,7 @@
+= org/eclipse/persistence/oxm/json/JsonGeneratorResult.class
+
+ - link:JsonGeneratorResult-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 7

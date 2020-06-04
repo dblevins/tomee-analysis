@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaGenerator$Listener.class
+
+ - link:SchemaGenerator$Listener-asmified.java[Asmified]
+
+== References
+

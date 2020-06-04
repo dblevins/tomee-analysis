@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/UnitOfWorkImpl.class
+
+ - link:UnitOfWorkImpl-asmified.java[Asmified]
+
+== References
+

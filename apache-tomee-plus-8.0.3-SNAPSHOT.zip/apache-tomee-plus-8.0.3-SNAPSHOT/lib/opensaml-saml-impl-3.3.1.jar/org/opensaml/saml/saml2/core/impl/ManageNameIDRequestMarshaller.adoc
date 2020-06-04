@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/ManageNameIDRequestMarshaller.class
+
+ - link:ManageNameIDRequestMarshaller-asmified.java[Asmified]
+
+== References
+

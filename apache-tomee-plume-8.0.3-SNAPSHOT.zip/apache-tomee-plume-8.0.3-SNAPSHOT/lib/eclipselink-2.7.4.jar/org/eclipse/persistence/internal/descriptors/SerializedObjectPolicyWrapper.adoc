@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/SerializedObjectPolicyWrapper.class
+
+ - link:SerializedObjectPolicyWrapper-asmified.java[Asmified]
+
+== References
+

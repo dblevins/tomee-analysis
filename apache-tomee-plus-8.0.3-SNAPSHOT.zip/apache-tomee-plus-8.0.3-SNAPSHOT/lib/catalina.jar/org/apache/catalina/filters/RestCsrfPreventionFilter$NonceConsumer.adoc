@@ -1,0 +1,6 @@
+= org/apache/catalina/filters/RestCsrfPreventionFilter$NonceConsumer.class
+
+ - link:RestCsrfPreventionFilter$NonceConsumer-asmified.java[Asmified]
+
+== References
+

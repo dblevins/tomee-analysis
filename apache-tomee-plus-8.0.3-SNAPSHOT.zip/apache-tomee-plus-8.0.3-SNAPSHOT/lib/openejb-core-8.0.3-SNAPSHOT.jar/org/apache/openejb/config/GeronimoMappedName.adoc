@@ -1,0 +1,6 @@
+= org/apache/openejb/config/GeronimoMappedName.class
+
+ - link:GeronimoMappedName-asmified.java[Asmified]
+
+== References
+

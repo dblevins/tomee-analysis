@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/DeleteStatementBNF.class
+
+ - link:DeleteStatementBNF-asmified.java[Asmified]
+
+== References
+

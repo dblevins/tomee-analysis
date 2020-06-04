@@ -1,0 +1,8 @@
+= org/apache/activemq/broker/region/AbstractRegion.class
+
+ - link:AbstractRegion-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 10
+ - javax.jms.IllegalStateException - 4

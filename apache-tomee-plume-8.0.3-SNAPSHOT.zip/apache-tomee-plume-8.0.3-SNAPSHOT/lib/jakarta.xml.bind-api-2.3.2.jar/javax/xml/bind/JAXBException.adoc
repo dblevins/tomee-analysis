@@ -1,0 +1,7 @@
+= javax/xml/bind/JAXBException.class
+
+ - link:JAXBException-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 4

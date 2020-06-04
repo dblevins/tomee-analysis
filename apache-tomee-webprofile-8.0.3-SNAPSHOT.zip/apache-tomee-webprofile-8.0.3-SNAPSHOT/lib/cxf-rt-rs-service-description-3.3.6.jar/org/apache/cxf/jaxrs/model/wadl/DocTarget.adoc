@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/wadl/DocTarget.class
+
+ - link:DocTarget-asmified.java[Asmified]
+
+== References
+

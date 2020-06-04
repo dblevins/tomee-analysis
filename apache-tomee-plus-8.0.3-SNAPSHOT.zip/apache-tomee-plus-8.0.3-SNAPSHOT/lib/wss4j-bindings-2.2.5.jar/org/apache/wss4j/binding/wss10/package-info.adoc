@@ -1,0 +1,8 @@
+= org/apache/wss4j/binding/wss10/package-info.class
+
+ - link:package-info-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlNsForm - 1
+ - javax.xml.bind.annotation.XmlSchema - 1

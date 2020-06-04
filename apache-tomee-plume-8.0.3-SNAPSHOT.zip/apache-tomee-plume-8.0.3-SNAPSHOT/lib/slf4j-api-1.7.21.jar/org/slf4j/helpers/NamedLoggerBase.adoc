@@ -1,0 +1,6 @@
+= org/slf4j/helpers/NamedLoggerBase.class
+
+ - link:NamedLoggerBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,24 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/cxf-rt-ws-policy-3.3.6.jar
+
+ - link:org/apache/cxf/ws/policy/builder/jaxb/JaxbAssertionBuilder.adoc[org/apache/cxf/ws/policy/builder/jaxb/JaxbAssertionBuilder.class] - 29
+ - link:org/apache/cxf/ws/policy/attachment/external/EndpointReferenceDomainExpressionBuilder.adoc[org/apache/cxf/ws/policy/attachment/external/EndpointReferenceDomainExpressionBuilder.class] - 16
+ - link:org/apache/cxf/ws/policy/builder/jaxb/JaxbAssertion.adoc[org/apache/cxf/ws/policy/builder/jaxb/JaxbAssertion.class] - 14
+ - link:org/apache/cxf/ws/policy/v200409/OperatorContentType.adoc[org/apache/cxf/ws/policy/v200409/OperatorContentType.class] - 12
+ - link:org/apache/cxf/ws/policy/v200409/Policy.adoc[org/apache/cxf/ws/policy/v200409/Policy.class] - 12
+ - link:org/apache/cxf/ws/policy/v200607/OperatorContentType.adoc[org/apache/cxf/ws/policy/v200607/OperatorContentType.class] - 12
+ - link:org/apache/cxf/ws/policy/v200607/PolicyReference.adoc[org/apache/cxf/ws/policy/v200607/PolicyReference.class] - 11
+ - link:org/apache/cxf/ws/policy/v200409/PolicyAttachment.adoc[org/apache/cxf/ws/policy/v200409/PolicyAttachment.class] - 10
+ - link:org/apache/cxf/ws/policy/v200409/PolicyReference.adoc[org/apache/cxf/ws/policy/v200409/PolicyReference.class] - 10
+ - link:org/apache/cxf/ws/policy/v200607/PolicyAttachment.adoc[org/apache/cxf/ws/policy/v200607/PolicyAttachment.class] - 10
+ - link:org/apache/cxf/ws/policy/v200409/ObjectFactory.adoc[org/apache/cxf/ws/policy/v200409/ObjectFactory.class] - 9
+ - link:org/apache/cxf/ws/policy/v200607/ObjectFactory.adoc[org/apache/cxf/ws/policy/v200607/ObjectFactory.class] - 9
+ - link:org/apache/cxf/ws/policy/v200607/Policy.adoc[org/apache/cxf/ws/policy/v200607/Policy.class] - 7
+ - link:org/apache/cxf/ws/policy/v200607/URI.adoc[org/apache/cxf/ws/policy/v200607/URI.class] - 7
+ - link:org/apache/cxf/ws/policy/v200409/AppliesTo.adoc[org/apache/cxf/ws/policy/v200409/AppliesTo.class] - 6
+ - link:org/apache/cxf/ws/policy/v200607/AppliesTo.adoc[org/apache/cxf/ws/policy/v200607/AppliesTo.class] - 6
+ - link:org/apache/cxf/ws/policy/v200409/package-info.adoc[org/apache/cxf/ws/policy/v200409/package-info.class] - 2
+ - link:org/apache/cxf/ws/policy/v200607/package-info.adoc[org/apache/cxf/ws/policy/v200607/package-info.class] - 2
+ - link:org/apache/cxf/ws/policy/AssertionBuilderRegistryImpl.adoc[org/apache/cxf/ws/policy/AssertionBuilderRegistryImpl.class] - 1
+ - link:org/apache/cxf/ws/policy/PolicyEngineImpl.adoc[org/apache/cxf/ws/policy/PolicyEngineImpl.class] - 1
+ - link:org/apache/cxf/ws/policy/PolicyInterceptorProviderRegistryImpl.adoc[org/apache/cxf/ws/policy/PolicyInterceptorProviderRegistryImpl.class] - 1
+ - link:org/apache/cxf/ws/policy/attachment/external/DomainExpressionBuilderRegistry.adoc[org/apache/cxf/ws/policy/attachment/external/DomainExpressionBuilderRegistry.class] - 1

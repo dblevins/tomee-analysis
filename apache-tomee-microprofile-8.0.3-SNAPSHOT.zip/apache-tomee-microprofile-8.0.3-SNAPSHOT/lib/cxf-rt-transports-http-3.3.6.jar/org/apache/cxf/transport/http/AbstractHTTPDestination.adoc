@@ -1,0 +1,15 @@
+= org/apache/cxf/transport/http/AbstractHTTPDestination.class
+
+ - link:AbstractHTTPDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 48
+ - javax.servlet.http.HttpServletResponse - 32
+ - javax.servlet.ServletContext - 10
+ - javax.servlet.ServletConfig - 8
+ - javax.activation.DataHandler - 4
+ - javax.servlet.ServletOutputStream - 3
+ - javax.activation.DataSource - 2
+ - javax.servlet.ServletRequest - 1
+ - javax.servlet.ServletInputStream - 1

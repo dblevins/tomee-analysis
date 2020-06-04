@@ -1,0 +1,7 @@
+= javax/faces/component/behavior/ClientBehaviorHolder.class
+
+ - link:ClientBehaviorHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.ClientBehavior - 2

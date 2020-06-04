@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/CacheIdentityMap.class
+
+ - link:CacheIdentityMap-asmified.java[Asmified]
+
+== References
+

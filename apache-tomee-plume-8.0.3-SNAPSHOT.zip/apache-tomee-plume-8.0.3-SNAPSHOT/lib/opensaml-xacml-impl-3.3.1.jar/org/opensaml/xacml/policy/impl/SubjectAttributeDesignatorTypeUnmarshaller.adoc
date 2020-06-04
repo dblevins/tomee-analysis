@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/SubjectAttributeDesignatorTypeUnmarshaller.class
+
+ - link:SubjectAttributeDesignatorTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/EndorsingEncryptedTokenPolicyValidator.class
+
+ - link:EndorsingEncryptedTokenPolicyValidator-asmified.java[Asmified]
+
+== References
+

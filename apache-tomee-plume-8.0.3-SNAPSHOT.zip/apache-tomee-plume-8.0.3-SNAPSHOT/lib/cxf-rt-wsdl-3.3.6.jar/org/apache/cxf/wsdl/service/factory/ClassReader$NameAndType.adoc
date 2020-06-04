@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/service/factory/ClassReader$NameAndType.class
+
+ - link:ClassReader$NameAndType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/config/cdi/ConfigurationHandler.class
+
+ - link:ConfigurationHandler-asmified.java[Asmified]
+
+== References
+

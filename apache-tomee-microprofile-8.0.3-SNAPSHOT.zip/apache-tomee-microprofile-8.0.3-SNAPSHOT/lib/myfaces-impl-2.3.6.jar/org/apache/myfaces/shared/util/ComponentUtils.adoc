@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/util/ComponentUtils.class
+
+ - link:ComponentUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 14
+ - javax.faces.component.NamingContainer - 1

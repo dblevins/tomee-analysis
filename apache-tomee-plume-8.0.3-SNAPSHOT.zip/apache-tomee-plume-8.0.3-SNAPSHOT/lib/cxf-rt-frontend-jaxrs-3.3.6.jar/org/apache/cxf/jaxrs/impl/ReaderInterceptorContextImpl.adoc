@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/ReaderInterceptorContextImpl.class
+
+ - link:ReaderInterceptorContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 7
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.ext.ReaderInterceptor - 4
+ - javax.ws.rs.ext.ReaderInterceptorContext - 2

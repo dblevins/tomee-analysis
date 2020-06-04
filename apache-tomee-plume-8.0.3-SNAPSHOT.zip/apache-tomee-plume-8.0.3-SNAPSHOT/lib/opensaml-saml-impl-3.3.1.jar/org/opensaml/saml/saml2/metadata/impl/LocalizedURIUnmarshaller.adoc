@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/LocalizedURIUnmarshaller.class
+
+ - link:LocalizedURIUnmarshaller-asmified.java[Asmified]
+
+== References
+

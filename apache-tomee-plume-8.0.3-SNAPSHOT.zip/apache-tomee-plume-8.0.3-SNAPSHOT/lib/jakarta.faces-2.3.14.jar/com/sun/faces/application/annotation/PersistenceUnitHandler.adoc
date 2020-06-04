@@ -1,0 +1,8 @@
+= com/sun/faces/application/annotation/PersistenceUnitHandler.class
+
+ - link:PersistenceUnitHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceUnit - 18
+ - javax.faces.context.FacesContext - 10

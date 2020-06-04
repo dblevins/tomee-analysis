@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/PessimisticLockManager.class
+
+ - link:PessimisticLockManager-asmified.java[Asmified]
+
+== References
+

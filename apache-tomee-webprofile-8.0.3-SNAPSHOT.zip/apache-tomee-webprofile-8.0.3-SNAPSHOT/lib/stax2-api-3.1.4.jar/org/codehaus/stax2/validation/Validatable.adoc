@@ -1,0 +1,6 @@
+= org/codehaus/stax2/validation/Validatable.class
+
+ - link:Validatable-asmified.java[Asmified]
+
+== References
+

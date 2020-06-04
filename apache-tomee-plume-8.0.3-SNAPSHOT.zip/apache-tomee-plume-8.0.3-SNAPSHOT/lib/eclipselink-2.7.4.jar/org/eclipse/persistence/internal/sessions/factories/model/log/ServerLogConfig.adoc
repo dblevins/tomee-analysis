@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/log/ServerLogConfig.class
+
+ - link:ServerLogConfig-asmified.java[Asmified]
+
+== References
+

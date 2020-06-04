@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/ByteInputStream.class
+
+ - link:ByteInputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$RegistryTypeImpl.class
+
+ - link:MetricsExtension$RegistryTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2

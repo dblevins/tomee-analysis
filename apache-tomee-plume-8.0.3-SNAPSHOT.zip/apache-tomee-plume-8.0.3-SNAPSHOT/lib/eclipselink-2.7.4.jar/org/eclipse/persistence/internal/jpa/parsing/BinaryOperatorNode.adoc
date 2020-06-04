@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/BinaryOperatorNode.class
+
+ - link:BinaryOperatorNode-asmified.java[Asmified]
+
+== References
+

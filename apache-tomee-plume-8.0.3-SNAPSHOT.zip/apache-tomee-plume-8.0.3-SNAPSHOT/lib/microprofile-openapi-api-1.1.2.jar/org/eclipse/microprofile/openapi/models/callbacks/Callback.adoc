@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/callbacks/Callback.class
+
+ - link:Callback-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/io/Marshaller.class
+
+ - link:Marshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8

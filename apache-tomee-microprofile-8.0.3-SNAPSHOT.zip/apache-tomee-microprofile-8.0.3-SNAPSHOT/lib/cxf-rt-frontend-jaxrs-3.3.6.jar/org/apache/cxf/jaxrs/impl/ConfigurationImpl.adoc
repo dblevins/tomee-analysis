@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/impl/ConfigurationImpl.class
+
+ - link:ConfigurationImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configuration - 14
+ - javax.ws.rs.core.Feature - 9
+ - javax.ws.rs.RuntimeType - 7

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/PolicyOutInterceptor.class
+
+ - link:PolicyOutInterceptor-asmified.java[Asmified]
+
+== References
+

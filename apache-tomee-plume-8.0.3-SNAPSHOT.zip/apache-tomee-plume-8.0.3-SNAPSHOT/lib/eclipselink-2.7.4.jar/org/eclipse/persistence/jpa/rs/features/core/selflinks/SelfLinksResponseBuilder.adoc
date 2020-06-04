@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/rs/features/core/selflinks/SelfLinksResponseBuilder.class
+
+ - link:SelfLinksResponseBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 17
+ - javax.xml.bind.JAXBElement - 4

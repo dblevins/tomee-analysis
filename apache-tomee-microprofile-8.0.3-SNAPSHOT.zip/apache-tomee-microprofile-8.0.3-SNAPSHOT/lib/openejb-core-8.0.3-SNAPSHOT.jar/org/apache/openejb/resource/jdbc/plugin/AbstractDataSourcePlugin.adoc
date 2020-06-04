@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/plugin/AbstractDataSourcePlugin.class
+
+ - link:AbstractDataSourcePlugin-asmified.java[Asmified]
+
+== References
+

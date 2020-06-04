@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/XMLCipher$Factory$EncryptionMethodImpl.class
+
+ - link:XMLCipher$Factory$EncryptionMethodImpl-asmified.java[Asmified]
+
+== References
+

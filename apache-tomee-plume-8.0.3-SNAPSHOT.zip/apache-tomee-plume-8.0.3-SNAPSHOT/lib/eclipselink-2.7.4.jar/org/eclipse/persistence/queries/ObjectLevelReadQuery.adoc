@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ObjectLevelReadQuery.class
+
+ - link:ObjectLevelReadQuery-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/geronimo/connector/outbound/connectiontracking/GeronimoTransactionListener.class
+
+ - link:GeronimoTransactionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 2
+ - javax.resource.ResourceException - 2

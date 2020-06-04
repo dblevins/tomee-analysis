@@ -1,0 +1,6 @@
+= org/joda/time/base/BaseInterval.class
+
+ - link:BaseInterval-asmified.java[Asmified]
+
+== References
+

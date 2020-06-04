@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/DivideNode.class
+
+ - link:DivideNode-asmified.java[Asmified]
+
+== References
+

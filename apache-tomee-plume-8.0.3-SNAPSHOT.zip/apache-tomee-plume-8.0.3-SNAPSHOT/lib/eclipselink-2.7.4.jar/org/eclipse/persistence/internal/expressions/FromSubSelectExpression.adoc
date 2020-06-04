@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/FromSubSelectExpression.class
+
+ - link:FromSubSelectExpression-asmified.java[Asmified]
+
+== References
+

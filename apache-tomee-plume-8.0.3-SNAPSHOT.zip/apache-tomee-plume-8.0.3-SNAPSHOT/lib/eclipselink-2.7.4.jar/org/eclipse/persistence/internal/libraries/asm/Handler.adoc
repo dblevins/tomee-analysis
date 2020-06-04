@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/Handler.class
+
+ - link:Handler-asmified.java[Asmified]
+
+== References
+

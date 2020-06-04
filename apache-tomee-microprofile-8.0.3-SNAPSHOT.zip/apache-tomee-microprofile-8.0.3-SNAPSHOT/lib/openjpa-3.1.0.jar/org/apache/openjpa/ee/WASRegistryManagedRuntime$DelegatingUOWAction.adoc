@@ -1,0 +1,6 @@
+= org/apache/openjpa/ee/WASRegistryManagedRuntime$DelegatingUOWAction.class
+
+ - link:WASRegistryManagedRuntime$DelegatingUOWAction-asmified.java[Asmified]
+
+== References
+

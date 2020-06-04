@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/StoredFunctionQueryHandler.class
+
+ - link:StoredFunctionQueryHandler-asmified.java[Asmified]
+
+== References
+

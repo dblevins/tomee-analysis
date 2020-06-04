@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/Http2UpgradeHandler$DefaultHeaderFrameBuffers.class
+
+ - link:Http2UpgradeHandler$DefaultHeaderFrameBuffers-asmified.java[Asmified]
+
+== References
+

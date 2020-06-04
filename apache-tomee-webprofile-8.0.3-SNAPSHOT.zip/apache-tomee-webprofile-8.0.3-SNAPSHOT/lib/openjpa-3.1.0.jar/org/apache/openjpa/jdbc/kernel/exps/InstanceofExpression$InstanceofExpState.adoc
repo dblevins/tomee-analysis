@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/InstanceofExpression$InstanceofExpState.class
+
+ - link:InstanceofExpression$InstanceofExpState-asmified.java[Asmified]
+
+== References
+

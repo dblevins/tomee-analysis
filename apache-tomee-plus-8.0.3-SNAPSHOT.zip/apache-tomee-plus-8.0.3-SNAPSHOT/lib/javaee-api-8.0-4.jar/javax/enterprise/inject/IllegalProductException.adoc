@@ -1,0 +1,7 @@
+= javax/enterprise/inject/IllegalProductException.class
+
+ - link:IllegalProductException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.InjectionException - 5

@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/ContainerProperties$Property.class
+
+ - link:ContainerProperties$Property-asmified.java[Asmified]
+
+== References
+

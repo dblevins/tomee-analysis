@@ -1,0 +1,6 @@
+= org/apache/commons/collections/IterableMap.class
+
+ - link:IterableMap-asmified.java[Asmified]
+
+== References
+

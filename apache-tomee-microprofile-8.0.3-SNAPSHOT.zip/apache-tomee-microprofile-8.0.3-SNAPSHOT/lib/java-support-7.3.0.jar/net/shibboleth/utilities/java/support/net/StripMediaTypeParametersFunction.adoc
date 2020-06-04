@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/net/StripMediaTypeParametersFunction.class
+
+ - link:StripMediaTypeParametersFunction-asmified.java[Asmified]
+
+== References
+

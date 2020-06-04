@@ -1,0 +1,708 @@
+package asm.org.apache.cxf.jaxrs.utils.multipart;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AttachmentUtilsDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "OUT_FILTERS", "Ljava/lang/String;", null, "multipart.output.filters");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "IN_FILTERS", "Ljava/lang/String;", null, "multipart.input.filters");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG", "Ljava/util/logging/Logger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "BUNDLE", "Ljava/util/ResourceBundle;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMultipartOutFilter", "(Lorg/apache/cxf/jaxrs/ext/multipart/MultipartOutputFilter;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("multipart.output.filters");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/CastUtils", "cast", "(Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("multipart.output.filters");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/message/Message", "java/util/List"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addMultipartInFilter", "(Lorg/apache/cxf/jaxrs/ext/multipart/MultipartInputFilter;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("multipart.input.filters");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/CastUtils", "cast", "(Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("multipart.input.filters");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/message/Message", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/message/Message", "java/util/List"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMultipartBody", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("org.apache.cxf.jaxrs.attachments.inbound");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getChildAttachmentsMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljava/util/Map;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljava/util/Map<Ljava/lang/String;Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getChildAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "fromListToMap", "(Ljava/util/List;Z)Ljava/util/Map;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getChildAttachmentsMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/Map;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/Map<Ljava/lang/String;Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getChildAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", false);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "fromListToMap", "(Ljava/util/List;Z)Ljava/util/Map;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getChildAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMultipartBody", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "getChildAttachments", "()Ljava/util/List;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAttachmentsMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljava/util/Map;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljava/util/Map<Ljava/lang/String;Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "fromListToMap", "(Ljava/util/List;Z)Ljava/util/Map;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAttachmentsMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/Map;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/Map<Ljava/lang/String;Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", false);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "fromListToMap", "(Ljava/util/List;Z)Ljava/util/Map;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMultipartBody", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "getAllAttachments", "()Ljava/util/List;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getFirstMatchingPart", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getFirstMatchingPart", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getFirstMatchingPart", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getFirstMatchingPart", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;Ljava/lang/String;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getFirstMatchingPart", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;Ljava/lang/String;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMatchingAttachments", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/List", "java/util/List"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/Attachment");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/Attachment"});
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMultipartBody", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("attachment-directory");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("attachment-memory-threshold");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("attachment-max-size");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "put", "(Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("org.apache.cxf.multipart.embedded");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitInsn(ICONST_1);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitLdcInsn("org.apache.cxf.jaxrs.attachments.inbound.embedded");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitLdcInsn("org.apache.cxf.jaxrs.attachments.inbound");
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ILOAD, 4);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("multipart.input.filters");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("multipart.input.filters");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/MessageContext", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/helpers/CastUtils", "cast", "(Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 8);
+Label label8 = new Label();
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/cxf/jaxrs/ext/MessageContext", "java/lang/String", "java/lang/String", "java/lang/String", Opcodes.INTEGER, "java/lang/String", "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "java/util/List", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/MultipartInputFilter");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "getAllAttachments", "()Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/MultipartInputFilter", "filter", "(Ljava/util/List;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getAttachments", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMultipartBody", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/MultipartBody", "getAllAttachments", "()Ljava/util/List;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMultipart", "(Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;Ljavax/ws/rs/core/MediaType;Ljava/util/List;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", "(Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;Ljavax/ws/rs/core/MediaType;Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;)Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;", new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/Attachment");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "matchAttachmentId", "(Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getContentType", "()Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "type", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "checkMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "required", "()Z", true);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/common/i18n/Message");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("MULTTIPART_ID_NOT_FOUND");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "BUNDLE", "Ljava/util/ResourceBundle;");
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/common/i18n/Message", "<init>", "(Ljava/lang/String;Ljava/util/ResourceBundle;[Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/i18n/Message", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/utils/multipart/MultipartReadException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "type", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/common/i18n/Message", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/utils/multipart/MultipartReadException", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toBadRequestException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/Attachment");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/Attachment"});
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(8, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMatchingAttachments", "(Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;Ljava/util/List;)Ljava/util/List;", "(Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;)Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "type", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMatchingAttachments", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMatchingAttachments", "(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;", "(Ljava/lang/String;Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;)Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMatchingAttachments", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getMatchingAttachments", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;)Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/LinkedList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedList", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/List", "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/Attachment");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "matchAttachmentId", "(Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;Ljava/lang/String;)Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getContentType", "()Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "checkMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/Attachment"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "matchAttachmentId", "(Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;Lorg/apache/cxf/jaxrs/ext/multipart/Multipart;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/jaxrs/ext/multipart/Multipart", "value", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "matchAttachmentId", "(Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;Ljava/lang/String;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "matchAttachmentId", "(Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "isEmpty", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getContentId", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getContentDisposition", "()Lorg/apache/cxf/jaxrs/ext/multipart/ContentDisposition;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("name");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/ContentDisposition", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitInsn(ICONST_1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/ContentDisposition"}, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "populateFormMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljavax/ws/rs/core/MultivaluedMap;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/impl/MetadataMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/impl/MetadataMap", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "getMultipartBody", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/phase/PhaseInterceptorChain", "getCurrentMessage", "()Lorg/apache/cxf/message/Message;", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/FormUtils", "populateMapFromMultipart", "(Ljavax/ws/rs/core/MultivaluedMap;Lorg/apache/cxf/jaxrs/ext/multipart/MultipartBody;Lorg/apache/cxf/message/Message;Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "populateFormMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljavax/ws/rs/core/MultivaluedMap;", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;)Ljavax/ws/rs/core/MultivaluedMap<Ljava/lang/String;Ljava/lang/String;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "populateFormMap", "(Lorg/apache/cxf/jaxrs/ext/MessageContext;Z)Ljavax/ws/rs/core/MultivaluedMap;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "fromListToMap", "(Ljava/util/List;Z)Ljava/util/Map;", "(Ljava/util/List<Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;Z)Ljava/util/Map<Ljava/lang/String;Lorg/apache/cxf/jaxrs/ext/multipart/Attachment;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/LinkedHashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedHashMap", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/Map", "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/cxf/jaxrs/ext/multipart/Attachment");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getContentDisposition", "()Lorg/apache/cxf/jaxrs/ext/multipart/ContentDisposition;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitLdcInsn("name");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/ContentDisposition", "getParameter", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/cxf/jaxrs/ext/multipart/Attachment", "java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/ext/multipart/Attachment", "getContentId", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "checkMediaTypes", "(Ljavax/ws/rs/core/MediaType;Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/JAXRSUtils", "toMediaType", "(Ljava/lang/String;)Ljavax/ws/rs/core/MediaType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/ws/rs/core/MediaType", "isCompatible", "(Ljavax/ws/rs/core/MediaType;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/jaxrs/utils/ExceptionUtils", "toNotSupportedException", "(Ljava/lang/Throwable;Ljavax/ws/rs/core/Response;)Ljavax/ws/rs/WebApplicationException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/jaxrs/utils/JAXRSUtils;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/logging/LogUtils", "getL7dLogger", "(Ljava/lang/Class;)Ljava/util/logging/Logger;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/jaxrs/utils/JAXRSUtils;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/i18n/BundleUtils", "getBundle", "(Ljava/lang/Class;)Ljava/util/ResourceBundle;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/jaxrs/utils/multipart/AttachmentUtils", "BUNDLE", "Ljava/util/ResourceBundle;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

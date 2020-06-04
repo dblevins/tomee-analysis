@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/DeleteAllQuery.class
+
+ - link:DeleteAllQuery-asmified.java[Asmified]
+
+== References
+

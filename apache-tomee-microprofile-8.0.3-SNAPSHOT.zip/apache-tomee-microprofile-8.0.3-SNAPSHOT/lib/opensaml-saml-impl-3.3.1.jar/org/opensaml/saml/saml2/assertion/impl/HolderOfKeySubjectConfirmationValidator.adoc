@@ -1,0 +1,9 @@
+= org/opensaml/saml/saml2/assertion/impl/HolderOfKeySubjectConfirmationValidator.class
+
+ - link:HolderOfKeySubjectConfirmationValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 16
+ - javax.annotation.Nullable - 4
+ - javax.annotation.concurrent.ThreadSafe - 1

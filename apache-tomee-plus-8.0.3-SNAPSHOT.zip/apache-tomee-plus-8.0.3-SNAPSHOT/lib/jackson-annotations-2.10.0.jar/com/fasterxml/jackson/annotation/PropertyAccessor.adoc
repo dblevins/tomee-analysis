@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/PropertyAccessor.class
+
+ - link:PropertyAccessor-asmified.java[Asmified]
+
+== References
+

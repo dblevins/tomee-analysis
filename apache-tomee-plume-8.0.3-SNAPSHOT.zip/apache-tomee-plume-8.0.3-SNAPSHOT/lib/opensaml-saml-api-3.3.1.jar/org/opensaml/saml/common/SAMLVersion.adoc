@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/SAMLVersion.class
+
+ - link:SAMLVersion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

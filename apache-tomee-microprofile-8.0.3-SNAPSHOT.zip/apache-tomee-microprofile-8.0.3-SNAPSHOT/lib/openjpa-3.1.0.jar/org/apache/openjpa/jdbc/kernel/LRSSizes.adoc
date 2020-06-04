@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/LRSSizes.class
+
+ - link:LRSSizes-asmified.java[Asmified]
+
+== References
+

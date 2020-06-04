@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JsonNaming.class
+
+ - link:JsonNaming-asmified.java[Asmified]
+
+== References
+

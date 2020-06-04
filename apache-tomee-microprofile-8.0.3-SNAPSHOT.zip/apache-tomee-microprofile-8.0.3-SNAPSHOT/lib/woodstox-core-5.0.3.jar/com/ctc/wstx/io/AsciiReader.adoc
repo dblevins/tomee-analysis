@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/AsciiReader.class
+
+ - link:AsciiReader-asmified.java[Asmified]
+
+== References
+

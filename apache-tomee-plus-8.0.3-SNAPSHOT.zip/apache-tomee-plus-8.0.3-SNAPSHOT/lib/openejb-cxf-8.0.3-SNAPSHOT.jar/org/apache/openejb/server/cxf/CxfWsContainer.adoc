@@ -1,0 +1,10 @@
+= org/apache/openejb/server/cxf/CxfWsContainer.class
+
+ - link:CxfWsContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.servlet.ServletConfig - 1
+ - javax.servlet.http.HttpServletResponse - 1

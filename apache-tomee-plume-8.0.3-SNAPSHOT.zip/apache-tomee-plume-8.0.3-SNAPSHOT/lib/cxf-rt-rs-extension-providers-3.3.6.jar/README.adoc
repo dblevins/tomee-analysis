@@ -1,0 +1,17 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/cxf-rt-rs-extension-providers-3.3.6.jar
+
+ - link:org/apache/cxf/jaxrs/provider/json/JSONProvider.adoc[org/apache/cxf/jaxrs/provider/json/JSONProvider.class] - 121
+ - link:org/apache/cxf/jaxrs/provider/jsrjsonp/JsrJsonpProvider.adoc[org/apache/cxf/jaxrs/provider/jsrjsonp/JsrJsonpProvider.class] - 90
+ - link:org/apache/cxf/jaxrs/provider/dom4j/DOM4JProvider.adoc[org/apache/cxf/jaxrs/provider/dom4j/DOM4JProvider.class] - 52
+ - link:org/apache/cxf/jaxrs/provider/atom/AtomPojoProvider.adoc[org/apache/cxf/jaxrs/provider/atom/AtomPojoProvider.class] - 51
+ - link:org/apache/cxf/jaxrs/provider/json/SimpleTypeJsonProvider.adoc[org/apache/cxf/jaxrs/provider/json/SimpleTypeJsonProvider.class] - 44
+ - link:org/apache/cxf/jaxrs/provider/json/JsonMapObjectProvider.adoc[org/apache/cxf/jaxrs/provider/json/JsonMapObjectProvider.class] - 26
+ - link:org/apache/cxf/jaxrs/provider/aegis/AegisElementProvider.adoc[org/apache/cxf/jaxrs/provider/aegis/AegisElementProvider.class] - 25
+ - link:org/apache/cxf/jaxrs/provider/atom/AbstractAtomProvider.adoc[org/apache/cxf/jaxrs/provider/atom/AbstractAtomProvider.class] - 24
+ - link:org/apache/cxf/jaxrs/provider/aegis/AbstractAegisProvider.adoc[org/apache/cxf/jaxrs/provider/aegis/AbstractAegisProvider.class] - 10
+ - link:org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor.adoc[org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor.class] - 10
+ - link:org/apache/cxf/jaxrs/provider/jsonp/JsonpJaxrsWriterInterceptor.adoc[org/apache/cxf/jaxrs/provider/jsonp/JsonpJaxrsWriterInterceptor.class] - 9
+ - link:org/apache/cxf/jaxrs/provider/atom/AtomEntryProvider.adoc[org/apache/cxf/jaxrs/provider/atom/AtomEntryProvider.class] - 5
+ - link:org/apache/cxf/jaxrs/provider/atom/AtomFeedProvider.adoc[org/apache/cxf/jaxrs/provider/atom/AtomFeedProvider.class] - 5
+ - link:org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor.adoc[org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor.class] - 3
+ - link:org/apache/cxf/jaxrs/provider/jsonp/JsonpInInterceptor.adoc[org/apache/cxf/jaxrs/provider/jsonp/JsonpInInterceptor.class] - 2

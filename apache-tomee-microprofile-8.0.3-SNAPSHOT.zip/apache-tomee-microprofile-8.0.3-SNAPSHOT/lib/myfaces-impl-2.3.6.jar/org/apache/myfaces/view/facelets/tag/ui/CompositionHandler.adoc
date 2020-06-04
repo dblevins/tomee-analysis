@@ -1,0 +1,17 @@
+= org/apache/myfaces/view/facelets/tag/ui/CompositionHandler.class
+
+ - link:CompositionHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 12
+ - javax.faces.component.UIComponent - 8
+ - javax.faces.view.facelets.FaceletHandler - 8
+ - javax.faces.view.facelets.TagAttribute - 7
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.faces.FacesException - 2
+ - javax.el.ValueExpression - 2
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.el.ELException - 2
+ - javax.faces.view.facelets.FaceletException - 2
+ - javax.faces.view.facelets.Tag - 1

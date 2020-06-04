@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/HttpUriMapper.class
+
+ - link:HttpUriMapper-asmified.java[Asmified]
+
+== References
+

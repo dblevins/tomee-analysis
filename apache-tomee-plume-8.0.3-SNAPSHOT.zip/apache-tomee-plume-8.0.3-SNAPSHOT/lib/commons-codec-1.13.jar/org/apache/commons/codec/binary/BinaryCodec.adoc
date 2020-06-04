@@ -1,0 +1,6 @@
+= org/apache/commons/codec/binary/BinaryCodec.class
+
+ - link:BinaryCodec-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser.class
+
+ - link:MappingParserImpl$SuppressConversionMappingParser-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonObject - 4
+ - javax.json.JsonValue - 3

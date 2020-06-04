@@ -1,0 +1,13 @@
+= org/apache/myfaces/shared/resource/ResourceImpl.class
+
+ - link:ResourceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 20
+ - javax.faces.application.Application - 6
+ - javax.faces.application.ProjectStage - 6
+ - javax.faces.application.Resource - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.ResourceHandler - 2

@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/blueprint/ConfigurerImpl$MatcherHolder.class
+
+ - link:ConfigurerImpl$MatcherHolder-asmified.java[Asmified]
+
+== References
+

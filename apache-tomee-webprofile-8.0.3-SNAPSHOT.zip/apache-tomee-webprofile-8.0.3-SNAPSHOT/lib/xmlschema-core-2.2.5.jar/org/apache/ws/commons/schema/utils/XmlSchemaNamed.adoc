@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/XmlSchemaNamed.class
+
+ - link:XmlSchemaNamed-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/JPAFacadeHelper.class
+
+ - link:JPAFacadeHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 7
+ - javax.persistence.EntityManagerFactory - 5

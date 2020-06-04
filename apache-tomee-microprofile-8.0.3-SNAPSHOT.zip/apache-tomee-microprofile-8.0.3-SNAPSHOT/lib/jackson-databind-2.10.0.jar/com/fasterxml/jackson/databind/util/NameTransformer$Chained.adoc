@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/NameTransformer$Chained.class
+
+ - link:NameTransformer$Chained-asmified.java[Asmified]
+
+== References
+

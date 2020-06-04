@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/EclipseLinkGrammarValidator$1.class
+
+ - link:EclipseLinkGrammarValidator$1-asmified.java[Asmified]
+
+== References
+

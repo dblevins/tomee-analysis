@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/creation/BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder.class
+
+ - link:BeanAttributesBuilder$AnnotatedMemberBeanAttributesBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.inject.spi.AnnotatedMember - 3
+ - javax.enterprise.inject.spi.Annotated - 2

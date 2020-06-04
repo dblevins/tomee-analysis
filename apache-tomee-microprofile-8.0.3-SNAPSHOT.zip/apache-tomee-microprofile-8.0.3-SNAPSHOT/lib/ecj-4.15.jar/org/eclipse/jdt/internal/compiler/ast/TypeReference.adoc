@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/TypeReference.class
+
+ - link:TypeReference-asmified.java[Asmified]
+
+== References
+

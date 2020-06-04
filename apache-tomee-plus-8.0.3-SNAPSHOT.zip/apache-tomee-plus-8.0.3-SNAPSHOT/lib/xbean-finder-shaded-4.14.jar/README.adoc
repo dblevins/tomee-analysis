@@ -1,0 +1,2 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/xbean-finder-shaded-4.14.jar
+

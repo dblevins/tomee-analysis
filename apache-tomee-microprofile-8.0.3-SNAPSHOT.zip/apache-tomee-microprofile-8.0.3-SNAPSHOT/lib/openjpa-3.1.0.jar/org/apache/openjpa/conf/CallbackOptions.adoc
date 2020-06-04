@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/CallbackOptions.class
+
+ - link:CallbackOptions-asmified.java[Asmified]
+
+== References
+

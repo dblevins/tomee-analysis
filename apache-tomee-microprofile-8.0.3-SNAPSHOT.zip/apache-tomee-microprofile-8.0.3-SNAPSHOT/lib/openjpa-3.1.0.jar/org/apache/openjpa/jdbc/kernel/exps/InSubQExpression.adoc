@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/InSubQExpression.class
+
+ - link:InSubQExpression-asmified.java[Asmified]
+
+== References
+

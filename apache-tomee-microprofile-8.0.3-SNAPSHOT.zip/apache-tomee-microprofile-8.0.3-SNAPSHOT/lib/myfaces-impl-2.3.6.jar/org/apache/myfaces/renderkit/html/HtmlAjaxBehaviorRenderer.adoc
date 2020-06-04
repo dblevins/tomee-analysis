@@ -1,0 +1,24 @@
+= org/apache/myfaces/renderkit/html/HtmlAjaxBehaviorRenderer.class
+
+ - link:HtmlAjaxBehaviorRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.ClientBehaviorContext - 38
+ - javax.faces.component.UIComponent - 35
+ - javax.faces.component.behavior.AjaxBehavior - 28
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.component.search.SearchExpressionContext - 11
+ - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 7
+ - javax.faces.component.behavior.ClientBehavior - 5
+ - javax.faces.event.AjaxBehaviorEvent - 4
+ - javax.faces.event.PhaseId - 4
+ - javax.faces.component.search.SearchExpressionHint - 3
+ - javax.faces.component.EditableValueHolder - 3
+ - javax.faces.component.ActionSource - 3
+ - javax.faces.render.ClientBehaviorRenderer - 2
+ - javax.faces.component.search.SearchExpressionHandler - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.event.FacesEvent - 1
+ - javax.faces.component.behavior.Behavior - 1

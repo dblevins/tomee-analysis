@@ -1,0 +1,6 @@
+= org/apache/cxf/policy/PolicyCalculator.class
+
+ - link:PolicyCalculator-asmified.java[Asmified]
+
+== References
+

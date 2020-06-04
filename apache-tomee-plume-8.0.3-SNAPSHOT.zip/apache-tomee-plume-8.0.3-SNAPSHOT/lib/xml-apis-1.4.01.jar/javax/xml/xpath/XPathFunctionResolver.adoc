@@ -1,0 +1,6 @@
+= javax/xml/xpath/XPathFunctionResolver.class
+
+ - link:XPathFunctionResolver-asmified.java[Asmified]
+
+== References
+

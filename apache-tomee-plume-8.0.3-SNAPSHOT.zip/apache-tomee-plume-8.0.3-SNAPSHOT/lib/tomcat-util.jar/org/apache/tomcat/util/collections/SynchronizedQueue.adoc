@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/collections/SynchronizedQueue.class
+
+ - link:SynchronizedQueue-asmified.java[Asmified]
+
+== References
+

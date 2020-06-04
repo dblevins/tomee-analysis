@@ -1,0 +1,10 @@
+= org/apache/openejb/config/typed/util/ServerContext.class
+
+ - link:ServerContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlTransient - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

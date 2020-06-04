@@ -1,0 +1,822 @@
+package asm.org.opensaml.saml.metadata.resolver.impl;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class HTTPMetadataResolverDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", null, "org/opensaml/saml/metadata/resolver/impl/AbstractReloadingMetadataResolver", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "log", "Lorg/slf4j/Logger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "httpClient", "Lorg/apache/http/client/HttpClient;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "metadataURI", "Ljava/net/URI;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cachedMetadataETag", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cachedMetadataLastModified", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_DEPRECATED, "credentialsProvider", "Lorg/apache/http/impl/client/BasicCredentialsProvider;", null, null);
+{
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_DEPRECATED, "tlsTrustEngine", "Lorg/opensaml/security/trust/TrustEngine;", "Lorg/opensaml/security/trust/TrustEngine<-Lorg/opensaml/security/x509/X509Credential;>;", null);
+{
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "httpClientSecurityParameters", "Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;", null, null);
+{
+annotationVisitor0 = fieldVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/http/client/HttpClient;Ljava/lang/String;)V", null, new String[] { "net/shibboleth/utilities/java/support/resolver/ResolverException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "<init>", "(Ljava/util/Timer;Lorg/apache/http/client/HttpClient;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/Timer;Lorg/apache/http/client/HttpClient;Ljava/lang/String;)V", null, new String[] { "net/shibboleth/utilities/java/support/resolver/ResolverException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/net/URISyntaxException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/saml/metadata/resolver/impl/AbstractReloadingMetadataResolver", "<init>", "(Ljava/util/Timer;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/slf4j/LoggerFactory", "getLogger", "(Ljava/lang/Class;)Lorg/slf4j/Logger;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitTypeInsn(NEW, "net/shibboleth/utilities/java/support/resolver/ResolverException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("HTTP client may not be null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/resolver/ResolverException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "java/util/Timer", "org/apache/http/client/HttpClient", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClient", "Lorg/apache/http/client/HttpClient;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/net/URI");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/net/URI", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitLabel(label1);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/net/URISyntaxException"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "net/shibboleth/utilities/java/support/resolver/ResolverException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Illegal URL syntax");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/resolver/ResolverException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadataURI", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toASCIIString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setTLSTrustEngine", "(Lorg/opensaml/security/trust/TrustEngine;)V", "(Lorg/opensaml/security/trust/TrustEngine<-Lorg/opensaml/security/x509/X509Credential;>;)V", null);
+methodVisitor.visitAnnotableParameterCount(1, true);
+{
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "tlsTrustEngine", "Lorg/opensaml/security/trust/TrustEngine;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setBasicCredentials", "(Lorg/apache/http/auth/UsernamePasswordCredentials;)V", null, null);
+methodVisitor.visitAnnotableParameterCount(1, true);
+{
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "setBasicCredentialsWithScope", "(Lorg/apache/http/auth/UsernamePasswordCredentials;Lorg/apache/http/auth/AuthScope;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_DEPRECATED, "setBasicCredentialsWithScope", "(Lorg/apache/http/auth/UsernamePasswordCredentials;Lorg/apache/http/auth/AuthScope;)V", null, null);
+methodVisitor.visitAnnotableParameterCount(2, true);
+{
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+{
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(1, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/component/ComponentSupport", "ifInitializedThrowUnmodifiabledComponentException", "(Lnet/shibboleth/utilities/java/support/component/InitializableComponent;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/component/ComponentSupport", "ifDestroyedThrowDestroyedComponentException", "(Lnet/shibboleth/utilities/java/support/component/DestructableComponent;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/http/auth/AuthScope");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "getHost", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "getPort", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/http/auth/AuthScope", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/http/auth/AuthScope"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/http/impl/client/BasicCredentialsProvider");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/http/impl/client/BasicCredentialsProvider", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/http/impl/client/BasicCredentialsProvider", "setCredentials", "(Lorg/apache/http/auth/AuthScope;Lorg/apache/http/auth/Credentials;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "credentialsProvider", "Lorg/apache/http/impl/client/BasicCredentialsProvider;");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Either username or password were null, disabling basic auth");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "credentialsProvider", "Lorg/apache/http/impl/client/BasicCredentialsProvider;");
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getHttpClientSecurityParameters", "()Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClientSecurityParameters", "Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setHttpClientSecurityParameters", "(Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;)V", null, null);
+methodVisitor.visitAnnotableParameterCount(1, true);
+{
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/component/ComponentSupport", "ifInitializedThrowUnmodifiabledComponentException", "(Lnet/shibboleth/utilities/java/support/component/InitializableComponent;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "net/shibboleth/utilities/java/support/component/ComponentSupport", "ifDestroyedThrowDestroyedComponentException", "(Lnet/shibboleth/utilities/java/support/component/DestructableComponent;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClientSecurityParameters", "Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doDestroy", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClient", "Lorg/apache/http/client/HttpClient;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "tlsTrustEngine", "Lorg/opensaml/security/trust/TrustEngine;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "credentialsProvider", "Lorg/apache/http/impl/client/BasicCredentialsProvider;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClientSecurityParameters", "Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataETag", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataLastModified", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/opensaml/saml/metadata/resolver/impl/AbstractReloadingMetadataResolver", "doDestroy", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMetadataIdentifier", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "fetchMetadata", "()[B", null, new String[] { "net/shibboleth/utilities/java/support/resolver/ResolverException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/io/IOException");
+Label label6 = new Label();
+Label label7 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label0, label7, "java/io/IOException");
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label8, label3, label7, "java/io/IOException");
+Label label9 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label0, label9, null);
+methodVisitor.visitTryCatchBlock(label8, label3, label9, null);
+Label label10 = new Label();
+Label label11 = new Label();
+Label label12 = new Label();
+methodVisitor.visitTryCatchBlock(label10, label11, label12, "java/io/IOException");
+methodVisitor.visitTryCatchBlock(label7, label10, label9, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "buildHttpGet", "()Lorg/apache/http/client/methods/HttpGet;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "buildHttpClientContext", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/client/protocol/HttpClientContext;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Attempting to fetch metadata document from '{}'");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClient", "Lorg/apache/http/client/HttpClient;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/client/HttpClient", "execute", "(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "getScheme", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/opensaml/security/httpclient/HttpClientSecuritySupport", "checkTLSCredentialEvaluated", "(Lorg/apache/http/client/protocol/HttpClientContext;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpResponse", "getStatusLine", "()Lorg/apache/http/StatusLine;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/StatusLine", "getStatusCode", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitIntInsn(SIPUSH, 304);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Metadata document from '{}' has not changed since last retrieval");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getMetadataURI", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/http/client/methods/CloseableHttpResponse");
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/http/client/methods/CloseableHttpResponse");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/client/methods/CloseableHttpResponse", "close", "()V", true);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "org/apache/http/client/methods/HttpGet", "org/apache/http/client/protocol/HttpClientContext", "org/apache/http/HttpResponse", Opcodes.INTEGER, "[B"}, 0, new Object[] {});
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label13);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Error closing HTTP response from {}");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;[Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitIntInsn(SIPUSH, 200);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label14);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Non-ok status code ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" returned from remote metadata source ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("{} ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitTypeInsn(NEW, "net/shibboleth/utilities/java/support/resolver/ResolverException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/resolver/ResolverException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "processConditionalRetrievalHeaders", "(Lorg/apache/http/HttpResponse;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getMetadataBytesFromResponse", "(Lorg/apache/http/HttpResponse;)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Successfully fetched {} bytes of metadata from {}");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getMetadataURI", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;[Ljava/lang/Object;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/http/client/methods/CloseableHttpResponse");
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/http/client/methods/CloseableHttpResponse");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/client/methods/CloseableHttpResponse", "close", "()V", true);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[B", "[B"}, 0, null);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label15);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Error closing HTTP response from {}");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;[Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "org/apache/http/client/methods/HttpGet", "org/apache/http/client/protocol/HttpClientContext", "org/apache/http/HttpResponse"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Error retrieving metadata from ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("{} ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitTypeInsn(NEW, "net/shibboleth/utilities/java/support/resolver/ResolverException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/resolver/ResolverException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/http/client/methods/CloseableHttpResponse");
+methodVisitor.visitJumpInsn(IFEQ, label11);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/http/client/methods/CloseableHttpResponse");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/client/methods/CloseableHttpResponse", "close", "()V", true);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "org/apache/http/client/methods/HttpGet", "org/apache/http/client/protocol/HttpClientContext", "org/apache/http/HttpResponse", Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable"}, 0, new Object[] {});
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label16);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Error closing HTTP response from {}");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;[Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(6, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_DEPRECATED, "checkTLSCredentialTrusted", "(Lorg/apache/http/client/protocol/HttpClientContext;)V", null, new String[] { "javax/net/ssl/SSLPeerUnverifiedException" });
+{
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljava/lang/Deprecated;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "metadataURI", "Ljava/net/URI;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "getScheme", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/opensaml/security/httpclient/HttpClientSecuritySupport", "checkTLSCredentialEvaluated", "(Lorg/apache/http/client/protocol/HttpClientContext;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildHttpGet", "()Lorg/apache/http/client/methods/HttpGet;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/http/client/methods/HttpGet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getMetadataURI", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/http/client/methods/HttpGet", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataETag", "Ljava/lang/String;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("If-None-Match");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataETag", "Ljava/lang/String;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/http/client/methods/HttpGet", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/http/client/methods/HttpGet"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataLastModified", "Ljava/lang/String;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("If-Modified-Since");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataLastModified", "Ljava/lang/String;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/http/client/methods/HttpGet", "setHeader", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_DEPRECATED, "buildHttpClientContext", "()Lorg/apache/http/client/protocol/HttpClientContext;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "buildHttpClientContext", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/client/protocol/HttpClientContext;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildHttpClientContext", "(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/client/protocol/HttpClientContext;", null, null);
+methodVisitor.visitAnnotableParameterCount(1, true);
+{
+annotationVisitor0 = methodVisitor.visitParameterAnnotation(0, "Ljavax/annotation/Nullable;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/http/client/protocol/HttpClientContext", "create", "()Lorg/apache/http/client/protocol/HttpClientContext;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "httpClientSecurityParameters", "Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/opensaml/security/httpclient/HttpClientSecuritySupport", "marshalSecurityParameters", "(Lorg/apache/http/client/protocol/HttpClientContext;Lorg/opensaml/security/httpclient/HttpClientSecurityParameters;Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "credentialsProvider", "Lorg/apache/http/impl/client/BasicCredentialsProvider;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "credentialsProvider", "Lorg/apache/http/impl/client/BasicCredentialsProvider;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/http/client/protocol/HttpClientContext", "setCredentialsProvider", "(Lorg/apache/http/client/CredentialsProvider;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/http/client/protocol/HttpClientContext"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "tlsTrustEngine", "Lorg/opensaml/security/trust/TrustEngine;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("opensaml.TrustEngine");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "tlsTrustEngine", "Lorg/opensaml/security/trust/TrustEngine;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/http/client/protocol/HttpClientContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/opensaml/security/httpclient/HttpClientSecuritySupport", "addDefaultTLSTrustEngineCriteria", "(Lorg/apache/http/client/protocol/HttpClientContext;Lorg/apache/http/client/methods/HttpUriRequest;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "processConditionalRetrievalHeaders", "(Lorg/apache/http/HttpResponse;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("ETag");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpResponse", "getFirstHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/Header", "getValue", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataETag", "Ljava/lang/String;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/http/Header"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("Last-Modified");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpResponse", "getFirstHeader", "(Ljava/lang/String;)Lorg/apache/http/Header;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/Header", "getValue", "()Ljava/lang/String;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "cachedMetadataLastModified", "Ljava/lang/String;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMetadataBytesFromResponse", "(Lorg/apache/http/HttpResponse;)[B", null, new String[] { "net/shibboleth/utilities/java/support/resolver/ResolverException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label3, null);
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label4, label3, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Attempting to extract metadata from response to request for metadata from '{}'");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getMetadataURI", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpResponse", "getEntity", "()Lorg/apache/http/HttpEntity;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpEntity", "getContent", "()Ljava/io/InputStream;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "inputstreamToByteArray", "(Ljava/io/InputStream;)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpResponse", "getEntity", "()Lorg/apache/http/HttpEntity;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/http/util/EntityUtils", "consumeQuietly", "(Lorg/apache/http/HttpEntity;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "log", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("{} Unable to read response");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/opensaml/saml/metadata/resolver/impl/HTTPMetadataResolver", "getLogPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "error", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitTypeInsn(NEW, "net/shibboleth/utilities/java/support/resolver/ResolverException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Unable to read response");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "net/shibboleth/utilities/java/support/resolver/ResolverException", "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/http/HttpResponse", "getEntity", "()Lorg/apache/http/HttpEntity;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/http/util/EntityUtils", "consumeQuietly", "(Lorg/apache/http/HttpEntity;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

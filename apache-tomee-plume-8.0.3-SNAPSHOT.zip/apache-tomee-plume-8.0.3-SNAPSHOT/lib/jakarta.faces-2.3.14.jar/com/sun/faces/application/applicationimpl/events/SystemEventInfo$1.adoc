@@ -1,0 +1,6 @@
+= com/sun/faces/application/applicationimpl/events/SystemEventInfo$1.class
+
+ - link:SystemEventInfo$1-asmified.java[Asmified]
+
+== References
+

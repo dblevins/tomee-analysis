@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/base/GeneratorBase.class
+
+ - link:GeneratorBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/calendar/BaseCalendar.class
+
+ - link:BaseCalendar-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/AppInfoBuilder$PersistenceProviderProperties.class
+
+ - link:AppInfoBuilder$PersistenceProviderProperties-asmified.java[Asmified]
+
+== References
+

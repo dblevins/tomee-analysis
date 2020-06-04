@@ -1,0 +1,6 @@
+= serp/bytecode/Deprecated.class
+
+ - link:Deprecated-asmified.java[Asmified]
+
+== References
+

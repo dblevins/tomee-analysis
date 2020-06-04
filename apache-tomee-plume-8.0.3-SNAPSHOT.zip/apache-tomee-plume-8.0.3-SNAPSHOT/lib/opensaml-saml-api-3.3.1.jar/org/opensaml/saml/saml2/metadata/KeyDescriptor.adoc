@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/KeyDescriptor.class
+
+ - link:KeyDescriptor-asmified.java[Asmified]
+
+== References
+

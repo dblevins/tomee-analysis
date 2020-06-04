@@ -1,0 +1,6 @@
+= org/apache/openejb/api/RemoteClient.class
+
+ - link:RemoteClient-asmified.java[Asmified]
+
+== References
+

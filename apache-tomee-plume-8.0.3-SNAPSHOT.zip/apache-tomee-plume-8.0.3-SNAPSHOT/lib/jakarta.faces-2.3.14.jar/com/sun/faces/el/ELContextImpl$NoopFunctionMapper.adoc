@@ -1,0 +1,7 @@
+= com/sun/faces/el/ELContextImpl$NoopFunctionMapper.class
+
+ - link:ELContextImpl$NoopFunctionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.FunctionMapper - 2

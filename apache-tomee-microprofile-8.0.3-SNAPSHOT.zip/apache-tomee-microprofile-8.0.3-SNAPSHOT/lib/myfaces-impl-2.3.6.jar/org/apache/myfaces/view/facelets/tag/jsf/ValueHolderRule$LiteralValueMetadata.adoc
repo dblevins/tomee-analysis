@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ValueHolderRule$LiteralValueMetadata.class
+
+ - link:ValueHolderRule$LiteralValueMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.component.ValueHolder - 2
+ - javax.faces.view.facelets.FaceletContext - 1

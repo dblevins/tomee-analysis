@@ -1,0 +1,304 @@
+package asm.org.eclipse.persistence.sdo.helper;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SchemaResolverWrapperDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "schemaResolver", "Lorg/eclipse/persistence/sdo/helper/SchemaResolver;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "systemIdList", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/String;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/sdo/helper/SchemaResolver;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "schemaResolver", "Lorg/eclipse/persistence/sdo/helper/SchemaResolver;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "systemIdList", "Ljava/util/List;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveSchema", "(Ljavax/xml/transform/Source;)Ljavax/xml/transform/Source;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/transform/stream/StreamSource");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/transform/stream/StreamSource");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/stream/StreamSource", "getInputStream", "()Ljava/io/InputStream;", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/stream/StreamSource", "getReader", "()Ljava/io/Reader;", false);
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/stream/StreamSource", "getPublicId", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/stream/StreamSource", "getSystemId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "resolveSchema", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/transform/Source"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/transform/sax/SAXSource");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/transform/sax/SAXSource");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/sax/SAXSource", "getInputSource", "()Lorg/xml/sax/InputSource;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/sax/SAXSource", "getSystemId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "resolveSchema", "(Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/xml/transform/sax/SAXSource", "org/xml/sax/InputSource"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/xml/sax/InputSource", "getByteStream", "()Ljava/io/InputStream;", false);
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/xml/sax/InputSource", "getCharacterStream", "()Ljava/io/Reader;", false);
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/xml/sax/InputSource", "getPublicId", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/xml/sax/InputSource", "getSystemId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "resolveSchema", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/transform/dom/DOMSource");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/transform/dom/DOMSource");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/dom/DOMSource", "getNode", "()Lorg/w3c/dom/Node;", false);
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/transform/dom/DOMSource", "getSystemId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "resolveSchema", "(Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/transform/Source", "getSystemId", "()Ljava/lang/String;", true);
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/transform/Source", "getSystemId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "resolveSchema", "(Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveSchema", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/transform/Source", "getSystemId", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "addSchemaToList", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "schemaResolver", "Lorg/eclipse/persistence/sdo/helper/SchemaResolver;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/sdo/helper/SchemaResolver", "resolveSchema", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/transform/Source", "getSystemId", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "shouldProcessSchema", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/xml/transform/Source"}, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveSchema", "(Ljava/lang/String;)Ljavax/xml/transform/Source;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "resolveSchema", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "resolveSchema", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "addSchemaToList", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "schemaResolver", "Lorg/eclipse/persistence/sdo/helper/SchemaResolver;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/sdo/helper/SchemaResolver", "resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/sax/SAXSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/transform/sax/SAXSource", "<init>", "(Lorg/xml/sax/InputSource;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/exceptions/SDOException", "errorResolvingSchema", "(Ljava/lang/Exception;)Lorg/eclipse/persistence/exceptions/SDOException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "shouldProcessSchema", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "addSchemaToList", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addSchemaToList", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "systemIdList", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "contains", "(Ljava/lang/Object;)Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "systemIdList", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchemaResolver", "()Lorg/eclipse/persistence/sdo/helper/SchemaResolver;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/sdo/helper/SchemaResolverWrapper", "schemaResolver", "Lorg/eclipse/persistence/sdo/helper/SchemaResolver;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/io/SerializedString.class
+
+ - link:SerializedString-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,19 @@
+= org/apache/myfaces/flow/cdi/FlowScopeBeanHolder.class
+
+ - link:FlowScopeBeanHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 28
+ - javax.faces.context.ExternalContext - 14
+ - javax.faces.lifecycle.ClientWindow - 14
+ - javax.faces.flow.FlowHandler - 7
+ - javax.faces.flow.Flow - 7
+ - javax.enterprise.inject.spi.BeanManager - 6
+ - javax.servlet.ServletContext - 5
+ - javax.faces.application.Application - 4
+ - javax.faces.context.ExceptionHandler - 3
+ - javax.enterprise.context.SessionScoped - 1
+ - javax.inject.Inject - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1

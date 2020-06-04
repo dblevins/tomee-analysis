@@ -1,0 +1,8 @@
+= javax/ejb/spi/HandleDelegate.class
+
+ - link:HandleDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 2
+ - javax.ejb.EJBObject - 2

@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/interfaces/ECPointEncoder.class
+
+ - link:ECPointEncoder-asmified.java[Asmified]
+
+== References
+

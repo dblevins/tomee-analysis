@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/OrderingMergedResultObjectProvider$OrderingComparator.class
+
+ - link:OrderingMergedResultObjectProvider$OrderingComparator-asmified.java[Asmified]
+
+== References
+

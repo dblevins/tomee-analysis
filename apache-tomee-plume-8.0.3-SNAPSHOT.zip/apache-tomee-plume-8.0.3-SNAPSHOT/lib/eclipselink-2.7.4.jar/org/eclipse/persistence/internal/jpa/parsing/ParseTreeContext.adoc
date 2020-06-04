@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ParseTreeContext.class
+
+ - link:ParseTreeContext-asmified.java[Asmified]
+
+== References
+

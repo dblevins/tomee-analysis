@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/impl/AbstractSecurityParametersResolver.class
+
+ - link:AbstractSecurityParametersResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 16
+ - javax.annotation.Nullable - 3

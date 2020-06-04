@@ -1,0 +1,20 @@
+= org/eclipse/persistence/internal/jpa/EntityManagerSetupImpl.class
+
+ - link:EntityManagerSetupImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 178
+ - javax.persistence.PersistenceException - 50
+ - javax.persistence.metamodel.Metamodel - 29
+ - javax.persistence.spi.PersistenceUnitTransactionType - 27
+ - javax.persistence.ValidationMode - 18
+ - javax.persistence.metamodel.ManagedType - 14
+ - javax.persistence.spi.ClassTransformer - 6
+ - javax.persistence.metamodel.Attribute - 3
+ - javax.persistence.SharedCacheMode - 3
+ - javax.persistence.metamodel.SingularAttribute - 1
+ - javax.persistence.metamodel.SetAttribute - 1
+ - javax.persistence.metamodel.CollectionAttribute - 1
+ - javax.persistence.metamodel.MapAttribute - 1
+ - javax.persistence.metamodel.ListAttribute - 1

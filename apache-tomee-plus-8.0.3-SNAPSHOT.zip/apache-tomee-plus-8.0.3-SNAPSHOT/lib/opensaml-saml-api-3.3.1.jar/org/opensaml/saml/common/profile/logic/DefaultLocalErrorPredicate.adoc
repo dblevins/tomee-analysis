@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/logic/DefaultLocalErrorPredicate.class
+
+ - link:DefaultLocalErrorPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 2

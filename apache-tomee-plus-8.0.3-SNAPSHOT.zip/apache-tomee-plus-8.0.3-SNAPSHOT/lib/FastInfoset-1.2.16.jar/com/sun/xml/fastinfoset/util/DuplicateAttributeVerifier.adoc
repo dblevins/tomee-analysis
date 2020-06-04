@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/DuplicateAttributeVerifier.class
+
+ - link:DuplicateAttributeVerifier-asmified.java[Asmified]
+
+== References
+

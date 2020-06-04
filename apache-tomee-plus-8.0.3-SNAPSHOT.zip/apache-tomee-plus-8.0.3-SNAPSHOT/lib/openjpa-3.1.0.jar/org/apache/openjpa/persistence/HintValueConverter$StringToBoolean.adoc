@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/HintValueConverter$StringToBoolean.class
+
+ - link:HintValueConverter$StringToBoolean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IModule$IPackageExport.class
+
+ - link:IModule$IPackageExport-asmified.java[Asmified]
+
+== References
+

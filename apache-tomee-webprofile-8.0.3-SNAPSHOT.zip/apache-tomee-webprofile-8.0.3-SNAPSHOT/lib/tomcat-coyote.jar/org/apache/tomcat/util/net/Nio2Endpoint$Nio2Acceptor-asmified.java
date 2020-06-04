@@ -1,0 +1,283 @@
+package asm.org.apache.tomcat.util.net;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class Nio2Endpoint$Nio2AcceptorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "Lorg/apache/tomcat/util/net/Acceptor<Ljava/nio/channels/AsynchronousSocketChannel;>;Ljava/nio/channels/CompletionHandler<Ljava/nio/channels/AsynchronousSocketChannel;Ljava/lang/Void;>;", "org/apache/tomcat/util/net/Acceptor", new String[] { "java/nio/channels/CompletionHandler" });
+
+classWriter.visitInnerClass("org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "org/apache/tomcat/util/net/Nio2Endpoint", "Nio2Acceptor", ACC_PROTECTED);
+
+classWriter.visitInnerClass("org/apache/tomcat/util/net/Acceptor$AcceptorState", "org/apache/tomcat/util/net/Acceptor", "AcceptorState", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "errorDelay", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/tomcat/util/net/Nio2Endpoint;Lorg/apache/tomcat/util/net/AbstractEndpoint;)V", "(Lorg/apache/tomcat/util/net/AbstractEndpoint<*Ljava/nio/channels/AsynchronousSocketChannel;>;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/net/Acceptor", "<init>", "(Lorg/apache/tomcat/util/net/AbstractEndpoint;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "errorDelay", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/InterruptedException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isPaused", "()Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "countUpOrAwaitConnection", "()V", false);
+methodVisitor.visitLabel(label1);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/InterruptedException"});
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isPaused", "()Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/net/Nio2Endpoint", "access$100", "(Lorg/apache/tomcat/util/net/Nio2Endpoint;)Ljava/nio/channels/AsynchronousServerSocketChannel;", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/nio/channels/AsynchronousServerSocketChannel", "accept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/Acceptor$AcceptorState", "PAUSED", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "state", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/Acceptor$AcceptorState", "PAUSED", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "state", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "completed", "(Ljava/nio/channels/AsynchronousSocketChannel;Ljava/lang/Void;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "errorDelay", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isRunning", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isPaused", "()Z", false);
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "getMaxConnections", "()I", false);
+methodVisitor.visitInsn(ICONST_M1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/net/Nio2Endpoint", "access$100", "(Lorg/apache/tomcat/util/net/Nio2Endpoint;)Ljava/nio/channels/AsynchronousServerSocketChannel;", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/nio/channels/AsynchronousServerSocketChannel", "accept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "getExecutor", "()Ljava/util/concurrent/Executor;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/Executor", "execute", "(Ljava/lang/Runnable;)V", true);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "setSocketOptions", "(Ljava/nio/channels/AsynchronousSocketChannel;)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "closeSocket", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isRunning", "()Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/Acceptor$AcceptorState", "PAUSED", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "state", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "destroySocket", "(Ljava/nio/channels/AsynchronousSocketChannel;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "failed", "(Ljava/lang/Throwable;Ljava/lang/Void;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isRunning", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "isPaused", "()Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "getMaxConnections", "()I", false);
+methodVisitor.visitInsn(ICONST_M1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/net/Nio2Endpoint", "access$100", "(Lorg/apache/tomcat/util/net/Nio2Endpoint;)Ljava/nio/channels/AsynchronousServerSocketChannel;", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/nio/channels/AsynchronousServerSocketChannel", "accept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "getExecutor", "()Ljava/util/concurrent/Executor;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/Executor", "execute", "(Ljava/lang/Runnable;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/Acceptor$AcceptorState", "PAUSED", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "state", "Lorg/apache/tomcat/util/net/Acceptor$AcceptorState;");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "countDownConnection", "()J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "errorDelay", "I");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "handleExceptionWithDelay", "(I)I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "errorDelay", "I");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/ExceptionUtils", "handleThrowable", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/net/Nio2Endpoint", "access$200", "()Lorg/apache/juli/logging/Log;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/net/AbstractEndpoint", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitLdcInsn("endpoint.accept.fail");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "this$0", "Lorg/apache/tomcat/util/net/Nio2Endpoint;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint", "countDownConnection", "()J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "failed", "(Ljava/lang/Throwable;Ljava/lang/Object;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Void");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "failed", "(Ljava/lang/Throwable;Ljava/lang/Void;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "completed", "(Ljava/lang/Object;Ljava/lang/Object;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/nio/channels/AsynchronousSocketChannel");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Void");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/net/Nio2Endpoint$Nio2Acceptor", "completed", "(Ljava/nio/channels/AsynchronousSocketChannel;Ljava/lang/Void;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

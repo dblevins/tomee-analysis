@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/AutoConnectionTracker$ConnectionInvocationHandler.class
+
+ - link:AutoConnectionTracker$ConnectionInvocationHandler-asmified.java[Asmified]
+
+== References
+

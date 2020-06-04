@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/pool/ViewPoolFactory.class
+
+ - link:ViewPoolFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 1
+ - javax.faces.context.FacesContext - 1
+ - javax.faces.FacesWrapper - 1

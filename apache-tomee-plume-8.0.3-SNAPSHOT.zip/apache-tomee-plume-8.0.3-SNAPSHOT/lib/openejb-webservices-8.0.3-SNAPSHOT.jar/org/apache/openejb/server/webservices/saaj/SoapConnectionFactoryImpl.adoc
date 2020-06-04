@@ -1,0 +1,9 @@
+= org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl.class
+
+ - link:SoapConnectionFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPConnectionFactory - 6
+ - javax.xml.soap.SOAPConnection - 2
+ - javax.xml.soap.SOAPException - 2

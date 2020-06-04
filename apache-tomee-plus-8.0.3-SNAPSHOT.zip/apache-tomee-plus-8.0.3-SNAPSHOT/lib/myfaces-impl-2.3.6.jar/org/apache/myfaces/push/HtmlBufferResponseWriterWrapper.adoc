@@ -1,0 +1,7 @@
+= org/apache/myfaces/push/HtmlBufferResponseWriterWrapper.class
+
+ - link:HtmlBufferResponseWriterWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 13

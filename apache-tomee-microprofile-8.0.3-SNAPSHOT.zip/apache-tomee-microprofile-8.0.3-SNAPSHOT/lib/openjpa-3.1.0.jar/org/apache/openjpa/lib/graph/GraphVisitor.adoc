@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/graph/GraphVisitor.class
+
+ - link:GraphVisitor-asmified.java[Asmified]
+
+== References
+

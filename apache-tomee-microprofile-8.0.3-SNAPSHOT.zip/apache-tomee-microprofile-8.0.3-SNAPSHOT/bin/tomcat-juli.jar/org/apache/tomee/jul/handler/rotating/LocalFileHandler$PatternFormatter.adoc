@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter.class
+
+ - link:LocalFileHandler$PatternFormatter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/management/counters/MessageHandlingTimeRecorder.class
+
+ - link:MessageHandlingTimeRecorder-asmified.java[Asmified]
+
+== References
+

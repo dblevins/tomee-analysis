@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/rfc8032/Ed25519$PointPrecomp.class
+
+ - link:Ed25519$PointPrecomp-asmified.java[Asmified]
+
+== References
+

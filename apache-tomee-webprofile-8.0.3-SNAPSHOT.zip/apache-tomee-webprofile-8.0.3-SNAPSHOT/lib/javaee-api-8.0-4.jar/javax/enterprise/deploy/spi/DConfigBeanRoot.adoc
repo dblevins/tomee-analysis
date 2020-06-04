@@ -1,0 +1,8 @@
+= javax/enterprise/deploy/spi/DConfigBeanRoot.class
+
+ - link:DConfigBeanRoot-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.DConfigBean - 2
+ - javax.enterprise.deploy.model.DDBeanRoot - 1

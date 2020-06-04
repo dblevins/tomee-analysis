@@ -1,0 +1,6 @@
+= org/jose4j/jws/EcdsaUsingShaAlgorithm$EcdsaP521UsingSha512.class
+
+ - link:EcdsaUsingShaAlgorithm$EcdsaP521UsingSha512-asmified.java[Asmified]
+
+== References
+

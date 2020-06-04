@@ -1,0 +1,8 @@
+= org/apache/tomcat/util/http/CookieProcessor.class
+
+ - link:CookieProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 3
+ - javax.servlet.http.HttpServletRequest - 1

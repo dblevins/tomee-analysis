@@ -1,0 +1,7 @@
+= javax/servlet/annotation/WebServlet.class
+
+ - link:WebServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.annotation.WebInitParam - 1

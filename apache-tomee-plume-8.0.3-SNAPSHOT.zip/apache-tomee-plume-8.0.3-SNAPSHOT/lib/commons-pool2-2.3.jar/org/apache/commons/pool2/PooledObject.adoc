@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/PooledObject.class
+
+ - link:PooledObject-asmified.java[Asmified]
+
+== References
+

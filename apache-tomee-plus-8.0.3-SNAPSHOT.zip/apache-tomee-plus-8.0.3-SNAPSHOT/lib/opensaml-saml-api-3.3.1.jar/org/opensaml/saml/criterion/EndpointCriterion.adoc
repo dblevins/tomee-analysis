@@ -1,0 +1,7 @@
+= org/opensaml/saml/criterion/EndpointCriterion.class
+
+ - link:EndpointCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedJDBCConfigurationImpl$ReplicatedTypeRepository.class
+
+ - link:DistributedJDBCConfigurationImpl$ReplicatedTypeRepository-asmified.java[Asmified]
+
+== References
+

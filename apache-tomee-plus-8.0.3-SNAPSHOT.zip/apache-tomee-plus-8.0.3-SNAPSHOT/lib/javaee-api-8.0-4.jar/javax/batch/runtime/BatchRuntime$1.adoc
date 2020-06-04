@@ -1,0 +1,9 @@
+= javax/batch/runtime/BatchRuntime$1.class
+
+ - link:BatchRuntime$1-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.operations.JobOperator - 4
+ - javax.batch.runtime.BatchRuntime - 1
+ - javax.batch.runtime.BatchRuntime$1 - 1

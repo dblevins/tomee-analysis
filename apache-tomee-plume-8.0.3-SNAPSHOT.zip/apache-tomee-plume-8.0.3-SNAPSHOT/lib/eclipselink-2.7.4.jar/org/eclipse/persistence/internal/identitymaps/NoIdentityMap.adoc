@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/NoIdentityMap.class
+
+ - link:NoIdentityMap-asmified.java[Asmified]
+
+== References
+

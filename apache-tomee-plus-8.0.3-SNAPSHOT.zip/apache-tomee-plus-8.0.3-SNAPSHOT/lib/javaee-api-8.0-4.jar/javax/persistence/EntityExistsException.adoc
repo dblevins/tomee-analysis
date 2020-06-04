@@ -1,0 +1,7 @@
+= javax/persistence/EntityExistsException.class
+
+ - link:EntityExistsException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 5

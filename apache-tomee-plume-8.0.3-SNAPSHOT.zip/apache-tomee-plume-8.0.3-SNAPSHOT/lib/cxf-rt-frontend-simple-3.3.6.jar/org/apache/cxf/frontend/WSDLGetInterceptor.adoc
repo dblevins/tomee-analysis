@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/WSDLGetInterceptor.class
+
+ - link:WSDLGetInterceptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowOutputBase.class
+
+ - link:RowOutputBase-asmified.java[Asmified]
+
+== References
+

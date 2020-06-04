@@ -1,0 +1,10 @@
+= org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory.class
+
+ - link:CdiJohnzonAdapterFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 16
+ - javax.enterprise.context.spi.CreationalContext - 6
+ - javax.enterprise.inject.spi.Bean - 6
+ - javax.enterprise.context.spi.Contextual - 1

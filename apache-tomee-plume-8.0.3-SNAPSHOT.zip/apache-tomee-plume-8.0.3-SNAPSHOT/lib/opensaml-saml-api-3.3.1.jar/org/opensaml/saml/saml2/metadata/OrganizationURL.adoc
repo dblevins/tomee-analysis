@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/OrganizationURL.class
+
+ - link:OrganizationURL-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/EmbedFieldStrategy$EmbeddedRowManager.class
+
+ - link:EmbedFieldStrategy$EmbeddedRowManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$6.class
+
+ - link:POJOPropertyBuilder$6-asmified.java[Asmified]
+
+== References
+

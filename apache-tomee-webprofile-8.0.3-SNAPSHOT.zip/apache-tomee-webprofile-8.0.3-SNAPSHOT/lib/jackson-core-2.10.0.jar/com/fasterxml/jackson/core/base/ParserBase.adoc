@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/base/ParserBase.class
+
+ - link:ParserBase-asmified.java[Asmified]
+
+== References
+

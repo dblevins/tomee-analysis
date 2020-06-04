@@ -1,0 +1,10 @@
+= WEB-INF/classes/mypackage/Hello.class
+
+ - link:Hello-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.servlet.http.HttpServlet - 2
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.servlet.ServletException - 1

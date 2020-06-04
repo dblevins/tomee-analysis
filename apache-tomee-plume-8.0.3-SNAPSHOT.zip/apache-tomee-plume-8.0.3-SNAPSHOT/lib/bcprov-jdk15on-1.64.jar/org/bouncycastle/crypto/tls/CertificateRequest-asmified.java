@@ -1,0 +1,285 @@
+package asm.org.bouncycastle.crypto.tls;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class CertificateRequestDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_DEPRECATED, "org/bouncycastle/crypto/tls/CertificateRequest", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "certificateTypes", "[S", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "supportedSignatureAlgorithms", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "certificateAuthorities", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "([SLjava/util/Vector;Ljava/util/Vector;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateTypes", "[S");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "supportedSignatureAlgorithms", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCertificateTypes", "()[S", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateTypes", "[S");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSupportedSignatureAlgorithms", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "supportedSignatureAlgorithms", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCertificateAuthorities", "()Ljava/util/Vector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "encode", "(Ljava/io/OutputStream;)V", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateTypes", "[S");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateTypes", "[S");
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "writeUint8", "(ILjava/io/OutputStream;)V", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateTypes", "[S");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "writeUint8ArrayWithUint8Length", "([SLjava/io/OutputStream;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "supportedSignatureAlgorithms", "Ljava/util/Vector;");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "supportedSignatureAlgorithms", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "encodeSupportedSignatureAlgorithms", "(Ljava/util/Vector;ZLjava/io/OutputStream;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "isEmpty", "()Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "writeUint16", "(ILjava/io/OutputStream;)V", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "size", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label7 = new Label();
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "size", "()I", false);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/CertificateRequest", "certificateAuthorities", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elementAt", "(I)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/asn1/x500/X500Name");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitLdcInsn("DER");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/asn1/x500/X500Name", "getEncoded", "(Ljava/lang/String;)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "checkUint16", "(I)V", false);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "writeUint16", "(ILjava/io/OutputStream;)V", false);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label9 = new Label();
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "size", "()I", false);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label6);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elementAt", "(I)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "[B");
+methodVisitor.visitTypeInsn(CHECKCAST, "[B");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "writeOpaque16", "([BLjava/io/OutputStream;)V", false);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "parse", "(Lorg/bouncycastle/crypto/tls/TlsContext;Ljava/io/InputStream;)Lorg/bouncycastle/crypto/tls/CertificateRequest;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "readUint8", "(Ljava/io/InputStream;)S", false);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(NEWARRAY, T_SHORT);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "readUint8", "(Ljava/io/InputStream;)S", false);
+methodVisitor.visitInsn(SASTORE);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "isTLSv12", "(Lorg/bouncycastle/crypto/tls/TlsContext;)Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "parseSupportedSignatureAlgorithms", "(ZLjava/io/InputStream;)Ljava/util/Vector;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "readOpaque16", "(Ljava/io/InputStream;)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitTypeInsn(NEW, "java/io/ByteArrayInputStream");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/ByteArrayInputStream", "<init>", "([B)V", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/ByteArrayInputStream", "available", "()I", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label4);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "readOpaque16", "(Ljava/io/InputStream;)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/tls/TlsUtils", "readDERObject", "([B)Lorg/bouncycastle/asn1/ASN1Primitive;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/asn1/x500/X500Name", "getInstance", "(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x500/X500Name;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/tls/CertificateRequest");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/tls/CertificateRequest", "<init>", "([SLjava/util/Vector;Ljava/util/Vector;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 10);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

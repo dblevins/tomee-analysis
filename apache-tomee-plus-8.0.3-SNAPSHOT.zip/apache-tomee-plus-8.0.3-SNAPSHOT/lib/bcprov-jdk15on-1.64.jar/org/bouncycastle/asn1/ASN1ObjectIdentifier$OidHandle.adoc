@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/ASN1ObjectIdentifier$OidHandle.class
+
+ - link:ASN1ObjectIdentifier$OidHandle-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/myfaces/context/PartialViewContextFactoryImpl.class
+
+ - link:PartialViewContextFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitContextFactory - 5
+ - javax.faces.context.PartialViewContextFactory - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.context.PartialViewContext - 1

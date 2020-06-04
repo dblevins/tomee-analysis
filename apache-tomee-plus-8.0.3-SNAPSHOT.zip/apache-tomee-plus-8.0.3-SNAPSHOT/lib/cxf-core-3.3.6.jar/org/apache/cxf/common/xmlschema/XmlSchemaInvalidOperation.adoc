@@ -1,0 +1,6 @@
+= org/apache/cxf/common/xmlschema/XmlSchemaInvalidOperation.class
+
+ - link:XmlSchemaInvalidOperation-asmified.java[Asmified]
+
+== References
+

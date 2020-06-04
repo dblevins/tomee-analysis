@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter.class
+
+ - link:WadlGenerator$ExternalSchemaWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 5
+ - javax.ws.rs.core.UriBuilder - 4

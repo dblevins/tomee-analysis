@@ -1,0 +1,6 @@
+= org/opensaml/xacml/profile/saml/impl/XACMLPolicyQueryTypeUnmarshaller.class
+
+ - link:XACMLPolicyQueryTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

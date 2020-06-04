@@ -1,0 +1,9 @@
+= org/apache/cxf/rs/security/oauth2/tokens/hawk/HawkAccessTokenValidatorClient.class
+
+ - link:HawkAccessTokenValidatorClient-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 9
+ - javax.ws.rs.core.UriInfo - 2
+ - javax.ws.rs.core.Request - 2

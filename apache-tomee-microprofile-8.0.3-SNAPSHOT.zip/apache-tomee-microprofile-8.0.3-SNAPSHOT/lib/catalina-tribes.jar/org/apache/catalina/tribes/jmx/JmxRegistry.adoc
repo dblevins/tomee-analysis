@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/jmx/JmxRegistry.class
+
+ - link:JmxRegistry-asmified.java[Asmified]
+
+== References
+

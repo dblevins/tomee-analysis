@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/resource/BaseResourceHandlerSupport.class
+
+ - link:BaseResourceHandlerSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 16
+ - javax.faces.context.ExternalContext - 10

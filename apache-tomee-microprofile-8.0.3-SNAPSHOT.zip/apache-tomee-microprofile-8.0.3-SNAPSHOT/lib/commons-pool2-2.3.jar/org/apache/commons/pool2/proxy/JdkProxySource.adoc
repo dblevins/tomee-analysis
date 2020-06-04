@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/proxy/JdkProxySource.class
+
+ - link:JdkProxySource-asmified.java[Asmified]
+
+== References
+

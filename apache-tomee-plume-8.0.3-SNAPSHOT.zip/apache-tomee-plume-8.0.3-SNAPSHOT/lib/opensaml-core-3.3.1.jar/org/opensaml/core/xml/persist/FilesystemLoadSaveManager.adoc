@@ -1,0 +1,9 @@
+= org/opensaml/core/xml/persist/FilesystemLoadSaveManager.class
+
+ - link:FilesystemLoadSaveManager-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 2
+ - javax.annotation.concurrent.NotThreadSafe - 1

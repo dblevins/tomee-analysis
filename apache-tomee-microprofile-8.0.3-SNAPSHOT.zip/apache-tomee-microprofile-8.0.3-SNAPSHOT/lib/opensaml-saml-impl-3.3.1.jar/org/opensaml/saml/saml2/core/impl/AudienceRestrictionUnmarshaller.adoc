@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AudienceRestrictionUnmarshaller.class
+
+ - link:AudienceRestrictionUnmarshaller-asmified.java[Asmified]
+
+== References
+

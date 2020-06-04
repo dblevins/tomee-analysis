@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/UnsupportedClassVersionException.class
+
+ - link:UnsupportedClassVersionException-asmified.java[Asmified]
+
+== References
+

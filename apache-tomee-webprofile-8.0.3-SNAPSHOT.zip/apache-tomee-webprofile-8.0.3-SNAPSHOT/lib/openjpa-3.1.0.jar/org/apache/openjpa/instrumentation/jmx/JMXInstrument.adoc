@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/jmx/JMXInstrument.class
+
+ - link:JMXInstrument-asmified.java[Asmified]
+
+== References
+

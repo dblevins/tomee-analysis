@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/ConfigFilesXmlValidationUtils$ValidatorLSResourceResolver.class
+
+ - link:ConfigFilesXmlValidationUtils$ValidatorLSResourceResolver-asmified.java[Asmified]
+
+== References
+

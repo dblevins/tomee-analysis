@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2EventWriterImpl.class
+
+ - link:Stax2EventWriterImpl-asmified.java[Asmified]
+
+== References
+

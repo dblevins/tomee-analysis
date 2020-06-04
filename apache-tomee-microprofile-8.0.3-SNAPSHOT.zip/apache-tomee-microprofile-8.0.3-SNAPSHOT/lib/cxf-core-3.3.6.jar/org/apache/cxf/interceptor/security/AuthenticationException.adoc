@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/AuthenticationException.class
+
+ - link:AuthenticationException-asmified.java[Asmified]
+
+== References
+

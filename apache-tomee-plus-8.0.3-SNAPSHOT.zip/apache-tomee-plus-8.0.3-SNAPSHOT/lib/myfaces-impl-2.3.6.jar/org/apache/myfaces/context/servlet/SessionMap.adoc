@@ -1,0 +1,8 @@
+= org/apache/myfaces/context/servlet/SessionMap.class
+
+ - link:SessionMap-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 13
+ - javax.servlet.http.HttpServletRequest - 7

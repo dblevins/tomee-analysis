@@ -1,0 +1,7 @@
+= com/sun/faces/context/RequestHeaderMap.class
+
+ - link:RequestHeaderMap-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 14

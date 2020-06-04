@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AudienceBuilder.class
+
+ - link:AudienceBuilder-asmified.java[Asmified]
+
+== References
+

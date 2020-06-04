@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/MetaDataFilter$Resource.class
+
+ - link:MetaDataFilter$Resource-asmified.java[Asmified]
+
+== References
+

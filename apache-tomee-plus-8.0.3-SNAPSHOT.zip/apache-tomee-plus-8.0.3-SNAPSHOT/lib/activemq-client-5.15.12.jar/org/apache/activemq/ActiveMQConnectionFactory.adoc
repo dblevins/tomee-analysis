@@ -1,0 +1,14 @@
+= org/apache/activemq/ActiveMQConnectionFactory.class
+
+ - link:ActiveMQConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 16
+ - javax.jms.ExceptionListener - 8
+ - javax.jms.Connection - 2
+ - javax.jms.TopicConnection - 2
+ - javax.jms.QueueConnection - 2
+ - javax.jms.TopicConnectionFactory - 1
+ - javax.jms.ConnectionFactory - 1
+ - javax.jms.QueueConnectionFactory - 1

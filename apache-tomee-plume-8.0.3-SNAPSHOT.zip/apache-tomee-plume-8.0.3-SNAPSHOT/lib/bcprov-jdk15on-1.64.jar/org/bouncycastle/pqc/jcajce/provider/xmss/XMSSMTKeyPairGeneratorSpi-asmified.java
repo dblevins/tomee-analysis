@@ -1,0 +1,282 @@
+package asm.org.bouncycastle.pqc.jcajce.provider.xmss;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class XMSSMTKeyPairGeneratorSpiDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", null, "java/security/KeyPairGenerator", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "engine", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "random", "Ljava/security/SecureRandom;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "initialised", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("XMSSMT");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/KeyPairGenerator", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "engine", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/CryptoServicesRegistrar", "getSecureRandom", "()Ljava/security/SecureRandom;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "random", "Ljava/security/SecureRandom;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "initialised", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(ILjava/security/SecureRandom;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("use AlgorithmParameterSpec");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", null, new String[] { "java/security/InvalidAlgorithmParameterException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/security/InvalidAlgorithmParameterException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("parameter object not a XMSSMTParameterSpec");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/InvalidAlgorithmParameterException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getTreeDigest", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("SHA256");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/asn1/nist/NISTObjectIdentifiers", "id_sha256", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getHeight", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getLayers", "()I", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/digests/SHA256Digest");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/digests/SHA256Digest", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters", "<init>", "(IILorg/bouncycastle/crypto/Digest;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters", "<init>", "(Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTParameters;Ljava/security/SecureRandom;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getTreeDigest", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("SHA512");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/asn1/nist/NISTObjectIdentifiers", "id_sha512", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getHeight", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getLayers", "()I", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/digests/SHA512Digest");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/digests/SHA512Digest", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters", "<init>", "(IILorg/bouncycastle/crypto/Digest;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters", "<init>", "(Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTParameters;Ljava/security/SecureRandom;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getTreeDigest", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("SHAKE128");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/asn1/nist/NISTObjectIdentifiers", "id_shake128", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getHeight", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getLayers", "()I", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/digests/SHAKEDigest");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(SIPUSH, 128);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/digests/SHAKEDigest", "<init>", "(I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters", "<init>", "(IILorg/bouncycastle/crypto/Digest;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters", "<init>", "(Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTParameters;Ljava/security/SecureRandom;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getTreeDigest", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("SHAKE256");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/asn1/nist/NISTObjectIdentifiers", "id_shake256", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getHeight", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec", "getLayers", "()I", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/digests/SHAKEDigest");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(SIPUSH, 256);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/digests/SHAKEDigest", "<init>", "(I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters", "<init>", "(IILorg/bouncycastle/crypto/Digest;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters", "<init>", "(Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTParameters;Ljava/security/SecureRandom;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "engine", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator", "init", "(Lorg/bouncycastle/crypto/KeyGenerationParameters;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "initialised", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(10, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateKeyPair", "()Ljava/security/KeyPair;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "initialised", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitIntInsn(BIPUSH, 20);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/digests/SHA512Digest");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/digests/SHA512Digest", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTParameters", "<init>", "(IILorg/bouncycastle/crypto/Digest;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "random", "Ljava/security/SecureRandom;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters", "<init>", "(Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTParameters;Ljava/security/SecureRandom;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "engine", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "param", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyGenerationParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator", "init", "(Lorg/bouncycastle/crypto/KeyGenerationParameters;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "initialised", "Z");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "engine", "Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/xmss/XMSSMTKeyPairGenerator", "generateKeyPair", "()Lorg/bouncycastle/crypto/AsymmetricCipherKeyPair;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/AsymmetricCipherKeyPair", "getPublic", "()Lorg/bouncycastle/crypto/params/AsymmetricKeyParameter;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/crypto/xmss/XMSSMTPublicKeyParameters");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/AsymmetricCipherKeyPair", "getPrivate", "()Lorg/bouncycastle/crypto/params/AsymmetricKeyParameter;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/crypto/xmss/XMSSMTPrivateKeyParameters");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitTypeInsn(NEW, "java/security/KeyPair");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/jcajce/provider/xmss/BCXMSSMTPublicKey");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/jcajce/provider/xmss/BCXMSSMTPublicKey", "<init>", "(Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTPublicKeyParameters;)V", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/jcajce/provider/xmss/BCXMSSMTPrivateKey");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTKeyPairGeneratorSpi", "treeDigest", "Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/jcajce/provider/xmss/BCXMSSMTPrivateKey", "<init>", "(Lorg/bouncycastle/asn1/ASN1ObjectIdentifier;Lorg/bouncycastle/pqc/crypto/xmss/XMSSMTPrivateKeyParameters;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/KeyPair", "<init>", "(Ljava/security/PublicKey;Ljava/security/PrivateKey;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(9, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

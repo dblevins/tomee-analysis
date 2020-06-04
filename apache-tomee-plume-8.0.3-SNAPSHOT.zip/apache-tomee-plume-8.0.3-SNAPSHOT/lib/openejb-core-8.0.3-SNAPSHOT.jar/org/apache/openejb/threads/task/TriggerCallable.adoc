@@ -1,0 +1,7 @@
+= org/apache/openejb/threads/task/TriggerCallable.class
+
+ - link:TriggerCallable-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.Trigger - 2

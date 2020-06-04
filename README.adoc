@@ -1,0 +1,6 @@
+= Analysis
+
+ - link:apache-tomee-plus-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-plus-8.0.3-SNAPSHOT.zip] - 215104
+ - link:apache-tomee-plume-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-plume-8.0.3-SNAPSHOT.zip] - 209321
+ - link:apache-tomee-microprofile-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-microprofile-8.0.3-SNAPSHOT.zip] - 206996
+ - link:apache-tomee-webprofile-8.0.3-SNAPSHOT.zip/README.adoc[apache-tomee-webprofile-8.0.3-SNAPSHOT.zip] - 186545

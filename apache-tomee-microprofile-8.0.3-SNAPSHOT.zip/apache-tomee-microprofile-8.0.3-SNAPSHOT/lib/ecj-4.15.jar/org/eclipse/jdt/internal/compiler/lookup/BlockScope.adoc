@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/BlockScope.class
+
+ - link:BlockScope-asmified.java[Asmified]
+
+== References
+

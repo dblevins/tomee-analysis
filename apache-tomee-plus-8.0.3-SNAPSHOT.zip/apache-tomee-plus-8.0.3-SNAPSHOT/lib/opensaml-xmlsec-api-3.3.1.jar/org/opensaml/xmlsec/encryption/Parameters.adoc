@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/Parameters.class
+
+ - link:Parameters-asmified.java[Asmified]
+
+== References
+

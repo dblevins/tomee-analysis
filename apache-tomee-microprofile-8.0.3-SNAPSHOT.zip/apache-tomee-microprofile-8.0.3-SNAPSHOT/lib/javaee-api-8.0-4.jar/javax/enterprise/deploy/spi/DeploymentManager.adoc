@@ -1,0 +1,16 @@
+= javax/enterprise/deploy/spi/DeploymentManager.class
+
+ - link:DeploymentManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.TargetModuleID - 8
+ - javax.enterprise.deploy.spi.status.ProgressObject - 7
+ - javax.enterprise.deploy.spi.Target - 6
+ - javax.enterprise.deploy.shared.DConfigBeanVersionType - 3
+ - javax.enterprise.deploy.shared.ModuleType - 3
+ - javax.enterprise.deploy.spi.exceptions.TargetException - 3
+ - javax.enterprise.deploy.spi.exceptions.DConfigBeanVersionUnsupportedException - 1
+ - javax.enterprise.deploy.spi.DeploymentConfiguration - 1
+ - javax.enterprise.deploy.spi.exceptions.InvalidModuleException - 1
+ - javax.enterprise.deploy.model.DeployableObject - 1

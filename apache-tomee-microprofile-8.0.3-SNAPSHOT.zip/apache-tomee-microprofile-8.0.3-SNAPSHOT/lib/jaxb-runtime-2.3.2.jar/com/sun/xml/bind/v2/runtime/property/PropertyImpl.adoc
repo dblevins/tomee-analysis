@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/PropertyImpl.class
+
+ - link:PropertyImpl-asmified.java[Asmified]
+
+== References
+

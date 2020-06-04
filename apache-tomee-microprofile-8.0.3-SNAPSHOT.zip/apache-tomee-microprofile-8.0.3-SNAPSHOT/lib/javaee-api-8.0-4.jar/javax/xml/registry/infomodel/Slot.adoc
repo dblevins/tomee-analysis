@@ -1,0 +1,7 @@
+= javax/xml/registry/infomodel/Slot.class
+
+ - link:Slot-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 6

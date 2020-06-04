@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/valueextraction/OptionalExtractor.class
+
+ - link:OptionalExtractor-asmified.java[Asmified]
+
+== References
+

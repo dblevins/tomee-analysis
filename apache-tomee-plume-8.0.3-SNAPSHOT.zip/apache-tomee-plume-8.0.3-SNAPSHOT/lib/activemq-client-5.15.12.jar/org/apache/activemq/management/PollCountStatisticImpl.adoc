@@ -1,0 +1,7 @@
+= org/apache/activemq/management/PollCountStatisticImpl.class
+
+ - link:PollCountStatisticImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.CountStatistic - 1

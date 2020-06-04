@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/crypto/sphincs/Wots.class
+
+ - link:Wots-asmified.java[Asmified]
+
+== References
+

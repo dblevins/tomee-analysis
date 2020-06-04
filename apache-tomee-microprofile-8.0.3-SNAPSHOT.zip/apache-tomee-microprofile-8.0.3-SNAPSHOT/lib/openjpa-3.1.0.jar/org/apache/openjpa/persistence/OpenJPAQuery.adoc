@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/OpenJPAQuery.class
+
+ - link:OpenJPAQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TemporalType - 20
+ - javax.persistence.TypedQuery - 11
+ - javax.persistence.Query - 10
+ - javax.persistence.FlushModeType - 6

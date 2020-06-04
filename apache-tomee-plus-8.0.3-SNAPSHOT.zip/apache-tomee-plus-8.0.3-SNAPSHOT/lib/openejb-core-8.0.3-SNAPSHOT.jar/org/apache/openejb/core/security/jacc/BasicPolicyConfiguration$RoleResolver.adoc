@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/jacc/BasicPolicyConfiguration$RoleResolver.class
+
+ - link:BasicPolicyConfiguration$RoleResolver-asmified.java[Asmified]
+
+== References
+

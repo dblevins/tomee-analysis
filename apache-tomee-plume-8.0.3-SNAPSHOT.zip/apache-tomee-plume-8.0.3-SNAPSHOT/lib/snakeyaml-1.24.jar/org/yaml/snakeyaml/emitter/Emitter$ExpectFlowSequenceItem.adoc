@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/emitter/Emitter$ExpectFlowSequenceItem.class
+
+ - link:Emitter$ExpectFlowSequenceItem-asmified.java[Asmified]
+
+== References
+

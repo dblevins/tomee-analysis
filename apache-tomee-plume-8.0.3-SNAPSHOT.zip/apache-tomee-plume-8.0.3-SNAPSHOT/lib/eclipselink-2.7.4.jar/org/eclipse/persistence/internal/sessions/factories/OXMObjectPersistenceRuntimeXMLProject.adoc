@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/OXMObjectPersistenceRuntimeXMLProject.class
+
+ - link:OXMObjectPersistenceRuntimeXMLProject-asmified.java[Asmified]
+
+== References
+

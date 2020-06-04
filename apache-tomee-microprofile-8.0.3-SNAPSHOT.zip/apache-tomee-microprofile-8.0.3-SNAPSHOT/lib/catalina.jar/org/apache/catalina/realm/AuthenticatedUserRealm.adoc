@@ -1,0 +1,6 @@
+= org/apache/catalina/realm/AuthenticatedUserRealm.class
+
+ - link:AuthenticatedUserRealm-asmified.java[Asmified]
+
+== References
+

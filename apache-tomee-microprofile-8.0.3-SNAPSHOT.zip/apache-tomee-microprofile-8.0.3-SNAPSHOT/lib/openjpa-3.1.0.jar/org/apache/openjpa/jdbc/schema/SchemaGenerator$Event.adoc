@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaGenerator$Event.class
+
+ - link:SchemaGenerator$Event-asmified.java[Asmified]
+
+== References
+

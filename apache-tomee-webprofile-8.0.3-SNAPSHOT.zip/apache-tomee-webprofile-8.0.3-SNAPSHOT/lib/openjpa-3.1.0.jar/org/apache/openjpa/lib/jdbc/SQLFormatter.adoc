@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/SQLFormatter.class
+
+ - link:SQLFormatter-asmified.java[Asmified]
+
+== References
+

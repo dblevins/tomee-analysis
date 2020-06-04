@@ -1,0 +1,51 @@
+= org/apache/myfaces/config/FacesConfigurator.class
+
+ - link:FacesConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 89
+ - javax.faces.application.Application - 65
+ - javax.faces.context.FacesContext - 45
+ - javax.faces.application.NavigationHandler - 25
+ - javax.faces.event.ActionListener - 22
+ - javax.faces.application.StateManager - 22
+ - javax.faces.application.ResourceHandler - 22
+ - javax.el.ExpressionFactory - 20
+ - javax.el.ELContext - 20
+ - javax.el.ValueExpression - 14
+ - javax.el.ELResolver - 10
+ - javax.faces.FactoryFinder - 9
+ - javax.faces.event.SystemEventListener - 9
+ - javax.faces.render.RenderKit - 8
+ - javax.faces.render.RenderKitFactory - 7
+ - javax.faces.application.ViewHandler - 7
+ - javax.faces.flow.FlowHandler - 7
+ - javax.faces.lifecycle.LifecycleFactory - 7
+ - javax.el.MethodExpression - 6
+ - javax.faces.FacesWrapper - 6
+ - javax.faces.lifecycle.Lifecycle - 5
+ - javax.faces.component.search.SearchExpressionHandler - 4
+ - javax.faces.application.ApplicationFactory - 4
+ - javax.faces.event.PhaseListener - 4
+ - javax.faces.flow.FlowHandlerFactory - 3
+ - javax.faces.component.search.SearchKeywordResolver - 3
+ - javax.faces.flow.Parameter - 3
+ - javax.faces.el.PropertyResolver - 3
+ - javax.faces.el.VariableResolver - 3
+ - javax.faces.render.Renderer - 3
+ - javax.faces.application.ConfigurableNavigationHandler - 2
+ - javax.faces.render.ClientBehaviorRenderer - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.flow.ViewNode - 1
+ - javax.faces.flow.SwitchCase - 1
+ - javax.faces.flow.FlowCallNode - 1
+ - javax.faces.event.SystemEvent - 1
+ - javax.faces.event.PostConstructApplicationEvent - 1
+ - javax.faces.flow.ReturnNode - 1
+ - javax.faces.flow.MethodCallNode - 1
+ - javax.faces.event.PreDestroyCustomScopeEvent - 1
+ - javax.faces.event.PreDestroyViewMapEvent - 1
+ - javax.faces.FacesException - 1
+ - javax.faces.flow.Flow - 1
+ - javax.faces.flow.SwitchNode - 1

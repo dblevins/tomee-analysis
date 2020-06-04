@@ -1,0 +1,200 @@
+package asm.org.bouncycastle.pqc.crypto.xmss;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class WOTSPlusOidDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_FINAL | ACC_SUPER, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", null, "java/lang/Object", new String[] { "org/bouncycastle/pqc/crypto/xmss/XMSSOid" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "oidLookupTable", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/String;Lorg/bouncycastle/pqc/crypto/xmss/WOTSPlusOid;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "oid", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "stringRepresentation", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "(ILjava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "oid", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "stringRepresentation", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "lookup", "(Ljava/lang/String;III)Lorg/bouncycastle/pqc/crypto/xmss/WOTSPlusOid;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("algorithmName == null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "oidLookupTable", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "createKey", "(Ljava/lang/String;III)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "createKey", "(Ljava/lang/String;III)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("algorithmName == null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("-");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("-");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("-");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getOid", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "oid", "I");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "stringRepresentation", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("SHA-256");
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitIntInsn(BIPUSH, 67);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "createKey", "(Ljava/lang/String;III)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn(new Integer(16777217));
+methodVisitor.visitLdcInsn("WOTSP_SHA2-256_W16");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "<init>", "(ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("SHA-512");
+methodVisitor.visitIntInsn(BIPUSH, 64);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitIntInsn(SIPUSH, 131);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "createKey", "(Ljava/lang/String;III)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn(new Integer(33554434));
+methodVisitor.visitLdcInsn("WOTSP_SHA2-512_W16");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "<init>", "(ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("SHAKE128");
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitIntInsn(BIPUSH, 67);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "createKey", "(Ljava/lang/String;III)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn(new Integer(50331651));
+methodVisitor.visitLdcInsn("WOTSP_SHAKE128_W16");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "<init>", "(ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("SHAKE256");
+methodVisitor.visitIntInsn(BIPUSH, 64);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitIntInsn(SIPUSH, 131);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "createKey", "(Ljava/lang/String;III)Ljava/lang/String;", false);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn(new Integer(67108868));
+methodVisitor.visitLdcInsn("WOTSP_SHAKE256_W16");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "<init>", "(ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableMap", "(Ljava/util/Map;)Ljava/util/Map;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/pqc/crypto/xmss/WOTSPlusOid", "oidLookupTable", "Ljava/util/Map;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

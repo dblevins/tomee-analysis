@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/service/factory/ParamReader.class
+
+ - link:ParamReader-asmified.java[Asmified]
+
+== References
+

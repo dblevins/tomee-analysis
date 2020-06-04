@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMDigestMethod.class
+
+ - link:DOMDigestMethod-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/LinkageErrorProtection.class
+
+ - link:LinkageErrorProtection-asmified.java[Asmified]
+
+== References
+

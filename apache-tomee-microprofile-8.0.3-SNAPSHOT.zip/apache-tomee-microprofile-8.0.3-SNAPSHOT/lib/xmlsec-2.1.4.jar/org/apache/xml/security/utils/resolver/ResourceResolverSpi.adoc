@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/resolver/ResourceResolverSpi.class
+
+ - link:ResourceResolverSpi-asmified.java[Asmified]
+
+== References
+

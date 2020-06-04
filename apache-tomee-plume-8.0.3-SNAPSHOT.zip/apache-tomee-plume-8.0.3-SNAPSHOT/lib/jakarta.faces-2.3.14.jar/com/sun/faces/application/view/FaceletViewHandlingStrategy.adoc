@@ -1,0 +1,48 @@
+= com/sun/faces/application/view/FaceletViewHandlingStrategy.class
+
+ - link:FaceletViewHandlingStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 218
+ - javax.faces.component.UIComponent - 120
+ - javax.faces.component.UIViewRoot - 59
+ - javax.faces.context.ExternalContext - 40
+ - javax.faces.context.ResponseWriter - 25
+ - javax.faces.view.AttachedObjectHandler - 18
+ - javax.faces.application.Application - 18
+ - javax.faces.FacesException - 16
+ - javax.faces.view.ViewDeclarationLanguage - 16
+ - javax.faces.application.ViewVisitOption - 15
+ - javax.faces.application.Resource - 15
+ - javax.faces.application.ViewHandler - 12
+ - javax.faces.view.AttachedObjectTarget - 11
+ - javax.faces.view.facelets.FaceletContext - 9
+ - javax.faces.view.ViewDeclarationLanguageFactory - 9
+ - javax.faces.view.facelets.Facelet - 9
+ - javax.el.VariableMapper - 9
+ - javax.faces.render.ResponseStateManager - 8
+ - javax.faces.component.UIPanel - 6
+ - javax.faces.view.BehaviorHolderAttachedObjectTarget - 5
+ - javax.faces.view.StateManagementStrategy - 4
+ - javax.servlet.http.HttpSession - 4
+ - javax.faces.context.Flash - 4
+ - javax.faces.view.BehaviorHolderAttachedObjectHandler - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.render.RenderKit - 3
+ - javax.faces.view.ViewMetadata - 3
+ - javax.faces.view.facelets.ResourceResolver - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.el.ValueExpression - 2
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.view.ActionSource2AttachedObjectTarget - 1
+ - javax.faces.view.ValueHolderAttachedObjectHandler - 1
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.application.StateManager - 1
+ - javax.faces.view.ValueHolderAttachedObjectTarget - 1
+ - javax.faces.view.EditableValueHolderAttachedObjectHandler - 1
+ - javax.faces.view.EditableValueHolderAttachedObjectTarget - 1
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.event.PostAddToViewEvent - 1
+ - javax.faces.component.ContextCallback - 1
+ - javax.faces.view.ActionSource2AttachedObjectHandler - 1

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/XMLOutputFactory2.class
+
+ - link:XMLOutputFactory2-asmified.java[Asmified]
+
+== References
+

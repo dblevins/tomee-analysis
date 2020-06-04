@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/PrimitiveArrayBuilder$Node.class
+
+ - link:PrimitiveArrayBuilder$Node-asmified.java[Asmified]
+
+== References
+

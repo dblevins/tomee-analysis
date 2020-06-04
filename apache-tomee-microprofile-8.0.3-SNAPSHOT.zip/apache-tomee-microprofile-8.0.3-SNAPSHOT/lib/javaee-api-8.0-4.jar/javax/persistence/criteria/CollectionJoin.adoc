@@ -1,0 +1,14 @@
+= javax/persistence/criteria/CollectionJoin.class
+
+ - link:CollectionJoin-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.CollectionJoin - 8
+ - javax.persistence.criteria.Predicate - 3
+ - javax.persistence.metamodel.CollectionAttribute - 3
+ - javax.persistence.criteria.Expression - 3
+ - javax.persistence.criteria.Join - 2
+ - javax.persistence.metamodel.PluralAttribute - 1
+ - javax.persistence.criteria.PluralJoin - 1
+ - javax.persistence.metamodel.Bindable - 1

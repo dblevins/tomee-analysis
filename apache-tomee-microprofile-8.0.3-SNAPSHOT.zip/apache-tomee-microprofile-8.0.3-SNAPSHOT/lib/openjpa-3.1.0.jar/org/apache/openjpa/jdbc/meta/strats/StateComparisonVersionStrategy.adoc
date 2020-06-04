@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/StateComparisonVersionStrategy.class
+
+ - link:StateComparisonVersionStrategy-asmified.java[Asmified]
+
+== References
+

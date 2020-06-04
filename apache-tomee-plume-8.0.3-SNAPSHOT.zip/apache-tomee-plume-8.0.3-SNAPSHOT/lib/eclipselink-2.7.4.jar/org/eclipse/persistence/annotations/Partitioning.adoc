@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Partitioning.class
+
+ - link:Partitioning-asmified.java[Asmified]
+
+== References
+

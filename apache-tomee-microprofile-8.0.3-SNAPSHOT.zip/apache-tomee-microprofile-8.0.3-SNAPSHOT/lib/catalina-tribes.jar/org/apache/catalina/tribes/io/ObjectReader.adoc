@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/io/ObjectReader.class
+
+ - link:ObjectReader-asmified.java[Asmified]
+
+== References
+

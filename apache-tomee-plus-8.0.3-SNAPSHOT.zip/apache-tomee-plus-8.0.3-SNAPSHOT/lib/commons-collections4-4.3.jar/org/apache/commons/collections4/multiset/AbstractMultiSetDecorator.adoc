@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multiset/AbstractMultiSetDecorator.class
+
+ - link:AbstractMultiSetDecorator-asmified.java[Asmified]
+
+== References
+

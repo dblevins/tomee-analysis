@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/IdentificationVariableDeclarationFactory.class
+
+ - link:IdentificationVariableDeclarationFactory-asmified.java[Asmified]
+
+== References
+

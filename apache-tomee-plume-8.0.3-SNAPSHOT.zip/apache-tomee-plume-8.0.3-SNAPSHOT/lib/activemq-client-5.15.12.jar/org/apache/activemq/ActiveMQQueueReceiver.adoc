@@ -1,0 +1,10 @@
+= org/apache/activemq/ActiveMQQueueReceiver.class
+
+ - link:ActiveMQQueueReceiver-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 2
+ - javax.jms.JMSException - 2
+ - javax.jms.QueueReceiver - 1
+ - javax.jms.MessageListener - 1

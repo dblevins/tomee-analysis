@@ -1,0 +1,8 @@
+= org/apache/openejb/core/cmp/CmpContainer$ContainerCmpCallback.class
+
+ - link:CmpContainer$ContainerCmpCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 14
+ - javax.ejb.RemoveException - 1

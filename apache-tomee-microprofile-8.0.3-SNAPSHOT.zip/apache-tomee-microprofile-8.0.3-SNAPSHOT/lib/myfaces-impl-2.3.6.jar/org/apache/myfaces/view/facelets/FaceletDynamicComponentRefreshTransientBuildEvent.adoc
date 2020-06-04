@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/FaceletDynamicComponentRefreshTransientBuildEvent.class
+
+ - link:FaceletDynamicComponentRefreshTransientBuildEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.event.ComponentSystemEvent - 2

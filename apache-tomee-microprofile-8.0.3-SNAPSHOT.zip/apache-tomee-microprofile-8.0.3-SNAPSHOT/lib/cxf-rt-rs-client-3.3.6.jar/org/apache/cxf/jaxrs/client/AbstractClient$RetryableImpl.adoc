@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/AbstractClient$RetryableImpl.class
+
+ - link:AbstractClient$RetryableImpl-asmified.java[Asmified]
+
+== References
+

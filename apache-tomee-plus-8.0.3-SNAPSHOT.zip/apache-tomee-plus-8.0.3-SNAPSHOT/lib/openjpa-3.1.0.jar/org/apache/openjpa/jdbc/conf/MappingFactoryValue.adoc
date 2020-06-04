@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/conf/MappingFactoryValue.class
+
+ - link:MappingFactoryValue-asmified.java[Asmified]
+
+== References
+

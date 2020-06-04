@@ -1,0 +1,6 @@
+= org/eclipse/persistence/expressions/ExpressionMath.class
+
+ - link:ExpressionMath-asmified.java[Asmified]
+
+== References
+

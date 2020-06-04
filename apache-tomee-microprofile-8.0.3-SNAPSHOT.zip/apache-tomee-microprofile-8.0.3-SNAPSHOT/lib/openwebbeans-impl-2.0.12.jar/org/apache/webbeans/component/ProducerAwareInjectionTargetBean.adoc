@@ -1,0 +1,10 @@
+= org/apache/webbeans/component/ProducerAwareInjectionTargetBean.class
+
+ - link:ProducerAwareInjectionTargetBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Producer - 5
+ - javax.enterprise.inject.spi.BeanAttributes - 3
+ - javax.enterprise.inject.spi.ProducerFactory - 3
+ - javax.enterprise.inject.spi.Bean - 1

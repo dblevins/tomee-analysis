@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/ApplicationComposers$3.class
+
+ - link:ApplicationComposers$3-asmified.java[Asmified]
+
+== References
+

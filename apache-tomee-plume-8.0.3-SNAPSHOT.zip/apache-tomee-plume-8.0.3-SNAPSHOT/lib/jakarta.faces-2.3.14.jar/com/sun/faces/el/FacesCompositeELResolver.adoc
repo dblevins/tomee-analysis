@@ -1,0 +1,8 @@
+= com/sun/faces/el/FacesCompositeELResolver.class
+
+ - link:FacesCompositeELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.CompositeELResolver - 2
+ - javax.el.ELResolver - 2

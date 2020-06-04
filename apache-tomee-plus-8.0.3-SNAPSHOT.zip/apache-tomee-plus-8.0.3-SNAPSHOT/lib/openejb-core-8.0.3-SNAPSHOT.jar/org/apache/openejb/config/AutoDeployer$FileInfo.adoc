@@ -1,0 +1,6 @@
+= org/apache/openejb/config/AutoDeployer$FileInfo.class
+
+ - link:AutoDeployer$FileInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/api/jmx/NotificationInfo.class
+
+ - link:NotificationInfo-asmified.java[Asmified]
+
+== References
+

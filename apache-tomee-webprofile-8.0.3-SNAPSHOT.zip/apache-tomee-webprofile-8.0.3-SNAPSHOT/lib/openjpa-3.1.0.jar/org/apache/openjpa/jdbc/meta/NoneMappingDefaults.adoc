@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/NoneMappingDefaults.class
+
+ - link:NoneMappingDefaults-asmified.java[Asmified]
+
+== References
+

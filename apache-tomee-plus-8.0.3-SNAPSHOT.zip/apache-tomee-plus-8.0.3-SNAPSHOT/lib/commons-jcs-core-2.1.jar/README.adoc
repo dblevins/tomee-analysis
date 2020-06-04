@@ -1,0 +1,6 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/commons-jcs-core-2.1.jar
+
+ - link:org/apache/commons/jcs/auxiliary/remote/server/RemoteCacheStartupServlet.adoc[org/apache/commons/jcs/auxiliary/remote/server/RemoteCacheStartupServlet.class] - 25
+ - link:org/apache/commons/jcs/auxiliary/remote/http/server/RemoteHttpCacheServlet.adoc[org/apache/commons/jcs/auxiliary/remote/http/server/RemoteHttpCacheServlet.class] - 23
+ - link:org/apache/commons/jcs/admin/servlet/JCSAdminServlet.adoc[org/apache/commons/jcs/admin/servlet/JCSAdminServlet.class] - 9
+ - link:org/apache/commons/jcs/utils/servlet/JCSServletContextListener.adoc[org/apache/commons/jcs/utils/servlet/JCSServletContextListener.class] - 3

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/EjbResolver$Scope.class
+
+ - link:EjbResolver$Scope-asmified.java[Asmified]
+
+== References
+

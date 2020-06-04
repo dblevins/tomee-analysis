@@ -1,0 +1,15 @@
+= org/apache/activemq/ra/ActiveMQResourceAdapter.class
+
+ - link:ActiveMQResourceAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 7
+ - javax.resource.spi.ActivationSpec - 7
+ - javax.resource.ResourceException - 6
+ - javax.resource.spi.BootstrapContext - 6
+ - javax.resource.NotSupportedException - 2
+ - javax.resource.spi.ResourceAdapter - 2
+ - javax.jms.JMSException - 2
+ - javax.jms.Connection - 1
+ - javax.resource.spi.ResourceAdapterInternalException - 1

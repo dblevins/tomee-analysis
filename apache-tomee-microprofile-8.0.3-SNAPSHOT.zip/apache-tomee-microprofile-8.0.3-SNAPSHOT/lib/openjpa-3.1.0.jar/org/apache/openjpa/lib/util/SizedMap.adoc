@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/SizedMap.class
+
+ - link:SizedMap-asmified.java[Asmified]
+
+== References
+

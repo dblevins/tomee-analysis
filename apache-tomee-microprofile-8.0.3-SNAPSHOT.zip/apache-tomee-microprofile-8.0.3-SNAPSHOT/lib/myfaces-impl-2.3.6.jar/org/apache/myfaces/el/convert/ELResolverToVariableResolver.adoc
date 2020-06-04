@@ -1,0 +1,13 @@
+= org/apache/myfaces/el/convert/ELResolverToVariableResolver.class
+
+ - link:ELResolverToVariableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 6
+ - javax.faces.el.EvaluationException - 5
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.el.VariableResolver - 2
+ - javax.el.ELException - 2
+ - javax.el.ELContext - 2
+ - javax.el.PropertyNotFoundException - 2

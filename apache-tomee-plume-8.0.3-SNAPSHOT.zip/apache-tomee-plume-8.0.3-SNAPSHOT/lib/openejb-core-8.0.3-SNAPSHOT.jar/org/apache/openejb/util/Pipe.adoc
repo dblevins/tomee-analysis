@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Pipe.class
+
+ - link:Pipe-asmified.java[Asmified]
+
+== References
+

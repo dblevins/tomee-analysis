@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/JDKValueInstantiators$ConstantValueInstantiator.class
+
+ - link:JDKValueInstantiators$ConstantValueInstantiator-asmified.java[Asmified]
+
+== References
+

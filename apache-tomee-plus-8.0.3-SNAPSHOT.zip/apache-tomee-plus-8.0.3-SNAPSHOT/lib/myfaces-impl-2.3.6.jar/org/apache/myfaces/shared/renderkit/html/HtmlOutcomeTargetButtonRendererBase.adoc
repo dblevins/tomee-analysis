@@ -1,0 +1,15 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlOutcomeTargetButtonRendererBase.class
+
+ - link:HtmlOutcomeTargetButtonRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 31
+ - javax.faces.component.UIComponent - 30
+ - javax.faces.context.FacesContext - 25
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.component.behavior.ClientBehaviorHolder - 5
+ - javax.faces.component.html.HtmlOutcomeTargetButton - 3
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.component.UIOutcomeTarget - 2

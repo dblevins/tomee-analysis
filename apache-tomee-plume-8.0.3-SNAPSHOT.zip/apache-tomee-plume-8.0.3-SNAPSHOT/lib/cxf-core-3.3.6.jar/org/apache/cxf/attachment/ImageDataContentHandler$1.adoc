@@ -1,0 +1,6 @@
+= org/apache/cxf/attachment/ImageDataContentHandler$1.class
+
+ - link:ImageDataContentHandler$1-asmified.java[Asmified]
+
+== References
+

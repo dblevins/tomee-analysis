@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/AbstractSAMLObject.class
+
+ - link:AbstractSAMLObject-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 5
+ - javax.annotation.Nonnull - 1

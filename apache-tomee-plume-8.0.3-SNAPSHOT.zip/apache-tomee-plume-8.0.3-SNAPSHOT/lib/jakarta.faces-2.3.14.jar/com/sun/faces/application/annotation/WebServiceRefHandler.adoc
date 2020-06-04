@@ -1,0 +1,8 @@
+= com/sun/faces/application/annotation/WebServiceRefHandler.class
+
+ - link:WebServiceRefHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceRef - 18
+ - javax.faces.context.FacesContext - 10

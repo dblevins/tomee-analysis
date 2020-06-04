@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/AbstractOutputProcessor.class
+
+ - link:AbstractOutputProcessor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/rest/client/package-info.class
+
+ - link:package-info-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/TomEEClassLoaderEnricher.class
+
+ - link:TomEEClassLoaderEnricher-asmified.java[Asmified]
+
+== References
+

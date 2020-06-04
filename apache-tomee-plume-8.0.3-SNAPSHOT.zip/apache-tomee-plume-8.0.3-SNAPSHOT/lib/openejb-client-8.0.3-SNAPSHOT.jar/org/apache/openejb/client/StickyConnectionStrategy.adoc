@@ -1,0 +1,6 @@
+= org/apache/openejb/client/StickyConnectionStrategy.class
+
+ - link:StickyConnectionStrategy-asmified.java[Asmified]
+
+== References
+

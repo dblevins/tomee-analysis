@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/PackageUtils.class
+
+ - link:PackageUtils-asmified.java[Asmified]
+
+== References
+

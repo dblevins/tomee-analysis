@@ -1,0 +1,8 @@
+= org/apache/webbeans/portable/events/generics/GProcessBeanAttributes.class
+
+ - link:GProcessBeanAttributes-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 2
+ - javax.enterprise.inject.spi.BeanAttributes - 2

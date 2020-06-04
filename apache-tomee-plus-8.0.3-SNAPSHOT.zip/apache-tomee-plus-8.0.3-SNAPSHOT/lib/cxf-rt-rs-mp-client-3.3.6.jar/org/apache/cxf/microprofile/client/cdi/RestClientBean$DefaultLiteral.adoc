@@ -1,0 +1,8 @@
+= org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral.class
+
+ - link:RestClientBean$DefaultLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/HMACRIPEMD160.class
+
+ - link:HMACRIPEMD160-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

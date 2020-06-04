@@ -1,0 +1,7 @@
+= org/apache/johnzon/core/JsonReaderImpl$1.class
+
+ - link:JsonReaderImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser$Event - 22

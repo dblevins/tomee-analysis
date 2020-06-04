@@ -1,0 +1,6 @@
+= org/apache/openejb/server/webservices/WsService.class
+
+ - link:WsService-asmified.java[Asmified]
+
+== References
+

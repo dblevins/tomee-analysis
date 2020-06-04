@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/jaas/SQLLoginModule.class
+
+ - link:SQLLoginModule-asmified.java[Asmified]
+
+== References
+

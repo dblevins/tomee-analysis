@@ -1,0 +1,7 @@
+= javax/faces/component/behavior/ClientBehaviorHint.class
+
+ - link:ClientBehaviorHint-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.ClientBehaviorHint - 16

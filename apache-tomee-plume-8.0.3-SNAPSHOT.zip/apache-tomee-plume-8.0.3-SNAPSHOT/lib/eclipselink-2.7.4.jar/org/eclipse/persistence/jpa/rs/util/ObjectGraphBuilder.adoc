@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/util/ObjectGraphBuilder.class
+
+ - link:ObjectGraphBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 6

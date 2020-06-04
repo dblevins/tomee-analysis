@@ -1,0 +1,11 @@
+= org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl.class
+
+ - link:MicroProfileClientProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 32
+ - javax.ws.rs.client.InvocationCallback - 12
+ - javax.ws.rs.core.Configuration - 7
+ - javax.ws.rs.core.Response - 5
+ - javax.ws.rs.core.MultivaluedHashMap - 2

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/graph/Graph.class
+
+ - link:Graph-asmified.java[Asmified]
+
+== References
+

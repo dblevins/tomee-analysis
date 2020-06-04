@@ -1,0 +1,7 @@
+= org/apache/webbeans/web/context/ServletRequestContext.class
+
+ - link:ServletRequestContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 7

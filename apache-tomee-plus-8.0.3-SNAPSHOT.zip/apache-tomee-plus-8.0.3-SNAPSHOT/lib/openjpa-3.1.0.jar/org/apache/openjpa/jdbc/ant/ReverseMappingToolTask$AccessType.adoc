@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/ant/ReverseMappingToolTask$AccessType.class
+
+ - link:ReverseMappingToolTask$AccessType-asmified.java[Asmified]
+
+== References
+

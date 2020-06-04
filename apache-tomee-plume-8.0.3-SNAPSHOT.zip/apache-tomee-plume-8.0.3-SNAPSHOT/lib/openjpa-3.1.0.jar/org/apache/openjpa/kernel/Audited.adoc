@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/Audited.class
+
+ - link:Audited-asmified.java[Asmified]
+
+== References
+

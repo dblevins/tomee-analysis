@@ -1,0 +1,13 @@
+= org/apache/batchee/container/impl/jobinstance/JobExecutionHelper.class
+
+ - link:JobExecutionHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.JobInstance - 19
+ - javax.batch.runtime.BatchStatus - 17
+ - javax.batch.operations.JobRestartException - 10
+ - javax.batch.operations.JobExecutionNotMostRecentException - 7
+ - javax.batch.operations.JobExecutionAlreadyCompleteException - 7
+ - javax.batch.operations.NoSuchJobExecutionException - 5
+ - javax.batch.operations.JobStartException - 3

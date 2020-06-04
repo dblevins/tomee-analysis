@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/converters/XMLRootConverter.class
+
+ - link:XMLRootConverter-asmified.java[Asmified]
+
+== References
+

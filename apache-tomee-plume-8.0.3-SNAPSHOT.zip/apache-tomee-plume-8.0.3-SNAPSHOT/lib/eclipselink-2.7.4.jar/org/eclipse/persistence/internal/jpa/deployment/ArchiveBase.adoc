@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/deployment/ArchiveBase.class
+
+ - link:ArchiveBase-asmified.java[Asmified]
+
+== References
+

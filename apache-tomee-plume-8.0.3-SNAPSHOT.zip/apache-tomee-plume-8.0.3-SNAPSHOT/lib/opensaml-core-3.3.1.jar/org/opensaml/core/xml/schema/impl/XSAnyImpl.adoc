@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/schema/impl/XSAnyImpl.class
+
+ - link:XSAnyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 5

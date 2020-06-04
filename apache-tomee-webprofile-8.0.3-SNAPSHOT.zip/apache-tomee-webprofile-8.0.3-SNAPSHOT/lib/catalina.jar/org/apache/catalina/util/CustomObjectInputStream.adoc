@@ -1,0 +1,6 @@
+= org/apache/catalina/util/CustomObjectInputStream.class
+
+ - link:CustomObjectInputStream-asmified.java[Asmified]
+
+== References
+

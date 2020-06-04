@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/TypeConverter.class
+
+ - link:TypeConverter-asmified.java[Asmified]
+
+== References
+

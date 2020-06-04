@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/transport/nntp/NNTPReply.class
+
+ - link:NNTPReply-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 6

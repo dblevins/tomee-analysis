@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/compiler/SAXCompiler$MetadataCompilationHandler.class
+
+ - link:SAXCompiler$MetadataCompilationHandler-asmified.java[Asmified]
+
+== References
+

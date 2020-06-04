@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/impl/GenericObjectPool.class
+
+ - link:GenericObjectPool-asmified.java[Asmified]
+
+== References
+

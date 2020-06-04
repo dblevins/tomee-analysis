@@ -1,0 +1,6 @@
+= org/slf4j/spi/LoggerFactoryBinder.class
+
+ - link:LoggerFactoryBinder-asmified.java[Asmified]
+
+== References
+

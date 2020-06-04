@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/Webservices$JAXB.class
+
+ - link:Webservices$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 10

@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPMailboxStatus.class
+
+ - link:IMAPMailboxStatus-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Flags - 8
+ - javax.mail.MessagingException - 7

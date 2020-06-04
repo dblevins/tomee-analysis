@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jpa/config/RuntimeFactory.class
+
+ - link:RuntimeFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 9
+ - javax.persistence.spi.ClassTransformer - 2
+ - javax.persistence.EntityManagerFactory - 2

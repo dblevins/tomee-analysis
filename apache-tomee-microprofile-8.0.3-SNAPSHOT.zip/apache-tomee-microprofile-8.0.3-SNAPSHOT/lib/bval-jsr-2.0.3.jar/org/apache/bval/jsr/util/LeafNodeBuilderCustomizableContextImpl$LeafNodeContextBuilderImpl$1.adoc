@@ -1,0 +1,8 @@
+= org/apache/bval/jsr/util/LeafNodeBuilderCustomizableContextImpl$LeafNodeContextBuilderImpl$1.class
+
+ - link:LeafNodeBuilderCustomizableContextImpl$LeafNodeContextBuilderImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 2
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderDefinedContext - 1

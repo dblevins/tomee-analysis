@@ -1,0 +1,10 @@
+= org/apache/webbeans/configurator/AnnotatedConstructorConfiguratorImpl.class
+
+ - link:AnnotatedConstructorConfiguratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.AnnotatedConstructorConfigurator - 4
+ - javax.enterprise.inject.spi.AnnotatedParameter - 4
+ - javax.enterprise.inject.spi.configurator.AnnotatedParameterConfigurator - 2
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 1

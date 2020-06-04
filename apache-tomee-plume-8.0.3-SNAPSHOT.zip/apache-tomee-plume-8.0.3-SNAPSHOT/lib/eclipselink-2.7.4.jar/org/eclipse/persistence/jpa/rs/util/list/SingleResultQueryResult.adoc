@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jpa/rs/util/list/SingleResultQueryResult.class
+
+ - link:SingleResultQueryResult-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1

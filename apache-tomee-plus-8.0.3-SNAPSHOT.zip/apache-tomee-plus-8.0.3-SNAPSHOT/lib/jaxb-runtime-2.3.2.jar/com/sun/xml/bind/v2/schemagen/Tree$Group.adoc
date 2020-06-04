@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/Tree$Group.class
+
+ - link:Tree$Group-asmified.java[Asmified]
+
+== References
+

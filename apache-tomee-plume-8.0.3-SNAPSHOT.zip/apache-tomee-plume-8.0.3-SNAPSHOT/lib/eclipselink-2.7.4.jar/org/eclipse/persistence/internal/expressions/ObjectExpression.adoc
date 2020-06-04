@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/ObjectExpression.class
+
+ - link:ObjectExpression-asmified.java[Asmified]
+
+== References
+

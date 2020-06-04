@@ -1,0 +1,12 @@
+= javax/faces/component/UISelectItems.class
+
+ - link:UISelectItems-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 4
+ - javax.faces.component.UISelectItems - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.component.UIComponentBase - 3
+ - javax.faces.component.UISelectItems$PropertyKeys - 2

@@ -1,0 +1,8 @@
+= org/apache/catalina/servlets/CGIServlet$CGIEnvironment.class
+
+ - link:CGIServlet$CGIEnvironment-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 38
+ - javax.servlet.ServletContext - 15

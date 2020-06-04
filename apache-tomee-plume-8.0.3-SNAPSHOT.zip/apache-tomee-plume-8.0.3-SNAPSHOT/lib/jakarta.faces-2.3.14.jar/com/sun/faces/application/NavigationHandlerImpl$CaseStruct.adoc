@@ -1,0 +1,9 @@
+= com/sun/faces/application/NavigationHandlerImpl$CaseStruct.class
+
+ - link:NavigationHandlerImpl$CaseStruct-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.Flow - 2
+ - javax.faces.flow.FlowCallNode - 1
+ - javax.faces.application.NavigationCase - 1

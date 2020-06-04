@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/SAMLObjectBuilder.class
+
+ - link:SAMLObjectBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

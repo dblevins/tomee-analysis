@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/WSDLManager.class
+
+ - link:WSDLManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/blueprint/Activator$1.class
+
+ - link:Activator$1-asmified.java[Asmified]
+
+== References
+

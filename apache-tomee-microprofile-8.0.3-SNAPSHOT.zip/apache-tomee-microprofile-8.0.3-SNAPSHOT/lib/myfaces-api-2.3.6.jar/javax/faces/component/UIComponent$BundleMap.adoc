@@ -1,0 +1,8 @@
+= javax/faces/component/UIComponent$BundleMap.class
+
+ - link:UIComponent$BundleMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent$BundleMap - 7
+ - javax.faces.component.UIComponent$BundleMap$1 - 2

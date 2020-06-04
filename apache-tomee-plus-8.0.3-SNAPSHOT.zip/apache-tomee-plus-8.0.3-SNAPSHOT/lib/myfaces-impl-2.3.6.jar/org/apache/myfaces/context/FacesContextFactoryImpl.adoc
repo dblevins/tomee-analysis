@@ -1,0 +1,18 @@
+= org/apache/myfaces/context/FacesContextFactoryImpl.class
+
+ - link:FacesContextFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.context.PartialViewContextFactory - 9
+ - javax.faces.application.ApplicationFactory - 9
+ - javax.faces.render.RenderKitFactory - 9
+ - javax.faces.context.ExternalContextFactory - 5
+ - javax.faces.FactoryFinder - 5
+ - javax.faces.context.ExceptionHandlerFactory - 5
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.context.ExceptionHandler - 2
+ - javax.faces.context.FacesContextFactory - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.lifecycle.Lifecycle - 1

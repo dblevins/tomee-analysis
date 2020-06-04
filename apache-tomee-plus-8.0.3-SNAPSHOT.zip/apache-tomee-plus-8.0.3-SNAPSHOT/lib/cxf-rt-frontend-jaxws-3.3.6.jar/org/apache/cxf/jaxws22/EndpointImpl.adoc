@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws22/EndpointImpl.class
+
+ - link:EndpointImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceFeature - 4

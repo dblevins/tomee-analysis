@@ -1,0 +1,7 @@
+= org/apache/catalina/manager/HTMLManagerServlet$5.class
+
+ - link:HTMLManagerServlet$5-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 2

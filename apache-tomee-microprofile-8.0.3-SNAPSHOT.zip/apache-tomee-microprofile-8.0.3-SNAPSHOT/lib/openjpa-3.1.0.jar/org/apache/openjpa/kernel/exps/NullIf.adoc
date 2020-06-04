@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/NullIf.class
+
+ - link:NullIf-asmified.java[Asmified]
+
+== References
+

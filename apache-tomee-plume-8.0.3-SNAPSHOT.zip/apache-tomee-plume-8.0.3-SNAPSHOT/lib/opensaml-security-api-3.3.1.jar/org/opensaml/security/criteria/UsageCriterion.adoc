@@ -1,0 +1,8 @@
+= org/opensaml/security/criteria/UsageCriterion.class
+
+ - link:UsageCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2
+ - javax.annotation.Nonnull - 1

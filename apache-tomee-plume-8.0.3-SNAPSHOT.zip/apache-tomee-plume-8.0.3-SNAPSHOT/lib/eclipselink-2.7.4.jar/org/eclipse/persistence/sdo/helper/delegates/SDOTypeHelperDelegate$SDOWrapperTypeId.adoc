@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/delegates/SDOTypeHelperDelegate$SDOWrapperTypeId.class
+
+ - link:SDOTypeHelperDelegate$SDOWrapperTypeId-asmified.java[Asmified]
+
+== References
+

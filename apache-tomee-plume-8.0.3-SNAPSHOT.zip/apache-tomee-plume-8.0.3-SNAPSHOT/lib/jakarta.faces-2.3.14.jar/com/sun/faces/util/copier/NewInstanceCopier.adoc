@@ -1,0 +1,6 @@
+= com/sun/faces/util/copier/NewInstanceCopier.class
+
+ - link:NewInstanceCopier-asmified.java[Asmified]
+
+== References
+

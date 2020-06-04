@@ -1,0 +1,7 @@
+= org/apache/commons/jcs/jcache/cdi/CacheKeyInvocationContextImpl.class
+
+ - link:CacheKeyInvocationContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 2

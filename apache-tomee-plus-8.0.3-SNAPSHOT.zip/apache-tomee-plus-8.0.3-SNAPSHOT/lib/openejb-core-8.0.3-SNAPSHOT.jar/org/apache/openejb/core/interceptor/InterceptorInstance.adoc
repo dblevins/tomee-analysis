@@ -1,0 +1,6 @@
+= org/apache/openejb/core/interceptor/InterceptorInstance.class
+
+ - link:InterceptorInstance-asmified.java[Asmified]
+
+== References
+

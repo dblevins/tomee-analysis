@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/InstanceVariableAttributeAccessor.class
+
+ - link:InstanceVariableAttributeAccessor-asmified.java[Asmified]
+
+== References
+

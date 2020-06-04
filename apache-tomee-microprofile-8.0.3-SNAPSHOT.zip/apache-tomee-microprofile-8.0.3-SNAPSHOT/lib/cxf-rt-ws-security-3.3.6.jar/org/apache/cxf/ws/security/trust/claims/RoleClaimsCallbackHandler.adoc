@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/claims/RoleClaimsCallbackHandler.class
+
+ - link:RoleClaimsCallbackHandler-asmified.java[Asmified]
+
+== References
+

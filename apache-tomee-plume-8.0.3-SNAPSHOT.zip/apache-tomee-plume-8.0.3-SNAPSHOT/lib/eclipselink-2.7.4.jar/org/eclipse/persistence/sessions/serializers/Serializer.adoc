@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/serializers/Serializer.class
+
+ - link:Serializer-asmified.java[Asmified]
+
+== References
+

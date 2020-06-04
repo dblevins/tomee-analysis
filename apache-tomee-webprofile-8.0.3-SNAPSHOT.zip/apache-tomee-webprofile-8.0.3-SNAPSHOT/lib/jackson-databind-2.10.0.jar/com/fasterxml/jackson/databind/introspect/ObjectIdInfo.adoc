@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/ObjectIdInfo.class
+
+ - link:ObjectIdInfo-asmified.java[Asmified]
+
+== References
+

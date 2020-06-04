@@ -1,0 +1,6 @@
+= com/sun/faces/taglib/html_basic/HtmlBasicValidator.class
+
+ - link:HtmlBasicValidator-asmified.java[Asmified]
+
+== References
+

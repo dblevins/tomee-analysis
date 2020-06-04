@@ -1,0 +1,9 @@
+= org/apache/batchee/container/jsl/JSLValidationEventHandler.class
+
+ - link:JSLValidationEventHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventLocator - 13
+ - javax.xml.bind.ValidationEvent - 11
+ - javax.xml.bind.ValidationEventHandler - 1

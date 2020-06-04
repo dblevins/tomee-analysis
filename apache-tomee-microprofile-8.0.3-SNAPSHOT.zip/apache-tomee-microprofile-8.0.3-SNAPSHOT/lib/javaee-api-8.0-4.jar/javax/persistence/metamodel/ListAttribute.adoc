@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/ListAttribute.class
+
+ - link:ListAttribute-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute - 1

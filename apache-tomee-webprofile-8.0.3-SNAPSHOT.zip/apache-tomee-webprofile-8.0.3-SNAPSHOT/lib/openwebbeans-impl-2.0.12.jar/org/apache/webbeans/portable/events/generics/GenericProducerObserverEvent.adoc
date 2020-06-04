@@ -1,0 +1,6 @@
+= org/apache/webbeans/portable/events/generics/GenericProducerObserverEvent.class
+
+ - link:GenericProducerObserverEvent-asmified.java[Asmified]
+
+== References
+

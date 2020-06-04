@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/JAXBElementConverter.class
+
+ - link:JAXBElementConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 8

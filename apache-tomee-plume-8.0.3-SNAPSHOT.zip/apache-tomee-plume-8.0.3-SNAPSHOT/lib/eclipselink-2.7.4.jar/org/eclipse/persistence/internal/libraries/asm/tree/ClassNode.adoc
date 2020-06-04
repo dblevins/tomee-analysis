@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/ClassNode.class
+
+ - link:ClassNode-asmified.java[Asmified]
+
+== References
+

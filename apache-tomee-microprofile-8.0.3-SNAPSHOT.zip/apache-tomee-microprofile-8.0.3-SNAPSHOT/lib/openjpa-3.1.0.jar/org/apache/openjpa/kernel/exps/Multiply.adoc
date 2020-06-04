@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Multiply.class
+
+ - link:Multiply-asmified.java[Asmified]
+
+== References
+

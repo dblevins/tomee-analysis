@@ -1,0 +1,8 @@
+= org/opensaml/profile/action/EventException.class
+
+ - link:EventException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 4

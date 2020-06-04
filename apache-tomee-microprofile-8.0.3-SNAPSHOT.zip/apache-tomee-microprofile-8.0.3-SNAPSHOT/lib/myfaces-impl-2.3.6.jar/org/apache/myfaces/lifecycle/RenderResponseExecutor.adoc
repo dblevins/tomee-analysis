@@ -1,0 +1,19 @@
+= org/apache/myfaces/lifecycle/RenderResponseExecutor.class
+
+ - link:RenderResponseExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 30
+ - javax.faces.component.UIViewRoot - 21
+ - javax.faces.application.Application - 14
+ - javax.faces.application.ViewHandler - 11
+ - javax.faces.context.ExternalContext - 6
+ - javax.faces.view.ViewDeclarationLanguage - 6
+ - javax.faces.event.PhaseId - 3
+ - javax.faces.application.FacesMessage - 3
+ - javax.faces.application.StateManager - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.event.PostRenderViewEvent - 1
+ - javax.faces.event.PreRenderViewEvent - 1

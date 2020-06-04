@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/valueextraction/FxExtractor$ForSetProperty.class
+
+ - link:FxExtractor$ForSetProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 10
+ - javax.validation.valueextraction.ExtractedValue - 1
+ - javax.validation.valueextraction.ValueExtractor - 1

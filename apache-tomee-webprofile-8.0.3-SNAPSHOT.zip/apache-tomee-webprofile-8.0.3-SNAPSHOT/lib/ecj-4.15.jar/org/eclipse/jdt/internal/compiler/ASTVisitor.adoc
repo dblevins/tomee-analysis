@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ASTVisitor.class
+
+ - link:ASTVisitor-asmified.java[Asmified]
+
+== References
+

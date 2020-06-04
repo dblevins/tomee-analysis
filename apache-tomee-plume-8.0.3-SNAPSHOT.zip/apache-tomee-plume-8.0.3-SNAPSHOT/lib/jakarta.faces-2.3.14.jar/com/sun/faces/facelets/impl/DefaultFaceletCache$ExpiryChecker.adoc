@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/impl/DefaultFaceletCache$ExpiryChecker.class
+
+ - link:DefaultFaceletCache$ExpiryChecker-asmified.java[Asmified]
+
+== References
+

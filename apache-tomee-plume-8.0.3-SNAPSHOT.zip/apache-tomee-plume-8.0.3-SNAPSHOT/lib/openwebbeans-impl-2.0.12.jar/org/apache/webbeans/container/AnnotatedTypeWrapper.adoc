@@ -1,0 +1,11 @@
+= org/apache/webbeans/container/AnnotatedTypeWrapper.class
+
+ - link:AnnotatedTypeWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 25
+ - javax.enterprise.inject.spi.Extension - 5
+ - javax.enterprise.inject.spi.AnnotatedField - 1
+ - javax.enterprise.inject.spi.AnnotatedMethod - 1
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 1

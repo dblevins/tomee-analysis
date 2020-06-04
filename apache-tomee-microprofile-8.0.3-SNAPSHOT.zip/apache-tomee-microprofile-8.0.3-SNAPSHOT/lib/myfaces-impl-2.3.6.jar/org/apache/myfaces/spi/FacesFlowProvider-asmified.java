@@ -1,0 +1,63 @@
+package asm.org.apache.myfaces.spi;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class FacesFlowProviderDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/myfaces/spi/FacesFlowProvider", null, "java/lang/Object", null);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getAnnotatedFlows", "(Ljavax/faces/context/FacesContext;)Ljava/util/Iterator;", "(Ljavax/faces/context/FacesContext;)Ljava/util/Iterator<Ljavax/faces/flow/Flow;>;", null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doAfterEnterFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;)V", null, null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "doBeforeExitFlow", "(Ljavax/faces/context/FacesContext;Ljavax/faces/flow/Flow;)V", null, null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "getCurrentFlowScope", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map;", "(Ljavax/faces/context/FacesContext;)Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;", null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "refreshClientWindow", "(Ljavax/faces/context/FacesContext;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(0, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

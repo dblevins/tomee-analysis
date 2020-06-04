@@ -1,0 +1,8 @@
+= com/sun/faces/renderkit/html_basic/StylesheetRenderer.class
+
+ - link:StylesheetRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 13
+ - javax.faces.component.UIComponent - 7

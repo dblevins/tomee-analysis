@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/List.class
+
+ - link:List-asmified.java[Asmified]
+
+== References
+

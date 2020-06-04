@@ -1,0 +1,12 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JweJsonWriterInterceptor.class
+
+ - link:JweJsonWriterInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.WriterInterceptorContext - 14
+ - javax.ws.rs.core.MediaType - 7
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.WebApplicationException - 1
+ - javax.ws.rs.ext.WriterInterceptor - 1

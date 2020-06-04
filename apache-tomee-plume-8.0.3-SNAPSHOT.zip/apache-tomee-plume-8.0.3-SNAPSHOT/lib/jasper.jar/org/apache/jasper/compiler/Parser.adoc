@@ -1,0 +1,10 @@
+= org/apache/jasper/compiler/Parser.class
+
+ - link:Parser-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagInfo - 17
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 12
+ - javax.servlet.jsp.tagext.TagFileInfo - 9
+ - javax.servlet.jsp.tagext.TagAttributeInfo - 9

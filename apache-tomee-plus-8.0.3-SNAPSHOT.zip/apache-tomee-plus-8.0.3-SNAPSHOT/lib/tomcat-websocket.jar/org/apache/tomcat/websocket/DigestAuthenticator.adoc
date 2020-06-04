@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/DigestAuthenticator.class
+
+ - link:DigestAuthenticator-asmified.java[Asmified]
+
+== References
+

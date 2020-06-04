@@ -1,0 +1,197 @@
+package asm.org.apache.myfaces.cdi.behavior;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class FacesBehaviorProducerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer<Ljavax/faces/component/behavior/Behavior;>;", "org/apache/myfaces/cdi/util/AbstractDynamicProducer", null);
+
+{
+annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/inject/Typed;", true);
+annotationVisitor0.visitEnd();
+}
+classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;Lorg/apache/myfaces/cdi/behavior/FacesBehaviorInfo;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "<init>", "(Ljavax/enterprise/inject/spi/BeanManager;)V", false);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/myfaces/cdi/behavior/FacesBehaviorAnnotationLiteral");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getBehaviorId", "()Ljava/lang/String;", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitLdcInsn("");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo"}, 2, new Object[] {label0, label0});
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getBehaviorId", "()Ljava/lang/String;", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "javax/enterprise/inject/spi/BeanManager", "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo"}, 3, new Object[] {label0, label0, "java/lang/String"});
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorAnnotationLiteral", "<init>", "(Ljava/lang/String;Z)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getBehaviorId", "()Ljava/lang/String;", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitLdcInsn("");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/myfaces/cdi/behavior/FacesBehaviorAnnotationLiteral"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getBehaviorId", "()Ljava/lang/String;", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getType", "()Ljava/lang/reflect/Type;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("_");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "id", "(Ljava/lang/String;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/enterprise/context/Dependent;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "scope", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/annotation/Annotation");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "qualifiers", "([Ljava/lang/annotation/Annotation;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/reflect/Type");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getType", "()Ljava/lang/reflect/Type;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "types", "([Ljava/lang/reflect/Type;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorInfo", "getType", "()Ljava/lang/reflect/Type;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/reflect/Type", "getTypeName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/ClassUtils", "simpleClassForName", "(Ljava/lang/String;)Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "beanClass", "(Ljava/lang/Class;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInvokeDynamicInsn("apply", "(Lorg/apache/myfaces/cdi/behavior/FacesBehaviorProducer;)Ljava/util/function/Function;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Ljava/lang/Object;"), new Handle(Opcodes.H_INVOKESPECIAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/component/behavior/Behavior;", false), Type.getType("(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/component/behavior/Behavior;")});
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/util/AbstractDynamicProducer", "create", "(Ljava/util/function/Function;)Lorg/apache/myfaces/cdi/util/AbstractDynamicProducer;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createBehavior", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/component/behavior/Behavior;", "(Ljavax/enterprise/context/spi/CreationalContext<Ljavax/faces/component/behavior/Behavior;>;)Ljavax/faces/component/behavior/Behavior;", null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "getBeanClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/faces/component/behavior/Behavior");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "javax/enterprise/context/spi/CreationalContext", "java/lang/Class", "javax/faces/component/behavior/Behavior"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/myfaces/cdi/behavior/FacesBehaviorProducer;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/logging/Logger", "getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "java/util/logging/Level", "SEVERE", "Ljava/util/logging/Level;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Could not instantiate behavior ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitTypeInsn(NEW, "javax/faces/FacesException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Could not instantiate behavior: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/FacesException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_SYNTHETIC, "lambda$new$0", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/component/behavior/Behavior;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/cdi/behavior/FacesBehaviorProducer", "createBehavior", "(Ljavax/enterprise/context/spi/CreationalContext;)Ljavax/faces/component/behavior/Behavior;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

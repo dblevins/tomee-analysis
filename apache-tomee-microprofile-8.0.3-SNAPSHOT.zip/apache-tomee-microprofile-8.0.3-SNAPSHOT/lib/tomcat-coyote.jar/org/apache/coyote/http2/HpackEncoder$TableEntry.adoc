@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/HpackEncoder$TableEntry.class
+
+ - link:HpackEncoder$TableEntry-asmified.java[Asmified]
+
+== References
+

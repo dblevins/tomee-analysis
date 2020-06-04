@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/TransducedAccessor_field_Boolean.class
+
+ - link:TransducedAccessor_field_Boolean-asmified.java[Asmified]
+
+== References
+

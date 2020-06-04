@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/el/StringMap.class
+
+ - link:StringMap-asmified.java[Asmified]
+
+== References
+

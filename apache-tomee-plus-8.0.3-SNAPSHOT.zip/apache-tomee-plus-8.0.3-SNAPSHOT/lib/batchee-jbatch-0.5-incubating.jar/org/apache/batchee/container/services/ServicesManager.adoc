@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/ServicesManager.class
+
+ - link:ServicesManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/nio/NioWriteListenerImpl.class
+
+ - link:NioWriteListenerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.WriteListener - 1

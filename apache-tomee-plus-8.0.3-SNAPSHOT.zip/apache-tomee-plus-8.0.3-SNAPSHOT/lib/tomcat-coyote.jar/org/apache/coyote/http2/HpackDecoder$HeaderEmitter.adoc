@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/HpackDecoder$HeaderEmitter.class
+
+ - link:HpackDecoder$HeaderEmitter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$ExtensionSerializer.class
+
+ - link:Serializers$ExtensionSerializer-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 8
+ - javax.json.bind.serializer.SerializationContext - 8
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.serializer.JsonbSerializer - 1

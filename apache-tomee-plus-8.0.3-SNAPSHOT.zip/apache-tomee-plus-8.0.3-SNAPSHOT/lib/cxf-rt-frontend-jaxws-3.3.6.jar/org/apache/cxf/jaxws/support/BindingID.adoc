@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/support/BindingID.class
+
+ - link:BindingID-asmified.java[Asmified]
+
+== References
+

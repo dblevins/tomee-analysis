@@ -1,0 +1,7 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/cxf-rt-ws-addr-3.3.6.jar
+
+ - link:org/apache/cxf/ws/addressing/soap/MAPCodec.adoc[org/apache/cxf/ws/addressing/soap/MAPCodec.class] - 72
+ - link:org/apache/cxf/ws/addressing/soap/VersionTransformer.adoc[org/apache/cxf/ws/addressing/soap/VersionTransformer.class] - 18
+ - link:org/apache/cxf/ws/addressing/impl/InternalContextUtils.adoc[org/apache/cxf/ws/addressing/impl/InternalContextUtils.class] - 7
+ - link:org/apache/cxf/ws/addressing/impl/MAPAggregatorImpl.adoc[org/apache/cxf/ws/addressing/impl/MAPAggregatorImpl.class] - 3
+ - link:org/apache/cxf/ws/addressing/impl/AddressingWSDLExtensionLoader.adoc[org/apache/cxf/ws/addressing/impl/AddressingWSDLExtensionLoader.class] - 2

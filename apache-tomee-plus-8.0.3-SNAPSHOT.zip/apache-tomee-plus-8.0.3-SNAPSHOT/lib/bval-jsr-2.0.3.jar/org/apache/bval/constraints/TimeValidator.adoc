@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/TimeValidator.class
+
+ - link:TimeValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ClockProvider - 2
+ - javax.validation.ConstraintValidatorContext - 2
+ - javax.validation.ConstraintValidator - 1

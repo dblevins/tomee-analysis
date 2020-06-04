@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/oejb3/PropertiesAdapter$SortedProperties.class
+
+ - link:PropertiesAdapter$SortedProperties-asmified.java[Asmified]
+
+== References
+

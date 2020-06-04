@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/JDBCEvent.class
+
+ - link:JDBCEvent-asmified.java[Asmified]
+
+== References
+

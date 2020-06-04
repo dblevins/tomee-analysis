@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/OpenEJBJndiService.class
+
+ - link:OpenEJBJndiService-asmified.java[Asmified]
+
+== References
+

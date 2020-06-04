@@ -1,0 +1,9 @@
+= javax/mail/search/OrTerm.class
+
+ - link:OrTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.SearchTerm - 19
+ - javax.mail.Message - 2
+ - javax.mail.search.OrTerm - 2

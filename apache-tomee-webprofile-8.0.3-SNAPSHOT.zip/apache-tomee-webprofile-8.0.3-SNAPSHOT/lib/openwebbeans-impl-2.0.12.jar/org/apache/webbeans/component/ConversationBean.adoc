@@ -1,0 +1,11 @@
+= org/apache/webbeans/component/ConversationBean.class
+
+ - link:ConversationBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.context.Conversation - 1
+ - javax.enterprise.context.RequestScoped - 1
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Producer - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/Context.class
+
+ - link:Context-asmified.java[Asmified]
+
+== References
+

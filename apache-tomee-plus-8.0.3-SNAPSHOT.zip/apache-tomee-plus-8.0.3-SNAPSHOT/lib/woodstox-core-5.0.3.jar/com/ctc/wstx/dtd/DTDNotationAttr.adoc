@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/DTDNotationAttr.class
+
+ - link:DTDNotationAttr-asmified.java[Asmified]
+
+== References
+

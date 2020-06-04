@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/impl/SOAPTextImpl.class
+
+ - link:SOAPTextImpl-asmified.java[Asmified]
+
+== References
+

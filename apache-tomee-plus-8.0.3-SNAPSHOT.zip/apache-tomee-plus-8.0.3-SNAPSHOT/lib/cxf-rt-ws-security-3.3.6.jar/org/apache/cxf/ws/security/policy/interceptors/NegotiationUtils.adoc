@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/NegotiationUtils.class
+
+ - link:NegotiationUtils-asmified.java[Asmified]
+
+== References
+

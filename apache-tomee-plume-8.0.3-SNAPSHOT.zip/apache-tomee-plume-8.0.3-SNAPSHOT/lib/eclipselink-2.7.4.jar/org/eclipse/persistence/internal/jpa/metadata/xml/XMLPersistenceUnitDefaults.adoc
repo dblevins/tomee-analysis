@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/xml/XMLPersistenceUnitDefaults.class
+
+ - link:XMLPersistenceUnitDefaults-asmified.java[Asmified]
+
+== References
+

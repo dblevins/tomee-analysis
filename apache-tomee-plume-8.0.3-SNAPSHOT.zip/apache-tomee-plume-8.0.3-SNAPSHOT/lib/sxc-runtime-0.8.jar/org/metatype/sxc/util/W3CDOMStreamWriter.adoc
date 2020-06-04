@@ -1,0 +1,6 @@
+= org/metatype/sxc/util/W3CDOMStreamWriter.class
+
+ - link:W3CDOMStreamWriter-asmified.java[Asmified]
+
+== References
+

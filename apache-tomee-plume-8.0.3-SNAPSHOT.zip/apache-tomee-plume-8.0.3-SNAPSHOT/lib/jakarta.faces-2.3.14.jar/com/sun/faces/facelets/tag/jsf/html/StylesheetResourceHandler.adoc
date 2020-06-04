@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/jsf/html/StylesheetResourceHandler.class
+
+ - link:StylesheetResourceHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.ComponentConfig - 2
+ - javax.faces.view.facelets.ComponentHandler - 2

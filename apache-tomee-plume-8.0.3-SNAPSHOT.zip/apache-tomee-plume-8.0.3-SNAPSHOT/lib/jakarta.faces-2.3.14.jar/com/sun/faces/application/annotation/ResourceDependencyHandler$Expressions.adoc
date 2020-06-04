@@ -1,0 +1,9 @@
+= com/sun/faces/application/annotation/ResourceDependencyHandler$Expressions.class
+
+ - link:ResourceDependencyHandler$Expressions-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 18
+ - javax.faces.context.FacesContext - 6
+ - javax.el.ELContext - 6

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/exc/InvalidDefinitionException.class
+
+ - link:InvalidDefinitionException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/NumberDeserializers$LongDeserializer.class
+
+ - link:NumberDeserializers$LongDeserializer-asmified.java[Asmified]
+
+== References
+

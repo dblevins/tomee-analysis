@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/CollectionFactory.class
+
+ - link:CollectionFactory-asmified.java[Asmified]
+
+== References
+

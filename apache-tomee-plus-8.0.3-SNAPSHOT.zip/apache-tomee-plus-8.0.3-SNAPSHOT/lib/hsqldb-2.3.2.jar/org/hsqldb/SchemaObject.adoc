@@ -1,0 +1,6 @@
+= org/hsqldb/SchemaObject.class
+
+ - link:SchemaObject-asmified.java[Asmified]
+
+== References
+

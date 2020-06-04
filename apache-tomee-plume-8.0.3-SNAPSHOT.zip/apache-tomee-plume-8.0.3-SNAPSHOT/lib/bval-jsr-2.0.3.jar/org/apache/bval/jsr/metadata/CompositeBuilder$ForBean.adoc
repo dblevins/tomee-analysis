@@ -1,0 +1,8 @@
+= org/apache/bval/jsr/metadata/CompositeBuilder$ForBean.class
+
+ - link:CompositeBuilder$ForBean-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ParameterNameProvider - 4
+ - javax.validation.ElementKind - 4

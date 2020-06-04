@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/Recovery$XidBranchesPair.class
+
+ - link:Recovery$XidBranchesPair-asmified.java[Asmified]
+
+== References
+

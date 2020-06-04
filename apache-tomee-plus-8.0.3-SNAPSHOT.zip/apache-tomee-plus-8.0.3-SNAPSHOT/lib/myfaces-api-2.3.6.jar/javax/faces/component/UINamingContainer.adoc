@@ -1,0 +1,18 @@
+= javax/faces/component/UINamingContainer.class
+
+ - link:UINamingContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 31
+ - javax.faces.component.UINamingContainer - 28
+ - javax.faces.component.visit.VisitContext - 17
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.component.visit.VisitCallback - 6
+ - javax.faces.component.StateHelper - 4
+ - javax.faces.context.ExternalContext - 3
+ - javax.faces.component.visit.VisitResult - 3
+ - javax.faces.component.UIComponentBase - 3
+ - javax.faces.component.UINamingContainer$PropertyKeys - 2
+ - javax.faces.component.NamingContainer - 1
+ - javax.faces.component.UniqueIdVendor - 1

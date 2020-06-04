@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/SpaceBearing.class
+
+ - link:SpaceBearing-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

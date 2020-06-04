@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/RelationalDescriptor.class
+
+ - link:RelationalDescriptor-asmified.java[Asmified]
+
+== References
+

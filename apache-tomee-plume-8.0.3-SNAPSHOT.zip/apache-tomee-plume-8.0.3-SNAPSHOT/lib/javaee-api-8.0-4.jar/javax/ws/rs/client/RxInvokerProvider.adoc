@@ -1,0 +1,8 @@
+= javax/ws/rs/client/RxInvokerProvider.class
+
+ - link:RxInvokerProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.RxInvoker - 1
+ - javax.ws.rs.client.SyncInvoker - 1

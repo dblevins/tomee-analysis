@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/AuthzService.class
+
+ - link:AuthzService-asmified.java[Asmified]
+
+== References
+

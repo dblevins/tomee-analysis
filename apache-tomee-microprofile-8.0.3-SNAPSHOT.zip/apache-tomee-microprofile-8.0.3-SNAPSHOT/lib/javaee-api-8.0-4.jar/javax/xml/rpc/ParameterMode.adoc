@@ -1,0 +1,7 @@
+= javax/xml/rpc/ParameterMode.class
+
+ - link:ParameterMode-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.ParameterMode - 12

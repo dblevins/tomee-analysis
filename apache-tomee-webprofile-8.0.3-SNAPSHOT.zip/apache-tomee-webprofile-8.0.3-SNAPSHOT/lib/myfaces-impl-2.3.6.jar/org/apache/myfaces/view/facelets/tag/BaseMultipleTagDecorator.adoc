@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/tag/BaseMultipleTagDecorator.class
+
+ - link:BaseMultipleTagDecorator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagDecorator - 13
+ - javax.faces.view.facelets.Tag - 11

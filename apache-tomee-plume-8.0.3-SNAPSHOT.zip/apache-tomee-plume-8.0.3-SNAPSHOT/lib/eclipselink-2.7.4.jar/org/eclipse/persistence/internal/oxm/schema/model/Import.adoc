@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/Import.class
+
+ - link:Import-asmified.java[Asmified]
+
+== References
+

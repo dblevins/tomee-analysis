@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/ParameterTypeVisitor.class
+
+ - link:ParameterTypeVisitor-asmified.java[Asmified]
+
+== References
+

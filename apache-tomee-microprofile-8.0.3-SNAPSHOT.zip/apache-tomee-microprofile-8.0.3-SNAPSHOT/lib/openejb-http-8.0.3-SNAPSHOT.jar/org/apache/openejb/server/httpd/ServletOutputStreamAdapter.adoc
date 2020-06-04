@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/ServletOutputStreamAdapter.class
+
+ - link:ServletOutputStreamAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.WriteListener - 1

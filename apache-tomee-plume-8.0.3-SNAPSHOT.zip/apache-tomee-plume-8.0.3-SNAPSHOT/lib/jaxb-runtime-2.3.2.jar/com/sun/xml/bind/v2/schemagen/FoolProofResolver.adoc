@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/schemagen/FoolProofResolver.class
+
+ - link:FoolProofResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.SchemaOutputResolver - 8

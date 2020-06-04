@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/ObjectRecipe$FieldProperty.class
+
+ - link:ObjectRecipe$FieldProperty-asmified.java[Asmified]
+
+== References
+

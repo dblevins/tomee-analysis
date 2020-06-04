@@ -1,0 +1,8 @@
+= org/apache/safeguard/impl/retry/BeforeRetryInterceptor.class
+
+ - link:BeforeRetryInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.Interceptor - 1
+ - javax.annotation.Priority - 1

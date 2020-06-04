@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/MetaRulesetImpl$1.class
+
+ - link:MetaRulesetImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.FaceletContext - 1

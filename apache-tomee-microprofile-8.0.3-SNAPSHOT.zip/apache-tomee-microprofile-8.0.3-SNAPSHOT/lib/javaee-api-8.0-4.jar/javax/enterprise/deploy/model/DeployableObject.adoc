@@ -1,0 +1,10 @@
+= javax/enterprise/deploy/model/DeployableObject.class
+
+ - link:DeployableObject-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.model.DDBeanRoot - 2
+ - javax.enterprise.deploy.model.DDBean - 1
+ - javax.enterprise.deploy.model.exceptions.DDBeanCreateException - 1
+ - javax.enterprise.deploy.shared.ModuleType - 1

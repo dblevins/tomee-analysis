@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/Base64Variant.class
+
+ - link:Base64Variant-asmified.java[Asmified]
+
+== References
+

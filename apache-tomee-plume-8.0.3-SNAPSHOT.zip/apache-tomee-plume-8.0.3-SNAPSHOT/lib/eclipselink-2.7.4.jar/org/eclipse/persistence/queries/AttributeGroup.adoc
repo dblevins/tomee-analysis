@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/AttributeGroup.class
+
+ - link:AttributeGroup-asmified.java[Asmified]
+
+== References
+

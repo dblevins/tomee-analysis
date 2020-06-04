@@ -1,0 +1,9 @@
+= org/apache/catalina/core/ApplicationDispatcher$PrivilegedDispatch.class
+
+ - link:ApplicationDispatcher$PrivilegedDispatch-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 5
+ - javax.servlet.ServletResponse - 5
+ - javax.servlet.ServletException - 1

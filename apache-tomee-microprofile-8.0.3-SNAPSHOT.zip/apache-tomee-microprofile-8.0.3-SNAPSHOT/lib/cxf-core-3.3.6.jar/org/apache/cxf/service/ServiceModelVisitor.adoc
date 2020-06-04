@@ -1,0 +1,6 @@
+= org/apache/cxf/service/ServiceModelVisitor.class
+
+ - link:ServiceModelVisitor-asmified.java[Asmified]
+
+== References
+

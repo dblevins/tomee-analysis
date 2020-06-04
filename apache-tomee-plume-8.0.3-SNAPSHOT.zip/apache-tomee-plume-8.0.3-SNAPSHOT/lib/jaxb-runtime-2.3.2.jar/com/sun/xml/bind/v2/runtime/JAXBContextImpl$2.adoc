@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/JAXBContextImpl$2.class
+
+ - link:JAXBContextImpl$2-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 3

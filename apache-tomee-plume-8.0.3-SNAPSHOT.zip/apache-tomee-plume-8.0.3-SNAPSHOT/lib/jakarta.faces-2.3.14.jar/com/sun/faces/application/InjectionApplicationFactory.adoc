@@ -1,0 +1,10 @@
+= com/sun/faces/application/InjectionApplicationFactory.class
+
+ - link:InjectionApplicationFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 21
+ - javax.faces.application.ApplicationFactory - 9
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.context.ExternalContext - 4

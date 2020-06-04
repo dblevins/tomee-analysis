@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/algorithms/ECDSAUtils$ECCurveDefinition.class
+
+ - link:ECDSAUtils$ECCurveDefinition-asmified.java[Asmified]
+
+== References
+

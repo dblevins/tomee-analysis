@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/sequencing/UnaryTableSequenceConfig.class
+
+ - link:UnaryTableSequenceConfig-asmified.java[Asmified]
+
+== References
+

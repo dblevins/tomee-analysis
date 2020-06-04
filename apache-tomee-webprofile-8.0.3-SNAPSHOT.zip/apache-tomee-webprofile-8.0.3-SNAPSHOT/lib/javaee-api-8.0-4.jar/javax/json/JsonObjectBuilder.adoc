@@ -1,0 +1,10 @@
+= javax/json/JsonObjectBuilder.class
+
+ - link:JsonObjectBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonObjectBuilder - 15
+ - javax.json.JsonValue - 1
+ - javax.json.JsonObject - 1
+ - javax.json.JsonArrayBuilder - 1

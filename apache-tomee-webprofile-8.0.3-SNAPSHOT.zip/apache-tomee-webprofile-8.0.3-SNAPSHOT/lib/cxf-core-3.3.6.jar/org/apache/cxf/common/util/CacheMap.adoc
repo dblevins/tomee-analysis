@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/CacheMap.class
+
+ - link:CacheMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/myfaces/taglib/core/DelegateConverter.class
+
+ - link:DelegateConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 22
+ - javax.faces.convert.Converter - 12
+ - javax.faces.context.FacesContext - 12
+ - javax.el.ELContext - 5
+ - javax.faces.application.Application - 4
+ - javax.faces.convert.ConverterException - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component.StateHolder - 1

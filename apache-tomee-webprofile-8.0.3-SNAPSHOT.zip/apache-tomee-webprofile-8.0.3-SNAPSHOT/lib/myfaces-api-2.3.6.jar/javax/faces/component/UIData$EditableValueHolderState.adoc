@@ -1,0 +1,7 @@
+= javax/faces/component/UIData$EditableValueHolderState.class
+
+ - link:UIData$EditableValueHolderState-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.EditableValueHolder - 10

@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/util/Classpath$SearchAdvice.class
+
+ - link:Classpath$SearchAdvice-asmified.java[Asmified]
+
+== References
+

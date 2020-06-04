@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/ResolvedRecursiveType.class
+
+ - link:ResolvedRecursiveType-asmified.java[Asmified]
+
+== References
+

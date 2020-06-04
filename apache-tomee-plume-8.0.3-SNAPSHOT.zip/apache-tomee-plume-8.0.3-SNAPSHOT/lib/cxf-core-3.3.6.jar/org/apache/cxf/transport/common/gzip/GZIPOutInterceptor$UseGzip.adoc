@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/common/gzip/GZIPOutInterceptor$UseGzip.class
+
+ - link:GZIPOutInterceptor$UseGzip-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer.class
+
+ - link:JavaSECMPInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 4
+ - javax.persistence.spi.ClassTransformer - 2
+ - javax.persistence.spi.PersistenceUnitInfo - 2

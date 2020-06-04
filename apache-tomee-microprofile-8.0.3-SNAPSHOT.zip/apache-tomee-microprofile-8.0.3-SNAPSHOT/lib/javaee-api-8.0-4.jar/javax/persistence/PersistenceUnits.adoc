@@ -1,0 +1,7 @@
+= javax/persistence/PersistenceUnits.class
+
+ - link:PersistenceUnits-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceUnit - 1

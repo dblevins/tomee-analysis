@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/AbstractValueHandler.class
+
+ - link:AbstractValueHandler-asmified.java[Asmified]
+
+== References
+

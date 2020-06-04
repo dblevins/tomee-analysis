@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/CascadeLockingPolicy.class
+
+ - link:CascadeLockingPolicy-asmified.java[Asmified]
+
+== References
+

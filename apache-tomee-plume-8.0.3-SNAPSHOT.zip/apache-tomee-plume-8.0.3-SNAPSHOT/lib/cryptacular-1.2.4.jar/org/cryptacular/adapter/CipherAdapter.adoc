@@ -1,0 +1,6 @@
+= org/cryptacular/adapter/CipherAdapter.class
+
+ - link:CipherAdapter-asmified.java[Asmified]
+
+== References
+

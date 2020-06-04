@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/ExceptionOrphanedKeyAction.class
+
+ - link:ExceptionOrphanedKeyAction-asmified.java[Asmified]
+
+== References
+

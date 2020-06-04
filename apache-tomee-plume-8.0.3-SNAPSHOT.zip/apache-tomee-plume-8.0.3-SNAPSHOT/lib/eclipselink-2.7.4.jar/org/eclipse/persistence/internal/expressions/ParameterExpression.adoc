@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/ParameterExpression.class
+
+ - link:ParameterExpression-asmified.java[Asmified]
+
+== References
+

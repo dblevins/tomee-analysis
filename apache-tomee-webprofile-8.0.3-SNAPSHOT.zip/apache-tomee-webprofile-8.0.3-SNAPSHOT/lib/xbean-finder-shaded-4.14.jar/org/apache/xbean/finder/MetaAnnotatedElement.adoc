@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/MetaAnnotatedElement.class
+
+ - link:MetaAnnotatedElement-asmified.java[Asmified]
+
+== References
+

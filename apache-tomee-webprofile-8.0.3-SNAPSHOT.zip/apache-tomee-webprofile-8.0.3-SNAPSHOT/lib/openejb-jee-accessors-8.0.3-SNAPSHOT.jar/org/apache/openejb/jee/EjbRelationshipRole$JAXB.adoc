@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/EjbRelationshipRole$JAXB.class
+
+ - link:EjbRelationshipRole$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 11

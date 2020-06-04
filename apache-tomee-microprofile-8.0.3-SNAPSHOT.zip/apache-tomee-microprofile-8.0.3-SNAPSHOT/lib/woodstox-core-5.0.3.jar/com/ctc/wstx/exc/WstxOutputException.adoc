@@ -1,0 +1,6 @@
+= com/ctc/wstx/exc/WstxOutputException.class
+
+ - link:WstxOutputException-asmified.java[Asmified]
+
+== References
+

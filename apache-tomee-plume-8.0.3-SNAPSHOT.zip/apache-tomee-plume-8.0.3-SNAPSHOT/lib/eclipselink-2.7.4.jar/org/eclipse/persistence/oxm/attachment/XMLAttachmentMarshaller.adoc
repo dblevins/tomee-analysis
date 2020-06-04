@@ -1,0 +1,7 @@
+= org/eclipse/persistence/oxm/attachment/XMLAttachmentMarshaller.class
+
+ - link:XMLAttachmentMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

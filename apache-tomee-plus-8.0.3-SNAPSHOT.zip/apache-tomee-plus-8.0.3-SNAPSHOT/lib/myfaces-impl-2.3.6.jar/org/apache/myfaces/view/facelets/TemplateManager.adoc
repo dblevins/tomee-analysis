@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/TemplateManager.class
+
+ - link:TemplateManager-asmified.java[Asmified]
+
+== References
+

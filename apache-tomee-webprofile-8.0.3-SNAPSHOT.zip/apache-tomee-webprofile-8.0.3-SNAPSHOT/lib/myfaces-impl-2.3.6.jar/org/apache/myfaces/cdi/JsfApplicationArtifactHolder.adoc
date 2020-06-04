@@ -1,0 +1,8 @@
+= org/apache/myfaces/cdi/JsfApplicationArtifactHolder.class
+
+ - link:JsfApplicationArtifactHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 5
+ - javax.enterprise.context.ApplicationScoped - 1

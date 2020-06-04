@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/InvocationSite.class
+
+ - link:InvocationSite-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= com/sun/faces/el/DemuxCompositeELResolver.class
+
+ - link:DemuxCompositeELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 66
+ - javax.el.ELContext - 27
+ - javax.el.ELException - 8

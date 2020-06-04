@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/StringConverter.class
+
+ - link:StringConverter-asmified.java[Asmified]
+
+== References
+

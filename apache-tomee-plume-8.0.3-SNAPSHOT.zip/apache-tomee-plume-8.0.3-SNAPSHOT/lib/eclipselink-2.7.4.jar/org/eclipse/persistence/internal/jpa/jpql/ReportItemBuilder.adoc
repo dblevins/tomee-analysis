@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/ReportItemBuilder.class
+
+ - link:ReportItemBuilder-asmified.java[Asmified]
+
+== References
+

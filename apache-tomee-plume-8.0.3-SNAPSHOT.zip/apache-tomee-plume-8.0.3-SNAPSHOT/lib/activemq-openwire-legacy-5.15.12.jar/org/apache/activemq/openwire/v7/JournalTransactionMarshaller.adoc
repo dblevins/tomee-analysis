@@ -1,0 +1,6 @@
+= org/apache/activemq/openwire/v7/JournalTransactionMarshaller.class
+
+ - link:JournalTransactionMarshaller-asmified.java[Asmified]
+
+== References
+

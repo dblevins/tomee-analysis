@@ -1,0 +1,11 @@
+= com/sun/faces/application/view/FaceletFullStateManagementStrategy$3.class
+
+ - link:FaceletFullStateManagementStrategy$3-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.component.visit.VisitResult - 4
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.visit.VisitContext - 1

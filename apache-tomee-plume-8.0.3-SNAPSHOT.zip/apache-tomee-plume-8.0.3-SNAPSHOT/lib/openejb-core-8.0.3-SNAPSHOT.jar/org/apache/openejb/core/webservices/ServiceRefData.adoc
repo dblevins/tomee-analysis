@@ -1,0 +1,7 @@
+= org/apache/openejb/core/webservices/ServiceRefData.class
+
+ - link:ServiceRefData-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Service - 3

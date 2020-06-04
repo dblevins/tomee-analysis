@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/UnmarshalRecordImpl.class
+
+ - link:UnmarshalRecordImpl-asmified.java[Asmified]
+
+== References
+

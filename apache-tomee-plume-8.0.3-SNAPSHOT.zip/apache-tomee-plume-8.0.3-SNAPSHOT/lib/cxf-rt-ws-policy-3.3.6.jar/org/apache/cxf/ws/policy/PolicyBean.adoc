@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/PolicyBean.class
+
+ - link:PolicyBean-asmified.java[Asmified]
+
+== References
+

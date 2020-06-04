@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/wsdl/extensions/SoapBody.class
+
+ - link:SoapBody-asmified.java[Asmified]
+
+== References
+

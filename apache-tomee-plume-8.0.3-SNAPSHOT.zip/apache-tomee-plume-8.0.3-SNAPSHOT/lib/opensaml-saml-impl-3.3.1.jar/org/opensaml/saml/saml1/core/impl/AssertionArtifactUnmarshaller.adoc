@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AssertionArtifactUnmarshaller.class
+
+ - link:AssertionArtifactUnmarshaller-asmified.java[Asmified]
+
+== References
+

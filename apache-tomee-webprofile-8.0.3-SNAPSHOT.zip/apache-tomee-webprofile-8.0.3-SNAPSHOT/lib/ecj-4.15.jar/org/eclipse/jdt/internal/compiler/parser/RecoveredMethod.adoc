@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredMethod.class
+
+ - link:RecoveredMethod-asmified.java[Asmified]
+
+== References
+

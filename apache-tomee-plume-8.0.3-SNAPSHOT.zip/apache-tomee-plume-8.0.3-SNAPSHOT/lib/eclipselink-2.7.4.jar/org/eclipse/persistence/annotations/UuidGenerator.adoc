@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/UuidGenerator.class
+
+ - link:UuidGenerator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/NameIDPolicyBuilder.class
+
+ - link:NameIDPolicyBuilder-asmified.java[Asmified]
+
+== References
+

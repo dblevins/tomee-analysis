@@ -1,0 +1,6 @@
+= org/apache/openejb/core/entity/EntityInstanceManager$Key.class
+
+ - link:EntityInstanceManager$Key-asmified.java[Asmified]
+
+== References
+

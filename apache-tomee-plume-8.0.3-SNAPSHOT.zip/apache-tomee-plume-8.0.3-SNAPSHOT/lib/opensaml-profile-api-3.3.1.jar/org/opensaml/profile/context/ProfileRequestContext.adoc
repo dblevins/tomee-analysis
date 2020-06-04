@@ -1,0 +1,9 @@
+= org/opensaml/profile/context/ProfileRequestContext.class
+
+ - link:ProfileRequestContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

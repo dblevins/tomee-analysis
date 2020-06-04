@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/interceptors/MessageDispatchInterceptor.class
+
+ - link:MessageDispatchInterceptor-asmified.java[Asmified]
+
+== References
+

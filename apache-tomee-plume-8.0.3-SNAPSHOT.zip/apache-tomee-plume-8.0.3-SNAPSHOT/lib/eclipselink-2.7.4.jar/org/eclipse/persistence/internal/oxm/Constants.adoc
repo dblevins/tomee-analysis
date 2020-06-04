@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/Constants.class
+
+ - link:Constants-asmified.java[Asmified]
+
+== References
+

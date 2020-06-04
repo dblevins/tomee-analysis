@@ -1,0 +1,8 @@
+= javax/ws/rs/container/DynamicFeature.class
+
+ - link:DynamicFeature-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.FeatureContext - 1
+ - javax.ws.rs.container.ResourceInfo - 1

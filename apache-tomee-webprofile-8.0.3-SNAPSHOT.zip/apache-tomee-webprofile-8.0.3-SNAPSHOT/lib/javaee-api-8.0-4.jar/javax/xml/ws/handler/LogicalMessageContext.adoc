@@ -1,0 +1,8 @@
+= javax/xml/ws/handler/LogicalMessageContext.class
+
+ - link:LogicalMessageContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.LogicalMessage - 1
+ - javax.xml.ws.handler.MessageContext - 1

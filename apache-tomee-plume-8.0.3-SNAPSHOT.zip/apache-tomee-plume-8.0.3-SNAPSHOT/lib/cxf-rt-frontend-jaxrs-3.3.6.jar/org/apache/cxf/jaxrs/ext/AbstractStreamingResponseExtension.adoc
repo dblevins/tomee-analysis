@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/AbstractStreamingResponseExtension.class
+
+ - link:AbstractStreamingResponseExtension-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/CounterImpl.class
+
+ - link:CounterImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/wss4j/binding/wssc200502/PropertiesType.class
+
+ - link:PropertiesType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

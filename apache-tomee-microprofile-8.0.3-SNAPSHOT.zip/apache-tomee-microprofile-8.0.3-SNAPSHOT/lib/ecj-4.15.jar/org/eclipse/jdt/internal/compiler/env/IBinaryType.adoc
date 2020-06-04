@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IBinaryType.class
+
+ - link:IBinaryType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ResultShapePacker.class
+
+ - link:ResultShapePacker-asmified.java[Asmified]
+
+== References
+

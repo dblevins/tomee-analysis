@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MappingStrategyInstaller.class
+
+ - link:MappingStrategyInstaller-asmified.java[Asmified]
+
+== References
+

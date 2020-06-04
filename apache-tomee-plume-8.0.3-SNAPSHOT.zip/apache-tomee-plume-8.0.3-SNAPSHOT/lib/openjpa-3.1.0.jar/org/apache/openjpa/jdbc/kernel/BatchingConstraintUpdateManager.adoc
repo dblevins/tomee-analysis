@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/BatchingConstraintUpdateManager.class
+
+ - link:BatchingConstraintUpdateManager-asmified.java[Asmified]
+
+== References
+

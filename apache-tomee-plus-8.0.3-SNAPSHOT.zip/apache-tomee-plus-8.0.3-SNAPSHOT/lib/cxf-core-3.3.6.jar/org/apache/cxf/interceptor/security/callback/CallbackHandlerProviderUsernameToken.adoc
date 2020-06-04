@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/callback/CallbackHandlerProviderUsernameToken.class
+
+ - link:CallbackHandlerProviderUsernameToken-asmified.java[Asmified]
+
+== References
+

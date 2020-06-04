@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/partitioning/AbstractPartitioningMetadata.class
+
+ - link:AbstractPartitioningMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/cmp2/EjbSelect.class
+
+ - link:EjbSelect-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.FinderException - 30

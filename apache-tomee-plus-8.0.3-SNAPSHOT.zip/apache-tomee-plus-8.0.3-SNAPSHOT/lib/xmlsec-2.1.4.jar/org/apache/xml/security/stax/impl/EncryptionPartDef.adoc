@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/EncryptionPartDef.class
+
+ - link:EncryptionPartDef-asmified.java[Asmified]
+
+== References
+

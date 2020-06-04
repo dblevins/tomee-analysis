@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/DefaultSTSTokenCacher.class
+
+ - link:DefaultSTSTokenCacher-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/xml/security/binding/xmlenc11/PRFAlgorithmIdentifierType.class
+
+ - link:PRFAlgorithmIdentifierType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/CoalesceExpression$CoalesceExpState.class
+
+ - link:CoalesceExpression$CoalesceExpState-asmified.java[Asmified]
+
+== References
+

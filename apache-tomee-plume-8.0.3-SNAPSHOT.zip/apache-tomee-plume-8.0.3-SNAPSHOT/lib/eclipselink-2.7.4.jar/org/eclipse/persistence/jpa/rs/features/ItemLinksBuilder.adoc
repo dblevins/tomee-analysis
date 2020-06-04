@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/features/ItemLinksBuilder.class
+
+ - link:ItemLinksBuilder-asmified.java[Asmified]
+
+== References
+

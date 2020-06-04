@@ -1,0 +1,16 @@
+= javax/faces/component/behavior/AjaxBehavior.class
+
+ - link:AjaxBehavior-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 52
+ - javax.faces.component.behavior.AjaxBehavior - 33
+ - javax.faces.component.behavior._DeltaStateHelper - 8
+ - javax.faces.context.FacesContext - 8
+ - javax.faces.component.behavior.ClientBehaviorBase - 6
+ - javax.el.ValueExpression - 5
+ - javax.faces.component.behavior.AjaxBehavior$PropertyKeys - 3
+ - javax.faces.event.AjaxBehaviorListener - 2
+ - javax.faces.component.behavior.ClientBehaviorHint - 2
+ - javax.faces.event.BehaviorListener - 2

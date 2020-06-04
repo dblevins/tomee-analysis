@@ -1,0 +1,3 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-api-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/openejb/api/configuration/PersistenceUnitDefinition.adoc[org/apache/openejb/api/configuration/PersistenceUnitDefinition.class] - 4

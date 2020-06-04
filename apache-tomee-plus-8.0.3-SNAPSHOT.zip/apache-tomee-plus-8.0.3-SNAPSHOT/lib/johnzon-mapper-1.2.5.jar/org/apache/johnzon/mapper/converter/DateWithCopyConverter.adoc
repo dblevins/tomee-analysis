@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/DateWithCopyConverter.class
+
+ - link:DateWithCopyConverter-asmified.java[Asmified]
+
+== References
+

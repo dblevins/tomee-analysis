@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLStreamReaderReader$StreamReaderLocator.class
+
+ - link:XMLStreamReaderReader$StreamReaderLocator-asmified.java[Asmified]
+
+== References
+

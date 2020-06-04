@@ -1,0 +1,18 @@
+= org/apache/batchee/container/services/persistence/jpa/domain/JobInstanceEntity.class
+
+ - link:JobInstanceEntity-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.NamedQuery - 7
+ - javax.batch.runtime.BatchStatus - 5
+ - javax.persistence.EnumType - 1
+ - javax.persistence.Lob - 1
+ - javax.persistence.Entity - 1
+ - javax.persistence.Table - 1
+ - javax.persistence.GeneratedValue - 1
+ - javax.batch.runtime.JobInstance - 1
+ - javax.persistence.OneToMany - 1
+ - javax.persistence.Enumerated - 1
+ - javax.persistence.NamedQueries - 1
+ - javax.persistence.Id - 1

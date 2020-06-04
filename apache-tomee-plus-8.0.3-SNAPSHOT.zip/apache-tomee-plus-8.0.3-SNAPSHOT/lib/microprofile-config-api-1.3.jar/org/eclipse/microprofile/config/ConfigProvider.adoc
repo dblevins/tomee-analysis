@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/config/ConfigProvider.class
+
+ - link:ConfigProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/BasicDeserializerFactory$1.class
+
+ - link:BasicDeserializerFactory$1-asmified.java[Asmified]
+
+== References
+

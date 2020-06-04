@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/DatabaseMapping.class
+
+ - link:DatabaseMapping-asmified.java[Asmified]
+
+== References
+

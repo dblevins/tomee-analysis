@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/provider/BaseObligationHandler.class
+
+ - link:BaseObligationHandler-asmified.java[Asmified]
+
+== References
+

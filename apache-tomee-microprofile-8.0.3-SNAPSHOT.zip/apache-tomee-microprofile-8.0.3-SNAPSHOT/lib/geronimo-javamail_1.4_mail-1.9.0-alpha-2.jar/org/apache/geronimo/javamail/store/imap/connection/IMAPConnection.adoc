@@ -1,0 +1,14 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPConnection.class
+
+ - link:IMAPConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 84
+ - javax.mail.MethodNotSupportedException - 18
+ - javax.mail.Flags - 11
+ - javax.mail.Quota - 8
+ - javax.mail.search.SearchTerm - 7
+ - javax.mail.internet.InternetHeaders - 2
+ - javax.mail.FetchProfile - 2
+ - javax.mail.Flags$Flag - 2

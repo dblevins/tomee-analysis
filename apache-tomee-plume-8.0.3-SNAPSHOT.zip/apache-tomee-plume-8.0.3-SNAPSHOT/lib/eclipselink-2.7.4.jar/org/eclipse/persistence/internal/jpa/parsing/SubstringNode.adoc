@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SubstringNode.class
+
+ - link:SubstringNode-asmified.java[Asmified]
+
+== References
+

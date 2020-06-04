@@ -1,0 +1,8 @@
+= org/apache/openejb/persistence/JtaQuery$11.class
+
+ - link:JtaQuery$11-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.LockModeType - 5
+ - javax.persistence.Query - 4

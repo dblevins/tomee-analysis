@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/binding/encoding/impl/HTTPSOAP11Encoder.class
+
+ - link:HTTPSOAP11Encoder-asmified.java[Asmified]
+
+== References
+

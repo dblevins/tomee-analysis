@@ -1,0 +1,9 @@
+= org/apache/openejb/jee/was/v6/xmi/Delete.class
+
+ - link:Delete-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

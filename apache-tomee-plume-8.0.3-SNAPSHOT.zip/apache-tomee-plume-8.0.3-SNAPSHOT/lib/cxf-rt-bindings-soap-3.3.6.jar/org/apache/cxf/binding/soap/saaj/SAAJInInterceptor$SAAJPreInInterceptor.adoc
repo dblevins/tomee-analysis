@@ -1,0 +1,10 @@
+= org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor.class
+
+ - link:SAAJInInterceptor$SAAJPreInInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MessageFactory - 14
+ - javax.xml.soap.SOAPMessage - 3
+ - javax.xml.soap.SOAPPart - 2
+ - javax.xml.soap.SOAPException - 1

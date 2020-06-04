@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/SymbolTable$Entry.class
+
+ - link:SymbolTable$Entry-asmified.java[Asmified]
+
+== References
+

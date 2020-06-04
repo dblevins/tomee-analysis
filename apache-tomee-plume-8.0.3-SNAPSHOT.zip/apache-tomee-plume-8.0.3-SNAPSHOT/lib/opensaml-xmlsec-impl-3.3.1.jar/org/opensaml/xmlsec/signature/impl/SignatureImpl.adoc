@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/SignatureImpl.class
+
+ - link:SignatureImpl-asmified.java[Asmified]
+
+== References
+

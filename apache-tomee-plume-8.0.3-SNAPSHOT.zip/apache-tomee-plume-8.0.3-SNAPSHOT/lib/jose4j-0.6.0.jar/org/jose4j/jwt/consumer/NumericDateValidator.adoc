@@ -1,0 +1,6 @@
+= org/jose4j/jwt/consumer/NumericDateValidator.class
+
+ - link:NumericDateValidator-asmified.java[Asmified]
+
+== References
+

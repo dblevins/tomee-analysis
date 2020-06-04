@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/AbstractSelectClause.class
+
+ - link:AbstractSelectClause-asmified.java[Asmified]
+
+== References
+

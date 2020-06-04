@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/RelationTableMechanism.class
+
+ - link:RelationTableMechanism-asmified.java[Asmified]
+
+== References
+

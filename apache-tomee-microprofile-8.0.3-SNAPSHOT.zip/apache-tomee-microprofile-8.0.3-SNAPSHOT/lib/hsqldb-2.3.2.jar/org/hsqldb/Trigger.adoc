@@ -1,0 +1,6 @@
+= org/hsqldb/Trigger.class
+
+ - link:Trigger-asmified.java[Asmified]
+
+== References
+

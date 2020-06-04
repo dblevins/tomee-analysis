@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/keyvalue/MultiKey.class
+
+ - link:MultiKey-asmified.java[Asmified]
+
+== References
+

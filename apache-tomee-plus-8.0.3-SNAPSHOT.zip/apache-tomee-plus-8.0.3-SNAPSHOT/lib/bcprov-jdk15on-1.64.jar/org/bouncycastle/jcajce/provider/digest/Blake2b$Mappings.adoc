@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/digest/Blake2b$Mappings.class
+
+ - link:Blake2b$Mappings-asmified.java[Asmified]
+
+== References
+

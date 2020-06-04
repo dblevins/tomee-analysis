@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/FaceletsTemplateMappingImpl.class
+
+ - link:FaceletsTemplateMappingImpl-asmified.java[Asmified]
+
+== References
+

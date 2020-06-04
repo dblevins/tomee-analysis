@@ -1,0 +1,6 @@
+= javax/annotation/PreDestroy.class
+
+ - link:PreDestroy-asmified.java[Asmified]
+
+== References
+

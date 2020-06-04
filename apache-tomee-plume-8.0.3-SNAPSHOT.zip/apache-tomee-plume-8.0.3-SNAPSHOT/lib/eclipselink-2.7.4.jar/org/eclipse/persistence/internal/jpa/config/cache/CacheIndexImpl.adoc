@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/cache/CacheIndexImpl.class
+
+ - link:CacheIndexImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/resource/AliasResourceMetaImpl.class
+
+ - link:AliasResourceMetaImpl-asmified.java[Asmified]
+
+== References
+

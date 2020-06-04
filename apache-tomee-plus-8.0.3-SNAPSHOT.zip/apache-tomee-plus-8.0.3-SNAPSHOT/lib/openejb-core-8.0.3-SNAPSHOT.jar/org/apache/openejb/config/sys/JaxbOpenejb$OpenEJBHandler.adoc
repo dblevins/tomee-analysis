@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/JaxbOpenejb$OpenEJBHandler.class
+
+ - link:JaxbOpenejb$OpenEJBHandler-asmified.java[Asmified]
+
+== References
+

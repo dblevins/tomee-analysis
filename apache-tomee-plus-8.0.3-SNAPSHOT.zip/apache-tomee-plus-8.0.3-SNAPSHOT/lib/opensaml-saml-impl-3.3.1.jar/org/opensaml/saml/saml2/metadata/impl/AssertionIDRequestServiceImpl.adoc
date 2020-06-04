@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AssertionIDRequestServiceImpl.class
+
+ - link:AssertionIDRequestServiceImpl-asmified.java[Asmified]
+
+== References
+

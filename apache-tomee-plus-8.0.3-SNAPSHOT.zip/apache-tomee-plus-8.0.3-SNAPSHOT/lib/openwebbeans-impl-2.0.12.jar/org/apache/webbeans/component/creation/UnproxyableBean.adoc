@@ -1,0 +1,10 @@
+= org/apache/webbeans/component/creation/UnproxyableBean.class
+
+ - link:UnproxyableBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.UnproxyableResolutionException - 5
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.context.spi.CreationalContext - 1

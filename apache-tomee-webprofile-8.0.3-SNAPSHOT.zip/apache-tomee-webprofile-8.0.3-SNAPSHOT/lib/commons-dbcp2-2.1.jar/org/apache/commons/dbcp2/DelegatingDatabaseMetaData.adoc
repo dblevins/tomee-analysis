@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/DelegatingDatabaseMetaData.class
+
+ - link:DelegatingDatabaseMetaData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/EntityManagerImpl$1$11.class
+
+ - link:EntityManagerImpl$1$11-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.CacheStoreMode - 3

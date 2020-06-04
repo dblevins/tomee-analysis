@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/cache/UnwrappedCache$Tool.class
+
+ - link:UnwrappedCache$Tool-asmified.java[Asmified]
+
+== References
+

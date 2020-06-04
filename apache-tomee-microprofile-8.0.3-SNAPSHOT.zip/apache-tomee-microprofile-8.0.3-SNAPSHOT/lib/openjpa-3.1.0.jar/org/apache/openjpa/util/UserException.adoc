@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/UserException.class
+
+ - link:UserException-asmified.java[Asmified]
+
+== References
+

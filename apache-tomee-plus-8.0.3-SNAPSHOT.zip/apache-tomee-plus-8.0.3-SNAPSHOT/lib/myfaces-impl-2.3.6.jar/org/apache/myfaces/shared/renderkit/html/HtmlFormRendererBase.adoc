@@ -1,0 +1,16 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlFormRendererBase.class
+
+ - link:HtmlFormRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 77
+ - javax.faces.component.UIComponent - 57
+ - javax.faces.context.ResponseWriter - 38
+ - javax.faces.context.ExternalContext - 22
+ - javax.faces.component.UIForm - 20
+ - javax.faces.component.behavior.ClientBehaviorHolder - 6
+ - javax.faces.application.ViewHandler - 3
+ - javax.faces.component.html.HtmlForm - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.application.Application - 2

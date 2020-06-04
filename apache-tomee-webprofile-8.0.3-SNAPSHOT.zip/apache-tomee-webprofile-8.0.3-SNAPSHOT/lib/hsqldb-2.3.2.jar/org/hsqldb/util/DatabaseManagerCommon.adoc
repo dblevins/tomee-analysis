@@ -1,0 +1,6 @@
+= org/hsqldb/util/DatabaseManagerCommon.class
+
+ - link:DatabaseManagerCommon-asmified.java[Asmified]
+
+== References
+

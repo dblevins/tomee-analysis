@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/OpCallbacks.class
+
+ - link:OpCallbacks-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/HttpsTokenSecurityEvent$AuthenticationType.class
+
+ - link:HttpsTokenSecurityEvent$AuthenticationType-asmified.java[Asmified]
+
+== References
+

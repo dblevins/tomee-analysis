@@ -1,0 +1,6 @@
+= org/apache/catalina/security/DeployXmlPermission.class
+
+ - link:DeployXmlPermission-asmified.java[Asmified]
+
+== References
+

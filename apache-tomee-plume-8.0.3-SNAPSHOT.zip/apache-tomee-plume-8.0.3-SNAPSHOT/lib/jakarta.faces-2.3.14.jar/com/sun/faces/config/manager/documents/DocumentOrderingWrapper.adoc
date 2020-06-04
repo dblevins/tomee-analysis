@@ -1,0 +1,6 @@
+= com/sun/faces/config/manager/documents/DocumentOrderingWrapper.class
+
+ - link:DocumentOrderingWrapper-asmified.java[Asmified]
+
+== References
+

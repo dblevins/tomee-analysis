@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/PDPDescriptorMarshaller.class
+
+ - link:PDPDescriptorMarshaller-asmified.java[Asmified]
+
+== References
+

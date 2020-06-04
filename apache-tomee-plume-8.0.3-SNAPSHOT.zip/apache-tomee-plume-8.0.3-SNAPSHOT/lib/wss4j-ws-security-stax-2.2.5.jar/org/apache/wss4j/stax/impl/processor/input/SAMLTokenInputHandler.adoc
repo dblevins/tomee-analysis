@@ -1,0 +1,9 @@
+= org/apache/wss4j/stax/impl/processor/input/SAMLTokenInputHandler.class
+
+ - link:SAMLTokenInputHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 7
+ - javax.xml.bind.Unmarshaller - 2
+ - javax.xml.bind.JAXBException - 2

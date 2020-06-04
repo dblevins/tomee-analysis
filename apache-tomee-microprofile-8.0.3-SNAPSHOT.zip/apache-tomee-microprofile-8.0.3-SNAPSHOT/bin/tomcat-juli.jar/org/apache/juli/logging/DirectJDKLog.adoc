@@ -1,0 +1,6 @@
+= org/apache/juli/logging/DirectJDKLog.class
+
+ - link:DirectJDKLog-asmified.java[Asmified]
+
+== References
+

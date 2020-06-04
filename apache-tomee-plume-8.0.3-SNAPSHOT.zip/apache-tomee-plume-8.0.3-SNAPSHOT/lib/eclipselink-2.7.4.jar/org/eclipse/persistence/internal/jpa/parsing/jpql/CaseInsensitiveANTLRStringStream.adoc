@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/CaseInsensitiveANTLRStringStream.class
+
+ - link:CaseInsensitiveANTLRStringStream-asmified.java[Asmified]
+
+== References
+

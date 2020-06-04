@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/core/helper/CoreConversionManager.class
+
+ - link:CoreConversionManager-asmified.java[Asmified]
+
+== References
+

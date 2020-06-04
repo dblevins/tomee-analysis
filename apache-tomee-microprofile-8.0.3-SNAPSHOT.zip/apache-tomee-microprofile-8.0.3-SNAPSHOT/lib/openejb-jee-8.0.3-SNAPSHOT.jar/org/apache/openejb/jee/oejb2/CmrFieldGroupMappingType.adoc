@@ -1,0 +1,10 @@
+= org/apache/openejb/jee/oejb2/CmrFieldGroupMappingType.class
+
+ - link:CmrFieldGroupMappingType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

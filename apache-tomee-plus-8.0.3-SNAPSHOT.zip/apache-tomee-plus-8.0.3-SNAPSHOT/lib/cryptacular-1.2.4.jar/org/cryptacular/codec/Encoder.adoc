@@ -1,0 +1,6 @@
+= org/cryptacular/codec/Encoder.class
+
+ - link:Encoder-asmified.java[Asmified]
+
+== References
+

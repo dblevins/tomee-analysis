@@ -1,0 +1,6 @@
+= org/apache/myfaces/spi/InjectionProviderException.class
+
+ - link:InjectionProviderException-asmified.java[Asmified]
+
+== References
+

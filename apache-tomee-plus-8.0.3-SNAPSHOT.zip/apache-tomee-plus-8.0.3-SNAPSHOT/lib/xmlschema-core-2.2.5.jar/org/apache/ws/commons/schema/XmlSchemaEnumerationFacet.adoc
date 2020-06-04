@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaEnumerationFacet.class
+
+ - link:XmlSchemaEnumerationFacet-asmified.java[Asmified]
+
+== References
+

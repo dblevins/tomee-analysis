@@ -1,0 +1,11 @@
+= javax/json/stream/JsonParser.class
+
+ - link:JsonParser-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 4
+ - javax.json.JsonObject - 1
+ - javax.json.stream.JsonLocation - 1
+ - javax.json.JsonArray - 1
+ - javax.json.stream.JsonParser$Event - 1

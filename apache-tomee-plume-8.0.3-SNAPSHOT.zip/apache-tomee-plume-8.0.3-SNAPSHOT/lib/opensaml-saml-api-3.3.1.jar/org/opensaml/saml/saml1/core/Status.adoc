@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/Status.class
+
+ - link:Status-asmified.java[Asmified]
+
+== References
+

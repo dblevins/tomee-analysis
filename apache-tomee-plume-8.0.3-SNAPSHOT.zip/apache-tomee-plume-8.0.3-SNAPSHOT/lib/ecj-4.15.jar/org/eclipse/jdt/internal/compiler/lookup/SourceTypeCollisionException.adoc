@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/SourceTypeCollisionException.class
+
+ - link:SourceTypeCollisionException-asmified.java[Asmified]
+
+== References
+

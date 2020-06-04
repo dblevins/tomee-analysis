@@ -1,0 +1,13 @@
+= org/apache/activemq/ActiveMQQueueBrowser.class
+
+ - link:ActiveMQQueueBrowser-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 13
+ - javax.jms.InvalidDestinationException - 4
+ - javax.jms.IllegalStateException - 3
+ - javax.jms.Queue - 2
+ - javax.jms.QueueBrowser - 1
+ - javax.jms.MessageListener - 1
+ - javax.jms.Message - 1

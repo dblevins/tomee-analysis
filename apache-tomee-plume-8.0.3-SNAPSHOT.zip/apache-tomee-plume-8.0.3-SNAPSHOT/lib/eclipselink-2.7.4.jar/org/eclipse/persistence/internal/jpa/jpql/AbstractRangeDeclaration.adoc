@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/AbstractRangeDeclaration.class
+
+ - link:AbstractRangeDeclaration-asmified.java[Asmified]
+
+== References
+

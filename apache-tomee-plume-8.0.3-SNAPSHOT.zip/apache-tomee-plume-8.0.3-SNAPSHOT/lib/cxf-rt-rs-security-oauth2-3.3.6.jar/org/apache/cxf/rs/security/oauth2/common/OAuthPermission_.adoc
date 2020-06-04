@@ -1,0 +1,9 @@
+= org/apache/cxf/rs/security/oauth2/common/OAuthPermission_.class
+
+ - link:OAuthPermission_-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.SingularAttribute - 4
+ - javax.persistence.metamodel.ListAttribute - 2
+ - javax.persistence.metamodel.StaticMetamodel - 1

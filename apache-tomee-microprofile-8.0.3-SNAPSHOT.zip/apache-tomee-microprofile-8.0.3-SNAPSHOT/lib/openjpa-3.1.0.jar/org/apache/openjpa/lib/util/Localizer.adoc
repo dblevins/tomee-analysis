@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/Localizer.class
+
+ - link:Localizer-asmified.java[Asmified]
+
+== References
+

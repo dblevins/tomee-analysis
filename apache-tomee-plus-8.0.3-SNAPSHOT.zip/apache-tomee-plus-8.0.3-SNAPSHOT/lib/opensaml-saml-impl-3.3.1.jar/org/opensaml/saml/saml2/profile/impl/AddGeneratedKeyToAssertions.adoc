@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/AddGeneratedKeyToAssertions.class
+
+ - link:AddGeneratedKeyToAssertions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 2

@@ -1,0 +1,6 @@
+= org/apache/activemq/memory/list/MessageList.class
+
+ - link:MessageList-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= com/sun/xml/messaging/saaj/soap/ver1_1/Message1_1Impl.class
+
+ - link:Message1_1Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MimeHeaders - 6
+ - javax.xml.soap.SOAPMessage - 2
+ - javax.xml.soap.SOAPPart - 1
+ - javax.xml.soap.SOAPConstants - 1

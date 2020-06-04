@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/DEREncodedKeyValueMarshaller.class
+
+ - link:DEREncodedKeyValueMarshaller-asmified.java[Asmified]
+
+== References
+

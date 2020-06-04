@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/CreatorCandidate.class
+
+ - link:CreatorCandidate-asmified.java[Asmified]
+
+== References
+

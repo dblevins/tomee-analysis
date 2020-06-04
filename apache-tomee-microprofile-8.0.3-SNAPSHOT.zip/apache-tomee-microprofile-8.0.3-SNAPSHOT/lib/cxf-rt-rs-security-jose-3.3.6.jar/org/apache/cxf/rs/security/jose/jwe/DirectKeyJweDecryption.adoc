@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jwe/DirectKeyJweDecryption.class
+
+ - link:DirectKeyJweDecryption-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/criteria/Expressions$GreaterThan.class
+
+ - link:Expressions$GreaterThan-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 9
+ - javax.persistence.criteria.Predicate - 1

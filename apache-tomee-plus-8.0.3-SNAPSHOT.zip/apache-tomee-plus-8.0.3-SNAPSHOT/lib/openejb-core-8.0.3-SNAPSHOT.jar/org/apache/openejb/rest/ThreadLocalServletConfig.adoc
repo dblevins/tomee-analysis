@@ -1,0 +1,8 @@
+= org/apache/openejb/rest/ThreadLocalServletConfig.class
+
+ - link:ThreadLocalServletConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 11
+ - javax.servlet.ServletContext - 2

@@ -1,0 +1,511 @@
+package asm.org.bouncycastle.jce.provider;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class BouncyCastleProviderConfigurationDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_SUPER, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", null, "java/lang/Object", new String[] { "org/bouncycastle/jcajce/provider/config/ProviderConfiguration" });
+
+classWriter.visitInnerClass("org/bouncycastle/crypto/CryptoServicesRegistrar$Property", "org/bouncycastle/crypto/CryptoServicesRegistrar", "Property", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "BC_EC_LOCAL_PERMISSION", "Ljava/security/Permission;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "BC_EC_PERMISSION", "Ljava/security/Permission;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "BC_DH_LOCAL_PERMISSION", "Ljava/security/Permission;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "BC_DH_PERMISSION", "Ljava/security/Permission;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "BC_EC_CURVE_PERMISSION", "Ljava/security/Permission;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "BC_ADDITIONAL_EC_CURVE_PERMISSION", "Ljava/security/Permission;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ecThreadSpec", "Ljava/lang/ThreadLocal;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "dhThreadSpec", "Ljava/lang/ThreadLocal;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "ecImplicitCaParams", "Lorg/bouncycastle/jce/spec/ECParameterSpec;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "dhDefaultParams", "Ljava/lang/Object;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "acceptableNamedCurves", "Ljava/util/Set;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "additionalECParameters", "Ljava/util/Map;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/ThreadLocal");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/ThreadLocal", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/ThreadLocal");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/ThreadLocal", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "dhThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "acceptableNamedCurves", "Ljava/util/Set;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "additionalECParameters", "Ljava/util/Map;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "setParameter", "(Ljava/lang/String;Ljava/lang/Object;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getSecurityManager", "()Ljava/lang/SecurityManager;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("threadLocalEcImplicitlyCa");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_EC_LOCAL_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/jce/spec/ECParameterSpec");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/jce/spec/ECParameterSpec");
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/security/spec/ECParameterSpec");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/jcajce/provider/asymmetric/util/EC5Util", "convertSpec", "(Ljava/security/spec/ECParameterSpec;)Lorg/bouncycastle/jce/spec/ECParameterSpec;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label6);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("ecImplicitlyCa");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label8);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label9);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_EC_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/jce/spec/ECParameterSpec");
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label10);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label11);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/jce/spec/ECParameterSpec");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecImplicitCaParams", "Lorg/bouncycastle/jce/spec/ECParameterSpec;");
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/security/spec/ECParameterSpec");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/jcajce/provider/asymmetric/util/EC5Util", "convertSpec", "(Ljava/security/spec/ECParameterSpec;)Lorg/bouncycastle/jce/spec/ECParameterSpec;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecImplicitCaParams", "Lorg/bouncycastle/jce/spec/ECParameterSpec;");
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("threadLocalDhDefaultParams");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label12);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label13);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_DH_LOCAL_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/crypto/spec/DHParameterSpec");
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label14);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "[Ljavax/crypto/spec/DHParameterSpec;");
+methodVisitor.visitJumpInsn(IFNE, label14);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label15);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label16);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("not a valid DHParameterSpec");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label17 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label17);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "dhThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
+Label label18 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label18);
+methodVisitor.visitLabel(label17);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "dhThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label18);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("DhDefaultParams");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label19 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label19);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label20 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label20);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_DH_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
+methodVisitor.visitLabel(label20);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/crypto/spec/DHParameterSpec");
+Label label21 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label21);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "[Ljavax/crypto/spec/DHParameterSpec;");
+methodVisitor.visitJumpInsn(IFNE, label21);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label22 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label22);
+methodVisitor.visitLabel(label21);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "dhDefaultParams", "Ljava/lang/Object;");
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label22);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("not a valid DHParameterSpec or DHParameterSpec[]");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label19);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("acceptableEcCurves");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label23 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label23);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label24 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label24);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_EC_CURVE_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
+methodVisitor.visitLabel(label24);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Set");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "acceptableNamedCurves", "Ljava/util/Set;");
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label23);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("additionalEcParameters");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label25 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label25);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_ADDITIONAL_EC_CURVE_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityManager", "checkPermission", "(Ljava/security/Permission;)V", false);
+methodVisitor.visitLabel(label25);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "additionalECParameters", "Ljava/util/Map;");
+methodVisitor.visitLabel(label7);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEcImplicitlyCa", "()Lorg/bouncycastle/jce/spec/ECParameterSpec;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/jce/spec/ECParameterSpec");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "ecImplicitCaParams", "Lorg/bouncycastle/jce/spec/ECParameterSpec;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDHDefaultParameters", "(I)Ljavax/crypto/spec/DHParameterSpec;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "dhThreadSpec", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "dhDefaultParams", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/crypto/spec/DHParameterSpec");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/crypto/spec/DHParameterSpec");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/crypto/spec/DHParameterSpec", "getP", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/math/BigInteger", "bitLength", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "[Ljavax/crypto/spec/DHParameterSpec;");
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/crypto/spec/DHParameterSpec;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljavax/crypto/spec/DHParameterSpec;");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/crypto/spec/DHParameterSpec", "getP", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/math/BigInteger", "bitLength", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/CryptoServicesRegistrar$Property", "DH_DEFAULT_PARAMS", "Lorg/bouncycastle/crypto/CryptoServicesRegistrar$Property;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/CryptoServicesRegistrar", "getSizedProperty", "(Lorg/bouncycastle/crypto/CryptoServicesRegistrar$Property;I)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/DHParameters");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label6);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/spec/DHDomainParameterSpec");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/spec/DHDomainParameterSpec", "<init>", "(Lorg/bouncycastle/crypto/params/DHParameters;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDSADefaultParameters", "(I)Ljava/security/spec/DSAParameterSpec;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/CryptoServicesRegistrar$Property", "DSA_DEFAULT_PARAMS", "Lorg/bouncycastle/crypto/CryptoServicesRegistrar$Property;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/CryptoServicesRegistrar", "getSizedProperty", "(Lorg/bouncycastle/crypto/CryptoServicesRegistrar$Property;I)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/DSAParameters");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/DSAParameterSpec");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/DSAParameters", "getP", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/DSAParameters", "getQ", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/DSAParameters", "getG", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/DSAParameterSpec", "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAcceptableNamedCurves", "()Ljava/util/Set;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "acceptableNamedCurves", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableSet", "(Ljava/util/Set;)Ljava/util/Set;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAdditionalECParameters", "()Ljava/util/Map;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "additionalECParameters", "Ljava/util/Map;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "unmodifiableMap", "(Ljava/util/Map;)Ljava/util/Map;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("BC");
+methodVisitor.visitLdcInsn("threadLocalEcImplicitlyCa");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_EC_LOCAL_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("BC");
+methodVisitor.visitLdcInsn("ecImplicitlyCa");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_EC_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("BC");
+methodVisitor.visitLdcInsn("threadLocalDhDefaultParams");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_DH_LOCAL_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("BC");
+methodVisitor.visitLdcInsn("DhDefaultParams");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_DH_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("BC");
+methodVisitor.visitLdcInsn("acceptableEcCurves");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_EC_CURVE_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("BC");
+methodVisitor.visitLdcInsn("additionalEcParameters");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration", "BC_ADDITIONAL_EC_CURVE_PERMISSION", "Ljava/security/Permission;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

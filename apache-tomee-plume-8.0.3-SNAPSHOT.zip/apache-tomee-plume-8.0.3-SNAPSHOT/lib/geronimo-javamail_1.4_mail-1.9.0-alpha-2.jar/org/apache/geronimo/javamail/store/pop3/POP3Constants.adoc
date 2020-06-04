@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/pop3/POP3Constants.class
+
+ - link:POP3Constants-asmified.java[Asmified]
+
+== References
+

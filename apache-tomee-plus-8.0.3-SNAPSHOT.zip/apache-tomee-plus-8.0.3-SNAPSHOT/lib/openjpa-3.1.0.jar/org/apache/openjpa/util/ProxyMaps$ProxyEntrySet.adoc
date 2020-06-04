@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ProxyMaps$ProxyEntrySet.class
+
+ - link:ProxyMaps$ProxyEntrySet-asmified.java[Asmified]
+
+== References
+

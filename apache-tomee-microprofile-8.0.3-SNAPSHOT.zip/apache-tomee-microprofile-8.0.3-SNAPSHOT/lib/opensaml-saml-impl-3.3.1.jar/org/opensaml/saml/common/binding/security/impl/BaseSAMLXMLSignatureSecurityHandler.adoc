@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/security/impl/BaseSAMLXMLSignatureSecurityHandler.class
+
+ - link:BaseSAMLXMLSignatureSecurityHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6
+ - javax.annotation.Nonnull - 4

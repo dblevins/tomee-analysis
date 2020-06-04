@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/CollectionWrapperBuilder.class
+
+ - link:CollectionWrapperBuilder-asmified.java[Asmified]
+
+== References
+

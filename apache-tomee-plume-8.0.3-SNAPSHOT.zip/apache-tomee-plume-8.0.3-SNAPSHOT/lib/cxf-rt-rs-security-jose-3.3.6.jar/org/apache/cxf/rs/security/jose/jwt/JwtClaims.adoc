@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jwt/JwtClaims.class
+
+ - link:JwtClaims-asmified.java[Asmified]
+
+== References
+

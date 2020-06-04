@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/ViewPoolParameterImpl.class
+
+ - link:ViewPoolParameterImpl-asmified.java[Asmified]
+
+== References
+

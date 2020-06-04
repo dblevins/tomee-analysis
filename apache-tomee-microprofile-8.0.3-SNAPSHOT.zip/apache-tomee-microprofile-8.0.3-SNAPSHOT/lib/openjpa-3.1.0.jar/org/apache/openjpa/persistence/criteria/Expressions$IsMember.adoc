@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$IsMember.class
+
+ - link:Expressions$IsMember-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 15
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Selection - 2

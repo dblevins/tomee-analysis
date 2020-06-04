@@ -1,0 +1,9 @@
+= org/apache/batchee/container/impl/controller/SingleThreadedStepController.class
+
+ - link:SingleThreadedStepController-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.listener.StepListener - 8
+ - javax.batch.api.partition.PartitionCollector - 7
+ - javax.batch.runtime.BatchStatus - 2

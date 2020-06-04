@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonPropertyOrder.class
+
+ - link:JsonPropertyOrder-asmified.java[Asmified]
+
+== References
+

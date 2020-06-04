@@ -1,0 +1,8 @@
+= org/apache/webbeans/event/EventUtil.class
+
+ - link:EventUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 5
+ - javax.enterprise.event.Event - 2

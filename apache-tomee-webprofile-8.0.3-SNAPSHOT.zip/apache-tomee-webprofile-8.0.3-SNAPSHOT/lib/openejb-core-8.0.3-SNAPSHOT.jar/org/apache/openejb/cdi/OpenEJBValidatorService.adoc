@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/OpenEJBValidatorService.class
+
+ - link:OpenEJBValidatorService-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Validator - 2
+ - javax.validation.ValidatorFactory - 2

@@ -1,0 +1,10 @@
+= org/apache/openejb/util/OpenEJBScripter$BeanManagerHelper.class
+
+ - link:OpenEJBScripter$BeanManagerHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 14
+ - javax.enterprise.inject.spi.Bean - 3
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.context.spi.Contextual - 1

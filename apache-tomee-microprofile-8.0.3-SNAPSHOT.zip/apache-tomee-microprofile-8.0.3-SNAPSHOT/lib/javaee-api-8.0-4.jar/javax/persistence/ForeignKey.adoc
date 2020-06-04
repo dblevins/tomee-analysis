@@ -1,0 +1,7 @@
+= javax/persistence/ForeignKey.class
+
+ - link:ForeignKey-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ConstraintMode - 2

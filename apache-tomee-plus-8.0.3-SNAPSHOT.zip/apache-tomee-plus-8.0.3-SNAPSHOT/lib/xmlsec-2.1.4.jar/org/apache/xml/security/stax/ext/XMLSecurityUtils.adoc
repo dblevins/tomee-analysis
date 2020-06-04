@@ -1,0 +1,7 @@
+= org/apache/xml/security/stax/ext/XMLSecurityUtils.class
+
+ - link:XMLSecurityUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 7

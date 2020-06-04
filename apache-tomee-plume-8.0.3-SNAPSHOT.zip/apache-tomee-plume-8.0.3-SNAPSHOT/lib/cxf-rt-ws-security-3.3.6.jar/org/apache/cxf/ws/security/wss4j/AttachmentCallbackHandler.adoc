@@ -1,0 +1,8 @@
+= org/apache/cxf/ws/security/wss4j/AttachmentCallbackHandler.class
+
+ - link:AttachmentCallbackHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 7
+ - javax.activation.DataSource - 1

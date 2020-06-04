@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/simpl/SimpleThreadPool$WorkerThread.class
+
+ - link:SimpleThreadPool$WorkerThread-asmified.java[Asmified]
+
+== References
+

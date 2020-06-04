@@ -1,0 +1,9 @@
+= javax/faces/model/ResultSetDataModel$WrapResultSetEntriesIterator.class
+
+ - link:ResultSetDataModel$WrapResultSetEntriesIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.ResultSetDataModel$WrapResultSetMap - 8
+ - javax.faces.model.ResultSetDataModel$WrapResultSetEntry - 2
+ - javax.faces.model.ResultSetDataModel$WrapResultSetEntriesIterator - 1

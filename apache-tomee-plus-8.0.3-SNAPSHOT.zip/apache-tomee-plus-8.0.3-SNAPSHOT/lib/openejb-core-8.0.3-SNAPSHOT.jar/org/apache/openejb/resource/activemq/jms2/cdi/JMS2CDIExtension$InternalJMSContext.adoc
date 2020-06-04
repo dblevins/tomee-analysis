@@ -1,0 +1,23 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$InternalJMSContext.class
+
+ - link:JMS2CDIExtension$InternalJMSContext-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSContext - 95
+ - javax.jms.JMSConsumer - 18
+ - javax.jms.Topic - 14
+ - javax.jms.Queue - 6
+ - javax.jms.Destination - 6
+ - javax.jms.QueueBrowser - 4
+ - javax.jms.TextMessage - 4
+ - javax.jms.ObjectMessage - 4
+ - javax.jms.ExceptionListener - 4
+ - javax.jms.TemporaryTopic - 2
+ - javax.jms.StreamMessage - 2
+ - javax.jms.JMSProducer - 2
+ - javax.jms.MapMessage - 2
+ - javax.jms.BytesMessage - 2
+ - javax.jms.ConnectionMetaData - 2
+ - javax.jms.TemporaryQueue - 2
+ - javax.jms.Message - 2

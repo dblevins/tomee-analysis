@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/WebClient$BodyWriter.class
+
+ - link:WebClient$BodyWriter-asmified.java[Asmified]
+
+== References
+

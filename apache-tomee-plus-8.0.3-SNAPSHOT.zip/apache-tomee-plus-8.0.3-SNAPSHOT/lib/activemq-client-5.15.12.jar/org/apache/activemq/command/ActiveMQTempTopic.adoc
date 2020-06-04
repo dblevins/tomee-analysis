@@ -1,0 +1,8 @@
+= org/apache/activemq/command/ActiveMQTempTopic.class
+
+ - link:ActiveMQTempTopic-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TemporaryTopic - 1
+ - javax.jms.JMSException - 1

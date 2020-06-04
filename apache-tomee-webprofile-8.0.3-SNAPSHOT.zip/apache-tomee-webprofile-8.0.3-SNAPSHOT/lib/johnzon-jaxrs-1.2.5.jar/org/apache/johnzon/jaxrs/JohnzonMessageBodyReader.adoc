@@ -1,0 +1,12 @@
+= org/apache/johnzon/jaxrs/JohnzonMessageBodyReader.class
+
+ - link:JohnzonMessageBodyReader-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.core.MultivaluedMap - 1
+ - javax.json.JsonStructure - 1
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

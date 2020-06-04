@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/LocalMBeanServer.class
+
+ - link:LocalMBeanServer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/GaugeImpl.class
+
+ - link:GaugeImpl-asmified.java[Asmified]
+
+== References
+

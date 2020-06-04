@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/EmpressDictionary.class
+
+ - link:EmpressDictionary-asmified.java[Asmified]
+
+== References
+

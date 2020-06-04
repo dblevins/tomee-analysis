@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy$Http.class
+
+ - link:NamingStrategy$Http-asmified.java[Asmified]
+
+== References
+

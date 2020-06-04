@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/AnyMappingContentHandler.class
+
+ - link:AnyMappingContentHandler-asmified.java[Asmified]
+
+== References
+

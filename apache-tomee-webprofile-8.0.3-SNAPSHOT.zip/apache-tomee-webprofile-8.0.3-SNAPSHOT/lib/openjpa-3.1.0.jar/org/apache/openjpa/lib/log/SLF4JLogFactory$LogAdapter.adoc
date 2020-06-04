@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/log/SLF4JLogFactory$LogAdapter.class
+
+ - link:SLF4JLogFactory$LogAdapter-asmified.java[Asmified]
+
+== References
+

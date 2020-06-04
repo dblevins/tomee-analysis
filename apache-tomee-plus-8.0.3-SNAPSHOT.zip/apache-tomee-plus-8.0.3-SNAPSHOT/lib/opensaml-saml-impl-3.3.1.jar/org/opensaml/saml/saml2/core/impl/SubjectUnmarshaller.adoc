@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/SubjectUnmarshaller.class
+
+ - link:SubjectUnmarshaller-asmified.java[Asmified]
+
+== References
+

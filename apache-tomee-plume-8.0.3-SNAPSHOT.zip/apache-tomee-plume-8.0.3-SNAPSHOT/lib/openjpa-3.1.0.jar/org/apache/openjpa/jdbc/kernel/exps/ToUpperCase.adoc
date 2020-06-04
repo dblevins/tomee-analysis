@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/ToUpperCase.class
+
+ - link:ToUpperCase-asmified.java[Asmified]
+
+== References
+

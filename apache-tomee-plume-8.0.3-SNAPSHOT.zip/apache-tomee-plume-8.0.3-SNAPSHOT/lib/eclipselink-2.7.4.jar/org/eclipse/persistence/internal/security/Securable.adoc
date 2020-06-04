@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/Securable.class
+
+ - link:Securable-asmified.java[Asmified]
+
+== References
+

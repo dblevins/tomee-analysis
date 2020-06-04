@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sequencing/UnaryTableSequence.class
+
+ - link:UnaryTableSequence-asmified.java[Asmified]
+
+== References
+

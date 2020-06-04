@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/AccessDictionary.class
+
+ - link:AccessDictionary-asmified.java[Asmified]
+
+== References
+

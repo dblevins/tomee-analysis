@@ -1,0 +1,10 @@
+= org/apache/cxf/microprofile/client/DefaultResponseExceptionMapper.class
+
+ - link:DefaultResponseExceptionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.annotation.Priority - 1
+ - javax.enterprise.inject.Vetoed - 1

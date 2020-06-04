@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/criterion/EncryptionOptionalCriterion.class
+
+ - link:EncryptionOptionalCriterion-asmified.java[Asmified]
+
+== References
+

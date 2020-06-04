@@ -1,0 +1,22 @@
+= org/apache/cxf/jaxrs/provider/jsrjsonp/JsrJsonpProvider.class
+
+ - link:JsrJsonpProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonStructure - 20
+ - javax.ws.rs.core.MediaType - 18
+ - javax.ws.rs.core.MultivaluedMap - 13
+ - javax.json.JsonReader - 10
+ - javax.json.JsonWriter - 9
+ - javax.ws.rs.WebApplicationException - 5
+ - javax.json.JsonException - 3
+ - javax.json.JsonObject - 2
+ - javax.json.JsonArray - 2
+ - javax.json.Json - 2
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

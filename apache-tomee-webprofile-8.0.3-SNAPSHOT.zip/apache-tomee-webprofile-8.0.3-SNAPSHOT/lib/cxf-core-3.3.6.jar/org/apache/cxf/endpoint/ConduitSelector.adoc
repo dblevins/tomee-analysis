@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ConduitSelector.class
+
+ - link:ConduitSelector-asmified.java[Asmified]
+
+== References
+

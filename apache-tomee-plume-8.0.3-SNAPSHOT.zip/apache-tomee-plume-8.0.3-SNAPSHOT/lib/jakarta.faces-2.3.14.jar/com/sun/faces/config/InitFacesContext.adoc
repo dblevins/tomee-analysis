@@ -1,0 +1,15 @@
+= com/sun/faces/config/InitFacesContext.class
+
+ - link:InitFacesContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 15
+ - javax.servlet.ServletContext - 12
+ - javax.el.ELContext - 7
+ - javax.faces.application.Application - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.application.ProjectStage - 3
+ - javax.faces.application.ApplicationFactory - 2
+ - javax.faces.context.ExternalContext - 1
+ - javax.faces.FactoryFinder - 1

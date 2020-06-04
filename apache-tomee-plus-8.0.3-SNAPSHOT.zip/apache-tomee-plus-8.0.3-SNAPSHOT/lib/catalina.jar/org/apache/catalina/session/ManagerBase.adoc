@@ -1,0 +1,7 @@
+= org/apache/catalina/session/ManagerBase.class
+
+ - link:ManagerBase-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 4

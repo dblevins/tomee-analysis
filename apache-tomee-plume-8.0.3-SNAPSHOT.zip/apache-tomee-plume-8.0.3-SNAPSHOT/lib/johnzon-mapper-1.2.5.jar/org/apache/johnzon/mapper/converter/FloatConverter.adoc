@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/FloatConverter.class
+
+ - link:FloatConverter-asmified.java[Asmified]
+
+== References
+

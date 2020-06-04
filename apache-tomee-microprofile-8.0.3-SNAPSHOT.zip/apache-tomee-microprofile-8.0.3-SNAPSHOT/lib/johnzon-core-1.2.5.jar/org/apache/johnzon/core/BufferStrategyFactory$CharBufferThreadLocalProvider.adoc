@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/BufferStrategyFactory$CharBufferThreadLocalProvider.class
+
+ - link:BufferStrategyFactory$CharBufferThreadLocalProvider-asmified.java[Asmified]
+
+== References
+

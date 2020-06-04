@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/NameIDBean.class
+
+ - link:NameIDBean-asmified.java[Asmified]
+
+== References
+

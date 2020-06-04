@@ -1,0 +1,9 @@
+= org/opensaml/soap/client/http/PipelineFactoryHttpSOAPClient.class
+
+ - link:PipelineFactoryHttpSOAPClient-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 4
+ - javax.annotation.concurrent.ThreadSafe - 1

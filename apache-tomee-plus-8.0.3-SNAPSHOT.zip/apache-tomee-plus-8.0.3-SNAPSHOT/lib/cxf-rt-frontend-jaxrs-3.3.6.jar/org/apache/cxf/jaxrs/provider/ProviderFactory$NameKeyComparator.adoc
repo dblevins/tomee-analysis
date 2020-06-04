@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/ProviderFactory$NameKeyComparator.class
+
+ - link:ProviderFactory$NameKeyComparator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/json/utils/JSONUtils$IgnoreContentJettisonWriter.class
+
+ - link:JSONUtils$IgnoreContentJettisonWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/ProxyIndirectionPolicy.class
+
+ - link:ProxyIndirectionPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/lib/Set.class
+
+ - link:Set-asmified.java[Asmified]
+
+== References
+

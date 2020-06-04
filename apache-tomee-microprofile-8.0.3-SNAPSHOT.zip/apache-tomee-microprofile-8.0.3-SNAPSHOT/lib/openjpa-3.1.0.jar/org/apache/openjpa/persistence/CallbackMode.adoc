@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/CallbackMode.class
+
+ - link:CallbackMode-asmified.java[Asmified]
+
+== References
+

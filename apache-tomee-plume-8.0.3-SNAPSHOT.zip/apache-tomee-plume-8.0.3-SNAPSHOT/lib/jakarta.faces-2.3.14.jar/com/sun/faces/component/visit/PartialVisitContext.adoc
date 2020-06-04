@@ -1,0 +1,14 @@
+= com/sun/faces/component/visit/PartialVisitContext.class
+
+ - link:PartialVisitContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.component.UIComponent - 8
+ - javax.faces.component.visit.VisitResult - 5
+ - javax.faces.component.visit.VisitHint - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.component.visit.VisitCallback - 2
+ - javax.faces.component.UINamingContainer - 2
+ - javax.faces.component.NamingContainer - 1

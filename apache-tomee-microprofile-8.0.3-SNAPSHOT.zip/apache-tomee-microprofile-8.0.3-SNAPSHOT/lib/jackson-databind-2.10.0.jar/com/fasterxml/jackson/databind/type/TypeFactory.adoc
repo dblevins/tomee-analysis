@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/TypeFactory.class
+
+ - link:TypeFactory-asmified.java[Asmified]
+
+== References
+

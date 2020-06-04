@@ -1,0 +1,7 @@
+= org/opensaml/security/x509/PKIXTrustEvaluator.class
+
+ - link:PKIXTrustEvaluator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

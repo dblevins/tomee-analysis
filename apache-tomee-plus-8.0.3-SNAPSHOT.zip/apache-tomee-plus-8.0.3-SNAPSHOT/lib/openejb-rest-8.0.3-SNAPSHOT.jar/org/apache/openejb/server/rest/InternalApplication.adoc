@@ -1,0 +1,7 @@
+= org/apache/openejb/server/rest/InternalApplication.class
+
+ - link:InternalApplication-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 13

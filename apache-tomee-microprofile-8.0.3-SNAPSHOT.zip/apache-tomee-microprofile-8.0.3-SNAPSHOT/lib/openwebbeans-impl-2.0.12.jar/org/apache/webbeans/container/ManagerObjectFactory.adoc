@@ -1,0 +1,6 @@
+= org/apache/webbeans/container/ManagerObjectFactory.class
+
+ - link:ManagerObjectFactory-asmified.java[Asmified]
+
+== References
+

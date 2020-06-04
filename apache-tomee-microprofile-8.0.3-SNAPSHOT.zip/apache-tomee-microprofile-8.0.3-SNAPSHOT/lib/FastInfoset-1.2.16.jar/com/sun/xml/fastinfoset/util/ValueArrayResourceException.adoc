@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/ValueArrayResourceException.class
+
+ - link:ValueArrayResourceException-asmified.java[Asmified]
+
+== References
+

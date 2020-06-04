@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/BindingFaultInfo.class
+
+ - link:BindingFaultInfo-asmified.java[Asmified]
+
+== References
+

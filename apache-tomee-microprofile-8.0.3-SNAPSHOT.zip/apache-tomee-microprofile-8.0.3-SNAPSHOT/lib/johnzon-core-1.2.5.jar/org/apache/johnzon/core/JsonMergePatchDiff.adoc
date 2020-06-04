@@ -1,0 +1,10 @@
+= org/apache/johnzon/core/JsonMergePatchDiff.class
+
+ - link:JsonMergePatchDiff-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 33
+ - javax.json.JsonObject - 16
+ - javax.json.JsonObjectBuilder - 10
+ - javax.json.JsonMergePatch - 1

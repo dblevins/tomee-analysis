@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/jsf/PassthroughRuleImpl$ValueExpressionMetadata.class
+
+ - link:PassthroughRuleImpl$ValueExpressionMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.el.ValueExpression - 1

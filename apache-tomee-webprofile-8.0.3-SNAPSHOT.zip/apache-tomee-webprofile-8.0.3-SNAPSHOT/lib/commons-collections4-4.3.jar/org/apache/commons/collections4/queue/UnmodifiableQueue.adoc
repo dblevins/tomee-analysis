@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/queue/UnmodifiableQueue.class
+
+ - link:UnmodifiableQueue-asmified.java[Asmified]
+
+== References
+

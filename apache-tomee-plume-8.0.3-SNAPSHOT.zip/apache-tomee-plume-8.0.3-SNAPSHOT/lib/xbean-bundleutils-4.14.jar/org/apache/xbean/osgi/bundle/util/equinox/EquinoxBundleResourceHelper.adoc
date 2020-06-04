@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/equinox/EquinoxBundleResourceHelper.class
+
+ - link:EquinoxBundleResourceHelper-asmified.java[Asmified]
+
+== References
+

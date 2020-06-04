@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/InverseLogical.class
+
+ - link:InverseLogical-asmified.java[Asmified]
+
+== References
+

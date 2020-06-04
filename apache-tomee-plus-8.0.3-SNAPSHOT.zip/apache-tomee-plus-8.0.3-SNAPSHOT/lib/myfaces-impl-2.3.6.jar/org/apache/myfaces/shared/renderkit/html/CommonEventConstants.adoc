@@ -1,0 +1,7 @@
+= org/apache/myfaces/shared/renderkit/html/CommonEventConstants.class
+
+ - link:CommonEventConstants-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 3

@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/codec/binary/StringUtils.class
+
+ - link:StringUtils-asmified.java[Asmified]
+
+== References
+

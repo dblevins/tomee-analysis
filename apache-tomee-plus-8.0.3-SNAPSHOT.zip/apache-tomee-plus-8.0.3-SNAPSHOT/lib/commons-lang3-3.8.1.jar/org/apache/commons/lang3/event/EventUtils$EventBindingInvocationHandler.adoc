@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/event/EventUtils$EventBindingInvocationHandler.class
+
+ - link:EventUtils$EventBindingInvocationHandler-asmified.java[Asmified]
+
+== References
+

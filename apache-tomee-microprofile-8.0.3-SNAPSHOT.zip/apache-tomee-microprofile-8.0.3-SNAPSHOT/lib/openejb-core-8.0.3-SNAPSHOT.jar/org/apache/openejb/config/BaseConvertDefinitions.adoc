@@ -1,0 +1,6 @@
+= org/apache/openejb/config/BaseConvertDefinitions.class
+
+ - link:BaseConvertDefinitions-asmified.java[Asmified]
+
+== References
+

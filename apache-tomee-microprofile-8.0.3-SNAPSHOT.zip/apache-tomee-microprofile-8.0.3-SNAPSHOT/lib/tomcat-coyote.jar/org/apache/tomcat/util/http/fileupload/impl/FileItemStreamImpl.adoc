@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/fileupload/impl/FileItemStreamImpl.class
+
+ - link:FileItemStreamImpl-asmified.java[Asmified]
+
+== References
+

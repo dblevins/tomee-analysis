@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AuthorityBindingImpl.class
+
+ - link:AuthorityBindingImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/ServerPlatformUtils.class
+
+ - link:ServerPlatformUtils-asmified.java[Asmified]
+
+== References
+

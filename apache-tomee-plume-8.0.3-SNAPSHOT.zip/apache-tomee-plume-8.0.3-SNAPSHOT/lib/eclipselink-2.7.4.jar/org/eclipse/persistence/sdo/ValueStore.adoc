@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/ValueStore.class
+
+ - link:ValueStore-asmified.java[Asmified]
+
+== References
+

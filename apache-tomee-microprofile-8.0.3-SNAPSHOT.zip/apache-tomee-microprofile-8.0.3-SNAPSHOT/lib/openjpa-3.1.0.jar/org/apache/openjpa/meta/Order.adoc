@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/Order.class
+
+ - link:Order-asmified.java[Asmified]
+
+== References
+

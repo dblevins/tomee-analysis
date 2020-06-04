@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/SymbolTable$Bucket.class
+
+ - link:SymbolTable$Bucket-asmified.java[Asmified]
+
+== References
+

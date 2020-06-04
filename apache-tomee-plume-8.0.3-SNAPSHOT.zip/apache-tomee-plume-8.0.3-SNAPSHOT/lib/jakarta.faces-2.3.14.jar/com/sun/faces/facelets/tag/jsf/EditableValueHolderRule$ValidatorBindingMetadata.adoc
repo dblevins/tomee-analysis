@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/jsf/EditableValueHolderRule$ValidatorBindingMetadata.class
+
+ - link:EditableValueHolderRule$ValidatorBindingMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.component.EditableValueHolder - 2
+ - javax.el.MethodExpression - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.el.MethodBinding - 1

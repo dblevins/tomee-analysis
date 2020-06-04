@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/ConstGetObjectId$ConstGetObjectIdExpState.class
+
+ - link:ConstGetObjectId$ConstGetObjectIdExpState-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/SimpleMixInResolver.class
+
+ - link:SimpleMixInResolver-asmified.java[Asmified]
+
+== References
+

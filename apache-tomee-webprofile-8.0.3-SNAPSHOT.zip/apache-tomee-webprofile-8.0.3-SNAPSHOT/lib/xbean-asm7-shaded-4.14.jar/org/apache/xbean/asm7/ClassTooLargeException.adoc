@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/ClassTooLargeException.class
+
+ - link:ClassTooLargeException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/bval/constraints/NotEmpty.class
+
+ - link:NotEmpty-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.NotEmpty - 2
+ - javax.validation.OverridesAttribute - 1
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1

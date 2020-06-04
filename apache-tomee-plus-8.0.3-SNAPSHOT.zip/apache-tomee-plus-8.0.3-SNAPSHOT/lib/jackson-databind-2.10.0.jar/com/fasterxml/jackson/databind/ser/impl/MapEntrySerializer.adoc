@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/MapEntrySerializer.class
+
+ - link:MapEntrySerializer-asmified.java[Asmified]
+
+== References
+

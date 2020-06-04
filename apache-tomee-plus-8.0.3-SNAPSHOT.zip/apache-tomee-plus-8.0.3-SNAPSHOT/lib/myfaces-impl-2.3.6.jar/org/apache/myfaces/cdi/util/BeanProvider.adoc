@@ -1,0 +1,11 @@
+= org/apache/myfaces/cdi/util/BeanProvider.class
+
+ - link:BeanProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 7
+ - javax.enterprise.inject.spi.Bean - 3
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.inject.Typed - 1
+ - javax.enterprise.context.spi.Contextual - 1

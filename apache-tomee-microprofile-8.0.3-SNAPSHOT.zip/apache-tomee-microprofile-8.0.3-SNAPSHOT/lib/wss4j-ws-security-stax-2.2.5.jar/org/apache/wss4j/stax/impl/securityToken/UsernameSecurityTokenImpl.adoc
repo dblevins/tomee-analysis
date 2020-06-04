@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/securityToken/UsernameSecurityTokenImpl.class
+
+ - link:UsernameSecurityTokenImpl-asmified.java[Asmified]
+
+== References
+

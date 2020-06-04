@@ -1,0 +1,10 @@
+= javax/mail/search/MessageIDTerm.class
+
+ - link:MessageIDTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.StringTerm - 3
+ - javax.mail.Message - 2
+ - javax.mail.search.MessageIDTerm - 2
+ - javax.mail.MessagingException - 2

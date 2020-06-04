@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/compiler/DynamicComponentFacelet.class
+
+ - link:DynamicComponentFacelet-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 3
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.view.facelets.FaceletHandler - 1

@@ -1,0 +1,7 @@
+= org/apache/webbeans/intercept/DefaultInterceptorHandler$InstanceProvider.class
+
+ - link:DefaultInterceptorHandler$InstanceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 1

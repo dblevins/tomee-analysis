@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/CatchParameterBinding.class
+
+ - link:CatchParameterBinding-asmified.java[Asmified]
+
+== References
+

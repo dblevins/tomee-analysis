@@ -1,0 +1,7 @@
+= org/apache/activemq/ActiveMQConnectionMetaData.class
+
+ - link:ActiveMQConnectionMetaData-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.ConnectionMetaData - 1

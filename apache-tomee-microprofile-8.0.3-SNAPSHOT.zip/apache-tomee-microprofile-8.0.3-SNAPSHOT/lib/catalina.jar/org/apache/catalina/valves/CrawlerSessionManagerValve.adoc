@@ -1,0 +1,8 @@
+= org/apache/catalina/valves/CrawlerSessionManagerValve.class
+
+ - link:CrawlerSessionManagerValve-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 7
+ - javax.servlet.ServletException - 1

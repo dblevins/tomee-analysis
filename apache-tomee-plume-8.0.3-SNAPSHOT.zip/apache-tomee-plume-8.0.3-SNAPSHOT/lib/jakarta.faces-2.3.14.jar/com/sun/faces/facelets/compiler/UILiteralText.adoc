@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/compiler/UILiteralText.class
+
+ - link:UILiteralText-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 2
+ - javax.faces.context.FacesContext - 2

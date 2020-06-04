@@ -1,0 +1,11 @@
+= org/apache/openjpa/persistence/AbstractQuery.class
+
+ - link:AbstractQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Parameter - 72
+ - javax.persistence.TemporalType - 38
+ - javax.persistence.TypedQuery - 10
+ - javax.persistence.Query - 9
+ - javax.persistence.criteria.ParameterExpression - 3

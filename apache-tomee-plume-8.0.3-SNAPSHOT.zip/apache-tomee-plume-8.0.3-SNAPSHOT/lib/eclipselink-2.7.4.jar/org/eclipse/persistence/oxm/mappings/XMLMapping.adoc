@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/XMLMapping.class
+
+ - link:XMLMapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/logging/impl/NoOpLog.class
+
+ - link:NoOpLog-asmified.java[Asmified]
+
+== References
+

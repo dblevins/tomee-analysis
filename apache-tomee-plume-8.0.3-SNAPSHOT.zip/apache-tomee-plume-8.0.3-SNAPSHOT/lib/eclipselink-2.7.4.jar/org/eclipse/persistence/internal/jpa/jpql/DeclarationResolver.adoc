@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/DeclarationResolver.class
+
+ - link:DeclarationResolver-asmified.java[Asmified]
+
+== References
+

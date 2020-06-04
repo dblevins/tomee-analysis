@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/ThreadUtils$AlwaysTruePredicate.class
+
+ - link:ThreadUtils$AlwaysTruePredicate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/lib/StringConverter.class
+
+ - link:StringConverter-asmified.java[Asmified]
+
+== References
+

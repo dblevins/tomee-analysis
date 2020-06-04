@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/EncryptedDataBuilder.class
+
+ - link:EncryptedDataBuilder-asmified.java[Asmified]
+
+== References
+

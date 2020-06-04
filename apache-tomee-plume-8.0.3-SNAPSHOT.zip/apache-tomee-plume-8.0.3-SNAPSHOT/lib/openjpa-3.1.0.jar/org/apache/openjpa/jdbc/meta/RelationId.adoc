@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/RelationId.class
+
+ - link:RelationId-asmified.java[Asmified]
+
+== References
+

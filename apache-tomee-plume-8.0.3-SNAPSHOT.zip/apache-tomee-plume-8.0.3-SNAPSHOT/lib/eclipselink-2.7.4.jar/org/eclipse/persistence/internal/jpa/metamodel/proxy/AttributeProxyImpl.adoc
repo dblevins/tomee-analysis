@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/metamodel/proxy/AttributeProxyImpl.class
+
+ - link:AttributeProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute - 24
+ - javax.persistence.metamodel.Attribute$PersistentAttributeType - 2
+ - javax.persistence.metamodel.ManagedType - 2

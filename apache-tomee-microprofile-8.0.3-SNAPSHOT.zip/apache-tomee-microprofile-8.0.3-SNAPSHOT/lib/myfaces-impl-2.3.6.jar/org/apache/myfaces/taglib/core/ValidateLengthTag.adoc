@@ -1,0 +1,9 @@
+= org/apache/myfaces/taglib/core/ValidateLengthTag.class
+
+ - link:ValidateLengthTag-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.validator.LengthValidator - 4
+ - javax.faces.validator.Validator - 2
+ - javax.servlet.jsp.JspException - 1

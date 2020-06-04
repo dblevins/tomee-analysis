@@ -1,0 +1,6 @@
+= org/jvnet/staxex/XMLStreamReaderEx.class
+
+ - link:XMLStreamReaderEx-asmified.java[Asmified]
+
+== References
+

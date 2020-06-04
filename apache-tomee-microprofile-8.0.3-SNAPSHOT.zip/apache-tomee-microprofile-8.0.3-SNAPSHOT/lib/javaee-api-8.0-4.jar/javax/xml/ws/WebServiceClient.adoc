@@ -1,0 +1,6 @@
+= javax/xml/ws/WebServiceClient.class
+
+ - link:WebServiceClient-asmified.java[Asmified]
+
+== References
+

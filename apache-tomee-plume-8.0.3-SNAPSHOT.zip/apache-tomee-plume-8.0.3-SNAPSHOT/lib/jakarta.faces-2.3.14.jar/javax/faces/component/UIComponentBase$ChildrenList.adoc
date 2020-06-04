@@ -1,0 +1,10 @@
+= javax/faces/component/UIComponentBase$ChildrenList.class
+
+ - link:UIComponentBase$ChildrenList-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 53
+ - javax.faces.component.UIComponentBase$ChildrenList - 17
+ - javax.faces.component.UIComponentBase$ChildrenListIterator - 6
+ - javax.faces.component.UIComponentBase - 3

@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/commons/SerialVersionUIDAdder.class
+
+ - link:SerialVersionUIDAdder-asmified.java[Asmified]
+
+== References
+

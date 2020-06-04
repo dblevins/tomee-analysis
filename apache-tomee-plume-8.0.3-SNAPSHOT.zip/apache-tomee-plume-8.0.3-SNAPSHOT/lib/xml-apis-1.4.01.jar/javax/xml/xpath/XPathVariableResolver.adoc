@@ -1,0 +1,6 @@
+= javax/xml/xpath/XPathVariableResolver.class
+
+ - link:XPathVariableResolver-asmified.java[Asmified]
+
+== References
+

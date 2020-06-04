@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/codec/StringDigester.class
+
+ - link:StringDigester-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 5

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaItemWithRef.class
+
+ - link:XmlSchemaItemWithRef-asmified.java[Asmified]
+
+== References
+

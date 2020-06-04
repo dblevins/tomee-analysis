@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/Instantiatable.class
+
+ - link:Instantiatable-asmified.java[Asmified]
+
+== References
+

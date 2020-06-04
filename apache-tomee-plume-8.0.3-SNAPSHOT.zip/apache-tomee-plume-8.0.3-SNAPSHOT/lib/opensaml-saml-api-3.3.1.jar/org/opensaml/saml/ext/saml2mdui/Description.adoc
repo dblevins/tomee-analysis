@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/Description.class
+
+ - link:Description-asmified.java[Asmified]
+
+== References
+

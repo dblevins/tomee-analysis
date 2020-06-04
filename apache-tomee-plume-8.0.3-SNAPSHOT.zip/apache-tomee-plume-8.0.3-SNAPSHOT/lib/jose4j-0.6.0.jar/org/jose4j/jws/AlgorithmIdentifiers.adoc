@@ -1,0 +1,6 @@
+= org/jose4j/jws/AlgorithmIdentifiers.class
+
+ - link:AlgorithmIdentifiers-asmified.java[Asmified]
+
+== References
+

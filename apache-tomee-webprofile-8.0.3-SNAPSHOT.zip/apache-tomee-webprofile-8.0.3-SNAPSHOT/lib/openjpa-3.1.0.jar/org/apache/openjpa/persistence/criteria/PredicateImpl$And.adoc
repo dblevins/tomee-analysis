@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/PredicateImpl$And.class
+
+ - link:PredicateImpl$And-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate$BooleanOperator - 4
+ - javax.persistence.criteria.Expression - 4
+ - javax.persistence.criteria.Predicate - 3

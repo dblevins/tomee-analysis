@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/STSSamlAssertionValidator.class
+
+ - link:STSSamlAssertionValidator-asmified.java[Asmified]
+
+== References
+

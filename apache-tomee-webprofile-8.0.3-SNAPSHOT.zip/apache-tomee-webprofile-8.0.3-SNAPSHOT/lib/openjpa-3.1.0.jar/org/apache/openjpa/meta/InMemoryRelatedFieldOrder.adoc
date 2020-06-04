@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/InMemoryRelatedFieldOrder.class
+
+ - link:InMemoryRelatedFieldOrder-asmified.java[Asmified]
+
+== References
+

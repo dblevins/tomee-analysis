@@ -1,0 +1,11 @@
+= org/apache/openjpa/persistence/PersistenceUnitInfoImpl.class
+
+ - link:PersistenceUnitInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 36
+ - javax.persistence.spi.PersistenceUnitTransactionType - 12
+ - javax.persistence.SharedCacheMode - 10
+ - javax.persistence.ValidationMode - 10
+ - javax.persistence.spi.ClassTransformer - 1

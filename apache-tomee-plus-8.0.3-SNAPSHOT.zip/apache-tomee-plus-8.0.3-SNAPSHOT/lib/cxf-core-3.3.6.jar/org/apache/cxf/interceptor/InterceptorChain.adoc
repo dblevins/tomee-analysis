@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/InterceptorChain.class
+
+ - link:InterceptorChain-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/webbeans/proxy/NormalScopeProxyFactory.class
+
+ - link:NormalScopeProxyFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 16
+ - javax.enterprise.inject.spi.Bean - 13
+ - javax.enterprise.inject.spi.BeanManager - 2

@@ -1,0 +1,6 @@
+= javax/cache/configuration/MutableCacheEntryListenerConfiguration.class
+
+ - link:MutableCacheEntryListenerConfiguration-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/CascadeOnDelete.class
+
+ - link:CascadeOnDelete-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/activemq/command/ActiveMQTextMessage.class
+
+ - link:ActiveMQTextMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 7
+ - javax.jms.MessageNotWriteableException - 1
+ - javax.jms.TextMessage - 1

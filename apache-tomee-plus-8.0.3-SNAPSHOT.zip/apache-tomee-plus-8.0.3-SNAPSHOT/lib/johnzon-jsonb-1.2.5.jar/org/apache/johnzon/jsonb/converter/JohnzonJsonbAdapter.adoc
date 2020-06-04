@@ -1,0 +1,8 @@
+= org/apache/johnzon/jsonb/converter/JohnzonJsonbAdapter.class
+
+ - link:JohnzonJsonbAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.adapter.JsonbAdapter - 7
+ - javax.json.bind.JsonbException - 4

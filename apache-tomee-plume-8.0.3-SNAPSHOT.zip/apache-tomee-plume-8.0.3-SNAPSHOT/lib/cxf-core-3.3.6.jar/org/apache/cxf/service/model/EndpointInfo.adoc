@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/EndpointInfo.class
+
+ - link:EndpointInfo-asmified.java[Asmified]
+
+== References
+

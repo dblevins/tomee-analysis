@@ -1,0 +1,8 @@
+= javax/xml/rpc/handler/soap/SOAPMessageContext.class
+
+ - link:SOAPMessageContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 2
+ - javax.xml.rpc.handler.MessageContext - 1

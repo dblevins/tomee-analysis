@@ -1,0 +1,7 @@
+= javax/mail/Message$RecipientType.class
+
+ - link:Message$RecipientType-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Message$RecipientType - 15

@@ -1,0 +1,7 @@
+= org/apache/openejb/AppContext.class
+
+ - link:AppContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 1

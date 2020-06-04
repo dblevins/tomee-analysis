@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/TrustException.class
+
+ - link:TrustException-asmified.java[Asmified]
+
+== References
+

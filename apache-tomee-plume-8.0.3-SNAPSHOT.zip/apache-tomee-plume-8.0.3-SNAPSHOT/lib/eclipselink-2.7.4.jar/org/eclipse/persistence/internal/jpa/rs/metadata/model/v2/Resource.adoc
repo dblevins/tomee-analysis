@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/Resource.class
+
+ - link:Resource-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1

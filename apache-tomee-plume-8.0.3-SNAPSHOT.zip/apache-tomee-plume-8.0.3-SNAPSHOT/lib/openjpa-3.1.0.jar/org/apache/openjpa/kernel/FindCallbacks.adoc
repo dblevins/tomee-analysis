@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/FindCallbacks.class
+
+ - link:FindCallbacks-asmified.java[Asmified]
+
+== References
+

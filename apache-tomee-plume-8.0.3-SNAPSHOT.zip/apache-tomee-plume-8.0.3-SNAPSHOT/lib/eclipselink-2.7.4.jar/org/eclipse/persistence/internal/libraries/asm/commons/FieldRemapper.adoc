@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/commons/FieldRemapper.class
+
+ - link:FieldRemapper-asmified.java[Asmified]
+
+== References
+

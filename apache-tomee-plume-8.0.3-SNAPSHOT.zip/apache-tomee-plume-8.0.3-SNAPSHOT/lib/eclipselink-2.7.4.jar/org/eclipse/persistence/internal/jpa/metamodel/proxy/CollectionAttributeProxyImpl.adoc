@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/metamodel/proxy/CollectionAttributeProxyImpl.class
+
+ - link:CollectionAttributeProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.CollectionAttribute - 1

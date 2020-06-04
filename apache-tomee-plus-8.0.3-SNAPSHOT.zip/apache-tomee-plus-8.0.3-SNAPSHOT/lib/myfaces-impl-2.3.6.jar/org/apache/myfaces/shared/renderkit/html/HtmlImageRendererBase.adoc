@@ -1,0 +1,12 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlImageRendererBase.class
+
+ - link:HtmlImageRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 28
+ - javax.faces.context.FacesContext - 20
+ - javax.faces.context.ResponseWriter - 17
+ - javax.faces.component.behavior.ClientBehaviorHolder - 5
+ - javax.faces.application.ProjectStage - 4
+ - javax.faces.component.UIGraphic - 1

@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeTagAttributeUtils.class
+
+ - link:CompositeTagAttributeUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 30
+ - javax.faces.view.facelets.FaceletContext - 8
+ - javax.faces.view.facelets.TagAttributes - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.el.ValueExpression - 1

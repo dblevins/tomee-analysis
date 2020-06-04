@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MappingTool$Flags.class
+
+ - link:MappingTool$Flags-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/ComponentsImpl.class
+
+ - link:ComponentsImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbTypeDeserializer - 9
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.annotation.JsonbTransient - 1

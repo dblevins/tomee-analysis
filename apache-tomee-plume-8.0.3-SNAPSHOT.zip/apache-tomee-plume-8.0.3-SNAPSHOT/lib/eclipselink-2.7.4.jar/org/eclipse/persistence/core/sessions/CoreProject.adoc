@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/sessions/CoreProject.class
+
+ - link:CoreProject-asmified.java[Asmified]
+
+== References
+

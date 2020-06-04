@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/ComplexContent.class
+
+ - link:ComplexContent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,35 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlRendererUtils.class
+
+ - link:HtmlRendererUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 317
+ - javax.faces.context.ResponseWriter - 249
+ - javax.faces.context.FacesContext - 246
+ - javax.faces.component.behavior.ClientBehavior - 49
+ - javax.faces.convert.Converter - 48
+ - javax.faces.model.SelectItem - 30
+ - javax.faces.component.behavior.ClientBehaviorContext - 24
+ - javax.faces.component.EditableValueHolder - 20
+ - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 18
+ - javax.faces.context.ExternalContext - 18
+ - javax.faces.component.UISelectOne - 14
+ - javax.faces.component.behavior.ClientBehaviorHolder - 14
+ - javax.faces.component.UISelectMany - 13
+ - javax.faces.model.SelectItemGroup - 6
+ - javax.faces.component.UIParameter - 6
+ - javax.faces.component.html.HtmlMessages - 6
+ - javax.faces.component.html.HtmlDataTable - 4
+ - javax.faces.component.html.HtmlPanelGrid - 4
+ - javax.faces.FacesException - 4
+ - javax.faces.component.UISelectBoolean - 3
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.component.UIOutput - 2
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.faces.component.UIOutcomeTarget - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.UIInput - 1
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHint - 1

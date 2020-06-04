@@ -1,0 +1,7 @@
+= org/apache/tomee/catalina/WebSockets.class
+
+ - link:WebSockets-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.server.ServerEndpointConfig$Configurator - 1

@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/el/ContextualCompositeMethodExpression$SetClientIdListener.class
+
+ - link:ContextualCompositeMethodExpression$SetClientIdListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.event.ComponentSystemEventListener - 2
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.event.PostAddToViewEvent - 1

@@ -1,0 +1,8 @@
+= org/apache/activemq/network/jms/InboundQueueBridge.class
+
+ - link:InboundQueueBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 8
+ - javax.jms.QueueConnection - 8

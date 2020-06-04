@@ -1,0 +1,12 @@
+= org/apache/openejb/rest/ThreadLocalProviders.class
+
+ - link:ThreadLocalProviders-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.Providers - 11
+ - javax.ws.rs.core.MediaType - 6
+ - javax.ws.rs.ext.ContextResolver - 2
+ - javax.ws.rs.ext.ExceptionMapper - 2
+ - javax.ws.rs.ext.MessageBodyWriter - 2
+ - javax.ws.rs.ext.MessageBodyReader - 2

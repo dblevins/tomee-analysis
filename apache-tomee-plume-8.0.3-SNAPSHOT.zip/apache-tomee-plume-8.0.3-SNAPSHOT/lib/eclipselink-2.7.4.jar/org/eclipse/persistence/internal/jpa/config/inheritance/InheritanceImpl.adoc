@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/inheritance/InheritanceImpl.class
+
+ - link:InheritanceImpl-asmified.java[Asmified]
+
+== References
+

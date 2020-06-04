@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/UnknownExpression.class
+
+ - link:UnknownExpression-asmified.java[Asmified]
+
+== References
+

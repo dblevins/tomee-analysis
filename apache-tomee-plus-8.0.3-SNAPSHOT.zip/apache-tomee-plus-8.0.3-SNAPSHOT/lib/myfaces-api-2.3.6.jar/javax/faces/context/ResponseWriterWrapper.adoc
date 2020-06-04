@@ -1,0 +1,10 @@
+= javax/faces/context/ResponseWriterWrapper.class
+
+ - link:ResponseWriterWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 52
+ - javax.faces.context.ResponseWriterWrapper - 21
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.FacesWrapper - 1

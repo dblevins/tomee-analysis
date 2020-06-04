@@ -1,0 +1,11 @@
+= org/apache/tomcat/websocket/server/WsPerSessionServerEndpointConfig.class
+
+ - link:WsPerSessionServerEndpointConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.server.ServerEndpointConfig - 19
+ - javax.websocket.server.ServerEndpointConfig$Configurator - 2
+ - javax.websocket.Decoder - 1
+ - javax.websocket.Encoder - 1
+ - javax.websocket.Extension - 1

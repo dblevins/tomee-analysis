@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/work/pool/ScheduleWorkExecutor.class
+
+ - link:ScheduleWorkExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkException - 1

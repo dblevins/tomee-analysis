@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SchemaResolver.class
+
+ - link:SchemaResolver-asmified.java[Asmified]
+
+== References
+

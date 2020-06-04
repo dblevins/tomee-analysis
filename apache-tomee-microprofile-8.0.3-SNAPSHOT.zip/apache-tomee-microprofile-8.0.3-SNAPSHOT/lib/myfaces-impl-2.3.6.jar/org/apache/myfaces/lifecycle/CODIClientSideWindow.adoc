@@ -1,0 +1,16 @@
+= org/apache/myfaces/lifecycle/CODIClientSideWindow.class
+
+ - link:CODIClientSideWindow-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 23
+ - javax.faces.context.FacesContext - 23
+ - javax.servlet.http.HttpServletResponse - 6
+ - javax.faces.FacesException - 4
+ - javax.faces.lifecycle.ClientWindow - 4
+ - javax.servlet.http.Cookie - 4
+ - javax.faces.application.Resource - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.servlet.ServletOutputStream - 1

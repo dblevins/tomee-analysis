@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/BinaryOperatorExpression.class
+
+ - link:BinaryOperatorExpression-asmified.java[Asmified]
+
+== References
+

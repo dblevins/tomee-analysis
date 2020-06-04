@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaIdentityConstraint.class
+
+ - link:XmlSchemaIdentityConstraint-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/PolicyValidatorParameters.class
+
+ - link:PolicyValidatorParameters-asmified.java[Asmified]
+
+== References
+

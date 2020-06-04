@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$LookupSwitchLabelRule.class
+
+ - link:ASMContentHandler$LookupSwitchLabelRule-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/myfaces/util/ThreadsafeXorShiftRandom.class
+
+ - link:ThreadsafeXorShiftRandom-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509SerialNumberUnmarshaller.class
+
+ - link:X509SerialNumberUnmarshaller-asmified.java[Asmified]
+
+== References
+

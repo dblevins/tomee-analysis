@@ -1,0 +1,7 @@
+= javax/cache/annotation/CacheRemoveAll.class
+
+ - link:CacheRemoveAll-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 5

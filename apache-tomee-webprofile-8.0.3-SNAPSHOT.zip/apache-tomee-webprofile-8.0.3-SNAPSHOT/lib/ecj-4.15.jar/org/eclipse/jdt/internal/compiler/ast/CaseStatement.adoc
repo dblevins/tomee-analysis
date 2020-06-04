@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/CaseStatement.class
+
+ - link:CaseStatement-asmified.java[Asmified]
+
+== References
+

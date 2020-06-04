@@ -1,0 +1,7 @@
+= org/apache/openejb/client/EJBHomeProxyHandle$ClientSideResovler.class
+
+ - link:EJBHomeProxyHandle$ClientSideResovler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 2

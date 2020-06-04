@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter$MultiView.class
+
+ - link:FilteredBeanPropertyWriter$MultiView-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/Mappings$MapBuilderReader.class
+
+ - link:Mappings$MapBuilderReader-asmified.java[Asmified]
+
+== References
+

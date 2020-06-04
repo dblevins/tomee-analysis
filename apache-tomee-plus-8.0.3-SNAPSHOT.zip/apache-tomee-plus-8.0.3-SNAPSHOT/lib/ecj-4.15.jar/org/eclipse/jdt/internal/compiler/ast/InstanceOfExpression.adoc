@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/InstanceOfExpression.class
+
+ - link:InstanceOfExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/MulticastConnectionFactory.class
+
+ - link:MulticastConnectionFactory-asmified.java[Asmified]
+
+== References
+

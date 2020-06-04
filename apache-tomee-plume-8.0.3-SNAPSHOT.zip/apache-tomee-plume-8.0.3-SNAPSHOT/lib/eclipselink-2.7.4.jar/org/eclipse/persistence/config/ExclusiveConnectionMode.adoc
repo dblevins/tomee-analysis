@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ExclusiveConnectionMode.class
+
+ - link:ExclusiveConnectionMode-asmified.java[Asmified]
+
+== References
+

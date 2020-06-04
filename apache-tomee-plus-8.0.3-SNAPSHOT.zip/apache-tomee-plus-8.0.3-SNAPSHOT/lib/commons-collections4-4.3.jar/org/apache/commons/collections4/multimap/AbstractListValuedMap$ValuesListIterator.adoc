@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multimap/AbstractListValuedMap$ValuesListIterator.class
+
+ - link:AbstractListValuedMap$ValuesListIterator-asmified.java[Asmified]
+
+== References
+

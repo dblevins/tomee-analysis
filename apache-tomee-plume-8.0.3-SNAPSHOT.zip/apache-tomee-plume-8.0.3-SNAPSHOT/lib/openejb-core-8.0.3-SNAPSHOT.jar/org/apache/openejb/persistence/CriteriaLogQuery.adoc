@@ -1,0 +1,12 @@
+= org/apache/openejb/persistence/CriteriaLogQuery.class
+
+ - link:CriteriaLogQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TypedQuery - 116
+ - javax.persistence.Parameter - 25
+ - javax.persistence.TemporalType - 24
+ - javax.persistence.Query - 14
+ - javax.persistence.FlushModeType - 6
+ - javax.persistence.LockModeType - 6

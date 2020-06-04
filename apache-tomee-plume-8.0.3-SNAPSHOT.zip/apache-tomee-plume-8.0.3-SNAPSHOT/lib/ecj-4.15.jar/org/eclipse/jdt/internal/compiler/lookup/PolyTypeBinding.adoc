@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/PolyTypeBinding.class
+
+ - link:PolyTypeBinding-asmified.java[Asmified]
+
+== References
+

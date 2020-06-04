@@ -1,0 +1,6 @@
+= org/apache/cxf/phase/PhaseChainCache.class
+
+ - link:PhaseChainCache-asmified.java[Asmified]
+
+== References
+

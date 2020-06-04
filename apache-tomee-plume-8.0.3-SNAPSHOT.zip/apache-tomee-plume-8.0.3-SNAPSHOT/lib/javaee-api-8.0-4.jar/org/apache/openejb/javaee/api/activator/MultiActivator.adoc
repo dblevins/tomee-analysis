@@ -1,0 +1,6 @@
+= org/apache/openejb/javaee/api/activator/MultiActivator.class
+
+ - link:MultiActivator-asmified.java[Asmified]
+
+== References
+

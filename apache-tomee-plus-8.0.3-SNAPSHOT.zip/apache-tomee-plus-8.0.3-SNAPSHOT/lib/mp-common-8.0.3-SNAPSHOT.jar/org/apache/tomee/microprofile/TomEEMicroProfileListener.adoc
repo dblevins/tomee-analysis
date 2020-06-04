@@ -1,0 +1,8 @@
+= org/apache/tomee/microprofile/TomEEMicroProfileListener.class
+
+ - link:TomEEMicroProfileListener-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRegistration - 2
+ - javax.servlet.ServletContext - 2

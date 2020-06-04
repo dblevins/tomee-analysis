@@ -1,0 +1,6 @@
+= org/eclipse/persistence/indirection/WeavedAttributeValueHolderInterface.class
+
+ - link:WeavedAttributeValueHolderInterface-asmified.java[Asmified]
+
+== References
+

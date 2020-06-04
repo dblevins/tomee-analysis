@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/OpenEJBContextConfig$OpenEJBWebXml.class
+
+ - link:OpenEJBContextConfig$OpenEJBWebXml-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= org/apache/webbeans/web/lifecycle/test/MockServletContext.class
+
+ - link:MockServletContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 5
+ - javax.servlet.ServletException - 4
+ - javax.servlet.ServletRegistration$Dynamic - 3
+ - javax.servlet.Filter - 3
+ - javax.servlet.SessionTrackingMode - 3
+ - javax.servlet.FilterRegistration$Dynamic - 3
+ - javax.servlet.ServletRegistration - 2
+ - javax.servlet.RequestDispatcher - 2
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.FilterRegistration - 2
+ - javax.servlet.descriptor.JspConfigDescriptor - 1
+ - javax.servlet.SessionCookieConfig - 1

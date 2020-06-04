@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/SecureConversationTokenInterceptorProvider.class
+
+ - link:SecureConversationTokenInterceptorProvider-asmified.java[Asmified]
+
+== References
+

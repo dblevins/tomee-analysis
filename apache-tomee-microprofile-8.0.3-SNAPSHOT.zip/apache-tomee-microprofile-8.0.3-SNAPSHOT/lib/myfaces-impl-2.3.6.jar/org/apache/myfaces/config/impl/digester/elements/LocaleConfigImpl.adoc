@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/LocaleConfigImpl.class
+
+ - link:LocaleConfigImpl-asmified.java[Asmified]
+
+== References
+

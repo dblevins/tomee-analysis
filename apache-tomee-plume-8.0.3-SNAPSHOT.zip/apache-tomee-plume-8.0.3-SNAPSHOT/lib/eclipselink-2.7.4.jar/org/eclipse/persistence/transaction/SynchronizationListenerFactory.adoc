@@ -1,0 +1,6 @@
+= org/eclipse/persistence/transaction/SynchronizationListenerFactory.class
+
+ - link:SynchronizationListenerFactory-asmified.java[Asmified]
+
+== References
+

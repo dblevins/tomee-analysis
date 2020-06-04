@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ReadDescriptors$StringSource.class
+
+ - link:ReadDescriptors$StringSource-asmified.java[Asmified]
+
+== References
+

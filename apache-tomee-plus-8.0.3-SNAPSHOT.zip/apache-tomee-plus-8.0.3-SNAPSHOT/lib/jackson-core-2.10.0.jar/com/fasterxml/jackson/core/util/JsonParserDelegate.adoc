@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/JsonParserDelegate.class
+
+ - link:JsonParserDelegate-asmified.java[Asmified]
+
+== References
+

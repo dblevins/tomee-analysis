@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ServerImpl.class
+
+ - link:ServerImpl-asmified.java[Asmified]
+
+== References
+

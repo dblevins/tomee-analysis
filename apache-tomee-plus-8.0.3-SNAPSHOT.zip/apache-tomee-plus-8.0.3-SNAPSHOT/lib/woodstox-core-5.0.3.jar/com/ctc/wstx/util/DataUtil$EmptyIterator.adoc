@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/DataUtil$EmptyIterator.class
+
+ - link:DataUtil$EmptyIterator-asmified.java[Asmified]
+
+== References
+

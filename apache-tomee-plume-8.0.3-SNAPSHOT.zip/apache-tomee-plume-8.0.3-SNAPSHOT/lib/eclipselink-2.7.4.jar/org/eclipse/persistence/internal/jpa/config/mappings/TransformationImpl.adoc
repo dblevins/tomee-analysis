@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/mappings/TransformationImpl.class
+
+ - link:TransformationImpl-asmified.java[Asmified]
+
+== References
+

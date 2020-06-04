@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ArithmeticFunctionNode.class
+
+ - link:ArithmeticFunctionNode-asmified.java[Asmified]
+
+== References
+

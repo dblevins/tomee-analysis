@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxrs/client/spec/ClientRequestContextImpl.class
+
+ - link:ClientRequestContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 8
+ - javax.ws.rs.core.MediaType - 7
+ - javax.ws.rs.core.GenericEntity - 3
+ - javax.ws.rs.client.Client - 3
+ - javax.ws.rs.core.HttpHeaders - 2
+ - javax.ws.rs.core.Configuration - 2
+ - javax.ws.rs.client.ClientRequestContext - 1

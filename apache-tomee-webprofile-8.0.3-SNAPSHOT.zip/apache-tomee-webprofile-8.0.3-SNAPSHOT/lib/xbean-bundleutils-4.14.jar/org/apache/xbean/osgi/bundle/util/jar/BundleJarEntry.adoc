@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/jar/BundleJarEntry.class
+
+ - link:BundleJarEntry-asmified.java[Asmified]
+
+== References
+

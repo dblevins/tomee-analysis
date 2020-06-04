@@ -1,0 +1,6 @@
+= org/hsqldb/persist/RAShadowFile$InputStreamShadow.class
+
+ - link:RAShadowFile$InputStreamShadow-asmified.java[Asmified]
+
+== References
+

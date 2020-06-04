@@ -1,0 +1,7 @@
+= javax/ejb/MessageDriven.class
+
+ - link:MessageDriven-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ActivationConfigProperty - 1

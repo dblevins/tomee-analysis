@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/cdi/TracedExecutorService$Literal.class
+
+ - link:TracedExecutorService$Literal-asmified.java[Asmified]
+
+== References
+

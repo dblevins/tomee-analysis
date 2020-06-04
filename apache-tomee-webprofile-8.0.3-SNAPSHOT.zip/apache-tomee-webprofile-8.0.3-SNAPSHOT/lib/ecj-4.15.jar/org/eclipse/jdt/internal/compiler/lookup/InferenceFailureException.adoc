@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/InferenceFailureException.class
+
+ - link:InferenceFailureException-asmified.java[Asmified]
+
+== References
+

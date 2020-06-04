@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/Algorithm.class
+
+ - link:Algorithm-asmified.java[Asmified]
+
+== References
+

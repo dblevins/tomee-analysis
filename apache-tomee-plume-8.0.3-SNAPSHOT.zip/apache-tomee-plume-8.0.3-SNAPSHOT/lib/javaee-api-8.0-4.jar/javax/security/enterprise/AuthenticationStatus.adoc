@@ -1,0 +1,7 @@
+= javax/security/enterprise/AuthenticationStatus.class
+
+ - link:AuthenticationStatus-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.AuthenticationStatus - 31

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/MappingTag.class
+
+ - link:MappingTag-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openejb/config/AnnotationDeployer$4.class
+
+ - link:AnnotationDeployer$4-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ConcurrencyManagementType - 6
+ - javax.ejb.TransactionManagementType - 6

@@ -1,0 +1,6 @@
+= org/apache/cxf/common/annotation/AnnotationVisitor.class
+
+ - link:AnnotationVisitor-asmified.java[Asmified]
+
+== References
+

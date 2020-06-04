@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/jdbc/dbcp/BasicDataSource.class
+
+ - link:BasicDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2

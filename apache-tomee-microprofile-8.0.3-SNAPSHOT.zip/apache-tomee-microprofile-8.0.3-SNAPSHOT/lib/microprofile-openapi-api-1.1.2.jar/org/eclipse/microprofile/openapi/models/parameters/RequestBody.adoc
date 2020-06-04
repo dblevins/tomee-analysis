@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/parameters/RequestBody.class
+
+ - link:RequestBody-asmified.java[Asmified]
+
+== References
+

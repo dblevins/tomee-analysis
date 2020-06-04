@@ -1,0 +1,8 @@
+= org/apache/batchee/container/status/JobStatus.class
+
+ - link:JobStatus-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 8
+ - javax.batch.runtime.JobInstance - 7

@@ -1,0 +1,6 @@
+= org/apache/commons/digester/xmlrules/FromXmlRuleSet$InputSourceXMLRulesLoader.class
+
+ - link:FromXmlRuleSet$InputSourceXMLRulesLoader-asmified.java[Asmified]
+
+== References
+

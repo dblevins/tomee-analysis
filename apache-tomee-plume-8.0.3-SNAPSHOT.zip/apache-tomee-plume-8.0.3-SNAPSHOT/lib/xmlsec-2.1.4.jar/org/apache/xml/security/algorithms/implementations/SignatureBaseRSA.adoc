@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/SignatureBaseRSA.class
+
+ - link:SignatureBaseRSA-asmified.java[Asmified]
+
+== References
+

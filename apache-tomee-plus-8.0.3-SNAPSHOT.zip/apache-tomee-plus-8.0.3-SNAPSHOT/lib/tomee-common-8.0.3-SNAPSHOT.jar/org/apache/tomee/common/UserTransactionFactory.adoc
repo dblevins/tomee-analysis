@@ -1,0 +1,8 @@
+= org/apache/tomee/common/UserTransactionFactory.class
+
+ - link:UserTransactionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 4
+ - javax.transaction.UserTransaction - 1

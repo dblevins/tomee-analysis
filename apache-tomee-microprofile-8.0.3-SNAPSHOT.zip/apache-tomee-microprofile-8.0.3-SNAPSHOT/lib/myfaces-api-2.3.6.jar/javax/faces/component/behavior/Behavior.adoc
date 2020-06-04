@@ -1,0 +1,7 @@
+= javax/faces/component/behavior/Behavior.class
+
+ - link:Behavior-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.BehaviorEvent - 1

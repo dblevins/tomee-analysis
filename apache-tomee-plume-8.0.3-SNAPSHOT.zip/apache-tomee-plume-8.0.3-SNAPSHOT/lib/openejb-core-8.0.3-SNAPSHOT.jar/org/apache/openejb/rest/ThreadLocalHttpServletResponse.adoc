@@ -1,0 +1,9 @@
+= org/apache/openejb/rest/ThreadLocalHttpServletResponse.class
+
+ - link:ThreadLocalHttpServletResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 77
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.http.Cookie - 2

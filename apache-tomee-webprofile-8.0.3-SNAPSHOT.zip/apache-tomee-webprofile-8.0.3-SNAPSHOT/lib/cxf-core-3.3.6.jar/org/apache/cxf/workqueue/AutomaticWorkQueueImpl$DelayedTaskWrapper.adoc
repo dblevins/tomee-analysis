@@ -1,0 +1,6 @@
+= org/apache/cxf/workqueue/AutomaticWorkQueueImpl$DelayedTaskWrapper.class
+
+ - link:AutomaticWorkQueueImpl$DelayedTaskWrapper-asmified.java[Asmified]
+
+== References
+

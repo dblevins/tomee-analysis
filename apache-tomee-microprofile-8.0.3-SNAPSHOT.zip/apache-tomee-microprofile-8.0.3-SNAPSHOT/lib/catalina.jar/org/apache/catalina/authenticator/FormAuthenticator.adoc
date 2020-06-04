@@ -1,0 +1,14 @@
+= org/apache/catalina/authenticator/FormAuthenticator.class
+
+ - link:FormAuthenticator-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 25
+ - javax.servlet.http.Cookie - 15
+ - javax.servlet.ServletRequest - 6
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.servlet.RequestDispatcher - 6
+ - javax.servlet.ServletContext - 4
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.ServletInputStream - 2

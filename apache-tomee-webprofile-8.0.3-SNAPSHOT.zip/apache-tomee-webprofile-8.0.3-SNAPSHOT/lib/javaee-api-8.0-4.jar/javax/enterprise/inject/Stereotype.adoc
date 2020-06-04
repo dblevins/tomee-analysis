@@ -1,0 +1,6 @@
+= javax/enterprise/inject/Stereotype.class
+
+ - link:Stereotype-asmified.java[Asmified]
+
+== References
+

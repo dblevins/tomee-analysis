@@ -1,0 +1,9 @@
+= javax/json/JsonValue$2.class
+
+ - link:JsonValue$2-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue$ValueType - 7
+ - javax.json.JsonValue - 5
+ - javax.json.JsonValue$2 - 1

@@ -1,0 +1,9 @@
+= javax/faces/component/UIComponentBase$FacetsMapEntrySetEntry.class
+
+ - link:UIComponentBase$FacetsMapEntrySetEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 14
+ - javax.faces.component.UIComponentBase$FacetsMap - 13
+ - javax.faces.component.UIComponentBase$FacetsMapEntrySetEntry - 4

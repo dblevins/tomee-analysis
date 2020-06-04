@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/KerberosTokenPolicyValidator.class
+
+ - link:KerberosTokenPolicyValidator-asmified.java[Asmified]
+
+== References
+

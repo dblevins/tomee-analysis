@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/PrettyPrintXMLStreamWriter$CurrentElement.class
+
+ - link:PrettyPrintXMLStreamWriter$CurrentElement-asmified.java[Asmified]
+
+== References
+

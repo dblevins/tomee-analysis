@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/jpa/RelationField.class
+
+ - link:RelationField-asmified.java[Asmified]
+
+== References
+

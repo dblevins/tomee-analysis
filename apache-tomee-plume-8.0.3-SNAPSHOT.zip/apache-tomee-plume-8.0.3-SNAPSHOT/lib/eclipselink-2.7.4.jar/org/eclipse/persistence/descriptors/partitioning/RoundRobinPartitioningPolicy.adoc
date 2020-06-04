@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/partitioning/RoundRobinPartitioningPolicy.class
+
+ - link:RoundRobinPartitioningPolicy-asmified.java[Asmified]
+
+== References
+

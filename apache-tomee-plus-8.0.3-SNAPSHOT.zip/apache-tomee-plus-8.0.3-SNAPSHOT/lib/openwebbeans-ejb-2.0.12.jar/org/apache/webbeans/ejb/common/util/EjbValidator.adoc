@@ -1,0 +1,14 @@
+= org/apache/webbeans/ejb/common/util/EjbValidator.class
+
+ - link:EjbValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 10
+ - javax.enterprise.inject.spi.SessionBeanType - 5
+ - javax.enterprise.inject.spi.ObserverMethod - 5
+ - javax.enterprise.context.Dependent - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.interceptor.Interceptor - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.decorator.Decorator - 1

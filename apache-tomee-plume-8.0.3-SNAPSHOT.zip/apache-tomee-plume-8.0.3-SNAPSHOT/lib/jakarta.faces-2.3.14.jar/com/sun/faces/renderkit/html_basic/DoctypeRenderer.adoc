@@ -1,0 +1,10 @@
+= com/sun/faces/renderkit/html_basic/DoctypeRenderer.class
+
+ - link:DoctypeRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 8
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.render.Renderer - 2

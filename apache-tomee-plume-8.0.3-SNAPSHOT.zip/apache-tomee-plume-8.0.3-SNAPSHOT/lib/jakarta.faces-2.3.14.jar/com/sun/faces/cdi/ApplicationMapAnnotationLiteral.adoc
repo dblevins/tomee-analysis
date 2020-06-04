@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/ApplicationMapAnnotationLiteral.class
+
+ - link:ApplicationMapAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.annotation.ApplicationMap - 2

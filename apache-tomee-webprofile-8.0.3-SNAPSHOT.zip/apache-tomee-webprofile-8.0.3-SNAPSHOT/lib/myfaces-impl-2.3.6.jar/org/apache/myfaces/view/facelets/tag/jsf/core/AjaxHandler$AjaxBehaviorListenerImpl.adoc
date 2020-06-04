@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/AjaxHandler$AjaxBehaviorListenerImpl.class
+
+ - link:AjaxHandler$AjaxBehaviorListenerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.MethodExpression - 8
+ - javax.faces.context.FacesContext - 5
+ - javax.el.ELContext - 2
+ - javax.faces.event.AjaxBehaviorListener - 1
+ - javax.faces.event.AjaxBehaviorEvent - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.PartialStateHolder - 1

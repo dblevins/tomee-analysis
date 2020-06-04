@@ -1,0 +1,9 @@
+= org/opensaml/saml/saml2/binding/decoding/impl/HTTPArtifactDecoder.class
+
+ - link:HTTPArtifactDecoder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 7
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.annotation.Nonnull - 4

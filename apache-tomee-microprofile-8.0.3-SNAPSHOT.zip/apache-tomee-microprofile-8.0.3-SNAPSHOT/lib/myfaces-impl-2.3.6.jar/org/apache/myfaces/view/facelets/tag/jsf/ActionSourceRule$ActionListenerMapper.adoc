@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ActionSourceRule$ActionListenerMapper.class
+
+ - link:ActionSourceRule$ActionListenerMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.el.MethodExpression - 2
+ - javax.faces.component.ActionSource - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.el.MethodBinding - 1

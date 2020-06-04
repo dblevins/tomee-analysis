@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$QueryCacheExpiryTimeOfDayHint.class
+
+ - link:QueryHintsHandler$QueryCacheExpiryTimeOfDayHint-asmified.java[Asmified]
+
+== References
+

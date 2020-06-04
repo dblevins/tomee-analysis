@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/VersionLoggerListener.class
+
+ - link:VersionLoggerListener-asmified.java[Asmified]
+
+== References
+

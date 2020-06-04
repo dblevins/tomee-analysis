@@ -1,0 +1,7 @@
+= javax/xml/registry/infomodel/LocalizedString.class
+
+ - link:LocalizedString-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 6

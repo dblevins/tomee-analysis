@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/DummyPropertyInfo.class
+
+ - link:DummyPropertyInfo-asmified.java[Asmified]
+
+== References
+

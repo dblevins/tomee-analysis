@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/oauth2/provider/JPAOAuthDataProvider$1.class
+
+ - link:JPAOAuthDataProvider$1-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 4

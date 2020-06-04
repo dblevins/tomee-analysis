@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/StAXEventAllocatorBase.class
+
+ - link:StAXEventAllocatorBase-asmified.java[Asmified]
+
+== References
+

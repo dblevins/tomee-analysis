@@ -1,0 +1,10 @@
+= javax/servlet/jsp/jstl/fmt/LocaleSupport.class
+
+ - link:LocaleSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 9
+ - javax.servlet.jsp.jstl.fmt.LocalizationContext - 5
+ - javax.servlet.jsp.jstl.fmt.LocaleSupport - 3
+ - javax.servlet.jsp.jstl.fmt.JakartaInline - 2

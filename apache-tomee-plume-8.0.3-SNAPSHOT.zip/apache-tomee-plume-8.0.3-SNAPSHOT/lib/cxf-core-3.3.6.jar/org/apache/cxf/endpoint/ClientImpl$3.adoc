@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ClientImpl$3.class
+
+ - link:ClientImpl$3-asmified.java[Asmified]
+
+== References
+

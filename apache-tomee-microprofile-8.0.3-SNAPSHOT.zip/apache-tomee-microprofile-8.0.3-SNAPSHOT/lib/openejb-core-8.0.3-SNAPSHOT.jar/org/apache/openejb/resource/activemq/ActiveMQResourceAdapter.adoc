@@ -1,0 +1,13 @@
+= org/apache/openejb/resource/activemq/ActiveMQResourceAdapter.class
+
+ - link:ActiveMQResourceAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.BootstrapContext - 6
+ - javax.resource.spi.ResourceAdapterInternalException - 3
+ - javax.jms.Connection - 2
+ - javax.resource.ResourceException - 1
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 1
+ - javax.resource.spi.ResourceAdapter - 1
+ - javax.jms.JMSException - 1

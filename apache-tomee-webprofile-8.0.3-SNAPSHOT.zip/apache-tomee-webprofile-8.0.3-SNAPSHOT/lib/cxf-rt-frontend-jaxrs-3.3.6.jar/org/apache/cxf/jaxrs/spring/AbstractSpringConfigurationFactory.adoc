@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/spring/AbstractSpringConfigurationFactory.class
+
+ - link:AbstractSpringConfigurationFactory-asmified.java[Asmified]
+
+== References
+

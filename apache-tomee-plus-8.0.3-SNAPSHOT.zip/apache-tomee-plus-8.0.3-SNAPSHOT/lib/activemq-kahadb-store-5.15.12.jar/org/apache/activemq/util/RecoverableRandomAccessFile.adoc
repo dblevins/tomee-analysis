@@ -1,0 +1,6 @@
+= org/apache/activemq/util/RecoverableRandomAccessFile.class
+
+ - link:RecoverableRandomAccessFile-asmified.java[Asmified]
+
+== References
+

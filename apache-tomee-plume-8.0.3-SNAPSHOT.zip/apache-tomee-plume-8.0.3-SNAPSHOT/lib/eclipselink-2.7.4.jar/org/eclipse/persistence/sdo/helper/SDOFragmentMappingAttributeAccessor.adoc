@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOFragmentMappingAttributeAccessor.class
+
+ - link:SDOFragmentMappingAttributeAccessor-asmified.java[Asmified]
+
+== References
+

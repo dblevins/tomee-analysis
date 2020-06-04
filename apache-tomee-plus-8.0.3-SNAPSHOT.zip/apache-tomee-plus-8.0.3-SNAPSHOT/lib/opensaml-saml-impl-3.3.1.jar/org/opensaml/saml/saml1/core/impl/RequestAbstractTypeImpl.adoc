@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/RequestAbstractTypeImpl.class
+
+ - link:RequestAbstractTypeImpl-asmified.java[Asmified]
+
+== References
+

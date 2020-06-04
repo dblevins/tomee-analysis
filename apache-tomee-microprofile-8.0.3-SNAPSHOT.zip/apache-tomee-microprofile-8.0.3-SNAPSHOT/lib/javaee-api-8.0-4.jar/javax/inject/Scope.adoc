@@ -1,0 +1,6 @@
+= javax/inject/Scope.class
+
+ - link:Scope-asmified.java[Asmified]
+
+== References
+

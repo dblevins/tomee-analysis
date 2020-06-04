@@ -1,0 +1,6 @@
+= com/sun/faces/vendor/WebContainerInjectionProvider$MethodHolder.class
+
+ - link:WebContainerInjectionProvider$MethodHolder-asmified.java[Asmified]
+
+== References
+

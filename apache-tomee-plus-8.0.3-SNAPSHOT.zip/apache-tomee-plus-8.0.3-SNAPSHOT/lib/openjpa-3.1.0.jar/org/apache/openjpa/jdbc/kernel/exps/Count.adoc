@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Count.class
+
+ - link:Count-asmified.java[Asmified]
+
+== References
+

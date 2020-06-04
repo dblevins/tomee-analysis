@@ -1,0 +1,8 @@
+= javax/xml/rpc/FactoryFinder.class
+
+ - link:FactoryFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.FactoryFinder$ConfigurationError - 13
+ - javax.xml.rpc.FactoryFinder - 12

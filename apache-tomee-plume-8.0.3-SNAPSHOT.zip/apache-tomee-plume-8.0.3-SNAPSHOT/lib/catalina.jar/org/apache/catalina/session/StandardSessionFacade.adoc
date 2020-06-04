@@ -1,0 +1,9 @@
+= org/apache/catalina/session/StandardSessionFacade.class
+
+ - link:StandardSessionFacade-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 38
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.http.HttpSessionContext - 2

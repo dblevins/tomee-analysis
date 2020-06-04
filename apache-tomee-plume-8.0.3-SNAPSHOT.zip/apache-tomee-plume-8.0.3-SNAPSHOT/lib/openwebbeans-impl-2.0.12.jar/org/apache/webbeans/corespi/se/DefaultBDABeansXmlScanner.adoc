@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/se/DefaultBDABeansXmlScanner.class
+
+ - link:DefaultBDABeansXmlScanner-asmified.java[Asmified]
+
+== References
+

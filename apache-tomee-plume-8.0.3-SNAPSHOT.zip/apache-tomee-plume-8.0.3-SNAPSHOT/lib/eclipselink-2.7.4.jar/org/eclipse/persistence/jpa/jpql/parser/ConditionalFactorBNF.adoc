@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/ConditionalFactorBNF.class
+
+ - link:ConditionalFactorBNF-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonEnumDefaultValue.class
+
+ - link:JsonEnumDefaultValue-asmified.java[Asmified]
+
+== References
+

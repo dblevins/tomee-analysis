@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/profile/logic/RegistrationPolicyPredicate.class
+
+ - link:RegistrationPolicyPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

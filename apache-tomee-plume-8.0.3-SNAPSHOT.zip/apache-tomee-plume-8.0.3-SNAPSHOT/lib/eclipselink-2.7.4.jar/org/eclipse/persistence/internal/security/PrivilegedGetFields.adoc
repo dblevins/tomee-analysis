@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedGetFields.class
+
+ - link:PrivilegedGetFields-asmified.java[Asmified]
+
+== References
+

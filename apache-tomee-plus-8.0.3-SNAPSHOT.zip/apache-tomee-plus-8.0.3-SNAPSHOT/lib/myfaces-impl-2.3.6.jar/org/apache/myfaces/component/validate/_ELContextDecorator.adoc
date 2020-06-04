@@ -1,0 +1,10 @@
+= org/apache/myfaces/component/validate/_ELContextDecorator.class
+
+ - link:_ELContextDecorator-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 21
+ - javax.el.ELResolver - 5
+ - javax.el.FunctionMapper - 2
+ - javax.el.VariableMapper - 2

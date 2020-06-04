@@ -1,0 +1,6 @@
+= javax/ws/rs/client/InvocationCallback.class
+
+ - link:InvocationCallback-asmified.java[Asmified]
+
+== References
+

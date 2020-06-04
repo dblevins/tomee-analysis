@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/CdiBuilder.class
+
+ - link:CdiBuilder-asmified.java[Asmified]
+
+== References
+

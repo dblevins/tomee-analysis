@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/ConnectionSettingsBase.class
+
+ - link:ConnectionSettingsBase-asmified.java[Asmified]
+
+== References
+

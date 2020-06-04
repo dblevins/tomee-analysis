@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/dsa/DSASigner.class
+
+ - link:DSASigner-asmified.java[Asmified]
+
+== References
+

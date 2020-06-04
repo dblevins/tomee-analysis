@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/RequestScopedThreadContextListener$DestroyContext.class
+
+ - link:RequestScopedThreadContextListener$DestroyContext-asmified.java[Asmified]
+
+== References
+

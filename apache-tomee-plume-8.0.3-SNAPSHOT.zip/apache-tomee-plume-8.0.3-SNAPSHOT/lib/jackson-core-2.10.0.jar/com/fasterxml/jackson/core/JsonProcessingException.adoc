@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/JsonProcessingException.class
+
+ - link:JsonProcessingException-asmified.java[Asmified]
+
+== References
+

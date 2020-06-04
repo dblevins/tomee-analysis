@@ -1,0 +1,6 @@
+= org/cryptacular/bean/ResourceBasedPublicKeyFactoryBean.class
+
+ - link:ResourceBasedPublicKeyFactoryBean-asmified.java[Asmified]
+
+== References
+

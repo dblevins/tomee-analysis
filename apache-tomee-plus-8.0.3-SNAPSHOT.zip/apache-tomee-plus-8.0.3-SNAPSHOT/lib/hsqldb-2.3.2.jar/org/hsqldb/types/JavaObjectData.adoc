@@ -1,0 +1,6 @@
+= org/hsqldb/types/JavaObjectData.class
+
+ - link:JavaObjectData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/AnnotationValueImpl.class
+
+ - link:AnnotationValueImpl-asmified.java[Asmified]
+
+== References
+

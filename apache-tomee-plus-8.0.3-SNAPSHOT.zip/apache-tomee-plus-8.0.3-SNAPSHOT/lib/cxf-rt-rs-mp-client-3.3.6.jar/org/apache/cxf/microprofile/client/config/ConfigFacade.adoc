@@ -1,0 +1,6 @@
+= org/apache/cxf/microprofile/client/config/ConfigFacade.class
+
+ - link:ConfigFacade-asmified.java[Asmified]
+
+== References
+

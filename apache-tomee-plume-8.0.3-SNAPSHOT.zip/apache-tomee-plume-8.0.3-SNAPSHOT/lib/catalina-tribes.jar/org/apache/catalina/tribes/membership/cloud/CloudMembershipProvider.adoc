@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/cloud/CloudMembershipProvider.class
+
+ - link:CloudMembershipProvider-asmified.java[Asmified]
+
+== References
+

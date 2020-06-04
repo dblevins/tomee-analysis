@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/JobExecutionContextImpl.class
+
+ - link:JobExecutionContextImpl-asmified.java[Asmified]
+
+== References
+

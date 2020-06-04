@@ -1,0 +1,7 @@
+= org/apache/catalina/authenticator/NonLoginAuthenticator.class
+
+ - link:NonLoginAuthenticator-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 2

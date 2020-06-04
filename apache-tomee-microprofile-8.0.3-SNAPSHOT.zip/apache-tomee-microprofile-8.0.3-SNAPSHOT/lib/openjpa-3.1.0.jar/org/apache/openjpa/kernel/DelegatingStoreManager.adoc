@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DelegatingStoreManager.class
+
+ - link:DelegatingStoreManager-asmified.java[Asmified]
+
+== References
+

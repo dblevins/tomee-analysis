@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jws/PrivateKeyJwsSignatureProvider$PrivateKeyJwsSignature.class
+
+ - link:PrivateKeyJwsSignatureProvider$PrivateKeyJwsSignature-asmified.java[Asmified]
+
+== References
+

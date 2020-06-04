@@ -1,0 +1,8 @@
+= org/opensaml/core/config/ConfigurationService.class
+
+ - link:ConfigurationService-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 10
+ - javax.annotation.Nullable - 1

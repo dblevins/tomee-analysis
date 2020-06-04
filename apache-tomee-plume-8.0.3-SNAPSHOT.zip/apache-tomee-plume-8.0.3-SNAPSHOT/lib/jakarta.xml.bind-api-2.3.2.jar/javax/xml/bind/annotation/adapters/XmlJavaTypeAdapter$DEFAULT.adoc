@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter$DEFAULT.class
+
+ - link:XmlJavaTypeAdapter$DEFAULT-asmified.java[Asmified]
+
+== References
+

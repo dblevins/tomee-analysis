@@ -1,0 +1,11 @@
+= org/apache/activemq/command/ActiveMQBytesMessage.class
+
+ - link:ActiveMQBytesMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 47
+ - javax.jms.MessageFormatException - 14
+ - javax.jms.MessageEOFException - 12
+ - javax.jms.MessageNotReadableException - 3
+ - javax.jms.BytesMessage - 1

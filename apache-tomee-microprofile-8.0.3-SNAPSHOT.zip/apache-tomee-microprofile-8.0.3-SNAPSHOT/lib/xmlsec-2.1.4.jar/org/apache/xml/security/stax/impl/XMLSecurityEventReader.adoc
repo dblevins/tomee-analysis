@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/XMLSecurityEventReader.class
+
+ - link:XMLSecurityEventReader-asmified.java[Asmified]
+
+== References
+

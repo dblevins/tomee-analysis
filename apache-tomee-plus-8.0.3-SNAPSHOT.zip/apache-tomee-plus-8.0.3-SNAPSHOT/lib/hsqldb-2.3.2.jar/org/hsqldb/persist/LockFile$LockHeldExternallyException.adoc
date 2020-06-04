@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LockFile$LockHeldExternallyException.class
+
+ - link:LockFile$LockHeldExternallyException-asmified.java[Asmified]
+
+== References
+

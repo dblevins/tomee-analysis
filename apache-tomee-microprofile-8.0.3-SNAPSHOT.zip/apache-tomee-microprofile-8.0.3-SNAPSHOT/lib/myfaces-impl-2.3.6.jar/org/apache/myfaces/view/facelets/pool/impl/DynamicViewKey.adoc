@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/pool/impl/DynamicViewKey.class
+
+ - link:DynamicViewKey-asmified.java[Asmified]
+
+== References
+

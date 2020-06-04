@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/ClassSummaryDetailBase.class
+
+ - link:ClassSummaryDetailBase-asmified.java[Asmified]
+
+== References
+

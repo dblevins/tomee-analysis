@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/job/ValidationJob$UnwrappedElementConstraintValidationPseudoFrame.class
+
+ - link:ValidationJob$UnwrappedElementConstraintValidationPseudoFrame-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintViolation - 2

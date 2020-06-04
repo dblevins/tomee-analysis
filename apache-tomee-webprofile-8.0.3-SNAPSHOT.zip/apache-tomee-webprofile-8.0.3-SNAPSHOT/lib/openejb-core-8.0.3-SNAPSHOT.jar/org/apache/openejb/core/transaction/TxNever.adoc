@@ -1,0 +1,8 @@
+= org/apache/openejb/core/transaction/TxNever.class
+
+ - link:TxNever-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3
+ - javax.transaction.Transaction - 2

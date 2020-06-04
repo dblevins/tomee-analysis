@@ -1,0 +1,10 @@
+= javax/resource/spi/Connector.class
+
+ - link:Connector-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.TransactionSupport$TransactionSupportLevel - 2
+ - javax.resource.spi.work.WorkContext - 1
+ - javax.resource.spi.AuthenticationMechanism - 1
+ - javax.resource.spi.SecurityPermission - 1

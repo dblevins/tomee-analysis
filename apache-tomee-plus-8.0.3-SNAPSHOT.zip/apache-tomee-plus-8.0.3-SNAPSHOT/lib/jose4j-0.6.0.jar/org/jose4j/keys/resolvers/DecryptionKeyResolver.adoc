@@ -1,0 +1,6 @@
+= org/jose4j/keys/resolvers/DecryptionKeyResolver.class
+
+ - link:DecryptionKeyResolver-asmified.java[Asmified]
+
+== References
+

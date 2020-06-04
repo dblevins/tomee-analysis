@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/ISO8601DateFormat.class
+
+ - link:ISO8601DateFormat-asmified.java[Asmified]
+
+== References
+

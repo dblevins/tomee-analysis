@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/principal/SAMLTokenPrincipalImpl.class
+
+ - link:SAMLTokenPrincipalImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= javax/faces/component/UpdateModelException.class
+
+ - link:UpdateModelException-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.FacesMessage - 5
+ - javax.faces.FacesException - 2

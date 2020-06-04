@@ -1,0 +1,6 @@
+= org/jose4j/jwe/RsaKeyManagementAlgorithm.class
+
+ - link:RsaKeyManagementAlgorithm-asmified.java[Asmified]
+
+== References
+

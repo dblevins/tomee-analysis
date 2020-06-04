@@ -1,0 +1,8 @@
+= org/apache/catalina/filters/AddDefaultCharsetFilter$ResponseWrapper.class
+
+ - link:AddDefaultCharsetFilter$ResponseWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponseWrapper - 8
+ - javax.servlet.http.HttpServletResponse - 2

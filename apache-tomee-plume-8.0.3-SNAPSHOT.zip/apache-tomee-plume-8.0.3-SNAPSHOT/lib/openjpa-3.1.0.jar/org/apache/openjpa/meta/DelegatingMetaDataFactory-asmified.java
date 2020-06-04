@@ -1,0 +1,305 @@
+package asm.org.apache.openjpa.meta;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DelegatingMetaDataFactoryDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/meta/DelegatingMetaDataFactory", null, "java/lang/Object", new String[] { "org/apache/openjpa/meta/MetaDataFactory" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openjpa/meta/MetaDataFactory;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDelegate", "()Lorg/apache/openjpa/meta/MetaDataFactory;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInnermostDelegate", "()Lorg/apache/openjpa/meta/MetaDataFactory;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/meta/DelegatingMetaDataFactory");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/meta/DelegatingMetaDataFactory");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "getInnermostDelegate", "()Lorg/apache/openjpa/meta/MetaDataFactory;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRepository", "(Lorg/apache/openjpa/meta/MetaDataRepository;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "setRepository", "(Lorg/apache/openjpa/meta/MetaDataRepository;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStoreDirectory", "(Ljava/io/File;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "setStoreDirectory", "(Ljava/io/File;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStoreMode", "(I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "setStoreMode", "(I)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStrict", "(Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "setStrict", "(Z)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "load", "(Ljava/lang/Class;ILjava/lang/ClassLoader;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "load", "(Ljava/lang/Class;ILjava/lang/ClassLoader;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "store", "([Lorg/apache/openjpa/meta/ClassMetaData;[Lorg/apache/openjpa/meta/QueryMetaData;[Lorg/apache/openjpa/meta/SequenceMetaData;ILjava/util/Map;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "store", "([Lorg/apache/openjpa/meta/ClassMetaData;[Lorg/apache/openjpa/meta/QueryMetaData;[Lorg/apache/openjpa/meta/SequenceMetaData;ILjava/util/Map;)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "drop", "([Ljava/lang/Class;ILjava/lang/ClassLoader;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "drop", "([Ljava/lang/Class;ILjava/lang/ClassLoader;)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaults", "()Lorg/apache/openjpa/meta/MetaDataDefaults;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getDefaults", "()Lorg/apache/openjpa/meta/MetaDataDefaults;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newClassArgParser", "()Lorg/apache/openjpa/lib/meta/ClassArgParser;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "newClassArgParser", "()Lorg/apache/openjpa/lib/meta/ClassArgParser;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistentTypeNames", "(ZLjava/lang/ClassLoader;)Ljava/util/Set;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getPersistentTypeNames", "(ZLjava/lang/ClassLoader;)Ljava/util/Set;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getQueryScope", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getQueryScope", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResultSetMappingScope", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getResultSetMappingScope", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clear", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "clear", "()V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addClassExtensionKeys", "(Ljava/util/Collection;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "addClassExtensionKeys", "(Ljava/util/Collection;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addFieldExtensionKeys", "(Ljava/util/Collection;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "addFieldExtensionKeys", "(Ljava/util/Collection;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "loadXMLMetaData", "(Ljava/lang/Class;)V", "(Ljava/lang/Class<*>;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "loadXMLMetaData", "(Ljava/lang/Class;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetaModelClassName", "(Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getMetaModelClassName", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedClassName", "(Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getManagedClassName", "(Ljava/lang/String;)Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isMetaClass", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<*>;)Z", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "isMetaClass", "(Ljava/lang/Class;)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedClass", "(Ljava/lang/Class;)Ljava/lang/Class;", "(Ljava/lang/Class<*>;)Ljava/lang/Class<*>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/meta/DelegatingMetaDataFactory", "_delegate", "Lorg/apache/openjpa/meta/MetaDataFactory;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/meta/MetaDataFactory", "getManagedClass", "(Ljava/lang/Class;)Ljava/lang/Class;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

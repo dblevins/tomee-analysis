@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.class
+
+ - link:ReadHeadersInterceptor-asmified.java[Asmified]
+
+== References
+

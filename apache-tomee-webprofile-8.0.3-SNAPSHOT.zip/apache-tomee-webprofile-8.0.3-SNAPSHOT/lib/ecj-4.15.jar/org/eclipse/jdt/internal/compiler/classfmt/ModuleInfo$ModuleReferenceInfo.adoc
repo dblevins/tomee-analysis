@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/ModuleInfo$ModuleReferenceInfo.class
+
+ - link:ModuleInfo$ModuleReferenceInfo-asmified.java[Asmified]
+
+== References
+

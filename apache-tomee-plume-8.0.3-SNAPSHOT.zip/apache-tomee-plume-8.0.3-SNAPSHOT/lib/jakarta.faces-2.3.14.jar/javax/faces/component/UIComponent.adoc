@@ -1,0 +1,42 @@
+= javax/faces/component/UIComponent.class
+
+ - link:UIComponent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 118
+ - javax.faces.context.FacesContext - 80
+ - javax.faces.component.StateHelper - 17
+ - javax.faces.application.Resource - 15
+ - javax.faces.component.ComponentStateHelper - 11
+ - javax.el.ValueExpression - 11
+ - javax.faces.component.TransientStateHelper - 9
+ - javax.faces.component.visit.VisitContext - 7
+ - javax.faces.component.visit.VisitResult - 5
+ - javax.faces.component.ContextCallback - 5
+ - javax.faces.FacesException - 5
+ - javax.el.ELContext - 5
+ - javax.faces.component.UIComponent$PropertyKeysPrivate - 4
+ - javax.faces.event.FacesListener - 3
+ - javax.faces.component.visit.VisitCallback - 3
+ - javax.faces.event.ComponentSystemEventListener - 3
+ - javax.faces.event.SystemEvent - 3
+ - javax.faces.component.UIComponent$PropertyKeys - 3
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.el.ELException - 2
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.event.AbortProcessingException - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.event.FacesEvent - 2
+ - javax.faces.component.UIComponent$1 - 2
+ - javax.faces.component.TransientStateHolder - 1
+ - javax.faces.event.PostRestoreStateEvent - 1
+ - javax.faces.component.NamingContainer - 1
+ - javax.faces.event.ComponentSystemEvent - 1
+ - javax.faces.render.Renderer - 1
+ - javax.faces.event.SystemEventListener - 1
+ - javax.faces.component.PartialStateHolder - 1
+ - javax.faces.event.SystemEventListenerHolder - 1

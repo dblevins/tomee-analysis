@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/i18n/ConcurrencyExceptionResource.class
+
+ - link:ConcurrencyExceptionResource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/eclipse/persistence/internal/jpa/querydef/CriteriaDeleteImpl.class
+
+ - link:CriteriaDeleteImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Root - 13
+ - javax.persistence.criteria.CriteriaDelete - 7
+ - javax.persistence.criteria.Predicate - 4
+ - javax.persistence.criteria.CommonAbstractCriteria - 4
+ - javax.persistence.criteria.Expression - 4
+ - javax.persistence.metamodel.EntityType - 2
+ - javax.persistence.metamodel.Metamodel - 2

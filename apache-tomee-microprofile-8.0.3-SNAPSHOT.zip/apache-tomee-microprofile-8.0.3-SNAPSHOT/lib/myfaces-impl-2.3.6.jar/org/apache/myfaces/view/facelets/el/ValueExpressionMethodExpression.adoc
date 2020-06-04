@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/el/ValueExpressionMethodExpression.class
+
+ - link:ValueExpressionMethodExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 28
+ - javax.el.MethodExpression - 24
+ - javax.el.ELContext - 11
+ - javax.faces.context.FacesContext - 3
+ - javax.el.MethodInfo - 2
+ - javax.faces.FacesWrapper - 1

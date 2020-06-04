@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/JPQLException.class
+
+ - link:JPQLException-asmified.java[Asmified]
+
+== References
+

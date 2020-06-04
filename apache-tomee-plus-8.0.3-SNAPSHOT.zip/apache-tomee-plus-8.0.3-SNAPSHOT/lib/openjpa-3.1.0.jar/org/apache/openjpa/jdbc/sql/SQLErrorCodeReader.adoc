@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SQLErrorCodeReader.class
+
+ - link:SQLErrorCodeReader-asmified.java[Asmified]
+
+== References
+

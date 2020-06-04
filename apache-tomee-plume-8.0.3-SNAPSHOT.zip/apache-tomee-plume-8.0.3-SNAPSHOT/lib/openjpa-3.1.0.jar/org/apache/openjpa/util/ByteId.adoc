@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ByteId.class
+
+ - link:ByteId-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/pool/RestoreViewFromPoolResult.class
+
+ - link:RestoreViewFromPoolResult-asmified.java[Asmified]
+
+== References
+

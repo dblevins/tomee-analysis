@@ -1,0 +1,14 @@
+= org/apache/myfaces/shared/context/SwitchAjaxExceptionHandlerWrapperImpl.class
+
+ - link:SwitchAjaxExceptionHandlerWrapperImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 11
+ - javax.faces.context.ExceptionHandler - 10
+ - javax.faces.context.PartialViewContext - 6
+ - javax.faces.event.SystemEvent - 4
+ - javax.faces.context.ExceptionHandlerWrapper - 3
+ - javax.faces.event.ExceptionQueuedEvent - 3
+ - javax.faces.event.ExceptionQueuedEventContext - 2
+ - javax.faces.event.AbortProcessingException - 1

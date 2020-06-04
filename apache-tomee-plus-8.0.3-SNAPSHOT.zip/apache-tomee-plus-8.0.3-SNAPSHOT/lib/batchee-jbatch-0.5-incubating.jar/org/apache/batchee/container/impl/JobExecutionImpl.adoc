@@ -1,0 +1,7 @@
+= org/apache/batchee/container/impl/JobExecutionImpl.class
+
+ - link:JobExecutionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 6

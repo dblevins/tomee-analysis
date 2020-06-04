@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/util/HttpUtil$1.class
+
+ - link:HttpUtil$1-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 9
+ - javax.servlet.ServletConfig - 1

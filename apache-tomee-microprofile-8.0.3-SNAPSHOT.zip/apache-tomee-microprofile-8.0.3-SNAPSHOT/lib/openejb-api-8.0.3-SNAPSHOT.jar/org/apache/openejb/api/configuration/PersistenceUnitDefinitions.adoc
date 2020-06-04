@@ -1,0 +1,6 @@
+= org/apache/openejb/api/configuration/PersistenceUnitDefinitions.class
+
+ - link:PersistenceUnitDefinitions-asmified.java[Asmified]
+
+== References
+

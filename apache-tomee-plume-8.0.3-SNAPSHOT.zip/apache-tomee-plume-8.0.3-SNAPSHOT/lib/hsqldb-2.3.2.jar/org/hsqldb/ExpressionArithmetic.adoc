@@ -1,0 +1,6 @@
+= org/hsqldb/ExpressionArithmetic.class
+
+ - link:ExpressionArithmetic-asmified.java[Asmified]
+
+== References
+

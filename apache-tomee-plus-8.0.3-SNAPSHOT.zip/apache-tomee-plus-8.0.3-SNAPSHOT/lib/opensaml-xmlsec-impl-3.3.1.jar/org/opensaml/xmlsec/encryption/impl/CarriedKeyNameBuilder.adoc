@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/CarriedKeyNameBuilder.class
+
+ - link:CarriedKeyNameBuilder-asmified.java[Asmified]
+
+== References
+

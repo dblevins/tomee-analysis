@@ -1,0 +1,10 @@
+= org/apache/geronimo/connector/outbound/SinglePoolConnectionInterceptor.class
+
+ - link:SinglePoolConnectionInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 9
+ - javax.resource.spi.ManagedConnection - 8
+ - javax.resource.spi.ConnectionRequestInfo - 2
+ - javax.resource.spi.ManagedConnectionFactory - 2

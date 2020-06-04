@@ -1,0 +1,6 @@
+= org/apache/openejb/util/LogStreamAsync$level.class
+
+ - link:LogStreamAsync$level-asmified.java[Asmified]
+
+== References
+

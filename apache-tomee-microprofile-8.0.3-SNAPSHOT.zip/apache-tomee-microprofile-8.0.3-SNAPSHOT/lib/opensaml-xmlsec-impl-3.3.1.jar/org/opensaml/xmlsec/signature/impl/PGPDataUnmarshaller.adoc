@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/PGPDataUnmarshaller.class
+
+ - link:PGPDataUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/persistence/PersistenceClassLoaderHandler.class
+
+ - link:PersistenceClassLoaderHandler-asmified.java[Asmified]
+
+== References
+

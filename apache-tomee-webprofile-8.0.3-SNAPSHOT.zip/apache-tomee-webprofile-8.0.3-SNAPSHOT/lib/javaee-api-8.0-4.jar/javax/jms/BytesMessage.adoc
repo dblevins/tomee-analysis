@@ -1,0 +1,8 @@
+= javax/jms/BytesMessage.class
+
+ - link:BytesMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 27
+ - javax.jms.Message - 1

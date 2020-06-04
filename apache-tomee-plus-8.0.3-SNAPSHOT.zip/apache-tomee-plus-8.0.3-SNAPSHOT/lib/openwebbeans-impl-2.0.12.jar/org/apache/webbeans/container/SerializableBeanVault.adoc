@@ -1,0 +1,8 @@
+= org/apache/webbeans/container/SerializableBeanVault.class
+
+ - link:SerializableBeanVault-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 3
+ - javax.enterprise.inject.spi.Bean - 2

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/config/inject/package-info.class
+
+ - link:package-info-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,12 @@
+= com/sun/faces/renderkit/html_basic/TextRenderer.class
+
+ - link:TextRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 33
+ - javax.faces.context.ResponseWriter - 23
+ - javax.faces.context.FacesContext - 16
+ - javax.faces.component.html.HtmlInputFile - 1
+ - javax.faces.component.UIInput - 1
+ - javax.faces.component.UIOutput - 1

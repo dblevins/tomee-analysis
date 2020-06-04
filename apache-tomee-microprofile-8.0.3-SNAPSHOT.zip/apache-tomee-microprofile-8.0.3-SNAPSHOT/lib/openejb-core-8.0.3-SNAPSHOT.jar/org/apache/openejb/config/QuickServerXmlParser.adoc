@@ -1,0 +1,6 @@
+= org/apache/openejb/config/QuickServerXmlParser.class
+
+ - link:QuickServerXmlParser-asmified.java[Asmified]
+
+== References
+

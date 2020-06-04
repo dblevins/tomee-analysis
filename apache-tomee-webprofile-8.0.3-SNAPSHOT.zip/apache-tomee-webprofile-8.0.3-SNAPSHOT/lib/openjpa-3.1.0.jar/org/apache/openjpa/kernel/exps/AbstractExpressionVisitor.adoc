@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/AbstractExpressionVisitor.class
+
+ - link:AbstractExpressionVisitor-asmified.java[Asmified]
+
+== References
+

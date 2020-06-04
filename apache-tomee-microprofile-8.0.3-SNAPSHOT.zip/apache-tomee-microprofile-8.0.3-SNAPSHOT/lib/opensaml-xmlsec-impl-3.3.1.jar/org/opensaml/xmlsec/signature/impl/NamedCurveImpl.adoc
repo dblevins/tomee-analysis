@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/NamedCurveImpl.class
+
+ - link:NamedCurveImpl-asmified.java[Asmified]
+
+== References
+

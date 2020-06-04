@@ -1,0 +1,6 @@
+= org/apache/openejb/core/webservices/UriResolver.class
+
+ - link:UriResolver-asmified.java[Asmified]
+
+== References
+

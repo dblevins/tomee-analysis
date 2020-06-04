@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/provider/ProviderFactory$MessageBodyReaderComparator.class
+
+ - link:ProviderFactory$MessageBodyReaderComparator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.MessageBodyReader - 11

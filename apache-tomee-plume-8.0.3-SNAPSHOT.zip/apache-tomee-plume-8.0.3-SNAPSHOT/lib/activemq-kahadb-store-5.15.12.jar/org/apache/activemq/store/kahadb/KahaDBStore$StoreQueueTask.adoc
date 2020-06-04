@@ -1,0 +1,6 @@
+= org/apache/activemq/store/kahadb/KahaDBStore$StoreQueueTask.class
+
+ - link:KahaDBStore$StoreQueueTask-asmified.java[Asmified]
+
+== References
+

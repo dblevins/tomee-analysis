@@ -1,0 +1,7 @@
+= org/apache/geronimo/transaction/manager/NamedXAResourceFactory.class
+
+ - link:NamedXAResourceFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.SystemException - 1

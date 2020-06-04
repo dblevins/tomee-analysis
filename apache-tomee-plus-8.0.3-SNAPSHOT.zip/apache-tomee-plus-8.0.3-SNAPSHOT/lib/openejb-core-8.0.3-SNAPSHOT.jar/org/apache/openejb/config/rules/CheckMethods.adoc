@@ -1,0 +1,12 @@
+= org/apache/openejb/config/rules/CheckMethods.class
+
+ - link:CheckMethods-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBObject - 2
+ - javax.ejb.EJBLocalObject - 2
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.EnterpriseBean - 1
+ - javax.ejb.EJBLocalHome - 1
+ - javax.ejb.SessionBean - 1

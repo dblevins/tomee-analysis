@@ -1,0 +1,8 @@
+= org/apache/webbeans/component/third/PassivationCapableThirdpartyBeanImpl.class
+
+ - link:PassivationCapableThirdpartyBeanImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.PassivationCapable - 3
+ - javax.enterprise.inject.spi.Bean - 2

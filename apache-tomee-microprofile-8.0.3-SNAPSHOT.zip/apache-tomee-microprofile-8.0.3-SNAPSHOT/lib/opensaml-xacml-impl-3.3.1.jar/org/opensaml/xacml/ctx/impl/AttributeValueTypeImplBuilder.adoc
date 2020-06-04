@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/AttributeValueTypeImplBuilder.class
+
+ - link:AttributeValueTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/TablePrefixAware.class
+
+ - link:TablePrefixAware-asmified.java[Asmified]
+
+== References
+

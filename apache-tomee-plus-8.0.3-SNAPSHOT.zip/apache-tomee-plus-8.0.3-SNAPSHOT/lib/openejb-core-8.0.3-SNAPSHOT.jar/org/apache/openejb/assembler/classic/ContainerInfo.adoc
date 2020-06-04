@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ContainerInfo.class
+
+ - link:ContainerInfo-asmified.java[Asmified]
+
+== References
+

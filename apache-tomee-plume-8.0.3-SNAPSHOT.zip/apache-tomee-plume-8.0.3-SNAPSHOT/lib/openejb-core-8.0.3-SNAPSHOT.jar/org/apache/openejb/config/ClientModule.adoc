@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ClientModule.class
+
+ - link:ClientModule-asmified.java[Asmified]
+
+== References
+

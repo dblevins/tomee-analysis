@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/FunctionExpressionFactory.class
+
+ - link:FunctionExpressionFactory-asmified.java[Asmified]
+
+== References
+

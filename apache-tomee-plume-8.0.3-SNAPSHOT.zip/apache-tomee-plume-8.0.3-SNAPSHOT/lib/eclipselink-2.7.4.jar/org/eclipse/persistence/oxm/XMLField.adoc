@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/XMLField.class
+
+ - link:XMLField-asmified.java[Asmified]
+
+== References
+

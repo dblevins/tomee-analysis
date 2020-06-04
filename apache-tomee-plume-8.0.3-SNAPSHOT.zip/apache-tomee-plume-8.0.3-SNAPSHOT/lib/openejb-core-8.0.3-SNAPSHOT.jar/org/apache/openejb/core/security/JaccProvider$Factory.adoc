@@ -1,0 +1,9 @@
+= org/apache/openejb/core/security/JaccProvider$Factory.class
+
+ - link:JaccProvider$Factory-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.PolicyContextException - 3
+ - javax.security.jacc.PolicyConfiguration - 2
+ - javax.security.jacc.PolicyConfigurationFactory - 2

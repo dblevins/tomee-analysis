@@ -1,0 +1,6 @@
+= org/apache/openejb/util/PropertyPlaceHolderHelper$PropertiesLookup.class
+
+ - link:PropertyPlaceHolderHelper$PropertiesLookup-asmified.java[Asmified]
+
+== References
+

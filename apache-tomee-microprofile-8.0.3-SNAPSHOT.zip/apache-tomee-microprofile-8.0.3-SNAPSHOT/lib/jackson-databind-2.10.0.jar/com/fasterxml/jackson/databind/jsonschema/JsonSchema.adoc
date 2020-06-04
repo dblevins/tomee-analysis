@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsonschema/JsonSchema.class
+
+ - link:JsonSchema-asmified.java[Asmified]
+
+== References
+

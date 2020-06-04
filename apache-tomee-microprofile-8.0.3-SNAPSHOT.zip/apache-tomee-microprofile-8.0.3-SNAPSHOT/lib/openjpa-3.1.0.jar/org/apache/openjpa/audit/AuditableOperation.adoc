@@ -1,0 +1,6 @@
+= org/apache/openjpa/audit/AuditableOperation.class
+
+ - link:AuditableOperation-asmified.java[Asmified]
+
+== References
+

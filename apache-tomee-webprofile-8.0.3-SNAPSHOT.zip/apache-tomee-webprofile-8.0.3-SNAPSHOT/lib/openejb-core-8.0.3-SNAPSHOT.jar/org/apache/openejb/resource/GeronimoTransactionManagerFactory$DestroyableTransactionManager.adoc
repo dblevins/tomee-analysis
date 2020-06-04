@@ -1,0 +1,8 @@
+= org/apache/openejb/resource/GeronimoTransactionManagerFactory$DestroyableTransactionManager.class
+
+ - link:GeronimoTransactionManagerFactory$DestroyableTransactionManager-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.NotSupportedException - 4
+ - javax.transaction.SystemException - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/Processor$ASMContentHandlerFactory.class
+
+ - link:Processor$ASMContentHandlerFactory-asmified.java[Asmified]
+
+== References
+

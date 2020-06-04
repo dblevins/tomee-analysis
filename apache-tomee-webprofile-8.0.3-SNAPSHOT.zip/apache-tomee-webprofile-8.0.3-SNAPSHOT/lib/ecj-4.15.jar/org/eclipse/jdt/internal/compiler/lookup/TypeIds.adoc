@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/TypeIds.class
+
+ - link:TypeIds-asmified.java[Asmified]
+
+== References
+

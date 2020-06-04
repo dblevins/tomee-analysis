@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AssertionIDReferenceMarshaller.class
+
+ - link:AssertionIDReferenceMarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/SwitchTransformer.class
+
+ - link:SwitchTransformer-asmified.java[Asmified]
+
+== References
+

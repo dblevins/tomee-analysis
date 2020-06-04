@@ -1,0 +1,16 @@
+= org/apache/myfaces/shared/renderkit/html/util/SelectItemsUtils.class
+
+ - link:SelectItemsUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.SelectItem - 41
+ - javax.faces.context.ResponseWriter - 25
+ - javax.faces.component.UIComponent - 25
+ - javax.faces.context.FacesContext - 14
+ - javax.faces.convert.Converter - 7
+ - javax.faces.context.ExternalContext - 6
+ - javax.faces.model.SelectItemGroup - 3
+ - javax.faces.component.UISelectMany - 1
+ - javax.faces.component.UISelectOne - 1
+ - javax.faces.component.UISelectItems - 1

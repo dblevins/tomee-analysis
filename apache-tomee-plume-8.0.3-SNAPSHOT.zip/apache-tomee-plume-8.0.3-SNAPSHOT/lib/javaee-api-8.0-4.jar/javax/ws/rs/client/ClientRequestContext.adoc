@@ -1,0 +1,12 @@
+= javax/ws/rs/client/ClientRequestContext.class
+
+ - link:ClientRequestContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 3
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.core.Configuration - 1
+ - javax.ws.rs.client.Client - 1
+ - javax.ws.rs.core.Cookie - 1

@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/JpaEntityManager.class
+
+ - link:JpaEntityManager-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Query - 7
+ - javax.persistence.EntityManager - 1

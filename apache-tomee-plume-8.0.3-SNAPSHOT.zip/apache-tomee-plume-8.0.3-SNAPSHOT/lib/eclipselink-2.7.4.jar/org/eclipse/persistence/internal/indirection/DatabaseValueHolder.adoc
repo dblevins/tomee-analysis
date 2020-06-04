@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/DatabaseValueHolder.class
+
+ - link:DatabaseValueHolder-asmified.java[Asmified]
+
+== References
+

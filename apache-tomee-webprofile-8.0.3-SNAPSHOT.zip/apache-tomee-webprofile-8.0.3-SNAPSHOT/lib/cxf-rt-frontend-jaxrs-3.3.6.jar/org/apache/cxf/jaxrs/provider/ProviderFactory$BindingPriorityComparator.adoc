@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/ProviderFactory$BindingPriorityComparator.class
+
+ - link:ProviderFactory$BindingPriorityComparator-asmified.java[Asmified]
+
+== References
+

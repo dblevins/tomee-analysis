@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ElementType.class
+
+ - link:ElementType-asmified.java[Asmified]
+
+== References
+

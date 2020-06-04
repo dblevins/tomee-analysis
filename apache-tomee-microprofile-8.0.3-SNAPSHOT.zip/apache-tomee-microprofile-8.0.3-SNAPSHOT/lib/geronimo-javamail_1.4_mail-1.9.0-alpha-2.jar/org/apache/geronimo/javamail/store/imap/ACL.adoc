@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/imap/ACL.class
+
+ - link:ACL-asmified.java[Asmified]
+
+== References
+

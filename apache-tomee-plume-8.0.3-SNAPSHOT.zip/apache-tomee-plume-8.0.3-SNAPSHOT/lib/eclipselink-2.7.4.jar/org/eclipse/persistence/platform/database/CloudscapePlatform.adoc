@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/CloudscapePlatform.class
+
+ - link:CloudscapePlatform-asmified.java[Asmified]
+
+== References
+

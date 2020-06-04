@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/URLReference.class
+
+ - link:URLReference-asmified.java[Asmified]
+
+== References
+

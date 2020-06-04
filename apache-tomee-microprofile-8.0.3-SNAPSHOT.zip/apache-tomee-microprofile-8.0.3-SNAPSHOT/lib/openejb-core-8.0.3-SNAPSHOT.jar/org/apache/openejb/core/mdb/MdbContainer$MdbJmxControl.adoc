@@ -1,0 +1,7 @@
+= org/apache/openejb/core/mdb/MdbContainer$MdbJmxControl.class
+
+ - link:MdbContainer$MdbJmxControl-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 4

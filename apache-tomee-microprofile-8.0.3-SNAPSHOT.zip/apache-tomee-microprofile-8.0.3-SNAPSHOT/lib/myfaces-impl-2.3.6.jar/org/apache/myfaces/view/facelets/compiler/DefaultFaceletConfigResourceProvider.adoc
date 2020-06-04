@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/compiler/DefaultFaceletConfigResourceProvider.class
+
+ - link:DefaultFaceletConfigResourceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 4

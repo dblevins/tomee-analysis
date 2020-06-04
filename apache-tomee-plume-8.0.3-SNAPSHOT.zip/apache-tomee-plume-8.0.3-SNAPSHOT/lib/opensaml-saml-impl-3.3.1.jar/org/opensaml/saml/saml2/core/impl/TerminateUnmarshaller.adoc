@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/TerminateUnmarshaller.class
+
+ - link:TerminateUnmarshaller-asmified.java[Asmified]
+
+== References
+

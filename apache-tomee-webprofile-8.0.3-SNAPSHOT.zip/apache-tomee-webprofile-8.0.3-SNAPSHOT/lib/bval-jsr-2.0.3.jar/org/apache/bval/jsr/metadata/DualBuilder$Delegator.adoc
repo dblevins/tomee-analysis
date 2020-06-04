@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/DualBuilder$Delegator.class
+
+ - link:DualBuilder$Delegator-asmified.java[Asmified]
+
+== References
+

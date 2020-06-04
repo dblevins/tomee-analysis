@@ -1,0 +1,13 @@
+= org/apache/myfaces/cdi/behavior/FacesBehaviorCDIWrapper.class
+
+ - link:FacesBehaviorCDIWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.Behavior - 13
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.event.BehaviorEvent - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.faces.FacesWrapper - 1
+ - javax.faces.component.PartialStateHolder - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/VariableXPathObjectMapping.class
+
+ - link:VariableXPathObjectMapping-asmified.java[Asmified]
+
+== References
+

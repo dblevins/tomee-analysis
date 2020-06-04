@@ -1,0 +1,8 @@
+= javax/xml/bind/annotation/XmlAnyElement.class
+
+ - link:XmlAnyElement-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.W3CDomHandler - 1
+ - javax.xml.bind.annotation.DomHandler - 1

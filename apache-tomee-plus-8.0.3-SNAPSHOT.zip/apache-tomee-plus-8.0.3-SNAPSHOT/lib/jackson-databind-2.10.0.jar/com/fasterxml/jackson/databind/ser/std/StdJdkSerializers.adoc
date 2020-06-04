@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StdJdkSerializers.class
+
+ - link:StdJdkSerializers-asmified.java[Asmified]
+
+== References
+

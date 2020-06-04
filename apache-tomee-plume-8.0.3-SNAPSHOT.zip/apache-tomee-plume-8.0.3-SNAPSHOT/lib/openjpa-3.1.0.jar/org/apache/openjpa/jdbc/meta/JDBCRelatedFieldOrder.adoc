@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/JDBCRelatedFieldOrder.class
+
+ - link:JDBCRelatedFieldOrder-asmified.java[Asmified]
+
+== References
+

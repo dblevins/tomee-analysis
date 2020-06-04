@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/primitive/ObjectSupport.class
+
+ - link:ObjectSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 3

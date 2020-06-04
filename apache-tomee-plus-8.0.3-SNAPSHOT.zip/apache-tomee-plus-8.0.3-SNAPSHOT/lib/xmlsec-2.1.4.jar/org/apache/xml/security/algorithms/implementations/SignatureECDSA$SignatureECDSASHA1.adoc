@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/SignatureECDSA$SignatureECDSASHA1.class
+
+ - link:SignatureECDSA$SignatureECDSASHA1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/time/FastDatePrinter$Rule.class
+
+ - link:FastDatePrinter$Rule-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/tokenstore/MemoryTokenStoreFactory.class
+
+ - link:MemoryTokenStoreFactory-asmified.java[Asmified]
+
+== References
+

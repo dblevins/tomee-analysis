@@ -1,0 +1,6 @@
+= org/apache/openejb/core/NoSuchObjectException.class
+
+ - link:NoSuchObjectException-asmified.java[Asmified]
+
+== References
+

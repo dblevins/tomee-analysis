@@ -1,0 +1,8 @@
+= com/sun/faces/spi/InjectionProviderFactory.class
+
+ - link:InjectionProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 9
+ - javax.servlet.ServletContext - 2

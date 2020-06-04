@@ -1,0 +1,6 @@
+= com/sun/faces/spi/DiscoverableInjectionProvider.class
+
+ - link:DiscoverableInjectionProvider-asmified.java[Asmified]
+
+== References
+

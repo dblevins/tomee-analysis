@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/AsmParameterNameLoader$AllParameterNamesDiscoveringVisitor.class
+
+ - link:AsmParameterNameLoader$AllParameterNamesDiscoveringVisitor-asmified.java[Asmified]
+
+== References
+

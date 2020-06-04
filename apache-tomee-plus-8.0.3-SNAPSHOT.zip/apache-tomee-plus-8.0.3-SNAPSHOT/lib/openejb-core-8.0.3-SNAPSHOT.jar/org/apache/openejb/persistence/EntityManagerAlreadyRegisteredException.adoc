@@ -1,0 +1,6 @@
+= org/apache/openejb/persistence/EntityManagerAlreadyRegisteredException.class
+
+ - link:EntityManagerAlreadyRegisteredException-asmified.java[Asmified]
+
+== References
+

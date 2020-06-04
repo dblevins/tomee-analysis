@@ -1,0 +1,11 @@
+= org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor.class
+
+ - link:IdGeneratorInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 8
+ - javax.inject.Inject - 1
+ - javax.interceptor.Interceptor - 1
+ - javax.annotation.Priority - 1
+ - javax.interceptor.AroundInvoke - 1

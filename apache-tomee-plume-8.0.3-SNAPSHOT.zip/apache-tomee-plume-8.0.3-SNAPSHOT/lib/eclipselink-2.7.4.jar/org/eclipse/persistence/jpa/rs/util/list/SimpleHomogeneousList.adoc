@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jpa/rs/util/list/SimpleHomogeneousList.class
+
+ - link:SimpleHomogeneousList-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/jwt/ClaimValue.class
+
+ - link:ClaimValue-asmified.java[Asmified]
+
+== References
+

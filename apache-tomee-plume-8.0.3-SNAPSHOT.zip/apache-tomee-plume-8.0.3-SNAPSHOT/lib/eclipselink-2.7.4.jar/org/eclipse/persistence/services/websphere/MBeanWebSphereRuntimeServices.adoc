@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/websphere/MBeanWebSphereRuntimeServices.class
+
+ - link:MBeanWebSphereRuntimeServices-asmified.java[Asmified]
+
+== References
+

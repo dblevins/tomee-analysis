@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bag/UnmodifiableBag.class
+
+ - link:UnmodifiableBag-asmified.java[Asmified]
+
+== References
+

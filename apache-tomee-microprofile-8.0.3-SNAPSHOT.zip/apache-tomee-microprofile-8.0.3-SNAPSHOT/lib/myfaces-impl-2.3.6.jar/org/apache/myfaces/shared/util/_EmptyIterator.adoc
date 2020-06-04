@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/_EmptyIterator.class
+
+ - link:_EmptyIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/openejb/rest/ThreadLocalUriInfo.class
+
+ - link:ThreadLocalUriInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 41
+ - javax.ws.rs.core.MultivaluedMap - 8
+ - javax.ws.rs.core.UriBuilder - 6
+ - javax.ws.rs.core.PathSegment - 2

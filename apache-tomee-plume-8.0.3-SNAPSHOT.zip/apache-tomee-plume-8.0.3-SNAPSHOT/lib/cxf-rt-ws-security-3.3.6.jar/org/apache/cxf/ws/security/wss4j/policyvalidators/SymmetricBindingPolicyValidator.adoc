@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/SymmetricBindingPolicyValidator.class
+
+ - link:SymmetricBindingPolicyValidator-asmified.java[Asmified]
+
+== References
+

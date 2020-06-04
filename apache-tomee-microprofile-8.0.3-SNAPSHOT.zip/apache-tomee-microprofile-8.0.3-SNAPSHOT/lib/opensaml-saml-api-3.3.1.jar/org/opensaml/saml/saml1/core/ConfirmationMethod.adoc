@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/ConfirmationMethod.class
+
+ - link:ConfirmationMethod-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/server/osgi/Activator.class
+
+ - link:Activator-asmified.java[Asmified]
+
+== References
+

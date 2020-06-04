@@ -1,0 +1,12 @@
+= javax/faces/component/UIGraphic.class
+
+ - link:UIGraphic-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponentBase - 10
+ - javax.el.ValueExpression - 6
+ - javax.faces.el.ValueBinding - 6
+ - javax.faces.component.UIGraphic - 5
+ - javax.faces.component.StateHelper - 4
+ - javax.faces.component.UIGraphic$PropertyKeys - 2

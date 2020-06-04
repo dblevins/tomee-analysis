@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ActivationConfigPropertyOverride.class
+
+ - link:ActivationConfigPropertyOverride-asmified.java[Asmified]
+
+== References
+

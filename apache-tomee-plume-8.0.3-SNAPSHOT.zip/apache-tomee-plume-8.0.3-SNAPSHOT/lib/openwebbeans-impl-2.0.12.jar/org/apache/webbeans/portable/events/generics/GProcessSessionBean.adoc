@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/events/generics/GProcessSessionBean.class
+
+ - link:GProcessSessionBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 4
+ - javax.enterprise.inject.spi.SessionBeanType - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.ProcessSessionBean - 1

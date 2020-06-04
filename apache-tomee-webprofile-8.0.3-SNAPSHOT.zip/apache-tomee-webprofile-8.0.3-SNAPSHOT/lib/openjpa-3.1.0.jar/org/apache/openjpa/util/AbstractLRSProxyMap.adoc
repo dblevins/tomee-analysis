@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/AbstractLRSProxyMap.class
+
+ - link:AbstractLRSProxyMap-asmified.java[Asmified]
+
+== References
+

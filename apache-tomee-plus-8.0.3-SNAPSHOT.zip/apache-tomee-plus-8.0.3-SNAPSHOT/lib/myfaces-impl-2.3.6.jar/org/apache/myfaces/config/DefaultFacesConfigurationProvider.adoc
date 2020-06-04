@@ -1,0 +1,9 @@
+= org/apache/myfaces/config/DefaultFacesConfigurationProvider.class
+
+ - link:DefaultFacesConfigurationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 78
+ - javax.faces.FacesException - 24
+ - javax.faces.application.ApplicationConfigurationPopulator - 3

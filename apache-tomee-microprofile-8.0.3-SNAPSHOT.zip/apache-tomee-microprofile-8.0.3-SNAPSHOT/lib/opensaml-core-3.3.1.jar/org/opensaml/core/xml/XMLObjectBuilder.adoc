@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/XMLObjectBuilder.class
+
+ - link:XMLObjectBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 10
+ - javax.annotation.Nullable - 6

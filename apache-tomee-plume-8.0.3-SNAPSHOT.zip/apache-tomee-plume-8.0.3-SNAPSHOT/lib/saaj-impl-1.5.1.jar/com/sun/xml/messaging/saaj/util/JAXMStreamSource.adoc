@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/JAXMStreamSource.class
+
+ - link:JAXMStreamSource-asmified.java[Asmified]
+
+== References
+

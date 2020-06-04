@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/NameAndTypeEntry.class
+
+ - link:NameAndTypeEntry-asmified.java[Asmified]
+
+== References
+

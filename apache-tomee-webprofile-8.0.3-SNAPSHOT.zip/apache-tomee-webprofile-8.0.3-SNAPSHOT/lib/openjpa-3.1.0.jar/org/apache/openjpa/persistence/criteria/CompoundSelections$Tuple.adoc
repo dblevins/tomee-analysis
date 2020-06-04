@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/CompoundSelections$Tuple.class
+
+ - link:CompoundSelections$Tuple-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TupleElement - 3
+ - javax.persistence.Tuple - 3
+ - javax.persistence.criteria.Selection - 2

@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider.class
+
+ - link:JavaTimeTypesParamConverterProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.ParamConverterProvider - 1

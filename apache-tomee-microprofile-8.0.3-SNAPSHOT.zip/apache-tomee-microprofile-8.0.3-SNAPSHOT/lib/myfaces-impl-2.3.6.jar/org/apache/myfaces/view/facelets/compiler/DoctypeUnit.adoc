@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/compiler/DoctypeUnit.class
+
+ - link:DoctypeUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletHandler - 4
+ - javax.faces.view.facelets.CompositeFaceletHandler - 2

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/platform/server/sap/SAPNetWeaver_7_1_Platform.class
+
+ - link:SAPNetWeaver_7_1_Platform-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 3

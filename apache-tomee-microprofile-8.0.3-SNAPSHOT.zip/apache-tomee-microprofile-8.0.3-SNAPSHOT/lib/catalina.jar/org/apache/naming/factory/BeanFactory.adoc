@@ -1,0 +1,6 @@
+= org/apache/naming/factory/BeanFactory.class
+
+ - link:BeanFactory-asmified.java[Asmified]
+
+== References
+

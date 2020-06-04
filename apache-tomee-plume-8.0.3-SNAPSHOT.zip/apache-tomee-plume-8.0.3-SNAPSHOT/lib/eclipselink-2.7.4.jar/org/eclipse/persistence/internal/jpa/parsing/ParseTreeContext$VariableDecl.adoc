@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ParseTreeContext$VariableDecl.class
+
+ - link:ParseTreeContext$VariableDecl-asmified.java[Asmified]
+
+== References
+

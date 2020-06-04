@@ -1,0 +1,14 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/tomee-myfaces-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet.adoc[org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet.class] - 36
+ - link:org/apache/tomee/myfaces/TomEEMyFacesContainerInitializer.adoc[org/apache/tomee/myfaces/TomEEMyFacesContainerInitializer.class] - 26
+ - link:org/apache/tomee/myfaces/TomEEWebConfigProvider.adoc[org/apache/tomee/myfaces/TomEEWebConfigProvider.class] - 17
+ - link:org/apache/tomee/myfaces/TomEEFacesConfigurationProviderFactory.adoc[org/apache/tomee/myfaces/TomEEFacesConfigurationProviderFactory.class] - 12
+ - link:org/apache/tomee/myfaces/TomEEFacesConfigResourceProviderFactory.adoc[org/apache/tomee/myfaces/TomEEFacesConfigResourceProviderFactory.class] - 11
+ - link:org/apache/tomee/myfaces/TomEEMyFacesContextListener.adoc[org/apache/tomee/myfaces/TomEEMyFacesContextListener.class] - 6
+ - link:org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet$SetFacesContext.adoc[org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet$SetFacesContext.class] - 6
+ - link:org/apache/tomee/myfaces/TomEEAnnotationProvider.adoc[org/apache/tomee/myfaces/TomEEAnnotationProvider.class] - 5
+ - link:org/apache/tomee/myfaces/TomEEFacesConfigResourceProviderFactory$1.adoc[org/apache/tomee/myfaces/TomEEFacesConfigResourceProviderFactory$1.class] - 5
+ - link:org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider.adoc[org/apache/tomee/myfaces/TomEEFacesConfigResourceProvider.class] - 4
+ - link:org/apache/tomee/myfaces/TomEEFacesConfigurationProvider.adoc[org/apache/tomee/myfaces/TomEEFacesConfigurationProvider.class] - 3
+ - link:org/apache/tomee/myfaces/TomEEAnnotationProviderFactory.adoc[org/apache/tomee/myfaces/TomEEAnnotationProviderFactory.class] - 3

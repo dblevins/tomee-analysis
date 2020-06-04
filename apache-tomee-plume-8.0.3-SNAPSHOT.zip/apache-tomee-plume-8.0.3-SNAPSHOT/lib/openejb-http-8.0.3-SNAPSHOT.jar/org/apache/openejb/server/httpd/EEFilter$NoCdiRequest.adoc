@@ -1,0 +1,10 @@
+= org/apache/openejb/server/httpd/EEFilter$NoCdiRequest.class
+
+ - link:EEFilter$NoCdiRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 8
+ - javax.servlet.http.HttpServletRequestWrapper - 3
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletException - 1

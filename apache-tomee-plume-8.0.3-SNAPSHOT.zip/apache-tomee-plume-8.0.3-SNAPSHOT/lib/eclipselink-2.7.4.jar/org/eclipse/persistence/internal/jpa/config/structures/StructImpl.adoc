@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/structures/StructImpl.class
+
+ - link:StructImpl-asmified.java[Asmified]
+
+== References
+

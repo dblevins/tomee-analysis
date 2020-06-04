@@ -1,0 +1,6 @@
+= org/codehaus/stax2/typed/TypedXMLStreamException.class
+
+ - link:TypedXMLStreamException-asmified.java[Asmified]
+
+== References
+

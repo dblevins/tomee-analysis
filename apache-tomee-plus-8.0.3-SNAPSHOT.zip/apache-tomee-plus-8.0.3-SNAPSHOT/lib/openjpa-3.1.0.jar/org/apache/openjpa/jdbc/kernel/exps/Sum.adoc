@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Sum.class
+
+ - link:Sum-asmified.java[Asmified]
+
+== References
+

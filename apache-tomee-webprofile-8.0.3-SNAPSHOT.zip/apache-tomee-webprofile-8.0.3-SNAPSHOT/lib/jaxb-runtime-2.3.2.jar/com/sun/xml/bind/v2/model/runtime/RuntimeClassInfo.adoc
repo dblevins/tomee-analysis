@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/runtime/RuntimeClassInfo.class
+
+ - link:RuntimeClassInfo-asmified.java[Asmified]
+
+== References
+

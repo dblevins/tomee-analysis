@@ -1,0 +1,6 @@
+= org/apache/catalina/mbeans/ContextResourceMBean.class
+
+ - link:ContextResourceMBean-asmified.java[Asmified]
+
+== References
+

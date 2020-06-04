@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/transport/discovery/DiscoveryConfig.class
+
+ - link:DiscoveryConfig-asmified.java[Asmified]
+
+== References
+

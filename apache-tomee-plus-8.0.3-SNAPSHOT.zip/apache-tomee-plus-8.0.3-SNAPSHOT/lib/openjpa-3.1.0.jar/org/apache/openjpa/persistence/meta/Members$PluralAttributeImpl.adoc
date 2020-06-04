@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/meta/Members$PluralAttributeImpl.class
+
+ - link:Members$PluralAttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute$PersistentAttributeType - 2
+ - javax.persistence.metamodel.Bindable$BindableType - 2
+ - javax.persistence.metamodel.Type - 2
+ - javax.persistence.metamodel.PluralAttribute - 1

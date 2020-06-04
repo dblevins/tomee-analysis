@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/commons_text/AggregateTranslator.class
+
+ - link:AggregateTranslator-asmified.java[Asmified]
+
+== References
+

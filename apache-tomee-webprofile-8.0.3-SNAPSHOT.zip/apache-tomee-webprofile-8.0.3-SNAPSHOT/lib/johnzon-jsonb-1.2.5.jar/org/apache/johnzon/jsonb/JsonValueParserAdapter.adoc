@@ -1,0 +1,16 @@
+= org/apache/johnzon/jsonb/JsonValueParserAdapter.class
+
+ - link:JsonValueParserAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 24
+ - javax.json.JsonValue$ValueType - 9
+ - javax.json.stream.JsonParser - 7
+ - javax.json.stream.JsonParserFactory - 6
+ - javax.json.JsonObject - 2
+ - javax.json.JsonNumber - 2
+ - javax.json.JsonArray - 2
+ - javax.json.JsonString - 2
+ - javax.json.stream.JsonLocation - 1
+ - javax.json.stream.JsonParser$Event - 1

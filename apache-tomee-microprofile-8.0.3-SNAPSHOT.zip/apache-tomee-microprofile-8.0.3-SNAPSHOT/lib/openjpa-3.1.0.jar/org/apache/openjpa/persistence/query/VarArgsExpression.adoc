@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/VarArgsExpression.class
+
+ - link:VarArgsExpression-asmified.java[Asmified]
+
+== References
+

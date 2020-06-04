@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/LocatorEx$Snapshot.class
+
+ - link:LocatorEx$Snapshot-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventLocator - 7

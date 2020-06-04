@@ -1,0 +1,30 @@
+= org/eclipse/persistence/internal/jpa/querydef/SubQueryImpl.class
+
+ - link:SubQueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 42
+ - javax.persistence.metamodel.Metamodel - 39
+ - javax.persistence.criteria.Predicate - 21
+ - javax.persistence.criteria.Subquery - 18
+ - javax.persistence.criteria.AbstractQuery - 17
+ - javax.persistence.criteria.CommonAbstractCriteria - 17
+ - javax.persistence.metamodel.ManagedType - 11
+ - javax.persistence.criteria.Join - 10
+ - javax.persistence.criteria.JoinType - 10
+ - javax.persistence.criteria.Path - 10
+ - javax.persistence.metamodel.Bindable - 9
+ - javax.persistence.criteria.ListJoin - 7
+ - javax.persistence.criteria.CollectionJoin - 7
+ - javax.persistence.criteria.SetJoin - 7
+ - javax.persistence.metamodel.Type$PersistenceType - 7
+ - javax.persistence.criteria.MapJoin - 7
+ - javax.persistence.criteria.Root - 6
+ - javax.persistence.criteria.Selection - 4
+ - javax.persistence.criteria.ParameterExpression - 3
+ - javax.persistence.metamodel.SetAttribute - 3
+ - javax.persistence.metamodel.CollectionAttribute - 3
+ - javax.persistence.metamodel.MapAttribute - 3
+ - javax.persistence.metamodel.ListAttribute - 3
+ - javax.persistence.metamodel.EntityType - 2

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/compiler/facets/PatternFacet.class
+
+ - link:PatternFacet-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Pattern$Flag - 5

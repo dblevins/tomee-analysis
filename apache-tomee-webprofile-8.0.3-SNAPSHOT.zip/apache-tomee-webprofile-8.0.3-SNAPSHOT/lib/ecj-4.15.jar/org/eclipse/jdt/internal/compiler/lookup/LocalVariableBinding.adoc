@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/LocalVariableBinding.class
+
+ - link:LocalVariableBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/MinimalClassNameIdResolver.class
+
+ - link:MinimalClassNameIdResolver-asmified.java[Asmified]
+
+== References
+

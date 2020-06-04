@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/NoServerPlatform.class
+
+ - link:NoServerPlatform-asmified.java[Asmified]
+
+== References
+

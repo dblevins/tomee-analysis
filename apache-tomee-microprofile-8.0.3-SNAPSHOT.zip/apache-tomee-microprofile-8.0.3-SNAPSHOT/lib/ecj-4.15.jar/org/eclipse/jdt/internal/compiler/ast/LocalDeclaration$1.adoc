@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/LocalDeclaration$1.class
+
+ - link:LocalDeclaration$1-asmified.java[Asmified]
+
+== References
+

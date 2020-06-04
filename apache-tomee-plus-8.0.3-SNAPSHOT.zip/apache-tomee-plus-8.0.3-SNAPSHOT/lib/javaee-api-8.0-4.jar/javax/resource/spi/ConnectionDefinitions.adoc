@@ -1,0 +1,7 @@
+= javax/resource/spi/ConnectionDefinitions.class
+
+ - link:ConnectionDefinitions-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionDefinition - 1

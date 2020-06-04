@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMCryptoBinary.class
+
+ - link:DOMCryptoBinary-asmified.java[Asmified]
+
+== References
+

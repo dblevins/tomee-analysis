@@ -1,0 +1,9 @@
+= org/eclipse/persistence/oxm/record/JsonBuilderRecord$Level.class
+
+ - link:JsonBuilderRecord$Level-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonObjectBuilder - 9
+ - javax.json.JsonArrayBuilder - 8
+ - javax.json.Json - 1

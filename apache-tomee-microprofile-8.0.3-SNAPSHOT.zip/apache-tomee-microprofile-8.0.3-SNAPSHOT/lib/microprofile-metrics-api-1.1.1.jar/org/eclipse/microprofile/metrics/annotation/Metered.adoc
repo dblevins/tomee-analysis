@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/metrics/annotation/Metered.class
+
+ - link:Metered-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 7
+ - javax.interceptor.InterceptorBinding - 1

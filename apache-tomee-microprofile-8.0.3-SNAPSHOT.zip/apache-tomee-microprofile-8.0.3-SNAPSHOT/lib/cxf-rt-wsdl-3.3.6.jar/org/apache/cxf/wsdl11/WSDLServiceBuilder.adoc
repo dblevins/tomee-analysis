@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl11/WSDLServiceBuilder.class
+
+ - link:WSDLServiceBuilder-asmified.java[Asmified]
+
+== References
+

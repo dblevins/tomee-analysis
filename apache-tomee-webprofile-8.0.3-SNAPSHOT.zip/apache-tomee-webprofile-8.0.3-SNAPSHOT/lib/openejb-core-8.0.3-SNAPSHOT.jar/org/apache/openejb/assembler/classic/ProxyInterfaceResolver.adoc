@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ProxyInterfaceResolver.class
+
+ - link:ProxyInterfaceResolver-asmified.java[Asmified]
+
+== References
+

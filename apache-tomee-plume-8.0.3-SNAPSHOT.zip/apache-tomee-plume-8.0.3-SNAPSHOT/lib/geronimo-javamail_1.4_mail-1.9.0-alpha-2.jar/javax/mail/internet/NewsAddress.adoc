@@ -1,0 +1,9 @@
+= javax/mail/internet/NewsAddress.class
+
+ - link:NewsAddress-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.NewsAddress - 10
+ - javax.mail.Address - 6
+ - javax.mail.internet.AddressException - 1

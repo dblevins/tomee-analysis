@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/GroupChannelMBean.class
+
+ - link:GroupChannelMBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/taglibs/standard/util/EscapeXML.class
+
+ - link:EscapeXML-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspWriter - 18

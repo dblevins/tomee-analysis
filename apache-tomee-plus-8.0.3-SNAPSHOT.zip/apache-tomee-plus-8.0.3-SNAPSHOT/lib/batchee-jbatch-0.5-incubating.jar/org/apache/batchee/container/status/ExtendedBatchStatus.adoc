@@ -1,0 +1,6 @@
+= org/apache/batchee/container/status/ExtendedBatchStatus.class
+
+ - link:ExtendedBatchStatus-asmified.java[Asmified]
+
+== References
+

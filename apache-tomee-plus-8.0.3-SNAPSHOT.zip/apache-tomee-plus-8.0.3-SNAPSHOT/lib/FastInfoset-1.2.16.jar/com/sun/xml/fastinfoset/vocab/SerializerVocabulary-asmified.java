@@ -1,0 +1,692 @@
+package asm.com.sun.xml.fastinfoset.vocab;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SerializerVocabularyDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", null, "com/sun/xml/fastinfoset/vocab/Vocabulary", null);
+
+classWriter.visitInnerClass("com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap$Entry", "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap", "Entry", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "restrictedAlphabet", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "encodingAlgorithm", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "namespaceName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "prefix", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "localName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "otherNCName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "otherURI", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "attributeValue", "Lcom/sun/xml/fastinfoset/util/StringIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "otherString", "Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "characterContentChunk", "Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "elementName", "Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "attributeName", "Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL, "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "_useLocalNameAsKey", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "_readOnlyVocabulary", "Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/Vocabulary", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitIntInsn(BIPUSH, 12);
+methodVisitor.visitTypeInsn(ANEWARRAY, "com/sun/xml/fastinfoset/util/KeyIntMap");
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/StringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/StringIntMap", "<init>", "(I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "restrictedAlphabet", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/StringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/StringIntMap", "<init>", "(I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "encodingAlgorithm", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/FixedEntryStringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("xml");
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/FixedEntryStringIntMap", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "prefix", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/FixedEntryStringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("http://www.w3.org/XML/1998/namespace");
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/FixedEntryStringIntMap", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "namespaceName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/StringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/StringIntMap", "<init>", "()V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "localName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/StringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/StringIntMap", "<init>", "(I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "otherNCName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/StringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/StringIntMap", "<init>", "(I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "otherURI", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/StringIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/StringIntMap", "<init>", "()V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "attributeValue", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/CharArrayIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/CharArrayIntMap", "<init>", "(I)V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "otherString", "Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitIntInsn(BIPUSH, 9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/CharArrayIntMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/CharArrayIntMap", "<init>", "()V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "characterContentChunk", "Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap", "<init>", "()V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "elementName", "Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitIntInsn(BIPUSH, 11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap", "<init>", "()V", false);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "attributeName", "Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/jvnet/fastinfoset/Vocabulary;Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "_useLocalNameAsKey", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "convertVocabulary", "(Lorg/jvnet/fastinfoset/Vocabulary;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getReadOnlyVocabulary", "()Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "_readOnlyVocabulary", "Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setReadOnlyVocabulary", "(Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/KeyIntMap", "setReadOnlyMap", "(Lcom/sun/xml/fastinfoset/util/KeyIntMap;Z)V", false);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setInitialVocabulary", "(Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "setExternalVocabularyURI", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "setInitialReadOnlyVocabulary", "(Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "setReadOnlyVocabulary", "(Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;Z)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExternalVocabulary", "(Ljava/lang/String;Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "setInitialReadOnlyVocabulary", "(Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "setExternalVocabularyURI", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "setReadOnlyVocabulary", "(Lcom/sun/xml/fastinfoset/vocab/SerializerVocabulary;Z)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clear", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 1);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "tables", "[Lcom/sun/xml/fastinfoset/util/KeyIntMap;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/KeyIntMap", "clear", "()V", false);
+methodVisitor.visitIincInsn(1, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "convertVocabulary", "(Lorg/jvnet/fastinfoset/Vocabulary;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "restrictedAlphabets", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "restrictedAlphabet", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "encodingAlgorithms", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "encodingAlgorithm", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "prefixes", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "prefix", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "namespaceNames", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "namespaceName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "localNames", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "localName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "otherNCNames", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "otherNCName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "otherURIs", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "otherURI", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "attributeValues", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "attributeValue", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "otherStrings", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "otherString", "Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "characterContentChunks", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "characterContentChunk", "Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "elements", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "elementName", "Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/fastinfoset/Vocabulary", "attributes", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "attributeName", "Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/lang/String;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addToTable", "(Ljava/lang/String;Lcom/sun/xml/fastinfoset/util/StringIntMap;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "obtainIndex", "(Ljava/lang/String;)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToTable", "(Ljava/lang/String;Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addToTable", "(Ljava/lang/String;Lcom/sun/xml/fastinfoset/util/CharArrayIntMap;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toCharArray", "()[C", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/CharArrayIntMap", "obtainIndex", "([CIIZ)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addToTable", "(Ljava/util/Iterator;Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/namespace/QName");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "addToNameTable", "(Ljavax/xml/namespace/QName;Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "addToNameTable", "(Ljavax/xml/namespace/QName;Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "namespaceName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "obtainIndex", "(Ljava/lang/String;)I", false);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ICONST_M1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "namespaceName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "get", "(Ljava/lang/String;)I", false);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "prefix", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "obtainIndex", "(Ljava/lang/String;)I", false);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "prefix", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "get", "(Ljava/lang/String;)I", false);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "localName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "obtainIndex", "(Ljava/lang/String;)I", false);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(ICONST_M1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "localName", "Lcom/sun/xml/fastinfoset/util/StringIntMap;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/StringIntMap", "get", "(Ljava/lang/String;)I", false);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "com/sun/xml/fastinfoset/QualifiedName");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap", "getNextIndex", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/sun/xml/fastinfoset/QualifiedName", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIII)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/sun/xml/fastinfoset/vocab/SerializerVocabulary", "_useLocalNameAsKey", "Z");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap", "obtainEntry", "(Ljava/lang/String;)Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap$Entry;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"com/sun/xml/fastinfoset/QualifiedName", "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap$Entry"}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_M1);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getPrefix", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(":");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/String"});
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap", "obtainEntry", "(Ljava/lang/String;)Lcom/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap$Entry;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/sun/xml/fastinfoset/util/LocalNameQualifiedNamesMap$Entry", "addQualifiedName", "(Lcom/sun/xml/fastinfoset/QualifiedName;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(9, 9);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

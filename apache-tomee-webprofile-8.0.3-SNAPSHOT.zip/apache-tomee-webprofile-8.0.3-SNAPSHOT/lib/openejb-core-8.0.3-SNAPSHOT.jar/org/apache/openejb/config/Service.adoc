@@ -1,0 +1,6 @@
+= org/apache/openejb/config/Service.class
+
+ - link:Service-asmified.java[Asmified]
+
+== References
+

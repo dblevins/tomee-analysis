@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/diagnose/DiagnoseParser$SecondaryRepairInfo.class
+
+ - link:DiagnoseParser$SecondaryRepairInfo-asmified.java[Asmified]
+
+== References
+

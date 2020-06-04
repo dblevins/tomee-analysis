@@ -1,0 +1,6 @@
+= org/eclipse/persistence/transaction/was/WebSphereEJBEmbeddableTransactionController.class
+
+ - link:WebSphereEJBEmbeddableTransactionController-asmified.java[Asmified]
+
+== References
+

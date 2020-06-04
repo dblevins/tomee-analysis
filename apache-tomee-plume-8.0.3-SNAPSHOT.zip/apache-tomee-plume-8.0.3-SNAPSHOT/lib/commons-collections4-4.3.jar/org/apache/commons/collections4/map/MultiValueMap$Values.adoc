@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/MultiValueMap$Values.class
+
+ - link:MultiValueMap$Values-asmified.java[Asmified]
+
+== References
+

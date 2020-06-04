@@ -1,0 +1,10 @@
+= com/sun/faces/lifecycle/ClientWindowImpl.class
+
+ - link:ClientWindowImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.context.ExternalContext - 9
+ - javax.faces.lifecycle.ClientWindow - 2
+ - javax.faces.component.UINamingContainer - 1

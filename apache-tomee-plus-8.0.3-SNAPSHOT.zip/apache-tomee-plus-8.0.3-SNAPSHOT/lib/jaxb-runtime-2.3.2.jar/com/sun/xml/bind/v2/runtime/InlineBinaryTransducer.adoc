@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/InlineBinaryTransducer.class
+
+ - link:InlineBinaryTransducer-asmified.java[Asmified]
+
+== References
+

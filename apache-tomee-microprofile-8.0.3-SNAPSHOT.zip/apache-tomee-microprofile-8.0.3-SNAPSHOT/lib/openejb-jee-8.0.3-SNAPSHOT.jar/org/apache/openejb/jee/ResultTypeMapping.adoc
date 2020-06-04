@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ResultTypeMapping.class
+
+ - link:ResultTypeMapping-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2

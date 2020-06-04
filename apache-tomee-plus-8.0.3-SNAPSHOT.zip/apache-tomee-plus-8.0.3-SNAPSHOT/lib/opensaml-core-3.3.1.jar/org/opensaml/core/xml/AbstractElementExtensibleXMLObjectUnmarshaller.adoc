@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/AbstractElementExtensibleXMLObjectUnmarshaller.class
+
+ - link:AbstractElementExtensibleXMLObjectUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/converters/EnumTypeConverter.class
+
+ - link:EnumTypeConverter-asmified.java[Asmified]
+
+== References
+

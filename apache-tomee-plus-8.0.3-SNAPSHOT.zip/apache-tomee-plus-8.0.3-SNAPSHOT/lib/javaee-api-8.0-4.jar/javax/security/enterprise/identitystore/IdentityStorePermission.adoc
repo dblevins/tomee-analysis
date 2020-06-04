@@ -1,0 +1,6 @@
+= javax/security/enterprise/identitystore/IdentityStorePermission.class
+
+ - link:IdentityStorePermission-asmified.java[Asmified]
+
+== References
+

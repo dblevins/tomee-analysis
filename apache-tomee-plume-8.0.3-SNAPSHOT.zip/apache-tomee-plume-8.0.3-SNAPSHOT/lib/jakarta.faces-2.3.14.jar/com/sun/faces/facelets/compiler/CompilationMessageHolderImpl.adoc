@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/compiler/CompilationMessageHolderImpl.class
+
+ - link:CompilationMessageHolderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.FacesMessage - 5
+ - javax.faces.context.FacesContext - 3

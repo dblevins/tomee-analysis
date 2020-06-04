@@ -1,0 +1,8 @@
+= org/apache/openejb/config/WsDeployer.class
+
+ - link:WsDeployer-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.HandlerChain - 8
+ - javax.xml.ws.soap.MTOM - 5

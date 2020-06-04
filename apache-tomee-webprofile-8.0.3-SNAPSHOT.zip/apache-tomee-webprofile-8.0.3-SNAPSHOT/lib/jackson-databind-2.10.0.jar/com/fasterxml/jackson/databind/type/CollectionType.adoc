@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/CollectionType.class
+
+ - link:CollectionType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/ui/RepeatHandler$TagMetaData.class
+
+ - link:RepeatHandler$TagMetaData-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.TagAttributes - 2
+ - javax.faces.view.facelets.FaceletContext - 1

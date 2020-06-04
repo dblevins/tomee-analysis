@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/InterningXmlVisitor$AttributesImpl.class
+
+ - link:InterningXmlVisitor$AttributesImpl-asmified.java[Asmified]
+
+== References
+

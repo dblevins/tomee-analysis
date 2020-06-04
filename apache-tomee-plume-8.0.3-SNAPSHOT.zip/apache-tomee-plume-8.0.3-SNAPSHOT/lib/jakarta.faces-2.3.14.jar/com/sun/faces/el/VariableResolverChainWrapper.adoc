@@ -1,0 +1,13 @@
+= com/sun/faces/el/VariableResolverChainWrapper.class
+
+ - link:VariableResolverChainWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 33
+ - javax.faces.el.VariableResolver - 13
+ - javax.faces.context.FacesContext - 11
+ - javax.el.ELException - 6
+ - javax.el.PropertyNotFoundException - 6
+ - javax.faces.el.EvaluationException - 3
+ - javax.el.ELResolver - 2

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/ClassFactory.class
+
+ - link:ClassFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,17 @@
+= javax/xml/registry/infomodel/RegistryObject.class
+
+ - link:RegistryObject-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 37
+ - javax.xml.registry.infomodel.InternationalString - 4
+ - javax.xml.registry.infomodel.ExternalIdentifier - 2
+ - javax.xml.registry.infomodel.ExternalLink - 2
+ - javax.xml.registry.infomodel.Association - 2
+ - javax.xml.registry.infomodel.Key - 2
+ - javax.xml.registry.infomodel.Classification - 2
+ - javax.xml.registry.infomodel.ExtensibleObject - 1
+ - javax.xml.registry.infomodel.Concept - 1
+ - javax.xml.registry.LifeCycleManager - 1
+ - javax.xml.registry.infomodel.Organization - 1

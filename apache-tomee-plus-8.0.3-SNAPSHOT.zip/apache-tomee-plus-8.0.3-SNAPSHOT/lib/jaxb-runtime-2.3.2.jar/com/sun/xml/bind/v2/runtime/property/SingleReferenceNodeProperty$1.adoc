@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/property/SingleReferenceNodeProperty$1.class
+
+ - link:SingleReferenceNodeProperty$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4

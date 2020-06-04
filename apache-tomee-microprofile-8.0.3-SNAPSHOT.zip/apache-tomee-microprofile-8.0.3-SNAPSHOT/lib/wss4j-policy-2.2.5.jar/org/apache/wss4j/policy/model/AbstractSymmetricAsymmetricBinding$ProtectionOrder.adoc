@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/model/AbstractSymmetricAsymmetricBinding$ProtectionOrder.class
+
+ - link:AbstractSymmetricAsymmetricBinding$ProtectionOrder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,1415 @@
+package asm.org.apache.openejb.persistence;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class PersistenceUnitInfoImplDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", null, "java/lang/Object", new String[] { "javax/persistence/spi/PersistenceUnitInfo" });
+
+classWriter.visitInnerClass("org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "PersistenceClassFileTransformer", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "id", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "persistenceUnitName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "persistenceProviderClassName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jtaDataSource", "Ljavax/sql/DataSource;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "nonJtaDataSource", "Ljavax/sql/DataSource;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "mappingFileNames", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/String;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "jarFileUrls", "Ljava/util/List;", "Ljava/util/List<Ljava/net/URL;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "persistenceUnitRootUrl", "Ljava/net/URL;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "managedClassNames", "Ljava/util/List;", "Ljava/util/List<Ljava/lang/String;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "excludeUnlistedClasses", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "properties", "Ljava/util/Properties;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "classLoader", "Ljava/lang/ClassLoader;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "persistenceXMLSchemaVersion", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "validationMode", "Ljavax/persistence/ValidationMode;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jtaDataSourceName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "nonJtaDataSourceName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "lazilyInitialized", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/PersistenceUnitTransactionType", "JTA", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "mappingFileNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jarFileUrls", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/SharedCacheMode", "UNSPECIFIED", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/spi/PersistenceUnitTransactionType", "JTA", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "mappingFileNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jarFileUrls", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/SharedCacheMode", "UNSPECIFIED", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getId", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "id", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setId", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "id", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceUnitName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceUnitName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPersistenceUnitName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceUnitName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceProviderClassName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceProviderClassName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPersistenceProviderClassName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceProviderClassName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTransactionType", "()Ljavax/persistence/spi/PersistenceUnitTransactionType;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTransactionType", "(Ljavax/persistence/spi/PersistenceUnitTransactionType;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "transactionType", "Ljavax/persistence/spi/PersistenceUnitTransactionType;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJtaDataSource", "()Ljavax/sql/DataSource;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jtaDataSource", "Ljavax/sql/DataSource;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJtaDataSource", "(Ljavax/sql/CommonDataSource;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/sql/XADataSource;"));
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionSynchronizationRegistry;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jtaDataSource", "Ljavax/sql/DataSource;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/sql/DataSource;"));
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/sql/DataSource");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jtaDataSource", "Ljavax/sql/DataSource;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonJtaDataSource", "()Ljavax/sql/DataSource;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "nonJtaDataSource", "Ljavax/sql/DataSource;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNonJtaDataSource", "(Ljavax/sql/CommonDataSource;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/sql/XADataSource;"));
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/OpenEJB", "getTransactionManager", "()Ljavax/transaction/TransactionManager;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/loader/SystemInstance", "get", "()Lorg/apache/openejb/loader/SystemInstance;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/transaction/TransactionSynchronizationRegistry;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/loader/SystemInstance", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/transaction/TransactionSynchronizationRegistry");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/managed/xa/DataSourceXADataSource", "<init>", "(Ljavax/sql/CommonDataSource;Ljavax/transaction/TransactionManager;Ljavax/transaction/TransactionSynchronizationRegistry;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "nonJtaDataSource", "Ljavax/sql/DataSource;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/sql/DataSource;"));
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/sql/DataSource");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "nonJtaDataSource", "Ljavax/sql/DataSource;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMappingFileNames", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "mappingFileNames", "Ljava/util/List;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setMappingFileNames", "(Ljava/util/List;)V", "(Ljava/util/List<Ljava/lang/String;>;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("mappingFileNames is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "mappingFileNames", "Ljava/util/List;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "clear", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "mappingFileNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "addAll", "(Ljava/util/Collection;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addMappingFileName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("mappingFileName is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "mappingFileNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJarFileUrls", "()Ljava/util/List;", "()Ljava/util/List<Ljava/net/URL;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jarFileUrls", "Ljava/util/List;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceUnitRootUrl", "()Ljava/net/URL;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceUnitRootUrl", "Ljava/net/URL;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setRootUrlAndJarUrls", "(Ljava/lang/String;Ljava/util/List;)V", "(Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V", new String[] { "java/net/MalformedURLException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/IllegalArgumentException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/io/IOException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/URLs", "uri", "(Ljava/lang/String;)Ljava/net/URI;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/io/File");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/File", "<init>", "(Ljava/net/URI;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/IllegalArgumentException"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/io/File");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/File", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/io/File"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "toUrl", "(Ljava/io/File;)Ljava/net/URL;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceUnitRootUrl", "Ljava/net/URL;");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "isEmpty", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn(".jar");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "endsWith", "(Ljava/lang/String;)Z", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getParentFile", "()Ljava/io/File;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/io/File"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 5);
+Label label9 = new Label();
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jarFileUrls", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/io/File");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/File", "<init>", "(Ljava/io/File;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getCanonicalFile", "()Ljava/io/File;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "toUrl", "(Ljava/io/File;)Ljava/net/URL;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "toUrl", "(Ljava/io/File;)Ljava/net/URL;", null, new String[] { "java/net/MalformedURLException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/net/MalformedURLException");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label2, "java/net/MalformedURLException");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "isFile", "()Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getPath", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("jar:file:");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getAbsolutePath", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 33);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "indexOf", "(I)I", false);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitJumpInsn(IFLE, label3);
+methodVisitor.visitTypeInsn(NEW, "java/io/File");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/File", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "isFile", "()Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn(".jar");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "endsWith", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "toURI", "()Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toURL", "()Ljava/net/URL;", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/net/URL");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getPath", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/net/URL", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "java/io/File"}, 1, new Object[] {"java/net/MalformedURLException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "toURI", "()Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toURL", "()Ljava/net/URL;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManagedClassNames", "()Ljava/util/List;", "()Ljava/util/List<Ljava/lang/String;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setManagedClassNames", "(Ljava/util/List;)V", "(Ljava/util/List<Ljava/lang/String;>;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("managedClassNames is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "clear", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "addAll", "(Ljava/util/Collection;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addManagedClassName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "managedClassNames", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "excludeUnlistedClasses", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "excludeUnlistedClasses", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setExcludeUnlistedClasses", "(Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "excludeUnlistedClasses", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperties", "()Ljava/util/Properties;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "properties", "Ljava/util/Properties;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setProperties", "(Ljava/util/Properties;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "properties", "Ljava/util/Properties;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClassLoader", "()Ljava/lang/ClassLoader;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "classLoader", "Ljava/lang/ClassLoader;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setClassLoader", "(Ljava/lang/ClassLoader;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "classLoader", "Ljava/lang/ClassLoader;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addTransformer", "(Ljavax/persistence/spi/ClassTransformer;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/persistence/PersistenceUnitInfoImpl$PersistenceClassFileTransformer", "<init>", "(Ljavax/persistence/spi/ClassTransformer;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "id", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "classLoader", "Ljava/lang/ClassLoader;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/persistence/PersistenceClassLoaderHandler", "addTransformer", "(Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/instrument/ClassFileTransformer;)V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNewTempClassLoader", "()Ljava/lang/ClassLoader;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceClassLoaderHandler", "Lorg/apache/openejb/persistence/PersistenceClassLoaderHandler;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "classLoader", "Ljava/lang/ClassLoader;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/persistence/PersistenceClassLoaderHandler", "getNewTempClassLoader", "(Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isLazilyInitialized", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "lazilyInitialized", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLazilyInitialized", "(Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "lazilyInitialized", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isServerClass", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/util/classloader/URLClassLoaderFirst", "FORCED_SKIP", "Ljava/util/Collection;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/util/classloader/URLClassLoaderFirst", "FORCED_LOAD", "Ljava/util/Collection;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Collection", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("java.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("javax.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label8);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("sun.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label9);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("com.sun.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label10);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("org.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("org.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(I)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("apache.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label12);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("apache.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(I)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("bval.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label13);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("openjpa.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label14);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("derby.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label15);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("xbean.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label16);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("geronimo.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label17 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label17);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label17);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("coyote");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label18 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label18);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label18);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("webbeans.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label19 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label19);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label19);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("log4j");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label20 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label20);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label20);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("catalina");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label21 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label21);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label21);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("jasper.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label22 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label22);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label22);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("tomcat.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label23 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label23);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label23);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("el.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label24 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label24);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label24);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("jsp");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label25 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label25);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label25);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("naming");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label26 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label26);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label26);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("taglibs.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label27 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label27);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label27);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("openejb.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label28 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label28);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label28);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("openjpa.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label29 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label29);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label29);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("myfaces.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label30 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label30);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label30);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("juli.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label31 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label31);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label31);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("webbeans.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label32 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label32);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label32);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("cxf.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label33 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label33);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label33);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("activemq.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label34 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label34);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label34);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("commons.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label35 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label35);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("commons.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(I)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("beanutils");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label36 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label36);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label36);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("cli");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label37 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label37);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label37);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("codec");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label38 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label38);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label38);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("collections");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label39 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label39);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label39);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("dbcp");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label40 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label40);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label40);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("digester");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label41 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label41);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label41);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("jocl");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label42 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label42);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label42);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("lang");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label43 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label43);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label43);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("logging");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label44 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label44);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label44);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("pool");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label45 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label45);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label45);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("net");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label46 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label46);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label46);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label35);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("codehaus.swizzle");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label47 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label47);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label47);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("w3c.dom");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label48 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label48);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label48);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("quartz");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label49 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label49);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label49);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("eclipse.jdt.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label50 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label50);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label50);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("slf4j");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label51 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label51);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label51);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("openejb");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label52 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label52);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label52);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("hsqldb");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label53 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label53);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label53);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("hibernate");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label54 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label54);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label54);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("com.sun.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label55 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label55);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label55);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("jdk.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label56 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label56);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label56);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("javassist");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label57 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label57);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label57);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("serp.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label58 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label58);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label58);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPersistenceXMLSchemaVersion", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceXMLSchemaVersion", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPersistenceXMLSchemaVersion", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "persistenceXMLSchemaVersion", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSharedCacheMode", "()Ljavax/persistence/SharedCacheMode;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSharedCacheMode", "(Ljavax/persistence/SharedCacheMode;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl"});
+methodVisitor.visitFieldInsn(GETSTATIC, "javax/persistence/SharedCacheMode", "UNSPECIFIED", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "javax/persistence/SharedCacheMode"}, 2, new Object[] {"org/apache/openejb/persistence/PersistenceUnitInfoImpl", "javax/persistence/SharedCacheMode"});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "sharedCacheMode", "Ljavax/persistence/SharedCacheMode;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getValidationMode", "()Ljavax/persistence/ValidationMode;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "validationMode", "Ljavax/persistence/ValidationMode;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setValidationMode", "(Ljavax/persistence/ValidationMode;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "validationMode", "Ljavax/persistence/ValidationMode;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJtaDataSourceName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jtaDataSourceName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setJtaDataSourceName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "jtaDataSourceName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNonJtaDataSourceName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "nonJtaDataSourceName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setNonJtaDataSourceName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/persistence/PersistenceUnitInfoImpl", "nonJtaDataSourceName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

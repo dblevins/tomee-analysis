@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/readers/CatalogReader.class
+
+ - link:CatalogReader-asmified.java[Asmified]
+
+== References
+

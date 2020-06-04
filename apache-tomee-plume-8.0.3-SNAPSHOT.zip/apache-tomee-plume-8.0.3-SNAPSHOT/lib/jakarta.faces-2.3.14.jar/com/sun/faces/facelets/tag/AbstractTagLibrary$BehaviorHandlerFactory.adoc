@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/AbstractTagLibrary$BehaviorHandlerFactory.class
+
+ - link:AbstractTagLibrary$BehaviorHandlerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.BehaviorHandler - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.view.facelets.TagHandler - 1
+ - javax.el.ELException - 1
+ - javax.faces.view.facelets.BehaviorConfig - 1

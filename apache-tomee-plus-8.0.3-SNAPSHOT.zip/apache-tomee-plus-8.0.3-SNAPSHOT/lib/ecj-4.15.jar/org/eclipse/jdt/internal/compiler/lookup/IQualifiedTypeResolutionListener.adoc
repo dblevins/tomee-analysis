@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/IQualifiedTypeResolutionListener.class
+
+ - link:IQualifiedTypeResolutionListener-asmified.java[Asmified]
+
+== References
+

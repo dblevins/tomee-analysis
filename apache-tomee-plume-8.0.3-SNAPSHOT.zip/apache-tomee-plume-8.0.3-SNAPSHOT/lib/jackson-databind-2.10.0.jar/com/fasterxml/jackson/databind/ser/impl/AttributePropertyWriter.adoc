@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/AttributePropertyWriter.class
+
+ - link:AttributePropertyWriter-asmified.java[Asmified]
+
+== References
+

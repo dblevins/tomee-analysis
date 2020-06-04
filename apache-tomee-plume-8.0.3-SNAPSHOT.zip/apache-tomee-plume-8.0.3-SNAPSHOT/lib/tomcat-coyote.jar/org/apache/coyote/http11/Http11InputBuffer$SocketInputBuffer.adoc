@@ -1,0 +1,6 @@
+= org/apache/coyote/http11/Http11InputBuffer$SocketInputBuffer.class
+
+ - link:Http11InputBuffer$SocketInputBuffer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/CallbackInfo.class
+
+ - link:CallbackInfo-asmified.java[Asmified]
+
+== References
+

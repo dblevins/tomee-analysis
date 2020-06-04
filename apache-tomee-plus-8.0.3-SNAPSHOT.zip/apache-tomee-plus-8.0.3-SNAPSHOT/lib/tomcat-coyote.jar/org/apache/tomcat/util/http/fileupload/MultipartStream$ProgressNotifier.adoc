@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/fileupload/MultipartStream$ProgressNotifier.class
+
+ - link:MultipartStream$ProgressNotifier-asmified.java[Asmified]
+
+== References
+

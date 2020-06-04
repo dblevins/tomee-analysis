@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ProxyManagerImpl.class
+
+ - link:ProxyManagerImpl-asmified.java[Asmified]
+
+== References
+

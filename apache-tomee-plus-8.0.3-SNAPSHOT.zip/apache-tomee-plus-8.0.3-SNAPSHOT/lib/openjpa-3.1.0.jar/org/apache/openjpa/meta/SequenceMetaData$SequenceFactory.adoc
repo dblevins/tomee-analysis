@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/SequenceMetaData$SequenceFactory.class
+
+ - link:SequenceMetaData$SequenceFactory-asmified.java[Asmified]
+
+== References
+

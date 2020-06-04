@@ -1,0 +1,10 @@
+= javax/faces/component/UIViewParameter$Reference.class
+
+ - link:UIViewParameter$Reference-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewParameter - 11
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.component.UIComponent - 2

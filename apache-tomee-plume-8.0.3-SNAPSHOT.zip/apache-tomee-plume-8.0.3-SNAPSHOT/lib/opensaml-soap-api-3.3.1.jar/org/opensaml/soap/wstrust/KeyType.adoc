@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/KeyType.class
+
+ - link:KeyType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor.class
+
+ - link:JaxWsWebServicePublisherBeanPostProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 9
+ - javax.jws.WebService - 4
+ - javax.servlet.ServletException - 3
+ - javax.servlet.ServletConfig - 2

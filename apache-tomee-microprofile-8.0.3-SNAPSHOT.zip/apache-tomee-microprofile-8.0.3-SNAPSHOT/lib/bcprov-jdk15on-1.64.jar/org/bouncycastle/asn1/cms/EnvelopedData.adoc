@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cms/EnvelopedData.class
+
+ - link:EnvelopedData-asmified.java[Asmified]
+
+== References
+

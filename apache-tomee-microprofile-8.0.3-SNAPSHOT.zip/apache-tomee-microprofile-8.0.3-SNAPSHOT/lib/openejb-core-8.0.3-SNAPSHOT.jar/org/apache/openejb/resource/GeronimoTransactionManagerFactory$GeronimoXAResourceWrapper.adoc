@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/GeronimoTransactionManagerFactory$GeronimoXAResourceWrapper.class
+
+ - link:GeronimoTransactionManagerFactory$GeronimoXAResourceWrapper-asmified.java[Asmified]
+
+== References
+

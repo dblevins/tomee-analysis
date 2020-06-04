@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/core/ElementPropertyInfo.class
+
+ - link:ElementPropertyInfo-asmified.java[Asmified]
+
+== References
+

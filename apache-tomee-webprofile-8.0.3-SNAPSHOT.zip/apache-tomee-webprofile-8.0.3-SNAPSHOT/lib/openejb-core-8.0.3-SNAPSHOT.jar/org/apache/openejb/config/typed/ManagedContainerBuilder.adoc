@@ -1,0 +1,9 @@
+= org/apache/openejb/config/typed/ManagedContainerBuilder.class
+
+ - link:ManagedContainerBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

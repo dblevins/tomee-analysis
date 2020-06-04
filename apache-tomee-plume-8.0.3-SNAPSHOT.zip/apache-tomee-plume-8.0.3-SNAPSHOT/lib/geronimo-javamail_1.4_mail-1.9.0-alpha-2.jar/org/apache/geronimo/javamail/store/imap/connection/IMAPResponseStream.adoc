@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPResponseStream.class
+
+ - link:IMAPResponseStream-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 22

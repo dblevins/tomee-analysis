@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaParser.class
+
+ - link:SchemaParser-asmified.java[Asmified]
+
+== References
+

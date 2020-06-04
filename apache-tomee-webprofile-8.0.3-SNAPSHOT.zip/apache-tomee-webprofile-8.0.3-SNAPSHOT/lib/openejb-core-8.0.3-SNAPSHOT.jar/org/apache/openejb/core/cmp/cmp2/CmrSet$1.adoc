@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/cmp2/CmrSet$1.class
+
+ - link:CmrSet$1-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 1

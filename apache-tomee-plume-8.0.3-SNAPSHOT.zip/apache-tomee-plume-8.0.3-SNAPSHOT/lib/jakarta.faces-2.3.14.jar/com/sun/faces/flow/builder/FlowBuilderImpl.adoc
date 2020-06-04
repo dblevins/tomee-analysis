@@ -1,0 +1,20 @@
+= com/sun/faces/flow/builder/FlowBuilderImpl.class
+
+ - link:FlowBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 11
+ - javax.el.ELContext - 11
+ - javax.faces.flow.builder.FlowBuilder - 10
+ - javax.el.MethodExpression - 8
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.flow.builder.ViewBuilder - 4
+ - javax.el.ValueExpression - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.flow.builder.NavigationCaseBuilder - 1
+ - javax.faces.flow.builder.ReturnBuilder - 1
+ - javax.faces.flow.builder.MethodCallBuilder - 1
+ - javax.faces.flow.builder.FlowCallBuilder - 1
+ - javax.faces.flow.builder.SwitchBuilder - 1
+ - javax.faces.flow.Flow - 1

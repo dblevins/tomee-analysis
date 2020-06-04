@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveryScannerData.class
+
+ - link:RecoveryScannerData-asmified.java[Asmified]
+
+== References
+

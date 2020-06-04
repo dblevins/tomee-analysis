@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/YBuilder.class
+
+ - link:YBuilder-asmified.java[Asmified]
+
+== References
+

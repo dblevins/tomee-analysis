@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/PlsqlParameterImpl.class
+
+ - link:PlsqlParameterImpl-asmified.java[Asmified]
+
+== References
+

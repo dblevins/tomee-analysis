@@ -1,0 +1,7 @@
+= javax/faces/view/EditableValueHolderAttachedObjectTarget.class
+
+ - link:EditableValueHolderAttachedObjectTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.ValueHolderAttachedObjectTarget - 1

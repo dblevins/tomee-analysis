@@ -1,0 +1,8 @@
+= org/opensaml/soap/client/http/HttpSOAPRequestParameters.class
+
+ - link:HttpSOAPRequestParameters-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

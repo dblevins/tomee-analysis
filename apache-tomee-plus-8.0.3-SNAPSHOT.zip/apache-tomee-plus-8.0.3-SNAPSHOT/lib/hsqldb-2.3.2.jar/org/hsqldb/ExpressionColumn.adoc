@@ -1,0 +1,6 @@
+= org/hsqldb/ExpressionColumn.class
+
+ - link:ExpressionColumn-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/bval/util/ValidatorUtils.class
+
+ - link:ValidatorUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 4
+ - javax.validation.ConstraintDefinitionException - 2

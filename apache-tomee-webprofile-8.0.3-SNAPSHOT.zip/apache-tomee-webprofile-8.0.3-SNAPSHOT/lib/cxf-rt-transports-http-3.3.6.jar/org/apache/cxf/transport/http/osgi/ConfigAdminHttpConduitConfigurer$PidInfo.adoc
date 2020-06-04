@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/osgi/ConfigAdminHttpConduitConfigurer$PidInfo.class
+
+ - link:ConfigAdminHttpConduitConfigurer$PidInfo-asmified.java[Asmified]
+
+== References
+

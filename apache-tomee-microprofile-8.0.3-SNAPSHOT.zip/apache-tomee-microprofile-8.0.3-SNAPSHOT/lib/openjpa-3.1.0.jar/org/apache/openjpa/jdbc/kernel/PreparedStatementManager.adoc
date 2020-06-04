@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/PreparedStatementManager.class
+
+ - link:PreparedStatementManager-asmified.java[Asmified]
+
+== References
+

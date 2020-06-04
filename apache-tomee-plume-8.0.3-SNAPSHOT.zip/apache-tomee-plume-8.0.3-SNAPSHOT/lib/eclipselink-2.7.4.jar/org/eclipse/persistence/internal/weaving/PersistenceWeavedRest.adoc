@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/weaving/PersistenceWeavedRest.class
+
+ - link:PersistenceWeavedRest-asmified.java[Asmified]
+
+== References
+

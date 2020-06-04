@@ -1,0 +1,6 @@
+= serp/bytecode/WideInstruction.class
+
+ - link:WideInstruction-asmified.java[Asmified]
+
+== References
+

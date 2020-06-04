@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecCharacters.class
+
+ - link:XMLSecCharacters-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/LongNode.class
+
+ - link:LongNode-asmified.java[Asmified]
+
+== References
+

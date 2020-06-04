@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml2/binding/impl/AddConsentToResponseHandler.class
+
+ - link:AddConsentToResponseHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

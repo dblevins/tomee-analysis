@@ -1,0 +1,12 @@
+= org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.class
+
+ - link:AbstractBindingBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 18
+ - javax.xml.soap.SOAPException - 10
+ - javax.xml.soap.SOAPPart - 6
+ - javax.xml.soap.SOAPHeader - 2
+ - javax.xml.soap.SOAPBody - 2
+ - javax.xml.soap.SOAPEnvelope - 2

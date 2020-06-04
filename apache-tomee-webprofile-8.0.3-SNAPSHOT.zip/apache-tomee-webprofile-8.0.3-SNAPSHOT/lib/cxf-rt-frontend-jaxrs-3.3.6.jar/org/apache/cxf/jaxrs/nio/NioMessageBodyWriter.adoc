@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxrs/nio/NioMessageBodyWriter.class
+
+ - link:NioMessageBodyWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 7
+ - javax.ws.rs.core.MultivaluedMap - 3
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.servlet.WriteListener - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1

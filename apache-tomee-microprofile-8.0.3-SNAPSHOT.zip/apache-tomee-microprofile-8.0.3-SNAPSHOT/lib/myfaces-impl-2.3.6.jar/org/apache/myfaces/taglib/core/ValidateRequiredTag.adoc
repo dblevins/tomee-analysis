@@ -1,0 +1,14 @@
+= org/apache/myfaces/taglib/core/ValidateRequiredTag.class
+
+ - link:ValidateRequiredTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 10
+ - javax.faces.context.FacesContext - 7
+ - javax.el.ELContext - 6
+ - javax.servlet.jsp.JspException - 5
+ - javax.faces.application.Application - 3
+ - javax.faces.validator.RequiredValidator - 3
+ - javax.faces.validator.Validator - 3
+ - javax.faces.webapp.ValidatorELTag - 2

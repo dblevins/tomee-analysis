@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/sunas/SunAS9ServerPlatform.class
+
+ - link:SunAS9ServerPlatform-asmified.java[Asmified]
+
+== References
+

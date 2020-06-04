@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Participants.class
+
+ - link:Participants-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/jpa/integration/eclipselink/MBeanOpenEJBRuntimeServices.class
+
+ - link:MBeanOpenEJBRuntimeServices-asmified.java[Asmified]
+
+== References
+

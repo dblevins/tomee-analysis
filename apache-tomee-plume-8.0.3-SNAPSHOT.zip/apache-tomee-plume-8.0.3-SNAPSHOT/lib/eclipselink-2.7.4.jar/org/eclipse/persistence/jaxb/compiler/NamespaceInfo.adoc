@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/NamespaceInfo.class
+
+ - link:NamespaceInfo-asmified.java[Asmified]
+
+== References
+

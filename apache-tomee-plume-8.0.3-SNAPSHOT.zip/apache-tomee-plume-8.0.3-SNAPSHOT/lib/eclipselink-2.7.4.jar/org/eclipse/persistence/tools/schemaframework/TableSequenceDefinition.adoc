@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/TableSequenceDefinition.class
+
+ - link:TableSequenceDefinition-asmified.java[Asmified]
+
+== References
+

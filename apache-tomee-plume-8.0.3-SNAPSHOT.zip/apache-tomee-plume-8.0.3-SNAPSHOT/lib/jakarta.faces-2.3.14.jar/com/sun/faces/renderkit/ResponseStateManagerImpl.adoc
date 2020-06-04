@@ -1,0 +1,10 @@
+= com/sun/faces/renderkit/ResponseStateManagerImpl.class
+
+ - link:ResponseStateManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 18
+ - javax.faces.FacesException - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.render.ResponseStateManager - 2

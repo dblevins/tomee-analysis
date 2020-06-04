@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/scanner/xbean/BeanArchiveFilter.class
+
+ - link:BeanArchiveFilter-asmified.java[Asmified]
+
+== References
+

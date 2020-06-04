@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/KeywordsMarshaller.class
+
+ - link:KeywordsMarshaller-asmified.java[Asmified]
+
+== References
+

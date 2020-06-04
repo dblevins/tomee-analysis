@@ -1,0 +1,18 @@
+= javax/faces/view/ViewDeclarationLanguage.class
+
+ - link:ViewDeclarationLanguage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 21
+ - javax.faces.application.Application - 6
+ - javax.faces.application.ResourceVisitOption - 6
+ - javax.faces.application.ResourceHandler - 6
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.application.Resource - 3
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.application.ViewVisitOption - 2
+ - javax.faces.view.StateManagementStrategy - 1
+ - javax.faces.application.ViewResource - 1
+ - javax.faces.view.ViewMetadata - 1
+ - javax.faces.view.AttachedObjectHandler - 1

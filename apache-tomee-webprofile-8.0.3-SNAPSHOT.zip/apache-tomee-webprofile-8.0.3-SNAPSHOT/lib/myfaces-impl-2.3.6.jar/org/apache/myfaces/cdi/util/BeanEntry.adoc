@@ -1,0 +1,6 @@
+= org/apache/myfaces/cdi/util/BeanEntry.class
+
+ - link:BeanEntry-asmified.java[Asmified]
+
+== References
+

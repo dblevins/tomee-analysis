@@ -1,0 +1,34 @@
+= com/sun/faces/application/ApplicationAssociate.class
+
+ - link:ApplicationAssociate-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 23
+ - javax.faces.context.ExternalContext - 17
+ - javax.faces.el.VariableResolver - 14
+ - javax.faces.view.facelets.ResourceResolver - 11
+ - javax.faces.component.search.SearchExpressionHandler - 10
+ - javax.faces.el.PropertyResolver - 10
+ - javax.faces.flow.FlowHandler - 10
+ - javax.el.ExpressionFactory - 5
+ - javax.servlet.ServletContext - 5
+ - javax.faces.application.ProjectStage - 4
+ - javax.faces.application.Application - 4
+ - javax.faces.application.NavigationCase - 4
+ - javax.faces.view.facelets.FaceletCache - 3
+ - javax.el.ELResolver - 3
+ - javax.faces.component.UIViewRoot - 3
+ - javax.el.CompositeELResolver - 2
+ - javax.faces.component.FacesComponent - 2
+ - javax.faces.view.facelets.TagDecorator - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.event.SystemEventListener - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.view.facelets.FaceletCacheFactory - 2
+ - javax.faces.event.ScopeContext - 1
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.faces.event.PostConstructApplicationEvent - 1
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.event.PreDestroyCustomScopeEvent - 1
+ - javax.faces.view.facelets.FaceletsResourceResolver - 1

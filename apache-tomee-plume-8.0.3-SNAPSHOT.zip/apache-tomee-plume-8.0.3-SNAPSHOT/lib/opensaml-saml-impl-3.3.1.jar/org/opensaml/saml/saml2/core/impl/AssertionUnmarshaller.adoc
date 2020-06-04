@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AssertionUnmarshaller.class
+
+ - link:AssertionUnmarshaller-asmified.java[Asmified]
+
+== References
+

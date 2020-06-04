@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MethodConcurrencyInfo.class
+
+ - link:MethodConcurrencyInfo-asmified.java[Asmified]
+
+== References
+

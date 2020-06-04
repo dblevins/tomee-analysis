@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/commons/ModuleHashesAttribute.class
+
+ - link:ModuleHashesAttribute-asmified.java[Asmified]
+
+== References
+

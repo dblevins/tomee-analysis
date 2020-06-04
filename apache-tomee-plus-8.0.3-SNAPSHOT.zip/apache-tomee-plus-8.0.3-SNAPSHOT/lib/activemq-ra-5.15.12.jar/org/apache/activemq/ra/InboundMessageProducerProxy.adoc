@@ -1,0 +1,14 @@
+= org/apache/activemq/ra/InboundMessageProducerProxy.class
+
+ - link:InboundMessageProducerProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageProducer - 63
+ - javax.jms.JMSException - 25
+ - javax.jms.Destination - 21
+ - javax.jms.Message - 20
+ - javax.jms.Queue - 4
+ - javax.jms.Topic - 4
+ - javax.jms.QueueSender - 1
+ - javax.jms.TopicPublisher - 1

@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/oxm/record/json/JsonParserReader$JsonStructureBuilder.class
+
+ - link:JsonParserReader$JsonStructureBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 1
+ - javax.json.JsonStructure - 1

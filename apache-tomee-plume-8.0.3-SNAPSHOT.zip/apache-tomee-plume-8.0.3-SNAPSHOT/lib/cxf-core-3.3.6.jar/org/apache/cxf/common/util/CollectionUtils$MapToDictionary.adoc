@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/CollectionUtils$MapToDictionary.class
+
+ - link:CollectionUtils$MapToDictionary-asmified.java[Asmified]
+
+== References
+

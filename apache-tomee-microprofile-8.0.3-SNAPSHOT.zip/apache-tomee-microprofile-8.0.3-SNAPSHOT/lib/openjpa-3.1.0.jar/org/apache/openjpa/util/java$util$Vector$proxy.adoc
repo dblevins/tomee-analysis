@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/java$util$Vector$proxy.class
+
+ - link:java$util$Vector$proxy-asmified.java[Asmified]
+
+== References
+

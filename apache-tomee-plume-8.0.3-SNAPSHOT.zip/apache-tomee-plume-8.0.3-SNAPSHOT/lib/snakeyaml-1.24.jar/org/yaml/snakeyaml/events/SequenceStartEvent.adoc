@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/events/SequenceStartEvent.class
+
+ - link:SequenceStartEvent-asmified.java[Asmified]
+
+== References
+

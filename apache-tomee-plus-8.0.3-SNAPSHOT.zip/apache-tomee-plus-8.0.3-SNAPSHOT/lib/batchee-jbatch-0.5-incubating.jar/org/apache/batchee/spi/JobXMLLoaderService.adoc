@@ -1,0 +1,6 @@
+= org/apache/batchee/spi/JobXMLLoaderService.class
+
+ - link:JobXMLLoaderService-asmified.java[Asmified]
+
+== References
+

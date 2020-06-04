@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/compiler/batch/BatchCompiler.class
+
+ - link:BatchCompiler-asmified.java[Asmified]
+
+== References
+

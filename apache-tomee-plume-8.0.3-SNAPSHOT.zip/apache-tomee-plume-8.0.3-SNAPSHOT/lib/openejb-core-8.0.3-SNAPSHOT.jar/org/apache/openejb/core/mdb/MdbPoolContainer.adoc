@@ -1,0 +1,10 @@
+= org/apache/openejb/core/mdb/MdbPoolContainer.class
+
+ - link:MdbPoolContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ResourceAdapter - 12
+ - javax.resource.spi.ActivationSpec - 9
+ - javax.validation.ConstraintViolationException - 2
+ - javax.validation.Validator - 2

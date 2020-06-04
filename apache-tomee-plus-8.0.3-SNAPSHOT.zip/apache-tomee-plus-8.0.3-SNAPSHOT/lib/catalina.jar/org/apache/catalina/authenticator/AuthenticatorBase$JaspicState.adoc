@@ -1,0 +1,8 @@
+= org/apache/catalina/authenticator/AuthenticatorBase$JaspicState.class
+
+ - link:AuthenticatorBase$JaspicState-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.MessageInfo - 2
+ - javax.security.auth.message.config.ServerAuthContext - 2

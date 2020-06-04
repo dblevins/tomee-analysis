@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/ClassSignature.class
+
+ - link:ClassSignature-asmified.java[Asmified]
+
+== References
+

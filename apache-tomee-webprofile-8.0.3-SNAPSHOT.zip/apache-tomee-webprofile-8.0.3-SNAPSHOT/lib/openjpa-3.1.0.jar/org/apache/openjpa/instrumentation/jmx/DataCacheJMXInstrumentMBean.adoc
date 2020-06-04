@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/jmx/DataCacheJMXInstrumentMBean.class
+
+ - link:DataCacheJMXInstrumentMBean-asmified.java[Asmified]
+
+== References
+

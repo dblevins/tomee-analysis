@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/rop/SimpleResultList.class
+
+ - link:SimpleResultList-asmified.java[Asmified]
+
+== References
+

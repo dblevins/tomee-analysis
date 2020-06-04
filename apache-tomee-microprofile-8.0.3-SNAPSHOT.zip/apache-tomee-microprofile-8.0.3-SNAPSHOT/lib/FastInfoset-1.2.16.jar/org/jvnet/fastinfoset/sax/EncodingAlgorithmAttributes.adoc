@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/sax/EncodingAlgorithmAttributes.class
+
+ - link:EncodingAlgorithmAttributes-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/PooledFactory.class
+
+ - link:PooledFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/AnnotationCollector$EmptyCollector.class
+
+ - link:AnnotationCollector$EmptyCollector-asmified.java[Asmified]
+
+== References
+

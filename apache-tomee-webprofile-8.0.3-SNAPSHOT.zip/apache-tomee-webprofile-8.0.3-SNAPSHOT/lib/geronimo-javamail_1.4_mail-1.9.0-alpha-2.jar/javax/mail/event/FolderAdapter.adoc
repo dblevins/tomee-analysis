@@ -1,0 +1,8 @@
+= javax/mail/event/FolderAdapter.class
+
+ - link:FolderAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.event.FolderEvent - 3
+ - javax.mail.event.FolderListener - 1

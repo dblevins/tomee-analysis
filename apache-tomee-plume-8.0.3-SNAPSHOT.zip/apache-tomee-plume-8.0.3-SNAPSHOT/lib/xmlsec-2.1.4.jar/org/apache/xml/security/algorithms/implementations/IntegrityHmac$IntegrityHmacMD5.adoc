@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/IntegrityHmac$IntegrityHmacMD5.class
+
+ - link:IntegrityHmac$IntegrityHmacMD5-asmified.java[Asmified]
+
+== References
+

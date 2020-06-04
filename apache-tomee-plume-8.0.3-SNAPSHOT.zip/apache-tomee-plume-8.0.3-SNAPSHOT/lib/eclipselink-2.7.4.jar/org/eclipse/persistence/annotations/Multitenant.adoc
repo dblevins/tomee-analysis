@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Multitenant.class
+
+ - link:Multitenant-asmified.java[Asmified]
+
+== References
+

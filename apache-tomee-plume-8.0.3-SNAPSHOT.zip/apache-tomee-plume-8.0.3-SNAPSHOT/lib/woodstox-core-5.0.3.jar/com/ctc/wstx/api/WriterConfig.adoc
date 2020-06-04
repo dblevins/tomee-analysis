@@ -1,0 +1,6 @@
+= com/ctc/wstx/api/WriterConfig.class
+
+ - link:WriterConfig-asmified.java[Asmified]
+
+== References
+

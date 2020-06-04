@@ -1,0 +1,15 @@
+= javax/persistence/criteria/MapJoin.class
+
+ - link:MapJoin-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.MapJoin - 8
+ - javax.persistence.criteria.Expression - 4
+ - javax.persistence.metamodel.MapAttribute - 3
+ - javax.persistence.criteria.Predicate - 3
+ - javax.persistence.criteria.Join - 2
+ - javax.persistence.criteria.Path - 2
+ - javax.persistence.metamodel.PluralAttribute - 1
+ - javax.persistence.criteria.PluralJoin - 1
+ - javax.persistence.metamodel.Bindable - 1

@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/jpa/JpaJaxbUtil.class
+
+ - link:JpaJaxbUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 6
+ - javax.xml.bind.JAXBContext - 6
+ - javax.xml.bind.Unmarshaller - 3
+ - javax.xml.bind.JAXBException - 3
+ - javax.xml.bind.ValidationEventHandler - 1

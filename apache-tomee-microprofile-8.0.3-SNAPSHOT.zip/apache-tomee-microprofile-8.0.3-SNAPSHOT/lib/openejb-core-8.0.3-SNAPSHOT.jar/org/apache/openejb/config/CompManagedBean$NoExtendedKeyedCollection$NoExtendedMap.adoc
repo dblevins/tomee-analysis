@@ -1,0 +1,6 @@
+= org/apache/openejb/config/CompManagedBean$NoExtendedKeyedCollection$NoExtendedMap.class
+
+ - link:CompManagedBean$NoExtendedKeyedCollection$NoExtendedMap-asmified.java[Asmified]
+
+== References
+

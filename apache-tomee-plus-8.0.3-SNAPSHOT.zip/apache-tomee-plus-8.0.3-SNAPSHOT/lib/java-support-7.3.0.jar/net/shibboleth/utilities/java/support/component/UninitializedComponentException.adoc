@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/component/UninitializedComponentException.class
+
+ - link:UninitializedComponentException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

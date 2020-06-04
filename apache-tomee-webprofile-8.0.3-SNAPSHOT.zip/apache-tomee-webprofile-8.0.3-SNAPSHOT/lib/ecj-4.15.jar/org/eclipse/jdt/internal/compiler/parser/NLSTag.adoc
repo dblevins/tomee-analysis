@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/NLSTag.class
+
+ - link:NLSTag-asmified.java[Asmified]
+
+== References
+

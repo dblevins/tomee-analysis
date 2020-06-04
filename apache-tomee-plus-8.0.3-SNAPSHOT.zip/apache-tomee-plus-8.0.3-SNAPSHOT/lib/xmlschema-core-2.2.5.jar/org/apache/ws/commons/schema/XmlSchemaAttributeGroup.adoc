@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaAttributeGroup.class
+
+ - link:XmlSchemaAttributeGroup-asmified.java[Asmified]
+
+== References
+

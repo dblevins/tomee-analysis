@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/CommunicationException.class
+
+ - link:CommunicationException-asmified.java[Asmified]
+
+== References
+

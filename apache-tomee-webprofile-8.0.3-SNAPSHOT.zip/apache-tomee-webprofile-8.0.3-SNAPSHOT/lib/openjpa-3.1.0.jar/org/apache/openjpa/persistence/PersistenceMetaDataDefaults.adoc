@@ -1,0 +1,25 @@
+= org/apache/openjpa/persistence/PersistenceMetaDataDefaults.class
+
+ - link:PersistenceMetaDataDefaults-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.AccessType - 16
+ - javax.persistence.Access - 8
+ - javax.persistence.Transient - 2
+ - javax.persistence.PrePersist - 1
+ - javax.persistence.PreUpdate - 1
+ - javax.persistence.ManyToOne - 1
+ - javax.persistence.PostPersist - 1
+ - javax.persistence.Embedded - 1
+ - javax.persistence.OneToMany - 1
+ - javax.persistence.OneToOne - 1
+ - javax.persistence.Basic - 1
+ - javax.persistence.PreRemove - 1
+ - javax.persistence.EmbeddedId - 1
+ - javax.persistence.PostLoad - 1
+ - javax.persistence.ElementCollection - 1
+ - javax.persistence.PostUpdate - 1
+ - javax.persistence.Embeddable - 1
+ - javax.persistence.ManyToMany - 1
+ - javax.persistence.PostRemove - 1

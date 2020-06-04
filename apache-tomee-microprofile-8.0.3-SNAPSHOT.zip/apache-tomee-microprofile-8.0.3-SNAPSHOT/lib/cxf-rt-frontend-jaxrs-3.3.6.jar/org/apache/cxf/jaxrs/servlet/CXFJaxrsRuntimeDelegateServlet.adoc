@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/servlet/CXFJaxrsRuntimeDelegateServlet.class
+
+ - link:CXFJaxrsRuntimeDelegateServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.RuntimeDelegate - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$DurationWrapperImpl.class
+
+ - link:SDOWrapperType$DurationWrapperImpl-asmified.java[Asmified]
+
+== References
+

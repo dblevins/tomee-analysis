@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/EncryptNameIDs.class
+
+ - link:EncryptNameIDs-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 12
+ - javax.annotation.Nullable - 5

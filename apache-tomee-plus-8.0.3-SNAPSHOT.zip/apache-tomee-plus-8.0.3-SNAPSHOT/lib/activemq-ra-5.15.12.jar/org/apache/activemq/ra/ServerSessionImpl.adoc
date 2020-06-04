@@ -1,0 +1,19 @@
+= org/apache/activemq/ra/ServerSessionImpl.class
+
+ - link:ServerSessionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 12
+ - javax.resource.spi.endpoint.MessageEndpoint - 9
+ - javax.jms.MessageProducer - 6
+ - javax.resource.spi.work.WorkManager - 5
+ - javax.jms.Message - 4
+ - javax.jms.MessageListener - 3
+ - javax.jms.Session - 3
+ - javax.resource.spi.work.Work - 2
+ - javax.resource.spi.work.WorkException - 2
+ - javax.resource.spi.work.ExecutionContext - 1
+ - javax.resource.spi.work.WorkListener - 1
+ - javax.jms.Destination - 1
+ - javax.jms.ServerSession - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/coordination/rmi/RMIRemoteCommandConnectionImpl.class
+
+ - link:RMIRemoteCommandConnectionImpl-asmified.java[Asmified]
+
+== References
+

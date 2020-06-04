@@ -1,0 +1,8 @@
+= javax/faces/push/Push.class
+
+ - link:Push-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1
+ - javax.enterprise.util.Nonbinding - 1

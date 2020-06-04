@@ -1,0 +1,7 @@
+= javax/enterprise/inject/Decorated.class
+
+ - link:Decorated-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

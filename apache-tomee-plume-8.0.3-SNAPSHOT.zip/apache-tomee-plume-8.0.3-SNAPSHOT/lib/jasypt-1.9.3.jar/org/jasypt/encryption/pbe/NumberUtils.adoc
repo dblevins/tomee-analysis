@@ -1,0 +1,6 @@
+= org/jasypt/encryption/pbe/NumberUtils.class
+
+ - link:NumberUtils-asmified.java[Asmified]
+
+== References
+

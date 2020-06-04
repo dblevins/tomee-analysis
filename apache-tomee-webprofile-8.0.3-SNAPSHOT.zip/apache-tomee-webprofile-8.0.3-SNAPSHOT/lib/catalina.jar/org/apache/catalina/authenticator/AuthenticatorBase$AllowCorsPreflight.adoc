@@ -1,0 +1,6 @@
+= org/apache/catalina/authenticator/AuthenticatorBase$AllowCorsPreflight.class
+
+ - link:AuthenticatorBase$AllowCorsPreflight-asmified.java[Asmified]
+
+== References
+

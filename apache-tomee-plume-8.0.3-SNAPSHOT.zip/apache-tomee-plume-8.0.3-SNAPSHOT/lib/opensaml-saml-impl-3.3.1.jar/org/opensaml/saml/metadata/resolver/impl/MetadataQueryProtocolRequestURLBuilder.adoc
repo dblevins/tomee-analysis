@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/impl/MetadataQueryProtocolRequestURLBuilder.class
+
+ - link:MetadataQueryProtocolRequestURLBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 3

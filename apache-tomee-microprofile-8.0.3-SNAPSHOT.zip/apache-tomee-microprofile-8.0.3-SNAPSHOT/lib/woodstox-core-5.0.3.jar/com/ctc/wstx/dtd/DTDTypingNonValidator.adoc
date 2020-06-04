@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/DTDTypingNonValidator.class
+
+ - link:DTDTypingNonValidator-asmified.java[Asmified]
+
+== References
+

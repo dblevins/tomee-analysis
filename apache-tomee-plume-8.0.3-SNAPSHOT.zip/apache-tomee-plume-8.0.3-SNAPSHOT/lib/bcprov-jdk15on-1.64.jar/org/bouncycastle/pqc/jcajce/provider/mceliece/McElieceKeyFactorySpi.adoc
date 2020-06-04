@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/jcajce/provider/mceliece/McElieceKeyFactorySpi.class
+
+ - link:McElieceKeyFactorySpi-asmified.java[Asmified]
+
+== References
+

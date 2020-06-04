@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentNumber.class
+
+ - link:SafeRepresenter$RepresentNumber-asmified.java[Asmified]
+
+== References
+

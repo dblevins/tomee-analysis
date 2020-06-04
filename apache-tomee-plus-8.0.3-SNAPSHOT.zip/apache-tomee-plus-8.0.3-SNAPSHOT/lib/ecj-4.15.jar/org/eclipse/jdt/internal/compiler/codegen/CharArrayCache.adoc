@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/CharArrayCache.class
+
+ - link:CharArrayCache-asmified.java[Asmified]
+
+== References
+

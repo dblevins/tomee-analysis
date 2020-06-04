@@ -1,0 +1,8 @@
+= org/metatype/sxc/jaxb/ExtendedMarshaller.class
+
+ - link:ExtendedMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 1
+ - javax.xml.bind.JAXBException - 1

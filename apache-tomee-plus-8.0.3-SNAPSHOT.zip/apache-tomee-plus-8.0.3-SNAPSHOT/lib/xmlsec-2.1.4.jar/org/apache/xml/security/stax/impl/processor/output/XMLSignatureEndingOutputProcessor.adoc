@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/output/XMLSignatureEndingOutputProcessor.class
+
+ - link:XMLSignatureEndingOutputProcessor-asmified.java[Asmified]
+
+== References
+

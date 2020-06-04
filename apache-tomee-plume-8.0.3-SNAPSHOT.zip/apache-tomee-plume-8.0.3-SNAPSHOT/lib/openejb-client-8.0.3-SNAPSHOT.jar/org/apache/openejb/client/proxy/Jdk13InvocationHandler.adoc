@@ -1,0 +1,6 @@
+= org/apache/openejb/client/proxy/Jdk13InvocationHandler.class
+
+ - link:Jdk13InvocationHandler-asmified.java[Asmified]
+
+== References
+

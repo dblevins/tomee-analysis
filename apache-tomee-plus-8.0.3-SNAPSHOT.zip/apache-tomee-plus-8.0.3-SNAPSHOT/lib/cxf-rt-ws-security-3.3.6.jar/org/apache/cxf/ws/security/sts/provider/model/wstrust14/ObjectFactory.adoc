@@ -1,0 +1,9 @@
+= org/apache/cxf/ws/security/sts/provider/model/wstrust14/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 27
+ - javax.xml.bind.annotation.XmlElementDecl - 9
+ - javax.xml.bind.annotation.XmlRegistry - 1

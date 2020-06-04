@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/ArtifactResolutionService.class
+
+ - link:ArtifactResolutionService-asmified.java[Asmified]
+
+== References
+

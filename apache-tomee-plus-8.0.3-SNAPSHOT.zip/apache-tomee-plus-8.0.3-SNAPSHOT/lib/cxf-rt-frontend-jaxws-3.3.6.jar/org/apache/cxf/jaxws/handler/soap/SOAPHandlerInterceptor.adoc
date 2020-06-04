@@ -1,0 +1,19 @@
+= org/apache/cxf/jaxws/handler/soap/SOAPHandlerInterceptor.class
+
+ - link:SOAPHandlerInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 26
+ - javax.xml.ws.handler.MessageContext - 11
+ - javax.xml.soap.SOAPException - 10
+ - javax.xml.ws.Binding - 8
+ - javax.xml.soap.SOAPBody - 7
+ - javax.xml.soap.SOAPElement - 6
+ - javax.xml.soap.SOAPPart - 6
+ - javax.xml.soap.SOAPEnvelope - 6
+ - javax.xml.ws.handler.soap.SOAPMessageContext - 4
+ - javax.xml.soap.SOAPHeader - 4
+ - javax.xml.ws.handler.soap.SOAPHandler - 3
+ - javax.xml.soap.Node - 2
+ - javax.xml.ws.handler.Handler - 1

@@ -1,0 +1,6 @@
+= org/jvnet/mimepull/WeakDataFile$1.class
+
+ - link:WeakDataFile$1-asmified.java[Asmified]
+
+== References
+

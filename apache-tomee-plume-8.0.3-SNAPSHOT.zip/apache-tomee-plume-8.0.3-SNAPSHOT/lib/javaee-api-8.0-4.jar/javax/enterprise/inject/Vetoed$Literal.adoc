@@ -1,0 +1,9 @@
+= javax/enterprise/inject/Vetoed$Literal.class
+
+ - link:Vetoed$Literal-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed$Literal - 4
+ - javax.enterprise.inject.Vetoed - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

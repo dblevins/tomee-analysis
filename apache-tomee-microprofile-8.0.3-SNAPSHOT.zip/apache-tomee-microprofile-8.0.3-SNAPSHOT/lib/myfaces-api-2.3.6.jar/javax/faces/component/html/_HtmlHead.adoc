@@ -1,0 +1,8 @@
+= javax/faces/component/html/_HtmlHead.class
+
+ - link:_HtmlHead-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIOutput - 6
+ - javax.faces.convert.Converter - 2

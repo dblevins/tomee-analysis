@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/JMXQueryTask.class
+
+ - link:JMXQueryTask-asmified.java[Asmified]
+
+== References
+

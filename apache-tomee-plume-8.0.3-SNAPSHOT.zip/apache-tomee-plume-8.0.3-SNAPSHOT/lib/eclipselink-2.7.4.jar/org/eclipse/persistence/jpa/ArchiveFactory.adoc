@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/ArchiveFactory.class
+
+ - link:ArchiveFactory-asmified.java[Asmified]
+
+== References
+

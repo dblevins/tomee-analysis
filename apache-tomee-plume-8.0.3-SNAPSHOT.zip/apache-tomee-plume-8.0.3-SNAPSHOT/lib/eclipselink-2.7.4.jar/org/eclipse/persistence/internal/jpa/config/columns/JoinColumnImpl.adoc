@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/columns/JoinColumnImpl.class
+
+ - link:JoinColumnImpl-asmified.java[Asmified]
+
+== References
+

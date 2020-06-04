@@ -1,0 +1,10 @@
+= org/apache/webbeans/util/AnnotationUtil.class
+
+ - link:AnnotationUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 8
+ - javax.enterprise.inject.spi.AnnotatedParameter - 5
+ - javax.enterprise.inject.spi.AnnotatedType - 5
+ - javax.enterprise.util.Nonbinding - 2

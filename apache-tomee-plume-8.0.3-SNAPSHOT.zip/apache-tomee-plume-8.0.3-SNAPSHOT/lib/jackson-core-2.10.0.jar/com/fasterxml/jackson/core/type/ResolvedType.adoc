@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/type/ResolvedType.class
+
+ - link:ResolvedType-asmified.java[Asmified]
+
+== References
+

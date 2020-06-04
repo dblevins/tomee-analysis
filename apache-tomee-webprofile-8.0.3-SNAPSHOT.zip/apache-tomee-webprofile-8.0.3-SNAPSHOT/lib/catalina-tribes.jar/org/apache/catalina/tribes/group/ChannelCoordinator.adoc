@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/ChannelCoordinator.class
+
+ - link:ChannelCoordinator-asmified.java[Asmified]
+
+== References
+

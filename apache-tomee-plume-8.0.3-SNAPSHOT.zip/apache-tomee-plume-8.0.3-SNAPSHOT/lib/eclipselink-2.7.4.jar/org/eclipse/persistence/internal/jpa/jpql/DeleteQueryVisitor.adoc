@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/DeleteQueryVisitor.class
+
+ - link:DeleteQueryVisitor-asmified.java[Asmified]
+
+== References
+

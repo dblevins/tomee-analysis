@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/FastInfosetSource.class
+
+ - link:FastInfosetSource-asmified.java[Asmified]
+
+== References
+

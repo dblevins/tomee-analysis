@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/PostgresDictionary.class
+
+ - link:PostgresDictionary-asmified.java[Asmified]
+
+== References
+

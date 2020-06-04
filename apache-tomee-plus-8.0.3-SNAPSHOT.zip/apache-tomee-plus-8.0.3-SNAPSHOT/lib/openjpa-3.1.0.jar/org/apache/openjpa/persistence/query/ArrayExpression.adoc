@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/ArrayExpression.class
+
+ - link:ArrayExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/BeanResourceInfo.class
+
+ - link:BeanResourceInfo-asmified.java[Asmified]
+
+== References
+

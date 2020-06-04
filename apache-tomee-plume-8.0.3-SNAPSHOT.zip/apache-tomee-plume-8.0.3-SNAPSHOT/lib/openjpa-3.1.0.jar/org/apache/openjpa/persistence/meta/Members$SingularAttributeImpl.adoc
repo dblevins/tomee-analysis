@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/meta/Members$SingularAttributeImpl.class
+
+ - link:Members$SingularAttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute$PersistentAttributeType - 6
+ - javax.persistence.metamodel.Bindable$BindableType - 4
+ - javax.persistence.metamodel.SingularAttribute - 1

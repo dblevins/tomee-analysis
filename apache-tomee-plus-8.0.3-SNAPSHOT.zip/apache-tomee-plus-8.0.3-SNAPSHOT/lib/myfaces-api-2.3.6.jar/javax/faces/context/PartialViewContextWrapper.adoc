@@ -1,0 +1,11 @@
+= javax/faces/context/PartialViewContextWrapper.class
+
+ - link:PartialViewContextWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.PartialViewContext - 36
+ - javax.faces.context.PartialViewContextWrapper - 14
+ - javax.faces.context.PartialResponseWriter - 2
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.FacesWrapper - 1

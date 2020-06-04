@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/CompoundSelections$Array.class
+
+ - link:CompoundSelections$Array-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 3

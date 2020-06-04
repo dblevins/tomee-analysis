@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/RollbackException.class
+
+ - link:RollbackException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.RollbackException - 4

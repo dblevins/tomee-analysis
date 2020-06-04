@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/PDeletedFlushedState.class
+
+ - link:PDeletedFlushedState-asmified.java[Asmified]
+
+== References
+

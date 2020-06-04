@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPInternetHeader.class
+
+ - link:IMAPInternetHeader-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.InternetHeaders - 4
+ - javax.mail.MessagingException - 2

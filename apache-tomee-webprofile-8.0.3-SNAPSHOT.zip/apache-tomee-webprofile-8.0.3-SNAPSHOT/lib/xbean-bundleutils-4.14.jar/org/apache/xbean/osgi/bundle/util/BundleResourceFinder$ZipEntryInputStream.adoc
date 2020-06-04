@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/BundleResourceFinder$ZipEntryInputStream.class
+
+ - link:BundleResourceFinder$ZipEntryInputStream-asmified.java[Asmified]
+
+== References
+

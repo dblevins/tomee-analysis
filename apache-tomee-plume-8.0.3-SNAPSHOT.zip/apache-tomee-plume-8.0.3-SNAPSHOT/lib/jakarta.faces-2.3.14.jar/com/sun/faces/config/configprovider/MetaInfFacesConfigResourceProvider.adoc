@@ -1,0 +1,8 @@
+= com/sun/faces/config/configprovider/MetaInfFacesConfigResourceProvider.class
+
+ - link:MetaInfFacesConfigResourceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 10
+ - javax.faces.FacesException - 2

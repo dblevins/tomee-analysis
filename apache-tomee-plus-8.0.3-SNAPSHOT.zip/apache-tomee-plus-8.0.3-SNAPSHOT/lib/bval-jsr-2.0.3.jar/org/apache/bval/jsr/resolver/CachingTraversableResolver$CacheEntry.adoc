@@ -1,0 +1,8 @@
+= org/apache/bval/jsr/resolver/CachingTraversableResolver$CacheEntry.class
+
+ - link:CachingTraversableResolver$CacheEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 8
+ - javax.validation.Path - 8

@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/keyvalues/ECKeyValue.class
+
+ - link:ECKeyValue-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SelectImpl$Placeholder.class
+
+ - link:SelectImpl$Placeholder-asmified.java[Asmified]
+
+== References
+

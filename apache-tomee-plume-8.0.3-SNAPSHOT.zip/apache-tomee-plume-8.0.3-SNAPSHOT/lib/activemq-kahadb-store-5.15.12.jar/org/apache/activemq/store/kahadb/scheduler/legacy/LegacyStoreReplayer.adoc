@@ -1,0 +1,6 @@
+= org/apache/activemq/store/kahadb/scheduler/legacy/LegacyStoreReplayer.class
+
+ - link:LegacyStoreReplayer-asmified.java[Asmified]
+
+== References
+

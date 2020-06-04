@@ -1,0 +1,15 @@
+= org/apache/openejb/assembler/classic/EntityManagerFactoryCallable.class
+
+ - link:EntityManagerFactoryCallable-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 8
+ - javax.validation.ValidatorFactory - 8
+ - javax.persistence.spi.PersistenceProvider - 8
+ - javax.transaction.Transaction - 6
+ - javax.transaction.TransactionManager - 6
+ - javax.persistence.EntityManager - 4
+ - javax.persistence.ValidationMode - 3
+ - javax.persistence.spi.PersistenceUnitInfo - 1
+ - javax.enterprise.inject.spi.BeanManager - 1

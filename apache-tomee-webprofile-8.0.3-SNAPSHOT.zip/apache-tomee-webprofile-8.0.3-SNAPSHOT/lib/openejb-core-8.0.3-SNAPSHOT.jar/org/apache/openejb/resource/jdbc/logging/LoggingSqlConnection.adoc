@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/logging/LoggingSqlConnection.class
+
+ - link:LoggingSqlConnection-asmified.java[Asmified]
+
+== References
+

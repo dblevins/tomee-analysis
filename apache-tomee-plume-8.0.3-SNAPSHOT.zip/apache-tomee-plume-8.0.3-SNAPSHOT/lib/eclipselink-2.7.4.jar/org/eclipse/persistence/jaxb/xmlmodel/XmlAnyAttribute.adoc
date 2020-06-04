@@ -1,0 +1,11 @@
+= org/eclipse/persistence/jaxb/xmlmodel/XmlAnyAttribute.class
+
+ - link:XmlAnyAttribute-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAttribute - 4
+ - javax.xml.bind.annotation.XmlElement - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

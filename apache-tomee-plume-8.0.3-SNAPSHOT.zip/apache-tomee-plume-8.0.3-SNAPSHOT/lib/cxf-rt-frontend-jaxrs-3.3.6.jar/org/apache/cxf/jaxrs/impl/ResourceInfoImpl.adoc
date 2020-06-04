@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/impl/ResourceInfoImpl.class
+
+ - link:ResourceInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ResourceInfo - 1

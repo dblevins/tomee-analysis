@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/isismtt/x509/AdmissionSyntax.class
+
+ - link:AdmissionSyntax-asmified.java[Asmified]
+
+== References
+

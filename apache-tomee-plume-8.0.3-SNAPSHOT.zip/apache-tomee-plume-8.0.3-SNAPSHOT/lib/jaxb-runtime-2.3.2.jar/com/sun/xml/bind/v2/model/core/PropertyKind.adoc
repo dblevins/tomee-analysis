@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/core/PropertyKind.class
+
+ - link:PropertyKind-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/xml/ws/AsyncHandler.class
+
+ - link:AsyncHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Response - 1

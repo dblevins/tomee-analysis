@@ -1,0 +1,7 @@
+= javax/faces/component/UIParameter$PropertyKeys.class
+
+ - link:UIParameter$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIParameter$PropertyKeys - 26

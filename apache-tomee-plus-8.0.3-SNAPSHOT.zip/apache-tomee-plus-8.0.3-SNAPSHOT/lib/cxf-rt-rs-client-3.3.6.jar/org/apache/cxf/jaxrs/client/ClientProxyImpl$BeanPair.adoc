@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/ClientProxyImpl$BeanPair.class
+
+ - link:ClientProxyImpl$BeanPair-asmified.java[Asmified]
+
+== References
+

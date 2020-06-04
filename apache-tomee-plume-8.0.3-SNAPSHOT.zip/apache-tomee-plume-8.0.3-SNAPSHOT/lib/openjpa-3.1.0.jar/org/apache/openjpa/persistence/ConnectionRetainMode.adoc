@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ConnectionRetainMode.class
+
+ - link:ConnectionRetainMode-asmified.java[Asmified]
+
+== References
+

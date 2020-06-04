@@ -1,0 +1,8 @@
+= javax/ws/rs/client/ClientResponseFilter.class
+
+ - link:ClientResponseFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.ClientRequestContext - 1
+ - javax.ws.rs.client.ClientResponseContext - 1

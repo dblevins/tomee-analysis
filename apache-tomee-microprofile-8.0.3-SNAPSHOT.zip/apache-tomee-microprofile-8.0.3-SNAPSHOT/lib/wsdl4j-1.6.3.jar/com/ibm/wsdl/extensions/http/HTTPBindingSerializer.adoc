@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/http/HTTPBindingSerializer.class
+
+ - link:HTTPBindingSerializer-asmified.java[Asmified]
+
+== References
+

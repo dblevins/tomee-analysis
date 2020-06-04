@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/outbound/ConnectionHandleInterceptor.class
+
+ - link:ConnectionHandleInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ManagedConnection - 4
+ - javax.resource.spi.ConnectionRequestInfo - 2
+ - javax.resource.ResourceException - 1

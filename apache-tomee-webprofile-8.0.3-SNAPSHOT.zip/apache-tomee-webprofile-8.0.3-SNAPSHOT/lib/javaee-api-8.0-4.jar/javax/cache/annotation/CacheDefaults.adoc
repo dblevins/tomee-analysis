@@ -1,0 +1,7 @@
+= javax/cache/annotation/CacheDefaults.class
+
+ - link:CacheDefaults-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 3

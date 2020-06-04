@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/compiler/AttributeInstruction.class
+
+ - link:AttributeInstruction-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELException - 8
+ - javax.el.ELContext - 4
+ - javax.faces.context.ResponseWriter - 3
+ - javax.faces.context.FacesContext - 3
+ - javax.el.ExpressionFactory - 2

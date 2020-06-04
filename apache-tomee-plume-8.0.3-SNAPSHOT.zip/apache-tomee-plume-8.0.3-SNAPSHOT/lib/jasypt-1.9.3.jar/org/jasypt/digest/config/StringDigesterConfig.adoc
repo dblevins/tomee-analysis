@@ -1,0 +1,6 @@
+= org/jasypt/digest/config/StringDigesterConfig.class
+
+ - link:StringDigesterConfig-asmified.java[Asmified]
+
+== References
+

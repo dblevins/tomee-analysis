@@ -1,0 +1,9 @@
+= org/apache/myfaces/component/search/SearchExpressionHandlerImpl$CollectClientIdsCallback.class
+
+ - link:SearchExpressionHandlerImpl$CollectClientIdsCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.ContextCallback - 1

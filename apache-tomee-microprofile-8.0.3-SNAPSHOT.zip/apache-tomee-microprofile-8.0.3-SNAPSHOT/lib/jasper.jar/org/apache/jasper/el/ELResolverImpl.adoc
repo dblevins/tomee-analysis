@@ -1,0 +1,13 @@
+= org/apache/jasper/el/ELResolverImpl.class
+
+ - link:ELResolverImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 20
+ - javax.el.ELResolver - 17
+ - javax.servlet.jsp.el.ELException - 8
+ - javax.servlet.jsp.el.VariableResolver - 7
+ - javax.el.ELException - 4
+ - javax.el.ExpressionFactory - 2
+ - javax.el.PropertyNotWritableException - 2

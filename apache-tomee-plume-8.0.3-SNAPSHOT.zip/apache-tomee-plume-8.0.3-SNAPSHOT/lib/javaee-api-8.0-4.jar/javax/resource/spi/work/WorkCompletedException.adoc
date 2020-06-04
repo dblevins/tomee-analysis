@@ -1,0 +1,7 @@
+= javax/resource/spi/work/WorkCompletedException.class
+
+ - link:WorkCompletedException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkException - 6

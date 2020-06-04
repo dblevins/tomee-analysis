@@ -1,0 +1,8 @@
+= org/apache/coyote/AbstractProtocol$ConnectionHandler.class
+
+ - link:AbstractProtocol$ConnectionHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpUpgradeHandler - 14
+ - javax.servlet.http.WebConnection - 4

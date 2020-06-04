@@ -1,0 +1,9 @@
+= org/apache/batchee/container/impl/controller/chunk/CheckpointManager.class
+
+ - link:CheckpointManager-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.chunk.CheckpointAlgorithm - 11
+ - javax.batch.api.chunk.ItemWriter - 5
+ - javax.batch.api.chunk.ItemReader - 5

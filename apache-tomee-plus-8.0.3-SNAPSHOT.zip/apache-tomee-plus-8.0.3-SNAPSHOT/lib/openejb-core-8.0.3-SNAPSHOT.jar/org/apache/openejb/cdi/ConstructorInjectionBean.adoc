@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/ConstructorInjectionBean.class
+
+ - link:ConstructorInjectionBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 8
+ - javax.enterprise.inject.spi.BeanAttributes - 1

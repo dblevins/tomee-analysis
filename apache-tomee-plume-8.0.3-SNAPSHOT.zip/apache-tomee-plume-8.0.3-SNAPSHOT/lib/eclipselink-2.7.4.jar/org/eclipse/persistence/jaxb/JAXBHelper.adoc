@@ -1,0 +1,10 @@
+= org/eclipse/persistence/jaxb/JAXBHelper.class
+
+ - link:JAXBHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 3
+ - javax.xml.bind.Binder - 3
+ - javax.xml.bind.Marshaller - 3
+ - javax.xml.bind.JAXBContext - 3

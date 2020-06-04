@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/JavadocAllocationExpression.class
+
+ - link:JavadocAllocationExpression-asmified.java[Asmified]
+
+== References
+

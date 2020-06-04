@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ObjectNotFoundException.class
+
+ - link:ObjectNotFoundException-asmified.java[Asmified]
+
+== References
+

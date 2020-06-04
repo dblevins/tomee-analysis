@@ -1,0 +1,9 @@
+= org/apache/openejb/OpenEjbContainer.class
+
+ - link:OpenEjbContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 6
+ - javax.servlet.ServletContext - 6
+ - javax.ejb.embeddable.EJBContainer - 2

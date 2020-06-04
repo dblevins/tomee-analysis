@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/EnvEntryInfo.class
+
+ - link:EnvEntryInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/AbandonedTrace.class
+
+ - link:AbandonedTrace-asmified.java[Asmified]
+
+== References
+

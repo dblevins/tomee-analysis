@@ -1,0 +1,11 @@
+= org/apache/activemq/ra/ActiveMQActivationSpec.class
+
+ - link:ActiveMQActivationSpec-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 6
+ - javax.jms.Topic - 6
+ - javax.resource.ResourceException - 5
+ - javax.resource.spi.InvalidPropertyException - 4
+ - javax.resource.spi.ResourceAdapter - 2

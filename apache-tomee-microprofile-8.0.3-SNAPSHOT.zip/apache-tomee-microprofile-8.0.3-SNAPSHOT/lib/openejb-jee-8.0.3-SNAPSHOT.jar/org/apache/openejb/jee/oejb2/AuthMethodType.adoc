@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/oejb2/AuthMethodType.class
+
+ - link:AuthMethodType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2
+ - javax.xml.bind.annotation.XmlEnum - 1

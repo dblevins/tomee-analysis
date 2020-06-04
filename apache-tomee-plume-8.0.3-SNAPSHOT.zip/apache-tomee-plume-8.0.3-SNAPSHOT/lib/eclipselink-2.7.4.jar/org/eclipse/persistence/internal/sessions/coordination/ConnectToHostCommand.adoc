@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/coordination/ConnectToHostCommand.class
+
+ - link:ConnectToHostCommand-asmified.java[Asmified]
+
+== References
+

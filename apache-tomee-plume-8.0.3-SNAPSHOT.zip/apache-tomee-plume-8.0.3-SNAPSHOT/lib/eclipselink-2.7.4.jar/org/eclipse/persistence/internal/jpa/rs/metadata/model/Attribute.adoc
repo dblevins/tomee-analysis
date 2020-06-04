@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/Attribute.class
+
+ - link:Attribute-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1

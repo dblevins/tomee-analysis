@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/security/ManagedSecurityService$PrivilegedActionForObjectCreation.class
+
+ - link:ManagedSecurityService$PrivilegedActionForObjectCreation-asmified.java[Asmified]
+
+== References
+

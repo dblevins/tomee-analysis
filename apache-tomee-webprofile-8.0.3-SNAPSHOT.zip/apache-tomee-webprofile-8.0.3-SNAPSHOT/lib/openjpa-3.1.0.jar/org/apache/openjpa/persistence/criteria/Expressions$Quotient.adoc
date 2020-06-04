@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Quotient.class
+
+ - link:Expressions$Quotient-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 11

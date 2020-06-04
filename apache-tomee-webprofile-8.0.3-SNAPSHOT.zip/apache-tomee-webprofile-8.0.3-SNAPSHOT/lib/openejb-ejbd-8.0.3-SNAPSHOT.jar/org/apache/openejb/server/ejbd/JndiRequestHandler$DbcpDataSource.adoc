@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ejbd/JndiRequestHandler$DbcpDataSource.class
+
+ - link:JndiRequestHandler$DbcpDataSource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/jose4j/jwe/AesGcmContentEncryptionAlgorithm$Aes128Gcm.class
+
+ - link:AesGcmContentEncryptionAlgorithm$Aes128Gcm-asmified.java[Asmified]
+
+== References
+

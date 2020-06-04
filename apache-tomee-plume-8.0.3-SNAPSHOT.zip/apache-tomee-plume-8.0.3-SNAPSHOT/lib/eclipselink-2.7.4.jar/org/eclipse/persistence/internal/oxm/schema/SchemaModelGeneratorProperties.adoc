@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/SchemaModelGeneratorProperties.class
+
+ - link:SchemaModelGeneratorProperties-asmified.java[Asmified]
+
+== References
+

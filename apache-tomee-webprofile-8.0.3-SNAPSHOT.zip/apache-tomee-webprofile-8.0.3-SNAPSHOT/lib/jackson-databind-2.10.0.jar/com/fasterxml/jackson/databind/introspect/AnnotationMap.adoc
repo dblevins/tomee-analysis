@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/AnnotationMap.class
+
+ - link:AnnotationMap-asmified.java[Asmified]
+
+== References
+

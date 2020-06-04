@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/DynamicPersistenceCapable.class
+
+ - link:DynamicPersistenceCapable-asmified.java[Asmified]
+
+== References
+

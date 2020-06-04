@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Node$NamedAttribute$1AttributeVisitor.class
+
+ - link:Node$NamedAttribute$1AttributeVisitor-asmified.java[Asmified]
+
+== References
+

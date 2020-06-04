@@ -1,0 +1,605 @@
+package asm.org.yaml.snakeyaml.representer;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class BaseRepresenterDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/yaml/snakeyaml/representer/BaseRepresenter", null, "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/yaml/snakeyaml/representer/BaseRepresenter$1", null, null, 0);
+
+classWriter.visitInnerClass("org/yaml/snakeyaml/DumperOptions$ScalarStyle", "org/yaml/snakeyaml/DumperOptions", "ScalarStyle", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+classWriter.visitInnerClass("org/yaml/snakeyaml/DumperOptions$FlowStyle", "org/yaml/snakeyaml/DumperOptions", "FlowStyle", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "representers", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Lorg/yaml/snakeyaml/representer/Represent;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "nullRepresenter", "Lorg/yaml/snakeyaml/representer/Represent;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "multiRepresenters", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Class<*>;Lorg/yaml/snakeyaml/representer/Represent;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "defaultScalarStyle", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "representedObjects", "Ljava/util/Map;", "Ljava/util/Map<Ljava/lang/Object;Lorg/yaml/snakeyaml/nodes/Node;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "objectToRepresent", "Ljava/lang/Object;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "propertyUtils", "Lorg/yaml/snakeyaml/introspector/PropertyUtils;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "explicitPropertyUtils", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representers", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/LinkedHashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/LinkedHashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "multiRepresenters", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultScalarStyle", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "AUTO", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/yaml/snakeyaml/representer/BaseRepresenter$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/yaml/snakeyaml/representer/BaseRepresenter$1", "<init>", "(Lorg/yaml/snakeyaml/representer/BaseRepresenter;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representedObjects", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "explicitPropertyUtils", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "represent", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/representer/BaseRepresenter", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representedObjects", "Ljava/util/Map;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "clear", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "objectToRepresent", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "objectToRepresent", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representedObjects", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "objectToRepresent", "Ljava/lang/Object;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representedObjects", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "objectToRepresent", "Ljava/lang/Object;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/nodes/Node");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "nullRepresenter", "Lorg/yaml/snakeyaml/representer/Represent;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/yaml/snakeyaml/representer/Represent", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representers", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representers", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/representer/Represent");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/yaml/snakeyaml/representer/Represent", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "java/lang/Class"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "multiRepresenters", "Ljava/util/Map;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "keySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Class");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "multiRepresenters", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/representer/Represent");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/yaml/snakeyaml/representer/Represent", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "multiRepresenters", "Ljava/util/Map;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "containsKey", "(Ljava/lang/Object;)Z", true);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "multiRepresenters", "Ljava/util/Map;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/representer/Represent");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/yaml/snakeyaml/representer/Represent", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representers", "Ljava/util/Map;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/representer/Represent");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/yaml/snakeyaml/representer/Represent", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/yaml/snakeyaml/representer/BaseRepresenter", "java/lang/Object", "org/yaml/snakeyaml/nodes/Node", "java/lang/Class"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "representScalar", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/lang/String;Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;)Lorg/yaml/snakeyaml/nodes/Node;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultScalarStyle", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/yaml/snakeyaml/nodes/ScalarNode");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/yaml/snakeyaml/nodes/ScalarNode", "<init>", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/lang/String;Lorg/yaml/snakeyaml/error/Mark;Lorg/yaml/snakeyaml/error/Mark;Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "representScalar", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/lang/String;)Lorg/yaml/snakeyaml/nodes/Node;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/representer/BaseRepresenter", "representScalar", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/lang/String;Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;)Lorg/yaml/snakeyaml/nodes/Node;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "representSequence", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/lang/Iterable;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)Lorg/yaml/snakeyaml/nodes/Node;", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/lang/Iterable<*>;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)Lorg/yaml/snakeyaml/nodes/Node;", null);
+methodVisitor.visitCode();
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "java/util/List");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitTypeInsn(NEW, "org/yaml/snakeyaml/nodes/SequenceNode");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/yaml/snakeyaml/nodes/SequenceNode", "<init>", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/List;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representedObjects", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "objectToRepresent", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "FLOW", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/Iterable", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 8);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/yaml/snakeyaml/representer/BaseRepresenter", "org/yaml/snakeyaml/nodes/Tag", "java/lang/Iterable", "org/yaml/snakeyaml/DumperOptions$FlowStyle", Opcodes.INTEGER, "java/util/List", "org/yaml/snakeyaml/nodes/SequenceNode", "org/yaml/snakeyaml/DumperOptions$FlowStyle", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/representer/BaseRepresenter", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/yaml/snakeyaml/nodes/ScalarNode");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/nodes/ScalarNode");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/ScalarNode", "isPlain", "()Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/Object", "org/yaml/snakeyaml/nodes/Node"}, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "BLOCK", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "AUTO", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "AUTO", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/SequenceNode", "setFlowStyle", "(Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/SequenceNode", "setFlowStyle", "(Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", false);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 11);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "representMapping", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/Map;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)Lorg/yaml/snakeyaml/nodes/Node;", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/Map<**>;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)Lorg/yaml/snakeyaml/nodes/Node;", null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "size", "()I", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "org/yaml/snakeyaml/nodes/MappingNode");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/yaml/snakeyaml/nodes/MappingNode", "<init>", "(Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/List;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "representedObjects", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "objectToRepresent", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "FLOW", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 7);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/yaml/snakeyaml/representer/BaseRepresenter", "org/yaml/snakeyaml/nodes/Tag", "java/util/Map", "org/yaml/snakeyaml/DumperOptions$FlowStyle", "java/util/List", "org/yaml/snakeyaml/nodes/MappingNode", "org/yaml/snakeyaml/DumperOptions$FlowStyle", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map$Entry");
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/representer/BaseRepresenter", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/representer/BaseRepresenter", "representData", "(Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/yaml/snakeyaml/nodes/ScalarNode");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/nodes/ScalarNode");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/ScalarNode", "isPlain", "()Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/util/Map$Entry", "org/yaml/snakeyaml/nodes/Node", "org/yaml/snakeyaml/nodes/Node"}, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "BLOCK", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/yaml/snakeyaml/nodes/ScalarNode");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/yaml/snakeyaml/nodes/ScalarNode");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/ScalarNode", "isPlain", "()Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "BLOCK", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitTypeInsn(NEW, "org/yaml/snakeyaml/nodes/NodeTuple");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/yaml/snakeyaml/nodes/NodeTuple", "<init>", "(Lorg/yaml/snakeyaml/nodes/Node;Lorg/yaml/snakeyaml/nodes/Node;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/yaml/snakeyaml/representer/BaseRepresenter", "org/yaml/snakeyaml/nodes/Tag", "java/util/Map", "org/yaml/snakeyaml/DumperOptions$FlowStyle", "java/util/List", "org/yaml/snakeyaml/nodes/MappingNode", "org/yaml/snakeyaml/DumperOptions$FlowStyle"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "AUTO", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$FlowStyle", "AUTO", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/MappingNode", "setFlowStyle", "(Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/yaml/snakeyaml/nodes/MappingNode", "setFlowStyle", "(Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", false);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 11);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultScalarStyle", "(Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultScalarStyle", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultScalarStyle", "()Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultScalarStyle", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/yaml/snakeyaml/DumperOptions$ScalarStyle", "PLAIN", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultScalarStyle", "Lorg/yaml/snakeyaml/DumperOptions$ScalarStyle;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setDefaultFlowStyle", "(Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultFlowStyle", "()Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "defaultFlowStyle", "Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPropertyUtils", "(Lorg/yaml/snakeyaml/introspector/PropertyUtils;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "propertyUtils", "Lorg/yaml/snakeyaml/introspector/PropertyUtils;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "explicitPropertyUtils", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "getPropertyUtils", "()Lorg/yaml/snakeyaml/introspector/PropertyUtils;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "propertyUtils", "Lorg/yaml/snakeyaml/introspector/PropertyUtils;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/yaml/snakeyaml/introspector/PropertyUtils");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/yaml/snakeyaml/introspector/PropertyUtils", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "propertyUtils", "Lorg/yaml/snakeyaml/introspector/PropertyUtils;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "propertyUtils", "Lorg/yaml/snakeyaml/introspector/PropertyUtils;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_FINAL, "isExplicitPropertyUtils", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/yaml/snakeyaml/representer/BaseRepresenter", "explicitPropertyUtils", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

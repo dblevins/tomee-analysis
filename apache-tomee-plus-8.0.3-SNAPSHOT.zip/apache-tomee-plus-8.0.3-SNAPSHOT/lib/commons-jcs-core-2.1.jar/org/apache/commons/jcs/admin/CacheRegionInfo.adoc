@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/admin/CacheRegionInfo.class
+
+ - link:CacheRegionInfo-asmified.java[Asmified]
+
+== References
+

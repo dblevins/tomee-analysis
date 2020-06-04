@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/AttributeNamesConstants.class
+
+ - link:AttributeNamesConstants-asmified.java[Asmified]
+
+== References
+

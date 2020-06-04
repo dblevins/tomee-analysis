@@ -1,0 +1,6 @@
+= javax/xml/validation/ValidatorHandler.class
+
+ - link:ValidatorHandler-asmified.java[Asmified]
+
+== References
+

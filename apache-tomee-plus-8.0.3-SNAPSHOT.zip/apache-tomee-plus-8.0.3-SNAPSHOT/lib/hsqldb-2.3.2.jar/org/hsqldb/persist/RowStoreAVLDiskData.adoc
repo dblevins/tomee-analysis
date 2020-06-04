@@ -1,0 +1,6 @@
+= org/hsqldb/persist/RowStoreAVLDiskData.class
+
+ - link:RowStoreAVLDiskData-asmified.java[Asmified]
+
+== References
+

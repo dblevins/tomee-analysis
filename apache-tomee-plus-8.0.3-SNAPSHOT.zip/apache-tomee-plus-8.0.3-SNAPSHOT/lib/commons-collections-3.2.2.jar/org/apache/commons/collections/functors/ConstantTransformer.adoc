@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/ConstantTransformer.class
+
+ - link:ConstantTransformer-asmified.java[Asmified]
+
+== References
+

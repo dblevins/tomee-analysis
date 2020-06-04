@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializer$TempEntityLoader.class
+
+ - link:JavaSECMPInitializer$TempEntityLoader-asmified.java[Asmified]
+
+== References
+

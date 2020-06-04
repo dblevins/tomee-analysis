@@ -1,0 +1,16 @@
+= org/eclipse/persistence/jaxb/JAXBUnmarshaller.class
+
+ - link:JAXBUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 122
+ - javax.xml.bind.JAXBException - 67
+ - javax.xml.bind.UnmarshalException - 24
+ - javax.xml.bind.PropertyException - 24
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 19
+ - javax.xml.bind.ValidationEventHandler - 16
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 4
+ - javax.xml.bind.Unmarshaller$Listener - 4
+ - javax.xml.bind.Unmarshaller - 2
+ - javax.xml.bind.UnmarshallerHandler - 1

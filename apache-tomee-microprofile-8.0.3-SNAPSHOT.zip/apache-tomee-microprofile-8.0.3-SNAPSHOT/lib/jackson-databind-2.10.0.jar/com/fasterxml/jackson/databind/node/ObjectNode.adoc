@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/ObjectNode.class
+
+ - link:ObjectNode-asmified.java[Asmified]
+
+== References
+

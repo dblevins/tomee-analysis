@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/LogoutResponseBuilder.class
+
+ - link:LogoutResponseBuilder-asmified.java[Asmified]
+
+== References
+

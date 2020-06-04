@@ -1,0 +1,6 @@
+= javax/xml/rpc/encoding/Serializer.class
+
+ - link:Serializer-asmified.java[Asmified]
+
+== References
+

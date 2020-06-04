@@ -1,0 +1,13 @@
+= javax/persistence/Persistence$PersistenceUtilImpl.class
+
+ - link:Persistence$PersistenceUtilImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.LoadState - 13
+ - javax.persistence.spi.ProviderUtil - 10
+ - javax.persistence.spi.PersistenceProvider - 9
+ - javax.persistence.Persistence - 2
+ - javax.persistence.Persistence$PersistenceUtilImpl - 1
+ - javax.persistence.Persistence$1 - 1
+ - javax.persistence.PersistenceUtil - 1

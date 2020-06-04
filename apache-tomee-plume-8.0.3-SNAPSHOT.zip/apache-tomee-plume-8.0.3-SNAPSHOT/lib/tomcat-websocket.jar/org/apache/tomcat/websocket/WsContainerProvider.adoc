@@ -1,0 +1,8 @@
+= org/apache/tomcat/websocket/WsContainerProvider.class
+
+ - link:WsContainerProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.ContainerProvider - 2
+ - javax.websocket.WebSocketContainer - 1

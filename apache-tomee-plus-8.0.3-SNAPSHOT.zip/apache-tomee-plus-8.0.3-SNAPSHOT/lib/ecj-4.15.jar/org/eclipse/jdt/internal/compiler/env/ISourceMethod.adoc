@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/ISourceMethod.class
+
+ - link:ISourceMethod-asmified.java[Asmified]
+
+== References
+

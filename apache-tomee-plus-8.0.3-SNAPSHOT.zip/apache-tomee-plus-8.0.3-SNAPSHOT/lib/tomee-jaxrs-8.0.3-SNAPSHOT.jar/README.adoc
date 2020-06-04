@@ -1,0 +1,4 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/tomee-jaxrs-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/tomee/webservices/CXFJAXRSFilter.adoc[org/apache/tomee/webservices/CXFJAXRSFilter.class] - 56
+ - link:org/apache/tomee/webservices/TomcatRsRegistry.adoc[org/apache/tomee/webservices/TomcatRsRegistry.class] - 5

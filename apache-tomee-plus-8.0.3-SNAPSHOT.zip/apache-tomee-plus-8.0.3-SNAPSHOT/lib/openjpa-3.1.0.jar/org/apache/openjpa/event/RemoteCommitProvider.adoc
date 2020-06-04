@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/RemoteCommitProvider.class
+
+ - link:RemoteCommitProvider-asmified.java[Asmified]
+
+== References
+

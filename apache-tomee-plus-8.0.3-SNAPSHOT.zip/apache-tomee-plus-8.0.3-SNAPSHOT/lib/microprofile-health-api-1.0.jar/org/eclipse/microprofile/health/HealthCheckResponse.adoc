@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/health/HealthCheckResponse.class
+
+ - link:HealthCheckResponse-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/dataformat/yaml/YAMLParser.class
+
+ - link:YAMLParser-asmified.java[Asmified]
+
+== References
+

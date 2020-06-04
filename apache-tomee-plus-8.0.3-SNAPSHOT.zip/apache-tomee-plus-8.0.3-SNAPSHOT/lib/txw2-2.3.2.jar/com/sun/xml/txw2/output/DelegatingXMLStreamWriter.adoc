@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/DelegatingXMLStreamWriter.class
+
+ - link:DelegatingXMLStreamWriter-asmified.java[Asmified]
+
+== References
+

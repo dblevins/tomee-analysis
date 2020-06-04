@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/resourceResolvers/ResolverHttp.class
+
+ - link:ResolverHttp-asmified.java[Asmified]
+
+== References
+

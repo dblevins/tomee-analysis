@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/LogBufferManager$BufferPoolStats.class
+
+ - link:LogBufferManager$BufferPoolStats-asmified.java[Asmified]
+
+== References
+

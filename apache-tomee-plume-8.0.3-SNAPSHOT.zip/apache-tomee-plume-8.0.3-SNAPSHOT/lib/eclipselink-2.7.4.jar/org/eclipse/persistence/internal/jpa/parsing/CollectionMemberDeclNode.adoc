@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/CollectionMemberDeclNode.class
+
+ - link:CollectionMemberDeclNode-asmified.java[Asmified]
+
+== References
+

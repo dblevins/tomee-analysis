@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/QueueBrowserSubscription.class
+
+ - link:QueueBrowserSubscription-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

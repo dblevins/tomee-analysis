@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/builder/Diffable.class
+
+ - link:Diffable-asmified.java[Asmified]
+
+== References
+

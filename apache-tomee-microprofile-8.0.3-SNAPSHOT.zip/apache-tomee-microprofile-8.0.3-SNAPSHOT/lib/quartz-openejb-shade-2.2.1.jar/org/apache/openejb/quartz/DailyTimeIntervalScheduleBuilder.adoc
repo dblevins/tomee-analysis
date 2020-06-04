@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/DailyTimeIntervalScheduleBuilder.class
+
+ - link:DailyTimeIntervalScheduleBuilder-asmified.java[Asmified]
+
+== References
+

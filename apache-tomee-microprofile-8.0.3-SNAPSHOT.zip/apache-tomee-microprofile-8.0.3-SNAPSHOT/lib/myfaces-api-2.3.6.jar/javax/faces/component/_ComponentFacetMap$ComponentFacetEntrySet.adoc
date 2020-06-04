@@ -1,0 +1,10 @@
+= javax/faces/component/_ComponentFacetMap$ComponentFacetEntrySet.class
+
+ - link:_ComponentFacetMap$ComponentFacetEntrySet-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component._ComponentFacetMap - 38
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component._ComponentFacetMap$ComponentFacetEntryIterator - 2
+ - javax.faces.component._ComponentFacetMap$ComponentFacetEntrySet - 1

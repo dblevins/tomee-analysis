@@ -1,0 +1,11 @@
+= org/apache/myfaces/el/unified/resolver/CompositeComponentELResolver$CompositeComponentAttributesMapWrapper.class
+
+ - link:CompositeComponentELResolver$CompositeComponentAttributesMapWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 12
+ - javax.el.ValueExpression - 8
+ - javax.faces.context.FacesContext - 6
+ - javax.el.ELContext - 4
+ - javax.faces.el.CompositeComponentExpressionHolder - 1

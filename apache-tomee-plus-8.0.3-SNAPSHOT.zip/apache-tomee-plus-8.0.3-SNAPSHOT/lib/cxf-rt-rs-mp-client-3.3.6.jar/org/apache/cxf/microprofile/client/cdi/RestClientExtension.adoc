@@ -1,0 +1,15 @@
+= org/apache/cxf/microprofile/client/cdi/RestClientExtension.class
+
+ - link:RestClientExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 5
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 3
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 3
+ - javax.enterprise.event.Observes - 3
+ - javax.enterprise.inject.spi.ProcessAnnotatedType - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.WithAnnotations - 1
+ - javax.enterprise.inject.spi.Bean - 1

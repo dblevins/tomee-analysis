@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/FieldMapping.class
+
+ - link:FieldMapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/introspector/MethodProperty.class
+
+ - link:MethodProperty-asmified.java[Asmified]
+
+== References
+

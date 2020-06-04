@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/KeyEmbeddedMapping.class
+
+ - link:KeyEmbeddedMapping-asmified.java[Asmified]
+
+== References
+

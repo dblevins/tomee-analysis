@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/EntityDeclarationImpl.class
+
+ - link:EntityDeclarationImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/impl/DefaultWebConfigProviderFactory$1.class
+
+ - link:DefaultWebConfigProviderFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 5

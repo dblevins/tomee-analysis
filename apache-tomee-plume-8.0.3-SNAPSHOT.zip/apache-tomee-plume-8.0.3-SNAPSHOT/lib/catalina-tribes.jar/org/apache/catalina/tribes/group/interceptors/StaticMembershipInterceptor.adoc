@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/interceptors/StaticMembershipInterceptor.class
+
+ - link:StaticMembershipInterceptor-asmified.java[Asmified]
+
+== References
+

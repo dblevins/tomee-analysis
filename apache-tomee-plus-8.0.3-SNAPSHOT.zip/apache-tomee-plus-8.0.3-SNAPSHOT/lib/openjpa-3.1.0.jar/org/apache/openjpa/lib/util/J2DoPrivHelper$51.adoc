@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/J2DoPrivHelper$51.class
+
+ - link:J2DoPrivHelper$51-asmified.java[Asmified]
+
+== References
+

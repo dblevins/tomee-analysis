@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/TypeVariableImpl.class
+
+ - link:TypeVariableImpl-asmified.java[Asmified]
+
+== References
+

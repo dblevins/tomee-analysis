@@ -1,0 +1,6 @@
+= org/jose4j/jwe/ContentEncryptionParts.class
+
+ - link:ContentEncryptionParts-asmified.java[Asmified]
+
+== References
+

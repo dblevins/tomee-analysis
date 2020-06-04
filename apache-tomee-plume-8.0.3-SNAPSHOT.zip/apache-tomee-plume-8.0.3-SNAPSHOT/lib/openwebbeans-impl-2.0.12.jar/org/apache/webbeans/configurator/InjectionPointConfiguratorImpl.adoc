@@ -1,0 +1,10 @@
+= org/apache/webbeans/configurator/InjectionPointConfiguratorImpl.class
+
+ - link:InjectionPointConfiguratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.InjectionPointConfigurator - 11
+ - javax.enterprise.inject.spi.InjectionPoint - 9
+ - javax.enterprise.inject.spi.Annotated - 5
+ - javax.enterprise.inject.spi.Bean - 5

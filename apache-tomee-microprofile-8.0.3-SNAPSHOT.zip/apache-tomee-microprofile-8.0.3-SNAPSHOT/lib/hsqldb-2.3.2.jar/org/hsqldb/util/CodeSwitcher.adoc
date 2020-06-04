@@ -1,0 +1,6 @@
+= org/hsqldb/util/CodeSwitcher.class
+
+ - link:CodeSwitcher-asmified.java[Asmified]
+
+== References
+

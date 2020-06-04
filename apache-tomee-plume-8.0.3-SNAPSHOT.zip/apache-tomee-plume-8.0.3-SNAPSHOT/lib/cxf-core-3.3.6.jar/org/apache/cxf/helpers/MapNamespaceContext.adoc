@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/MapNamespaceContext.class
+
+ - link:MapNamespaceContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/router/FailOverRouter$DataSourceHolder.class
+
+ - link:FailOverRouter$DataSourceHolder-asmified.java[Asmified]
+
+== References
+

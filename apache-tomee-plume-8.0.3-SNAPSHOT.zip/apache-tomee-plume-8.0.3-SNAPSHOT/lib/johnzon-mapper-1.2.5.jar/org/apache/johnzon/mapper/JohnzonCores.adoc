@@ -1,0 +1,9 @@
+= org/apache/johnzon/mapper/JohnzonCores.class
+
+ - link:JohnzonCores-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonReader - 3
+ - javax.json.stream.JsonParser - 2
+ - javax.json.JsonReaderFactory - 1

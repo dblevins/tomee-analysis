@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/SubSelectDatabaseTable.class
+
+ - link:SubSelectDatabaseTable-asmified.java[Asmified]
+
+== References
+

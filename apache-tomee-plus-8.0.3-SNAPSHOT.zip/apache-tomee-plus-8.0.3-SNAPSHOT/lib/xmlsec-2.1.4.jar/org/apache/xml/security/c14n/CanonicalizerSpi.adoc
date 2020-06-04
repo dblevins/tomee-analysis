@@ -1,0 +1,6 @@
+= org/apache/xml/security/c14n/CanonicalizerSpi.class
+
+ - link:CanonicalizerSpi-asmified.java[Asmified]
+
+== References
+

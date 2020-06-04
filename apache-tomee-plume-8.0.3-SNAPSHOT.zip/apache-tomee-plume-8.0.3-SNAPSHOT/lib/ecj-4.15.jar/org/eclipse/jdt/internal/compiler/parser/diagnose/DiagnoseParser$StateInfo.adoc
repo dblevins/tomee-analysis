@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/diagnose/DiagnoseParser$StateInfo.class
+
+ - link:DiagnoseParser$StateInfo-asmified.java[Asmified]
+
+== References
+

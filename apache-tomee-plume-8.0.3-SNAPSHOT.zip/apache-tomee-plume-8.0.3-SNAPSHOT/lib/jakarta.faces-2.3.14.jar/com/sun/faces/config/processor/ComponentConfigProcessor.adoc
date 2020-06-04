@@ -1,0 +1,11 @@
+= com/sun/faces/config/processor/ComponentConfigProcessor.class
+
+ - link:ComponentConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 6
+ - javax.faces.context.FacesContext - 2
+ - javax.servlet.ServletContext - 1
+ - javax.faces.component.FacesComponent - 1
+ - javax.faces.component.UIComponent - 1

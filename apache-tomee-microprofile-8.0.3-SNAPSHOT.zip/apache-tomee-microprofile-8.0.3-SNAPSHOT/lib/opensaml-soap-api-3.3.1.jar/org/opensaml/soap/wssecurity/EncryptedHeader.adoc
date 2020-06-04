@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/EncryptedHeader.class
+
+ - link:EncryptedHeader-asmified.java[Asmified]
+
+== References
+

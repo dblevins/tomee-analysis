@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$CacheRetrieveModeLegacyHint.class
+
+ - link:QueryHintsHandler$CacheRetrieveModeLegacyHint-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.CacheRetrieveMode - 2

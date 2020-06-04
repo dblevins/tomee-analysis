@@ -1,0 +1,7 @@
+= org/apache/openejb/OpenEjbContainer$InitializationException.class
+
+ - link:OpenEjbContainer$InitializationException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 3

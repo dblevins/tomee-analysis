@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/InverseManager.class
+
+ - link:InverseManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/PessimisticLockingPolicy.class
+
+ - link:PessimisticLockingPolicy-asmified.java[Asmified]
+
+== References
+

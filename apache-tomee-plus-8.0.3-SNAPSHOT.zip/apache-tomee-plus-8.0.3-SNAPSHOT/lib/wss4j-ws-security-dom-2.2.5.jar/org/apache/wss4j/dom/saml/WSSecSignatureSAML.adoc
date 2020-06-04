@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/saml/WSSecSignatureSAML.class
+
+ - link:WSSecSignatureSAML-asmified.java[Asmified]
+
+== References
+

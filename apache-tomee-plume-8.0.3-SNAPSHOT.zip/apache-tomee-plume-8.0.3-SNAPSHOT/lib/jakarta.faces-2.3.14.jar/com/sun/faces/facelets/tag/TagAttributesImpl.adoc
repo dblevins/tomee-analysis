@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/TagAttributesImpl.class
+
+ - link:TagAttributesImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 34
+ - javax.faces.view.facelets.Tag - 6
+ - javax.faces.view.facelets.TagAttributes - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/columns/AssociationOverrideMetadata.class
+
+ - link:AssociationOverrideMetadata-asmified.java[Asmified]
+
+== References
+

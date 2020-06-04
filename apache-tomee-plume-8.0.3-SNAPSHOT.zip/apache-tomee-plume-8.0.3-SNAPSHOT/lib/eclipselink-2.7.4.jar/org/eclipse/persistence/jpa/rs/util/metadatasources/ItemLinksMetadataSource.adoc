@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/ItemLinksMetadataSource.class
+
+ - link:ItemLinksMetadataSource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/WSS4JStaxOutInterceptor$WSS4JStaxOutInterceptorInternal.class
+
+ - link:WSS4JStaxOutInterceptor$WSS4JStaxOutInterceptorInternal-asmified.java[Asmified]
+
+== References
+

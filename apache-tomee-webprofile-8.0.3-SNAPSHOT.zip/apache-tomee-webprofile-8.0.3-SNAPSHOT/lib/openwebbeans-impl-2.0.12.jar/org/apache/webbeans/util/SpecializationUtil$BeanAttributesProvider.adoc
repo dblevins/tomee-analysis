@@ -1,0 +1,8 @@
+= org/apache/webbeans/util/SpecializationUtil$BeanAttributesProvider.class
+
+ - link:SpecializationUtil$BeanAttributesProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 1
+ - javax.enterprise.inject.spi.AnnotatedType - 1

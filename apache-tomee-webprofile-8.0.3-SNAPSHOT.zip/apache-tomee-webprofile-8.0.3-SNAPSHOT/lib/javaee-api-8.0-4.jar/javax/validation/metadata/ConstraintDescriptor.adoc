@@ -1,0 +1,11 @@
+= javax/validation/metadata/ConstraintDescriptor.class
+
+ - link:ConstraintDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ConstraintDescriptor - 1
+ - javax.validation.ConstraintTarget - 1
+ - javax.validation.Payload - 1
+ - javax.validation.ConstraintValidator - 1
+ - javax.validation.metadata.ValidateUnwrappedValue - 1

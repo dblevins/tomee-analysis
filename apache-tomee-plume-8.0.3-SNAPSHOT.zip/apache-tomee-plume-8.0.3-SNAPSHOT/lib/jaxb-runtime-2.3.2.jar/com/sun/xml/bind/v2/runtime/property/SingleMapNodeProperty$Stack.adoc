@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/SingleMapNodeProperty$Stack.class
+
+ - link:SingleMapNodeProperty$Stack-asmified.java[Asmified]
+
+== References
+

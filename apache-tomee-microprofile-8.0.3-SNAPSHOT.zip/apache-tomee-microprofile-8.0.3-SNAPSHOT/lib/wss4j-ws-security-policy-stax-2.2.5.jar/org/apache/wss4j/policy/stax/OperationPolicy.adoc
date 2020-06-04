@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/stax/OperationPolicy.class
+
+ - link:OperationPolicy-asmified.java[Asmified]
+
+== References
+

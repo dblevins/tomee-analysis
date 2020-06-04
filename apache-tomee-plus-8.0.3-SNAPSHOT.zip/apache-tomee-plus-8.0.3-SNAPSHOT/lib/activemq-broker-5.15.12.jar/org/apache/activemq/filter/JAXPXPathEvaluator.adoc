@@ -1,0 +1,9 @@
+= org/apache/activemq/filter/JAXPXPathEvaluator.class
+
+ - link:JAXPXPathEvaluator-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.BytesMessage - 4
+ - javax.jms.TextMessage - 3
+ - javax.jms.JMSException - 1

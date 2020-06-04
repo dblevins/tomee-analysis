@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/oauth2/client/MemoryClientCodeStateManager.class
+
+ - link:MemoryClientCodeStateManager-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 11

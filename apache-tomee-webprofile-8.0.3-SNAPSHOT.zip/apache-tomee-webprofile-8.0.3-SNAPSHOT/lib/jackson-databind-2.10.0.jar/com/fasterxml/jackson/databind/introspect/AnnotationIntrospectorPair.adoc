@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/AnnotationIntrospectorPair.class
+
+ - link:AnnotationIntrospectorPair-asmified.java[Asmified]
+
+== References
+

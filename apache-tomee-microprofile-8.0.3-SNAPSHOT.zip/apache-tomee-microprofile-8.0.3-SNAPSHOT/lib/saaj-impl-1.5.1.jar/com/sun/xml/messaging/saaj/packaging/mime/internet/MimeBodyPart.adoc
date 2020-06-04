@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/MimeBodyPart.class
+
+ - link:MimeBodyPart-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 34
+ - javax.activation.DataSource - 2

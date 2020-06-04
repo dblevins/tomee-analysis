@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/NamedNativeQueryMetadata.class
+
+ - link:NamedNativeQueryMetadata-asmified.java[Asmified]
+
+== References
+

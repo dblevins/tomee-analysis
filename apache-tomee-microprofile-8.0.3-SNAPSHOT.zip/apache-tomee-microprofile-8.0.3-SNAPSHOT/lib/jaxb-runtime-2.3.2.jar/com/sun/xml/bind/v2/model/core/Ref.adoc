@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/model/core/Ref.class
+
+ - link:Ref-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 6
+ - javax.xml.bind.annotation.XmlList - 5

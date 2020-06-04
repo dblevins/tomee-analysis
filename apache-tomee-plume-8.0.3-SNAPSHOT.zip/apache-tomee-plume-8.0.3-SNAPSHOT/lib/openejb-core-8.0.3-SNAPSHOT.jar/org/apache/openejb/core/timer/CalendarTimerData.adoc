@@ -1,0 +1,8 @@
+= org/apache/openejb/core/timer/CalendarTimerData.class
+
+ - link:CalendarTimerData-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ScheduleExpression - 13
+ - javax.ejb.TimerConfig - 2

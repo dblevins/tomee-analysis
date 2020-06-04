@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/InitiatorEncryptionTokenBuilder.class
+
+ - link:InitiatorEncryptionTokenBuilder-asmified.java[Asmified]
+
+== References
+

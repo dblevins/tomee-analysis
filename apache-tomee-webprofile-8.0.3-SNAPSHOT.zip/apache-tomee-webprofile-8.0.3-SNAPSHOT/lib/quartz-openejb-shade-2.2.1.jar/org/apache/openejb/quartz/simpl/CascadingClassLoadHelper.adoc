@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/simpl/CascadingClassLoadHelper.class
+
+ - link:CascadingClassLoadHelper-asmified.java[Asmified]
+
+== References
+

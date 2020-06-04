@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxws/support/JaxWsImplementorInfo.class
+
+ - link:JaxWsImplementorInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.WebService - 45
+ - javax.xml.ws.WebServiceProvider - 32
+ - javax.xml.ws.WebServiceException - 6
+ - javax.xml.ws.ServiceMode - 5
+ - javax.xml.ws.BindingType - 4
+ - javax.xml.ws.Service$Mode - 4
+ - javax.xml.ws.Provider - 3

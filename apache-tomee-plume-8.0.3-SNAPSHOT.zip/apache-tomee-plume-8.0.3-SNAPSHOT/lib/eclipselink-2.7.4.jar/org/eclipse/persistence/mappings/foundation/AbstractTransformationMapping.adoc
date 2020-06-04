@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/foundation/AbstractTransformationMapping.class
+
+ - link:AbstractTransformationMapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= javax/faces/component/html/_HtmlPanelGroup.class
+
+ - link:_HtmlPanelGroup-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIPanel - 2
+ - javax.faces.component.html._EventProperties - 1
+ - javax.faces.component.html._StyleProperties - 1

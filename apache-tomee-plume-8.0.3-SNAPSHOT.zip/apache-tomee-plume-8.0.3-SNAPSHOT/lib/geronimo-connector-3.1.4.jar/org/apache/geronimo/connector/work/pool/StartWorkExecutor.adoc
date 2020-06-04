@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/work/pool/StartWorkExecutor.class
+
+ - link:StartWorkExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkException - 1

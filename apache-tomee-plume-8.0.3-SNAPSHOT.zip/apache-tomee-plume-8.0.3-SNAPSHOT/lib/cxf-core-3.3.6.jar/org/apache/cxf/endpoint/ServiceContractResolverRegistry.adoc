@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ServiceContractResolverRegistry.class
+
+ - link:ServiceContractResolverRegistry-asmified.java[Asmified]
+
+== References
+

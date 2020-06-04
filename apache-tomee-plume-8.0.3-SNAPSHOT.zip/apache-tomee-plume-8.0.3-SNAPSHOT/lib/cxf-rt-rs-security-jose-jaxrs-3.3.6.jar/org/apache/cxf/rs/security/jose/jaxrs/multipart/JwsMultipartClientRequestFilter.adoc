@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartClientRequestFilter.class
+
+ - link:JwsMultipartClientRequestFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.ClientRequestContext - 4
+ - javax.ws.rs.core.MediaType - 3
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.client.ClientRequestFilter - 1

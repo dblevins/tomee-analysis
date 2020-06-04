@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission.class
+
+ - link:ProviderConfigurationPermission-asmified.java[Asmified]
+
+== References
+

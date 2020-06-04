@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/FileUtils$1.class
+
+ - link:FileUtils$1-asmified.java[Asmified]
+
+== References
+

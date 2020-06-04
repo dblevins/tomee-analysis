@@ -1,0 +1,14 @@
+= javax/persistence/criteria/CriteriaUpdate.class
+
+ - link:CriteriaUpdate-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.CriteriaUpdate - 7
+ - javax.persistence.criteria.Expression - 3
+ - javax.persistence.criteria.Root - 3
+ - javax.persistence.metamodel.SingularAttribute - 2
+ - javax.persistence.criteria.Path - 2
+ - javax.persistence.metamodel.EntityType - 1
+ - javax.persistence.criteria.Predicate - 1
+ - javax.persistence.criteria.CommonAbstractCriteria - 1

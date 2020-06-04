@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/CanonicalizationAlgorithm.class
+
+ - link:CanonicalizationAlgorithm-asmified.java[Asmified]
+
+== References
+

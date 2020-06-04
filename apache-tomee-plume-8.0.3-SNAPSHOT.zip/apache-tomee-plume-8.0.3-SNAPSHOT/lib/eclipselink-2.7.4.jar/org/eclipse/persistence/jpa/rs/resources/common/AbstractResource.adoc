@@ -1,0 +1,13 @@
+= org/eclipse/persistence/jpa/rs/resources/common/AbstractResource.class
+
+ - link:AbstractResource-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 9
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.core.PathSegment - 5
+ - javax.ws.rs.core.MediaType - 4
+ - javax.xml.bind.Marshaller - 4
+ - javax.xml.bind.JAXBException - 1
+ - javax.xml.bind.JAXBContext - 1

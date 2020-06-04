@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/PreparedQuery.class
+
+ - link:PreparedQuery-asmified.java[Asmified]
+
+== References
+

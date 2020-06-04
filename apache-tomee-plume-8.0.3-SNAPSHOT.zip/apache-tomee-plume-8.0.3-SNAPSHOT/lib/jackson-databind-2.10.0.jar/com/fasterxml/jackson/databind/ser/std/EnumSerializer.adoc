@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/EnumSerializer.class
+
+ - link:EnumSerializer-asmified.java[Asmified]
+
+== References
+

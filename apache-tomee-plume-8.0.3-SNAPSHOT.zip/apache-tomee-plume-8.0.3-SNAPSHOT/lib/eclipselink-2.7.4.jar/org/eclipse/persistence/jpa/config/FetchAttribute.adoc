@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/FetchAttribute.class
+
+ - link:FetchAttribute-asmified.java[Asmified]
+
+== References
+

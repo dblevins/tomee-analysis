@@ -1,0 +1,8 @@
+= com/sun/faces/el/DemuxCompositeELResolver$DescriptorIterator.class
+
+ - link:DemuxCompositeELResolver$DescriptorIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 5
+ - javax.el.ELResolver - 5

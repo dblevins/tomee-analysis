@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/KeyValueBuilder.class
+
+ - link:KeyValueBuilder-asmified.java[Asmified]
+
+== References
+

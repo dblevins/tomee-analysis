@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/JDBCAggregateListener.class
+
+ - link:JDBCAggregateListener-asmified.java[Asmified]
+
+== References
+

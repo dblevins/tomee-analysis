@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/TypeBindings$TypeParamStash.class
+
+ - link:TypeBindings$TypeParamStash-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,51 @@
+= org/apache/webbeans/container/BeanManagerImpl.class
+
+ - link:BeanManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 62
+ - javax.enterprise.inject.spi.AnnotatedType - 61
+ - javax.enterprise.inject.spi.InjectionPoint - 33
+ - javax.enterprise.context.spi.Context - 29
+ - javax.enterprise.context.spi.CreationalContext - 14
+ - javax.enterprise.inject.spi.BeanAttributes - 9
+ - javax.enterprise.context.spi.Contextual - 9
+ - javax.enterprise.inject.spi.AnnotatedField - 7
+ - javax.enterprise.inject.spi.ProducerFactory - 6
+ - javax.enterprise.inject.spi.Extension - 6
+ - javax.enterprise.context.NormalScope - 6
+ - javax.enterprise.inject.spi.AnnotatedMethod - 6
+ - javax.enterprise.inject.spi.BeanManager - 5
+ - javax.enterprise.inject.spi.PassivationCapable - 4
+ - javax.el.ExpressionFactory - 4
+ - javax.enterprise.inject.spi.ObserverMethod - 4
+ - javax.enterprise.context.ContextNotActiveException - 4
+ - javax.enterprise.inject.spi.Producer - 4
+ - javax.enterprise.inject.spi.AnnotatedParameter - 4
+ - javax.enterprise.inject.spi.InjectionTargetFactory - 3
+ - javax.enterprise.context.spi.AlterableContext - 3
+ - javax.enterprise.inject.spi.Decorator - 3
+ - javax.enterprise.inject.Stereotype - 2
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.inject.Instance - 2
+ - javax.enterprise.inject.spi.DeploymentException - 2
+ - javax.enterprise.inject.spi.CDI - 2
+ - javax.el.ELResolver - 2
+ - javax.enterprise.inject.InjectionException - 2
+ - javax.enterprise.inject.spi.InterceptionType - 2
+ - javax.enterprise.inject.spi.Interceptor - 2
+ - javax.enterprise.inject.spi.InterceptionFactory - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.enterprise.event.NotificationOptions - 1
+ - javax.enterprise.inject.spi.EventMetadata - 1
+ - javax.enterprise.event.Event - 1
+ - javax.enterprise.inject.Default - 1
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.enterprise.inject.spi.AnnotatedMember - 1
+ - javax.enterprise.inject.spi.DefinitionException - 1
+ - javax.interceptor.InterceptorBinding - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.inject.Scope - 1
+ - javax.enterprise.inject.spi.AnnotatedCallable - 1

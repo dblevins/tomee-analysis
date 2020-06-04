@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/StringConverter.class
+
+ - link:StringConverter-asmified.java[Asmified]
+
+== References
+

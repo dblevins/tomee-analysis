@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/InstrumentationManager.class
+
+ - link:InstrumentationManager-asmified.java[Asmified]
+
+== References
+

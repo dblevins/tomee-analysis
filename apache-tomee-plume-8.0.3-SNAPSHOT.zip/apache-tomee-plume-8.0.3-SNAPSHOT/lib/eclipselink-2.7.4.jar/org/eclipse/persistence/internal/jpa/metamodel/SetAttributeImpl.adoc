@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/metamodel/SetAttributeImpl.class
+
+ - link:SetAttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 2
+ - javax.persistence.metamodel.SetAttribute - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/MultiplyNode.class
+
+ - link:MultiplyNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AttributeProfileMarshaller.class
+
+ - link:AttributeProfileMarshaller-asmified.java[Asmified]
+
+== References
+

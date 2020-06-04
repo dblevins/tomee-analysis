@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/utils/JAXBUtils.class
+
+ - link:JAXBUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 24
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 4
+ - javax.xml.bind.JAXBContext - 3
+ - javax.xml.bind.JAXBException - 2
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter$DEFAULT - 1
+ - javax.xml.bind.Unmarshaller - 1

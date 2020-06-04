@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/FacesConfigurationProviderWrapper.class
+
+ - link:FacesConfigurationProviderWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 18
+ - javax.faces.FacesWrapper - 1

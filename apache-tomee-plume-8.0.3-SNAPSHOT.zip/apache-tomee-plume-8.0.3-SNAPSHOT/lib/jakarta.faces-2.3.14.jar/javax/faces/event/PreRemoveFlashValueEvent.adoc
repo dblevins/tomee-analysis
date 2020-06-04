@@ -1,0 +1,9 @@
+= javax/faces/event/PreRemoveFlashValueEvent.class
+
+ - link:PreRemoveFlashValueEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.SystemEvent - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.PreRemoveFlashValueEvent - 1

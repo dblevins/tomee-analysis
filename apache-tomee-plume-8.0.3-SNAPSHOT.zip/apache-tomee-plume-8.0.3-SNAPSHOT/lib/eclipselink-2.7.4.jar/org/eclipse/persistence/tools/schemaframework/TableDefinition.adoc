@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/TableDefinition.class
+
+ - link:TableDefinition-asmified.java[Asmified]
+
+== References
+

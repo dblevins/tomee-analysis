@@ -1,0 +1,6 @@
+= io/opentracing/propagation/TextMapInjectAdapter.class
+
+ - link:TextMapInjectAdapter-asmified.java[Asmified]
+
+== References
+

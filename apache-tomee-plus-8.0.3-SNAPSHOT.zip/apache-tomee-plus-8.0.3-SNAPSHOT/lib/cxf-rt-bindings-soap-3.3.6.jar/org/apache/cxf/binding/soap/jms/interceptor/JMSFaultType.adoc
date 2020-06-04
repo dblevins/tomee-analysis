@@ -1,0 +1,9 @@
+= org/apache/cxf/binding/soap/jms/interceptor/JMSFaultType.class
+
+ - link:JMSFaultType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.xml.bind.annotation.XmlElement - 1

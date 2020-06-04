@@ -1,0 +1,6 @@
+= org/apache/openejb/core/stateless/StatelessInstanceManager$Data$1.class
+
+ - link:StatelessInstanceManager$Data$1-asmified.java[Asmified]
+
+== References
+

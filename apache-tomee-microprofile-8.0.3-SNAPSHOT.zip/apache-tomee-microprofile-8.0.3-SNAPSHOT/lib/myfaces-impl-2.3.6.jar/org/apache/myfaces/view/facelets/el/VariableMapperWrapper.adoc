@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/el/VariableMapperWrapper.class
+
+ - link:VariableMapperWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.VariableMapper - 11
+ - javax.el.ValueExpression - 8
+ - javax.el.ELException - 2
+ - javax.faces.FacesWrapper - 1

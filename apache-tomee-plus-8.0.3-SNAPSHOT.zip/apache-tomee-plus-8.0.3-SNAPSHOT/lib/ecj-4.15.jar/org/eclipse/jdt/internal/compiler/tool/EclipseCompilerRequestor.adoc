@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/tool/EclipseCompilerRequestor.class
+
+ - link:EclipseCompilerRequestor-asmified.java[Asmified]
+
+== References
+

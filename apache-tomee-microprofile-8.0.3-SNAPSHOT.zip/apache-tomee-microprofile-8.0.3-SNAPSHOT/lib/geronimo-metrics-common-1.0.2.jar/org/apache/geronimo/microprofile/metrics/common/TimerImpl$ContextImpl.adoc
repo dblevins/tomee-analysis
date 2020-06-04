@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/TimerImpl$ContextImpl.class
+
+ - link:TimerImpl$ContextImpl-asmified.java[Asmified]
+
+== References
+

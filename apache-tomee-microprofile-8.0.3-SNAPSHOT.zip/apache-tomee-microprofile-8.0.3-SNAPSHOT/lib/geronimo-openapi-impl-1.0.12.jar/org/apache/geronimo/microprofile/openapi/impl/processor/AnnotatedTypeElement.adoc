@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/processor/AnnotatedTypeElement.class
+
+ - link:AnnotatedTypeElement-asmified.java[Asmified]
+
+== References
+

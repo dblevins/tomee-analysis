@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/ClassAnnotationMetaDataFilter.class
+
+ - link:ClassAnnotationMetaDataFilter-asmified.java[Asmified]
+
+== References
+

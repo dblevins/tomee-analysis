@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/MostSpecificExceptionMethodBinding.class
+
+ - link:MostSpecificExceptionMethodBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/deployment/BeanValidationInitializationHelper.class
+
+ - link:BeanValidationInitializationHelper-asmified.java[Asmified]
+
+== References
+

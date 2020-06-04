@@ -1,0 +1,10 @@
+= org/apache/cxf/validation/ValidationConfiguration.class
+
+ - link:ValidationConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ParameterNameProvider - 7
+ - javax.validation.MessageInterpolator - 5
+ - javax.validation.ConstraintValidatorFactory - 5
+ - javax.validation.TraversableResolver - 5

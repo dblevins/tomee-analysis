@@ -1,0 +1,6 @@
+= org/apache/webbeans/util/WebBeansConstants.class
+
+ - link:WebBeansConstants-asmified.java[Asmified]
+
+== References
+

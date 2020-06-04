@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/SignatureBaseRSA$SignatureRSASHA384.class
+
+ - link:SignatureBaseRSA$SignatureRSASHA384-asmified.java[Asmified]
+
+== References
+

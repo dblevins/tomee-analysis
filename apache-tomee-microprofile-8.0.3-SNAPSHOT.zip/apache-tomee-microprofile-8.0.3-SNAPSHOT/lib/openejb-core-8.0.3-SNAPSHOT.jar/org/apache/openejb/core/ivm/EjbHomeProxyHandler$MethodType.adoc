@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/EjbHomeProxyHandler$MethodType.class
+
+ - link:EjbHomeProxyHandler$MethodType-asmified.java[Asmified]
+
+== References
+

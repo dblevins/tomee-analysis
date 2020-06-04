@@ -1,0 +1,11 @@
+= javax/faces/component/html/HtmlColumn.class
+
+ - link:HtmlColumn-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 16
+ - javax.faces.component.html.HtmlColumn - 11
+ - javax.faces.component.html.HtmlColumn$PropertyKeys - 8
+ - javax.faces.component.UIColumn - 2
+ - javax.el.ValueExpression - 1

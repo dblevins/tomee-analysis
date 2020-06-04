@@ -1,0 +1,6 @@
+= javax/xml/rpc/encoding/XMLType.class
+
+ - link:XMLType-asmified.java[Asmified]
+
+== References
+

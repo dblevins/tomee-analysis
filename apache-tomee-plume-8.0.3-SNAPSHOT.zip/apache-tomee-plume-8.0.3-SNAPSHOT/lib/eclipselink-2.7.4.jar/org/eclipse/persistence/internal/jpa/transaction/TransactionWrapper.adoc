@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/transaction/TransactionWrapper.class
+
+ - link:TransactionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityTransaction - 1

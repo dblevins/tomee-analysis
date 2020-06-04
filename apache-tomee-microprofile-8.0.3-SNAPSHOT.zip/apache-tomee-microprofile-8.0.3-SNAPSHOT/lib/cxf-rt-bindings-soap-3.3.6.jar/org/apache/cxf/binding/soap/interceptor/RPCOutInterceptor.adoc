@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/RPCOutInterceptor.class
+
+ - link:RPCOutInterceptor-asmified.java[Asmified]
+
+== References
+

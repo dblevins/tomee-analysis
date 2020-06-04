@@ -1,0 +1,8 @@
+= com/sun/faces/config/initfacescontext/NoOpFlash.class
+
+ - link:NoOpFlash-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.Flash - 2
+ - javax.faces.context.FacesContext - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/JoinDeclNode.class
+
+ - link:JoinDeclNode-asmified.java[Asmified]
+
+== References
+

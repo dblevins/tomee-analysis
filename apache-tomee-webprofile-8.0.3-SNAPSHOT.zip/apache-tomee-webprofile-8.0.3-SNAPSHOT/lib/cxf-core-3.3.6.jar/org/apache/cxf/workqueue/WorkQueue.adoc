@@ -1,0 +1,6 @@
+= org/apache/cxf/workqueue/WorkQueue.class
+
+ - link:WorkQueue-asmified.java[Asmified]
+
+== References
+

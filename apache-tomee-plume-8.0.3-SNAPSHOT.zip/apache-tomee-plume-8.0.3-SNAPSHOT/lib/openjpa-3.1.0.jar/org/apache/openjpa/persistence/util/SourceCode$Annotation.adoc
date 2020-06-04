@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/util/SourceCode$Annotation.class
+
+ - link:SourceCode$Annotation-asmified.java[Asmified]
+
+== References
+

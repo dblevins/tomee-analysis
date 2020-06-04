@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/schema/XSBase64Binary.class
+
+ - link:XSBase64Binary-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

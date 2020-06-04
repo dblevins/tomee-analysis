@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/action/SignatureDerivedAction.class
+
+ - link:SignatureDerivedAction-asmified.java[Asmified]
+
+== References
+

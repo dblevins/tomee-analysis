@@ -1,0 +1,6 @@
+= org/apache/openejb/server/SimpleServiceManager$SimpleServiceFinder.class
+
+ - link:SimpleServiceManager$SimpleServiceFinder-asmified.java[Asmified]
+
+== References
+

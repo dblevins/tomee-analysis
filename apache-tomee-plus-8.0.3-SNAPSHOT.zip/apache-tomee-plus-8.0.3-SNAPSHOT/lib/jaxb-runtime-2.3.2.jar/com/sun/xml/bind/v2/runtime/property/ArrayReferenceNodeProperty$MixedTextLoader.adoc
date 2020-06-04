@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/ArrayReferenceNodeProperty$MixedTextLoader.class
+
+ - link:ArrayReferenceNodeProperty$MixedTextLoader-asmified.java[Asmified]
+
+== References
+

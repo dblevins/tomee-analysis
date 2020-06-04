@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/part/CommonsFileUploadPartFactory.class
+
+ - link:CommonsFileUploadPartFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.servlet.http.Part - 1

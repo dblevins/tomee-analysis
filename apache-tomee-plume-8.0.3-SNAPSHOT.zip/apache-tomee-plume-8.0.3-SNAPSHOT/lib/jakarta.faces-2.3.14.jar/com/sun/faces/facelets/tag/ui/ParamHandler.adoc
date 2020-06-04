@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/ui/ParamHandler.class
+
+ - link:ParamHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 10
+ - javax.faces.view.facelets.FaceletContext - 4
+ - javax.el.ValueExpression - 3
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.el.VariableMapper - 2
+ - javax.faces.component.UIComponent - 1

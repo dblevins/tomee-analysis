@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/ArrayBuilders$DoubleBuilder.class
+
+ - link:ArrayBuilders$DoubleBuilder-asmified.java[Asmified]
+
+== References
+

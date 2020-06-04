@@ -1,0 +1,15 @@
+= javax/faces/component/behavior/BehaviorBase.class
+
+ - link:BehaviorBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.event.BehaviorListener - 4
+ - javax.faces.component.behavior.BehaviorBase - 4
+ - javax.faces.event.BehaviorEvent - 3
+ - javax.faces.event.FacesListener - 2
+ - javax.faces.component.UIComponentBase - 2
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.behavior.Behavior - 1
+ - javax.faces.component.PartialStateHolder - 1

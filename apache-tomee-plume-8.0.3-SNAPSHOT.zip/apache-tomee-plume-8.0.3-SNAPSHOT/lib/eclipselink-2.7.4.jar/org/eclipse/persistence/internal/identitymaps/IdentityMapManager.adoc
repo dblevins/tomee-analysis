@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/IdentityMapManager.class
+
+ - link:IdentityMapManager-asmified.java[Asmified]
+
+== References
+

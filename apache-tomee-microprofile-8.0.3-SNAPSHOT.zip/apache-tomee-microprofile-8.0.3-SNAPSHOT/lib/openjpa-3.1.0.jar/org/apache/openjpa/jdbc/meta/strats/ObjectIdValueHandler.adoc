@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/ObjectIdValueHandler.class
+
+ - link:ObjectIdValueHandler-asmified.java[Asmified]
+
+== References
+

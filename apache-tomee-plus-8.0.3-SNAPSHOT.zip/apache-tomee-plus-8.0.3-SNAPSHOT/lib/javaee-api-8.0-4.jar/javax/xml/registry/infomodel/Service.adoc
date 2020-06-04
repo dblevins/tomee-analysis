@@ -1,0 +1,10 @@
+= javax/xml/registry/infomodel/Service.class
+
+ - link:Service-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 7
+ - javax.xml.registry.infomodel.ServiceBinding - 2
+ - javax.xml.registry.infomodel.Organization - 2
+ - javax.xml.registry.infomodel.RegistryEntry - 1

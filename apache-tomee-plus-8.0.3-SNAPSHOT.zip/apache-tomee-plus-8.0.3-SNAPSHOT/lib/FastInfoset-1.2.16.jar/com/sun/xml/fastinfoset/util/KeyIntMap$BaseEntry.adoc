@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/KeyIntMap$BaseEntry.class
+
+ - link:KeyIntMap$BaseEntry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPBodyStructure.class
+
+ - link:IMAPBodyStructure-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.ContentType - 22
+ - javax.mail.internet.ContentDisposition - 9
+ - javax.mail.internet.ParameterList - 6
+ - javax.mail.MessagingException - 5

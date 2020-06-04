@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/AddSubjectConfirmationToSubjects.class
+
+ - link:AddSubjectConfirmationToSubjects-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 13
+ - javax.annotation.Nullable - 9

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/remote/corba/sun/CORBARemoteSessionController.class
+
+ - link:CORBARemoteSessionController-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= javax/mail/search/DateTerm.class
+
+ - link:DateTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.ComparisonTerm - 3
+ - javax.mail.search.DateTerm - 2

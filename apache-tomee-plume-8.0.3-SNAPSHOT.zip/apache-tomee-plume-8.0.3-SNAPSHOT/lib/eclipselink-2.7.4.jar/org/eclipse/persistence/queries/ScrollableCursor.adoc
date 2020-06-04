@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ScrollableCursor.class
+
+ - link:ScrollableCursor-asmified.java[Asmified]
+
+== References
+

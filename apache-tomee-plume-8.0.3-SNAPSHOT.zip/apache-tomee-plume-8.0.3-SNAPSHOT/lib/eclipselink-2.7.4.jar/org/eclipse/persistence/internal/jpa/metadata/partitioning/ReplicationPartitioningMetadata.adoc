@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/partitioning/ReplicationPartitioningMetadata.class
+
+ - link:ReplicationPartitioningMetadata-asmified.java[Asmified]
+
+== References
+

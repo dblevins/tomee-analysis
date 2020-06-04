@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/OrderedMap.class
+
+ - link:OrderedMap-asmified.java[Asmified]
+
+== References
+

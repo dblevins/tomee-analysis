@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter$ServletOutputStreamAdapter.class
+
+ - link:HttpServletResponseAdapter$ServletOutputStreamAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.WriteListener - 1

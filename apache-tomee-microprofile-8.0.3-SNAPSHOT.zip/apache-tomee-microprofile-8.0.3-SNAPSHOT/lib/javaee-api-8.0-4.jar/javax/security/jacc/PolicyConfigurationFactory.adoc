@@ -1,0 +1,10 @@
+= javax/security/jacc/PolicyConfigurationFactory.class
+
+ - link:PolicyConfigurationFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.PolicyConfigurationFactory - 7
+ - javax.security.jacc.PolicyContextException - 5
+ - javax.security.jacc.PolicyConfigurationFactory$1 - 2
+ - javax.security.jacc.PolicyConfiguration - 1

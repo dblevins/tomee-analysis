@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ClasspathScanner.class
+
+ - link:ClasspathScanner-asmified.java[Asmified]
+
+== References
+

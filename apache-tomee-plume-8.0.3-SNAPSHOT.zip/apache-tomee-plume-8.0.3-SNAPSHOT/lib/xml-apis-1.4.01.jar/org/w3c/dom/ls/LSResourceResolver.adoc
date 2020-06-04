@@ -1,0 +1,6 @@
+= org/w3c/dom/ls/LSResourceResolver.class
+
+ - link:LSResourceResolver-asmified.java[Asmified]
+
+== References
+

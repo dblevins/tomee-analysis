@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/config/DefaultFaultToleranceConfig.class
+
+ - link:DefaultFaultToleranceConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1

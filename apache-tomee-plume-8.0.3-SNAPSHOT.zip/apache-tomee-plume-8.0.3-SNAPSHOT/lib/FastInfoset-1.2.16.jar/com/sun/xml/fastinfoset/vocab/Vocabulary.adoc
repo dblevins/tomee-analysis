@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/vocab/Vocabulary.class
+
+ - link:Vocabulary-asmified.java[Asmified]
+
+== References
+

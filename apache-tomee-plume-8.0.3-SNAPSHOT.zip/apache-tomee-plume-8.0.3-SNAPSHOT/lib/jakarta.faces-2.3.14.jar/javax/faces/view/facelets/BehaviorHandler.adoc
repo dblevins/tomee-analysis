@@ -1,0 +1,16 @@
+= javax/faces/view/facelets/BehaviorHandler.class
+
+ - link:BehaviorHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 11
+ - javax.faces.view.facelets.TagHandlerDelegate - 6
+ - javax.faces.view.facelets.BehaviorHandler - 5
+ - javax.faces.view.facelets.BehaviorConfig - 3
+ - javax.faces.view.facelets.TagHandlerDelegateFactory - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.view.facelets.FaceletsAttachedObjectHandler - 2
+ - javax.faces.view.facelets.TagConfig - 1
+ - javax.faces.view.BehaviorHolderAttachedObjectHandler - 1

@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/jmx/JMXAccessorCreateTask.class
+
+ - link:JMXAccessorCreateTask-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/AbstractExpressionBuilder.class
+
+ - link:AbstractExpressionBuilder-asmified.java[Asmified]
+
+== References
+

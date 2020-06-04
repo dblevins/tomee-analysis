@@ -1,0 +1,6 @@
+= org/hsqldb/View.class
+
+ - link:View-asmified.java[Asmified]
+
+== References
+

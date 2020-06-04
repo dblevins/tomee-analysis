@@ -1,0 +1,7 @@
+= javax/validation/constraints/NotNull$List.class
+
+ - link:NotNull$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.NotNull - 1

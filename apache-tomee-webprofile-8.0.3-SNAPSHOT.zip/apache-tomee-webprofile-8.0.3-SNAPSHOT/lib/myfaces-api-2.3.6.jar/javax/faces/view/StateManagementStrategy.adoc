@@ -1,0 +1,8 @@
+= javax/faces/view/StateManagementStrategy.class
+
+ - link:StateManagementStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIViewRoot - 1

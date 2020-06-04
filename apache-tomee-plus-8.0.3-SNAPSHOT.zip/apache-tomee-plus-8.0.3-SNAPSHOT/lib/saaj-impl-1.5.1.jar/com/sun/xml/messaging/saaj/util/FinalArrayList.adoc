@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/FinalArrayList.class
+
+ - link:FinalArrayList-asmified.java[Asmified]
+
+== References
+

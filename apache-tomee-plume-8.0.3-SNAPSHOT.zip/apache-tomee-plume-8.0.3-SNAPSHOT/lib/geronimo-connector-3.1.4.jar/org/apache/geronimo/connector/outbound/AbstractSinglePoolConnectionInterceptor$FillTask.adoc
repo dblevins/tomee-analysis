@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/outbound/AbstractSinglePoolConnectionInterceptor$FillTask.class
+
+ - link:AbstractSinglePoolConnectionInterceptor$FillTask-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionRequestInfo - 5
+ - javax.resource.spi.ManagedConnectionFactory - 5
+ - javax.resource.ResourceException - 2

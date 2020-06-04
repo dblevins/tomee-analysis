@@ -1,0 +1,361 @@
+package asm.org.apache.myfaces.view.facelets.tag.jsf.core;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ViewHandlerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", null, "javax/faces/view/facelets/TagHandler", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LISTENER_SIG", "[Ljava/lang/Class;", "[Ljava/lang/Class<*>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "locale", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "renderKitId", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contentType", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "encoding", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "beforePhase", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "afterPhase", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "transientAttribute", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contracts", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "oamEnableViewPool", "Ljavax/faces/view/facelets/TagAttribute;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/faces/view/facelets/TagConfig;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/faces/view/facelets/TagHandler", "<init>", "(Ljavax/faces/view/facelets/TagConfig;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("locale");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "locale", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("renderKitId");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "renderKitId", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("contentType");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "contentType", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("encoding");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "encoding", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("beforePhase");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "beforePhase", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("afterPhase");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "afterPhase", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("transient");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "transientAttribute", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("contracts");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "contracts", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("oamEnableViewPool");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "getAttribute", "(Ljava/lang/String;)Ljavax/faces/view/facelets/TagAttribute;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "oamEnableViewPool", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V", null, new String[] { "java/io/IOException", "javax/faces/FacesException", "javax/faces/view/facelets/FaceletException", "javax/el/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/tag/jsf/ComponentSupport", "getViewRoot", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)Ljavax/faces/component/UIViewRoot;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "locale", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "locale", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/view/facelets/tag/jsf/ComponentSupport", "getLocale", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/view/facelets/TagAttribute;)Ljava/util/Locale;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "setLocale", "(Ljava/util/Locale;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/faces/component/UIViewRoot"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "renderKitId", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "renderKitId", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValue", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "setRenderKitId", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "contentType", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "contentType", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValue", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitIntInsn(BIPUSH, 59);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "indexOf", "(I)I", false);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitJumpInsn(IFLT, label4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitLdcInsn("charset");
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "indexOf", "(Ljava/lang/String;I)I", false);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitJumpInsn(IFLT, label4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitIntInsn(BIPUSH, 61);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "indexOf", "(II)I", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 7);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(I)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "javax/faces/view/facelets/FaceletContext", "javax/faces/component/UIComponent", "javax/faces/component/UIViewRoot", "java/lang/String", "java/lang/String", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(II)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitLdcInsn("facelets.ContentType");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "encoding", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "encoding", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValue", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitLdcInsn("facelets.Encoding");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitLdcInsn("facelets.Encoding");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "beforePhase", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "beforePhase", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "LISTENER_SIG", "[Ljava/lang/Class;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getMethodExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/el/MethodExpression;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "setBeforePhaseListener", "(Ljavax/el/MethodExpression;)V", false);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "afterPhase", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "afterPhase", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "LISTENER_SIG", "[Ljava/lang/Class;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getMethodExpression", "(Ljavax/faces/view/facelets/FaceletContext;Ljava/lang/Class;[Ljava/lang/Class;)Ljavax/el/MethodExpression;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "setAfterPhaseListener", "(Ljavax/el/MethodExpression;)V", false);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "transientAttribute", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label10);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "transientAttribute", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getBoolean", "(Ljavax/faces/view/facelets/FaceletContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "setTransient", "(Z)V", false);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "contracts", "Ljavax/faces/view/facelets/TagAttribute;");
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "contracts", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getValue", "(Ljavax/faces/view/facelets/FaceletContext;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitIntInsn(BIPUSH, 44);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/StringUtils", "splitShortString", "(Ljava/lang/String;C)[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/myfaces/shared/util/StringUtils", "trim", "([Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/FaceletContext", "getFacesContext", "()Ljavax/faces/context/FacesContext;", false);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/context/FacesContext", "setResourceLibraryContracts", "(Ljava/util/List;)V", false);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "oamEnableViewPool", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/component/UIViewRoot", "getAttributes", "()Ljava/util/Map;", false);
+methodVisitor.visitLdcInsn("oamEnableViewPool");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "oamEnableViewPool", "Ljavax/faces/view/facelets/TagAttribute;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/faces/view/facelets/TagAttribute", "getBoolean", "(Ljavax/faces/view/facelets/FaceletContext;)Z", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Boolean", "valueOf", "(Z)Ljava/lang/Boolean;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "nextHandler", "Ljavax/faces/view/facelets/FaceletHandler;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/faces/view/facelets/FaceletHandler", "apply", "(Ljavax/faces/view/facelets/FaceletContext;Ljavax/faces/component/UIComponent;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/faces/event/PhaseEvent;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/myfaces/view/facelets/tag/jsf/core/ViewHandler", "LISTENER_SIG", "[Ljava/lang/Class;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,8 @@
+= org/apache/openejb/server/cxf/rs/CxfRSService$ContextLiteral.class
+
+ - link:CxfRSService$ContextLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Context - 3
+ - javax.enterprise.util.AnnotationLiteral - 2

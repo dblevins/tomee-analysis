@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/ManageNameIDService.class
+
+ - link:ManageNameIDService-asmified.java[Asmified]
+
+== References
+

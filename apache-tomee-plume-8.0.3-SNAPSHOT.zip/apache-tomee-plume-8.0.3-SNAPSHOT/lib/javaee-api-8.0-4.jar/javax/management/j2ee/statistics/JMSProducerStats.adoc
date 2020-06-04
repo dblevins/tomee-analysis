@@ -1,0 +1,7 @@
+= javax/management/j2ee/statistics/JMSProducerStats.class
+
+ - link:JMSProducerStats-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.JMSEndpointStats - 1

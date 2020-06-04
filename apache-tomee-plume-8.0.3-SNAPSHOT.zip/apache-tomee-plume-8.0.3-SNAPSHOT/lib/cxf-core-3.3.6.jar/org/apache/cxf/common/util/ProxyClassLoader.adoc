@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ProxyClassLoader.class
+
+ - link:ProxyClassLoader-asmified.java[Asmified]
+
+== References
+

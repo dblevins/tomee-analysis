@@ -1,0 +1,8 @@
+= javax/mail/Quota.class
+
+ - link:Quota-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Quota$Resource - 18
+ - javax.mail.Quota - 1

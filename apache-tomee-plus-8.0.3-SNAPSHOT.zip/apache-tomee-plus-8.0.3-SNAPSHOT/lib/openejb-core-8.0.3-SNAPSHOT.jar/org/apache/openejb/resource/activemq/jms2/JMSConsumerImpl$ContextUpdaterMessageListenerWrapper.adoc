@@ -1,0 +1,8 @@
+= org/apache/openejb/resource/activemq/jms2/JMSConsumerImpl$ContextUpdaterMessageListenerWrapper.class
+
+ - link:JMSConsumerImpl$ContextUpdaterMessageListenerWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageListener - 8
+ - javax.jms.Message - 6

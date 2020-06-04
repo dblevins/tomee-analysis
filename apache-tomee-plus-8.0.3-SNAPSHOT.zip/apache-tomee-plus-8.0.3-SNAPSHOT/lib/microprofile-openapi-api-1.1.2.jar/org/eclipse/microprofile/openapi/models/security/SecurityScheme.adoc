@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/security/SecurityScheme.class
+
+ - link:SecurityScheme-asmified.java[Asmified]
+
+== References
+

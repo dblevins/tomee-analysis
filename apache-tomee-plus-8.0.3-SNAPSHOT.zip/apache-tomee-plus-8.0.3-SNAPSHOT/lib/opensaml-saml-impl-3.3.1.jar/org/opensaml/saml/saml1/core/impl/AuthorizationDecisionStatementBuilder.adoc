@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AuthorizationDecisionStatementBuilder.class
+
+ - link:AuthorizationDecisionStatementBuilder-asmified.java[Asmified]
+
+== References
+

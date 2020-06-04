@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/AttributesExImpl.class
+
+ - link:AttributesExImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/annotation/ParameterName.class
+
+ - link:ParameterName-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

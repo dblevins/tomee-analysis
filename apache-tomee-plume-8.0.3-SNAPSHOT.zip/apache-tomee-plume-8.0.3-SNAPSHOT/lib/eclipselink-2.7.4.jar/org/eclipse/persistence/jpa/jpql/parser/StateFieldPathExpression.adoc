@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/StateFieldPathExpression.class
+
+ - link:StateFieldPathExpression-asmified.java[Asmified]
+
+== References
+

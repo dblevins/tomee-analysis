@@ -1,0 +1,6 @@
+= org/apache/webbeans/proxy/OwbDecoratorProxy.class
+
+ - link:OwbDecoratorProxy-asmified.java[Asmified]
+
+== References
+

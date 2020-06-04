@@ -1,0 +1,7 @@
+= org/apache/jasper/Options.class
+
+ - link:Options-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 1

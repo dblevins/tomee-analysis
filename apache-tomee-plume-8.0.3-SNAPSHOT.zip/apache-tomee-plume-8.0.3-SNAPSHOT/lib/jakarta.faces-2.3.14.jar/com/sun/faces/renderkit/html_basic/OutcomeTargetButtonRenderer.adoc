@@ -1,0 +1,10 @@
+= com/sun/faces/renderkit/html_basic/OutcomeTargetButtonRenderer.class
+
+ - link:OutcomeTargetButtonRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 21
+ - javax.faces.context.ResponseWriter - 15
+ - javax.faces.context.FacesContext - 11
+ - javax.faces.application.NavigationCase - 4

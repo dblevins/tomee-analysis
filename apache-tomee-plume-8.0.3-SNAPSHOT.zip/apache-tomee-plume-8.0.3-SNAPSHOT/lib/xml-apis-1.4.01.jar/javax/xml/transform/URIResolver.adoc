@@ -1,0 +1,6 @@
+= javax/xml/transform/URIResolver.class
+
+ - link:URIResolver-asmified.java[Asmified]
+
+== References
+

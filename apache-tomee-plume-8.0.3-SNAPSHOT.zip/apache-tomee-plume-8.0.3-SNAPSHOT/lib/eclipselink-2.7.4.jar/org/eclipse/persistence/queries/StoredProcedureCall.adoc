@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/StoredProcedureCall.class
+
+ - link:StoredProcedureCall-asmified.java[Asmified]
+
+== References
+

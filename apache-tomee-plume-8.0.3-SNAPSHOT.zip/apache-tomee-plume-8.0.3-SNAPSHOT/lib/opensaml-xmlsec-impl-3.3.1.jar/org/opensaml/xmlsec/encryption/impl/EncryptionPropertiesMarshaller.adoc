@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/EncryptionPropertiesMarshaller.class
+
+ - link:EncryptionPropertiesMarshaller-asmified.java[Asmified]
+
+== References
+

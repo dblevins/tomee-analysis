@@ -1,0 +1,11 @@
+= org/apache/tomee/microprofile/jwt/bval/ValidationConstraints.class
+
+ - link:ValidationConstraints-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.executable.ExecutableValidator - 7
+ - javax.validation.Validator - 2
+ - javax.validation.ValidatorFactory - 2
+ - javax.validation.Validation - 1
+ - javax.validation.ConstraintViolation - 1

@@ -1,0 +1,302 @@
+package asm.org.joda.time.format;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class PeriodFormatterBuilder$PluralAffixDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_SUPER, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", null, "org/joda/time/format/PeriodFormatterBuilder$IgnorableAffix", null);
+
+classWriter.visitInnerClass("org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "org/joda/time/format/PeriodFormatterBuilder", "PluralAffix", ACC_STATIC);
+
+classWriter.visitInnerClass("org/joda/time/format/PeriodFormatterBuilder$IgnorableAffix", "org/joda/time/format/PeriodFormatterBuilder", "IgnorableAffix", ACC_STATIC | ACC_ABSTRACT);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "iSingularText", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "iPluralText", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/format/PeriodFormatterBuilder$IgnorableAffix", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "calculatePrintedLength", "(I)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(ICONST_1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printTo", "(Ljava/lang/StringBuffer;I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "printTo", "(Ljava/io/Writer;I)V", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/Writer", "write", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "parse", "(Ljava/lang/String;I)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "regionMatches", "(ZILjava/lang/String;II)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "matchesOtherAffix", "(ILjava/lang/String;I)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "regionMatches", "(ZILjava/lang/String;II)Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "matchesOtherAffix", "(ILjava/lang/String;I)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scan", "(Ljava/lang/String;I)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ISTORE, 8);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ILOAD, 7);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "regionMatches", "(ZILjava/lang/String;II)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "matchesOtherAffix", "(ILjava/lang/String;I)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "regionMatches", "(ZILjava/lang/String;II)Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "matchesOtherAffix", "(ILjava/lang/String;I)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 9);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAffixes", "()[Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iSingularText", "Ljava/lang/String;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/joda/time/format/PeriodFormatterBuilder$PluralAffix", "iPluralText", "Ljava/lang/String;");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

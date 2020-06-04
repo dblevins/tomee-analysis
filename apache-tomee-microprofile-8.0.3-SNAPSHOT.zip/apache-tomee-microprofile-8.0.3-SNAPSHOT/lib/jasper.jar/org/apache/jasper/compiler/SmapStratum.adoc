@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/SmapStratum.class
+
+ - link:SmapStratum-asmified.java[Asmified]
+
+== References
+

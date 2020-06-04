@@ -1,0 +1,6 @@
+= org/apache/openejb/util/CountingLatch$1.class
+
+ - link:CountingLatch$1-asmified.java[Asmified]
+
+== References
+

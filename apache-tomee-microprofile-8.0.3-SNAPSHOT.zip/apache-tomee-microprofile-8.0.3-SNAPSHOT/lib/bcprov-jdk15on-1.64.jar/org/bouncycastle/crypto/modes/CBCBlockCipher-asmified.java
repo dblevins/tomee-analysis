@@ -1,0 +1,405 @@
+package asm.org.bouncycastle.crypto.modes;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class CBCBlockCipherDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/crypto/modes/CBCBlockCipher", null, "java/lang/Object", new String[] { "org/bouncycastle/crypto/BlockCipher" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "IV", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cbcV", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cbcNextV", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "blockSize", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "cipher", "Lorg/bouncycastle/crypto/BlockCipher;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "encrypting", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/bouncycastle/crypto/BlockCipher;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "getBlockSize", "()I", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "IV", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcNextV", "[B");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUnderlyingCipher", "()Lorg/bouncycastle/crypto/BlockCipher;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(ZLorg/bouncycastle/crypto/CipherParameters;)V", null, new String[] { "java/lang/IllegalArgumentException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "encrypting", "Z");
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "encrypting", "Z");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/crypto/params/ParametersWithIV");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/ParametersWithIV");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/ParametersWithIV", "getIV", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("initialisation vector must be the same length as block size");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "IV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/modes/CBCBlockCipher", "reset", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/ParametersWithIV", "getParameters", "()Lorg/bouncycastle/crypto/CipherParameters;", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/ParametersWithIV", "getParameters", "()Lorg/bouncycastle/crypto/CipherParameters;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "init", "(ZLorg/bouncycastle/crypto/CipherParameters;)V", true);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label3);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("cannot change encrypting state without providing key.");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/modes/CBCBlockCipher", "reset", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "init", "(ZLorg/bouncycastle/crypto/CipherParameters;)V", true);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label4);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("cannot change encrypting state without providing key.");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAlgorithmName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "getAlgorithmName", "()Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("/CBC");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBlockSize", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "getBlockSize", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processBlock", "([BI[BI)I", null, new String[] { "org/bouncycastle/crypto/DataLengthException", "java/lang/IllegalStateException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "encrypting", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/modes/CBCBlockCipher", "encryptBlock", "([BI[BI)I", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/modes/CBCBlockCipher", "decryptBlock", "([BI[BI)I", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "IV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "IV", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcNextV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/util/Arrays", "fill", "([BB)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "reset", "()V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "encryptBlock", "([BI[BI)I", null, new String[] { "org/bouncycastle/crypto/DataLengthException", "java/lang/IllegalStateException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/DataLengthException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("input buffer too short");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/DataLengthException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 5);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(DUP2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitIincInsn(5, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "processBlock", "([BI[BI)I", true);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "decryptBlock", "([BI[BI)I", null, new String[] { "org/bouncycastle/crypto/DataLengthException", "java/lang/IllegalStateException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/DataLengthException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("input buffer too short");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/DataLengthException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcNextV", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cipher", "Lorg/bouncycastle/crypto/BlockCipher;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/BlockCipher", "processBlock", "([BI[BI)I", true);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 6);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "blockSize", "I");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(DUP2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitIincInsn(6, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcNextV", "[B");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcV", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/modes/CBCBlockCipher", "cbcNextV", "[B");
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 7);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

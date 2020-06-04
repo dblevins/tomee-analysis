@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/AbstractMapDecorator.class
+
+ - link:AbstractMapDecorator-asmified.java[Asmified]
+
+== References
+

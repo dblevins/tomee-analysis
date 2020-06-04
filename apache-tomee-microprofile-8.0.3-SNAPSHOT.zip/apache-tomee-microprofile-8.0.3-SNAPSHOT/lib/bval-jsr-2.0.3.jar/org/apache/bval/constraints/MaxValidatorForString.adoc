@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/MaxValidatorForString.class
+
+ - link:MaxValidatorForString-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Max - 5
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 1

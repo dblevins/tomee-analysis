@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/Reference.class
+
+ - link:Reference-asmified.java[Asmified]
+
+== References
+

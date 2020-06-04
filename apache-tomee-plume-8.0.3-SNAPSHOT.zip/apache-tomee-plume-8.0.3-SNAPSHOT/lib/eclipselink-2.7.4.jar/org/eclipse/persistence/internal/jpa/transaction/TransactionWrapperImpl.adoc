@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/transaction/TransactionWrapperImpl.class
+
+ - link:TransactionWrapperImpl-asmified.java[Asmified]
+
+== References
+

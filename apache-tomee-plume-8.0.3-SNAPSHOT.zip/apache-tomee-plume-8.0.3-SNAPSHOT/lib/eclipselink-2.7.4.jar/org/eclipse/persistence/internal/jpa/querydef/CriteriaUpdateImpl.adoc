@@ -1,0 +1,17 @@
+= org/eclipse/persistence/internal/jpa/querydef/CriteriaUpdateImpl.class
+
+ - link:CriteriaUpdateImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.CriteriaUpdate - 12
+ - javax.persistence.criteria.Root - 11
+ - javax.persistence.criteria.Expression - 6
+ - javax.persistence.metamodel.Metamodel - 6
+ - javax.persistence.metamodel.SingularAttribute - 4
+ - javax.persistence.criteria.Predicate - 4
+ - javax.persistence.criteria.CommonAbstractCriteria - 4
+ - javax.persistence.metamodel.EntityType - 2
+ - javax.persistence.criteria.Path - 2
+ - javax.persistence.metamodel.ManagedType - 1
+ - javax.persistence.metamodel.Bindable - 1

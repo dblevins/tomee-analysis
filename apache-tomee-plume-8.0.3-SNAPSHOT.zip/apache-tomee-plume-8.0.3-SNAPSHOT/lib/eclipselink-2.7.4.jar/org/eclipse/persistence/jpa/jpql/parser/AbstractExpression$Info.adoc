@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/AbstractExpression$Info.class
+
+ - link:AbstractExpression$Info-asmified.java[Asmified]
+
+== References
+

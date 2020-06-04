@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jaxb/attachment/AttachmentMarshallerAdapter.class
+
+ - link:AttachmentMarshallerAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.attachment.AttachmentMarshaller - 13
+ - javax.activation.DataHandler - 4

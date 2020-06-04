@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/tools/VocabularyGenerator.class
+
+ - link:VocabularyGenerator-asmified.java[Asmified]
+
+== References
+

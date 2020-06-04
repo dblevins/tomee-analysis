@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/StaticBucketMap$EntryIterator.class
+
+ - link:StaticBucketMap$EntryIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/validation/ValidatingLifecycleEventManager.class
+
+ - link:ValidatingLifecycleEventManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openejb/core/interceptor/InterceptorStack.class
+
+ - link:InterceptorStack-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 15
+ - javax.xml.rpc.handler.MessageContext - 2
+ - javax.xml.ws.handler.MessageContext - 2

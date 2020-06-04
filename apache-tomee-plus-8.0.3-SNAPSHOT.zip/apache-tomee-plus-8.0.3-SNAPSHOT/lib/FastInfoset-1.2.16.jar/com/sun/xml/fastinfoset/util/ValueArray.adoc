@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/ValueArray.class
+
+ - link:ValueArray-asmified.java[Asmified]
+
+== References
+

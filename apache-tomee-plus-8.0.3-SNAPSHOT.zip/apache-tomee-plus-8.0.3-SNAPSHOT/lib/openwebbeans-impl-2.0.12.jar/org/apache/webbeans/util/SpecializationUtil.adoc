@@ -1,0 +1,11 @@
+= org/apache/webbeans/util/SpecializationUtil.class
+
+ - link:SpecializationUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 38
+ - javax.enterprise.inject.Typed - 12
+ - javax.enterprise.inject.spi.BeanAttributes - 3
+ - javax.enterprise.inject.Specializes - 1
+ - javax.enterprise.inject.Alternative - 1

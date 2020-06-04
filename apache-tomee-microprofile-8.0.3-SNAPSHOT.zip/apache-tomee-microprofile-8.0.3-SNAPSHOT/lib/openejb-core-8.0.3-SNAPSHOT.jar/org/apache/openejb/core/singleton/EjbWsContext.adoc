@@ -1,0 +1,10 @@
+= org/apache/openejb/core/singleton/EjbWsContext.class
+
+ - link:EjbWsContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.SessionContext - 7
+ - javax.xml.ws.EndpointReference - 4
+ - javax.xml.ws.handler.MessageContext - 4
+ - javax.xml.ws.WebServiceContext - 1

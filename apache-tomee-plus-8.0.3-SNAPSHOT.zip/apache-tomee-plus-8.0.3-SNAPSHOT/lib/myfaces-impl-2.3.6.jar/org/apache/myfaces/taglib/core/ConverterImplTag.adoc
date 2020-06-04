@@ -1,0 +1,13 @@
+= org/apache/myfaces/taglib/core/ConverterImplTag.class
+
+ - link:ConverterImplTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 25
+ - javax.faces.convert.Converter - 8
+ - javax.faces.context.FacesContext - 6
+ - javax.servlet.jsp.JspException - 6
+ - javax.el.ELContext - 5
+ - javax.faces.application.Application - 4
+ - javax.faces.webapp.ConverterELTag - 3

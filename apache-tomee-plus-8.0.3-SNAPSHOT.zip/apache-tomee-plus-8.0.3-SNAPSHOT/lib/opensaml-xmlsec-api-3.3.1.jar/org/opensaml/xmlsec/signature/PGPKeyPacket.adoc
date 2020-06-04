@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/PGPKeyPacket.class
+
+ - link:PGPKeyPacket-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOXMLHelperLoadOptionsType.class
+
+ - link:SDOXMLHelperLoadOptionsType-asmified.java[Asmified]
+
+== References
+

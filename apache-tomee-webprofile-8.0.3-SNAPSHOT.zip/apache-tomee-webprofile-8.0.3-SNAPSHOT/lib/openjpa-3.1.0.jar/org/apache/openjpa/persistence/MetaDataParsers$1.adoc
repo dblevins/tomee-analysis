@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/MetaDataParsers$1.class
+
+ - link:MetaDataParsers$1-asmified.java[Asmified]
+
+== References
+

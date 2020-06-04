@@ -1,0 +1,6 @@
+= org/apache/catalina/session/PersistentManagerBase$PrivilegedStoreClear.class
+
+ - link:PersistentManagerBase$PrivilegedStoreClear-asmified.java[Asmified]
+
+== References
+

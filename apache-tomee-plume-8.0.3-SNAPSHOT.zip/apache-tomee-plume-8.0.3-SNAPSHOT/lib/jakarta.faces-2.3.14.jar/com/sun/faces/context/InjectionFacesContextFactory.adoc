@@ -1,0 +1,12 @@
+= com/sun/faces/context/InjectionFacesContextFactory.class
+
+ - link:InjectionFacesContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.context.FacesContextFactory - 10
+ - javax.faces.context.ExternalContext - 4
+ - javax.servlet.ServletRequest - 4
+ - javax.faces.lifecycle.Lifecycle - 2
+ - javax.faces.FacesException - 1

@@ -1,0 +1,9 @@
+= org/apache/webbeans/intercept/InterceptorResolutionService$BeanInterceptorInfo.class
+
+ - link:InterceptorResolutionService$BeanInterceptorInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Interceptor - 9
+ - javax.enterprise.inject.spi.InterceptionType - 3
+ - javax.enterprise.inject.spi.Decorator - 3

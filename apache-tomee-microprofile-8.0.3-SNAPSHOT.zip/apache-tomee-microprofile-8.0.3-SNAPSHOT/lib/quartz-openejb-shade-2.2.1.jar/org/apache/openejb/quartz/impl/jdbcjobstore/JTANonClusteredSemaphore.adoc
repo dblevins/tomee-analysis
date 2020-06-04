@@ -1,0 +1,10 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore.class
+
+ - link:JTANonClusteredSemaphore-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 9
+ - javax.transaction.TransactionManager - 4
+ - javax.transaction.SystemException - 2
+ - javax.transaction.Synchronization - 1

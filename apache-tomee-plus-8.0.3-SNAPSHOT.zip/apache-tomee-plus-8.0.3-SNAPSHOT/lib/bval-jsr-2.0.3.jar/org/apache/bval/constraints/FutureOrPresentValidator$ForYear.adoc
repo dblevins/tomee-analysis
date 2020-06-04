@@ -1,0 +1,6 @@
+= org/apache/bval/constraints/FutureOrPresentValidator$ForYear.class
+
+ - link:FutureOrPresentValidator$ForYear-asmified.java[Asmified]
+
+== References
+

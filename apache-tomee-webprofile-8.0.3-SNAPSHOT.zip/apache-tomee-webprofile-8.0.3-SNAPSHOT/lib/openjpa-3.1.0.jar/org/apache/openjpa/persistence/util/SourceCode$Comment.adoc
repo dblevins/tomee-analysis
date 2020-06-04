@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/util/SourceCode$Comment.class
+
+ - link:SourceCode$Comment-asmified.java[Asmified]
+
+== References
+

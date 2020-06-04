@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/partitioning/FieldPartitioningPolicy.class
+
+ - link:FieldPartitioningPolicy-asmified.java[Asmified]
+
+== References
+

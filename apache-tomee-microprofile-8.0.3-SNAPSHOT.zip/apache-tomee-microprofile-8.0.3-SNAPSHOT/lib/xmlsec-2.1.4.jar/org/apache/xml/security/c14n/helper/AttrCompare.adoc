@@ -1,0 +1,6 @@
+= org/apache/xml/security/c14n/helper/AttrCompare.class
+
+ - link:AttrCompare-asmified.java[Asmified]
+
+== References
+

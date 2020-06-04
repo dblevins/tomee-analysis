@@ -1,0 +1,9 @@
+= org/apache/openejb/config/ConfigurationDeployer.class
+
+ - link:ConfigurationDeployer-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 2
+ - javax.persistence.ValidationMode - 2
+ - javax.persistence.Entity - 1

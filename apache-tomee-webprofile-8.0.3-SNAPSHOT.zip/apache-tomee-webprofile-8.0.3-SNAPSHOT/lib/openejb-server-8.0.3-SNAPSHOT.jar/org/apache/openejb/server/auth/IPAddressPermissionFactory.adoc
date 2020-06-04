@@ -1,0 +1,6 @@
+= org/apache/openejb/server/auth/IPAddressPermissionFactory.class
+
+ - link:IPAddressPermissionFactory-asmified.java[Asmified]
+
+== References
+

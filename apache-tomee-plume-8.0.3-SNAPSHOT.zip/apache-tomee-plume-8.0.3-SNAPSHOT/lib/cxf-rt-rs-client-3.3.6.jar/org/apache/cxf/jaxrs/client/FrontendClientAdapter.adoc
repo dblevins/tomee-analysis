@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/FrontendClientAdapter.class
+
+ - link:FrontendClientAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/proxy/LocalBeanProxyFactory$Proxy.class
+
+ - link:LocalBeanProxyFactory$Proxy-asmified.java[Asmified]
+
+== References
+

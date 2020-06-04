@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/i18n/ExceptionResource.class
+
+ - link:ExceptionResource-asmified.java[Asmified]
+
+== References
+

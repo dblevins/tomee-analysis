@@ -1,0 +1,6 @@
+= org/apache/openejb/osgi/client/LocalInitialContextFactory.class
+
+ - link:LocalInitialContextFactory-asmified.java[Asmified]
+
+== References
+

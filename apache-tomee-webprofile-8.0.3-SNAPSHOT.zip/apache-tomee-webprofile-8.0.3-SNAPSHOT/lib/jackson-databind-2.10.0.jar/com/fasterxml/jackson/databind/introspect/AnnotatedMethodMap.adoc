@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/AnnotatedMethodMap.class
+
+ - link:AnnotatedMethodMap-asmified.java[Asmified]
+
+== References
+

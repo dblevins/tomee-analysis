@@ -1,0 +1,6 @@
+= commonj/sdo/ChangeSummary$Setting.class
+
+ - link:ChangeSummary$Setting-asmified.java[Asmified]
+
+== References
+

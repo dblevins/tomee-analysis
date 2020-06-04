@@ -1,0 +1,6 @@
+= org/apache/geronimo/connector/outbound/PoolIdleReleaserTimer.class
+
+ - link:PoolIdleReleaserTimer-asmified.java[Asmified]
+
+== References
+

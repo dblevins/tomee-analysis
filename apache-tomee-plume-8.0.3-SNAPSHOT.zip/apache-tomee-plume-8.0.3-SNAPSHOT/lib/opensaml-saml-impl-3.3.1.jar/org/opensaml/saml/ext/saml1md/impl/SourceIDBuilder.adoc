@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml1md/impl/SourceIDBuilder.class
+
+ - link:SourceIDBuilder-asmified.java[Asmified]
+
+== References
+

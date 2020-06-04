@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/SimpleOutputElement$AttrName.class
+
+ - link:SimpleOutputElement$AttrName-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/jasper/tagplugins/jstl/core/When.class
+
+ - link:When-asmified.java[Asmified]
+
+== References
+

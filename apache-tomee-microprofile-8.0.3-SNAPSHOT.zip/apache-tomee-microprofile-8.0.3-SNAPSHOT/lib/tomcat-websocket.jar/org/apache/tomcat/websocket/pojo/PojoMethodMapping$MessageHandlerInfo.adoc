@@ -1,0 +1,14 @@
+= org/apache/tomcat/websocket/pojo/PojoMethodMapping$MessageHandlerInfo.class
+
+ - link:PojoMethodMapping$MessageHandlerInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.DeploymentException - 47
+ - javax.websocket.Session - 16
+ - javax.websocket.EndpointConfig - 11
+ - javax.websocket.OnMessage - 3
+ - javax.websocket.server.PathParam - 3
+ - javax.websocket.DecodeException - 2
+ - javax.websocket.MessageHandler - 1
+ - javax.websocket.PongMessage - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/common/xmlschema/SchemaCollection.class
+
+ - link:SchemaCollection-asmified.java[Asmified]
+
+== References
+

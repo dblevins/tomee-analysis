@@ -1,0 +1,6 @@
+= org/apache/commons/digester/plugins/PluginAssertionFailure.class
+
+ - link:PluginAssertionFailure-asmified.java[Asmified]
+
+== References
+

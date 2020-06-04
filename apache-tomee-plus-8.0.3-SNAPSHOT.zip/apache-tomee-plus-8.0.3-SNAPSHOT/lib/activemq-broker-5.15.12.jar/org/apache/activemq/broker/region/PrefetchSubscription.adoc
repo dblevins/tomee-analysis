@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/PrefetchSubscription.class
+
+ - link:PrefetchSubscription-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 23

@@ -1,0 +1,9 @@
+= javax/faces/component/UIColumn.class
+
+ - link:UIColumn-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.component.UIColumn - 4
+ - javax.faces.component.UIComponentBase - 3

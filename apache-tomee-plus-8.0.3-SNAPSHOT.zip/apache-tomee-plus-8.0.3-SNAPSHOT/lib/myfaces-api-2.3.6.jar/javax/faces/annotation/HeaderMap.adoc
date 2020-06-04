@@ -1,0 +1,7 @@
+= javax/faces/annotation/HeaderMap.class
+
+ - link:HeaderMap-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/PolicyRegistryImpl.class
+
+ - link:PolicyRegistryImpl-asmified.java[Asmified]
+
+== References
+

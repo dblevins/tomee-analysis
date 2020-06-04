@@ -1,0 +1,7 @@
+= org/apache/catalina/valves/ExtendedAccessLogValve$CookieElement.class
+
+ - link:ExtendedAccessLogValve$CookieElement-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 4

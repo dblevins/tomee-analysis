@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/packaging/mime/MultipartDataSource.class
+
+ - link:MultipartDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1

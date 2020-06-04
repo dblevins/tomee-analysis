@@ -1,0 +1,7 @@
+= org/apache/jasper/compiler/JarScannerFactory.class
+
+ - link:JarScannerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 3

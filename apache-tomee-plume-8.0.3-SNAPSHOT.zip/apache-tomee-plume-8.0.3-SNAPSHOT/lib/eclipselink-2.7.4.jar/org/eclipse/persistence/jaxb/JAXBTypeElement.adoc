@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/JAXBTypeElement.class
+
+ - link:JAXBTypeElement-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3

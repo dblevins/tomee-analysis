@@ -1,0 +1,18 @@
+= com/sun/faces/component/search/SearchExpressionHandlerImpl.class
+
+ - link:SearchExpressionHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.search.SearchExpressionContext - 59
+ - javax.faces.context.FacesContext - 56
+ - javax.faces.component.search.SearchExpressionHandler - 36
+ - javax.faces.component.UIComponent - 26
+ - javax.faces.component.ContextCallback - 23
+ - javax.faces.application.Application - 22
+ - javax.faces.component.search.SearchExpressionHint - 16
+ - javax.faces.component.search.SearchKeywordResolver - 10
+ - javax.faces.component.search.ComponentNotFoundException - 8
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.component.search.SearchKeywordContext - 3
+ - javax.faces.FacesException - 2

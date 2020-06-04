@@ -1,0 +1,11 @@
+= org/apache/openejb/core/BaseSessionContext.class
+
+ - link:BaseSessionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.handler.MessageContext - 4
+ - javax.ejb.EJBObject - 2
+ - javax.transaction.UserTransaction - 2
+ - javax.ejb.EJBLocalObject - 2
+ - javax.ejb.SessionContext - 1

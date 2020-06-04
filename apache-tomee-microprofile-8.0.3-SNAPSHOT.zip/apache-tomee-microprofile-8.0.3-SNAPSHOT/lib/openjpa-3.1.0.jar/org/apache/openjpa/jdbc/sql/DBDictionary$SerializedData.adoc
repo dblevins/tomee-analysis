@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/DBDictionary$SerializedData.class
+
+ - link:DBDictionary$SerializedData-asmified.java[Asmified]
+
+== References
+

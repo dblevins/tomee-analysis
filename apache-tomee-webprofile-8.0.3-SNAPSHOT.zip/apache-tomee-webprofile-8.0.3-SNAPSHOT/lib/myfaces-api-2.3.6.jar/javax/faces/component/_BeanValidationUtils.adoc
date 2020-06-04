@@ -1,0 +1,8 @@
+= javax/faces/component/_BeanValidationUtils.class
+
+ - link:_BeanValidationUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.validator.BeanValidator - 1
+ - javax.faces.validator.Validator - 1

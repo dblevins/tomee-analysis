@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/ValueDecoderFactory$LongDecoder.class
+
+ - link:ValueDecoderFactory$LongDecoder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/webservices/PortAddressRegistryImpl.class
+
+ - link:PortAddressRegistryImpl-asmified.java[Asmified]
+
+== References
+

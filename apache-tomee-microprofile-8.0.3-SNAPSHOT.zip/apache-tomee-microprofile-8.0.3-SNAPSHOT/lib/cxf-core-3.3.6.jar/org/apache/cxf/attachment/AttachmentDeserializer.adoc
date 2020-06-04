@@ -1,0 +1,8 @@
+= org/apache/cxf/attachment/AttachmentDeserializer.class
+
+ - link:AttachmentDeserializer-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 4
+ - javax.activation.DataHandler - 2

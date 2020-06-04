@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/jcajce/provider/xmss/XMSSMTSignatureSpi$withShake128.class
+
+ - link:XMSSMTSignatureSpi$withShake128-asmified.java[Asmified]
+
+== References
+

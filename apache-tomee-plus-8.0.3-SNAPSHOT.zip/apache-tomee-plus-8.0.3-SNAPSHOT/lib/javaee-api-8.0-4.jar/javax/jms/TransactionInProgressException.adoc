@@ -1,0 +1,8 @@
+= javax/jms/TransactionInProgressException.class
+
+ - link:TransactionInProgressException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.TransactionInProgressException - 1

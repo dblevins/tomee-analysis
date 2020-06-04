@@ -1,0 +1,6 @@
+= com/sun/faces/application/ApplicationResourceBundle.class
+
+ - link:ApplicationResourceBundle-asmified.java[Asmified]
+
+== References
+

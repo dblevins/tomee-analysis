@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl11/WSDLServiceUtils.class
+
+ - link:WSDLServiceUtils-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/classloader/DefaultClassLoaderComparator.class
+
+ - link:DefaultClassLoaderComparator-asmified.java[Asmified]
+
+== References
+

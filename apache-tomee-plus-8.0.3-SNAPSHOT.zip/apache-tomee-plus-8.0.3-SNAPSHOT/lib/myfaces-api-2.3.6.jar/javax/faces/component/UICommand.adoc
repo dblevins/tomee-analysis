@@ -1,0 +1,25 @@
+= javax/faces/component/UICommand.class
+
+ - link:UICommand-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UICommand - 17
+ - javax.faces.component.StateHelper - 16
+ - javax.faces.el.MethodBinding - 10
+ - javax.faces.event.ActionListener - 8
+ - javax.el.MethodExpression - 8
+ - javax.faces.component.UICommand$PropertyKeys - 8
+ - javax.faces.event.FacesEvent - 7
+ - javax.faces.component._MethodBindingToMethodExpression - 5
+ - javax.faces.event.ActionEvent - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.event.PhaseId - 4
+ - javax.faces.component.UIComponentBase - 4
+ - javax.faces.event.FacesListener - 3
+ - javax.faces.component.ActionSource - 3
+ - javax.faces.component._MethodExpressionToMethodBinding - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.ActionSource2 - 1

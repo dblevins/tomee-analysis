@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ROPStoreManager.class
+
+ - link:ROPStoreManager-asmified.java[Asmified]
+
+== References
+

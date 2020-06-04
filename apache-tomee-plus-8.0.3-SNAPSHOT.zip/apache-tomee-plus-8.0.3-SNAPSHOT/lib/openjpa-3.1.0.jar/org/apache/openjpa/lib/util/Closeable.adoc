@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/Closeable.class
+
+ - link:Closeable-asmified.java[Asmified]
+
+== References
+

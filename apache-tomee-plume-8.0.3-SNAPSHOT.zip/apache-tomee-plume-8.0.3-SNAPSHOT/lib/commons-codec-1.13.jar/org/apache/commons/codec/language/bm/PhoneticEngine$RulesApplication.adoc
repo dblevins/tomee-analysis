@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication.class
+
+ - link:PhoneticEngine$RulesApplication-asmified.java[Asmified]
+
+== References
+

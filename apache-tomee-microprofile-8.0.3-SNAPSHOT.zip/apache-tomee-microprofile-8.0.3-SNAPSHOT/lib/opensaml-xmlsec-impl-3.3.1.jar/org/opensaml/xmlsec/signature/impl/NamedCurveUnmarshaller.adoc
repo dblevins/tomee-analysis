@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/NamedCurveUnmarshaller.class
+
+ - link:NamedCurveUnmarshaller-asmified.java[Asmified]
+
+== References
+

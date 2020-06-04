@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/trace/Closure.class
+
+ - link:Closure-asmified.java[Asmified]
+
+== References
+

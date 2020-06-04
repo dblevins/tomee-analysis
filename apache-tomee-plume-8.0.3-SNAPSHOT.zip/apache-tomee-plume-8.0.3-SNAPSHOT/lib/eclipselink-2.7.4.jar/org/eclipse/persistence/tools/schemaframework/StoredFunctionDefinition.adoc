@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/StoredFunctionDefinition.class
+
+ - link:StoredFunctionDefinition-asmified.java[Asmified]
+
+== References
+

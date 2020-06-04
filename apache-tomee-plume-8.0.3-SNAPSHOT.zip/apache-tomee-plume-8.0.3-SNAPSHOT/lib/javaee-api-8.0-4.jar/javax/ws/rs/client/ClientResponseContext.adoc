@@ -1,0 +1,13 @@
+= javax/ws/rs/client/ClientResponseContext.class
+
+ - link:ClientResponseContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Link - 2
+ - javax.ws.rs.core.Response$StatusType - 2
+ - javax.ws.rs.core.MultivaluedMap - 1
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.core.Link$Builder - 1
+ - javax.ws.rs.core.EntityTag - 1
+ - javax.ws.rs.core.NewCookie - 1

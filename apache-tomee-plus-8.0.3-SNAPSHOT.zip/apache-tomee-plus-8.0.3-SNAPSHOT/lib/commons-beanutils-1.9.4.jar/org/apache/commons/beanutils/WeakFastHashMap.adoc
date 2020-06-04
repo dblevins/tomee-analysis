@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/WeakFastHashMap.class
+
+ - link:WeakFastHashMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/PrivateOwned.class
+
+ - link:PrivateOwned-asmified.java[Asmified]
+
+== References
+

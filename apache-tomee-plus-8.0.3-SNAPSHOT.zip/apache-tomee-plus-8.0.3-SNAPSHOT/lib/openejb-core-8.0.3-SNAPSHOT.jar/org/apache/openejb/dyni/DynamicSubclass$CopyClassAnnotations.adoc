@@ -1,0 +1,6 @@
+= org/apache/openejb/dyni/DynamicSubclass$CopyClassAnnotations.class
+
+ - link:DynamicSubclass$CopyClassAnnotations-asmified.java[Asmified]
+
+== References
+

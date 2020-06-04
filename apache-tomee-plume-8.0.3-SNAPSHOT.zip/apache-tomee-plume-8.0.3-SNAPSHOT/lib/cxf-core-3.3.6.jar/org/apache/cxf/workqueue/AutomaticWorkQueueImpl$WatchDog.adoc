@@ -1,0 +1,6 @@
+= org/apache/cxf/workqueue/AutomaticWorkQueueImpl$WatchDog.class
+
+ - link:AutomaticWorkQueueImpl$WatchDog-asmified.java[Asmified]
+
+== References
+

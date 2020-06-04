@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/messaging/Token.class
+
+ - link:Token-asmified.java[Asmified]
+
+== References
+

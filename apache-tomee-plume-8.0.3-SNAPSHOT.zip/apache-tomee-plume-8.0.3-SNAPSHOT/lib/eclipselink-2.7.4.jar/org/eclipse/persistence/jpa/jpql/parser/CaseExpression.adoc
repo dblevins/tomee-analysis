@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/CaseExpression.class
+
+ - link:CaseExpression-asmified.java[Asmified]
+
+== References
+

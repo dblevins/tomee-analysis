@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/weblogic/ClassSummaryDetail.class
+
+ - link:ClassSummaryDetail-asmified.java[Asmified]
+
+== References
+

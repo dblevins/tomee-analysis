@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor$CustomValidator.class
+
+ - link:AbstractUsernameTokenAuthenticatingInterceptor$CustomValidator-asmified.java[Asmified]
+
+== References
+

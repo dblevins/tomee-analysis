@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AttributeQueryImpl.class
+
+ - link:AttributeQueryImpl-asmified.java[Asmified]
+
+== References
+

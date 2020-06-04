@@ -1,0 +1,6 @@
+= com/sun/faces/application/annotation/DelegatedWebServiceRefScanner.class
+
+ - link:DelegatedWebServiceRefScanner-asmified.java[Asmified]
+
+== References
+

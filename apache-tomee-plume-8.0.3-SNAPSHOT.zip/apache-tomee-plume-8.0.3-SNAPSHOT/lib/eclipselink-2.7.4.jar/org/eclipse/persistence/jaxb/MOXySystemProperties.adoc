@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/MOXySystemProperties.class
+
+ - link:MOXySystemProperties-asmified.java[Asmified]
+
+== References
+

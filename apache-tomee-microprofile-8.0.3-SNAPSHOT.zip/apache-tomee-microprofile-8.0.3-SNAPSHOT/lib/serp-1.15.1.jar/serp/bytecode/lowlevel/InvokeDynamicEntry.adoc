@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/InvokeDynamicEntry.class
+
+ - link:InvokeDynamicEntry-asmified.java[Asmified]
+
+== References
+

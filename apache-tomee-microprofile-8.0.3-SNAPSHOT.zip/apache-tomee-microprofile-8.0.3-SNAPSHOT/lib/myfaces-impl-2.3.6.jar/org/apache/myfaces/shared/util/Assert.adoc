@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/Assert.class
+
+ - link:Assert-asmified.java[Asmified]
+
+== References
+

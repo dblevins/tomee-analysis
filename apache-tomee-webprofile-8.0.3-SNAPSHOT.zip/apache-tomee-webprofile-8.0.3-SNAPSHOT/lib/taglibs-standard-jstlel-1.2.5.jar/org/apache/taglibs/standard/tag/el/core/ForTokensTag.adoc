@@ -1,0 +1,11 @@
+= org/apache/taglibs/standard/tag/el/core/ForTokensTag.class
+
+ - link:ForTokensTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 10
+ - javax.servlet.jsp.tagext.Tag - 5
+ - javax.servlet.jsp.JspException - 2
+ - javax.servlet.jsp.tagext.IterationTag - 1
+ - javax.servlet.jsp.jstl.core.LoopTag - 1

@@ -1,0 +1,6 @@
+= org/opensaml/core/xml/config/AbstractXMLObjectProviderInitializer.class
+
+ - link:AbstractXMLObjectProviderInitializer-asmified.java[Asmified]
+
+== References
+

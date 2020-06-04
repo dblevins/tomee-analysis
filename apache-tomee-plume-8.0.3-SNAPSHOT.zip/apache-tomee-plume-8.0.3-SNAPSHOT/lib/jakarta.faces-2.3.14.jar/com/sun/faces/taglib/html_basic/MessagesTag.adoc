@@ -1,0 +1,11 @@
+= com/sun/faces/taglib/html_basic/MessagesTag.class
+
+ - link:MessagesTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 140
+ - javax.faces.component.UIMessages - 22
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.servlet.jsp.JspException - 6
+ - javax.faces.component.UIComponent - 3

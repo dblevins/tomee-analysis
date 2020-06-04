@@ -1,0 +1,9 @@
+= javax/faces/event/PreValidateEvent.class
+
+ - link:PreValidateEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.context.FacesContext - 2

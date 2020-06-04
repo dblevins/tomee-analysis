@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/keyvalue/UnmodifiableMapEntry.class
+
+ - link:UnmodifiableMapEntry-asmified.java[Asmified]
+
+== References
+

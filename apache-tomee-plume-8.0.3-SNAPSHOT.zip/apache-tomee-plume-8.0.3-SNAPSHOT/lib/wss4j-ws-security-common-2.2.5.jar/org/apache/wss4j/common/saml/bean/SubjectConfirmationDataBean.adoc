@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/SubjectConfirmationDataBean.class
+
+ - link:SubjectConfirmationDataBean-asmified.java[Asmified]
+
+== References
+

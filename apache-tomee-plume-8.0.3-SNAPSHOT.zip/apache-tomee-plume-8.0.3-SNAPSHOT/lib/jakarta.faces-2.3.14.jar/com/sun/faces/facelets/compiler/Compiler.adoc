@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/compiler/Compiler.class
+
+ - link:Compiler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagDecorator - 11
+ - javax.faces.view.facelets.FaceletHandler - 6
+ - javax.el.ExpressionFactory - 5
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.view.facelets.FaceletException - 2

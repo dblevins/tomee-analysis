@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/jmx/BrokerView.class
+
+ - link:BrokerView-asmified.java[Asmified]
+
+== References
+

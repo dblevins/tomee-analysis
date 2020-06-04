@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/InjectionInfo.class
+
+ - link:InjectionInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/UnknownExtensionDeserializer.class
+
+ - link:UnknownExtensionDeserializer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/configuration/NullConfigurer.class
+
+ - link:NullConfigurer-asmified.java[Asmified]
+
+== References
+

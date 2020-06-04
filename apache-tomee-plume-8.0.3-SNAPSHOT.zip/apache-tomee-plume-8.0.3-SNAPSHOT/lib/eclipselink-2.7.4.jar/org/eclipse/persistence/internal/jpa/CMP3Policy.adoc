@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/CMP3Policy.class
+
+ - link:CMP3Policy-asmified.java[Asmified]
+
+== References
+

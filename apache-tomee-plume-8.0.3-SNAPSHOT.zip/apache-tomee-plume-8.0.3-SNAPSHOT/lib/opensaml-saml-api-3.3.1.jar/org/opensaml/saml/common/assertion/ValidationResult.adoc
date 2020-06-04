@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/assertion/ValidationResult.class
+
+ - link:ValidationResult-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.concurrent.ThreadSafe - 1

@@ -1,0 +1,15 @@
+= org/apache/openjpa/persistence/meta/AbstractManagedType.class
+
+ - link:AbstractManagedType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute - 41
+ - javax.persistence.metamodel.SingularAttribute - 19
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 18
+ - javax.persistence.metamodel.MapAttribute - 8
+ - javax.persistence.metamodel.ListAttribute - 8
+ - javax.persistence.metamodel.SetAttribute - 8
+ - javax.persistence.metamodel.CollectionAttribute - 8
+ - javax.persistence.metamodel.ManagedType - 2
+ - javax.persistence.metamodel.PluralAttribute - 2

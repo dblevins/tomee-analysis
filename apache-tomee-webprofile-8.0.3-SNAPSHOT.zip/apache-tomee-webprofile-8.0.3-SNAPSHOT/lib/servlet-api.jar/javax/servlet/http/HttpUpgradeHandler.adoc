@@ -1,0 +1,7 @@
+= javax/servlet/http/HttpUpgradeHandler.class
+
+ - link:HttpUpgradeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.WebConnection - 1

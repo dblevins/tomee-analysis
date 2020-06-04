@@ -1,0 +1,6 @@
+= org/apache/openejb/util/classloader/MultipleClassLoader.class
+
+ - link:MultipleClassLoader-asmified.java[Asmified]
+
+== References
+

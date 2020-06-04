@@ -1,0 +1,6 @@
+= org/apache/openejb/observer/ObserverManager$NotAnObserverException.class
+
+ - link:ObserverManager$NotAnObserverException-asmified.java[Asmified]
+
+== References
+

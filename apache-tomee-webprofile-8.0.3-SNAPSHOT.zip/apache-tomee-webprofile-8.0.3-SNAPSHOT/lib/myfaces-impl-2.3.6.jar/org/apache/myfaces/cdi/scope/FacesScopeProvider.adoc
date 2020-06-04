@@ -1,0 +1,7 @@
+= org/apache/myfaces/cdi/scope/FacesScopeProvider.class
+
+ - link:FacesScopeProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

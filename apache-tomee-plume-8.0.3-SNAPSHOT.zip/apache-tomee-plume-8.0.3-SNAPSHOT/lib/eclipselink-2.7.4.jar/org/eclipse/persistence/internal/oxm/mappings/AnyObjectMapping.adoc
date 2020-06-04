@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/AnyObjectMapping.class
+
+ - link:AnyObjectMapping-asmified.java[Asmified]
+
+== References
+

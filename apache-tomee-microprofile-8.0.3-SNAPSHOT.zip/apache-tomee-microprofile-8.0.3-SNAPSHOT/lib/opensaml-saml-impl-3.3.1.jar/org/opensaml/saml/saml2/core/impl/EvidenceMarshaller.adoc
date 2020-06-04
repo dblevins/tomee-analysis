@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/EvidenceMarshaller.class
+
+ - link:EvidenceMarshaller-asmified.java[Asmified]
+
+== References
+

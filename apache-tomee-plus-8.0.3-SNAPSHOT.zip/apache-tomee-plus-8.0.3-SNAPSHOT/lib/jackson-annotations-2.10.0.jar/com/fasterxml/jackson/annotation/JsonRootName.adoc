@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonRootName.class
+
+ - link:JsonRootName-asmified.java[Asmified]
+
+== References
+

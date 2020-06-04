@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/Opcodes.class
+
+ - link:Opcodes-asmified.java[Asmified]
+
+== References
+

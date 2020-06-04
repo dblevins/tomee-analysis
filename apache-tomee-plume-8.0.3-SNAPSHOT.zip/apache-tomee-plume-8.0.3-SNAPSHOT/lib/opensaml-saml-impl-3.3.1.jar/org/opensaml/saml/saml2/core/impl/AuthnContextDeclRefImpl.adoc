@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthnContextDeclRefImpl.class
+
+ - link:AuthnContextDeclRefImpl-asmified.java[Asmified]
+
+== References
+

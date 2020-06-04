@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/emitter/EmitterException.class
+
+ - link:EmitterException-asmified.java[Asmified]
+
+== References
+

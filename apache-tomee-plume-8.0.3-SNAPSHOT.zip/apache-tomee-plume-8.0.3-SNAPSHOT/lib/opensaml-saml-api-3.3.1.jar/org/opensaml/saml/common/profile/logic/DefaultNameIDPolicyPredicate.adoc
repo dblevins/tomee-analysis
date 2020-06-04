@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/logic/DefaultNameIDPolicyPredicate.class
+
+ - link:DefaultNameIDPolicyPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 5
+ - javax.annotation.Nonnull - 1

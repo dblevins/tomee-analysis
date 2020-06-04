@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/function/makeListFunction.class
+
+ - link:makeListFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

@@ -1,0 +1,16 @@
+= org/metatype/sxc/jaxb/RuntimeContext.class
+
+ - link:RuntimeContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 25
+ - javax.xml.bind.ValidationEventHandler - 5
+ - javax.xml.bind.UnmarshalException - 4
+ - javax.xml.bind.Unmarshaller$Listener - 4
+ - javax.xml.bind.Marshaller$Listener - 4
+ - javax.xml.bind.helpers.ValidationEventImpl - 4
+ - javax.xml.bind.ValidationEvent - 2
+ - javax.xml.bind.Unmarshaller - 2
+ - javax.xml.bind.ValidationEventLocator - 2
+ - javax.xml.bind.Marshaller - 2

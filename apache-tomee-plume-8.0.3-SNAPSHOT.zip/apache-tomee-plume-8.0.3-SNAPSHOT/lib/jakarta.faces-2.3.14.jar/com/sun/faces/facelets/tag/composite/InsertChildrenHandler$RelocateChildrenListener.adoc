@@ -1,0 +1,16 @@
+= com/sun/faces/facelets/tag/composite/InsertChildrenHandler$RelocateChildrenListener.class
+
+ - link:InsertChildrenHandler$RelocateChildrenListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 27
+ - javax.faces.view.facelets.FaceletContext - 10
+ - javax.faces.view.Location - 8
+ - javax.faces.application.Resource - 4
+ - javax.faces.view.facelets.TagAttribute - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.ComponentSystemEvent - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.event.AbortProcessingException - 1

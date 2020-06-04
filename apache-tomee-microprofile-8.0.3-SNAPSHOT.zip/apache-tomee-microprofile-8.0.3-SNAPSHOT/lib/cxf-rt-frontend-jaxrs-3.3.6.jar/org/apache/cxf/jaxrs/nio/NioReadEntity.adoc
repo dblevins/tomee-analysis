@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/nio/NioReadEntity.class
+
+ - link:NioReadEntity-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletInputStream - 4
+ - javax.servlet.http.HttpServletRequest - 3
+ - javax.ws.rs.container.AsyncResponse - 1
+ - javax.servlet.ReadListener - 1

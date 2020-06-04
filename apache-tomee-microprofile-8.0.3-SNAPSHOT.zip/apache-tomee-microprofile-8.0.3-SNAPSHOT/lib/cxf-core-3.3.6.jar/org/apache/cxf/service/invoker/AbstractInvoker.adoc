@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/AbstractInvoker.class
+
+ - link:AbstractInvoker-asmified.java[Asmified]
+
+== References
+

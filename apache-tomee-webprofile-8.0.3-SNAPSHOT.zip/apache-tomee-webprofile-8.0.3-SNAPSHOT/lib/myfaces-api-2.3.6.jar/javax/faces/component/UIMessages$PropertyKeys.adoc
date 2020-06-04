@@ -1,0 +1,7 @@
+= javax/faces/component/UIMessages$PropertyKeys.class
+
+ - link:UIMessages$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIMessages$PropertyKeys - 36

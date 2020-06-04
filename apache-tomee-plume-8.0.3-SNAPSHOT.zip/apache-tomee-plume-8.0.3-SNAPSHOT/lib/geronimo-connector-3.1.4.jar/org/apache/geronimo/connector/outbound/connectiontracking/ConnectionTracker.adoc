@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/outbound/connectiontracking/ConnectionTracker.class
+
+ - link:ConnectionTracker-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 1

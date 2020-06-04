@@ -1,0 +1,7 @@
+= org/apache/cxf/transport/AbstractMultiplexDestination.class
+
+ - link:AbstractMultiplexDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 6

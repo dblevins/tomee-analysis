@@ -1,0 +1,8 @@
+= org/apache/webbeans/jsf/OwbApplicationFactory.class
+
+ - link:OwbApplicationFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ApplicationFactory - 14
+ - javax.faces.application.Application - 12

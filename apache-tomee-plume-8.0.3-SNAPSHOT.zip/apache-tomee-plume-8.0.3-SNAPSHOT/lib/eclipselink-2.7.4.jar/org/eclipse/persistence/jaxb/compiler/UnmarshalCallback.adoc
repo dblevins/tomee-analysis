@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/compiler/UnmarshalCallback.class
+
+ - link:UnmarshalCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 1

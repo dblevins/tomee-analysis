@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/Assembler$7$1.class
+
+ - link:Assembler$7$1-asmified.java[Asmified]
+
+== References
+

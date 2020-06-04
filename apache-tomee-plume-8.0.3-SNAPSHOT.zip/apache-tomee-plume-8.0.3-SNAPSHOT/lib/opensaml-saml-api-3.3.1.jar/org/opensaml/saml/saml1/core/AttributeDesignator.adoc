@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml1/core/AttributeDesignator.class
+
+ - link:AttributeDesignator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6
+ - javax.annotation.Nullable - 4

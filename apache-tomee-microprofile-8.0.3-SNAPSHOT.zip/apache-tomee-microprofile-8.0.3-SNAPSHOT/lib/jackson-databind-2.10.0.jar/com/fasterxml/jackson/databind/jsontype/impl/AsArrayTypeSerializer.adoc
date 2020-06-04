@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeSerializer.class
+
+ - link:AsArrayTypeSerializer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/Nulls.class
+
+ - link:Nulls-asmified.java[Asmified]
+
+== References
+

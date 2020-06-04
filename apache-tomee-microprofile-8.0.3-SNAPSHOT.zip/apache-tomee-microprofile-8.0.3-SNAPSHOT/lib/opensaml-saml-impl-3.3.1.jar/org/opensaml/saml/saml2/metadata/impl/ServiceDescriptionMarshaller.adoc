@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/ServiceDescriptionMarshaller.class
+
+ - link:ServiceDescriptionMarshaller-asmified.java[Asmified]
+
+== References
+

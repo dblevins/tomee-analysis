@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/transformer/TransformIdentity$ChildOutputMethod.class
+
+ - link:TransformIdentity$ChildOutputMethod-asmified.java[Asmified]
+
+== References
+

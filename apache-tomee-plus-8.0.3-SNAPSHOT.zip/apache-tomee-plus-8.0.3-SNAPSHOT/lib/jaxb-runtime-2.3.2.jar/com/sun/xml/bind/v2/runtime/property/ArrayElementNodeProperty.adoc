@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/ArrayElementNodeProperty.class
+
+ - link:ArrayElementNodeProperty-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/AbstractStoredQueryImpl.class
+
+ - link:AbstractStoredQueryImpl-asmified.java[Asmified]
+
+== References
+

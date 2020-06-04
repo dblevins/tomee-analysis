@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/ExpressionBuilderVisitor$InExpressionExpressionBuilder.class
+
+ - link:ExpressionBuilderVisitor$InExpressionExpressionBuilder-asmified.java[Asmified]
+
+== References
+

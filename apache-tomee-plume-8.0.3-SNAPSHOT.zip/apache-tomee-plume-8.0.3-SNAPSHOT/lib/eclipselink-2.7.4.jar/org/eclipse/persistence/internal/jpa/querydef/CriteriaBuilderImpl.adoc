@@ -1,0 +1,40 @@
+= org/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl.class
+
+ - link:CriteriaBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 480
+ - javax.persistence.metamodel.Metamodel - 298
+ - javax.persistence.criteria.Predicate - 81
+ - javax.persistence.criteria.JoinType - 18
+ - javax.persistence.criteria.Predicate$BooleanOperator - 14
+ - javax.persistence.criteria.Path - 12
+ - javax.persistence.metamodel.ManagedType - 12
+ - javax.persistence.metamodel.Bindable - 11
+ - javax.persistence.metamodel.Type$PersistenceType - 9
+ - javax.persistence.criteria.CriteriaBuilder$Trimspec - 8
+ - javax.persistence.criteria.Subquery - 7
+ - javax.persistence.criteria.Selection - 6
+ - javax.persistence.criteria.ParameterExpression - 6
+ - javax.persistence.Tuple - 5
+ - javax.persistence.criteria.CriteriaQuery - 5
+ - javax.persistence.criteria.CollectionJoin - 3
+ - javax.persistence.criteria.SetJoin - 3
+ - javax.persistence.criteria.MapJoin - 3
+ - javax.persistence.criteria.CompoundSelection - 3
+ - javax.persistence.criteria.ListJoin - 3
+ - javax.persistence.criteria.Join - 2
+ - javax.persistence.metamodel.CollectionAttribute - 2
+ - javax.persistence.metamodel.MapAttribute - 2
+ - javax.persistence.criteria.Root - 2
+ - javax.persistence.metamodel.SetAttribute - 2
+ - javax.persistence.metamodel.ListAttribute - 2
+ - javax.persistence.criteria.Order - 2
+ - javax.persistence.criteria.CriteriaBuilder$In - 1
+ - javax.persistence.criteria.CriteriaBuilder$Coalesce - 1
+ - javax.persistence.criteria.CriteriaBuilder$Case - 1
+ - javax.persistence.metamodel.EntityType - 1
+ - javax.persistence.criteria.CriteriaUpdate - 1
+ - javax.persistence.criteria.CriteriaDelete - 1
+ - javax.persistence.criteria.CriteriaBuilder$SimpleCase - 1

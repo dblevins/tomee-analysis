@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/SignatureRSAMD5.class
+
+ - link:SignatureRSAMD5-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

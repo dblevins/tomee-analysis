@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/spring/SpringBeanFactory.class
+
+ - link:SpringBeanFactory-asmified.java[Asmified]
+
+== References
+

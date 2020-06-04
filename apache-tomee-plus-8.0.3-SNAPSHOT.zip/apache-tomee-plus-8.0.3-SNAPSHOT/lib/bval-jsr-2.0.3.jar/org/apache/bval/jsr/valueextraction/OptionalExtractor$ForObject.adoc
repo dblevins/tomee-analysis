@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/valueextraction/OptionalExtractor$ForObject.class
+
+ - link:OptionalExtractor$ForObject-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 4
+ - javax.validation.valueextraction.ExtractedValue - 1
+ - javax.validation.valueextraction.ValueExtractor - 1

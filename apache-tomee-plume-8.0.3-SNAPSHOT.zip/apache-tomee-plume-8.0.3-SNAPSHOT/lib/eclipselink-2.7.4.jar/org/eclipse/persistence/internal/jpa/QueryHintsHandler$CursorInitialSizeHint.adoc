@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$CursorInitialSizeHint.class
+
+ - link:QueryHintsHandler$CursorInitialSizeHint-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/openejb/resource/jdbc/managed/local/ManagedDataSource.class
+
+ - link:ManagedDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 11
+ - javax.transaction.TransactionManager - 11
+ - javax.transaction.SystemException - 3
+ - javax.transaction.Transaction - 2

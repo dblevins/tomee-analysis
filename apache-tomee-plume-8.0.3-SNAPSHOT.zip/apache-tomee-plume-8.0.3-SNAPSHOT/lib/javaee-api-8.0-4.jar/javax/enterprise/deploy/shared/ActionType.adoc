@@ -1,0 +1,7 @@
+= javax/enterprise/deploy/shared/ActionType.class
+
+ - link:ActionType-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.shared.ActionType - 22

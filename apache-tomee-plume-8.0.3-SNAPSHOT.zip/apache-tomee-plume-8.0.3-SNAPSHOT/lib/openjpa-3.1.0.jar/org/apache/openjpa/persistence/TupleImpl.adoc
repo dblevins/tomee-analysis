@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/TupleImpl.class
+
+ - link:TupleImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TupleElement - 4
+ - javax.persistence.Tuple - 1

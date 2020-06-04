@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/BMMimeMultipart.class
+
+ - link:BMMimeMultipart-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 4

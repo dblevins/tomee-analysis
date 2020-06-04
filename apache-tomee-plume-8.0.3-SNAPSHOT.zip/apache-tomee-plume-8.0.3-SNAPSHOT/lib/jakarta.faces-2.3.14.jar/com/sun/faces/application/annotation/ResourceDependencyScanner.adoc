@@ -1,0 +1,8 @@
+= com/sun/faces/application/annotation/ResourceDependencyScanner.class
+
+ - link:ResourceDependencyScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceDependency - 8
+ - javax.faces.application.ResourceDependencies - 3

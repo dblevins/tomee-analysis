@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AssertionConsumerServiceMarshaller.class
+
+ - link:AssertionConsumerServiceMarshaller-asmified.java[Asmified]
+
+== References
+

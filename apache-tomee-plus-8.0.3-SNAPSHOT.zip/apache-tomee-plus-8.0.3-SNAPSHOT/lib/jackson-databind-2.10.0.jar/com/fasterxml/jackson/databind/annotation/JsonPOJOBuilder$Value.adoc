@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value.class
+
+ - link:JsonPOJOBuilder$Value-asmified.java[Asmified]
+
+== References
+

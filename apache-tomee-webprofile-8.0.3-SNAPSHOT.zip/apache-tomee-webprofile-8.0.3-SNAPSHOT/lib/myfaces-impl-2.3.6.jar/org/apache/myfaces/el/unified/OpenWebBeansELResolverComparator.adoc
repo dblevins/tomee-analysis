@@ -1,0 +1,7 @@
+= org/apache/myfaces/el/unified/OpenWebBeansELResolverComparator.class
+
+ - link:OpenWebBeansELResolverComparator-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 7

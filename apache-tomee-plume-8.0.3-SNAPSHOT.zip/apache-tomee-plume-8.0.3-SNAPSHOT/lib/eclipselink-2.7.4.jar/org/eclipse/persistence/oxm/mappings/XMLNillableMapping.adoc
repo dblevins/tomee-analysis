@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/XMLNillableMapping.class
+
+ - link:XMLNillableMapping-asmified.java[Asmified]
+
+== References
+

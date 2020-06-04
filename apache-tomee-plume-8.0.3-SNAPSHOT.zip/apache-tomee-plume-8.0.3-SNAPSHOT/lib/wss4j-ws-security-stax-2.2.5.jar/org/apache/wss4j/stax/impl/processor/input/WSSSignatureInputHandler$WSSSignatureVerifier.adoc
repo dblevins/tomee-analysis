@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/input/WSSSignatureInputHandler$WSSSignatureVerifier.class
+
+ - link:WSSSignatureInputHandler$WSSSignatureVerifier-asmified.java[Asmified]
+
+== References
+

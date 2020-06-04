@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/spring/JaxWsProxyFactoryBeanDefinitionParser$JAXWSSpringClientProxyFactoryBean.class
+
+ - link:JaxWsProxyFactoryBeanDefinitionParser$JAXWSSpringClientProxyFactoryBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/PervasivePlatform.class
+
+ - link:PervasivePlatform-asmified.java[Asmified]
+
+== References
+

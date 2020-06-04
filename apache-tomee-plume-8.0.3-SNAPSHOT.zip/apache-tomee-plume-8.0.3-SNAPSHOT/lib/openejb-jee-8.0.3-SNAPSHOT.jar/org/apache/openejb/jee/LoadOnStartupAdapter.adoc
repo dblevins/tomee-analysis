@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/LoadOnStartupAdapter.class
+
+ - link:LoadOnStartupAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

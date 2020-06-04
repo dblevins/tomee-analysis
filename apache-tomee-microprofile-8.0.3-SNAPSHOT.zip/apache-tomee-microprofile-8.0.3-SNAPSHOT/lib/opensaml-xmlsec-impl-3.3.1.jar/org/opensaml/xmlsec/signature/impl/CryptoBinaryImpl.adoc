@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/CryptoBinaryImpl.class
+
+ - link:CryptoBinaryImpl-asmified.java[Asmified]
+
+== References
+

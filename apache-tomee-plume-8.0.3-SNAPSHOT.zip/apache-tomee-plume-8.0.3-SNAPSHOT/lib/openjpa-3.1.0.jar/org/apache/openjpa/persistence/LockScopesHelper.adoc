@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/LockScopesHelper.class
+
+ - link:LockScopesHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PessimisticLockScope - 5

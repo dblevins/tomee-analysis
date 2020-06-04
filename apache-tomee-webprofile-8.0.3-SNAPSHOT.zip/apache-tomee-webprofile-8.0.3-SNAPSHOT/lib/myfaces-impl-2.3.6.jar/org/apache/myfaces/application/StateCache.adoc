@@ -1,0 +1,7 @@
+= org/apache/myfaces/application/StateCache.class
+
+ - link:StateCache-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 6

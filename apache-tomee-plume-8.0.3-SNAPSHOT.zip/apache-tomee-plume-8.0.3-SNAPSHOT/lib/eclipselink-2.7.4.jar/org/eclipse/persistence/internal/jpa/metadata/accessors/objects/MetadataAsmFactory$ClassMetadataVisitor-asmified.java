@@ -1,0 +1,327 @@
+package asm.org.eclipse.persistence.internal.jpa.metadata.accessors.objects;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class MetadataAsmFactory$ClassMetadataVisitorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", null, "org/eclipse/persistence/internal/libraries/asm/ClassVisitor", null);
+
+classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "ClassMetadataVisitor", ACC_PUBLIC);
+
+classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataAnnotationVisitor", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "MetadataAnnotationVisitor", 0);
+
+classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataFieldVisitor", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "MetadataFieldVisitor", 0);
+
+classWriter.visitInnerClass("org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataMethodVisitor", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "MetadataMethodVisitor", 0);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "isLazy", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "processedMemeber", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(new Integer(458752));
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/asm/ClassVisitor", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "isLazy", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visit", "(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "access$0", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;");
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "isLazy", "Z");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataFactory;Ljava/lang/String;Z)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "addMetadataClass", "(Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "setName", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "access$0", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "setSuperclassName", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "setModifiers", "(I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "access$1", "(Ljava/lang/String;Z)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "setGenericType", "(Ljava/util/List;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 9);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String", "java/lang/String", "java/lang/String", "[Ljava/lang/String;", "java/lang/String", Opcodes.TOP, Opcodes.INTEGER, Opcodes.INTEGER, "[Ljava/lang/String;"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "access$0", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "addInterface", "(Ljava/lang/String;)V", false);
+methodVisitor.visitIincInsn(9, 1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitJumpInsn(IF_ICMPLT, label3);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 12);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visitField", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/persistence/internal/libraries/asm/FieldVisitor;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "processedMemeber", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "isLazy", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataFieldVisitor");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataFieldVisitor", "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(9, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visitMethod", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/eclipse/persistence/internal/libraries/asm/MethodVisitor;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "processedMemeber", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "isLazy", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("init>");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "indexOf", "(Ljava/lang/String;)I", false);
+methodVisitor.visitInsn(ICONST_M1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataMethodVisitor");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataMethodVisitor", "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(9, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "visitAnnotation", "(Ljava/lang/String;Z)Lorg/eclipse/persistence/internal/libraries/asm/AnnotationVisitor;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("Lkotlin");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("Ljava");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "charAt", "(I)C", false);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitIntInsn(BIPUSH, 47);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitLdcInsn("x/");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "regionMatches", "(ILjava/lang/String;II)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitLdcInsn("persistence");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("persistence");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "regionMatches", "(ILjava/lang/String;II)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "processedMemeber", "Z");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "isLazy", "()Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "setIsLazy", "(Z)V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataAnnotationVisitor");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "this$0", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "classMetadata", "Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("Lorg/eclipse/persistence");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitInsn(ICONST_0);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "java/lang/String", Opcodes.INTEGER, Opcodes.INTEGER}, 5, new Object[] {label4, label4, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "java/lang/String"});
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$ClassMetadataVisitor", "java/lang/String", Opcodes.INTEGER, Opcodes.INTEGER}, 6, new Object[] {label4, label4, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory", "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataClass", "java/lang/String", Opcodes.INTEGER});
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataAnnotationVisitor", "<init>", "(Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory;Lorg/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAnnotatedElement;Ljava/lang/String;Z)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 5);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

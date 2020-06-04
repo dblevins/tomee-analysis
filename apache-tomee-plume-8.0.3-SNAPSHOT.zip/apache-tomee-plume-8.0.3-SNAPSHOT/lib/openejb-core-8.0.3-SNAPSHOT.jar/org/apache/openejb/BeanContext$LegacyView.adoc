@@ -1,0 +1,8 @@
+= org/apache/openejb/BeanContext$LegacyView.class
+
+ - link:BeanContext$LegacyView-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 6
+ - javax.ejb.EJBLocalHome - 6

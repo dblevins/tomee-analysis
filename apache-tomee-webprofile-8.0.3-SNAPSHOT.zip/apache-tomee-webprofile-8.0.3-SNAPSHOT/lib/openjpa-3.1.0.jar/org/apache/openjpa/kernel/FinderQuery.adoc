@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/FinderQuery.class
+
+ - link:FinderQuery-asmified.java[Asmified]
+
+== References
+

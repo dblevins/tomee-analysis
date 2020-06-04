@@ -1,0 +1,6 @@
+= org/apache/tomee/microprofile/jwt/bval/Generated.class
+
+ - link:Generated-asmified.java[Asmified]
+
+== References
+

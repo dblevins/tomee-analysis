@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/AbstractLinkedMap.class
+
+ - link:AbstractLinkedMap-asmified.java[Asmified]
+
+== References
+

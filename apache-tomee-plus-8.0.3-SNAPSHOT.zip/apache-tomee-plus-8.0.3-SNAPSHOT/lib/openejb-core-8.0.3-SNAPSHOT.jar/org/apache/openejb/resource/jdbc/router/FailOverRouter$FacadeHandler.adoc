@@ -1,0 +1,9 @@
+= org/apache/openejb/resource/jdbc/router/FailOverRouter$FacadeHandler.class
+
+ - link:FailOverRouter$FacadeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 8
+ - javax.transaction.Transaction - 5
+ - javax.transaction.TransactionManager - 5

@@ -1,0 +1,8 @@
+= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$IntermediateMessageHandler.class
+
+ - link:WsRemoteEndpointImplBase$IntermediateMessageHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.SendHandler - 2
+ - javax.websocket.SendResult - 2

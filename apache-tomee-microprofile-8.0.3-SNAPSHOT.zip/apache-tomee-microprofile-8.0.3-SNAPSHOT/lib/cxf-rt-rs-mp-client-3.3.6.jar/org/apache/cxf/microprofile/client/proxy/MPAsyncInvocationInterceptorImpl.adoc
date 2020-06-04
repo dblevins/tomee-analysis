@@ -1,0 +1,6 @@
+= org/apache/cxf/microprofile/client/proxy/MPAsyncInvocationInterceptorImpl.class
+
+ - link:MPAsyncInvocationInterceptorImpl-asmified.java[Asmified]
+
+== References
+

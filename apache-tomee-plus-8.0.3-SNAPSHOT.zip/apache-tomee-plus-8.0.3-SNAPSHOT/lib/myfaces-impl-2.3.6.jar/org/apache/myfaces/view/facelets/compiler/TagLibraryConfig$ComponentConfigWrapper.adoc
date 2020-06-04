@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/compiler/TagLibraryConfig$ComponentConfigWrapper.class
+
+ - link:TagLibraryConfig$ComponentConfigWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagConfig - 9
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.view.facelets.ComponentConfig - 1

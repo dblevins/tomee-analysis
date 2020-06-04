@@ -1,0 +1,223 @@
+package asm.org.hsqldb;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class TableUtilDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/hsqldb/TableUtil", null, "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/hsqldb/HsqlNameManager$HsqlName", "org/hsqldb/HsqlNameManager", "HsqlName", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+
+classWriter.visitInnerClass("org/hsqldb/HsqlNameManager$SimpleName", "org/hsqldb/HsqlNameManager", "SimpleName", ACC_PUBLIC | ACC_STATIC);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "newSingleColumnTable", "(Lorg/hsqldb/Database;Lorg/hsqldb/HsqlNameManager$HsqlName;ILorg/hsqldb/HsqlNameManager$HsqlName;Lorg/hsqldb/types/Type;)Lorg/hsqldb/Table;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/hsqldb/TableDerived");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/TableDerived", "<init>", "(Lorg/hsqldb/Database;Lorg/hsqldb/HsqlNameManager$HsqlName;I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitTypeInsn(NEW, "org/hsqldb/ColumnSchema");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/ColumnSchema", "<init>", "(Lorg/hsqldb/HsqlNameManager$HsqlName;Lorg/hsqldb/types/Type;ZZLorg/hsqldb/Expression;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/TableDerived", "addColumn", "(Lorg/hsqldb/ColumnSchema;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/TableDerived", "getName", "()Lorg/hsqldb/HsqlNameManager$HsqlName;", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitIntInsn(NEWARRAY, T_INT);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IASTORE);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/TableDerived", "createPrimaryKeyConstraint", "(Lorg/hsqldb/HsqlNameManager$HsqlName;[IZ)V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "setTableIndexesForSubquery", "(Lorg/hsqldb/Table;ZZ)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "getColumnCount", "()I", false);
+methodVisitor.visitIntInsn(NEWARRAY, T_INT);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/lib/ArrayUtil", "fillSequence", "([I)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"[I"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/hsqldb/Table", Opcodes.INTEGER, Opcodes.INTEGER, "[I"}, 2, new Object[] {"org/hsqldb/Table", Opcodes.NULL});
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/hsqldb/Table", Opcodes.INTEGER, Opcodes.INTEGER, "[I"}, 3, new Object[] {"org/hsqldb/Table", Opcodes.NULL, "[I"});
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "createPrimaryKey", "(Lorg/hsqldb/HsqlNameManager$HsqlName;[IZ)V", false);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "getPrimaryIndex", "()Lorg/hsqldb/index/Index;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/Table", "fullIndex", "Lorg/hsqldb/index/Index;");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "createIndexForColumns", "(Lorg/hsqldb/Session;[I)Lorg/hsqldb/index/Index;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/Table", "fullIndex", "Lorg/hsqldb/index/Index;");
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "addAutoColumns", "(Lorg/hsqldb/Table;[Lorg/hsqldb/types/Type;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitTypeInsn(NEW, "org/hsqldb/ColumnSchema");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/HsqlNameManager", "getAutoColumnName", "(I)Lorg/hsqldb/HsqlNameManager$HsqlName;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/ColumnSchema", "<init>", "(Lorg/hsqldb/HsqlNameManager$HsqlName;Lorg/hsqldb/types/Type;ZZLorg/hsqldb/Expression;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "addColumnNoCheck", "(Lorg/hsqldb/ColumnSchema;)V", false);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setColumnsInSchemaTable", "(Lorg/hsqldb/Table;[Lorg/hsqldb/HsqlNameManager$HsqlName;[Lorg/hsqldb/types/Type;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/Table", "database", "Lorg/hsqldb/Database;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/Database", "nameManager", "Lorg/hsqldb/HsqlNameManager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "getName", "()Lorg/hsqldb/HsqlNameManager$HsqlName;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/HsqlNameManager", "newColumnSchemaHsqlName", "(Lorg/hsqldb/HsqlNameManager$HsqlName;Lorg/hsqldb/HsqlNameManager$SimpleName;)Lorg/hsqldb/HsqlNameManager$HsqlName;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "org/hsqldb/ColumnSchema");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/ColumnSchema", "<init>", "(Lorg/hsqldb/HsqlNameManager$HsqlName;Lorg/hsqldb/types/Type;ZZLorg/hsqldb/Expression;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "addColumn", "(Lorg/hsqldb/ColumnSchema;)V", false);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "setColumnStructures", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 6);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

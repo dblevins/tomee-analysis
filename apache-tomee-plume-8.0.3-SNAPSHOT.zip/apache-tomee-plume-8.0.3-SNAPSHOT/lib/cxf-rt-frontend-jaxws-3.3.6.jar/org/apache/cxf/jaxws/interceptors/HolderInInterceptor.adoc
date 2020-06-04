@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/interceptors/HolderInInterceptor.class
+
+ - link:HolderInInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Holder - 5

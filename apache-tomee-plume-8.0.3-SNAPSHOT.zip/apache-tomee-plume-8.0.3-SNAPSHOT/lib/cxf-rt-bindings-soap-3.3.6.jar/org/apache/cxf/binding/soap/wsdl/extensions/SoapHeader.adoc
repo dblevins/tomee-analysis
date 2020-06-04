@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/wsdl/extensions/SoapHeader.class
+
+ - link:SoapHeader-asmified.java[Asmified]
+
+== References
+

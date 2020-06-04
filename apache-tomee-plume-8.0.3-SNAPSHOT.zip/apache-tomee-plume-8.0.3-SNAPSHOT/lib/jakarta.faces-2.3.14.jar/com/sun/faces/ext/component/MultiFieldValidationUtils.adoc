@@ -1,0 +1,8 @@
+= com/sun/faces/ext/component/MultiFieldValidationUtils.class
+
+ - link:MultiFieldValidationUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.validation.groups.Default - 1

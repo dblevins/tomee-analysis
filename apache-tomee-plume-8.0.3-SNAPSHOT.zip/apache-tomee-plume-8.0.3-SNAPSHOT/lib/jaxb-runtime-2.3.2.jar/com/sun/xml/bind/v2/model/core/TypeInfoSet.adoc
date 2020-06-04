@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/model/core/TypeInfoSet.class
+
+ - link:TypeInfoSet-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlNsForm - 2
+ - javax.xml.bind.JAXBException - 1

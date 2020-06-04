@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/XmlBuilder$ForBean.class
+
+ - link:XmlBuilder$ForBean-asmified.java[Asmified]
+
+== References
+

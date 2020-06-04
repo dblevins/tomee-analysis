@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/StAXPostInitAction.class
+
+ - link:StAXPostInitAction-asmified.java[Asmified]
+
+== References
+

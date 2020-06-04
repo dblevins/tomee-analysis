@@ -1,0 +1,6 @@
+= org/apache/xbean/naming/context/WritableContext$NestedWritableContext.class
+
+ - link:WritableContext$NestedWritableContext-asmified.java[Asmified]
+
+== References
+

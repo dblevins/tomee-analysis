@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/CharRange.class
+
+ - link:CharRange-asmified.java[Asmified]
+
+== References
+

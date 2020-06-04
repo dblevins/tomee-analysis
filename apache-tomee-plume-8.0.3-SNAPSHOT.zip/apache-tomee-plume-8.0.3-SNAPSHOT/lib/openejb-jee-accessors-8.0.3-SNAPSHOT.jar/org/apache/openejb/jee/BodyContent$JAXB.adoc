@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/BodyContent$JAXB.class
+
+ - link:BodyContent$JAXB-asmified.java[Asmified]
+
+== References
+

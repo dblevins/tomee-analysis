@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/utils/AccumulatingIntersector.class
+
+ - link:AccumulatingIntersector-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 14

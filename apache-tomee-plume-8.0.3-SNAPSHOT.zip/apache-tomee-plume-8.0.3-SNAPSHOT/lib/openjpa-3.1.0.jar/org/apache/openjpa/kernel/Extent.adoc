@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/Extent.class
+
+ - link:Extent-asmified.java[Asmified]
+
+== References
+

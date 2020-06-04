@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/StatementQueryMechanism.class
+
+ - link:StatementQueryMechanism-asmified.java[Asmified]
+
+== References
+

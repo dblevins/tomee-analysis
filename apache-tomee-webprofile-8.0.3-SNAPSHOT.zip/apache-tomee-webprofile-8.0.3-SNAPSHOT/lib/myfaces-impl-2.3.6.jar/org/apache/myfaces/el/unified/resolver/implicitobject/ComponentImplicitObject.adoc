@@ -1,0 +1,9 @@
+= org/apache/myfaces/el/unified/resolver/implicitobject/ComponentImplicitObject.class
+
+ - link:ComponentImplicitObject-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ELContext - 2

@@ -1,0 +1,8 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/microprofile-metrics-api-1.1.1.jar
+
+ - link:org/eclipse/microprofile/metrics/annotation/Counted.adoc[org/eclipse/microprofile/metrics/annotation/Counted.class] - 9
+ - link:org/eclipse/microprofile/metrics/annotation/Metered.adoc[org/eclipse/microprofile/metrics/annotation/Metered.class] - 8
+ - link:org/eclipse/microprofile/metrics/annotation/Timed.adoc[org/eclipse/microprofile/metrics/annotation/Timed.class] - 8
+ - link:org/eclipse/microprofile/metrics/annotation/Gauge.adoc[org/eclipse/microprofile/metrics/annotation/Gauge.class] - 7
+ - link:org/eclipse/microprofile/metrics/annotation/Metric.adoc[org/eclipse/microprofile/metrics/annotation/Metric.class] - 7
+ - link:org/eclipse/microprofile/metrics/annotation/RegistryType.adoc[org/eclipse/microprofile/metrics/annotation/RegistryType.class] - 1

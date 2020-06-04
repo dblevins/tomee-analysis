@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/ParameterTemplate.class
+
+ - link:ParameterTemplate-asmified.java[Asmified]
+
+== References
+

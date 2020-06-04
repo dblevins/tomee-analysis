@@ -1,0 +1,14 @@
+= org/apache/webbeans/intercept/NormalScopedBeanInterceptorHandler.class
+
+ - link:NormalScopedBeanInterceptorHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 17
+ - javax.enterprise.inject.spi.BeanManager - 13
+ - javax.enterprise.context.spi.Context - 5
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.inject.spi.PassivationCapable - 3
+ - javax.enterprise.context.spi.Contextual - 3
+ - javax.enterprise.inject.UnproxyableResolutionException - 2
+ - javax.inject.Provider - 1

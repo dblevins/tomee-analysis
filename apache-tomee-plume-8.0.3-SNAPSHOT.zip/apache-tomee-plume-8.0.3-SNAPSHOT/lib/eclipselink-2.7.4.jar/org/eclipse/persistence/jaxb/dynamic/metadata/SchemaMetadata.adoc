@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/dynamic/metadata/SchemaMetadata.class
+
+ - link:SchemaMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 17

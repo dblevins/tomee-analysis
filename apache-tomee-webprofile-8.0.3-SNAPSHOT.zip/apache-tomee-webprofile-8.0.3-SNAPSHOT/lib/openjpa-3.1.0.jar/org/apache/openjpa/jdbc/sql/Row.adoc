@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/Row.class
+
+ - link:Row-asmified.java[Asmified]
+
+== References
+

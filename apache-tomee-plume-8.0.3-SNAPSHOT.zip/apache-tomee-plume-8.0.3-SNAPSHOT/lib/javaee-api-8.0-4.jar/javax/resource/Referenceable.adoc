@@ -1,0 +1,6 @@
+= javax/resource/Referenceable.class
+
+ - link:Referenceable-asmified.java[Asmified]
+
+== References
+

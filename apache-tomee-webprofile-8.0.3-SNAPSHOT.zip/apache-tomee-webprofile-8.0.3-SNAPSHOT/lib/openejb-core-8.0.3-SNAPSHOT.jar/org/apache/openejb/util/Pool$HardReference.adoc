@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Pool$HardReference.class
+
+ - link:Pool$HardReference-asmified.java[Asmified]
+
+== References
+

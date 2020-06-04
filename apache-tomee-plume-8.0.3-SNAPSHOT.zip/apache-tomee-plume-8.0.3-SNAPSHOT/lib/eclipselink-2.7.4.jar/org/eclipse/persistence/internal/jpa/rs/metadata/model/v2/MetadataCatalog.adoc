@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/MetadataCatalog.class
+
+ - link:MetadataCatalog-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1

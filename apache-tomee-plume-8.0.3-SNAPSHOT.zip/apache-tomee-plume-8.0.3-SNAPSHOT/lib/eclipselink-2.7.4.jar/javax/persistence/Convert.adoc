@@ -1,0 +1,7 @@
+= javax/persistence/Convert.class
+
+ - link:Convert-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Converts - 1

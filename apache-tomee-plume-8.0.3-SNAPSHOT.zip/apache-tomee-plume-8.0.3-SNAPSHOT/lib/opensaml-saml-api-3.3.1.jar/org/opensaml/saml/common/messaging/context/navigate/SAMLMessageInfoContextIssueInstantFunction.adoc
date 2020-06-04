@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/messaging/context/navigate/SAMLMessageInfoContextIssueInstantFunction.class
+
+ - link:SAMLMessageInfoContextIssueInstantFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

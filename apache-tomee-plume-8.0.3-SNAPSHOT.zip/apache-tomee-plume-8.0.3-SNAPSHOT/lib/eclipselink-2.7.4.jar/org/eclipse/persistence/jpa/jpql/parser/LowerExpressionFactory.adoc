@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/LowerExpressionFactory.class
+
+ - link:LowerExpressionFactory-asmified.java[Asmified]
+
+== References
+

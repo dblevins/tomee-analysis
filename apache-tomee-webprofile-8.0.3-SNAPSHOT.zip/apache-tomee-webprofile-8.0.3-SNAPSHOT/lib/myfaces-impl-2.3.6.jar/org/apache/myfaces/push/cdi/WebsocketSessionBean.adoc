@@ -1,0 +1,8 @@
+= org/apache/myfaces/push/cdi/WebsocketSessionBean.class
+
+ - link:WebsocketSessionBean-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PreDestroy - 1
+ - javax.enterprise.context.SessionScoped - 1

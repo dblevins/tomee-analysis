@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/JohnzonAny.class
+
+ - link:JohnzonAny-asmified.java[Asmified]
+
+== References
+

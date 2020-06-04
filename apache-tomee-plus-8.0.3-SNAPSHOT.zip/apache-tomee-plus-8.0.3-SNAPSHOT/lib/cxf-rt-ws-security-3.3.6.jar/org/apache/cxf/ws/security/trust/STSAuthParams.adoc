@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/STSAuthParams.class
+
+ - link:STSAuthParams-asmified.java[Asmified]
+
+== References
+

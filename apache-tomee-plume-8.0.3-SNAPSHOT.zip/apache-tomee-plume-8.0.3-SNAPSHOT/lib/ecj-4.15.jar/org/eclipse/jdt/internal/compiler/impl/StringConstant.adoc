@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/StringConstant.class
+
+ - link:StringConstant-asmified.java[Asmified]
+
+== References
+

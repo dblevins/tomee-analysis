@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2delrestrict/impl/DelegateMarshaller.class
+
+ - link:DelegateMarshaller-asmified.java[Asmified]
+
+== References
+

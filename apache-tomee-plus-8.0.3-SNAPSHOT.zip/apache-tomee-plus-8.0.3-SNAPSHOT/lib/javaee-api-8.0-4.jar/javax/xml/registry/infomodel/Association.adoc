@@ -1,0 +1,9 @@
+= javax/xml/registry/infomodel/Association.class
+
+ - link:Association-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 10
+ - javax.xml.registry.infomodel.RegistryObject - 5
+ - javax.xml.registry.infomodel.Concept - 2

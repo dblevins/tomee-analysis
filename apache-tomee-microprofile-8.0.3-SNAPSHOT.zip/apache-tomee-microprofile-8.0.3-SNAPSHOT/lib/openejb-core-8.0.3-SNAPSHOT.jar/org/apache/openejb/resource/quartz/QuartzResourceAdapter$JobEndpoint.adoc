@@ -1,0 +1,8 @@
+= org/apache/openejb/resource/quartz/QuartzResourceAdapter$JobEndpoint.class
+
+ - link:QuartzResourceAdapter$JobEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 11
+ - javax.resource.spi.endpoint.MessageEndpoint - 10

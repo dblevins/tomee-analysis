@@ -1,0 +1,7 @@
+= javax/xml/bind/annotation/XmlType.class
+
+ - link:XmlType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType$DEFAULT - 1

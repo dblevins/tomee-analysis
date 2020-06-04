@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/PrototypeFactory$PrototypeSerializationFactory.class
+
+ - link:PrototypeFactory$PrototypeSerializationFactory-asmified.java[Asmified]
+
+== References
+

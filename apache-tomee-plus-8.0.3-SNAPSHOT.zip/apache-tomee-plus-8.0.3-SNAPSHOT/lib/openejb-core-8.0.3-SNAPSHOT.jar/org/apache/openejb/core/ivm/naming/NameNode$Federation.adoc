@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/NameNode$Federation.class
+
+ - link:NameNode$Federation-asmified.java[Asmified]
+
+== References
+

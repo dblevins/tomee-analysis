@@ -1,0 +1,13 @@
+= org/apache/cxf/rs/security/oauth2/common/ServerAccessToken.class
+
+ - link:ServerAccessToken-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 3
+ - javax.persistence.ManyToOne - 2
+ - javax.persistence.ElementCollection - 2
+ - javax.persistence.MapKeyColumn - 1
+ - javax.persistence.OrderColumn - 1
+ - javax.persistence.MappedSuperclass - 1
+ - javax.persistence.ManyToMany - 1

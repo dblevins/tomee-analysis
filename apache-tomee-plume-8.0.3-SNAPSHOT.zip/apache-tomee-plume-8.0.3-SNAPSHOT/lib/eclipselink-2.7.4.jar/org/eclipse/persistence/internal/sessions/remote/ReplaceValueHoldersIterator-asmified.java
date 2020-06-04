@@ -1,0 +1,326 @@
+package asm.org.eclipse.persistence.internal.sessions.remote;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ReplaceValueHoldersIteratorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", null, "org/eclipse/persistence/internal/descriptors/DescriptorIterator", null);
+
+{
+fieldVisitor = classWriter.visitField(0, "controller", "Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/descriptors/DescriptorIterator", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "initialize", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildObjectDescriptor", "(Ljava/lang/Object;)Lorg/eclipse/persistence/internal/sessions/remote/ObjectDescriptor;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "controller", "Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteSessionController", "buildObjectDescriptor", "(Ljava/lang/Object;)Lorg/eclipse/persistence/internal/sessions/remote/ObjectDescriptor;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "buildRemoteValueHolderFor", "(Lorg/eclipse/persistence/indirection/ValueHolderInterface;)Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/indirection/UnitOfWorkValueHolder");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/indirection/UnitOfWorkValueHolder");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/indirection/UnitOfWorkValueHolder", "getWrappedValueHolder", "()Lorg/eclipse/persistence/indirection/ValueHolderInterface;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/indirection/UnitOfWorkValueHolder");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/indirection/UnitOfWorkValueHolder", "getWrappedValueHolder", "()Lorg/eclipse/persistence/indirection/ValueHolderInterface;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "setWrappedServerValueHolder", "(Lorg/eclipse/persistence/indirection/ValueHolderInterface;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getCurrentMapping", "()Lorg/eclipse/persistence/mappings/DatabaseMapping;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "setMapping", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "saveRemoteValueHolder", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initialize", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "controller", "Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "internalIterateIndirectContainer", "(Lorg/eclipse/persistence/indirection/IndirectContainer;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/indirection/IndirectContainer", "getValueHolder", "()Lorg/eclipse/persistence/indirection/ValueHolderInterface;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "getWrappedServerValueHolder", "()Lorg/eclipse/persistence/indirection/ValueHolderInterface;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/eclipse/persistence/indirection/ValueHolderInterface"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(MONITORENTER);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/indirection/IndirectContainer", "getValueHolder", "()Lorg/eclipse/persistence/indirection/ValueHolderInterface;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "buildRemoteValueHolderFor", "(Lorg/eclipse/persistence/indirection/ValueHolderInterface;)Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/indirection/IndirectContainer", "setValueHolder", "(Lorg/eclipse/persistence/indirection/ValueHolderInterface;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "setServerIndirectionObject", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label1);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "org/eclipse/persistence/indirection/IndirectContainer", "org/eclipse/persistence/indirection/ValueHolderInterface", "org/eclipse/persistence/indirection/ValueHolderInterface"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "internalIterateValueHolder", "(Lorg/eclipse/persistence/indirection/ValueHolderInterface;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "getWrappedServerValueHolder", "()Lorg/eclipse/persistence/indirection/ValueHolderInterface;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/eclipse/persistence/indirection/ValueHolderInterface"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(MONITORENTER);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getCurrentMapping", "()Lorg/eclipse/persistence/mappings/DatabaseMapping;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getVisitedParent", "()Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "getAttributeValueFromObject", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/indirection/ValueHolderInterface");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "buildRemoteValueHolderFor", "(Lorg/eclipse/persistence/indirection/ValueHolderInterface;)Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getCurrentMapping", "()Lorg/eclipse/persistence/mappings/DatabaseMapping;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "isOneToOneMapping", "()Z", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "setOneToOneMappingSettingsIn", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;)V", false);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/eclipse/persistence/indirection/ValueHolderInterface", "org/eclipse/persistence/indirection/ValueHolderInterface", "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getCurrentMapping", "()Lorg/eclipse/persistence/mappings/DatabaseMapping;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getVisitedParent", "()Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/DatabaseMapping", "setAttributeValueInObject", "(Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label1);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "iterate", "(Ljava/lang/Object;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getResult", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "buildObjectDescriptor", "(Ljava/lang/Object;)Lorg/eclipse/persistence/internal/sessions/remote/ObjectDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "saveRemoteValueHolder", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "controller", "Lorg/eclipse/persistence/internal/sessions/remote/RemoteSessionController;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteSessionController", "saveRemoteValueHolder", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "setOneToOneMappingSettingsIn", "(Lorg/eclipse/persistence/internal/sessions/remote/RemoteValueHolder;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getCurrentMapping", "()Lorg/eclipse/persistence/mappings/DatabaseMapping;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/mappings/ObjectReferenceMapping");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/ObjectReferenceMapping", "getDescriptor", "()Lorg/eclipse/persistence/descriptors/ClassDescriptor;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/descriptors/ClassDescriptor", "getObjectBuilder", "()Lorg/eclipse/persistence/internal/descriptors/ObjectBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/descriptors/ObjectBuilder", "isPrimaryKeyMapping", "(Lorg/eclipse/persistence/mappings/DatabaseMapping;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getVisitedParent", "()Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getSession", "()Lorg/eclipse/persistence/internal/sessions/AbstractSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/ObjectReferenceMapping", "extractPrimaryKeyRowForSourceObject", "(Ljava/lang/Object;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/internal/sessions/AbstractRecord;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "setRow", "(Lorg/eclipse/persistence/internal/sessions/AbstractRecord;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/eclipse/persistence/mappings/ObjectReferenceMapping"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getVisitedParent", "()Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator", "getSession", "()Lorg/eclipse/persistence/internal/sessions/AbstractSession;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/mappings/ObjectReferenceMapping", "extractPrimaryKeysForReferenceObject", "(Ljava/lang/Object;Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/sessions/remote/RemoteValueHolder", "setTargetObjectPrimaryKeys", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

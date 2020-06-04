@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/QueryResultCache.class
+
+ - link:QueryResultCache-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Query - 3

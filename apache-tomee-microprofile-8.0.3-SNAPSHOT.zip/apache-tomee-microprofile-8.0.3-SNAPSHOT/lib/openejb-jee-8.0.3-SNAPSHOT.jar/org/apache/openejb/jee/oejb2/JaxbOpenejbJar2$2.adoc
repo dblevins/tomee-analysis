@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/oejb2/JaxbOpenejbJar2$2.class
+
+ - link:JaxbOpenejbJar2$2-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller$Listener - 4

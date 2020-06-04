@@ -1,0 +1,15 @@
+= org/apache/webbeans/inject/instance/InstanceImpl.class
+
+ - link:InstanceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 24
+ - javax.enterprise.inject.spi.Bean - 18
+ - javax.enterprise.inject.Instance - 5
+ - javax.enterprise.context.spi.Context - 4
+ - javax.inject.Provider - 4
+ - javax.enterprise.context.spi.AlterableContext - 3
+ - javax.enterprise.util.TypeLiteral - 2
+ - javax.enterprise.context.spi.Contextual - 2
+ - javax.enterprise.context.spi.CreationalContext - 1

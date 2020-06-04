@@ -1,0 +1,6 @@
+= javax/cache/configuration/FactoryBuilder$SingletonFactory.class
+
+ - link:FactoryBuilder$SingletonFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/myfaces/el/convert/ValueBindingToValueExpression$2.class
+
+ - link:ValueBindingToValueExpression$2-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 5
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.el.ValueBinding - 2

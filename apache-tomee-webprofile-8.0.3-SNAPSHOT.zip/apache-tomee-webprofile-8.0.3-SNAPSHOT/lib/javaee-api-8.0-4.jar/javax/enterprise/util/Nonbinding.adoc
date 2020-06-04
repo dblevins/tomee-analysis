@@ -1,0 +1,6 @@
+= javax/enterprise/util/Nonbinding.class
+
+ - link:Nonbinding-asmified.java[Asmified]
+
+== References
+

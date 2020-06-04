@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/platform/SAXPlatform.class
+
+ - link:SAXPlatform-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openejb/server/cxf/rs/johnzon/TomEEJsonbPropertyVisibilityStrategy.class
+
+ - link:TomEEJsonbPropertyVisibilityStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.config.PropertyVisibilityStrategy - 13
+ - javax.json.bind.annotation.JsonbVisibility - 9
+ - javax.json.bind.annotation.JsonbProperty - 2

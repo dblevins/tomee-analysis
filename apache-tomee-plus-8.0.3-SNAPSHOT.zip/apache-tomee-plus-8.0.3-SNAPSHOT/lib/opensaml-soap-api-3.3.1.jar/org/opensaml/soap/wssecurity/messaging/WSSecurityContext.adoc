@@ -1,0 +1,8 @@
+= org/opensaml/soap/wssecurity/messaging/WSSecurityContext.class
+
+ - link:WSSecurityContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4
+ - javax.annotation.Nonnull - 1

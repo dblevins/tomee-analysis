@@ -1,0 +1,11 @@
+= org/apache/openejb/server/ejbd/EjbDaemon.class
+
+ - link:EjbDaemon-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 2
+ - javax.ejb.EJBObject - 2
+ - javax.ejb.HomeHandle - 2
+ - javax.ejb.EJBMetaData - 2
+ - javax.ejb.Handle - 2

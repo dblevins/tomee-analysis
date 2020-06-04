@@ -1,0 +1,7 @@
+= javax/xml/registry/infomodel/Versionable.class
+
+ - link:Versionable-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 6

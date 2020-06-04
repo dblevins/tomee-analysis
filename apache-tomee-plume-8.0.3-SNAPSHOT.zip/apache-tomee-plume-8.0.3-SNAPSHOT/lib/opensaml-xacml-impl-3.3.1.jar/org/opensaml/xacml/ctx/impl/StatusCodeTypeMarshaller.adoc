@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/StatusCodeTypeMarshaller.class
+
+ - link:StatusCodeTypeMarshaller-asmified.java[Asmified]
+
+== References
+

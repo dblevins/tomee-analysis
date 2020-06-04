@@ -1,0 +1,9 @@
+= org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$Cache.class
+
+ - link:CircuitBreakerInterceptor$Cache-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 12
+ - javax.inject.Inject - 4
+ - javax.enterprise.context.ApplicationScoped - 1

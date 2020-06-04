@@ -1,0 +1,6 @@
+= org/apache/cxf/configuration/blueprint/InterceptorTypeConverter.class
+
+ - link:InterceptorTypeConverter-asmified.java[Asmified]
+
+== References
+

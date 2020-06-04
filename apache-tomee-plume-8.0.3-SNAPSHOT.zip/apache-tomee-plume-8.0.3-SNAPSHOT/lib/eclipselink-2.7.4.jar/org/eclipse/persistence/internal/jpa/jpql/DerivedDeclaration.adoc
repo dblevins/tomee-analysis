@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/DerivedDeclaration.class
+
+ - link:DerivedDeclaration-asmified.java[Asmified]
+
+== References
+

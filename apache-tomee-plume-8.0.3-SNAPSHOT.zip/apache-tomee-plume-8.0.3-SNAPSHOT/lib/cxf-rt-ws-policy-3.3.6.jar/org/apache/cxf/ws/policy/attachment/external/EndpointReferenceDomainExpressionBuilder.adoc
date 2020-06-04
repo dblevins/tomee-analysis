@@ -1,0 +1,9 @@
+= org/apache/cxf/ws/policy/attachment/external/EndpointReferenceDomainExpressionBuilder.class
+
+ - link:EndpointReferenceDomainExpressionBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 9
+ - javax.xml.bind.JAXBException - 4
+ - javax.xml.bind.JAXBElement - 3

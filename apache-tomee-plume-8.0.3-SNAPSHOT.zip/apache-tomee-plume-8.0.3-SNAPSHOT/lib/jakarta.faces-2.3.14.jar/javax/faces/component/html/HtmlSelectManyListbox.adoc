@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlSelectManyListbox.class
+
+ - link:HtmlSelectManyListbox-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 108
+ - javax.faces.component.html.HtmlSelectManyListbox - 77
+ - javax.faces.component.html.HtmlSelectManyListbox$PropertyKeys - 54
+ - javax.faces.component.UISelectMany - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

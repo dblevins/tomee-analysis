@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/OpenAPIDefinition.class
+
+ - link:OpenAPIDefinition-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/dynamic/DynamicTypeBuilder.class
+
+ - link:DynamicTypeBuilder-asmified.java[Asmified]
+
+== References
+

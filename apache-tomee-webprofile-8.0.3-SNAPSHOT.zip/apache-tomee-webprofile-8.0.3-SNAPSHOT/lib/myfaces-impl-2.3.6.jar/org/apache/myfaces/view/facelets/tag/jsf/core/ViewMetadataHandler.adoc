@@ -1,0 +1,16 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/ViewMetadataHandler.class
+
+ - link:ViewMetadataHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.view.facelets.TagException - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.component.UIViewRoot - 1

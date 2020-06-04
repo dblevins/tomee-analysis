@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/ClassConverter.class
+
+ - link:ClassConverter-asmified.java[Asmified]
+
+== References
+

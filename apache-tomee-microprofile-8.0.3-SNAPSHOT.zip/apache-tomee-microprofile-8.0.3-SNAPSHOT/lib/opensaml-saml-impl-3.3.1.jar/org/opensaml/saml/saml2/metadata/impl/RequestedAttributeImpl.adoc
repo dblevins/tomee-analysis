@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/RequestedAttributeImpl.class
+
+ - link:RequestedAttributeImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/blueprint/ServerFactoryBeanDefinitionParser$BPServerFactoryBean.class
+
+ - link:ServerFactoryBeanDefinitionParser$BPServerFactoryBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/UnaryOp.class
+
+ - link:UnaryOp-asmified.java[Asmified]
+
+== References
+

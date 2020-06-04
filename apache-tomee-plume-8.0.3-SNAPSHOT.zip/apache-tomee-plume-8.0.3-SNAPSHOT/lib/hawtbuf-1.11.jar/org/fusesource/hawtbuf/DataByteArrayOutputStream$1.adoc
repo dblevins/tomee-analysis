@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/DataByteArrayOutputStream$1.class
+
+ - link:DataByteArrayOutputStream$1-asmified.java[Asmified]
+
+== References
+

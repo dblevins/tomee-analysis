@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/formatter/log/ReloadableLog.class
+
+ - link:ReloadableLog-asmified.java[Asmified]
+
+== References
+

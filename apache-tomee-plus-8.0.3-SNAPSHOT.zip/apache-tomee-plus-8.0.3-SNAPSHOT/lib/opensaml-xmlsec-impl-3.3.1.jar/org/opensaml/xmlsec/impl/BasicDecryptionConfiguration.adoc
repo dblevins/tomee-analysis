@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/impl/BasicDecryptionConfiguration.class
+
+ - link:BasicDecryptionConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 9

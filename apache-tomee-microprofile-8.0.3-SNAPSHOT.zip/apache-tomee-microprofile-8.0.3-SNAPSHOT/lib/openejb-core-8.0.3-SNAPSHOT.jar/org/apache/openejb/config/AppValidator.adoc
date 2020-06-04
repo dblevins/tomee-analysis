@@ -1,0 +1,7 @@
+= org/apache/openejb/config/AppValidator.class
+
+ - link:AppValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DefinitionException - 2

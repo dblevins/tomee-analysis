@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/DBDictionary$DateMillisecondBehaviors.class
+
+ - link:DBDictionary$DateMillisecondBehaviors-asmified.java[Asmified]
+
+== References
+

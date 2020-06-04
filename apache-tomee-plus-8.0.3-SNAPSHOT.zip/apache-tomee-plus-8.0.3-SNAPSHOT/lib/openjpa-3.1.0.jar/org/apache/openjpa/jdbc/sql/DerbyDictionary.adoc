@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/DerbyDictionary.class
+
+ - link:DerbyDictionary-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/jmx/JMXProvider.class
+
+ - link:JMXProvider-asmified.java[Asmified]
+
+== References
+

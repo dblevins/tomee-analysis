@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/blueprint/Activator.class
+
+ - link:Activator-asmified.java[Asmified]
+
+== References
+

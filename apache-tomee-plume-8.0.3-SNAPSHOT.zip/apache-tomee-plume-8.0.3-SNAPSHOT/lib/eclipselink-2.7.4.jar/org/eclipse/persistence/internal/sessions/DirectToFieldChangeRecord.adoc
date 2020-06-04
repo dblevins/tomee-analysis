@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/DirectToFieldChangeRecord.class
+
+ - link:DirectToFieldChangeRecord-asmified.java[Asmified]
+
+== References
+

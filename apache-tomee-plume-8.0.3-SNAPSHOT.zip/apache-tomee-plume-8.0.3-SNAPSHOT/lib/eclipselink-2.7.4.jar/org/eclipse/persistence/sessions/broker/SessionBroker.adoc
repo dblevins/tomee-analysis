@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/broker/SessionBroker.class
+
+ - link:SessionBroker-asmified.java[Asmified]
+
+== References
+

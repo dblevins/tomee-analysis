@@ -1,0 +1,6 @@
+= org/opensaml/xacml/profile/saml/impl/XACMLAuthzDecisionStatementTypeMarshaller.class
+
+ - link:XACMLAuthzDecisionStatementTypeMarshaller-asmified.java[Asmified]
+
+== References
+

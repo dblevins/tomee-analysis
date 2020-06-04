@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/util/MIMEInputReader.class
+
+ - link:MIMEInputReader-asmified.java[Asmified]
+
+== References
+

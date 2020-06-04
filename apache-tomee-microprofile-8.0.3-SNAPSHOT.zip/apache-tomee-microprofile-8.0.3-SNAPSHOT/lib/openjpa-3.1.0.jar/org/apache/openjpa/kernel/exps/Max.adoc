@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Max.class
+
+ - link:Max-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/jasper/el/ExpressionImpl.class
+
+ - link:ExpressionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 5
+ - javax.el.ValueExpression - 5
+ - javax.servlet.jsp.el.VariableResolver - 2
+ - javax.servlet.jsp.el.Expression - 2
+ - javax.servlet.jsp.el.ELException - 1
+ - javax.el.ELContext - 1
+ - javax.el.ELResolver - 1

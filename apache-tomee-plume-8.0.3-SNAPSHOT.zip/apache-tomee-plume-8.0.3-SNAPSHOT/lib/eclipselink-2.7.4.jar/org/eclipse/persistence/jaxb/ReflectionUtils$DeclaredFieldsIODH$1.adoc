@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/ReflectionUtils$DeclaredFieldsIODH$1.class
+
+ - link:ReflectionUtils$DeclaredFieldsIODH$1-asmified.java[Asmified]
+
+== References
+

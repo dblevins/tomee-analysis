@@ -1,0 +1,9 @@
+= javax/resource/spi/ConnectionManager.class
+
+ - link:ConnectionManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 1
+ - javax.resource.spi.ConnectionRequestInfo - 1
+ - javax.resource.spi.ManagedConnectionFactory - 1

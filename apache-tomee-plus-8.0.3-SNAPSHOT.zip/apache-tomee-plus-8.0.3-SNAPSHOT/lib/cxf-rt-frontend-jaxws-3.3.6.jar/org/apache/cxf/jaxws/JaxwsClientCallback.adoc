@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/JaxwsClientCallback.class
+
+ - link:JaxwsClientCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.AsyncHandler - 9
+ - javax.xml.ws.Response - 2

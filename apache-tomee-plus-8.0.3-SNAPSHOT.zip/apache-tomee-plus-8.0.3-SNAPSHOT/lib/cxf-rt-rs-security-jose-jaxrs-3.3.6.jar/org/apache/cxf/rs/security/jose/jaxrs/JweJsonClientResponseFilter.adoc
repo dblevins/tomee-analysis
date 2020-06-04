@@ -1,0 +1,12 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JweJsonClientResponseFilter.class
+
+ - link:JweJsonClientResponseFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.ClientResponseContext - 8
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.client.ClientRequestContext - 2
+ - javax.ws.rs.core.Response$Status - 2
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.client.ClientResponseFilter - 1

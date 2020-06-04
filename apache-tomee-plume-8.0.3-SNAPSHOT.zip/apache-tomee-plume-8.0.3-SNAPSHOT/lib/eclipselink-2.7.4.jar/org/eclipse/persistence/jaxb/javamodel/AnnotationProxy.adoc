@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/AnnotationProxy.class
+
+ - link:AnnotationProxy-asmified.java[Asmified]
+
+== References
+

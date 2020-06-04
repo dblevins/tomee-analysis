@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/PersistenceMetaDataDefaults$AccessFilter.class
+
+ - link:PersistenceMetaDataDefaults$AccessFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.AccessType - 6
+ - javax.persistence.Access - 4

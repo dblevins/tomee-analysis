@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/LRSProxyCollection$ResultIterator.class
+
+ - link:LRSProxyCollection$ResultIterator-asmified.java[Asmified]
+
+== References
+

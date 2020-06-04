@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/InExpression.class
+
+ - link:InExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/transformers/WriteTransformerMetadata.class
+
+ - link:WriteTransformerMetadata-asmified.java[Asmified]
+
+== References
+

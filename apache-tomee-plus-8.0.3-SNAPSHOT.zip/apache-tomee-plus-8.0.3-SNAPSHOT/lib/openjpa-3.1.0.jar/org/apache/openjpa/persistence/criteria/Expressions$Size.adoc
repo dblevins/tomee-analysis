@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Size.class
+
+ - link:Expressions$Size-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 3

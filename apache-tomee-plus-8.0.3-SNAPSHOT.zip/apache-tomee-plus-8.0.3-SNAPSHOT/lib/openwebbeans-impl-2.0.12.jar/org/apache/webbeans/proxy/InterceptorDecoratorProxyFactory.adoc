@@ -1,0 +1,8 @@
+= org/apache/webbeans/proxy/InterceptorDecoratorProxyFactory.class
+
+ - link:InterceptorDecoratorProxyFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 5
+ - javax.enterprise.inject.spi.Bean - 3

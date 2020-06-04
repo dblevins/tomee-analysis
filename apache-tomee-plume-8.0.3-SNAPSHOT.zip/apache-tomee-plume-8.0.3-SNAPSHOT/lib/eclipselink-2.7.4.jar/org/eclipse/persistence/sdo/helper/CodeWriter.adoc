@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/CodeWriter.class
+
+ - link:CodeWriter-asmified.java[Asmified]
+
+== References
+

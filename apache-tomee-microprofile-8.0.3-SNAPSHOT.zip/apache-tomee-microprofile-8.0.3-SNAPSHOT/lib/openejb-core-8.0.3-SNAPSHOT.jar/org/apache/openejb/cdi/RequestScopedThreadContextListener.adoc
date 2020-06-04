@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/RequestScopedThreadContextListener.class
+
+ - link:RequestScopedThreadContextListener-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.RequestScoped - 2
+ - javax.enterprise.context.spi.Context - 1

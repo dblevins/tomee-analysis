@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/SignatureRSASHA256.class
+
+ - link:SignatureRSASHA256-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

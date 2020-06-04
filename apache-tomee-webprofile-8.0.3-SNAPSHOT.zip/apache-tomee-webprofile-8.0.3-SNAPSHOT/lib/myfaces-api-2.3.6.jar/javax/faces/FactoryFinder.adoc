@@ -1,0 +1,28 @@
+= javax/faces/FactoryFinder.class
+
+ - link:FactoryFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 56
+ - javax.faces.FactoryFinder - 23
+ - javax.faces.context.FacesContext - 3
+ - javax.faces._FactoryFinderProviderFactory - 2
+ - javax.faces.FactoryFinder$1 - 2
+ - javax.faces.FactoryFinder$2 - 2
+ - javax.faces.context.ExternalContextFactory - 1
+ - javax.faces.context.ExternalContext - 1
+ - javax.faces.context.PartialViewContextFactory - 1
+ - javax.faces.flow.FlowHandlerFactory - 1
+ - javax.faces.render.RenderKitFactory - 1
+ - javax.faces.view.ViewDeclarationLanguageFactory - 1
+ - javax.faces.context.FlashFactory - 1
+ - javax.faces.context.FacesContextFactory - 1
+ - javax.faces.component.visit.VisitContextFactory - 1
+ - javax.faces.lifecycle.ClientWindowFactory - 1
+ - javax.faces.application.ApplicationFactory - 1
+ - javax.faces.view.facelets.TagHandlerDelegateFactory - 1
+ - javax.faces.view.facelets.FaceletCacheFactory - 1
+ - javax.faces.lifecycle.LifecycleFactory - 1
+ - javax.faces.component.search.SearchExpressionContextFactory - 1
+ - javax.faces.context.ExceptionHandlerFactory - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/io/AbstractThresholdOutputStream.class
+
+ - link:AbstractThresholdOutputStream-asmified.java[Asmified]
+
+== References
+

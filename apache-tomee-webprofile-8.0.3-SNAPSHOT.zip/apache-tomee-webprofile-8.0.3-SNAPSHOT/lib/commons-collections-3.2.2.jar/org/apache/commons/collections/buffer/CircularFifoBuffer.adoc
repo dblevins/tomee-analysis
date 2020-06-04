@@ -1,0 +1,6 @@
+= org/apache/commons/collections/buffer/CircularFifoBuffer.class
+
+ - link:CircularFifoBuffer-asmified.java[Asmified]
+
+== References
+

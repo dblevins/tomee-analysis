@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/el/CompositeFunctionMapper.class
+
+ - link:CompositeFunctionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.FunctionMapper - 12

@@ -1,0 +1,17 @@
+= javax/faces/component/html/HtmlSelectManyMenu.class
+
+ - link:HtmlSelectManyMenu-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 104
+ - javax.faces.component.html.HtmlSelectManyMenu - 53
+ - javax.faces.component.html.HtmlSelectManyMenu$PropertyKeys - 52
+ - javax.faces.component.UIComponent - 27
+ - javax.faces.component.html._CommonPropertyConstants - 26
+ - javax.faces.component.UISelectMany - 5
+ - javax.el.ValueExpression - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.component.behavior.ClientBehavior - 2
+ - javax.faces.component.html._CommonEventConstants - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

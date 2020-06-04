@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/MaxDBDictionary.class
+
+ - link:MaxDBDictionary-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/InnerEmulationDependency.class
+
+ - link:InnerEmulationDependency-asmified.java[Asmified]
+
+== References
+

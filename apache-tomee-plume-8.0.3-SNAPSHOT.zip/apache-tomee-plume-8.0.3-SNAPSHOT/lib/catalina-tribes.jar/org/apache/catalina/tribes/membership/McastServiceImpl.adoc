@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/McastServiceImpl.class
+
+ - link:McastServiceImpl-asmified.java[Asmified]
+
+== References
+

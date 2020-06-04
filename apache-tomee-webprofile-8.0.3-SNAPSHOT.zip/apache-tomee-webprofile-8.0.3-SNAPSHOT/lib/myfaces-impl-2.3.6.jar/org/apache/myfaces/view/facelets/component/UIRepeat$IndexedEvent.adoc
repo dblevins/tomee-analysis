@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/component/UIRepeat$IndexedEvent.class
+
+ - link:UIRepeat$IndexedEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.FacesEvent - 15
+ - javax.faces.event.FacesListener - 4
+ - javax.faces.event.PhaseId - 4
+ - javax.faces.component.UIComponent - 2

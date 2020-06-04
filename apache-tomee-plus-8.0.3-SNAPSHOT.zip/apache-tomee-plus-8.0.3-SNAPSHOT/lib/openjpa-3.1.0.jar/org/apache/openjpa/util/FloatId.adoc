@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/FloatId.class
+
+ - link:FloatId-asmified.java[Asmified]
+
+== References
+

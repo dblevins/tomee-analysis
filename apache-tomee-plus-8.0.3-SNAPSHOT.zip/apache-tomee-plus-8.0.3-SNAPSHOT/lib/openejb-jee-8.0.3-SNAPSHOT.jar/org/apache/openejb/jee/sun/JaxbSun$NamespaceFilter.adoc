@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/sun/JaxbSun$NamespaceFilter.class
+
+ - link:JaxbSun$NamespaceFilter-asmified.java[Asmified]
+
+== References
+

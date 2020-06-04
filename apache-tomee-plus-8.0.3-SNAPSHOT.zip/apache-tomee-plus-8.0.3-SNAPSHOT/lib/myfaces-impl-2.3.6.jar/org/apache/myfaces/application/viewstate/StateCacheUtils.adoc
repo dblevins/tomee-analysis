@@ -1,0 +1,8 @@
+= org/apache/myfaces/application/viewstate/StateCacheUtils.class
+
+ - link:StateCacheUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.render.ResponseStateManager - 6
+ - javax.faces.FacesWrapper - 6

@@ -1,0 +1,6 @@
+= org/hsqldb/types/UserTypeModifier.class
+
+ - link:UserTypeModifier-asmified.java[Asmified]
+
+== References
+

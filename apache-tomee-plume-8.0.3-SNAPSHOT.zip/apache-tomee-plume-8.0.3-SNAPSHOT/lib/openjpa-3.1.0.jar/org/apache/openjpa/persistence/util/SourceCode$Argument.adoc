@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/util/SourceCode$Argument.class
+
+ - link:SourceCode$Argument-asmified.java[Asmified]
+
+== References
+

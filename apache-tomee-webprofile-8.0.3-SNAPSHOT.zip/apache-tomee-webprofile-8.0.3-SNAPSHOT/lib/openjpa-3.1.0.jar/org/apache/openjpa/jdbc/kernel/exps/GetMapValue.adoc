@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/GetMapValue.class
+
+ - link:GetMapValue-asmified.java[Asmified]
+
+== References
+

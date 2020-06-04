@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/partitioning/UnionPartitioningMetadata.class
+
+ - link:UnionPartitioningMetadata-asmified.java[Asmified]
+
+== References
+

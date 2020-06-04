@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DelegatingBrokerFactory.class
+
+ - link:DelegatingBrokerFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/MethodContext$InterfaceMethodContext.class
+
+ - link:MethodContext$InterfaceMethodContext-asmified.java[Asmified]
+
+== References
+

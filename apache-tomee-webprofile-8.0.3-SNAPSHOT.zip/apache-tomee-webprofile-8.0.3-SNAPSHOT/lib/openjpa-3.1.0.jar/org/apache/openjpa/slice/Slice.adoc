@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/Slice.class
+
+ - link:Slice-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/ViewScopeProvider.class
+
+ - link:ViewScopeProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4

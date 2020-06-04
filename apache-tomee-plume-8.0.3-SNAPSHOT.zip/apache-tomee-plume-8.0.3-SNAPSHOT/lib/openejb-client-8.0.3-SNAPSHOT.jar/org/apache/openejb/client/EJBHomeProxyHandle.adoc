@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EJBHomeProxyHandle.class
+
+ - link:EJBHomeProxyHandle-asmified.java[Asmified]
+
+== References
+

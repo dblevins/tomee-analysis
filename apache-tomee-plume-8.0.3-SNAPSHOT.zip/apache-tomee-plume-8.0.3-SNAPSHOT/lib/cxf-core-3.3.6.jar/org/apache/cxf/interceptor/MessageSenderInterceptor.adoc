@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/MessageSenderInterceptor.class
+
+ - link:MessageSenderInterceptor-asmified.java[Asmified]
+
+== References
+

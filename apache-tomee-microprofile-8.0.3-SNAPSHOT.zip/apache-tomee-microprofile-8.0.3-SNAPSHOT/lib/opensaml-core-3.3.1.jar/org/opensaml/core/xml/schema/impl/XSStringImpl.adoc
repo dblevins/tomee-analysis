@@ -1,0 +1,6 @@
+= org/opensaml/core/xml/schema/impl/XSStringImpl.class
+
+ - link:XSStringImpl-asmified.java[Asmified]
+
+== References
+

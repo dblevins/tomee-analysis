@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/NumberSerializers$Base.class
+
+ - link:NumberSerializers$Base-asmified.java[Asmified]
+
+== References
+

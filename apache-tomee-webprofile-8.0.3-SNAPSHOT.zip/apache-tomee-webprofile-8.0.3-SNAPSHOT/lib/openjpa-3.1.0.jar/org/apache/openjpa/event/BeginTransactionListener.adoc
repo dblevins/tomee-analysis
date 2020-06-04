@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/BeginTransactionListener.class
+
+ - link:BeginTransactionListener-asmified.java[Asmified]
+
+== References
+

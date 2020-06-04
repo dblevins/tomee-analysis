@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/SignWith.class
+
+ - link:SignWith-asmified.java[Asmified]
+
+== References
+

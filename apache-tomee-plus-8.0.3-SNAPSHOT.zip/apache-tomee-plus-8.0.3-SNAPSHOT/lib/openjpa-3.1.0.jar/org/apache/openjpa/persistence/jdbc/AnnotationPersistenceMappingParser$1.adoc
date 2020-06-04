@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/jdbc/AnnotationPersistenceMappingParser$1.class
+
+ - link:AnnotationPersistenceMappingParser$1-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.InheritanceType - 8
+ - javax.persistence.TemporalType - 8
+ - javax.persistence.DiscriminatorType - 6

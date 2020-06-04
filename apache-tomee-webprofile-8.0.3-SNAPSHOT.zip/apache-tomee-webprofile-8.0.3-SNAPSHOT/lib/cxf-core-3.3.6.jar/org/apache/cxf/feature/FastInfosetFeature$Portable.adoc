@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/FastInfosetFeature$Portable.class
+
+ - link:FastInfosetFeature$Portable-asmified.java[Asmified]
+
+== References
+

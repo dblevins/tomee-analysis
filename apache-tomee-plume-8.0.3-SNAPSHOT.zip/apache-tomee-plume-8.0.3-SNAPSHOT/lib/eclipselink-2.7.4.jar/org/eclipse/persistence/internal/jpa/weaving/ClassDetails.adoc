@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/weaving/ClassDetails.class
+
+ - link:ClassDetails-asmified.java[Asmified]
+
+== References
+

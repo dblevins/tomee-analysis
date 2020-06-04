@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthnContextClassRefMarshaller.class
+
+ - link:AuthnContextClassRefMarshaller-asmified.java[Asmified]
+
+== References
+

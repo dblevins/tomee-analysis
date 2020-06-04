@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/AdviceBean.class
+
+ - link:AdviceBean-asmified.java[Asmified]
+
+== References
+

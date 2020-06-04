@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/scanner/xbean/OwbAnnotationFinder.class
+
+ - link:OwbAnnotationFinder-asmified.java[Asmified]
+
+== References
+

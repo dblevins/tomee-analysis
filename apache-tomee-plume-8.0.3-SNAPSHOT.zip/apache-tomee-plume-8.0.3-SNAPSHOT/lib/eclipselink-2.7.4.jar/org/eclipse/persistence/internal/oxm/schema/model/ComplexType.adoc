@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/ComplexType.class
+
+ - link:ComplexType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/resource/ResourceELUtils.class
+
+ - link:ResourceELUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 18
+ - javax.faces.view.Location - 3

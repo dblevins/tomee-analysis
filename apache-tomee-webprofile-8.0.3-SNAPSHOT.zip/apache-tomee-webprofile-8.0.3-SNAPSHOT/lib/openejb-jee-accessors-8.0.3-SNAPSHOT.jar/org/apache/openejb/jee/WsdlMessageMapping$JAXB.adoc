@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/WsdlMessageMapping$JAXB.class
+
+ - link:WsdlMessageMapping$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

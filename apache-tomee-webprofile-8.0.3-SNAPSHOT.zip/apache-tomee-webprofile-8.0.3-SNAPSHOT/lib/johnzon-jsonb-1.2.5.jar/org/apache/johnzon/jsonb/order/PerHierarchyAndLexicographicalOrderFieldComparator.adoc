@@ -1,0 +1,6 @@
+= org/apache/johnzon/jsonb/order/PerHierarchyAndLexicographicalOrderFieldComparator.class
+
+ - link:PerHierarchyAndLexicographicalOrderFieldComparator-asmified.java[Asmified]
+
+== References
+

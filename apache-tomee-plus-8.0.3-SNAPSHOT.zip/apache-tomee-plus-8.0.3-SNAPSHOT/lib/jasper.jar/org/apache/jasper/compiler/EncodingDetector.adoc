@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/EncodingDetector.class
+
+ - link:EncodingDetector-asmified.java[Asmified]
+
+== References
+

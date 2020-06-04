@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/BooleanRepresentationFactory$BooleanBooleanRepresentation.class
+
+ - link:BooleanRepresentationFactory$BooleanBooleanRepresentation-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/ClassInfoImpl$DuplicateException.class
+
+ - link:ClassInfoImpl$DuplicateException-asmified.java[Asmified]
+
+== References
+

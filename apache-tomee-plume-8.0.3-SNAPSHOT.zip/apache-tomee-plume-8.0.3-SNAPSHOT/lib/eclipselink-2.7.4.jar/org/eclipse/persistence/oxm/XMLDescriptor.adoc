@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/XMLDescriptor.class
+
+ - link:XMLDescriptor-asmified.java[Asmified]
+
+== References
+

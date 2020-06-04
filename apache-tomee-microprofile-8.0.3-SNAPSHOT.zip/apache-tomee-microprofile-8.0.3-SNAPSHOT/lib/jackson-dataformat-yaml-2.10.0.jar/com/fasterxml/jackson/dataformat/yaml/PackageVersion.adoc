@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/dataformat/yaml/PackageVersion.class
+
+ - link:PackageVersion-asmified.java[Asmified]
+
+== References
+

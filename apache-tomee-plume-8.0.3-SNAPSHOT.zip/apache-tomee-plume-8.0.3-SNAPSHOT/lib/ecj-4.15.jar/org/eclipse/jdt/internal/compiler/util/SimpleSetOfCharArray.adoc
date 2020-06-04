@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/SimpleSetOfCharArray.class
+
+ - link:SimpleSetOfCharArray-asmified.java[Asmified]
+
+== References
+

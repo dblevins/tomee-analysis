@@ -1,0 +1,6 @@
+= org/apache/openejb/config/EnvEntriesPropertiesDeployer.class
+
+ - link:EnvEntriesPropertiesDeployer-asmified.java[Asmified]
+
+== References
+

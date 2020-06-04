@@ -1,0 +1,7 @@
+= org/apache/xml/security/stax/impl/processor/input/XMLEncryptedKeyInputHandler$1.class
+
+ - link:XMLEncryptedKeyInputHandler$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4

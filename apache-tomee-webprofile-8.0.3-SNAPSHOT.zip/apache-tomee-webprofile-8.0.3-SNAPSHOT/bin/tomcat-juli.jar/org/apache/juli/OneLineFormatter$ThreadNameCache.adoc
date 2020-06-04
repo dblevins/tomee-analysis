@@ -1,0 +1,6 @@
+= org/apache/juli/OneLineFormatter$ThreadNameCache.class
+
+ - link:OneLineFormatter$ThreadNameCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/OpenJPAPersistence.class
+
+ - link:OpenJPAPersistence-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 8
+ - javax.persistence.EntityManagerFactory - 5
+ - javax.persistence.Query - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/ExpirationEvent.class
+
+ - link:ExpirationEvent-asmified.java[Asmified]
+
+== References
+

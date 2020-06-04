@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/EjbObjectInputStream.class
+
+ - link:EjbObjectInputStream-asmified.java[Asmified]
+
+== References
+

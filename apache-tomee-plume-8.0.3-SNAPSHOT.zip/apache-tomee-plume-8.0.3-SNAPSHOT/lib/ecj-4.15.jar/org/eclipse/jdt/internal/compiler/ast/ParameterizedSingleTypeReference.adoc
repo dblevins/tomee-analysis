@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ParameterizedSingleTypeReference.class
+
+ - link:ParameterizedSingleTypeReference-asmified.java[Asmified]
+
+== References
+

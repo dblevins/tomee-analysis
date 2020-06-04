@@ -1,0 +1,7 @@
+= org/apache/myfaces/config/annotation/ResourceAnnotationLifecycleProvider.class
+
+ - link:ResourceAnnotationLifecycleProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 8

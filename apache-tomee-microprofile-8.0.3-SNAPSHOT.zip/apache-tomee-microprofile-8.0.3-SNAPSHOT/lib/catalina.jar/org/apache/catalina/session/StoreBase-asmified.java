@@ -1,0 +1,485 @@
+package asm.org.apache.catalina.session;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class StoreBaseDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/catalina/session/StoreBase", null, "org/apache/catalina/util/LifecycleBase", new String[] { "org/apache/catalina/Store" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "storeName", "Ljava/lang/String;", null, "StoreBase");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "support", "Ljava/beans/PropertyChangeSupport;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "manager", "Lorg/apache/catalina/Manager;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/util/LifecycleBase", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/beans/PropertyChangeSupport");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/beans/PropertyChangeSupport", "<init>", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/session/StoreBase", "support", "Ljava/beans/PropertyChangeSupport;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStoreName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn("StoreBase");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setManager", "(Lorg/apache/catalina/Manager;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "support", "Ljava/beans/PropertyChangeSupport;");
+methodVisitor.visitLdcInsn("manager");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/PropertyChangeSupport", "firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getManager", "()Lorg/apache/catalina/Manager;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "support", "Ljava/beans/PropertyChangeSupport;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/PropertyChangeSupport", "addPropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "support", "Ljava/beans/PropertyChangeSupport;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/PropertyChangeSupport", "removePropertyChangeListener", "(Ljava/beans/PropertyChangeListener;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "expiredKeys", "()[Ljava/lang/String;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "keys", "()[Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processExpires", "()V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/io/IOException");
+Label label6 = new Label();
+Label label7 = new Label();
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/Exception");
+Label label9 = new Label();
+Label label10 = new Label();
+methodVisitor.visitTryCatchBlock(label9, label10, label8, "java/lang/Exception");
+Label label11 = new Label();
+Label label12 = new Label();
+methodVisitor.visitTryCatchBlock(label11, label12, label8, "java/lang/Exception");
+Label label13 = new Label();
+Label label14 = new Label();
+Label label15 = new Label();
+methodVisitor.visitTryCatchBlock(label13, label14, label15, "java/io/IOException");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "getState", "()Lorg/apache/catalina/LifecycleState;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/LifecycleState", "isAvailable", "()Z", false);
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"[Ljava/lang/String;"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "expiredKeys", "()[Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label1);
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label16);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitLdcInsn("Error getting keys");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "isDebugEnabled", "()Z", true);
+Label label17 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label17);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "getStoreName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(": processExpires check number of ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" sessions");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "debug", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label17);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 6);
+Label label18 = new Label();
+methodVisitor.visitLabel(label18);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/catalina/session/StoreBase", "[Ljava/lang/String;", Opcodes.LONG, "[Ljava/lang/String;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 5);
+Label label19 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label19);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "load", "(Ljava/lang/String;)Lorg/apache/catalina/Session;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/session/StandardSession");
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitJumpInsn(IFNONNULL, label9);
+methodVisitor.visitLabel(label7);
+Label label20 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label20);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "org/apache/catalina/session/StandardSession"}, 0, null);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StandardSession", "getThisAccessedTime", "()J", false);
+methodVisitor.visitInsn(LSUB);
+methodVisitor.visitLdcInsn(new Long(1000L));
+methodVisitor.visitInsn(LDIV);
+methodVisitor.visitInsn(L2I);
+methodVisitor.visitVarInsn(ISTORE, 9);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StandardSession", "getMaxInactiveInterval", "()I", false);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label11);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitJumpInsn(GOTO, label20);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "isDebugEnabled", "()Z", true);
+Label label21 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label21);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "getStoreName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(": processExpires expire store session ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "debug", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label21);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/catalina/session/PersistentManagerBase");
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/session/PersistentManagerBase");
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/PersistentManagerBase", "isLoaded", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitVarInsn(ISTORE, 10);
+Label label22 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label22);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "findSession", "(Ljava/lang/String;)Lorg/apache/catalina/Session;", true);
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label22);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitLabel(label22);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 10);
+Label label23 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label23);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StandardSession", "recycle", "()V", false);
+Label label24 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label24);
+methodVisitor.visitLabel(label23);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StandardSession", "expire", "()V", false);
+methodVisitor.visitLabel(label24);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "remove", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitJumpInsn(GOTO, label20);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/catalina/session/StoreBase", "[Ljava/lang/String;", Opcodes.LONG, "[Ljava/lang/String;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Session: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("; ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "remove", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitJumpInsn(GOTO, label20);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/session/StoreBase", "[Ljava/lang/String;", Opcodes.LONG, "[Ljava/lang/String;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/String", "java/lang/Exception"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitLdcInsn("Error removing key");
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitLabel(label20);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitIincInsn(6, 1);
+methodVisitor.visitJumpInsn(GOTO, label18);
+methodVisitor.visitLabel(label19);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 12);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getObjectInputStream", "(Ljava/io/InputStream;)Ljava/io/ObjectInputStream;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/io/BufferedInputStream");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/BufferedInputStream", "<init>", "(Ljava/io/InputStream;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/catalina/session/ManagerBase");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/session/ManagerBase");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/util/CustomObjectInputStream");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Manager", "getContext", "()Lorg/apache/catalina/Context;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getLogger", "()Lorg/apache/juli/logging/Log;", true);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/ManagerBase", "getSessionAttributeValueClassNamePattern", "()Ljava/util/regex/Pattern;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/ManagerBase", "getWarnOnSessionAttributeFilterFailure", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/util/CustomObjectInputStream", "<init>", "(Ljava/io/InputStream;Ljava/lang/ClassLoader;Lorg/apache/juli/logging/Log;Ljava/util/regex/Pattern;Z)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/io/BufferedInputStream", Opcodes.TOP, "java/lang/ClassLoader"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/catalina/util/CustomObjectInputStream");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/util/CustomObjectInputStream", "<init>", "(Ljava/io/InputStream;Ljava/lang/ClassLoader;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/catalina/session/StoreBase", "java/io/InputStream", "java/io/BufferedInputStream", "org/apache/catalina/util/CustomObjectInputStream", "java/lang/ClassLoader"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "initInternal", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(0, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "startInternal", "()V", null, new String[] { "org/apache/catalina/LifecycleException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/LifecycleState", "STARTING", "Lorg/apache/catalina/LifecycleState;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "setState", "(Lorg/apache/catalina/LifecycleState;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_SYNCHRONIZED, "stopInternal", "()V", null, new String[] { "org/apache/catalina/LifecycleException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/LifecycleState", "STOPPING", "Lorg/apache/catalina/LifecycleState;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/session/StoreBase", "setState", "(Lorg/apache/catalina/LifecycleState;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "destroyInternal", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(0, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/session/StoreBase", "manager", "Lorg/apache/catalina/Manager;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/util/ToStringUtil", "toString", "(Ljava/lang/Object;Lorg/apache/catalina/Manager;)Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/catalina/session/StoreBase;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/res/StringManager", "getManager", "(Ljava/lang/Class;)Lorg/apache/tomcat/util/res/StringManager;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/session/StoreBase", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

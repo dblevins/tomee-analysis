@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/AnnotationProvider.class
+
+ - link:AnnotationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.FacesWrapper - 1

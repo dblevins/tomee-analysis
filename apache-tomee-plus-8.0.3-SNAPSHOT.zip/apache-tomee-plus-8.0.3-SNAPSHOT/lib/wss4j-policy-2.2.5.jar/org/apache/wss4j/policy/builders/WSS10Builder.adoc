@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/WSS10Builder.class
+
+ - link:WSS10Builder-asmified.java[Asmified]
+
+== References
+

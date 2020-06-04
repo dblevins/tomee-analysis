@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/CipherValueImpl.class
+
+ - link:CipherValueImpl-asmified.java[Asmified]
+
+== References
+

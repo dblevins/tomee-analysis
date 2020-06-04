@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/LRUMap.class
+
+ - link:LRUMap-asmified.java[Asmified]
+
+== References
+

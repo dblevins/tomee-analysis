@@ -1,0 +1,7 @@
+= org/apache/cxf/bus/managers/BindingFactoryManagerImpl.class
+
+ - link:BindingFactoryManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

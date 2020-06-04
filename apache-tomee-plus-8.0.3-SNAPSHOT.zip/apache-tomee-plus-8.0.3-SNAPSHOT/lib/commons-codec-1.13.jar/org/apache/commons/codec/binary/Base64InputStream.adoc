@@ -1,0 +1,6 @@
+= org/apache/commons/codec/binary/Base64InputStream.class
+
+ - link:Base64InputStream-asmified.java[Asmified]
+
+== References
+

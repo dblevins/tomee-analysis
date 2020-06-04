@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/WebappBeanManager$Filter.class
+
+ - link:WebappBeanManager$Filter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/openejb/assembler/classic/SingleValidatorFactoryWrapper.class
+
+ - link:SingleValidatorFactoryWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 29
+ - javax.validation.ParameterNameProvider - 2
+ - javax.validation.ValidatorContext - 2
+ - javax.validation.ClockProvider - 2
+ - javax.validation.MessageInterpolator - 2
+ - javax.validation.ConstraintValidatorFactory - 2
+ - javax.validation.Validator - 2
+ - javax.validation.TraversableResolver - 2

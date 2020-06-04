@@ -1,0 +1,2 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/wss4j-ws-security-policy-stax-2.2.5.jar
+

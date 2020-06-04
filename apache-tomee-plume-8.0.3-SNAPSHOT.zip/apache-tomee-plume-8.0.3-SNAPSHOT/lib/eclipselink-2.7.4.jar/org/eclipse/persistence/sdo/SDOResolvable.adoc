@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOResolvable.class
+
+ - link:SDOResolvable-asmified.java[Asmified]
+
+== References
+

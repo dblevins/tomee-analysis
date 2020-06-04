@@ -1,0 +1,8 @@
+= org/apache/myfaces/el/PropertyResolverImpl$ResolverInvoker.class
+
+ - link:PropertyResolverImpl$ResolverInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 1
+ - javax.el.ELResolver - 1

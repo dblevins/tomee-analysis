@@ -1,0 +1,6 @@
+= org/cryptacular/codec/Base64Codec.class
+
+ - link:Base64Codec-asmified.java[Asmified]
+
+== References
+

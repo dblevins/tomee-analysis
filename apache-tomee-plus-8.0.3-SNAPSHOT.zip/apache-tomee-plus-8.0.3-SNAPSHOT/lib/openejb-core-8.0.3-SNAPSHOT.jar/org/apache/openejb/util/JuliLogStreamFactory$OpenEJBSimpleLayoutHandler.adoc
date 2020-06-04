@@ -1,0 +1,6 @@
+= org/apache/openejb/util/JuliLogStreamFactory$OpenEJBSimpleLayoutHandler.class
+
+ - link:JuliLogStreamFactory$OpenEJBSimpleLayoutHandler-asmified.java[Asmified]
+
+== References
+

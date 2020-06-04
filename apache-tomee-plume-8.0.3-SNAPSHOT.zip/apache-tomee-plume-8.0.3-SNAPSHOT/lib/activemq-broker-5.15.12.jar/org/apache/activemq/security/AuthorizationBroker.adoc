@@ -1,0 +1,7 @@
+= org/apache/activemq/security/AuthorizationBroker.class
+
+ - link:AuthorizationBroker-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Destination - 6

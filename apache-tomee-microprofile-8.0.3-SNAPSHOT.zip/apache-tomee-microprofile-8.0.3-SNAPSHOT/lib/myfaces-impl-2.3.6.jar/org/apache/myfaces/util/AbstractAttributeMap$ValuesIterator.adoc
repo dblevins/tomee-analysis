@@ -1,0 +1,6 @@
+= org/apache/myfaces/util/AbstractAttributeMap$ValuesIterator.class
+
+ - link:AbstractAttributeMap$ValuesIterator-asmified.java[Asmified]
+
+== References
+

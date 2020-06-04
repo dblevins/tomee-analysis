@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryImpl$RemoveOnCloseResultList.class
+
+ - link:QueryImpl$RemoveOnCloseResultList-asmified.java[Asmified]
+
+== References
+

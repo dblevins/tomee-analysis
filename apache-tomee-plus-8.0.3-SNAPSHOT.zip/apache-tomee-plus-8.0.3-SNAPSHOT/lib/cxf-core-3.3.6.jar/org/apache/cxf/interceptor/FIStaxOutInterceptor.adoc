@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/FIStaxOutInterceptor.class
+
+ - link:FIStaxOutInterceptor-asmified.java[Asmified]
+
+== References
+

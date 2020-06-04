@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/cdi/TracedExecutorService.class
+
+ - link:TracedExecutorService-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InterceptorBinding - 1

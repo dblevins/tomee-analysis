@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/ByteArrayInputStream.class
+
+ - link:ByteArrayInputStream-asmified.java[Asmified]
+
+== References
+

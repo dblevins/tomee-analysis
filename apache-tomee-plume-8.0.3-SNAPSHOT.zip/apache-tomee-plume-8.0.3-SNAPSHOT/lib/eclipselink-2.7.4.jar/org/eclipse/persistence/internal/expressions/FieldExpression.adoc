@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/FieldExpression.class
+
+ - link:FieldExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/core/ivm/naming/PersistenceUnitReference.class
+
+ - link:PersistenceUnitReference-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 4

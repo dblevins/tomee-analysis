@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/component/BindingAware.class
+
+ - link:BindingAware-asmified.java[Asmified]
+
+== References
+

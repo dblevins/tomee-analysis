@@ -1,0 +1,14 @@
+= com/sun/faces/renderkit/html_basic/SelectManyCheckboxListRenderer.class
+
+ - link:SelectManyCheckboxListRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 65
+ - javax.faces.component.UIComponent - 63
+ - javax.faces.context.FacesContext - 34
+ - javax.faces.model.SelectItem - 18
+ - javax.faces.convert.Converter - 11
+ - javax.faces.model.SelectItemGroup - 3
+ - javax.faces.component.ValueHolder - 3
+ - javax.faces.component.UINamingContainer - 2

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/derivedKey/DerivedKeyUtils.class
+
+ - link:DerivedKeyUtils-asmified.java[Asmified]
+
+== References
+

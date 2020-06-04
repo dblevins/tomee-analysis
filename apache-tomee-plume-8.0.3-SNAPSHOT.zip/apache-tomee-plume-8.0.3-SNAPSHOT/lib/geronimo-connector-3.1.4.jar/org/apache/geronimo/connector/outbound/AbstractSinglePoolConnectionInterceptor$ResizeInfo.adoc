@@ -1,0 +1,6 @@
+= org/apache/geronimo/connector/outbound/AbstractSinglePoolConnectionInterceptor$ResizeInfo.class
+
+ - link:AbstractSinglePoolConnectionInterceptor$ResizeInfo-asmified.java[Asmified]
+
+== References
+

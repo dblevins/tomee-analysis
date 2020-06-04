@@ -1,0 +1,15 @@
+= javax/faces/application/NavigationCase.class
+
+ - link:NavigationCase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 29
+ - javax.faces.application.NavigationCase - 20
+ - javax.faces.context.ExternalContext - 16
+ - javax.el.ValueExpression - 13
+ - javax.faces.application.Application - 12
+ - javax.faces.application.ViewHandler - 8
+ - javax.el.ELContext - 8
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.application.SharedUtils - 1

@@ -1,0 +1,30 @@
+= com/sun/faces/context/FacesContextImpl.class
+
+ - link:FacesContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 24
+ - javax.faces.component.UIViewRoot - 21
+ - javax.faces.application.Application - 18
+ - javax.faces.application.FacesMessage$Severity - 16
+ - javax.el.ELContext - 15
+ - javax.faces.application.FacesMessage - 13
+ - javax.faces.render.RenderKit - 11
+ - javax.faces.context.PartialViewContext - 11
+ - javax.faces.context.ExternalContext - 7
+ - javax.faces.context.ExceptionHandler - 7
+ - javax.faces.context.ResponseStream - 7
+ - javax.faces.context.ResponseWriter - 7
+ - javax.el.ExpressionFactory - 6
+ - javax.faces.render.RenderKitFactory - 6
+ - javax.el.ELContextListener - 6
+ - javax.faces.event.PhaseId - 6
+ - javax.el.ELContextEvent - 5
+ - javax.faces.render.ResponseStateManager - 4
+ - javax.faces.FactoryFinder - 3
+ - javax.faces.application.ApplicationFactory - 3
+ - javax.faces.context.PartialViewContextFactory - 2
+ - javax.el.ELResolver - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.lifecycle.Lifecycle - 1

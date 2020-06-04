@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/MultiValueMap$ReflectionFactory.class
+
+ - link:MultiValueMap$ReflectionFactory-asmified.java[Asmified]
+
+== References
+

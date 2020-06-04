@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/dynamic/DynamicClientFactory$ReferenceFinder.class
+
+ - link:DynamicClientFactory$ReferenceFinder-asmified.java[Asmified]
+
+== References
+

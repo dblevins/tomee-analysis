@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jaxb/JAXBUnmarshallerHandler.class
+
+ - link:JAXBUnmarshallerHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.UnmarshallerHandler - 1
+ - javax.xml.bind.JAXBException - 1

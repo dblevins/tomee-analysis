@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/MarshalRecordContentHandler.class
+
+ - link:MarshalRecordContentHandler-asmified.java[Asmified]
+
+== References
+

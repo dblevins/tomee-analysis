@@ -1,0 +1,7 @@
+= javax/security/auth/message/callback/PrivateKeyCallback.class
+
+ - link:PrivateKeyCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.callback.PrivateKeyCallback$Request - 5

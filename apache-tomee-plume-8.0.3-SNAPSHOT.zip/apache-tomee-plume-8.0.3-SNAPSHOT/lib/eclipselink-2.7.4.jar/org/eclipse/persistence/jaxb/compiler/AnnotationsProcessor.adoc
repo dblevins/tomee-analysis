@@ -1,0 +1,55 @@
+= org/eclipse/persistence/jaxb/compiler/AnnotationsProcessor.class
+
+ - link:AnnotationsProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 42
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 39
+ - javax.xml.bind.annotation.XmlElementRef - 22
+ - javax.xml.bind.annotation.XmlSchemaType - 19
+ - javax.xml.bind.annotation.XmlElementDecl - 18
+ - javax.xml.bind.annotation.XmlSchema - 17
+ - javax.xml.bind.annotation.XmlNs - 15
+ - javax.xml.bind.annotation.XmlAnyElement - 14
+ - javax.xml.bind.annotation.XmlElementWrapper - 13
+ - javax.xml.bind.annotation.XmlMimeType - 12
+ - javax.xml.bind.annotation.XmlType - 11
+ - javax.xml.bind.annotation.XmlEnum - 11
+ - javax.xml.bind.annotation.XmlAttribute - 11
+ - javax.xml.bind.annotation.XmlTransient - 11
+ - javax.validation.constraints.Pattern - 11
+ - javax.xml.bind.annotation.XmlAccessorOrder - 9
+ - javax.xml.bind.annotation.XmlAccessorType - 8
+ - javax.validation.constraints.Pattern$List - 7
+ - javax.validation.constraints.Size - 6
+ - javax.xml.bind.annotation.XmlSchemaTypes - 6
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters - 6
+ - javax.validation.constraints.DecimalMin - 5
+ - javax.validation.constraints.Digits - 5
+ - javax.xml.bind.annotation.XmlRootElement - 5
+ - javax.validation.constraints.DecimalMax - 5
+ - javax.xml.bind.annotation.XmlElementDecl$GLOBAL - 5
+ - javax.xml.bind.annotation.XmlAccessOrder - 4
+ - javax.xml.bind.annotation.XmlNsForm - 4
+ - javax.xml.bind.annotation.XmlElements - 4
+ - javax.validation.constraints.Max - 4
+ - javax.xml.bind.annotation.XmlEnumValue - 4
+ - javax.validation.constraints.Min - 4
+ - javax.xml.bind.annotation.XmlAccessType - 4
+ - javax.xml.bind.annotation.XmlAttachmentRef - 4
+ - javax.xml.bind.annotation.XmlElementRefs - 4
+ - javax.xml.bind.annotation.XmlList - 4
+ - javax.validation.constraints.Pattern$Flag - 4
+ - javax.xml.bind.annotation.XmlElement$DEFAULT - 2
+ - javax.xml.bind.annotation.XmlIDREF - 2
+ - javax.xml.bind.annotation.XmlID - 2
+ - javax.xml.bind.annotation.XmlInlineBinaryData - 2
+ - javax.xml.bind.Marshaller - 1
+ - javax.xml.bind.annotation.XmlMixed - 1
+ - javax.xml.bind.annotation.XmlType$DEFAULT - 1
+ - javax.xml.bind.Unmarshaller - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.validation.constraints.NotNull - 1
+ - javax.xml.bind.annotation.XmlRegistry - 1
+ - javax.xml.bind.annotation.XmlValue - 1

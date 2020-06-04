@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/WSTrustConstants.class
+
+ - link:WSTrustConstants-asmified.java[Asmified]
+
+== References
+

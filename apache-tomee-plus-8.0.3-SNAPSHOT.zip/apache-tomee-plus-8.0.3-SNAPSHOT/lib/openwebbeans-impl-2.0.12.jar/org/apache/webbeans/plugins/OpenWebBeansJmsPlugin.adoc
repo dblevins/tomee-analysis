@@ -1,0 +1,7 @@
+= org/apache/webbeans/plugins/OpenWebBeansJmsPlugin.class
+
+ - link:OpenWebBeansJmsPlugin-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 2

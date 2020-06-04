@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/IdPropertiesInfo.class
+
+ - link:IdPropertiesInfo-asmified.java[Asmified]
+
+== References
+

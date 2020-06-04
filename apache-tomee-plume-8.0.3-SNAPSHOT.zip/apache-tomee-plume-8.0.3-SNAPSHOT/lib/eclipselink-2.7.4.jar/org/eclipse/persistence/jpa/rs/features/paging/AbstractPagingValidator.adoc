@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/features/paging/AbstractPagingValidator.class
+
+ - link:AbstractPagingValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 4

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/managed/PassivationStrategy.class
+
+ - link:PassivationStrategy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/FactoryInvoker.class
+
+ - link:FactoryInvoker-asmified.java[Asmified]
+
+== References
+

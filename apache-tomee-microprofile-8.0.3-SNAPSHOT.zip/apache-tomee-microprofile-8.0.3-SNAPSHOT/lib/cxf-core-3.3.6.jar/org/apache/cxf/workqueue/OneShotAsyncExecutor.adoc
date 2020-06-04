@@ -1,0 +1,6 @@
+= org/apache/cxf/workqueue/OneShotAsyncExecutor.class
+
+ - link:OneShotAsyncExecutor-asmified.java[Asmified]
+
+== References
+

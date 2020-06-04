@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/composite/CompositeAttributePropertyDescriptor.class
+
+ - link:CompositeAttributePropertyDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 6
+ - javax.el.ELContext - 5
+ - javax.faces.FacesException - 2
+ - javax.el.ValueExpression - 2

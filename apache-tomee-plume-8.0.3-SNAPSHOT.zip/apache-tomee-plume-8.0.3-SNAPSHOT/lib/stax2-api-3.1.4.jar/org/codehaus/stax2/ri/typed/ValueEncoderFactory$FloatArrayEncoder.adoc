@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/ValueEncoderFactory$FloatArrayEncoder.class
+
+ - link:ValueEncoderFactory$FloatArrayEncoder-asmified.java[Asmified]
+
+== References
+

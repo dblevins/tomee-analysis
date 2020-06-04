@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/atom/AbstractEntryBuilder.class
+
+ - link:AbstractEntryBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/nntp/newsrc/RangeList.class
+
+ - link:RangeList-asmified.java[Asmified]
+
+== References
+

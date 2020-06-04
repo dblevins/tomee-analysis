@@ -1,0 +1,7 @@
+= javax/enterprise/context/Initialized.class
+
+ - link:Initialized-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

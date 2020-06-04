@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/bval/GroupSequenceType.class
+
+ - link:GroupSequenceType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

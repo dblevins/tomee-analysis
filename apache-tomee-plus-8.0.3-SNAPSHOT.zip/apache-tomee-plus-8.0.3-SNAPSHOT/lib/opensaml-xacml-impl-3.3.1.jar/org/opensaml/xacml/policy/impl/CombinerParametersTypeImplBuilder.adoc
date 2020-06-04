@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/CombinerParametersTypeImplBuilder.class
+
+ - link:CombinerParametersTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker$XPathExpression.class
+
+ - link:CryptoCoverageChecker$XPathExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator.class
+
+ - link:SubTypeValidator-asmified.java[Asmified]
+
+== References
+

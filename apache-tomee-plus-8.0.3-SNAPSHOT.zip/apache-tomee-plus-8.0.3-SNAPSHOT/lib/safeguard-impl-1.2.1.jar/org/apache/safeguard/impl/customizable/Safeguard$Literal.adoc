@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/customizable/Safeguard$Literal.class
+
+ - link:Safeguard$Literal-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2

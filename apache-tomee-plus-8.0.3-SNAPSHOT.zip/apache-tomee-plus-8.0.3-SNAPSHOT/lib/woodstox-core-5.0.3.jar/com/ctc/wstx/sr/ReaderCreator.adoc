@@ -1,0 +1,6 @@
+= com/ctc/wstx/sr/ReaderCreator.class
+
+ - link:ReaderCreator-asmified.java[Asmified]
+
+== References
+

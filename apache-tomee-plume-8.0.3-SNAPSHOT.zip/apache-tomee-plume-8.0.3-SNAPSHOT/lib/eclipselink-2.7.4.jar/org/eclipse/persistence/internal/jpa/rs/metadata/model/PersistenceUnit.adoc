@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/PersistenceUnit.class
+
+ - link:PersistenceUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1

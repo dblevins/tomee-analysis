@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/SchemaImpl.class
+
+ - link:SchemaImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbTransient - 7
+ - javax.json.bind.annotation.JsonbProperty - 6
+ - javax.json.bind.annotation.JsonbTypeAdapter - 5
+ - javax.enterprise.inject.Vetoed - 1

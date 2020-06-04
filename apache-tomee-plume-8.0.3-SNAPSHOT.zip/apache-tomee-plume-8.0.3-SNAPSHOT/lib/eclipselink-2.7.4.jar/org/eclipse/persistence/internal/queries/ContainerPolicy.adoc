@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/ContainerPolicy.class
+
+ - link:ContainerPolicy-asmified.java[Asmified]
+
+== References
+

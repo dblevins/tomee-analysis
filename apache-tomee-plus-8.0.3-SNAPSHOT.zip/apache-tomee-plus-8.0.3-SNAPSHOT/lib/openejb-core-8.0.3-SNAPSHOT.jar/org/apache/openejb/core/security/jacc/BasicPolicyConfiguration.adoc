@@ -1,0 +1,8 @@
+= org/apache/openejb/core/security/jacc/BasicPolicyConfiguration.class
+
+ - link:BasicPolicyConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.PolicyContextException - 14
+ - javax.security.jacc.PolicyConfiguration - 2

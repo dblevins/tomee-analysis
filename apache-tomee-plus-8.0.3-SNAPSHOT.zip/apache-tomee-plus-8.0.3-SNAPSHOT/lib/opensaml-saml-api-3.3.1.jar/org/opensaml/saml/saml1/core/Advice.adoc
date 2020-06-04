@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml1/core/Advice.class
+
+ - link:Advice-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/i18n/DiscoveryExceptionResource.class
+
+ - link:DiscoveryExceptionResource-asmified.java[Asmified]
+
+== References
+

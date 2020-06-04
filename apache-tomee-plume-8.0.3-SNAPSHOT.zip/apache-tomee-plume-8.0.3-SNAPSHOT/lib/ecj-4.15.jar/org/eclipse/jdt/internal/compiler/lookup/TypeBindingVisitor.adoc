@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/TypeBindingVisitor.class
+
+ - link:TypeBindingVisitor-asmified.java[Asmified]
+
+== References
+

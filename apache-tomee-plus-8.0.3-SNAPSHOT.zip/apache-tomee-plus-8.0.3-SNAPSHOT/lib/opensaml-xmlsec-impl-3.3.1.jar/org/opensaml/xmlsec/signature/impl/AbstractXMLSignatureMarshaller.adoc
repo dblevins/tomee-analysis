@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/impl/AbstractXMLSignatureMarshaller.class
+
+ - link:AbstractXMLSignatureMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

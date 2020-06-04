@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/ConstructionException.class
+
+ - link:ConstructionException-asmified.java[Asmified]
+
+== References
+

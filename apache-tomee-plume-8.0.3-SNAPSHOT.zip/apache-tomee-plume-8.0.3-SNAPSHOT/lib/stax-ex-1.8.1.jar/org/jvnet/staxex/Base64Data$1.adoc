@@ -1,0 +1,6 @@
+= org/jvnet/staxex/Base64Data$1.class
+
+ - link:Base64Data$1-asmified.java[Asmified]
+
+== References
+

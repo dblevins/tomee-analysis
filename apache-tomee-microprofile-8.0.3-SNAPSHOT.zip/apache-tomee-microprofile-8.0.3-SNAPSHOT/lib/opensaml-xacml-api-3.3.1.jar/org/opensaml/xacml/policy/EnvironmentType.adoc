@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/EnvironmentType.class
+
+ - link:EnvironmentType-asmified.java[Asmified]
+
+== References
+

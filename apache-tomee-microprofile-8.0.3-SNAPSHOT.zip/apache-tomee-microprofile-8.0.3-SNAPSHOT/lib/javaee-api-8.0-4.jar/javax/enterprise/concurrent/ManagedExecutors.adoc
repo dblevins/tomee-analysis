@@ -1,0 +1,11 @@
+= javax/enterprise/concurrent/ManagedExecutors.class
+
+ - link:ManagedExecutors-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedTaskListener - 8
+ - javax.enterprise.concurrent.ManageableThread - 4
+ - javax.enterprise.concurrent.ManagedExecutors - 2
+ - javax.enterprise.concurrent.ManagedExecutors$RunnableAdapter - 2
+ - javax.enterprise.concurrent.ManagedExecutors$CallableAdapter - 2

@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/FetchPlan.class
+
+ - link:FetchPlan-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.LockModeType - 4
+ - javax.persistence.PessimisticLockScope - 2

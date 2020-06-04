@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/JoinDeclaration.class
+
+ - link:JoinDeclaration-asmified.java[Asmified]
+
+== References
+

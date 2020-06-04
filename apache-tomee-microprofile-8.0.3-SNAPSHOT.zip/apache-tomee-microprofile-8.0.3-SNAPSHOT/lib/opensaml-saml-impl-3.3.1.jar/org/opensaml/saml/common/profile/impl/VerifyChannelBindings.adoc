@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/impl/VerifyChannelBindings.class
+
+ - link:VerifyChannelBindings-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 2

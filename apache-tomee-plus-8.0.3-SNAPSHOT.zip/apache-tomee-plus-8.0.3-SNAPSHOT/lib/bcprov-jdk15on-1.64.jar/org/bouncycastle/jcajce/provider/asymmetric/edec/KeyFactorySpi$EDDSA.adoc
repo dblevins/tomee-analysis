@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/edec/KeyFactorySpi$EDDSA.class
+
+ - link:KeyFactorySpi$EDDSA-asmified.java[Asmified]
+
+== References
+

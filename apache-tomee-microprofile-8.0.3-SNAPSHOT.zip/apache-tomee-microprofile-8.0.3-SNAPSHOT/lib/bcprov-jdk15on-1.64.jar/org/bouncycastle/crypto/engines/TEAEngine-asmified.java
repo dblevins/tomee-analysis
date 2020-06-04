@@ -1,0 +1,509 @@
+package asm.org.bouncycastle.crypto.engines;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class TEAEngineDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/crypto/engines/TEAEngine", null, "java/lang/Object", new String[] { "org/bouncycastle/crypto/BlockCipher" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "rounds", "I", null, new Integer(32));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "block_size", "I", null, new Integer(8));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "delta", "I", null, new Integer(-1640531527));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "d_sum", "I", null, new Integer(-957401312));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_a", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_b", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_c", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_d", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_initialised", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_forEncryption", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_initialised", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAlgorithmName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn("TEA");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBlockSize", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(ZLorg/bouncycastle/crypto/CipherParameters;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/crypto/params/KeyParameter");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("invalid parameter passed to TEA init - ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_forEncryption", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_initialised", "Z");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/KeyParameter");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/KeyParameter", "getKey", "()[B", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "setKey", "([B)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "processBlock", "([BI[BI)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_initialised", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/engines/TEAEngine", "getAlgorithmName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" not initialised");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/DataLengthException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("input buffer too short");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/DataLengthException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label2);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/OutputLengthException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("output buffer too short");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/OutputLengthException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_forEncryption", "Z");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "encryptBlock", "([BI[BI)I", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "decryptBlock", "([BI[BI)I", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(0, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setKey", "([B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Key size must be 128 bits.");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_a", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_b", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_c", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 12);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_d", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "encryptBlock", "([BI[BI)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 8);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitLdcInsn(new Integer(1640531527));
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_a", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_b", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_c", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_d", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "unpackInt", "(I[BI)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "unpackInt", "(I[BI)V", false);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 9);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "decryptBlock", "([BI[BI)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "bytesToInt", "([BI)I", false);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitLdcInsn(new Integer(-957401312));
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 8);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_c", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_d", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_a", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/engines/TEAEngine", "_b", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitLdcInsn(new Integer(1640531527));
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "unpackInt", "(I[BI)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/engines/TEAEngine", "unpackInt", "(I[BI)V", false);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 9);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "bytesToInt", "([BI)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 24);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "unpackInt", "(I[BI)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 24);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

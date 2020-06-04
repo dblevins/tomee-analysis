@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/oc4j/Oc4jTransactionController.class
+
+ - link:Oc4jTransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2

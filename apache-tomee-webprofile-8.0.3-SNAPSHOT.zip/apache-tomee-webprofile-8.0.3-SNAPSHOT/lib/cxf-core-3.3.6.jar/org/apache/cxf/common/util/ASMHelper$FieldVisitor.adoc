@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ASMHelper$FieldVisitor.class
+
+ - link:ASMHelper$FieldVisitor-asmified.java[Asmified]
+
+== References
+

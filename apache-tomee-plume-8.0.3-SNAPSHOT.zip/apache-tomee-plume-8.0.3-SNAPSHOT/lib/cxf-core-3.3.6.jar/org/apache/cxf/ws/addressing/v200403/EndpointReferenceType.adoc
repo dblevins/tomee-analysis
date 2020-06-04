@@ -1,0 +1,12 @@
+= org/apache/cxf/ws/addressing/v200403/EndpointReferenceType.class
+
+ - link:EndpointReferenceType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 4
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

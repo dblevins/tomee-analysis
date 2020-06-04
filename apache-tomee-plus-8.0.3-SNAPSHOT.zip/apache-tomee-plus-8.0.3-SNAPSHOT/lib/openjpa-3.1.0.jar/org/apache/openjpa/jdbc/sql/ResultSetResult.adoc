@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/ResultSetResult.class
+
+ - link:ResultSetResult-asmified.java[Asmified]
+
+== References
+

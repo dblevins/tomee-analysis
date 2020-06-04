@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/ManagedMBean.class
+
+ - link:ManagedMBean-asmified.java[Asmified]
+
+== References
+

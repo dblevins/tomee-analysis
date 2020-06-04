@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/Locker.class
+
+ - link:Locker-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/validation/Constraint.class
+
+ - link:Constraint-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/CacheDictionary.class
+
+ - link:CacheDictionary-asmified.java[Asmified]
+
+== References
+

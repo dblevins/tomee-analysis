@@ -1,0 +1,6 @@
+= javax/ws/rs/Consumes.class
+
+ - link:Consumes-asmified.java[Asmified]
+
+== References
+

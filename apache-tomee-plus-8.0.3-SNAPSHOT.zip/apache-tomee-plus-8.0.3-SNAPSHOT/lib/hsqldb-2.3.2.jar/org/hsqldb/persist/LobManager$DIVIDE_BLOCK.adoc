@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LobManager$DIVIDE_BLOCK.class
+
+ - link:LobManager$DIVIDE_BLOCK-asmified.java[Asmified]
+
+== References
+

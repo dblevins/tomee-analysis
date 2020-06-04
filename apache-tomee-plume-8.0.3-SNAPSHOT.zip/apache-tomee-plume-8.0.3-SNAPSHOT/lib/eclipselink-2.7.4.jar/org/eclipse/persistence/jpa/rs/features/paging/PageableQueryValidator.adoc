@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/features/paging/PageableQueryValidator.class
+
+ - link:PageableQueryValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 2

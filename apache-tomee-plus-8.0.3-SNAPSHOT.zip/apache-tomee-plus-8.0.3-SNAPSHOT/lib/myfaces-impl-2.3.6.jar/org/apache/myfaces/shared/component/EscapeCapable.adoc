@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/component/EscapeCapable.class
+
+ - link:EscapeCapable-asmified.java[Asmified]
+
+== References
+

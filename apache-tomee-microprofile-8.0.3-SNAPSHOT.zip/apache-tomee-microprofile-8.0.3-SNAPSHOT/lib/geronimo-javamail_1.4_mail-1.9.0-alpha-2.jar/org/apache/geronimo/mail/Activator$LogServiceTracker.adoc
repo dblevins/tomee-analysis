@@ -1,0 +1,6 @@
+= org/apache/geronimo/mail/Activator$LogServiceTracker.class
+
+ - link:Activator$LogServiceTracker-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/XROP.class
+
+ - link:XROP-asmified.java[Asmified]
+
+== References
+

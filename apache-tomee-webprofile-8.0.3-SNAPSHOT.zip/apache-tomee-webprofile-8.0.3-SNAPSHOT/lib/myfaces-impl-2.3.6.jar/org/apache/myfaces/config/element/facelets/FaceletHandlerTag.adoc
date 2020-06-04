@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/facelets/FaceletHandlerTag.class
+
+ - link:FaceletHandlerTag-asmified.java[Asmified]
+
+== References
+

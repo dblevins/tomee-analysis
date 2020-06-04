@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/UnionClauseFactory.class
+
+ - link:UnionClauseFactory-asmified.java[Asmified]
+
+== References
+

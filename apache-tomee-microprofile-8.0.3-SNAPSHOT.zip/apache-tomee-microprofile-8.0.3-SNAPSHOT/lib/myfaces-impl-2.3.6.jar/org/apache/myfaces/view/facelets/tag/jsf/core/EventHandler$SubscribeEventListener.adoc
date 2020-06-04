@@ -1,0 +1,14 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/EventHandler$SubscribeEventListener.class
+
+ - link:EventHandler$SubscribeEventListener-asmified.java[Asmified]
+
+== References
+
+ - javax.el.MethodExpression - 20
+ - javax.faces.component.UIComponent - 17
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.event.ComponentSystemEvent - 4
+ - javax.faces.event.ComponentSystemEventListener - 3
+ - javax.faces.event.PreRenderViewEvent - 1
+ - javax.faces.component.PartialStateHolder - 1

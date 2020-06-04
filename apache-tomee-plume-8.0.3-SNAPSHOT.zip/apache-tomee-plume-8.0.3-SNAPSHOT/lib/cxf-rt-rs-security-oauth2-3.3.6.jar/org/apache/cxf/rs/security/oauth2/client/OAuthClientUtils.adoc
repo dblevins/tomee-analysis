@@ -1,0 +1,13 @@
+= org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils.class
+
+ - link:OAuthClientUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriBuilder - 19
+ - javax.ws.rs.core.Form - 14
+ - javax.ws.rs.core.Response - 8
+ - javax.ws.rs.core.MediaType - 5
+ - javax.ws.rs.ProcessingException - 4
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.client.ResponseProcessingException - 2

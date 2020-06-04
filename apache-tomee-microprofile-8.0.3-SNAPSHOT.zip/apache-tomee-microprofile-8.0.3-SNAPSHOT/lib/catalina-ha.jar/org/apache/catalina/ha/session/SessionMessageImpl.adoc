@@ -1,0 +1,6 @@
+= org/apache/catalina/ha/session/SessionMessageImpl.class
+
+ - link:SessionMessageImpl-asmified.java[Asmified]
+
+== References
+

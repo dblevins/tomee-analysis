@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedSQLStoreQuery$ParallelExecutor.class
+
+ - link:DistributedSQLStoreQuery$ParallelExecutor-asmified.java[Asmified]
+
+== References
+

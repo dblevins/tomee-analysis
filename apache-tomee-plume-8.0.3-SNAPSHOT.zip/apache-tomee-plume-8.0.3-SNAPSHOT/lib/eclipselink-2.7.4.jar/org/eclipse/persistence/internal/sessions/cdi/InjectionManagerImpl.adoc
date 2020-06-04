@@ -1,0 +1,11 @@
+= org/eclipse/persistence/internal/sessions/cdi/InjectionManagerImpl.class
+
+ - link:InjectionManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 11
+ - javax.enterprise.inject.spi.BeanManager - 10
+ - javax.enterprise.inject.spi.InjectionTarget - 9
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.context.spi.Contextual - 1

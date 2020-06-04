@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/config/PersistenceUnit.class
+
+ - link:PersistenceUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 1
+ - javax.persistence.spi.PersistenceUnitTransactionType - 1

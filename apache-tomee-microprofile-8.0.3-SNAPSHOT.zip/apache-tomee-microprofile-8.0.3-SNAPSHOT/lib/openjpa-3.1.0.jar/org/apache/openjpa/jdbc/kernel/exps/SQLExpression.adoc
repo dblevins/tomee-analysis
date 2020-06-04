@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/SQLExpression.class
+
+ - link:SQLExpression-asmified.java[Asmified]
+
+== References
+

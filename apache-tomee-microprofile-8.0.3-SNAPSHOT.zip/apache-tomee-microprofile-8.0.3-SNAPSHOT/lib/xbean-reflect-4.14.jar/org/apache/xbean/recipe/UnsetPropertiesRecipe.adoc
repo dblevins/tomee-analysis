@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/UnsetPropertiesRecipe.class
+
+ - link:UnsetPropertiesRecipe-asmified.java[Asmified]
+
+== References
+

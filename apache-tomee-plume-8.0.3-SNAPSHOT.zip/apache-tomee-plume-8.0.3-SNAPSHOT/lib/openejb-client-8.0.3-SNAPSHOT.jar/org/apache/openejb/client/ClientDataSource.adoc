@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ClientDataSource.class
+
+ - link:ClientDataSource-asmified.java[Asmified]
+
+== References
+

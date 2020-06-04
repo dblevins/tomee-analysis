@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/nntp/newsrc/NNTPNewsrcFile.class
+
+ - link:NNTPNewsrcFile-asmified.java[Asmified]
+
+== References
+

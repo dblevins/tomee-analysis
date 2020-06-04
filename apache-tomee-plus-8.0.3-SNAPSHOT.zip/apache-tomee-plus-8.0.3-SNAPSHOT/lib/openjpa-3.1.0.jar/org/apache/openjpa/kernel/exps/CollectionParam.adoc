@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/CollectionParam.class
+
+ - link:CollectionParam-asmified.java[Asmified]
+
+== References
+

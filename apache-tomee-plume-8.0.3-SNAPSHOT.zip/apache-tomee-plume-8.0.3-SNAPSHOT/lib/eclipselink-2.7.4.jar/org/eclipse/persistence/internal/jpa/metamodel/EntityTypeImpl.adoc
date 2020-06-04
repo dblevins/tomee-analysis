@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/metamodel/EntityTypeImpl.class
+
+ - link:EntityTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Bindable$BindableType - 2
+ - javax.persistence.metamodel.Type$PersistenceType - 2
+ - javax.persistence.metamodel.EntityType - 1

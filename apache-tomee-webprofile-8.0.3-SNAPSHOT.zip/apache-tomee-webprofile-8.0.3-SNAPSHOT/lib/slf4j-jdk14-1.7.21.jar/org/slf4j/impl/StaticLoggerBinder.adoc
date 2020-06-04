@@ -1,0 +1,6 @@
+= org/slf4j/impl/StaticLoggerBinder.class
+
+ - link:StaticLoggerBinder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/codec/Serializers$SecuritySchemeInSerializer.class
+
+ - link:Serializers$SecuritySchemeInSerializer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.adapter.JsonbAdapter - 1

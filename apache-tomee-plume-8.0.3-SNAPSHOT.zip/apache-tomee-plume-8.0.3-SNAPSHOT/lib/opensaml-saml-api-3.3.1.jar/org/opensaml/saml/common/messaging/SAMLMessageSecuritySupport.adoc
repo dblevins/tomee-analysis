@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/messaging/SAMLMessageSecuritySupport.class
+
+ - link:SAMLMessageSecuritySupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 1

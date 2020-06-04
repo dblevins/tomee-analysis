@@ -1,0 +1,7 @@
+= org/apache/openejb/config/VmDeploymentManager$TargetImpl.class
+
+ - link:VmDeploymentManager$TargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.Target - 1

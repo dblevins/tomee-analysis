@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/core/sessions/CoreAbstractRecord.class
+
+ - link:CoreAbstractRecord-asmified.java[Asmified]
+
+== References
+

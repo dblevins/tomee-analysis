@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/logging/i18n/LoggingLocalizationResource.class
+
+ - link:LoggingLocalizationResource-asmified.java[Asmified]
+
+== References
+

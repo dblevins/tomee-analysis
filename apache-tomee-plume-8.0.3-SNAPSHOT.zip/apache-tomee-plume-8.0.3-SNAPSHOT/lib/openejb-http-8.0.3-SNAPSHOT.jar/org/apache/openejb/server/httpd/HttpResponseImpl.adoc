@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/HttpResponseImpl.class
+
+ - link:HttpResponseImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 3
+ - javax.servlet.ServletOutputStream - 1

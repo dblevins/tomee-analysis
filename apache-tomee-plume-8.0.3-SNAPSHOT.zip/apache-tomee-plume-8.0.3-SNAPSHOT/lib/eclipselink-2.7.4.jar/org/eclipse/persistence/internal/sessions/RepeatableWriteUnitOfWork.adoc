@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/RepeatableWriteUnitOfWork.class
+
+ - link:RepeatableWriteUnitOfWork-asmified.java[Asmified]
+
+== References
+

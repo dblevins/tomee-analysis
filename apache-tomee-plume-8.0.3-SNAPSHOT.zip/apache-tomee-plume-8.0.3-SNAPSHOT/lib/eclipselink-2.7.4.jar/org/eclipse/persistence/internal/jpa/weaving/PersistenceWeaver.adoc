@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/weaving/PersistenceWeaver.class
+
+ - link:PersistenceWeaver-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.ClassTransformer - 1

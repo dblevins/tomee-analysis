@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/el/DefaultVariableMapper.class
+
+ - link:DefaultVariableMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 5
+ - javax.el.VariableMapper - 2

@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/ColognePhonetic$CologneBuffer.class
+
+ - link:ColognePhonetic$CologneBuffer-asmified.java[Asmified]
+
+== References
+

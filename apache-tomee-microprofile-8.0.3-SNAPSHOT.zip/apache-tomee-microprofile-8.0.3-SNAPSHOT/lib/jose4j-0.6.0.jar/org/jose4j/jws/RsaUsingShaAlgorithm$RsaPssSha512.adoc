@@ -1,0 +1,6 @@
+= org/jose4j/jws/RsaUsingShaAlgorithm$RsaPssSha512.class
+
+ - link:RsaUsingShaAlgorithm$RsaPssSha512-asmified.java[Asmified]
+
+== References
+

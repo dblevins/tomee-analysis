@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/Processor$InputSlicingHandler.class
+
+ - link:Processor$InputSlicingHandler-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/management/jmx/export/runtime/ModelMBeanAssembler$ManagedAttributeInfo.class
+
+ - link:ModelMBeanAssembler$ManagedAttributeInfo-asmified.java[Asmified]
+
+== References
+

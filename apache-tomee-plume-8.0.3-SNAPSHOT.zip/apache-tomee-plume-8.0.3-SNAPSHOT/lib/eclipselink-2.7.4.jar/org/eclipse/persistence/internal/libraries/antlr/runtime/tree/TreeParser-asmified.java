@@ -1,0 +1,600 @@
+package asm.org.eclipse.persistence.internal.libraries.antlr.runtime.tree;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class TreeParserDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_7, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", null, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "DOWN", "I", null, new Integer(2));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC | ACC_FINAL | ACC_STATIC, "UP", "I", null, new Integer(3));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_STATIC, "dotdot", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_STATIC, "doubleEtc", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_STATIC, "dotdotPattern", "Ljava/util/regex/Pattern;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_STATIC, "doubleEtcPattern", "Ljava/util/regex/Pattern;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "setTreeNodeStream", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognizerSharedState;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", "<init>", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognizerSharedState;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "setTreeNodeStream", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reset", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", "reset", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "seek", "(I)V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setTreeNodeStream", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTreeNodeStream", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSourceName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getSourceName", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getCurrentInputSymbol", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/IntStream;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "LT", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMissingSymbol", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/IntStream;Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException;ILorg/eclipse/persistence/internal/libraries/antlr/runtime/BitSet;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("<missing ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "getTokenNames", "()[Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(">");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/IntStream;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getTreeAdaptor", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;", true);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/libraries/antlr/runtime/CommonToken");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/CommonToken", "<init>", "(ILjava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "create", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/Token;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "matchAny", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/IntStream;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "state", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognizerSharedState;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognizerSharedState", "errorRecovery", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "state", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognizerSharedState;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognizerSharedState", "failed", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "LT", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getTreeAdaptor", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;", true);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getChildCount", "(Ljava/lang/Object;)I", true);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "consume", "()V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getTreeAdaptor", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;", true);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getType", "(Ljava/lang/Object;)I", true);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_M1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_3);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label3);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "consume", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "LT", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getTreeAdaptor", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;", true);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getType", "(Ljava/lang/Object;)I", true);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label4);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
+methodVisitor.visitIincInsn(3, -1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "consume", "()V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "recoverFromMismatchedToken", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/IntStream;ILorg/eclipse/persistence/internal/libraries/antlr/runtime/BitSet;)Ljava/lang/Object;", null, new String[] { "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/libraries/antlr/runtime/MismatchedTreeNodeException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/MismatchedTreeNodeException", "<init>", "(ILorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getErrorHeader", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException;)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "getGrammarFileName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(": node from ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "approximateLineInfo", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitLdcInsn("after ");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/StringBuilder"});
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException"}, 2, new Object[] {"java/lang/StringBuilder", "java/lang/String"});
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("line ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "line", "I");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(":");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "charPositionInLine", "I");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getErrorMessage", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException;[Ljava/lang/String;)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/IntStream;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getTreeAdaptor", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "node", "Ljava/lang/Object;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getToken", "(Ljava/lang/Object;)Lorg/eclipse/persistence/internal/libraries/antlr/runtime/Token;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "token", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/Token;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "token", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/Token;");
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/internal/libraries/antlr/runtime/CommonToken");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "node", "Ljava/lang/Object;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getType", "(Ljava/lang/Object;)I", true);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "node", "Ljava/lang/Object;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getText", "(Ljava/lang/Object;)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/CommonToken", "<init>", "(ILjava/lang/String;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException", "token", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/Token;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", "getErrorMessage", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/RecognitionException;[Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "inContext", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "getTreeAdaptor", "()Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "getTokenNames", "()[Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "LT", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "inContext", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;[Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "inContext", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;[Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "dotdotPattern", "Ljava/util/regex/Pattern;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/regex/Pattern", "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "doubleEtcPattern", "Ljava/util/regex/Pattern;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/regex/Pattern", "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/regex/Matcher", "find", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("invalid syntax: ..");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/regex/Matcher", "java/util/regex/Matcher"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/regex/Matcher", "find", "()Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("invalid syntax: ... ...");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("\\.\\.\\.");
+methodVisitor.visitLdcInsn(" ... ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "replaceAll", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "trim", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("\\s+");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "split", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getParent", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label2 = new Label();
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[Ljava/lang/String;", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 7);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFLT, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitLdcInsn("...");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ILOAD, 7);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "getAncestor", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;[Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label6);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/String", "java/lang/Object"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitIincInsn(7, -1);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getType", "(Ljava/lang/Object;)I", true);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitIincInsn(7, -1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getParent", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label8);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitJumpInsn(IFLT, label8);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "getAncestor", "(Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor;[Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getType", "(Ljava/lang/Object;)I", true);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeAdaptor", "getParent", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "traceIn", "(Ljava/lang/String;I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "LT", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", "traceIn", "(Ljava/lang/String;ILjava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "traceOut", "(Ljava/lang/String;I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "input", "Lorg/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeNodeStream", "LT", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/internal/libraries/antlr/runtime/BaseRecognizer", "traceOut", "(Ljava/lang/String;ILjava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(".*[^.]\\.\\.[^.].*");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "dotdot", "Ljava/lang/String;");
+methodVisitor.visitLdcInsn(".*\\.\\.\\.\\s+\\.\\.\\..*");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "doubleEtc", "Ljava/lang/String;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "dotdot", "Ljava/lang/String;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/regex/Pattern", "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "dotdotPattern", "Ljava/util/regex/Pattern;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "doubleEtc", "Ljava/lang/String;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/regex/Pattern", "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreeParser", "doubleEtcPattern", "Ljava/util/regex/Pattern;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

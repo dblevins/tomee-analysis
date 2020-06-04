@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/stax/XMLSecEventBaseImpl$LocationImpl.class
+
+ - link:XMLSecEventBaseImpl$LocationImpl-asmified.java[Asmified]
+
+== References
+

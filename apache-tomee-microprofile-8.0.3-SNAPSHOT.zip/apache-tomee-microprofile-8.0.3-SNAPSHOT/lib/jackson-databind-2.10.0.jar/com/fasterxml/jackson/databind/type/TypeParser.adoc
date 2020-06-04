@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/TypeParser.class
+
+ - link:TypeParser-asmified.java[Asmified]
+
+== References
+

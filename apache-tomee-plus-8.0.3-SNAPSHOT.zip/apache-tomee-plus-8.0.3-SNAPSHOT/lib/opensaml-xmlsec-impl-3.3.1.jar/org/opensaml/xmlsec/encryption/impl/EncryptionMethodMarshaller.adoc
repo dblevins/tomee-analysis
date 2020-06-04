@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/EncryptionMethodMarshaller.class
+
+ - link:EncryptionMethodMarshaller-asmified.java[Asmified]
+
+== References
+

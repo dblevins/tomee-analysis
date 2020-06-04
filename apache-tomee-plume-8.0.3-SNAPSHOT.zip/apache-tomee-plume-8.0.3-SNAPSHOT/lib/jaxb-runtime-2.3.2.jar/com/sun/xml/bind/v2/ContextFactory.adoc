@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/ContextFactory.class
+
+ - link:ContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 20
+ - javax.xml.bind.JAXBContext - 3

@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/jsf/PartialMethodExpressionValidator.class
+
+ - link:PartialMethodExpressionValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.validator.MethodExpressionValidator - 5
+ - javax.faces.context.FacesContext - 4
+ - javax.el.MethodExpression - 2
+ - javax.faces.component.PartialStateHolder - 1

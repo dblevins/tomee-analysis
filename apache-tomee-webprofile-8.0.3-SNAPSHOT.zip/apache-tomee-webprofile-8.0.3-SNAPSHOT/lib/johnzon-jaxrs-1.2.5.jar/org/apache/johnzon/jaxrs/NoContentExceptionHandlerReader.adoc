@@ -1,0 +1,11 @@
+= org/apache/johnzon/jaxrs/NoContentExceptionHandlerReader.class
+
+ - link:NoContentExceptionHandlerReader-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.MessageBodyReader - 10
+ - javax.ws.rs.core.MediaType - 4
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.NoContentException - 2
+ - javax.ws.rs.WebApplicationException - 1

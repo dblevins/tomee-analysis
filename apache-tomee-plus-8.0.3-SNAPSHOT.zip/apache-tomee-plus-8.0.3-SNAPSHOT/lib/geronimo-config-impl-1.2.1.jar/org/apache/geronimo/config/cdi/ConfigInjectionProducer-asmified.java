@@ -1,0 +1,79 @@
+package asm.org.apache.geronimo.config.cdi;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ConfigInjectionProducerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/geronimo/config/cdi/ConfigInjectionProducer", null, "java/lang/Object", null);
+
+{
+annotationVisitor0 = classWriter.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "config", "Lorg/eclipse/microprofile/config/Config;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "init", "()V", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/annotation/PostConstruct;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/microprofile/config/ConfigProvider", "getConfig", "()Lorg/eclipse/microprofile/config/Config;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/geronimo/config/cdi/ConfigInjectionProducer", "config", "Lorg/eclipse/microprofile/config/Config;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createConfig", "()Lorg/eclipse/microprofile/config/Config;", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/inject/Produces;", true);
+annotationVisitor0.visitEnd();
+}
+{
+annotationVisitor0 = methodVisitor.visitAnnotation("Ljavax/enterprise/context/ApplicationScoped;", true);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/geronimo/config/cdi/ConfigInjectionProducer", "config", "Lorg/eclipse/microprofile/config/Config;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

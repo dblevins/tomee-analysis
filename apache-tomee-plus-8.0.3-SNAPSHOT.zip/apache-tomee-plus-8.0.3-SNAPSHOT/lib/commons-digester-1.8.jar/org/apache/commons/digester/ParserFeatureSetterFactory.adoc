@@ -1,0 +1,6 @@
+= org/apache/commons/digester/ParserFeatureSetterFactory.class
+
+ - link:ParserFeatureSetterFactory-asmified.java[Asmified]
+
+== References
+

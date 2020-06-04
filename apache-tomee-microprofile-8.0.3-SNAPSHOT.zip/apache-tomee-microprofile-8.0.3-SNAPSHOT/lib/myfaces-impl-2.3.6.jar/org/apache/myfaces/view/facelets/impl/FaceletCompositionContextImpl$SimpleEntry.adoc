@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/impl/FaceletCompositionContextImpl$SimpleEntry.class
+
+ - link:FaceletCompositionContextImpl$SimpleEntry-asmified.java[Asmified]
+
+== References
+

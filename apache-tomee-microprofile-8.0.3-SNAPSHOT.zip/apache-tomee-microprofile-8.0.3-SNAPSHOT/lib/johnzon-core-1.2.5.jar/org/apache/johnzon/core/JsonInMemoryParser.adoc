@@ -1,0 +1,14 @@
+= org/apache/johnzon/core/JsonInMemoryParser.class
+
+ - link:JsonInMemoryParser-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser$Event - 38
+ - javax.json.JsonNumber - 12
+ - javax.json.JsonValue - 10
+ - javax.json.JsonValue$ValueType - 4
+ - javax.json.JsonString - 3
+ - javax.json.stream.JsonLocation - 2
+ - javax.json.JsonObject - 2
+ - javax.json.JsonArray - 2

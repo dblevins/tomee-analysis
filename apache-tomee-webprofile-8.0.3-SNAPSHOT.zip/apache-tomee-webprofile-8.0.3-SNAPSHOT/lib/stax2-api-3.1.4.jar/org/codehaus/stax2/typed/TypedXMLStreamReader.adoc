@@ -1,0 +1,6 @@
+= org/codehaus/stax2/typed/TypedXMLStreamReader.class
+
+ - link:TypedXMLStreamReader-asmified.java[Asmified]
+
+== References
+

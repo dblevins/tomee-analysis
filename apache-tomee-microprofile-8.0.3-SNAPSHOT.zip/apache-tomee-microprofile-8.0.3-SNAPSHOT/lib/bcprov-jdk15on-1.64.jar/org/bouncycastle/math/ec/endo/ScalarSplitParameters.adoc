@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/endo/ScalarSplitParameters.class
+
+ - link:ScalarSplitParameters-asmified.java[Asmified]
+
+== References
+

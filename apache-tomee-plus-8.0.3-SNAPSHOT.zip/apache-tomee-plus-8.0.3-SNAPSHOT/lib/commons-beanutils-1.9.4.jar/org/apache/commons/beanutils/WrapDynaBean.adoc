@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/WrapDynaBean.class
+
+ - link:WrapDynaBean-asmified.java[Asmified]
+
+== References
+

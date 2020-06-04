@@ -1,0 +1,8 @@
+= org/apache/webbeans/component/ResourceBean.class
+
+ - link:ResourceBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.inject.spi.ProducerFactory - 2

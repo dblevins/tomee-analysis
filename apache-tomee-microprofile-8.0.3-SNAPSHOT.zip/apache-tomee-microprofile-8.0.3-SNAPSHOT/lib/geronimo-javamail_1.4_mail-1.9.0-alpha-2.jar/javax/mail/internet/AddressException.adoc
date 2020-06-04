@@ -1,0 +1,8 @@
+= javax/mail/internet/AddressException.class
+
+ - link:AddressException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.AddressException - 3
+ - javax.mail.internet.ParseException - 3

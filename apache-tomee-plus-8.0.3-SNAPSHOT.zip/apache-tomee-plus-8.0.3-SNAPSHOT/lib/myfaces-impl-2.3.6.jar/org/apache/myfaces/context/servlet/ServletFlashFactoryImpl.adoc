@@ -1,0 +1,10 @@
+= org/apache/myfaces/context/servlet/ServletFlashFactoryImpl.class
+
+ - link:ServletFlashFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.context.Flash - 2
+ - javax.faces.context.FlashFactory - 2

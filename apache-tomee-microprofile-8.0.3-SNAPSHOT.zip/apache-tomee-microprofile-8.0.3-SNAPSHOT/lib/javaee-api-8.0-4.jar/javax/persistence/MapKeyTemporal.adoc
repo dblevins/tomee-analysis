@@ -1,0 +1,7 @@
+= javax/persistence/MapKeyTemporal.class
+
+ - link:MapKeyTemporal-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TemporalType - 1

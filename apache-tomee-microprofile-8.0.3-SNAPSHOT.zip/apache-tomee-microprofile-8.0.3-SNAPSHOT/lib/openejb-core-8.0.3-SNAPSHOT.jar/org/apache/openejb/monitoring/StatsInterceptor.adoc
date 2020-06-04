@@ -1,0 +1,16 @@
+= org/apache/openejb/monitoring/StatsInterceptor.class
+
+ - link:StatsInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 28
+ - javax.ejb.AfterBegin - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.interceptor.AroundTimeout - 1
+ - javax.ejb.PrePassivate - 1
+ - javax.ejb.BeforeCompletion - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.interceptor.AroundInvoke - 1
+ - javax.ejb.AfterCompletion - 1
+ - javax.ejb.PostActivate - 1

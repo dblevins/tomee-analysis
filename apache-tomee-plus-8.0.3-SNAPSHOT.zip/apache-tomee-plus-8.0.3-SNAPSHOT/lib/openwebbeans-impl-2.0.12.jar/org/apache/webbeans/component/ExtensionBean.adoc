@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/ExtensionBean.class
+
+ - link:ExtensionBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.enterprise.inject.spi.ProducerFactory - 1

@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/RequestedReferenceType.class
+
+ - link:RequestedReferenceType-asmified.java[Asmified]
+
+== References
+

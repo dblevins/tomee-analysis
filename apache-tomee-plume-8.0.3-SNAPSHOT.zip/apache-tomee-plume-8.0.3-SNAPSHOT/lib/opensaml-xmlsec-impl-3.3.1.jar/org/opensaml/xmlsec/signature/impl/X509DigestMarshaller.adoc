@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509DigestMarshaller.class
+
+ - link:X509DigestMarshaller-asmified.java[Asmified]
+
+== References
+

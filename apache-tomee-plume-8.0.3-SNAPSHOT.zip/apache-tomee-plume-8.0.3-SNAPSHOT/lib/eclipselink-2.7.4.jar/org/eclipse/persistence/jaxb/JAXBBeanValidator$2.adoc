@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/JAXBBeanValidator$2.class
+
+ - link:JAXBBeanValidator$2-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Validator - 1

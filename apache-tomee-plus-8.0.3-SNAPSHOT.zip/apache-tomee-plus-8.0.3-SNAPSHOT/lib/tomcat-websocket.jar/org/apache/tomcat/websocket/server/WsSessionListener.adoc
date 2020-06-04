@@ -1,0 +1,9 @@
+= org/apache/tomcat/websocket/server/WsSessionListener.class
+
+ - link:WsSessionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 2
+ - javax.servlet.http.HttpSessionEvent - 2
+ - javax.servlet.http.HttpSessionListener - 1

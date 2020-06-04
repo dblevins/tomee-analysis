@@ -1,0 +1,11 @@
+= com/sun/faces/renderkit/html_basic/BaseTableRenderer$TableMetaInfo.class
+
+ - link:BaseTableRenderer$TableMetaInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 15
+ - javax.faces.component.UIColumn - 10
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.component.UIData - 1

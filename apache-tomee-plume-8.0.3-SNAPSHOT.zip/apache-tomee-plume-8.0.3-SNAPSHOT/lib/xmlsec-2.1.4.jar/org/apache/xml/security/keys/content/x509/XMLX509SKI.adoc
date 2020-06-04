@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/x509/XMLX509SKI.class
+
+ - link:XMLX509SKI-asmified.java[Asmified]
+
+== References
+

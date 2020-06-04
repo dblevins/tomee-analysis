@@ -1,0 +1,11 @@
+= javax/faces/context/ExceptionHandler.class
+
+ - link:ExceptionHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ExceptionQueuedEvent - 3
+ - javax.faces.FacesException - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.event.SystemEvent - 1
+ - javax.faces.event.SystemEventListener - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/PCRegistry.class
+
+ - link:PCRegistry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/AbstractLoggingInterceptor.class
+
+ - link:AbstractLoggingInterceptor-asmified.java[Asmified]
+
+== References
+

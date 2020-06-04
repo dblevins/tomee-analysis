@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/InValueExpression.class
+
+ - link:InValueExpression-asmified.java[Asmified]
+
+== References
+

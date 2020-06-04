@@ -1,0 +1,6 @@
+= org/apache/webbeans/config/OwbGenericArrayTypeImpl.class
+
+ - link:OwbGenericArrayTypeImpl-asmified.java[Asmified]
+
+== References
+

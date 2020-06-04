@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback.class
+
+ - link:JobStoreSupport$TransactionCallback-asmified.java[Asmified]
+
+== References
+

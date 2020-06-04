@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/TrimExpression.class
+
+ - link:TrimExpression-asmified.java[Asmified]
+
+== References
+

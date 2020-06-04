@@ -1,0 +1,7 @@
+= org/apache/openejb/rest/ThreadLocalSecurityContext.class
+
+ - link:ThreadLocalSecurityContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.SecurityContext - 12

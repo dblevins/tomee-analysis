@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/ConstraintAnnotationAttributes.class
+
+ - link:ConstraintAnnotationAttributes-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintTarget - 1

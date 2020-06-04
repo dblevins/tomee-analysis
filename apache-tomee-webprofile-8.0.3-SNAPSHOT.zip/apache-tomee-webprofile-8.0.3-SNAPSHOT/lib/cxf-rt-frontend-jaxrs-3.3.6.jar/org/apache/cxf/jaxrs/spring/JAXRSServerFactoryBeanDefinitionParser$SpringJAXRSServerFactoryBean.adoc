@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/spring/JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean.class
+
+ - link:JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.Provider - 2
+ - javax.ws.rs.Path - 2

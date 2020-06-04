@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/FlatClassStrategy.class
+
+ - link:FlatClassStrategy-asmified.java[Asmified]
+
+== References
+

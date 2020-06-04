@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/OverlayW3CDOMStreamWriter.class
+
+ - link:OverlayW3CDOMStreamWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/openejb/jee/oejb2/JaxbOpenejbJar2.class
+
+ - link:JaxbOpenejbJar2-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 9
+ - javax.xml.bind.Unmarshaller - 5
+ - javax.xml.bind.JAXBException - 5
+ - javax.xml.bind.Marshaller - 3
+ - javax.xml.bind.UnmarshallerHandler - 1
+ - javax.xml.bind.Unmarshaller$Listener - 1
+ - javax.xml.bind.JAXBElement - 1
+ - javax.xml.bind.ValidationEventHandler - 1

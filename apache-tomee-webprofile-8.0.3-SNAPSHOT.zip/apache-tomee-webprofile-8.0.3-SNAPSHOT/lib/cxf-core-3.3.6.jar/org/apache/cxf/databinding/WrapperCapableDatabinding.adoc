@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/WrapperCapableDatabinding.class
+
+ - link:WrapperCapableDatabinding-asmified.java[Asmified]
+
+== References
+

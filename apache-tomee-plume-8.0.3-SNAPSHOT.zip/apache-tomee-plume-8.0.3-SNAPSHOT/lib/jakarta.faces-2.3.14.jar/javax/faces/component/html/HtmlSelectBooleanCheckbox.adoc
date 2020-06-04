@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlSelectBooleanCheckbox.class
+
+ - link:HtmlSelectBooleanCheckbox-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 100
+ - javax.faces.component.html.HtmlSelectBooleanCheckbox - 74
+ - javax.faces.component.html.HtmlSelectBooleanCheckbox$PropertyKeys - 50
+ - javax.faces.component.UISelectBoolean - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

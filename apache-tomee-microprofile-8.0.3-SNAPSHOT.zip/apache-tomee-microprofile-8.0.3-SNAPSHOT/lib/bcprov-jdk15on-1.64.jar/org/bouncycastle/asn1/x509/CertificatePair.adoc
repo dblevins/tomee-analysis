@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/x509/CertificatePair.class
+
+ - link:CertificatePair-asmified.java[Asmified]
+
+== References
+

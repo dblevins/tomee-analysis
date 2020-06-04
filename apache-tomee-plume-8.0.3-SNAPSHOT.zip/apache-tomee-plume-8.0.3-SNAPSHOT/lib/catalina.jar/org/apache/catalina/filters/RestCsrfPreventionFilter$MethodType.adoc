@@ -1,0 +1,6 @@
+= org/apache/catalina/filters/RestCsrfPreventionFilter$MethodType.class
+
+ - link:RestCsrfPreventionFilter$MethodType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= javax/persistence/metamodel/MapAttribute.class
+
+ - link:MapAttribute-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type - 1
+ - javax.persistence.metamodel.PluralAttribute - 1

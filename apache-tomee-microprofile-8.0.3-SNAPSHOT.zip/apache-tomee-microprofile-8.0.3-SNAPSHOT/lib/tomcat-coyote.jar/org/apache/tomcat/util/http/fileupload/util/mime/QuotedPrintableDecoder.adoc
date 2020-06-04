@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/fileupload/util/mime/QuotedPrintableDecoder.class
+
+ - link:QuotedPrintableDecoder-asmified.java[Asmified]
+
+== References
+

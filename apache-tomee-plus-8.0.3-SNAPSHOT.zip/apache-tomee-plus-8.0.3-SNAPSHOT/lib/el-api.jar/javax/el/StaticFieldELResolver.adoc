@@ -1,0 +1,16 @@
+= javax/el/StaticFieldELResolver.class
+
+ - link:StaticFieldELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 21
+ - javax.el.ELClass - 13
+ - javax.el.Util - 10
+ - javax.el.ELException - 8
+ - javax.el.PropertyNotFoundException - 8
+ - javax.el.JreCompat - 6
+ - javax.el.StaticFieldELResolver - 5
+ - javax.el.ELResolver - 2
+ - javax.el.MethodNotFoundException - 2
+ - javax.el.PropertyNotWritableException - 2

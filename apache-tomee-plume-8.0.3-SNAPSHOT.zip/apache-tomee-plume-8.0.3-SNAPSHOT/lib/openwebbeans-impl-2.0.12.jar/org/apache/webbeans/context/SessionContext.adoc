@@ -1,0 +1,8 @@
+= org/apache/webbeans/context/SessionContext.class
+
+ - link:SessionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 2
+ - javax.enterprise.context.SessionScoped - 1

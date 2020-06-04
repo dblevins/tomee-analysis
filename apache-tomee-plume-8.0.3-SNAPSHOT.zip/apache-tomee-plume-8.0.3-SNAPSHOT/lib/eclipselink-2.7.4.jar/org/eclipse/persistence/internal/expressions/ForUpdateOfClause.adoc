@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/ForUpdateOfClause.class
+
+ - link:ForUpdateOfClause-asmified.java[Asmified]
+
+== References
+

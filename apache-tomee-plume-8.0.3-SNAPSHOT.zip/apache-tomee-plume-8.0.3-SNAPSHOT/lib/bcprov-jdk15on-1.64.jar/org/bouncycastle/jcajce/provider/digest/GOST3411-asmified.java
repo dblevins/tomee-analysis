@@ -1,0 +1,62 @@
+package asm.org.bouncycastle.jcajce.provider.digest;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class GOST3411Dump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/jcajce/provider/digest/GOST3411", null, "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$Digest", "org/bouncycastle/jcajce/provider/digest/GOST3411", "Digest", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$Digest2012_256", "org/bouncycastle/jcajce/provider/digest/GOST3411", "Digest2012_256", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$Digest2012_512", "org/bouncycastle/jcajce/provider/digest/GOST3411", "Digest2012_512", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$HashMac", "org/bouncycastle/jcajce/provider/digest/GOST3411", "HashMac", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$HashMac2012_256", "org/bouncycastle/jcajce/provider/digest/GOST3411", "HashMac2012_256", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$HashMac2012_512", "org/bouncycastle/jcajce/provider/digest/GOST3411", "HashMac2012_512", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$KeyGenerator", "org/bouncycastle/jcajce/provider/digest/GOST3411", "KeyGenerator", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$KeyGenerator2012_256", "org/bouncycastle/jcajce/provider/digest/GOST3411", "KeyGenerator2012_256", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$KeyGenerator2012_512", "org/bouncycastle/jcajce/provider/digest/GOST3411", "KeyGenerator2012_512", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$Mappings", "org/bouncycastle/jcajce/provider/digest/GOST3411", "Mappings", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/bouncycastle/jcajce/provider/digest/GOST3411$PBEWithMacKeyFactory", "org/bouncycastle/jcajce/provider/digest/GOST3411", "PBEWithMacKeyFactory", ACC_PUBLIC | ACC_STATIC);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/QueryResultsCachePolicy.class
+
+ - link:QueryResultsCachePolicy-asmified.java[Asmified]
+
+== References
+

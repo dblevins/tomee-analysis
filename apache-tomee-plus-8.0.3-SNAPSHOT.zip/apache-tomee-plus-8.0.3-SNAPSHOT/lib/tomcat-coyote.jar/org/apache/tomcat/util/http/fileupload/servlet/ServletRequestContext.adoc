@@ -1,0 +1,8 @@
+= org/apache/tomcat/util/http/fileupload/servlet/ServletRequestContext.class
+
+ - link:ServletRequestContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 13
+ - javax.servlet.ServletInputStream - 1

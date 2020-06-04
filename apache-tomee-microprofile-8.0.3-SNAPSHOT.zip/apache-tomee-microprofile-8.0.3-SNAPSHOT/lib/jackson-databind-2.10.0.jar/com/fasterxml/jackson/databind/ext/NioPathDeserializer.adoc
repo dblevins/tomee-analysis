@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/NioPathDeserializer.class
+
+ - link:NioPathDeserializer-asmified.java[Asmified]
+
+== References
+

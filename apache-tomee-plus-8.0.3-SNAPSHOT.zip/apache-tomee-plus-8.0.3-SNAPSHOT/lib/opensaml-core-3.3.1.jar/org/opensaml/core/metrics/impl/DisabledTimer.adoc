@@ -1,0 +1,6 @@
+= org/opensaml/core/metrics/impl/DisabledTimer.class
+
+ - link:DisabledTimer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/cxf/ws/security/wss4j/StaxSerializer.class
+
+ - link:StaxSerializer-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPElement - 5
+ - javax.xml.soap.SOAPEnvelope - 3

@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/tag/jsf/ActionSourceRule$ActionMapper2.class
+
+ - link:ActionSourceRule$ActionMapper2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.component.ActionSource2 - 2
+ - javax.el.MethodExpression - 2
+ - javax.faces.view.facelets.FaceletContext - 2

@@ -1,0 +1,6 @@
+= org/apache/webbeans/jsf/JsfConversationService.class
+
+ - link:JsfConversationService-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$1.class
+
+ - link:CompositeComponentTagHandler$1-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 2
+ - javax.el.VariableMapper - 2

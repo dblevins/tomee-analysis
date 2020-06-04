@@ -1,0 +1,7 @@
+= org/apache/bval/cdi/EmptyAnnotationLiteral.class
+
+ - link:EmptyAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2

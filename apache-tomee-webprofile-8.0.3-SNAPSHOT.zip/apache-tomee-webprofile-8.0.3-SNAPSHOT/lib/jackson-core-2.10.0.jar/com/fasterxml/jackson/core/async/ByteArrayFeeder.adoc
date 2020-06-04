@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/async/ByteArrayFeeder.class
+
+ - link:ByteArrayFeeder-asmified.java[Asmified]
+
+== References
+

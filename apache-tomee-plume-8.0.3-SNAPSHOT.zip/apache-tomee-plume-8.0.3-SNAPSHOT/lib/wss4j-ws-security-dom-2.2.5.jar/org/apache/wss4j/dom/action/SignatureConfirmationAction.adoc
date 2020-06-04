@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/action/SignatureConfirmationAction.class
+
+ - link:SignatureConfirmationAction-asmified.java[Asmified]
+
+== References
+

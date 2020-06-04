@@ -1,0 +1,7 @@
+= org/apache/coyote/http2/Http2UpgradeHandler.class
+
+ - link:Http2UpgradeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.WebConnection - 6

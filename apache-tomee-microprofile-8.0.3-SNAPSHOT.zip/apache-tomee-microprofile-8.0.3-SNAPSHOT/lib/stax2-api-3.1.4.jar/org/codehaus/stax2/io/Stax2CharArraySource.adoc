@@ -1,0 +1,6 @@
+= org/codehaus/stax2/io/Stax2CharArraySource.class
+
+ - link:Stax2CharArraySource-asmified.java[Asmified]
+
+== References
+

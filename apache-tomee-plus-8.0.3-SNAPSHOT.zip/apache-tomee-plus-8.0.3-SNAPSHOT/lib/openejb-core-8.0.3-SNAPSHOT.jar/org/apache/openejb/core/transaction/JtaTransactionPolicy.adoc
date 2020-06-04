@@ -1,0 +1,15 @@
+= org/apache/openejb/core/transaction/JtaTransactionPolicy.class
+
+ - link:JtaTransactionPolicy-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 39
+ - javax.transaction.TransactionManager - 21
+ - javax.transaction.SystemException - 19
+ - javax.transaction.TransactionSynchronizationRegistry - 14
+ - javax.transaction.HeuristicRollbackException - 3
+ - javax.transaction.RollbackException - 3
+ - javax.transaction.InvalidTransactionException - 3
+ - javax.transaction.HeuristicMixedException - 3
+ - javax.transaction.Synchronization - 1

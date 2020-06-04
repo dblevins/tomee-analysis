@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/structures/StructureMapping.class
+
+ - link:StructureMapping-asmified.java[Asmified]
+
+== References
+

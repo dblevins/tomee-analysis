@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingParser.class
+
+ - link:XMLPersistenceMappingParser-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TemporalType - 13
+ - javax.persistence.EnumType - 11
+ - javax.persistence.DiscriminatorType - 9
+ - javax.persistence.InheritanceType - 3

@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/se/DefaultApplicationBoundaryService.class
+
+ - link:DefaultApplicationBoundaryService-asmified.java[Asmified]
+
+== References
+

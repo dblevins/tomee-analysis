@@ -1,0 +1,13 @@
+= org/apache/myfaces/cdi/view/ViewScopeContextualStorage.class
+
+ - link:ViewScopeContextualStorage-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 8
+ - javax.enterprise.context.spi.Contextual - 5
+ - javax.enterprise.inject.spi.Bean - 4
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.inject.spi.PassivationCapable - 2
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.context.FacesContext - 2

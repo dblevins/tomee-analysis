@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/ConfigFilesXmlValidationUtils$FacesConfigVersionCheckHandler.class
+
+ - link:ConfigFilesXmlValidationUtils$FacesConfigVersionCheckHandler-asmified.java[Asmified]
+
+== References
+

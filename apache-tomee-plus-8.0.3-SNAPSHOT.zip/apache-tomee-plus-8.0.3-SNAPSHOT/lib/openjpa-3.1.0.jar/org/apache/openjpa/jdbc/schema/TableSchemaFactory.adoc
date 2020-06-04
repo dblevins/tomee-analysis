@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/TableSchemaFactory.class
+
+ - link:TableSchemaFactory-asmified.java[Asmified]
+
+== References
+

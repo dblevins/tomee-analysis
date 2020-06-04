@@ -1,0 +1,16 @@
+= org/apache/cxf/binding/soap/saaj/SAAJStreamWriter.class
+
+ - link:SAAJStreamWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPEnvelope - 54
+ - javax.xml.soap.SOAPBody - 21
+ - javax.xml.soap.SOAPException - 18
+ - javax.xml.soap.SOAPPart - 15
+ - javax.xml.soap.SOAPHeader - 12
+ - javax.xml.soap.SOAPFault - 11
+ - javax.xml.soap.SOAPElement - 9
+ - javax.xml.soap.Name - 2
+ - javax.xml.soap.SOAPBodyElement - 2
+ - javax.xml.soap.SOAPHeaderElement - 1

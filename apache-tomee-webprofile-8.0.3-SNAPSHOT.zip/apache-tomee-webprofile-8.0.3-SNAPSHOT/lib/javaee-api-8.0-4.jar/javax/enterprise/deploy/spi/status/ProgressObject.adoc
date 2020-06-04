@@ -1,0 +1,11 @@
+= javax/enterprise/deploy/spi/status/ProgressObject.class
+
+ - link:ProgressObject-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.status.ProgressListener - 2
+ - javax.enterprise.deploy.spi.exceptions.OperationUnsupportedException - 2
+ - javax.enterprise.deploy.spi.TargetModuleID - 2
+ - javax.enterprise.deploy.spi.status.DeploymentStatus - 1
+ - javax.enterprise.deploy.spi.status.ClientConfiguration - 1

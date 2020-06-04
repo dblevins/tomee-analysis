@@ -1,0 +1,8 @@
+= org/apache/webbeans/portable/ProviderBasedProducer.class
+
+ - link:ProviderBasedProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 7
+ - javax.enterprise.inject.spi.Interceptor - 1

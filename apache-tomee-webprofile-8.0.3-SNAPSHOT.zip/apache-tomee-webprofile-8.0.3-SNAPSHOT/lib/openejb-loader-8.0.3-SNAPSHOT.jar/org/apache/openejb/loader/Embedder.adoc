@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/Embedder.class
+
+ - link:Embedder-asmified.java[Asmified]
+
+== References
+

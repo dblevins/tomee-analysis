@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/dynamic/SOAPMessageFactoryDynamicImpl.class
+
+ - link:SOAPMessageFactoryDynamicImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 1
+ - javax.xml.soap.SOAPMessage - 1

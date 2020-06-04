@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/CatalogException.class
+
+ - link:CatalogException-asmified.java[Asmified]
+
+== References
+

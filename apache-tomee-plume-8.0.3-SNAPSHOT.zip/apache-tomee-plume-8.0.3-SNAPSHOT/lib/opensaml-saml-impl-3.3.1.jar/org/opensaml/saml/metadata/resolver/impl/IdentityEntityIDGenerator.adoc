@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/impl/IdentityEntityIDGenerator.class
+
+ - link:IdentityEntityIDGenerator-asmified.java[Asmified]
+
+== References
+

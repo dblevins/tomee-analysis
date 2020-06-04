@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/processor/EncryptedKeyProcessor.class
+
+ - link:EncryptedKeyProcessor-asmified.java[Asmified]
+
+== References
+

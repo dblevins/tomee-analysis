@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/client/PartialCondition.class
+
+ - link:PartialCondition-asmified.java[Asmified]
+
+== References
+

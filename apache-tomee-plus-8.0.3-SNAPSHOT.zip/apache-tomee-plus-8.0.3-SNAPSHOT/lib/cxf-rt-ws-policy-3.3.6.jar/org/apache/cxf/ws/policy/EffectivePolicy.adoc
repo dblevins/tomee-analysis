@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/EffectivePolicy.class
+
+ - link:EffectivePolicy-asmified.java[Asmified]
+
+== References
+

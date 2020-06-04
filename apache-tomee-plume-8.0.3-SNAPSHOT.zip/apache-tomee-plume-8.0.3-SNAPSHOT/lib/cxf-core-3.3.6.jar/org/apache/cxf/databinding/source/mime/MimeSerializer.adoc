@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/source/mime/MimeSerializer.class
+
+ - link:MimeSerializer-asmified.java[Asmified]
+
+== References
+

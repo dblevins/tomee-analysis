@@ -1,0 +1,7 @@
+= javax/cache/annotation/CacheRemove.class
+
+ - link:CacheRemove-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 6

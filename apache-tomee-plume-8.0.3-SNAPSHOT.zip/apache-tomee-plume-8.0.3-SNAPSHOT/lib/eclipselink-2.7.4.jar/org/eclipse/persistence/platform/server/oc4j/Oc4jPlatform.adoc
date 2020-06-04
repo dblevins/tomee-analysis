@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/oc4j/Oc4jPlatform.class
+
+ - link:Oc4jPlatform-asmified.java[Asmified]
+
+== References
+

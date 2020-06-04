@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/nntp/NNTPRootFolder$WildmatMatcher.class
+
+ - link:NNTPRootFolder$WildmatMatcher-asmified.java[Asmified]
+
+== References
+

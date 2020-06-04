@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/CollectionDeserializer$CollectionReferringAccumulator.class
+
+ - link:CollectionDeserializer$CollectionReferringAccumulator-asmified.java[Asmified]
+
+== References
+

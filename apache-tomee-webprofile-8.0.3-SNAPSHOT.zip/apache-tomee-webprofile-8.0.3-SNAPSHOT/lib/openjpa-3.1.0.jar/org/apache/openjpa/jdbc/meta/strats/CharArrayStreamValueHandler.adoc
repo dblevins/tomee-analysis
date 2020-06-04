@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/CharArrayStreamValueHandler.class
+
+ - link:CharArrayStreamValueHandler-asmified.java[Asmified]
+
+== References
+

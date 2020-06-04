@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$Opcode.class
+
+ - link:ASMContentHandler$Opcode-asmified.java[Asmified]
+
+== References
+

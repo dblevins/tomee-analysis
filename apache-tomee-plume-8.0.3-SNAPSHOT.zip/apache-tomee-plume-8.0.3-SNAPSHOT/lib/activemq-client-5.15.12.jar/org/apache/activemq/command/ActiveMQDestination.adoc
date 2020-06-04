@@ -1,0 +1,12 @@
+= org/apache/activemq/command/ActiveMQDestination.class
+
+ - link:ActiveMQDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 6
+ - javax.jms.Topic - 6
+ - javax.jms.Destination - 3
+ - javax.jms.TemporaryTopic - 3
+ - javax.jms.TemporaryQueue - 3
+ - javax.jms.JMSException - 3

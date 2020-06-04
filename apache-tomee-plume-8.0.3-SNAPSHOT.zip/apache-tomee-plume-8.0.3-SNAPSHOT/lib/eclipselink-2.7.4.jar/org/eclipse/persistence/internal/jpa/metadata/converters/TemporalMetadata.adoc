@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/converters/TemporalMetadata.class
+
+ - link:TemporalMetadata-asmified.java[Asmified]
+
+== References
+

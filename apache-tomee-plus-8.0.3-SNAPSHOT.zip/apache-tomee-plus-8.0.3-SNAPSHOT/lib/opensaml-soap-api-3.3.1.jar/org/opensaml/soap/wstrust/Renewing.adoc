@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Renewing.class
+
+ - link:Renewing-asmified.java[Asmified]
+
+== References
+

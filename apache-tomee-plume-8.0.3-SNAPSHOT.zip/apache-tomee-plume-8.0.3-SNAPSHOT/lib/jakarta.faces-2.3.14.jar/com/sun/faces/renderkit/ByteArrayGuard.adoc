@@ -1,0 +1,10 @@
+= com/sun/faces/renderkit/ByteArrayGuard.class
+
+ - link:ByteArrayGuard-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.servlet.http.HttpSession - 4
+ - javax.faces.FacesException - 4
+ - javax.faces.context.ExternalContext - 2

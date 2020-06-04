@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/UnresolvedId.class
+
+ - link:UnresolvedId-asmified.java[Asmified]
+
+== References
+

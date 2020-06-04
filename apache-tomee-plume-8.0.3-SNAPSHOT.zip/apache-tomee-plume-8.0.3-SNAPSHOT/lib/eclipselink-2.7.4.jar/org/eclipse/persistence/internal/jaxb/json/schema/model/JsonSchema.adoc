@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jaxb/json/schema/model/JsonSchema.class
+
+ - link:JsonSchema-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 7
+ - javax.xml.bind.annotation.XmlElementWrapper - 2

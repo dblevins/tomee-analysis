@@ -1,0 +1,6 @@
+= javax/websocket/EncodeException.class
+
+ - link:EncodeException-asmified.java[Asmified]
+
+== References
+

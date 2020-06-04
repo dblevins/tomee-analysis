@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/AbstractRecord$RecordEntry.class
+
+ - link:AbstractRecord$RecordEntry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/net/AbstractEndpoint$Handler$SocketState.class
+
+ - link:AbstractEndpoint$Handler$SocketState-asmified.java[Asmified]
+
+== References
+

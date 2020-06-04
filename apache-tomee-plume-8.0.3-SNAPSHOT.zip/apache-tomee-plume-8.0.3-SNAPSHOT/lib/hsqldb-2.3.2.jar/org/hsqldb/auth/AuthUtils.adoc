@@ -1,0 +1,6 @@
+= org/hsqldb/auth/AuthUtils.class
+
+ - link:AuthUtils-asmified.java[Asmified]
+
+== References
+

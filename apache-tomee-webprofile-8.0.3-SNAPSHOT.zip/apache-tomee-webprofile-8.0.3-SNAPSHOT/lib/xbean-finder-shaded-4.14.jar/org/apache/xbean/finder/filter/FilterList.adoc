@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/filter/FilterList.class
+
+ - link:FilterList-asmified.java[Asmified]
+
+== References
+

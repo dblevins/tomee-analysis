@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/SamlTokenSecurityEvent.class
+
+ - link:SamlTokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

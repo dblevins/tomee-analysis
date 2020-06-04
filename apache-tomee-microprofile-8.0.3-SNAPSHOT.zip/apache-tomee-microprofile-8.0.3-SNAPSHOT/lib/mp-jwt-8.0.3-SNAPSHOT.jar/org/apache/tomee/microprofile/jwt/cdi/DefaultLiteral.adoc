@@ -1,0 +1,8 @@
+= org/apache/tomee/microprofile/jwt/cdi/DefaultLiteral.class
+
+ - link:DefaultLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 4
+ - javax.enterprise.util.AnnotationLiteral - 2

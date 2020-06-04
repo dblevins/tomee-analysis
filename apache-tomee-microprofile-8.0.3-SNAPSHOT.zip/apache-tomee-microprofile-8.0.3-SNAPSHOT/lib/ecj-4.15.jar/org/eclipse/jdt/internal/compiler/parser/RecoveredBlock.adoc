@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredBlock.class
+
+ - link:RecoveredBlock-asmified.java[Asmified]
+
+== References
+

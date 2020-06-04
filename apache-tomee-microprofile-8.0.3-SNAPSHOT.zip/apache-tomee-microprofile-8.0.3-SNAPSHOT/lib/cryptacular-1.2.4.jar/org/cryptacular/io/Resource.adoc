@@ -1,0 +1,6 @@
+= org/cryptacular/io/Resource.class
+
+ - link:Resource-asmified.java[Asmified]
+
+== References
+

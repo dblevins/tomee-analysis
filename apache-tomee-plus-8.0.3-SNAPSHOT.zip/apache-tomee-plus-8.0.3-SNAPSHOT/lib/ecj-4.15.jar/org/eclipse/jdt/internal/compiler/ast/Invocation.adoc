@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/Invocation.class
+
+ - link:Invocation-asmified.java[Asmified]
+
+== References
+

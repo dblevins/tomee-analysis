@@ -1,0 +1,7 @@
+= javax/faces/component/_UIMessage.class
+
+ - link:_UIMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponentBase - 2

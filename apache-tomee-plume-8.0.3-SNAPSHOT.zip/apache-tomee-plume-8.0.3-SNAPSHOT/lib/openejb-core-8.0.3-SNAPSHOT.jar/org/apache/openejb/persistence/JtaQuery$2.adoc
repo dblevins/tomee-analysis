@@ -1,0 +1,7 @@
+= org/apache/openejb/persistence/JtaQuery$2.class
+
+ - link:JtaQuery$2-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Query - 4

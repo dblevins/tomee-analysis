@@ -1,0 +1,9 @@
+= javax/jms/XAConnectionFactory.class
+
+ - link:XAConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.XAConnection - 2
+ - javax.jms.XAJMSContext - 2
+ - javax.jms.JMSException - 2

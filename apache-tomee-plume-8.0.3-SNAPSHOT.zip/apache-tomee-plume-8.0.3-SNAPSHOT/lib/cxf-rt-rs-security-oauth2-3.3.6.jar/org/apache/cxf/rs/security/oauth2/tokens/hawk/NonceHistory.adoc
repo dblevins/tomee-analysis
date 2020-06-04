@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/tokens/hawk/NonceHistory.class
+
+ - link:NonceHistory-asmified.java[Asmified]
+
+== References
+

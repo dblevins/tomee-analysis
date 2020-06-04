@@ -1,0 +1,10 @@
+= org/apache/openejb/server/webservices/saaj/SaajMetaFactoryImpl.class
+
+ - link:SaajMetaFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 11
+ - javax.xml.soap.SAAJMetaFactory - 7
+ - javax.xml.soap.MessageFactory - 2
+ - javax.xml.soap.SOAPFactory - 2

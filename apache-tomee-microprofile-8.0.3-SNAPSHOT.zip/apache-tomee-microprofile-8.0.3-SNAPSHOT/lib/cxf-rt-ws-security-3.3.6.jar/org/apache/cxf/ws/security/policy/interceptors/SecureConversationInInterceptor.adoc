@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/SecureConversationInInterceptor.class
+
+ - link:SecureConversationInInterceptor-asmified.java[Asmified]
+
+== References
+

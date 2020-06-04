@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/jwt/JsonWebToken.class
+
+ - link:JsonWebToken-asmified.java[Asmified]
+
+== References
+

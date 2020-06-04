@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/UTF8Buffer.class
+
+ - link:UTF8Buffer-asmified.java[Asmified]
+
+== References
+

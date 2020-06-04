@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaSimpleTypeRestriction.class
+
+ - link:XmlSchemaSimpleTypeRestriction-asmified.java[Asmified]
+
+== References
+

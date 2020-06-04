@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/BaseEventImpl.class
+
+ - link:BaseEventImpl-asmified.java[Asmified]
+
+== References
+

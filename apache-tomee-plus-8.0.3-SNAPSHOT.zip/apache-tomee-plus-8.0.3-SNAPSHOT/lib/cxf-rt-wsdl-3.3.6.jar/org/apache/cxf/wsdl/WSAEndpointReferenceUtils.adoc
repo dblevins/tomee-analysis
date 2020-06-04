@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/WSAEndpointReferenceUtils.class
+
+ - link:WSAEndpointReferenceUtils-asmified.java[Asmified]
+
+== References
+

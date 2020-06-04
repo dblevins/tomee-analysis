@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaComplexContentRestriction.class
+
+ - link:XmlSchemaComplexContentRestriction-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/filter/ContainsFilter.class
+
+ - link:ContainsFilter-asmified.java[Asmified]
+
+== References
+

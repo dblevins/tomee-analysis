@@ -1,0 +1,6 @@
+= org/apache/catalina/realm/MemoryUserRule.class
+
+ - link:MemoryUserRule-asmified.java[Asmified]
+
+== References
+

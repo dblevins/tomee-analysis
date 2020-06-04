@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/IsolationLevel$JAXB.class
+
+ - link:IsolationLevel$JAXB-asmified.java[Asmified]
+
+== References
+

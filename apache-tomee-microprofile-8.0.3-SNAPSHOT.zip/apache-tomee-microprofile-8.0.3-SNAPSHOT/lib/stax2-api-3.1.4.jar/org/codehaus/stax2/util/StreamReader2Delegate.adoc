@@ -1,0 +1,6 @@
+= org/codehaus/stax2/util/StreamReader2Delegate.class
+
+ - link:StreamReader2Delegate-asmified.java[Asmified]
+
+== References
+

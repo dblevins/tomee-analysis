@@ -1,0 +1,7 @@
+= javax/validation/metadata/Scope.class
+
+ - link:Scope-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.Scope - 21

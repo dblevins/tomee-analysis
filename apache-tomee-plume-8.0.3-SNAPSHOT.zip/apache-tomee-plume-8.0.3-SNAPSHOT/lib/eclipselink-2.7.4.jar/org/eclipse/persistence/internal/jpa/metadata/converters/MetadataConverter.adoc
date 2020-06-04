@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/converters/MetadataConverter.class
+
+ - link:MetadataConverter-asmified.java[Asmified]
+
+== References
+

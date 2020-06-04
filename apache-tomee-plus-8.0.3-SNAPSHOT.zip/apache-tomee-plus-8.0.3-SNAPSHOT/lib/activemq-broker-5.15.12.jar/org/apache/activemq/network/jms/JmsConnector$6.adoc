@@ -1,0 +1,6 @@
+= org/apache/activemq/network/jms/JmsConnector$6.class
+
+ - link:JmsConnector$6-asmified.java[Asmified]
+
+== References
+

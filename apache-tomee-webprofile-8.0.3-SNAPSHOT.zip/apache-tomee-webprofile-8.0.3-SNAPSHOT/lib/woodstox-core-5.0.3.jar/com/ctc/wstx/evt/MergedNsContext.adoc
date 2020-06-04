@@ -1,0 +1,6 @@
+= com/ctc/wstx/evt/MergedNsContext.class
+
+ - link:MergedNsContext-asmified.java[Asmified]
+
+== References
+

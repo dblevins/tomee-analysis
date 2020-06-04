@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/ApacheValidatorConfiguration$Properties.class
+
+ - link:ApacheValidatorConfiguration$Properties-asmified.java[Asmified]
+
+== References
+

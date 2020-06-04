@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor.class
+
+ - link:MessageModeOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 8
+ - javax.xml.soap.SOAPMessage - 7
+ - javax.xml.soap.SOAPException - 6
+ - javax.xml.soap.SOAPFault - 5
+ - javax.xml.soap.SOAPHeader - 3
+ - javax.xml.soap.Detail - 2

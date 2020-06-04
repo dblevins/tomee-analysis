@@ -1,0 +1,6 @@
+= org/apache/johnzon/jsonb/converter/JsonbValueConverter.class
+
+ - link:JsonbValueConverter-asmified.java[Asmified]
+
+== References
+

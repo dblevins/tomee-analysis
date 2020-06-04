@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/managed/XAConnectionFactory.class
+
+ - link:XAConnectionFactory-asmified.java[Asmified]
+
+== References
+

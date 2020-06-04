@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/concurrent/ConcurrentHashMap$EntrySet.class
+
+ - link:ConcurrentHashMap$EntrySet-asmified.java[Asmified]
+
+== References
+

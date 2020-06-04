@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/EnvironmentTypeMarshaller.class
+
+ - link:EnvironmentTypeMarshaller-asmified.java[Asmified]
+
+== References
+

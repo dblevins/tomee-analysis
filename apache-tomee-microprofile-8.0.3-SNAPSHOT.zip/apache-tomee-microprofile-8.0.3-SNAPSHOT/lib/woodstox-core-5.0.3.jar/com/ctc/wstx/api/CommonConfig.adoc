@@ -1,0 +1,6 @@
+= com/ctc/wstx/api/CommonConfig.class
+
+ - link:CommonConfig-asmified.java[Asmified]
+
+== References
+

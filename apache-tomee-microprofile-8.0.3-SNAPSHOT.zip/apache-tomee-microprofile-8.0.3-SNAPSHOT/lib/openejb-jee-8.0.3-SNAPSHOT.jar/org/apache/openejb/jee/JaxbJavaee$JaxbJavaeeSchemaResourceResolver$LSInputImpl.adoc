@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/JaxbJavaee$JaxbJavaeeSchemaResourceResolver$LSInputImpl.class
+
+ - link:JaxbJavaee$JaxbJavaeeSchemaResourceResolver$LSInputImpl-asmified.java[Asmified]
+
+== References
+

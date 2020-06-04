@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/converters/JSONMetadata.class
+
+ - link:JSONMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/BatchingPreparedStatementManagerImpl.class
+
+ - link:BatchingPreparedStatementManagerImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/JPAProperties.class
+
+ - link:JPAProperties-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.CacheStoreMode - 3
+ - javax.persistence.CacheRetrieveMode - 3

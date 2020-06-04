@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecComment.class
+
+ - link:XMLSecComment-asmified.java[Asmified]
+
+== References
+

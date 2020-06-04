@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/derivedKey/P_SHA1.class
+
+ - link:P_SHA1-asmified.java[Asmified]
+
+== References
+

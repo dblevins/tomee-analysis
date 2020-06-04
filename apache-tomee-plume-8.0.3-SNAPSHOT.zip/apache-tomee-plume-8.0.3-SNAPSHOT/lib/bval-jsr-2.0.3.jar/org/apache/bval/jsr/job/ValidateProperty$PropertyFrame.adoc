@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/job/ValidateProperty$PropertyFrame.class
+
+ - link:ValidateProperty$PropertyFrame-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ContainerDescriptor - 1
+ - javax.validation.metadata.CascadableDescriptor - 1
+ - javax.validation.ConstraintViolation - 1

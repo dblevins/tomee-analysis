@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/bsp/BSPRule.class
+
+ - link:BSPRule-asmified.java[Asmified]
+
+== References
+

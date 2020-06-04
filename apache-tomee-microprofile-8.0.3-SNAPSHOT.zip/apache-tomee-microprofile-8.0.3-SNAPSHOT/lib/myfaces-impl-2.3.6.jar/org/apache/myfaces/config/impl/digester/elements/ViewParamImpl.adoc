@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/ViewParamImpl.class
+
+ - link:ViewParamImpl-asmified.java[Asmified]
+
+== References
+

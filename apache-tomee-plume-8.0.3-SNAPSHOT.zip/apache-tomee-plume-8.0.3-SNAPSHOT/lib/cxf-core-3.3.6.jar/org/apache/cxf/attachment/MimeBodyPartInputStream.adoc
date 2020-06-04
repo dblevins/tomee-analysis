@@ -1,0 +1,6 @@
+= org/apache/cxf/attachment/MimeBodyPartInputStream.class
+
+ - link:MimeBodyPartInputStream-asmified.java[Asmified]
+
+== References
+

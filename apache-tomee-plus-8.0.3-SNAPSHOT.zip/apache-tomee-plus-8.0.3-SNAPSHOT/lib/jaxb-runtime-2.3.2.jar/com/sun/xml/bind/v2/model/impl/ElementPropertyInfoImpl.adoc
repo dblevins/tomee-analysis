@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/model/impl/ElementPropertyInfoImpl.class
+
+ - link:ElementPropertyInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 18
+ - javax.xml.bind.annotation.XmlElements - 7
+ - javax.xml.bind.annotation.XmlElement$DEFAULT - 1
+ - javax.xml.bind.annotation.XmlList - 1

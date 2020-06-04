@@ -1,0 +1,9 @@
+= javax/validation/bootstrap/ProviderSpecificBootstrap.class
+
+ - link:ProviderSpecificBootstrap-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.bootstrap.ProviderSpecificBootstrap - 1
+ - javax.validation.Configuration - 1
+ - javax.validation.ValidationProviderResolver - 1

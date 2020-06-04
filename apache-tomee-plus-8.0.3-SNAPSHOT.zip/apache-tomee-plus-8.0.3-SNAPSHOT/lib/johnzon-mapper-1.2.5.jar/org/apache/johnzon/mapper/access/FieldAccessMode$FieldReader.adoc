@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/FieldAccessMode$FieldReader.class
+
+ - link:FieldAccessMode$FieldReader-asmified.java[Asmified]
+
+== References
+

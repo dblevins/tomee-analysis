@@ -1,0 +1,7 @@
+= org/apache/webbeans/exception/DuplicateDefinitionException.class
+
+ - link:DuplicateDefinitionException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DefinitionException - 6

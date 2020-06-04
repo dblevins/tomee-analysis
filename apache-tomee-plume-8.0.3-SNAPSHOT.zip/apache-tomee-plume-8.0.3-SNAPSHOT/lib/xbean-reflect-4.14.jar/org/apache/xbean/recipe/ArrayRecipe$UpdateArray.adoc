@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/ArrayRecipe$UpdateArray.class
+
+ - link:ArrayRecipe$UpdateArray-asmified.java[Asmified]
+
+== References
+

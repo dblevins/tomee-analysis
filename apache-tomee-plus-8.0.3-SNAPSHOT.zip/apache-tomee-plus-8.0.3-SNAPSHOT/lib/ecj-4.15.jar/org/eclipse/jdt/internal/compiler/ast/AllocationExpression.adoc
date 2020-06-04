@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/AllocationExpression.class
+
+ - link:AllocationExpression-asmified.java[Asmified]
+
+== References
+

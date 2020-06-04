@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EJBObjectHandler$FutureAdapter.class
+
+ - link:EJBObjectHandler$FutureAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/jasypt/intf/cli/ArgumentNaming.class
+
+ - link:ArgumentNaming-asmified.java[Asmified]
+
+== References
+

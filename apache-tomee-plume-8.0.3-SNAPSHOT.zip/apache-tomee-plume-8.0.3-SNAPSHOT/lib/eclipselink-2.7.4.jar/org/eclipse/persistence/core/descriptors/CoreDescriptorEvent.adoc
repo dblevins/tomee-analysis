@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/descriptors/CoreDescriptorEvent.class
+
+ - link:CoreDescriptorEvent-asmified.java[Asmified]
+
+== References
+

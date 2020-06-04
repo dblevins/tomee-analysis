@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/RuntimeBuiltinLeafInfoImpl$5.class
+
+ - link:RuntimeBuiltinLeafInfoImpl$5-asmified.java[Asmified]
+
+== References
+

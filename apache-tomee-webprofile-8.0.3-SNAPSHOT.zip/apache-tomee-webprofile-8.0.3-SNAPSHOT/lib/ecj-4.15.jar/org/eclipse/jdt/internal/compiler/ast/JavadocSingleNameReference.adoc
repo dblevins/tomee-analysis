@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/JavadocSingleNameReference.class
+
+ - link:JavadocSingleNameReference-asmified.java[Asmified]
+
+== References
+

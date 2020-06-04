@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/GeneratedClasses.class
+
+ - link:GeneratedClasses-asmified.java[Asmified]
+
+== References
+

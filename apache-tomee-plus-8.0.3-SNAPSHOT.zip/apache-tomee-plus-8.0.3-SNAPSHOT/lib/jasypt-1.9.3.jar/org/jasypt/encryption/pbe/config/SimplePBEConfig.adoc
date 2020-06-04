@@ -1,0 +1,6 @@
+= org/jasypt/encryption/pbe/config/SimplePBEConfig.class
+
+ - link:SimplePBEConfig-asmified.java[Asmified]
+
+== References
+

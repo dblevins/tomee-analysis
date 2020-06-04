@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$MapExamplesDeserializer.class
+
+ - link:Deserializers$MapExamplesDeserializer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Array.class
+
+ - link:Array-asmified.java[Asmified]
+
+== References
+

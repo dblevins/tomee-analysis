@@ -1,0 +1,9 @@
+= javax/persistence/spi/PersistenceProviderResolverHolder.class
+
+ - link:PersistenceProviderResolverHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceProviderResolver - 11
+ - javax.persistence.spi.PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver - 4
+ - javax.persistence.spi.PersistenceProviderResolverHolder$1 - 2

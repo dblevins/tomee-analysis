@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/DirectCollectionAccessor.class
+
+ - link:DirectCollectionAccessor-asmified.java[Asmified]
+
+== References
+

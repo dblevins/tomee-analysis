@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/IdBearing.class
+
+ - link:IdBearing-asmified.java[Asmified]
+
+== References
+

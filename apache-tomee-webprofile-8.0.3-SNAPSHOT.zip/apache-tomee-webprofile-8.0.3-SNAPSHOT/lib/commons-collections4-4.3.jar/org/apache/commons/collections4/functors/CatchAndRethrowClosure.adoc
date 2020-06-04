@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/CatchAndRethrowClosure.class
+
+ - link:CatchAndRethrowClosure-asmified.java[Asmified]
+
+== References
+

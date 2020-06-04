@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/opentracing/Traced.class
+
+ - link:Traced-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 2
+ - javax.interceptor.InterceptorBinding - 1

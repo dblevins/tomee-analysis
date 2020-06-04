@@ -1,0 +1,10 @@
+= javax/xml/registry/infomodel/User.class
+
+ - link:User-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 13
+ - javax.xml.registry.infomodel.PersonName - 2
+ - javax.xml.registry.infomodel.RegistryObject - 1
+ - javax.xml.registry.infomodel.Organization - 1

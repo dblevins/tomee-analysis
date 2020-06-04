@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/edec/KeyFactorySpi$X448.class
+
+ - link:KeyFactorySpi$X448-asmified.java[Asmified]
+
+== References
+

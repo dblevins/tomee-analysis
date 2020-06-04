@@ -1,0 +1,7 @@
+= javax/mail/MessageAware.class
+
+ - link:MessageAware-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessageContext - 1

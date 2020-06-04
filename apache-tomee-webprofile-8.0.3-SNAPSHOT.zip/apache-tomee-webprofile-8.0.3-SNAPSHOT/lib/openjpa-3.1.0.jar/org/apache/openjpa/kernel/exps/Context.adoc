@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Context.class
+
+ - link:Context-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/codec/HTMLEncoder.class
+
+ - link:HTMLEncoder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 17
+ - javax.annotation.Nullable - 4

@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/WhitelistBlacklistConfiguration$Precedence.class
+
+ - link:WhitelistBlacklistConfiguration$Precedence-asmified.java[Asmified]
+
+== References
+

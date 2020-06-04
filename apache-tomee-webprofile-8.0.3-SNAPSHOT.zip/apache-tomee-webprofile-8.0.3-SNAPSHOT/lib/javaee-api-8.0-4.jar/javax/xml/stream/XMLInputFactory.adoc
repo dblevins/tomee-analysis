@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLInputFactory.class
+
+ - link:XMLInputFactory-asmified.java[Asmified]
+
+== References
+

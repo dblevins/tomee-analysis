@@ -1,0 +1,11 @@
+= org/apache/myfaces/flow/impl/AnnotatedFlowConfigurator.class
+
+ - link:AnnotatedFlowConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.flow.Flow - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.flow.FlowHandler - 2

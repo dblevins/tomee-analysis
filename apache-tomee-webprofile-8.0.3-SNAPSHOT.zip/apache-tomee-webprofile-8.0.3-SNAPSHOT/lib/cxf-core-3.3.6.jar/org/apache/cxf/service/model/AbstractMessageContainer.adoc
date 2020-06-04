@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/AbstractMessageContainer.class
+
+ - link:AbstractMessageContainer-asmified.java[Asmified]
+
+== References
+

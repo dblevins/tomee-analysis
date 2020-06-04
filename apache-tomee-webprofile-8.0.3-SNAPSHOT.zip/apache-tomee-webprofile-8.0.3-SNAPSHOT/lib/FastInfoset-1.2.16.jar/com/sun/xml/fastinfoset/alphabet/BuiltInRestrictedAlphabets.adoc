@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/alphabet/BuiltInRestrictedAlphabets.class
+
+ - link:BuiltInRestrictedAlphabets-asmified.java[Asmified]
+
+== References
+

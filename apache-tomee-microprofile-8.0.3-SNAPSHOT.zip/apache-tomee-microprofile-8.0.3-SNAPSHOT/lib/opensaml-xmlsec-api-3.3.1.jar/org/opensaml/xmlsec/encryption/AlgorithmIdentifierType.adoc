@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/encryption/AlgorithmIdentifierType.class
+
+ - link:AlgorithmIdentifierType-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

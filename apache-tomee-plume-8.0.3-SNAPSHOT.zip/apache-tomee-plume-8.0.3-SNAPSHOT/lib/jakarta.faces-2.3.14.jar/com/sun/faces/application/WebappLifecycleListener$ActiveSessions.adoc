@@ -1,0 +1,7 @@
+= com/sun/faces/application/WebappLifecycleListener$ActiveSessions.class
+
+ - link:WebappLifecycleListener$ActiveSessions-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 4

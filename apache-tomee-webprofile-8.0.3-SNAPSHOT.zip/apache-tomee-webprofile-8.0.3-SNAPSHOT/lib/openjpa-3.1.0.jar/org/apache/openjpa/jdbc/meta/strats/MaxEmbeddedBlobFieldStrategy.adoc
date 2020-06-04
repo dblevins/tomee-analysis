@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/MaxEmbeddedBlobFieldStrategy.class
+
+ - link:MaxEmbeddedBlobFieldStrategy-asmified.java[Asmified]
+
+== References
+

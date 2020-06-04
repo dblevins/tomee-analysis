@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/Client.class
+
+ - link:Client-asmified.java[Asmified]
+
+== References
+

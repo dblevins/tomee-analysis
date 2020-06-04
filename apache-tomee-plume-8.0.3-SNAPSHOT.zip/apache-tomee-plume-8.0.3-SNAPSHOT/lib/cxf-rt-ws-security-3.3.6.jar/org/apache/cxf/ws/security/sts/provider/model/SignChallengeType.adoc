@@ -1,0 +1,12 @@
+= org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.class
+
+ - link:SignChallengeType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/saml/xacml/XACMLConstants.class
+
+ - link:XACMLConstants-asmified.java[Asmified]
+
+== References
+

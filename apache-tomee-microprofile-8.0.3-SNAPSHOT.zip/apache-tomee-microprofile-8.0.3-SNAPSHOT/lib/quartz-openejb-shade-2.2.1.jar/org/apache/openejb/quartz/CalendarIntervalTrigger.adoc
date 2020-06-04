@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/CalendarIntervalTrigger.class
+
+ - link:CalendarIntervalTrigger-asmified.java[Asmified]
+
+== References
+

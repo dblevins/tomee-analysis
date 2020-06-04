@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/source/NodeDataWriter.class
+
+ - link:NodeDataWriter-asmified.java[Asmified]
+
+== References
+

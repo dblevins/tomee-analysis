@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/XmlBuilder$ForCrossParameter.class
+
+ - link:XmlBuilder$ForCrossParameter-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintTarget - 2

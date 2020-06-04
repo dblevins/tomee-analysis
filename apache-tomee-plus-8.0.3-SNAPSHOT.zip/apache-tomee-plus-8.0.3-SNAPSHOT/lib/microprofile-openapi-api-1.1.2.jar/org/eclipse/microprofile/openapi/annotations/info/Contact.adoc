@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/info/Contact.class
+
+ - link:Contact-asmified.java[Asmified]
+
+== References
+

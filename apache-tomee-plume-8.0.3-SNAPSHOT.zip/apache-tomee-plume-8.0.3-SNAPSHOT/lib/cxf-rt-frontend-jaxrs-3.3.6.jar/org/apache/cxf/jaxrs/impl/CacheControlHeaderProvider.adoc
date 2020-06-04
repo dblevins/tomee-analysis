@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/CacheControlHeaderProvider.class
+
+ - link:CacheControlHeaderProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.CacheControl - 32
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.WebApplicationException - 1
+ - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

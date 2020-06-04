@@ -1,0 +1,6 @@
+= com/sun/faces/application/ConverterPropertyEditorFactory$ClassTemplateInfo$Utf8InfoRef.class
+
+ - link:ConverterPropertyEditorFactory$ClassTemplateInfo$Utf8InfoRef-asmified.java[Asmified]
+
+== References
+

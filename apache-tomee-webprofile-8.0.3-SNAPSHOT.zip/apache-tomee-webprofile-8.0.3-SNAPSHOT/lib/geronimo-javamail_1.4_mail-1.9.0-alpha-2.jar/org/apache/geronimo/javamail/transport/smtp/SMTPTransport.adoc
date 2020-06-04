@@ -1,0 +1,14 @@
+= org/apache/geronimo/javamail/transport/smtp/SMTPTransport.class
+
+ - link:SMTPTransport-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Address - 60
+ - javax.mail.MessagingException - 22
+ - javax.mail.internet.InternetAddress - 9
+ - javax.mail.Message - 9
+ - javax.mail.Session - 5
+ - javax.mail.URLName - 4
+ - javax.mail.Transport - 4
+ - javax.mail.internet.MimeMessage - 3

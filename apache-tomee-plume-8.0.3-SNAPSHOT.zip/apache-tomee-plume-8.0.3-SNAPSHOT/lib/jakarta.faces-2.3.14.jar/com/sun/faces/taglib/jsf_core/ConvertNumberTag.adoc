@@ -1,0 +1,16 @@
+= com/sun/faces/taglib/jsf_core/ConvertNumberTag.class
+
+ - link:ConvertNumberTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 112
+ - javax.el.ELContext - 17
+ - javax.faces.convert.NumberConverter - 13
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.convert.Converter - 2
+ - javax.faces.application.Application - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.FacesException - 2
+ - javax.servlet.jsp.JspException - 2

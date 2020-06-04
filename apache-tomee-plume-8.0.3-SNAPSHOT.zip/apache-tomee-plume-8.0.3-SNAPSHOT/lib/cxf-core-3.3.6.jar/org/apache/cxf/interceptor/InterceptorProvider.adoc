@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/InterceptorProvider.class
+
+ - link:InterceptorProvider-asmified.java[Asmified]
+
+== References
+

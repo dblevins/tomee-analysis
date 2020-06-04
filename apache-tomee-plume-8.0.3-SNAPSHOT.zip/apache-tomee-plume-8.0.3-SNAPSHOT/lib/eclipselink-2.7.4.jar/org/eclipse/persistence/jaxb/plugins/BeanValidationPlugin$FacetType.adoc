@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$FacetType.class
+
+ - link:BeanValidationPlugin$FacetType-asmified.java[Asmified]
+
+== References
+

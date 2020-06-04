@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/modules/MbeansDescriptorsDigesterSource.class
+
+ - link:MbeansDescriptorsDigesterSource-asmified.java[Asmified]
+
+== References
+

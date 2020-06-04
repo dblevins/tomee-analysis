@@ -1,0 +1,15 @@
+= com/sun/faces/config/processor/RenderKitConfigProcessor.class
+
+ - link:RenderKitConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 28
+ - javax.faces.render.RenderKit - 27
+ - javax.faces.render.RenderKitFactory - 20
+ - javax.servlet.ServletContext - 18
+ - javax.faces.render.Renderer - 4
+ - javax.faces.render.ClientBehaviorRenderer - 4
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.render.FacesBehaviorRenderer - 1
+ - javax.faces.render.FacesRenderer - 1

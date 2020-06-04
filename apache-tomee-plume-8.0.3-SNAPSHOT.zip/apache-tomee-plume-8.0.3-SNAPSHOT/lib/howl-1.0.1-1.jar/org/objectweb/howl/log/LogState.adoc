@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/LogState.class
+
+ - link:LogState-asmified.java[Asmified]
+
+== References
+

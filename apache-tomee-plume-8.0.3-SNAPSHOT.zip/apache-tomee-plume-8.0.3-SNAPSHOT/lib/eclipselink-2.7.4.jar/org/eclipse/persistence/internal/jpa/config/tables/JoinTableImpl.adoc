@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/tables/JoinTableImpl.class
+
+ - link:JoinTableImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/batchee/container/services/transaction/JTAUserTransactionAdapter.class
+
+ - link:JTAUserTransactionAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 32
+ - javax.transaction.SystemException - 16
+ - javax.transaction.Transaction - 6
+ - javax.transaction.NotSupportedException - 4
+ - javax.transaction.HeuristicRollbackException - 2
+ - javax.transaction.RollbackException - 2
+ - javax.transaction.InvalidTransactionException - 2
+ - javax.transaction.HeuristicMixedException - 2

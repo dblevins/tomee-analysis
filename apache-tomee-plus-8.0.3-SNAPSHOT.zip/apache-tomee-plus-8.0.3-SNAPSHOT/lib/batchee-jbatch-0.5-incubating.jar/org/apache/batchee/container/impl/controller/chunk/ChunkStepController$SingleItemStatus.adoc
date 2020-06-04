@@ -1,0 +1,6 @@
+= org/apache/batchee/container/impl/controller/chunk/ChunkStepController$SingleItemStatus.class
+
+ - link:ChunkStepController$SingleItemStatus-asmified.java[Asmified]
+
+== References
+

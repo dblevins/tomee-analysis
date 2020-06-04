@@ -1,0 +1,14 @@
+= org/apache/activemq/ra/ServerSessionPoolImpl.class
+
+ - link:ServerSessionPoolImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 12
+ - javax.resource.spi.endpoint.MessageEndpoint - 7
+ - javax.jms.Session - 5
+ - javax.jms.ServerSession - 5
+ - javax.resource.spi.UnavailableException - 5
+ - javax.resource.spi.work.WorkManager - 4
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 2
+ - javax.jms.ServerSessionPool - 1

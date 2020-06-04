@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor$1.class
+
+ - link:MessageModeOutInterceptor$1-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1

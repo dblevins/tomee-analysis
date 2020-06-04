@@ -1,0 +1,11 @@
+= javax/resource/spi/ResourceAdapter.class
+
+ - link:ResourceAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ActivationSpec - 3
+ - javax.resource.ResourceException - 2
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 2
+ - javax.resource.spi.ResourceAdapterInternalException - 1
+ - javax.resource.spi.BootstrapContext - 1

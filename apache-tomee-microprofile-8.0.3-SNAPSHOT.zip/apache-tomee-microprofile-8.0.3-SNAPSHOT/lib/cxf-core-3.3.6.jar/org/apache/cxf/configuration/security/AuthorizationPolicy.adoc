@@ -1,0 +1,11 @@
+= org/apache/cxf/configuration/security/AuthorizationPolicy.class
+
+ - link:AuthorizationPolicy-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 4
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlSeeAlso - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

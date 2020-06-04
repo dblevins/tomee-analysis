@@ -1,0 +1,6 @@
+= org/jose4j/jwe/AesCbcHmacSha2ContentEncryptionAlgorithm$Aes256CbcHmacSha512.class
+
+ - link:AesCbcHmacSha2ContentEncryptionAlgorithm$Aes256CbcHmacSha512-asmified.java[Asmified]
+
+== References
+

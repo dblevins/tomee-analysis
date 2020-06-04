@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$1.class
+
+ - link:PropertyHandlerManager$1-asmified.java[Asmified]
+
+== References
+

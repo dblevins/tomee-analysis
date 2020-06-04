@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/DistinctExpression.class
+
+ - link:DistinctExpression-asmified.java[Asmified]
+
+== References
+

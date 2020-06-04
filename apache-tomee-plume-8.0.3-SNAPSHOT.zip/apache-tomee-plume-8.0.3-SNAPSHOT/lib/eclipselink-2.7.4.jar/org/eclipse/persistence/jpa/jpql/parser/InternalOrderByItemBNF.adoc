@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/InternalOrderByItemBNF.class
+
+ - link:InternalOrderByItemBNF-asmified.java[Asmified]
+
+== References
+

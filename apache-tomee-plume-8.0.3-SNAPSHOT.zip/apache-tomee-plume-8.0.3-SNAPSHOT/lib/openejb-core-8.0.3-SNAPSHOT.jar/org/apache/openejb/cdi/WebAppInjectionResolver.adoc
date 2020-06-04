@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/WebAppInjectionResolver.class
+
+ - link:WebAppInjectionResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 1

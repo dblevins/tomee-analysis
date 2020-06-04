@@ -1,0 +1,14 @@
+= javax/faces/component/visit/VisitContextWrapper.class
+
+ - link:VisitContextWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitContext - 20
+ - javax.faces.component.visit.VisitContextWrapper - 6
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component.visit.VisitResult - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.visit.VisitCallback - 2
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.FacesWrapper - 1

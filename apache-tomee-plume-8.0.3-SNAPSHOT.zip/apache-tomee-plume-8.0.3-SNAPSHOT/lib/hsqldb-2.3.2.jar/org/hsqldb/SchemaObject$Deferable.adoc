@@ -1,0 +1,6 @@
+= org/hsqldb/SchemaObject$Deferable.class
+
+ - link:SchemaObject$Deferable-asmified.java[Asmified]
+
+== References
+

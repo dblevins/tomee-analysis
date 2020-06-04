@@ -1,0 +1,7 @@
+= org/apache/openejb/threads/task/CUTask.class
+
+ - link:CUTask-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedExecutorService - 8

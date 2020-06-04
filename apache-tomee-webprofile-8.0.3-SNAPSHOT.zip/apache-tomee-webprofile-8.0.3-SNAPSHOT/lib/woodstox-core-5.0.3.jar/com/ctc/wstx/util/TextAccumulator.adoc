@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/TextAccumulator.class
+
+ - link:TextAccumulator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/util/TypeCast.class
+
+ - link:TypeCast-asmified.java[Asmified]
+
+== References
+

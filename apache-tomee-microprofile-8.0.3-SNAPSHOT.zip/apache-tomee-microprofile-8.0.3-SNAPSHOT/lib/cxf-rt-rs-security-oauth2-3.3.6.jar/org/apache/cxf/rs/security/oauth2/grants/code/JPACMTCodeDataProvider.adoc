@@ -1,0 +1,8 @@
+= org/apache/cxf/rs/security/oauth2/grants/code/JPACMTCodeDataProvider.class
+
+ - link:JPACMTCodeDataProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 8
+ - javax.persistence.EntityTransaction - 1

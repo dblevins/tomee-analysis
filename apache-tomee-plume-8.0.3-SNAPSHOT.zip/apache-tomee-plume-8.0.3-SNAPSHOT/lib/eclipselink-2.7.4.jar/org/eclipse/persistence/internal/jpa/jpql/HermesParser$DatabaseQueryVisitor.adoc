@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/HermesParser$DatabaseQueryVisitor.class
+
+ - link:HermesParser$DatabaseQueryVisitor-asmified.java[Asmified]
+
+== References
+

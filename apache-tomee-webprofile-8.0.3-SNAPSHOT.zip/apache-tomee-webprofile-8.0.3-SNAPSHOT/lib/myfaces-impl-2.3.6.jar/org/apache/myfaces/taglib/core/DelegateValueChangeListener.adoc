@@ -1,0 +1,15 @@
+= org/apache/myfaces/taglib/core/DelegateValueChangeListener.class
+
+ - link:DelegateValueChangeListener-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 19
+ - javax.faces.event.ValueChangeListener - 8
+ - javax.faces.context.FacesContext - 7
+ - javax.el.ELException - 4
+ - javax.el.ELContext - 4
+ - javax.faces.FacesException - 2
+ - javax.faces.event.ValueChangeEvent - 2
+ - javax.faces.component.StateHolder - 1
+ - javax.faces.event.AbortProcessingException - 1

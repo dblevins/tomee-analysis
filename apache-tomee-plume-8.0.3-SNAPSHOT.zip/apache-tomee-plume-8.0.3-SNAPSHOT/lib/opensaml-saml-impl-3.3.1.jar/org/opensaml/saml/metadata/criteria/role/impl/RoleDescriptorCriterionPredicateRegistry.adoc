@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/criteria/role/impl/RoleDescriptorCriterionPredicateRegistry.class
+
+ - link:RoleDescriptorCriterionPredicateRegistry-asmified.java[Asmified]
+
+== References
+

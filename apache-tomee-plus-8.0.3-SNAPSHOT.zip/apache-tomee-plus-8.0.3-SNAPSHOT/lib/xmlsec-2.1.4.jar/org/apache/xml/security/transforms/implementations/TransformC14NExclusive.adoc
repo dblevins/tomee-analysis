@@ -1,0 +1,6 @@
+= org/apache/xml/security/transforms/implementations/TransformC14NExclusive.class
+
+ - link:TransformC14NExclusive-asmified.java[Asmified]
+
+== References
+

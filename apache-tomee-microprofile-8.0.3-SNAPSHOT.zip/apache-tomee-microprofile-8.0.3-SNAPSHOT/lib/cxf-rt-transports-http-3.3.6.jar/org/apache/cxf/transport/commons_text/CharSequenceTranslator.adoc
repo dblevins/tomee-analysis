@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/commons_text/CharSequenceTranslator.class
+
+ - link:CharSequenceTranslator-asmified.java[Asmified]
+
+== References
+

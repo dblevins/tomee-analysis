@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/SqlDateSerializer.class
+
+ - link:SqlDateSerializer-asmified.java[Asmified]
+
+== References
+

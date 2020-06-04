@@ -1,0 +1,7 @@
+= javax/ws/rs/container/AsyncResponse.class
+
+ - link:AsyncResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.TimeoutHandler - 1

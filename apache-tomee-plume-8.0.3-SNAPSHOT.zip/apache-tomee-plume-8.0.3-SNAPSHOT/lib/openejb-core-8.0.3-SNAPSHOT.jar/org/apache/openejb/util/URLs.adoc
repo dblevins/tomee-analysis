@@ -1,0 +1,6 @@
+= org/apache/openejb/util/URLs.class
+
+ - link:URLs-asmified.java[Asmified]
+
+== References
+

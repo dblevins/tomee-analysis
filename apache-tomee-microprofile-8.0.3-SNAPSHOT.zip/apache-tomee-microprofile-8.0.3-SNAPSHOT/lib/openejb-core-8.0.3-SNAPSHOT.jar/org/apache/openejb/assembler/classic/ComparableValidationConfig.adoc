@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ComparableValidationConfig.class
+
+ - link:ComparableValidationConfig-asmified.java[Asmified]
+
+== References
+

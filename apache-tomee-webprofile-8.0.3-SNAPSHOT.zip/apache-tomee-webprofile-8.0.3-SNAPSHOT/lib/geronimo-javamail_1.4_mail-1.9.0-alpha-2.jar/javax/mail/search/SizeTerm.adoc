@@ -1,0 +1,10 @@
+= javax/mail/search/SizeTerm.class
+
+ - link:SizeTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.IntegerComparisonTerm - 3
+ - javax.mail.Message - 2
+ - javax.mail.search.SizeTerm - 2
+ - javax.mail.MessagingException - 1

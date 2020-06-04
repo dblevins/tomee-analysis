@@ -1,0 +1,7 @@
+= org/apache/openejb/core/managed/ManagedContainer$StatefulCacheListener.class
+
+ - link:ManagedContainer$StatefulCacheListener-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.SessionBean - 6

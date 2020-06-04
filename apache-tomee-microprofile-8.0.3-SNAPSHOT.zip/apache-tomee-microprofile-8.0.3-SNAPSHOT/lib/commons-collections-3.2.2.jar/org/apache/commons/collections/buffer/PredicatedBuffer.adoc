@@ -1,0 +1,6 @@
+= org/apache/commons/collections/buffer/PredicatedBuffer.class
+
+ - link:PredicatedBuffer-asmified.java[Asmified]
+
+== References
+

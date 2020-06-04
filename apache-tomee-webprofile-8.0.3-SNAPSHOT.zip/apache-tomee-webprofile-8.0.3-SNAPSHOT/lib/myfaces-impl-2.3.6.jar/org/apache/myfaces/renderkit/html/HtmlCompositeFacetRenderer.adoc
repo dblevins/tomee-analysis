@@ -1,0 +1,8 @@
+= org/apache/myfaces/renderkit/html/HtmlCompositeFacetRenderer.class
+
+ - link:HtmlCompositeFacetRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.context.FacesContext - 7

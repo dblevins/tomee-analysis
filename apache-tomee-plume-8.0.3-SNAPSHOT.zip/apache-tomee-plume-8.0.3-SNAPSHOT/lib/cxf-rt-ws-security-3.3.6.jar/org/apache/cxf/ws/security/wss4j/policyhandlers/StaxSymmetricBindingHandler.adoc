@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler.class
+
+ - link:StaxSymmetricBindingHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 4

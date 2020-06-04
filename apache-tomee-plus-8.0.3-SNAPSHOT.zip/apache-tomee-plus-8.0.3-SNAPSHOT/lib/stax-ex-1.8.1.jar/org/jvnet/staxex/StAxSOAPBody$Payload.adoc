@@ -1,0 +1,6 @@
+= org/jvnet/staxex/StAxSOAPBody$Payload.class
+
+ - link:StAxSOAPBody$Payload-asmified.java[Asmified]
+
+== References
+

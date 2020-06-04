@@ -1,0 +1,8 @@
+= javax/mail/util/SharedByteArrayInputStream.class
+
+ - link:SharedByteArrayInputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.util.SharedByteArrayInputStream - 3
+ - javax.mail.internet.SharedInputStream - 1

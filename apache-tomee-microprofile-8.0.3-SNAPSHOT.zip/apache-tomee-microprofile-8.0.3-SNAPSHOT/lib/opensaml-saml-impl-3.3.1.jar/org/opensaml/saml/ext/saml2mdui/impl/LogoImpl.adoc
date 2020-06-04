@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/LogoImpl.class
+
+ - link:LogoImpl-asmified.java[Asmified]
+
+== References
+

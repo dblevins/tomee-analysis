@@ -1,0 +1,9 @@
+= javax/faces/flow/builder/NavigationCaseBuilder.class
+
+ - link:NavigationCaseBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.NavigationCaseBuilder - 7
+ - javax.el.ValueExpression - 1
+ - javax.faces.flow.builder.NavigationCaseBuilder$RedirectBuilder - 1

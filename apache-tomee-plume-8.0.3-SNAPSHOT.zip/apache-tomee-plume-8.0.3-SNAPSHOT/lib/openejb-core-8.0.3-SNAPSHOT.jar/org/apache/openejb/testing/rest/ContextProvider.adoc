@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/rest/ContextProvider.class
+
+ - link:ContextProvider-asmified.java[Asmified]
+
+== References
+

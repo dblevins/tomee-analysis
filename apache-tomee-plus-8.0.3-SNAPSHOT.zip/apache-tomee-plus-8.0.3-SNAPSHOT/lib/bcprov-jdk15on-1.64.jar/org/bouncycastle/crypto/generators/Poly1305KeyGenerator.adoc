@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/generators/Poly1305KeyGenerator.class
+
+ - link:Poly1305KeyGenerator-asmified.java[Asmified]
+
+== References
+

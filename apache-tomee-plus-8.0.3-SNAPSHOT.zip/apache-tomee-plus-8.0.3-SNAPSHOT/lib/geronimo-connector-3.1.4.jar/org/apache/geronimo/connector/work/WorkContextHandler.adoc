@@ -1,0 +1,8 @@
+= org/apache/geronimo/connector/work/WorkContextHandler.class
+
+ - link:WorkContextHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkContext - 2
+ - javax.resource.spi.work.WorkCompletedException - 2

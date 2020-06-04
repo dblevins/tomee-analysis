@@ -1,0 +1,12 @@
+= javax/mail/MessageContext.class
+
+ - link:MessageContext-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Part - 9
+ - javax.mail.Message - 6
+ - javax.mail.MessageContext - 2
+ - javax.mail.Session - 2
+ - javax.mail.Multipart - 2
+ - javax.mail.BodyPart - 2

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/spring/NamespaceHandler.class
+
+ - link:NamespaceHandler-asmified.java[Asmified]
+
+== References
+

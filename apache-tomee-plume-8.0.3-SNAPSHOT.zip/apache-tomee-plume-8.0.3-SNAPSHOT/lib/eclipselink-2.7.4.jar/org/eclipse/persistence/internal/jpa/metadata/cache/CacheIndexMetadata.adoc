@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/cache/CacheIndexMetadata.class
+
+ - link:CacheIndexMetadata-asmified.java[Asmified]
+
+== References
+

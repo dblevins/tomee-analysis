@@ -1,0 +1,9 @@
+= org/apache/el/ValueExpressionLiteral.class
+
+ - link:ValueExpressionLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 12
+ - javax.el.ValueExpression - 3
+ - javax.el.PropertyNotWritableException - 2

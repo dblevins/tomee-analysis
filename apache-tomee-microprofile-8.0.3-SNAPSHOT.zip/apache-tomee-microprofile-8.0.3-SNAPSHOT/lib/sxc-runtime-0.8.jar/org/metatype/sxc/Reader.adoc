@@ -1,0 +1,6 @@
+= org/metatype/sxc/Reader.class
+
+ - link:Reader-asmified.java[Asmified]
+
+== References
+

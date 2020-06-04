@@ -1,0 +1,11 @@
+= com/sun/faces/taglib/html_basic/PanelGroupTag.class
+
+ - link:PanelGroupTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 91
+ - javax.faces.component.UIPanel - 15
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.servlet.jsp.JspException - 6
+ - javax.faces.component.UIComponent - 3

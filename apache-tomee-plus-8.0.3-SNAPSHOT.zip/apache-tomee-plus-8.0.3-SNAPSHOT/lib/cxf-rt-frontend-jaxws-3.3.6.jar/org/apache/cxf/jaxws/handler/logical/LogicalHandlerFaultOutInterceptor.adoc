@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor.class
+
+ - link:LogicalHandlerFaultOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Binding - 5

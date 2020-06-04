@@ -1,0 +1,13 @@
+= org/apache/webbeans/container/InjectionResolver.class
+
+ - link:InjectionResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 71
+ - javax.enterprise.inject.spi.InjectionPoint - 29
+ - javax.enterprise.inject.New - 13
+ - javax.enterprise.inject.spi.AnnotatedType - 7
+ - javax.enterprise.event.Event - 4
+ - javax.enterprise.inject.Instance - 4
+ - javax.enterprise.inject.UnproxyableResolutionException - 2

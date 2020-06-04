@@ -1,0 +1,7 @@
+= javax/enterprise/inject/UnproxyableResolutionException.class
+
+ - link:UnproxyableResolutionException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.ResolutionException - 5

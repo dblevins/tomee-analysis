@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/ConstructorResult.class
+
+ - link:ConstructorResult-asmified.java[Asmified]
+
+== References
+

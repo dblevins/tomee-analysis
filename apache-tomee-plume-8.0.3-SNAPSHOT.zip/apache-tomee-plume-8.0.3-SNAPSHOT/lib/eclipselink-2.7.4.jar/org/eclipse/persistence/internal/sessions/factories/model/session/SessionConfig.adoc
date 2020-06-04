@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/session/SessionConfig.class
+
+ - link:SessionConfig-asmified.java[Asmified]
+
+== References
+

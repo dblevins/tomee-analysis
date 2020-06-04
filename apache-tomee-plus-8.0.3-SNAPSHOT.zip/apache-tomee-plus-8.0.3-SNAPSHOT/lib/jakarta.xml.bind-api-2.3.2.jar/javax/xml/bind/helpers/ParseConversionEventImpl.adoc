@@ -1,0 +1,9 @@
+= javax/xml/bind/helpers/ParseConversionEventImpl.class
+
+ - link:ParseConversionEventImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventLocator - 4
+ - javax.xml.bind.helpers.ValidationEventImpl - 3
+ - javax.xml.bind.ParseConversionEvent - 1

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/serializer/NumberAnchorGenerator.class
+
+ - link:NumberAnchorGenerator-asmified.java[Asmified]
+
+== References
+

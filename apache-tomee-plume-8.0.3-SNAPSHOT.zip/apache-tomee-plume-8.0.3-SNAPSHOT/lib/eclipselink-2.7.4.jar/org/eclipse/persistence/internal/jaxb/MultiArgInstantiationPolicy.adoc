@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/MultiArgInstantiationPolicy.class
+
+ - link:MultiArgInstantiationPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/impl/DefaultViewScopeProviderFactory.class
+
+ - link:DefaultViewScopeProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 6

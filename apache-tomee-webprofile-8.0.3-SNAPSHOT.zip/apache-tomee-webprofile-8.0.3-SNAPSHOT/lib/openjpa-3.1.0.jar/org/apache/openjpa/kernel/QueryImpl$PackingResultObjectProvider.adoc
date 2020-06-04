@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryImpl$PackingResultObjectProvider.class
+
+ - link:QueryImpl$PackingResultObjectProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/ExpressionBuilderVisitor$ChildrenExpressionVisitor.class
+
+ - link:ExpressionBuilderVisitor$ChildrenExpressionVisitor-asmified.java[Asmified]
+
+== References
+

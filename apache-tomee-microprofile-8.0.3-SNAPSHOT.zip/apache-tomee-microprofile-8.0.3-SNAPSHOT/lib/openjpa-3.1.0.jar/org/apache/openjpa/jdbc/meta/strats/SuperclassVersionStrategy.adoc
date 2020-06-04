@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/SuperclassVersionStrategy.class
+
+ - link:SuperclassVersionStrategy-asmified.java[Asmified]
+
+== References
+

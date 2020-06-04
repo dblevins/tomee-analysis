@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/BoundSet$ThreeSets.class
+
+ - link:BoundSet$ThreeSets-asmified.java[Asmified]
+
+== References
+

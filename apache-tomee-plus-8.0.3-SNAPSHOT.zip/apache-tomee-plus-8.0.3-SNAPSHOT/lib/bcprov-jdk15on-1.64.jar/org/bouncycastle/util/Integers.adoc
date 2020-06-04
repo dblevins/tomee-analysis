@@ -1,0 +1,6 @@
+= org/bouncycastle/util/Integers.class
+
+ - link:Integers-asmified.java[Asmified]
+
+== References
+

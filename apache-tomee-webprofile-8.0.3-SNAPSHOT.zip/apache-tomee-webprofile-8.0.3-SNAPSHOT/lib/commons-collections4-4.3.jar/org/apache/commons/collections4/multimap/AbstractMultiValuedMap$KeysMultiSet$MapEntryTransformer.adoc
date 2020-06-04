@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multimap/AbstractMultiValuedMap$KeysMultiSet$MapEntryTransformer.class
+
+ - link:AbstractMultiValuedMap$KeysMultiSet$MapEntryTransformer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/changetracking/AttributeChangeTrackingPolicy.class
+
+ - link:AttributeChangeTrackingPolicy-asmified.java[Asmified]
+
+== References
+

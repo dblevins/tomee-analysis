@@ -1,0 +1,7 @@
+= javax/validation/OverridesAttribute$List.class
+
+ - link:OverridesAttribute$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.OverridesAttribute - 1

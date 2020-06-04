@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/extensions/Extensions.class
+
+ - link:Extensions-asmified.java[Asmified]
+
+== References
+

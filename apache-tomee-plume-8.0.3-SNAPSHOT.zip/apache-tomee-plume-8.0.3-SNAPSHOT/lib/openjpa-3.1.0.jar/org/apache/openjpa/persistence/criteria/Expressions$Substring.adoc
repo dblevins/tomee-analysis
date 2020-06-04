@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Substring.class
+
+ - link:Expressions$Substring-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 25

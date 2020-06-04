@@ -1,0 +1,8 @@
+= org/apache/bval/cdi/BValExtension$Releasable.class
+
+ - link:BValExtension$Releasable-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionTarget - 9
+ - javax.enterprise.context.spi.CreationalContext - 7

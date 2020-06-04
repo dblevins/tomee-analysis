@@ -1,0 +1,6 @@
+= org/apache/commons/collections/set/SynchronizedSortedSet.class
+
+ - link:SynchronizedSortedSet-asmified.java[Asmified]
+
+== References
+

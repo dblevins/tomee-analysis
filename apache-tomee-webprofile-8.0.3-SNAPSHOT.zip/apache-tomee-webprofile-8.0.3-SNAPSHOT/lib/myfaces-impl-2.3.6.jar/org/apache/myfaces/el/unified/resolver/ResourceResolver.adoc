@@ -1,0 +1,14 @@
+= org/apache/myfaces/el/unified/resolver/ResourceResolver.class
+
+ - link:ResourceResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 14
+ - javax.el.ELContext - 12
+ - javax.faces.application.Resource - 7
+ - javax.faces.application.ResourceHandler - 5
+ - javax.faces.view.Location - 3
+ - javax.el.ELException - 2
+ - javax.el.ELResolver - 2
+ - javax.faces.component.UIComponent - 2

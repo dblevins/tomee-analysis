@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/ViewDeclarationLanguageStrategy.class
+
+ - link:ViewDeclarationLanguageStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.ViewDeclarationLanguage - 1

@@ -1,0 +1,10 @@
+= org/apache/johnzon/core/JsonMergePatchImpl.class
+
+ - link:JsonMergePatchImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 30
+ - javax.json.JsonObject - 12
+ - javax.json.JsonObjectBuilder - 8
+ - javax.json.JsonMergePatch - 1

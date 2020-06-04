@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/AnnotationDeclaredValidatorMappingProvider.class
+
+ - link:AnnotationDeclaredValidatorMappingProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Constraint - 4

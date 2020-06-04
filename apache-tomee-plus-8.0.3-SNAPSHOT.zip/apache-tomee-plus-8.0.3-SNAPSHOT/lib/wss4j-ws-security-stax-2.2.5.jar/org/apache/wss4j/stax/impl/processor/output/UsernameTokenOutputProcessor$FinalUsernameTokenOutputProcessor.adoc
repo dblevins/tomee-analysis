@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/output/UsernameTokenOutputProcessor$FinalUsernameTokenOutputProcessor.class
+
+ - link:UsernameTokenOutputProcessor$FinalUsernameTokenOutputProcessor-asmified.java[Asmified]
+
+== References
+

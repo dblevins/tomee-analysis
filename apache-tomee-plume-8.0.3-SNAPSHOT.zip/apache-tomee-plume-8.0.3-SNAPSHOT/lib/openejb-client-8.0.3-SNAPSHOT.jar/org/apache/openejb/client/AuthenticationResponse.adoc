@@ -1,0 +1,6 @@
+= org/apache/openejb/client/AuthenticationResponse.class
+
+ - link:AuthenticationResponse-asmified.java[Asmified]
+
+== References
+

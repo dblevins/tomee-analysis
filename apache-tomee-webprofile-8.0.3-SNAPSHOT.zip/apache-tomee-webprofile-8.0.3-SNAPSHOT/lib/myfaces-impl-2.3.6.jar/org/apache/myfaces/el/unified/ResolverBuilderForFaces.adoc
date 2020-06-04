@@ -1,0 +1,17 @@
+= org/apache/myfaces/el/unified/ResolverBuilderForFaces.class
+
+ - link:ResolverBuilderForFaces-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.el.ELResolver - 10
+ - javax.el.CompositeELResolver - 8
+ - javax.faces.context.ExternalContext - 4
+ - javax.el.ListELResolver - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.el.BeanELResolver - 2
+ - javax.el.ResourceBundleELResolver - 2
+ - javax.el.MapELResolver - 2
+ - javax.el.ArrayELResolver - 2
+ - javax.enterprise.inject.spi.BeanManager - 2

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/platform/database/oracle/annotations/NamedPLSQLStoredFunctionQuery.class
+
+ - link:NamedPLSQLStoredFunctionQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.QueryHint - 1

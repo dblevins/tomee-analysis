@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/CheckDebugAttributes.class
+
+ - link:CheckDebugAttributes-asmified.java[Asmified]
+
+== References
+

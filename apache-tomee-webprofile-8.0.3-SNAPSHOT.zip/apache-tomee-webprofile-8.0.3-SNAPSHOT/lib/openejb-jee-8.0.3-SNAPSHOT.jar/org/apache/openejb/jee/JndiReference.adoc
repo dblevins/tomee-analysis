@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/JndiReference.class
+
+ - link:JndiReference-asmified.java[Asmified]
+
+== References
+

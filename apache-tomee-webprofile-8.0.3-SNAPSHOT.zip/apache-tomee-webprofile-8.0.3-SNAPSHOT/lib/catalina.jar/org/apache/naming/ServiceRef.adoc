@@ -1,0 +1,6 @@
+= org/apache/naming/ServiceRef.class
+
+ - link:ServiceRef-asmified.java[Asmified]
+
+== References
+

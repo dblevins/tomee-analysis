@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/AnnotationMethodInfo.class
+
+ - link:AnnotationMethodInfo-asmified.java[Asmified]
+
+== References
+

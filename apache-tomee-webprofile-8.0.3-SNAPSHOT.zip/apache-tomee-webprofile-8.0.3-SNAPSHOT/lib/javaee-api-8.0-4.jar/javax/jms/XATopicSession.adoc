@@ -1,0 +1,9 @@
+= javax/jms/XATopicSession.class
+
+ - link:XATopicSession-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.XASession - 1
+ - javax.jms.TopicSession - 1
+ - javax.jms.JMSException - 1

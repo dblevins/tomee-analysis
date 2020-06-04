@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/transport/smtp/SMTPAddressFailedException.class
+
+ - link:SMTPAddressFailedException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.InternetAddress - 5
+ - javax.mail.MessagingException - 2

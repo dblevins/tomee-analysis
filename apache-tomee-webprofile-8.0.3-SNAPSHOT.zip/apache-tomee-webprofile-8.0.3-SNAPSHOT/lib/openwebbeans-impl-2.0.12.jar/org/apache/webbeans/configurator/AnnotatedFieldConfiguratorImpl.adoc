@@ -1,0 +1,8 @@
+= org/apache/webbeans/configurator/AnnotatedFieldConfiguratorImpl.class
+
+ - link:AnnotatedFieldConfiguratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.AnnotatedFieldConfigurator - 4
+ - javax.enterprise.inject.spi.AnnotatedField - 1

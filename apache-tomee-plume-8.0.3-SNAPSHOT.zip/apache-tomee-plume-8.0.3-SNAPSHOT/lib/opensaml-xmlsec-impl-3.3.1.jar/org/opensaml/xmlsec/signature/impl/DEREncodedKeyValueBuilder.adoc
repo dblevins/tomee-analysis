@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/DEREncodedKeyValueBuilder.class
+
+ - link:DEREncodedKeyValueBuilder-asmified.java[Asmified]
+
+== References
+

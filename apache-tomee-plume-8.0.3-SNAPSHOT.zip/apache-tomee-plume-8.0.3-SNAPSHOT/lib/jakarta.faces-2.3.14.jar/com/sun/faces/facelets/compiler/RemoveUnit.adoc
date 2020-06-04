@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/compiler/RemoveUnit.class
+
+ - link:RemoveUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletHandler - 2

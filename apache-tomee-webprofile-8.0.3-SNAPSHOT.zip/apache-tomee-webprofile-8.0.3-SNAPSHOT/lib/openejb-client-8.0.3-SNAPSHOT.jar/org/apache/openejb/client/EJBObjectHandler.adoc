@@ -1,0 +1,8 @@
+= org/apache/openejb/client/EJBObjectHandler.class
+
+ - link:EJBObjectHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 9
+ - javax.ejb.EJBObject - 7

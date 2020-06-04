@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/StatusCodeType.class
+
+ - link:StatusCodeType-asmified.java[Asmified]
+
+== References
+

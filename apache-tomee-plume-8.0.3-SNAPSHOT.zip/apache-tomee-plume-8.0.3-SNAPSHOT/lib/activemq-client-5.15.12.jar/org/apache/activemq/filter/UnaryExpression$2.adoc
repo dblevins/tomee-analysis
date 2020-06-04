@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/UnaryExpression$2.class
+
+ - link:UnaryExpression$2-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/annotations/Provider$Type.class
+
+ - link:Provider$Type-asmified.java[Asmified]
+
+== References
+

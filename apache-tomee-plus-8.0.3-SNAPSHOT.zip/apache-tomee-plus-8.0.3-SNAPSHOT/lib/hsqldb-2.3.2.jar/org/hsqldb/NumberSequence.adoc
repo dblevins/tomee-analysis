@@ -1,0 +1,6 @@
+= org/hsqldb/NumberSequence.class
+
+ - link:NumberSequence-asmified.java[Asmified]
+
+== References
+

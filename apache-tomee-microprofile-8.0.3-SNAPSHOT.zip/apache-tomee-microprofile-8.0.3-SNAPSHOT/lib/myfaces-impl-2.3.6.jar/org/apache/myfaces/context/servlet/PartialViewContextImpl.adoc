@@ -1,0 +1,29 @@
+= org/apache/myfaces/context/servlet/PartialViewContextImpl.class
+
+ - link:PartialViewContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 115
+ - javax.faces.context.PartialResponseWriter - 57
+ - javax.faces.context.ExternalContext - 39
+ - javax.faces.component.UIViewRoot - 23
+ - javax.faces.context.PartialViewContext - 20
+ - javax.faces.event.PhaseId - 19
+ - javax.faces.context.ResponseWriter - 18
+ - javax.faces.component.visit.VisitContextFactory - 15
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.application.Application - 6
+ - javax.faces.component.visit.VisitHint - 5
+ - javax.faces.component.visit.VisitContext - 4
+ - javax.faces.render.RenderKit - 4
+ - javax.faces.lifecycle.ClientWindow - 2
+ - javax.faces.render.RenderKitFactory - 2
+ - javax.faces.component.visit.VisitCallback - 2
+ - javax.faces.FactoryFinder - 2
+ - javax.faces.application.StateManager - 2
+ - javax.faces.component.UIViewParameter - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.component.TransientStateHelper - 2
+ - javax.faces.view.ViewMetadata - 1

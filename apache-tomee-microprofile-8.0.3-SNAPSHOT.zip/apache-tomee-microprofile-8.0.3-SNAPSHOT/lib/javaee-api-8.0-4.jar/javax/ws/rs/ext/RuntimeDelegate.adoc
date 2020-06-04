@@ -1,0 +1,14 @@
+= javax/ws/rs/ext/RuntimeDelegate.class
+
+ - link:RuntimeDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.RuntimeDelegate - 15
+ - javax.ws.rs.core.Variant$VariantListBuilder - 1
+ - javax.ws.rs.core.Response$ResponseBuilder - 1
+ - javax.ws.rs.ext.RuntimeDelegateFinder - 1
+ - javax.ws.rs.core.Link$Builder - 1
+ - javax.ws.rs.core.UriBuilder - 1
+ - javax.ws.rs.core.Application - 1
+ - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

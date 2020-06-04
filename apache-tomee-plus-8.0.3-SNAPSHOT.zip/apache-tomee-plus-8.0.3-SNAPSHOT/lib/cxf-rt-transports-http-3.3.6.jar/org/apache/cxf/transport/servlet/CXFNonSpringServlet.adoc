@@ -1,0 +1,15 @@
+= org/apache/cxf/transport/servlet/CXFNonSpringServlet.class
+
+ - link:CXFNonSpringServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 16
+ - javax.servlet.http.HttpServletRequest - 7
+ - javax.servlet.http.HttpServletResponse - 5
+ - javax.servlet.ServletException - 4
+ - javax.servlet.FilterChain - 2
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.http.HttpServlet - 1

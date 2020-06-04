@@ -1,0 +1,12 @@
+= org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.class
+
+ - link:SAAJOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MessageFactory - 16
+ - javax.xml.soap.SOAPMessage - 14
+ - javax.xml.soap.SOAPPart - 9
+ - javax.xml.soap.SOAPException - 8
+ - javax.xml.soap.SOAPEnvelope - 4
+ - javax.xml.soap.SOAPHeader - 2

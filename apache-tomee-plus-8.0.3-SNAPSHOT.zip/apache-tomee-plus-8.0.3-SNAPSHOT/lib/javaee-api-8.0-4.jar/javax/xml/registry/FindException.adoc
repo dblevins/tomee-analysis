@@ -1,0 +1,7 @@
+= javax/xml/registry/FindException.class
+
+ - link:FindException-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.RegistryException - 5

@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/assertion/impl/DelegationRestrictionConditionValidator.class
+
+ - link:DelegationRestrictionConditionValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.concurrent.ThreadSafe - 1

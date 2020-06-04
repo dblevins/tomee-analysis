@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/FullDTDReader.class
+
+ - link:FullDTDReader-asmified.java[Asmified]
+
+== References
+

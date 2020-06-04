@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentBoolean.class
+
+ - link:SafeRepresenter$RepresentBoolean-asmified.java[Asmified]
+
+== References
+

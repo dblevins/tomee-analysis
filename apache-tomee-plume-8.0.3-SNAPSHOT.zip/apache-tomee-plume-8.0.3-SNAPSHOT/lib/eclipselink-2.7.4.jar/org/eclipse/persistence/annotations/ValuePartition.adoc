@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/ValuePartition.class
+
+ - link:ValuePartition-asmified.java[Asmified]
+
+== References
+

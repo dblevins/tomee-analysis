@@ -1,0 +1,7 @@
+= javax/jms/CompletionListener.class
+
+ - link:CompletionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 2

@@ -1,0 +1,6 @@
+= javax/security/auth/message/MessageInfo.class
+
+ - link:MessageInfo-asmified.java[Asmified]
+
+== References
+

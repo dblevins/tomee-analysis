@@ -1,0 +1,16 @@
+= org/apache/myfaces/flow/cdi/FlowBuilderCDIExtension.class
+
+ - link:FlowBuilderCDIExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.ProcessProducer - 3
+ - javax.faces.flow.Flow - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.inject.spi.Producer - 3
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 2
+ - javax.enterprise.inject.spi.AnnotatedMember - 2
+ - javax.enterprise.event.Observes - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.faces.flow.builder.FlowDefinition - 1

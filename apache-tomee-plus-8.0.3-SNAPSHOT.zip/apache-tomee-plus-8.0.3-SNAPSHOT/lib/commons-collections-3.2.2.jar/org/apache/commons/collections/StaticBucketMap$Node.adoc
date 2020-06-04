@@ -1,0 +1,6 @@
+= org/apache/commons/collections/StaticBucketMap$Node.class
+
+ - link:StaticBucketMap$Node-asmified.java[Asmified]
+
+== References
+

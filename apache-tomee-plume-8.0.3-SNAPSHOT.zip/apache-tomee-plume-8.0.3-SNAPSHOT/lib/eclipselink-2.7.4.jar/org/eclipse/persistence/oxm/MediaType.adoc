@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/MediaType.class
+
+ - link:MediaType-asmified.java[Asmified]
+
+== References
+

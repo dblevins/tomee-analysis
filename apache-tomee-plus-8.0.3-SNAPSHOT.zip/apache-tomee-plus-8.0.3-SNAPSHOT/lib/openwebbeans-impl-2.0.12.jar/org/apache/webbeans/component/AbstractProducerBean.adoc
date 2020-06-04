@@ -1,0 +1,11 @@
+= org/apache/webbeans/component/AbstractProducerBean.class
+
+ - link:AbstractProducerBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 6
+ - javax.enterprise.inject.spi.Producer - 5
+ - javax.enterprise.inject.spi.ProducerFactory - 4
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Bean - 1

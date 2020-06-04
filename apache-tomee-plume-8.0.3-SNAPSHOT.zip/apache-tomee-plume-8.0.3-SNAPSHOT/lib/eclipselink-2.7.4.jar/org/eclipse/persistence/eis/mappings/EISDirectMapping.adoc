@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/mappings/EISDirectMapping.class
+
+ - link:EISDirectMapping-asmified.java[Asmified]
+
+== References
+

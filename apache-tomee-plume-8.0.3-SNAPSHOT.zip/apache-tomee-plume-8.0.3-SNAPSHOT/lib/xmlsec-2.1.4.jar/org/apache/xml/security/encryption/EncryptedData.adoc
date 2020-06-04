@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/EncryptedData.class
+
+ - link:EncryptedData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/config/configprovider/WebFaceletTaglibResourceProvider.class
+
+ - link:WebFaceletTaglibResourceProvider-asmified.java[Asmified]
+
+== References
+

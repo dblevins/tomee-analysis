@@ -1,0 +1,6 @@
+= org/apache/juli/logging/LogConfigurationException.class
+
+ - link:LogConfigurationException-asmified.java[Asmified]
+
+== References
+

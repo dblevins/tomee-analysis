@@ -1,0 +1,6 @@
+= org/apache/xml/security/c14n/implementations/NameSpaceSymbTable.class
+
+ - link:NameSpaceSymbTable-asmified.java[Asmified]
+
+== References
+

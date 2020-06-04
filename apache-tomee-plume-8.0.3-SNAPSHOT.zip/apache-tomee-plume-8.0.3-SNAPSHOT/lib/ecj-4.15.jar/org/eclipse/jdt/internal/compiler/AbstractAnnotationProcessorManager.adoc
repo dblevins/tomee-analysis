@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/AbstractAnnotationProcessorManager.class
+
+ - link:AbstractAnnotationProcessorManager-asmified.java[Asmified]
+
+== References
+

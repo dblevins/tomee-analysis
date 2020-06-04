@@ -1,0 +1,6 @@
+= org/apache/myfaces/spi/FactoryFinderProviderFactory.class
+
+ - link:FactoryFinderProviderFactory-asmified.java[Asmified]
+
+== References
+

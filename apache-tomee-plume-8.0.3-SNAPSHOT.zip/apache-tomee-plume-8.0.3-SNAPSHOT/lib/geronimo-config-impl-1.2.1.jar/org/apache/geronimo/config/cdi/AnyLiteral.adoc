@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/cdi/AnyLiteral.class
+
+ - link:AnyLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Any - 5
+ - javax.enterprise.util.AnnotationLiteral - 2

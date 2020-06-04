@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/PersistenceProductDerivation$ConfigurationParser.class
+
+ - link:PersistenceProductDerivation$ConfigurationParser-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitTransactionType - 5
+ - javax.persistence.SharedCacheMode - 3
+ - javax.persistence.ValidationMode - 3

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/JDBCBrokerFactory.class
+
+ - link:JDBCBrokerFactory-asmified.java[Asmified]
+
+== References
+

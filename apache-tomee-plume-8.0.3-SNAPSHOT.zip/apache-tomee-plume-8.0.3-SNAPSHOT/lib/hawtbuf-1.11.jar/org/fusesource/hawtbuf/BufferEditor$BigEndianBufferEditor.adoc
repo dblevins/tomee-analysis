@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/BufferEditor$BigEndianBufferEditor.class
+
+ - link:BufferEditor$BigEndianBufferEditor-asmified.java[Asmified]
+
+== References
+

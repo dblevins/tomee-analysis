@@ -1,0 +1,7 @@
+= javax/faces/component/behavior/AjaxBehavior$PropertyKeys.class
+
+ - link:AjaxBehavior$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.AjaxBehavior$PropertyKeys - 16

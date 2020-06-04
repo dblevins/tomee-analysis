@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/IvmJndiFactory.class
+
+ - link:IvmJndiFactory-asmified.java[Asmified]
+
+== References
+

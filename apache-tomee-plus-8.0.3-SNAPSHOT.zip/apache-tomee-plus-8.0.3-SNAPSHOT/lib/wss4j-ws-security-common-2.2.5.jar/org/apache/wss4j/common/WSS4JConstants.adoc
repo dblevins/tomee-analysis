@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/WSS4JConstants.class
+
+ - link:WSS4JConstants-asmified.java[Asmified]
+
+== References
+

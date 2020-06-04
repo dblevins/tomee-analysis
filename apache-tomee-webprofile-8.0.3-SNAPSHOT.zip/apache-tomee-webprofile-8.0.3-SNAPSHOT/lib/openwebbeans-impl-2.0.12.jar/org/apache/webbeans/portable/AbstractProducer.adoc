@@ -1,0 +1,17 @@
+= org/apache/webbeans/portable/AbstractProducer.class
+
+ - link:AbstractProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 6
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.Bean - 6
+ - javax.enterprise.inject.spi.InjectionPoint - 6
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.inject.spi.PassivationCapable - 3
+ - javax.enterprise.inject.spi.Interceptor - 3
+ - javax.enterprise.inject.spi.Annotated - 2
+ - javax.enterprise.inject.spi.Decorator - 2
+ - javax.decorator.Delegate - 1
+ - javax.enterprise.inject.spi.Producer - 1

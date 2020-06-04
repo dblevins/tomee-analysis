@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/net/HttpServletSupport.class
+
+ - link:HttpServletSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 9
+ - javax.servlet.http.HttpServletResponse - 7

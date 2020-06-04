@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/AbstractReferenceMap$ReferenceEntrySet.class
+
+ - link:AbstractReferenceMap$ReferenceEntrySet-asmified.java[Asmified]
+
+== References
+

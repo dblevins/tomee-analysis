@@ -1,0 +1,6 @@
+= javax/persistence/Embeddable.class
+
+ - link:Embeddable-asmified.java[Asmified]
+
+== References
+

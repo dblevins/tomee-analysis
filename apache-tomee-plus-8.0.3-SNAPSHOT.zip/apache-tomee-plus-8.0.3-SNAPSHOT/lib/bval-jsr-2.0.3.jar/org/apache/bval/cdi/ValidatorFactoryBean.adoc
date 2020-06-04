@@ -1,0 +1,12 @@
+= org/apache/bval/cdi/ValidatorFactoryBean.class
+
+ - link:ValidatorFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 15
+ - javax.enterprise.context.spi.CreationalContext - 6
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Bean - 1

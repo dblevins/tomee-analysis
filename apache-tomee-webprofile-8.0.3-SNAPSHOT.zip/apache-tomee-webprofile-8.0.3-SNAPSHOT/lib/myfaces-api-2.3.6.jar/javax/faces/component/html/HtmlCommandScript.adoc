@@ -1,0 +1,10 @@
+= javax/faces/component/html/HtmlCommandScript.class
+
+ - link:HtmlCommandScript-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 28
+ - javax.faces.component.html.HtmlCommandScript - 15
+ - javax.faces.component.html.HtmlCommandScript$PropertyKeys - 14
+ - javax.faces.component.UICommand - 2

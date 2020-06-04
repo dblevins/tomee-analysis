@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/config/persistenceunit/PersistenceUnitImpl.class
+
+ - link:PersistenceUnitImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitTransactionType - 4
+ - javax.persistence.spi.PersistenceUnitInfo - 1

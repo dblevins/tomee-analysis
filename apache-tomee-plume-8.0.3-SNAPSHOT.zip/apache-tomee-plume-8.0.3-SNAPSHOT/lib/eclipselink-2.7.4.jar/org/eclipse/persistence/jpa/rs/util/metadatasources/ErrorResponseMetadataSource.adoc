@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/ErrorResponseMetadataSource.class
+
+ - link:ErrorResponseMetadataSource-asmified.java[Asmified]
+
+== References
+

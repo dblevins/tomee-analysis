@@ -1,0 +1,11 @@
+= org/apache/geronimo/connector/outbound/AbstractConnectionManager.class
+
+ - link:AbstractConnectionManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ManagedConnectionFactory - 15
+ - javax.resource.spi.ConnectionRequestInfo - 4
+ - javax.resource.ResourceException - 3
+ - javax.resource.spi.ConnectionManager - 3
+ - javax.resource.spi.LazyAssociatableConnectionManager - 1

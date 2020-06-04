@@ -1,0 +1,8 @@
+= javax/faces/el/VariableResolver.class
+
+ - link:VariableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.EvaluationException - 1
+ - javax.faces.context.FacesContext - 1

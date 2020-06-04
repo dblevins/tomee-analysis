@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/antlr/runtime/tree/TreePatternLexer.class
+
+ - link:TreePatternLexer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOSequence$Key.class
+
+ - link:SDOSequence$Key-asmified.java[Asmified]
+
+== References
+

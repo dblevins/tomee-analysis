@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ResultType.class
+
+ - link:ResultType-asmified.java[Asmified]
+
+== References
+

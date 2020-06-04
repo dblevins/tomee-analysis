@@ -1,0 +1,14 @@
+= org/eclipse/persistence/jaxb/JAXBBeanValidator.class
+
+ - link:JAXBBeanValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 11
+ - javax.validation.Validator - 10
+ - javax.validation.ConstraintViolation - 9
+ - javax.validation.ValidationException - 3
+ - javax.validation.ConstraintViolationException - 2
+ - javax.validation.Path - 2
+ - javax.validation.Validation - 2
+ - javax.validation.groups.Default - 1

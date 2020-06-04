@@ -1,0 +1,8 @@
+= org/opensaml/security/x509/X509Support.class
+
+ - link:X509Support-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 24
+ - javax.annotation.Nonnull - 19

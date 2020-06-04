@@ -1,0 +1,22 @@
+= com/sun/faces/application/ViewHandlerImpl.class
+
+ - link:ViewHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 86
+ - javax.faces.context.ExternalContext - 46
+ - javax.faces.component.UIViewRoot - 37
+ - javax.faces.application.Application - 18
+ - javax.faces.context.ResponseWriter - 17
+ - javax.servlet.ServletResponse - 12
+ - javax.servlet.ServletRequest - 11
+ - javax.faces.FacesException - 11
+ - javax.faces.application.ViewHandler - 9
+ - javax.faces.render.RenderKitFactory - 7
+ - javax.faces.render.RenderKit - 7
+ - javax.servlet.http.HttpServletResponse - 6
+ - javax.faces.application.StateManager - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.servlet.jsp.jstl.core.Config - 1
+ - javax.faces.component.UIComponent - 1

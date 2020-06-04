@@ -1,0 +1,14 @@
+= org/apache/myfaces/context/servlet/StartupFacesContextImpl.class
+
+ - link:StartupFacesContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.FacesMessage - 5
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.context.ResponseStream - 2
+ - javax.faces.context.ExceptionHandler - 2
+ - javax.faces.context.ResponseWriter - 2
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.application.FacesMessage$Severity - 1
+ - javax.faces.context.PartialViewContext - 1

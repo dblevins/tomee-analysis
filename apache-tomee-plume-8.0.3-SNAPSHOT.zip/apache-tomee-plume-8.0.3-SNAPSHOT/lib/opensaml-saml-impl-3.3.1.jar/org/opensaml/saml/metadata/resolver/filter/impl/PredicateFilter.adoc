@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/filter/impl/PredicateFilter.class
+
+ - link:PredicateFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8
+ - javax.annotation.Nullable - 1

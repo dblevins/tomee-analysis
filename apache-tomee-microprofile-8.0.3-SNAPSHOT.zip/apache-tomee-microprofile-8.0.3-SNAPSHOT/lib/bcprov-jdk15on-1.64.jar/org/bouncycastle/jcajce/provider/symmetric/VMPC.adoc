@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/VMPC.class
+
+ - link:VMPC-asmified.java[Asmified]
+
+== References
+

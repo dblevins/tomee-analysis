@@ -1,0 +1,16 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlMenuRendererBase.class
+
+ - link:HtmlMenuRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 27
+ - javax.faces.component.UIComponent - 21
+ - javax.faces.convert.Converter - 11
+ - javax.faces.component.UISelectMany - 10
+ - javax.faces.component.UISelectOne - 9
+ - javax.faces.component.behavior.ClientBehaviorHolder - 4
+ - javax.faces.component.html.HtmlSelectOneMenu - 3
+ - javax.faces.component.html.HtmlSelectManyMenu - 3
+ - javax.faces.context.ResponseWriter - 2
+ - javax.faces.convert.ConverterException - 1

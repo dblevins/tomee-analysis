@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/MessagingException.class
+
+ - link:MessagingException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/nullpolicy/NullPolicy.class
+
+ - link:NullPolicy-asmified.java[Asmified]
+
+== References
+

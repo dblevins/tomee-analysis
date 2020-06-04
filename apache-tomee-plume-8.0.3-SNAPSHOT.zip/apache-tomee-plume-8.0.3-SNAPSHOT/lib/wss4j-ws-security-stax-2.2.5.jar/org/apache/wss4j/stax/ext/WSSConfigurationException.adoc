@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/ext/WSSConfigurationException.class
+
+ - link:WSSConfigurationException-asmified.java[Asmified]
+
+== References
+

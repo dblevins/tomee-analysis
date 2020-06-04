@@ -1,0 +1,8 @@
+= org/apache/johnzon/jsonb/serializer/JohnzonSerializationContext.class
+
+ - link:JohnzonSerializationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 4
+ - javax.json.bind.serializer.SerializationContext - 1

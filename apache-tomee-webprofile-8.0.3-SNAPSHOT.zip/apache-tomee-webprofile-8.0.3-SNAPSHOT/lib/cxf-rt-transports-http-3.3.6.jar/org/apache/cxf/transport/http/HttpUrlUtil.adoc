@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/HttpUrlUtil.class
+
+ - link:HttpUrlUtil-asmified.java[Asmified]
+
+== References
+

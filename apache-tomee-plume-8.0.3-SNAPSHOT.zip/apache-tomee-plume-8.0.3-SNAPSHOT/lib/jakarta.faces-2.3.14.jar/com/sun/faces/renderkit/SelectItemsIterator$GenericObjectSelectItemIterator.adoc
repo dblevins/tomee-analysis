@@ -1,0 +1,10 @@
+= com/sun/faces/renderkit/SelectItemsIterator$GenericObjectSelectItemIterator.class
+
+ - link:SelectItemsIterator$GenericObjectSelectItemIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UISelectItems - 6
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.model.SelectItem - 2
+ - javax.faces.component.UIComponent - 1

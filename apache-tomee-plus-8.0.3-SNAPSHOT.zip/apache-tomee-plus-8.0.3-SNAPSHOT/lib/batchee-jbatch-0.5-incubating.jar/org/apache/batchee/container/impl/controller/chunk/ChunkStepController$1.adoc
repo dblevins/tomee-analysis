@@ -1,0 +1,6 @@
+= org/apache/batchee/container/impl/controller/chunk/ChunkStepController$1.class
+
+ - link:ChunkStepController$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/compiler/CommentInstruction.class
+
+ - link:CommentInstruction-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 4
+ - javax.faces.context.FacesContext - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.context.ResponseWriter - 2

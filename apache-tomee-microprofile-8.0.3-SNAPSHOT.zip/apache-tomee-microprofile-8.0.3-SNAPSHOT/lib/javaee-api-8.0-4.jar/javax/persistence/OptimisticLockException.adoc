@@ -1,0 +1,7 @@
+= javax/persistence/OptimisticLockException.class
+
+ - link:OptimisticLockException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 7

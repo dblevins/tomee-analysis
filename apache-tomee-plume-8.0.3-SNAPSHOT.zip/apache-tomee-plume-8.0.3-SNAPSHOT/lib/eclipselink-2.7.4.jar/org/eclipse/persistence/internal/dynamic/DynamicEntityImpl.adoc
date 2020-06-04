@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/dynamic/DynamicEntityImpl.class
+
+ - link:DynamicEntityImpl-asmified.java[Asmified]
+
+== References
+

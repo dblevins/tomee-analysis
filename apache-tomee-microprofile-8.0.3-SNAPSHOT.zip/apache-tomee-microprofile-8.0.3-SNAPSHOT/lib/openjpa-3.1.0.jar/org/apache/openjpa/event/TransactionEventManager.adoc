@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/TransactionEventManager.class
+
+ - link:TransactionEventManager-asmified.java[Asmified]
+
+== References
+

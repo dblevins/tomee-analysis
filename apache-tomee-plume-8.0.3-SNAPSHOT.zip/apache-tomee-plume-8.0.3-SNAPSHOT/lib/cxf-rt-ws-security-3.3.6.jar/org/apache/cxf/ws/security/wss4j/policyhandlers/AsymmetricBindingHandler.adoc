@@ -1,0 +1,10 @@
+= org/apache/cxf/ws/security/wss4j/policyhandlers/AsymmetricBindingHandler.class
+
+ - link:AsymmetricBindingHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 8
+ - javax.xml.soap.SOAPPart - 6
+ - javax.xml.soap.SOAPException - 6
+ - javax.xml.soap.SOAPEnvelope - 2

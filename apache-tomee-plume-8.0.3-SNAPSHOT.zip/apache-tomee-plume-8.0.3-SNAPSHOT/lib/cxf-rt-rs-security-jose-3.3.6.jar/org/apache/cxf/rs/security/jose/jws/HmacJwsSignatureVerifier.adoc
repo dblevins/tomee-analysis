@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jws/HmacJwsSignatureVerifier.class
+
+ - link:HmacJwsSignatureVerifier-asmified.java[Asmified]
+
+== References
+

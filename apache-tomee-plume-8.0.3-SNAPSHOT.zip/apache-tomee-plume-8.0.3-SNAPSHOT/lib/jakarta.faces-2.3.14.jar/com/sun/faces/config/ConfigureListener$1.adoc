@@ -1,0 +1,6 @@
+= com/sun/faces/config/ConfigureListener$1.class
+
+ - link:ConfigureListener$1-asmified.java[Asmified]
+
+== References
+

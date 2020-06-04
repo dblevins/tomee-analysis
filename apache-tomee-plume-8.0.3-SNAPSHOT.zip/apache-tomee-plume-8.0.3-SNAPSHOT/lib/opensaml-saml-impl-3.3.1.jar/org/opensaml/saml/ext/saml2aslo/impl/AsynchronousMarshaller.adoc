@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2aslo/impl/AsynchronousMarshaller.class
+
+ - link:AsynchronousMarshaller-asmified.java[Asmified]
+
+== References
+

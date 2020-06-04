@@ -1,0 +1,8 @@
+= org/apache/webbeans/ee/beans/ValidatorProvider.class
+
+ - link:ValidatorProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Validator - 5
+ - javax.inject.Provider - 1

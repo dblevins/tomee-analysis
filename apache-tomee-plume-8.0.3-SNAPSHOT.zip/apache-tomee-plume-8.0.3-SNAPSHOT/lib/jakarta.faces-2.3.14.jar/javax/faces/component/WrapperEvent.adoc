@@ -1,0 +1,10 @@
+= javax/faces/component/WrapperEvent.class
+
+ - link:WrapperEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.FacesEvent - 12
+ - javax.faces.event.PhaseId - 4
+ - javax.faces.event.FacesListener - 2
+ - javax.faces.component.UIComponent - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/ExpressionVisitorWrapper.class
+
+ - link:ExpressionVisitorWrapper-asmified.java[Asmified]
+
+== References
+

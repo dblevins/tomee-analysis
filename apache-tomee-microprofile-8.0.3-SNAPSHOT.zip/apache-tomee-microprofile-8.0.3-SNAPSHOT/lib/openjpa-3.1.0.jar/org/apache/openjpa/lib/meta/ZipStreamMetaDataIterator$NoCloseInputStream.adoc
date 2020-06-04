@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/ZipStreamMetaDataIterator$NoCloseInputStream.class
+
+ - link:ZipStreamMetaDataIterator$NoCloseInputStream-asmified.java[Asmified]
+
+== References
+

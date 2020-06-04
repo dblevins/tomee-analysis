@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/All.class
+
+ - link:All-asmified.java[Asmified]
+
+== References
+

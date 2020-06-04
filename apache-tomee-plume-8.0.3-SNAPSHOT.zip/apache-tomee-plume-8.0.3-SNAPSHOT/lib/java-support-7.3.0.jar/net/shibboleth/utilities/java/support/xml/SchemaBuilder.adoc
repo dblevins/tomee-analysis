@@ -1,0 +1,9 @@
+= net/shibboleth/utilities/java/support/xml/SchemaBuilder.class
+
+ - link:SchemaBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 23
+ - javax.annotation.Nullable - 5
+ - javax.annotation.concurrent.NotThreadSafe - 1

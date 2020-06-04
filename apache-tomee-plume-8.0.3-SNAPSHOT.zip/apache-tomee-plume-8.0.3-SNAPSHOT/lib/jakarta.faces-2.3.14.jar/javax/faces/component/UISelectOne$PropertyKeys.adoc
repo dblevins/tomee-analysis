@@ -1,0 +1,7 @@
+= javax/faces/component/UISelectOne$PropertyKeys.class
+
+ - link:UISelectOne$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UISelectOne$PropertyKeys - 16

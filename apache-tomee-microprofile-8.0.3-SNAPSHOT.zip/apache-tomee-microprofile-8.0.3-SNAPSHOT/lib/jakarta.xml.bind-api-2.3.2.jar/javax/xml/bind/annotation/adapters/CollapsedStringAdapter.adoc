@@ -1,0 +1,8 @@
+= javax/xml/bind/annotation/adapters/CollapsedStringAdapter.class
+
+ - link:CollapsedStringAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 4
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

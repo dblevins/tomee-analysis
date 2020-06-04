@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/BindingDescriptor.class
+
+ - link:BindingDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 5
+ - javax.annotation.Nonnull - 2

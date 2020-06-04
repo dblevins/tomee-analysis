@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/TCPRemoteCommitProvider$1.class
+
+ - link:TCPRemoteCommitProvider$1-asmified.java[Asmified]
+
+== References
+

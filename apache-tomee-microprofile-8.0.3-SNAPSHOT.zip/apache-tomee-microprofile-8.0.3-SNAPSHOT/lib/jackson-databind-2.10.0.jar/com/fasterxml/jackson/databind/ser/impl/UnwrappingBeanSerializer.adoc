@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanSerializer.class
+
+ - link:UnwrappingBeanSerializer-asmified.java[Asmified]
+
+== References
+

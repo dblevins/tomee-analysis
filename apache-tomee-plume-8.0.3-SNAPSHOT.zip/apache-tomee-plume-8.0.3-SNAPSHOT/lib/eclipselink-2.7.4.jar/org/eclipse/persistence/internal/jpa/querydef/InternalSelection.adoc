@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/querydef/InternalSelection.class
+
+ - link:InternalSelection-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/region/QueueMessageReference.class
+
+ - link:QueueMessageReference-asmified.java[Asmified]
+
+== References
+

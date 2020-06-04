@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/Document$1.class
+
+ - link:Document$1-asmified.java[Asmified]
+
+== References
+

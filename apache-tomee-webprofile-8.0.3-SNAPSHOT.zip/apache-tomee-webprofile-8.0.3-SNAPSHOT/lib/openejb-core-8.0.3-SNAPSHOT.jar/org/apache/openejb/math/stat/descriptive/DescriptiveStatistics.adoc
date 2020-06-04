@@ -1,0 +1,6 @@
+= org/apache/openejb/math/stat/descriptive/DescriptiveStatistics.class
+
+ - link:DescriptiveStatistics-asmified.java[Asmified]
+
+== References
+

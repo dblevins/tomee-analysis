@@ -1,0 +1,7 @@
+= org/metatype/sxc/jaxb/IdRefTarget.class
+
+ - link:IdRefTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 1

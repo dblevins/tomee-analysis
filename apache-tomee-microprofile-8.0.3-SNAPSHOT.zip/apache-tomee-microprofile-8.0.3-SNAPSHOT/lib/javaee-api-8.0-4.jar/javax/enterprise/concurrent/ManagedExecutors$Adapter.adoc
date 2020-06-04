@@ -1,0 +1,9 @@
+= javax/enterprise/concurrent/ManagedExecutors$Adapter.class
+
+ - link:ManagedExecutors$Adapter-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedTask - 10
+ - javax.enterprise.concurrent.ManagedTaskListener - 9
+ - javax.enterprise.concurrent.ManagedExecutors$Adapter - 5

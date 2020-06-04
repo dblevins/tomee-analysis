@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/SlicePersistence.class
+
+ - link:SlicePersistence-asmified.java[Asmified]
+
+== References
+

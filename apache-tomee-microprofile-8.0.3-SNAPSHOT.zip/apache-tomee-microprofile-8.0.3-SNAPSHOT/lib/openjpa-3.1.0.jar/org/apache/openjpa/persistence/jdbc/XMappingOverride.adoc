@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/jdbc/XMappingOverride.class
+
+ - link:XMappingOverride-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 1

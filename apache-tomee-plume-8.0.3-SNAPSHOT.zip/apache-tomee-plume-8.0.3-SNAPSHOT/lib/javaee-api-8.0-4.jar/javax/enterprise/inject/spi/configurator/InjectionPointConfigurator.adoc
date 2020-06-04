@@ -1,0 +1,7 @@
+= javax/enterprise/inject/spi/configurator/InjectionPointConfigurator.class
+
+ - link:InjectionPointConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.InjectionPointConfigurator - 8

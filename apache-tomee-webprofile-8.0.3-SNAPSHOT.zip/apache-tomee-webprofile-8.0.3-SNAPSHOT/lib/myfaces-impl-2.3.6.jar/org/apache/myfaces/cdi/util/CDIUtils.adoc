@@ -1,0 +1,15 @@
+= org/apache/myfaces/cdi/util/CDIUtils.class
+
+ - link:CDIUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 29
+ - javax.enterprise.inject.spi.Bean - 13
+ - javax.enterprise.context.spi.Context - 8
+ - javax.enterprise.context.ContextNotActiveException - 6
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.context.spi.Contextual - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.enterprise.context.SessionScoped - 1
+ - javax.faces.view.ViewScoped - 1

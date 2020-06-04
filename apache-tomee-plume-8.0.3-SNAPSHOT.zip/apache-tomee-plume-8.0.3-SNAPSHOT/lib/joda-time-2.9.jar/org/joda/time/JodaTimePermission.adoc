@@ -1,0 +1,6 @@
+= org/joda/time/JodaTimePermission.class
+
+ - link:JodaTimePermission-asmified.java[Asmified]
+
+== References
+

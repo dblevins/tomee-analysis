@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/oauth2/common/UserSubject_.class
+
+ - link:UserSubject_-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.SingularAttribute - 3
+ - javax.persistence.metamodel.MapAttribute - 1
+ - javax.persistence.metamodel.StaticMetamodel - 1
+ - javax.persistence.metamodel.ListAttribute - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/broadcast/BroadcastTransportManager.class
+
+ - link:BroadcastTransportManager-asmified.java[Asmified]
+
+== References
+

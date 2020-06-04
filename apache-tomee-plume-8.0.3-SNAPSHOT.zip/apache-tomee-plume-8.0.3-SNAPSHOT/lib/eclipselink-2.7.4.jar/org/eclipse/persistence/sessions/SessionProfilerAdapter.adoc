@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/SessionProfilerAdapter.class
+
+ - link:SessionProfilerAdapter-asmified.java[Asmified]
+
+== References
+

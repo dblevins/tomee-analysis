@@ -1,0 +1,6 @@
+= org/apache/commons/collections/EnumerationUtils.class
+
+ - link:EnumerationUtils-asmified.java[Asmified]
+
+== References
+

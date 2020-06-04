@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/identifier/Normalizer.class
+
+ - link:Normalizer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/binding/impl/AddECPResponseHeaderHandler.class
+
+ - link:AddECPResponseHeaderHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 1

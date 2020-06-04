@@ -1,0 +1,15 @@
+= org/apache/myfaces/view/facelets/tag/ui/ParamHandler.class
+
+ - link:ParamHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 11
+ - javax.el.ValueExpression - 10
+ - javax.faces.view.facelets.TagAttribute - 10
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.FacesException - 3
+ - javax.el.ELException - 3
+ - javax.faces.view.facelets.FaceletException - 3
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.TagConfig - 2

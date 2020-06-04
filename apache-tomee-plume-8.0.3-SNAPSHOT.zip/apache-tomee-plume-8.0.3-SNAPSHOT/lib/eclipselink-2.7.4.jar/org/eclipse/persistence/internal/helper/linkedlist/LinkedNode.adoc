@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/linkedlist/LinkedNode.class
+
+ - link:LinkedNode-asmified.java[Asmified]
+
+== References
+

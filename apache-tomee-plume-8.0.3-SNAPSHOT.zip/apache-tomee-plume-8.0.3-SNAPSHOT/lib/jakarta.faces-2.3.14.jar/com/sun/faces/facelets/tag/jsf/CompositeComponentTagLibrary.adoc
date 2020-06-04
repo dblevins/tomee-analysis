@@ -1,0 +1,17 @@
+= com/sun/faces/facelets/tag/jsf/CompositeComponentTagLibrary.class
+
+ - link:CompositeComponentTagLibrary-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Resource - 15
+ - javax.faces.context.FacesContext - 11
+ - javax.faces.application.Application - 6
+ - javax.faces.application.ResourceHandler - 4
+ - javax.faces.view.facelets.TagHandler - 3
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.view.ViewDeclarationLanguage - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.view.facelets.ComponentConfig - 1

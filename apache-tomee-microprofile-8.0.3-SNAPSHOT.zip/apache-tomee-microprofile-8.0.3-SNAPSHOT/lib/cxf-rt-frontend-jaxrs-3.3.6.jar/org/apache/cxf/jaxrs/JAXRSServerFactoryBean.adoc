@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/JAXRSServerFactoryBean.class
+
+ - link:JAXRSServerFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 10

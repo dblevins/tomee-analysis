@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/resolver/ResolverException.class
+
+ - link:ResolverException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

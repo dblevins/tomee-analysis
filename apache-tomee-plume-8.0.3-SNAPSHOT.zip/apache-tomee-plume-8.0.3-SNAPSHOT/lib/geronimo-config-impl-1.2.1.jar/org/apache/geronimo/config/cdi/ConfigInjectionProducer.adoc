@@ -1,0 +1,9 @@
+= org/apache/geronimo/config/cdi/ConfigInjectionProducer.class
+
+ - link:ConfigInjectionProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.ApplicationScoped - 2
+ - javax.enterprise.inject.Produces - 1
+ - javax.annotation.PostConstruct - 1

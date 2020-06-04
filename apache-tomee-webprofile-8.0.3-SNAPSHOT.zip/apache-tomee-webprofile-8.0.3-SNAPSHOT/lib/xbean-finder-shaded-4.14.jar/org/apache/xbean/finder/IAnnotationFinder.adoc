@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/IAnnotationFinder.class
+
+ - link:IAnnotationFinder-asmified.java[Asmified]
+
+== References
+

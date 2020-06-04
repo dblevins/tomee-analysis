@@ -1,0 +1,8 @@
+= org/apache/webbeans/container/InterceptorInjectionTargetFactory.class
+
+ - link:InterceptorInjectionTargetFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2

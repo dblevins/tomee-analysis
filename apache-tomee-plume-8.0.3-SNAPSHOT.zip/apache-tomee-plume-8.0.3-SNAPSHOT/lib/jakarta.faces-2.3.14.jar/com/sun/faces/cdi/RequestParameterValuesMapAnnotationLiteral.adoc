@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/RequestParameterValuesMapAnnotationLiteral.class
+
+ - link:RequestParameterValuesMapAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.annotation.RequestParameterValuesMap - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

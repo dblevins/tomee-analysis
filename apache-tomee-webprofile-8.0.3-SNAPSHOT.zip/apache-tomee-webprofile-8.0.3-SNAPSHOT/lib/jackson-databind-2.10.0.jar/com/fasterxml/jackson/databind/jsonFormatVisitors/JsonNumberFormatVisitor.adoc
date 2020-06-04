@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsonFormatVisitors/JsonNumberFormatVisitor.class
+
+ - link:JsonNumberFormatVisitor-asmified.java[Asmified]
+
+== References
+

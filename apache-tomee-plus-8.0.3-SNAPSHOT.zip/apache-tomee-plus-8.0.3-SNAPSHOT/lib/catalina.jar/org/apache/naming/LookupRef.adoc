@@ -1,0 +1,6 @@
+= org/apache/naming/LookupRef.class
+
+ - link:LookupRef-asmified.java[Asmified]
+
+== References
+

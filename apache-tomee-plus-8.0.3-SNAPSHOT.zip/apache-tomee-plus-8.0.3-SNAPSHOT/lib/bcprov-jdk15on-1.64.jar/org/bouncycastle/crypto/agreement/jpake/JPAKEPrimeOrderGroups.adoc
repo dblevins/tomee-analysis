@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/agreement/jpake/JPAKEPrimeOrderGroups.class
+
+ - link:JPAKEPrimeOrderGroups-asmified.java[Asmified]
+
+== References
+

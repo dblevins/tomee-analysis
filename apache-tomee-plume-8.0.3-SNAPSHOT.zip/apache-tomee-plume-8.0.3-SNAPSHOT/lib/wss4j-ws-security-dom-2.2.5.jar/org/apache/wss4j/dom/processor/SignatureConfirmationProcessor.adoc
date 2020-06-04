@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/processor/SignatureConfirmationProcessor.class
+
+ - link:SignatureConfirmationProcessor-asmified.java[Asmified]
+
+== References
+

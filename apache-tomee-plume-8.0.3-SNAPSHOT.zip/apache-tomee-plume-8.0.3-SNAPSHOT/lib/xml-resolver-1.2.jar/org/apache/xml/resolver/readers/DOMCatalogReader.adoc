@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/readers/DOMCatalogReader.class
+
+ - link:DOMCatalogReader-asmified.java[Asmified]
+
+== References
+

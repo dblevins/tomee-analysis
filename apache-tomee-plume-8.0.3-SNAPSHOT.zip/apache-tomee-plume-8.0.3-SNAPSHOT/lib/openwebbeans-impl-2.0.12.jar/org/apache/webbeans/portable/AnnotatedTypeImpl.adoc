@@ -1,0 +1,12 @@
+= org/apache/webbeans/portable/AnnotatedTypeImpl.class
+
+ - link:AnnotatedTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 21
+ - javax.enterprise.inject.spi.BeanManager - 8
+ - javax.enterprise.inject.spi.Annotated - 1
+ - javax.enterprise.inject.spi.AnnotatedField - 1
+ - javax.enterprise.inject.spi.AnnotatedMethod - 1
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 1

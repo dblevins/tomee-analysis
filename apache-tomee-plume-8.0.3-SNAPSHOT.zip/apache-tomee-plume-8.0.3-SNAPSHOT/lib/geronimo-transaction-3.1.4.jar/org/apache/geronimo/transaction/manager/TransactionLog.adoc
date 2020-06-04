@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/TransactionLog.class
+
+ - link:TransactionLog-asmified.java[Asmified]
+
+== References
+

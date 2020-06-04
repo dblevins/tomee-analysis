@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsaddressing/ReferenceParameters.class
+
+ - link:ReferenceParameters-asmified.java[Asmified]
+
+== References
+

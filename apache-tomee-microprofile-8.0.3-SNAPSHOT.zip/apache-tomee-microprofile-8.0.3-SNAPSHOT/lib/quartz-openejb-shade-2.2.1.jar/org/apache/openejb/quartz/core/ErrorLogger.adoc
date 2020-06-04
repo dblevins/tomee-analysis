@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/ErrorLogger.class
+
+ - link:ErrorLogger-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/InetAddressSerializer.class
+
+ - link:InetAddressSerializer-asmified.java[Asmified]
+
+== References
+

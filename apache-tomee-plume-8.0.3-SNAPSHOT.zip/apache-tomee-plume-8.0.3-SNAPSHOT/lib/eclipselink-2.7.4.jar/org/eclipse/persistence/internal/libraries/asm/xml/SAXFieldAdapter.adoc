@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/SAXFieldAdapter.class
+
+ - link:SAXFieldAdapter-asmified.java[Asmified]
+
+== References
+

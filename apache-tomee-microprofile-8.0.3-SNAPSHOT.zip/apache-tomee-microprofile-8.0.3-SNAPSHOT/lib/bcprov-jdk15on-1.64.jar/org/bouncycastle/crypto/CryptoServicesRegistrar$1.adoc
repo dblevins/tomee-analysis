@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/CryptoServicesRegistrar$1.class
+
+ - link:CryptoServicesRegistrar$1-asmified.java[Asmified]
+
+== References
+

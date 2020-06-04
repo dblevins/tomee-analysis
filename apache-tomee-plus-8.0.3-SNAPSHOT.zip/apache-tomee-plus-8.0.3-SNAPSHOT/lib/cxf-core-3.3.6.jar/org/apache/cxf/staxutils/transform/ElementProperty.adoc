@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/transform/ElementProperty.class
+
+ - link:ElementProperty-asmified.java[Asmified]
+
+== References
+

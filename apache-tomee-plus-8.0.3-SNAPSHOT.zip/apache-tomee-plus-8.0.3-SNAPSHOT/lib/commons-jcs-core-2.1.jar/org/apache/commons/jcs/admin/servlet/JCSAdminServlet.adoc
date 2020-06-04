@@ -1,0 +1,8 @@
+= org/apache/commons/jcs/admin/servlet/JCSAdminServlet.class
+
+ - link:JCSAdminServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.servlet.http.HttpServletResponse - 3

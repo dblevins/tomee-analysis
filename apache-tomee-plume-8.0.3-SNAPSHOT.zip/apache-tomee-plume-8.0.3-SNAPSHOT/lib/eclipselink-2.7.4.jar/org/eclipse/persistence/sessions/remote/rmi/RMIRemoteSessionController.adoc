@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/remote/rmi/RMIRemoteSessionController.class
+
+ - link:RMIRemoteSessionController-asmified.java[Asmified]
+
+== References
+

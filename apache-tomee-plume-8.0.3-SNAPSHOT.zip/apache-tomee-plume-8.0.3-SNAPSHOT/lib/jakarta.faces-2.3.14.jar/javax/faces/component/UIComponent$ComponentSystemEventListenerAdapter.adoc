@@ -1,0 +1,17 @@
+= javax/faces/component/UIComponent$ComponentSystemEventListenerAdapter.class
+
+ - link:UIComponent$ComponentSystemEventListenerAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ComponentSystemEventListener - 24
+ - javax.faces.component.UIComponent$ComponentSystemEventListenerAdapter - 10
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.StateHolderSaver - 4
+ - javax.faces.event.ComponentSystemEvent - 4
+ - javax.faces.component.StateHolder - 4
+ - javax.faces.event.SystemEventListener - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.event.AbortProcessingException - 2
+ - javax.faces.event.SystemEvent - 1
+ - javax.faces.FacesWrapper - 1

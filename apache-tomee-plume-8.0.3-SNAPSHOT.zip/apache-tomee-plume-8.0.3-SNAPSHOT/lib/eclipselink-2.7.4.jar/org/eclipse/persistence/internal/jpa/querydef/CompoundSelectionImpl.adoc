@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/querydef/CompoundSelectionImpl.class
+
+ - link:CompoundSelectionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 17
+ - javax.persistence.criteria.CompoundSelection - 1

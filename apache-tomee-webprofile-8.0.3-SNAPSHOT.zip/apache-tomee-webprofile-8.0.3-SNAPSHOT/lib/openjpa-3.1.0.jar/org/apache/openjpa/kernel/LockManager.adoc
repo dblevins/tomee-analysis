@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/LockManager.class
+
+ - link:LockManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/XMLPersistenceMetaDataParser.class
+
+ - link:XMLPersistenceMetaDataParser-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.LockModeType - 13
+ - javax.persistence.CascadeType - 12
+ - javax.persistence.GenerationType - 8

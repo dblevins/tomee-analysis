@@ -1,0 +1,7 @@
+= org/apache/johnzon/core/JsonArrayImpl$JsonArrayIterator.class
+
+ - link:JsonArrayImpl$JsonArrayIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 4

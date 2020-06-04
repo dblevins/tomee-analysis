@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/ConcurrencyManager.class
+
+ - link:ConcurrencyManager-asmified.java[Asmified]
+
+== References
+

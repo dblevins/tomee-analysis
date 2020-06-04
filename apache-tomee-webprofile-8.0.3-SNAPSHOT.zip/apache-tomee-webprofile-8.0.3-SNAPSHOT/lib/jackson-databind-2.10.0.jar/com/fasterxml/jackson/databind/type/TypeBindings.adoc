@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/TypeBindings.class
+
+ - link:TypeBindings-asmified.java[Asmified]
+
+== References
+

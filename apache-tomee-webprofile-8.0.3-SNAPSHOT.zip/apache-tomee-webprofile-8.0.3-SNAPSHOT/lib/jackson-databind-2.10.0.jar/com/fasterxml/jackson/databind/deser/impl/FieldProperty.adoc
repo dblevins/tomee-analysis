@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/FieldProperty.class
+
+ - link:FieldProperty-asmified.java[Asmified]
+
+== References
+

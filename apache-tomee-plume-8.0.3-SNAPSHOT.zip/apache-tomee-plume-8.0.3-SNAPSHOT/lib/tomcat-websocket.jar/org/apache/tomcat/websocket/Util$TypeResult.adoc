@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/Util$TypeResult.class
+
+ - link:Util$TypeResult-asmified.java[Asmified]
+
+== References
+

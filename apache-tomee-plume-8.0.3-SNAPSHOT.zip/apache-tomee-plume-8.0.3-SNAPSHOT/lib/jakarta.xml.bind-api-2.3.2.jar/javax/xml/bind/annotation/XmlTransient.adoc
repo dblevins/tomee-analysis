@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/XmlTransient.class
+
+ - link:XmlTransient-asmified.java[Asmified]
+
+== References
+

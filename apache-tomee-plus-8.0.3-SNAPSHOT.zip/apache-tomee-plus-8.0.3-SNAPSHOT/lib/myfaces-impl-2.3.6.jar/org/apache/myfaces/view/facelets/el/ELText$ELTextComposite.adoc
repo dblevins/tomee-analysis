@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/el/ELText$ELTextComposite.class
+
+ - link:ELText$ELTextComposite-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 8
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.context.ResponseWriter - 2
+ - javax.el.ELException - 2

@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/MetaDataInheritanceComparator.class
+
+ - link:MetaDataInheritanceComparator-asmified.java[Asmified]
+
+== References
+

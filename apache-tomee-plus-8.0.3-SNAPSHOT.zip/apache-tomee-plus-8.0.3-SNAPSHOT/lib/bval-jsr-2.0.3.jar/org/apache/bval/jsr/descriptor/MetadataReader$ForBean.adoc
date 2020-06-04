@@ -1,0 +1,13 @@
+= org/apache/bval/jsr/descriptor/MetadataReader$ForBean.class
+
+ - link:MetadataReader$ForBean-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.PropertyDescriptor - 7
+ - javax.validation.GroupSequence - 4
+ - javax.validation.GroupDefinitionException - 4
+ - javax.validation.metadata.BeanDescriptor - 3
+ - javax.validation.metadata.ExecutableDescriptor - 2
+ - javax.validation.groups.Default - 2
+ - javax.validation.metadata.ElementDescriptor - 1

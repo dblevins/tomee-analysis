@@ -1,0 +1,10 @@
+= javax/xml/ws/EndpointReference.class
+
+ - link:EndpointReference-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.spi.Provider - 6
+ - javax.xml.ws.EndpointReference - 4
+ - javax.xml.ws.WebServiceFeature - 2
+ - javax.xml.bind.annotation.XmlTransient - 1

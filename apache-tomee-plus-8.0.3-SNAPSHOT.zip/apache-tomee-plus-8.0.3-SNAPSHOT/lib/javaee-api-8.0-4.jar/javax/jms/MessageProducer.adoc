@@ -1,0 +1,10 @@
+= javax/jms/MessageProducer.class
+
+ - link:MessageProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 22
+ - javax.jms.Message - 8
+ - javax.jms.Destination - 5
+ - javax.jms.CompletionListener - 4

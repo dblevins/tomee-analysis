@@ -1,0 +1,8 @@
+= org/apache/myfaces/el/unified/resolver/implicitobject/CookieImplicitObject.class
+
+ - link:CookieImplicitObject-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 2
+ - javax.el.ELContext - 2

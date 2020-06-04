@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/DatastoreFunction.class
+
+ - link:DatastoreFunction-asmified.java[Asmified]
+
+== References
+

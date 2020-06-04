@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/Flat3Map$ValuesIterator.class
+
+ - link:Flat3Map$ValuesIterator-asmified.java[Asmified]
+
+== References
+

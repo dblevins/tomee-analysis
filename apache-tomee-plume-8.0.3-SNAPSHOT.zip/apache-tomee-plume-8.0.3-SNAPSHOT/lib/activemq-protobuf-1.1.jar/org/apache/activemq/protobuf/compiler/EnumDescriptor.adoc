@@ -1,0 +1,6 @@
+= org/apache/activemq/protobuf/compiler/EnumDescriptor.class
+
+ - link:EnumDescriptor-asmified.java[Asmified]
+
+== References
+

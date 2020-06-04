@@ -1,0 +1,7 @@
+= javax/xml/soap/Text.class
+
+ - link:Text-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.Node - 1

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/bytecode/ClassTailor.class
+
+ - link:ClassTailor-asmified.java[Asmified]
+
+== References
+

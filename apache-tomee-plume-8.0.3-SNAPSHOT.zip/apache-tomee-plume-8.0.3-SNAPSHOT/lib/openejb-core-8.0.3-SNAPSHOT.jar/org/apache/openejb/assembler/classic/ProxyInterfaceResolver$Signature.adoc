@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ProxyInterfaceResolver$Signature.class
+
+ - link:ProxyInterfaceResolver$Signature-asmified.java[Asmified]
+
+== References
+

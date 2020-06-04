@@ -1,0 +1,8 @@
+= javax/jms/InvalidSelectorException.class
+
+ - link:InvalidSelectorException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.InvalidSelectorException - 1

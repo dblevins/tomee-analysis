@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/SessionEventAdapter.class
+
+ - link:SessionEventAdapter-asmified.java[Asmified]
+
+== References
+

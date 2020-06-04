@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl$CoalesceImpl.class
+
+ - link:CriteriaBuilderImpl$CoalesceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Metamodel - 4
+ - javax.persistence.criteria.CriteriaBuilder$Coalesce - 3
+ - javax.persistence.criteria.Expression - 3

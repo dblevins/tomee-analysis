@@ -1,0 +1,7 @@
+= org/apache/tomee/common/WsFactory.class
+
+ - link:WsFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Service - 4

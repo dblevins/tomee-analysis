@@ -1,0 +1,6 @@
+= javax/json/bind/config/BinaryDataStrategy.class
+
+ - link:BinaryDataStrategy-asmified.java[Asmified]
+
+== References
+

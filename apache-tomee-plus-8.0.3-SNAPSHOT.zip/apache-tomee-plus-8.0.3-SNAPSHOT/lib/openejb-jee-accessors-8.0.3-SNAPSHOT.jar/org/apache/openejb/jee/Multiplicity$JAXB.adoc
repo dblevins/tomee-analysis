@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/Multiplicity$JAXB.class
+
+ - link:Multiplicity$JAXB-asmified.java[Asmified]
+
+== References
+

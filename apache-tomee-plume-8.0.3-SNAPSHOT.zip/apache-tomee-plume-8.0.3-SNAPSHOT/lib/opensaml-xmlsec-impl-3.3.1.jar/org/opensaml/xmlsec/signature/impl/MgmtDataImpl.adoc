@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/MgmtDataImpl.class
+
+ - link:MgmtDataImpl-asmified.java[Asmified]
+
+== References
+

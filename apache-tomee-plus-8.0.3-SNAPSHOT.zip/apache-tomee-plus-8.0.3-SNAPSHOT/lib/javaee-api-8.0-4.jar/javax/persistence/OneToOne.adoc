@@ -1,0 +1,8 @@
+= javax/persistence/OneToOne.class
+
+ - link:OneToOne-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 2
+ - javax.persistence.CascadeType - 1

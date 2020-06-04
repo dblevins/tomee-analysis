@@ -1,0 +1,6 @@
+= org/cryptacular/spec/DigestSpec.class
+
+ - link:DigestSpec-asmified.java[Asmified]
+
+== References
+

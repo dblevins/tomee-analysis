@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/AbstractHashedMap$EntrySet.class
+
+ - link:AbstractHashedMap$EntrySet-asmified.java[Asmified]
+
+== References
+

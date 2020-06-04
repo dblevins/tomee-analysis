@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/CMPPolicy.class
+
+ - link:CMPPolicy-asmified.java[Asmified]
+
+== References
+

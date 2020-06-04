@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataParser$FetchAttributeImpl.class
+
+ - link:AnnotationPersistenceMetaDataParser$FetchAttributeImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/concurrent/AbstractCircuitBreaker.class
+
+ - link:AbstractCircuitBreaker-asmified.java[Asmified]
+
+== References
+

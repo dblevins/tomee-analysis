@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/Trie.class
+
+ - link:Trie-asmified.java[Asmified]
+
+== References
+

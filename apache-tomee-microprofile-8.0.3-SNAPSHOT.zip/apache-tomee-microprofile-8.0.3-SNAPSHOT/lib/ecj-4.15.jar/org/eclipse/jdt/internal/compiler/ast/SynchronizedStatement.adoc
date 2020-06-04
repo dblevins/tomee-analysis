@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/SynchronizedStatement.class
+
+ - link:SynchronizedStatement-asmified.java[Asmified]
+
+== References
+

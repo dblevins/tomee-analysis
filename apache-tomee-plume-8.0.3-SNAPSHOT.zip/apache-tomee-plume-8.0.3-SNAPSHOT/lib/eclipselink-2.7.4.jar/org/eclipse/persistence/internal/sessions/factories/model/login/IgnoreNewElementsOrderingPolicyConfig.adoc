@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/IgnoreNewElementsOrderingPolicyConfig.class
+
+ - link:IgnoreNewElementsOrderingPolicyConfig-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/ColumnIO.class
+
+ - link:ColumnIO-asmified.java[Asmified]
+
+== References
+

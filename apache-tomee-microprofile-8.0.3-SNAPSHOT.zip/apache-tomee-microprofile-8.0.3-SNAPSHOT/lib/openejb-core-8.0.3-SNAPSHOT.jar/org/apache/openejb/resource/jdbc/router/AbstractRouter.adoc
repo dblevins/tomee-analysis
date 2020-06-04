@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/router/AbstractRouter.class
+
+ - link:AbstractRouter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/component/DestroyedComponentException.class
+
+ - link:DestroyedComponentException-asmified.java[Asmified]
+
+== References
+

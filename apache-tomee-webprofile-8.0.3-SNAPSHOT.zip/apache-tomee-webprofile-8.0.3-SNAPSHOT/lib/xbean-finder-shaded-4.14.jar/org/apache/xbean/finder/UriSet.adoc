@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/UriSet.class
+
+ - link:UriSet-asmified.java[Asmified]
+
+== References
+

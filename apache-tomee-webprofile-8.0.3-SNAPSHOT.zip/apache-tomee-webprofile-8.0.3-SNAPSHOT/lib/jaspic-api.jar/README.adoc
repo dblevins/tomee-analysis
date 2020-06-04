@@ -1,0 +1,26 @@
+= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/jaspic-api.jar
+
+ - link:javax/security/auth/message/config/AuthConfigFactory.adoc[javax/security/auth/message/config/AuthConfigFactory.class] - 24
+ - link:javax/security/auth/message/AuthStatus.adoc[javax/security/auth/message/AuthStatus.class] - 20
+ - link:javax/security/auth/message/MessagePolicy$TargetPolicy.adoc[javax/security/auth/message/MessagePolicy$TargetPolicy.class] - 15
+ - link:javax/security/auth/message/ClientAuth.adoc[javax/security/auth/message/ClientAuth.class] - 8
+ - link:javax/security/auth/message/MessagePolicy.adoc[javax/security/auth/message/MessagePolicy.class] - 8
+ - link:javax/security/auth/message/ServerAuth.adoc[javax/security/auth/message/ServerAuth.class] - 8
+ - link:javax/security/auth/message/callback/PrivateKeyCallback.adoc[javax/security/auth/message/callback/PrivateKeyCallback.class] - 5
+ - link:javax/security/auth/message/callback/SecretKeyCallback.adoc[javax/security/auth/message/callback/SecretKeyCallback.class] - 5
+ - link:javax/security/auth/message/config/AuthConfigFactory$1.adoc[javax/security/auth/message/config/AuthConfigFactory$1.class] - 5
+ - link:javax/security/auth/message/config/AuthConfigProvider.adoc[javax/security/auth/message/config/AuthConfigProvider.class] - 4
+ - link:javax/security/auth/message/module/ClientAuthModule.adoc[javax/security/auth/message/module/ClientAuthModule.class] - 4
+ - link:javax/security/auth/message/module/ServerAuthModule.adoc[javax/security/auth/message/module/ServerAuthModule.class] - 4
+ - link:javax/security/auth/message/MessagePolicy$Target.adoc[javax/security/auth/message/MessagePolicy$Target.class] - 3
+ - link:javax/security/auth/message/config/ClientAuthConfig.adoc[javax/security/auth/message/config/ClientAuthConfig.class] - 3
+ - link:javax/security/auth/message/config/ServerAuthConfig.adoc[javax/security/auth/message/config/ServerAuthConfig.class] - 3
+ - link:javax/security/auth/message/callback/PrivateKeyCallback$AliasRequest.adoc[javax/security/auth/message/callback/PrivateKeyCallback$AliasRequest.class] - 1
+ - link:javax/security/auth/message/callback/PrivateKeyCallback$DigestRequest.adoc[javax/security/auth/message/callback/PrivateKeyCallback$DigestRequest.class] - 1
+ - link:javax/security/auth/message/callback/PrivateKeyCallback$IssuerSerialNumRequest.adoc[javax/security/auth/message/callback/PrivateKeyCallback$IssuerSerialNumRequest.class] - 1
+ - link:javax/security/auth/message/callback/PrivateKeyCallback$SubjectKeyIDRequest.adoc[javax/security/auth/message/callback/PrivateKeyCallback$SubjectKeyIDRequest.class] - 1
+ - link:javax/security/auth/message/callback/SecretKeyCallback$AliasRequest.adoc[javax/security/auth/message/callback/SecretKeyCallback$AliasRequest.class] - 1
+ - link:javax/security/auth/message/config/AuthConfig.adoc[javax/security/auth/message/config/AuthConfig.class] - 1
+ - link:javax/security/auth/message/config/AuthConfigFactory$2.adoc[javax/security/auth/message/config/AuthConfigFactory$2.class] - 1
+ - link:javax/security/auth/message/config/ClientAuthContext.adoc[javax/security/auth/message/config/ClientAuthContext.class] - 1
+ - link:javax/security/auth/message/config/ServerAuthContext.adoc[javax/security/auth/message/config/ServerAuthContext.class] - 1

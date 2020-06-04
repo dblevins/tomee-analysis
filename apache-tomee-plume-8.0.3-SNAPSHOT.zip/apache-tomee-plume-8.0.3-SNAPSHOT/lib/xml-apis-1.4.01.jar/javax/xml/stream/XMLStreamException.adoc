@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLStreamException.class
+
+ - link:XMLStreamException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/eis/interactions/QueryStringInteraction.class
+
+ - link:QueryStringInteraction-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.InteractionSpec - 1

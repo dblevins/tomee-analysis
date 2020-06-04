@@ -1,0 +1,14 @@
+= org/apache/johnzon/jsonb/JsonbAccessMode$ReaderConverters$1.class
+
+ - link:JsonbAccessMode$ReaderConverters$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 18
+ - javax.json.bind.serializer.JsonbDeserializer - 16
+ - javax.json.JsonBuilderFactory - 5
+ - javax.json.stream.JsonParser - 2
+ - javax.json.JsonArray - 2
+ - javax.json.JsonValue$ValueType - 2
+ - javax.json.spi.JsonProvider - 2
+ - javax.json.bind.serializer.DeserializationContext - 1

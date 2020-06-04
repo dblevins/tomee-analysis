@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/impl/LinkHeaderProvider.class
+
+ - link:LinkHeaderProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Link$Builder - 18
+ - javax.ws.rs.core.Link - 14
+ - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

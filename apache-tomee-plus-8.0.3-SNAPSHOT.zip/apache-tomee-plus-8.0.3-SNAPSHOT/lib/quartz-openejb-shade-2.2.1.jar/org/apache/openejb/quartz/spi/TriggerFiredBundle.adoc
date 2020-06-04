@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/spi/TriggerFiredBundle.class
+
+ - link:TriggerFiredBundle-asmified.java[Asmified]
+
+== References
+

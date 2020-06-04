@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/many/MapValueAttributeAccessor.class
+
+ - link:MapValueAttributeAccessor-asmified.java[Asmified]
+
+== References
+

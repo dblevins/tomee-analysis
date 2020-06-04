@@ -1,0 +1,8 @@
+= org/apache/myfaces/resource/ClassLoaderContractResourceLoader.class
+
+ - link:ClassLoaderContractResourceLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceVisitOption - 4
+ - javax.faces.context.FacesContext - 3

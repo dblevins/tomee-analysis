@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext$MetadataContextInput.class
+
+ - link:DynamicJAXBContext$MetadataContextInput-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 3

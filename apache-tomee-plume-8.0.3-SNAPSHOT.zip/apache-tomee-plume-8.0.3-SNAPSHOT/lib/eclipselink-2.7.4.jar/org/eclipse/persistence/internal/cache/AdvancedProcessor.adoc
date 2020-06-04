@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/cache/AdvancedProcessor.class
+
+ - link:AdvancedProcessor-asmified.java[Asmified]
+
+== References
+

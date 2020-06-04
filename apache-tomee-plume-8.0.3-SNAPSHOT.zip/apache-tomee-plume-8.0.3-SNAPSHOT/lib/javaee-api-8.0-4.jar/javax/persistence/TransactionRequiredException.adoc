@@ -1,0 +1,7 @@
+= javax/persistence/TransactionRequiredException.class
+
+ - link:TransactionRequiredException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 3

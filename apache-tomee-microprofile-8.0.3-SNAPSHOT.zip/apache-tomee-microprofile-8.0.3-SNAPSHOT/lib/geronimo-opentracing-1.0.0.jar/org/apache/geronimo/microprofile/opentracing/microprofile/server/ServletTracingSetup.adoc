@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/server/ServletTracingSetup.class
+
+ - link:ServletTracingSetup-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.FilterRegistration$Dynamic - 3
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.ServletContainerInitializer - 1
+ - javax.servlet.DispatcherType - 1

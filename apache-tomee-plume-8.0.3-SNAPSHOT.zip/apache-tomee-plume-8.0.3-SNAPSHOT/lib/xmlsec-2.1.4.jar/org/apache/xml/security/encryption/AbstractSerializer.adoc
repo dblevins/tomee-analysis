@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/AbstractSerializer.class
+
+ - link:AbstractSerializer-asmified.java[Asmified]
+
+== References
+

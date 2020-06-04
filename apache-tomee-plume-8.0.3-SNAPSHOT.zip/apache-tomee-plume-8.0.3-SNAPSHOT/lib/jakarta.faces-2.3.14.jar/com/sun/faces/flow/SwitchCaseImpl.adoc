@@ -1,0 +1,12 @@
+= com/sun/faces/flow/SwitchCaseImpl.class
+
+ - link:SwitchCaseImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 11
+ - javax.faces.context.FacesContext - 4
+ - javax.el.ELContext - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.flow.SwitchCase - 2
+ - javax.el.ExpressionFactory - 2

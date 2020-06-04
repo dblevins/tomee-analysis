@@ -1,0 +1,282 @@
+package asm.org.apache.catalina.core;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ThreadLocalLeakPreventionListenerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", null, "org/apache/catalina/core/FrameworkListener", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "log", "Lorg/apache/juli/logging/Log;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_VOLATILE, "serverStopping", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/FrameworkListener", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "serverStopping", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "lifecycleEvent", "(Lorg/apache/catalina/LifecycleEvent;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/FrameworkListener", "lifecycleEvent", "(Lorg/apache/catalina/LifecycleEvent;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/LifecycleEvent", "getLifecycle", "()Lorg/apache/catalina/Lifecycle;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLdcInsn("before_stop");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/LifecycleEvent", "getType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/catalina/Server");
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "serverStopping", "Z");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/Lifecycle"}, 0, null);
+methodVisitor.visitLdcInsn("after_stop");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/LifecycleEvent", "getType", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/catalina/Context");
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/Context");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "stopIdleThreads", "(Lorg/apache/catalina/Context;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitLdcInsn("threadLocalLeakPreventionListener.lifecycleEvent.error");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "log", "Lorg/apache/juli/logging/Log;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containerEvent", "(Lorg/apache/catalina/ContainerEvent;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/catalina/core/FrameworkListener", "containerEvent", "(Lorg/apache/catalina/ContainerEvent;)V", false);
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitLdcInsn("threadLocalLeakPreventionListener.containerEvent.error");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "log", "Lorg/apache/juli/logging/Log;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "stopIdleThreads", "(Lorg/apache/catalina/Context;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "serverStopping", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/catalina/core/StandardContext");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/core/StandardContext");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardContext", "getRenewThreadsWhenStoppingContext", "()Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "log", "Lorg/apache/juli/logging/Log;");
+methodVisitor.visitLdcInsn("Not renewing threads when the context is stopping. It is not configured to do it.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "debug", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Context", "getParent", "()Lorg/apache/catalina/Container;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Container", "getParent", "()Lorg/apache/catalina/Container;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/Engine");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Engine", "getService", "()Lorg/apache/catalina/Service;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/catalina/Service", "findConnectors", "()[Lorg/apache/catalina/connector/Connector;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 7);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_FULL, 8, new Object[] {"org/apache/catalina/core/ThreadLocalLeakPreventionListener", "org/apache/catalina/Context", "org/apache/catalina/Engine", "org/apache/catalina/Service", "[Lorg/apache/catalina/connector/Connector;", "[Lorg/apache/catalina/connector/Connector;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/connector/Connector", "getProtocolHandler", "()Lorg/apache/coyote/ProtocolHandler;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/coyote/ProtocolHandler", "getExecutor", "()Ljava/util/concurrent/Executor;", true);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"org/apache/catalina/connector/Connector", "org/apache/coyote/ProtocolHandler", "java/util/concurrent/Executor"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/tomcat/util/threads/ThreadPoolExecutor");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/threads/ThreadPoolExecutor");
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "contextStopping", "()V", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/catalina/core/StandardThreadExecutor");
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/core/StandardThreadExecutor");
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/core/StandardThreadExecutor", "contextStopping", "()V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitIincInsn(7, 1);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 12);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createLifecycleListener", "(Lorg/apache/catalina/Context;)Lorg/apache/catalina/LifecycleListener;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/catalina/core/ThreadLocalLeakPreventionListener;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/juli/logging/LogFactory", "getLog", "(Ljava/lang/Class;)Lorg/apache/juli/logging/Log;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "log", "Lorg/apache/juli/logging/Log;");
+methodVisitor.visitLdcInsn("org.apache.catalina.core");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/res/StringManager", "getManager", "(Ljava/lang/String;)Lorg/apache/tomcat/util/res/StringManager;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/catalina/core/ThreadLocalLeakPreventionListener", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

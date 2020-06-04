@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/InformationURLUnmarshaller.class
+
+ - link:InformationURLUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/Component.class
+
+ - link:Component-asmified.java[Asmified]
+
+== References
+

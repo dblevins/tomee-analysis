@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/AbstractSession.class
+
+ - link:AbstractSession-asmified.java[Asmified]
+
+== References
+

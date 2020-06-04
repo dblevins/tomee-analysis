@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/AbstractSecurityContextImpl.class
+
+ - link:AbstractSecurityContextImpl-asmified.java[Asmified]
+
+== References
+

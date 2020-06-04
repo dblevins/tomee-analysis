@@ -1,0 +1,8 @@
+= com/sun/faces/application/applicationimpl/events/ReentrantLisneterInvocationGuard.class
+
+ - link:ReentrantLisneterInvocationGuard-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 8
+ - javax.faces.event.SystemEvent - 4

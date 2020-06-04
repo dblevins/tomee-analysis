@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$TransientFilter.class
+
+ - link:SourceAnnotationHandler$TransientFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Transient - 1

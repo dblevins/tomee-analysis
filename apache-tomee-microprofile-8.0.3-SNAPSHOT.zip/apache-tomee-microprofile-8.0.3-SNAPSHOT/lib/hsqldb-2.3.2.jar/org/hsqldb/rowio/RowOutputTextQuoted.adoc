@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowOutputTextQuoted.class
+
+ - link:RowOutputTextQuoted-asmified.java[Asmified]
+
+== References
+

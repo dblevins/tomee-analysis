@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/timeout/TimeoutInterceptor$Model.class
+
+ - link:TimeoutInterceptor$Model-asmified.java[Asmified]
+
+== References
+

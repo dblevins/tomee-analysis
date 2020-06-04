@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/io/OutputDecorator.class
+
+ - link:OutputDecorator-asmified.java[Asmified]
+
+== References
+

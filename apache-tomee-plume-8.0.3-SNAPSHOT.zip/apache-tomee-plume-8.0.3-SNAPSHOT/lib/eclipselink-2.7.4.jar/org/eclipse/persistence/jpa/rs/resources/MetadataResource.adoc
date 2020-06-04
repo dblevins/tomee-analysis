@@ -1,0 +1,18 @@
+= org/eclipse/persistence/jpa/rs/resources/MetadataResource.class
+
+ - link:MetadataResource-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 36
+ - javax.ws.rs.core.HttpHeaders - 23
+ - javax.ws.rs.core.Response - 23
+ - javax.ws.rs.core.MediaType - 18
+ - javax.ws.rs.core.Response$ResponseBuilder - 10
+ - javax.xml.bind.JAXBException - 10
+ - javax.ws.rs.PathParam - 8
+ - javax.ws.rs.core.Context - 6
+ - javax.ws.rs.Consumes - 3
+ - javax.ws.rs.Produces - 3
+ - javax.ws.rs.GET - 3
+ - javax.ws.rs.Path - 3

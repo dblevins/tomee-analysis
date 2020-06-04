@@ -1,0 +1,8 @@
+= org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTServletRequestWrapper.class
+
+ - link:MPJWTFilter$MPJWTServletRequestWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 15
+ - javax.servlet.http.HttpServletRequestWrapper - 2

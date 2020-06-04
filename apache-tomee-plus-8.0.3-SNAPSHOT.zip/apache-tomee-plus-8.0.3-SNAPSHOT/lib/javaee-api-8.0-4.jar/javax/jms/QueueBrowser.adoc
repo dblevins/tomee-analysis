@@ -1,0 +1,8 @@
+= javax/jms/QueueBrowser.class
+
+ - link:QueueBrowser-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 4
+ - javax.jms.Queue - 1

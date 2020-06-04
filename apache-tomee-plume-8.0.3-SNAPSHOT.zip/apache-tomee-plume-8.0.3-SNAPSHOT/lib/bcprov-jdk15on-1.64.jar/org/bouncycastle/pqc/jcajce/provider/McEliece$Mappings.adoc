@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/jcajce/provider/McEliece$Mappings.class
+
+ - link:McEliece$Mappings-asmified.java[Asmified]
+
+== References
+

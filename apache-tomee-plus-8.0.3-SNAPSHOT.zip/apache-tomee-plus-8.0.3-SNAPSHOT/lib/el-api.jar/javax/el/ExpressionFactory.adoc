@@ -1,0 +1,18 @@
+= javax/el/ExpressionFactory.class
+
+ - link:ExpressionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory$CacheValue - 21
+ - javax.el.ExpressionFactory - 19
+ - javax.el.ELException - 10
+ - javax.el.Util - 6
+ - javax.el.ELContext - 6
+ - javax.el.ExpressionFactory$CacheKey - 3
+ - javax.el.ValueExpression - 2
+ - javax.el.ExpressionFactory$2 - 2
+ - javax.el.ExpressionFactory$1 - 2
+ - javax.el.ExpressionFactory$3 - 2
+ - javax.el.MethodExpression - 1
+ - javax.el.ELResolver - 1

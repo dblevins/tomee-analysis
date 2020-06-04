@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/MapKeyConvert.class
+
+ - link:MapKeyConvert-asmified.java[Asmified]
+
+== References
+

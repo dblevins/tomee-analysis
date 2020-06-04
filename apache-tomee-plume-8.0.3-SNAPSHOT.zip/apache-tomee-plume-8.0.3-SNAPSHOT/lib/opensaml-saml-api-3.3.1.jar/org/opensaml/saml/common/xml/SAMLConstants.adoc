@@ -1,0 +1,6 @@
+= org/opensaml/saml/common/xml/SAMLConstants.class
+
+ - link:SAMLConstants-asmified.java[Asmified]
+
+== References
+

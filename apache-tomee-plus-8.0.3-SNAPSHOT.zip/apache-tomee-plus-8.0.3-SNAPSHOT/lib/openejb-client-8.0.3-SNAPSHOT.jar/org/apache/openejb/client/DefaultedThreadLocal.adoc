@@ -1,0 +1,6 @@
+= org/apache/openejb/client/DefaultedThreadLocal.class
+
+ - link:DefaultedThreadLocal-asmified.java[Asmified]
+
+== References
+

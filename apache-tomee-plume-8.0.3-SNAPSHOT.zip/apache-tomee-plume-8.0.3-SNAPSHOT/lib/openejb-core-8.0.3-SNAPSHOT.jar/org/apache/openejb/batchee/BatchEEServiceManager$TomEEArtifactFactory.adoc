@@ -1,0 +1,7 @@
+= org/apache/openejb/batchee/BatchEEServiceManager$TomEEArtifactFactory.class
+
+ - link:BatchEEServiceManager$TomEEArtifactFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 1

@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/osgi/PersistenceActivator.class
+
+ - link:PersistenceActivator-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceProvider - 1

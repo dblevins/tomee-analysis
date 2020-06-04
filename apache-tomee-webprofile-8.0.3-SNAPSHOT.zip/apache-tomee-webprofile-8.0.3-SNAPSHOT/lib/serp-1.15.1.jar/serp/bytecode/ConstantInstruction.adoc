@@ -1,0 +1,6 @@
+= serp/bytecode/ConstantInstruction.class
+
+ - link:ConstantInstruction-asmified.java[Asmified]
+
+== References
+

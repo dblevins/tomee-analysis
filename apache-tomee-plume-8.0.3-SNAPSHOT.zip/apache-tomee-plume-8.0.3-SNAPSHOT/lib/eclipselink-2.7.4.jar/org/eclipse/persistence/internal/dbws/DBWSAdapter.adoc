@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/dbws/DBWSAdapter.class
+
+ - link:DBWSAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/composite/CompositeComponentBeanInfo.class
+
+ - link:CompositeComponentBeanInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 2

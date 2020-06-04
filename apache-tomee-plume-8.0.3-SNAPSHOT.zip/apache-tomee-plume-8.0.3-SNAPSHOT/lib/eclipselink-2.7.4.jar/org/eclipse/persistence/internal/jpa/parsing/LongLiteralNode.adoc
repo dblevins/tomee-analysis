@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/LongLiteralNode.class
+
+ - link:LongLiteralNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/ReferenceMultiplier.class
+
+ - link:ReferenceMultiplier-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/NodeOrderingPolicyConfig.class
+
+ - link:NodeOrderingPolicyConfig-asmified.java[Asmified]
+
+== References
+

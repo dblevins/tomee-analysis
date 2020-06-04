@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/VPDMultitenantPolicy.class
+
+ - link:VPDMultitenantPolicy-asmified.java[Asmified]
+
+== References
+

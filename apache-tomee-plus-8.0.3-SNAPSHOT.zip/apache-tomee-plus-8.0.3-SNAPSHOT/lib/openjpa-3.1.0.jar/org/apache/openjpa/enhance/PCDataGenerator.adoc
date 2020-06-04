@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/PCDataGenerator.class
+
+ - link:PCDataGenerator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/io/NumberOutput.class
+
+ - link:NumberOutput-asmified.java[Asmified]
+
+== References
+

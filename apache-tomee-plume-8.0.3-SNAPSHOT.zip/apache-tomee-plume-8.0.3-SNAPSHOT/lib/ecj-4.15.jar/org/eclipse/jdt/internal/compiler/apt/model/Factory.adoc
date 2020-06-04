@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/Factory.class
+
+ - link:Factory-asmified.java[Asmified]
+
+== References
+

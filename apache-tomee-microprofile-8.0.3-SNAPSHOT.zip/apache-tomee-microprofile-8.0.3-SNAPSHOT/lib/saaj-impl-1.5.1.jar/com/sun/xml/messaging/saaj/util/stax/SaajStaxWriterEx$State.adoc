@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$State.class
+
+ - link:SaajStaxWriterEx$State-asmified.java[Asmified]
+
+== References
+

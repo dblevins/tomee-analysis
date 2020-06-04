@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/ErrorTypeImpl.class
+
+ - link:ErrorTypeImpl-asmified.java[Asmified]
+
+== References
+

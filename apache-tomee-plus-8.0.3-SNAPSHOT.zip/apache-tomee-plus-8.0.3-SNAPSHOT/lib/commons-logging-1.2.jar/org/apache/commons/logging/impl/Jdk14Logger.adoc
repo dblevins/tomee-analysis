@@ -1,0 +1,6 @@
+= org/apache/commons/logging/impl/Jdk14Logger.class
+
+ - link:Jdk14Logger-asmified.java[Asmified]
+
+== References
+

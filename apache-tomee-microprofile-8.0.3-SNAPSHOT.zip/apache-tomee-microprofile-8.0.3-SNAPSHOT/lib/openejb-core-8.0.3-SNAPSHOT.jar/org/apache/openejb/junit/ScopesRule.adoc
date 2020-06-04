@@ -1,0 +1,7 @@
+= org/apache/openejb/junit/ScopesRule.class
+
+ - link:ScopesRule-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.SessionScoped - 1

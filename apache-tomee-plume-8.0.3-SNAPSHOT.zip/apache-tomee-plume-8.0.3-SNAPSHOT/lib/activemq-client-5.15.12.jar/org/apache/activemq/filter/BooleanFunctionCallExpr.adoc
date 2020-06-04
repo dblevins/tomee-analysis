@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/BooleanFunctionCallExpr.class
+
+ - link:BooleanFunctionCallExpr-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

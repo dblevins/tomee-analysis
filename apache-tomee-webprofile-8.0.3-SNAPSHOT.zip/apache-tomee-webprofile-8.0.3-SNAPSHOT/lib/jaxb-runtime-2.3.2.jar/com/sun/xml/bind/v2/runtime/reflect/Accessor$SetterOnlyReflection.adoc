@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/Accessor$SetterOnlyReflection.class
+
+ - link:Accessor$SetterOnlyReflection-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/OpenJPAVersion.class
+
+ - link:OpenJPAVersion-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,4 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/geronimo-health-common-1.0.1.jar
+
+ - link:org/apache/geronimo/microprofile/common/jaxrs/HealthChecksEndpoint.adoc[org/apache/geronimo/microprofile/common/jaxrs/HealthChecksEndpoint.class] - 14
+ - link:org/apache/geronimo/microprofile/common/impl/HealthCheckResponseImpl.adoc[org/apache/geronimo/microprofile/common/impl/HealthCheckResponseImpl.class] - 2

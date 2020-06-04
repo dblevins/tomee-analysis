@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/access/JCSWorker.class
+
+ - link:JCSWorker-asmified.java[Asmified]
+
+== References
+

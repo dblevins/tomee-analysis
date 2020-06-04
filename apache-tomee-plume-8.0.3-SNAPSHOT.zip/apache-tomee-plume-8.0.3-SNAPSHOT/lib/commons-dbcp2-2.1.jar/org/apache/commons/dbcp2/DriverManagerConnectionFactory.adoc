@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/DriverManagerConnectionFactory.class
+
+ - link:DriverManagerConnectionFactory-asmified.java[Asmified]
+
+== References
+

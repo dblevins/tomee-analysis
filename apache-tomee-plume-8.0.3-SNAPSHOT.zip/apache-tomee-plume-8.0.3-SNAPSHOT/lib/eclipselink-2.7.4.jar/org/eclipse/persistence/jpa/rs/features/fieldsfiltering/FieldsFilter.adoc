@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/features/fieldsfiltering/FieldsFilter.class
+
+ - link:FieldsFilter-asmified.java[Asmified]
+
+== References
+

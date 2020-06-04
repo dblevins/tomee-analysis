@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/GenericXMLWriter.class
+
+ - link:GenericXMLWriter-asmified.java[Asmified]
+
+== References
+

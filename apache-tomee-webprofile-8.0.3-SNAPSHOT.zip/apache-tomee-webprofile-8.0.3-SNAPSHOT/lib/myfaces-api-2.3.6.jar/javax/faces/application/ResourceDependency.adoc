@@ -1,0 +1,7 @@
+= javax/faces/application/ResourceDependency.class
+
+ - link:ResourceDependency-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceDependencies - 1

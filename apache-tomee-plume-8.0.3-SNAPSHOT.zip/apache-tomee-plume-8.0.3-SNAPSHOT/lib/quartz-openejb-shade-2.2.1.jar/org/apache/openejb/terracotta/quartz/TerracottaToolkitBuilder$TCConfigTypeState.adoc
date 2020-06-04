@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/TerracottaToolkitBuilder$TCConfigTypeState.class
+
+ - link:TerracottaToolkitBuilder$TCConfigTypeState-asmified.java[Asmified]
+
+== References
+

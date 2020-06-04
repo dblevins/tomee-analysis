@@ -1,0 +1,7 @@
+= org/apache/openejb/quartz/plugins/xml/XMLSchedulingDataProcessorPlugin.class
+
+ - link:XMLSchedulingDataProcessorPlugin-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 1

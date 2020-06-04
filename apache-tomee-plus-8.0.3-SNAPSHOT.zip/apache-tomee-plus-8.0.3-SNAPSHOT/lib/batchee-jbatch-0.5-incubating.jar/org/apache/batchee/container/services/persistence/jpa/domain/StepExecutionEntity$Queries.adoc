@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/persistence/jpa/domain/StepExecutionEntity$Queries.class
+
+ - link:StepExecutionEntity$Queries-asmified.java[Asmified]
+
+== References
+

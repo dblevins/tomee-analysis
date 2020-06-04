@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/jsf/html/StylesheetResourceDelegate.class
+
+ - link:StylesheetResourceDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.ComponentHandler - 2
+ - javax.faces.view.facelets.FaceletContext - 1

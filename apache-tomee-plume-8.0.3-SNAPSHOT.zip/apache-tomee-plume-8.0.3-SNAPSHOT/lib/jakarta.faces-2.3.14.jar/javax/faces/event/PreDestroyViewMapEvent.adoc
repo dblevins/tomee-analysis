@@ -1,0 +1,10 @@
+= javax/faces/event/PreDestroyViewMapEvent.class
+
+ - link:PreDestroyViewMapEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIComponent - 2

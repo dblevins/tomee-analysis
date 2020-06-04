@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/Annotation$AnnotationTargetAllowed.class
+
+ - link:Annotation$AnnotationTargetAllowed-asmified.java[Asmified]
+
+== References
+

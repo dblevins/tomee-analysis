@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/BasicURLClassPath.class
+
+ - link:BasicURLClassPath-asmified.java[Asmified]
+
+== References
+

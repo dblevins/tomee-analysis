@@ -1,0 +1,6 @@
+= com/sun/faces/util/MostlySingletonSet.class
+
+ - link:MostlySingletonSet-asmified.java[Asmified]
+
+== References
+

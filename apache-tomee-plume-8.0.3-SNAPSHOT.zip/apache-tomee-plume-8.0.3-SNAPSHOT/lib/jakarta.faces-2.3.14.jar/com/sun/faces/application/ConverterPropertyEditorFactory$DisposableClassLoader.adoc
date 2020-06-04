@@ -1,0 +1,6 @@
+= com/sun/faces/application/ConverterPropertyEditorFactory$DisposableClassLoader.class
+
+ - link:ConverterPropertyEditorFactory$DisposableClassLoader-asmified.java[Asmified]
+
+== References
+

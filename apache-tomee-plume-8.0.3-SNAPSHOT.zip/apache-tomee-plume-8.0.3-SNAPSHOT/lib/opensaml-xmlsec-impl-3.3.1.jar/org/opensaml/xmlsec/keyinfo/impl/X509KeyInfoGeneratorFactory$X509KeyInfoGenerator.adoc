@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/keyinfo/impl/X509KeyInfoGeneratorFactory$X509KeyInfoGenerator.class
+
+ - link:X509KeyInfoGeneratorFactory$X509KeyInfoGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 24
+ - javax.annotation.Nullable - 8

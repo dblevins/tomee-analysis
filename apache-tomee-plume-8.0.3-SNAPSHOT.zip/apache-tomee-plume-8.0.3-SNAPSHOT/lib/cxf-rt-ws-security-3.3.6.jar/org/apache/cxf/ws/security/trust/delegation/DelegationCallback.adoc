@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/delegation/DelegationCallback.class
+
+ - link:DelegationCallback-asmified.java[Asmified]
+
+== References
+

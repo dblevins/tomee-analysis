@@ -1,0 +1,9 @@
+= org/apache/openejb/server/cxf/rs/johnzon/TomEEConfigurableJohnzon.class
+
+ - link:TomEEConfigurableJohnzon-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.Provider - 1

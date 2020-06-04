@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ejbd/KeepAliveServer$Output.class
+
+ - link:KeepAliveServer$Output-asmified.java[Asmified]
+
+== References
+

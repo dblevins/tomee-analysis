@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/emitter/Emitter$ExpectNothing.class
+
+ - link:Emitter$ExpectNothing-asmified.java[Asmified]
+
+== References
+

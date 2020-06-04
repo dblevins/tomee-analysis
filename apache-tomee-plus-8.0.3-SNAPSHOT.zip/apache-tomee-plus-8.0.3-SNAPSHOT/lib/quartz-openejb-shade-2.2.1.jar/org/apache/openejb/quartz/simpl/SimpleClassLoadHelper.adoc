@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/simpl/SimpleClassLoadHelper.class
+
+ - link:SimpleClassLoadHelper-asmified.java[Asmified]
+
+== References
+

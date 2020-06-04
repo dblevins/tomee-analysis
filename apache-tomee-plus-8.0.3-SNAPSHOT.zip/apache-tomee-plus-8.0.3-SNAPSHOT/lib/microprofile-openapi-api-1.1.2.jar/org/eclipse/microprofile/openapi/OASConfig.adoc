@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/OASConfig.class
+
+ - link:OASConfig-asmified.java[Asmified]
+
+== References
+

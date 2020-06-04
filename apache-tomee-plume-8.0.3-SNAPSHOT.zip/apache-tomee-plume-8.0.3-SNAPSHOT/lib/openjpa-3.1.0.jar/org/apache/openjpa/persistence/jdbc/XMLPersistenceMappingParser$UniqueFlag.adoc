@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingParser$UniqueFlag.class
+
+ - link:XMLPersistenceMappingParser$UniqueFlag-asmified.java[Asmified]
+
+== References
+

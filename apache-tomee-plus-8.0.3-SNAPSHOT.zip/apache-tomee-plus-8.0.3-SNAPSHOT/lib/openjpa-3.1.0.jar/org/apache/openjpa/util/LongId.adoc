@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/LongId.class
+
+ - link:LongId-asmified.java[Asmified]
+
+== References
+

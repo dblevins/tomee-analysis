@@ -1,0 +1,8 @@
+= org/apache/bval/constraints/EmailValidator.class
+
+ - link:EmailValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Email - 5
+ - javax.validation.ConstraintValidatorContext - 4

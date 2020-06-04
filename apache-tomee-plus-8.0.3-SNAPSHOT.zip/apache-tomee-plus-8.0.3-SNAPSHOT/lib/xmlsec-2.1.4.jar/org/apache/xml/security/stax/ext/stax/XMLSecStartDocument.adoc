@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecStartDocument.class
+
+ - link:XMLSecStartDocument-asmified.java[Asmified]
+
+== References
+

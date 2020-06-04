@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/CachedResource$CachedResourceURLConnection.class
+
+ - link:CachedResource$CachedResourceURLConnection-asmified.java[Asmified]
+
+== References
+

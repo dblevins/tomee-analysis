@@ -1,0 +1,7 @@
+= javax/mail/NoSuchProviderException.class
+
+ - link:NoSuchProviderException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 3

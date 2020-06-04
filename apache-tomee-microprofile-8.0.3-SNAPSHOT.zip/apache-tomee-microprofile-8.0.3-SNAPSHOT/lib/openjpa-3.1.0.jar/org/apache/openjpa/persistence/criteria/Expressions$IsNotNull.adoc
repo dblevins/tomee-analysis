@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$IsNotNull.class
+
+ - link:Expressions$IsNotNull-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 13
+ - javax.persistence.criteria.Expression - 10
+ - javax.persistence.criteria.Selection - 2

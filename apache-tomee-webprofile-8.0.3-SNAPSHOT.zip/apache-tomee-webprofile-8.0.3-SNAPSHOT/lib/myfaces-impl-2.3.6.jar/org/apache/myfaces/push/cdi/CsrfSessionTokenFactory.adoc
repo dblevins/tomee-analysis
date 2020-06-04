@@ -1,0 +1,7 @@
+= org/apache/myfaces/push/cdi/CsrfSessionTokenFactory.class
+
+ - link:CsrfSessionTokenFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/DriverDelegate.class
+
+ - link:DriverDelegate-asmified.java[Asmified]
+
+== References
+

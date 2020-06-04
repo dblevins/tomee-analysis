@@ -1,0 +1,6 @@
+= org/apache/openejb/config/PersistenceContextAnn.class
+
+ - link:PersistenceContextAnn-asmified.java[Asmified]
+
+== References
+

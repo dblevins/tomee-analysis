@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthnRequestMarshaller.class
+
+ - link:AuthnRequestMarshaller-asmified.java[Asmified]
+
+== References
+

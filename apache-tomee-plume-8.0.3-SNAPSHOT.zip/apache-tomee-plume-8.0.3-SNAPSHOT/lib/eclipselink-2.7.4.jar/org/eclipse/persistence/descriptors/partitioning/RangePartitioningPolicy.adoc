@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/partitioning/RangePartitioningPolicy.class
+
+ - link:RangePartitioningPolicy-asmified.java[Asmified]
+
+== References
+

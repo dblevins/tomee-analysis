@@ -1,0 +1,8 @@
+= javax/batch/api/partition/AbstractPartitionAnalyzer.class
+
+ - link:AbstractPartitionAnalyzer-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 1
+ - javax.batch.api.partition.PartitionAnalyzer - 1

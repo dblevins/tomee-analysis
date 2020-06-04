@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/JsonLocationInstantiator.class
+
+ - link:JsonLocationInstantiator-asmified.java[Asmified]
+
+== References
+

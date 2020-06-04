@@ -1,0 +1,7 @@
+= org/opensaml/security/x509/tls/impl/BasicClientTLSValidationConfiguration.class
+
+ - link:BasicClientTLSValidationConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/JDBCOrder.class
+
+ - link:JDBCOrder-asmified.java[Asmified]
+
+== References
+

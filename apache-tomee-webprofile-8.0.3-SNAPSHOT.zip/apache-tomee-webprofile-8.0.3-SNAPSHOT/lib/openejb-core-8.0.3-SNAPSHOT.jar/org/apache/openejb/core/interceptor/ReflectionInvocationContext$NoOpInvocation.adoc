@@ -1,0 +1,6 @@
+= org/apache/openejb/core/interceptor/ReflectionInvocationContext$NoOpInvocation.class
+
+ - link:ReflectionInvocationContext$NoOpInvocation-asmified.java[Asmified]
+
+== References
+

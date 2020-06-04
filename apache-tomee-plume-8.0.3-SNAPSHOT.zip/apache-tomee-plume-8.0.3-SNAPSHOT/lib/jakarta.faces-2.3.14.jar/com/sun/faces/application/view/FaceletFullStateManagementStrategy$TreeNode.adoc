@@ -1,0 +1,7 @@
+= com/sun/faces/application/view/FaceletFullStateManagementStrategy$TreeNode.class
+
+ - link:FaceletFullStateManagementStrategy$TreeNode-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 2

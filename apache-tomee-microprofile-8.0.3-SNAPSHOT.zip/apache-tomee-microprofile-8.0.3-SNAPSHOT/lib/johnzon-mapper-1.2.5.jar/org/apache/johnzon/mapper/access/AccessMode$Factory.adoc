@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/AccessMode$Factory.class
+
+ - link:AccessMode$Factory-asmified.java[Asmified]
+
+== References
+

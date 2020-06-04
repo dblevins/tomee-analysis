@@ -1,0 +1,8 @@
+= org/apache/catalina/core/ApplicationResponse.class
+
+ - link:ApplicationResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponse - 18
+ - javax.servlet.ServletResponseWrapper - 3

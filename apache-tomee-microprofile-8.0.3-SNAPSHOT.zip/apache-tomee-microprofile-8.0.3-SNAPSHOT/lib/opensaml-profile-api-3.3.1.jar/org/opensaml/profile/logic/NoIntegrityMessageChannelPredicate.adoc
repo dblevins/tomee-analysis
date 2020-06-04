@@ -1,0 +1,7 @@
+= org/opensaml/profile/logic/NoIntegrityMessageChannelPredicate.class
+
+ - link:NoIntegrityMessageChannelPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

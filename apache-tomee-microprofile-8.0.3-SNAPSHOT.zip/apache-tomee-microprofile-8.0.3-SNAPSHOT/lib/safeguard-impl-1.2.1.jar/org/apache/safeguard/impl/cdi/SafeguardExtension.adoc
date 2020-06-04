@@ -1,0 +1,30 @@
+= org/apache/safeguard/impl/cdi/SafeguardExtension.class
+
+ - link:SafeguardExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.BeanConfigurator - 41
+ - javax.enterprise.inject.spi.ProcessAnnotatedType - 28
+ - javax.enterprise.inject.spi.AnnotatedMethod - 22
+ - javax.interceptor.InvocationContext - 21
+ - javax.enterprise.inject.spi.Annotated - 16
+ - javax.enterprise.inject.spi.AnnotatedType - 16
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 13
+ - javax.enterprise.event.Observes - 13
+ - javax.enterprise.context.spi.CreationalContext - 12
+ - javax.enterprise.inject.spi.ProcessBean - 8
+ - javax.enterprise.inject.spi.configurator.AnnotatedMethodConfigurator - 5
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 4
+ - javax.annotation.Priority - 4
+ - javax.enterprise.inject.spi.Bean - 4
+ - javax.enterprise.inject.spi.CDI - 3
+ - javax.enterprise.inject.Any$Literal - 3
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 3
+ - javax.enterprise.context.ApplicationScoped - 3
+ - javax.enterprise.inject.spi.DefinitionException - 2
+ - javax.enterprise.inject.Default$Literal - 2
+ - javax.enterprise.inject.Instance - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.WithAnnotations - 1
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 1

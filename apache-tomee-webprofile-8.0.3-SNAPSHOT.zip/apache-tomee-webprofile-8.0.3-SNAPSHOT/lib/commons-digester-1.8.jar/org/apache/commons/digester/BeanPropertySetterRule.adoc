@@ -1,0 +1,6 @@
+= org/apache/commons/digester/BeanPropertySetterRule.class
+
+ - link:BeanPropertySetterRule-asmified.java[Asmified]
+
+== References
+

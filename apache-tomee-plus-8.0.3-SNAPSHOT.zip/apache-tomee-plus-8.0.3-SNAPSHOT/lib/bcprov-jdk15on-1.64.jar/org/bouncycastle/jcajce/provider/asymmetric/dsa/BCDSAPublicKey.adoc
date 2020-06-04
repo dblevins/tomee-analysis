@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPublicKey.class
+
+ - link:BCDSAPublicKey-asmified.java[Asmified]
+
+== References
+

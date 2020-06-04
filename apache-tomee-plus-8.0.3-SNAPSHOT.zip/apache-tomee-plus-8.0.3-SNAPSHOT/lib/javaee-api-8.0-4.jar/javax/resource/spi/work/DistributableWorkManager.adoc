@@ -1,0 +1,7 @@
+= javax/resource/spi/work/DistributableWorkManager.class
+
+ - link:DistributableWorkManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkManager - 1

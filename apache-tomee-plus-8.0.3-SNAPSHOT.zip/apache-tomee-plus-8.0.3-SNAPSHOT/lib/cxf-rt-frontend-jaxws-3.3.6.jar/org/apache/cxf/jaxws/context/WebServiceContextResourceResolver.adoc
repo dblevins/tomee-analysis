@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/context/WebServiceContextResourceResolver.class
+
+ - link:WebServiceContextResourceResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceContext - 1
+ - javax.annotation.Resource - 1

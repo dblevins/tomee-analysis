@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/AccessPattern.class
+
+ - link:AccessPattern-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/MetaDataTool$Flags.class
+
+ - link:MetaDataTool$Flags-asmified.java[Asmified]
+
+== References
+

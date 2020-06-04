@@ -1,0 +1,6 @@
+= org/hsqldb/resources/ResourceBundleHandler.class
+
+ - link:ResourceBundleHandler-asmified.java[Asmified]
+
+== References
+

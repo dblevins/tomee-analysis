@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/FinderQueryImpl.class
+
+ - link:FinderQueryImpl-asmified.java[Asmified]
+
+== References
+

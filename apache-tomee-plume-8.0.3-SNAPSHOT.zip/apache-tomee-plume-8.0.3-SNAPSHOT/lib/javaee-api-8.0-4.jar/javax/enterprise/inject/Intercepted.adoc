@@ -1,0 +1,7 @@
+= javax/enterprise/inject/Intercepted.class
+
+ - link:Intercepted-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

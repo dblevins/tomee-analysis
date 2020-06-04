@@ -1,0 +1,7 @@
+= javax/enterprise/context/BeforeDestroyed.class
+
+ - link:BeforeDestroyed-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

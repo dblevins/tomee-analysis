@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/impl/ServletRequestPropertyHolder.class
+
+ - link:ServletRequestPropertyHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 11

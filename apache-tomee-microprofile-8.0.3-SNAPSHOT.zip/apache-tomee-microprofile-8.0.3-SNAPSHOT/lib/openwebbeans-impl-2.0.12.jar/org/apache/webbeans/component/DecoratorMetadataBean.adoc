@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/DecoratorMetadataBean.class
+
+ - link:DecoratorMetadataBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Decorator - 2
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Producer - 1

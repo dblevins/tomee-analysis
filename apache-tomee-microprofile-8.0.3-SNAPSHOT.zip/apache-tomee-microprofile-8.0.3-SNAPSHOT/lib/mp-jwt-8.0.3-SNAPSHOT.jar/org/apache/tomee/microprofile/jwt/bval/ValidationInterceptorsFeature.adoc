@@ -1,0 +1,11 @@
+= org/apache/tomee/microprofile/jwt/bval/ValidationInterceptorsFeature.class
+
+ - link:ValidationInterceptorsFeature-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ResourceInfo - 3
+ - javax.ws.rs.core.FeatureContext - 2
+ - javax.ws.rs.container.DynamicFeature - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.core.Configurable - 1

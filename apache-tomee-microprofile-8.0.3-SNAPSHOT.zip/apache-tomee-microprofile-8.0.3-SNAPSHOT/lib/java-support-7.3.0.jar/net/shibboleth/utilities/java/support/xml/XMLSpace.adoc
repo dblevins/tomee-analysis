@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/xml/XMLSpace.class
+
+ - link:XMLSpace-asmified.java[Asmified]
+
+== References
+

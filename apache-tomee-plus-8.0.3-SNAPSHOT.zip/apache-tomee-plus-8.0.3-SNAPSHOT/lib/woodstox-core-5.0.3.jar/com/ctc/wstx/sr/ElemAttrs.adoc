@@ -1,0 +1,6 @@
+= com/ctc/wstx/sr/ElemAttrs.class
+
+ - link:ElemAttrs-asmified.java[Asmified]
+
+== References
+

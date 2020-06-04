@@ -1,0 +1,6 @@
+= org/apache/tomee/microprofile/jwt/jaxrs/MPJWPProviderRegistration.class
+
+ - link:MPJWPProviderRegistration-asmified.java[Asmified]
+
+== References
+

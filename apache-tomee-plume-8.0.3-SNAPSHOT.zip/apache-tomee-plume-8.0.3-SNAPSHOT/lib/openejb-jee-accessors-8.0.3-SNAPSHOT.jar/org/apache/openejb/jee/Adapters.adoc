@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/Adapters.class
+
+ - link:Adapters-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 4

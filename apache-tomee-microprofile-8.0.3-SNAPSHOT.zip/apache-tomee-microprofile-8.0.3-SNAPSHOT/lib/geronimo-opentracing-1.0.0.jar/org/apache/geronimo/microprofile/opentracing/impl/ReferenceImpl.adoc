@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/impl/ReferenceImpl.class
+
+ - link:ReferenceImpl-asmified.java[Asmified]
+
+== References
+

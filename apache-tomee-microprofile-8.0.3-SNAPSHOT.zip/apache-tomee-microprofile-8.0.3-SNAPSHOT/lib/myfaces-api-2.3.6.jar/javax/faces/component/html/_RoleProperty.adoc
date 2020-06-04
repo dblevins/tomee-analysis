@@ -1,0 +1,6 @@
+= javax/faces/component/html/_RoleProperty.class
+
+ - link:_RoleProperty-asmified.java[Asmified]
+
+== References
+

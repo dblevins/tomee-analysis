@@ -1,0 +1,7 @@
+= javax/persistence/NamedEntityGraphs.class
+
+ - link:NamedEntityGraphs-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.NamedEntityGraph - 1

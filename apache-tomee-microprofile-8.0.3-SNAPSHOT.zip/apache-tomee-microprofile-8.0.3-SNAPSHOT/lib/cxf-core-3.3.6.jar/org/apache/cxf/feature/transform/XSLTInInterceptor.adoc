@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/transform/XSLTInInterceptor.class
+
+ - link:XSLTInInterceptor-asmified.java[Asmified]
+
+== References
+

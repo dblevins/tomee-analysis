@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/TypeReference$AnnotationPosition.class
+
+ - link:TypeReference$AnnotationPosition-asmified.java[Asmified]
+
+== References
+

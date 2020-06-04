@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/logic/EntityGroupNamePredicate.class
+
+ - link:EntityGroupNamePredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 2

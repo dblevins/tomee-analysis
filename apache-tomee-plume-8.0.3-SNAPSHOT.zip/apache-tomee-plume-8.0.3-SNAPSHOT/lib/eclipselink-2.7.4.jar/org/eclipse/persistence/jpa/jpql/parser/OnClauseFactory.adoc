@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/OnClauseFactory.class
+
+ - link:OnClauseFactory-asmified.java[Asmified]
+
+== References
+

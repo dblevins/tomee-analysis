@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/Scope.class
+
+ - link:Scope-asmified.java[Asmified]
+
+== References
+

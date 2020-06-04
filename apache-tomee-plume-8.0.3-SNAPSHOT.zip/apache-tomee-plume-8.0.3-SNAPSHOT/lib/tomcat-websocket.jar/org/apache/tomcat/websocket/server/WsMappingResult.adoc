@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/server/WsMappingResult.class
+
+ - link:WsMappingResult-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.server.ServerEndpointConfig - 5

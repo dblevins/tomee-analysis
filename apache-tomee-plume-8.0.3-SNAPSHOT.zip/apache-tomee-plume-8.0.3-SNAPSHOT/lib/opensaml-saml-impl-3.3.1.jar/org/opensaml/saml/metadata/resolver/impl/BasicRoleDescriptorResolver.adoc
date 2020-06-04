@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/impl/BasicRoleDescriptorResolver.class
+
+ - link:BasicRoleDescriptorResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 10
+ - javax.annotation.Nonnull - 5

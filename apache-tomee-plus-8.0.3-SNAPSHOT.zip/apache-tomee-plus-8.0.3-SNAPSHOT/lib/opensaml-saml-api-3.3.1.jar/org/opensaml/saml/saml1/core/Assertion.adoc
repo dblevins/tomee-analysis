@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml1/core/Assertion.class
+
+ - link:Assertion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 17
+ - javax.annotation.Nullable - 11

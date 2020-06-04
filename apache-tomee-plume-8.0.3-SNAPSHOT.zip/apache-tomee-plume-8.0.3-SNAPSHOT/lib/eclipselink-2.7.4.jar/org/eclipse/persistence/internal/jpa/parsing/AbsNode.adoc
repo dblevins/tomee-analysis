@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/AbsNode.class
+
+ - link:AbsNode-asmified.java[Asmified]
+
+== References
+

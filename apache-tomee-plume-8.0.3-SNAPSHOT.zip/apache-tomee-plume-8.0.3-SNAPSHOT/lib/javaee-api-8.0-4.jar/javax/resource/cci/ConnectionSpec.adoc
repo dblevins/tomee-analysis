@@ -1,0 +1,6 @@
+= javax/resource/cci/ConnectionSpec.class
+
+ - link:ConnectionSpec-asmified.java[Asmified]
+
+== References
+

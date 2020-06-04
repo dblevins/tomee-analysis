@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/DerivedKeyTokenSecurityEvent.class
+
+ - link:DerivedKeyTokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

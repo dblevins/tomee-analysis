@@ -1,0 +1,11 @@
+= com/sun/xml/bind/v2/model/impl/Util.class
+
+ - link:Util-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlSchemaType - 13
+ - javax.xml.bind.annotation.XmlMimeType - 5
+ - javax.xml.bind.annotation.XmlSchemaTypes - 4
+ - javax.activation.MimeTypeParseException - 3
+ - javax.activation.MimeType - 3

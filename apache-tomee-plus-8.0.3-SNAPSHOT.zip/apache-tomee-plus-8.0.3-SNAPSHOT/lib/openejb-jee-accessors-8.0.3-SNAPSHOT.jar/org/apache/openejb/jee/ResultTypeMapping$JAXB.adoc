@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/ResultTypeMapping$JAXB.class
+
+ - link:ResultTypeMapping$JAXB-asmified.java[Asmified]
+
+== References
+

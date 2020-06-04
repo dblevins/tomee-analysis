@@ -1,0 +1,29 @@
+= com/sun/faces/facelets/tag/jsf/core/AjaxHandler.class
+
+ - link:AjaxHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 57
+ - javax.faces.view.facelets.FaceletContext - 34
+ - javax.faces.component.UIComponent - 20
+ - javax.faces.component.behavior.AjaxBehavior - 17
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.view.facelets.TagException - 14
+ - javax.faces.view.facelets.Tag - 14
+ - javax.faces.component.behavior.ClientBehaviorHolder - 7
+ - javax.faces.view.BehaviorHolderAttachedObjectTarget - 5
+ - javax.el.MethodExpression - 4
+ - javax.faces.view.facelets.FaceletHandler - 4
+ - javax.faces.application.Application - 3
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.AttachedObjectTarget - 2
+ - javax.el.ValueExpression - 2
+ - javax.faces.event.AjaxBehaviorEvent - 1
+ - javax.faces.view.facelets.CompositeFaceletHandler - 1
+ - javax.faces.view.facelets.TagHandler - 1
+ - javax.faces.view.BehaviorHolderAttachedObjectHandler - 1
+ - javax.faces.view.facelets.ComponentHandler - 1
+ - javax.faces.component.behavior.ClientBehavior - 1
+ - javax.faces.event.AjaxBehaviorListener - 1
+ - javax.faces.component.behavior.Behavior - 1

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/HookedJavaFileObject$ForwardingOutputStream.class
+
+ - link:HookedJavaFileObject$ForwardingOutputStream-asmified.java[Asmified]
+
+== References
+

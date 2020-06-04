@@ -1,0 +1,7 @@
+= org/apache/bval/cdi/BValBinding.class
+
+ - link:BValBinding-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InterceptorBinding - 1

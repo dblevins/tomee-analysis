@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/pool/impl/WeakViewEntry.class
+
+ - link:WeakViewEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 11

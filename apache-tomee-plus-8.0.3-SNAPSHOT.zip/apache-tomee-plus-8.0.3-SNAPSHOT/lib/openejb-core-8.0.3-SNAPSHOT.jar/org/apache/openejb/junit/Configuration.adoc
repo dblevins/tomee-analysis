@@ -1,0 +1,6 @@
+= org/apache/openejb/junit/Configuration.class
+
+ - link:Configuration-asmified.java[Asmified]
+
+== References
+

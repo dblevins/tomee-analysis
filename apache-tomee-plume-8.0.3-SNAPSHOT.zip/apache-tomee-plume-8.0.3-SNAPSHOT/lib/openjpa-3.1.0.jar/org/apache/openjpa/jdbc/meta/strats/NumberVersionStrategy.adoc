@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/NumberVersionStrategy.class
+
+ - link:NumberVersionStrategy-asmified.java[Asmified]
+
+== References
+

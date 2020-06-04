@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/EnterpriseBeanInfo.class
+
+ - link:EnterpriseBeanInfo-asmified.java[Asmified]
+
+== References
+

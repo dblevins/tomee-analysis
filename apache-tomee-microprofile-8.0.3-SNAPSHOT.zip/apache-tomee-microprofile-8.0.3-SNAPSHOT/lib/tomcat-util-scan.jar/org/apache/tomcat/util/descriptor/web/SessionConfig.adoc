@@ -1,0 +1,7 @@
+= org/apache/tomcat/util/descriptor/web/SessionConfig.class
+
+ - link:SessionConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.SessionTrackingMode - 5

@@ -1,0 +1,9 @@
+= org/apache/myfaces/resource/ExternalContextContractResourceLoader.class
+
+ - link:ExternalContextContractResourceLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 19
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.application.ResourceVisitOption - 4

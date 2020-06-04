@@ -1,0 +1,9 @@
+= org/apache/xml/security/stax/ext/XMLSecurityConstants.class
+
+ - link:XMLSecurityConstants-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 5
+ - javax.xml.bind.Unmarshaller - 4
+ - javax.xml.bind.JAXBException - 1

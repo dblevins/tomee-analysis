@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/JavaVersion.class
+
+ - link:JavaVersion-asmified.java[Asmified]
+
+== References
+

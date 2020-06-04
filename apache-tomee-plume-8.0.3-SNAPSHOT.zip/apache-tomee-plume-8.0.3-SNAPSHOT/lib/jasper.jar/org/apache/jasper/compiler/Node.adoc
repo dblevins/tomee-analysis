@@ -1,0 +1,7 @@
+= org/apache/jasper/compiler/Node.class
+
+ - link:Node-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.VariableInfo - 5

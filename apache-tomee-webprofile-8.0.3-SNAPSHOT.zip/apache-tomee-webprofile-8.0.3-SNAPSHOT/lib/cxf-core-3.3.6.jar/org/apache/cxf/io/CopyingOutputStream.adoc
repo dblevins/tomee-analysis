@@ -1,0 +1,6 @@
+= org/apache/cxf/io/CopyingOutputStream.class
+
+ - link:CopyingOutputStream-asmified.java[Asmified]
+
+== References
+

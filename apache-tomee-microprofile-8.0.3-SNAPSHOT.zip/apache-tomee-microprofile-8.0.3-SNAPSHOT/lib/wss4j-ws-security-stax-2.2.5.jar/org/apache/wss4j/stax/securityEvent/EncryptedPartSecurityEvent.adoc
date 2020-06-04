@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/EncryptedPartSecurityEvent.class
+
+ - link:EncryptedPartSecurityEvent-asmified.java[Asmified]
+
+== References
+

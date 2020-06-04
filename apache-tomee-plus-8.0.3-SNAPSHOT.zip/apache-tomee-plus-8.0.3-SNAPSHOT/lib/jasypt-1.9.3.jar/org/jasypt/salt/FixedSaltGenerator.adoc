@@ -1,0 +1,6 @@
+= org/jasypt/salt/FixedSaltGenerator.class
+
+ - link:FixedSaltGenerator-asmified.java[Asmified]
+
+== References
+

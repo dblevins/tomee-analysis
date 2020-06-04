@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/jotm/JotmTransactionController.class
+
+ - link:JotmTransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3

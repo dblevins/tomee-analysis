@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/renderkit/html/util/SelectItemInfo.class
+
+ - link:SelectItemInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.SelectItem - 7
+ - javax.faces.component.UIComponent - 7

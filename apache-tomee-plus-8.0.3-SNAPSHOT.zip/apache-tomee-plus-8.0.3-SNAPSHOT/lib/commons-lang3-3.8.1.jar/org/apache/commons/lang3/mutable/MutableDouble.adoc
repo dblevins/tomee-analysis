@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/mutable/MutableDouble.class
+
+ - link:MutableDouble-asmified.java[Asmified]
+
+== References
+

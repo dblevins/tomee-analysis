@@ -1,0 +1,6 @@
+= javax/xml/rpc/handler/HandlerInfo.class
+
+ - link:HandlerInfo-asmified.java[Asmified]
+
+== References
+

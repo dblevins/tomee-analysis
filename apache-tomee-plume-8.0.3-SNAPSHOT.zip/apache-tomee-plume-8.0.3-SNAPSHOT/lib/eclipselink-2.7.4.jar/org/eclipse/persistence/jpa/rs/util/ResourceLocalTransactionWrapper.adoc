@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/rs/util/ResourceLocalTransactionWrapper.class
+
+ - link:ResourceLocalTransactionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityTransaction - 6
+ - javax.persistence.EntityManager - 6

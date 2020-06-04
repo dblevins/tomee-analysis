@@ -1,0 +1,8 @@
+= javax/xml/soap/SOAPConnection.class
+
+ - link:SOAPConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 3
+ - javax.xml.soap.SOAPMessage - 3

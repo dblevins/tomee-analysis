@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/reflect/TypeUtils$ParameterizedTypeImpl.class
+
+ - link:TypeUtils$ParameterizedTypeImpl-asmified.java[Asmified]
+
+== References
+

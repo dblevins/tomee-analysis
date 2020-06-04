@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/text/translate/CharSequenceTranslator.class
+
+ - link:CharSequenceTranslator-asmified.java[Asmified]
+
+== References
+

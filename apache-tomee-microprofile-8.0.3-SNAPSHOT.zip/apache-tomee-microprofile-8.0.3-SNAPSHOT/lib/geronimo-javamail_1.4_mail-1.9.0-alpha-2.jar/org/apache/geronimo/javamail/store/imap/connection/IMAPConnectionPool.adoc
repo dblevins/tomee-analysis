@@ -1,0 +1,9 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPConnectionPool.class
+
+ - link:IMAPConnectionPool-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 17
+ - javax.mail.StoreClosedException - 10
+ - javax.mail.Store - 5

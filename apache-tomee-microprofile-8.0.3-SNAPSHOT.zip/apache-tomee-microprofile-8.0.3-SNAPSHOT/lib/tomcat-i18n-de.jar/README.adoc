@@ -1,0 +1,2 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/tomcat-i18n-de.jar
+

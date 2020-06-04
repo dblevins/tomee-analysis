@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/DataStoreId.class
+
+ - link:DataStoreId-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.GenerationType - 2

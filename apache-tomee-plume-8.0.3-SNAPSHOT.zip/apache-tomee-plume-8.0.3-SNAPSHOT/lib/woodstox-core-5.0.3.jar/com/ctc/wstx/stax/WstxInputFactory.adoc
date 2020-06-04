@@ -1,0 +1,6 @@
+= com/ctc/wstx/stax/WstxInputFactory.class
+
+ - link:WstxInputFactory-asmified.java[Asmified]
+
+== References
+

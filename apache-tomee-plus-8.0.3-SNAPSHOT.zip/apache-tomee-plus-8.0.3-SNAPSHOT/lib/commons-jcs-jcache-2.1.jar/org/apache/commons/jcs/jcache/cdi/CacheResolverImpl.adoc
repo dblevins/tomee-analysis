@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/jcache/cdi/CacheResolverImpl.class
+
+ - link:CacheResolverImpl-asmified.java[Asmified]
+
+== References
+

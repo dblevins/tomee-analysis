@@ -1,0 +1,10 @@
+= org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl.class
+
+ - link:AuthConfigFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.config.AuthConfigProvider - 19
+ - javax.security.auth.message.config.RegistrationListener - 14
+ - javax.security.auth.message.config.AuthConfigFactory$RegistrationContext - 6
+ - javax.security.auth.message.config.AuthConfigFactory - 3

@@ -1,0 +1,8 @@
+= org/apache/webbeans/context/creational/CreationalContextFactory.class
+
+ - link:CreationalContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 4
+ - javax.enterprise.context.spi.CreationalContext - 2

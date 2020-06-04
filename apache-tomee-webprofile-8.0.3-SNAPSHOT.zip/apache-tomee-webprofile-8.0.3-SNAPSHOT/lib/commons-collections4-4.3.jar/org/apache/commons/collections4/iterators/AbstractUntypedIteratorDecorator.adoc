@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/AbstractUntypedIteratorDecorator.class
+
+ - link:AbstractUntypedIteratorDecorator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/propertyeditor/SortedSetEditor.class
+
+ - link:SortedSetEditor-asmified.java[Asmified]
+
+== References
+

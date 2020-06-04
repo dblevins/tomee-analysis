@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/record/OutputStreamRecord$OutputStreamRecordContentHandler.class
+
+ - link:OutputStreamRecord$OutputStreamRecordContentHandler-asmified.java[Asmified]
+
+== References
+

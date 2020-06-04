@@ -1,0 +1,7 @@
+= javax/enterprise/deploy/shared/StateType.class
+
+ - link:StateType-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.shared.StateType - 27

@@ -1,0 +1,8 @@
+= com/sun/faces/config/manager/Documents.class
+
+ - link:Documents-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ApplicationConfigurationPopulator - 4
+ - javax.servlet.ServletContext - 4

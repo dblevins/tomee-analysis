@@ -1,0 +1,10 @@
+= com/sun/faces/lifecycle/LifecycleFactoryImpl.class
+
+ - link:LifecycleFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.lifecycle.Lifecycle - 5
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.lifecycle.LifecycleFactory - 3
+ - javax.faces.FacesException - 1

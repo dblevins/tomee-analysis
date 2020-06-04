@@ -1,0 +1,6 @@
+= org/apache/openejb/client/LocalInitialContext.class
+
+ - link:LocalInitialContext-asmified.java[Asmified]
+
+== References
+

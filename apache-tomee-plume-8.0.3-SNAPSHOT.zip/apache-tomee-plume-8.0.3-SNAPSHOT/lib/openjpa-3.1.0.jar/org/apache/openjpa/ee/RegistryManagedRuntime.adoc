@@ -1,0 +1,11 @@
+= org/apache/openjpa/ee/RegistryManagedRuntime.class
+
+ - link:RegistryManagedRuntime-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.NotSupportedException - 3
+ - javax.transaction.TransactionManager - 3
+ - javax.transaction.Transaction - 2
+ - javax.transaction.TransactionSynchronizationRegistry - 2
+ - javax.transaction.SystemException - 1

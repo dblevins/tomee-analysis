@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/XalanXPathFactory.class
+
+ - link:XalanXPathFactory-asmified.java[Asmified]
+
+== References
+

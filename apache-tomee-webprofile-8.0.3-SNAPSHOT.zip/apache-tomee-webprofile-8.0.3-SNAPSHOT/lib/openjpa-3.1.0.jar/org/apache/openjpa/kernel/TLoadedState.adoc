@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/TLoadedState.class
+
+ - link:TLoadedState-asmified.java[Asmified]
+
+== References
+

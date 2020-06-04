@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/ant/ReverseMappingToolTask$Level.class
+
+ - link:ReverseMappingToolTask$Level-asmified.java[Asmified]
+
+== References
+

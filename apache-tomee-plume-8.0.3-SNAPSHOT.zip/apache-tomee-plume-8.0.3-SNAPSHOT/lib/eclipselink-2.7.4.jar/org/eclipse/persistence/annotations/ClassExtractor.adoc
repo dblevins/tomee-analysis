@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/ClassExtractor.class
+
+ - link:ClassExtractor-asmified.java[Asmified]
+
+== References
+

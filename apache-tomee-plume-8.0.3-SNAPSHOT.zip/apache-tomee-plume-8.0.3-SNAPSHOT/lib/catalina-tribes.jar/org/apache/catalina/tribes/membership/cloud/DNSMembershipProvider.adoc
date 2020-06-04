@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/cloud/DNSMembershipProvider.class
+
+ - link:DNSMembershipProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/xmlstore/ObjectData.class
+
+ - link:ObjectData-asmified.java[Asmified]
+
+== References
+

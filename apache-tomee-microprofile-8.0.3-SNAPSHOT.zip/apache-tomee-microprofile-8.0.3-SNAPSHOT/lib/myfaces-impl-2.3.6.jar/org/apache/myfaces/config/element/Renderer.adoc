@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/Renderer.class
+
+ - link:Renderer-asmified.java[Asmified]
+
+== References
+

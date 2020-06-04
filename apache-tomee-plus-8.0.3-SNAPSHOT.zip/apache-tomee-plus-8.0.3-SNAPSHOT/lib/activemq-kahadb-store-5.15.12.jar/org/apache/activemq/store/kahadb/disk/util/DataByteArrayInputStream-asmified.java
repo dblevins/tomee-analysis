@@ -1,0 +1,824 @@
+package asm.org.apache.activemq.store.kahadb.disk.util;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DataByteArrayInputStreamDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", null, "java/io/InputStream", new String[] { "java/io/DataInput", "java/lang/AutoCloseable" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "buf", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "pos", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "offset", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "length", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "work", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "([B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/InputStream", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/activemq/util/ByteSequence;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/InputStream", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/util/ByteSequence", "getData", "()[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/util/ByteSequence", "getOffset", "()I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "offset", "I");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/util/ByteSequence", "length", "I");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "<init>", "([B)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "size", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "offset", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRawData", "()[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restart", "([B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restart", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restart", "(Lorg/apache/activemq/util/ByteSequence;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/util/ByteSequence", "getData", "()[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/util/ByteSequence", "getOffset", "()I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/util/ByteSequence", "getLength", "()I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "restart", "(I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "restart", "([B)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "read", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "read", "([BII)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label1);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFGT, label3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "available", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readFully", "([B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readFully", "([BII)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "skipBytes", "(I)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFGE, label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readBoolean", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "()I", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readByte", "()B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "()I", false);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUnsignedByte", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "()I", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readShort", "()S", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitInsn(I2S);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUnsignedShort", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readChar", "()C", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitInsn(I2C);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readInt", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 24);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readLong", "()J", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "([BII)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 24);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 24);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "work", "[B");
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(I2L);
+methodVisitor.visitLdcInsn(new Long(4294967295L));
+methodVisitor.visitInsn(LAND);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitInsn(LSHL);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(I2L);
+methodVisitor.visitLdcInsn(new Long(4294967295L));
+methodVisitor.visitInsn(LAND);
+methodVisitor.visitInsn(LOR);
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(6, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readFloat", "()F", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "readInt", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Float", "intBitsToFloat", "(I)F", false);
+methodVisitor.visitInsn(FRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readDouble", "()D", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "readLong", "()J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Double", "longBitsToDouble", "(J)D", false);
+methodVisitor.visitInsn(DRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readLine", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ISTORE, 1);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 13);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "read", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/String", "<init>", "([BII)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readUTF", "()Ljava/lang/String;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "readUnsignedShort", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/io/UTFDataFormatException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("bad string");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/UTFDataFormatException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(NEWARRAY, T_CHAR);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "buf", "[B");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/util/MarshallingSupport", "convertUTF8WithBuf", "([B[CII)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPos", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setPos", "(I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "pos", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getLength", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setLength", "(I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/store/kahadb/disk/util/DataByteArrayInputStream", "length", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

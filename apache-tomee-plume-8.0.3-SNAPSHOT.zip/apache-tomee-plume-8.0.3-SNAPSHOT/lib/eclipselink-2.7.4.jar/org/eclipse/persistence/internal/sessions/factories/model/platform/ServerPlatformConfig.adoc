@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/platform/ServerPlatformConfig.class
+
+ - link:ServerPlatformConfig-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/json/JsonSchemaOutputResolver.class
+
+ - link:JsonSchemaOutputResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.SchemaOutputResolver - 2

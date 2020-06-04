@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/CompositeMap.class
+
+ - link:CompositeMap-asmified.java[Asmified]
+
+== References
+

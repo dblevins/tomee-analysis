@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/InFaultInterceptors.class
+
+ - link:InFaultInterceptors-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/DefaultAttrValue.class
+
+ - link:DefaultAttrValue-asmified.java[Asmified]
+
+== References
+

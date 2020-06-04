@@ -1,0 +1,8 @@
+= org/apache/openejb/assembler/classic/MethodScheduleBuilder.class
+
+ - link:MethodScheduleBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ScheduleExpression - 45
+ - javax.ejb.TimerConfig - 5

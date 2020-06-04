@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/JsonPointer.class
+
+ - link:JsonPointer-asmified.java[Asmified]
+
+== References
+

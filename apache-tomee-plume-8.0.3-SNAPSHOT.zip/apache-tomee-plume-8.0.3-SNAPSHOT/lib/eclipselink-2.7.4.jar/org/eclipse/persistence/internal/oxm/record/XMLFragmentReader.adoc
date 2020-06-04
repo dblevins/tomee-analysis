@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLFragmentReader.class
+
+ - link:XMLFragmentReader-asmified.java[Asmified]
+
+== References
+

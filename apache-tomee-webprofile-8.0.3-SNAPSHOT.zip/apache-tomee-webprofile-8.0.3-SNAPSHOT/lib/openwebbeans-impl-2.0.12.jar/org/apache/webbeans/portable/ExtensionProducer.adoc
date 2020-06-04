@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/ExtensionProducer.class
+
+ - link:ExtensionProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 4
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Interceptor - 1

@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/InjectionPointProducer$InjectionPointDelegate.class
+
+ - link:InjectionPointProducer$InjectionPointDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 20
+ - javax.enterprise.inject.spi.Annotated - 2
+ - javax.enterprise.inject.spi.Bean - 2

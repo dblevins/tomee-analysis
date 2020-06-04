@@ -1,0 +1,10 @@
+= org/apache/geronimo/javamail/handlers/AbstractImageHandler.class
+
+ - link:AbstractImageHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.ActivationDataFlavor - 14
+ - javax.activation.UnsupportedDataTypeException - 6
+ - javax.activation.DataSource - 4
+ - javax.activation.DataContentHandler - 1

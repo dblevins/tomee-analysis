@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/NodeFilter.class
+
+ - link:NodeFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/rest/client/inject/RestClient$RestClientLiteral.class
+
+ - link:RestClient$RestClientLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2

@@ -1,0 +1,11 @@
+= javax/servlet/http/HttpServletResponseWrapper.class
+
+ - link:HttpServletResponseWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 50
+ - javax.servlet.http.HttpServletResponseWrapper - 23
+ - javax.servlet.ServletResponseWrapper - 3
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.http.Cookie - 2

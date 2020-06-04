@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/DepthExceededStaxException.class
+
+ - link:DepthExceededStaxException-asmified.java[Asmified]
+
+== References
+

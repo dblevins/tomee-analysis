@@ -1,0 +1,7 @@
+= org/apache/webbeans/inject/instance/InstanceImpl$1.class
+
+ - link:InstanceImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 2

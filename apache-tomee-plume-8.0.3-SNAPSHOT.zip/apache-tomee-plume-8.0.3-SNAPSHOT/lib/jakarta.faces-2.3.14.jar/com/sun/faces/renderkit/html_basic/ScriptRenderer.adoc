@@ -1,0 +1,8 @@
+= com/sun/faces/renderkit/html_basic/ScriptRenderer.class
+
+ - link:ScriptRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 10
+ - javax.faces.component.UIComponent - 7

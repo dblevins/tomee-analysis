@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/ConstraintUpdateManager.class
+
+ - link:ConstraintUpdateManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/MultiHashMap$ValueIterator.class
+
+ - link:MultiHashMap$ValueIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/webbeans/intercept/DefaultInterceptorHandler.class
+
+ - link:DefaultInterceptorHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Interceptor - 16
+ - javax.enterprise.inject.spi.BeanManager - 13
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.context.spi.Contextual - 2
+ - javax.enterprise.inject.spi.InterceptionType - 2
+ - javax.inject.Provider - 1

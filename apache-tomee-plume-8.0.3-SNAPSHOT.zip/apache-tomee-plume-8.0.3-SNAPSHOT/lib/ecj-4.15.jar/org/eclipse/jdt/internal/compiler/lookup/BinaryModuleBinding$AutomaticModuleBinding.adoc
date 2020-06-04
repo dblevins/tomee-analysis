@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/BinaryModuleBinding$AutomaticModuleBinding.class
+
+ - link:BinaryModuleBinding$AutomaticModuleBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/LogConfigurationException.class
+
+ - link:LogConfigurationException-asmified.java[Asmified]
+
+== References
+

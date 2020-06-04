@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/digester/ArrayStack.class
+
+ - link:ArrayStack-asmified.java[Asmified]
+
+== References
+

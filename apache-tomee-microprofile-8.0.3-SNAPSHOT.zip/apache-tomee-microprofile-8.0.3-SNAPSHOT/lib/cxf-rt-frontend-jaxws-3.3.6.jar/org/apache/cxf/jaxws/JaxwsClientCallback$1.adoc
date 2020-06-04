@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/JaxwsClientCallback$1.class
+
+ - link:JaxwsClientCallback$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Response - 1

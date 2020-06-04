@@ -1,0 +1,6 @@
+= org/apache/tomee/microprofile/jwt/bval/MissingConstraintsException.class
+
+ - link:MissingConstraintsException-asmified.java[Asmified]
+
+== References
+

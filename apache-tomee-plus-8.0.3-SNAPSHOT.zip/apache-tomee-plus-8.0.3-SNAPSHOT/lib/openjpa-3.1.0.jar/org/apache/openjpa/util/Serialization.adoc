@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/Serialization.class
+
+ - link:Serialization-asmified.java[Asmified]
+
+== References
+

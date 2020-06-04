@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlSelectOneListbox.class
+
+ - link:HtmlSelectOneListbox-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 108
+ - javax.faces.component.html.HtmlSelectOneListbox - 77
+ - javax.faces.component.html.HtmlSelectOneListbox$PropertyKeys - 54
+ - javax.faces.component.UISelectOne - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

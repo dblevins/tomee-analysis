@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/SignatureBaseRSA$SignatureRSARIPEMD160.class
+
+ - link:SignatureBaseRSA$SignatureRSARIPEMD160-asmified.java[Asmified]
+
+== References
+

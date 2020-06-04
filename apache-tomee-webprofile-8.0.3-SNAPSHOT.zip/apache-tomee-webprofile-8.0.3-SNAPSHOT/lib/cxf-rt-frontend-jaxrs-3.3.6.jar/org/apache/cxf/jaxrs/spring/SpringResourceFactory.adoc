@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/spring/SpringResourceFactory.class
+
+ - link:SpringResourceFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 2

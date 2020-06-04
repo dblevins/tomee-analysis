@@ -1,0 +1,20 @@
+= com/sun/faces/config/ConfigManager.class
+
+ - link:ConfigManager-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 54
+ - javax.faces.context.FacesContext - 28
+ - javax.el.ELContext - 11
+ - javax.faces.application.Application - 10
+ - javax.el.ELContextListener - 8
+ - javax.el.ExpressionFactory - 7
+ - javax.faces.component.UIViewRoot - 6
+ - javax.el.ELContextEvent - 6
+ - javax.faces.application.ApplicationConfigurationPopulator - 5
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.FacesException - 4
+ - javax.el.ELResolver - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.event.PostConstructApplicationEvent - 1

@@ -1,0 +1,13 @@
+= org/apache/myfaces/config/ManagedBeanDestroyer.class
+
+ - link:ManagedBeanDestroyer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ScopeContext - 3
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.event.PreDestroyViewMapEvent - 3
+ - javax.faces.event.SystemEvent - 3
+ - javax.faces.event.PreDestroyCustomScopeEvent - 3
+ - javax.faces.event.SystemEventListener - 1
+ - javax.faces.component.UIComponent - 1

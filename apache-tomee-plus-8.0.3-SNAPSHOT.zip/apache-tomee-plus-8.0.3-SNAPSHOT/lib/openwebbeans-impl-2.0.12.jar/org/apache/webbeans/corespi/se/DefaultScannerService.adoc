@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/se/DefaultScannerService.class
+
+ - link:DefaultScannerService-asmified.java[Asmified]
+
+== References
+

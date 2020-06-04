@@ -1,0 +1,9 @@
+= org/apache/openejb/jee/Beans$Scan.class
+
+ - link:Beans$Scan-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

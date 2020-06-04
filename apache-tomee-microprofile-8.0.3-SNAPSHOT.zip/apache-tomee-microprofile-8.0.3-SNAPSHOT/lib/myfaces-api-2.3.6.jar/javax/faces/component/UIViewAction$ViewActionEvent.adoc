@@ -1,0 +1,9 @@
+= javax/faces/component/UIViewAction$ViewActionEvent.class
+
+ - link:UIViewAction$ViewActionEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.event.ActionEvent - 4
+ - javax.faces.component.UIComponent - 4

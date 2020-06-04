@@ -1,0 +1,6 @@
+= org/apache/cxf/Bus$BusState.class
+
+ - link:Bus$BusState-asmified.java[Asmified]
+
+== References
+

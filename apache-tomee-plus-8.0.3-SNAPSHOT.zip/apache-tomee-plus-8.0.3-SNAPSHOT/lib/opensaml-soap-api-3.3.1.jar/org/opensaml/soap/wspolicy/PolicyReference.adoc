@@ -1,0 +1,6 @@
+= org/opensaml/soap/wspolicy/PolicyReference.class
+
+ - link:PolicyReference-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/RoleDescriptorResolver.class
+
+ - link:RoleDescriptorResolver-asmified.java[Asmified]
+
+== References
+

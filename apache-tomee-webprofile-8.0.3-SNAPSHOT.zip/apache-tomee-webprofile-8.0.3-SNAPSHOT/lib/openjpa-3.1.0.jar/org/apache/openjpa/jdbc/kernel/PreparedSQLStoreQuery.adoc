@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/PreparedSQLStoreQuery.class
+
+ - link:PreparedSQLStoreQuery-asmified.java[Asmified]
+
+== References
+

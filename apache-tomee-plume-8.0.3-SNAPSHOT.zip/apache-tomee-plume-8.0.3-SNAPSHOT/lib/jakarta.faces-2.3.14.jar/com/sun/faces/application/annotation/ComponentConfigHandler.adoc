@@ -1,0 +1,9 @@
+= com/sun/faces/application/annotation/ComponentConfigHandler.class
+
+ - link:ComponentConfigHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.FacesComponent - 7
+ - javax.faces.application.Application - 3
+ - javax.faces.context.FacesContext - 3

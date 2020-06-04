@@ -1,0 +1,9 @@
+= org/apache/activemq/EnhancedConnection.class
+
+ - link:EnhancedConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TopicConnection - 1
+ - javax.jms.QueueConnection - 1
+ - javax.jms.JMSException - 1

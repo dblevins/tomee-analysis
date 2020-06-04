@@ -1,0 +1,6 @@
+= org/apache/openejb/core/OpenEJBInitialContextFactory$LocalFallbackContextWrapper.class
+
+ - link:OpenEJBInitialContextFactory$LocalFallbackContextWrapper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/NullSampledStatisticsImpl.class
+
+ - link:NullSampledStatisticsImpl-asmified.java[Asmified]
+
+== References
+

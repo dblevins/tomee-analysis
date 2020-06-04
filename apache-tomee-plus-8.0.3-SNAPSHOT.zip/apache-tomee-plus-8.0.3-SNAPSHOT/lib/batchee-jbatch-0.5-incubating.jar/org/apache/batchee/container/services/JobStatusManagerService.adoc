@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/JobStatusManagerService.class
+
+ - link:JobStatusManagerService-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 2

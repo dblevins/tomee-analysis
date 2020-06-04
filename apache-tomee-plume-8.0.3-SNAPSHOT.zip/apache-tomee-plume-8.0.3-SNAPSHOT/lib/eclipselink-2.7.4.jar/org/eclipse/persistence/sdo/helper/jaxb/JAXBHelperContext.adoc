@@ -1,0 +1,7 @@
+= org/eclipse/persistence/sdo/helper/jaxb/JAXBHelperContext.class
+
+ - link:JAXBHelperContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 4

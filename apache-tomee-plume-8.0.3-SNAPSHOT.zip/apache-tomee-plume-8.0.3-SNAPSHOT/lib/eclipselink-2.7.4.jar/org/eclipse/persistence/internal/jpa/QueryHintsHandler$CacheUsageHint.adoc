@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$CacheUsageHint.class
+
+ - link:QueryHintsHandler$CacheUsageHint-asmified.java[Asmified]
+
+== References
+

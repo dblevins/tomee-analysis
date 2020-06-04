@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509DigestUnmarshaller.class
+
+ - link:X509DigestUnmarshaller-asmified.java[Asmified]
+
+== References
+

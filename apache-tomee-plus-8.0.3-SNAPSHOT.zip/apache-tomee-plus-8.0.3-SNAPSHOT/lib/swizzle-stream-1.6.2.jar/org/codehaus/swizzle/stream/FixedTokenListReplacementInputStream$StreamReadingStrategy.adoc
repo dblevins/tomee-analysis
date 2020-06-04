@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/FixedTokenListReplacementInputStream$StreamReadingStrategy.class
+
+ - link:FixedTokenListReplacementInputStream$StreamReadingStrategy-asmified.java[Asmified]
+
+== References
+

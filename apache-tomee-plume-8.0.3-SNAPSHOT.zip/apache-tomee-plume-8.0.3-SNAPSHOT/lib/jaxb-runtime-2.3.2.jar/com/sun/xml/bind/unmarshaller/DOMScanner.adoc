@@ -1,0 +1,8 @@
+= com/sun/xml/bind/unmarshaller/DOMScanner.class
+
+ - link:DOMScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.helpers.ValidationEventLocatorImpl - 2
+ - javax.xml.bind.ValidationEventLocator - 1

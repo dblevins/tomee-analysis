@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/messaging/context/navigate/SAMLMessageContextAuthenticationFunction.class
+
+ - link:SAMLMessageContextAuthenticationFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4
+ - javax.annotation.Nonnull - 2

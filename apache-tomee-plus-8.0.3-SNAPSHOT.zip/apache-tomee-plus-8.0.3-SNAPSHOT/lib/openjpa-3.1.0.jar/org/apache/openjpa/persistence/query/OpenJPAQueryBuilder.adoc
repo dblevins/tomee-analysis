@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/OpenJPAQueryBuilder.class
+
+ - link:OpenJPAQueryBuilder-asmified.java[Asmified]
+
+== References
+

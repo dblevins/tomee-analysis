@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/ClasspathDirectory$2.class
+
+ - link:ClasspathDirectory$2-asmified.java[Asmified]
+
+== References
+

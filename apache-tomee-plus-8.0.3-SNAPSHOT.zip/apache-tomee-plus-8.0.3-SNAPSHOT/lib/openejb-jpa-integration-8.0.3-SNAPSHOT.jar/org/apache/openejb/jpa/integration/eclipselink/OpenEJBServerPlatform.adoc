@@ -1,0 +1,6 @@
+= org/apache/openejb/jpa/integration/eclipselink/OpenEJBServerPlatform.class
+
+ - link:OpenEJBServerPlatform-asmified.java[Asmified]
+
+== References
+

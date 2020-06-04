@@ -1,0 +1,7 @@
+= org/apache/openejb/persistence/JtaEntityManagerRegistry$EntityManagerTracker.class
+
+ - link:JtaEntityManagerRegistry$EntityManagerTracker-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 6

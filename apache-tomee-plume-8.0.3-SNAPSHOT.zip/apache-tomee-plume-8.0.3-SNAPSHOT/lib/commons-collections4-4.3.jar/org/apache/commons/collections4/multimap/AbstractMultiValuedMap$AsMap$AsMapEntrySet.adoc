@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multimap/AbstractMultiValuedMap$AsMap$AsMapEntrySet.class
+
+ - link:AbstractMultiValuedMap$AsMap$AsMapEntrySet-asmified.java[Asmified]
+
+== References
+

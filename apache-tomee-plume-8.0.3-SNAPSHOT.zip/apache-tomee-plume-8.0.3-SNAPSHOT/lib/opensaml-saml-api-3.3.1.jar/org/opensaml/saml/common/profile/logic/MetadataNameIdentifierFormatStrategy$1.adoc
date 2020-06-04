@@ -1,0 +1,6 @@
+= org/opensaml/saml/common/profile/logic/MetadataNameIdentifierFormatStrategy$1.class
+
+ - link:MetadataNameIdentifierFormatStrategy$1-asmified.java[Asmified]
+
+== References
+

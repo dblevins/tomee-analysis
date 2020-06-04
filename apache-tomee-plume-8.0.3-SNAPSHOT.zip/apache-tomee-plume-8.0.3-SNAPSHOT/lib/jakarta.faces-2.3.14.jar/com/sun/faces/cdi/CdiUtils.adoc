@@ -1,0 +1,21 @@
+= com/sun/faces/cdi/CdiUtils.class
+
+ - link:CdiUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 45
+ - javax.faces.convert.Converter - 13
+ - javax.enterprise.inject.spi.Bean - 13
+ - javax.enterprise.inject.spi.CDI - 10
+ - javax.enterprise.inject.spi.InjectionPoint - 10
+ - javax.enterprise.context.spi.CreationalContext - 9
+ - javax.faces.context.FacesContext - 9
+ - javax.enterprise.inject.spi.Annotated - 6
+ - javax.enterprise.context.spi.Context - 6
+ - javax.faces.validator.Validator - 6
+ - javax.faces.component.behavior.Behavior - 6
+ - javax.enterprise.context.spi.Contextual - 5
+ - javax.faces.model.DataModel - 4
+ - javax.enterprise.context.ContextNotActiveException - 2
+ - javax.enterprise.inject.Instance - 2

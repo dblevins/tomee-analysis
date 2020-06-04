@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/AbstractDescriptionElement.class
+
+ - link:AbstractDescriptionElement-asmified.java[Asmified]
+
+== References
+

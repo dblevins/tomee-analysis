@@ -1,0 +1,22 @@
+= com/sun/faces/flow/FlowCDIContext.class
+
+ - link:FlowCDIContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 38
+ - javax.enterprise.context.spi.Contextual - 14
+ - javax.faces.flow.Flow - 14
+ - javax.enterprise.inject.spi.BeanManager - 14
+ - javax.enterprise.context.spi.CreationalContext - 11
+ - javax.servlet.http.HttpSession - 10
+ - javax.faces.flow.FlowHandler - 8
+ - javax.enterprise.inject.spi.Bean - 7
+ - javax.enterprise.inject.spi.PassivationCapable - 6
+ - javax.faces.application.Application - 4
+ - javax.enterprise.context.ContextNotActiveException - 2
+ - javax.servlet.http.HttpSessionEvent - 2
+ - javax.enterprise.context.spi.Context - 1
+ - javax.faces.flow.FlowScoped - 1
+ - javax.enterprise.inject.spi.BeforeShutdown - 1
+ - javax.enterprise.event.Observes - 1

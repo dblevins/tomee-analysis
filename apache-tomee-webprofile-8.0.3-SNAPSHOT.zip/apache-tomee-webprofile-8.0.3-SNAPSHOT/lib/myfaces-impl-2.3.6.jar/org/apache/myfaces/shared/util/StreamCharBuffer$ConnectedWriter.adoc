@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/StreamCharBuffer$ConnectedWriter.class
+
+ - link:StreamCharBuffer$ConnectedWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/persistence/AttributeNode.class
+
+ - link:AttributeNode-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Subgraph - 2

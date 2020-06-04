@@ -1,0 +1,8 @@
+= com/sun/faces/vendor/WebContainerInjectionProvider.class
+
+ - link:WebContainerInjectionProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1

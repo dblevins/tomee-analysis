@@ -1,0 +1,8 @@
+= javax/enterprise/deploy/spi/status/ProgressEvent.class
+
+ - link:ProgressEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.status.DeploymentStatus - 5
+ - javax.enterprise.deploy.spi.TargetModuleID - 5

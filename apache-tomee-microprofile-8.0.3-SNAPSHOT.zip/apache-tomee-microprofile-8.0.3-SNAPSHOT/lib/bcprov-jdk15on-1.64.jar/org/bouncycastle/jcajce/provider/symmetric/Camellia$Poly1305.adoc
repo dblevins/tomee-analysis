@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/Camellia$Poly1305.class
+
+ - link:Camellia$Poly1305-asmified.java[Asmified]
+
+== References
+

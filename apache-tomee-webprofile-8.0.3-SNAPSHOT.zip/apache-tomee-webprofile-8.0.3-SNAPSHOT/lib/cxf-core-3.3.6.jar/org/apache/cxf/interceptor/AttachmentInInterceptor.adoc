@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/AttachmentInInterceptor.class
+
+ - link:AttachmentInInterceptor-asmified.java[Asmified]
+
+== References
+

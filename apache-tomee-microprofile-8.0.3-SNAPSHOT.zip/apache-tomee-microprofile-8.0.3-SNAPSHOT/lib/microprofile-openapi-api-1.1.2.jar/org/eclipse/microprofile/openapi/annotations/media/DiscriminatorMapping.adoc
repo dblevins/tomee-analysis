@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/media/DiscriminatorMapping.class
+
+ - link:DiscriminatorMapping-asmified.java[Asmified]
+
+== References
+

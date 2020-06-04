@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/InMemoryRepresentable.class
+
+ - link:InMemoryRepresentable-asmified.java[Asmified]
+
+== References
+

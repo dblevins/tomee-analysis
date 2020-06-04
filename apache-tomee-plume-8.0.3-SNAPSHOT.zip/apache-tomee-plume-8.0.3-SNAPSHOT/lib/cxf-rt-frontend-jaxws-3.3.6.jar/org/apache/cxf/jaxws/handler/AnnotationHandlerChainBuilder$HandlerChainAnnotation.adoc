@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$HandlerChainAnnotation.class
+
+ - link:AnnotationHandlerChainBuilder$HandlerChainAnnotation-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.HandlerChain - 10
+ - javax.xml.ws.WebServiceException - 2

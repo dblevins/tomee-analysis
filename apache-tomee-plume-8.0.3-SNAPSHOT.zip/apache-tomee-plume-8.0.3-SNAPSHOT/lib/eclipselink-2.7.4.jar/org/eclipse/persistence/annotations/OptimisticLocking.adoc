@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/OptimisticLocking.class
+
+ - link:OptimisticLocking-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 1

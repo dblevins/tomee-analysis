@@ -1,0 +1,7 @@
+= org/opensaml/security/x509/X509IssuerSerialCriterion.class
+
+ - link:X509IssuerSerialCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

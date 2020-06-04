@@ -1,0 +1,7 @@
+= javax/xml/rpc/holders/ShortWrapperHolder.class
+
+ - link:ShortWrapperHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.holders.Holder - 1

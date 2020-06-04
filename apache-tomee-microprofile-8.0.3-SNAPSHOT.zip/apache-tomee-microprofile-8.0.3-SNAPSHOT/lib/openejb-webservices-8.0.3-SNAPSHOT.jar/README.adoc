@@ -1,0 +1,11 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-webservices-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/openejb/server/webservices/WsServlet.adoc[org/apache/openejb/server/webservices/WsServlet.class] - 65
+ - link:org/apache/openejb/server/webservices/saaj/SoapFactoryImpl.adoc[org/apache/openejb/server/webservices/saaj/SoapFactoryImpl.class] - 47
+ - link:org/apache/openejb/server/webservices/saaj/SaajMetaFactoryImpl.adoc[org/apache/openejb/server/webservices/saaj/SaajMetaFactoryImpl.class] - 22
+ - link:org/apache/openejb/server/webservices/WsServlet$InstanceContext.adoc[org/apache/openejb/server/webservices/WsServlet$InstanceContext.class] - 18
+ - link:org/apache/openejb/server/webservices/saaj/MessageFactoryImpl.adoc[org/apache/openejb/server/webservices/saaj/MessageFactoryImpl.class] - 17
+ - link:org/apache/openejb/server/webservices/WsServlet$InvocationContext.adoc[org/apache/openejb/server/webservices/WsServlet$InvocationContext.class] - 17
+ - link:org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl.adoc[org/apache/openejb/server/webservices/saaj/SoapConnectionFactoryImpl.class] - 10
+ - link:org/apache/openejb/server/webservices/saaj/SaajFactoryFinder.adoc[org/apache/openejb/server/webservices/saaj/SaajFactoryFinder.class] - 8
+ - link:org/apache/openejb/server/webservices/WsServlet$DefaultContext.adoc[org/apache/openejb/server/webservices/WsServlet$DefaultContext.class] - 6

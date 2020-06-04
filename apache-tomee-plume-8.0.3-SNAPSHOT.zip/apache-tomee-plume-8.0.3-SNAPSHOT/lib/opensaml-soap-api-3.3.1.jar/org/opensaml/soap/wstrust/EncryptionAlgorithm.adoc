@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/EncryptionAlgorithm.class
+
+ - link:EncryptionAlgorithm-asmified.java[Asmified]
+
+== References
+

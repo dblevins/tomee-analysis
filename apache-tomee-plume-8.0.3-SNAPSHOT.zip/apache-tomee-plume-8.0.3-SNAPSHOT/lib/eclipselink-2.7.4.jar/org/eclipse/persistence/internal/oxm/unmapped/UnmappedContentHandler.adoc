@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/unmapped/UnmappedContentHandler.class
+
+ - link:UnmappedContentHandler-asmified.java[Asmified]
+
+== References
+

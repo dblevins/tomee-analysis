@@ -1,0 +1,7 @@
+= org/opensaml/saml/criterion/EntityRoleCriterion.class
+
+ - link:EntityRoleCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

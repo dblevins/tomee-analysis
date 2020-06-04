@@ -1,0 +1,8 @@
+= org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator.class
+
+ - link:DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 138
+ - javax.json.JsonValue - 5

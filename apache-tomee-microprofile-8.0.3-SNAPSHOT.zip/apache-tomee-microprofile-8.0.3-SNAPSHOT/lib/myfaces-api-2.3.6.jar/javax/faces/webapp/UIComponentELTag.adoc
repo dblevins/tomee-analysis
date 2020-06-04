@@ -1,0 +1,14 @@
+= javax/faces/webapp/UIComponentELTag.class
+
+ - link:UIComponentELTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 23
+ - javax.faces.component.UIComponent - 11
+ - javax.faces.webapp.UIComponentELTag - 7
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.application.Application - 5
+ - javax.faces.webapp.UIComponentClassicTagBase - 3
+ - javax.el.ELContext - 3
+ - javax.servlet.jsp.JspException - 2

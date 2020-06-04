@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/PersistenceMetaDataDefaults$TransientFilter.class
+
+ - link:PersistenceMetaDataDefaults$TransientFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Transient - 1

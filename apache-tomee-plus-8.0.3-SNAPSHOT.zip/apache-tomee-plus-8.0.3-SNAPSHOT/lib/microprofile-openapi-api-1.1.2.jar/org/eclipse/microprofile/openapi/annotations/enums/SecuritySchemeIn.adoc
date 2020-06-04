@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/enums/SecuritySchemeIn.class
+
+ - link:SecuritySchemeIn-asmified.java[Asmified]
+
+== References
+

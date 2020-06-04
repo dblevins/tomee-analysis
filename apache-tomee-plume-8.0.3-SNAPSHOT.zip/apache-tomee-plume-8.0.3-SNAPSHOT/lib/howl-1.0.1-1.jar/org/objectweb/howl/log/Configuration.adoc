@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/Configuration.class
+
+ - link:Configuration-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomee/jdbc/TomEEDataSourceCreator.class
+
+ - link:TomEEDataSourceCreator-asmified.java[Asmified]
+
+== References
+

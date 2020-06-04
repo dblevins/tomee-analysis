@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ExtentImpl.class
+
+ - link:ExtentImpl-asmified.java[Asmified]
+
+== References
+

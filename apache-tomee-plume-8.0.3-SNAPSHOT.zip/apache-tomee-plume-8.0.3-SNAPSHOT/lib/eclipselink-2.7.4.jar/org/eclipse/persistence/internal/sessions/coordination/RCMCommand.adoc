@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/coordination/RCMCommand.class
+
+ - link:RCMCommand-asmified.java[Asmified]
+
+== References
+

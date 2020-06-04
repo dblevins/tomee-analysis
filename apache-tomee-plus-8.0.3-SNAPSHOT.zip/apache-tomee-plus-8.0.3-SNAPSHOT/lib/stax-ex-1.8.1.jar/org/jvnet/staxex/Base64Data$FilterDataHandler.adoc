@@ -1,0 +1,8 @@
+= org/jvnet/staxex/Base64Data$FilterDataHandler.class
+
+ - link:Base64Data$FilterDataHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 6
+ - javax.activation.DataHandler - 2

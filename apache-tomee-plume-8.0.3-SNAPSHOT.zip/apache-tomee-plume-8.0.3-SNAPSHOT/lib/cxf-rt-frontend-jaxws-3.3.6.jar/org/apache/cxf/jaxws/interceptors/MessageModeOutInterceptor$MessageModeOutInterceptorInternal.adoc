@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor$MessageModeOutInterceptorInternal.class
+
+ - link:MessageModeOutInterceptor$MessageModeOutInterceptorInternal-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 15
+ - javax.xml.soap.SOAPPart - 6
+ - javax.xml.soap.SOAPBody - 3
+ - javax.xml.soap.SOAPFault - 3
+ - javax.xml.soap.MessageFactory - 2
+ - javax.xml.soap.SOAPException - 1

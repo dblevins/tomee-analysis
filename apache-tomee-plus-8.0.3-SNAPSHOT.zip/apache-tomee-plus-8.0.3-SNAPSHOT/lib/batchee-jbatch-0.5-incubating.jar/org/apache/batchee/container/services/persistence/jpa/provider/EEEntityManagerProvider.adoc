@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/persistence/jpa/provider/EEEntityManagerProvider.class
+
+ - link:EEEntityManagerProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 7

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/transformers/MethodBasedAttributeTransformer.class
+
+ - link:MethodBasedAttributeTransformer-asmified.java[Asmified]
+
+== References
+

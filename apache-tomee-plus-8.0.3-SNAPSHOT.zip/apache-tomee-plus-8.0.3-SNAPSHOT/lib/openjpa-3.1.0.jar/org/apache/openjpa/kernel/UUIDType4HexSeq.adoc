@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/UUIDType4HexSeq.class
+
+ - link:UUIDType4HexSeq-asmified.java[Asmified]
+
+== References
+

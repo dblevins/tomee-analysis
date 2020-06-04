@@ -1,0 +1,7 @@
+= javax/json/stream/JsonParser$Event.class
+
+ - link:JsonParser$Event-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser$Event - 61

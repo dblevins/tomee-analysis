@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/MetadataDescriptor.class
+
+ - link:MetadataDescriptor-asmified.java[Asmified]
+
+== References
+

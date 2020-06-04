@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/TableVariableDeclarationBNF.class
+
+ - link:TableVariableDeclarationBNF-asmified.java[Asmified]
+
+== References
+

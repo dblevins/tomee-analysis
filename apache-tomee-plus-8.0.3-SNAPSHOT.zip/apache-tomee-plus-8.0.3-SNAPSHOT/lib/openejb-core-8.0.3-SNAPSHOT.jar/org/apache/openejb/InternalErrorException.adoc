@@ -1,0 +1,6 @@
+= org/apache/openejb/InternalErrorException.class
+
+ - link:InternalErrorException-asmified.java[Asmified]
+
+== References
+

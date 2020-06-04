@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/core/helper/CoreField.class
+
+ - link:CoreField-asmified.java[Asmified]
+
+== References
+

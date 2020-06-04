@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/PinnedPartitioning.class
+
+ - link:PinnedPartitioning-asmified.java[Asmified]
+
+== References
+

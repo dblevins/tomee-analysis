@@ -1,0 +1,11 @@
+= org/apache/openejb/config/rules/CheckInjectionPointUsage.class
+
+ - link:CheckInjectionPointUsage-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DefinitionException - 2
+ - javax.inject.Inject - 1
+ - javax.enterprise.inject.Default - 1
+ - javax.servlet.http.HttpServlet - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1

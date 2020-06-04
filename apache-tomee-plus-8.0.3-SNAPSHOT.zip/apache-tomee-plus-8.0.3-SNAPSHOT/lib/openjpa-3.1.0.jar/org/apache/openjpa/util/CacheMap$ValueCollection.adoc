@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/CacheMap$ValueCollection.class
+
+ - link:CacheMap$ValueCollection-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/CdiScanner.class
+
+ - link:CdiScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.decorator.Decorator - 1

@@ -1,0 +1,8 @@
+= org/apache/openejb/client/Exceptions.class
+
+ - link:Exceptions-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 8
+ - javax.transaction.RollbackException - 8

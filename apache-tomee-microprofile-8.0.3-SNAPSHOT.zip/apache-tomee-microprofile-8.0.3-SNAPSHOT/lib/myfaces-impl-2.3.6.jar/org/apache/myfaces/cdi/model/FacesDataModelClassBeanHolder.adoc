@@ -1,0 +1,10 @@
+= org/apache/myfaces/cdi/model/FacesDataModelClassBeanHolder.class
+
+ - link:FacesDataModelClassBeanHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.DataModel - 12
+ - javax.faces.FacesException - 12
+ - javax.faces.context.FacesContext - 1
+ - javax.enterprise.context.ApplicationScoped - 1

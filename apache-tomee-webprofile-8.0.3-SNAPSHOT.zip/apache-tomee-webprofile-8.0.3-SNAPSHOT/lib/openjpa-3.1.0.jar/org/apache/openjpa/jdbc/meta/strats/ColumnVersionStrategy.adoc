@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/ColumnVersionStrategy.class
+
+ - link:ColumnVersionStrategy-asmified.java[Asmified]
+
+== References
+

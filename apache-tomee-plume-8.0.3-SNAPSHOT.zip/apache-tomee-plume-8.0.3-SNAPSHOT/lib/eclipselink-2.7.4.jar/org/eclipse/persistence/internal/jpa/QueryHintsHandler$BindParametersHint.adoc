@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$BindParametersHint.class
+
+ - link:QueryHintsHandler$BindParametersHint-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/bval/jsr/job/ValidateParameters$ParametersFrame.class
+
+ - link:ValidateParameters$ParametersFrame-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ExecutableDescriptor - 7
+ - javax.validation.metadata.ParameterDescriptor - 4
+ - javax.validation.constraintvalidation.ValidationTarget - 2
+ - javax.validation.metadata.CrossParameterDescriptor - 1
+ - javax.validation.ConstraintViolation - 1

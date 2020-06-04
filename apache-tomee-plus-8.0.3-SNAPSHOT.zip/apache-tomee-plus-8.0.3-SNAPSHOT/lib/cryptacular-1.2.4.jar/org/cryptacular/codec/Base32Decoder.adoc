@@ -1,0 +1,6 @@
+= org/cryptacular/codec/Base32Decoder.class
+
+ - link:Base32Decoder-asmified.java[Asmified]
+
+== References
+

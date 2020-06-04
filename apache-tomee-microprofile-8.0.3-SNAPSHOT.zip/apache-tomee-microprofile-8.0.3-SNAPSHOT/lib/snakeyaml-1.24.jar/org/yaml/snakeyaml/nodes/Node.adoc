@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/nodes/Node.class
+
+ - link:Node-asmified.java[Asmified]
+
+== References
+

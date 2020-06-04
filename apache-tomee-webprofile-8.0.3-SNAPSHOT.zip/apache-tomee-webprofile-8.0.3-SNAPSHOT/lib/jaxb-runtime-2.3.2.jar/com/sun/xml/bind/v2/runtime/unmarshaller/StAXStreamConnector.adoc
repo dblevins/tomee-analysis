@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/StAXStreamConnector.class
+
+ - link:StAXStreamConnector-asmified.java[Asmified]
+
+== References
+

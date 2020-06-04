@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/StoreCacheImpl.class
+
+ - link:StoreCacheImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 2

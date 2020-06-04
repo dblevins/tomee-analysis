@@ -1,0 +1,7 @@
+= org/apache/openejb/config/rules/CheckCdiEnabled.class
+
+ - link:CheckCdiEnabled-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Inject - 2

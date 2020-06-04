@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/x509/XMLX509Digest.class
+
+ - link:XMLX509Digest-asmified.java[Asmified]
+
+== References
+

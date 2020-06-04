@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/event/ContainerSystemPostCreate.class
+
+ - link:ContainerSystemPostCreate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/ver1_1/Detail1_1Impl.class
+
+ - link:Detail1_1Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.Name - 2
+ - javax.xml.soap.DetailEntry - 2

@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/ConnectorTransactionContext.class
+
+ - link:ConnectorTransactionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 9
+ - javax.transaction.SystemException - 2
+ - javax.transaction.Synchronization - 1

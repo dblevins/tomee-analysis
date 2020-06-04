@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/servlet/ServletDestinationFactory.class
+
+ - link:ServletDestinationFactory-asmified.java[Asmified]
+
+== References
+

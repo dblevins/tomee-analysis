@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/WordResolver.class
+
+ - link:WordResolver-asmified.java[Asmified]
+
+== References
+

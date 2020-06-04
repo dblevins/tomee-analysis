@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/SignableXMLObject.class
+
+ - link:SignableXMLObject-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

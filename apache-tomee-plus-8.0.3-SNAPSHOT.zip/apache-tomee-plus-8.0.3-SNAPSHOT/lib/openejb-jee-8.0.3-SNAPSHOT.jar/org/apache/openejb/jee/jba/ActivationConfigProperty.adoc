@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/jba/ActivationConfigProperty.class
+
+ - link:ActivationConfigProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

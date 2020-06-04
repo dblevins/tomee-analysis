@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/spi/InstanceIdGenerator.class
+
+ - link:InstanceIdGenerator-asmified.java[Asmified]
+
+== References
+

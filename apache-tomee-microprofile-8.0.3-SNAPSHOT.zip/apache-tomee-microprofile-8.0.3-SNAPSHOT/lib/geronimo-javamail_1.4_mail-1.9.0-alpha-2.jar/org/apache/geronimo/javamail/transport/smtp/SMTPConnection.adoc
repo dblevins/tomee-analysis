@@ -1,0 +1,16 @@
+= org/apache/geronimo/javamail/transport/smtp/SMTPConnection.class
+
+ - link:SMTPConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 72
+ - javax.mail.internet.MimePart - 12
+ - javax.mail.internet.InternetAddress - 11
+ - javax.mail.Message - 6
+ - javax.mail.internet.MimeMultipart - 3
+ - javax.mail.internet.MimeMessage - 3
+ - javax.mail.AuthenticationFailedException - 2
+ - javax.mail.Session - 2
+ - javax.mail.Address - 1
+ - javax.mail.BodyPart - 1

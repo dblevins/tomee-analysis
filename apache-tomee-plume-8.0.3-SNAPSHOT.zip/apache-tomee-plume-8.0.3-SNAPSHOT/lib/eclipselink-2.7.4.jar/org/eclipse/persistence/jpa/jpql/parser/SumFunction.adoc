@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/SumFunction.class
+
+ - link:SumFunction-asmified.java[Asmified]
+
+== References
+

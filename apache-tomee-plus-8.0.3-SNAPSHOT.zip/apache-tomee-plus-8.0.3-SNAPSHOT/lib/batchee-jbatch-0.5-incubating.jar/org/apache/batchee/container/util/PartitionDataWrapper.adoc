@@ -1,0 +1,7 @@
+= org/apache/batchee/container/util/PartitionDataWrapper.class
+
+ - link:PartitionDataWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 5

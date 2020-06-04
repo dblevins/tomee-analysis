@@ -1,0 +1,10 @@
+= javax/ws/rs/ForbiddenException.class
+
+ - link:ForbiddenException-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 16
+ - javax.ws.rs.core.Response$Status - 16
+ - javax.ws.rs.ClientErrorException - 9
+ - javax.ws.rs.ForbiddenException - 4

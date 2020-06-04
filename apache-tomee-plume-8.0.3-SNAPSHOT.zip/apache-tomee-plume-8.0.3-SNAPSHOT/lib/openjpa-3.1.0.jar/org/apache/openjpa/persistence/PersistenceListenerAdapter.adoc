@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/PersistenceListenerAdapter.class
+
+ - link:PersistenceListenerAdapter-asmified.java[Asmified]
+
+== References
+

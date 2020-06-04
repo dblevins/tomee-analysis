@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/soap/SOAPAddress.class
+
+ - link:SOAPAddress-asmified.java[Asmified]
+
+== References
+

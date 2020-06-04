@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/jsf/html/HtmlDecorator.class
+
+ - link:HtmlDecorator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 33
+ - javax.faces.view.facelets.TagAttributes - 19
+ - javax.faces.view.Location - 12
+ - javax.faces.view.facelets.TagAttribute - 9
+ - javax.faces.view.facelets.TagDecorator - 1

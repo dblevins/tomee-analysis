@@ -1,0 +1,7 @@
+= org/apache/bval/constraints/SizeValidator$ForArray$OfDouble.class
+
+ - link:SizeValidator$ForArray$OfDouble-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Size - 2

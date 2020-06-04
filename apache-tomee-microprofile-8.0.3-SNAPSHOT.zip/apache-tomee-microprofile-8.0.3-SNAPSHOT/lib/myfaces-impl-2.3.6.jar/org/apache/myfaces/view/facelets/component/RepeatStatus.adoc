@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/component/RepeatStatus.class
+
+ - link:RepeatStatus-asmified.java[Asmified]
+
+== References
+

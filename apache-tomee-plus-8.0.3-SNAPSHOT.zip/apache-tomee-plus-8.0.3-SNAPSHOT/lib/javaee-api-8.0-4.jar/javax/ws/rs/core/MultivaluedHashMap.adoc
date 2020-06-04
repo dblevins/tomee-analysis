@@ -1,0 +1,9 @@
+= javax/ws/rs/core/MultivaluedHashMap.class
+
+ - link:MultivaluedHashMap-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedHashMap - 5
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.core.AbstractMultivaluedMap - 4

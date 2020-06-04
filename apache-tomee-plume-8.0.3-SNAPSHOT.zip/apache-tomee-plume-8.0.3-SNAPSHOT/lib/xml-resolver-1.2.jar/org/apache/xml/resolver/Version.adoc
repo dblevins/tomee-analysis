@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/Version.class
+
+ - link:Version-asmified.java[Asmified]
+
+== References
+

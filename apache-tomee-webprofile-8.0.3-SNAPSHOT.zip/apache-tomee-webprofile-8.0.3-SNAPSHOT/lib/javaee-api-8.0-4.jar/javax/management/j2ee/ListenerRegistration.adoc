@@ -1,0 +1,6 @@
+= javax/management/j2ee/ListenerRegistration.class
+
+ - link:ListenerRegistration-asmified.java[Asmified]
+
+== References
+

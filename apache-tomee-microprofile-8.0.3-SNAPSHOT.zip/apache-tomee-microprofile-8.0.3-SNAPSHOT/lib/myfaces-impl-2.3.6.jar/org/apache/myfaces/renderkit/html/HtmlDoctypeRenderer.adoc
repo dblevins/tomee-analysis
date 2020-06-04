@@ -1,0 +1,10 @@
+= org/apache/myfaces/renderkit/html/HtmlDoctypeRenderer.class
+
+ - link:HtmlDoctypeRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 11
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.render.Renderer - 3

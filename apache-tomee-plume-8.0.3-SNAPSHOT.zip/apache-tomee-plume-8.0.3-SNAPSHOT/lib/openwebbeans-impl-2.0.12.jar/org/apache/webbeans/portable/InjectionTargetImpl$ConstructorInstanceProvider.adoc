@@ -1,0 +1,7 @@
+= org/apache/webbeans/portable/InjectionTargetImpl$ConstructorInstanceProvider.class
+
+ - link:InjectionTargetImpl$ConstructorInstanceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 1

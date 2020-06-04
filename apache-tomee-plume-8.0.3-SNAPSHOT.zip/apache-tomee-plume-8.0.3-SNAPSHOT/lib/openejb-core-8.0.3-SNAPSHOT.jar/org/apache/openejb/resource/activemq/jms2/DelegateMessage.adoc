@@ -1,0 +1,9 @@
+= org/apache/openejb/resource/activemq/jms2/DelegateMessage.class
+
+ - link:DelegateMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 100
+ - javax.jms.JMSException - 49
+ - javax.jms.Destination - 8

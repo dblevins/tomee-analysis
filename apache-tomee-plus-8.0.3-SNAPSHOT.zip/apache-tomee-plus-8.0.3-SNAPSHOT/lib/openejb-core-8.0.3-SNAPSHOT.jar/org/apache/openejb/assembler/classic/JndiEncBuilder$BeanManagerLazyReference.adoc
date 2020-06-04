@@ -1,0 +1,7 @@
+= org/apache/openejb/assembler/classic/JndiEncBuilder$BeanManagerLazyReference.class
+
+ - link:JndiEncBuilder$BeanManagerLazyReference-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 3

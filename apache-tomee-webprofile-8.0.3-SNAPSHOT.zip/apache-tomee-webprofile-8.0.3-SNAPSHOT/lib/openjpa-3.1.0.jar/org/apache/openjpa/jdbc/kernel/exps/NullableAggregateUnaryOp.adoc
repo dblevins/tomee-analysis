@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/NullableAggregateUnaryOp.class
+
+ - link:NullableAggregateUnaryOp-asmified.java[Asmified]
+
+== References
+

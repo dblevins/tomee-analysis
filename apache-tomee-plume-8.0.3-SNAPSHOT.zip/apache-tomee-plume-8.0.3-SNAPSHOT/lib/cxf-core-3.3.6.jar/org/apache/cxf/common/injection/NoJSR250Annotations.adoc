@@ -1,0 +1,6 @@
+= org/apache/cxf/common/injection/NoJSR250Annotations.class
+
+ - link:NoJSR250Annotations-asmified.java[Asmified]
+
+== References
+

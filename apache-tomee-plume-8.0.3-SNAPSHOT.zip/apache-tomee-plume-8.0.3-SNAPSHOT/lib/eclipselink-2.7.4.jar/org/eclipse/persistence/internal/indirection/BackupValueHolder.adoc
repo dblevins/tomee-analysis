@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/BackupValueHolder.class
+
+ - link:BackupValueHolder-asmified.java[Asmified]
+
+== References
+

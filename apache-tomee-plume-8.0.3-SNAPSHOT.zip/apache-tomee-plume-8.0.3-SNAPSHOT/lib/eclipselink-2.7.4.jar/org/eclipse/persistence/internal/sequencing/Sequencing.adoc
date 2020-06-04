@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sequencing/Sequencing.class
+
+ - link:Sequencing-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/extension/RegistryImpl.class
+
+ - link:RegistryImpl-asmified.java[Asmified]
+
+== References
+

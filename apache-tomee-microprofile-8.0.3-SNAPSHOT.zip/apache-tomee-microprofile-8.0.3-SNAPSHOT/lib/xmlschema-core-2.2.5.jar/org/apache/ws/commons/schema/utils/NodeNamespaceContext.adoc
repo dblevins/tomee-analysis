@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/NodeNamespaceContext.class
+
+ - link:NodeNamespaceContext-asmified.java[Asmified]
+
+== References
+

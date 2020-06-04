@@ -1,0 +1,7 @@
+= com/sun/faces/mgbean/ManagedMapBeanBuilder.class
+
+ - link:ManagedMapBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

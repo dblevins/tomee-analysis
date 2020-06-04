@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/wrappers/TriggerFacade.class
+
+ - link:TriggerFacade-asmified.java[Asmified]
+
+== References
+

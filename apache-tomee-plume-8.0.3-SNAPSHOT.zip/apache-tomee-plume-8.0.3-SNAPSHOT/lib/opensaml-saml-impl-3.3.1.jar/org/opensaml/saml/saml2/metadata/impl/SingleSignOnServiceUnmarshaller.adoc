@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SingleSignOnServiceUnmarshaller.class
+
+ - link:SingleSignOnServiceUnmarshaller-asmified.java[Asmified]
+
+== References
+

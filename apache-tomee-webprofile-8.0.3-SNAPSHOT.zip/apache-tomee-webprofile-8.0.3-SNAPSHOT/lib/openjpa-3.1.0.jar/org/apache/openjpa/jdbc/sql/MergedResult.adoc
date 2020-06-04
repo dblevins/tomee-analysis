@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/MergedResult.class
+
+ - link:MergedResult-asmified.java[Asmified]
+
+== References
+

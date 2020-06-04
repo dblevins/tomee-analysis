@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMKeyInfoFactory.class
+
+ - link:DOMKeyInfoFactory-asmified.java[Asmified]
+
+== References
+

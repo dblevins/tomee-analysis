@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/Annotation$1LocationCollector.class
+
+ - link:Annotation$1LocationCollector-asmified.java[Asmified]
+
+== References
+

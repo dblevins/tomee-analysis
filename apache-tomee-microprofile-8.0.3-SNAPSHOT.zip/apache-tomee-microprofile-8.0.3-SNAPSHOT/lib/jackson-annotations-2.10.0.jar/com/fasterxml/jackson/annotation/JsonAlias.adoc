@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonAlias.class
+
+ - link:JsonAlias-asmified.java[Asmified]
+
+== References
+

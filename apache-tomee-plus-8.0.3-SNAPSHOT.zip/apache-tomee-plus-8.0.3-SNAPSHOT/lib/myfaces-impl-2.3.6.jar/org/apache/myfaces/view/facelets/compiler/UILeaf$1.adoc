@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/compiler/UILeaf$1.class
+
+ - link:UILeaf$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 7

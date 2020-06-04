@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/ClasspathJsr199.class
+
+ - link:ClasspathJsr199-asmified.java[Asmified]
+
+== References
+

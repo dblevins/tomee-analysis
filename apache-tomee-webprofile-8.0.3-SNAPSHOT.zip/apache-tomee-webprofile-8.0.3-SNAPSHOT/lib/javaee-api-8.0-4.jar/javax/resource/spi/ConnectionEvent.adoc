@@ -1,0 +1,8 @@
+= javax/resource/spi/ConnectionEvent.class
+
+ - link:ConnectionEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ManagedConnection - 3
+ - javax.resource.spi.ConnectionEvent - 1

@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/CustomELAdapter.class
+
+ - link:CustomELAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 3
+ - javax.el.ELResolver - 2

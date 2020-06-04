@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/impl/AbstractDynamicMetadataResolver$DefaultCacheKeyGenerator.class
+
+ - link:AbstractDynamicMetadataResolver$DefaultCacheKeyGenerator-asmified.java[Asmified]
+
+== References
+

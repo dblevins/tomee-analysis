@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/DualBuilder$CustomWrapper$ForBean.class
+
+ - link:DualBuilder$CustomWrapper$ForBean-asmified.java[Asmified]
+
+== References
+

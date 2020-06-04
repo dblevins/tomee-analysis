@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/ee/jta/JTAAnnotationAwareJobRunShellFactory.class
+
+ - link:JTAAnnotationAwareJobRunShellFactory-asmified.java[Asmified]
+
+== References
+

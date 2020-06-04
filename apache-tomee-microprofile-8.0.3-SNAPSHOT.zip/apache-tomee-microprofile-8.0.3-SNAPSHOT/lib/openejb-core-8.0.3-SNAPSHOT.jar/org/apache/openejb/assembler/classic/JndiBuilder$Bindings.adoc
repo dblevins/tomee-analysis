@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/JndiBuilder$Bindings.class
+
+ - link:JndiBuilder$Bindings-asmified.java[Asmified]
+
+== References
+

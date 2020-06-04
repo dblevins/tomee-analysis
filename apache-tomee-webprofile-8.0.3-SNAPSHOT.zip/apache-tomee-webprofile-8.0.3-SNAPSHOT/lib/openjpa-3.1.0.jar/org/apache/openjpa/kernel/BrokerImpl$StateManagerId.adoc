@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/BrokerImpl$StateManagerId.class
+
+ - link:BrokerImpl$StateManagerId-asmified.java[Asmified]
+
+== References
+

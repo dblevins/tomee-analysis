@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ReloadableEntityManagerFactory$JMXReloadableEntityManagerFactory$Info.class
+
+ - link:ReloadableEntityManagerFactory$JMXReloadableEntityManagerFactory$Info-asmified.java[Asmified]
+
+== References
+

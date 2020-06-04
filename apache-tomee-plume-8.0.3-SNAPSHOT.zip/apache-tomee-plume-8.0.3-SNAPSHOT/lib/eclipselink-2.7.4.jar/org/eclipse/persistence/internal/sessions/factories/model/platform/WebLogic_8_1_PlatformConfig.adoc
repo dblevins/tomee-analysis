@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/platform/WebLogic_8_1_PlatformConfig.class
+
+ - link:WebLogic_8_1_PlatformConfig-asmified.java[Asmified]
+
+== References
+

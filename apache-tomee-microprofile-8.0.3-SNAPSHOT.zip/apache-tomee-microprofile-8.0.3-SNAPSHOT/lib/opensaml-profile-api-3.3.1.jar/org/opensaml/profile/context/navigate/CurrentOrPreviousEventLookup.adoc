@@ -1,0 +1,7 @@
+= org/opensaml/profile/context/navigate/CurrentOrPreviousEventLookup.class
+
+ - link:CurrentOrPreviousEventLookup-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

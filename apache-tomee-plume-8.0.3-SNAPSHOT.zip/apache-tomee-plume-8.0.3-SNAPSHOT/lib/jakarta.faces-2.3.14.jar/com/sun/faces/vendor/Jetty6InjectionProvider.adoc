@@ -1,0 +1,6 @@
+= com/sun/faces/vendor/Jetty6InjectionProvider.class
+
+ - link:Jetty6InjectionProvider-asmified.java[Asmified]
+
+== References
+

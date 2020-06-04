@@ -1,0 +1,8 @@
+= org/apache/openejb/api/configuration/PersistenceUnitDefinition.class
+
+ - link:PersistenceUnitDefinition-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 2
+ - javax.persistence.ValidationMode - 2

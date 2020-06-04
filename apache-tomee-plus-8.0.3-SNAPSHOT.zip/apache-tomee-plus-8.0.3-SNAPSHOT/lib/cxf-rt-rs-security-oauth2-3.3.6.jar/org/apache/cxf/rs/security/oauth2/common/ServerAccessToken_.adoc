@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/oauth2/common/ServerAccessToken_.class
+
+ - link:ServerAccessToken_-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.SingularAttribute - 7
+ - javax.persistence.metamodel.ListAttribute - 2
+ - javax.persistence.metamodel.MapAttribute - 1
+ - javax.persistence.metamodel.StaticMetamodel - 1

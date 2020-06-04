@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/SpecificationPlugin.class
+
+ - link:SpecificationPlugin-asmified.java[Asmified]
+
+== References
+

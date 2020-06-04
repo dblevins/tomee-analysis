@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/PropertiesHandler$CacheTypeProp.class
+
+ - link:PropertiesHandler$CacheTypeProp-asmified.java[Asmified]
+
+== References
+

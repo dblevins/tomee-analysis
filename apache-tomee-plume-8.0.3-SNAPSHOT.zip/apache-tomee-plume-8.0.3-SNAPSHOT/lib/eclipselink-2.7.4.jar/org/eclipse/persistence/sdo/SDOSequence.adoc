@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOSequence.class
+
+ - link:SDOSequence-asmified.java[Asmified]
+
+== References
+

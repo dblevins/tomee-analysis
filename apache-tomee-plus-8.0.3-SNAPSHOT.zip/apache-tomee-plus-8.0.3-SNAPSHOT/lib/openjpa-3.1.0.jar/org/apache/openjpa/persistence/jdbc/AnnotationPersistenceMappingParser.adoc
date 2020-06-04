@@ -1,0 +1,44 @@
+= org/apache/openjpa/persistence/jdbc/AnnotationPersistenceMappingParser.class
+
+ - link:AnnotationPersistenceMappingParser-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.AssociationOverride - 79
+ - javax.persistence.JoinColumn - 77
+ - javax.persistence.Column - 46
+ - javax.persistence.SqlResultSetMapping - 34
+ - javax.persistence.AttributeOverride - 33
+ - javax.persistence.PrimaryKeyJoinColumn - 31
+ - javax.persistence.MapKeyColumn - 29
+ - javax.persistence.JoinTable - 27
+ - javax.persistence.MapKeyJoinColumn - 25
+ - javax.persistence.SecondaryTable - 22
+ - javax.persistence.TableGenerator - 21
+ - javax.persistence.UniqueConstraint - 21
+ - javax.persistence.OrderColumn - 16
+ - javax.persistence.EntityResult - 12
+ - javax.persistence.DiscriminatorColumn - 12
+ - javax.persistence.Index - 11
+ - javax.persistence.Table - 8
+ - javax.persistence.CollectionTable - 8
+ - javax.persistence.Enumerated - 7
+ - javax.persistence.MapKeyEnumerated - 6
+ - javax.persistence.AttributeOverrides - 5
+ - javax.persistence.FieldResult - 5
+ - javax.persistence.AssociationOverrides - 5
+ - javax.persistence.MapKeyTemporal - 5
+ - javax.persistence.Inheritance - 5
+ - javax.persistence.Temporal - 5
+ - javax.persistence.PrimaryKeyJoinColumns - 5
+ - javax.persistence.EnumType - 4
+ - javax.persistence.ColumnResult - 4
+ - javax.persistence.TemporalType - 4
+ - javax.persistence.MapKeyJoinColumns - 3
+ - javax.persistence.JoinColumns - 3
+ - javax.persistence.SqlResultSetMappings - 3
+ - javax.persistence.SecondaryTables - 3
+ - javax.persistence.DiscriminatorValue - 3
+ - javax.persistence.DiscriminatorType - 2
+ - javax.persistence.ConstructorResult - 2
+ - javax.persistence.InheritanceType - 2

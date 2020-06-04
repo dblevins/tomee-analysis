@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOClassGenerator.class
+
+ - link:SDOClassGenerator-asmified.java[Asmified]
+
+== References
+

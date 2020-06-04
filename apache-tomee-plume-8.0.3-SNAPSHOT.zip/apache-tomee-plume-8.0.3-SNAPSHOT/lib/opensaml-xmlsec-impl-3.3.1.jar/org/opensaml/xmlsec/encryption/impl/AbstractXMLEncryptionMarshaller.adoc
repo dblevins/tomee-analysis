@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/encryption/impl/AbstractXMLEncryptionMarshaller.class
+
+ - link:AbstractXMLEncryptionMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

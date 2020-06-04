@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOClassGeneratorListener.class
+
+ - link:SDOClassGeneratorListener-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/ExpressionOperatorConverter.class
+
+ - link:ExpressionOperatorConverter-asmified.java[Asmified]
+
+== References
+

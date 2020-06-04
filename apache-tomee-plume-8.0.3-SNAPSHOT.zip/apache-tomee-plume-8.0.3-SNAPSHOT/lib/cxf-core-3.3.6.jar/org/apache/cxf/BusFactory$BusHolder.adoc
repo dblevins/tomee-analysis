@@ -1,0 +1,6 @@
+= org/apache/cxf/BusFactory$BusHolder.class
+
+ - link:BusFactory$BusHolder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/result/ResultProperties.class
+
+ - link:ResultProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/EmptyCollectionComparisonNode.class
+
+ - link:EmptyCollectionComparisonNode-asmified.java[Asmified]
+
+== References
+

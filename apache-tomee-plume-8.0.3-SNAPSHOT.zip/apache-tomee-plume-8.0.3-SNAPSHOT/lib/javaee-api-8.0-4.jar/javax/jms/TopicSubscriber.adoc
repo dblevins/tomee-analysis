@@ -1,0 +1,9 @@
+= javax/jms/TopicSubscriber.class
+
+ - link:TopicSubscriber-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.MessageConsumer - 1
+ - javax.jms.Topic - 1

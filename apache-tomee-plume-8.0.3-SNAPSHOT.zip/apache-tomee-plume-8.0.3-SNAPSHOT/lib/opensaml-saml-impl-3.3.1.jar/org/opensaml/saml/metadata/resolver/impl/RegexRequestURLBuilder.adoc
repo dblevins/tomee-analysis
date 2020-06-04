@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/impl/RegexRequestURLBuilder.class
+
+ - link:RegexRequestURLBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 2

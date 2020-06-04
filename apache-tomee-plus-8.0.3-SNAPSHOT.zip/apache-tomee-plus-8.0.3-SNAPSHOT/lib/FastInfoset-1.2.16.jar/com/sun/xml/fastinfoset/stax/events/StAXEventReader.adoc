@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/StAXEventReader.class
+
+ - link:StAXEventReader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/security/x509/PKIXValidationOptions.class
+
+ - link:PKIXValidationOptions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

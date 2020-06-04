@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/EjbResolver.class
+
+ - link:EjbResolver-asmified.java[Asmified]
+
+== References
+

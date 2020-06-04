@@ -1,0 +1,9 @@
+= org/apache/catalina/core/ApplicationSessionCookieConfig.class
+
+ - link:ApplicationSessionCookieConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 11
+ - javax.servlet.SessionCookieConfig - 9
+ - javax.servlet.ServletContext - 2

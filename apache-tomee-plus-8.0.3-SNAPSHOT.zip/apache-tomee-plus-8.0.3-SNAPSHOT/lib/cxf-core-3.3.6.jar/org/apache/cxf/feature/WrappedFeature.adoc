@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/WrappedFeature.class
+
+ - link:WrappedFeature-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/io/Stax2BlockResult.class
+
+ - link:Stax2BlockResult-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/httpclient/HttpClientSupport$1.class
+
+ - link:HttpClientSupport$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/HookedJavaFileObject$ForwardingWriter.class
+
+ - link:HookedJavaFileObject$ForwardingWriter-asmified.java[Asmified]
+
+== References
+

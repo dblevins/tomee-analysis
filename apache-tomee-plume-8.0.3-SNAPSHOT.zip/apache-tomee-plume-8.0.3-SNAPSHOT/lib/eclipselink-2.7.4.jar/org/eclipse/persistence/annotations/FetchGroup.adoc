@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/FetchGroup.class
+
+ - link:FetchGroup-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/MergedReader.class
+
+ - link:MergedReader-asmified.java[Asmified]
+
+== References
+

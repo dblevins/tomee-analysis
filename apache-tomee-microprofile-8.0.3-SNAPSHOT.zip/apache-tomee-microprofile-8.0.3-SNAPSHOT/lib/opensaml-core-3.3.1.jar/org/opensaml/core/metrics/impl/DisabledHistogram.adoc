@@ -1,0 +1,6 @@
+= org/opensaml/core/metrics/impl/DisabledHistogram.class
+
+ - link:DisabledHistogram-asmified.java[Asmified]
+
+== References
+

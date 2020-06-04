@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/groups/GroupStrategy$Composite.class
+
+ - link:GroupStrategy$Composite-asmified.java[Asmified]
+
+== References
+

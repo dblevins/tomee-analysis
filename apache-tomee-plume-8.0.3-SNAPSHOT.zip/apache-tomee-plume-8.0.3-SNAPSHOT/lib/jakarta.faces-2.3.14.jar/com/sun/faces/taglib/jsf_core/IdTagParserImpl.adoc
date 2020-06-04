@@ -1,0 +1,6 @@
+= com/sun/faces/taglib/jsf_core/IdTagParserImpl.class
+
+ - link:IdTagParserImpl-asmified.java[Asmified]
+
+== References
+

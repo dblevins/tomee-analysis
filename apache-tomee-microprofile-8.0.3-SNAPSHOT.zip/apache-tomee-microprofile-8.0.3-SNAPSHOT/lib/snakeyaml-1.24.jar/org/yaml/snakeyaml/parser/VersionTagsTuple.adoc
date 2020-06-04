@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/parser/VersionTagsTuple.class
+
+ - link:VersionTagsTuple-asmified.java[Asmified]
+
+== References
+

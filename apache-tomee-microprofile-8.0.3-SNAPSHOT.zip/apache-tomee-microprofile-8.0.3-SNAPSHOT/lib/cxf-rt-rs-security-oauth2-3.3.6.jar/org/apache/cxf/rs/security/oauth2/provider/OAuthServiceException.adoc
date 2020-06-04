@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/provider/OAuthServiceException.class
+
+ - link:OAuthServiceException-asmified.java[Asmified]
+
+== References
+

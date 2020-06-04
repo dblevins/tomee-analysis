@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/reflection/Generics.class
+
+ - link:Generics-asmified.java[Asmified]
+
+== References
+

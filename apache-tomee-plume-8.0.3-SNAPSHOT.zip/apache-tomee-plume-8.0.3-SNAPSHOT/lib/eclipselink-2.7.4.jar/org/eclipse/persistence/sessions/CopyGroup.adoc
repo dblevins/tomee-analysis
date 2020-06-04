@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/CopyGroup.class
+
+ - link:CopyGroup-asmified.java[Asmified]
+
+== References
+

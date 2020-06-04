@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/ResourceContentTypeMarshaller.class
+
+ - link:ResourceContentTypeMarshaller-asmified.java[Asmified]
+
+== References
+

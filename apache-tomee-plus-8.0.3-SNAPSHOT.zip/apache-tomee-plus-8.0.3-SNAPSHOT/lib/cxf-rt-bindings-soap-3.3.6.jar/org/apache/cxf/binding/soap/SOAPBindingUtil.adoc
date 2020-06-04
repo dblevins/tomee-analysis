@@ -1,0 +1,8 @@
+= org/apache/cxf/binding/soap/SOAPBindingUtil.class
+
+ - link:SOAPBindingUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.soap.SOAPBinding$Style - 3
+ - javax.jws.soap.SOAPBinding$Use - 3

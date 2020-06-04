@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/JavaField.class
+
+ - link:JavaField-asmified.java[Asmified]
+
+== References
+

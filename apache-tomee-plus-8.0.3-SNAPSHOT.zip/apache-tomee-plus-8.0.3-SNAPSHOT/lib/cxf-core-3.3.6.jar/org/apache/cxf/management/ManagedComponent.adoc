@@ -1,0 +1,6 @@
+= org/apache/cxf/management/ManagedComponent.class
+
+ - link:ManagedComponent-asmified.java[Asmified]
+
+== References
+

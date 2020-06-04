@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/TagFile$JAXB.class
+
+ - link:TagFile$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 23

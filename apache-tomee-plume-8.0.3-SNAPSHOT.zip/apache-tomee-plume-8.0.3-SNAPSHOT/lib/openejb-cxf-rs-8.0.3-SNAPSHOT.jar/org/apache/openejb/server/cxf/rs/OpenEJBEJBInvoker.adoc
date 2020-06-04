@@ -1,0 +1,7 @@
+= org/apache/openejb/server/cxf/rs/OpenEJBEJBInvoker.class
+
+ - link:OpenEJBEJBInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 4

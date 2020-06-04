@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/formatter/AsyncConsoleHandler$SingleLineFormatter.class
+
+ - link:AsyncConsoleHandler$SingleLineFormatter-asmified.java[Asmified]
+
+== References
+

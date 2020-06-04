@@ -1,0 +1,18 @@
+= javax/faces/component/html/_HtmlSelectOneListbox.class
+
+ - link:_HtmlSelectOneListbox-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UISelectOne - 2
+ - javax.faces.component.html._UniversalProperties - 1
+ - javax.faces.component.html._DisabledClassEnabledClassProperties - 1
+ - javax.faces.component.html._FocusBlurProperties - 1
+ - javax.faces.component.html._RoleProperty - 1
+ - javax.faces.component.html._EventProperties - 1
+ - javax.faces.component.html._LabelProperty - 1
+ - javax.faces.component.html._AccesskeyProperty - 1
+ - javax.faces.component.html._StyleProperties - 1
+ - javax.faces.component.html._ChangeProperty - 1
+ - javax.faces.component.html._TabindexProperty - 1
+ - javax.faces.component.html._DisabledReadonlyProperties - 1

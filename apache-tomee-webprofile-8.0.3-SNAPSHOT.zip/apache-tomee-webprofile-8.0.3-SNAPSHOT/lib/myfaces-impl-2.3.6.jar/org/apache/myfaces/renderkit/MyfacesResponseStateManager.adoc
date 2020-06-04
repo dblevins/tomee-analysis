@@ -1,0 +1,8 @@
+= org/apache/myfaces/renderkit/MyfacesResponseStateManager.class
+
+ - link:MyfacesResponseStateManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.render.ResponseStateManager - 2
+ - javax.faces.context.FacesContext - 2

@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/facelets/FaceletBehaviorTag.class
+
+ - link:FaceletBehaviorTag-asmified.java[Asmified]
+
+== References
+

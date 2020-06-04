@@ -1,0 +1,6 @@
+= org/codehaus/stax2/io/Stax2Source.class
+
+ - link:Stax2Source-asmified.java[Asmified]
+
+== References
+

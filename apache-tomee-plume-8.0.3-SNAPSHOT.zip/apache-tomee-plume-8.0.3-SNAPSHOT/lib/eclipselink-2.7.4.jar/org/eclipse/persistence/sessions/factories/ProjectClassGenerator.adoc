@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/ProjectClassGenerator.class
+
+ - link:ProjectClassGenerator-asmified.java[Asmified]
+
+== References
+

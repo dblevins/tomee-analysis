@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMSignatureProperties.class
+
+ - link:DOMSignatureProperties-asmified.java[Asmified]
+
+== References
+

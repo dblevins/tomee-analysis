@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/util/DebugUtils.class
+
+ - link:DebugUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.component.UIViewRoot - 3

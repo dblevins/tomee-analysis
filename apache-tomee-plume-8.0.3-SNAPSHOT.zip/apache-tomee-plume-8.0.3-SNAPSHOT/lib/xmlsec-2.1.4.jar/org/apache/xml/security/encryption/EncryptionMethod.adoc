@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/EncryptionMethod.class
+
+ - link:EncryptionMethod-asmified.java[Asmified]
+
+== References
+

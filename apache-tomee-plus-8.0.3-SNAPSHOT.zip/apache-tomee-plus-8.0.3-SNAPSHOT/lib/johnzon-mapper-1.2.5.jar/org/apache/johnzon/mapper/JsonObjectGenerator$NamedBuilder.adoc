@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/JsonObjectGenerator$NamedBuilder.class
+
+ - link:JsonObjectGenerator$NamedBuilder-asmified.java[Asmified]
+
+== References
+

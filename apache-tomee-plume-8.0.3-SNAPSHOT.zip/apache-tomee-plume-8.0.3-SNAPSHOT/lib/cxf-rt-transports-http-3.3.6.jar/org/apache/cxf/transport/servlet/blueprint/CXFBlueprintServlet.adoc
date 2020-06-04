@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/servlet/blueprint/CXFBlueprintServlet.class
+
+ - link:CXFBlueprintServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 2
+ - javax.servlet.ServletContext - 2

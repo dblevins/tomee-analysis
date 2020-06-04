@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreTX.class
+
+ - link:JobStoreTX-asmified.java[Asmified]
+
+== References
+

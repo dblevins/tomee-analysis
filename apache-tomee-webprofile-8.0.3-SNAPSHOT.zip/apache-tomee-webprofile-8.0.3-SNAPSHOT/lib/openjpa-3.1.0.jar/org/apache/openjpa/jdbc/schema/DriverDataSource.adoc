@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/DriverDataSource.class
+
+ - link:DriverDataSource-asmified.java[Asmified]
+
+== References
+

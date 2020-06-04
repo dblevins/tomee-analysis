@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaKey.class
+
+ - link:XmlSchemaKey-asmified.java[Asmified]
+
+== References
+

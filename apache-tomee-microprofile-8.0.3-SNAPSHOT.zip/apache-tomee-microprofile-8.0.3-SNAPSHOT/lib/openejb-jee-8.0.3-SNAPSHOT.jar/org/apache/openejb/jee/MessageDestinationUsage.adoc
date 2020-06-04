@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/MessageDestinationUsage.class
+
+ - link:MessageDestinationUsage-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 3

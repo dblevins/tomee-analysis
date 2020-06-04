@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/JDBCTypeWrapper.class
+
+ - link:JDBCTypeWrapper-asmified.java[Asmified]
+
+== References
+

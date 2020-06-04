@@ -1,0 +1,17 @@
+= org/apache/myfaces/view/facelets/tag/composite/InterfaceHandler.class
+
+ - link:InterfaceHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 47
+ - javax.faces.view.facelets.FaceletContext - 9
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.view.facelets.TagConfig - 5
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.application.ProjectStage - 4
+ - javax.faces.view.facelets.FaceletHandler - 4
+ - javax.faces.view.Location - 2
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.el.ValueExpression - 1

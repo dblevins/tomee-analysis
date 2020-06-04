@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/support/SignatureValidationParametersCriterion.class
+
+ - link:SignatureValidationParametersCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

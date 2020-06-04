@@ -1,0 +1,9 @@
+= org/apache/webbeans/container/DecoratorInjectionTargetFactory.class
+
+ - link:DecoratorInjectionTargetFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.Bean - 3
+ - javax.enterprise.inject.spi.InjectionTarget - 2

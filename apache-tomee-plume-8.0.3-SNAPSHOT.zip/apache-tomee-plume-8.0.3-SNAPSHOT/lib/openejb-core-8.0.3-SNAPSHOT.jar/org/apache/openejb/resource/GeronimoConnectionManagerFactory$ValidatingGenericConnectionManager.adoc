@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager.class
+
+ - link:GeronimoConnectionManagerFactory$ValidatingGenericConnectionManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ManagedConnectionFactory - 6

@@ -1,0 +1,7 @@
+= org/apache/tomcat/util/descriptor/web/TaglibDescriptorImpl.class
+
+ - link:TaglibDescriptorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.descriptor.TaglibDescriptor - 1

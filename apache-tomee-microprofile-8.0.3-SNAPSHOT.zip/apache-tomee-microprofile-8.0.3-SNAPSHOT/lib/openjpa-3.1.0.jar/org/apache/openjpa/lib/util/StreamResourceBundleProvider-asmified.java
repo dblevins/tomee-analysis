@@ -1,0 +1,144 @@
+package asm.org.apache.openjpa.lib.util;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class StreamResourceBundleProviderDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/lib/util/StreamResourceBundleProvider", null, "java/lang/Object", new String[] { "org/apache/openjpa/lib/util/ResourceBundleProvider" });
+
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "findResource", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/ClassLoader;)Ljava/util/ResourceBundle;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label0, label4, "java/lang/Exception");
+Label label5 = new Label();
+Label label6 = new Label();
+Label label7 = new Label();
+methodVisitor.visitTryCatchBlock(label5, label6, label7, "java/io/IOException");
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label0, label8, null);
+methodVisitor.visitTryCatchBlock(label4, label5, label8, null);
+Label label9 = new Label();
+Label label10 = new Label();
+Label label11 = new Label();
+methodVisitor.visitTryCatchBlock(label9, label10, label11, "java/io/IOException");
+methodVisitor.visitTryCatchBlock(label8, label9, label8, null);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 46);
+methodVisitor.visitIntInsn(BIPUSH, 47);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "replace", "(CC)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(".properties");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label12);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/lib/util/J2DoPrivHelper", "getContextClassLoaderAction", "()Ljava/security/PrivilegedAction;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/security/AccessController", "doPrivileged", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/ClassLoader");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label13);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitTypeInsn(NEW, "java/util/PropertyResourceBundle");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/PropertyResourceBundle", "<init>", "(Ljava/io/InputStream;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/InputStream", "close", "()V", false);
+methodVisitor.visitLabel(label1);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label14);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openjpa/lib/util/StreamResourceBundleProvider", "java/lang/String", "java/util/Locale", "java/lang/ClassLoader", "java/lang/String", "java/io/InputStream", "java/util/ResourceBundle"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openjpa/lib/util/StreamResourceBundleProvider", "java/lang/String", "java/util/Locale", "java/lang/ClassLoader", "java/lang/String", "java/io/InputStream"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/InputStream", "close", "()V", false);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitJumpInsn(GOTO, label13);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitJumpInsn(GOTO, label13);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/InputStream", "close", "()V", false);
+methodVisitor.visitLabel(label10);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label15);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/openjpa/lib/util/StreamResourceBundleProvider", "java/lang/String", "java/util/Locale", "java/lang/ClassLoader", "java/lang/String", "java/io/InputStream", Opcodes.TOP, Opcodes.TOP, "java/lang/Throwable"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

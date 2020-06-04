@@ -1,0 +1,6 @@
+= javax/xml/transform/stream/StreamResult.class
+
+ - link:StreamResult-asmified.java[Asmified]
+
+== References
+

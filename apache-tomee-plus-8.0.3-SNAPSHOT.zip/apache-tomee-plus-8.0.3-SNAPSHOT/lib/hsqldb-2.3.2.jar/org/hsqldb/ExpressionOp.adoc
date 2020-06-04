@@ -1,0 +1,6 @@
+= org/hsqldb/ExpressionOp.class
+
+ - link:ExpressionOp-asmified.java[Asmified]
+
+== References
+

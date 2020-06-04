@@ -1,0 +1,7 @@
+= javax/batch/operations/NoSuchJobInstanceException.class
+
+ - link:NoSuchJobInstanceException-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.operations.BatchRuntimeException - 5

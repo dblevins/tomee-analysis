@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/ObjectConverter$Writer.class
+
+ - link:ObjectConverter$Writer-asmified.java[Asmified]
+
+== References
+

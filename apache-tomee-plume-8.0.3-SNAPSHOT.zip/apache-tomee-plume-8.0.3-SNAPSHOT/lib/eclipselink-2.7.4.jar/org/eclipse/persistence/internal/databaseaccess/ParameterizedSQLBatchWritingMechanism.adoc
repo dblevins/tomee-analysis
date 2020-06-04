@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/databaseaccess/ParameterizedSQLBatchWritingMechanism.class
+
+ - link:ParameterizedSQLBatchWritingMechanism-asmified.java[Asmified]
+
+== References
+

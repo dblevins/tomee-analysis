@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/NameNode.class
+
+ - link:NameNode-asmified.java[Asmified]
+
+== References
+

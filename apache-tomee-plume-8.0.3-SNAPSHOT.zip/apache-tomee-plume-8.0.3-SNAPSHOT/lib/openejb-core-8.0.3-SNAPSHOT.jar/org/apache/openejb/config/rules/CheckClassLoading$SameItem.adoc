@@ -1,0 +1,6 @@
+= org/apache/openejb/config/rules/CheckClassLoading$SameItem.class
+
+ - link:CheckClassLoading$SameItem-asmified.java[Asmified]
+
+== References
+

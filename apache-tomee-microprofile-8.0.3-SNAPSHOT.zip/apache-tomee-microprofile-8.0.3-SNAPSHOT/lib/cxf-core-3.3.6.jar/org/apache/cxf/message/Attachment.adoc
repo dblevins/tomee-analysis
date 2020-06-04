@@ -1,0 +1,7 @@
+= org/apache/cxf/message/Attachment.class
+
+ - link:Attachment-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 1

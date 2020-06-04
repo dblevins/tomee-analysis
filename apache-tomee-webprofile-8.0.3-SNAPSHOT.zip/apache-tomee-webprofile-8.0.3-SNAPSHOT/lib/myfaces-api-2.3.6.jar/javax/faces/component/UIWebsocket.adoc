@@ -1,0 +1,15 @@
+= javax/faces/component/UIWebsocket.class
+
+ - link:UIWebsocket-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 28
+ - javax.faces.component.UIWebsocket$PropertyKeys - 20
+ - javax.faces.component.UIWebsocket - 17
+ - javax.el.ValueExpression - 3
+ - javax.faces.component.UIComponentBase - 3
+ - javax.faces.component.UIWebsocket$1 - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ELContext - 2
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

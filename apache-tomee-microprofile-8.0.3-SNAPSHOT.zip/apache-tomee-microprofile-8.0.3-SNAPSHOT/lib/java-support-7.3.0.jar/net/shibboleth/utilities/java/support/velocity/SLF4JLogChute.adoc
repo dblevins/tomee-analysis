@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/velocity/SLF4JLogChute.class
+
+ - link:SLF4JLogChute-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/tree/LdcInsnNode.class
+
+ - link:LdcInsnNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/JDBCStoreQuery.class
+
+ - link:JDBCStoreQuery-asmified.java[Asmified]
+
+== References
+

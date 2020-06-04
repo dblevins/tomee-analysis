@@ -1,0 +1,9 @@
+= com/sun/faces/renderkit/html_basic/HiddenRenderer.class
+
+ - link:HiddenRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 8
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.component.UIComponent - 6

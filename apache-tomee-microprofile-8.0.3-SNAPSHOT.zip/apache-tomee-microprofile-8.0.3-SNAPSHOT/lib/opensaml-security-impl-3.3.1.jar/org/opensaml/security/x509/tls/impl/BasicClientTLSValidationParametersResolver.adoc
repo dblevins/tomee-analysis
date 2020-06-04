@@ -1,0 +1,8 @@
+= org/opensaml/security/x509/tls/impl/BasicClientTLSValidationParametersResolver.class
+
+ - link:BasicClientTLSValidationParametersResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6
+ - javax.annotation.Nullable - 2

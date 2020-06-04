@@ -1,0 +1,14 @@
+= org/apache/safeguard/impl/fallback/FallbackInterceptor$Cache.class
+
+ - link:FallbackInterceptor$Cache-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 29
+ - javax.enterprise.inject.spi.BeanManager - 11
+ - javax.enterprise.context.spi.CreationalContext - 10
+ - javax.enterprise.inject.spi.Bean - 8
+ - javax.inject.Inject - 6
+ - javax.annotation.PreDestroy - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.enterprise.context.spi.Contextual - 1

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/resolver/CollectionURIResolver.class
+
+ - link:CollectionURIResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/ArrayERProperty.class
+
+ - link:ArrayERProperty-asmified.java[Asmified]
+
+== References
+

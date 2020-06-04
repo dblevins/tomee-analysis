@@ -1,0 +1,15 @@
+= com/sun/faces/facelets/tag/ui/CompositionHandler.class
+
+ - link:CompositionHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.view.facelets.TagAttribute - 13
+ - javax.el.VariableMapper - 13
+ - javax.faces.view.facelets.FaceletContext - 9
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.view.facelets.Tag - 7
+ - javax.faces.view.facelets.TagAttributeException - 6
+ - javax.faces.view.facelets.TagConfig - 5
+ - javax.faces.view.facelets.FaceletHandler - 4

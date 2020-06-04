@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/ResponseImpl.class
+
+ - link:ResponseImpl-asmified.java[Asmified]
+
+== References
+

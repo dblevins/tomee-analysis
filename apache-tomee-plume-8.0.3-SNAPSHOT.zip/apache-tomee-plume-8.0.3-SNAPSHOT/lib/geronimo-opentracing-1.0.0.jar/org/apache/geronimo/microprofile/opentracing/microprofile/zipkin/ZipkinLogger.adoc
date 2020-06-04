@@ -1,0 +1,13 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/zipkin/ZipkinLogger.class
+
+ - link:ZipkinLogger-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.Jsonb - 7
+ - javax.inject.Inject - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.json.bind.JsonbBuilder - 1
+ - javax.enterprise.event.Observes - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.enterprise.context.ApplicationScoped - 1

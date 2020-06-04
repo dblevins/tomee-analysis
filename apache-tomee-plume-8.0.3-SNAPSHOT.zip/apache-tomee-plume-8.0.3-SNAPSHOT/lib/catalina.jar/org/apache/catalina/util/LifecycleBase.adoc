@@ -1,0 +1,6 @@
+= org/apache/catalina/util/LifecycleBase.class
+
+ - link:LifecycleBase-asmified.java[Asmified]
+
+== References
+

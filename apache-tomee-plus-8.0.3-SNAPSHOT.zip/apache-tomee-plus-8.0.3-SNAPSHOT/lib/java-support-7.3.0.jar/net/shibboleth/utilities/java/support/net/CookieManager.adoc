@@ -1,0 +1,11 @@
+= net/shibboleth/utilities/java/support/net/CookieManager.class
+
+ - link:CookieManager-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 29
+ - javax.servlet.http.HttpServletRequest - 11
+ - javax.servlet.http.HttpServletResponse - 9
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 8

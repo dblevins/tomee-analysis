@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/StaxInEndingInterceptor.class
+
+ - link:StaxInEndingInterceptor-asmified.java[Asmified]
+
+== References
+

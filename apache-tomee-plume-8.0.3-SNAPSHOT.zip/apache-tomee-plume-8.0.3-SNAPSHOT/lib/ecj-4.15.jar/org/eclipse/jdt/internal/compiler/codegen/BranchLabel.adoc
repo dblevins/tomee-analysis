@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/BranchLabel.class
+
+ - link:BranchLabel-asmified.java[Asmified]
+
+== References
+

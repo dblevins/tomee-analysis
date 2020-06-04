@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/GetObjectId.class
+
+ - link:GetObjectId-asmified.java[Asmified]
+
+== References
+

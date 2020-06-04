@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/ClassReader.class
+
+ - link:ClassReader-asmified.java[Asmified]
+
+== References
+

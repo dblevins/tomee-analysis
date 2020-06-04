@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/NamespaceResolver.class
+
+ - link:NamespaceResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/mime/MIMEContentImpl.class
+
+ - link:MIMEContentImpl-asmified.java[Asmified]
+
+== References
+

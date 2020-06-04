@@ -1,0 +1,8 @@
+= org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$8.class
+
+ - link:Yaml$8-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbProperty - 6
+ - javax.json.bind.annotation.JsonbTransient - 1

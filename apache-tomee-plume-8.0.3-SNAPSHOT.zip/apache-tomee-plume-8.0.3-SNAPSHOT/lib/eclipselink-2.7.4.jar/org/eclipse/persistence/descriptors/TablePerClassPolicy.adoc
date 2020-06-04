@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/TablePerClassPolicy.class
+
+ - link:TablePerClassPolicy-asmified.java[Asmified]
+
+== References
+

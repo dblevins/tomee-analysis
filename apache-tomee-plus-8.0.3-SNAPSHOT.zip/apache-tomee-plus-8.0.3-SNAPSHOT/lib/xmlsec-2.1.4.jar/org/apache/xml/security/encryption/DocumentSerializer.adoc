@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/DocumentSerializer.class
+
+ - link:DocumentSerializer-asmified.java[Asmified]
+
+== References
+

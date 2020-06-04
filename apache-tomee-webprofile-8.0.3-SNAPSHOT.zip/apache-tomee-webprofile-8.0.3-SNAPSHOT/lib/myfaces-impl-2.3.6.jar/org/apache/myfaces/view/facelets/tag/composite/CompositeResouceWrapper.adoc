@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeResouceWrapper.class
+
+ - link:CompositeResouceWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Resource - 26
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.application.Application - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.FacesWrapper - 1

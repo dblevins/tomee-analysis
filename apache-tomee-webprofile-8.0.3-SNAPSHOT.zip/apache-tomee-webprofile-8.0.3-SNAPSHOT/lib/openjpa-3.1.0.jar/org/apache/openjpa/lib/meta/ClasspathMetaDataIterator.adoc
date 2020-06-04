@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/ClasspathMetaDataIterator.class
+
+ - link:ClasspathMetaDataIterator-asmified.java[Asmified]
+
+== References
+

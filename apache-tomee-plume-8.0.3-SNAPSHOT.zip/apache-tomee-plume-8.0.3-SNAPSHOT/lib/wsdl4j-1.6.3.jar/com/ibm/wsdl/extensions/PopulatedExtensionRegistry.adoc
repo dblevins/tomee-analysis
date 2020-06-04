@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/PopulatedExtensionRegistry.class
+
+ - link:PopulatedExtensionRegistry-asmified.java[Asmified]
+
+== References
+

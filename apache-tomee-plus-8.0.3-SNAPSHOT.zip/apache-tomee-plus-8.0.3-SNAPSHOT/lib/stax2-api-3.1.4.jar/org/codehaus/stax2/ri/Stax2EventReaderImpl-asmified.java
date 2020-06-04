@@ -1,0 +1,783 @@
+package asm.org.codehaus.stax2.ri;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class Stax2EventReaderImplDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/codehaus/stax2/ri/Stax2EventReaderImpl", null, "java/lang/Object", new String[] { "org/codehaus/stax2/XMLEventReader2", "javax/xml/stream/XMLStreamConstants" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "STATE_INITIAL", "I", null, new Integer(1));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "STATE_END_OF_INPUT", "I", null, new Integer(2));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "STATE_CONTENT", "I", null, new Integer(3));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "ERR_GETELEMTEXT_NOT_START_ELEM", "I", null, new Integer(1));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "ERR_GETELEMTEXT_NON_TEXT_EVENT", "I", null, new Integer(2));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "ERR_NEXTTAG_NON_WS_TEXT", "I", null, new Integer(3));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "ERR_NEXTTAG_WRONG_TYPE", "I", null, new Integer(4));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "mAllocator", "Ljavax/xml/stream/util/XMLEventAllocator;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL, "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "mState", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "mPrePeekEvent", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Ljavax/xml/stream/util/XMLEventAllocator;Lorg/codehaus/stax2/XMLStreamReader2;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPrePeekEvent", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mAllocator", "Ljavax/xml/stream/util/XMLEventAllocator;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "isPropertySupported", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getErrorDesc", "(II)Ljava/lang/String;", null, null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "()V", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "close", "()V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementText", "()Ljava/lang/String;", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "getElementText", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPrePeekEvent", "I");
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPrePeekEvent", "I");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "findErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+Label label2 = new Label();
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/XMLEvent", "isEndElement", "()Z", true);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/XMLEvent", "getEventType", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_5);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label5);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(ICONST_3);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label6);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/XMLEvent", "isCharacters", "()Z", true);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "findErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/XMLEvent", "asCharacters", "()Ljavax/xml/stream/events/Characters;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/Characters", "getData", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label8);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label9);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuffer");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuffer", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(Ljava/lang/String;)Ljava/lang/StringBuffer;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "nextEvent", "()Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label10);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label11);
+methodVisitor.visitLdcInsn("");
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label12);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNext", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nextEvent", "()Ljavax/xml/stream/events/XMLEvent;", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "throwEndOfInput", "()V", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "createStartDocumentEvent", "()Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/XMLEvent", "isEndDocument", "()Z", true);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "next", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "createNextEvent", "(ZI)Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "next", "()Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/xml/stream/XMLStreamException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "nextEvent", "()Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "throwUnchecked", "(Ljavax/xml/stream/XMLStreamException;)V", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nextTag", "()Ljavax/xml/stream/events/XMLEvent;", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/XMLEvent", "getEventType", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label1 = new Label();
+Label label2 = new Label();
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+Label label6 = new Label();
+Label label7 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 12, label7, new Label[] { label1, label1, label2, label3, label2, label4, label5, label6, label7, label7, label7, label3 });
+methodVisitor.visitLabel(label6);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/stream/events/Characters");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/events/Characters", "isWhiteSpace", "()Z", true);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label9);
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "findErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "findErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label8);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "next", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label11 = new Label();
+Label label12 = new Label();
+Label label13 = new Label();
+Label label14 = new Label();
+Label label15 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 12, label14, new Label[] { label11, label11, label12, label13, label12, label12, label14, label15, label14, label14, label14, label13 });
+methodVisitor.visitLabel(label15);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "isWhiteSpace", "()Z", true);
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label16);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "findErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;)V", false);
+Label label17 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label17);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "createNextEvent", "(ZI)Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "findErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label17);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "peek", "()Ljavax/xml/stream/events/XMLEvent;", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPrePeekEvent", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "createStartDocumentEvent", "()Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "getEventType", "()I", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPrePeekEvent", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "next", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "createNextEvent", "(ZI)Ljavax/xml/stream/events/XMLEvent;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mPeekedEvent", "Ljavax/xml/stream/events/XMLEvent;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/UnsupportedOperationException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Can not remove events from XMLEventReader.");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/UnsupportedOperationException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasNextEvent", "()Z", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitInsn(ICONST_2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createNextEvent", "(ZI)Ljavax/xml/stream/events/XMLEvent;", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/RuntimeException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mAllocator", "Ljavax/xml/stream/util/XMLEventAllocator;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/util/XMLEventAllocator", "allocate", "(Ljavax/xml/stream/XMLStreamReader;)Ljavax/xml/stream/events/XMLEvent;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mState", "I");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/RuntimeException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/xml/stream/XMLStreamException");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/stream/XMLStreamException");
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createStartDocumentEvent", "()Ljavax/xml/stream/events/XMLEvent;", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mAllocator", "Ljavax/xml/stream/util/XMLEventAllocator;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/xml/stream/util/XMLEventAllocator", "allocate", "(Ljavax/xml/stream/XMLStreamReader;)Ljavax/xml/stream/events/XMLEvent;", true);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "throwEndOfInput", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/NoSuchElementException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/NoSuchElementException", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "throwUnchecked", "(Ljavax/xml/stream/XMLStreamException;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/stream/XMLStreamException", "getNestedException", "()Ljava/lang/Throwable;", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/stream/XMLStreamException", "getNestedException", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/RuntimeException");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/RuntimeException");
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "java/lang/Error");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Error");
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitTypeInsn(NEW, "java/lang/RuntimeException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("[was ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/Object;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("] ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/RuntimeException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "reportProblem", "(Ljava/lang/String;)V", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/codehaus/stax2/XMLStreamReader2", "getLocation", "()Ljavax/xml/stream/Location;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "reportProblem", "(Ljava/lang/String;Ljavax/xml/stream/Location;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "reportProblem", "(Ljava/lang/String;Ljavax/xml/stream/Location;)V", null, new String[] { "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "javax/xml/stream/XMLStreamException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/stream/XMLStreamException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "javax/xml/stream/XMLStreamException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/stream/XMLStreamException", "<init>", "(Ljava/lang/String;Ljavax/xml/stream/Location;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getStreamReader", "()Ljavax/xml/stream/XMLStreamReader;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "mReader", "Lorg/codehaus/stax2/XMLStreamReader2;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_FINAL, "findErrorDesc", "(II)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/codehaus/stax2/ri/Stax2EventReaderImpl", "getErrorDesc", "(II)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label1 = new Label();
+Label label2 = new Label();
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 4, label5, new Label[] { label1, label2, label3, label4 });
+methodVisitor.visitLabel(label1);
+methodVisitor.visitLdcInsn("Current state not START_ELEMENT when calling getElementText()");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitLdcInsn("Expected a text token");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitLdcInsn("Only all-whitespace CHARACTERS/CDATA (or SPACE) allowed for nextTag()");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitLdcInsn("Should only encounter START_ELEMENT/END_ELEMENT, SPACE, or all-white-space CHARACTERS");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Internal error (unrecognized error type: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(")");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

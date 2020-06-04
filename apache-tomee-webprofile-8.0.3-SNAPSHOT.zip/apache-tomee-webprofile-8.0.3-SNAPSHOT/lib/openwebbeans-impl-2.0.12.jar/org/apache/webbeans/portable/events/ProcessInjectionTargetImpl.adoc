@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/events/ProcessInjectionTargetImpl.class
+
+ - link:ProcessInjectionTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionTarget - 7
+ - javax.enterprise.inject.spi.AnnotatedType - 5
+ - javax.enterprise.inject.spi.ProcessInjectionTarget - 1

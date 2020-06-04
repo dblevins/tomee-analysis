@@ -1,0 +1,20 @@
+= org/apache/cxf/jaxrs/utils/AnnotationUtils.class
+
+ - link:AnnotationUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.HttpMethod - 5
+ - javax.ws.rs.FormParam - 4
+ - javax.ws.rs.PathParam - 4
+ - javax.ws.rs.QueryParam - 4
+ - javax.ws.rs.DefaultValue - 4
+ - javax.ws.rs.MatrixParam - 4
+ - javax.ws.rs.HeaderParam - 4
+ - javax.ws.rs.CookieParam - 4
+ - javax.ws.rs.NameBinding - 2
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.Path - 1
+ - javax.ws.rs.BeanParam - 1
+ - javax.ws.rs.Consumes - 1

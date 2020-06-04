@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/XMLAnyObjectMapping.class
+
+ - link:XMLAnyObjectMapping-asmified.java[Asmified]
+
+== References
+

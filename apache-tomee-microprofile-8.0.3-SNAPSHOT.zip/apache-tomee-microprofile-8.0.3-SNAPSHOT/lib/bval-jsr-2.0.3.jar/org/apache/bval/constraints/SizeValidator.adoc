@@ -1,0 +1,10 @@
+= org/apache/bval/constraints/SizeValidator.class
+
+ - link:SizeValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Size - 6
+ - javax.validation.ValidationException - 6
+ - javax.validation.ConstraintValidator - 1
+ - javax.validation.ConstraintValidatorContext - 1

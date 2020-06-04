@@ -1,0 +1,12 @@
+= javax/faces/application/StateManagerWrapper.class
+
+ - link:StateManagerWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.StateManager - 32
+ - javax.faces.context.FacesContext - 22
+ - javax.faces.application.StateManagerWrapper - 12
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.application.StateManager$SerializedView - 4
+ - javax.faces.FacesWrapper - 1

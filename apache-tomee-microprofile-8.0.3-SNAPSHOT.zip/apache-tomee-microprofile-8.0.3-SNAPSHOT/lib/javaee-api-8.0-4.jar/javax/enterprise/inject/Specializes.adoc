@@ -1,0 +1,6 @@
+= javax/enterprise/inject/Specializes.class
+
+ - link:Specializes-asmified.java[Asmified]
+
+== References
+

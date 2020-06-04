@@ -1,0 +1,6 @@
+= org/apache/naming/factory/ResourceEnvFactory.class
+
+ - link:ResourceEnvFactory-asmified.java[Asmified]
+
+== References
+

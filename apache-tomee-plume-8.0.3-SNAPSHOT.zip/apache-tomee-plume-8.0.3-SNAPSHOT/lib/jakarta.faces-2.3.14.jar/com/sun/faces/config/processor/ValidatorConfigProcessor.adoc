@@ -1,0 +1,11 @@
+= com/sun/faces/config/processor/ValidatorConfigProcessor.class
+
+ - link:ValidatorConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 12
+ - javax.faces.context.FacesContext - 8
+ - javax.faces.validator.FacesValidator - 1
+ - javax.servlet.ServletContext - 1
+ - javax.faces.validator.Validator - 1

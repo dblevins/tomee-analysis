@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/PersistenceUnitInfoImpl$ClassResolverImpl.class
+
+ - link:PersistenceUnitInfoImpl$ClassResolverImpl-asmified.java[Asmified]
+
+== References
+

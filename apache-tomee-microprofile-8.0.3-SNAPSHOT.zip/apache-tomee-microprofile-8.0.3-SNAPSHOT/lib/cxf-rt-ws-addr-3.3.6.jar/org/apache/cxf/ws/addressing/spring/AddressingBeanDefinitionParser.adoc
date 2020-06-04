@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/spring/AddressingBeanDefinitionParser.class
+
+ - link:AddressingBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

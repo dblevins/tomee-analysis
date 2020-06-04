@@ -1,0 +1,8 @@
+= org/apache/webbeans/configurator/AnnotatedParameterConfiguratorImpl.class
+
+ - link:AnnotatedParameterConfiguratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedParameter - 11
+ - javax.enterprise.inject.spi.configurator.AnnotatedParameterConfigurator - 4

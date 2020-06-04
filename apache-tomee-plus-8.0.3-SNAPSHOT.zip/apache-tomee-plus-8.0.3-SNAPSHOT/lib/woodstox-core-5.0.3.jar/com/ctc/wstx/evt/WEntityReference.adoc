@@ -1,0 +1,6 @@
+= com/ctc/wstx/evt/WEntityReference.class
+
+ - link:WEntityReference-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/batchee/spi/BatchService.class
+
+ - link:BatchService-asmified.java[Asmified]
+
+== References
+

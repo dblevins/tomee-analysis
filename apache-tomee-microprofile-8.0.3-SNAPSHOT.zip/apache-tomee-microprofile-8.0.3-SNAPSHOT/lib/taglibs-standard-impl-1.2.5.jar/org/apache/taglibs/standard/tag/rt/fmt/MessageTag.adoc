@@ -1,0 +1,8 @@
+= org/apache/taglibs/standard/tag/rt/fmt/MessageTag.class
+
+ - link:MessageTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.jstl.fmt.LocalizationContext - 2
+ - javax.servlet.jsp.JspTagException - 2

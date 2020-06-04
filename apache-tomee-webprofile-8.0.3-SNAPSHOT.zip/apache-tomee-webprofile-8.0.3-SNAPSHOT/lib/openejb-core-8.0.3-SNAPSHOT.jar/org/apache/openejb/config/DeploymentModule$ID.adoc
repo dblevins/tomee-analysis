@@ -1,0 +1,6 @@
+= org/apache/openejb/config/DeploymentModule$ID.class
+
+ - link:DeploymentModule$ID-asmified.java[Asmified]
+
+== References
+

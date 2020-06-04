@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/ClassStack.class
+
+ - link:ClassStack-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/KeyJoinColumns.class
+
+ - link:KeyJoinColumns-asmified.java[Asmified]
+
+== References
+

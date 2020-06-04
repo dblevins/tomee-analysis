@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/SignatureProperties.class
+
+ - link:SignatureProperties-asmified.java[Asmified]
+
+== References
+

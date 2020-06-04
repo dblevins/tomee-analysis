@@ -1,0 +1,8 @@
+= org/apache/webbeans/intercept/ApplicationScopedBeanInterceptorHandler.class
+
+ - link:ApplicationScopedBeanInterceptorHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.inject.spi.BeanManager - 2

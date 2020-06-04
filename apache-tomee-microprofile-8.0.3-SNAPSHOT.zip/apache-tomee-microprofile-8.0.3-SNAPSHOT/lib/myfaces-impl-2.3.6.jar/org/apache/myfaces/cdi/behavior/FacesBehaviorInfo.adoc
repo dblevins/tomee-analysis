@@ -1,0 +1,6 @@
+= org/apache/myfaces/cdi/behavior/FacesBehaviorInfo.class
+
+ - link:FacesBehaviorInfo-asmified.java[Asmified]
+
+== References
+

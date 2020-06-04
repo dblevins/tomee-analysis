@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/plugins/management/ShutdownHookPlugin.class
+
+ - link:ShutdownHookPlugin-asmified.java[Asmified]
+
+== References
+

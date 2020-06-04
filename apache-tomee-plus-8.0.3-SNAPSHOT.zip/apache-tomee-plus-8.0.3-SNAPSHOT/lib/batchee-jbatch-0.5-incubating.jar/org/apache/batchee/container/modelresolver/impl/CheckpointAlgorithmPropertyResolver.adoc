@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/CheckpointAlgorithmPropertyResolver.class
+
+ - link:CheckpointAlgorithmPropertyResolver-asmified.java[Asmified]
+
+== References
+

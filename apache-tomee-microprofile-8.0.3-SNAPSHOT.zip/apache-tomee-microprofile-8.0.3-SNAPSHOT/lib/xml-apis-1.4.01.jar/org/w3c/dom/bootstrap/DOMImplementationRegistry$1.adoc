@@ -1,0 +1,6 @@
+= org/w3c/dom/bootstrap/DOMImplementationRegistry$1.class
+
+ - link:DOMImplementationRegistry$1-asmified.java[Asmified]
+
+== References
+

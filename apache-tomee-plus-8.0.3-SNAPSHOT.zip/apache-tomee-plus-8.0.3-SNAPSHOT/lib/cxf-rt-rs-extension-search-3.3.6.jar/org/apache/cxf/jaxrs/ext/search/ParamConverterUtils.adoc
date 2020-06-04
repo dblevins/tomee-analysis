@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/ext/search/ParamConverterUtils.class
+
+ - link:ParamConverterUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 4
+ - javax.ws.rs.ext.ParamConverterProvider - 4

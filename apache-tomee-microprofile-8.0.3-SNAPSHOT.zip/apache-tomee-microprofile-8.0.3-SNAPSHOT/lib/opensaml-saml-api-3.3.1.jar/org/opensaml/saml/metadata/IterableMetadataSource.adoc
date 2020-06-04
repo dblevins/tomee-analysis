@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/IterableMetadataSource.class
+
+ - link:IterableMetadataSource-asmified.java[Asmified]
+
+== References
+

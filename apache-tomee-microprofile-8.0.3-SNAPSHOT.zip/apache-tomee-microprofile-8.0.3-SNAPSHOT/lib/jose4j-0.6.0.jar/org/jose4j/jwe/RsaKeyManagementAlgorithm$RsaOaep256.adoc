@@ -1,0 +1,6 @@
+= org/jose4j/jwe/RsaKeyManagementAlgorithm$RsaOaep256.class
+
+ - link:RsaKeyManagementAlgorithm$RsaOaep256-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/AppFinder.class
+
+ - link:AppFinder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/naming/factory/OpenEjbFactory.class
+
+ - link:OpenEjbFactory-asmified.java[Asmified]
+
+== References
+

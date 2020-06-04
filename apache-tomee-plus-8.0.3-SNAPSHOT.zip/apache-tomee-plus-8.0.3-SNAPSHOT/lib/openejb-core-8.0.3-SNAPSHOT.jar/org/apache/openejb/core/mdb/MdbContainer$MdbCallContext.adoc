@@ -1,0 +1,6 @@
+= org/apache/openejb/core/mdb/MdbContainer$MdbCallContext.class
+
+ - link:MdbContainer$MdbCallContext-asmified.java[Asmified]
+
+== References
+

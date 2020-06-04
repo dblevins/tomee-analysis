@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$MemberIterator.class
+
+ - link:POJOPropertyBuilder$MemberIterator-asmified.java[Asmified]
+
+== References
+

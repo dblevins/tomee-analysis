@@ -1,0 +1,10 @@
+= org/apache/bval/constraints/Email.class
+
+ - link:Email-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Email - 4
+ - javax.validation.OverridesAttribute - 3
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1

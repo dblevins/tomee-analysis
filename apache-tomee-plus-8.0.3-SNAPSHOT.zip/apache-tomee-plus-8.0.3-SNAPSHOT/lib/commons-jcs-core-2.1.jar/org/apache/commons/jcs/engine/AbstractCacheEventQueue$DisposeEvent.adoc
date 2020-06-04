@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/engine/AbstractCacheEventQueue$DisposeEvent.class
+
+ - link:AbstractCacheEventQueue$DisposeEvent-asmified.java[Asmified]
+
+== References
+

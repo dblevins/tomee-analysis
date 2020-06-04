@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/impl/AddAudienceRestrictionToAssertions.class
+
+ - link:AddAudienceRestrictionToAssertions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 14
+ - javax.annotation.Nullable - 3

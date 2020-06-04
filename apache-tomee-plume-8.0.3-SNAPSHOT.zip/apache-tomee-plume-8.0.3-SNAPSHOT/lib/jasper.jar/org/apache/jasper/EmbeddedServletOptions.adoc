@@ -1,0 +1,9 @@
+= org/apache/jasper/EmbeddedServletOptions.class
+
+ - link:EmbeddedServletOptions-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 59
+ - javax.servlet.ServletContext - 33
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 1

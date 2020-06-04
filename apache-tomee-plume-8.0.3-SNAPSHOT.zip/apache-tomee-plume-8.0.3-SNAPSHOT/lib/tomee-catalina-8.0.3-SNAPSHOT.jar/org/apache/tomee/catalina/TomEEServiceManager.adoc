@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/TomEEServiceManager.class
+
+ - link:TomEEServiceManager-asmified.java[Asmified]
+
+== References
+

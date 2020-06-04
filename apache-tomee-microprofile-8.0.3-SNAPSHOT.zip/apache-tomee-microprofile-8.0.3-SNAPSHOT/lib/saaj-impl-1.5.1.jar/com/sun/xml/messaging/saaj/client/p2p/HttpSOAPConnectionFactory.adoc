@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/client/p2p/HttpSOAPConnectionFactory.class
+
+ - link:HttpSOAPConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPConnectionFactory - 2
+ - javax.xml.soap.SOAPConnection - 1
+ - javax.xml.soap.SOAPException - 1

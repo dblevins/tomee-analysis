@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/job/ValidationJob$ContainerElementCascadeFrame.class
+
+ - link:ValidationJob$ContainerElementCascadeFrame-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 2
+ - javax.validation.ElementKind - 2
+ - javax.validation.Path - 1
+ - javax.validation.ConstraintViolation - 1

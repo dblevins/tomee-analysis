@@ -1,0 +1,15 @@
+= org/apache/myfaces/view/facelets/compiler/TagLibraryConfig$TagLibraryImpl.class
+
+ - link:TagLibraryConfig$TagLibraryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 9
+ - javax.faces.view.facelets.TagHandler - 8
+ - javax.faces.application.Resource - 7
+ - javax.faces.application.ResourceHandler - 7
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.view.facelets.TagConfig - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.view.facelets.ComponentConfig - 1

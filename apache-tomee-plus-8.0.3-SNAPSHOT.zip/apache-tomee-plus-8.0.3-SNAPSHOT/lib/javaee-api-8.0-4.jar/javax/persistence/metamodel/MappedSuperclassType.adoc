@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/MappedSuperclassType.class
+
+ - link:MappedSuperclassType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.IdentifiableType - 1

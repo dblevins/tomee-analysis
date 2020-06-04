@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/ModulusImpl.class
+
+ - link:ModulusImpl-asmified.java[Asmified]
+
+== References
+

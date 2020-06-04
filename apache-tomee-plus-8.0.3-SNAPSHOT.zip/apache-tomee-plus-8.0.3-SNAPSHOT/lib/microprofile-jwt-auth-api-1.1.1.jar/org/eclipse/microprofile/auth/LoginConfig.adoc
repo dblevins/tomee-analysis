@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/auth/LoginConfig.class
+
+ - link:LoginConfig-asmified.java[Asmified]
+
+== References
+

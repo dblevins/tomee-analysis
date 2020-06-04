@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/ClassIntrospector$MixInResolver.class
+
+ - link:ClassIntrospector$MixInResolver-asmified.java[Asmified]
+
+== References
+

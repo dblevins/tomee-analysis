@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/RegistryImpl$Holder.class
+
+ - link:RegistryImpl$Holder-asmified.java[Asmified]
+
+== References
+

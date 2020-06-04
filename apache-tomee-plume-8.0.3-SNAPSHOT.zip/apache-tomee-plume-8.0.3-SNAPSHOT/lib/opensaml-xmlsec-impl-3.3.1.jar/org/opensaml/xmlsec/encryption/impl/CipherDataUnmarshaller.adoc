@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/CipherDataUnmarshaller.class
+
+ - link:CipherDataUnmarshaller-asmified.java[Asmified]
+
+== References
+

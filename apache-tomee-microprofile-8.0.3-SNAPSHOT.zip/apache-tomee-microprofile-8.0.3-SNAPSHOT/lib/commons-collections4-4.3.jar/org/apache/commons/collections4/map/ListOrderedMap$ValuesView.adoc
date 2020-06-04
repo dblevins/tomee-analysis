@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/ListOrderedMap$ValuesView.class
+
+ - link:ListOrderedMap$ValuesView-asmified.java[Asmified]
+
+== References
+

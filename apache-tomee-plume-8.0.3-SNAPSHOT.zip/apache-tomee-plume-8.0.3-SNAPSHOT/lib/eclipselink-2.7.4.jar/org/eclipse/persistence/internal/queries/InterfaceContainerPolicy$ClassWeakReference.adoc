@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/InterfaceContainerPolicy$ClassWeakReference.class
+
+ - link:InterfaceContainerPolicy$ClassWeakReference-asmified.java[Asmified]
+
+== References
+

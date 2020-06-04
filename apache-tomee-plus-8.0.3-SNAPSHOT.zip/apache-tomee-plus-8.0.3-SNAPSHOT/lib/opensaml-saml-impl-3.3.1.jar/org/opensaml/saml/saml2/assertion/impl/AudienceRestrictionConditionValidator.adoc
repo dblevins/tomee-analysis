@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/assertion/impl/AudienceRestrictionConditionValidator.class
+
+ - link:AudienceRestrictionConditionValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.concurrent.ThreadSafe - 1

@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/job/ComputeConstraintValidatorClass$TypeWrapper.class
+
+ - link:ComputeConstraintValidatorClass$TypeWrapper-asmified.java[Asmified]
+
+== References
+

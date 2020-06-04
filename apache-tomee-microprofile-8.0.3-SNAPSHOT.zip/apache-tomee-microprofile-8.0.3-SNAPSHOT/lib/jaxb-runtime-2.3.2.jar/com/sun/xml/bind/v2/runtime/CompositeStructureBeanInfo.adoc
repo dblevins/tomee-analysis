@@ -1,0 +1,9 @@
+= com/sun/xml/bind/v2/runtime/CompositeStructureBeanInfo.class
+
+ - link:CompositeStructureBeanInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.helpers.ValidationEventImpl - 2
+ - javax.xml.bind.ValidationEvent - 1
+ - javax.xml.bind.ValidationEventLocator - 1

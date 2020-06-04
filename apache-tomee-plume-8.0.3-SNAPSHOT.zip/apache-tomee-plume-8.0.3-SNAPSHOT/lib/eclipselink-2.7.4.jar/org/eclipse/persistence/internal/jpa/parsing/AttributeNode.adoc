@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/AttributeNode.class
+
+ - link:AttributeNode-asmified.java[Asmified]
+
+== References
+

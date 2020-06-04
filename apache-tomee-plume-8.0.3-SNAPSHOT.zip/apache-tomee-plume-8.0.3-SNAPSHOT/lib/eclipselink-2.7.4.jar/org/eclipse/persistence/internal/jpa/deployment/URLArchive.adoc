@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/deployment/URLArchive.class
+
+ - link:URLArchive-asmified.java[Asmified]
+
+== References
+

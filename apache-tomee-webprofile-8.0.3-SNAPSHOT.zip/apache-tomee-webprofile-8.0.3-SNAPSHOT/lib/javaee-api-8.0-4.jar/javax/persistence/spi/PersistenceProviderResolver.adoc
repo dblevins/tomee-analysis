@@ -1,0 +1,7 @@
+= javax/persistence/spi/PersistenceProviderResolver.class
+
+ - link:PersistenceProviderResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceProvider - 1

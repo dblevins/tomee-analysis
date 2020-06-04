@@ -1,0 +1,6 @@
+= org/apache/commons/digester/plugins/RulesFactory.class
+
+ - link:RulesFactory-asmified.java[Asmified]
+
+== References
+

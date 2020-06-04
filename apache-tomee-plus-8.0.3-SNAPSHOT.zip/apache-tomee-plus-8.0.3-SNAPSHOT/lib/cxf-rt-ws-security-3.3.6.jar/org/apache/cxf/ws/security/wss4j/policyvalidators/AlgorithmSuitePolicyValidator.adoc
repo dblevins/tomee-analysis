@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/AlgorithmSuitePolicyValidator.class
+
+ - link:AlgorithmSuitePolicyValidator-asmified.java[Asmified]
+
+== References
+

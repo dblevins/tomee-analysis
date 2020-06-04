@@ -1,0 +1,6 @@
+= org/apache/cxf/common/xmlschema/LSInputImpl.class
+
+ - link:LSInputImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/CMP3Policy$CommonAccessor.class
+
+ - link:CMP3Policy$CommonAccessor-asmified.java[Asmified]
+
+== References
+

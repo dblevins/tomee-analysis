@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/nsri/NSRIObjectIdentifiers.class
+
+ - link:NSRIObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/servlet/jsp/jstl/fmt/LocalizationContext.class
+
+ - link:LocalizationContext-asmified.java[Asmified]
+
+== References
+

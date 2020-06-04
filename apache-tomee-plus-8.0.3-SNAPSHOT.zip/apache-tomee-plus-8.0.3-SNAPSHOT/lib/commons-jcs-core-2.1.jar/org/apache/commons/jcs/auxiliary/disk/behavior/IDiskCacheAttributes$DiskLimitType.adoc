@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/behavior/IDiskCacheAttributes$DiskLimitType.class
+
+ - link:IDiskCacheAttributes$DiskLimitType-asmified.java[Asmified]
+
+== References
+

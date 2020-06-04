@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/CommandManager.class
+
+ - link:CommandManager-asmified.java[Asmified]
+
+== References
+

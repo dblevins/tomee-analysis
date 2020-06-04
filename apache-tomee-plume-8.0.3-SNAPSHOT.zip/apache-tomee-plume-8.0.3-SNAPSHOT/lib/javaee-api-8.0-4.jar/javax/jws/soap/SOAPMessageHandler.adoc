@@ -1,0 +1,7 @@
+= javax/jws/soap/SOAPMessageHandler.class
+
+ - link:SOAPMessageHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.soap.InitParam - 1

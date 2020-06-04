@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/policy/MetadataConstants.class
+
+ - link:MetadataConstants-asmified.java[Asmified]
+
+== References
+

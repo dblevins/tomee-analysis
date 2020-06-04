@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/ReportItem.class
+
+ - link:ReportItem-asmified.java[Asmified]
+
+== References
+

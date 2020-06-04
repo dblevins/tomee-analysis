@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/JavadocMessageSend.class
+
+ - link:JavadocMessageSend-asmified.java[Asmified]
+
+== References
+

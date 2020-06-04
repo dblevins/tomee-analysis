@@ -1,0 +1,12 @@
+= org/apache/tomee/microprofile/jwt/cdi/JsonbProducer.class
+
+ - link:JsonbProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.Jsonb - 4
+ - javax.json.bind.spi.JsonbProvider - 3
+ - javax.json.bind.JsonbBuilder - 2
+ - javax.enterprise.inject.Disposes - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.enterprise.context.ApplicationScoped - 1

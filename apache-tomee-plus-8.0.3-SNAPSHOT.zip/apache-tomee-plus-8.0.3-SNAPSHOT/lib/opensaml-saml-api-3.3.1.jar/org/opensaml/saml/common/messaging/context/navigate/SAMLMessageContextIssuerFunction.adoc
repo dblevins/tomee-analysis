@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/messaging/context/navigate/SAMLMessageContextIssuerFunction.class
+
+ - link:SAMLMessageContextIssuerFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

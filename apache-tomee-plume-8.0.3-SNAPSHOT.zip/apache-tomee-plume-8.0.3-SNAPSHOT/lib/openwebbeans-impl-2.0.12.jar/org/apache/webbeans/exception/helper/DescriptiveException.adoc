@@ -1,0 +1,6 @@
+= org/apache/webbeans/exception/helper/DescriptiveException.class
+
+ - link:DescriptiveException-asmified.java[Asmified]
+
+== References
+

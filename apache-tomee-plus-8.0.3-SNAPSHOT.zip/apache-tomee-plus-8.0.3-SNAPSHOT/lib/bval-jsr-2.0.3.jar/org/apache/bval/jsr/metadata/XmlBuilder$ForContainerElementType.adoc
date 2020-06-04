@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/XmlBuilder$ForContainerElementType.class
+
+ - link:XmlBuilder$ForContainerElementType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= javax/faces/model/ScalarDataModel.class
+
+ - link:ScalarDataModel-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.ScalarDataModel - 9
+ - javax.faces.model.DataModelListener - 4
+ - javax.faces.model.DataModelEvent - 4
+ - javax.faces.model.DataModel - 3
+ - javax.faces.model.NoRowAvailableException - 2

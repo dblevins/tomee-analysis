@@ -1,0 +1,7 @@
+= javax/faces/flow/FlowScoped.class
+
+ - link:FlowScoped-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.NormalScope - 1

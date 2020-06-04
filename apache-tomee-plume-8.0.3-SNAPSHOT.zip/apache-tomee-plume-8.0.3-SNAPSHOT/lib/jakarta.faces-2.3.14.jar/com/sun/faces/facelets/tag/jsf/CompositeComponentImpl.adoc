@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/jsf/CompositeComponentImpl.class
+
+ - link:CompositeComponentImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UINamingContainer - 2

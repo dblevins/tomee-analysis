@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/ExpressionImpl.class
+
+ - link:ExpressionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 13
+ - javax.persistence.criteria.CriteriaBuilder$In - 11
+ - javax.persistence.criteria.Predicate - 6

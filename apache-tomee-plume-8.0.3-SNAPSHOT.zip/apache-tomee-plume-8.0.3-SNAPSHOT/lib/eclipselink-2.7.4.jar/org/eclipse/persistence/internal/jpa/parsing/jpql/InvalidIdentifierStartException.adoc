@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/InvalidIdentifierStartException.class
+
+ - link:InvalidIdentifierStartException-asmified.java[Asmified]
+
+== References
+

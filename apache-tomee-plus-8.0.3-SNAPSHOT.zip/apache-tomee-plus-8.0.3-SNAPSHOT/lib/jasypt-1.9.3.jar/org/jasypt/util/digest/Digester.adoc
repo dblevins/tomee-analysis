@@ -1,0 +1,6 @@
+= org/jasypt/util/digest/Digester.class
+
+ - link:Digester-asmified.java[Asmified]
+
+== References
+

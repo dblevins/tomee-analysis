@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/EndElementEventImpl.class
+
+ - link:EndElementEventImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/webbeans/component/ResourceProvider.class
+
+ - link:ResourceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 1

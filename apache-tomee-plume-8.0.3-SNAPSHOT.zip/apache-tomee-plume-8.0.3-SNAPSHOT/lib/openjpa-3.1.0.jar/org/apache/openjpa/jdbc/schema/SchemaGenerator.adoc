@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaGenerator.class
+
+ - link:SchemaGenerator-asmified.java[Asmified]
+
+== References
+

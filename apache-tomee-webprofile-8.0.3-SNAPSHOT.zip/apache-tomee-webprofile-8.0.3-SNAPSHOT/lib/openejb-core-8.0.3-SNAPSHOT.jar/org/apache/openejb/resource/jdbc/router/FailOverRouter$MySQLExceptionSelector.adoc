@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/router/FailOverRouter$MySQLExceptionSelector.class
+
+ - link:FailOverRouter$MySQLExceptionSelector-asmified.java[Asmified]
+
+== References
+

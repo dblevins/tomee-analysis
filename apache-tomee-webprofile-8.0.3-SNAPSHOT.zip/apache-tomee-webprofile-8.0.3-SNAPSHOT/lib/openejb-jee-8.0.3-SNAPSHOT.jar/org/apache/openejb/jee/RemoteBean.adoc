@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/RemoteBean.class
+
+ - link:RemoteBean-asmified.java[Asmified]
+
+== References
+

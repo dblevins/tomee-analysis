@@ -1,0 +1,6 @@
+= com/sun/xml/bind/util/AttributesImpl.class
+
+ - link:AttributesImpl-asmified.java[Asmified]
+
+== References
+

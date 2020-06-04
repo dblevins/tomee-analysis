@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/AnnotationFinder$InfoBuildingVisitor.class
+
+ - link:AnnotationFinder$InfoBuildingVisitor-asmified.java[Asmified]
+
+== References
+

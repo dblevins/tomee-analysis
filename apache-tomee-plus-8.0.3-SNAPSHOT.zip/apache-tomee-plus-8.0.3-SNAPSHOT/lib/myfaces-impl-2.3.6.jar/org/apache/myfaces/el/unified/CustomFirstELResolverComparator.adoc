@@ -1,0 +1,9 @@
+= org/apache/myfaces/el/unified/CustomFirstELResolverComparator.class
+
+ - link:CustomFirstELResolverComparator-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 9
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.context.ExternalContext - 2

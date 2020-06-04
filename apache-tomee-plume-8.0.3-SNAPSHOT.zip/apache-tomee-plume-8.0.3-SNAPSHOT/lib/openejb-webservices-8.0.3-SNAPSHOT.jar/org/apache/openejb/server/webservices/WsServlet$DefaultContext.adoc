@@ -1,0 +1,11 @@
+= org/apache/openejb/server/webservices/WsServlet$DefaultContext.class
+
+ - link:WsServlet$DefaultContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.JAXRPCException - 2
+ - javax.servlet.http.HttpSession - 1
+ - javax.xml.rpc.server.ServletEndpointContext - 1
+ - javax.servlet.ServletContext - 1
+ - javax.xml.rpc.handler.MessageContext - 1

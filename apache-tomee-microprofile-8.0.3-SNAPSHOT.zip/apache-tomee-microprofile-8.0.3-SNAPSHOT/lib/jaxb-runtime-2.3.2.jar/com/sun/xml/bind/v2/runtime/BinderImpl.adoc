@@ -1,0 +1,12 @@
+= com/sun/xml/bind/v2/runtime/BinderImpl.class
+
+ - link:BinderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.PropertyException - 18
+ - javax.xml.bind.JAXBException - 8
+ - javax.xml.bind.ValidationEventHandler - 5
+ - javax.xml.bind.JAXBElement - 4
+ - javax.xml.bind.Binder - 2
+ - javax.xml.bind.UnmarshalException - 1

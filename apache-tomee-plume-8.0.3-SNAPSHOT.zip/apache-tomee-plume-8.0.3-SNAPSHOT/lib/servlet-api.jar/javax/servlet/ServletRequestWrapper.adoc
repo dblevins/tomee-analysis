@@ -1,0 +1,14 @@
+= javax/servlet/ServletRequestWrapper.class
+
+ - link:ServletRequestWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 93
+ - javax.servlet.ServletRequestWrapper - 7
+ - javax.servlet.AsyncContext - 6
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.RequestDispatcher - 2
+ - javax.servlet.ServletInputStream - 2
+ - javax.servlet.DispatcherType - 2
+ - javax.servlet.ServletContext - 2

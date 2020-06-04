@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/securityToken/KeyNameSecurityToken.class
+
+ - link:KeyNameSecurityToken-asmified.java[Asmified]
+
+== References
+

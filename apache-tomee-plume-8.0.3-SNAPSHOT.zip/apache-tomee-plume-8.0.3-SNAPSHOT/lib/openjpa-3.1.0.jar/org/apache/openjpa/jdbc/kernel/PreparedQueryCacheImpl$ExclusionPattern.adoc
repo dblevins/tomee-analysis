@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/PreparedQueryCacheImpl$ExclusionPattern.class
+
+ - link:PreparedQueryCacheImpl$ExclusionPattern-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,174 @@
+package asm.org.apache.openejb.server.cxf.rs;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class CdiResourceProvider$InitialContextWrapperDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", null, "java/lang/Object", new String[] { "java/lang/reflect/InvocationHandler" });
+
+classWriter.visitInnerClass("org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "org/apache/openejb/server/cxf/rs/CdiResourceProvider", "InitialContextWrapper", ACC_PRIVATE | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "ctx", "Ljavax/naming/Context;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/naming/Context;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "ctx", "Ljavax/naming/Context;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "java/lang/Throwable" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/Exception");
+Label label6 = new Label();
+Label label7 = new Label();
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/Exception");
+Label label9 = new Label();
+Label label10 = new Label();
+Label label11 = new Label();
+methodVisitor.visitTryCatchBlock(label9, label10, label11, "java/lang/Exception");
+Label label12 = new Label();
+Label label13 = new Label();
+Label label14 = new Label();
+methodVisitor.visitTryCatchBlock(label12, label13, label14, "java/lang/reflect/InvocationTargetException");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitLdcInsn("lookup");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label12);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("java:");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label12);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "ctx", "Ljavax/naming/Context;");
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label15);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "ctx", "Ljavax/naming/Context;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "java/lang/Object", "java/lang/reflect/Method", "[Ljava/lang/Object;", "java/lang/String"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "ctx", "Ljavax/naming/Context;");
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "java/lang/Object", "java/lang/reflect/Method", "[Ljava/lang/Object;", "java/lang/String", "java/lang/Exception"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "javax/naming/InitialContext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/naming/InitialContext", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "java/lang/Object", "java/lang/reflect/Method", "[Ljava/lang/Object;", "java/lang/String", "javax/naming/Context"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/Context", "lookup", "(Ljava/lang/String;)Ljava/lang/Object;", true);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "java/lang/Object", "java/lang/reflect/Method", "[Ljava/lang/Object;", "java/lang/String", "javax/naming/Context", "java/lang/Exception"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/server/cxf/rs/CdiResourceProvider$InitialContextWrapper", "ctx", "Ljavax/naming/Context;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/reflect/InvocationTargetException"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 8);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

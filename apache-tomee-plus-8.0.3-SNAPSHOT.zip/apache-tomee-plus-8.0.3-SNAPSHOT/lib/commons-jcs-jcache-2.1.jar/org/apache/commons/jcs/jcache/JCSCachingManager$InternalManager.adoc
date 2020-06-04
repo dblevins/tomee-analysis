@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/jcache/JCSCachingManager$InternalManager.class
+
+ - link:JCSCachingManager$InternalManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,22 @@
+= org/apache/cxf/jaxrs/client/ClientProxyImpl.class
+
+ - link:ClientProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 146
+ - javax.ws.rs.core.UriBuilder - 41
+ - javax.ws.rs.client.InvocationCallback - 20
+ - javax.ws.rs.core.Response - 15
+ - javax.ws.rs.core.MediaType - 14
+ - javax.ws.rs.BeanParam - 3
+ - javax.ws.rs.FormParam - 2
+ - javax.ws.rs.core.Response$ResponseBuilder - 2
+ - javax.ws.rs.ProcessingException - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.PathParam - 1
+ - javax.ws.rs.container.AsyncResponse - 1
+ - javax.ws.rs.QueryParam - 1
+ - javax.ws.rs.MatrixParam - 1
+ - javax.ws.rs.HeaderParam - 1
+ - javax.ws.rs.CookieParam - 1

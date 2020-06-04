@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/SecureLoader$1.class
+
+ - link:SecureLoader$1-asmified.java[Asmified]
+
+== References
+

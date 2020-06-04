@@ -1,0 +1,7 @@
+= javax/validation/constraints/NotBlank$List.class
+
+ - link:NotBlank$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.NotBlank - 1

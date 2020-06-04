@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/keyinfo/impl/StaticKeyInfoGenerator.class
+
+ - link:StaticKeyInfoGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8
+ - javax.annotation.Nullable - 1

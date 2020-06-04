@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/antlr/runtime/TokenSource.class
+
+ - link:TokenSource-asmified.java[Asmified]
+
+== References
+

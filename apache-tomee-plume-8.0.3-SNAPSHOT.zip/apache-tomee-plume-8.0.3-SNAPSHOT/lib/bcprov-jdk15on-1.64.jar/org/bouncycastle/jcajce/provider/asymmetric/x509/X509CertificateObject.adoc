@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/x509/X509CertificateObject.class
+
+ - link:X509CertificateObject-asmified.java[Asmified]
+
+== References
+

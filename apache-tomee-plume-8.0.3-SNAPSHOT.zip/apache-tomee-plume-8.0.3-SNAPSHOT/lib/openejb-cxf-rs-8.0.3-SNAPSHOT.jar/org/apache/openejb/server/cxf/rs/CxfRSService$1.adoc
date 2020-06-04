@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/rs/CxfRSService$1.class
+
+ - link:CxfRSService$1-asmified.java[Asmified]
+
+== References
+

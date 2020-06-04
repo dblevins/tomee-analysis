@@ -1,0 +1,11 @@
+= com/sun/faces/cdi/CdiConverter.class
+
+ - link:CdiConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.convert.Converter - 15
+ - javax.faces.context.FacesContext - 11
+ - javax.faces.application.Application - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component.StateHolder - 1

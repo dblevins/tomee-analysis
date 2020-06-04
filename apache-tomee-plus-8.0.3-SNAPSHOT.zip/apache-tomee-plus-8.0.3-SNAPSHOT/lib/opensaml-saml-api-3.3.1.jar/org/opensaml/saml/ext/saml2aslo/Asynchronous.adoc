@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2aslo/Asynchronous.class
+
+ - link:Asynchronous-asmified.java[Asmified]
+
+== References
+

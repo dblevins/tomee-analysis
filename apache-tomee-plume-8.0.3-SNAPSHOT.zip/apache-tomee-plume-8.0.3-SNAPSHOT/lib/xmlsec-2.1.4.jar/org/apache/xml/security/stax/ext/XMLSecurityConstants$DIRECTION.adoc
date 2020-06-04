@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/XMLSecurityConstants$DIRECTION.class
+
+ - link:XMLSecurityConstants$DIRECTION-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/StdRowLockSemaphore.class
+
+ - link:StdRowLockSemaphore-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/BeanParamInfo.class
+
+ - link:BeanParamInfo-asmified.java[Asmified]
+
+== References
+

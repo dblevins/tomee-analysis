@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/LifecycleMetaData.class
+
+ - link:LifecycleMetaData-asmified.java[Asmified]
+
+== References
+

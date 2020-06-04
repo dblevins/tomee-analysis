@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/transport/nntp/NNTPConnection.class
+
+ - link:NNTPConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 54
+ - javax.mail.Message - 2

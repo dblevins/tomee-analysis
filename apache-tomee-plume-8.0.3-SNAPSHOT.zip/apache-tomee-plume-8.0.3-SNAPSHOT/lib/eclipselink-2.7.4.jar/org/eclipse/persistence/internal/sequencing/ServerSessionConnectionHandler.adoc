@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sequencing/ServerSessionConnectionHandler.class
+
+ - link:ServerSessionConnectionHandler-asmified.java[Asmified]
+
+== References
+

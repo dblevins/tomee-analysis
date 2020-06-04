@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/storage/implementations/SingleCertificateResolver.class
+
+ - link:SingleCertificateResolver-asmified.java[Asmified]
+
+== References
+

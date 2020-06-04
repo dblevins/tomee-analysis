@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/SessionType.class
+
+ - link:SessionType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 4

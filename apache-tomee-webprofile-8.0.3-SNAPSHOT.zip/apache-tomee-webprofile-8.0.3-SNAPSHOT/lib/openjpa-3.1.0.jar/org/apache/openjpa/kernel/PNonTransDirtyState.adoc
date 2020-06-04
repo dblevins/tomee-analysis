@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/PNonTransDirtyState.class
+
+ - link:PNonTransDirtyState-asmified.java[Asmified]
+
+== References
+

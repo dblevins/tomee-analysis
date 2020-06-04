@@ -1,0 +1,6 @@
+= org/apache/commons/digester/substitution/MultiVariableExpander.class
+
+ - link:MultiVariableExpander-asmified.java[Asmified]
+
+== References
+

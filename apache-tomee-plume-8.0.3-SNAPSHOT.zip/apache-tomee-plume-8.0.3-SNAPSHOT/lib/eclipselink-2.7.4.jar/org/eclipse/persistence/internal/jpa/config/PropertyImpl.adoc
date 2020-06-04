@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/PropertyImpl.class
+
+ - link:PropertyImpl-asmified.java[Asmified]
+
+== References
+

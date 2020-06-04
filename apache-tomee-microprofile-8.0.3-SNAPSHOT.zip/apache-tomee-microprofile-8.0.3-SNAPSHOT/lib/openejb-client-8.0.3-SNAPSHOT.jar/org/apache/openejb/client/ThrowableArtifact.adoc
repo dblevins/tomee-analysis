@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ThrowableArtifact.class
+
+ - link:ThrowableArtifact-asmified.java[Asmified]
+
+== References
+

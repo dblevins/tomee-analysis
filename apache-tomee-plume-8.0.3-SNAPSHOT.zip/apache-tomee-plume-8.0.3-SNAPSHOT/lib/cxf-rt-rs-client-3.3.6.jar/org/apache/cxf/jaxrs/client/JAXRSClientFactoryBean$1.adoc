@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/client/JAXRSClientFactoryBean$1.class
+
+ - link:JAXRSClientFactoryBean$1-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 1
+ - javax.ws.rs.HeaderParam - 1
+ - javax.ws.rs.ext.ParamConverterProvider - 1
+ - javax.ws.rs.CookieParam - 1

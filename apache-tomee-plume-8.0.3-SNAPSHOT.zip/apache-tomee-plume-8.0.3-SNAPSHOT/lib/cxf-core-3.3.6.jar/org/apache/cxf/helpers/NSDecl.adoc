@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/NSDecl.class
+
+ - link:NSDecl-asmified.java[Asmified]
+
+== References
+

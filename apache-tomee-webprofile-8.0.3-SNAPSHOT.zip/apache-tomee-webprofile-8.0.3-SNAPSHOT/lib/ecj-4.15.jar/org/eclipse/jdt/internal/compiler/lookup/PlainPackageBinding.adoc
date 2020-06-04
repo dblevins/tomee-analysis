@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/PlainPackageBinding.class
+
+ - link:PlainPackageBinding-asmified.java[Asmified]
+
+== References
+

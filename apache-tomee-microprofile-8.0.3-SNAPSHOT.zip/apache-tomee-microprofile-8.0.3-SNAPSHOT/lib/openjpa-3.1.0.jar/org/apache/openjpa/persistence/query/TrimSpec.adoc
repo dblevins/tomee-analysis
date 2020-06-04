@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/TrimSpec.class
+
+ - link:TrimSpec-asmified.java[Asmified]
+
+== References
+

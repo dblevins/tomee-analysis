@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/ContainerValue.class
+
+ - link:ContainerValue-asmified.java[Asmified]
+
+== References
+

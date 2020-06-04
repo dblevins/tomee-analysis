@@ -1,0 +1,6 @@
+= org/apache/openejb/log/ColorFormatter.class
+
+ - link:ColorFormatter-asmified.java[Asmified]
+
+== References
+

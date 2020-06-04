@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/QueryExpressions$AggregateExpressionVisitor.class
+
+ - link:QueryExpressions$AggregateExpressionVisitor-asmified.java[Asmified]
+
+== References
+

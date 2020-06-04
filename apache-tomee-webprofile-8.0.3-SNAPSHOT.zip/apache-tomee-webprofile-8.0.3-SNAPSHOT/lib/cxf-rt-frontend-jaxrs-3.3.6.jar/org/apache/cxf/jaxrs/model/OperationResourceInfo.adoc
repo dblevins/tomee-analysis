@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/model/OperationResourceInfo.class
+
+ - link:OperationResourceInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.DefaultValue - 6
+ - javax.ws.rs.core.MediaType - 4
+ - javax.ws.rs.Produces - 4
+ - javax.ws.rs.Consumes - 4
+ - javax.ws.rs.Encoded - 2
+ - javax.ws.rs.container.Suspended - 1

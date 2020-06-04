@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/impl/DefaultMessageIdCache.class
+
+ - link:DefaultMessageIdCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/index/MetadataIndexKey.class
+
+ - link:MetadataIndexKey-asmified.java[Asmified]
+
+== References
+

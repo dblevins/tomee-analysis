@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/PrefixArray$PrefixEntry.class
+
+ - link:PrefixArray$PrefixEntry-asmified.java[Asmified]
+
+== References
+

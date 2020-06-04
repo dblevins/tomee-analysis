@@ -1,0 +1,9 @@
+= javax/enterprise/inject/literal/NamedLiteral.class
+
+ - link:NamedLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.literal.NamedLiteral - 5
+ - javax.inject.Named - 4
+ - javax.enterprise.util.AnnotationLiteral - 2

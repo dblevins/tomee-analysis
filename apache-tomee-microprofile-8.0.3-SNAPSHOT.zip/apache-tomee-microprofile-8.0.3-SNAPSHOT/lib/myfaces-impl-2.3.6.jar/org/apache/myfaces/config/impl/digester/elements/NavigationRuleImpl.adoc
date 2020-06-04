@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/NavigationRuleImpl.class
+
+ - link:NavigationRuleImpl-asmified.java[Asmified]
+
+== References
+

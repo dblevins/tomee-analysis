@@ -1,0 +1,10 @@
+= org/apache/myfaces/component/search/CompositeComponentParentSearchKeywordResolver.class
+
+ - link:CompositeComponentParentSearchKeywordResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.component.search.SearchExpressionContext - 3
+ - javax.faces.component.search.SearchKeywordResolver - 2
+ - javax.faces.component.search.SearchKeywordContext - 2

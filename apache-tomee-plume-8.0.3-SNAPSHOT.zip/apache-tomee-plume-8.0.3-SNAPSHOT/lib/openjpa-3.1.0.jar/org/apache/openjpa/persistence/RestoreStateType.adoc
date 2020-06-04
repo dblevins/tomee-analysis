@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/RestoreStateType.class
+
+ - link:RestoreStateType-asmified.java[Asmified]
+
+== References
+

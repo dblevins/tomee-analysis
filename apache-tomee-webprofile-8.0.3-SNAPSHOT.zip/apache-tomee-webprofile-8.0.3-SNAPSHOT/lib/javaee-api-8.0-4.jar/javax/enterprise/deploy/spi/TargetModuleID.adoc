@@ -1,0 +1,8 @@
+= javax/enterprise/deploy/spi/TargetModuleID.class
+
+ - link:TargetModuleID-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.TargetModuleID - 2
+ - javax.enterprise.deploy.spi.Target - 1

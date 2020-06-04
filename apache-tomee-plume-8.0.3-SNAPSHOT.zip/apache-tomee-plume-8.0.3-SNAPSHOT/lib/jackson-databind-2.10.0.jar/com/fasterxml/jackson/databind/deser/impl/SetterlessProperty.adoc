@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/SetterlessProperty.class
+
+ - link:SetterlessProperty-asmified.java[Asmified]
+
+== References
+

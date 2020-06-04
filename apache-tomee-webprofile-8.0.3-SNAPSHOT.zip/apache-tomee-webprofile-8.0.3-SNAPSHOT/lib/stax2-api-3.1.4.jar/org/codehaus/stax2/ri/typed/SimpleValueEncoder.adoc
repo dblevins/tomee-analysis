@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/SimpleValueEncoder.class
+
+ - link:SimpleValueEncoder-asmified.java[Asmified]
+
+== References
+

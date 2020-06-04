@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/impl/SAMLProtocolAndRoleHandler.class
+
+ - link:SAMLProtocolAndRoleHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

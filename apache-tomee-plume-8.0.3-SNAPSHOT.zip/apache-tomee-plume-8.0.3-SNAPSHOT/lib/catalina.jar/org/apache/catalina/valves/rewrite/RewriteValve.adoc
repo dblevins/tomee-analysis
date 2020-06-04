@@ -1,0 +1,9 @@
+= org/apache/catalina/valves/rewrite/RewriteValve.class
+
+ - link:RewriteValve-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 8
+ - javax.servlet.ServletContext - 4
+ - javax.servlet.ServletException - 1

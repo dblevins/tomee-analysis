@@ -1,0 +1,6 @@
+= org/apache/openejb/Core$3.class
+
+ - link:Core$3-asmified.java[Asmified]
+
+== References
+

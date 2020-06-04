@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/JarWarResourceSet$VersionedJarEntry.class
+
+ - link:JarWarResourceSet$VersionedJarEntry-asmified.java[Asmified]
+
+== References
+

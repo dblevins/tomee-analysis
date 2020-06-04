@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/xml/ValidationParser.class
+
+ - link:ValidationParser-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 10
+ - javax.validation.executable.ExecutableType - 2
+ - javax.validation.BootstrapConfiguration - 1

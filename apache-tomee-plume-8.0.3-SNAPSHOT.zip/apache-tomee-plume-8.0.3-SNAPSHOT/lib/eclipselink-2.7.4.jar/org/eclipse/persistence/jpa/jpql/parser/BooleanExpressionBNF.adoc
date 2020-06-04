@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/BooleanExpressionBNF.class
+
+ - link:BooleanExpressionBNF-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/SchemaManager.class
+
+ - link:SchemaManager-asmified.java[Asmified]
+
+== References
+

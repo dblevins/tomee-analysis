@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/DualBuilder.class
+
+ - link:DualBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/xml/security/stax/config/Init.class
+
+ - link:Init-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 6
+ - javax.xml.bind.Unmarshaller - 5
+ - javax.xml.bind.JAXBContext - 5
+ - javax.xml.bind.UnmarshallerHandler - 4

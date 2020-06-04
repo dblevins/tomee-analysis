@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/EvidenceBuilder.class
+
+ - link:EvidenceBuilder-asmified.java[Asmified]
+
+== References
+

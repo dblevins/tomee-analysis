@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/servers/Servers.class
+
+ - link:Servers-asmified.java[Asmified]
+
+== References
+

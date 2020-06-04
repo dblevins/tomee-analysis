@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/features/fieldsfiltering/FieldsFilteringValidator.class
+
+ - link:FieldsFilteringValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 2

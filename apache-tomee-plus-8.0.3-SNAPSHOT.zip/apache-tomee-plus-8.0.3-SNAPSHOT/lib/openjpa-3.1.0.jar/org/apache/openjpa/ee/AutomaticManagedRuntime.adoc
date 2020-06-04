@@ -1,0 +1,9 @@
+= org/apache/openjpa/ee/AutomaticManagedRuntime.class
+
+ - link:AutomaticManagedRuntime-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 16
+ - javax.transaction.NotSupportedException - 4
+ - javax.transaction.SystemException - 1

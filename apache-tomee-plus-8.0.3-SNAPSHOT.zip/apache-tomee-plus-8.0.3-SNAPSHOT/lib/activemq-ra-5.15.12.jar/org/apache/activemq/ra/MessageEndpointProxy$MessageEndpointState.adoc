@@ -1,0 +1,8 @@
+= org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState.class
+
+ - link:MessageEndpointProxy$MessageEndpointState-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 2
+ - javax.jms.Message - 1

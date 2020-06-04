@@ -1,0 +1,7 @@
+= org/apache/openejb/server/httpd/HttpSession.class
+
+ - link:HttpSession-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 1

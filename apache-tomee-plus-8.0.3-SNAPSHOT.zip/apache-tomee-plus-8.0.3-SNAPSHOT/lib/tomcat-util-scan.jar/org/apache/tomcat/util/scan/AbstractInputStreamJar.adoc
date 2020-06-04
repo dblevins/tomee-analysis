@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/scan/AbstractInputStreamJar.class
+
+ - link:AbstractInputStreamJar-asmified.java[Asmified]
+
+== References
+

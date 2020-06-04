@@ -1,0 +1,7 @@
+= javax/ejb/TransactionManagement.class
+
+ - link:TransactionManagement-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.TransactionManagementType - 2

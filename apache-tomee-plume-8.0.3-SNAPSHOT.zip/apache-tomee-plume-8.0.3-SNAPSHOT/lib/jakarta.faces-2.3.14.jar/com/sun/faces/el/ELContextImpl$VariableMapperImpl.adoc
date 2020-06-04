@@ -1,0 +1,8 @@
+= com/sun/faces/el/ELContextImpl$VariableMapperImpl.class
+
+ - link:ELContextImpl$VariableMapperImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 6
+ - javax.el.VariableMapper - 2

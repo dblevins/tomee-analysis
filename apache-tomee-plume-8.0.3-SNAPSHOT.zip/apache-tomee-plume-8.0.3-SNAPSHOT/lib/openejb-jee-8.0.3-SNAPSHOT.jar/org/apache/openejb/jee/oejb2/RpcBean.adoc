@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/oejb2/RpcBean.class
+
+ - link:RpcBean-asmified.java[Asmified]
+
+== References
+

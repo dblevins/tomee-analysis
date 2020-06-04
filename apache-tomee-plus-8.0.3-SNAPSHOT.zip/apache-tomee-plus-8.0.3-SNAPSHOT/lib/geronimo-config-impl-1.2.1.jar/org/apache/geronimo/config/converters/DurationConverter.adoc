@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/converters/DurationConverter.class
+
+ - link:DurationConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 1
+ - javax.enterprise.inject.Vetoed - 1

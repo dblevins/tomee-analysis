@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/documentpreservation/NodeOrderingPolicy.class
+
+ - link:NodeOrderingPolicy-asmified.java[Asmified]
+
+== References
+

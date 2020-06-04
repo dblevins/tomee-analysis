@@ -1,0 +1,6 @@
+= com/sun/istack/XMLStreamReaderToContentHandler$1.class
+
+ - link:XMLStreamReaderToContentHandler$1-asmified.java[Asmified]
+
+== References
+

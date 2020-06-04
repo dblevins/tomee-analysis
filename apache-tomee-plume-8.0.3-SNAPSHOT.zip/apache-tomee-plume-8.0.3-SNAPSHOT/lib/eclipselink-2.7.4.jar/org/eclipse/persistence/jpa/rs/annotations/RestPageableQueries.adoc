@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/annotations/RestPageableQueries.class
+
+ - link:RestPageableQueries-asmified.java[Asmified]
+
+== References
+

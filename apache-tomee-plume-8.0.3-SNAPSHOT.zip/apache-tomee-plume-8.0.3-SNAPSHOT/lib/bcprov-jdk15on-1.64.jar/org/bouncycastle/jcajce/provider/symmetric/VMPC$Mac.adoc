@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/VMPC$Mac.class
+
+ - link:VMPC$Mac-asmified.java[Asmified]
+
+== References
+

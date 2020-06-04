@@ -1,0 +1,7 @@
+= org/apache/activemq/blob/BlobDownloadStrategy.class
+
+ - link:BlobDownloadStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

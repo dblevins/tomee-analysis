@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/EjbRefType$JAXB.class
+
+ - link:EjbRefType$JAXB-asmified.java[Asmified]
+
+== References
+

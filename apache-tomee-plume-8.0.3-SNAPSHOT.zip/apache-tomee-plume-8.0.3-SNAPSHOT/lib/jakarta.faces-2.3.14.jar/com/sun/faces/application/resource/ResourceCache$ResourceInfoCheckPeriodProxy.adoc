@@ -1,0 +1,6 @@
+= com/sun/faces/application/resource/ResourceCache$ResourceInfoCheckPeriodProxy.class
+
+ - link:ResourceCache$ResourceInfoCheckPeriodProxy-asmified.java[Asmified]
+
+== References
+

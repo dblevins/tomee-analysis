@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/FieldAccessor_Long.class
+
+ - link:FieldAccessor_Long-asmified.java[Asmified]
+
+== References
+

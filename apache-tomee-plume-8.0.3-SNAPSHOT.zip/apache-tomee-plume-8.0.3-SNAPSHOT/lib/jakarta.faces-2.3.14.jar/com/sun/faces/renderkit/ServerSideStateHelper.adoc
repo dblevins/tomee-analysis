@@ -1,0 +1,13 @@
+= com/sun/faces/renderkit/ServerSideStateHelper.class
+
+ - link:ServerSideStateHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 36
+ - javax.faces.context.ExternalContext - 21
+ - javax.faces.component.UIViewRoot - 12
+ - javax.faces.context.ResponseWriter - 11
+ - javax.faces.FacesException - 4
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.component.UIComponent - 1

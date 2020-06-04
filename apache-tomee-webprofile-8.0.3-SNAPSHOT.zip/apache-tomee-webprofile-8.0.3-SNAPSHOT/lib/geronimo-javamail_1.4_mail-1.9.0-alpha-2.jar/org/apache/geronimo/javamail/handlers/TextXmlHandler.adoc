@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/handlers/TextXmlHandler.class
+
+ - link:TextXmlHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.ActivationDataFlavor - 2

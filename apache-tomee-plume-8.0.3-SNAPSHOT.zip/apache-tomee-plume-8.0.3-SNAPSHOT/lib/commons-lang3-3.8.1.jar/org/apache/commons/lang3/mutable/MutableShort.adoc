@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/mutable/MutableShort.class
+
+ - link:MutableShort-asmified.java[Asmified]
+
+== References
+

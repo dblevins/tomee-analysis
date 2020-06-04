@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowInputInterface.class
+
+ - link:RowInputInterface-asmified.java[Asmified]
+
+== References
+

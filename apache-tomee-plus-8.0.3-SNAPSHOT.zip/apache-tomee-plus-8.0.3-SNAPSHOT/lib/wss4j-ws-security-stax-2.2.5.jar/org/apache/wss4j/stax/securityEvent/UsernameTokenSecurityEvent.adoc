@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/UsernameTokenSecurityEvent.class
+
+ - link:UsernameTokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

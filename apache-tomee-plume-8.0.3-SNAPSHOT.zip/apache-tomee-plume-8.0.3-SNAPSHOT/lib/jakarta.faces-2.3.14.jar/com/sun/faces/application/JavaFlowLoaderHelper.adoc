@@ -1,0 +1,16 @@
+= com/sun/faces/application/JavaFlowLoaderHelper.class
+
+ - link:JavaFlowLoaderHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 10
+ - javax.faces.context.FacesContext - 8
+ - javax.enterprise.context.spi.CreationalContext - 7
+ - javax.enterprise.inject.spi.Bean - 6
+ - javax.faces.flow.FlowHandler - 5
+ - javax.faces.flow.Flow - 3
+ - javax.enterprise.inject.spi.Producer - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.enterprise.context.spi.Contextual - 2
+ - javax.faces.flow.builder.FlowDefinition - 1

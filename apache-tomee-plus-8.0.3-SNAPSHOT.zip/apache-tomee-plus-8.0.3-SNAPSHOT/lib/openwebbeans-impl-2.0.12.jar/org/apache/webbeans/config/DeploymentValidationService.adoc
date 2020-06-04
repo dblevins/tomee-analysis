@@ -1,0 +1,16 @@
+= org/apache/webbeans/config/DeploymentValidationService.class
+
+ - link:DeploymentValidationService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 16
+ - javax.enterprise.inject.spi.InjectionPoint - 6
+ - javax.enterprise.inject.spi.Annotated - 4
+ - javax.enterprise.inject.UnproxyableResolutionException - 3
+ - javax.enterprise.inject.spi.Interceptor - 3
+ - javax.enterprise.inject.spi.Producer - 2
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.enterprise.inject.Disposes - 1
+ - javax.enterprise.inject.TransientReference - 1
+ - javax.enterprise.inject.spi.Decorator - 1

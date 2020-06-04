@@ -1,0 +1,6 @@
+= org/apache/cxf/buslifecycle/BusLifeCycleListener.class
+
+ - link:BusLifeCycleListener-asmified.java[Asmified]
+
+== References
+

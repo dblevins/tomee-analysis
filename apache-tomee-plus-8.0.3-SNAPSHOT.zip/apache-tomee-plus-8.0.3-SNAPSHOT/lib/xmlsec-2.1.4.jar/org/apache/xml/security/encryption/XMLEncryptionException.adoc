@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/XMLEncryptionException.class
+
+ - link:XMLEncryptionException-asmified.java[Asmified]
+
+== References
+

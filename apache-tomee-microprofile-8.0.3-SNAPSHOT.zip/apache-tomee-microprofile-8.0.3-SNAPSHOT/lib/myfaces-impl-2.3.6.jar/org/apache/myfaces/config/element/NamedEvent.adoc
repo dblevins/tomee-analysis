@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/NamedEvent.class
+
+ - link:NamedEvent-asmified.java[Asmified]
+
+== References
+

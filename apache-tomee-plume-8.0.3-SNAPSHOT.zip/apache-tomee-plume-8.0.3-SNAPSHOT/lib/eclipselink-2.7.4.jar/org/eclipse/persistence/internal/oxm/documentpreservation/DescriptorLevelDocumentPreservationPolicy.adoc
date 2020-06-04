@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/documentpreservation/DescriptorLevelDocumentPreservationPolicy.class
+
+ - link:DescriptorLevelDocumentPreservationPolicy-asmified.java[Asmified]
+
+== References
+

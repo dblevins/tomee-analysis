@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/jboss/JBossTransactionController.class
+
+ - link:JBossTransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3

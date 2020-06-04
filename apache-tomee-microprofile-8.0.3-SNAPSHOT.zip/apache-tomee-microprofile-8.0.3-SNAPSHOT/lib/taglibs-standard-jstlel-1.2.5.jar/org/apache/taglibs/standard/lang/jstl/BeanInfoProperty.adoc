@@ -1,0 +1,6 @@
+= org/apache/taglibs/standard/lang/jstl/BeanInfoProperty.class
+
+ - link:BeanInfoProperty-asmified.java[Asmified]
+
+== References
+

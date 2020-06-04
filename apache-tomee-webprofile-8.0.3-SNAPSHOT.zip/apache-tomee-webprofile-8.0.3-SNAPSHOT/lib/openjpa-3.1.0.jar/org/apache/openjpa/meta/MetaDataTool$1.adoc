@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/MetaDataTool$1.class
+
+ - link:MetaDataTool$1-asmified.java[Asmified]
+
+== References
+

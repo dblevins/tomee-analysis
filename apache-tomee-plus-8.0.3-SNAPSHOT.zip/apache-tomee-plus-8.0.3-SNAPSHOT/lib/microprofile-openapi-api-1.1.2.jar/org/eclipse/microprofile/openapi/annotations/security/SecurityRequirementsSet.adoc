@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/security/SecurityRequirementsSet.class
+
+ - link:SecurityRequirementsSet-asmified.java[Asmified]
+
+== References
+

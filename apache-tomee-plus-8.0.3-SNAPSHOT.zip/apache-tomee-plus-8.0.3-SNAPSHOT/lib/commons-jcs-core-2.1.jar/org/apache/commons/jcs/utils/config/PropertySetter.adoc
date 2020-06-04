@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/config/PropertySetter.class
+
+ - link:PropertySetter-asmified.java[Asmified]
+
+== References
+

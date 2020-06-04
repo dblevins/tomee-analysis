@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/OrganizationBuilder.class
+
+ - link:OrganizationBuilder-asmified.java[Asmified]
+
+== References
+

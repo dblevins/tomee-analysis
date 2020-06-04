@@ -1,0 +1,7 @@
+= javax/batch/api/chunk/listener/AbstractChunkListener.class
+
+ - link:AbstractChunkListener-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.chunk.listener.ChunkListener - 1

@@ -1,0 +1,7 @@
+= com/sun/xml/bind/InternalAccessorFactory.class
+
+ - link:InternalAccessorFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 1

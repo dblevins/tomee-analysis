@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/jsf/html/ScriptResourceDelegate.class
+
+ - link:ScriptResourceDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 3
+ - javax.faces.view.facelets.ComponentHandler - 2
+ - javax.faces.view.facelets.FaceletContext - 2

@@ -1,0 +1,8 @@
+= org/apache/openejb/core/cmp/ComplexKeyGenerator.class
+
+ - link:ComplexKeyGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 4
+ - javax.ejb.EJBException - 2

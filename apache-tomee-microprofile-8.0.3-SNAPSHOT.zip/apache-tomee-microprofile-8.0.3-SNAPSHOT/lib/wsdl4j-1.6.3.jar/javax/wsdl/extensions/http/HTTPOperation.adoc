@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/http/HTTPOperation.class
+
+ - link:HTTPOperation-asmified.java[Asmified]
+
+== References
+

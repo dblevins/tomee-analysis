@@ -1,0 +1,470 @@
+package asm.org.apache.batchee.container.proxy;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ProxyFactoryDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/apache/batchee/container/proxy/ProxyFactory", null, "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/apache/batchee/spi/BatchArtifactFactory$Instance", "org/apache/batchee/spi/BatchArtifactFactory", "Instance", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Lorg/apache/batchee/container/proxy/InjectionReferences;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label2, "java/lang/Exception");
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label5, null);
+methodVisitor.visitTryCatchBlock(label3, label4, label5, null);
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label6, label5, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/batchee/spi/BatchArtifactFactory", "load", "(Ljava/lang/String;)Lorg/apache/batchee/spi/BatchArtifactFactory$Instance;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/batchee/spi/BatchArtifactFactory$Instance"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/spi/BatchArtifactFactory$Instance", "getReleasable", "()Ljava/io/Closeable;", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/spi/BatchArtifactFactory$Instance", "getReleasable", "()Ljava/io/Closeable;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution", "addReleasable", "(Ljava/io/Closeable;)V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/spi/BatchArtifactFactory$Instance", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/batchee/spi/BatchArtifactFactory", "java/lang/String", "org/apache/batchee/container/proxy/InjectionReferences", "org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/lang/RuntimeException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/RuntimeException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(3, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getInjectionReferences", "()Lorg/apache/batchee/container/proxy/InjectionReferences;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/batchee/container/proxy/InjectionReferences");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "setInjectionReferences", "(Lorg/apache/batchee/container/proxy/InjectionReferences;)Lorg/apache/batchee/container/proxy/InjectionReferences;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/batchee/container/proxy/InjectionReferences");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "set", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "remove", "()V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/batchee/container/proxy/InjectionReferences"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC | ACC_VARARGS, "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(TT;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)TT;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getClassLoader", "()Ljava/lang/ClassLoader;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "getInterfaces", "(Ljava/lang/Class;)[Ljava/lang/Class;", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/container/proxy/BatchProxyInvocationHandler");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/proxy/BatchProxyInvocationHandler", "<init>", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Proxy", "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createDeciderProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/Decider;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/Decider");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/Decider");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createBatchletProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/Batchlet;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/Batchlet");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/Batchlet");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createCheckpointAlgorithmProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Lorg/apache/batchee/container/proxy/CheckpointAlgorithmProxy;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/CheckpointAlgorithm");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "org/apache/batchee/container/proxy/CheckpointAlgorithmProxy");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/batchee/container/proxy/CheckpointAlgorithmProxy", "<init>", "(Ljavax/batch/api/chunk/CheckpointAlgorithm;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/proxy/InjectionReferences", "getStepContext", "()Lorg/apache/batchee/container/impl/StepContextImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/batchee/container/proxy/CheckpointAlgorithmProxy", "setStepContext", "(Lorg/apache/batchee/container/impl/StepContextImpl;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createItemReaderProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/chunk/ItemReader;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/ItemReader");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("readItem");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/ItemReader");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createItemProcessorProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/chunk/ItemProcessor;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/ItemProcessor");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("processItem");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/ItemProcessor");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createItemWriterProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/chunk/ItemWriter;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/ItemWriter");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("writeItems");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/chunk/ItemWriter");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createPartitionReducerProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/partition/PartitionReducer;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionReducer");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionReducer");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createPartitionMapperProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/partition/PartitionMapper;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionMapper");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionMapper");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createPartitionAnalyzerProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/partition/PartitionAnalyzer;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionAnalyzer");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionAnalyzer");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "createPartitionCollectorProxy", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljavax/batch/api/partition/PartitionCollector;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "loadArtifact", "(Lorg/apache/batchee/spi/BatchArtifactFactory;Ljava/lang/String;Lorg/apache/batchee/container/proxy/InjectionReferences;Lorg/apache/batchee/container/impl/jobinstance/RuntimeJobExecution;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionCollector");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "createProxy", "(Ljava/lang/Object;Lorg/apache/batchee/container/proxy/InjectionReferences;[Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/batch/api/partition/PartitionCollector");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "getInterfaces", "(Ljava/lang/Class;)[Ljava/lang/Class;", "(Ljava/lang/Class<*>;)[Ljava/lang/Class<*>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSuperclass", "()Ljava/lang/Class;", false);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getInterfaces", "()[Ljava/lang/Class;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/util/Set"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getInterfaces", "()[Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Ljava/lang/Class;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSuperclass", "()Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Class;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/ThreadLocal");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/ThreadLocal", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/batchee/container/proxy/ProxyFactory", "INJECTION_CONTEXT", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

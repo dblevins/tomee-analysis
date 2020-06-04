@@ -1,0 +1,6 @@
+= org/apache/geronimo/mail/james/mime4j/io/BufferedLineReaderInputStream.class
+
+ - link:BufferedLineReaderInputStream-asmified.java[Asmified]
+
+== References
+

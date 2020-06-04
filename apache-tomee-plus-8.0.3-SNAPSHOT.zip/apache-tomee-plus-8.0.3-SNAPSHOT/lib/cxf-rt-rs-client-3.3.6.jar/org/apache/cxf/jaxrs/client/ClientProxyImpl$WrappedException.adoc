@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/ClientProxyImpl$WrappedException.class
+
+ - link:ClientProxyImpl$WrappedException-asmified.java[Asmified]
+
+== References
+

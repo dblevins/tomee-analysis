@@ -1,0 +1,30 @@
+= com/sun/faces/context/ExternalContextImpl.class
+
+ - link:ExternalContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 66
+ - javax.servlet.ServletRequest - 56
+ - javax.servlet.ServletResponse - 46
+ - javax.servlet.ServletContext - 44
+ - javax.servlet.http.HttpServletRequest - 43
+ - javax.servlet.http.HttpServletResponse - 27
+ - javax.faces.context.ExternalContext - 16
+ - javax.servlet.http.HttpSession - 12
+ - javax.faces.lifecycle.ClientWindow - 12
+ - javax.servlet.http.Cookie - 11
+ - javax.faces.context.Flash - 8
+ - javax.servlet.http.PushBuilder - 7
+ - javax.faces.context.PartialResponseWriter - 7
+ - javax.faces.application.ProjectStage - 6
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.application.Application - 4
+ - javax.faces.context.PartialViewContext - 4
+ - javax.servlet.RequestDispatcher - 3
+ - javax.faces.FacesException - 3
+ - javax.faces.context.ResponseWriter - 3
+ - javax.servlet.ServletException - 2
+ - javax.faces.context.FlashFactory - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.servlet.ServletOutputStream - 1

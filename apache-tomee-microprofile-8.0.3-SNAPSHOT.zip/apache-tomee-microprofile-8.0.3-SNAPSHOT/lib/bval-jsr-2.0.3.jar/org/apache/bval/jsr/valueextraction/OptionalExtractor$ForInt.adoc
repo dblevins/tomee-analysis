@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/valueextraction/OptionalExtractor$ForInt.class
+
+ - link:OptionalExtractor$ForInt-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 8
+ - javax.validation.valueextraction.ExtractedValue - 1
+ - javax.validation.valueextraction.UnwrapByDefault - 1
+ - javax.validation.valueextraction.ValueExtractor - 1

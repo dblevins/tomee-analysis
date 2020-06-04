@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/FixedBufferCodec.class
+
+ - link:FixedBufferCodec-asmified.java[Asmified]
+
+== References
+

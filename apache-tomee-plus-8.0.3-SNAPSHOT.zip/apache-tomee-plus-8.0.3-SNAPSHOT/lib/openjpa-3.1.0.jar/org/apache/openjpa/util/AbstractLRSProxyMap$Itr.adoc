@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/AbstractLRSProxyMap$Itr.class
+
+ - link:AbstractLRSProxyMap$Itr-asmified.java[Asmified]
+
+== References
+

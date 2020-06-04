@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/Wildcard.class
+
+ - link:Wildcard-asmified.java[Asmified]
+
+== References
+

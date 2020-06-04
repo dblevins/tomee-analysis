@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/DescriptionInfo.class
+
+ - link:DescriptionInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/FaultInfoException.class
+
+ - link:FaultInfoException-asmified.java[Asmified]
+
+== References
+

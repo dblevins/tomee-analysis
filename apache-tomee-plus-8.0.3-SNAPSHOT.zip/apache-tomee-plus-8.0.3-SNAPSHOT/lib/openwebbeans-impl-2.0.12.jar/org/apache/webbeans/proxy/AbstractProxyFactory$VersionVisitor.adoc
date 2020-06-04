@@ -1,0 +1,6 @@
+= org/apache/webbeans/proxy/AbstractProxyFactory$VersionVisitor.class
+
+ - link:AbstractProxyFactory$VersionVisitor-asmified.java[Asmified]
+
+== References
+

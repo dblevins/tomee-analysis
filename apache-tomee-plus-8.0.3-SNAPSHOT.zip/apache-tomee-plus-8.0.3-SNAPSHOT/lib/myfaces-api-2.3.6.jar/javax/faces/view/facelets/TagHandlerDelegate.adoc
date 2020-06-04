@@ -1,0 +1,9 @@
+= javax/faces/view/facelets/TagHandlerDelegate.class
+
+ - link:TagHandlerDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.MetaRuleset - 1
+ - javax.faces.view.facelets.FaceletContext - 1
+ - javax.faces.component.UIComponent - 1

@@ -1,0 +1,6 @@
+= org/hsqldb/StatementManager.class
+
+ - link:StatementManager-asmified.java[Asmified]
+
+== References
+

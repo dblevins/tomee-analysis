@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/fileupload/util/FileItemHeadersImpl.class
+
+ - link:FileItemHeadersImpl-asmified.java[Asmified]
+
+== References
+

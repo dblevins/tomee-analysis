@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlInputTextarea.class
+
+ - link:HtmlInputTextarea-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 108
+ - javax.faces.component.html.HtmlInputTextarea - 80
+ - javax.faces.component.html.HtmlInputTextarea$PropertyKeys - 54
+ - javax.faces.component.UIInput - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

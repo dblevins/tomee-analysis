@@ -1,0 +1,14 @@
+= org/apache/myfaces/view/facelets/compiler/TextUnit.class
+
+ - link:TextUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 13
+ - javax.faces.view.facelets.FaceletHandler - 9
+ - javax.el.ELException - 8
+ - javax.faces.view.facelets.TagAttribute - 4
+ - javax.faces.application.FacesMessage$Severity - 3
+ - javax.faces.view.facelets.CompositeFaceletHandler - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.TagAttributes - 2

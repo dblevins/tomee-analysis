@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/dataformat/yaml/YAMLParser$Feature.class
+
+ - link:YAMLParser$Feature-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/commons/FieldRemapper.class
+
+ - link:FieldRemapper-asmified.java[Asmified]
+
+== References
+

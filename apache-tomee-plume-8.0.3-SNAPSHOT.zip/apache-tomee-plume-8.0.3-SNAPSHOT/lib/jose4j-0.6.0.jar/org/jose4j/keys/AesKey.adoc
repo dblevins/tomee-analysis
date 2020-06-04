@@ -1,0 +1,6 @@
+= org/jose4j/keys/AesKey.class
+
+ - link:AesKey-asmified.java[Asmified]
+
+== References
+

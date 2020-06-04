@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/impl/BasicSignatureSigningConfiguration.class
+
+ - link:BasicSignatureSigningConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 12
+ - javax.annotation.Nonnull - 7

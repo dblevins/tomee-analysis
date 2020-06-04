@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/JTASynchronizationListener.class
+
+ - link:JTASynchronizationListener-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 1

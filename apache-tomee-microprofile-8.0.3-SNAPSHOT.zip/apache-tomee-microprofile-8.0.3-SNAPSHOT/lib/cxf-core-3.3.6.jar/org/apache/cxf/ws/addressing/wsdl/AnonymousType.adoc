@@ -1,0 +1,9 @@
+= org/apache/cxf/ws/addressing/wsdl/AnonymousType.class
+
+ - link:AnonymousType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 3
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlEnum - 1

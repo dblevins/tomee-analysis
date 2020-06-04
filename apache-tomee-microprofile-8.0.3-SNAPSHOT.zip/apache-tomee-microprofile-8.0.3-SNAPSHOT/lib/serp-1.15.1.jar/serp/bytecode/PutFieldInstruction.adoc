@@ -1,0 +1,6 @@
+= serp/bytecode/PutFieldInstruction.class
+
+ - link:PutFieldInstruction-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openejb/client/EJBObjectHandle.class
+
+ - link:EJBObjectHandle-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBObject - 2
+ - javax.ejb.Handle - 1

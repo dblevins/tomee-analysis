@@ -1,0 +1,6 @@
+= javax/wsdl/xml/WSDLWriter.class
+
+ - link:WSDLWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/persistence/jpa/TransactionProvider.class
+
+ - link:TransactionProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 1

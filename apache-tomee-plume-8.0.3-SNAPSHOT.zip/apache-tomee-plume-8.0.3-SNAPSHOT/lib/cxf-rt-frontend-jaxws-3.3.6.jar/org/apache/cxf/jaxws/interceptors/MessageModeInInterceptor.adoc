@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor.class
+
+ - link:MessageModeInInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 8
+ - javax.activation.DataSource - 4
+ - javax.xml.soap.SOAPPart - 3

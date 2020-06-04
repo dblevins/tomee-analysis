@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/examples/Example.class
+
+ - link:Example-asmified.java[Asmified]
+
+== References
+

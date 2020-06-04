@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/mappings/converters/CoreConverter.class
+
+ - link:CoreConverter-asmified.java[Asmified]
+
+== References
+

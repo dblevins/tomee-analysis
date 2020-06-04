@@ -1,0 +1,6 @@
+= commonj/sdo/helper/DataFactory.class
+
+ - link:DataFactory-asmified.java[Asmified]
+
+== References
+

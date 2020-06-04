@@ -1,0 +1,11 @@
+= com/sun/faces/lifecycle/ApplyRequestValuesPhase.class
+
+ - link:ApplyRequestValuesPhase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 3
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.UIViewRoot - 1

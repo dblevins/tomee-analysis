@@ -1,0 +1,6 @@
+= org/apache/webbeans/service/ManualImplementationLoaderService.class
+
+ - link:ManualImplementationLoaderService-asmified.java[Asmified]
+
+== References
+

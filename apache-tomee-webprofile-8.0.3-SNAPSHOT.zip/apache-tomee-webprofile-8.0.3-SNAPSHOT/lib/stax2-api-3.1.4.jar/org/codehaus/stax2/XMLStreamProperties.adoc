@@ -1,0 +1,6 @@
+= org/codehaus/stax2/XMLStreamProperties.class
+
+ - link:XMLStreamProperties-asmified.java[Asmified]
+
+== References
+

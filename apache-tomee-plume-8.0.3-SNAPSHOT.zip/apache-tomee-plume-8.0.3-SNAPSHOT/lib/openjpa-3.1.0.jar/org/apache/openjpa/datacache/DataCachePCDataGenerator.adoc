@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/DataCachePCDataGenerator.class
+
+ - link:DataCachePCDataGenerator-asmified.java[Asmified]
+
+== References
+

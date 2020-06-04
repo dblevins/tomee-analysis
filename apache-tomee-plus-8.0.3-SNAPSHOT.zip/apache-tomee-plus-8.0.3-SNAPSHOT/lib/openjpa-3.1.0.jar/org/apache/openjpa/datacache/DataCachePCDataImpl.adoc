@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/DataCachePCDataImpl.class
+
+ - link:DataCachePCDataImpl-asmified.java[Asmified]
+
+== References
+

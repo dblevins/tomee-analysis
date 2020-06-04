@@ -1,0 +1,6 @@
+= org/jose4j/jwe/AesGcmKeyEncryptionAlgorithm.class
+
+ - link:AesGcmKeyEncryptionAlgorithm-asmified.java[Asmified]
+
+== References
+

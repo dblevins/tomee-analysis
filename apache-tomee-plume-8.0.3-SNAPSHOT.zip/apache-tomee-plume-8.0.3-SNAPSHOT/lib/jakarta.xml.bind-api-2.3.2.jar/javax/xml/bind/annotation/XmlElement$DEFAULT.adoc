@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/XmlElement$DEFAULT.class
+
+ - link:XmlElement$DEFAULT-asmified.java[Asmified]
+
+== References
+

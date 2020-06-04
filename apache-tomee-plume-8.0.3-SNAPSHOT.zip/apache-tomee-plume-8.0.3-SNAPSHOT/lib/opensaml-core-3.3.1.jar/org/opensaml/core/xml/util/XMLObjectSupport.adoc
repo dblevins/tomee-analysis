@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/util/XMLObjectSupport.class
+
+ - link:XMLObjectSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4
+ - javax.annotation.Nonnull - 3

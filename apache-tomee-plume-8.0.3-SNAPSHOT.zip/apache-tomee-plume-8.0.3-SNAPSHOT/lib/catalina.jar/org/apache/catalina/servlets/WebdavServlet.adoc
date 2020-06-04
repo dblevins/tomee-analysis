@@ -1,0 +1,13 @@
+= org/apache/catalina/servlets/WebdavServlet.class
+
+ - link:WebdavServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 142
+ - javax.servlet.http.HttpServletResponse - 139
+ - javax.servlet.ServletConfig - 12
+ - javax.servlet.ServletException - 11
+ - javax.servlet.ServletContext - 4
+ - javax.servlet.ServletInputStream - 3
+ - javax.servlet.DispatcherType - 2

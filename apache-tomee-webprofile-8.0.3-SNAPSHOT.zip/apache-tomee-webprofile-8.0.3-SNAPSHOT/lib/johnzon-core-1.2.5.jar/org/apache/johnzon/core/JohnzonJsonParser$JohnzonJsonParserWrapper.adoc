@@ -1,0 +1,12 @@
+= org/apache/johnzon/core/JohnzonJsonParser$JohnzonJsonParserWrapper.class
+
+ - link:JohnzonJsonParser$JohnzonJsonParserWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser - 39
+ - javax.json.JsonValue - 5
+ - javax.json.JsonObject - 2
+ - javax.json.stream.JsonLocation - 2
+ - javax.json.JsonArray - 2
+ - javax.json.stream.JsonParser$Event - 2

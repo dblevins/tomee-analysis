@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/jsf/html/HtmlComponentHandler.class
+
+ - link:HtmlComponentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.MetaRuleset - 4
+ - javax.faces.view.facelets.ComponentHandler - 3
+ - javax.faces.view.facelets.ComponentConfig - 2

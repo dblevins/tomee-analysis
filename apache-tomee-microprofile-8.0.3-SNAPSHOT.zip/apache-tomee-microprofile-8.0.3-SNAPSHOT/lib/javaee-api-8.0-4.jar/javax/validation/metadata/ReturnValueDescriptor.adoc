@@ -1,0 +1,9 @@
+= javax/validation/metadata/ReturnValueDescriptor.class
+
+ - link:ReturnValueDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ContainerDescriptor - 1
+ - javax.validation.metadata.CascadableDescriptor - 1
+ - javax.validation.metadata.ElementDescriptor - 1

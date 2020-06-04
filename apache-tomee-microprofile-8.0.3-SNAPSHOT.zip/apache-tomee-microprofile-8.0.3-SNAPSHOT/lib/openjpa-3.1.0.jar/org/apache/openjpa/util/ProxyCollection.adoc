@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ProxyCollection.class
+
+ - link:ProxyCollection-asmified.java[Asmified]
+
+== References
+

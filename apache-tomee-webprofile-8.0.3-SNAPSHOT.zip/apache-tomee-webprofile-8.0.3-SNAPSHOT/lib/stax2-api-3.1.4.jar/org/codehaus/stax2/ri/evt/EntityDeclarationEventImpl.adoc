@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/EntityDeclarationEventImpl.class
+
+ - link:EntityDeclarationEventImpl-asmified.java[Asmified]
+
+== References
+

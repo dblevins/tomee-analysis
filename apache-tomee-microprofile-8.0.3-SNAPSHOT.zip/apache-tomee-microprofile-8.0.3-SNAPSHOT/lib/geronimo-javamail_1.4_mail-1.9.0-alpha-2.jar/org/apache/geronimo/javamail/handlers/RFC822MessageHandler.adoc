@@ -1,0 +1,16 @@
+= org/apache/geronimo/javamail/handlers/RFC822MessageHandler.class
+
+ - link:RFC822MessageHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Session - 5
+ - javax.mail.MessagingException - 5
+ - javax.activation.DataSource - 5
+ - javax.mail.Message - 4
+ - javax.mail.internet.MimeMessage - 4
+ - javax.mail.MessageAware - 3
+ - javax.activation.ActivationDataFlavor - 2
+ - javax.mail.MessageContext - 2
+ - javax.activation.DataContentHandler - 1
+ - javax.mail.Authenticator - 1

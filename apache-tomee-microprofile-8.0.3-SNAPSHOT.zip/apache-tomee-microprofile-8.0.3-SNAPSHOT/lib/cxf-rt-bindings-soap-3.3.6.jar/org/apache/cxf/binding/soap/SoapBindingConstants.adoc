@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/SoapBindingConstants.class
+
+ - link:SoapBindingConstants-asmified.java[Asmified]
+
+== References
+

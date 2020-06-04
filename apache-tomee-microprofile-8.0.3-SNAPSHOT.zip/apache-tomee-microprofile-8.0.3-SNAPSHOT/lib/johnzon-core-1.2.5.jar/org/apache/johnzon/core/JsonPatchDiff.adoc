@@ -1,0 +1,13 @@
+= org/apache/johnzon/core/JsonPatchDiff.class
+
+ - link:JsonPatchDiff-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 22
+ - javax.json.JsonPatchBuilder - 19
+ - javax.json.JsonArray - 15
+ - javax.json.JsonObject - 11
+ - javax.json.JsonStructure - 8
+ - javax.json.spi.JsonProvider - 5
+ - javax.json.JsonPatch - 2

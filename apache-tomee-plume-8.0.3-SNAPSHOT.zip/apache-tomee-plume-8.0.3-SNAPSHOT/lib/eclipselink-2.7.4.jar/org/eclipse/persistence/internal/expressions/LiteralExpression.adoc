@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/LiteralExpression.class
+
+ - link:LiteralExpression-asmified.java[Asmified]
+
+== References
+

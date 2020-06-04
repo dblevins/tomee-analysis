@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/OpenEJBLifecycle$OpenEJBComponentProvider.class
+
+ - link:OpenEJBLifecycle$OpenEJBComponentProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 1

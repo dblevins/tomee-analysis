@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/WarResource.class
+
+ - link:WarResource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/impl/AbstractMetadataResolver$EntityBackingStore.class
+
+ - link:AbstractMetadataResolver$EntityBackingStore-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/mbean/MBeanDevelopmentServices.class
+
+ - link:MBeanDevelopmentServices-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,12 @@
+= org/apache/geronimo/microprofile/common/jaxrs/HealthChecksEndpoint.class
+
+ - link:HealthChecksEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$ResponseBuilder - 4
+ - javax.ws.rs.core.Response$Status - 4
+ - javax.ws.rs.core.Response - 3
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.GET - 1
+ - javax.ws.rs.Path - 1

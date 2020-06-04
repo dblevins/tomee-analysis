@@ -1,0 +1,7 @@
+= javax/ws/rs/core/PathSegment.class
+
+ - link:PathSegment-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ExpressionStoreQuery$InMemoryExecutor.class
+
+ - link:ExpressionStoreQuery$InMemoryExecutor-asmified.java[Asmified]
+
+== References
+

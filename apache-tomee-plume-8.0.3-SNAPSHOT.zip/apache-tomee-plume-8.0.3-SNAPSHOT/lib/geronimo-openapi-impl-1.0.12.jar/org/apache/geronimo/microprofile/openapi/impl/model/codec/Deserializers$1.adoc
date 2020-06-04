@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/codec/Deserializers$1.class
+
+ - link:Deserializers$1-asmified.java[Asmified]
+
+== References
+

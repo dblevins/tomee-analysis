@@ -1,0 +1,12 @@
+= com/sun/xml/bind/v2/runtime/BridgeAdapter.class
+
+ - link:BridgeAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 17
+ - javax.xml.bind.Unmarshaller - 14
+ - javax.xml.bind.JAXBException - 11
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 8
+ - javax.xml.bind.MarshalException - 5
+ - javax.xml.bind.UnmarshalException - 2

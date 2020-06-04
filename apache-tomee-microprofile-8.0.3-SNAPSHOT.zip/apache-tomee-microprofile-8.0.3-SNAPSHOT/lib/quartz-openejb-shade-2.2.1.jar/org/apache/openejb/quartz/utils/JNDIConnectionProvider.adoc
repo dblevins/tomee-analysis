@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/utils/JNDIConnectionProvider.class
+
+ - link:JNDIConnectionProvider-asmified.java[Asmified]
+
+== References
+

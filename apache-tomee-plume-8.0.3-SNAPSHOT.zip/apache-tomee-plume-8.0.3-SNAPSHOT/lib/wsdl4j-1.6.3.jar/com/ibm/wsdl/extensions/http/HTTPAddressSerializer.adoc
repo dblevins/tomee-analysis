@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/http/HTTPAddressSerializer.class
+
+ - link:HTTPAddressSerializer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/partitioning/RangePartitioningMetadata.class
+
+ - link:RangePartitioningMetadata-asmified.java[Asmified]
+
+== References
+

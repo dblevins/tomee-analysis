@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/SaxOpenejb$ProxyFactoryElement.class
+
+ - link:SaxOpenejb$ProxyFactoryElement-asmified.java[Asmified]
+
+== References
+

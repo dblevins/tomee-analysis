@@ -1,0 +1,20 @@
+= org/apache/myfaces/shared/renderkit/html/util/OutcomeTargetUtils.class
+
+ - link:OutcomeTargetUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 30
+ - javax.faces.application.NavigationCase - 18
+ - javax.faces.component.UIOutcomeTarget - 15
+ - javax.faces.component.UIParameter - 14
+ - javax.faces.lifecycle.ClientWindow - 12
+ - javax.faces.application.ConfigurableNavigationHandler - 12
+ - javax.faces.application.NavigationHandler - 9
+ - javax.faces.application.ViewHandler - 9
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.application.Application - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.FacesException - 2

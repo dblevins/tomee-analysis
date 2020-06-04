@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingServerRequestFilter.class
+
+ - link:OpenTracingServerRequestFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ContainerRequestContext - 9
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.UriInfo - 2
+ - javax.ws.rs.container.ContainerRequestFilter - 1

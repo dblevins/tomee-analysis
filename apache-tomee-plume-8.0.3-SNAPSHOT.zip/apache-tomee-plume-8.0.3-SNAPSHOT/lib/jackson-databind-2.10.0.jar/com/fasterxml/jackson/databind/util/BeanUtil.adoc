@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/BeanUtil.class
+
+ - link:BeanUtil-asmified.java[Asmified]
+
+== References
+

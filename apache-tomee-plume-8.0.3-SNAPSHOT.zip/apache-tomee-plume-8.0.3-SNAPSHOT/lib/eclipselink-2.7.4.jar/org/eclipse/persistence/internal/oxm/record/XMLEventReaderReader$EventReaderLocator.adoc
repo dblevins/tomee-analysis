@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLEventReaderReader$EventReaderLocator.class
+
+ - link:XMLEventReaderReader$EventReaderLocator-asmified.java[Asmified]
+
+== References
+

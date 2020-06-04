@@ -1,0 +1,6 @@
+= org/hsqldb/lib/RefCapablePropertyResourceBundle$1.class
+
+ - link:RefCapablePropertyResourceBundle$1-asmified.java[Asmified]
+
+== References
+

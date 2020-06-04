@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/FlushTransactionListener.class
+
+ - link:FlushTransactionListener-asmified.java[Asmified]
+
+== References
+

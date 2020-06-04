@@ -1,0 +1,237 @@
+package asm.org.cryptacular.bean;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AbstractBlockCipherBeanDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/cryptacular/bean/AbstractBlockCipherBean", null, "org/cryptacular/bean/AbstractCipherBean", null);
+
+classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/cryptacular/bean/AbstractCipherBean", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/security/KeyStore;Ljava/lang/String;Ljava/lang/String;Lorg/cryptacular/generator/Nonce;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/cryptacular/bean/AbstractCipherBean", "<init>", "(Ljava/security/KeyStore;Ljava/lang/String;Ljava/lang/String;Lorg/cryptacular/generator/Nonce;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "process", "(Lorg/cryptacular/CiphertextHeader;Z[B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/cryptacular/bean/AbstractBlockCipherBean", "newCipher", "(Lorg/cryptacular/CiphertextHeader;Z)Lorg/cryptacular/adapter/BlockCipherAdapter;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/cryptacular/CiphertextHeader", "encode", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "getOutputSize", "(I)I", true);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 7);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/cryptacular/adapter/BlockCipherAdapter"}, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/cryptacular/CiphertextHeader", "getLength", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "getOutputSize", "(I)I", true);
+methodVisitor.visitVarInsn(ISTORE, 9);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/cryptacular/bean/AbstractBlockCipherBean", "org/cryptacular/CiphertextHeader", Opcodes.INTEGER, "[B", "org/cryptacular/adapter/BlockCipherAdapter", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, "[B"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "processBytes", "([BII[BI)I", true);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "doFinal", "([BI)I", true);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 11);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "process", "(Lorg/cryptacular/CiphertextHeader;ZLjava/io/InputStream;Ljava/io/OutputStream;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/cryptacular/bean/AbstractBlockCipherBean", "newCipher", "(Lorg/cryptacular/CiphertextHeader;Z)Lorg/cryptacular/adapter/BlockCipherAdapter;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitIntInsn(SIPUSH, 1024);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "getOutputSize", "(I)I", true);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitIntInsn(SIPUSH, 1024);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "max", "(II)I", false);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInvokeDynamicInsn("handle", "(Lorg/cryptacular/adapter/BlockCipherAdapter;[B)Lorg/cryptacular/io/ChunkHandler;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("([BIILjava/io/OutputStream;)V"), new Handle(Opcodes.H_INVOKESTATIC, "org/cryptacular/bean/AbstractBlockCipherBean", "lambda$process$0", "(Lorg/cryptacular/adapter/BlockCipherAdapter;[B[BIILjava/io/OutputStream;)V", false), Type.getType("([BIILjava/io/OutputStream;)V")});
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/cryptacular/util/StreamUtil", "pipeAll", "(Ljava/io/InputStream;Ljava/io/OutputStream;Lorg/cryptacular/io/ChunkHandler;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "doFinal", "([BI)I", true);
+methodVisitor.visitVarInsn(ISTORE, 8);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/OutputStream", "write", "([BII)V", false);
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/cryptacular/bean/AbstractBlockCipherBean", "org/cryptacular/CiphertextHeader", Opcodes.INTEGER, "java/io/InputStream", "java/io/OutputStream", "org/cryptacular/adapter/BlockCipherAdapter", Opcodes.INTEGER, "[B", Opcodes.INTEGER}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitTypeInsn(NEW, "org/cryptacular/StreamException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/cryptacular/StreamException", "<init>", "(Ljava/io/IOException;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "newCipher", "(Lorg/cryptacular/CiphertextHeader;Z)Lorg/cryptacular/adapter/BlockCipherAdapter;", null, null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$process$0", "(Lorg/cryptacular/adapter/BlockCipherAdapter;[B[BIILjava/io/OutputStream;)V", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/cryptacular/adapter/BlockCipherAdapter", "processBytes", "([BII[BI)I", true);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/OutputStream", "write", "([BII)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 7);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

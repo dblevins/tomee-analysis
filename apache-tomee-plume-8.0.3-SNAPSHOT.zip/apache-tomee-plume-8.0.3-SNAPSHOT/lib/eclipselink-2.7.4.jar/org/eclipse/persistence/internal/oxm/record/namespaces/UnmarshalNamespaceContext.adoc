@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/namespaces/UnmarshalNamespaceContext.class
+
+ - link:UnmarshalNamespaceContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/CompManagedBean.class
+
+ - link:CompManagedBean-asmified.java[Asmified]
+
+== References
+

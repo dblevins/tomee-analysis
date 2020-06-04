@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/UnmodifiableEntrySet$UnmodifiableEntry.class
+
+ - link:UnmodifiableEntrySet$UnmodifiableEntry-asmified.java[Asmified]
+
+== References
+

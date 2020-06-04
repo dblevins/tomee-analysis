@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/AbstractInsnNode.class
+
+ - link:AbstractInsnNode-asmified.java[Asmified]
+
+== References
+

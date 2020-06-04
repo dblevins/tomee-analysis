@@ -1,0 +1,19 @@
+= org/apache/openjpa/persistence/criteria/PathImpl.class
+
+ - link:PathImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 13
+ - javax.persistence.metamodel.Type - 11
+ - javax.persistence.metamodel.ManagedType - 11
+ - javax.persistence.criteria.Join - 6
+ - javax.persistence.metamodel.SingularAttribute - 5
+ - javax.persistence.metamodel.PluralAttribute - 5
+ - javax.persistence.metamodel.MapAttribute - 5
+ - javax.persistence.metamodel.Attribute - 4
+ - javax.persistence.criteria.JoinType - 4
+ - javax.persistence.criteria.Path - 4
+ - javax.persistence.metamodel.Bindable - 3
+ - javax.persistence.criteria.Expression - 3
+ - javax.persistence.metamodel.Type$PersistenceType - 2

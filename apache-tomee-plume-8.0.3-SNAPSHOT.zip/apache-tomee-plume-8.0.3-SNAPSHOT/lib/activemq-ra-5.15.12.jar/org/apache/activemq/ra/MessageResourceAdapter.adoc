@@ -1,0 +1,9 @@
+= org/apache/activemq/ra/MessageResourceAdapter.class
+
+ - link:MessageResourceAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.resource.spi.BootstrapContext - 1
+ - javax.resource.spi.ResourceAdapter - 1

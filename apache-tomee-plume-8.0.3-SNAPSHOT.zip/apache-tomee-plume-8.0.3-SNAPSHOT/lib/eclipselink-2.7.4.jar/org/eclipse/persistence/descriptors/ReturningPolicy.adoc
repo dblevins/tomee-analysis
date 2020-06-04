@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/ReturningPolicy.class
+
+ - link:ReturningPolicy-asmified.java[Asmified]
+
+== References
+

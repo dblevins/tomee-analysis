@@ -1,0 +1,6 @@
+= org/hsqldb/Like.class
+
+ - link:Like-asmified.java[Asmified]
+
+== References
+

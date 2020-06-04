@@ -1,0 +1,7 @@
+= org/apache/myfaces/application/ApplicationImpl$1.class
+
+ - link:ApplicationImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponentBase - 2

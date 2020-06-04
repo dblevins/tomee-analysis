@@ -1,0 +1,6 @@
+= org/apache/webbeans/spi/plugins/OpenWebBeansPlugin.class
+
+ - link:OpenWebBeansPlugin-asmified.java[Asmified]
+
+== References
+

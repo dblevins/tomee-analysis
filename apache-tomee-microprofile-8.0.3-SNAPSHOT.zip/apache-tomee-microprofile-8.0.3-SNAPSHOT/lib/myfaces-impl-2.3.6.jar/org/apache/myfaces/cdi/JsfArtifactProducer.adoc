@@ -1,0 +1,25 @@
+= org/apache/myfaces/cdi/JsfArtifactProducer.class
+
+ - link:JsfArtifactProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 51
+ - javax.faces.context.ExternalContext - 24
+ - javax.enterprise.inject.Produces - 17
+ - javax.inject.Named - 17
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.application.Application - 4
+ - javax.enterprise.context.ApplicationScoped - 4
+ - javax.faces.context.Flash - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.annotation.RequestParameterValuesMap - 1
+ - javax.faces.annotation.HeaderMap - 1
+ - javax.faces.annotation.RequestMap - 1
+ - javax.faces.annotation.RequestCookieMap - 1
+ - javax.faces.annotation.ApplicationMap - 1
+ - javax.faces.annotation.HeaderValuesMap - 1
+ - javax.faces.annotation.RequestParameterMap - 1
+ - javax.faces.annotation.InitParameterMap - 1
+ - javax.faces.annotation.ViewMap - 1
+ - javax.faces.annotation.SessionMap - 1

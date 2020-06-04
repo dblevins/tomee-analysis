@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/ByteArrayConverter.class
+
+ - link:ByteArrayConverter-asmified.java[Asmified]
+
+== References
+

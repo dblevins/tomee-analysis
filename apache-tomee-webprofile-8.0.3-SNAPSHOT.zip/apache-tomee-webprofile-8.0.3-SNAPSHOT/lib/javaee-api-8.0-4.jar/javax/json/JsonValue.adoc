@@ -1,0 +1,15 @@
+= javax/json/JsonValue.class
+
+ - link:JsonValue-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 6
+ - javax.json.JsonObject - 5
+ - javax.json.JsonArray - 5
+ - javax.json.JsonValue$3 - 2
+ - javax.json.JsonValue$2 - 2
+ - javax.json.EmptyJsonArray - 2
+ - javax.json.JsonValue$1 - 2
+ - javax.json.EmptyJsonObject - 2
+ - javax.json.JsonValue$ValueType - 1

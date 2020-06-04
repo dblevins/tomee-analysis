@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/DefaultSymmetricBinding.class
+
+ - link:DefaultSymmetricBinding-asmified.java[Asmified]
+
+== References
+

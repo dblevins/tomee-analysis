@@ -1,0 +1,9 @@
+= javax/jms/XAQueueSession.class
+
+ - link:XAQueueSession-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.XASession - 1
+ - javax.jms.QueueSession - 1
+ - javax.jms.JMSException - 1

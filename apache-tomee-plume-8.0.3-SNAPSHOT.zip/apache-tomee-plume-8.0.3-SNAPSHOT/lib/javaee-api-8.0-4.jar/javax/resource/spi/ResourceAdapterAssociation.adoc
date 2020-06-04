@@ -1,0 +1,8 @@
+= javax/resource/spi/ResourceAdapterAssociation.class
+
+ - link:ResourceAdapterAssociation-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ResourceAdapter - 2
+ - javax.resource.ResourceException - 1

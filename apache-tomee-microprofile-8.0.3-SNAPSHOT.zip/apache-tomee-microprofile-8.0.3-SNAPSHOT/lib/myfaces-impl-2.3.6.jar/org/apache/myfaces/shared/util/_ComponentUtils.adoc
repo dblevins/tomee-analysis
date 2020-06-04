@@ -1,0 +1,9 @@
+= org/apache/myfaces/shared/util/_ComponentUtils.class
+
+ - link:_ComponentUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.component.UIComponent - 2

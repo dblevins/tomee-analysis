@@ -1,0 +1,9 @@
+= org/apache/activemq/ra/ActiveMQEndpointWorker$1$1.class
+
+ - link:ActiveMQEndpointWorker$1$1-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 3
+ - javax.resource.spi.work.Work - 1
+ - javax.jms.ExceptionListener - 1

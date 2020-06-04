@@ -1,0 +1,9 @@
+= javax/xml/soap/MimeHeaders.class
+
+ - link:MimeHeaders-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MimeHeader - 17
+ - javax.xml.soap.MimeHeaders$MatchingIterator - 4
+ - javax.xml.soap.MimeHeaders - 4

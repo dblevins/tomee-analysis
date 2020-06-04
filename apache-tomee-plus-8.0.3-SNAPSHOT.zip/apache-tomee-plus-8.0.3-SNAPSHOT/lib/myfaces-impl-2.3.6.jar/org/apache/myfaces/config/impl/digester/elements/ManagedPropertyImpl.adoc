@@ -1,0 +1,9 @@
+= org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl.class
+
+ - link:ManagedPropertyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.ValueBinding - 15
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.application.Application - 2

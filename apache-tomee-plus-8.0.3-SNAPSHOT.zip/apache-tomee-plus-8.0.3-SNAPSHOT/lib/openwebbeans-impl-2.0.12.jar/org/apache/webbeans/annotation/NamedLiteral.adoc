@@ -1,0 +1,8 @@
+= org/apache/webbeans/annotation/NamedLiteral.class
+
+ - link:NamedLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 3
+ - javax.inject.Named - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/AssociationOverride.class
+
+ - link:AssociationOverride-asmified.java[Asmified]
+
+== References
+

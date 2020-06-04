@@ -1,0 +1,6 @@
+= javax/xml/xpath/XPathFunction.class
+
+ - link:XPathFunction-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= javax/jms/JMSSecurityException.class
+
+ - link:JMSSecurityException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.JMSSecurityException - 1

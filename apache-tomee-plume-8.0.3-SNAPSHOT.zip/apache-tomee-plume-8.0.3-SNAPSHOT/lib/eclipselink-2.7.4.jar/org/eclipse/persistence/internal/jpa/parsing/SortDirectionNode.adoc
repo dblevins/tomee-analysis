@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SortDirectionNode.class
+
+ - link:SortDirectionNode-asmified.java[Asmified]
+
+== References
+

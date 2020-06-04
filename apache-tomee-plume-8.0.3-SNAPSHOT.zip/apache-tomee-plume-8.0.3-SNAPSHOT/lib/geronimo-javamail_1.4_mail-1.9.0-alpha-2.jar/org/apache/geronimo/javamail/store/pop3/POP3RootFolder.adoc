@@ -1,0 +1,9 @@
+= org/apache/geronimo/javamail/store/pop3/POP3RootFolder.class
+
+ - link:POP3RootFolder-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 12
+ - javax.mail.Folder - 11
+ - javax.mail.Store - 1

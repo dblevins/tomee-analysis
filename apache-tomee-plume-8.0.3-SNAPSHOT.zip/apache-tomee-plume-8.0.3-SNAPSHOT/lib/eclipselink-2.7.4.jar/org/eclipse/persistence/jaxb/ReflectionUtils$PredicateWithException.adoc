@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/ReflectionUtils$PredicateWithException.class
+
+ - link:ReflectionUtils$PredicateWithException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JacksonInject$Value.class
+
+ - link:JacksonInject$Value-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/AbstractEndpointResolver.class
+
+ - link:AbstractEndpointResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.annotation.Nullable - 7

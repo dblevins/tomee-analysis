@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/impl/TemplateContextImpl.class
+
+ - link:TemplateContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 4
+ - javax.faces.view.facelets.FaceletContext - 3
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.view.facelets.Facelet - 2
+ - javax.faces.FacesException - 1
+ - javax.el.ELException - 1
+ - javax.faces.view.facelets.FaceletException - 1

@@ -1,0 +1,9 @@
+= org/apache/jasper/servlet/TldScanner.class
+
+ - link:TldScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 17
+ - javax.servlet.descriptor.JspConfigDescriptor - 4
+ - javax.servlet.descriptor.TaglibDescriptor - 4

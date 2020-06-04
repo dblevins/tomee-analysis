@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/SchedulerDetailsSetter.class
+
+ - link:SchedulerDetailsSetter-asmified.java[Asmified]
+
+== References
+

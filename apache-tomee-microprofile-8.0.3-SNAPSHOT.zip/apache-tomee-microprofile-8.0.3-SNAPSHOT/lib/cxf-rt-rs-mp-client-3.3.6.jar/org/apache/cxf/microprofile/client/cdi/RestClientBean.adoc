@@ -1,0 +1,14 @@
+= org/apache/cxf/microprofile/client/cdi/RestClientBean.class
+
+ - link:RestClientBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 5
+ - javax.annotation.Priority - 4
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.inject.Default - 3
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Bean - 1

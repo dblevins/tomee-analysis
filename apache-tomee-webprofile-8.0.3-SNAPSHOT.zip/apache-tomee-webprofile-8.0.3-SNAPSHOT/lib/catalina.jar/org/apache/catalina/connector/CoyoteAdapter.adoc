@@ -1,0 +1,11 @@
+= org/apache/catalina/connector/CoyoteAdapter.class
+
+ - link:CoyoteAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ReadListener - 21
+ - javax.servlet.WriteListener - 6
+ - javax.servlet.ServletContext - 6
+ - javax.servlet.SessionTrackingMode - 4
+ - javax.servlet.ServletException - 2

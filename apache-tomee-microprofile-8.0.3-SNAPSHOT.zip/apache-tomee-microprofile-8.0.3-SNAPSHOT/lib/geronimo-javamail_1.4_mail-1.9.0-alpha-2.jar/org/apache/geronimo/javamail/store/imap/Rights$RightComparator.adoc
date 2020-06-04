@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/imap/Rights$RightComparator.class
+
+ - link:Rights$RightComparator-asmified.java[Asmified]
+
+== References
+

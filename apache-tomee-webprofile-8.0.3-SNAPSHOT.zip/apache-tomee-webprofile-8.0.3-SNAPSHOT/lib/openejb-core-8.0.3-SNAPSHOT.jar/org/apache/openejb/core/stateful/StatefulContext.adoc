@@ -1,0 +1,8 @@
+= org/apache/openejb/core/stateful/StatefulContext.class
+
+ - link:StatefulContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 2
+ - javax.xml.rpc.handler.MessageContext - 1

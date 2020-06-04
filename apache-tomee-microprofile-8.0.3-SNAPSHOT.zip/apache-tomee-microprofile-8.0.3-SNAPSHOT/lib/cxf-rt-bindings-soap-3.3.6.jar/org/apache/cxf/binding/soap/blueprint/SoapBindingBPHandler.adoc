@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/blueprint/SoapBindingBPHandler.class
+
+ - link:SoapBindingBPHandler-asmified.java[Asmified]
+
+== References
+

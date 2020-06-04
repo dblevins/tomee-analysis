@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DistinctResultList.class
+
+ - link:DistinctResultList-asmified.java[Asmified]
+
+== References
+

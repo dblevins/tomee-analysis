@@ -1,0 +1,9 @@
+= javax/jms/QueueReceiver.class
+
+ - link:QueueReceiver-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 1
+ - javax.jms.MessageConsumer - 1
+ - javax.jms.JMSException - 1

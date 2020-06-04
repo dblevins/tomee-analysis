@@ -1,0 +1,6 @@
+= org/apache/openejb/core/JndiFactory.class
+
+ - link:JndiFactory-asmified.java[Asmified]
+
+== References
+

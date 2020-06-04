@@ -1,0 +1,8 @@
+= org/apache/openejb/core/BaseContext$1.class
+
+ - link:BaseContext$1-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 1
+ - javax.ejb.Timer - 1

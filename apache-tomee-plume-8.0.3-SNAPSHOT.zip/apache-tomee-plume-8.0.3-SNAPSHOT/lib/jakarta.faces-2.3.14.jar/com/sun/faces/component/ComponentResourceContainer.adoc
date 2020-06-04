@@ -1,0 +1,8 @@
+= com/sun/faces/component/ComponentResourceContainer.class
+
+ - link:ComponentResourceContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIPanel - 2
+ - javax.faces.context.FacesContext - 1

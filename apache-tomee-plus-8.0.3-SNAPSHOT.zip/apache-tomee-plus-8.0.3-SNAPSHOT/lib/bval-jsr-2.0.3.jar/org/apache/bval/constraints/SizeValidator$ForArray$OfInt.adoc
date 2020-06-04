@@ -1,0 +1,7 @@
+= org/apache/bval/constraints/SizeValidator$ForArray$OfInt.class
+
+ - link:SizeValidator$ForArray$OfInt-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Size - 2

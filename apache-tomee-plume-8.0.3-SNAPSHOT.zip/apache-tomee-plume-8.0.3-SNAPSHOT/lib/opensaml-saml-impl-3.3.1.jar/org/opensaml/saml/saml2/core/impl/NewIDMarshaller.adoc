@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/NewIDMarshaller.class
+
+ - link:NewIDMarshaller-asmified.java[Asmified]
+
+== References
+

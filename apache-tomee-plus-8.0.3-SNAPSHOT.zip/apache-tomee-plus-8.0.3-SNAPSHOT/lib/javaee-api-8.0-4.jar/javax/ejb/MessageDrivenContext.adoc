@@ -1,0 +1,7 @@
+= javax/ejb/MessageDrivenContext.class
+
+ - link:MessageDrivenContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBContext - 1

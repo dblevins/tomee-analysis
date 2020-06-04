@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/encryption/support/DataEncryptionParameters.class
+
+ - link:DataEncryptionParameters-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6
+ - javax.annotation.Nonnull - 1

@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/securityToken/X509SKISecurityTokenImpl.class
+
+ - link:X509SKISecurityTokenImpl-asmified.java[Asmified]
+
+== References
+

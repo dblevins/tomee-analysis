@@ -1,0 +1,7 @@
+= org/opensaml/security/criteria/PublicKeyCriterion.class
+
+ - link:PublicKeyCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

@@ -1,0 +1,7 @@
+= org/opensaml/profile/logic/BrowserProfilePredicate.class
+
+ - link:BrowserProfilePredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

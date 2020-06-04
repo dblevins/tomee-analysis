@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap/SOAPHeaderImpl.class
+
+ - link:SOAPHeaderImpl-asmified.java[Asmified]
+
+== References
+

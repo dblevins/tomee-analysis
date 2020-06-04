@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/filter/impl/BasicDynamicTrustedNamesStrategy.class
+
+ - link:BasicDynamicTrustedNamesStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 2

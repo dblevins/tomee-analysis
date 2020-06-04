@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/ext/AttachmentResultCallback.class
+
+ - link:AttachmentResultCallback-asmified.java[Asmified]
+
+== References
+

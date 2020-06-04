@@ -1,0 +1,13 @@
+= javax/persistence/criteria/CriteriaQuery.class
+
+ - link:CriteriaQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.CriteriaQuery - 26
+ - javax.persistence.criteria.Expression - 10
+ - javax.persistence.criteria.AbstractQuery - 8
+ - javax.persistence.criteria.Predicate - 6
+ - javax.persistence.criteria.Order - 3
+ - javax.persistence.criteria.Selection - 3
+ - javax.persistence.criteria.ParameterExpression - 1

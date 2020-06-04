@@ -1,0 +1,9 @@
+= org/apache/openejb/client/EJBHomeHandler.class
+
+ - link:EJBHomeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 6
+ - javax.ejb.EJBHome - 4
+ - javax.ejb.Handle - 1

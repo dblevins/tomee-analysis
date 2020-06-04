@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/ApacheCanonicalizer.class
+
+ - link:ApacheCanonicalizer-asmified.java[Asmified]
+
+== References
+

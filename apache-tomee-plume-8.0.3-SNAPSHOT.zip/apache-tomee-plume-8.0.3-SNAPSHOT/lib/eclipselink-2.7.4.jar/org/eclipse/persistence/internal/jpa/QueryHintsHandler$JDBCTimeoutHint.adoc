@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$JDBCTimeoutHint.class
+
+ - link:QueryHintsHandler$JDBCTimeoutHint-asmified.java[Asmified]
+
+== References
+

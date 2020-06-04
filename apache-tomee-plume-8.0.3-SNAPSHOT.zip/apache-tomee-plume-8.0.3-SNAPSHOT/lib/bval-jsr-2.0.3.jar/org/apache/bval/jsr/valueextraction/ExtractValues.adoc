@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/valueextraction/ExtractValues.class
+
+ - link:ExtractValues-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 4
+ - javax.validation.valueextraction.ValueExtractor - 3
+ - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 1

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Empty.class
+
+ - link:PropertySerializerMap$Empty-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/taglibs/standard/util/ExpressionUtil.class
+
+ - link:ExpressionUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 11
+ - javax.el.ValueExpression - 8
+ - javax.el.ELContext - 8
+ - javax.el.ExpressionFactory - 4
+ - javax.servlet.jsp.JspFactory - 3
+ - javax.servlet.jsp.JspApplicationContext - 2
+ - javax.servlet.ServletContext - 2

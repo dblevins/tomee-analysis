@@ -1,0 +1,15 @@
+= org/apache/openejb/server/cxf/pojo/PojoEndpoint.class
+
+ - link:PojoEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 13
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.xml.ws.WebServiceException - 4
+ - javax.enterprise.inject.spi.InjectionTarget - 4
+ - javax.enterprise.inject.spi.Producer - 4
+ - javax.enterprise.context.spi.Contextual - 3
+ - javax.xml.ws.WebServiceContext - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.inject.spi.BeanManager - 1

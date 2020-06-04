@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/ConfigurationMBean.class
+
+ - link:ConfigurationMBean-asmified.java[Asmified]
+
+== References
+

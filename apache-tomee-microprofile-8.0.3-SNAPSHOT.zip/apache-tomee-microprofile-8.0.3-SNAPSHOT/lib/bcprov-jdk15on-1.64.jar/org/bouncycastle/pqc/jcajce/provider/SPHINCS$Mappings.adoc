@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/jcajce/provider/SPHINCS$Mappings.class
+
+ - link:SPHINCS$Mappings-asmified.java[Asmified]
+
+== References
+

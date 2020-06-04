@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/XJoinColumn.class
+
+ - link:XJoinColumn-asmified.java[Asmified]
+
+== References
+

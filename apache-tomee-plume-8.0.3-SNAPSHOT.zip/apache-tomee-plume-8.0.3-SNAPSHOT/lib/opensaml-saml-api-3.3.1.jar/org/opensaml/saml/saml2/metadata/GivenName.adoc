@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/GivenName.class
+
+ - link:GivenName-asmified.java[Asmified]
+
+== References
+

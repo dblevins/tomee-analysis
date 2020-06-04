@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/identifier/IdentifierUtilImpl.class
+
+ - link:IdentifierUtilImpl-asmified.java[Asmified]
+
+== References
+

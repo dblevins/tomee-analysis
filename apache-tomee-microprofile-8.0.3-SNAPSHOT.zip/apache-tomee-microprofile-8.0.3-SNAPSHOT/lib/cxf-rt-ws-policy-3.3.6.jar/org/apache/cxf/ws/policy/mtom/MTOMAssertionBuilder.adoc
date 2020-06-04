@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/mtom/MTOMAssertionBuilder.class
+
+ - link:MTOMAssertionBuilder-asmified.java[Asmified]
+
+== References
+

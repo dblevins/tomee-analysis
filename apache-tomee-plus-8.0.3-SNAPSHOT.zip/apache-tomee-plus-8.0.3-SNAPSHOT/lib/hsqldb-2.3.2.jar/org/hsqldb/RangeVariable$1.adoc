@@ -1,0 +1,6 @@
+= org/hsqldb/RangeVariable$1.class
+
+ - link:RangeVariable$1-asmified.java[Asmified]
+
+== References
+

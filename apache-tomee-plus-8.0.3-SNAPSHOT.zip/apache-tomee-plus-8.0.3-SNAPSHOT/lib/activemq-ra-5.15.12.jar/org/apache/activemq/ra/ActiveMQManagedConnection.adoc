@@ -1,0 +1,16 @@
+= org/apache/activemq/ra/ActiveMQManagedConnection.class
+
+ - link:ActiveMQManagedConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionEvent - 21
+ - javax.resource.ResourceException - 16
+ - javax.resource.spi.ConnectionEventListener - 13
+ - javax.jms.JMSException - 12
+ - javax.resource.spi.ManagedConnection - 6
+ - javax.resource.spi.ConnectionRequestInfo - 5
+ - javax.jms.ExceptionListener - 2
+ - javax.jms.Connection - 1
+ - javax.resource.spi.ManagedConnectionMetaData - 1
+ - javax.resource.spi.LocalTransaction - 1

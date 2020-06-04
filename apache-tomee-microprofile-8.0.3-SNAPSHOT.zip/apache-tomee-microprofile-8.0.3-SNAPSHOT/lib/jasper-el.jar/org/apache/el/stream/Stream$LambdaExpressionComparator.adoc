@@ -1,0 +1,8 @@
+= org/apache/el/stream/Stream$LambdaExpressionComparator.class
+
+ - link:Stream$LambdaExpressionComparator-asmified.java[Asmified]
+
+== References
+
+ - javax.el.LambdaExpression - 5
+ - javax.el.ELContext - 1

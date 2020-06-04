@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ComponentRelocatableResourceHandler.class
+
+ - link:ComponentRelocatableResourceHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.view.facelets.FaceletContext - 2

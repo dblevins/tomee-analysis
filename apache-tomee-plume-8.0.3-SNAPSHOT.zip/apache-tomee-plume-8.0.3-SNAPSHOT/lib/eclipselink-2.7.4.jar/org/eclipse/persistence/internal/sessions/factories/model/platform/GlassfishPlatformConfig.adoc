@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/platform/GlassfishPlatformConfig.class
+
+ - link:GlassfishPlatformConfig-asmified.java[Asmified]
+
+== References
+

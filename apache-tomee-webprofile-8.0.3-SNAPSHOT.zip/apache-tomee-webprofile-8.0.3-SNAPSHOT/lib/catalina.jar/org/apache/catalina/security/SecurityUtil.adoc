@@ -1,0 +1,12 @@
+= org/apache/catalina/security/SecurityUtil.class
+
+ - link:SecurityUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 8
+ - javax.servlet.Filter - 8
+ - javax.servlet.http.HttpSession - 7
+ - javax.servlet.http.HttpServletRequest - 7
+ - javax.servlet.ServletException - 4
+ - javax.servlet.UnavailableException - 2

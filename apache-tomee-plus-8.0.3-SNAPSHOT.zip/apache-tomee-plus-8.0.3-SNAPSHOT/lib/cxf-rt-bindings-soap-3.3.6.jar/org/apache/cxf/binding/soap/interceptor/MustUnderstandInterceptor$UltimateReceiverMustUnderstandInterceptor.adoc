@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor.class
+
+ - link:MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor-asmified.java[Asmified]
+
+== References
+

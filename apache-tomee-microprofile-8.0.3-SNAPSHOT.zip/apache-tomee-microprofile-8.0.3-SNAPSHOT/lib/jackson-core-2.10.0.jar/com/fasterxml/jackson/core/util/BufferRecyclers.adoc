@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/BufferRecyclers.class
+
+ - link:BufferRecyclers-asmified.java[Asmified]
+
+== References
+

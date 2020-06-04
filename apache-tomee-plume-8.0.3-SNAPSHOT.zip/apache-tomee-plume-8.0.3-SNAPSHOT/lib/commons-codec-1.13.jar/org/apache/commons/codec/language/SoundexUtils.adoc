@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/SoundexUtils.class
+
+ - link:SoundexUtils-asmified.java[Asmified]
+
+== References
+

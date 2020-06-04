@@ -1,0 +1,9 @@
+= org/apache/tomee/catalina/JavaeeInstanceManager.class
+
+ - link:JavaeeInstanceManager-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 3
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/DepthRestrictingStreamInterceptor.class
+
+ - link:DepthRestrictingStreamInterceptor-asmified.java[Asmified]
+
+== References
+

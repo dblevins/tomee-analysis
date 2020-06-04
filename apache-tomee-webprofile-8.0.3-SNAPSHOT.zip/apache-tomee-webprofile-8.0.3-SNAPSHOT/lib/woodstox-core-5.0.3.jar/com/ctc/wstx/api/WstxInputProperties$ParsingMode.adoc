@@ -1,0 +1,6 @@
+= com/ctc/wstx/api/WstxInputProperties$ParsingMode.class
+
+ - link:WstxInputProperties$ParsingMode-asmified.java[Asmified]
+
+== References
+

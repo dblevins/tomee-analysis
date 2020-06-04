@@ -1,0 +1,13 @@
+= org/apache/activemq/broker/jmx/DestinationView.class
+
+ - link:DestinationView-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageProducer - 12
+ - javax.jms.Connection - 10
+ - javax.jms.Session - 8
+ - javax.jms.InvalidSelectorException - 8
+ - javax.jms.Destination - 1
+ - javax.jms.TextMessage - 1
+ - javax.jms.Message - 1

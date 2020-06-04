@@ -1,0 +1,15 @@
+= org/apache/myfaces/cdi/view/ViewScopeBeanHolder.class
+
+ - link:ViewScopeBeanHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 18
+ - javax.servlet.ServletContext - 9
+ - javax.faces.context.ExternalContext - 7
+ - javax.faces.context.ExceptionHandler - 5
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.inject.Inject - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.enterprise.context.SessionScoped - 1

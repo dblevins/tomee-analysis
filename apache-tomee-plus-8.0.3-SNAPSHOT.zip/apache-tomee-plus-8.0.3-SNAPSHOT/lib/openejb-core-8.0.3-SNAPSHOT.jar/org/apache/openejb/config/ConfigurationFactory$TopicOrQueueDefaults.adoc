@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ConfigurationFactory$TopicOrQueueDefaults.class
+
+ - link:ConfigurationFactory$TopicOrQueueDefaults-asmified.java[Asmified]
+
+== References
+

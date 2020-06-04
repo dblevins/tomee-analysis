@@ -1,0 +1,8 @@
+= javax/jms/MessageNotReadableException.class
+
+ - link:MessageNotReadableException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.MessageNotReadableException - 1

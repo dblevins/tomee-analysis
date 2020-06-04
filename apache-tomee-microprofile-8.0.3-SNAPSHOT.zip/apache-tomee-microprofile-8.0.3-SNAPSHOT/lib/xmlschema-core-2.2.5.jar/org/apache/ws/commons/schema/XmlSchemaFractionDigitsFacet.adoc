@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaFractionDigitsFacet.class
+
+ - link:XmlSchemaFractionDigitsFacet-asmified.java[Asmified]
+
+== References
+

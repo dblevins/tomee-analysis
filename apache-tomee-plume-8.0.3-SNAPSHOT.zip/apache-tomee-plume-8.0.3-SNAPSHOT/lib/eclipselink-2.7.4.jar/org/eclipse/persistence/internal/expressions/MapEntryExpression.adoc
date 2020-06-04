@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/MapEntryExpression.class
+
+ - link:MapEntryExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$AllowNativeSQLQueryHint.class
+
+ - link:QueryHintsHandler$AllowNativeSQLQueryHint-asmified.java[Asmified]
+
+== References
+

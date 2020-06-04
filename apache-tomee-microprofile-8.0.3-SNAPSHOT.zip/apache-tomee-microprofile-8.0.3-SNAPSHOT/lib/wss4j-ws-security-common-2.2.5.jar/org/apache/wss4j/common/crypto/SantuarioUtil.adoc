@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/SantuarioUtil.class
+
+ - link:SantuarioUtil-asmified.java[Asmified]
+
+== References
+

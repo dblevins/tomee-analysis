@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/AgreementMethodBuilder.class
+
+ - link:AgreementMethodBuilder-asmified.java[Asmified]
+
+== References
+

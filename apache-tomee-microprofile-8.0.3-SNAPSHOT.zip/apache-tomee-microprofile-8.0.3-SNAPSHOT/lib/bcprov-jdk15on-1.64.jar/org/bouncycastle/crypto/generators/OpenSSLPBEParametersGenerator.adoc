@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/generators/OpenSSLPBEParametersGenerator.class
+
+ - link:OpenSSLPBEParametersGenerator-asmified.java[Asmified]
+
+== References
+

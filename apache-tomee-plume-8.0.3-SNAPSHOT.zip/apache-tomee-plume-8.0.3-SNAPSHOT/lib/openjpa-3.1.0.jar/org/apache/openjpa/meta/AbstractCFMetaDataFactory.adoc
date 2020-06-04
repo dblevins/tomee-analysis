@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/AbstractCFMetaDataFactory.class
+
+ - link:AbstractCFMetaDataFactory-asmified.java[Asmified]
+
+== References
+

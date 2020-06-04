@@ -1,0 +1,6 @@
+= org/apache/openejb/observer/event/AfterEvent.class
+
+ - link:AfterEvent-asmified.java[Asmified]
+
+== References
+

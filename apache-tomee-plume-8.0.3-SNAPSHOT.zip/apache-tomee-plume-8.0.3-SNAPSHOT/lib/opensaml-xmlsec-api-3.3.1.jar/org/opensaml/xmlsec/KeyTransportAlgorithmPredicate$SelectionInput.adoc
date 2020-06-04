@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/KeyTransportAlgorithmPredicate$SelectionInput.class
+
+ - link:KeyTransportAlgorithmPredicate$SelectionInput-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4
+ - javax.annotation.Nonnull - 2

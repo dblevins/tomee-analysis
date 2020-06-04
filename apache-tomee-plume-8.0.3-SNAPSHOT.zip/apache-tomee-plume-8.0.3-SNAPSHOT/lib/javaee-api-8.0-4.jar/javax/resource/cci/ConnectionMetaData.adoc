@@ -1,0 +1,7 @@
+= javax/resource/cci/ConnectionMetaData.class
+
+ - link:ConnectionMetaData-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 3

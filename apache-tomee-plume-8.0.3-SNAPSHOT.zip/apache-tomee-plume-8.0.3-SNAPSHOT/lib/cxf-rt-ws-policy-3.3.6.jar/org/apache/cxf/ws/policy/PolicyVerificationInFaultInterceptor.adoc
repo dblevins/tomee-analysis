@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/PolicyVerificationInFaultInterceptor.class
+
+ - link:PolicyVerificationInFaultInterceptor-asmified.java[Asmified]
+
+== References
+

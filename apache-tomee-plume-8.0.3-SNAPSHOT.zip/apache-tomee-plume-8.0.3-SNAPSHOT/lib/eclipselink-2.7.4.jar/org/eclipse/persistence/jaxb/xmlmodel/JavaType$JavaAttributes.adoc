@@ -1,0 +1,11 @@
+= org/eclipse/persistence/jaxb/xmlmodel/JavaType$JavaAttributes.class
+
+ - link:JavaType$JavaAttributes-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElementRef - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

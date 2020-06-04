@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/MapTransformer.class
+
+ - link:MapTransformer-asmified.java[Asmified]
+
+== References
+

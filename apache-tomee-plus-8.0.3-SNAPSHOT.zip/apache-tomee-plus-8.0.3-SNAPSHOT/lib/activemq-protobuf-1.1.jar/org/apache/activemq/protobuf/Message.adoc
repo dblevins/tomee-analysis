@@ -1,0 +1,6 @@
+= org/apache/activemq/protobuf/Message.class
+
+ - link:Message-asmified.java[Asmified]
+
+== References
+

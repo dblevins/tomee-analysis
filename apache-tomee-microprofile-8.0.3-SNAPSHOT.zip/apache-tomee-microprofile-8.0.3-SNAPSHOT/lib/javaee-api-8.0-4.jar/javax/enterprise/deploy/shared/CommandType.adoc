@@ -1,0 +1,7 @@
+= javax/enterprise/deploy/shared/CommandType.class
+
+ - link:CommandType-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.shared.CommandType - 32

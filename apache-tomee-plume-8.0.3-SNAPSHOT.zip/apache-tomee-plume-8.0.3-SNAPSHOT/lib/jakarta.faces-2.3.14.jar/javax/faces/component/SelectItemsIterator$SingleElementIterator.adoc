@@ -1,0 +1,9 @@
+= javax/faces/component/SelectItemsIterator$SingleElementIterator.class
+
+ - link:SelectItemsIterator$SingleElementIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.SelectItem - 9
+ - javax.faces.component.SelectItemsIterator$SingleElementIterator - 4
+ - javax.faces.component.SelectItemsIterator$1 - 1

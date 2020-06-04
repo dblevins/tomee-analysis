@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/AliasableNode.class
+
+ - link:AliasableNode-asmified.java[Asmified]
+
+== References
+

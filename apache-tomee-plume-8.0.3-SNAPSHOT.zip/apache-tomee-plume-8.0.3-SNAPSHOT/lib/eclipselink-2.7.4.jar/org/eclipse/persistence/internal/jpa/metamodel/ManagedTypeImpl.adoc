@@ -1,0 +1,16 @@
+= org/eclipse/persistence/internal/jpa/metamodel/ManagedTypeImpl.class
+
+ - link:ManagedTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute - 47
+ - javax.persistence.metamodel.SingularAttribute - 13
+ - javax.persistence.metamodel.ListAttribute - 12
+ - javax.persistence.metamodel.PluralAttribute - 12
+ - javax.persistence.metamodel.MapAttribute - 11
+ - javax.persistence.metamodel.SetAttribute - 11
+ - javax.persistence.metamodel.CollectionAttribute - 9
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 8
+ - javax.persistence.metamodel.Type - 6
+ - javax.persistence.metamodel.ManagedType - 2

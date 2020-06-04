@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/Java7SupportImpl.class
+
+ - link:Java7SupportImpl-asmified.java[Asmified]
+
+== References
+

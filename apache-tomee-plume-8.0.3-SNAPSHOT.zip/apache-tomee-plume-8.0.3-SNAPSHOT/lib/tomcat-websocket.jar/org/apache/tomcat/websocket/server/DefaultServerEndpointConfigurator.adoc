@@ -1,0 +1,11 @@
+= org/apache/tomcat/websocket/server/DefaultServerEndpointConfigurator.class
+
+ - link:DefaultServerEndpointConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Extension - 7
+ - javax.websocket.server.ServerEndpointConfig$Configurator - 2
+ - javax.websocket.HandshakeResponse - 1
+ - javax.websocket.server.HandshakeRequest - 1
+ - javax.websocket.server.ServerEndpointConfig - 1

@@ -1,0 +1,11 @@
+= com/sun/faces/cdi/FlashProducer.class
+
+ - link:FlashProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 7
+ - javax.faces.context.Flash - 3
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.enterprise.context.RequestScoped - 1

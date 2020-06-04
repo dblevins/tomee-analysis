@@ -1,0 +1,6 @@
+= javax/management/ManagedAttribute.class
+
+ - link:ManagedAttribute-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCBlobFile.class
+
+ - link:JDBCBlobFile-asmified.java[Asmified]
+
+== References
+

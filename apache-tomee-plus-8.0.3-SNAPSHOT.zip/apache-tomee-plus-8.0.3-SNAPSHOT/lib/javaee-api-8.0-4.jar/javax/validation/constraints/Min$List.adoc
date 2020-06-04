@@ -1,0 +1,7 @@
+= javax/validation/constraints/Min$List.class
+
+ - link:Min$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Min - 1

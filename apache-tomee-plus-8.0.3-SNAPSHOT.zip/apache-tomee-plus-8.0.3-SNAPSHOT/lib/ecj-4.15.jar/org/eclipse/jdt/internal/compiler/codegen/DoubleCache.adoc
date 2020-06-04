@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/DoubleCache.class
+
+ - link:DoubleCache-asmified.java[Asmified]
+
+== References
+

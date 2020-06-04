@@ -1,0 +1,6 @@
+= org/apache/cxf/management/counters/ResponseTimeCounterMBean.class
+
+ - link:ResponseTimeCounterMBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/johnzon/core/JsonStringImpl.class
+
+ - link:JsonStringImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonString - 5
+ - javax.json.JsonValue$ValueType - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/BinaryDataMapping.class
+
+ - link:BinaryDataMapping-asmified.java[Asmified]
+
+== References
+

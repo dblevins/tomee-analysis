@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/core/NonElementRef.class
+
+ - link:NonElementRef-asmified.java[Asmified]
+
+== References
+

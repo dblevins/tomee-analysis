@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/ScriptingVariabler$CustomTagCounter.class
+
+ - link:ScriptingVariabler$CustomTagCounter-asmified.java[Asmified]
+
+== References
+

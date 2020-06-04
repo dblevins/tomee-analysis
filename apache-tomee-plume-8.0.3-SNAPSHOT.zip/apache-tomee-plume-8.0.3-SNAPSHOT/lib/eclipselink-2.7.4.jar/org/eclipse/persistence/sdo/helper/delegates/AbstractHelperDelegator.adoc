@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/delegates/AbstractHelperDelegator.class
+
+ - link:AbstractHelperDelegator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/OneToOneMapping.class
+
+ - link:OneToOneMapping-asmified.java[Asmified]
+
+== References
+

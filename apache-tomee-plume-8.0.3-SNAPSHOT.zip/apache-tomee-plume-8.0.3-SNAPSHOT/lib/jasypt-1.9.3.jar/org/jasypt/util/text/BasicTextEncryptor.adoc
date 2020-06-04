@@ -1,0 +1,6 @@
+= org/jasypt/util/text/BasicTextEncryptor.class
+
+ - link:BasicTextEncryptor-asmified.java[Asmified]
+
+== References
+

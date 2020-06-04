@@ -1,0 +1,6 @@
+= org/eclipse/persistence/dynamic/DynamicClassLoader$EnumInfo.class
+
+ - link:DynamicClassLoader$EnumInfo-asmified.java[Asmified]
+
+== References
+

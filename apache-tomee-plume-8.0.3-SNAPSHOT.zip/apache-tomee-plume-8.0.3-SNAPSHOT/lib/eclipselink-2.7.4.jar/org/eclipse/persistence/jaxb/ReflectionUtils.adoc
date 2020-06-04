@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/ReflectionUtils.class
+
+ - link:ReflectionUtils-asmified.java[Asmified]
+
+== References
+

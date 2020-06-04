@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/STSStaxTokenValidator.class
+
+ - link:STSStaxTokenValidator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/problem/DefaultProblem.class
+
+ - link:DefaultProblem-asmified.java[Asmified]
+
+== References
+

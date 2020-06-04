@@ -1,0 +1,9 @@
+= javax/validation/constraints/Digits.class
+
+ - link:Digits-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Payload - 1
+ - javax.validation.constraints.Digits$List - 1
+ - javax.validation.Constraint - 1

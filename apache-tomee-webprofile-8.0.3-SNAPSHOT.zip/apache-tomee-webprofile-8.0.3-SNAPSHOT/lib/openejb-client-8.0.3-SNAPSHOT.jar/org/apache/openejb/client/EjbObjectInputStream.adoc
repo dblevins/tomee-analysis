@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EjbObjectInputStream.class
+
+ - link:EjbObjectInputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/utility/iterator/CloneListIterator$Mutator$ReadOnly.class
+
+ - link:CloneListIterator$Mutator$ReadOnly-asmified.java[Asmified]
+
+== References
+

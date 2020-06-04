@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/multitenant/MultitenantImpl.class
+
+ - link:MultitenantImpl-asmified.java[Asmified]
+
+== References
+

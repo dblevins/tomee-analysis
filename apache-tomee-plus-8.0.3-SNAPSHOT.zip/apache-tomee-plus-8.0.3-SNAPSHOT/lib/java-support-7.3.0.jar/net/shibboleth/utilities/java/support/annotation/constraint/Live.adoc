@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/annotation/constraint/Live.class
+
+ - link:Live-asmified.java[Asmified]
+
+== References
+

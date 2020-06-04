@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/TextOptimizer$TextCatVisitor.class
+
+ - link:TextOptimizer$TextCatVisitor-asmified.java[Asmified]
+
+== References
+

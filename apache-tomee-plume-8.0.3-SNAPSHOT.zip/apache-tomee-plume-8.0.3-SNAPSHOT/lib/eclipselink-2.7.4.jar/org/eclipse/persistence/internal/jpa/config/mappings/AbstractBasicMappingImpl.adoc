@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/mappings/AbstractBasicMappingImpl.class
+
+ - link:AbstractBasicMappingImpl-asmified.java[Asmified]
+
+== References
+

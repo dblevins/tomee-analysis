@@ -1,0 +1,7 @@
+= org/apache/openejb/testing/CdiExtensions.class
+
+ - link:CdiExtensions-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 1

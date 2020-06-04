@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SolidDBDictionary.class
+
+ - link:SolidDBDictionary-asmified.java[Asmified]
+
+== References
+

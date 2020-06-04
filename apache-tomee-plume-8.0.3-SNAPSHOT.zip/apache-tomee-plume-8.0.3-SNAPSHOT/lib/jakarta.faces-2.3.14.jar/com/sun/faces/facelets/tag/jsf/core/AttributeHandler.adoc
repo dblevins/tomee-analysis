@@ -1,0 +1,14 @@
+= com/sun/faces/facelets/tag/jsf/core/AttributeHandler.class
+
+ - link:AttributeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 14
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.el.ValueExpression - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.view.facelets.AttributeHandler - 1

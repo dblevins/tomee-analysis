@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/Column.class
+
+ - link:Column-asmified.java[Asmified]
+
+== References
+

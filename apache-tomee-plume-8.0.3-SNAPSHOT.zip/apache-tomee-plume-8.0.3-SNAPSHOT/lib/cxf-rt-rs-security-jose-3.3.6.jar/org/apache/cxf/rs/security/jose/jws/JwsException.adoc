@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jws/JwsException.class
+
+ - link:JwsException-asmified.java[Asmified]
+
+== References
+

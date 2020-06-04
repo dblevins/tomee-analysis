@@ -1,0 +1,6 @@
+= org/apache/cxf/service/Service.class
+
+ - link:Service-asmified.java[Asmified]
+
+== References
+

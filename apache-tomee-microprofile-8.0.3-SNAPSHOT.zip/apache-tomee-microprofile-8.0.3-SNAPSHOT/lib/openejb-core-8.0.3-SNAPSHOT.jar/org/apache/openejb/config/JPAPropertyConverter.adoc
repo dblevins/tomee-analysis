@@ -1,0 +1,6 @@
+= org/apache/openejb/config/JPAPropertyConverter.class
+
+ - link:JPAPropertyConverter-asmified.java[Asmified]
+
+== References
+

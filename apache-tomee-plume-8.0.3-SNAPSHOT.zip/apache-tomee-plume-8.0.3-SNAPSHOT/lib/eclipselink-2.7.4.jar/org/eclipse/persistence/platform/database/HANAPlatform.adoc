@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/HANAPlatform.class
+
+ - link:HANAPlatform-asmified.java[Asmified]
+
+== References
+

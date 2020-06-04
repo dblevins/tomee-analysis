@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/cloud/AbstractStreamProvider.class
+
+ - link:AbstractStreamProvider-asmified.java[Asmified]
+
+== References
+

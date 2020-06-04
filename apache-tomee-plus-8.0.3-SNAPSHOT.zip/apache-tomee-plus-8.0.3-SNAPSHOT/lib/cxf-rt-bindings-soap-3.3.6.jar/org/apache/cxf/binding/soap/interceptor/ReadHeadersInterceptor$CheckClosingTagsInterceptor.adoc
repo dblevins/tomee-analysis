@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor$CheckClosingTagsInterceptor.class
+
+ - link:ReadHeadersInterceptor$CheckClosingTagsInterceptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/PropertiesUtils.class
+
+ - link:PropertiesUtils-asmified.java[Asmified]
+
+== References
+

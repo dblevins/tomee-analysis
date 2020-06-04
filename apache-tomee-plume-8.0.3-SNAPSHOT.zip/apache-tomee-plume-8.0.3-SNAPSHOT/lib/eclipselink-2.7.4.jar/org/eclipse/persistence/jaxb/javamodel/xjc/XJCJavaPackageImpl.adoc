@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/xjc/XJCJavaPackageImpl.class
+
+ - link:XJCJavaPackageImpl-asmified.java[Asmified]
+
+== References
+

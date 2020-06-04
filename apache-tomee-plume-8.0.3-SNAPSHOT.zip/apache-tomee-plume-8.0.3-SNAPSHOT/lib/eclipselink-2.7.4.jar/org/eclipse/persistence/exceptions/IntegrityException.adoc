@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/IntegrityException.class
+
+ - link:IntegrityException-asmified.java[Asmified]
+
+== References
+

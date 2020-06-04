@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory.class
+
+ - link:ClientHeadersFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 3

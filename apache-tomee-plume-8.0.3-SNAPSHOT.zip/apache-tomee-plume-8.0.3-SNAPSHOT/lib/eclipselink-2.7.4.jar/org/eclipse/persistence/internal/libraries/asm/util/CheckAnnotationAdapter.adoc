@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/util/CheckAnnotationAdapter.class
+
+ - link:CheckAnnotationAdapter-asmified.java[Asmified]
+
+== References
+

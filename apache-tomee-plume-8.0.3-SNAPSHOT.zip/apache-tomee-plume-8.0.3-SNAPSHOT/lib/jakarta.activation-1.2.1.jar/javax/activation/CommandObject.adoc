@@ -1,0 +1,7 @@
+= javax/activation/CommandObject.class
+
+ - link:CommandObject-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 1

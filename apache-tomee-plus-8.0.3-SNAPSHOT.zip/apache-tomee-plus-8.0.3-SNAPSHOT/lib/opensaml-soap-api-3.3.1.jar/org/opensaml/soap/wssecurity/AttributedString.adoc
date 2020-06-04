@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/AttributedString.class
+
+ - link:AttributedString-asmified.java[Asmified]
+
+== References
+

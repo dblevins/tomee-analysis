@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/UnitOfWork$CommitOrderType.class
+
+ - link:UnitOfWork$CommitOrderType-asmified.java[Asmified]
+
+== References
+

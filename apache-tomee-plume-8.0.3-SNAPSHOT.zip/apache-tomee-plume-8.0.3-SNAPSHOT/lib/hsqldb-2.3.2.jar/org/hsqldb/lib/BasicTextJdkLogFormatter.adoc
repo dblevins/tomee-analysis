@@ -1,0 +1,6 @@
+= org/hsqldb/lib/BasicTextJdkLogFormatter.class
+
+ - link:BasicTextJdkLogFormatter-asmified.java[Asmified]
+
+== References
+

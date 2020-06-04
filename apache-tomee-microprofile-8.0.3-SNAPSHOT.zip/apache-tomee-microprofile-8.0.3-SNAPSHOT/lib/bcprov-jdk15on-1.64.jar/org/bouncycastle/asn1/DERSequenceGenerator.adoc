@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/DERSequenceGenerator.class
+
+ - link:DERSequenceGenerator-asmified.java[Asmified]
+
+== References
+

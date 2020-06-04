@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/MgmtData.class
+
+ - link:MgmtData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/dbws/SOAPResponse.class
+
+ - link:SOAPResponse-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/AttributeRestoringConnectionInvocationHandler.class
+
+ - link:AttributeRestoringConnectionInvocationHandler-asmified.java[Asmified]
+
+== References
+

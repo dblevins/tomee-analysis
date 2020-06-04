@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/annotation/XmlAttribute.class
+
+ - link:XmlAttribute-asmified.java[Asmified]
+
+== References
+

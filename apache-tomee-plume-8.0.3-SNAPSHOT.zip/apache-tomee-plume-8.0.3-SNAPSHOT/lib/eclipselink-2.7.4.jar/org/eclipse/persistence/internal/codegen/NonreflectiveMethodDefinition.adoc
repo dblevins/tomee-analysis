@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/codegen/NonreflectiveMethodDefinition.class
+
+ - link:NonreflectiveMethodDefinition-asmified.java[Asmified]
+
+== References
+

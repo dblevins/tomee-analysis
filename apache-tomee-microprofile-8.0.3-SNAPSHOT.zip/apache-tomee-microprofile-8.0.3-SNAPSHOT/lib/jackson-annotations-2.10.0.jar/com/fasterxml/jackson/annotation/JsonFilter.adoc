@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonFilter.class
+
+ - link:JsonFilter-asmified.java[Asmified]
+
+== References
+

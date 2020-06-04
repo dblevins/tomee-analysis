@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/PropertyName.class
+
+ - link:PropertyName-asmified.java[Asmified]
+
+== References
+

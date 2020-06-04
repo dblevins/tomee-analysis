@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/history/HistoricalDatabaseTable.class
+
+ - link:HistoricalDatabaseTable-asmified.java[Asmified]
+
+== References
+

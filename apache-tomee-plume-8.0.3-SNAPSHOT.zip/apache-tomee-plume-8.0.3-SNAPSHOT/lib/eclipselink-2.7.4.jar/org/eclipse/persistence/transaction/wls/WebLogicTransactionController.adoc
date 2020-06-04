@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/wls/WebLogicTransactionController.class
+
+ - link:WebLogicTransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2

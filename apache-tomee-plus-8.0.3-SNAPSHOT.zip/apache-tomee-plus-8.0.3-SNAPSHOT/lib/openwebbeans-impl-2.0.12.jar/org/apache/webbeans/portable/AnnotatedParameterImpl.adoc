@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/AnnotatedParameterImpl.class
+
+ - link:AnnotatedParameterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedCallable - 10
+ - javax.enterprise.inject.spi.AnnotatedParameter - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Annotated - 1

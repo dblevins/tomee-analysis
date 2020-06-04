@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/MapProperty.class
+
+ - link:MapProperty-asmified.java[Asmified]
+
+== References
+

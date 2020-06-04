@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/ElementIndex.class
+
+ - link:ElementIndex-asmified.java[Asmified]
+
+== References
+

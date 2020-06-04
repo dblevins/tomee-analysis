@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/WSAddressingFeature.class
+
+ - link:WSAddressingFeature-asmified.java[Asmified]
+
+== References
+

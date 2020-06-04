@@ -1,0 +1,16 @@
+= org/apache/webbeans/conversation/ConversationManager.class
+
+ - link:ConversationManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Context - 13
+ - javax.enterprise.inject.spi.Bean - 9
+ - javax.enterprise.context.BusyConversationException - 4
+ - javax.enterprise.context.Conversation - 4
+ - javax.enterprise.context.spi.Contextual - 4
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.context.NonexistentConversationException - 2
+ - javax.enterprise.context.SessionScoped - 2
+ - javax.enterprise.context.RequestScoped - 1

@@ -1,0 +1,9 @@
+= com/sun/faces/renderkit/html_basic/ImageRenderer.class
+
+ - link:ImageRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.context.ResponseWriter - 11
+ - javax.faces.context.FacesContext - 8

@@ -1,0 +1,12 @@
+= com/sun/faces/flow/FlowCDIEventFireHelperImpl.class
+
+ - link:FlowCDIEventFireHelperImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.event.Event - 6
+ - javax.faces.flow.Flow - 4
+ - javax.inject.Inject - 2
+ - javax.faces.flow.FlowScoped - 2
+ - javax.enterprise.context.Destroyed - 1
+ - javax.enterprise.context.Initialized - 1

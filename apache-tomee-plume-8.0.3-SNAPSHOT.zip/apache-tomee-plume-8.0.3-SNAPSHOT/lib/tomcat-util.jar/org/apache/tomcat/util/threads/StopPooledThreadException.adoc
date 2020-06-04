@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/threads/StopPooledThreadException.class
+
+ - link:StopPooledThreadException-asmified.java[Asmified]
+
+== References
+

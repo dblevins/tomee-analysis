@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/BatchProcessingEnvImpl.class
+
+ - link:BatchProcessingEnvImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/server/rest/RsRegistryImpl.class
+
+ - link:RsRegistryImpl-asmified.java[Asmified]
+
+== References
+

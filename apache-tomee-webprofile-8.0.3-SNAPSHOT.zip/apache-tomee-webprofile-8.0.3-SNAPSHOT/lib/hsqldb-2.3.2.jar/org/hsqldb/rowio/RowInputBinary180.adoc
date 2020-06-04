@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowInputBinary180.class
+
+ - link:RowInputBinary180-asmified.java[Asmified]
+
+== References
+

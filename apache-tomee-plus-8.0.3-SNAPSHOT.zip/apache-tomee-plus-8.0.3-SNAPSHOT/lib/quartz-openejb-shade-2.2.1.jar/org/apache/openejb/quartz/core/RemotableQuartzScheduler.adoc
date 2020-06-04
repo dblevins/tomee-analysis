@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/RemotableQuartzScheduler.class
+
+ - link:RemotableQuartzScheduler-asmified.java[Asmified]
+
+== References
+

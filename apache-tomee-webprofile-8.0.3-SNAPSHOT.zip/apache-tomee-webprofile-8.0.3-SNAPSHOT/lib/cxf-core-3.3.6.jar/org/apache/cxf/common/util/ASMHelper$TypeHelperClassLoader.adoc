@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ASMHelper$TypeHelperClassLoader.class
+
+ - link:ASMHelper$TypeHelperClassLoader-asmified.java[Asmified]
+
+== References
+

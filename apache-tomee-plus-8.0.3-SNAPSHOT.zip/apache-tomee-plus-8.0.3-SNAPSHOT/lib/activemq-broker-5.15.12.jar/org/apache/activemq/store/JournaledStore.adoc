@@ -1,0 +1,6 @@
+= org/apache/activemq/store/JournaledStore.class
+
+ - link:JournaledStore-asmified.java[Asmified]
+
+== References
+

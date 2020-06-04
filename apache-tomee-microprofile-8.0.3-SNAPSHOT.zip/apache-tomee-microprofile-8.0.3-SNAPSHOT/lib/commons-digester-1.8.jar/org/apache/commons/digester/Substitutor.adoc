@@ -1,0 +1,6 @@
+= org/apache/commons/digester/Substitutor.class
+
+ - link:Substitutor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/history/HistoryPolicy.class
+
+ - link:HistoryPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/xml/bind/AnyTypeAdapter.class
+
+ - link:AnyTypeAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

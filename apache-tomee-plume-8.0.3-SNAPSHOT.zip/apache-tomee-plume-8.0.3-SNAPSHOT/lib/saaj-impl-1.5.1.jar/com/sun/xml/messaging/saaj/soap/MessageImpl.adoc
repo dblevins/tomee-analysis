@@ -1,0 +1,19 @@
+= com/sun/xml/messaging/saaj/soap/MessageImpl.class
+
+ - link:MessageImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MimeHeaders - 75
+ - javax.xml.soap.SOAPPart - 33
+ - javax.xml.soap.AttachmentPart - 22
+ - javax.activation.DataSource - 15
+ - javax.xml.soap.SOAPException - 14
+ - javax.xml.soap.Node - 9
+ - javax.xml.soap.SOAPMessage - 8
+ - javax.xml.soap.SOAPElement - 7
+ - javax.xml.soap.SOAPEnvelope - 6
+ - javax.activation.DataHandler - 4
+ - javax.xml.soap.SOAPHeader - 2
+ - javax.xml.soap.SOAPBody - 2
+ - javax.xml.soap.SOAPConstants - 1

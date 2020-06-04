@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/wssecurity/messaging/impl/SAML20AssertionTokenValidationInput.class
+
+ - link:SAML20AssertionTokenValidationInput-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.annotation.Nonnull - 6

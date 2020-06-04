@@ -1,0 +1,12 @@
+= com/sun/faces/context/ExternalContextFactoryImpl.class
+
+ - link:ExternalContextFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 5
+ - javax.faces.context.ExternalContextFactory - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.ServletContext - 2
+ - javax.faces.FacesException - 1

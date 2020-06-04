@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/NamedQueryHandler.class
+
+ - link:NamedQueryHandler-asmified.java[Asmified]
+
+== References
+

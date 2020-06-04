@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ejbd/EjbDaemon$ContextualSerializer.class
+
+ - link:EjbDaemon$ContextualSerializer-asmified.java[Asmified]
+
+== References
+

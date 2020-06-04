@@ -1,0 +1,8 @@
+= javax/ws/rs/ext/ReaderInterceptor.class
+
+ - link:ReaderInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.WebApplicationException - 1
+ - javax.ws.rs.ext.ReaderInterceptorContext - 1

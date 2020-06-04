@@ -1,0 +1,7 @@
+= org/apache/taglibs/standard/lang/jstl/JSTLVariableResolver.class
+
+ - link:JSTLVariableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 12

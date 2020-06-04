@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/ClientConfiguration.class
+
+ - link:ClientConfiguration-asmified.java[Asmified]
+
+== References
+

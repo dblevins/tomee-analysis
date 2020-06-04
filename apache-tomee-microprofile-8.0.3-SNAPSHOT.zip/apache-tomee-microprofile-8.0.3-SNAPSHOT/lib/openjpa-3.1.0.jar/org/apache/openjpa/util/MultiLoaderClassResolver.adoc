@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/MultiLoaderClassResolver.class
+
+ - link:MultiLoaderClassResolver-asmified.java[Asmified]
+
+== References
+

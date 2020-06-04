@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/AbstractBufferCodec.class
+
+ - link:AbstractBufferCodec-asmified.java[Asmified]
+
+== References
+

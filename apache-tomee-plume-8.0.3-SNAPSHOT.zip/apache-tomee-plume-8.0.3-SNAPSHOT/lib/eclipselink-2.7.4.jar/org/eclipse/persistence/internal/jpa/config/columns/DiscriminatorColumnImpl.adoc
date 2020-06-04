@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/columns/DiscriminatorColumnImpl.class
+
+ - link:DiscriminatorColumnImpl-asmified.java[Asmified]
+
+== References
+

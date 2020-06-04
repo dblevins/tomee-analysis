@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/collection/LazyList.class
+
+ - link:LazyList-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.concurrent.NotThreadSafe - 1

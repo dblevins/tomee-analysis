@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/StreamCharBuffer$StreamCharBufferReader.class
+
+ - link:StreamCharBuffer$StreamCharBufferReader-asmified.java[Asmified]
+
+== References
+

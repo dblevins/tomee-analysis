@@ -1,0 +1,6 @@
+= org/apache/openejb/OpenEjbContainer$NoSuchModuleException.class
+
+ - link:OpenEjbContainer$NoSuchModuleException-asmified.java[Asmified]
+
+== References
+

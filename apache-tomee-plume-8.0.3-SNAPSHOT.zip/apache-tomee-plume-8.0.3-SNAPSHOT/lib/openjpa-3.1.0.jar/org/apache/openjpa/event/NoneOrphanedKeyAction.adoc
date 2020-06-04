@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/NoneOrphanedKeyAction.class
+
+ - link:NoneOrphanedKeyAction-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/rss/RssItem.class
+
+ - link:RssItem-asmified.java[Asmified]
+
+== References
+

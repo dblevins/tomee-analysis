@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.class
+
+ - link:ExternalTypeHandler-asmified.java[Asmified]
+
+== References
+

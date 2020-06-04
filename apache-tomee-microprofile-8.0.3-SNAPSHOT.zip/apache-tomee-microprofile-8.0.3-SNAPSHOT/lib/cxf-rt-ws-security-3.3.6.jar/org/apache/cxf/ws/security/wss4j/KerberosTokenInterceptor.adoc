@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/KerberosTokenInterceptor.class
+
+ - link:KerberosTokenInterceptor-asmified.java[Asmified]
+
+== References
+

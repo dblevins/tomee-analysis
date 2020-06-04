@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/InjectionTarget.class
+
+ - link:InjectionTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 1
+ - javax.enterprise.inject.spi.Producer - 1

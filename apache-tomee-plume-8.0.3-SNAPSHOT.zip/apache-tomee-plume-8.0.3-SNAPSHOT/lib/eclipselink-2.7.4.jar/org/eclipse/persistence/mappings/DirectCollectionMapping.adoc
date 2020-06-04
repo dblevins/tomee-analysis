@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/DirectCollectionMapping.class
+
+ - link:DirectCollectionMapping-asmified.java[Asmified]
+
+== References
+

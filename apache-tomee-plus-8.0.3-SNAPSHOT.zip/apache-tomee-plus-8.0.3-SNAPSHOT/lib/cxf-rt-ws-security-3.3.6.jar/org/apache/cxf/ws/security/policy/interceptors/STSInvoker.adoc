@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/STSInvoker.class
+
+ - link:STSInvoker-asmified.java[Asmified]
+
+== References
+

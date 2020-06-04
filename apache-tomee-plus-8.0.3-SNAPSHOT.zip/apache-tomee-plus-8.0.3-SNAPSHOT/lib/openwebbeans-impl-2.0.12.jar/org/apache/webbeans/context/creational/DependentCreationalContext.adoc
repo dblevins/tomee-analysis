@@ -1,0 +1,8 @@
+= org/apache/webbeans/context/creational/DependentCreationalContext.class
+
+ - link:DependentCreationalContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 10
+ - javax.enterprise.inject.spi.Bean - 1

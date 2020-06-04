@@ -1,0 +1,6 @@
+= org/apache/bval/util/reflection/TypeUtils$WildcardTypeImpl.class
+
+ - link:TypeUtils$WildcardTypeImpl-asmified.java[Asmified]
+
+== References
+

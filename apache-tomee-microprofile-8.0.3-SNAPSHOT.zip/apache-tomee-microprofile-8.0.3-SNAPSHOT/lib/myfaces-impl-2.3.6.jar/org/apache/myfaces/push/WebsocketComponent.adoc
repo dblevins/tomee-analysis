@@ -1,0 +1,7 @@
+= org/apache/myfaces/push/WebsocketComponent.class
+
+ - link:WebsocketComponent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 32

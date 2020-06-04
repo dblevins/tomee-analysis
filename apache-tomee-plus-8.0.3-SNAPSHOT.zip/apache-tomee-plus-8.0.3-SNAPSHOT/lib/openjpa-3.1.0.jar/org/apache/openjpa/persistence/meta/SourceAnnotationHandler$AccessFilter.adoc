@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$AccessFilter.class
+
+ - link:SourceAnnotationHandler$AccessFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.AccessType - 4
+ - javax.persistence.Access - 1

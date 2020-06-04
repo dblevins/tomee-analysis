@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Sampling.class
+
+ - link:Sampling-asmified.java[Asmified]
+
+== References
+

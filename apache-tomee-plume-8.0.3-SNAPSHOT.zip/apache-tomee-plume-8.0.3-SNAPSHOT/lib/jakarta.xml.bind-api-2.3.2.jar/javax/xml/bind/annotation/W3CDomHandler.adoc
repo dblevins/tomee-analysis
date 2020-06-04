@@ -1,0 +1,9 @@
+= javax/xml/bind/annotation/W3CDomHandler.class
+
+ - link:W3CDomHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventHandler - 6
+ - javax.xml.bind.annotation.W3CDomHandler - 4
+ - javax.xml.bind.annotation.DomHandler - 1

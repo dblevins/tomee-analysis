@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/filter/impl/RequiredValidUntilFilter.class
+
+ - link:RequiredValidUntilFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 3
+ - javax.annotation.Nonnull - 2

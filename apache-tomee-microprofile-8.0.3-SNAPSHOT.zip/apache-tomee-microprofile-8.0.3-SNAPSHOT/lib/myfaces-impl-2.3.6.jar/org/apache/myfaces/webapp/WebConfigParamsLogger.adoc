@@ -1,0 +1,9 @@
+= org/apache/myfaces/webapp/WebConfigParamsLogger.class
+
+ - link:WebConfigParamsLogger-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 298
+ - javax.faces.context.FacesContext - 152
+ - javax.faces.application.ProjectStage - 4

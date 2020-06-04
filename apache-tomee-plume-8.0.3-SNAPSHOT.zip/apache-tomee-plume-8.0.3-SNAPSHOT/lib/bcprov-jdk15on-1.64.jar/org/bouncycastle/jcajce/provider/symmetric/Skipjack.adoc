@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/Skipjack.class
+
+ - link:Skipjack-asmified.java[Asmified]
+
+== References
+

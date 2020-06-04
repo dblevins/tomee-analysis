@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/apps/xread.class
+
+ - link:xread-asmified.java[Asmified]
+
+== References
+

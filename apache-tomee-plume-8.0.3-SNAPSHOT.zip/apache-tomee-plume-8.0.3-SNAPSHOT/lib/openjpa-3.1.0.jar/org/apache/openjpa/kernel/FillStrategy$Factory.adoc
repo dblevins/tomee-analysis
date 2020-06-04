@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/FillStrategy$Factory.class
+
+ - link:FillStrategy$Factory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/NoDescriptorRegistry$NoJmxMBeanServer.class
+
+ - link:NoDescriptorRegistry$NoJmxMBeanServer-asmified.java[Asmified]
+
+== References
+

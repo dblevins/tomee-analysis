@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/core/Element.class
+
+ - link:Element-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityToken/EncryptedKeySha1SecurityToken.class
+
+ - link:EncryptedKeySha1SecurityToken-asmified.java[Asmified]
+
+== References
+

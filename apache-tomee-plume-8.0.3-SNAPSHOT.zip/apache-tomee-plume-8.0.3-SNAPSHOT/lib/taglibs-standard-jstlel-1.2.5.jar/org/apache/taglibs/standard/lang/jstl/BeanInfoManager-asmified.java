@@ -1,0 +1,546 @@
+package asm.org.apache.taglibs.standard.lang.jstl;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class BeanInfoManagerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(0, "mBeanClass", "Ljava/lang/Class;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mBeanInfo", "Ljava/beans/BeanInfo;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mPropertyByName", "Ljava/util/Map;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mIndexedPropertyByName", "Ljava/util/Map;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mEventSetByName", "Ljava/util/Map;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mInitialized", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_STATIC, "mBeanInfoManagerByClass", "Ljava/util/Map;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBeanClass", "()Ljava/lang/Class;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanClass", "Ljava/lang/Class;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Ljava/lang/Class;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanClass", "Ljava/lang/Class;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBeanInfoManager", "(Ljava/lang/Class;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoManager;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfoManagerByClass", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "createBeanInfoManager", "(Ljava/lang/Class;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoManager;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNCHRONIZED, "createBeanInfoManager", "(Ljava/lang/Class;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoManager;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfoManagerByClass", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "<init>", "(Ljava/lang/Class;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfoManagerByClass", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBeanInfoProperty", "(Ljava/lang/Class;Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoProperty;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getBeanInfoManager", "(Ljava/lang/Class;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoManager;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getProperty", "(Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoProperty;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getBeanInfoIndexedProperty", "(Ljava/lang/Class;Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoIndexedProperty;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getBeanInfoManager", "(Ljava/lang/Class;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoManager;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getIndexedProperty", "(Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoIndexedProperty;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "checkInitialized", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mInitialized", "Z");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(MONITORENTER);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mInitialized", "Z");
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "initialize", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mInitialized", "Z");
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "initialize", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/beans/IntrospectionException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanClass", "Ljava/lang/Class;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/beans/Introspector", "getBeanInfo", "(Ljava/lang/Class;)Ljava/beans/BeanInfo;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfo", "Ljava/beans/BeanInfo;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mPropertyByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mIndexedPropertyByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfo", "Ljava/beans/BeanInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/beans/BeanInfo", "getPropertyDescriptors", "()[Ljava/beans/PropertyDescriptor;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitTypeInsn(INSTANCEOF, "java/beans/IndexedPropertyDescriptor");
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/beans/IndexedPropertyDescriptor");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/IndexedPropertyDescriptor", "getIndexedReadMethod", "()Ljava/lang/reflect/Method;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/IndexedPropertyDescriptor", "getIndexedWriteMethod", "()Ljava/lang/reflect/Method;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitTypeInsn(NEW, "org/apache/taglibs/standard/lang/jstl/BeanInfoIndexedProperty");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoIndexedProperty", "<init>", "(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/beans/IndexedPropertyDescriptor;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mIndexedPropertyByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/IndexedPropertyDescriptor", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/PropertyDescriptor", "getReadMethod", "()Ljava/lang/reflect/Method;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/PropertyDescriptor", "getWriteMethod", "()Ljava/lang/reflect/Method;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitTypeInsn(NEW, "org/apache/taglibs/standard/lang/jstl/BeanInfoProperty");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoProperty", "<init>", "(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/beans/PropertyDescriptor;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mPropertyByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/PropertyDescriptor", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mEventSetByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfo", "Ljava/beans/BeanInfo;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/beans/BeanInfo", "getEventSetDescriptors", "()[Ljava/beans/EventSetDescriptor;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label6 = new Label();
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mEventSetByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/beans/EventSetDescriptor", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label1);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/Logger", "isLoggingWarning", "()Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/taglibs/standard/lang/jstl/Constants", "EXCEPTION_GETTING_BEANINFO", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanClass", "Ljava/lang/Class;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/Logger", "logWarning", "(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 9);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "getBeanInfo", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)Ljava/beans/BeanInfo;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "checkInitialized", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfo", "Ljava/beans/BeanInfo;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProperty", "(Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoProperty;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "checkInitialized", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mPropertyByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/taglibs/standard/lang/jstl/BeanInfoProperty");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIndexedProperty", "(Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Lorg/apache/taglibs/standard/lang/jstl/BeanInfoIndexedProperty;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "checkInitialized", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mIndexedPropertyByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/taglibs/standard/lang/jstl/BeanInfoIndexedProperty");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEventSet", "(Ljava/lang/String;Lorg/apache/taglibs/standard/lang/jstl/Logger;)Ljava/beans/EventSetDescriptor;", null, new String[] { "org/apache/taglibs/standard/lang/jstl/ELException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "checkInitialized", "(Lorg/apache/taglibs/standard/lang/jstl/Logger;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mEventSetByName", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/beans/EventSetDescriptor");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "getPublicMethod", "(Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getDeclaringClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getModifiers", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Modifier", "isPublic", "(I)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/Class;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "getPublicMethod", "(Ljava/lang/Class;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/security/AccessControlException");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label3, label4, "java/lang/NoSuchMethodException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getModifiers", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Modifier", "isPublic", "(I)Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getParameterTypes", "()[Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label1);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getParameterTypes", "()[Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getModifiers", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/reflect/Modifier", "isPublic", "(I)Z", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getInterfaces", "()[Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label8);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+Label label9 = new Label();
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label8);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/Class;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label10);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getSuperclass", "()Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "getPublicMethod", "(Ljava/lang/Class;Ljava/lang/reflect/Method;)Ljava/lang/reflect/Method;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/taglibs/standard/lang/jstl/BeanInfoManager", "mBeanInfoManagerByClass", "Ljava/util/Map;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

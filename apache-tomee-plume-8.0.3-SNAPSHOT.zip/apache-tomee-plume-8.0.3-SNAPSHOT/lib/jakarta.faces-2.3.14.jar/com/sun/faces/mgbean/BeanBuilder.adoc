@@ -1,0 +1,8 @@
+= com/sun/faces/mgbean/BeanBuilder.class
+
+ - link:BeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 13
+ - javax.el.ELContext - 6

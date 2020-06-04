@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/impl/ElementImpl$6.class
+
+ - link:ElementImpl$6-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.Node - 4
+ - javax.xml.soap.SOAPElement - 1

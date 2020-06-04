@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/policy/AddressingPolicyInterceptorProvider.class
+
+ - link:AddressingPolicyInterceptorProvider-asmified.java[Asmified]
+
+== References
+

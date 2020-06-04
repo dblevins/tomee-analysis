@@ -1,0 +1,12 @@
+= org/apache/openejb/cdi/transactional/TransactionContext$TransactionalMapHandler.class
+
+ - link:TransactionContext$TransactionalMapHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 9
+ - javax.transaction.SystemException - 2
+ - javax.transaction.TransactionManager - 2
+ - javax.transaction.Transaction - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.transaction.Synchronization - 1

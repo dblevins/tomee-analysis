@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/idpdisco/impl/DiscoveryResponseImpl.class
+
+ - link:DiscoveryResponseImpl-asmified.java[Asmified]
+
+== References
+

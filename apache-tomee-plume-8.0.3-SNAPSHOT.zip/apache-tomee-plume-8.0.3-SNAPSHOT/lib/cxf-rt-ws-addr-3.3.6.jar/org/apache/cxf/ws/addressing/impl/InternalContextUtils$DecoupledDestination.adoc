@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/impl/InternalContextUtils$DecoupledDestination.class
+
+ - link:InternalContextUtils$DecoupledDestination-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/WebsocketHandler.class
+
+ - link:WebsocketHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 3
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.view.facelets.ComponentConfig - 2
+ - javax.faces.component.UIWebsocket - 2
+ - javax.faces.view.facelets.ComponentHandler - 2
+ - javax.faces.view.facelets.FaceletContext - 2

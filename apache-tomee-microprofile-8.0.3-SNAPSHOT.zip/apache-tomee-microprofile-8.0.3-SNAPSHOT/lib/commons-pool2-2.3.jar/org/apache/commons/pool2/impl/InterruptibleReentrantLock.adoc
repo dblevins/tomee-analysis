@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/impl/InterruptibleReentrantLock.class
+
+ - link:InterruptibleReentrantLock-asmified.java[Asmified]
+
+== References
+

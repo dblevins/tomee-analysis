@@ -1,0 +1,6 @@
+= org/apache/commons/logging/impl/SimpleLog.class
+
+ - link:SimpleLog-asmified.java[Asmified]
+
+== References
+

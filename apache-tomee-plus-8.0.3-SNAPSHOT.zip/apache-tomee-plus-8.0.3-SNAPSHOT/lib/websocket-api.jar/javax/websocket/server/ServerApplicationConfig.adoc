@@ -1,0 +1,8 @@
+= javax/websocket/server/ServerApplicationConfig.class
+
+ - link:ServerApplicationConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Endpoint - 1
+ - javax.websocket.server.ServerEndpointConfig - 1

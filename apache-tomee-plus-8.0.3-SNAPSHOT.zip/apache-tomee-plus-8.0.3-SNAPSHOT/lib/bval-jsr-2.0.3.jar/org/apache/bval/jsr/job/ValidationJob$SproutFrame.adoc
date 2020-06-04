@@ -1,0 +1,18 @@
+= org/apache/bval/jsr/job/ValidationJob$SproutFrame.class
+
+ - link:ValidationJob$SproutFrame-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ContainerElementTypeDescriptor - 11
+ - javax.validation.metadata.GroupConversionDescriptor - 8
+ - javax.validation.metadata.ContainerDescriptor - 5
+ - javax.validation.metadata.CascadableDescriptor - 5
+ - javax.validation.ValidationException - 4
+ - javax.validation.valueextraction.ValueExtractor - 4
+ - javax.validation.TraversableResolver - 4
+ - javax.validation.ConstraintViolation - 3
+ - javax.validation.metadata.ElementDescriptor - 3
+ - javax.validation.Path$Node - 1
+ - javax.validation.Path - 1
+ - javax.validation.metadata.PropertyDescriptor - 1

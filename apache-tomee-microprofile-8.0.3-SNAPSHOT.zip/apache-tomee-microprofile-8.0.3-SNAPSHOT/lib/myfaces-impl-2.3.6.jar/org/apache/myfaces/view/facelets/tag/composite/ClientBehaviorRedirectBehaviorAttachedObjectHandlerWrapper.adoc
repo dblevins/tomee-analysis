@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorRedirectBehaviorAttachedObjectHandlerWrapper.class
+
+ - link:ClientBehaviorRedirectBehaviorAttachedObjectHandlerWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.BehaviorHolderAttachedObjectHandler - 16
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.FacesWrapper - 1

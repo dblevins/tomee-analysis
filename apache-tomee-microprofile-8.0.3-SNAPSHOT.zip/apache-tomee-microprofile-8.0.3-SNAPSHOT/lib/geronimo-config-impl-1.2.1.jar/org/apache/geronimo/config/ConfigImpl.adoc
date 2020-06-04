@@ -1,0 +1,9 @@
+= org/apache/geronimo/config/ConfigImpl.class
+
+ - link:ConfigImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 4
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.enterprise.inject.Typed - 1

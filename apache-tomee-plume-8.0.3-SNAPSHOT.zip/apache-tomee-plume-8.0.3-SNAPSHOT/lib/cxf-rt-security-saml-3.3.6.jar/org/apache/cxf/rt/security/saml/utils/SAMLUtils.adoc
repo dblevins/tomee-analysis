@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/saml/utils/SAMLUtils.class
+
+ - link:SAMLUtils-asmified.java[Asmified]
+
+== References
+

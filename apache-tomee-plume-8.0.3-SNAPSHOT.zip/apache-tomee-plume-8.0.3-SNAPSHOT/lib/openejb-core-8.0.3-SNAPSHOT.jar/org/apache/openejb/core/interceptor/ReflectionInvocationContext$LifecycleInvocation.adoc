@@ -1,0 +1,7 @@
+= org/apache/openejb/core/interceptor/ReflectionInvocationContext$LifecycleInvocation.class
+
+ - link:ReflectionInvocationContext$LifecycleInvocation-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 5

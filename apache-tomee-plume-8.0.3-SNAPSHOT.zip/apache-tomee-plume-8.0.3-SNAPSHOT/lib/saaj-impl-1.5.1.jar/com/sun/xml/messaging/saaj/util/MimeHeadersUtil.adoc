@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/util/MimeHeadersUtil.class
+
+ - link:MimeHeadersUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MimeHeaders - 7
+ - javax.xml.soap.MimeHeader - 3

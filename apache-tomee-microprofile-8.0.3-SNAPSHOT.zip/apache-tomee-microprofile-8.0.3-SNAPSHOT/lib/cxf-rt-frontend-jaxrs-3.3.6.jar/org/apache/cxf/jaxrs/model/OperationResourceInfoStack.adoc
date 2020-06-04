@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/OperationResourceInfoStack.class
+
+ - link:OperationResourceInfoStack-asmified.java[Asmified]
+
+== References
+

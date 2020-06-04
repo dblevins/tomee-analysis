@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/AbstractQuery$1.class
+
+ - link:AbstractQuery$1-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TemporalType - 8

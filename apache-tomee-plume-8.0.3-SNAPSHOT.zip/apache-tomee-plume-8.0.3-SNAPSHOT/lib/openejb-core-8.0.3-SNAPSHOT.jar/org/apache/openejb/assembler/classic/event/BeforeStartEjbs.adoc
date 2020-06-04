@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/event/BeforeStartEjbs.class
+
+ - link:BeforeStartEjbs-asmified.java[Asmified]
+
+== References
+

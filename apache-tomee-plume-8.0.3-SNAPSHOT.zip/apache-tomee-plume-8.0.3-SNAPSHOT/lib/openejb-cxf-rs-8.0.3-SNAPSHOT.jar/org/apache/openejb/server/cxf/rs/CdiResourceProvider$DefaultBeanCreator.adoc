@@ -1,0 +1,12 @@
+= org/apache/openejb/server/cxf/rs/CdiResourceProvider$DefaultBeanCreator.class
+
+ - link:CdiResourceProvider$DefaultBeanCreator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$ResponseBuilder - 16
+ - javax.ws.rs.core.Response - 12
+ - javax.enterprise.context.spi.CreationalContext - 11
+ - javax.ws.rs.WebApplicationException - 8
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.context.spi.Contextual - 1

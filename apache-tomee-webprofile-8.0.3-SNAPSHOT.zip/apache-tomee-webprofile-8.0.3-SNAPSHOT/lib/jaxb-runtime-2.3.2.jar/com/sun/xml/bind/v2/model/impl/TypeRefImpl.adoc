@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/TypeRefImpl.class
+
+ - link:TypeRefImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/ParseException.class
+
+ - link:ParseException-asmified.java[Asmified]
+
+== References
+

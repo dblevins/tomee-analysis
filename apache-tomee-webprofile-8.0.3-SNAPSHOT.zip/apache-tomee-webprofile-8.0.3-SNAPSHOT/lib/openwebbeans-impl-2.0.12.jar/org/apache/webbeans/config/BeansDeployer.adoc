@@ -1,0 +1,33 @@
+= org/apache/webbeans/config/BeansDeployer.class
+
+ - link:BeansDeployer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 156
+ - javax.enterprise.inject.spi.Bean - 50
+ - javax.enterprise.inject.spi.BeanAttributes - 26
+ - javax.enterprise.inject.spi.BeanManager - 17
+ - javax.enterprise.inject.spi.Decorator - 14
+ - javax.annotation.Priority - 13
+ - javax.enterprise.inject.Alternative - 6
+ - javax.enterprise.inject.spi.ObserverMethod - 5
+ - javax.enterprise.inject.spi.InjectionTarget - 5
+ - javax.enterprise.inject.AmbiguousResolutionException - 4
+ - javax.enterprise.inject.spi.Producer - 4
+ - javax.enterprise.inject.spi.DefinitionException - 3
+ - javax.enterprise.inject.spi.InjectionPoint - 3
+ - javax.enterprise.inject.Produces - 2
+ - javax.enterprise.inject.UnsatisfiedResolutionException - 2
+ - javax.interceptor.Interceptor - 2
+ - javax.enterprise.event.NotificationOptions - 2
+ - javax.enterprise.inject.Vetoed - 2
+ - javax.enterprise.inject.spi.Extension - 2
+ - javax.enterprise.inject.UnproxyableResolutionException - 2
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.enterprise.inject.spi.Interceptor - 2
+ - javax.enterprise.inject.Model - 1
+ - javax.decorator.Decorator - 1
+ - javax.enterprise.inject.spi.Annotated - 1
+ - javax.enterprise.inject.spi.AnnotatedField - 1
+ - javax.enterprise.context.spi.Contextual - 1

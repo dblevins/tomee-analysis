@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/ClassTooLargeException.class
+
+ - link:ClassTooLargeException-asmified.java[Asmified]
+
+== References
+

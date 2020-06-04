@@ -1,0 +1,9 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$Key.class
+
+ - link:JMS2CDIExtension$Key-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.ConnectionFactory - 17
+ - javax.jms.JMSContext - 5
+ - javax.jms.JMSRuntimeException - 2

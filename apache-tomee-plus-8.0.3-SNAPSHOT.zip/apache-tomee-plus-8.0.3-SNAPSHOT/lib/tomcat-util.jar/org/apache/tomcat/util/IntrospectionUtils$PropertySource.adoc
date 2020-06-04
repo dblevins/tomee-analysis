@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/IntrospectionUtils$PropertySource.class
+
+ - link:IntrospectionUtils$PropertySource-asmified.java[Asmified]
+
+== References
+

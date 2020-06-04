@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/provider/JAXRSDataBinding$MessageBodyDataWriter.class
+
+ - link:JAXRSDataBinding$MessageBodyDataWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.ext.MessageBodyWriter - 2

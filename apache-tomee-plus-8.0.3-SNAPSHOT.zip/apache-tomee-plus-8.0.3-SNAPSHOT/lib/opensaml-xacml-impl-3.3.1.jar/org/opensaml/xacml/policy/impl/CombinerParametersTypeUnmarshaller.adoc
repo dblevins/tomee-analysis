@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/CombinerParametersTypeUnmarshaller.class
+
+ - link:CombinerParametersTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

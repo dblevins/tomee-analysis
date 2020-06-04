@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/impl/SAMLMetadataLookupHandler.class
+
+ - link:SAMLMetadataLookupHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

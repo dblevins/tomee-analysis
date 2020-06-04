@@ -1,0 +1,7 @@
+= org/apache/myfaces/config/FacesConfigValidator.class
+
+ - link:FacesConfigValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 13

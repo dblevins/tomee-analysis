@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/codegen/CodeDefinition.class
+
+ - link:CodeDefinition-asmified.java[Asmified]
+
+== References
+

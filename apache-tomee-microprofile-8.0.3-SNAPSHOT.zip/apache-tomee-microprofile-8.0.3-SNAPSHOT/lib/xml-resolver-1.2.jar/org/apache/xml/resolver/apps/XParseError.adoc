@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/apps/XParseError.class
+
+ - link:XParseError-asmified.java[Asmified]
+
+== References
+

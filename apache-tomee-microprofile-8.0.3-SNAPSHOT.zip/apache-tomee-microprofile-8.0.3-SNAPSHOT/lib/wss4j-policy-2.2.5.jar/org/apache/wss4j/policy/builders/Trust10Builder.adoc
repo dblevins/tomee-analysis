@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/Trust10Builder.class
+
+ - link:Trust10Builder-asmified.java[Asmified]
+
+== References
+

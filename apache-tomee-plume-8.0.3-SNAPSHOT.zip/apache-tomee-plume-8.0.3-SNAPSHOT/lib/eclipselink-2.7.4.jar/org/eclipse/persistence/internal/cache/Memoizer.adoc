@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/cache/Memoizer.class
+
+ - link:Memoizer-asmified.java[Asmified]
+
+== References
+

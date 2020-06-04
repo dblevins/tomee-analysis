@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/artifact/impl/BasicSAMLArtifactMap.class
+
+ - link:BasicSAMLArtifactMap-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.annotation.Nullable - 2

@@ -1,0 +1,9 @@
+= javax/validation/metadata/ElementDescriptor$ConstraintFinder.class
+
+ - link:ElementDescriptor$ConstraintFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ElementDescriptor$ConstraintFinder - 3
+ - javax.validation.metadata.ConstraintDescriptor - 1
+ - javax.validation.metadata.Scope - 1

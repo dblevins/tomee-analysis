@@ -1,0 +1,7 @@
+= javax/decorator/Decorator.class
+
+ - link:Decorator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Stereotype - 1

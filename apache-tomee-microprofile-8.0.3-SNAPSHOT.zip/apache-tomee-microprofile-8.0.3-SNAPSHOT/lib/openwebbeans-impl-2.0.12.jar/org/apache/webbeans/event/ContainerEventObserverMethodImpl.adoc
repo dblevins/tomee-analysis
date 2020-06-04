@@ -1,0 +1,11 @@
+= org/apache/webbeans/event/ContainerEventObserverMethodImpl.class
+
+ - link:ContainerEventObserverMethodImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedParameter - 6
+ - javax.enterprise.inject.spi.WithAnnotations - 4
+ - javax.enterprise.inject.spi.Extension - 3
+ - javax.enterprise.inject.spi.AnnotatedMethod - 3
+ - javax.enterprise.inject.spi.ProcessAnnotatedType - 1

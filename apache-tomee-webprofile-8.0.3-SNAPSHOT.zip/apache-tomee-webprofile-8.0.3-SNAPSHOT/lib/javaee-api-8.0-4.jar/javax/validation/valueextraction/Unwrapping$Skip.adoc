@@ -1,0 +1,7 @@
+= javax/validation/valueextraction/Unwrapping$Skip.class
+
+ - link:Unwrapping$Skip-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Payload - 1

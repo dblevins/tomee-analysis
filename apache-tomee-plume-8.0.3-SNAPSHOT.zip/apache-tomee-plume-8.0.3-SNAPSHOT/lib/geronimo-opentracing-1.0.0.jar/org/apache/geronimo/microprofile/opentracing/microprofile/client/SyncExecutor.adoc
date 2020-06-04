@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/client/SyncExecutor.class
+
+ - link:SyncExecutor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/cxf/common/jaxb/JAXBUtils$BridgeWrapper.class
+
+ - link:JAXBUtils$BridgeWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 6
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 2
+ - javax.xml.bind.attachment.AttachmentMarshaller - 2

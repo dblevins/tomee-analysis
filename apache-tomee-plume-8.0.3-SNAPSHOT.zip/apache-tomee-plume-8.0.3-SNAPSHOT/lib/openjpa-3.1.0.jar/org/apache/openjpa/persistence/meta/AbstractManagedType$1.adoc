@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/meta/AbstractManagedType$1.class
+
+ - link:AbstractManagedType$1-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 8

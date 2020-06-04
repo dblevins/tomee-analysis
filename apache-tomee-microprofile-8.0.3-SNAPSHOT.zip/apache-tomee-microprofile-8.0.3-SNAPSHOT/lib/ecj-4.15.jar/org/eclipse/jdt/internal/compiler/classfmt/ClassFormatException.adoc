@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/ClassFormatException.class
+
+ - link:ClassFormatException-asmified.java[Asmified]
+
+== References
+

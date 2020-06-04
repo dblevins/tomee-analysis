@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/OptimizedLoaderService$1.class
+
+ - link:OptimizedLoaderService$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 10

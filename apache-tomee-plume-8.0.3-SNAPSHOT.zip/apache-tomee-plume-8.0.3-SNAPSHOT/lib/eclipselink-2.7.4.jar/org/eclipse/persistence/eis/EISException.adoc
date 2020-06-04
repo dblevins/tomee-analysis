@@ -1,0 +1,7 @@
+= org/eclipse/persistence/eis/EISException.class
+
+ - link:EISException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 5

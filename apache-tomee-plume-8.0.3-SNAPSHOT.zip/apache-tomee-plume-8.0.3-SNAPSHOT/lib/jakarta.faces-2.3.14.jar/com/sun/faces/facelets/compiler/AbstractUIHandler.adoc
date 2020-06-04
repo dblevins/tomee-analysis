@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/compiler/AbstractUIHandler.class
+
+ - link:AbstractUIHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.view.facelets.TextHandler - 1
+ - javax.faces.view.facelets.FaceletHandler - 1

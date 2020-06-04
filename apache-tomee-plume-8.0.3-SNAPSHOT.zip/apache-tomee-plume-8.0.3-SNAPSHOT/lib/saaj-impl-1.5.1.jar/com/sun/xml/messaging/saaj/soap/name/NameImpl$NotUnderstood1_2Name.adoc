@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/name/NameImpl$NotUnderstood1_2Name.class
+
+ - link:NameImpl$NotUnderstood1_2Name-asmified.java[Asmified]
+
+== References
+

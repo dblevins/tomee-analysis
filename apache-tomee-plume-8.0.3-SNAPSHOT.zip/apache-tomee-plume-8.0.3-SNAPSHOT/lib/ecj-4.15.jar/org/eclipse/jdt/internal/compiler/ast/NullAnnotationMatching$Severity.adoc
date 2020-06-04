@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/NullAnnotationMatching$Severity.class
+
+ - link:NullAnnotationMatching$Severity-asmified.java[Asmified]
+
+== References
+

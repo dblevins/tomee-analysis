@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/HpackDecoder.class
+
+ - link:HpackDecoder-asmified.java[Asmified]
+
+== References
+

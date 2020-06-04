@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/DescriptionTypeUnmarshaller.class
+
+ - link:DescriptionTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

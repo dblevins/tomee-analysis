@@ -1,0 +1,6 @@
+= org/jose4j/json/internal/json_simple/JSONObject.class
+
+ - link:JSONObject-asmified.java[Asmified]
+
+== References
+

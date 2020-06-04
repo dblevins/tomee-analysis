@@ -1,0 +1,9 @@
+= javax/persistence/criteria/Expression.class
+
+ - link:Expression-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 6
+ - javax.persistence.criteria.Expression - 3
+ - javax.persistence.criteria.Selection - 1

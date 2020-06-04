@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/NotExpression.class
+
+ - link:NotExpression-asmified.java[Asmified]
+
+== References
+

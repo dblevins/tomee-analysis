@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/criteria/SelectionImpl.class
+
+ - link:SelectionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 3
+ - javax.persistence.criteria.Expression - 2

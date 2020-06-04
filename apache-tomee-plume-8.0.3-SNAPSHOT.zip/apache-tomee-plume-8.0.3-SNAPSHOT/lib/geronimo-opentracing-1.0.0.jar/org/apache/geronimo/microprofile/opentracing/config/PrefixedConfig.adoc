@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/opentracing/config/PrefixedConfig.class
+
+ - link:PrefixedConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1

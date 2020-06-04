@@ -1,0 +1,6 @@
+= com/sun/faces/taglib/jsf_core/CoreValidator$CoreValidatorHandler.class
+
+ - link:CoreValidator$CoreValidatorHandler-asmified.java[Asmified]
+
+== References
+

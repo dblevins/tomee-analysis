@@ -1,0 +1,7 @@
+= javax/activation/URLDataSource.class
+
+ - link:URLDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1

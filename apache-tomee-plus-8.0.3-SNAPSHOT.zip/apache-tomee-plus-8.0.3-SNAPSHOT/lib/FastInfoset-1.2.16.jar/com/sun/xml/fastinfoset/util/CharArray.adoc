@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/CharArray.class
+
+ - link:CharArray-asmified.java[Asmified]
+
+== References
+

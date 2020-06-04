@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$DoubleObjectWrapperImpl.class
+
+ - link:SDOWrapperType$DoubleObjectWrapperImpl-asmified.java[Asmified]
+
+== References
+

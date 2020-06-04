@@ -1,0 +1,12 @@
+= com/sun/faces/config/processor/NavigationConfigProcessor.class
+
+ - link:NavigationConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 19
+ - javax.faces.application.NavigationHandler - 16
+ - javax.faces.application.ConfigurableNavigationHandler - 5
+ - javax.faces.application.NavigationCase - 5
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.application.Application - 2

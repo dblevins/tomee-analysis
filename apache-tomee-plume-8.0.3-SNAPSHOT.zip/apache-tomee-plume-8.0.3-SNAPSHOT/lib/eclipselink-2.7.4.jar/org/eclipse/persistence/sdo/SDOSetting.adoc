@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOSetting.class
+
+ - link:SDOSetting-asmified.java[Asmified]
+
+== References
+

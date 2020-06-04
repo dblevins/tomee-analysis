@@ -1,0 +1,30 @@
+= org/apache/myfaces/component/validate/WholeBeanValidator.class
+
+ - link:WholeBeanValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 21
+ - javax.validation.ValidatorFactory - 12
+ - javax.el.ValueExpression - 9
+ - javax.validation.Validator - 8
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.FacesException - 6
+ - javax.validation.metadata.BeanDescriptor - 6
+ - javax.validation.ValidatorContext - 4
+ - javax.el.ValueReference - 4
+ - javax.faces.component.TransientStateHelper - 4
+ - javax.el.ELContext - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.validation.MessageInterpolator - 3
+ - javax.faces.validator.ValidatorException - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.FacesMessage$Severity - 2
+ - javax.validation.ConstraintViolation - 2
+ - javax.validation.groups.Default - 1
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.validator.BeanValidator - 1
+ - javax.validation.Validation - 1
+ - javax.faces.application.FacesMessage - 1
+ - javax.faces.validator.Validator - 1

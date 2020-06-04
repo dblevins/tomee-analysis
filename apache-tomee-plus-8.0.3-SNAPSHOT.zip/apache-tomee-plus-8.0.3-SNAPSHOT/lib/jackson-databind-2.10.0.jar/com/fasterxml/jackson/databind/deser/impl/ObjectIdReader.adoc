@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/ObjectIdReader.class
+
+ - link:ObjectIdReader-asmified.java[Asmified]
+
+== References
+

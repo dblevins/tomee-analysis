@@ -1,0 +1,9 @@
+= javax/enterprise/inject/spi/ProcessProducer.class
+
+ - link:ProcessProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Producer - 2
+ - javax.enterprise.inject.spi.AnnotatedMember - 1
+ - javax.enterprise.inject.spi.configurator.ProducerConfigurator - 1

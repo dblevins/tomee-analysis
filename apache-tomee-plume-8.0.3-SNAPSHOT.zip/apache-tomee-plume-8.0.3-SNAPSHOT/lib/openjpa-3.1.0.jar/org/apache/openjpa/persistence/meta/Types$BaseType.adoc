@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/meta/Types$BaseType.class
+
+ - link:Types$BaseType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type - 1

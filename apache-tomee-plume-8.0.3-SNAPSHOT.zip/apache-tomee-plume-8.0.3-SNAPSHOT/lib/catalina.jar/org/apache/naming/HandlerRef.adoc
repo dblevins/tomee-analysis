@@ -1,0 +1,6 @@
+= org/apache/naming/HandlerRef.class
+
+ - link:HandlerRef-asmified.java[Asmified]
+
+== References
+

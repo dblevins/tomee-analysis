@@ -1,0 +1,5 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/microprofile-opentracing-api-1.1.2.jar
+
+ - link:org/eclipse/microprofile/opentracing/ClientTracingRegistrar.adoc[org/eclipse/microprofile/opentracing/ClientTracingRegistrar.class] - 8
+ - link:org/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider.adoc[org/eclipse/microprofile/opentracing/ClientTracingRegistrarProvider.class] - 4
+ - link:org/eclipse/microprofile/opentracing/Traced.adoc[org/eclipse/microprofile/opentracing/Traced.class] - 3

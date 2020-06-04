@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/collections/CollectionCheckCondition.class
+
+ - link:CollectionCheckCondition-asmified.java[Asmified]
+
+== References
+

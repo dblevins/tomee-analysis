@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/tools/TransformInputOutput$1.class
+
+ - link:TransformInputOutput$1-asmified.java[Asmified]
+
+== References
+

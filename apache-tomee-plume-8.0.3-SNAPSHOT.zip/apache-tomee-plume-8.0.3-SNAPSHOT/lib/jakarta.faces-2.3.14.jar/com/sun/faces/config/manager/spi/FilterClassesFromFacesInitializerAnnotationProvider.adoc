@@ -1,0 +1,7 @@
+= com/sun/faces/config/manager/spi/FilterClassesFromFacesInitializerAnnotationProvider.class
+
+ - link:FilterClassesFromFacesInitializerAnnotationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 4

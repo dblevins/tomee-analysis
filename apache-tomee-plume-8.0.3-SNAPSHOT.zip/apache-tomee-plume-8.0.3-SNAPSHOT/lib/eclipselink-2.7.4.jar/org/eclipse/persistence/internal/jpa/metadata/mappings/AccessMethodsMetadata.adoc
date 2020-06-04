@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/mappings/AccessMethodsMetadata.class
+
+ - link:AccessMethodsMetadata-asmified.java[Asmified]
+
+== References
+

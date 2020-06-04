@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator$TagSelectorImpl.class
+
+ - link:DefaultTagDecorator$TagSelectorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 14
+ - javax.faces.view.facelets.TagAttributes - 10
+ - javax.faces.view.facelets.Tag - 10
+ - javax.faces.view.Location - 2

@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/concurrent/ConstantInitializer.class
+
+ - link:ConstantInitializer-asmified.java[Asmified]
+
+== References
+

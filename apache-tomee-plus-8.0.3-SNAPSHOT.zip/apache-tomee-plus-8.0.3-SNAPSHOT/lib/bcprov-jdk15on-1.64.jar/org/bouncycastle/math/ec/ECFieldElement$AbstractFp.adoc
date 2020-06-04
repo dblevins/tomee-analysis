@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/ECFieldElement$AbstractFp.class
+
+ - link:ECFieldElement$AbstractFp-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= javax/xml/registry/infomodel/SpecificationLink.class
+
+ - link:SpecificationLink-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 7
+ - javax.xml.registry.infomodel.RegistryObject - 3
+ - javax.xml.registry.infomodel.InternationalString - 2
+ - javax.xml.registry.infomodel.ServiceBinding - 1

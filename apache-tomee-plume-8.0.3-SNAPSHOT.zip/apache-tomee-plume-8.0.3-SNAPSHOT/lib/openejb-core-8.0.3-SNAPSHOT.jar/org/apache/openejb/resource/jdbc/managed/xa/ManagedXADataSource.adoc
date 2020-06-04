@@ -1,0 +1,8 @@
+= org/apache/openejb/resource/jdbc/managed/xa/ManagedXADataSource.class
+
+ - link:ManagedXADataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 8
+ - javax.transaction.TransactionSynchronizationRegistry - 6

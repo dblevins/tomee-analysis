@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/AnnotatedCreatorCollector.class
+
+ - link:AnnotatedCreatorCollector-asmified.java[Asmified]
+
+== References
+

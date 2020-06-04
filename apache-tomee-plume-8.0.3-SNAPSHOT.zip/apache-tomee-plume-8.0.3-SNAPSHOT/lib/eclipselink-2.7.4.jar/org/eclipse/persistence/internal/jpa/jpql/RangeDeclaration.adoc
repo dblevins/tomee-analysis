@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/RangeDeclaration.class
+
+ - link:RangeDeclaration-asmified.java[Asmified]
+
+== References
+

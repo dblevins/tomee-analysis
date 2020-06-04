@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/criteria/Expressions$SimpleCase.class
+
+ - link:Expressions$SimpleCase-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 44
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.CriteriaBuilder$SimpleCase - 3
+ - javax.persistence.criteria.Selection - 2

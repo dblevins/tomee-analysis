@@ -1,0 +1,7 @@
+= org/opensaml/soap/soap11/ActorBearing.class
+
+ - link:ActorBearing-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

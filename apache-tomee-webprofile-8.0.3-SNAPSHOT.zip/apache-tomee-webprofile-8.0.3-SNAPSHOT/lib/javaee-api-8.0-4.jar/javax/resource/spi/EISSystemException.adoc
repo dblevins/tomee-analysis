@@ -1,0 +1,7 @@
+= javax/resource/spi/EISSystemException.class
+
+ - link:EISSystemException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 6

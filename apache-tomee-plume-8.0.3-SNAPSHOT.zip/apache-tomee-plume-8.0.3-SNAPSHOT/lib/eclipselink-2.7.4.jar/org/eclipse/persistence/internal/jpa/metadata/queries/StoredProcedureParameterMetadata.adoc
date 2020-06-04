@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/StoredProcedureParameterMetadata.class
+
+ - link:StoredProcedureParameterMetadata-asmified.java[Asmified]
+
+== References
+

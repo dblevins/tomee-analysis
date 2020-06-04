@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/DirectSchedulerFactory.class
+
+ - link:DirectSchedulerFactory-asmified.java[Asmified]
+
+== References
+

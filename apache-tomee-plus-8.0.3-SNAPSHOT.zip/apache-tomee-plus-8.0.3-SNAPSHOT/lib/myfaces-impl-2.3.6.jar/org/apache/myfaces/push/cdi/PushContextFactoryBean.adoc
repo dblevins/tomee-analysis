@@ -1,0 +1,14 @@
+= org/apache/myfaces/push/cdi/PushContextFactoryBean.class
+
+ - link:PushContextFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.push.Push - 7
+ - javax.enterprise.inject.spi.InjectionPoint - 3
+ - javax.enterprise.inject.spi.Annotated - 2
+ - javax.faces.push.PushContext - 2
+ - javax.enterprise.inject.Disposes - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.inject.Named - 1

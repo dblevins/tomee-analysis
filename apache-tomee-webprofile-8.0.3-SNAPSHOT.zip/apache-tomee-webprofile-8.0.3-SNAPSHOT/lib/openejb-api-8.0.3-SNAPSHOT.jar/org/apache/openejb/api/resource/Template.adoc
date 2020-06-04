@@ -1,0 +1,6 @@
+= org/apache/openejb/api/resource/Template.class
+
+ - link:Template-asmified.java[Asmified]
+
+== References
+

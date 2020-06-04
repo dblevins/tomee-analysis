@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxb/io/DataWriterImpl$1.class
+
+ - link:DataWriterImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEvent - 2
+ - javax.xml.bind.ValidationEventHandler - 1

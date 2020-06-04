@@ -1,0 +1,7 @@
+= org/apache/openejb/core/stateful/StatefulContainer$SessionSynchronizationCoordinator.class
+
+ - link:StatefulContainer$SessionSynchronizationCoordinator-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 1

@@ -1,0 +1,6 @@
+= org/apache/catalina/session/StandardManager$PrivilegedDoLoad.class
+
+ - link:StandardManager$PrivilegedDoLoad-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/scriptio/ScriptReaderText.class
+
+ - link:ScriptReaderText-asmified.java[Asmified]
+
+== References
+

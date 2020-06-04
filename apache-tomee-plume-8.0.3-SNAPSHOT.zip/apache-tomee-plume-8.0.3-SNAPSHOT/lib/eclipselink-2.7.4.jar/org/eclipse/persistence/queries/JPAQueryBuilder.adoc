@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/JPAQueryBuilder.class
+
+ - link:JPAQueryBuilder-asmified.java[Asmified]
+
+== References
+

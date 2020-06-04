@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/impl/CDATAImpl.class
+
+ - link:CDATAImpl-asmified.java[Asmified]
+
+== References
+

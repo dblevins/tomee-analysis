@@ -1,0 +1,8 @@
+= javax/security/enterprise/authentication/mechanism/http/RememberMe.class
+
+ - link:RememberMe-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 9
+ - javax.interceptor.InterceptorBinding - 1

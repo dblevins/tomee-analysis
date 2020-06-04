@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$Builder$4.class
+
+ - link:BasicPolymorphicTypeValidator$Builder$4-asmified.java[Asmified]
+
+== References
+

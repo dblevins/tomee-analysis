@@ -1,0 +1,10 @@
+= org/apache/webbeans/intercept/InterceptorInvocationContext.class
+
+ - link:InterceptorInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Interceptor - 8
+ - javax.enterprise.inject.spi.InterceptionType - 7
+ - javax.inject.Provider - 2
+ - javax.interceptor.InvocationContext - 1

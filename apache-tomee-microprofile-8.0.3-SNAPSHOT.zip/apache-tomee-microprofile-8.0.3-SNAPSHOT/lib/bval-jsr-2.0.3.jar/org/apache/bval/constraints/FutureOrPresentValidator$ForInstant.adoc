@@ -1,0 +1,6 @@
+= org/apache/bval/constraints/FutureOrPresentValidator$ForInstant.class
+
+ - link:FutureOrPresentValidator$ForInstant-asmified.java[Asmified]
+
+== References
+

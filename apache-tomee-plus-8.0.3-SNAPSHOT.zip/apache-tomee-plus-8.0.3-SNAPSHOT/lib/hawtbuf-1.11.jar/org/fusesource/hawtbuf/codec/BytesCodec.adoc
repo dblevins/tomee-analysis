@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/BytesCodec.class
+
+ - link:BytesCodec-asmified.java[Asmified]
+
+== References
+

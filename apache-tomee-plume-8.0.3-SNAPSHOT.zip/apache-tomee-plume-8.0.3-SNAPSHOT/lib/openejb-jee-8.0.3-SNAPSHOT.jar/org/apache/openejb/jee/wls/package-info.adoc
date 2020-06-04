@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/wls/package-info.class
+
+ - link:package-info-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlNsForm - 1
+ - javax.xml.bind.annotation.XmlSchema - 1

@@ -1,0 +1,6 @@
+= org/jasypt/web/pbeconfig/WebPBEConfigRegistry.class
+
+ - link:WebPBEConfigRegistry-asmified.java[Asmified]
+
+== References
+

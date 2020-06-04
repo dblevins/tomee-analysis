@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/xjc/MOXyXJC$Listener.class
+
+ - link:MOXyXJC$Listener-asmified.java[Asmified]
+
+== References
+

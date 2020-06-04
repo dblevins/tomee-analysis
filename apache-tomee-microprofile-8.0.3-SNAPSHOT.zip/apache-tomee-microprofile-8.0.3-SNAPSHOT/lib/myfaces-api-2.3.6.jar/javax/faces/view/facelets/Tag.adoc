@@ -1,0 +1,9 @@
+= javax/faces/view/facelets/Tag.class
+
+ - link:Tag-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.Location - 8
+ - javax.faces.view.facelets.TagAttributes - 7
+ - javax.faces.view.facelets.Tag - 6

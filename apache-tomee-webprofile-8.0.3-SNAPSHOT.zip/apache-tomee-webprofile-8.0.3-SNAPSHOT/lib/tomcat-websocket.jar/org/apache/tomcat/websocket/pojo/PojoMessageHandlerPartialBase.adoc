@@ -1,0 +1,10 @@
+= org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBase.class
+
+ - link:PojoMessageHandlerPartialBase-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 6
+ - javax.websocket.Endpoint - 2
+ - javax.websocket.DecodeException - 2
+ - javax.websocket.MessageHandler$Partial - 1

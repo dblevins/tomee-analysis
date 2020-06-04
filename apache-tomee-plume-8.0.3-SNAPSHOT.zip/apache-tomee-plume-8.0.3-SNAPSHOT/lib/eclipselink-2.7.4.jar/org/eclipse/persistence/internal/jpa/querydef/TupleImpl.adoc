@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/querydef/TupleImpl.class
+
+ - link:TupleImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 2
+ - javax.persistence.TupleElement - 2
+ - javax.persistence.Tuple - 1

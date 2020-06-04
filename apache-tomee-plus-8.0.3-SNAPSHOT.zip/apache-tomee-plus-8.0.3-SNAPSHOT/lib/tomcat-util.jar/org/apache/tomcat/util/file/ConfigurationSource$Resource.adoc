@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/file/ConfigurationSource$Resource.class
+
+ - link:ConfigurationSource$Resource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/config/SAMLConfiguration.class
+
+ - link:SAMLConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1
+ - javax.annotation.Nullable - 1

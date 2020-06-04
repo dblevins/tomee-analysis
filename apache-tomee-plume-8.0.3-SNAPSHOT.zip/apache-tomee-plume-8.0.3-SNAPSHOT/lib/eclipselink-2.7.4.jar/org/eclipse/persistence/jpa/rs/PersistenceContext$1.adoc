@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/rs/PersistenceContext$1.class
+
+ - link:PersistenceContext$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEvent - 2
+ - javax.xml.bind.ValidationEventHandler - 1

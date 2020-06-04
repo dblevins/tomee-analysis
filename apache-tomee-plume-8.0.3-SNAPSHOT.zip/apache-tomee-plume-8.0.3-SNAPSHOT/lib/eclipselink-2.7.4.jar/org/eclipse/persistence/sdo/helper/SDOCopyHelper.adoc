@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOCopyHelper.class
+
+ - link:SDOCopyHelper-asmified.java[Asmified]
+
+== References
+

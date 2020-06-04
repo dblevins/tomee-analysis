@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/analysis/SimpleVerifier.class
+
+ - link:SimpleVerifier-asmified.java[Asmified]
+
+== References
+

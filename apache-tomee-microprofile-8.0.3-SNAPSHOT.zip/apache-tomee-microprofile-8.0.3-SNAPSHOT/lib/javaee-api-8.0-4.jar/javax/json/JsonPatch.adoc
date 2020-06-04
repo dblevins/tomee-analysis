@@ -1,0 +1,8 @@
+= javax/json/JsonPatch.class
+
+ - link:JsonPatch-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonStructure - 1
+ - javax.json.JsonArray - 1

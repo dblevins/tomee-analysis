@@ -1,0 +1,19 @@
+= org/apache/myfaces/view/facelets/tag/ui/LegacyDecorateHandler.class
+
+ - link:LegacyDecorateHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 32
+ - javax.faces.component.UIComponent - 20
+ - javax.faces.view.facelets.TagAttribute - 19
+ - javax.faces.context.FacesContext - 16
+ - javax.el.VariableMapper - 16
+ - javax.faces.view.facelets.FaceletHandler - 6
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.event.PhaseId - 2
+ - javax.el.ELException - 2
+ - javax.faces.view.facelets.FaceletException - 2
+ - javax.faces.view.facelets.Tag - 1

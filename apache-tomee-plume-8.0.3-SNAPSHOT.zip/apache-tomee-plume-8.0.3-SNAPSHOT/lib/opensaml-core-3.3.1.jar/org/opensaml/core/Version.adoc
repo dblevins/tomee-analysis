@@ -1,0 +1,7 @@
+= org/opensaml/core/Version.class
+
+ - link:Version-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

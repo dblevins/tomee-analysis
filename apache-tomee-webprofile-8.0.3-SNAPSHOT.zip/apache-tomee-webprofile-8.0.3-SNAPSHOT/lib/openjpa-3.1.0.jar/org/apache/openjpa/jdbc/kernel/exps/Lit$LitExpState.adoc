@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Lit$LitExpState.class
+
+ - link:Lit$LitExpState-asmified.java[Asmified]
+
+== References
+

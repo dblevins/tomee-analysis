@@ -1,0 +1,8 @@
+= org/apache/safeguard/impl/asynchronous/AsynchronousInterceptor$Cache.class
+
+ - link:AsynchronousInterceptor$Cache-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Inject - 3
+ - javax.enterprise.context.ApplicationScoped - 1

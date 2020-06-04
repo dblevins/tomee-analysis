@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/java$util$HashSet$proxy.class
+
+ - link:java$util$HashSet$proxy-asmified.java[Asmified]
+
+== References
+

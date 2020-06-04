@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/interceptor/JAXRSDefaultFaultOutInterceptor.class
+
+ - link:JAXRSDefaultFaultOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 6

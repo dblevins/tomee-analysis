@@ -1,0 +1,7 @@
+= org/apache/activemq/ra/ActiveMQResourceAdapter$2.class
+
+ - link:ActiveMQResourceAdapter$2-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 26

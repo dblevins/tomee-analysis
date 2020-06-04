@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/NameImpl.class
+
+ - link:NameImpl-asmified.java[Asmified]
+
+== References
+

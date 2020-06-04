@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPDateFormat.class
+
+ - link:IMAPDateFormat-asmified.java[Asmified]
+
+== References
+

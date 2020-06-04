@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedGetConstructorFor.class
+
+ - link:PrivilegedGetConstructorFor-asmified.java[Asmified]
+
+== References
+

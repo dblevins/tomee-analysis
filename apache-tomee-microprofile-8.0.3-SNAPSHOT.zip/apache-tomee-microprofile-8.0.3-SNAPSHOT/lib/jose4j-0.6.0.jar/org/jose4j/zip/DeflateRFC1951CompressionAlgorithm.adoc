@@ -1,0 +1,6 @@
+= org/jose4j/zip/DeflateRFC1951CompressionAlgorithm.class
+
+ - link:DeflateRFC1951CompressionAlgorithm-asmified.java[Asmified]
+
+== References
+

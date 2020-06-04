@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/builder/MultilineRecursiveToStringStyle.class
+
+ - link:MultilineRecursiveToStringStyle-asmified.java[Asmified]
+
+== References
+

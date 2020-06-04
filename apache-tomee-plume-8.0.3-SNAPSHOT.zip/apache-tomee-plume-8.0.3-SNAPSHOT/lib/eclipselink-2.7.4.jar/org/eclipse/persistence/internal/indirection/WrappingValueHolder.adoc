@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/WrappingValueHolder.class
+
+ - link:WrappingValueHolder-asmified.java[Asmified]
+
+== References
+

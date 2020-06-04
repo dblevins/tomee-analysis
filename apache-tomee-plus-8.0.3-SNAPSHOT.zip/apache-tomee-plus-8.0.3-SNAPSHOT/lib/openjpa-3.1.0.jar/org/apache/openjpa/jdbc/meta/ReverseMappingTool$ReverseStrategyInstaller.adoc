@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/ReverseMappingTool$ReverseStrategyInstaller.class
+
+ - link:ReverseMappingTool$ReverseStrategyInstaller-asmified.java[Asmified]
+
+== References
+

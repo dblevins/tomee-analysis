@@ -1,0 +1,8 @@
+= org/apache/myfaces/cdi/util/AnyLiteral.class
+
+ - link:AnyLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.enterprise.inject.Any - 2

@@ -1,0 +1,7 @@
+= com/sun/faces/application/view/JspStateManagementStrategy$TreeNode.class
+
+ - link:JspStateManagementStrategy$TreeNode-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 2

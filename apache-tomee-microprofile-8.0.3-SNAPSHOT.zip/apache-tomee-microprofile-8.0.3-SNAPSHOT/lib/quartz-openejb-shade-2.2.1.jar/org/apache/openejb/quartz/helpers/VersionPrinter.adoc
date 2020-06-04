@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/helpers/VersionPrinter.class
+
+ - link:VersionPrinter-asmified.java[Asmified]
+
+== References
+

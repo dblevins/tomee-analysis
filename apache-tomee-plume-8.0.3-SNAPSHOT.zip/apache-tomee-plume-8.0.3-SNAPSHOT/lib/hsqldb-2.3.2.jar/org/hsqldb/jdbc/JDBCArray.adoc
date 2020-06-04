@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCArray.class
+
+ - link:JDBCArray-asmified.java[Asmified]
+
+== References
+

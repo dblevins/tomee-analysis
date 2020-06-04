@@ -1,0 +1,9 @@
+= org/apache/tomcat/websocket/WsFrameClient.class
+
+ - link:WsFrameClient-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.CloseReason - 6
+ - javax.websocket.CloseReason$CloseCodes - 1
+ - javax.websocket.CloseReason$CloseCode - 1

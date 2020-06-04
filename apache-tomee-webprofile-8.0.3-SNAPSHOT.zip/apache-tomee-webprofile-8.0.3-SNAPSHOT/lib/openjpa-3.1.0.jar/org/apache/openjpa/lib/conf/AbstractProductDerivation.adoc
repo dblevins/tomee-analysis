@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/conf/AbstractProductDerivation.class
+
+ - link:AbstractProductDerivation-asmified.java[Asmified]
+
+== References
+

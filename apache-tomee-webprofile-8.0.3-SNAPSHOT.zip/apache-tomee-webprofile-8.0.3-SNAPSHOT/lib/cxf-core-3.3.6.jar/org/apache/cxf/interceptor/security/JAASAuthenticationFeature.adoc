@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/JAASAuthenticationFeature.class
+
+ - link:JAASAuthenticationFeature-asmified.java[Asmified]
+
+== References
+

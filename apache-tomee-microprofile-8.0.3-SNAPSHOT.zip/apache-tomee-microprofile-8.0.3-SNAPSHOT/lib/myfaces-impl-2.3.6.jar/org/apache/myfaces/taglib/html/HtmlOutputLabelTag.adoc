@@ -1,0 +1,13 @@
+= org/apache/myfaces/taglib/html/HtmlOutputLabelTag.class
+
+ - link:HtmlOutputLabelTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 172
+ - javax.faces.component.html.HtmlOutputLabel - 28
+ - javax.faces.webapp.UIComponentELTag - 4
+ - javax.faces.convert.Converter - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIComponent - 2

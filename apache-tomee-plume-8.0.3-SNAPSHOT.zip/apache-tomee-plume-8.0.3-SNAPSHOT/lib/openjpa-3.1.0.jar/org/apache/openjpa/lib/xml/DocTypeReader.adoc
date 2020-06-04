@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/xml/DocTypeReader.class
+
+ - link:DocTypeReader-asmified.java[Asmified]
+
+== References
+

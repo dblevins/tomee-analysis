@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/cache/TimeOfDayMetadata.class
+
+ - link:TimeOfDayMetadata-asmified.java[Asmified]
+
+== References
+

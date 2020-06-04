@@ -1,0 +1,6 @@
+= javax/jws/WebMethod.class
+
+ - link:WebMethod-asmified.java[Asmified]
+
+== References
+

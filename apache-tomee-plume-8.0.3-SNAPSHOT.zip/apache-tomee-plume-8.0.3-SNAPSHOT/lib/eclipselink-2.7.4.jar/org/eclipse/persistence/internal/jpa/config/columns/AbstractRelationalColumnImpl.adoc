@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/columns/AbstractRelationalColumnImpl.class
+
+ - link:AbstractRelationalColumnImpl-asmified.java[Asmified]
+
+== References
+

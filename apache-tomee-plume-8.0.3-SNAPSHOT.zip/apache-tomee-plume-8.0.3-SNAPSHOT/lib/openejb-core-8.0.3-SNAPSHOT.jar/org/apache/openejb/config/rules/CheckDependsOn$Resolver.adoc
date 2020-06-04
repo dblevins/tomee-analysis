@@ -1,0 +1,6 @@
+= org/apache/openejb/config/rules/CheckDependsOn$Resolver.class
+
+ - link:CheckDependsOn$Resolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/interceptors/WrapperClassInInterceptor.class
+
+ - link:WrapperClassInInterceptor-asmified.java[Asmified]
+
+== References
+

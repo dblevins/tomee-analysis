@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/DefaultJPQLQueryProblem.class
+
+ - link:DefaultJPQLQueryProblem-asmified.java[Asmified]
+
+== References
+

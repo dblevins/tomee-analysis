@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/SPKIData.class
+
+ - link:SPKIData-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

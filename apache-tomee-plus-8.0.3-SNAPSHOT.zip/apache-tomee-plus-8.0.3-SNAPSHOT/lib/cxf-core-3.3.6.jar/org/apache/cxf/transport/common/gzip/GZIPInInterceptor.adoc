@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/common/gzip/GZIPInInterceptor.class
+
+ - link:GZIPInInterceptor-asmified.java[Asmified]
+
+== References
+

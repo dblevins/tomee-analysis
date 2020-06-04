@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/criteria/CriteriaExpressionVisitor$TraversalStyle.class
+
+ - link:CriteriaExpressionVisitor$TraversalStyle-asmified.java[Asmified]
+
+== References
+

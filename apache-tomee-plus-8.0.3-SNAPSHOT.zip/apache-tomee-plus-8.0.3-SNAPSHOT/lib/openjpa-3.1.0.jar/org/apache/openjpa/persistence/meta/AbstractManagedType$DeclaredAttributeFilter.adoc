@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/meta/AbstractManagedType$DeclaredAttributeFilter.class
+
+ - link:AbstractManagedType$DeclaredAttributeFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.ManagedType - 13
+ - javax.persistence.metamodel.Attribute - 6

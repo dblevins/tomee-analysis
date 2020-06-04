@@ -1,0 +1,6 @@
+= com/ibm/wsdl/BindingFaultImpl.class
+
+ - link:BindingFaultImpl-asmified.java[Asmified]
+
+== References
+

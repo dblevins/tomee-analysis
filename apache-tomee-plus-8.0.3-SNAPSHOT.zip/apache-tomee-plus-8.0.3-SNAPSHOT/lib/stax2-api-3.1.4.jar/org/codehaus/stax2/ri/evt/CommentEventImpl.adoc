@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/CommentEventImpl.class
+
+ - link:CommentEventImpl-asmified.java[Asmified]
+
+== References
+

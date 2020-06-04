@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/TypeExpression.class
+
+ - link:TypeExpression-asmified.java[Asmified]
+
+== References
+

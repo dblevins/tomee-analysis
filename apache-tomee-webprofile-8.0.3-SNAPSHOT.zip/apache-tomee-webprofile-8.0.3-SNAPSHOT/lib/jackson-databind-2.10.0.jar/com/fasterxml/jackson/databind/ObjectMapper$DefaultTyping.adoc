@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ObjectMapper$DefaultTyping.class
+
+ - link:ObjectMapper$DefaultTyping-asmified.java[Asmified]
+
+== References
+

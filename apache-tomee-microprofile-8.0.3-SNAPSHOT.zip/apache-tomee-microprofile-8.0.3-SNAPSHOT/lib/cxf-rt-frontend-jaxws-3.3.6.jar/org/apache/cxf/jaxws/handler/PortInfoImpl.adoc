@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/handler/PortInfoImpl.class
+
+ - link:PortInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.PortInfo - 1

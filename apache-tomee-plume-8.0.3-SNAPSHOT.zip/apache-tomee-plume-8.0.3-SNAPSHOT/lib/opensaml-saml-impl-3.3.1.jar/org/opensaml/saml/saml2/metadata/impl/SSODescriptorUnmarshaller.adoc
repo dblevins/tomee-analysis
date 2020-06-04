@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SSODescriptorUnmarshaller.class
+
+ - link:SSODescriptorUnmarshaller-asmified.java[Asmified]
+
+== References
+

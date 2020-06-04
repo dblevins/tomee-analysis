@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/security/impl/MessageReplaySecurityHandler.class
+
+ - link:MessageReplaySecurityHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

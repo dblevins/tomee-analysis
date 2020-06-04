@@ -1,0 +1,9 @@
+= javax/enterprise/inject/se/SeContainerInitializer.class
+
+ - link:SeContainerInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.se.SeContainerInitializer - 19
+ - javax.enterprise.inject.spi.Extension - 2
+ - javax.enterprise.inject.se.SeContainer - 1

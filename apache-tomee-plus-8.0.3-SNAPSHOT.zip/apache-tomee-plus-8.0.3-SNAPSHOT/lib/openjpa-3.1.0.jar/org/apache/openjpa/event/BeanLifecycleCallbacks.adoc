@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/BeanLifecycleCallbacks.class
+
+ - link:BeanLifecycleCallbacks-asmified.java[Asmified]
+
+== References
+

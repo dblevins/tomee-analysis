@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/MultipartDataContentHandler.class
+
+ - link:MultipartDataContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.ActivationDataFlavor - 7
+ - javax.activation.DataSource - 5
+ - javax.activation.DataContentHandler - 1

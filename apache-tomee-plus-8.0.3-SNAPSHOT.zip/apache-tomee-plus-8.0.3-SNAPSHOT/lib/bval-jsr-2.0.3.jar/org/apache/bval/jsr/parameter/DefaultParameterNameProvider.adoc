@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/parameter/DefaultParameterNameProvider.class
+
+ - link:DefaultParameterNameProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ParameterNameProvider - 1

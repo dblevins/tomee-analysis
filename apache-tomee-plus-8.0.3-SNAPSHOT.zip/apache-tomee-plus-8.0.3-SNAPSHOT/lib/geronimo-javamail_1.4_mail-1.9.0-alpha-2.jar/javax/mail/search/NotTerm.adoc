@@ -1,0 +1,9 @@
+= javax/mail/search/NotTerm.class
+
+ - link:NotTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.SearchTerm - 12
+ - javax.mail.Message - 2
+ - javax.mail.search.NotTerm - 2

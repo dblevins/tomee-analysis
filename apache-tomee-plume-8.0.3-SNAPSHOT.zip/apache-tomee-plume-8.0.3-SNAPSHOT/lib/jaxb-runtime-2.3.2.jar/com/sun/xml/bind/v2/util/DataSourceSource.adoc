@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/util/DataSourceSource.class
+
+ - link:DataSourceSource-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 13
+ - javax.activation.MimeType - 3
+ - javax.activation.MimeTypeParseException - 2
+ - javax.activation.DataHandler - 2

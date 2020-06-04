@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/Assembler$3.class
+
+ - link:Assembler$3-asmified.java[Asmified]
+
+== References
+

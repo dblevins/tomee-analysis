@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/AbstractIdentityMapEnumeration.class
+
+ - link:AbstractIdentityMapEnumeration-asmified.java[Asmified]
+
+== References
+

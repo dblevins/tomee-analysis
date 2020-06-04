@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/ListOrderedMap$ListOrderedMapEntry.class
+
+ - link:ListOrderedMap$ListOrderedMapEntry-asmified.java[Asmified]
+
+== References
+

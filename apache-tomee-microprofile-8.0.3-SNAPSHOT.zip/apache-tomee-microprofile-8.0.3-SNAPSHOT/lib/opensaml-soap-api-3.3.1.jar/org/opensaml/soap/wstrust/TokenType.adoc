@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/TokenType.class
+
+ - link:TokenType-asmified.java[Asmified]
+
+== References
+

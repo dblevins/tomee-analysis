@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/EncodedString.class
+
+ - link:EncodedString-asmified.java[Asmified]
+
+== References
+

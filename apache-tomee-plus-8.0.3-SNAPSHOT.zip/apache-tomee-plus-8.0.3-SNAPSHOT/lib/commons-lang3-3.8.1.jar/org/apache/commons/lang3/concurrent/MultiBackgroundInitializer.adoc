@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.class
+
+ - link:MultiBackgroundInitializer-asmified.java[Asmified]
+
+== References
+

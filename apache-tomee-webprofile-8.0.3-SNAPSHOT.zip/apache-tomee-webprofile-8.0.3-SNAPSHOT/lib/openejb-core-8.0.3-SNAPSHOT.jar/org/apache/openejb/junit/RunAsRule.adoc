@@ -1,0 +1,6 @@
+= org/apache/openejb/junit/RunAsRule.class
+
+ - link:RunAsRule-asmified.java[Asmified]
+
+== References
+

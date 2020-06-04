@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/ArithmeticExpression.class
+
+ - link:ArithmeticExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

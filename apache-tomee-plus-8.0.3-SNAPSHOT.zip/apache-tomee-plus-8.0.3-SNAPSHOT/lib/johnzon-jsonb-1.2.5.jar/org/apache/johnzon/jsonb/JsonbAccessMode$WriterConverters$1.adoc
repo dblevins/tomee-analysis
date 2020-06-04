@@ -1,0 +1,9 @@
+= org/apache/johnzon/jsonb/JsonbAccessMode$WriterConverters$1.class
+
+ - link:JsonbAccessMode$WriterConverters$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.serializer.JsonbSerializer - 5
+ - javax.json.stream.JsonGenerator - 2
+ - javax.json.bind.serializer.SerializationContext - 1

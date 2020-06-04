@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/localization/ToStringLocalization.class
+
+ - link:ToStringLocalization-asmified.java[Asmified]
+
+== References
+

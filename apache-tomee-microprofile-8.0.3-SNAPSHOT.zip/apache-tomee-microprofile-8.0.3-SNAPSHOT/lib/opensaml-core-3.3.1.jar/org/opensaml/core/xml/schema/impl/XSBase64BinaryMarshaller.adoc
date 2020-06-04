@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/schema/impl/XSBase64BinaryMarshaller.class
+
+ - link:XSBase64BinaryMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

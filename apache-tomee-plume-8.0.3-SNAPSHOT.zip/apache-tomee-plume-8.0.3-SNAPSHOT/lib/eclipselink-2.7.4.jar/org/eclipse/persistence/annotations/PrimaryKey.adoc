@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/PrimaryKey.class
+
+ - link:PrimaryKey-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 1

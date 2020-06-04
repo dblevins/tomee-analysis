@@ -1,0 +1,9 @@
+= javax/faces/el/MethodBinding.class
+
+ - link:MethodBinding-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.el.MethodNotFoundException - 2
+ - javax.faces.el.EvaluationException - 1

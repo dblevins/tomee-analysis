@@ -1,0 +1,9 @@
+= org/apache/myfaces/spi/ViewScopeProviderFactory.class
+
+ - link:ViewScopeProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 9
+ - javax.faces.FacesException - 2
+ - javax.faces.FacesWrapper - 1

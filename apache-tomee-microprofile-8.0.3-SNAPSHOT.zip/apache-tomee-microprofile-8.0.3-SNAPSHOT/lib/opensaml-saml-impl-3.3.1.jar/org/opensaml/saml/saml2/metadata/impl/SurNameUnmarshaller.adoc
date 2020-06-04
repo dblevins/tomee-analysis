@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SurNameUnmarshaller.class
+
+ - link:SurNameUnmarshaller-asmified.java[Asmified]
+
+== References
+

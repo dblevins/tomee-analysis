@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/TemporaryClassLoader.class
+
+ - link:TemporaryClassLoader-asmified.java[Asmified]
+
+== References
+

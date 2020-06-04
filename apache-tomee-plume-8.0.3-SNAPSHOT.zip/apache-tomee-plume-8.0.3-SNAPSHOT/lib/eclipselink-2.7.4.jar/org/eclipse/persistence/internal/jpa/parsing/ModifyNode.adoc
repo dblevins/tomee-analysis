@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ModifyNode.class
+
+ - link:ModifyNode-asmified.java[Asmified]
+
+== References
+

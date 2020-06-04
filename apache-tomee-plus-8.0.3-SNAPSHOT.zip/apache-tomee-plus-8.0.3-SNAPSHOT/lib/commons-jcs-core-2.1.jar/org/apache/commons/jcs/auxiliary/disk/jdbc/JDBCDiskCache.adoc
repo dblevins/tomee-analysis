@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/jdbc/JDBCDiskCache.class
+
+ - link:JDBCDiskCache-asmified.java[Asmified]
+
+== References
+

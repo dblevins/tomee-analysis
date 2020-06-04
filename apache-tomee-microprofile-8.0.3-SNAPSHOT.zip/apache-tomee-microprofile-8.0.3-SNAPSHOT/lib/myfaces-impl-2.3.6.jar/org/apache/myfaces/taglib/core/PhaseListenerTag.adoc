@@ -1,0 +1,14 @@
+= org/apache/myfaces/taglib/core/PhaseListenerTag.class
+
+ - link:PhaseListenerTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 12
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.servlet.jsp.JspException - 5
+ - javax.servlet.jsp.tagext.Tag - 4
+ - javax.faces.component.UIViewRoot - 3
+ - javax.servlet.jsp.tagext.TagSupport - 2
+ - javax.faces.event.PhaseListener - 2
+ - javax.faces.component.UIComponent - 1

@@ -1,0 +1,18 @@
+= org/apache/myfaces/view/facelets/tag/composite/CreateDynamicCompositeComponentListener.class
+
+ - link:CreateDynamicCompositeComponentListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 26
+ - javax.faces.context.FacesContext - 25
+ - javax.faces.view.facelets.Facelet - 8
+ - javax.faces.event.ComponentSystemEvent - 5
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.event.ComponentSystemEventListener - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.component.StateHolder - 1
+ - javax.faces.view.ViewDeclarationLanguage - 1

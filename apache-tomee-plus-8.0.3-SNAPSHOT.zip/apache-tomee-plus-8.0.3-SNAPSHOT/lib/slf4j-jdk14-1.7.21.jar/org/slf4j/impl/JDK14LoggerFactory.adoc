@@ -1,0 +1,6 @@
+= org/slf4j/impl/JDK14LoggerFactory.class
+
+ - link:JDK14LoggerFactory-asmified.java[Asmified]
+
+== References
+

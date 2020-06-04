@@ -1,0 +1,7 @@
+= org/apache/el/stream/Stream$7.class
+
+ - link:Stream$7-asmified.java[Asmified]
+
+== References
+
+ - javax.el.LambdaExpression - 5

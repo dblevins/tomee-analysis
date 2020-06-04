@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/NameEnvironmentAnswer.class
+
+ - link:NameEnvironmentAnswer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openejb/core/managed/Instance.class
+
+ - link:Instance-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 6
+ - javax.transaction.Transaction - 5
+ - javax.persistence.EntityManagerFactory - 5

@@ -1,0 +1,6 @@
+= org/apache/catalina/servlets/CGIServlet$HTTPHeaderInputStream.class
+
+ - link:CGIServlet$HTTPHeaderInputStream-asmified.java[Asmified]
+
+== References
+

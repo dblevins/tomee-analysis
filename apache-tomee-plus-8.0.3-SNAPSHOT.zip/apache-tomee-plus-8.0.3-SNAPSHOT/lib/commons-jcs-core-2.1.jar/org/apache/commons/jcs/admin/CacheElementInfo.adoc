@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/admin/CacheElementInfo.class
+
+ - link:CacheElementInfo-asmified.java[Asmified]
+
+== References
+

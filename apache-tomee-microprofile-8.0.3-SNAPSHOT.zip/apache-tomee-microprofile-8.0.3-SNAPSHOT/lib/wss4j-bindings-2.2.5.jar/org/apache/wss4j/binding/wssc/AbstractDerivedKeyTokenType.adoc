@@ -1,0 +1,6 @@
+= org/apache/wss4j/binding/wssc/AbstractDerivedKeyTokenType.class
+
+ - link:AbstractDerivedKeyTokenType-asmified.java[Asmified]
+
+== References
+

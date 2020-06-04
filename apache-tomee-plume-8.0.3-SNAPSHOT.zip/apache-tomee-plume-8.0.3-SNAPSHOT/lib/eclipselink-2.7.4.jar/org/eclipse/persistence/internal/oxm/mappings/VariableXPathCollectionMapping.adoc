@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/VariableXPathCollectionMapping.class
+
+ - link:VariableXPathCollectionMapping-asmified.java[Asmified]
+
+== References
+

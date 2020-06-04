@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/ConstraintCached$ConstraintValidatorInfo.class
+
+ - link:ConstraintCached$ConstraintValidatorInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraintvalidation.SupportedValidationTarget - 6
+ - javax.validation.constraintvalidation.ValidationTarget - 5
+ - javax.validation.ConstraintValidator - 3
+ - javax.validation.ConstraintDefinitionException - 2

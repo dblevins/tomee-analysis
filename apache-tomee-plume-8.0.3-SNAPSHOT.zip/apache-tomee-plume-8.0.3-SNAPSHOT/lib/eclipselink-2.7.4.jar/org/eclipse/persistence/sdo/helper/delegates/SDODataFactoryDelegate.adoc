@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/delegates/SDODataFactoryDelegate.class
+
+ - link:SDODataFactoryDelegate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/el/ContextAwareUtils.class
+
+ - link:ContextAwareUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.context.ExternalContext - 2
+ - javax.el.ELContext - 2

@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/AbsoluteOrder$AbsoluteComparator.class
+
+ - link:AbsoluteOrder$AbsoluteComparator-asmified.java[Asmified]
+
+== References
+

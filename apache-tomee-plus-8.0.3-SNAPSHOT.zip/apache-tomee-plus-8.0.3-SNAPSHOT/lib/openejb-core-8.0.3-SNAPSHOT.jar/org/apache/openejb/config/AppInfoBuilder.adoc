@@ -1,0 +1,9 @@
+= org/apache/openejb/config/AppInfoBuilder.class
+
+ - link:AppInfoBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 2
+ - javax.persistence.ValidationMode - 2
+ - javax.xml.bind.JAXBException - 2

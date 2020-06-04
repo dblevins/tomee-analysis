@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/cdi/CountedInterceptor$Meta.class
+
+ - link:CountedInterceptor$Meta-asmified.java[Asmified]
+
+== References
+

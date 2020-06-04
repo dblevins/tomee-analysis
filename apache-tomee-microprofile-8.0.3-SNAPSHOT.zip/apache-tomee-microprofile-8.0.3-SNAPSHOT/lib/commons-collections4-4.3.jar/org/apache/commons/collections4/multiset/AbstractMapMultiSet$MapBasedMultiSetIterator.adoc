@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multiset/AbstractMapMultiSet$MapBasedMultiSetIterator.class
+
+ - link:AbstractMapMultiSet$MapBasedMultiSetIterator-asmified.java[Asmified]
+
+== References
+

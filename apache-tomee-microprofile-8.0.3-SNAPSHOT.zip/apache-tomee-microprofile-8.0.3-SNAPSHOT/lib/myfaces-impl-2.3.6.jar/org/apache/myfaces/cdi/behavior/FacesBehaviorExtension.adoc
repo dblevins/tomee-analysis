@@ -1,0 +1,15 @@
+= org/apache/myfaces/cdi/behavior/FacesBehaviorExtension.class
+
+ - link:FacesBehaviorExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.FacesBehavior - 7
+ - javax.enterprise.inject.spi.Annotated - 3
+ - javax.enterprise.inject.spi.ProcessManagedBean - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 2
+ - javax.enterprise.event.Observes - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.Bean - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/ReferenceMap.class
+
+ - link:ReferenceMap-asmified.java[Asmified]
+
+== References
+

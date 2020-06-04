@@ -1,0 +1,20 @@
+= org/apache/openejb/cdi/CdiEjbBean.class
+
+ - link:CdiEjbBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 12
+ - javax.enterprise.context.spi.CreationalContext - 11
+ - javax.enterprise.inject.spi.BeanAttributes - 9
+ - javax.enterprise.inject.spi.DefinitionException - 6
+ - javax.enterprise.inject.spi.SessionBeanType - 6
+ - javax.ejb.NoSuchEJBException - 5
+ - javax.ejb.Remove - 3
+ - javax.enterprise.context.Dependent - 2
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.inject.Typed - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.interceptor.Interceptor - 1
+ - javax.decorator.Decorator - 1
+ - javax.enterprise.inject.spi.Bean - 1

@@ -1,0 +1,553 @@
+package asm.org.apache.wss4j.dom.validate;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class KerberosTokenValidatorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/wss4j/dom/validate/KerberosTokenValidator", null, "java/lang/Object", new String[] { "org/apache/wss4j/dom/validate/Validator" });
+
+classWriter.visitInnerClass("org/apache/wss4j/common/ext/WSSecurityException$ErrorCode", "org/apache/wss4j/common/ext/WSSecurityException", "ErrorCode", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOG", "Lorg/slf4j/Logger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "serviceName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "contextName", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "isUsernameServiceNameForm", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "spnego", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContextName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "contextName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setContextName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "contextName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCallbackHandler", "(Ljavax/security/auth/callback/CallbackHandler;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setServiceName", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "serviceName", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getServiceName", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "serviceName", "Ljava/lang/String;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKerberosTokenDecoder", "()Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setKerberosTokenDecoder", "(Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "validate", "(Lorg/apache/wss4j/dom/validate/Credential;Lorg/apache/wss4j/dom/handler/RequestData;)Lorg/apache/wss4j/dom/validate/Credential;", null, new String[] { "org/apache/wss4j/common/ext/WSSecurityException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/SecurityException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "javax/security/auth/login/LoginException");
+Label label6 = new Label();
+Label label7 = new Label();
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/security/PrivilegedActionException");
+Label label9 = new Label();
+Label label10 = new Label();
+Label label11 = new Label();
+methodVisitor.visitTryCatchBlock(label9, label10, label11, "org/apache/wss4j/common/kerberos/KerberosTokenDecoderException");
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label12);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "getBinarySecurityToken", "()Lorg/apache/wss4j/common/token/BinarySecurity;", false);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label13);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/ext/WSSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/common/ext/WSSecurityException$ErrorCode", "FAILURE", "Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;");
+methodVisitor.visitLdcInsn("noCredential");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/ext/WSSecurityException", "<init>", "(Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "getBinarySecurityToken", "()Lorg/apache/wss4j/common/token/BinarySecurity;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/wss4j/dom/message/token/KerberosSecurity");
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label14);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/wss4j/common/token/BinarySecurity"}, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "isDebugEnabled", "()Z", true);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label15);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitLdcInsn("java.security.auth.login.config");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLdcInsn("java.security.krb5.conf");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("KerberosTokenValidator - Using JAAS auth login file: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("KerberosTokenValidator - Using KRB conf file: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label15);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/SecurityException"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;");
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label16);
+methodVisitor.visitTypeInsn(NEW, "javax/security/auth/login/LoginContext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "getContextName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "callbackHandler", "Ljavax/security/auth/callback/CallbackHandler;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/login/LoginContext", "<init>", "(Ljava/lang/String;Ljavax/security/auth/callback/CallbackHandler;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label17 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label17);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"javax/security/auth/login/LoginContext"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/handler/RequestData", "getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;", false);
+Label label18 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label18);
+methodVisitor.visitTypeInsn(NEW, "javax/security/auth/login/LoginContext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "getContextName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/handler/RequestData", "getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/login/LoginContext", "<init>", "(Ljava/lang/String;Ljavax/security/auth/callback/CallbackHandler;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitJumpInsn(GOTO, label17);
+methodVisitor.visitLabel(label18);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "javax/security/auth/login/LoginContext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "getContextName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/security/auth/login/LoginContext", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label17);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginContext", "login", "()V", false);
+methodVisitor.visitLabel(label4);
+Label label19 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label19);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/security/auth/login/LoginException"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/ext/WSSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/common/ext/WSSecurityException$ErrorCode", "FAILURE", "Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitLdcInsn("kerberosLoginError");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/ext/WSSecurityException", "<init>", "(Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;Ljava/lang/Exception;Ljava/lang/String;[Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label19);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Successfully authenticated to the TGT");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/common/token/BinarySecurity", "getToken", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/login/LoginContext", "getSubject", "()Ljavax/security/auth/Subject;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "serviceName", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+Label label20 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label20);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/security/auth/Subject", "getPrincipals", "()Ljava/util/Set;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
+Label label21 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label21);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/ext/WSSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/common/ext/WSSecurityException$ErrorCode", "FAILURE", "Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;");
+methodVisitor.visitLdcInsn("kerberosLoginError");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("No Client principals found after login");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/ext/WSSecurityException", "<init>", "(Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;Ljava/lang/String;[Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label21);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/wss4j/dom/validate/KerberosTokenValidator", "org/apache/wss4j/dom/validate/Credential", "org/apache/wss4j/dom/handler/RequestData", "org/apache/wss4j/common/token/BinarySecurity", "javax/security/auth/login/LoginContext", "[B", "javax/security/auth/Subject", "java/lang/String", "java/util/Set"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/security/Principal");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/security/Principal", "getName", "()Ljava/lang/String;", true);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label20);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/kerberos/KerberosServiceExceptionAction");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "isUsernameServiceNameForm", "()Z", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "spnego", "Z");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/kerberos/KerberosServiceExceptionAction", "<init>", "([BLjava/lang/String;ZZ)V", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/security/auth/Subject", "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/common/kerberos/KerberosServiceContext");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label7);
+Label label22 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label22);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/wss4j/dom/validate/KerberosTokenValidator", "org/apache/wss4j/dom/validate/Credential", "org/apache/wss4j/dom/handler/RequestData", "org/apache/wss4j/common/token/BinarySecurity", "javax/security/auth/login/LoginContext", "[B", "javax/security/auth/Subject", "java/lang/String", "org/apache/wss4j/common/kerberos/KerberosServiceExceptionAction", "org/apache/wss4j/common/kerberos/KerberosServiceContext"}, 1, new Object[] {"java/security/PrivilegedActionException"});
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/PrivilegedActionException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/wss4j/common/ext/WSSecurityException");
+Label label23 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label23);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/common/ext/WSSecurityException");
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label23);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/security/PrivilegedActionException", "java/lang/Throwable"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/ext/WSSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/common/ext/WSSecurityException$ErrorCode", "FAILURE", "Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/Exception");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Exception", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitLdcInsn("kerberosTicketValidationError");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/ext/WSSecurityException", "<init>", "(Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;Ljava/lang/Exception;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label22);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/common/kerberos/KerberosServiceContext", "getPrincipal", "()Ljava/security/Principal;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "setPrincipal", "(Ljava/security/Principal;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/common/kerberos/KerberosServiceContext", "getDelegationCredential", "()Lorg/ietf/jgss/GSSCredential;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "setDelegationCredential", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Trying to obtain the Session Key from the KerberosServiceContext.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/common/kerberos/KerberosServiceContext", "getSessionKey", "()Ljava/security/Key;", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 10);
+Label label24 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label24);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Found session key in the KerberosServiceContext.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/security/Key", "getEncoded", "()[B", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "setSecretKey", "([B)V", false);
+Label label25 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label25);
+methodVisitor.visitLabel(label24);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/security/Key"}, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Session key is not found in the KerberosServiceContext.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitLabel(label25);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "getSecretKey", "()[B", false);
+Label label26 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label26);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitJumpInsn(IFNULL, label26);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("KerberosTokenDecoder is set.Trying to obtain the session key from it.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos/KerberosTokenDecoder", "clear", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos/KerberosTokenDecoder", "setToken", "([B)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos/KerberosTokenDecoder", "setSubject", "(Ljavax/security/auth/Subject;)V", true);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "kerberosTokenDecoder", "Lorg/apache/wss4j/common/kerberos/KerberosTokenDecoder;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/common/kerberos/KerberosTokenDecoder", "getSessionKey", "()[B", true);
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 11);
+Label label27 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label27);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Session key obtained from the KerberosTokenDecoder.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/dom/validate/Credential", "setSecretKey", "([B)V", false);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label27);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"[B"}, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Session key could not be obtained from the KerberosTokenDecoder.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+Label label28 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label28);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/wss4j/common/kerberos/KerberosTokenDecoderException"});
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/common/ext/WSSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/common/ext/WSSecurityException$ErrorCode", "FAILURE", "Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;");
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitLdcInsn("Error retrieving session key.");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/common/ext/WSSecurityException", "<init>", "(Lorg/apache/wss4j/common/ext/WSSecurityException$ErrorCode;Ljava/lang/Exception;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label26);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("KerberosTokenDecoder is not set.");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitLabel(label28);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitLdcInsn("Successfully validated a ticket");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(9, 12);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isUsernameServiceNameForm", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "isUsernameServiceNameForm", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setUsernameServiceNameForm", "(Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "isUsernameServiceNameForm", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSpnego", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "spnego", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setSpnego", "(Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "spnego", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/wss4j/dom/validate/KerberosTokenValidator;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/slf4j/LoggerFactory", "getLogger", "(Ljava/lang/Class;)Lorg/slf4j/Logger;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/wss4j/dom/validate/KerberosTokenValidator", "LOG", "Lorg/slf4j/Logger;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

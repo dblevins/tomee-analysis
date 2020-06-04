@@ -1,0 +1,11 @@
+= javax/xml/ws/wsaddressing/W3CEndpointReference$MetadataType.class
+
+ - link:W3CEndpointReference$MetadataType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

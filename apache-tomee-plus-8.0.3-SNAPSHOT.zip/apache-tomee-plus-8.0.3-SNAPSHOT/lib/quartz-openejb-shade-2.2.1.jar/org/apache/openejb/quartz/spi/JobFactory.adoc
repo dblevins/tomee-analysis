@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/spi/JobFactory.class
+
+ - link:JobFactory-asmified.java[Asmified]
+
+== References
+

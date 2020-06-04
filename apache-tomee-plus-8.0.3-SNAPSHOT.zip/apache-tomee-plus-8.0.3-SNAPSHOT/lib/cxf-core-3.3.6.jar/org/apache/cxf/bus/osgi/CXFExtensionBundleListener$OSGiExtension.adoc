@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/osgi/CXFExtensionBundleListener$OSGiExtension.class
+
+ - link:CXFExtensionBundleListener$OSGiExtension-asmified.java[Asmified]
+
+== References
+

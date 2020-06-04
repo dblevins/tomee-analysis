@@ -1,0 +1,7 @@
+= org/apache/jasper/compiler/ELFunctionMapper$ELFunctionVisitor.class
+
+ - link:ELFunctionMapper$ELFunctionVisitor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.FunctionInfo - 3

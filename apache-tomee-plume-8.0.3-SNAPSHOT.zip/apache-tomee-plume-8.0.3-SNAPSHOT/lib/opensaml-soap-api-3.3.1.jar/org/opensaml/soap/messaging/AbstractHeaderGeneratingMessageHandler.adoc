@@ -1,0 +1,8 @@
+= org/opensaml/soap/messaging/AbstractHeaderGeneratingMessageHandler.class
+
+ - link:AbstractHeaderGeneratingMessageHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6
+ - javax.annotation.Nonnull - 3

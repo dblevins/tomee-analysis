@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/HMACMD5.class
+
+ - link:HMACMD5-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

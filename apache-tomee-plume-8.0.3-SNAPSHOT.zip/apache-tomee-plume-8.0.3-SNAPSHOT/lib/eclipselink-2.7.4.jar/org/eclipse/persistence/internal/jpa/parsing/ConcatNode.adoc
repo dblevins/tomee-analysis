@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ConcatNode.class
+
+ - link:ConcatNode-asmified.java[Asmified]
+
+== References
+

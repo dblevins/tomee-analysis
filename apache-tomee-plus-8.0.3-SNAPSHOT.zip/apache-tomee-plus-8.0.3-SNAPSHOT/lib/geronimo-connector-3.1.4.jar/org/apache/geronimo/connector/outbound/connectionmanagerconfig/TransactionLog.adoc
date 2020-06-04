@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/outbound/connectionmanagerconfig/TransactionLog.class
+
+ - link:TransactionLog-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3

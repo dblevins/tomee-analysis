@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/descriptor/MetadataReader$ForContainer.class
+
+ - link:MetadataReader$ForContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintDeclarationException - 6
+ - javax.validation.Valid - 1
+ - javax.validation.GroupSequence - 1
+ - javax.validation.groups.ConvertGroup - 1

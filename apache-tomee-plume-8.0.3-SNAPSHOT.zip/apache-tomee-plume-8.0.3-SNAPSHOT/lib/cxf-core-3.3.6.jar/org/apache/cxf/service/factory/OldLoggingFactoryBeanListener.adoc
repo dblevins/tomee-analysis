@@ -1,0 +1,6 @@
+= org/apache/cxf/service/factory/OldLoggingFactoryBeanListener.class
+
+ - link:OldLoggingFactoryBeanListener-asmified.java[Asmified]
+
+== References
+

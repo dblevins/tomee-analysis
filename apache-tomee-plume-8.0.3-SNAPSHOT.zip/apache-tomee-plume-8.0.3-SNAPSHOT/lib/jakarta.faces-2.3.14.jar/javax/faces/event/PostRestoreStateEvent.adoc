@@ -1,0 +1,9 @@
+= javax/faces/event/PostRestoreStateEvent.class
+
+ - link:PostRestoreStateEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.context.FacesContext - 2

@@ -1,0 +1,7 @@
+= org/apache/myfaces/renderkit/html/HtmlOutcomeTargetButtonRenderer.class
+
+ - link:HtmlOutcomeTargetButtonRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

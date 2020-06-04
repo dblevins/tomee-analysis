@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/BaseModelMBean.class
+
+ - link:BaseModelMBean-asmified.java[Asmified]
+
+== References
+

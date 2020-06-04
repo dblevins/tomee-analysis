@@ -1,0 +1,6 @@
+= org/slf4j/MDC.class
+
+ - link:MDC-asmified.java[Asmified]
+
+== References
+

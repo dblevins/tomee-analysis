@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/CMCObjectIdentifiers.class
+
+ - link:CMCObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

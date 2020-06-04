@@ -1,0 +1,6 @@
+= org/hsqldb/map/ReusableObjectCache.class
+
+ - link:ReusableObjectCache-asmified.java[Asmified]
+
+== References
+

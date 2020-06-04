@@ -1,0 +1,8 @@
+= org/opensaml/security/x509/TrustedNamesCriterion.class
+
+ - link:TrustedNamesCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 1

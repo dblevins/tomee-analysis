@@ -1,0 +1,26 @@
+= org/apache/tomee/microprofile/jwt/cdi/ClaimBean.class
+
+ - link:ClaimBean-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 14
+ - javax.enterprise.inject.spi.InjectionPoint - 12
+ - javax.json.JsonObjectBuilder - 12
+ - javax.enterprise.inject.spi.Annotated - 11
+ - javax.enterprise.inject.spi.BeanManager - 11
+ - javax.json.JsonObject - 7
+ - javax.json.JsonArrayBuilder - 7
+ - javax.enterprise.context.spi.CreationalContext - 7
+ - javax.json.bind.Jsonb - 5
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.json.Json - 4
+ - javax.json.JsonNumber - 2
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.inject.Provider - 1
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.JsonArray - 1
+ - javax.json.JsonString - 1
+ - javax.inject.Inject - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.inject.Instance - 1

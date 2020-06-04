@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IBinaryElementValuePair.class
+
+ - link:IBinaryElementValuePair-asmified.java[Asmified]
+
+== References
+

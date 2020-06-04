@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/Scope.class
+
+ - link:Scope-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecEventFactory.class
+
+ - link:XMLSecEventFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/manager/util/BaseSessionComparator.class
+
+ - link:BaseSessionComparator-asmified.java[Asmified]
+
+== References
+

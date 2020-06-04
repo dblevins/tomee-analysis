@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LobManager$UPDATE_LENGTH.class
+
+ - link:LobManager$UPDATE_LENGTH-asmified.java[Asmified]
+
+== References
+

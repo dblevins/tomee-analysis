@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/CmpField$JAXB.class
+
+ - link:CmpField$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 11

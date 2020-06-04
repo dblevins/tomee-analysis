@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/BaseDestination.class
+
+ - link:BaseDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.ResourceAllocationException - 6

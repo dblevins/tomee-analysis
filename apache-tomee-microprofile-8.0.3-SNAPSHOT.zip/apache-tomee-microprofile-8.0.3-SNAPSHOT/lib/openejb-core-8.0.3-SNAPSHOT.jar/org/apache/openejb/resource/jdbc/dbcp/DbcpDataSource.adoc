@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/dbcp/DbcpDataSource.class
+
+ - link:DbcpDataSource-asmified.java[Asmified]
+
+== References
+

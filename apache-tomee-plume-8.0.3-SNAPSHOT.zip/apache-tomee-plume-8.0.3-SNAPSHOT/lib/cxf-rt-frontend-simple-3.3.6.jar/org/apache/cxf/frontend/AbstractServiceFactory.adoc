@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/AbstractServiceFactory.class
+
+ - link:AbstractServiceFactory-asmified.java[Asmified]
+
+== References
+

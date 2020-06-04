@@ -1,0 +1,30 @@
+= javax/enterprise/inject/spi/BeanManager.class
+
+ - link:BeanManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 10
+ - javax.enterprise.inject.spi.BeanAttributes - 4
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.inject.spi.InjectionPoint - 4
+ - javax.enterprise.inject.spi.ProducerFactory - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.enterprise.inject.spi.AnnotatedField - 2
+ - javax.enterprise.inject.spi.InjectionTargetFactory - 2
+ - javax.enterprise.event.Event - 1
+ - javax.enterprise.context.spi.Context - 1
+ - javax.enterprise.inject.spi.AnnotatedMember - 1
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.AnnotatedParameter - 1
+ - javax.enterprise.inject.spi.ObserverMethod - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.enterprise.inject.spi.InterceptionFactory - 1
+ - javax.el.ELResolver - 1
+ - javax.enterprise.inject.spi.InjectionTarget - 1
+ - javax.enterprise.inject.spi.InterceptionType - 1
+ - javax.enterprise.inject.spi.AnnotatedMethod - 1
+ - javax.enterprise.inject.Instance - 1
+ - javax.enterprise.inject.spi.Interceptor - 1
+ - javax.enterprise.inject.spi.Decorator - 1

@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/model/annotation/XmlEnumQuick.class
+
+ - link:XmlEnumQuick-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnum - 11

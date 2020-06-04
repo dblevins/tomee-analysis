@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ENonTransState.class
+
+ - link:ENonTransState-asmified.java[Asmified]
+
+== References
+

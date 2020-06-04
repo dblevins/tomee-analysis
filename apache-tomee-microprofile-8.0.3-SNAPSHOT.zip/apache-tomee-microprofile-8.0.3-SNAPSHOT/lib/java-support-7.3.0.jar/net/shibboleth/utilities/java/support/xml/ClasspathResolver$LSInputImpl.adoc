@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/xml/ClasspathResolver$LSInputImpl.class
+
+ - link:ClasspathResolver$LSInputImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/StoredProcedureGenerator.class
+
+ - link:StoredProcedureGenerator-asmified.java[Asmified]
+
+== References
+

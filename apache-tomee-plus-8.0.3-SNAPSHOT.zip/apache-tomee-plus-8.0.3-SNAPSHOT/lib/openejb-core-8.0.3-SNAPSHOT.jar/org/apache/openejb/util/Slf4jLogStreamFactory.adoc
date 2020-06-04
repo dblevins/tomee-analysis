@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Slf4jLogStreamFactory.class
+
+ - link:Slf4jLogStreamFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/RoundRobinConnectionStrategy$RoundRobinIterable$RoundRobinIterator.class
+
+ - link:RoundRobinConnectionStrategy$RoundRobinIterable$RoundRobinIterator-asmified.java[Asmified]
+
+== References
+

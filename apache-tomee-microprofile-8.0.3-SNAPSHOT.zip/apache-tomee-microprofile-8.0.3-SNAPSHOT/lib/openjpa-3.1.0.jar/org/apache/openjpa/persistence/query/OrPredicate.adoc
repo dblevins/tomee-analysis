@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/OrPredicate.class
+
+ - link:OrPredicate-asmified.java[Asmified]
+
+== References
+

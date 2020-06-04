@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/MethodAccessor_Long.class
+
+ - link:MethodAccessor_Long-asmified.java[Asmified]
+
+== References
+

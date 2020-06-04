@@ -1,0 +1,9 @@
+= javax/enterprise/context/Dependent$Literal.class
+
+ - link:Dependent$Literal-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.Dependent$Literal - 4
+ - javax.enterprise.context.Dependent - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

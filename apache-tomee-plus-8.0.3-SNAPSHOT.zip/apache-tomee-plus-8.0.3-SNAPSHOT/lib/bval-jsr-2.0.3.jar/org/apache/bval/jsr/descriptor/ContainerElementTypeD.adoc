@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/descriptor/ContainerElementTypeD.class
+
+ - link:ContainerElementTypeD-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ContainerElementTypeDescriptor - 1

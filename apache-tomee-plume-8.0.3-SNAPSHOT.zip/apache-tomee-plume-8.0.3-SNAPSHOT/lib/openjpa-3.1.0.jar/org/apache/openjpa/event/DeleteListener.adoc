@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/DeleteListener.class
+
+ - link:DeleteListener-asmified.java[Asmified]
+
+== References
+

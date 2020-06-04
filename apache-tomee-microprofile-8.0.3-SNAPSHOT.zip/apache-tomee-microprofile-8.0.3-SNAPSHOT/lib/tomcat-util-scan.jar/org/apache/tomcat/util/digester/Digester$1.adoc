@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/digester/Digester$1.class
+
+ - link:Digester$1-asmified.java[Asmified]
+
+== References
+

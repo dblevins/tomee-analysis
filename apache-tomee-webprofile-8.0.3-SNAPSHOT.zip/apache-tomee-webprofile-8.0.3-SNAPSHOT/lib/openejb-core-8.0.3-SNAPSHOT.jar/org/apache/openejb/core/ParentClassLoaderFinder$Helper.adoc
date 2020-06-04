@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ParentClassLoaderFinder$Helper.class
+
+ - link:ParentClassLoaderFinder$Helper-asmified.java[Asmified]
+
+== References
+

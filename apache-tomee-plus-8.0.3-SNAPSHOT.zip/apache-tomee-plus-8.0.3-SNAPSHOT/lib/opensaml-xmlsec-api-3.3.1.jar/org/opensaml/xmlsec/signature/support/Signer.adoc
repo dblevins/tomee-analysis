@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/support/Signer.class
+
+ - link:Signer-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

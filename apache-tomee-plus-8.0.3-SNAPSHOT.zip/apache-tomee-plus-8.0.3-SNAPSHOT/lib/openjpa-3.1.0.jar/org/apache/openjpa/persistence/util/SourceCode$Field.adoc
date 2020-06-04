@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/util/SourceCode$Field.class
+
+ - link:SourceCode$Field-asmified.java[Asmified]
+
+== References
+

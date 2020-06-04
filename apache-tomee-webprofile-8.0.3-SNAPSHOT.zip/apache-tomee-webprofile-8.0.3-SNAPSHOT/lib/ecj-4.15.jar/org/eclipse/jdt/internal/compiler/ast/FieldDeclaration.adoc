@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/FieldDeclaration.class
+
+ - link:FieldDeclaration-asmified.java[Asmified]
+
+== References
+

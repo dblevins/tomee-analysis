@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/BeanRepository.class
+
+ - link:BeanRepository-asmified.java[Asmified]
+
+== References
+

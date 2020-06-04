@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/job/ValidateProperty$DescriptorWrapper.class
+
+ - link:ValidateProperty$DescriptorWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ElementDescriptor - 1

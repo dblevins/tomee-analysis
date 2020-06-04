@@ -1,0 +1,9 @@
+= org/apache/jasper/compiler/JspConfig.class
+
+ - link:JspConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.descriptor.JspPropertyGroupDescriptor - 14
+ - javax.servlet.ServletContext - 13
+ - javax.servlet.descriptor.JspConfigDescriptor - 4

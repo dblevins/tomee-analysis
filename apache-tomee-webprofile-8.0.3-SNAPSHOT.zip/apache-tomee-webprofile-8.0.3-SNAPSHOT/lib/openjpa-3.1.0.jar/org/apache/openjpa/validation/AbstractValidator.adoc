@@ -1,0 +1,6 @@
+= org/apache/openjpa/validation/AbstractValidator.class
+
+ - link:AbstractValidator-asmified.java[Asmified]
+
+== References
+

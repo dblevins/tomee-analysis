@@ -1,0 +1,15 @@
+= com/sun/faces/application/annotation/RenderKitConfigHandler.class
+
+ - link:RenderKitConfigHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.render.RenderKit - 9
+ - javax.faces.render.FacesRenderer - 9
+ - javax.faces.render.RenderKitFactory - 8
+ - javax.faces.render.FacesBehaviorRenderer - 7
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.FacesException - 4
+ - javax.faces.render.Renderer - 2
+ - javax.faces.render.ClientBehaviorRenderer - 2
+ - javax.faces.FactoryFinder - 1

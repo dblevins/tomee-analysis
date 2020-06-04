@@ -1,0 +1,13 @@
+= org/apache/openejb/core/singleton/SingletonInstanceManager.class
+
+ - link:SingletonInstanceManager-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.NoSuchEJBException - 9
+ - javax.enterprise.context.spi.CreationalContext - 5
+ - javax.xml.ws.WebServiceContext - 3
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.ejb.SessionBean - 2
+ - javax.ejb.SessionContext - 1
+ - javax.ejb.EJBContext - 1

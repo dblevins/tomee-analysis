@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/DefaultErrorHandlingPolicies$3.class
+
+ - link:DefaultErrorHandlingPolicies$3-asmified.java[Asmified]
+
+== References
+

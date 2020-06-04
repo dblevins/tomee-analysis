@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/AttributeDesignatorType.class
+
+ - link:AttributeDesignatorType-asmified.java[Asmified]
+
+== References
+

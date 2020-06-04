@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/BasicDynaClass.class
+
+ - link:BasicDynaClass-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/stax/XMLSecEntityDeclarationImpl.class
+
+ - link:XMLSecEntityDeclarationImpl-asmified.java[Asmified]
+
+== References
+

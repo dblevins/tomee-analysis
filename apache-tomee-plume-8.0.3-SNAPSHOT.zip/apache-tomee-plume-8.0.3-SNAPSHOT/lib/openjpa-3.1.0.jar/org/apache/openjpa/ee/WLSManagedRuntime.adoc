@@ -1,0 +1,8 @@
+= org/apache/openjpa/ee/WLSManagedRuntime.class
+
+ - link:WLSManagedRuntime-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 6
+ - javax.transaction.Transaction - 5

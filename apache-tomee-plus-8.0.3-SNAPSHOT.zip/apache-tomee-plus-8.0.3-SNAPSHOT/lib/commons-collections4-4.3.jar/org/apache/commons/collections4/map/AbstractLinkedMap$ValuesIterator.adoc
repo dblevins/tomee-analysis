@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/AbstractLinkedMap$ValuesIterator.class
+
+ - link:AbstractLinkedMap$ValuesIterator-asmified.java[Asmified]
+
+== References
+

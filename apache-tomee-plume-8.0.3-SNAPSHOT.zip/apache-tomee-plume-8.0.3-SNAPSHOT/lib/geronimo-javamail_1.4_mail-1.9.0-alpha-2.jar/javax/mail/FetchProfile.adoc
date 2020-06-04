@@ -1,0 +1,7 @@
+= javax/mail/FetchProfile.class
+
+ - link:FetchProfile-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.FetchProfile$Item - 6

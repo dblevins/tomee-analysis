@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/SaxOpenejb$JndiProviderElement.class
+
+ - link:SaxOpenejb$JndiProviderElement-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/PrimaryKey.class
+
+ - link:PrimaryKey-asmified.java[Asmified]
+
+== References
+

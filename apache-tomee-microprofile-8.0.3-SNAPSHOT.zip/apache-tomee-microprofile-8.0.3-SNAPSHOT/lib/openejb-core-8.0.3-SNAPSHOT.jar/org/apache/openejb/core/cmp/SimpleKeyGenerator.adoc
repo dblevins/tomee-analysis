@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/SimpleKeyGenerator.class
+
+ - link:SimpleKeyGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 1

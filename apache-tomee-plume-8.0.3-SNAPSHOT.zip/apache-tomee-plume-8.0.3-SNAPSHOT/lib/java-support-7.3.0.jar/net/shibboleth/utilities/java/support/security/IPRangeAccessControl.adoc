@@ -1,0 +1,9 @@
+= net/shibboleth/utilities/java/support/security/IPRangeAccessControl.class
+
+ - link:IPRangeAccessControl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.servlet.ServletRequest - 2
+ - javax.annotation.Nullable - 2

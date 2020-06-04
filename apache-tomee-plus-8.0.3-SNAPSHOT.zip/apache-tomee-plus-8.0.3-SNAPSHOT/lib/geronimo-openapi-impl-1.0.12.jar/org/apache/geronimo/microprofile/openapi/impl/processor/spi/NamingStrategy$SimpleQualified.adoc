@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy$SimpleQualified.class
+
+ - link:NamingStrategy$SimpleQualified-asmified.java[Asmified]
+
+== References
+

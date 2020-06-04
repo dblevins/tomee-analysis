@@ -1,0 +1,13 @@
+= org/apache/openejb/cdi/transactional/NotSupportedInterceptor.class
+
+ - link:NotSupportedInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 2
+ - javax.transaction.TransactionManager - 2
+ - javax.interceptor.Interceptor - 1
+ - javax.annotation.Priority - 1
+ - javax.transaction.Transactional - 1
+ - javax.interceptor.AroundInvoke - 1
+ - javax.transaction.Transactional$TxType - 1

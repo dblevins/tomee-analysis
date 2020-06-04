@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthnContextUnmarshaller.class
+
+ - link:AuthnContextUnmarshaller-asmified.java[Asmified]
+
+== References
+

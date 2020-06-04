@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/EISDescriptor.class
+
+ - link:EISDescriptor-asmified.java[Asmified]
+
+== References
+

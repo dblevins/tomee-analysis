@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ScanConstants.class
+
+ - link:ScanConstants-asmified.java[Asmified]
+
+== References
+

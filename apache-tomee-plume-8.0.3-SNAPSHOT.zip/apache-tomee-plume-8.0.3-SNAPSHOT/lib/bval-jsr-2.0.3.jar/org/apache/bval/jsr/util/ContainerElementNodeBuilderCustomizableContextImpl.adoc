@@ -1,0 +1,12 @@
+= org/apache/bval/jsr/util/ContainerElementNodeBuilderCustomizableContextImpl.class
+
+ - link:ContainerElementNodeBuilderCustomizableContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 2
+ - javax.validation.ConstraintValidatorContext - 2
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$ContainerElementNodeBuilderCustomizableContext - 2
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderCustomizableContext - 1
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$ContainerElementNodeContextBuilder - 1
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$NodeBuilderCustomizableContext - 1

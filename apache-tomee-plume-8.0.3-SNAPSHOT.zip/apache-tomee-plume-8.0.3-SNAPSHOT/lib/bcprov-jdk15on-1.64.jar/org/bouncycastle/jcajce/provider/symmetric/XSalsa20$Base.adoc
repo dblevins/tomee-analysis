@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/XSalsa20$Base.class
+
+ - link:XSalsa20$Base-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/enterprise/util/TypeLiteral.class
+
+ - link:TypeLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.TypeLiteral - 9

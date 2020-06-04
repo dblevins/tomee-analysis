@@ -1,0 +1,7 @@
+= javax/ws/rs/core/Response$Status$Family.class
+
+ - link:Response$Status$Family-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$Status$Family - 48

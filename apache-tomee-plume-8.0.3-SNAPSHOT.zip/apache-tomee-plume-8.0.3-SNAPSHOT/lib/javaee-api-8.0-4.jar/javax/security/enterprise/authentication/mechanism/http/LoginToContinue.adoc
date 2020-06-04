@@ -1,0 +1,8 @@
+= javax/security/enterprise/authentication/mechanism/http/LoginToContinue.class
+
+ - link:LoginToContinue-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 4
+ - javax.interceptor.InterceptorBinding - 1

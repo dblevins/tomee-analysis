@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/InferenceSubstitution$1.class
+
+ - link:InferenceSubstitution$1-asmified.java[Asmified]
+
+== References
+

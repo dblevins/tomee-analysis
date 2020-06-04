@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/Reference.class
+
+ - link:Reference-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 1

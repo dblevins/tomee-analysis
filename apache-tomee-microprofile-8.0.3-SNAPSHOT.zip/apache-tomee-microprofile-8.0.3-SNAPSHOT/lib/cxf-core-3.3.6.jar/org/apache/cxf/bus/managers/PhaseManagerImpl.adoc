@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/managers/PhaseManagerImpl.class
+
+ - link:PhaseManagerImpl-asmified.java[Asmified]
+
+== References
+

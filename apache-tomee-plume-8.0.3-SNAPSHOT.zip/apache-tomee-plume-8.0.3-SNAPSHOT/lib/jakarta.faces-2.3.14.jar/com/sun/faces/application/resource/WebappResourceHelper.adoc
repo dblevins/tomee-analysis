@@ -1,0 +1,12 @@
+= com/sun/faces/application/resource/WebappResourceHelper.class
+
+ - link:WebappResourceHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 25
+ - javax.faces.context.ExternalContext - 14
+ - javax.faces.application.ProjectStage - 8
+ - javax.faces.FacesException - 4
+ - javax.faces.view.facelets.ResourceResolver - 3
+ - javax.faces.component.UIViewRoot - 2

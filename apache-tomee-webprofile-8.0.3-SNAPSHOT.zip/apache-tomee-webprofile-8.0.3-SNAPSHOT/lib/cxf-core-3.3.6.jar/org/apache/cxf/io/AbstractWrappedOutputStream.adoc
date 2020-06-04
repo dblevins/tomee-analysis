@@ -1,0 +1,6 @@
+= org/apache/cxf/io/AbstractWrappedOutputStream.class
+
+ - link:AbstractWrappedOutputStream-asmified.java[Asmified]
+
+== References
+

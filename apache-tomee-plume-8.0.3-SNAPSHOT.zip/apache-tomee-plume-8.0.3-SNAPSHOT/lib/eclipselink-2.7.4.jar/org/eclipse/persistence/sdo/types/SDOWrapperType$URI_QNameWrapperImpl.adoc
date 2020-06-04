@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$URI_QNameWrapperImpl.class
+
+ - link:SDOWrapperType$URI_QNameWrapperImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/PropertyWriter.class
+
+ - link:PropertyWriter-asmified.java[Asmified]
+
+== References
+

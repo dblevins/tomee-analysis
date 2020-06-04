@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/groups/Groups.class
+
+ - link:Groups-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.GroupDefinitionException - 2

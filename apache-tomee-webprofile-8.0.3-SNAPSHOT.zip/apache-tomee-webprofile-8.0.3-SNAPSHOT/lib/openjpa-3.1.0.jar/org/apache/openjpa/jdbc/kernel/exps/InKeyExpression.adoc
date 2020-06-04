@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/InKeyExpression.class
+
+ - link:InKeyExpression-asmified.java[Asmified]
+
+== References
+

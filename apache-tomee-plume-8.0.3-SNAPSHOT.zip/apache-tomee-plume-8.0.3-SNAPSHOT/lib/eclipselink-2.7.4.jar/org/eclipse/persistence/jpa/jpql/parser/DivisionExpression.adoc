@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/DivisionExpression.class
+
+ - link:DivisionExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/catalina-ha.jar
+
+ - link:org/apache/catalina/ha/context/ReplicatedContext$ReplApplContext.adoc[org/apache/catalina/ha/context/ReplicatedContext$ReplApplContext.class] - 2
+ - link:org/apache/catalina/ha/context/ReplicatedContext.adoc[org/apache/catalina/ha/context/ReplicatedContext.class] - 2
+ - link:org/apache/catalina/ha/ClusterSession.adoc[org/apache/catalina/ha/ClusterSession.class] - 1
+ - link:org/apache/catalina/ha/session/JvmRouteBinderValve.adoc[org/apache/catalina/ha/session/JvmRouteBinderValve.class] - 1
+ - link:org/apache/catalina/ha/tcp/ReplicationValve.adoc[org/apache/catalina/ha/tcp/ReplicationValve.class] - 1

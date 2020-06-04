@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/UnresolvedReferencesException.class
+
+ - link:UnresolvedReferencesException-asmified.java[Asmified]
+
+== References
+

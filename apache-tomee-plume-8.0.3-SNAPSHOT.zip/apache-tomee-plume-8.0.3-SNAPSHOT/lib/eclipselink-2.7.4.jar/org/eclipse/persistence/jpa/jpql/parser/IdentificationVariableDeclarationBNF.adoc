@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/IdentificationVariableDeclarationBNF.class
+
+ - link:IdentificationVariableDeclarationBNF-asmified.java[Asmified]
+
+== References
+

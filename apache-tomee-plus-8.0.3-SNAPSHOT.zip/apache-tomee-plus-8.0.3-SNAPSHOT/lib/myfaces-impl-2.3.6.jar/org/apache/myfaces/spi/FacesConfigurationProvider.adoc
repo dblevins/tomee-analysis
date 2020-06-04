@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/FacesConfigurationProvider.class
+
+ - link:FacesConfigurationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 9

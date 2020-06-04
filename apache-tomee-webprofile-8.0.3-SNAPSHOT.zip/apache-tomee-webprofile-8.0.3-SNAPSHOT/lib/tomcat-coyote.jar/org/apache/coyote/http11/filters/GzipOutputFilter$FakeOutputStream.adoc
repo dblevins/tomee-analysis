@@ -1,0 +1,6 @@
+= org/apache/coyote/http11/filters/GzipOutputFilter$FakeOutputStream.class
+
+ - link:GzipOutputFilter$FakeOutputStream-asmified.java[Asmified]
+
+== References
+

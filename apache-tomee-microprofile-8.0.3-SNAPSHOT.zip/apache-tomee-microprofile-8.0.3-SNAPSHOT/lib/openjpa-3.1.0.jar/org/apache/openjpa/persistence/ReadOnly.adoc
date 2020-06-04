@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ReadOnly.class
+
+ - link:ReadOnly-asmified.java[Asmified]
+
+== References
+

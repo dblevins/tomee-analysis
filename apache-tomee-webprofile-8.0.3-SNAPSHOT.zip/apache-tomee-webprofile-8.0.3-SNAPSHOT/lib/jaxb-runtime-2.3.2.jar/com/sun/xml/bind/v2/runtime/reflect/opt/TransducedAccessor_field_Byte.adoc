@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/TransducedAccessor_field_Byte.class
+
+ - link:TransducedAccessor_field_Byte-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/GenerationContext.class
+
+ - link:GenerationContext-asmified.java[Asmified]
+
+== References
+

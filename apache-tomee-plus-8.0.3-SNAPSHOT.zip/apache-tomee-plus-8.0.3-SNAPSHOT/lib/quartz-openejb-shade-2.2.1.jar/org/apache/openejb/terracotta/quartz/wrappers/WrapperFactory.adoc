@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/wrappers/WrapperFactory.class
+
+ - link:WrapperFactory-asmified.java[Asmified]
+
+== References
+

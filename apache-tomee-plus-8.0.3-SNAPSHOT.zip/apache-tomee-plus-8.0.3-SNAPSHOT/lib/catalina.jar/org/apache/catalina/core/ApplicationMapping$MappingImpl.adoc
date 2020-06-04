@@ -1,0 +1,8 @@
+= org/apache/catalina/core/ApplicationMapping$MappingImpl.class
+
+ - link:ApplicationMapping$MappingImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.MappingMatch - 5
+ - javax.servlet.http.HttpServletMapping - 1

@@ -1,0 +1,6 @@
+= org/apache/catalina/core/DefaultInstanceManager$AnnotationCacheEntryType.class
+
+ - link:DefaultInstanceManager$AnnotationCacheEntryType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/webbeans/component/creation/AbstractBeanBuilder.class
+
+ - link:AbstractBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 14
+ - javax.enterprise.inject.spi.AnnotatedParameter - 10
+ - javax.enterprise.inject.spi.AnnotatedField - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.inject.Produces - 2
+ - javax.enterprise.inject.Disposes - 1
+ - javax.enterprise.event.Observes - 1
+ - javax.enterprise.event.ObservesAsync - 1

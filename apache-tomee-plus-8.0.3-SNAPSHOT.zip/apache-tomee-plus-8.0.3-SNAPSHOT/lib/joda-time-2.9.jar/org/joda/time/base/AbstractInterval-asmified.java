@@ -1,0 +1,641 @@
+package asm.org.joda.time.base;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AbstractIntervalDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/joda/time/base/AbstractInterval", null, "java/lang/Object", new String[] { "org/joda/time/ReadableInterval" });
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "checkInterval", "(JJ)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFGE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("The end instant must be greater the start");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStart", "()Lorg/joda/time/DateTime;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/DateTime");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/DateTime", "<init>", "(JLorg/joda/time/Chronology;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEnd", "()Lorg/joda/time/DateTime;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/DateTime");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/DateTime", "<init>", "(JLorg/joda/time/Chronology;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contains", "(J)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 5);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLT, label0);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 5);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGE, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "containsNow", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/DateTimeUtils", "currentTimeMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "contains", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contains", "(Lorg/joda/time/ReadableInstant;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "containsNow", "()Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInstant", "getMillis", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "contains", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contains", "(Lorg/joda/time/ReadableInterval;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "containsNow", "()Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getStartMillis", "()J", true);
+methodVisitor.visitVarInsn(LSTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getEndMillis", "()J", true);
+methodVisitor.visitVarInsn(LSTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 8);
+methodVisitor.visitVarInsn(LLOAD, 6);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitInsn(LCMP);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFGT, label1);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 8);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGE, label1);
+methodVisitor.visitVarInsn(LLOAD, 4);
+methodVisitor.visitVarInsn(LLOAD, 8);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGT, label1);
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "overlaps", "(Lorg/joda/time/ReadableInterval;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/DateTimeUtils", "currentTimeMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 6);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 6);
+methodVisitor.visitInsn(LCMP);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFGE, label1);
+methodVisitor.visitVarInsn(LLOAD, 6);
+methodVisitor.visitVarInsn(LLOAD, 4);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGE, label1);
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getStartMillis", "()J", true);
+methodVisitor.visitVarInsn(LSTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getEndMillis", "()J", true);
+methodVisitor.visitVarInsn(LSTORE, 8);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 8);
+methodVisitor.visitInsn(LCMP);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFGE, label3);
+methodVisitor.visitVarInsn(LLOAD, 6);
+methodVisitor.visitVarInsn(LLOAD, 4);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGE, label3);
+methodVisitor.visitInsn(ICONST_1);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isEqual", "(Lorg/joda/time/ReadableInterval;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getStartMillis", "()J", true);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getEndMillis", "()J", true);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBefore", "(J)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFGT, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBeforeNow", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/DateTimeUtils", "currentTimeMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isBefore", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBefore", "(Lorg/joda/time/ReadableInstant;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isBeforeNow", "()Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInstant", "getMillis", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isBefore", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isBefore", "(Lorg/joda/time/ReadableInterval;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isBeforeNow", "()Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getStartMillis", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isBefore", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAfter", "(J)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAfterNow", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/DateTimeUtils", "currentTimeMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isAfter", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAfter", "(Lorg/joda/time/ReadableInstant;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isAfterNow", "()Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInstant", "getMillis", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "isAfter", "(J)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAfter", "(Lorg/joda/time/ReadableInterval;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/DateTimeUtils", "currentTimeMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getEndMillis", "()J", true);
+methodVisitor.visitVarInsn(LSTORE, 2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitInsn(LCMP);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFLT, label2);
+methodVisitor.visitInsn(ICONST_1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toInterval", "()Lorg/joda/time/Interval;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/Interval");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/Interval", "<init>", "(JJLorg/joda/time/Chronology;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toMutableInterval", "()Lorg/joda/time/MutableInterval;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/MutableInterval");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/MutableInterval", "<init>", "(JJLorg/joda/time/Chronology;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toDurationMillis", "()J", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/field/FieldUtils", "safeSubtract", "(JJ)J", false);
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toDuration", "()Lorg/joda/time/Duration;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "toDurationMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 1);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/joda/time/Duration", "ZERO", "Lorg/joda/time/Duration;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/Duration");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/Duration", "<init>", "(J)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toPeriod", "()Lorg/joda/time/Period;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/Period");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/Period", "<init>", "(JJLorg/joda/time/Chronology;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toPeriod", "(Lorg/joda/time/PeriodType;)Lorg/joda/time/Period;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/joda/time/Period");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/joda/time/Period", "<init>", "(JJLorg/joda/time/PeriodType;Lorg/joda/time/Chronology;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(8, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equals", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/joda/time/ReadableInterval");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/joda/time/ReadableInterval");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getStartMillis", "()J", true);
+methodVisitor.visitInsn(LCMP);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getEndMillis", "()J", true);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/joda/time/ReadableInterval", "getChronology", "()Lorg/joda/time/Chronology;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/field/FieldUtils", "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitInsn(ICONST_1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hashCode", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 3);
+methodVisitor.visitIntInsn(BIPUSH, 97);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitIntInsn(BIPUSH, 31);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitInsn(LUSHR);
+methodVisitor.visitInsn(LXOR);
+methodVisitor.visitInsn(L2I);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitIntInsn(BIPUSH, 31);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitInsn(LUSHR);
+methodVisitor.visitInsn(LXOR);
+methodVisitor.visitInsn(L2I);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitIntInsn(BIPUSH, 31);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/joda/time/format/ISODateTimeFormat", "dateTime", "()Lorg/joda/time/format/DateTimeFormatter;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getChronology", "()Lorg/joda/time/Chronology;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/DateTimeFormatter", "withChronology", "(Lorg/joda/time/Chronology;)Lorg/joda/time/format/DateTimeFormatter;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuffer");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 48);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuffer", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getStartMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/DateTimeFormatter", "printTo", "(Ljava/lang/StringBuffer;J)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 47);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "append", "(C)Ljava/lang/StringBuffer;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/base/AbstractInterval", "getEndMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/joda/time/format/DateTimeFormatter", "printTo", "(Ljava/lang/StringBuffer;J)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuffer", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

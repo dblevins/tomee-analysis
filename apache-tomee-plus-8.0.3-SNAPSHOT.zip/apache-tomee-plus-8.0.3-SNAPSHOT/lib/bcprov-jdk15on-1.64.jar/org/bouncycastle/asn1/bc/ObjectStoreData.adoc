@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/bc/ObjectStoreData.class
+
+ - link:ObjectStoreData-asmified.java[Asmified]
+
+== References
+

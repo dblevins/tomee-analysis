@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/service/factory/MethodComparator.class
+
+ - link:MethodComparator-asmified.java[Asmified]
+
+== References
+

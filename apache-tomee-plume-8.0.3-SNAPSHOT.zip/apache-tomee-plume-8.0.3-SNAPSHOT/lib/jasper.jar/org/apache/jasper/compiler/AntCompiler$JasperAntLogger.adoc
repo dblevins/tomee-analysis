@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/AntCompiler$JasperAntLogger.class
+
+ - link:AntCompiler$JasperAntLogger-asmified.java[Asmified]
+
+== References
+

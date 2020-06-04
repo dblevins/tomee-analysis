@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/component/UIRepeat$1.class
+
+ - link:UIRepeat$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitResult - 6

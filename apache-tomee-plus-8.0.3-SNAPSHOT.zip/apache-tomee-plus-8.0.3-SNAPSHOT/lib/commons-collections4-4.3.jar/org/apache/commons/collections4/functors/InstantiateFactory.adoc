@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/InstantiateFactory.class
+
+ - link:InstantiateFactory-asmified.java[Asmified]
+
+== References
+

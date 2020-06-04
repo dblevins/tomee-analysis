@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/OriginatorKeyInfoMarshaller.class
+
+ - link:OriginatorKeyInfoMarshaller-asmified.java[Asmified]
+
+== References
+

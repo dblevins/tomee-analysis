@@ -1,0 +1,6 @@
+= com/sun/faces/taglib/ValidatorInfo.class
+
+ - link:ValidatorInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/ReductionResult.class
+
+ - link:ReductionResult-asmified.java[Asmified]
+
+== References
+

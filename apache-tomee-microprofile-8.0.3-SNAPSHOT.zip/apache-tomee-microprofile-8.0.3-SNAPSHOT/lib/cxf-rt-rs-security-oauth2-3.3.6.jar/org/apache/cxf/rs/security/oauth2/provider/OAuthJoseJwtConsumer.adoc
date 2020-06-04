@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/provider/OAuthJoseJwtConsumer.class
+
+ - link:OAuthJoseJwtConsumer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/ExceptionClassesPropertyResolver.class
+
+ - link:ExceptionClassesPropertyResolver-asmified.java[Asmified]
+
+== References
+

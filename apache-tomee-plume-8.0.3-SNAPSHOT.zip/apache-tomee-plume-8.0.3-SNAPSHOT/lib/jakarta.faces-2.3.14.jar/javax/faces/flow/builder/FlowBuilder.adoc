@@ -1,0 +1,16 @@
+= javax/faces/flow/builder/FlowBuilder.class
+
+ - link:FlowBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.FlowBuilder - 7
+ - javax.el.MethodExpression - 2
+ - javax.faces.flow.builder.MethodCallBuilder - 1
+ - javax.el.ValueExpression - 1
+ - javax.faces.flow.builder.FlowCallBuilder - 1
+ - javax.faces.flow.builder.SwitchBuilder - 1
+ - javax.faces.flow.Flow - 1
+ - javax.faces.flow.builder.NavigationCaseBuilder - 1
+ - javax.faces.flow.builder.ReturnBuilder - 1
+ - javax.faces.flow.builder.ViewBuilder - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/calendar/HolidayCalendar.class
+
+ - link:HolidayCalendar-asmified.java[Asmified]
+
+== References
+

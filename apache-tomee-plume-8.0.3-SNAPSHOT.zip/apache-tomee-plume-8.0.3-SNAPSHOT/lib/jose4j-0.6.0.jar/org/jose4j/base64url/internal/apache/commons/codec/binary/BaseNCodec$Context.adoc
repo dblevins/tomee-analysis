@@ -1,0 +1,6 @@
+= org/jose4j/base64url/internal/apache/commons/codec/binary/BaseNCodec$Context.class
+
+ - link:BaseNCodec$Context-asmified.java[Asmified]
+
+== References
+

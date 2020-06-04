@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IUpdatableModule.class
+
+ - link:IUpdatableModule-asmified.java[Asmified]
+
+== References
+

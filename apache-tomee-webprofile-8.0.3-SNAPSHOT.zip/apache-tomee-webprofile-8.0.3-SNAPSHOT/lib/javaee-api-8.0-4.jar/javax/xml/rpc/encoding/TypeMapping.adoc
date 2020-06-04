@@ -1,0 +1,8 @@
+= javax/xml/rpc/encoding/TypeMapping.class
+
+ - link:TypeMapping-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.encoding.SerializerFactory - 2
+ - javax.xml.rpc.encoding.DeserializerFactory - 2

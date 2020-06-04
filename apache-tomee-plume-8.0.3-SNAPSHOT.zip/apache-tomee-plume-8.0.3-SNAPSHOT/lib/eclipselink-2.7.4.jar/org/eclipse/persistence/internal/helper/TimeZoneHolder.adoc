@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/TimeZoneHolder.class
+
+ - link:TimeZoneHolder-asmified.java[Asmified]
+
+== References
+

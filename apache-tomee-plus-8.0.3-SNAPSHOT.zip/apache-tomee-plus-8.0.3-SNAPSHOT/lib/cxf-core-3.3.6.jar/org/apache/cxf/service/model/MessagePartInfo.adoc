@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/MessagePartInfo.class
+
+ - link:MessagePartInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/StdJobRunShellFactory.class
+
+ - link:StdJobRunShellFactory-asmified.java[Asmified]
+
+== References
+

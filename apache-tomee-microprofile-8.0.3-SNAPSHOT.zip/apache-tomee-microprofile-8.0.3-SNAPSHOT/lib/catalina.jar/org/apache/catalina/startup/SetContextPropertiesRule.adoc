@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/SetContextPropertiesRule.class
+
+ - link:SetContextPropertiesRule-asmified.java[Asmified]
+
+== References
+

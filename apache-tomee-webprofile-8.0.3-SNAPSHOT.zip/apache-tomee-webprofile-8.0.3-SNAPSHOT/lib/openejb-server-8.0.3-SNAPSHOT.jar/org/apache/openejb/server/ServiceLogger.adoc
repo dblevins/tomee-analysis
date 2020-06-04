@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ServiceLogger.class
+
+ - link:ServiceLogger-asmified.java[Asmified]
+
+== References
+

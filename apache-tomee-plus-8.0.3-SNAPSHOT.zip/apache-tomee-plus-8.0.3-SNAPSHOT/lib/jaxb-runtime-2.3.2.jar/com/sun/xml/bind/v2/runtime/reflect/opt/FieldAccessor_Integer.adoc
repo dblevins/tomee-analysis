@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/FieldAccessor_Integer.class
+
+ - link:FieldAccessor_Integer-asmified.java[Asmified]
+
+== References
+

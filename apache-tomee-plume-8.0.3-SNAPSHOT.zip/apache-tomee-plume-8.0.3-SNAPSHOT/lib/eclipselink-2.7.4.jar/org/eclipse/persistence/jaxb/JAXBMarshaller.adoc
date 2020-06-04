@@ -1,0 +1,15 @@
+= org/eclipse/persistence/jaxb/JAXBMarshaller.class
+
+ - link:JAXBMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 63
+ - javax.xml.bind.MarshalException - 36
+ - javax.xml.bind.Marshaller$Listener - 34
+ - javax.xml.bind.PropertyException - 30
+ - javax.xml.bind.JAXBException - 24
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 13
+ - javax.xml.bind.ValidationEventHandler - 13
+ - javax.xml.bind.attachment.AttachmentMarshaller - 4
+ - javax.xml.bind.Marshaller - 3

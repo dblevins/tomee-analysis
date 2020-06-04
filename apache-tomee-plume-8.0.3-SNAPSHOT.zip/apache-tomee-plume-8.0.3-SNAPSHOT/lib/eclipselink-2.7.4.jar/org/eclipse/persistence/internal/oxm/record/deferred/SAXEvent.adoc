@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/SAXEvent.class
+
+ - link:SAXEvent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/util/AlgorithmIdentifierFactory.class
+
+ - link:AlgorithmIdentifierFactory-asmified.java[Asmified]
+
+== References
+

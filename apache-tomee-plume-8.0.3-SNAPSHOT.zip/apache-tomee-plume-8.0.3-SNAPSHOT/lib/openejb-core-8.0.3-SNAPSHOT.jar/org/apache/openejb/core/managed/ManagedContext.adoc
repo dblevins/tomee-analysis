@@ -1,0 +1,8 @@
+= org/apache/openejb/core/managed/ManagedContext.class
+
+ - link:ManagedContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 2
+ - javax.xml.rpc.handler.MessageContext - 1

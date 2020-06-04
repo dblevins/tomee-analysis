@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/List.class
+
+ - link:List-asmified.java[Asmified]
+
+== References
+

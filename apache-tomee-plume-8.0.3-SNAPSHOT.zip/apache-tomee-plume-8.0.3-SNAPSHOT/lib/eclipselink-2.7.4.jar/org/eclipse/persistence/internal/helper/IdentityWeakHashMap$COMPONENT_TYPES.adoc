@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/IdentityWeakHashMap$COMPONENT_TYPES.class
+
+ - link:IdentityWeakHashMap$COMPONENT_TYPES-asmified.java[Asmified]
+
+== References
+

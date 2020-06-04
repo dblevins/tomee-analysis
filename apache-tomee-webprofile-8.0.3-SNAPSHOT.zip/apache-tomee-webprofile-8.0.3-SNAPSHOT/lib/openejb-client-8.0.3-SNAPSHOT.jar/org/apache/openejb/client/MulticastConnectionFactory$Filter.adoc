@@ -1,0 +1,6 @@
+= org/apache/openejb/client/MulticastConnectionFactory$Filter.class
+
+ - link:MulticastConnectionFactory$Filter-asmified.java[Asmified]
+
+== References
+

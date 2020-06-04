@@ -1,0 +1,8 @@
+= javax/faces/component/ContextCallback.class
+
+ - link:ContextCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1
+ - javax.faces.component.UIComponent - 1

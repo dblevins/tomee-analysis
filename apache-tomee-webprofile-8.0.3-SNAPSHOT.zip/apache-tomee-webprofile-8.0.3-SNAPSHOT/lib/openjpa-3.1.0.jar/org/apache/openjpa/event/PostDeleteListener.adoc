@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/PostDeleteListener.class
+
+ - link:PostDeleteListener-asmified.java[Asmified]
+
+== References
+

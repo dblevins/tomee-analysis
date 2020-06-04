@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multimap/ArrayListValuedHashMap.class
+
+ - link:ArrayListValuedHashMap-asmified.java[Asmified]
+
+== References
+

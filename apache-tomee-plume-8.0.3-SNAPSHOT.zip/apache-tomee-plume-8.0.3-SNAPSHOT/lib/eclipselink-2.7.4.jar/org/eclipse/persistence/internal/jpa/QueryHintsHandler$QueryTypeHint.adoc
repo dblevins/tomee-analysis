@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$QueryTypeHint.class
+
+ - link:QueryHintsHandler$QueryTypeHint-asmified.java[Asmified]
+
+== References
+

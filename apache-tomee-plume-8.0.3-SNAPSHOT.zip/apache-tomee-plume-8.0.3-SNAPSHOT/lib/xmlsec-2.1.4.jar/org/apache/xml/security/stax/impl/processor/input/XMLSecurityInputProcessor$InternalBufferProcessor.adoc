@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/input/XMLSecurityInputProcessor$InternalBufferProcessor.class
+
+ - link:XMLSecurityInputProcessor$InternalBufferProcessor-asmified.java[Asmified]
+
+== References
+

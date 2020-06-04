@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/job/ValidateExecutable.class
+
+ - link:ValidateExecutable-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 11

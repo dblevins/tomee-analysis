@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/AnnotationVisitor.class
+
+ - link:AnnotationVisitor-asmified.java[Asmified]
+
+== References
+

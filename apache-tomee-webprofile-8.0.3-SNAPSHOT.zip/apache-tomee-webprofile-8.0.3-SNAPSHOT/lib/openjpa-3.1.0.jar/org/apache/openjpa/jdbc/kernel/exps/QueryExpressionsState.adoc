@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/QueryExpressionsState.class
+
+ - link:QueryExpressionsState-asmified.java[Asmified]
+
+== References
+

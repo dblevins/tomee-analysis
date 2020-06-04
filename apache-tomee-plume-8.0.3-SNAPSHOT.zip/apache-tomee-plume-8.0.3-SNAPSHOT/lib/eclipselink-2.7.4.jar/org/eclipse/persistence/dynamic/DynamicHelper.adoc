@@ -1,0 +1,6 @@
+= org/eclipse/persistence/dynamic/DynamicHelper.class
+
+ - link:DynamicHelper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/runtime/BridgeContextImpl.class
+
+ - link:BridgeContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 4
+ - javax.xml.bind.attachment.AttachmentMarshaller - 4
+ - javax.xml.bind.ValidationEventHandler - 3
+ - javax.xml.bind.JAXBException - 2

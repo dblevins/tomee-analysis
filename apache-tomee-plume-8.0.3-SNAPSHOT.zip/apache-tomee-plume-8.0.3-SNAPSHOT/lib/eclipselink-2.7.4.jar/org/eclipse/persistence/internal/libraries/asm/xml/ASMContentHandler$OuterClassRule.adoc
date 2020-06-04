@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$OuterClassRule.class
+
+ - link:ASMContentHandler$OuterClassRule-asmified.java[Asmified]
+
+== References
+

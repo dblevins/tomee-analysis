@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/test/ClassElementHandler.class
+
+ - link:ClassElementHandler-asmified.java[Asmified]
+
+== References
+

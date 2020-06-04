@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCBlobFile$InputStreamAdapter.class
+
+ - link:JDBCBlobFile$InputStreamAdapter-asmified.java[Asmified]
+
+== References
+

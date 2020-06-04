@@ -1,0 +1,10 @@
+= javax/mail/search/SubjectTerm.class
+
+ - link:SubjectTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.StringTerm - 3
+ - javax.mail.Message - 2
+ - javax.mail.MessagingException - 2
+ - javax.mail.search.SubjectTerm - 2

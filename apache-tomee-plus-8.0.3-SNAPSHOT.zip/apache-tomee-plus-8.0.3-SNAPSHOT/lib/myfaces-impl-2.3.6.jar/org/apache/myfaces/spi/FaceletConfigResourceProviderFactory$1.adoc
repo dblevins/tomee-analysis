@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/FaceletConfigResourceProviderFactory$1.class
+
+ - link:FaceletConfigResourceProviderFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 5

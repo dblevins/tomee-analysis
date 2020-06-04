@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/commons/CodeSizeEvaluator.class
+
+ - link:CodeSizeEvaluator-asmified.java[Asmified]
+
+== References
+

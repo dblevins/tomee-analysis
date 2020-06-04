@@ -1,0 +1,9 @@
+= javax/persistence/PrimaryKeyJoinColumns.class
+
+ - link:PrimaryKeyJoinColumns-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ForeignKey - 2
+ - javax.persistence.ConstraintMode - 1
+ - javax.persistence.PrimaryKeyJoinColumn - 1

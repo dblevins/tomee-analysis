@@ -1,0 +1,6 @@
+= javax/activation/MailcapCommandMap$1.class
+
+ - link:MailcapCommandMap$1-asmified.java[Asmified]
+
+== References
+

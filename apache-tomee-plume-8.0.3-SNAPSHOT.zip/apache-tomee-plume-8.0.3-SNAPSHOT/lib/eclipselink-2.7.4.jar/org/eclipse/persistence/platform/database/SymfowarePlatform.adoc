@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/SymfowarePlatform.class
+
+ - link:SymfowarePlatform-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/xml/wsdl11/HttpAddressPlugin.class
+
+ - link:HttpAddressPlugin-asmified.java[Asmified]
+
+== References
+

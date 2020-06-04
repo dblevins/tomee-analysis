@@ -1,0 +1,685 @@
+package asm.org.apache.cxf.rs.security.jose.jwe;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AbstractJweEncryptionDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", null, "java/lang/Object", new String[] { "org/apache/cxf/rs/security/jose/jwe/JweEncryptionProvider" });
+
+classWriter.visitInnerClass("org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "JweEncryptionInternal", ACC_PROTECTED | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/cxf/rs/security/jose/jwe/JweException$Error", "org/apache/cxf/rs/security/jose/jwe/JweException", "Error", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "LOG", "Ljava/util/logging/Logger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "DEFAULT_AUTH_TAG_LENGTH", "I", null, new Integer(128));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contentEncryptionAlgo", "Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "keyEncryptionAlgo", "Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "writer", "Lorg/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "writer", "Lorg/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "keyEncryptionAlgo", "Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "contentEncryptionAlgo", "Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "contentEncryptionAlgo", "Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getAlgorithmParameterSpec", "([B)Ljava/security/spec/AlgorithmParameterSpec;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getAlgorithmParameterSpec", "([B)Ljava/security/spec/AlgorithmParameterSpec;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentEncryptionKey", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getContentEncryptionKey", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;)[B", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getEncryptedContentEncryptionKey", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;[B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getKeyEncryptionAlgo", "()Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider", "getEncryptedContentEncryptionKey", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;[B)[B", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentEncryptionAlgoJwt", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwa/ContentAlgorithm", "getJwaName", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getContentEncryptionAlgoJava", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwa/ContentAlgorithm", "getJavaName", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getAAD", "(Ljava/lang/String;[B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getAdditionalAuthenticationData", "(Ljava/lang/String;[B)[B", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "encrypt", "([BLorg/apache/cxf/rs/security/jose/jwe/JweHeaders;)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getInternalState", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;Lorg/apache/cxf/rs/security/jose/jwe/JweEncryptionInput;)Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "encryptInternal", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getActualCipher", "([B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getAuthenticationTag", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweCompactBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "protectedHeadersJson", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "jweContentEncryptionKey", "[B");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "theIv", "[B");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweCompactBuilder", "<init>", "(Ljava/lang/String;[B[B[B[B)V", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweCompactBuilder", "getJweContent", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getEncryptionOutput", "(Lorg/apache/cxf/rs/security/jose/jwe/JweEncryptionInput;)Lorg/apache/cxf/rs/security/jose/jwe/JweEncryptionOutput;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getJweHeaders", "()Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getInternalState", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;Lorg/apache/cxf/rs/security/jose/jwe/JweEncryptionInput;)Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "isContentEncryptionRequired", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getContent", "()[B", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "createCekSecretKey", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;)Ljavax/crypto/SecretKey;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "keyProps", "Lorg/apache/cxf/rt/security/crypto/KeyProperties;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rt/security/crypto/CryptoUtils", "initCipher", "(Ljava/security/Key;Lorg/apache/cxf/rt/security/crypto/KeyProperties;I)Ljavax/crypto/Cipher;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getAuthenticationTagProducer", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;)Lorg/apache/cxf/rs/security/jose/jwe/AuthenticationTagProducer;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "javax/crypto/Cipher", "org/apache/cxf/rs/security/jose/jwe/AuthenticationTagProducer", "[B", "[B"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getContent", "()[B", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "encryptInternal", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getActualCipher", "([B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getAuthenticationTag", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionOutput");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "theHeaders", "Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "jweContentEncryptionKey", "[B");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "theIv", "[B");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "keyProps", "Lorg/apache/cxf/rt/security/crypto/KeyProperties;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionOutput", "<init>", "(Ljavax/crypto/Cipher;Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;[B[BLorg/apache/cxf/rs/security/jose/jwe/AuthenticationTagProducer;Lorg/apache/cxf/rt/security/crypto/KeyProperties;[B[B)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(10, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "encryptInternal", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;[B)[B", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/security/auth/DestroyFailedException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/SecurityException");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "createCekSecretKey", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;)Ljavax/crypto/SecretKey;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "keyProps", "Lorg/apache/cxf/rt/security/crypto/KeyProperties;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rt/security/crypto/CryptoUtils", "encryptBytes", "([BLjava/security/Key;Lorg/apache/cxf/rt/security/crypto/KeyProperties;)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/crypto/SecretKey", "destroy", "()V", true);
+methodVisitor.visitLabel(label1);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "[B", "javax/crypto/SecretKey", "[B"}, 1, new Object[] {"javax/security/auth/DestroyFailedException"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "[B"}, 1, new Object[] {"java/lang/SecurityException"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "fine", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/SecurityException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "java/security/NoSuchAlgorithmException");
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Unsupported algorithm: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "keyProps", "Lorg/apache/cxf/rt/security/crypto/KeyProperties;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rt/security/crypto/KeyProperties", "getKeyAlgo", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/JweException$Error", "INVALID_CONTENT_ALGORITHM", "Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweException", "<init>", "(Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/SecurityException"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/JweException$Error", "CONTENT_ENCRYPTION_FAILURE", "Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweException", "<init>", "(Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getActualCipher", "([B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "copyOf", "([BI)[B", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getAuthenticationTag", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;[B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "copyOfRange", "([BII)[B", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getKeyAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getKeyEncryptionAlgo", "()Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider", "getAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", true);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/rs/security/jose/jwa/KeyAlgorithm"}, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/cxf/rs/security/jose/jwa/KeyAlgorithm"});
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getContentAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getJwtHeadersWriter", "()Lorg/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "writer", "Lorg/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getAuthenticationTagProducer", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;)Lorg/apache/cxf/rs/security/jose/jwe/AuthenticationTagProducer;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "createCekSecretKey", "(Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;)Ljavax/crypto/SecretKey;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "secretKey", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgoJwt", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getActualCek", "([BLjava/lang/String;)[B", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "keyProps", "Lorg/apache/cxf/rt/security/crypto/KeyProperties;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rt/security/crypto/KeyProperties", "getKeyAlgo", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/rt/security/crypto/CryptoUtils", "createSecretKeySpec", "([BLjava/lang/String;)Ljavax/crypto/SecretKey;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getActualCek", "([BLjava/lang/String;)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getInternalState", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;Lorg/apache/cxf/rs/security/jose/jwe/JweEncryptionInput;)Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweHeaders");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getKeyAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getKeyAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "setKeyEncryptionAlgorithm", "(Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/rs/security/jose/jwe/JweHeaders"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "setContentEncryptionAlgorithm", "(Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;)V", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getKeyEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getKeyAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getKeyAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getKeyEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/KeyAlgorithm;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwa/KeyAlgorithm", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/cxf/rs/security/jose/jwe/JweHeaders"}, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitLdcInsn("Invalid key encryption algorithm");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/JweException$Error", "INVALID_KEY_ALGORITHM", "Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweException", "<init>", "(Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgoJwt", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwa/ContentAlgorithm;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwa/ContentAlgorithm", "getJwaName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitLdcInsn("Invalid content encryption algorithm");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/JweException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/cxf/rs/security/jose/jwe/JweException$Error", "INVALID_CONTENT_ALGORITHM", "Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/JweException", "<init>", "(Lorg/apache/cxf/rs/security/jose/jwe/JweException$Error;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "asMap", "()Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "asMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getProtectedHeaders", "()Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getProtectedHeaders", "()Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/cxf/rs/security/jose/jwe/JweHeaders"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getCek", "()[B", false);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label8);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getCek", "()[B", false);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionKey", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;)[B", false);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"[B"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getEncryptedContentEncryptionKey", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;[B)[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "jweContentEncryptionKey", "[B");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "theHeaders", "Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "isContentEncryptionRequired", "()Z", false);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgoJava", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/rt/security/crypto/KeyProperties");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rt/security/crypto/KeyProperties", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "compressionRequired", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;)Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rt/security/crypto/KeyProperties", "setCompressionSupported", "(Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getIv", "()[B", false);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getIv", "()[B", false);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label12);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "[B", "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "java/lang/String", "org/apache/cxf/rt/security/crypto/KeyProperties"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getContentEncryptionAlgorithm", "()Lorg/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/cxf/rs/security/jose/jwe/ContentEncryptionProvider", "getInitVector", "()[B", true);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"[B"});
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getAlgorithmParameterSpec", "([B)Ljava/security/spec/AlgorithmParameterSpec;", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rt/security/crypto/KeyProperties", "setAlgoSpec", "(Ljava/security/spec/AlgorithmParameterSpec;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "writer", "Lorg/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter", "toJson", "(Lorg/apache/cxf/jaxrs/json/basic/JsonMapObject;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getAad", "()[B", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "getAAD", "(Ljava/lang/String;[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 12);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rt/security/crypto/KeyProperties", "setAdditionalData", "([B)V", false);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "keyProps", "Lorg/apache/cxf/rt/security/crypto/KeyProperties;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "theIv", "[B");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "protectedHeadersJson", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweEncryptionInput", "getAad", "()[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "aad", "[B");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption$JweEncryptionInternal", "secretKey", "[B");
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 13);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "compressionRequired", "(Lorg/apache/cxf/rs/security/jose/jwe/JweHeaders;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn("DEF");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/rs/security/jose/jwe/JweHeaders", "getZipAlgorithm", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getKeyEncryptionAlgo", "()Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "keyEncryptionAlgo", "Lorg/apache/cxf/rs/security/jose/jwe/KeyEncryptionProvider;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/common/logging/LogUtils", "getL7dLogger", "(Ljava/lang/Class;)Ljava/util/logging/Logger;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/cxf/rs/security/jose/jwe/AbstractJweEncryption", "LOG", "Ljava/util/logging/Logger;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap/SOAPBindingImpl.class
+
+ - link:SOAPBindingImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/PersistenceExceptions$1.class
+
+ - link:PersistenceExceptions$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/webbeans/annotation/DefaultLiteral.class
+
+ - link:DefaultLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 2

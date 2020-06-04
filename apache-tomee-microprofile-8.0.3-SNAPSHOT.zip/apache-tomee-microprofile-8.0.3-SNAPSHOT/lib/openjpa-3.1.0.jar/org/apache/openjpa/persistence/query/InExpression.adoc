@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/InExpression.class
+
+ - link:InExpression-asmified.java[Asmified]
+
+== References
+

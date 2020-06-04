@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/filter/PatternFilter.class
+
+ - link:PatternFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/CharacterEscapeHandler.class
+
+ - link:CharacterEscapeHandler-asmified.java[Asmified]
+
+== References
+

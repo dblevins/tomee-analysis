@@ -1,0 +1,7 @@
+= javax/persistence/ConstructorResult.class
+
+ - link:ConstructorResult-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ColumnResult - 1

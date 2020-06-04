@@ -1,0 +1,10 @@
+= org/apache/webbeans/jsf/JSFUtil.class
+
+ - link:JSFUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.context.ExternalContext - 8
+ - javax.servlet.http.HttpSession - 2
+ - javax.faces.component.UIViewRoot - 2

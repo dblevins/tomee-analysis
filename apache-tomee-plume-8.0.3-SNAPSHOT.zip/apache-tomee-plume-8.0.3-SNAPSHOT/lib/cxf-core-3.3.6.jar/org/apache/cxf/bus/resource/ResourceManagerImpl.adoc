@@ -1,0 +1,7 @@
+= org/apache/cxf/bus/resource/ResourceManagerImpl.class
+
+ - link:ResourceManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

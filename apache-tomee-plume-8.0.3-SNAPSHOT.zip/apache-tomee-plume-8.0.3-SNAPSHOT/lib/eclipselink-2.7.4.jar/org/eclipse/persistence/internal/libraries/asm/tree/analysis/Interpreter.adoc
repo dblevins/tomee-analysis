@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/analysis/Interpreter.class
+
+ - link:Interpreter-asmified.java[Asmified]
+
+== References
+

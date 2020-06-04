@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/util/TraceSignatureVisitor.class
+
+ - link:TraceSignatureVisitor-asmified.java[Asmified]
+
+== References
+

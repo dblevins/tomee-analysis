@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/SAMLKeyInfoProcessor.class
+
+ - link:SAMLKeyInfoProcessor-asmified.java[Asmified]
+
+== References
+

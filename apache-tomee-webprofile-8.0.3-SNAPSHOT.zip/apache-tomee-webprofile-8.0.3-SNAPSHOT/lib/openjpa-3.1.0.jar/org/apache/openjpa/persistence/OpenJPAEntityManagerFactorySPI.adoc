@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/OpenJPAEntityManagerFactorySPI.class
+
+ - link:OpenJPAEntityManagerFactorySPI-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 2

@@ -1,0 +1,7 @@
+= org/apache/commons/dbcp2/managed/LocalXAConnectionFactory.class
+
+ - link:LocalXAConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3

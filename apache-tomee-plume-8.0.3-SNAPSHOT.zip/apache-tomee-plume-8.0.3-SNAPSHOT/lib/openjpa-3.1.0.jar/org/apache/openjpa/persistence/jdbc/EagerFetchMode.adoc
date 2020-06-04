@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/EagerFetchMode.class
+
+ - link:EagerFetchMode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/jose4j/json/internal/json_simple/parser/Yytoken.class
+
+ - link:Yytoken-asmified.java[Asmified]
+
+== References
+

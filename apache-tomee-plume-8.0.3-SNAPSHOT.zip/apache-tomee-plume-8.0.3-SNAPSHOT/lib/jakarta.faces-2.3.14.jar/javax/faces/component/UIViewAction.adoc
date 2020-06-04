@@ -1,0 +1,25 @@
+= javax/faces/component/UIViewAction.class
+
+ - link:UIViewAction-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewAction - 30
+ - javax.faces.context.FacesContext - 27
+ - javax.faces.event.PhaseId - 22
+ - javax.faces.component.StateHelper - 20
+ - javax.faces.component.UIViewRoot - 15
+ - javax.faces.component.UIViewAction$PropertyKeys - 10
+ - javax.faces.event.ActionEvent - 9
+ - javax.faces.event.ActionListener - 9
+ - javax.faces.component.UIViewAction$InstrumentedFacesContext - 8
+ - javax.faces.event.FacesEvent - 8
+ - javax.el.MethodExpression - 6
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.el.MethodBinding - 5
+ - javax.faces.event.FacesListener - 3
+ - javax.faces.component.UIComponentBase - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.ActionSource2 - 1

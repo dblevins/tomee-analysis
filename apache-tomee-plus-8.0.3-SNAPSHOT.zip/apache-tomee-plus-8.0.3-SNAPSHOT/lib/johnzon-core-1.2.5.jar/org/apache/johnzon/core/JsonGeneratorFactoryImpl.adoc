@@ -1,0 +1,8 @@
+= org/apache/johnzon/core/JsonGeneratorFactoryImpl.class
+
+ - link:JsonGeneratorFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 3
+ - javax.json.stream.JsonGeneratorFactory - 1

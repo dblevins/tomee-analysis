@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/ElseExpression.class
+
+ - link:ElseExpression-asmified.java[Asmified]
+
+== References
+

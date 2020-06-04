@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/GeolocationHintUnmarshaller.class
+
+ - link:GeolocationHintUnmarshaller-asmified.java[Asmified]
+
+== References
+

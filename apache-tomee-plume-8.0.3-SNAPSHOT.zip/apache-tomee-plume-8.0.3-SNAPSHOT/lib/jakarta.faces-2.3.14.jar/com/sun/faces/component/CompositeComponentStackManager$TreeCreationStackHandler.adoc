@@ -1,0 +1,8 @@
+= com/sun/faces/component/CompositeComponentStackManager$TreeCreationStackHandler.class
+
+ - link:CompositeComponentStackManager$TreeCreationStackHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.context.FacesContext - 1

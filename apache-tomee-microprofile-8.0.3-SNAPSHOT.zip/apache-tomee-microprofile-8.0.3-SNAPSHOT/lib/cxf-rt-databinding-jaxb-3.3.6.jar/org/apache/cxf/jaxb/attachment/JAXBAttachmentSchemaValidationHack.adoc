@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack.class
+
+ - link:JAXBAttachmentSchemaValidationHack-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 4
+ - javax.activation.DataSource - 2

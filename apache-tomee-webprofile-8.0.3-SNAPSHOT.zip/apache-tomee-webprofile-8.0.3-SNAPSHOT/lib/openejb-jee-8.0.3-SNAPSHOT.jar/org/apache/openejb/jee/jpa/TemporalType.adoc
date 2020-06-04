@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/jpa/TemporalType.class
+
+ - link:TemporalType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlEnum - 1

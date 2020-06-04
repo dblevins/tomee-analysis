@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/ExpContext.class
+
+ - link:ExpContext-asmified.java[Asmified]
+
+== References
+

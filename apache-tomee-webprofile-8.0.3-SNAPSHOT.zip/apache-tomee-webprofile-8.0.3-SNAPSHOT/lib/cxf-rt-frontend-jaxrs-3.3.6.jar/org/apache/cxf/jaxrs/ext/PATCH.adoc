@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/PATCH.class
+
+ - link:PATCH-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.HttpMethod - 1

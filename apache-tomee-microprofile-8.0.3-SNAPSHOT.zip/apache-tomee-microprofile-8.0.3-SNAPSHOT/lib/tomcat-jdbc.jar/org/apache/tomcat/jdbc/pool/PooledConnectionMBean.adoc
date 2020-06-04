@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/pool/PooledConnectionMBean.class
+
+ - link:PooledConnectionMBean-asmified.java[Asmified]
+
+== References
+

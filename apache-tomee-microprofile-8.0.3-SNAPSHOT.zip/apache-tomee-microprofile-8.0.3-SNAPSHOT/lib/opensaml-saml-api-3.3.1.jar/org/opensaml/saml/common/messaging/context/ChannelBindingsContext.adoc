@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/messaging/context/ChannelBindingsContext.class
+
+ - link:ChannelBindingsContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

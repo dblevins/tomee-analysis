@@ -1,0 +1,6 @@
+= org/apache/catalina/deploy/NamingResourcesImpl.class
+
+ - link:NamingResourcesImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/DEREncodedKeyValue.class
+
+ - link:DEREncodedKeyValue-asmified.java[Asmified]
+
+== References
+

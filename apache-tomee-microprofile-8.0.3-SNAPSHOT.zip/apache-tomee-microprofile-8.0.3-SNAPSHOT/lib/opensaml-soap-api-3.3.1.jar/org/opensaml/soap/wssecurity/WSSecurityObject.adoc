@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/WSSecurityObject.class
+
+ - link:WSSecurityObject-asmified.java[Asmified]
+
+== References
+

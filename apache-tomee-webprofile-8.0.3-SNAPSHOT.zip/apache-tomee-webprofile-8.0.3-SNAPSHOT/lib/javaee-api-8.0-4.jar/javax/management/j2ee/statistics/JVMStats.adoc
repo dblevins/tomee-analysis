@@ -1,0 +1,9 @@
+= javax/management/j2ee/statistics/JVMStats.class
+
+ - link:JVMStats-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.CountStatistic - 1
+ - javax.management.j2ee.statistics.Stats - 1
+ - javax.management.j2ee.statistics.BoundedRangeStatistic - 1

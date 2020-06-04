@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/validate/TimestampValidator.class
+
+ - link:TimestampValidator-asmified.java[Asmified]
+
+== References
+

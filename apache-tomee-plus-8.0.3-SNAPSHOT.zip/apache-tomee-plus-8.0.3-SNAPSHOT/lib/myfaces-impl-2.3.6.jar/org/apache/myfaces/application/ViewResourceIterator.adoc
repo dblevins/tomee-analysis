@@ -1,0 +1,8 @@
+= org/apache/myfaces/application/ViewResourceIterator.class
+
+ - link:ViewResourceIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceVisitOption - 15
+ - javax.faces.context.FacesContext - 10

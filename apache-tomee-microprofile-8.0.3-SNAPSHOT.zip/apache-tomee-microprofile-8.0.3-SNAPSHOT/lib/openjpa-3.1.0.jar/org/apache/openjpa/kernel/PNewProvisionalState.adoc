@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/PNewProvisionalState.class
+
+ - link:PNewProvisionalState-asmified.java[Asmified]
+
+== References
+

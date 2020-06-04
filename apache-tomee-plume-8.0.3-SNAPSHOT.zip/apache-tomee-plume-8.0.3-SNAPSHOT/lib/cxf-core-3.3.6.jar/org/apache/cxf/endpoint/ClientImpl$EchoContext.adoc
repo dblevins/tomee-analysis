@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ClientImpl$EchoContext.class
+
+ - link:ClientImpl$EchoContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/myfaces/context/servlet/RequestHeaderMap.class
+
+ - link:RequestHeaderMap-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 7

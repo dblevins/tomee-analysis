@@ -1,0 +1,6 @@
+= org/apache/commons/collections/Buffer.class
+
+ - link:Buffer-asmified.java[Asmified]
+
+== References
+

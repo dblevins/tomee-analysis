@@ -1,0 +1,28 @@
+= org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.class
+
+ - link:AbstractJAXBProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 48
+ - javax.xml.bind.JAXBException - 25
+ - javax.xml.bind.Marshaller - 17
+ - javax.xml.bind.JAXBElement - 11
+ - javax.xml.bind.Unmarshaller - 10
+ - javax.ws.rs.core.Response - 10
+ - javax.xml.bind.ValidationEventHandler - 8
+ - javax.ws.rs.WebApplicationException - 7
+ - javax.xml.bind.Unmarshaller$Listener - 6
+ - javax.xml.bind.annotation.XmlRootElement - 6
+ - javax.xml.bind.Marshaller$Listener - 6
+ - javax.ws.rs.core.Response$ResponseBuilder - 6
+ - javax.ws.rs.core.MediaType - 5
+ - javax.xml.bind.annotation.XmlType - 5
+ - javax.ws.rs.core.Response$Status - 5
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 5
+ - javax.xml.bind.PropertyException - 3
+ - javax.ws.rs.ext.ContextResolver - 3
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.StreamingOutput - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

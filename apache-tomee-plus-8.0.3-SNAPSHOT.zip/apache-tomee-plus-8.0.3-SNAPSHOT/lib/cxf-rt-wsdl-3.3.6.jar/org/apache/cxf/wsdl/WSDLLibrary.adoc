@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/WSDLLibrary.class
+
+ - link:WSDLLibrary-asmified.java[Asmified]
+
+== References
+

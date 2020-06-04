@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/builder/RecursiveToStringStyle.class
+
+ - link:RecursiveToStringStyle-asmified.java[Asmified]
+
+== References
+

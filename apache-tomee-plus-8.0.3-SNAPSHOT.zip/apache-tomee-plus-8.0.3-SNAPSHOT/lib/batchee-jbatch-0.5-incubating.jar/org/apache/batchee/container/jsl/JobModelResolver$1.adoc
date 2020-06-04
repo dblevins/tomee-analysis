@@ -1,0 +1,6 @@
+= org/apache/batchee/container/jsl/JobModelResolver$1.class
+
+ - link:JobModelResolver$1-asmified.java[Asmified]
+
+== References
+

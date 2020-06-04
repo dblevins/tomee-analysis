@@ -1,0 +1,6 @@
+= org/jose4j/jwe/AesKeyWrapManagementAlgorithm$Aes128.class
+
+ - link:AesKeyWrapManagementAlgorithm$Aes128-asmified.java[Asmified]
+
+== References
+

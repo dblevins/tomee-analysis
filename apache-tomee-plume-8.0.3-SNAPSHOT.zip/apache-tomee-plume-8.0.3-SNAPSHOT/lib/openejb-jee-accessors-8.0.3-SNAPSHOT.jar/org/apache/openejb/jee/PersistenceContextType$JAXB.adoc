@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/PersistenceContextType$JAXB.class
+
+ - link:PersistenceContextType$JAXB-asmified.java[Asmified]
+
+== References
+

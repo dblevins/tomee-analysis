@@ -1,0 +1,9 @@
+= com/sun/faces/config/initfacescontext/ServletContextAdapter.class
+
+ - link:ServletContextAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 31
+ - javax.faces.context.ExternalContext - 3
+ - javax.faces.context.Flash - 2

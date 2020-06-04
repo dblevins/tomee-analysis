@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMReference.class
+
+ - link:DOMReference-asmified.java[Asmified]
+
+== References
+

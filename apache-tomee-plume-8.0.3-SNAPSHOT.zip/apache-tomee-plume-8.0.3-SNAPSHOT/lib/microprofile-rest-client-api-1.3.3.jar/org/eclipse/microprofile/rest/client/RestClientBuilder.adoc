@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/rest/client/RestClientBuilder.class
+
+ - link:RestClientBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configurable - 1

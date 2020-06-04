@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/querykeys/ManyToManyQueryKey.class
+
+ - link:ManyToManyQueryKey-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/MethodBinding.class
+
+ - link:MethodBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/TagBits.class
+
+ - link:TagBits-asmified.java[Asmified]
+
+== References
+

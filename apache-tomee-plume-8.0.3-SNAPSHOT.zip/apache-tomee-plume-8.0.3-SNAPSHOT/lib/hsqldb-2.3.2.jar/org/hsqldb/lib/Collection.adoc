@@ -1,0 +1,6 @@
+= org/hsqldb/lib/Collection.class
+
+ - link:Collection-asmified.java[Asmified]
+
+== References
+

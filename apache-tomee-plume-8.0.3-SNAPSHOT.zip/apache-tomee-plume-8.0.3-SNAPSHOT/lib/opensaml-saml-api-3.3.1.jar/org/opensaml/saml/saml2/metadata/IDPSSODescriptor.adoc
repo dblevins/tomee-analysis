@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/IDPSSODescriptor.class
+
+ - link:IDPSSODescriptor-asmified.java[Asmified]
+
+== References
+

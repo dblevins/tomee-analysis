@@ -1,0 +1,19 @@
+= javax/persistence/EntityManager.class
+
+ - link:EntityManager-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Query - 7
+ - javax.persistence.LockModeType - 7
+ - javax.persistence.EntityGraph - 4
+ - javax.persistence.StoredProcedureQuery - 4
+ - javax.persistence.TypedQuery - 3
+ - javax.persistence.FlushModeType - 2
+ - javax.persistence.criteria.CriteriaQuery - 1
+ - javax.persistence.criteria.CriteriaUpdate - 1
+ - javax.persistence.EntityManagerFactory - 1
+ - javax.persistence.EntityTransaction - 1
+ - javax.persistence.criteria.CriteriaBuilder - 1
+ - javax.persistence.criteria.CriteriaDelete - 1
+ - javax.persistence.metamodel.Metamodel - 1

@@ -1,0 +1,7 @@
+= org/apache/openejb/assembler/classic/Assembler$ResourceAdapterReference.class
+
+ - link:Assembler$ResourceAdapterReference-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ResourceAdapter - 8

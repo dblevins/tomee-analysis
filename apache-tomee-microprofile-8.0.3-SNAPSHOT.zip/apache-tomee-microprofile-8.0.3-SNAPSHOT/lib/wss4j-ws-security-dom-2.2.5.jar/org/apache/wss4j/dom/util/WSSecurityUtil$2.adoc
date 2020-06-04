@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/util/WSSecurityUtil$2.class
+
+ - link:WSSecurityUtil$2-asmified.java[Asmified]
+
+== References
+

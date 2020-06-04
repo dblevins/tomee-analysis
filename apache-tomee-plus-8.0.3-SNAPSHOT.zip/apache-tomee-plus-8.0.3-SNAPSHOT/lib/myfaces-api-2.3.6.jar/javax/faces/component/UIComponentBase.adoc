@@ -1,0 +1,55 @@
+= javax/faces/component/UIComponentBase.class
+
+ - link:UIComponentBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 255
+ - javax.faces.component.UIComponentBase - 236
+ - javax.faces.component.UIComponent - 160
+ - javax.faces.render.Renderer - 37
+ - javax.faces.component._DeltaList - 36
+ - javax.faces.component.PartialStateHolder - 19
+ - javax.faces.event.FacesListener - 18
+ - javax.faces.component.StateHelper - 18
+ - javax.faces.component._AttachedDeltaWrapper - 15
+ - javax.faces.component.UIViewRoot - 15
+ - javax.faces.component.StateHolder - 13
+ - javax.faces.application.Application - 12
+ - javax.faces.component._AttachedCollectionStateWrapper - 10
+ - javax.faces.component._PassThroughAttributesMap - 10
+ - javax.faces.component._AttachedStateWrapper - 9
+ - javax.el.ValueExpression - 8
+ - javax.faces.component._ComponentUtils - 7
+ - javax.faces.component._ComponentAttributesMap - 7
+ - javax.faces.component.UniqueIdVendor - 7
+ - javax.faces.event.FacesEvent - 6
+ - javax.faces.component._DeltaStateHelper - 6
+ - javax.faces.context.ExternalContext - 6
+ - javax.faces.el.ValueBinding - 6
+ - javax.faces.event.PhaseId - 6
+ - javax.faces.component._ValueBindingToValueExpression - 5
+ - javax.faces.event.BehaviorEvent - 5
+ - javax.faces.component._AttachedListStateWrapper - 5
+ - javax.faces.component.behavior.ClientBehavior - 5
+ - javax.faces.component.visit.VisitContext - 4
+ - javax.faces.render.RenderKit - 4
+ - javax.faces.component.visit.VisitCallback - 3
+ - javax.faces.view.Location - 3
+ - javax.faces.component.ContextCallback - 3
+ - javax.faces.FacesException - 3
+ - javax.faces.component._ValueExpressionToValueBinding - 2
+ - javax.faces.component.behavior.Behavior - 2
+ - javax.faces.event.PostValidateEvent - 2
+ - javax.faces.component._ComponentChildrenList - 2
+ - javax.faces.component.NamingContainer - 2
+ - javax.faces.component._EmptyIterator - 2
+ - javax.faces.component.UIComponent$PropertyKeys - 2
+ - javax.faces.component._ComponentFacetMap - 2
+ - javax.faces.component._FacetsAndChildrenIterator - 2
+ - javax.el.ELContext - 2
+ - javax.faces.event.PreValidateEvent - 1
+ - javax.faces.event.PreRenderComponentEvent - 1
+ - javax.faces.event.PreRemoveFromViewEvent - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.event.PostAddToViewEvent - 1

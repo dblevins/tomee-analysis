@@ -1,0 +1,6 @@
+= org/apache/openejb/server/admin/Stop.class
+
+ - link:Stop-asmified.java[Asmified]
+
+== References
+

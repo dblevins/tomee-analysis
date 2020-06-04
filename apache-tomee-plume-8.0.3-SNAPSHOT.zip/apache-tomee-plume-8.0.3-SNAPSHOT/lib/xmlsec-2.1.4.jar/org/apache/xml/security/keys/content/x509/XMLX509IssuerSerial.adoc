@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/x509/XMLX509IssuerSerial.class
+
+ - link:XMLX509IssuerSerial-asmified.java[Asmified]
+
+== References
+

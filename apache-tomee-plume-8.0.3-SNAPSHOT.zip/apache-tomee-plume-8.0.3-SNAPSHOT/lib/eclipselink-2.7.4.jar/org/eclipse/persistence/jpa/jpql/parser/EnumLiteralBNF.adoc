@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/EnumLiteralBNF.class
+
+ - link:EnumLiteralBNF-asmified.java[Asmified]
+
+== References
+

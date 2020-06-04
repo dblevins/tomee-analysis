@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/AutomaticModuleNaming.class
+
+ - link:AutomaticModuleNaming-asmified.java[Asmified]
+
+== References
+

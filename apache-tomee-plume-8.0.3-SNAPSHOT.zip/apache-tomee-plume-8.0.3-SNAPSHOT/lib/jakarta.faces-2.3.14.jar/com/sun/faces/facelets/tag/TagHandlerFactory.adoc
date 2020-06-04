@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/TagHandlerFactory.class
+
+ - link:TagHandlerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 1
+ - javax.faces.view.facelets.TagHandler - 1
+ - javax.faces.view.facelets.TagConfig - 1
+ - javax.el.ELException - 1

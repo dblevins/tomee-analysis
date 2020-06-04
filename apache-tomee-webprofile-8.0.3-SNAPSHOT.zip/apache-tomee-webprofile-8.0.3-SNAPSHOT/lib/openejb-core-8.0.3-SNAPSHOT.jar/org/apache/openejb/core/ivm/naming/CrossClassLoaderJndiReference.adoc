@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/CrossClassLoaderJndiReference.class
+
+ - link:CrossClassLoaderJndiReference-asmified.java[Asmified]
+
+== References
+

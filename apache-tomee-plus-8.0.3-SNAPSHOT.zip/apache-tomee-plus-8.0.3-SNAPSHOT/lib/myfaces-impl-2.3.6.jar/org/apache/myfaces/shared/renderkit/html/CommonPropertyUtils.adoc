@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/renderkit/html/CommonPropertyUtils.class
+
+ - link:CommonPropertyUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 140
+ - javax.faces.context.ResponseWriter - 135

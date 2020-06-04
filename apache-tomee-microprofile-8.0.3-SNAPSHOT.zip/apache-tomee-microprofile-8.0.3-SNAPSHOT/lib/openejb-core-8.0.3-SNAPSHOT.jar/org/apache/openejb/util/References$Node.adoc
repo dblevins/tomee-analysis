@@ -1,0 +1,6 @@
+= org/apache/openejb/util/References$Node.class
+
+ - link:References$Node-asmified.java[Asmified]
+
+== References
+

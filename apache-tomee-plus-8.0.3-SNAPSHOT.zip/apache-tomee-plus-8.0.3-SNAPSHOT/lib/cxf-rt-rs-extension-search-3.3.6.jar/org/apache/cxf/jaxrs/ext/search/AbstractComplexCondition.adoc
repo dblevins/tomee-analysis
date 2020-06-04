@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/AbstractComplexCondition.class
+
+ - link:AbstractComplexCondition-asmified.java[Asmified]
+
+== References
+

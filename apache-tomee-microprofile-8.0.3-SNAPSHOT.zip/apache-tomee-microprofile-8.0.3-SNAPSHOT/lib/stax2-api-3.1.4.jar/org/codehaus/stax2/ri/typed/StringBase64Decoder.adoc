@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/StringBase64Decoder.class
+
+ - link:StringBase64Decoder-asmified.java[Asmified]
+
+== References
+

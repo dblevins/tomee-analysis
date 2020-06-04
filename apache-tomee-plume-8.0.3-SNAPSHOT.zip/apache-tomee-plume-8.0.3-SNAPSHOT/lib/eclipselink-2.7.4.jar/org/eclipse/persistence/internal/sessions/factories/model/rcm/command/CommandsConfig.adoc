@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/rcm/command/CommandsConfig.class
+
+ - link:CommandsConfig-asmified.java[Asmified]
+
+== References
+

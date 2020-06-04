@@ -1,0 +1,7 @@
+= javax/validation/ElementKind.class
+
+ - link:ElementKind-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ElementKind - 51

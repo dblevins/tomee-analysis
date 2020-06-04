@@ -1,0 +1,7 @@
+= org/apache/openejb/core/timer/EJBCronTrigger.class
+
+ - link:EJBCronTrigger-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ScheduleExpression - 24

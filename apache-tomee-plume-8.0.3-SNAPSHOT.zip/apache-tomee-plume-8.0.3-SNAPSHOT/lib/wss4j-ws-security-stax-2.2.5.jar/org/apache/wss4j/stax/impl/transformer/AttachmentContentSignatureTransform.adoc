@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/transformer/AttachmentContentSignatureTransform.class
+
+ - link:AttachmentContentSignatureTransform-asmified.java[Asmified]
+
+== References
+

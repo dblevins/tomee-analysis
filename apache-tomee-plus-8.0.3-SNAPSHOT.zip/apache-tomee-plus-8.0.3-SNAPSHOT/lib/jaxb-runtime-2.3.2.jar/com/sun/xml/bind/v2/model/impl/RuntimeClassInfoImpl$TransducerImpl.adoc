@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/RuntimeClassInfoImpl$TransducerImpl.class
+
+ - link:RuntimeClassInfoImpl$TransducerImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/GImpl.class
+
+ - link:GImpl-asmified.java[Asmified]
+
+== References
+

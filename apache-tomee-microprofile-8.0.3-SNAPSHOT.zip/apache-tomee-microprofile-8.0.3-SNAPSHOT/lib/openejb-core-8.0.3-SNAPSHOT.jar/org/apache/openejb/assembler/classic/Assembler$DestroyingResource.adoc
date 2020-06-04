@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/Assembler$DestroyingResource.class
+
+ - link:Assembler$DestroyingResource-asmified.java[Asmified]
+
+== References
+

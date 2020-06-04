@@ -1,0 +1,6 @@
+= org/apache/openejb/config/rules/CheckPersistenceRefs.class
+
+ - link:CheckPersistenceRefs-asmified.java[Asmified]
+
+== References
+

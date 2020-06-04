@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/HostConfig$DeployedApplication.class
+
+ - link:HostConfig$DeployedApplication-asmified.java[Asmified]
+
+== References
+

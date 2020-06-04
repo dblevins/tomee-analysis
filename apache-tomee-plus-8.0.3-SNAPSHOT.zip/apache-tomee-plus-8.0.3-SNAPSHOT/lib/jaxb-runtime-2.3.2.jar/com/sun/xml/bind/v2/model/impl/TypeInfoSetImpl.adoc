@@ -1,0 +1,15 @@
+= com/sun/xml/bind/v2/model/impl/TypeInfoSetImpl.class
+
+ - link:TypeInfoSetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlSchema - 21
+ - javax.xml.bind.annotation.XmlNsForm - 8
+ - javax.xml.bind.annotation.XmlNs - 4
+ - javax.xml.bind.annotation.XmlTransient - 3
+ - javax.xml.bind.JAXBContext - 3
+ - javax.xml.bind.Marshaller - 2
+ - javax.xml.bind.annotation.XmlRegistry - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.JAXBException - 1

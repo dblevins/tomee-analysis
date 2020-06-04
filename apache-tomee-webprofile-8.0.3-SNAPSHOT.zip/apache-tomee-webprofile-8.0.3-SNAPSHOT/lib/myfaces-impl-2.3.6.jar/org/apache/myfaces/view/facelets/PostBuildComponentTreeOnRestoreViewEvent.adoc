@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/PostBuildComponentTreeOnRestoreViewEvent.class
+
+ - link:PostBuildComponentTreeOnRestoreViewEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ComponentSystemEvent - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.event.FacesListener - 1
+ - javax.faces.event.SystemEventListener - 1

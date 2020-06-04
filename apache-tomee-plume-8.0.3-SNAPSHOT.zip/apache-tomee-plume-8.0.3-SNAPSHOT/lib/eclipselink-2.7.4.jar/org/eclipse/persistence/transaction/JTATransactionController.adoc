@@ -1,0 +1,9 @@
+= org/eclipse/persistence/transaction/JTATransactionController.class
+
+ - link:JTATransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 29
+ - javax.transaction.Transaction - 3
+ - javax.transaction.Synchronization - 2

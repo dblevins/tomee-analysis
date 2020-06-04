@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOEqualityHelper.class
+
+ - link:SDOEqualityHelper-asmified.java[Asmified]
+
+== References
+

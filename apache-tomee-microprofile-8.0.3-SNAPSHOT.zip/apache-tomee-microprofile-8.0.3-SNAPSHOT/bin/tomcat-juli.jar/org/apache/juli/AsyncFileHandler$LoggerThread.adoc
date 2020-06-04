@@ -1,0 +1,6 @@
+= org/apache/juli/AsyncFileHandler$LoggerThread.class
+
+ - link:AsyncFileHandler$LoggerThread-asmified.java[Asmified]
+
+== References
+

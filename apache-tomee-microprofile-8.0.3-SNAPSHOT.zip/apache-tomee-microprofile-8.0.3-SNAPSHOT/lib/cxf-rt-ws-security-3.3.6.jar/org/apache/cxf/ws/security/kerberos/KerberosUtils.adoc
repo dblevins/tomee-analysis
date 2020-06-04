@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/kerberos/KerberosUtils.class
+
+ - link:KerberosUtils-asmified.java[Asmified]
+
+== References
+

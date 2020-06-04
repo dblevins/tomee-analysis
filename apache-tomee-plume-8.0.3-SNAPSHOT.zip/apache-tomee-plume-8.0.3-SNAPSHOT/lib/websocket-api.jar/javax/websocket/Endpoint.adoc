@@ -1,0 +1,9 @@
+= javax/websocket/Endpoint.class
+
+ - link:Endpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 3
+ - javax.websocket.CloseReason - 1
+ - javax.websocket.EndpointConfig - 1

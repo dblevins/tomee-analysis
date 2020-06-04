@@ -1,0 +1,17 @@
+= org/apache/geronimo/transaction/manager/TransactionManagerImpl.class
+
+ - link:TransactionManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 41
+ - javax.transaction.SystemException - 25
+ - javax.transaction.InvalidTransactionException - 10
+ - javax.transaction.RollbackException - 5
+ - javax.transaction.HeuristicRollbackException - 5
+ - javax.transaction.HeuristicMixedException - 5
+ - javax.transaction.NotSupportedException - 4
+ - javax.transaction.Synchronization - 2
+ - javax.transaction.TransactionSynchronizationRegistry - 1
+ - javax.transaction.UserTransaction - 1
+ - javax.transaction.TransactionManager - 1

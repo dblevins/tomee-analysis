@@ -1,0 +1,13 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JwsContainerRequestFilter.class
+
+ - link:JwsContainerRequestFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ContainerRequestContext - 10
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.core.Response - 2
+ - javax.ws.rs.core.SecurityContext - 2
+ - javax.ws.rs.container.PreMatching - 1
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.container.ContainerRequestFilter - 1

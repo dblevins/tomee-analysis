@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/Joins.class
+
+ - link:Joins-asmified.java[Asmified]
+
+== References
+

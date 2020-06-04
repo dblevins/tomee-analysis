@@ -1,0 +1,8 @@
+= javax/xml/ws/spi/FactoryFinder$2.class
+
+ - link:FactoryFinder$2-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.spi.FactoryFinder$ConfigurationError - 4
+ - javax.xml.ws.spi.FactoryFinder - 1

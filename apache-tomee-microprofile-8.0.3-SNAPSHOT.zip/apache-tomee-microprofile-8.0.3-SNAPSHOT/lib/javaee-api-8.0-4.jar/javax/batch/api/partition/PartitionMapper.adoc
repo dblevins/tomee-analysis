@@ -1,0 +1,7 @@
+= javax/batch/api/partition/PartitionMapper.class
+
+ - link:PartitionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.partition.PartitionPlan - 1

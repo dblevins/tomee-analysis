@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/annotation/NoAnnotationLifecyleProvider.class
+
+ - link:NoAnnotationLifecyleProvider-asmified.java[Asmified]
+
+== References
+

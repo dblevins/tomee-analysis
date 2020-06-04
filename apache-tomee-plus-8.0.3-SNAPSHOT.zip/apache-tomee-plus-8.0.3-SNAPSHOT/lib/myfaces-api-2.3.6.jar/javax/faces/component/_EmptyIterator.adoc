@@ -1,0 +1,6 @@
+= javax/faces/component/_EmptyIterator.class
+
+ - link:_EmptyIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/transaction/TransactionPolicy$TransactionSynchronization$Status.class
+
+ - link:TransactionPolicy$TransactionSynchronization$Status-asmified.java[Asmified]
+
+== References
+

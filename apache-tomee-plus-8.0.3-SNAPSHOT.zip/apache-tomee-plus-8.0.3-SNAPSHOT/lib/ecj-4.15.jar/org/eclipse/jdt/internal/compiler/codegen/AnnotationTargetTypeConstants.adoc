@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/AnnotationTargetTypeConstants.class
+
+ - link:AnnotationTargetTypeConstants-asmified.java[Asmified]
+
+== References
+

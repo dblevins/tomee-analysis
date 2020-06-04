@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/Application.class
+
+ - link:Application-asmified.java[Asmified]
+
+== References
+

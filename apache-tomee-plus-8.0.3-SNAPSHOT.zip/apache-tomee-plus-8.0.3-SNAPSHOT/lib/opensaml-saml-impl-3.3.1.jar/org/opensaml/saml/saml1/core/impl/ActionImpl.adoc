@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/ActionImpl.class
+
+ - link:ActionImpl-asmified.java[Asmified]
+
+== References
+

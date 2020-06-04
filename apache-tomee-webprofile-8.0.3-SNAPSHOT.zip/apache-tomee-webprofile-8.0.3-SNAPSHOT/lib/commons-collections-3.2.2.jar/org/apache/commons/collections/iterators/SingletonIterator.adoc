@@ -1,0 +1,6 @@
+= org/apache/commons/collections/iterators/SingletonIterator.class
+
+ - link:SingletonIterator-asmified.java[Asmified]
+
+== References
+

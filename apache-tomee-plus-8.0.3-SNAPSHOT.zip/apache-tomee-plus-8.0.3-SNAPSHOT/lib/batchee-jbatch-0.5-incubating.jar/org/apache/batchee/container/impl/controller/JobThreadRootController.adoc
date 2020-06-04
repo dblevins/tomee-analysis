@@ -1,0 +1,8 @@
+= org/apache/batchee/container/impl/controller/JobThreadRootController.class
+
+ - link:JobThreadRootController-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 52
+ - javax.batch.api.listener.JobListener - 6

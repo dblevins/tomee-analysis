@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/exc/UnrecognizedPropertyException.class
+
+ - link:UnrecognizedPropertyException-asmified.java[Asmified]
+
+== References
+

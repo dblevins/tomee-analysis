@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl$1.class
+
+ - link:ElementBeanInfoImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 21
+ - javax.xml.bind.JAXBException - 2

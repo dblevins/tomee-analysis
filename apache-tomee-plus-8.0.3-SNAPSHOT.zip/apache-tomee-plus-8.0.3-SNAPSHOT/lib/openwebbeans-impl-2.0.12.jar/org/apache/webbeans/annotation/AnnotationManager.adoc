@@ -1,0 +1,22 @@
+= org/apache/webbeans/annotation/AnnotationManager.class
+
+ - link:AnnotationManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 19
+ - javax.enterprise.inject.spi.AnnotatedParameter - 9
+ - javax.enterprise.inject.spi.AnnotatedType - 7
+ - javax.inject.Named - 7
+ - javax.enterprise.inject.Default - 3
+ - javax.enterprise.inject.Disposes - 3
+ - javax.enterprise.inject.Stereotype - 2
+ - javax.enterprise.inject.New - 1
+ - javax.enterprise.context.NormalScope - 1
+ - javax.interceptor.InterceptorBinding - 1
+ - javax.inject.Inject - 1
+ - javax.inject.Qualifier - 1
+ - javax.inject.Scope - 1
+ - javax.enterprise.util.Nonbinding - 1
+ - javax.enterprise.inject.Any - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1

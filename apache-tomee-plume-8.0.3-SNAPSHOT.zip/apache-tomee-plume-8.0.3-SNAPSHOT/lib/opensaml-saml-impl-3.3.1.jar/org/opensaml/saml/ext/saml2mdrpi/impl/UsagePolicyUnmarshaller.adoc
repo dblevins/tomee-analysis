@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdrpi/impl/UsagePolicyUnmarshaller.class
+
+ - link:UsagePolicyUnmarshaller-asmified.java[Asmified]
+
+== References
+

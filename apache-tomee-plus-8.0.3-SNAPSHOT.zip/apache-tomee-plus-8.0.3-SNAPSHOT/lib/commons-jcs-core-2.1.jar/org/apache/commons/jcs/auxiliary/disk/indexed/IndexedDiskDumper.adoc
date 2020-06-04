@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/indexed/IndexedDiskDumper.class
+
+ - link:IndexedDiskDumper-asmified.java[Asmified]
+
+== References
+

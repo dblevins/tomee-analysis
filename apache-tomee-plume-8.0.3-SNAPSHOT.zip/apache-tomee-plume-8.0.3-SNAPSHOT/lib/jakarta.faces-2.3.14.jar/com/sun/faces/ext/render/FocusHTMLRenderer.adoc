@@ -1,0 +1,10 @@
+= com/sun/faces/ext/render/FocusHTMLRenderer.class
+
+ - link:FocusHTMLRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 8
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.render.Renderer - 2

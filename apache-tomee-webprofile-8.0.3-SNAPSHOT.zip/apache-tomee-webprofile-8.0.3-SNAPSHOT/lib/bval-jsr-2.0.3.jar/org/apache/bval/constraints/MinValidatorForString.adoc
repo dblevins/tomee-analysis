@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/MinValidatorForString.class
+
+ - link:MinValidatorForString-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Min - 5
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 1

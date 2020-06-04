@@ -1,0 +1,7 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-jpa-integration-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/openejb/jpa/integration/eclipselink/OpenEJBServerPlatform$OpenEJBJTATransactionController.adoc[org/apache/openejb/jpa/integration/eclipselink/OpenEJBServerPlatform$OpenEJBJTATransactionController.class] - 5
+ - link:org/apache/openejb/hibernate/OpenEJBJtaPlatform2.adoc[org/apache/openejb/hibernate/OpenEJBJtaPlatform2.class] - 4
+ - link:org/apache/openejb/hibernate/OpenEJBJtaPlatform.adoc[org/apache/openejb/hibernate/OpenEJBJtaPlatform.class] - 4
+ - link:org/apache/openejb/hibernate/TransactionManagerLookup.adoc[org/apache/openejb/hibernate/TransactionManagerLookup.class] - 3
+ - link:org/apache/openejb/toplink/JTATransactionController.adoc[org/apache/openejb/toplink/JTATransactionController.class] - 2

@@ -1,0 +1,6 @@
+= org/apache/catalina/manager/HTMLManagerServlet$10.class
+
+ - link:HTMLManagerServlet$10-asmified.java[Asmified]
+
+== References
+

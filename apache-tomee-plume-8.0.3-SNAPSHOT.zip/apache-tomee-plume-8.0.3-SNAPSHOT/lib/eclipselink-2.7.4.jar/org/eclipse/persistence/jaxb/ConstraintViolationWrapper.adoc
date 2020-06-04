@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jaxb/ConstraintViolationWrapper.class
+
+ - link:ConstraintViolationWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintViolation - 25
+ - javax.validation.metadata.ConstraintDescriptor - 2
+ - javax.validation.Path - 2

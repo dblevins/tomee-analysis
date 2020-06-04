@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IMultiModuleEntry.class
+
+ - link:IMultiModuleEntry-asmified.java[Asmified]
+
+== References
+

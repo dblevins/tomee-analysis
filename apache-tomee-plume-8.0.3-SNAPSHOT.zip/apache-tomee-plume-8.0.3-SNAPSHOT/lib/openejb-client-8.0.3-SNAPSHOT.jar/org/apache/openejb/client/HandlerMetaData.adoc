@@ -1,0 +1,6 @@
+= org/apache/openejb/client/HandlerMetaData.class
+
+ - link:HandlerMetaData-asmified.java[Asmified]
+
+== References
+

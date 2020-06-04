@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/indexed/IndexedDiskCache.class
+
+ - link:IndexedDiskCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/openejb/persistence/JtaEntityManagerRegistry.class
+
+ - link:JtaEntityManagerRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 15
+ - javax.persistence.EntityManager - 12
+ - javax.persistence.EntityManagerFactory - 11
+ - javax.persistence.SynchronizationType - 3
+ - javax.transaction.Synchronization - 1

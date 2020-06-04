@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/JndiNameInfo.class
+
+ - link:JndiNameInfo-asmified.java[Asmified]
+
+== References
+

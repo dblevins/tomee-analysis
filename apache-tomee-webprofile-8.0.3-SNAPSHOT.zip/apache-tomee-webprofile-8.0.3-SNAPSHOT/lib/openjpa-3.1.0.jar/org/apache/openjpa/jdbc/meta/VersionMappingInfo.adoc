@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/VersionMappingInfo.class
+
+ - link:VersionMappingInfo-asmified.java[Asmified]
+
+== References
+

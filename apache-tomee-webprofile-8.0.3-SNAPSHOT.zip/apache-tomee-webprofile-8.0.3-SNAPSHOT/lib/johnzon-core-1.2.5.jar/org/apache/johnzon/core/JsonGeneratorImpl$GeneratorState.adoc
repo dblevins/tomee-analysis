@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/JsonGeneratorImpl$GeneratorState.class
+
+ - link:JsonGeneratorImpl$GeneratorState-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/IntConstant.class
+
+ - link:IntConstant-asmified.java[Asmified]
+
+== References
+

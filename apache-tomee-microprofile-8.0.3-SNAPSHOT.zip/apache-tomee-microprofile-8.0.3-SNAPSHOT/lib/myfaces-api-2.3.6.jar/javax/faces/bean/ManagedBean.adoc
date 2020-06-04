@@ -1,0 +1,6 @@
+= javax/faces/bean/ManagedBean.class
+
+ - link:ManagedBean-asmified.java[Asmified]
+
+== References
+

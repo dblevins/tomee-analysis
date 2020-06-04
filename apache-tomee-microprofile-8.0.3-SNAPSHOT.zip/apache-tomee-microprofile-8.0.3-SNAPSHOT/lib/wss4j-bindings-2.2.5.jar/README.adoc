@@ -1,0 +1,35 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/wss4j-bindings-2.2.5.jar
+
+ - link:org/apache/wss4j/binding/wss10/ObjectFactory.adoc[org/apache/wss4j/binding/wss10/ObjectFactory.class] - 41
+ - link:org/apache/wss4j/binding/wssc13/ObjectFactory.adoc[org/apache/wss4j/binding/wssc13/ObjectFactory.class] - 29
+ - link:org/apache/wss4j/binding/wssc200502/ObjectFactory.adoc[org/apache/wss4j/binding/wssc200502/ObjectFactory.class] - 29
+ - link:org/apache/wss4j/binding/wssc13/DerivedKeyTokenType.adoc[org/apache/wss4j/binding/wssc13/DerivedKeyTokenType.class] - 20
+ - link:org/apache/wss4j/binding/wssc200502/DerivedKeyTokenType.adoc[org/apache/wss4j/binding/wssc200502/DerivedKeyTokenType.class] - 20
+ - link:org/apache/wss4j/binding/wss11/ObjectFactory.adoc[org/apache/wss4j/binding/wss11/ObjectFactory.class] - 17
+ - link:org/apache/wss4j/binding/wss11/EncryptedHeaderType.adoc[org/apache/wss4j/binding/wss11/EncryptedHeaderType.class] - 16
+ - link:org/apache/wss4j/binding/wss10/BinarySecurityTokenType.adoc[org/apache/wss4j/binding/wss10/BinarySecurityTokenType.class] - 16
+ - link:org/apache/wss4j/binding/wsu10/ObjectFactory.adoc[org/apache/wss4j/binding/wsu10/ObjectFactory.class] - 13
+ - link:org/apache/wss4j/binding/wsu10/TimestampType.adoc[org/apache/wss4j/binding/wsu10/TimestampType.class] - 12
+ - link:org/apache/wss4j/binding/wsu10/AttributedURI.adoc[org/apache/wss4j/binding/wsu10/AttributedURI.class] - 11
+ - link:org/apache/wss4j/binding/wss10/AttributedString.adoc[org/apache/wss4j/binding/wss10/AttributedString.class] - 11
+ - link:org/apache/wss4j/binding/wss10/UsernameTokenType.adoc[org/apache/wss4j/binding/wss10/UsernameTokenType.class] - 11
+ - link:org/apache/wss4j/binding/wss10/SecurityTokenReferenceType.adoc[org/apache/wss4j/binding/wss10/SecurityTokenReferenceType.class] - 11
+ - link:org/apache/wss4j/binding/wssc13/SecurityContextTokenType.adoc[org/apache/wss4j/binding/wssc13/SecurityContextTokenType.class] - 10
+ - link:org/apache/wss4j/binding/wsu10/AttributedDateTime.adoc[org/apache/wss4j/binding/wsu10/AttributedDateTime.class] - 10
+ - link:org/apache/wss4j/binding/wssc200502/SecurityContextTokenType.adoc[org/apache/wss4j/binding/wssc200502/SecurityContextTokenType.class] - 10
+ - link:org/apache/wss4j/binding/wss11/SignatureConfirmationType.adoc[org/apache/wss4j/binding/wss11/SignatureConfirmationType.class] - 9
+ - link:org/apache/wss4j/binding/wss10/ReferenceType.adoc[org/apache/wss4j/binding/wss10/ReferenceType.class] - 8
+ - link:org/apache/wss4j/binding/wss10/EmbeddedType.adoc[org/apache/wss4j/binding/wss10/EmbeddedType.class] - 7
+ - link:org/apache/wss4j/binding/wss10/EncodedString.adoc[org/apache/wss4j/binding/wss10/EncodedString.class] - 6
+ - link:org/apache/wss4j/binding/wss10/KeyIdentifierType.adoc[org/apache/wss4j/binding/wss10/KeyIdentifierType.class] - 5
+ - link:org/apache/wss4j/binding/wss10/TransformationParametersType.adoc[org/apache/wss4j/binding/wss10/TransformationParametersType.class] - 5
+ - link:org/apache/wss4j/binding/wss10/PasswordString.adoc[org/apache/wss4j/binding/wss10/PasswordString.class] - 5
+ - link:org/apache/wss4j/binding/wss10/SecurityHeaderType.adoc[org/apache/wss4j/binding/wss10/SecurityHeaderType.class] - 5
+ - link:org/apache/wss4j/binding/wssc13/PropertiesType.adoc[org/apache/wss4j/binding/wssc13/PropertiesType.class] - 4
+ - link:org/apache/wss4j/binding/wssc200502/PropertiesType.adoc[org/apache/wss4j/binding/wssc200502/PropertiesType.class] - 4
+ - link:org/apache/wss4j/binding/wssc13/package-info.adoc[org/apache/wss4j/binding/wssc13/package-info.class] - 2
+ - link:org/apache/wss4j/binding/wss11/package-info.adoc[org/apache/wss4j/binding/wss11/package-info.class] - 2
+ - link:org/apache/wss4j/binding/wssc200502/package-info.adoc[org/apache/wss4j/binding/wssc200502/package-info.class] - 2
+ - link:org/apache/wss4j/binding/wss10/package-info.adoc[org/apache/wss4j/binding/wss10/package-info.class] - 2
+ - link:org/apache/wss4j/binding/wsu10/package-info.adoc[org/apache/wss4j/binding/wsu10/package-info.class] - 2
+ - link:org/apache/wss4j/binding/wsu10/AbstractAttributedDateTime.adoc[org/apache/wss4j/binding/wsu10/AbstractAttributedDateTime.class] - 2

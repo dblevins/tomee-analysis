@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/This.class
+
+ - link:This-asmified.java[Asmified]
+
+== References
+

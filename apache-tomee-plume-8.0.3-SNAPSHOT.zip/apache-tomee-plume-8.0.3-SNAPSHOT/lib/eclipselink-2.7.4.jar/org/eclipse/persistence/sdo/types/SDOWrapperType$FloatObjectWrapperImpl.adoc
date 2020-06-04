@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$FloatObjectWrapperImpl.class
+
+ - link:SDOWrapperType$FloatObjectWrapperImpl-asmified.java[Asmified]
+
+== References
+

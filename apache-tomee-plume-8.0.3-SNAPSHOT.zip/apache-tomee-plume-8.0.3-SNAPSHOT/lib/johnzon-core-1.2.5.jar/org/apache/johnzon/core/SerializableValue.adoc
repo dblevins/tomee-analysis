@@ -1,0 +1,10 @@
+= org/apache/johnzon/core/SerializableValue.class
+
+ - link:SerializableValue-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonReaderFactory - 8
+ - javax.json.JsonReader - 5
+ - javax.json.spi.JsonProvider - 3
+ - javax.json.JsonStructure - 1

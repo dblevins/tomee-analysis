@@ -1,0 +1,10 @@
+= com/sun/faces/taglib/jsf_core/ValidatorTag.class
+
+ - link:ValidatorTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 11
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.validator.Validator - 2
+ - javax.servlet.jsp.JspException - 1

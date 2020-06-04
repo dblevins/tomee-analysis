@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/StackTraceElementDeserializer.class
+
+ - link:StackTraceElementDeserializer-asmified.java[Asmified]
+
+== References
+

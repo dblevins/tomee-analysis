@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/discovery/UDPDiscoveryMessage$BroadcastType.class
+
+ - link:UDPDiscoveryMessage$BroadcastType-asmified.java[Asmified]
+
+== References
+

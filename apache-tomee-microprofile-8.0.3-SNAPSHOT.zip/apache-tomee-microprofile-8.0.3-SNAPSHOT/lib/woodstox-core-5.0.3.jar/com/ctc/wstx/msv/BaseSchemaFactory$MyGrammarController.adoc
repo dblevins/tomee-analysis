@@ -1,0 +1,6 @@
+= com/ctc/wstx/msv/BaseSchemaFactory$MyGrammarController.class
+
+ - link:BaseSchemaFactory$MyGrammarController-asmified.java[Asmified]
+
+== References
+

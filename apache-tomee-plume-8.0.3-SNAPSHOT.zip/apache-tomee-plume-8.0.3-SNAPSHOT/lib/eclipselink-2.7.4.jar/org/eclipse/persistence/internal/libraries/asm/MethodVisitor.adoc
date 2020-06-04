@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/MethodVisitor.class
+
+ - link:MethodVisitor-asmified.java[Asmified]
+
+== References
+

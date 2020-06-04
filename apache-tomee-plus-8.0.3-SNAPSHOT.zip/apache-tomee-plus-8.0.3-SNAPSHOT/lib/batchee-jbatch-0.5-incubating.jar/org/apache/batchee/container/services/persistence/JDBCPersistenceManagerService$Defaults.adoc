@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/persistence/JDBCPersistenceManagerService$Defaults.class
+
+ - link:JDBCPersistenceManagerService$Defaults-asmified.java[Asmified]
+
+== References
+

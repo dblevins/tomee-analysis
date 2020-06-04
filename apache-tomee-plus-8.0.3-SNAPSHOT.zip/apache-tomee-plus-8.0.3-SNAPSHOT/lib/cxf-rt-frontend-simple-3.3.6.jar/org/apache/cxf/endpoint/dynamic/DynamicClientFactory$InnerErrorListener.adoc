@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/dynamic/DynamicClientFactory$InnerErrorListener.class
+
+ - link:DynamicClientFactory$InnerErrorListener-asmified.java[Asmified]
+
+== References
+

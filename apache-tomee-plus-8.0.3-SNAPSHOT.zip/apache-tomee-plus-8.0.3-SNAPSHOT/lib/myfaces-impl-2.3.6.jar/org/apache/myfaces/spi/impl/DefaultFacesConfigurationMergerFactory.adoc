@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/impl/DefaultFacesConfigurationMergerFactory.class
+
+ - link:DefaultFacesConfigurationMergerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.FacesException - 2

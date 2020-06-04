@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ParamValueInfo.class
+
+ - link:ParamValueInfo-asmified.java[Asmified]
+
+== References
+

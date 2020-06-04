@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/cdi/Names.class
+
+ - link:Names-asmified.java[Asmified]
+
+== References
+

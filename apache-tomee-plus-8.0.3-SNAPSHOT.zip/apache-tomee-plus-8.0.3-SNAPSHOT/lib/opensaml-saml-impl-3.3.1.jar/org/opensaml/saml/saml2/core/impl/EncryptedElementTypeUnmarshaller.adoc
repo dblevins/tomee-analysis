@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/EncryptedElementTypeUnmarshaller.class
+
+ - link:EncryptedElementTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

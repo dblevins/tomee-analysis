@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/Choice.class
+
+ - link:Choice-asmified.java[Asmified]
+
+== References
+

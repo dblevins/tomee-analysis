@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedTemplate.class
+
+ - link:DistributedTemplate-asmified.java[Asmified]
+
+== References
+

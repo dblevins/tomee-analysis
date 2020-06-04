@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/metamodel/proxy/MapAttributeProxyImpl.class
+
+ - link:MapAttributeProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type - 2
+ - javax.persistence.metamodel.Attribute - 2
+ - javax.persistence.metamodel.MapAttribute - 1

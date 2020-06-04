@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOType$TypeInstantiationPolicy.class
+
+ - link:SDOType$TypeInstantiationPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/managed/Cache.class
+
+ - link:Cache-asmified.java[Asmified]
+
+== References
+

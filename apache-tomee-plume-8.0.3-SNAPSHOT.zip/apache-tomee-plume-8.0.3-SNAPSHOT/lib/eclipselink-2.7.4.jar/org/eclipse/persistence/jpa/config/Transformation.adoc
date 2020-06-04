@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/Transformation.class
+
+ - link:Transformation-asmified.java[Asmified]
+
+== References
+

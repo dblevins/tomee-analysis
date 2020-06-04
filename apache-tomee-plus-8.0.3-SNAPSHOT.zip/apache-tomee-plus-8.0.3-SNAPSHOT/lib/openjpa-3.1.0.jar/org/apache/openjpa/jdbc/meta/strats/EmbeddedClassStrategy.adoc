@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/EmbeddedClassStrategy.class
+
+ - link:EmbeddedClassStrategy-asmified.java[Asmified]
+
+== References
+

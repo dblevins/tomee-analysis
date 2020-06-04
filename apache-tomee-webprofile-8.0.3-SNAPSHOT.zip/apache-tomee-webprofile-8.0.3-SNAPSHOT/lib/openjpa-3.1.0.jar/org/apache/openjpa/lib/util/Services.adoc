@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/Services.class
+
+ - link:Services-asmified.java[Asmified]
+
+== References
+

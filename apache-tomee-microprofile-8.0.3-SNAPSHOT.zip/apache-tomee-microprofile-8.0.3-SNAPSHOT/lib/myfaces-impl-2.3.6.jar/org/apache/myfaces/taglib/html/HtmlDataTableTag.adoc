@@ -1,0 +1,10 @@
+= org/apache/myfaces/taglib/html/HtmlDataTableTag.class
+
+ - link:HtmlDataTableTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 245
+ - javax.faces.component.html.HtmlDataTable - 40
+ - javax.faces.webapp.UIComponentELTag - 4
+ - javax.faces.component.UIComponent - 2

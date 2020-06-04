@@ -1,0 +1,6 @@
+= org/hsqldb/index/IndexAVLMemory.class
+
+ - link:IndexAVLMemory-asmified.java[Asmified]
+
+== References
+

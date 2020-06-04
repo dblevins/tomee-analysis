@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/stax/StaxDataBindingInterceptor.class
+
+ - link:StaxDataBindingInterceptor-asmified.java[Asmified]
+
+== References
+

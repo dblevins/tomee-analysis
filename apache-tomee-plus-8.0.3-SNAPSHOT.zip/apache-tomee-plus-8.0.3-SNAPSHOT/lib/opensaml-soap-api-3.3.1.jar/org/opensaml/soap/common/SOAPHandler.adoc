@@ -1,0 +1,7 @@
+= org/opensaml/soap/common/SOAPHandler.class
+
+ - link:SOAPHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

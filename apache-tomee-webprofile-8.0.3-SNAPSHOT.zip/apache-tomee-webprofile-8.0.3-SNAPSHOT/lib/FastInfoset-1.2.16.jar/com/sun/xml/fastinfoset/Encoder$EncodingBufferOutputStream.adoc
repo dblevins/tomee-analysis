@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/Encoder$EncodingBufferOutputStream.class
+
+ - link:Encoder$EncodingBufferOutputStream-asmified.java[Asmified]
+
+== References
+

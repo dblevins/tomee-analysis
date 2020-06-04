@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ComponentBuilderHandler.class
+
+ - link:ComponentBuilderHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 1
+ - javax.faces.component.UIComponent - 1

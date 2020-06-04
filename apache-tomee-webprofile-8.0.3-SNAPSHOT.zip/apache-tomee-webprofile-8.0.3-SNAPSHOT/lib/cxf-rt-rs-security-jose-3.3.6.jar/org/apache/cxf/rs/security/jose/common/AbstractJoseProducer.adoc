@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/common/AbstractJoseProducer.class
+
+ - link:AbstractJoseProducer-asmified.java[Asmified]
+
+== References
+

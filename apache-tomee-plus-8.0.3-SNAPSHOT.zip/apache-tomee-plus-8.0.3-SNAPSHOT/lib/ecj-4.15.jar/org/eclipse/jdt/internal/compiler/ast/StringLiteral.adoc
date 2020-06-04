@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/StringLiteral.class
+
+ - link:StringLiteral-asmified.java[Asmified]
+
+== References
+

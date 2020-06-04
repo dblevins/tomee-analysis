@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/AbstractClient$1.class
+
+ - link:AbstractClient$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/trie/AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator.class
+
+ - link:AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator-asmified.java[Asmified]
+
+== References
+

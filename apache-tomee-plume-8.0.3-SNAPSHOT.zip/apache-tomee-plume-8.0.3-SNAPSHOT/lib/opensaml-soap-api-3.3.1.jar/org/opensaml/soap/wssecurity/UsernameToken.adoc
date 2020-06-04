@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/UsernameToken.class
+
+ - link:UsernameToken-asmified.java[Asmified]
+
+== References
+

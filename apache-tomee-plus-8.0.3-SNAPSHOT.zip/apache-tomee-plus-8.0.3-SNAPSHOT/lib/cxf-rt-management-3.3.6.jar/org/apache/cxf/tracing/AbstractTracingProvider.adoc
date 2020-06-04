@@ -1,0 +1,6 @@
+= org/apache/cxf/tracing/AbstractTracingProvider.class
+
+ - link:AbstractTracingProvider-asmified.java[Asmified]
+
+== References
+

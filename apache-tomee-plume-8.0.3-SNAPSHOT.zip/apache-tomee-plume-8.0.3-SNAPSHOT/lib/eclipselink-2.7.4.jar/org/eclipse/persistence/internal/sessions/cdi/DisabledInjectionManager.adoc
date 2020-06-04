@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/cdi/DisabledInjectionManager.class
+
+ - link:DisabledInjectionManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/many/MapValue.class
+
+ - link:MapValue-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlTransient - 2

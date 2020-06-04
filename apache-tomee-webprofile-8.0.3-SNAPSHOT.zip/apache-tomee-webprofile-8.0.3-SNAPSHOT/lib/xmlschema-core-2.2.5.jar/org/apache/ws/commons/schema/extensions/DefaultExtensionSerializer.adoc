@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/extensions/DefaultExtensionSerializer.class
+
+ - link:DefaultExtensionSerializer-asmified.java[Asmified]
+
+== References
+

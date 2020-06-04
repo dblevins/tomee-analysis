@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/xr/AttachmentHelper.class
+
+ - link:AttachmentHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2
+ - javax.activation.DataSource - 1

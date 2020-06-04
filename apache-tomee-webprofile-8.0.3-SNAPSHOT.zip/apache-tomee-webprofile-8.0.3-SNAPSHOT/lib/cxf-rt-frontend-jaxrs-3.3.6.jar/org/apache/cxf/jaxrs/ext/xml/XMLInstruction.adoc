@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/xml/XMLInstruction.class
+
+ - link:XMLInstruction-asmified.java[Asmified]
+
+== References
+

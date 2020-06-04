@@ -1,0 +1,12 @@
+= org/apache/openejb/server/cxf/rs/CxfRSService$ContextBean.class
+
+ - link:CxfRSService$ContextBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Bean - 1

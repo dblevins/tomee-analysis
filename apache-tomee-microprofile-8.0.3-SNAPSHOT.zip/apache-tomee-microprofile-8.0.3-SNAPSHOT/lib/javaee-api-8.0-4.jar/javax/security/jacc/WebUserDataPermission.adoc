@@ -1,0 +1,12 @@
+= javax/security/jacc/WebUserDataPermission.class
+
+ - link:WebUserDataPermission-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.HTTPMethodSpec - 27
+ - javax.security.jacc.URLPatternSpec - 26
+ - javax.security.jacc.WebUserDataPermission - 5
+ - javax.servlet.http.HttpServletRequest - 4
+ - javax.security.jacc.WebUserDataPermission$WebUserDataPermissionCollection - 2
+ - javax.security.jacc.WebUserDataPermission$1 - 1

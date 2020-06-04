@@ -1,0 +1,6 @@
+= org/apache/openejb/util/HexConverter.class
+
+ - link:HexConverter-asmified.java[Asmified]
+
+== References
+

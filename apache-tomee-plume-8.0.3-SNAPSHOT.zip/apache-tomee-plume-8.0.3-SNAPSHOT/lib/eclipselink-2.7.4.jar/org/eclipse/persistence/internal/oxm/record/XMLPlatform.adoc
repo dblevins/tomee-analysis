@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLPlatform.class
+
+ - link:XMLPlatform-asmified.java[Asmified]
+
+== References
+

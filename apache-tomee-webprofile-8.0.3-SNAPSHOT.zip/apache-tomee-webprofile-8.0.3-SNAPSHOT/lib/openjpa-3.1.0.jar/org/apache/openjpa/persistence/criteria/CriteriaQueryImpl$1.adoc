@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/criteria/CriteriaQueryImpl$1.class
+
+ - link:CriteriaQueryImpl$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/ext/WSSConstants.class
+
+ - link:WSSConstants-asmified.java[Asmified]
+
+== References
+

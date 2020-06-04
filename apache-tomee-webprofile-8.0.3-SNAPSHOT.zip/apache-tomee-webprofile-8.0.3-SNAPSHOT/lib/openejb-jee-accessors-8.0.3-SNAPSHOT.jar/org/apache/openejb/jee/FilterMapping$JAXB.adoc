@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/FilterMapping$JAXB.class
+
+ - link:FilterMapping$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

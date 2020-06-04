@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$1ShapeComputer.class
+
+ - link:LambdaExpression$1ShapeComputer-asmified.java[Asmified]
+
+== References
+

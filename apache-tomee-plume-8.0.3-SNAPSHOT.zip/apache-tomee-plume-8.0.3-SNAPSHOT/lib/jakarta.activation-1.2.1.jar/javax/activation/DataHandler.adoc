@@ -1,0 +1,21 @@
+= javax/activation/DataHandler.class
+
+ - link:DataHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 51
+ - javax.activation.DataContentHandler - 43
+ - javax.activation.DataHandler - 31
+ - javax.activation.CommandMap - 28
+ - javax.activation.DataContentHandlerFactory - 24
+ - javax.activation.CommandInfo - 11
+ - javax.activation.ObjectDataContentHandler - 5
+ - javax.activation.UnsupportedDataTypeException - 4
+ - javax.activation.MimeType - 3
+ - javax.activation.DataSourceDataContentHandler - 2
+ - javax.activation.DataHandlerDataSource - 2
+ - javax.activation.DataHandler$1 - 2
+ - javax.activation.URLDataSource - 2
+ - javax.activation.SecuritySupport - 1
+ - javax.activation.MimeTypeParseException - 1

@@ -1,0 +1,6 @@
+= com/sun/faces/config/WebConfiguration$1.class
+
+ - link:WebConfiguration$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/soap/StaxLazySourceBridge.class
+
+ - link:StaxLazySourceBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 3

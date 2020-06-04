@@ -1,0 +1,18 @@
+= org/apache/tomcat/websocket/Util.class
+
+ - link:Util-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.MessageHandler - 21
+ - javax.websocket.CloseReason$CloseCodes - 17
+ - javax.websocket.EndpointConfig - 17
+ - javax.websocket.Session - 10
+ - javax.websocket.Decoder - 6
+ - javax.websocket.DeploymentException - 5
+ - javax.websocket.Encoder - 2
+ - javax.websocket.CloseReason$CloseCode - 2
+ - javax.websocket.Extension$Parameter - 1
+ - javax.websocket.PongMessage - 1
+ - javax.websocket.Extension - 1
+ - javax.websocket.MessageHandler$Whole - 1

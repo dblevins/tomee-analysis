@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/tika/TikaContentExtractor$IgnoreContentHandler.class
+
+ - link:TikaContentExtractor$IgnoreContentHandler-asmified.java[Asmified]
+
+== References
+

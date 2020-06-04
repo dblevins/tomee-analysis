@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/atom/AbstractAtomElementBuilder.class
+
+ - link:AbstractAtomElementBuilder-asmified.java[Asmified]
+
+== References
+

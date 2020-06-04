@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/PushbackIterator.class
+
+ - link:PushbackIterator-asmified.java[Asmified]
+
+== References
+

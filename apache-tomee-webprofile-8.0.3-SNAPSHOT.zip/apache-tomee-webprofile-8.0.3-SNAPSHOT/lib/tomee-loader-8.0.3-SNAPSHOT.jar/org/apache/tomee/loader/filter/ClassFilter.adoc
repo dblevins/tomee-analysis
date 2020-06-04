@@ -1,0 +1,6 @@
+= org/apache/tomee/loader/filter/ClassFilter.class
+
+ - link:ClassFilter-asmified.java[Asmified]
+
+== References
+

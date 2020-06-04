@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/DisplayName.class
+
+ - link:DisplayName-asmified.java[Asmified]
+
+== References
+

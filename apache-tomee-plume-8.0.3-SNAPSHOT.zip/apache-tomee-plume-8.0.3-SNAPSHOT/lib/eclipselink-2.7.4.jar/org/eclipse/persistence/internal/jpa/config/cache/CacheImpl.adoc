@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/cache/CacheImpl.class
+
+ - link:CacheImpl-asmified.java[Asmified]
+
+== References
+

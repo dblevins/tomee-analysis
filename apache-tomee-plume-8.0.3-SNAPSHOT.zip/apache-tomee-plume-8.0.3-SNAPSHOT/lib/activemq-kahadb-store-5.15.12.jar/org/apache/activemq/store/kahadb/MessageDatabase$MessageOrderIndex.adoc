@@ -1,0 +1,6 @@
+= org/apache/activemq/store/kahadb/MessageDatabase$MessageOrderIndex.class
+
+ - link:MessageDatabase$MessageOrderIndex-asmified.java[Asmified]
+
+== References
+

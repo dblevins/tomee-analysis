@@ -1,0 +1,6 @@
+= org/jose4j/jws/PlaintextNoneAlgorithm.class
+
+ - link:PlaintextNoneAlgorithm-asmified.java[Asmified]
+
+== References
+

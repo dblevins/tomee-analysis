@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/impl/LinkBuilderImpl.class
+
+ - link:LinkBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriBuilder - 25
+ - javax.ws.rs.core.Link$Builder - 15
+ - javax.ws.rs.core.Link - 5

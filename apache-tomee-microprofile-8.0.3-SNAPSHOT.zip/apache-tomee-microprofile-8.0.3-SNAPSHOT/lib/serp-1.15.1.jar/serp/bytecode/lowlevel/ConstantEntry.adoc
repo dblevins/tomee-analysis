@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/ConstantEntry.class
+
+ - link:ConstantEntry-asmified.java[Asmified]
+
+== References
+

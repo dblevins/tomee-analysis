@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/CandidatePath$1.class
+
+ - link:CandidatePath$1-asmified.java[Asmified]
+
+== References
+

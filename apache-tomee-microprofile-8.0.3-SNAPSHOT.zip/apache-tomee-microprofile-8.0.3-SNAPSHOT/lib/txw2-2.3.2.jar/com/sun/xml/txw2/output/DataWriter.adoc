@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/DataWriter.class
+
+ - link:DataWriter-asmified.java[Asmified]
+
+== References
+

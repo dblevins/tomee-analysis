@@ -1,0 +1,6 @@
+= org/apache/bval/util/Validate.class
+
+ - link:Validate-asmified.java[Asmified]
+
+== References
+

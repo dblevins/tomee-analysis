@@ -1,0 +1,6 @@
+= javax/enterprise/util/AnnotationLiteral$PrivilegedActionForAccessibleObject.class
+
+ - link:AnnotationLiteral$PrivilegedActionForAccessibleObject-asmified.java[Asmified]
+
+== References
+

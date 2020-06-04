@@ -1,0 +1,9 @@
+= org/apache/activemq/ra/InboundContext.class
+
+ - link:InboundContext-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.Session - 1
+ - javax.jms.MessageProducer - 1

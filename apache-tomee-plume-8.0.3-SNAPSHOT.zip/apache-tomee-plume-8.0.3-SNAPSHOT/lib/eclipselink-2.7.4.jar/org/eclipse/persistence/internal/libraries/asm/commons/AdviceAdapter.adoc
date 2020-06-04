@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/commons/AdviceAdapter.class
+
+ - link:AdviceAdapter-asmified.java[Asmified]
+
+== References
+

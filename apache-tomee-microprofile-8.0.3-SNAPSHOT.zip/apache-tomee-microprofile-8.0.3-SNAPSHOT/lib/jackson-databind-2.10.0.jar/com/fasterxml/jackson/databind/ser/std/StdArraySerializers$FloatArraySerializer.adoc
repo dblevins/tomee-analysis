@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StdArraySerializers$FloatArraySerializer.class
+
+ - link:StdArraySerializers$FloatArraySerializer-asmified.java[Asmified]
+
+== References
+

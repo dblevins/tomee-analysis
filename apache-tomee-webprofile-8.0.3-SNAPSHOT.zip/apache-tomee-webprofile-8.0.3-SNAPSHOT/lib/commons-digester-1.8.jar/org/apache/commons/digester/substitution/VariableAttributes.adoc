@@ -1,0 +1,6 @@
+= org/apache/commons/digester/substitution/VariableAttributes.class
+
+ - link:VariableAttributes-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/impl/FaceletCacheImpl.class
+
+ - link:FaceletCacheImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 4
+ - javax.faces.view.facelets.FaceletCache - 2
+ - javax.faces.view.facelets.FaceletException - 2

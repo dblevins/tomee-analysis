@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/StatelessBean.class
+
+ - link:StatelessBean-asmified.java[Asmified]
+
+== References
+

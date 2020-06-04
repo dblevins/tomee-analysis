@@ -1,0 +1,6 @@
+= org/apache/cxf/phase/Phase.class
+
+ - link:Phase-asmified.java[Asmified]
+
+== References
+

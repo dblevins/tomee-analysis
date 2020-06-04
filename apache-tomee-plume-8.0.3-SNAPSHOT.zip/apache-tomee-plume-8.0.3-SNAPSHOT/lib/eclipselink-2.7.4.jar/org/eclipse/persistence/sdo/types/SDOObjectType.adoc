@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOObjectType.class
+
+ - link:SDOObjectType-asmified.java[Asmified]
+
+== References
+

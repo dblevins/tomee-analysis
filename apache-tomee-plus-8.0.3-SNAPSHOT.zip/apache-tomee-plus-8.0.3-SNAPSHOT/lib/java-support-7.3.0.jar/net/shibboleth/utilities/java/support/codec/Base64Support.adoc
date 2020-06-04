@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/codec/Base64Support.class
+
+ - link:Base64Support-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

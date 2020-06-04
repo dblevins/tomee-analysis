@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/EnvironmentMatchTypeImpl.class
+
+ - link:EnvironmentMatchTypeImpl-asmified.java[Asmified]
+
+== References
+

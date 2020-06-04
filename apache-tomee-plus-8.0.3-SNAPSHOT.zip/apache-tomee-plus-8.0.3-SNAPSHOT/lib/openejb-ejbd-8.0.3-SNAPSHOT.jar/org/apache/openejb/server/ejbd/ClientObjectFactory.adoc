@@ -1,0 +1,11 @@
+= org/apache/openejb/server/ejbd/ClientObjectFactory.class
+
+ - link:ClientObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBObject - 2
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.HomeHandle - 1
+ - javax.ejb.EJBMetaData - 1
+ - javax.ejb.Handle - 1

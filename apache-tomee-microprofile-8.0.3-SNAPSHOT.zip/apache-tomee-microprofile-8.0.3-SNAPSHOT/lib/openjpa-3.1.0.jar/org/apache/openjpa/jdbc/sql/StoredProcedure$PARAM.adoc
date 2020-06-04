@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/StoredProcedure$PARAM.class
+
+ - link:StoredProcedure$PARAM-asmified.java[Asmified]
+
+== References
+

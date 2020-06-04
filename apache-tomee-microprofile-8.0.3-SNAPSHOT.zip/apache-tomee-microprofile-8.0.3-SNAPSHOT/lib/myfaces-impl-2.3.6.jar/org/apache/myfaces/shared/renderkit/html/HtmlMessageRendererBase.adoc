@@ -1,0 +1,18 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlMessageRendererBase.class
+
+ - link:HtmlMessageRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 69
+ - javax.faces.context.FacesContext - 34
+ - javax.faces.context.ResponseWriter - 29
+ - javax.faces.component.html.HtmlMessage - 27
+ - javax.faces.application.FacesMessage - 22
+ - javax.faces.component.UIMessage - 12
+ - javax.faces.application.FacesMessage$Severity - 11
+ - javax.faces.component.behavior.ClientBehaviorHolder - 9
+ - javax.faces.component.search.SearchExpressionHandler - 3
+ - javax.faces.component.search.SearchExpressionContext - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.component.search.SearchExpressionHint - 1

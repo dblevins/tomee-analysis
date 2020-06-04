@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/Sized.class
+
+ - link:Sized-asmified.java[Asmified]
+
+== References
+

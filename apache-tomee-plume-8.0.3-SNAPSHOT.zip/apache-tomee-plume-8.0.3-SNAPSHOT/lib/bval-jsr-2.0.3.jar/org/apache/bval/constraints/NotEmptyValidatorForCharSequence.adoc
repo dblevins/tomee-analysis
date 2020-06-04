@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/NotEmptyValidatorForCharSequence.class
+
+ - link:NotEmptyValidatorForCharSequence-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 1
+ - javax.validation.constraints.NotEmpty - 1

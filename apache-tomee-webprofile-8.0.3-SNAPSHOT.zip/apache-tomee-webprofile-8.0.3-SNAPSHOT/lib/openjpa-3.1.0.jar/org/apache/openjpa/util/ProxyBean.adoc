@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ProxyBean.class
+
+ - link:ProxyBean-asmified.java[Asmified]
+
+== References
+

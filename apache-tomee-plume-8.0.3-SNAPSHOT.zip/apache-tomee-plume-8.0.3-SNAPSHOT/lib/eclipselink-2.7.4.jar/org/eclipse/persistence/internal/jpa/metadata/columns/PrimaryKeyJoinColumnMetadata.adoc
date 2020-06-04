@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/columns/PrimaryKeyJoinColumnMetadata.class
+
+ - link:PrimaryKeyJoinColumnMetadata-asmified.java[Asmified]
+
+== References
+

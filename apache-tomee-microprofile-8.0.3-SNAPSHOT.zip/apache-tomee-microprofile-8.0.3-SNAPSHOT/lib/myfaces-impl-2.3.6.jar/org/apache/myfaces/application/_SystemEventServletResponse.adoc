@@ -1,0 +1,8 @@
+= org/apache/myfaces/application/_SystemEventServletResponse.class
+
+ - link:_SystemEventServletResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 4
+ - javax.servlet.http.HttpServletResponseWrapper - 2

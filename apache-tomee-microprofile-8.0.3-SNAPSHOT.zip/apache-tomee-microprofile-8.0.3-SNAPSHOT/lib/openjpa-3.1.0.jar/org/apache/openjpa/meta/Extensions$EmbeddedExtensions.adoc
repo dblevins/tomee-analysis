@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/Extensions$EmbeddedExtensions.class
+
+ - link:Extensions$EmbeddedExtensions-asmified.java[Asmified]
+
+== References
+

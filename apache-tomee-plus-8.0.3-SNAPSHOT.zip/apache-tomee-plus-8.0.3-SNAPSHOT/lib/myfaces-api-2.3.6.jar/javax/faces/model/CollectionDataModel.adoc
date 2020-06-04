@@ -1,0 +1,10 @@
+= javax/faces/model/CollectionDataModel.class
+
+ - link:CollectionDataModel-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.CollectionDataModel - 10
+ - javax.faces.model.DataModelEvent - 5
+ - javax.faces.model.DataModel - 4
+ - javax.faces.model.DataModelListener - 4

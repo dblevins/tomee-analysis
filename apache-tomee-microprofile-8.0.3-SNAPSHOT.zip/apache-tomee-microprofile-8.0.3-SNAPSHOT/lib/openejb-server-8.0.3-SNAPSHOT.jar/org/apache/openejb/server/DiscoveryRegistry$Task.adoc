@@ -1,0 +1,6 @@
+= org/apache/openejb/server/DiscoveryRegistry$Task.class
+
+ - link:DiscoveryRegistry$Task-asmified.java[Asmified]
+
+== References
+

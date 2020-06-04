@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$VoidTransactionCallback.class
+
+ - link:JobStoreSupport$VoidTransactionCallback-asmified.java[Asmified]
+
+== References
+

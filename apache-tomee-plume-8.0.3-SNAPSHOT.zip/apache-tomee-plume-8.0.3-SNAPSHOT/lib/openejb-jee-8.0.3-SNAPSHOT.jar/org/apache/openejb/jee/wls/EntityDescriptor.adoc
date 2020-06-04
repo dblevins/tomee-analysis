@@ -1,0 +1,14 @@
+= org/apache/openejb/jee/wls/EntityDescriptor.class
+
+ - link:EntityDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 6
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 2
+ - javax.xml.bind.annotation.XmlAttribute - 1
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 1
+ - javax.xml.bind.annotation.XmlID - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

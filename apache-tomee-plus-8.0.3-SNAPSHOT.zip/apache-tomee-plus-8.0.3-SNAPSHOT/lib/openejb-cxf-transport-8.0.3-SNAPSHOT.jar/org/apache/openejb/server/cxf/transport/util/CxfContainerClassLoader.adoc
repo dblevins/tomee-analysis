@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/transport/util/CxfContainerClassLoader.class
+
+ - link:CxfContainerClassLoader-asmified.java[Asmified]
+
+== References
+

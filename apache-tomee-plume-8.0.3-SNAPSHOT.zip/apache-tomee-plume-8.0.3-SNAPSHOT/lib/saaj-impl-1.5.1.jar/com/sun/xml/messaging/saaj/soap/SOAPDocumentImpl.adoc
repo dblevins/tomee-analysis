@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/SOAPDocumentImpl.class
+
+ - link:SOAPDocumentImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.Node - 13
+ - javax.xml.soap.SOAPElement - 5
+ - javax.xml.soap.SOAPException - 1

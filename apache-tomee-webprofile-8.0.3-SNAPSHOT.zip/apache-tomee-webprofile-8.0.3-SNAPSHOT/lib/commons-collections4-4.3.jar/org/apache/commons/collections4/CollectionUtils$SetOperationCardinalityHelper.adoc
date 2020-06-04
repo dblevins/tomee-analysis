@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/CollectionUtils$SetOperationCardinalityHelper.class
+
+ - link:CollectionUtils$SetOperationCardinalityHelper-asmified.java[Asmified]
+
+== References
+

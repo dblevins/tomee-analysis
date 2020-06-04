@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SecondaryRow.class
+
+ - link:SecondaryRow-asmified.java[Asmified]
+
+== References
+

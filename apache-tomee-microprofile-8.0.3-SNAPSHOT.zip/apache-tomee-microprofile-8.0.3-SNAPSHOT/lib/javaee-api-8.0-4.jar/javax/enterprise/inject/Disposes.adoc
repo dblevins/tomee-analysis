@@ -1,0 +1,6 @@
+= javax/enterprise/inject/Disposes.class
+
+ - link:Disposes-asmified.java[Asmified]
+
+== References
+

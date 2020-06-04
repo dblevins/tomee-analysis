@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/many/JAXBArrayAttributeAccessor.class
+
+ - link:JAXBArrayAttributeAccessor-asmified.java[Asmified]
+
+== References
+

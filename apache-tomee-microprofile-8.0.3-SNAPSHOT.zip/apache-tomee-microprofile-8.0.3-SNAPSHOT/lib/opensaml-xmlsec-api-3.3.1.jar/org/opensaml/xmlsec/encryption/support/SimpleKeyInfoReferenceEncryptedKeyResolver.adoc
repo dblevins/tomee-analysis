@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/encryption/support/SimpleKeyInfoReferenceEncryptedKeyResolver.class
+
+ - link:SimpleKeyInfoReferenceEncryptedKeyResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 4

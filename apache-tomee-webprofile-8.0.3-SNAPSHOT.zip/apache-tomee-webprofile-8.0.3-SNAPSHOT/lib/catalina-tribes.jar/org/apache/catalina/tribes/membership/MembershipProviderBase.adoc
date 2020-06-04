@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/MembershipProviderBase.class
+
+ - link:MembershipProviderBase-asmified.java[Asmified]
+
+== References
+

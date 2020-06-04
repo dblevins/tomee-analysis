@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/ObjectCodec.class
+
+ - link:ObjectCodec-asmified.java[Asmified]
+
+== References
+

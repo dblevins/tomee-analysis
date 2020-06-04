@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MessageDrivenBeanInfo.class
+
+ - link:MessageDrivenBeanInfo-asmified.java[Asmified]
+
+== References
+

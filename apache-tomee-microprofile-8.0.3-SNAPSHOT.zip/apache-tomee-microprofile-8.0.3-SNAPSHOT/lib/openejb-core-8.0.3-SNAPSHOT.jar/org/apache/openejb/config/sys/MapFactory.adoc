@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/MapFactory.class
+
+ - link:MapFactory-asmified.java[Asmified]
+
+== References
+

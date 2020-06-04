@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/MergeChangeSetCommand.class
+
+ - link:MergeChangeSetCommand-asmified.java[Asmified]
+
+== References
+

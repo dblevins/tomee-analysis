@@ -1,0 +1,7 @@
+= org/apache/myfaces/flow/impl/FlowScopeMap.class
+
+ - link:FlowScopeMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/profile/impl/AddResponseShell$1.class
+
+ - link:AddResponseShell$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/xml/bind/util/ValidationEventLocatorExImpl.class
+
+ - link:ValidationEventLocatorExImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.helpers.ValidationEventLocatorImpl - 2

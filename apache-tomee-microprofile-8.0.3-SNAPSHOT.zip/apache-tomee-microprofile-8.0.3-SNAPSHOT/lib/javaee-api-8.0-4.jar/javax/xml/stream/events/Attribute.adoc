@@ -1,0 +1,6 @@
+= javax/xml/stream/events/Attribute.class
+
+ - link:Attribute-asmified.java[Asmified]
+
+== References
+

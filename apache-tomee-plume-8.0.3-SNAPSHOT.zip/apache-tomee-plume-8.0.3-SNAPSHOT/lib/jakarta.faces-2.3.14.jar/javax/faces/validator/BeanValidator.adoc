@@ -1,0 +1,30 @@
+= javax/faces/validator/BeanValidator.class
+
+ - link:BeanValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 25
+ - javax.faces.validator.ValueReference - 15
+ - javax.faces.validator.BeanValidator - 14
+ - javax.el.ValueExpression - 13
+ - javax.faces.component.UIComponent - 11
+ - javax.validation.Validator - 9
+ - javax.faces.validator.ValueExpressionAnalyzer - 8
+ - javax.validation.ValidatorFactory - 8
+ - javax.faces.validator.ValidatorException - 5
+ - javax.faces.context.ExternalContext - 4
+ - javax.validation.ValidatorContext - 4
+ - javax.faces.FacesException - 4
+ - javax.validation.ConstraintViolation - 4
+ - javax.faces.validator.MessageFactory - 4
+ - javax.validation.groups.Default - 3
+ - javax.faces.validator.MultiFieldValidationUtils - 3
+ - javax.validation.MessageInterpolator - 3
+ - javax.faces.application.FacesMessage - 3
+ - javax.faces.validator.BeanValidator$JsfAwareMessageInterpolator - 2
+ - javax.validation.ValidationException - 2
+ - javax.el.ELContext - 2
+ - javax.faces.component.PartialStateHolder - 1
+ - javax.validation.Validation - 1
+ - javax.faces.validator.Validator - 1

@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/net/URISupport.class
+
+ - link:URISupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 3

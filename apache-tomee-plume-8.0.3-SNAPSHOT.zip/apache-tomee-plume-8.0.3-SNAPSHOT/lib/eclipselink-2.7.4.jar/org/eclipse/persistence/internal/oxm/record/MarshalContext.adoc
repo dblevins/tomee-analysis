@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/MarshalContext.class
+
+ - link:MarshalContext-asmified.java[Asmified]
+
+== References
+

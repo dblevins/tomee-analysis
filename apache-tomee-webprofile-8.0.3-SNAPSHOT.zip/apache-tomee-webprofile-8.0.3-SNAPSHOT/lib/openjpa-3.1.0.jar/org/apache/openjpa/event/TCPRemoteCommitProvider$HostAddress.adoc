@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/TCPRemoteCommitProvider$HostAddress.class
+
+ - link:TCPRemoteCommitProvider$HostAddress-asmified.java[Asmified]
+
+== References
+

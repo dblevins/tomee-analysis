@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/outbound/TxUtil.class
+
+ - link:TxUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 7
+ - javax.transaction.SystemException - 6
+ - javax.transaction.TransactionManager - 5

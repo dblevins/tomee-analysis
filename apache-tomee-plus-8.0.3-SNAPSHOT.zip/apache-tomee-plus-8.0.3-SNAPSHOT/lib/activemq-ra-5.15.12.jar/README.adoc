@@ -1,0 +1,35 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/activemq-ra-5.15.12.jar
+
+ - link:org/apache/activemq/ra/InboundSessionProxy.adoc[org/apache/activemq/ra/InboundSessionProxy.class] - 211
+ - link:org/apache/activemq/ra/ManagedSessionProxy.adoc[org/apache/activemq/ra/ManagedSessionProxy.class] - 202
+ - link:org/apache/activemq/ra/InboundMessageProducerProxy.adoc[org/apache/activemq/ra/InboundMessageProducerProxy.class] - 139
+ - link:org/apache/activemq/ra/ManagedConnectionProxy.adoc[org/apache/activemq/ra/ManagedConnectionProxy.class] - 89
+ - link:org/apache/activemq/ra/ActiveMQManagedConnection.adoc[org/apache/activemq/ra/ActiveMQManagedConnection.class] - 78
+ - link:org/apache/activemq/ra/ActiveMQConnectionFactory.adoc[org/apache/activemq/ra/ActiveMQConnectionFactory.class] - 51
+ - link:org/apache/activemq/ra/ServerSessionImpl.adoc[org/apache/activemq/ra/ServerSessionImpl.class] - 50
+ - link:org/apache/activemq/ra/ActiveMQEndpointWorker.adoc[org/apache/activemq/ra/ActiveMQEndpointWorker.class] - 49
+ - link:org/apache/activemq/ra/InboundConnectionProxy.adoc[org/apache/activemq/ra/InboundConnectionProxy.class] - 47
+ - link:org/apache/activemq/ra/ServerSessionPoolImpl.adoc[org/apache/activemq/ra/ServerSessionPoolImpl.class] - 41
+ - link:org/apache/activemq/ra/LocalAndXATransaction.adoc[org/apache/activemq/ra/LocalAndXATransaction.class] - 39
+ - link:org/apache/activemq/ra/SimpleConnectionManager.adoc[org/apache/activemq/ra/SimpleConnectionManager.class] - 38
+ - link:org/apache/activemq/ra/ActiveMQResourceAdapter.adoc[org/apache/activemq/ra/ActiveMQResourceAdapter.class] - 34
+ - link:org/apache/activemq/ra/ActiveMQManagedConnectionFactory.adoc[org/apache/activemq/ra/ActiveMQManagedConnectionFactory.class] - 30
+ - link:org/apache/activemq/ra/ActiveMQManagedConnection$3.adoc[org/apache/activemq/ra/ActiveMQManagedConnection$3.class] - 29
+ - link:org/apache/activemq/ra/ActiveMQResourceAdapter$2.adoc[org/apache/activemq/ra/ActiveMQResourceAdapter$2.class] - 26
+ - link:org/apache/activemq/ra/ActiveMQActivationSpec.adoc[org/apache/activemq/ra/ActiveMQActivationSpec.class] - 23
+ - link:org/apache/activemq/ra/MessageEndpointProxy.adoc[org/apache/activemq/ra/MessageEndpointProxy.class] - 19
+ - link:org/apache/activemq/ra/InboundConnectionProxyFactory.adoc[org/apache/activemq/ra/InboundConnectionProxyFactory.class] - 18
+ - link:org/apache/activemq/ra/ActiveMQEndpointWorker$1.adoc[org/apache/activemq/ra/ActiveMQEndpointWorker$1.class] - 17
+ - link:org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointAlive.adoc[org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointAlive.class] - 14
+ - link:org/apache/activemq/ra/ActiveMQEndpointActivationKey.adoc[org/apache/activemq/ra/ActiveMQEndpointActivationKey.class] - 9
+ - link:org/apache/activemq/ra/ManagedTransactionContext.adoc[org/apache/activemq/ra/ManagedTransactionContext.class] - 6
+ - link:org/apache/activemq/ra/ServerSessionImpl$1.adoc[org/apache/activemq/ra/ServerSessionImpl$1.class] - 5
+ - link:org/apache/activemq/ra/ActiveMQEndpointWorker$1$1.adoc[org/apache/activemq/ra/ActiveMQEndpointWorker$1$1.class] - 5
+ - link:org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointDead.adoc[org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointDead.class] - 5
+ - link:org/apache/activemq/ra/InboundContext.adoc[org/apache/activemq/ra/InboundContext.class] - 4
+ - link:org/apache/activemq/ra/MessageResourceAdapter.adoc[org/apache/activemq/ra/MessageResourceAdapter.class] - 4
+ - link:org/apache/activemq/ra/ActiveMQConnectionSupport.adoc[org/apache/activemq/ra/ActiveMQConnectionSupport.class] - 3
+ - link:org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState.adoc[org/apache/activemq/ra/MessageEndpointProxy$MessageEndpointState.class] - 3
+ - link:org/apache/activemq/ra/MessageActivationSpec.adoc[org/apache/activemq/ra/MessageActivationSpec.class] - 2
+ - link:org/apache/activemq/ra/ActiveMQConnectionRequestInfo.adoc[org/apache/activemq/ra/ActiveMQConnectionRequestInfo.class] - 1
+ - link:org/apache/activemq/ra/ActiveMQManagedConnection$1.adoc[org/apache/activemq/ra/ActiveMQManagedConnection$1.class] - 1

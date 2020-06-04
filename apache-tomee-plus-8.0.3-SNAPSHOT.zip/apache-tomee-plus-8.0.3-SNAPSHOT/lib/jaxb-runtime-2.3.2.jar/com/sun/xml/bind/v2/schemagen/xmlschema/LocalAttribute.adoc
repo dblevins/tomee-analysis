@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/LocalAttribute.class
+
+ - link:LocalAttribute-asmified.java[Asmified]
+
+== References
+

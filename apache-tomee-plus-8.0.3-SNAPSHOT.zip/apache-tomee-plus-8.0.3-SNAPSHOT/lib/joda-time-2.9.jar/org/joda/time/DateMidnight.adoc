@@ -1,0 +1,6 @@
+= org/joda/time/DateMidnight.class
+
+ - link:DateMidnight-asmified.java[Asmified]
+
+== References
+

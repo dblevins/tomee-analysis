@@ -1,0 +1,6 @@
+= org/apache/webbeans/config/DeploymentValidationService$BeanInterceptorInfoProvider.class
+
+ - link:DeploymentValidationService$BeanInterceptorInfoProvider-asmified.java[Asmified]
+
+== References
+

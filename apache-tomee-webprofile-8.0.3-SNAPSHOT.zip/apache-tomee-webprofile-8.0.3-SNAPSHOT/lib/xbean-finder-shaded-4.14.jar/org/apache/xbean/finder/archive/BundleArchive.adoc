@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/archive/BundleArchive.class
+
+ - link:BundleArchive-asmified.java[Asmified]
+
+== References
+

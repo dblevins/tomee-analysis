@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/SwaRefAdapterMarker.class
+
+ - link:SwaRefAdapterMarker-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 6
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

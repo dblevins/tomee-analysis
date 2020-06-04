@@ -1,0 +1,186 @@
+package asm.org.apache.tomcat.util.security;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class MD5EncoderDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "org/apache/tomcat/util/security/MD5Encoder", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "hexadecimal", "[C", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "encode", "([B)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitIntInsn(NEWARRAY, T_CHAR);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[C", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 15);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 240);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(ISHR);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/security/MD5Encoder", "hexadecimal", "[C");
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(CALOAD);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/security/MD5Encoder", "hexadecimal", "[C");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(CALOAD);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/String", "<init>", "([C)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitIntInsn(NEWARRAY, T_CHAR);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitIntInsn(BIPUSH, 48);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitIntInsn(BIPUSH, 49);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitIntInsn(BIPUSH, 50);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitIntInsn(BIPUSH, 51);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitIntInsn(BIPUSH, 52);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitIntInsn(BIPUSH, 53);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitIntInsn(BIPUSH, 54);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitIntInsn(BIPUSH, 55);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitIntInsn(BIPUSH, 56);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 9);
+methodVisitor.visitIntInsn(BIPUSH, 57);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitIntInsn(BIPUSH, 97);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 11);
+methodVisitor.visitIntInsn(BIPUSH, 98);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 12);
+methodVisitor.visitIntInsn(BIPUSH, 99);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 13);
+methodVisitor.visitIntInsn(BIPUSH, 100);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 14);
+methodVisitor.visitIntInsn(BIPUSH, 101);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 15);
+methodVisitor.visitIntInsn(BIPUSH, 102);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomcat/util/security/MD5Encoder", "hexadecimal", "[C");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

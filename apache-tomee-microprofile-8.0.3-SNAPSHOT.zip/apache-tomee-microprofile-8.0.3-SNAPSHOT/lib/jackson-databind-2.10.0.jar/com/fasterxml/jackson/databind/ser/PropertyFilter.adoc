@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/PropertyFilter.class
+
+ - link:PropertyFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/AbstractOutDatabindingInterceptor.class
+
+ - link:AbstractOutDatabindingInterceptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/TypeBase.class
+
+ - link:TypeBase-asmified.java[Asmified]
+
+== References
+

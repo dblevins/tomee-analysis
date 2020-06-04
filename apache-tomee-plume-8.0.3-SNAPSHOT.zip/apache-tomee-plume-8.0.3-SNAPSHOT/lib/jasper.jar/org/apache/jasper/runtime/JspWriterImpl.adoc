@@ -1,0 +1,8 @@
+= org/apache/jasper/runtime/JspWriterImpl.class
+
+ - link:JspWriterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponse - 12
+ - javax.servlet.jsp.JspWriter - 3

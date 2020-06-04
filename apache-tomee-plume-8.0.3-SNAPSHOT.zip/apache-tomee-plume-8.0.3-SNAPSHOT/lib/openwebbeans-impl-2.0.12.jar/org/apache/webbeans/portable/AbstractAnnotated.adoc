@@ -1,0 +1,7 @@
+= org/apache/webbeans/portable/AbstractAnnotated.class
+
+ - link:AbstractAnnotated-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 5

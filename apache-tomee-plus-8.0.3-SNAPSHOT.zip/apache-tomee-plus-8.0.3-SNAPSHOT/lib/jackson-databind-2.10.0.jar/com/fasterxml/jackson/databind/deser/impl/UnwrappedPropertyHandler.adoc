@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler.class
+
+ - link:UnwrappedPropertyHandler-asmified.java[Asmified]
+
+== References
+

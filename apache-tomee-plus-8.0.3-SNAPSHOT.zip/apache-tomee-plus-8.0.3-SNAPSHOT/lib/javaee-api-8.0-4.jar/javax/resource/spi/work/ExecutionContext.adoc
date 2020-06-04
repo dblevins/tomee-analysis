@@ -1,0 +1,7 @@
+= javax/resource/spi/work/ExecutionContext.class
+
+ - link:ExecutionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.NotSupportedException - 3

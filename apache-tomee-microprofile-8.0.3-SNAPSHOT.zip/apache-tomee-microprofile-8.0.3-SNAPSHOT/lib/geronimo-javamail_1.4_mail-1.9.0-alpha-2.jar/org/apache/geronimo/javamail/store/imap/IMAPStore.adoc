@@ -1,0 +1,13 @@
+= org/apache/geronimo/javamail/store/imap/IMAPStore.class
+
+ - link:IMAPStore-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 23
+ - javax.mail.Folder - 20
+ - javax.mail.Session - 9
+ - javax.mail.Store - 9
+ - javax.mail.URLName - 6
+ - javax.mail.Quota - 4
+ - javax.mail.QuotaAwareStore - 1

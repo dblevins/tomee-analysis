@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/RendererImpl.class
+
+ - link:RendererImpl-asmified.java[Asmified]
+
+== References
+

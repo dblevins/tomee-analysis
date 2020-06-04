@@ -1,0 +1,20 @@
+= org/apache/cxf/jaxrs/provider/MultipartProvider.class
+
+ - link:MultipartProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 39
+ - javax.activation.DataHandler - 28
+ - javax.ws.rs.core.MultivaluedMap - 9
+ - javax.activation.DataSource - 7
+ - javax.ws.rs.WebApplicationException - 6
+ - javax.ws.rs.ext.Providers - 4
+ - javax.ws.rs.ext.MessageBodyWriter - 4
+ - javax.ws.rs.ext.MessageBodyReader - 3
+ - javax.ws.rs.core.HttpHeaders - 2
+ - javax.ws.rs.core.Response - 2
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.Consumes - 1

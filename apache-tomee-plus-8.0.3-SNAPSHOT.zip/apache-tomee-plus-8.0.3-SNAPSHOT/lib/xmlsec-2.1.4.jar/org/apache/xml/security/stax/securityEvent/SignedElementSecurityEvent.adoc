@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/securityEvent/SignedElementSecurityEvent.class
+
+ - link:SignedElementSecurityEvent-asmified.java[Asmified]
+
+== References
+

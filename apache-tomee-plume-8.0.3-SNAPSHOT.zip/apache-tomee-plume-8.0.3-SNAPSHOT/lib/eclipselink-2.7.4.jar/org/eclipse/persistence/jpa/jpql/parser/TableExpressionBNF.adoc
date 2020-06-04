@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/TableExpressionBNF.class
+
+ - link:TableExpressionBNF-asmified.java[Asmified]
+
+== References
+

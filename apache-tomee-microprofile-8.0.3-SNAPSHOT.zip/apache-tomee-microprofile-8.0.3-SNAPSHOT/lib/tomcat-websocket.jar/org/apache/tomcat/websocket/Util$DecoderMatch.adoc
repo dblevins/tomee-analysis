@@ -1,0 +1,11 @@
+= org/apache/tomcat/websocket/Util$DecoderMatch.class
+
+ - link:Util$DecoderMatch-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Decoder - 4
+ - javax.websocket.Decoder$Binary - 1
+ - javax.websocket.Decoder$Text - 1
+ - javax.websocket.Decoder$TextStream - 1
+ - javax.websocket.Decoder$BinaryStream - 1

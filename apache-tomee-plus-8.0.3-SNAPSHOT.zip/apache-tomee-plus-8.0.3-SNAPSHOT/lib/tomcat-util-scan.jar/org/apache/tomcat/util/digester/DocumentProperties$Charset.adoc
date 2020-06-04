@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/digester/DocumentProperties$Charset.class
+
+ - link:DocumentProperties$Charset-asmified.java[Asmified]
+
+== References
+

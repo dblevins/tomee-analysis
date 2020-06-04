@@ -1,0 +1,6 @@
+= org/apache/openejb/client/event/ObserverAdded.class
+
+ - link:ObserverAdded-asmified.java[Asmified]
+
+== References
+

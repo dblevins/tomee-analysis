@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/transformers/FieldTransformer.class
+
+ - link:FieldTransformer-asmified.java[Asmified]
+
+== References
+

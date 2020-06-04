@@ -1,0 +1,10 @@
+= javax/jms/XAQueueConnectionFactory.class
+
+ - link:XAQueueConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.XAQueueConnection - 2
+ - javax.jms.JMSException - 2
+ - javax.jms.XAConnectionFactory - 1
+ - javax.jms.QueueConnectionFactory - 1

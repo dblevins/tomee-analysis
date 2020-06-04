@@ -1,0 +1,13 @@
+= org/apache/openejb/server/httpd/util/HttpUtil.class
+
+ - link:HttpUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 22
+ - javax.servlet.Servlet - 7
+ - javax.servlet.Filter - 6
+ - javax.servlet.ServletContextListener - 5
+ - javax.servlet.ServletContextEvent - 3
+ - javax.servlet.FilterConfig - 2
+ - javax.servlet.ServletConfig - 1

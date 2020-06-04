@@ -1,0 +1,9 @@
+= org/apache/openejb/resource/activemq/jms2/WrappingTextMessage.class
+
+ - link:WrappingTextMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TextMessage - 10
+ - javax.jms.JMSException - 4
+ - javax.jms.Message - 1

@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxrs/impl/WriterInterceptorMBW.class
+
+ - link:WriterInterceptorMBW-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.MessageBodyWriter - 14
+ - javax.ws.rs.ext.WriterInterceptorContext - 12
+ - javax.ws.rs.core.MediaType - 10
+ - javax.ws.rs.core.MultivaluedMap - 5
+ - javax.ws.rs.ProcessingException - 2
+ - javax.ws.rs.WebApplicationException - 1
+ - javax.ws.rs.ext.WriterInterceptor - 1

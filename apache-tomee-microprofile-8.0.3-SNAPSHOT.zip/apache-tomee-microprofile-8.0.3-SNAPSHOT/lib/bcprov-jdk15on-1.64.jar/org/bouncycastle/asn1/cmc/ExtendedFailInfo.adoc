@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/ExtendedFailInfo.class
+
+ - link:ExtendedFailInfo-asmified.java[Asmified]
+
+== References
+

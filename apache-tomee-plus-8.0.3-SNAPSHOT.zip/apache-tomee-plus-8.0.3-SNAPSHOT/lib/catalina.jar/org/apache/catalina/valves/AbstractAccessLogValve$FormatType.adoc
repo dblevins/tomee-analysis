@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/AbstractAccessLogValve$FormatType.class
+
+ - link:AbstractAccessLogValve$FormatType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sequencing/UUIDSequence.class
+
+ - link:UUIDSequence-asmified.java[Asmified]
+
+== References
+

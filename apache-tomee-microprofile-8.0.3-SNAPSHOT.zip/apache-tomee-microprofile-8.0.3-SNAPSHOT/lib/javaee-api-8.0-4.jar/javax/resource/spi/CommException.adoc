@@ -1,0 +1,7 @@
+= javax/resource/spi/CommException.class
+
+ - link:CommException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 6

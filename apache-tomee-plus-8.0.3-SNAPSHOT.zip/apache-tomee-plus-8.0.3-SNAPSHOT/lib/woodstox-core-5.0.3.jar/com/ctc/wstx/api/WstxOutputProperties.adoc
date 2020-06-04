@@ -1,0 +1,6 @@
+= com/ctc/wstx/api/WstxOutputProperties.class
+
+ - link:WstxOutputProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/jms/JMSRuntimeException.class
+
+ - link:JMSRuntimeException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSRuntimeException - 1

@@ -1,0 +1,7 @@
+= javax/management/j2ee/statistics/RangeStatistic.class
+
+ - link:RangeStatistic-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.Statistic - 1

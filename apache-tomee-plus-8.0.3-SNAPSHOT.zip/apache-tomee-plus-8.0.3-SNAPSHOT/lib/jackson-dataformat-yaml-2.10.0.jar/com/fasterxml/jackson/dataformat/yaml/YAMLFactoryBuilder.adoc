@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/dataformat/yaml/YAMLFactoryBuilder.class
+
+ - link:YAMLFactoryBuilder-asmified.java[Asmified]
+
+== References
+

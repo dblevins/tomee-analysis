@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/service/factory/ParamReader$MethodInfo.class
+
+ - link:ParamReader$MethodInfo-asmified.java[Asmified]
+
+== References
+

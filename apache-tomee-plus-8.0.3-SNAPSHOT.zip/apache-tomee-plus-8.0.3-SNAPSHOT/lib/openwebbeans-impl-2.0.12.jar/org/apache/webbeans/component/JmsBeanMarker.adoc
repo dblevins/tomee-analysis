@@ -1,0 +1,6 @@
+= org/apache/webbeans/component/JmsBeanMarker.class
+
+ - link:JmsBeanMarker-asmified.java[Asmified]
+
+== References
+

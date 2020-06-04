@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/MapperConfig.class
+
+ - link:MapperConfig-asmified.java[Asmified]
+
+== References
+

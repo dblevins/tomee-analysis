@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/was/v6/ejb/TransactionEnum.class
+
+ - link:TransactionEnum-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2
+ - javax.xml.bind.annotation.XmlEnum - 1

@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/JaxmURI.class
+
+ - link:JaxmURI-asmified.java[Asmified]
+
+== References
+

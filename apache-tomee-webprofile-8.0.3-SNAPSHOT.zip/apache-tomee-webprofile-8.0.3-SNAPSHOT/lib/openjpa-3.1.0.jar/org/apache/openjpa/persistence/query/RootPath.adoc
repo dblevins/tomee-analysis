@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/RootPath.class
+
+ - link:RootPath-asmified.java[Asmified]
+
+== References
+

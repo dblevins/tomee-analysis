@@ -1,0 +1,6 @@
+= org/apache/batchee/container/util/Serializations.class
+
+ - link:Serializations-asmified.java[Asmified]
+
+== References
+

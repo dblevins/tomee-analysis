@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/NoOpCacheMarshaller.class
+
+ - link:NoOpCacheMarshaller-asmified.java[Asmified]
+
+== References
+

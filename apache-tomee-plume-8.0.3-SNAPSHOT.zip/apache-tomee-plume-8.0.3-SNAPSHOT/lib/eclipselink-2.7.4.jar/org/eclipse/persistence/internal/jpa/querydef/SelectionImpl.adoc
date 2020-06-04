@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/querydef/SelectionImpl.class
+
+ - link:SelectionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 3

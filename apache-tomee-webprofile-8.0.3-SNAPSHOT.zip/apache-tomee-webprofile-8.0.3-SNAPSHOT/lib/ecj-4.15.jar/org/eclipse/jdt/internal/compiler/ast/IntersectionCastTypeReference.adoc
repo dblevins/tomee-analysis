@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/IntersectionCastTypeReference.class
+
+ - link:IntersectionCastTypeReference-asmified.java[Asmified]
+
+== References
+

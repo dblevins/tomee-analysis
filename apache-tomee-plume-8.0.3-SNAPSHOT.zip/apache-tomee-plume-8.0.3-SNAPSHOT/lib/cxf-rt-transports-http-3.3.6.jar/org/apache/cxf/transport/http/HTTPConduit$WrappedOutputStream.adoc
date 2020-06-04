@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/HTTPConduit$WrappedOutputStream.class
+
+ - link:HTTPConduit$WrappedOutputStream-asmified.java[Asmified]
+
+== References
+

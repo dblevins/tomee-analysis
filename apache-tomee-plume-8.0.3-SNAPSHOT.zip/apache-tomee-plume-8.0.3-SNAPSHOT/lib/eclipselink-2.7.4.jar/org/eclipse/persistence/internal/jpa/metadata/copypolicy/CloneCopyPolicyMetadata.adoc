@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/copypolicy/CloneCopyPolicyMetadata.class
+
+ - link:CloneCopyPolicyMetadata-asmified.java[Asmified]
+
+== References
+

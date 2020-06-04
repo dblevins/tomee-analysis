@@ -1,0 +1,7 @@
+= javax/validation/Validation$DefaultValidationProviderResolver$PrivClassLoader.class
+
+ - link:Validation$DefaultValidationProviderResolver$PrivClassLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Validation$DefaultValidationProviderResolver$PrivClassLoader - 5

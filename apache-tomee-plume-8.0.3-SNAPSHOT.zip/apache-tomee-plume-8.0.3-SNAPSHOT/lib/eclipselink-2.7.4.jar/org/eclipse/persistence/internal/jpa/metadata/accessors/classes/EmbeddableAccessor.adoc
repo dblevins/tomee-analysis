@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/classes/EmbeddableAccessor.class
+
+ - link:EmbeddableAccessor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOTypesGenerator$NonContainmentReference.class
+
+ - link:SDOTypesGenerator$NonContainmentReference-asmified.java[Asmified]
+
+== References
+

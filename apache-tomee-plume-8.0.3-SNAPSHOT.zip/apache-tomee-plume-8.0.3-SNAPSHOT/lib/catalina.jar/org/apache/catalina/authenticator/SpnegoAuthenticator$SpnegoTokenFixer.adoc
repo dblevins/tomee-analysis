@@ -1,0 +1,6 @@
+= org/apache/catalina/authenticator/SpnegoAuthenticator$SpnegoTokenFixer.class
+
+ - link:SpnegoAuthenticator$SpnegoTokenFixer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/ImportedTransactionActiveException.class
+
+ - link:ImportedTransactionActiveException-asmified.java[Asmified]
+
+== References
+

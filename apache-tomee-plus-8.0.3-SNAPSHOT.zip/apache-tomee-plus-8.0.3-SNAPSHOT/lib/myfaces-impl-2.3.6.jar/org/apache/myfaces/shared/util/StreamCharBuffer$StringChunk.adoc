@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/StreamCharBuffer$StringChunk.class
+
+ - link:StreamCharBuffer$StringChunk-asmified.java[Asmified]
+
+== References
+

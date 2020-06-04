@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/package-info.class
+
+ - link:package-info-asmified.java[Asmified]
+
+== References
+

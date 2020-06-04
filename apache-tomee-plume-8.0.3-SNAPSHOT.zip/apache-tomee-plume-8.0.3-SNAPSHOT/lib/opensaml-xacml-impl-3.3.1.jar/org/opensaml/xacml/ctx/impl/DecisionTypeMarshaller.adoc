@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/DecisionTypeMarshaller.class
+
+ - link:DecisionTypeMarshaller-asmified.java[Asmified]
+
+== References
+

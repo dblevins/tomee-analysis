@@ -1,0 +1,8 @@
+= org/apache/webbeans/portable/events/generics/GProcessInjectionTarget.class
+
+ - link:GProcessInjectionTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.inject.spi.InjectionTarget - 1

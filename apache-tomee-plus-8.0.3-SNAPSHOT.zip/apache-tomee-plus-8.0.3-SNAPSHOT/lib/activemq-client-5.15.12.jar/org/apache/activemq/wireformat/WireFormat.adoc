@@ -1,0 +1,6 @@
+= org/apache/activemq/wireformat/WireFormat.class
+
+ - link:WireFormat-asmified.java[Asmified]
+
+== References
+

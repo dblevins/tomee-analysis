@@ -1,0 +1,6 @@
+= org/hsqldb/types/BooleanType.class
+
+ - link:BooleanType-asmified.java[Asmified]
+
+== References
+

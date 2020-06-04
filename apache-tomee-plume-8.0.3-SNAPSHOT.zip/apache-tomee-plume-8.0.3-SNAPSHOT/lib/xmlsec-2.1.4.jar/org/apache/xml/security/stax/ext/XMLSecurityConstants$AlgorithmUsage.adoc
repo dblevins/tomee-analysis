@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/XMLSecurityConstants$AlgorithmUsage.class
+
+ - link:XMLSecurityConstants$AlgorithmUsage-asmified.java[Asmified]
+
+== References
+

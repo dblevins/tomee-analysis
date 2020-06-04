@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AbstractNameIDTypeUnmarshaller.class
+
+ - link:AbstractNameIDTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

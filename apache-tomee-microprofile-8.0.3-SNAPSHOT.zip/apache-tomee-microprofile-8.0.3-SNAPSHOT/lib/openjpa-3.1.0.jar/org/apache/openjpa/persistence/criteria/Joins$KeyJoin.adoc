@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Joins$KeyJoin.class
+
+ - link:Joins$KeyJoin-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.JoinType - 2

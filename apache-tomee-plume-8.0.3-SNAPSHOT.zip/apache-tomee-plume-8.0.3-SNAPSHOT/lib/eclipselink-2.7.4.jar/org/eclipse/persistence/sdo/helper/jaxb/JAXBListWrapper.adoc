@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/jaxb/JAXBListWrapper.class
+
+ - link:JAXBListWrapper-asmified.java[Asmified]
+
+== References
+

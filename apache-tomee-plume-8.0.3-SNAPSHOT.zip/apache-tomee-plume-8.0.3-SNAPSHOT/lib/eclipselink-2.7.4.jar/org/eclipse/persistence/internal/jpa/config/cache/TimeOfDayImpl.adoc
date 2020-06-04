@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/cache/TimeOfDayImpl.class
+
+ - link:TimeOfDayImpl-asmified.java[Asmified]
+
+== References
+

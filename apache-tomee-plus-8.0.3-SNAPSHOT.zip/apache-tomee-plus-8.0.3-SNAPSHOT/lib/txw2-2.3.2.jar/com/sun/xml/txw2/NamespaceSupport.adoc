@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/NamespaceSupport.class
+
+ - link:NamespaceSupport-asmified.java[Asmified]
+
+== References
+

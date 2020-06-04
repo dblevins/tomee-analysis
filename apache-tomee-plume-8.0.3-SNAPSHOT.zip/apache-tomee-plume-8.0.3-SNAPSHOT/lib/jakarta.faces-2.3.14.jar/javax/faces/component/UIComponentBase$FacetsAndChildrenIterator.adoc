@@ -1,0 +1,9 @@
+= javax/faces/component/UIComponentBase$FacetsAndChildrenIterator.class
+
+ - link:UIComponentBase$FacetsAndChildrenIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 20
+ - javax.faces.component.UIComponentBase$FacetsAndChildrenIterator - 3
+ - javax.faces.component.UIComponentBase - 1

@@ -1,0 +1,10 @@
+= org/apache/activemq/network/jms/SimpleJmsMessageConvertor.class
+
+ - link:SimpleJmsMessageConvertor-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 9
+ - javax.jms.Destination - 3
+ - javax.jms.JMSException - 2
+ - javax.jms.Connection - 1

@@ -1,0 +1,6 @@
+= org/jose4j/keys/resolvers/JwksVerificationKeyResolver.class
+
+ - link:JwksVerificationKeyResolver-asmified.java[Asmified]
+
+== References
+

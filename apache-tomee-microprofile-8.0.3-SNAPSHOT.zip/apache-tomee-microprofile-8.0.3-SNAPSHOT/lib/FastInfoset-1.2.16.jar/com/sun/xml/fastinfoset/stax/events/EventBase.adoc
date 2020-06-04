@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/EventBase.class
+
+ - link:EventBase-asmified.java[Asmified]
+
+== References
+

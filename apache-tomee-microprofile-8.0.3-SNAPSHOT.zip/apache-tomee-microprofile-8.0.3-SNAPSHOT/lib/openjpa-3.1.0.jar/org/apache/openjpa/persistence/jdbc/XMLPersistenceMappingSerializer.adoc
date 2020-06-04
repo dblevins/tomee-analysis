@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/jdbc/XMLPersistenceMappingSerializer.class
+
+ - link:XMLPersistenceMappingSerializer-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EnumType - 8
+ - javax.persistence.TemporalType - 7

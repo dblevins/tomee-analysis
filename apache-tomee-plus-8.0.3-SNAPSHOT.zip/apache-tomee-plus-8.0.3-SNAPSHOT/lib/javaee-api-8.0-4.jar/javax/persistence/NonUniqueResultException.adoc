@@ -1,0 +1,7 @@
+= javax/persistence/NonUniqueResultException.class
+
+ - link:NonUniqueResultException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 3

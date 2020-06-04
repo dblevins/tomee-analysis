@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/RangeDeclarationBNF.class
+
+ - link:RangeDeclarationBNF-asmified.java[Asmified]
+
+== References
+

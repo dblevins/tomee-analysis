@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/WSS4JSecurityContextCreator.class
+
+ - link:WSS4JSecurityContextCreator-asmified.java[Asmified]
+
+== References
+

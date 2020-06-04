@@ -1,0 +1,6 @@
+= org/apache/openejb/client/CommandParser$Category.class
+
+ - link:CommandParser$Category-asmified.java[Asmified]
+
+== References
+

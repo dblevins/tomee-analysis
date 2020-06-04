@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/PersistenceException.class
+
+ - link:PersistenceException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 4

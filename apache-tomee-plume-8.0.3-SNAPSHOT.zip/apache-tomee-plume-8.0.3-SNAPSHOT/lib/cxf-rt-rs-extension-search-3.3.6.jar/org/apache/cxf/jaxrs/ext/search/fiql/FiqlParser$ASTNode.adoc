@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/fiql/FiqlParser$ASTNode.class
+
+ - link:FiqlParser$ASTNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Any.class
+
+ - link:Any-asmified.java[Asmified]
+
+== References
+

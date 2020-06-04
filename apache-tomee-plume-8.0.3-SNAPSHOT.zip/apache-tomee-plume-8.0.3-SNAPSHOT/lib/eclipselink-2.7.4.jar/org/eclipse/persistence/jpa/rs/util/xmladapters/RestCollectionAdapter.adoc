@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/util/xmladapters/RestCollectionAdapter.class
+
+ - link:RestCollectionAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 3

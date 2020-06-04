@@ -1,0 +1,8 @@
+= javax/ws/rs/core/AbstractMultivaluedMap.class
+
+ - link:AbstractMultivaluedMap-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.AbstractMultivaluedMap - 17
+ - javax.ws.rs.core.MultivaluedMap - 4

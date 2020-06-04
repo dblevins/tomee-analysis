@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser.class
+
+ - link:JPQLParser-asmified.java[Asmified]
+
+== References
+

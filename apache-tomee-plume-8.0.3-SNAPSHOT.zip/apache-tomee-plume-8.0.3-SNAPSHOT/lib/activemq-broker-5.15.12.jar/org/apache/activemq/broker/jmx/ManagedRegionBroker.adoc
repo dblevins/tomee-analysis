@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/jmx/ManagedRegionBroker.class
+
+ - link:ManagedRegionBroker-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.IllegalStateException - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/GeronimoTransactionManagerFactory$TransactionManagerMBean.class
+
+ - link:GeronimoTransactionManagerFactory$TransactionManagerMBean-asmified.java[Asmified]
+
+== References
+

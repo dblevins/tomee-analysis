@@ -1,0 +1,9 @@
+= javax/xml/ws/Dispatch.class
+
+ - link:Dispatch-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Response - 1
+ - javax.xml.ws.AsyncHandler - 1
+ - javax.xml.ws.BindingProvider - 1

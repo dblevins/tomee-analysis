@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/artifact/impl/StorageServiceSAMLArtifactMapEntryFactory.class
+
+ - link:StorageServiceSAMLArtifactMapEntryFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 21
+ - javax.annotation.Nullable - 2

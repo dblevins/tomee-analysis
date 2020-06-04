@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/xml/LoggingErrorHandler.class
+
+ - link:LoggingErrorHandler-asmified.java[Asmified]
+
+== References
+

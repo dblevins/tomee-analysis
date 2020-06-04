@@ -1,0 +1,6 @@
+= org/cryptacular/adapter/BlockCipherAdapter.class
+
+ - link:BlockCipherAdapter-asmified.java[Asmified]
+
+== References
+

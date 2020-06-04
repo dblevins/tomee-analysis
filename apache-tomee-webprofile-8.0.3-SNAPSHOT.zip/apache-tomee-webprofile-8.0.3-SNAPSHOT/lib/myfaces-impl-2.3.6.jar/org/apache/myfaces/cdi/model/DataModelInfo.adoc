@@ -1,0 +1,6 @@
+= org/apache/myfaces/cdi/model/DataModelInfo.class
+
+ - link:DataModelInfo-asmified.java[Asmified]
+
+== References
+

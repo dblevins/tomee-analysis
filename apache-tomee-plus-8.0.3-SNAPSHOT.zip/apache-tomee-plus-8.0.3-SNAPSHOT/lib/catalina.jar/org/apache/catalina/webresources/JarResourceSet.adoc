@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/JarResourceSet.class
+
+ - link:JarResourceSet-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/cryptacular/bean/HashBean.class
+
+ - link:HashBean-asmified.java[Asmified]
+
+== References
+

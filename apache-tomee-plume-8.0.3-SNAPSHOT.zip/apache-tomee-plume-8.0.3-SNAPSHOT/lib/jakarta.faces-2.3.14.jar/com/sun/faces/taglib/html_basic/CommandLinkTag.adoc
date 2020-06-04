@@ -1,0 +1,14 @@
+= com/sun/faces/taglib/html_basic/CommandLinkTag.class
+
+ - link:CommandLinkTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 217
+ - javax.faces.component.UICommand - 35
+ - javax.el.MethodExpression - 14
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.servlet.jsp.JspException - 6
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.event.MethodExpressionActionListener - 2
+ - javax.faces.event.ActionListener - 1

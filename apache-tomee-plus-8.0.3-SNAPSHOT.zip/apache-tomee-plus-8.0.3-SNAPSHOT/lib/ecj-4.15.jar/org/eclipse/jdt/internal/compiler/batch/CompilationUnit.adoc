@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/CompilationUnit.class
+
+ - link:CompilationUnit-asmified.java[Asmified]
+
+== References
+

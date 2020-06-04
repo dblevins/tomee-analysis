@@ -1,0 +1,10 @@
+= javax/persistence/criteria/PluralJoin.class
+
+ - link:PluralJoin-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute - 2
+ - javax.persistence.criteria.Join - 1
+ - javax.persistence.criteria.PluralJoin - 1
+ - javax.persistence.metamodel.Bindable - 1

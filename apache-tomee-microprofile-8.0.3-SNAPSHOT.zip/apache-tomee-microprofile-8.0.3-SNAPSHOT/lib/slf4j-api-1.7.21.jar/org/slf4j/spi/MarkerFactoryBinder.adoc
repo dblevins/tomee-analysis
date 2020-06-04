@@ -1,0 +1,6 @@
+= org/slf4j/spi/MarkerFactoryBinder.class
+
+ - link:MarkerFactoryBinder-asmified.java[Asmified]
+
+== References
+

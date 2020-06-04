@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/schema/impl/XSBooleanUnmarshaller.class
+
+ - link:XSBooleanUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

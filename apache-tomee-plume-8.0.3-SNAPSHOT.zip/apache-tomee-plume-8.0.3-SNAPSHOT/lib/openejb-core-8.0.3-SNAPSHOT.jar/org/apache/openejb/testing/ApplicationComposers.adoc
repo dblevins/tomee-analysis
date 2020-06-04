@@ -1,0 +1,14 @@
+= org/apache/openejb/testing/ApplicationComposers.class
+
+ - link:ApplicationComposers-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.servlet.http.HttpSession - 2
+ - javax.inject.Inject - 2
+ - javax.servlet.ServletContext - 2
+ - javax.enterprise.context.RequestScoped - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.enterprise.context.SessionScoped - 1

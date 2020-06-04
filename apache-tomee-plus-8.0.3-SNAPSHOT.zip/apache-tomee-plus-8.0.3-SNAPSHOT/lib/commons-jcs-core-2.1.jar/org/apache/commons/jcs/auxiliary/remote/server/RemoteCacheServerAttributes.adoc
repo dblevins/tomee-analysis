@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/remote/server/RemoteCacheServerAttributes.class
+
+ - link:RemoteCacheServerAttributes-asmified.java[Asmified]
+
+== References
+

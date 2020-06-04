@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/DumperOptions$Version.class
+
+ - link:DumperOptions$Version-asmified.java[Asmified]
+
+== References
+

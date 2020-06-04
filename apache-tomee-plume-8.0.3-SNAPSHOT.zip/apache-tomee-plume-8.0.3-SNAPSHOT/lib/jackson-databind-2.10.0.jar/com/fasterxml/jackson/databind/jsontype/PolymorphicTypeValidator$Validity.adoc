@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator$Validity.class
+
+ - link:PolymorphicTypeValidator$Validity-asmified.java[Asmified]
+
+== References
+

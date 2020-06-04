@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/remote/rmi/iiop/_RMIRemoteSessionControllerDispatcher_Tie.class
+
+ - link:_RMIRemoteSessionControllerDispatcher_Tie-asmified.java[Asmified]
+
+== References
+

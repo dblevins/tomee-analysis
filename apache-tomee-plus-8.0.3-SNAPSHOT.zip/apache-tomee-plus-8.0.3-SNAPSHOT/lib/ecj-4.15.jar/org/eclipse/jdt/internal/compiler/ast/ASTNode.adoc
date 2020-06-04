@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ASTNode.class
+
+ - link:ASTNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/PackageRenamer$PackageRenamerException.class
+
+ - link:PackageRenamer$PackageRenamerException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/BaseRepresenter$1.class
+
+ - link:BaseRepresenter$1-asmified.java[Asmified]
+
+== References
+

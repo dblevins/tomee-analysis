@@ -1,0 +1,8 @@
+= org/apache/tomee/microprofile/jwt/ConstraintAdapter.class
+
+ - link:ConstraintAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 1
+ - javax.validation.ConstraintValidatorContext - 1

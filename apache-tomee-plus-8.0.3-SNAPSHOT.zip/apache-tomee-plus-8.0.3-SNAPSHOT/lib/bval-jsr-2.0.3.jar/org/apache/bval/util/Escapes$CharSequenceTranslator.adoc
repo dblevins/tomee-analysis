@@ -1,0 +1,6 @@
+= org/apache/bval/util/Escapes$CharSequenceTranslator.class
+
+ - link:Escapes$CharSequenceTranslator-asmified.java[Asmified]
+
+== References
+

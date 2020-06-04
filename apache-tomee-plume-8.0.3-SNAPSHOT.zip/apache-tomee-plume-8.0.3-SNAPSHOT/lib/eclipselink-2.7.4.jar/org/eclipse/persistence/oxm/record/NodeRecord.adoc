@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/record/NodeRecord.class
+
+ - link:NodeRecord-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/impl/PooledSoftReference.class
+
+ - link:PooledSoftReference-asmified.java[Asmified]
+
+== References
+

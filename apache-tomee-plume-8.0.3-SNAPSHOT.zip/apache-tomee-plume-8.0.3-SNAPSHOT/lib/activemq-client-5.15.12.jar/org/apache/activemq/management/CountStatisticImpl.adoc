@@ -1,0 +1,7 @@
+= org/apache/activemq/management/CountStatisticImpl.class
+
+ - link:CountStatisticImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.CountStatistic - 1

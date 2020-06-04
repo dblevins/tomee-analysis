@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AutoClear.class
+
+ - link:AutoClear-asmified.java[Asmified]
+
+== References
+

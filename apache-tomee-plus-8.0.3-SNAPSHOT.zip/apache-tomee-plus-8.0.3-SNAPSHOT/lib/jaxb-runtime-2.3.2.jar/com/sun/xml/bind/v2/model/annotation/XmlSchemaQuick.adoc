@@ -1,0 +1,9 @@
+= com/sun/xml/bind/v2/model/annotation/XmlSchemaQuick.class
+
+ - link:XmlSchemaQuick-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlSchema - 19
+ - javax.xml.bind.annotation.XmlNsForm - 4
+ - javax.xml.bind.annotation.XmlNs - 2

@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$ShortDescriptionPropertyHandler.class
+
+ - link:PropertyHandlerManager$ShortDescriptionPropertyHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 4
+ - javax.faces.view.facelets.TagAttribute - 2
+ - javax.el.ELContext - 2
+ - javax.faces.view.facelets.FaceletContext - 2

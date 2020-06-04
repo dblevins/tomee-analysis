@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jaxb/attachment/AttachmentUnmarshallerAdapter.class
+
+ - link:AttachmentUnmarshallerAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 11
+ - javax.activation.DataHandler - 2

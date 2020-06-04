@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/nio/NioReadCompletionHandler.class
+
+ - link:NioReadCompletionHandler-asmified.java[Asmified]
+
+== References
+

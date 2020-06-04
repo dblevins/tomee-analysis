@@ -1,0 +1,9 @@
+= org/apache/myfaces/taglib/core/ValueChangeListenerTag.class
+
+ - link:ValueChangeListenerTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 12
+ - javax.faces.event.ValueChangeListener - 7
+ - javax.faces.component.EditableValueHolder - 6

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthnRequestImpl.class
+
+ - link:AuthnRequestImpl-asmified.java[Asmified]
+
+== References
+

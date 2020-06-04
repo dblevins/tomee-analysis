@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/spec/ElGamalGenParameterSpec.class
+
+ - link:ElGamalGenParameterSpec-asmified.java[Asmified]
+
+== References
+

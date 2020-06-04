@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/Beanspector.class
+
+ - link:Beanspector-asmified.java[Asmified]
+
+== References
+

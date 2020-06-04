@@ -1,0 +1,8 @@
+= org/apache/myfaces/config/element/ManagedProperty.class
+
+ - link:ManagedProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.el.ValueBinding - 1

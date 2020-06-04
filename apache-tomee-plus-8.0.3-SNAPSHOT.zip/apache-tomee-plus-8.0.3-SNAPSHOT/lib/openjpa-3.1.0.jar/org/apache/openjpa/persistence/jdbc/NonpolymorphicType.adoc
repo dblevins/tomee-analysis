@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/NonpolymorphicType.class
+
+ - link:NonpolymorphicType-asmified.java[Asmified]
+
+== References
+

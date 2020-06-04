@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/JAXBContextFactory$Event.class
+
+ - link:JAXBContextFactory$Event-asmified.java[Asmified]
+
+== References
+

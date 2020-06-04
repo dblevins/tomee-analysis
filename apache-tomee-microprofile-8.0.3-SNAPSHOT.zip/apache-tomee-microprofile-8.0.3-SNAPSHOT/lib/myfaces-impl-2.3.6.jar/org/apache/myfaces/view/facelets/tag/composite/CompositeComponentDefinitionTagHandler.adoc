@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentDefinitionTagHandler.class
+
+ - link:CompositeComponentDefinitionTagHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 41
+ - javax.faces.view.facelets.FaceletHandler - 18
+ - javax.faces.view.facelets.FaceletContext - 11
+ - javax.faces.view.Location - 2

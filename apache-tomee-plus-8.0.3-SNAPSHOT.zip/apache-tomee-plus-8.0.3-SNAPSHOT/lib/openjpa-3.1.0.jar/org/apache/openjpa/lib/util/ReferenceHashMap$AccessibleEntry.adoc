@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/ReferenceHashMap$AccessibleEntry.class
+
+ - link:ReferenceHashMap$AccessibleEntry-asmified.java[Asmified]
+
+== References
+

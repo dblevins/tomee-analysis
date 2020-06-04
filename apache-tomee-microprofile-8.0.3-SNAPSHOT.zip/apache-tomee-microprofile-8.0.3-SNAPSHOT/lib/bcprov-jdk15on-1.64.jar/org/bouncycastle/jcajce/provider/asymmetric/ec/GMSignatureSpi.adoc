@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/ec/GMSignatureSpi.class
+
+ - link:GMSignatureSpi-asmified.java[Asmified]
+
+== References
+

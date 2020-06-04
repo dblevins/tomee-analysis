@@ -1,0 +1,8 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JwtCookieAuthenticationFilter.class
+
+ - link:JwtCookieAuthenticationFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Cookie - 4
+ - javax.ws.rs.container.ContainerRequestContext - 2

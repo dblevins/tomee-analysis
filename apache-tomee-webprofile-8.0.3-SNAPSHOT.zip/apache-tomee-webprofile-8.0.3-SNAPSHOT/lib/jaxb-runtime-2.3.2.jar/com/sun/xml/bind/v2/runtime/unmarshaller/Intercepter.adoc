@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/Intercepter.class
+
+ - link:Intercepter-asmified.java[Asmified]
+
+== References
+

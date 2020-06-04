@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/ProviderFactory$NameKey.class
+
+ - link:ProviderFactory$NameKey-asmified.java[Asmified]
+
+== References
+

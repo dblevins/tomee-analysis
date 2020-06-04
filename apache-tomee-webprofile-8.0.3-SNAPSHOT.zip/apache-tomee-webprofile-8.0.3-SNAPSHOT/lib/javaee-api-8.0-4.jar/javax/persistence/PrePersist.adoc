@@ -1,0 +1,6 @@
+= javax/persistence/PrePersist.class
+
+ - link:PrePersist-asmified.java[Asmified]
+
+== References
+

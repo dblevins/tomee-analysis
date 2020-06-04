@@ -1,0 +1,6 @@
+= org/jose4j/http/SimpleResponse.class
+
+ - link:SimpleResponse-asmified.java[Asmified]
+
+== References
+

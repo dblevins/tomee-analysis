@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/AlgorithmIdentifierTypeUnmarshaller.class
+
+ - link:AlgorithmIdentifierTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/SyntheticArgumentBinding.class
+
+ - link:SyntheticArgumentBinding-asmified.java[Asmified]
+
+== References
+

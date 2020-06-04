@@ -1,0 +1,6 @@
+= org/apache/commons/collections/FastTreeMap$CollectionView.class
+
+ - link:FastTreeMap$CollectionView-asmified.java[Asmified]
+
+== References
+

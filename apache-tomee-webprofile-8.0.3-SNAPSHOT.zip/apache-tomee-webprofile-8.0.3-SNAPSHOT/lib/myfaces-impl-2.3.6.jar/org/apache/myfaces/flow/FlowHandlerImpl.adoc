@@ -1,0 +1,27 @@
+= org/apache/myfaces/flow/FlowHandlerImpl.class
+
+ - link:FlowHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 184
+ - javax.faces.flow.Flow - 152
+ - javax.faces.flow.FlowHandler - 57
+ - javax.faces.lifecycle.ClientWindow - 56
+ - javax.faces.context.ExternalContext - 48
+ - javax.faces.flow.FlowCallNode - 43
+ - javax.faces.application.ConfigurableNavigationHandler - 21
+ - javax.faces.flow.FlowNode - 14
+ - javax.faces.component.UIViewRoot - 14
+ - javax.faces.application.NavigationCase - 13
+ - javax.faces.application.Application - 12
+ - javax.el.ELContext - 8
+ - javax.faces.application.NavigationHandler - 6
+ - javax.el.MethodExpression - 6
+ - javax.el.ValueExpression - 6
+ - javax.faces.flow.Parameter - 6
+ - javax.faces.flow.ReturnNode - 3
+ - javax.faces.event.SystemEventListener - 3
+ - javax.faces.FacesWrapper - 3
+ - javax.faces.application.NavigationHandlerWrapper - 3
+ - javax.faces.event.SystemEvent - 1

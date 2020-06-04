@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsaddressing/util/WSAddressingSupport.class
+
+ - link:WSAddressingSupport-asmified.java[Asmified]
+
+== References
+

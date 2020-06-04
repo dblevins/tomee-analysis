@@ -1,0 +1,6 @@
+= org/apache/webbeans/spi/ScannerService.class
+
+ - link:ScannerService-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/c14n/implementations/Canonicalizer20010315WithComments.class
+
+ - link:Canonicalizer20010315WithComments-asmified.java[Asmified]
+
+== References
+

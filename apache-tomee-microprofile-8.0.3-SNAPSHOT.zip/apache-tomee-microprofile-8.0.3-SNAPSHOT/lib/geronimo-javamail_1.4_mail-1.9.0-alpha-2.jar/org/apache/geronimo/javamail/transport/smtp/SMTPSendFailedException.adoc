@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/transport/smtp/SMTPSendFailedException.class
+
+ - link:SMTPSendFailedException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Address - 6
+ - javax.mail.SendFailedException - 2

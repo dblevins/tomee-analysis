@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsaddressing/AttributedURI.class
+
+ - link:AttributedURI-asmified.java[Asmified]
+
+== References
+

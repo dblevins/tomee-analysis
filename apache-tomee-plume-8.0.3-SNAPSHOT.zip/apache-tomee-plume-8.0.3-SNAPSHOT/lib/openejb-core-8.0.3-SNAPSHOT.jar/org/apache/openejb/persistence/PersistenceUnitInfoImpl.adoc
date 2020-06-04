@@ -1,0 +1,13 @@
+= org/apache/openejb/persistence/PersistenceUnitInfoImpl.class
+
+ - link:PersistenceUnitInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 12
+ - javax.persistence.spi.PersistenceUnitTransactionType - 9
+ - javax.transaction.TransactionSynchronizationRegistry - 6
+ - javax.persistence.ValidationMode - 5
+ - javax.transaction.TransactionManager - 4
+ - javax.persistence.spi.ClassTransformer - 2
+ - javax.persistence.spi.PersistenceUnitInfo - 1

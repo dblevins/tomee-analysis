@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/PolicyContext.class
+
+ - link:PolicyContext-asmified.java[Asmified]
+
+== References
+

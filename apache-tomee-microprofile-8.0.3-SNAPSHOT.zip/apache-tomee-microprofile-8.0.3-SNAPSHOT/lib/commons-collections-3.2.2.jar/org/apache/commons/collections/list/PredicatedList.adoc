@@ -1,0 +1,6 @@
+= org/apache/commons/collections/list/PredicatedList.class
+
+ - link:PredicatedList-asmified.java[Asmified]
+
+== References
+

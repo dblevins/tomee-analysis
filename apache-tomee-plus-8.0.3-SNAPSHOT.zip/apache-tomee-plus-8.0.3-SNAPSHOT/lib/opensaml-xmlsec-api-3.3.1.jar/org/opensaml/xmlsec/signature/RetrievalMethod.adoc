@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/RetrievalMethod.class
+
+ - link:RetrievalMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6

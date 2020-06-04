@@ -1,0 +1,7 @@
+= org/apache/tomee/microprofile/jwt/cdi/ClaimBean$ClaimLiteral.class
+
+ - link:ClaimBean$ClaimLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/JMXEnabledPlatform.class
+
+ - link:JMXEnabledPlatform-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/IntLiteralMinValue.class
+
+ - link:IntLiteralMinValue-asmified.java[Asmified]
+
+== References
+

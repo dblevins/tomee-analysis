@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$PessimisticLockScope.class
+
+ - link:QueryHintsHandler$PessimisticLockScope-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PessimisticLockScope - 8

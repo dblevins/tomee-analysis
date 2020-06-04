@@ -1,0 +1,11 @@
+= org/apache/safeguard/impl/config/ConfigurationMapper.class
+
+ - link:ConfigurationMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 13
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.BeanManager - 3
+ - javax.inject.Inject - 2
+ - javax.enterprise.context.ApplicationScoped - 1

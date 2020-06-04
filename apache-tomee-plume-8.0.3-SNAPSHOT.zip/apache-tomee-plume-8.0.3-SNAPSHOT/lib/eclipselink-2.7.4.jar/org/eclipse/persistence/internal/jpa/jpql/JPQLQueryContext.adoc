@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/JPQLQueryContext.class
+
+ - link:JPQLQueryContext-asmified.java[Asmified]
+
+== References
+

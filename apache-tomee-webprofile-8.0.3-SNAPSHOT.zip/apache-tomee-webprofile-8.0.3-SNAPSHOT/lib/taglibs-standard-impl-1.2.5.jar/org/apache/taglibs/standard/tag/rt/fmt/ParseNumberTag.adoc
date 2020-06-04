@@ -1,0 +1,7 @@
+= org/apache/taglibs/standard/tag/rt/fmt/ParseNumberTag.class
+
+ - link:ParseNumberTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspTagException - 5

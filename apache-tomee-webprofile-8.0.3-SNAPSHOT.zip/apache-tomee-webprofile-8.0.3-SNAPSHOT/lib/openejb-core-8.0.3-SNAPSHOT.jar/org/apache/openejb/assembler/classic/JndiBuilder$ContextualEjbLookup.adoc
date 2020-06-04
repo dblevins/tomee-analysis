@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/JndiBuilder$ContextualEjbLookup.class
+
+ - link:JndiBuilder$ContextualEjbLookup-asmified.java[Asmified]
+
+== References
+

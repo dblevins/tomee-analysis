@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/DBCPDriverDataSource.class
+
+ - link:DBCPDriverDataSource-asmified.java[Asmified]
+
+== References
+

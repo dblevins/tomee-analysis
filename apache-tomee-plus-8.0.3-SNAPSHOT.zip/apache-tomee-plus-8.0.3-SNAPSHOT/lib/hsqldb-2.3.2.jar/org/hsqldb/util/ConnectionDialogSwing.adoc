@@ -1,0 +1,6 @@
+= org/hsqldb/util/ConnectionDialogSwing.class
+
+ - link:ConnectionDialogSwing-asmified.java[Asmified]
+
+== References
+

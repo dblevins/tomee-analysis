@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/PolymorphicMethodBinding.class
+
+ - link:PolymorphicMethodBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/AbstractLifecycleListener.class
+
+ - link:AbstractLifecycleListener-asmified.java[Asmified]
+
+== References
+

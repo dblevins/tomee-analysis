@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/tool/ExceptionDiagnostic.class
+
+ - link:ExceptionDiagnostic-asmified.java[Asmified]
+
+== References
+

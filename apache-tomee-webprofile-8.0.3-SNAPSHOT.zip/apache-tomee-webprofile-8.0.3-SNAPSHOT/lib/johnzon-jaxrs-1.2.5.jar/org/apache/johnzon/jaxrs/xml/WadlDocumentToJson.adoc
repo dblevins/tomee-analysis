@@ -1,0 +1,11 @@
+= org/apache/johnzon/jaxrs/xml/WadlDocumentToJson.class
+
+ - link:WadlDocumentToJson-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonObjectBuilder - 19
+ - javax.json.JsonBuilderFactory - 11
+ - javax.json.JsonArrayBuilder - 5
+ - javax.json.JsonObject - 1
+ - javax.json.Json - 1

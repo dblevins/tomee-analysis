@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$SerializedObject.class
+
+ - link:QueryHintsHandler$SerializedObject-asmified.java[Asmified]
+
+== References
+

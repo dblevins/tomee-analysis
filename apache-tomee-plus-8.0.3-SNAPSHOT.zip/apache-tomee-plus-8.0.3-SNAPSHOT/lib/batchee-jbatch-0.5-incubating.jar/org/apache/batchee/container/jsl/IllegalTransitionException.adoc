@@ -1,0 +1,6 @@
+= org/apache/batchee/container/jsl/IllegalTransitionException.class
+
+ - link:IllegalTransitionException-asmified.java[Asmified]
+
+== References
+

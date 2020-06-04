@@ -1,0 +1,7 @@
+= org/apache/cxf/microprofile/client/ContractComparator.class
+
+ - link:ContractComparator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configuration - 2

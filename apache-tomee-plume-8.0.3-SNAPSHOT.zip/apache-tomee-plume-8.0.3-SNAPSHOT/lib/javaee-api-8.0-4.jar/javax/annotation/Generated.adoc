@@ -1,0 +1,6 @@
+= javax/annotation/Generated.class
+
+ - link:Generated-asmified.java[Asmified]
+
+== References
+

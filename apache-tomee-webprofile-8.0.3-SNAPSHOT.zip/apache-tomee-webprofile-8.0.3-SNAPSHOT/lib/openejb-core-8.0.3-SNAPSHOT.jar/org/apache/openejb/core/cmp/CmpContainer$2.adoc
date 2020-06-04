@@ -1,0 +1,9 @@
+= org/apache/openejb/core/cmp/CmpContainer$2.class
+
+ - link:CmpContainer$2-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 2
+ - javax.ejb.EntityBean - 2
+ - javax.transaction.Synchronization - 1

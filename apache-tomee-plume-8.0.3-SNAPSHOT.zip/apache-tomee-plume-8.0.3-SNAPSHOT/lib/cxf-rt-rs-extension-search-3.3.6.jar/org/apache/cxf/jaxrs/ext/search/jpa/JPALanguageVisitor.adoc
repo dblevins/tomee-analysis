@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/jpa/JPALanguageVisitor.class
+
+ - link:JPALanguageVisitor-asmified.java[Asmified]
+
+== References
+

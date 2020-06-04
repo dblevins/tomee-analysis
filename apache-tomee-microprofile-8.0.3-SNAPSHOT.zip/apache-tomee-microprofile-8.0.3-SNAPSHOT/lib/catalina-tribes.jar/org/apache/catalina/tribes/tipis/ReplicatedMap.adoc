@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/tipis/ReplicatedMap.class
+
+ - link:ReplicatedMap-asmified.java[Asmified]
+
+== References
+

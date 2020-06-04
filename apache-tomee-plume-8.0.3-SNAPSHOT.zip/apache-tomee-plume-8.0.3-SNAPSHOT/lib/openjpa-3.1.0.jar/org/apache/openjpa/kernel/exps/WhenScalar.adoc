@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/WhenScalar.class
+
+ - link:WhenScalar-asmified.java[Asmified]
+
+== References
+

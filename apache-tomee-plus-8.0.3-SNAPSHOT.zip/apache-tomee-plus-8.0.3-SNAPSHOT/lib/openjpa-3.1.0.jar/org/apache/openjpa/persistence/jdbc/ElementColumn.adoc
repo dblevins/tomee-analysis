@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/ElementColumn.class
+
+ - link:ElementColumn-asmified.java[Asmified]
+
+== References
+

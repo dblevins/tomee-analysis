@@ -1,0 +1,6 @@
+= org/apache/openejb/core/cmp/CmpUtil.class
+
+ - link:CmpUtil-asmified.java[Asmified]
+
+== References
+

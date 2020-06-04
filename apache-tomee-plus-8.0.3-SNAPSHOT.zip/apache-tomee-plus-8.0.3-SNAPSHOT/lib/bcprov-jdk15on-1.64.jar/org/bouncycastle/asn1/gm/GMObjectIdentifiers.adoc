@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/gm/GMObjectIdentifiers.class
+
+ - link:GMObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

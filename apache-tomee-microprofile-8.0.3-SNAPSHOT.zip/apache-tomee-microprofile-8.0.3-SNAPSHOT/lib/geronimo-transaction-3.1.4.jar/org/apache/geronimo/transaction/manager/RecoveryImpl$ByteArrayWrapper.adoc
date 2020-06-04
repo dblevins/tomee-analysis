@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/RecoveryImpl$ByteArrayWrapper.class
+
+ - link:RecoveryImpl$ByteArrayWrapper-asmified.java[Asmified]
+
+== References
+

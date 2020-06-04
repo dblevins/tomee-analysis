@@ -1,0 +1,7 @@
+= org/apache/openejb/bval/BValCdiFilter.class
+
+ - link:BValCdiFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 2

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/ImmutableValueHandler.class
+
+ - link:ImmutableValueHandler-asmified.java[Asmified]
+
+== References
+

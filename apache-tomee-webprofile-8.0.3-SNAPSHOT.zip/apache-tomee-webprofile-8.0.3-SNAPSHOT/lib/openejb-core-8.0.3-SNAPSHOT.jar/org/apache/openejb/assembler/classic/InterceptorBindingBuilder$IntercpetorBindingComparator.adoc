@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/InterceptorBindingBuilder$IntercpetorBindingComparator.class
+
+ - link:InterceptorBindingBuilder$IntercpetorBindingComparator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/DecoderEntry.class
+
+ - link:DecoderEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Decoder - 3

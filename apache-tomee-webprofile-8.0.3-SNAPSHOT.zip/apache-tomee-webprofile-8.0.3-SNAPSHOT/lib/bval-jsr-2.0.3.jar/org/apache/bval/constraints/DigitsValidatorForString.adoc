@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/DigitsValidatorForString.class
+
+ - link:DigitsValidatorForString-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Digits - 6
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 1

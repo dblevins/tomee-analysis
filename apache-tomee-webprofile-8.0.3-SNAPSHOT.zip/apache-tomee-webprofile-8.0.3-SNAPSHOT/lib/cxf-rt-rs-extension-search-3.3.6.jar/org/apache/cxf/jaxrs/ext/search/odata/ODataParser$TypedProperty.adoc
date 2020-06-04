@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/odata/ODataParser$TypedProperty.class
+
+ - link:ODataParser$TypedProperty-asmified.java[Asmified]
+
+== References
+

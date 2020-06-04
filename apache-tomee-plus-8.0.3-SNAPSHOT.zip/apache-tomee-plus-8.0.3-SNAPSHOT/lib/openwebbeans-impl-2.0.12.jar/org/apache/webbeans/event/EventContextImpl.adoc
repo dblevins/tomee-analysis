@@ -1,0 +1,8 @@
+= org/apache/webbeans/event/EventContextImpl.class
+
+ - link:EventContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.EventMetadata - 5
+ - javax.enterprise.inject.spi.EventContext - 1

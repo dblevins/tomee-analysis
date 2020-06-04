@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor.class
+
+ - link:WSS4JOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 1

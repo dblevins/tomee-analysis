@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/cache/EHCacheReplayCacheFactory.class
+
+ - link:EHCacheReplayCacheFactory-asmified.java[Asmified]
+
+== References
+

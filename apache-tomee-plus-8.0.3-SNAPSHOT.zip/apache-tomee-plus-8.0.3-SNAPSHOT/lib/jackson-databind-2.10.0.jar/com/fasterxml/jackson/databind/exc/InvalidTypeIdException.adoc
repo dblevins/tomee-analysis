@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/exc/InvalidTypeIdException.class
+
+ - link:InvalidTypeIdException-asmified.java[Asmified]
+
+== References
+

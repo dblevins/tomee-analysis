@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/security/impl/SAMLMDClientCertAuthSecurityHandler.class
+
+ - link:SAMLMDClientCertAuthSecurityHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 3

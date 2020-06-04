@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/BinaryExchange.class
+
+ - link:BinaryExchange-asmified.java[Asmified]
+
+== References
+

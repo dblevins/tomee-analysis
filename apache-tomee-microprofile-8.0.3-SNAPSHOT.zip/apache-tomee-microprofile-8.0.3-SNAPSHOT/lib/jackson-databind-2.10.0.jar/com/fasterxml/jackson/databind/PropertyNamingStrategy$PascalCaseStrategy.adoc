@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/PropertyNamingStrategy$PascalCaseStrategy.class
+
+ - link:PropertyNamingStrategy$PascalCaseStrategy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/Soap12.class
+
+ - link:Soap12-asmified.java[Asmified]
+
+== References
+

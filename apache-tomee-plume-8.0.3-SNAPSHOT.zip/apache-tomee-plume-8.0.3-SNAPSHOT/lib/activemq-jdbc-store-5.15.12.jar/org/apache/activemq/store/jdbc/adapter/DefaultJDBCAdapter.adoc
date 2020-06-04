@@ -1,0 +1,7 @@
+= org/apache/activemq/store/jdbc/adapter/DefaultJDBCAdapter.class
+
+ - link:DefaultJDBCAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.DatatypeConverter - 6

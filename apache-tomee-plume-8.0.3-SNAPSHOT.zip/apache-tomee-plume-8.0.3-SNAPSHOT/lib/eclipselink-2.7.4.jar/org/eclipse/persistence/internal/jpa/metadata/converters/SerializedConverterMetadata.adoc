@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/converters/SerializedConverterMetadata.class
+
+ - link:SerializedConverterMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/DescriptorHelper.class
+
+ - link:DescriptorHelper-asmified.java[Asmified]
+
+== References
+

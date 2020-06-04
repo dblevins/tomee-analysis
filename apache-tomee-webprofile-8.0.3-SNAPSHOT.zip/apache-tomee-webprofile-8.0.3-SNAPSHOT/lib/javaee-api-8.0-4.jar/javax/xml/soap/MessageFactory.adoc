@@ -1,0 +1,12 @@
+= javax/xml/soap/MessageFactory.class
+
+ - link:MessageFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MessageFactory - 7
+ - javax.xml.soap.SOAPException - 6
+ - javax.xml.soap.SAAJMetaFactory - 3
+ - javax.xml.soap.SOAPMessage - 2
+ - javax.xml.soap.MimeHeaders - 1
+ - javax.xml.soap.FactoryFinder - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/PersistenceRootUrl.class
+
+ - link:PersistenceRootUrl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/util/Util$EncodingErrorCollector.class
+
+ - link:Util$EncodingErrorCollector-asmified.java[Asmified]
+
+== References
+

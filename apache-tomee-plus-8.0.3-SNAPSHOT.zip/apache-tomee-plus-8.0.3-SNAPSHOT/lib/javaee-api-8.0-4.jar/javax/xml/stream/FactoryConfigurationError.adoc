@@ -1,0 +1,6 @@
+= javax/xml/stream/FactoryConfigurationError.class
+
+ - link:FactoryConfigurationError-asmified.java[Asmified]
+
+== References
+

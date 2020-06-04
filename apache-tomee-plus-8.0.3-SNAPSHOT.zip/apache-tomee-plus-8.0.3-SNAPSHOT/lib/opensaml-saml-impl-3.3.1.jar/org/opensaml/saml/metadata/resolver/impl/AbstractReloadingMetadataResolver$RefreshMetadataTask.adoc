@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/impl/AbstractReloadingMetadataResolver$RefreshMetadataTask.class
+
+ - link:AbstractReloadingMetadataResolver$RefreshMetadataTask-asmified.java[Asmified]
+
+== References
+

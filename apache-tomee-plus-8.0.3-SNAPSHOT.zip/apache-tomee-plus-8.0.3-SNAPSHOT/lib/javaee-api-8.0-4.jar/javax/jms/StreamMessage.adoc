@@ -1,0 +1,8 @@
+= javax/jms/StreamMessage.class
+
+ - link:StreamMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 24
+ - javax.jms.Message - 1

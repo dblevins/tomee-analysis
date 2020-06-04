@@ -1,0 +1,9 @@
+= javax/faces/application/Resource.class
+
+ - link:Resource-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ViewResource - 2
+ - javax.faces.application.Resource - 1
+ - javax.faces.context.FacesContext - 1

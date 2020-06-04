@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryStatistics$Default.class
+
+ - link:QueryStatistics$Default-asmified.java[Asmified]
+
+== References
+

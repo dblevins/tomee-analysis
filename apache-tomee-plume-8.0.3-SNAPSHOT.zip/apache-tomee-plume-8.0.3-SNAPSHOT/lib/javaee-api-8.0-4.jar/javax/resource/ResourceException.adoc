@@ -1,0 +1,7 @@
+= javax/resource/ResourceException.class
+
+ - link:ResourceException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 1

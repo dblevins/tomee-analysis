@@ -1,0 +1,6 @@
+= org/hsqldb/lib/LongValueHashMap$KeySet.class
+
+ - link:LongValueHashMap$KeySet-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/persistence/PersistenceUtil.class
+
+ - link:PersistenceUtil-asmified.java[Asmified]
+
+== References
+

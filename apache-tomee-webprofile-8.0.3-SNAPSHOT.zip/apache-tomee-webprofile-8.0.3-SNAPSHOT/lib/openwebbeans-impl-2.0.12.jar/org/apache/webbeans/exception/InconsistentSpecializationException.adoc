@@ -1,0 +1,7 @@
+= org/apache/webbeans/exception/InconsistentSpecializationException.class
+
+ - link:InconsistentSpecializationException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DefinitionException - 6

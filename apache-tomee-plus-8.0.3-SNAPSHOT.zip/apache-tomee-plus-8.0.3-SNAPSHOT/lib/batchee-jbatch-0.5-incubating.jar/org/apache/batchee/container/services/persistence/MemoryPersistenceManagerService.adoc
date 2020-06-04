@@ -1,0 +1,12 @@
+= org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService.class
+
+ - link:MemoryPersistenceManagerService-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.Metric$MetricType - 48
+ - javax.batch.runtime.Metric - 44
+ - javax.batch.runtime.BatchStatus - 30
+ - javax.batch.runtime.JobInstance - 15
+ - javax.batch.runtime.StepExecution - 6
+ - javax.batch.operations.NoSuchJobExecutionException - 4

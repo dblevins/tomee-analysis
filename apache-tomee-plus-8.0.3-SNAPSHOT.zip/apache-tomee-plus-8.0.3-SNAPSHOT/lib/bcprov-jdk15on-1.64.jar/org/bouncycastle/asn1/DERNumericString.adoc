@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/DERNumericString.class
+
+ - link:DERNumericString-asmified.java[Asmified]
+
+== References
+

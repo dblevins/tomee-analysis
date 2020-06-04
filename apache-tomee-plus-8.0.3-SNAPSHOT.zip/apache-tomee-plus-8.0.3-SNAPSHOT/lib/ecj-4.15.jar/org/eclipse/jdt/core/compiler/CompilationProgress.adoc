@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/compiler/CompilationProgress.class
+
+ - link:CompilationProgress-asmified.java[Asmified]
+
+== References
+

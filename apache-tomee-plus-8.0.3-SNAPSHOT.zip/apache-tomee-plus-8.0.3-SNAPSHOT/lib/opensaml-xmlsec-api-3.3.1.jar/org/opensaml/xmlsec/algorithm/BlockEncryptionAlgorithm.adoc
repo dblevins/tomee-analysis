@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/BlockEncryptionAlgorithm.class
+
+ - link:BlockEncryptionAlgorithm-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

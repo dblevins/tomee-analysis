@@ -1,0 +1,9 @@
+= org/apache/openejb/cdi/CompositeBeans.class
+
+ - link:CompositeBeans-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlTransient - 5
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

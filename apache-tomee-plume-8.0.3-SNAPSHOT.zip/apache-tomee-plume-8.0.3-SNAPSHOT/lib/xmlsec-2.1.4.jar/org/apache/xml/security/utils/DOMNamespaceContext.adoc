@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/DOMNamespaceContext.class
+
+ - link:DOMNamespaceContext-asmified.java[Asmified]
+
+== References
+

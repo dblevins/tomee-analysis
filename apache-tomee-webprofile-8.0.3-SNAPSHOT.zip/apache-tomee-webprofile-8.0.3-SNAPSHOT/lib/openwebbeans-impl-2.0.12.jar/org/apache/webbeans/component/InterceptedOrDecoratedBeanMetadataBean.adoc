@@ -1,0 +1,10 @@
+= org/apache/webbeans/component/InterceptedOrDecoratedBeanMetadataBean.class
+
+ - link:InterceptedOrDecoratedBeanMetadataBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.enterprise.inject.spi.Producer - 1

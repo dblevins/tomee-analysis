@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/AbstractSTSClient$1InternalProtectionToken.class
+
+ - link:AbstractSTSClient$1InternalProtectionToken-asmified.java[Asmified]
+
+== References
+

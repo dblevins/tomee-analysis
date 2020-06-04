@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/list/SetUniqueList$SetListIterator.class
+
+ - link:SetUniqueList$SetListIterator-asmified.java[Asmified]
+
+== References
+

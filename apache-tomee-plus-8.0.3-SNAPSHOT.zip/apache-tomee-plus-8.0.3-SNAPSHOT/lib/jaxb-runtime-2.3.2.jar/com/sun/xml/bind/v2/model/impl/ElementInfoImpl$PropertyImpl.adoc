@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/model/impl/ElementInfoImpl$PropertyImpl.class
+
+ - link:ElementInfoImpl$PropertyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.MimeType - 2
+ - javax.xml.bind.annotation.XmlElementDecl - 2

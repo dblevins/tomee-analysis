@@ -1,0 +1,11 @@
+= com/sun/faces/application/view/FaceletPartialStateManagementStrategy$3.class
+
+ - link:FaceletPartialStateManagementStrategy$3-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.component.visit.VisitResult - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.component.visit.VisitCallback - 1

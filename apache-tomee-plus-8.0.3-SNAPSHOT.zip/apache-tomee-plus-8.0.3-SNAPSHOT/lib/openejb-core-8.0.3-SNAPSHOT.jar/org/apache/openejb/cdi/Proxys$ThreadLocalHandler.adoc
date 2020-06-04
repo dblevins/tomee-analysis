@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/Proxys$ThreadLocalHandler.class
+
+ - link:Proxys$ThreadLocalHandler-asmified.java[Asmified]
+
+== References
+

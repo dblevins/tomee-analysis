@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$BooleanValueExpressionPropertyHandler.class
+
+ - link:PropertyHandlerManager$BooleanValueExpressionPropertyHandler-asmified.java[Asmified]
+
+== References
+

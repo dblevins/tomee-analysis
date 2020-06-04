@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/resolver/SimpleTraversableResolver.class
+
+ - link:SimpleTraversableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 2
+ - javax.validation.Path - 2
+ - javax.validation.TraversableResolver - 1

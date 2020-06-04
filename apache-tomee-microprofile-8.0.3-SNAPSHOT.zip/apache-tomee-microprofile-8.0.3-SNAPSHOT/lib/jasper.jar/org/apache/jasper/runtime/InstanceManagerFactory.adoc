@@ -1,0 +1,8 @@
+= org/apache/jasper/runtime/InstanceManagerFactory.class
+
+ - link:InstanceManagerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 2
+ - javax.servlet.ServletContext - 2

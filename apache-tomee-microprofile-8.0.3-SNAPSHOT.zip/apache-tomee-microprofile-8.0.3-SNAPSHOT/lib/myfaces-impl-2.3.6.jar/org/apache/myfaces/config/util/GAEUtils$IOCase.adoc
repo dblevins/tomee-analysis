@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/util/GAEUtils$IOCase.class
+
+ - link:GAEUtils$IOCase-asmified.java[Asmified]
+
+== References
+

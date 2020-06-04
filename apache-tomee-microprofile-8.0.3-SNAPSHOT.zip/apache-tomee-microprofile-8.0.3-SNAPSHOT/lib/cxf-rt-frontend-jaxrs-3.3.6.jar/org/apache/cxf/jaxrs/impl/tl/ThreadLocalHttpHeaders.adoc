@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/tl/ThreadLocalHttpHeaders.class
+
+ - link:ThreadLocalHttpHeaders-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.HttpHeaders - 22
+ - javax.ws.rs.core.MediaType - 3
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.Cookie - 1

@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Nullif.class
+
+ - link:Expressions$Nullif-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 24
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Selection - 2

@@ -1,0 +1,6 @@
+= org/apache/geronimo/connector/outbound/connectionmanagerconfig/SinglePool.class
+
+ - link:SinglePool-asmified.java[Asmified]
+
+== References
+

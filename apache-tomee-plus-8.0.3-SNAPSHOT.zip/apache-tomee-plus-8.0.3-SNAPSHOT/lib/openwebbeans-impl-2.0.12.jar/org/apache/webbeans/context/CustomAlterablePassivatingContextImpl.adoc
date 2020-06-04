@@ -1,0 +1,9 @@
+= org/apache/webbeans/context/CustomAlterablePassivatingContextImpl.class
+
+ - link:CustomAlterablePassivatingContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 4
+ - javax.enterprise.context.spi.AlterableContext - 4
+ - javax.enterprise.context.spi.Context - 2

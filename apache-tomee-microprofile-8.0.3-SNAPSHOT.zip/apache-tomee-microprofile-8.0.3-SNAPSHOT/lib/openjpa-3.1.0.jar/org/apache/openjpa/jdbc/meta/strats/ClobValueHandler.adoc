@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/ClobValueHandler.class
+
+ - link:ClobValueHandler-asmified.java[Asmified]
+
+== References
+

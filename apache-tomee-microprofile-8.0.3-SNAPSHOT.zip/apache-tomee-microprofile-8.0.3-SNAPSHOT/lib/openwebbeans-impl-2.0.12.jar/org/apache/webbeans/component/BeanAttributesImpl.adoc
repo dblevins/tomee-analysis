@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/BeanAttributesImpl.class
+
+ - link:BeanAttributesImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 8
+ - javax.enterprise.inject.spi.Bean - 8
+ - javax.enterprise.context.Dependent - 2

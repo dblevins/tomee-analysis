@@ -1,0 +1,6 @@
+= org/apache/xml/security/c14n/implementations/CanonicalizerPhysical.class
+
+ - link:CanonicalizerPhysical-asmified.java[Asmified]
+
+== References
+

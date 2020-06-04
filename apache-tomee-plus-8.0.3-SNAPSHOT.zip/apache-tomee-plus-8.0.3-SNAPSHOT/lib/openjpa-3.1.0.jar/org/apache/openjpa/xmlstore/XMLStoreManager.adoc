@@ -1,0 +1,6 @@
+= org/apache/openjpa/xmlstore/XMLStoreManager.class
+
+ - link:XMLStoreManager-asmified.java[Asmified]
+
+== References
+

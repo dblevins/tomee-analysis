@@ -1,0 +1,7 @@
+= javax/faces/component/html/HtmlOutputLabel$PropertyKeys.class
+
+ - link:HtmlOutputLabel$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.html.HtmlOutputLabel$PropertyKeys - 121

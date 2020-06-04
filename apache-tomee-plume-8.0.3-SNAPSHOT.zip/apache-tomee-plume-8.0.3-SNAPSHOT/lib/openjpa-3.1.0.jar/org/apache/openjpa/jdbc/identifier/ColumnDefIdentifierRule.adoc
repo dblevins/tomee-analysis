@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/identifier/ColumnDefIdentifierRule.class
+
+ - link:ColumnDefIdentifierRule-asmified.java[Asmified]
+
+== References
+

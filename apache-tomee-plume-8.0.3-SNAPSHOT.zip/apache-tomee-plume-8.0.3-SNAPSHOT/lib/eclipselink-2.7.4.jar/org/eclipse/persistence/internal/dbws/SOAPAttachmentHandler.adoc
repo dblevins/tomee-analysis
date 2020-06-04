@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/dbws/SOAPAttachmentHandler.class
+
+ - link:SOAPAttachmentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 8
+ - javax.activation.DataSource - 2

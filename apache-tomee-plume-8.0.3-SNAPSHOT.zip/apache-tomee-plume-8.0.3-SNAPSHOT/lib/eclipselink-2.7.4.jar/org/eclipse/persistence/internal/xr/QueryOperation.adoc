@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/xr/QueryOperation.class
+
+ - link:QueryOperation-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

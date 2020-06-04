@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/BigDecimalConverter.class
+
+ - link:BigDecimalConverter-asmified.java[Asmified]
+
+== References
+

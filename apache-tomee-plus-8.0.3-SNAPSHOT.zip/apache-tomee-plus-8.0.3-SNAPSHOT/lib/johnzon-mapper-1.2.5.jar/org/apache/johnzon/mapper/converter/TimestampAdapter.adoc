@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/TimestampAdapter.class
+
+ - link:TimestampAdapter-asmified.java[Asmified]
+
+== References
+

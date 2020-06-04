@@ -1,0 +1,10 @@
+= org/apache/myfaces/component/validate/_ValueReferenceResolver.class
+
+ - link:_ValueReferenceResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueReference - 7
+ - javax.el.ValueExpression - 4
+ - javax.faces.el.CompositeComponentExpressionHolder - 3
+ - javax.el.ELContext - 3

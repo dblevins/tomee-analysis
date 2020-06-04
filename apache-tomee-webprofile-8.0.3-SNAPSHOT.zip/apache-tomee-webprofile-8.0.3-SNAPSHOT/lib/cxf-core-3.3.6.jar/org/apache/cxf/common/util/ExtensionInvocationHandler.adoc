@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ExtensionInvocationHandler.class
+
+ - link:ExtensionInvocationHandler-asmified.java[Asmified]
+
+== References
+

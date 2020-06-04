@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/blueprint/ExternalAttachmentProviderBPDefinitionParser.class
+
+ - link:ExternalAttachmentProviderBPDefinitionParser-asmified.java[Asmified]
+
+== References
+

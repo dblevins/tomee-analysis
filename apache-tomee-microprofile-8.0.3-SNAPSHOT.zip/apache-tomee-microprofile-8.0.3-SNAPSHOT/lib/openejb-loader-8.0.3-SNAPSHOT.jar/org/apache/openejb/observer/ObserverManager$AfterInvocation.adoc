@@ -1,0 +1,6 @@
+= org/apache/openejb/observer/ObserverManager$AfterInvocation.class
+
+ - link:ObserverManager$AfterInvocation-asmified.java[Asmified]
+
+== References
+

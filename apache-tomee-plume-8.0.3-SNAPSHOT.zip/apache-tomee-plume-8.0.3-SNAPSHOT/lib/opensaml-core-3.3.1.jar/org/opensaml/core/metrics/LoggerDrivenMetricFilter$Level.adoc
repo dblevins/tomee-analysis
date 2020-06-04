@@ -1,0 +1,6 @@
+= org/opensaml/core/metrics/LoggerDrivenMetricFilter$Level.class
+
+ - link:LoggerDrivenMetricFilter$Level-asmified.java[Asmified]
+
+== References
+

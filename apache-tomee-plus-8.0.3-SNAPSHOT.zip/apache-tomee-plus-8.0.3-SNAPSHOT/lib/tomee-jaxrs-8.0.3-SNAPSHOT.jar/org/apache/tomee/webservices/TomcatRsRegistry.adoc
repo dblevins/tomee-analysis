@@ -1,0 +1,8 @@
+= org/apache/tomee/webservices/TomcatRsRegistry.class
+
+ - link:TomcatRsRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.DispatcherType - 4
+ - javax.servlet.Filter - 1

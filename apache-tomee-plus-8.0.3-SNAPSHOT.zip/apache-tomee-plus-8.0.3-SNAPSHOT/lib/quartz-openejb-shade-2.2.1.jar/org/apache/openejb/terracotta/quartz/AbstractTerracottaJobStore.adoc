@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/AbstractTerracottaJobStore.class
+
+ - link:AbstractTerracottaJobStore-asmified.java[Asmified]
+
+== References
+

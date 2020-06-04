@@ -1,0 +1,6 @@
+= com/sun/faces/application/WebPrintWriter$NoOpWriter.class
+
+ - link:WebPrintWriter$NoOpWriter-asmified.java[Asmified]
+
+== References
+

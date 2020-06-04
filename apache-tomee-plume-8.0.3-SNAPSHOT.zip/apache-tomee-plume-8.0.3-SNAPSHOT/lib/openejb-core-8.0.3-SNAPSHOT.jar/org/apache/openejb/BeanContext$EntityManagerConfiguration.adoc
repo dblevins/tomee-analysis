@@ -1,0 +1,7 @@
+= org/apache/openejb/BeanContext$EntityManagerConfiguration.class
+
+ - link:BeanContext$EntityManagerConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SynchronizationType - 5

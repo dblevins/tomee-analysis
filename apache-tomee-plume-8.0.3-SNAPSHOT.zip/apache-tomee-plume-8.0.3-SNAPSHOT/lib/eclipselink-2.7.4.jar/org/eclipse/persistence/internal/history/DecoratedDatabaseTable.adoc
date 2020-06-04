@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/history/DecoratedDatabaseTable.class
+
+ - link:DecoratedDatabaseTable-asmified.java[Asmified]
+
+== References
+

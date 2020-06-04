@@ -1,0 +1,7 @@
+= org/apache/johnzon/jsonb/converter/JsonbZonedDateTimeConverter.class
+
+ - link:JsonbZonedDateTimeConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbDateFormat - 2

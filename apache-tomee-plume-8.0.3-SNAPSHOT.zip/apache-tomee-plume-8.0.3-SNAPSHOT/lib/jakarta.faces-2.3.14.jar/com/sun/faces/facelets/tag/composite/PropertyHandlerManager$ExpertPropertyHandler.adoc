@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$ExpertPropertyHandler.class
+
+ - link:PropertyHandlerManager$ExpertPropertyHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 2
+ - javax.faces.view.facelets.TagAttribute - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.el.ELContext - 1

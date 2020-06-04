@@ -1,0 +1,6 @@
+= org/eclipse/persistence/expressions/spatial/SpatialExpressionFactory.class
+
+ - link:SpatialExpressionFactory-asmified.java[Asmified]
+
+== References
+

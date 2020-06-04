@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLResolver.class
+
+ - link:XMLResolver-asmified.java[Asmified]
+
+== References
+

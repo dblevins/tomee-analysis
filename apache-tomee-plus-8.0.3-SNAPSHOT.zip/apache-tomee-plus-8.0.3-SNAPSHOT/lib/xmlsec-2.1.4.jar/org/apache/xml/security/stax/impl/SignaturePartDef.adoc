@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/SignaturePartDef.class
+
+ - link:SignaturePartDef-asmified.java[Asmified]
+
+== References
+

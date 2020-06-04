@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/OpenJPAEnum.class
+
+ - link:OpenJPAEnum-asmified.java[Asmified]
+
+== References
+

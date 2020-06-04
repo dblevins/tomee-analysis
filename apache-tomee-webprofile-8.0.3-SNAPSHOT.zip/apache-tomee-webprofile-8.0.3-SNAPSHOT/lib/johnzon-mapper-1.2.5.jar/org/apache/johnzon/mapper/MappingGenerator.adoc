@@ -1,0 +1,7 @@
+= org/apache/johnzon/mapper/MappingGenerator.class
+
+ - link:MappingGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 4

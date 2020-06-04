@@ -1,0 +1,8 @@
+= javax/faces/convert/Converter.class
+
+ - link:Converter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIComponent - 2

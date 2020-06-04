@@ -1,0 +1,6 @@
+= org/apache/catalina/storeconfig/StoreDescription.class
+
+ - link:StoreDescription-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/impl/DefaultResourceLibraryContractsProviderFactory.class
+
+ - link:DefaultResourceLibraryContractsProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.FacesException - 2

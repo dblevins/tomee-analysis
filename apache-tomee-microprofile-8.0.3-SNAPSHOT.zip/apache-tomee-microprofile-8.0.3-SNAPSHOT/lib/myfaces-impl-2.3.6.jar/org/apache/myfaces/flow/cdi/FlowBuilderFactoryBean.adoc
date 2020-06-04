@@ -1,0 +1,19 @@
+= org/apache/myfaces/flow/cdi/FlowBuilderFactoryBean.class
+
+ - link:FlowBuilderFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.flow.Flow - 3
+ - javax.enterprise.inject.spi.BeanManager - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.inject.spi.Producer - 2
+ - javax.faces.flow.builder.FlowBuilderParameter - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.inject.Inject - 1
+ - javax.faces.flow.builder.FlowBuilder - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.inject.Named - 1

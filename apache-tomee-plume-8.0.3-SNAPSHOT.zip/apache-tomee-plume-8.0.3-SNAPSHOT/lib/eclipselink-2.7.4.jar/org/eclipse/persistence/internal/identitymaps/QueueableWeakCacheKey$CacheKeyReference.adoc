@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/QueueableWeakCacheKey$CacheKeyReference.class
+
+ - link:QueueableWeakCacheKey$CacheKeyReference-asmified.java[Asmified]
+
+== References
+

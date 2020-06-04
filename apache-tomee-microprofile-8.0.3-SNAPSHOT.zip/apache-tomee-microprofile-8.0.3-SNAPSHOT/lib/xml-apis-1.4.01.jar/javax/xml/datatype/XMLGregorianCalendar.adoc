@@ -1,0 +1,6 @@
+= javax/xml/datatype/XMLGregorianCalendar.class
+
+ - link:XMLGregorianCalendar-asmified.java[Asmified]
+
+== References
+

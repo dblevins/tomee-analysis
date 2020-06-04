@@ -1,0 +1,7 @@
+= org/apache/activemq/ra/ActiveMQEndpointActivationKey.class
+
+ - link:ActiveMQEndpointActivationKey-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 9

@@ -1,0 +1,7 @@
+= org/apache/myfaces/flow/FlowNodeImpl.class
+
+ - link:FlowNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.FlowNode - 2

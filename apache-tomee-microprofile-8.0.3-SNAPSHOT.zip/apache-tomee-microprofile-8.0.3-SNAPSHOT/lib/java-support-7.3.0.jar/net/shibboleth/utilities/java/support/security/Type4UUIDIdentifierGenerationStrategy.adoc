@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/security/Type4UUIDIdentifierGenerationStrategy.class
+
+ - link:Type4UUIDIdentifierGenerationStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.concurrent.ThreadSafe - 1
+ - javax.annotation.Nonnull - 1

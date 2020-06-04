@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/graphs/NamedEntityGraphMetadata.class
+
+ - link:NamedEntityGraphMetadata-asmified.java[Asmified]
+
+== References
+

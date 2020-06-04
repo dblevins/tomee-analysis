@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/foundation/AbstractDirectMapping.class
+
+ - link:AbstractDirectMapping-asmified.java[Asmified]
+
+== References
+

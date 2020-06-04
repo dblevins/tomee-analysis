@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/search/SearchContextImpl.class
+
+ - link:SearchContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 10

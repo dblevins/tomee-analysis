@@ -1,0 +1,7 @@
+= org/eclipse/persistence/sdo/helper/jaxb/JAXBValueStore.class
+
+ - link:JAXBValueStore-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 4

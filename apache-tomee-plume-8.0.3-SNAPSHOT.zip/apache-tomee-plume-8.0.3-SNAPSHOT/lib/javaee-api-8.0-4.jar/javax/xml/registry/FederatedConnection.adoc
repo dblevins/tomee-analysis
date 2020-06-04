@@ -1,0 +1,7 @@
+= javax/xml/registry/FederatedConnection.class
+
+ - link:FederatedConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.Connection - 1

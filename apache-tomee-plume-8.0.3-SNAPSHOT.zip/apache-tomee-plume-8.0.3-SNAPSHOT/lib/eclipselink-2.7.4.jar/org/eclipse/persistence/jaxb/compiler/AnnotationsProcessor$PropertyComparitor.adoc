@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/AnnotationsProcessor$PropertyComparitor.class
+
+ - link:AnnotationsProcessor$PropertyComparitor-asmified.java[Asmified]
+
+== References
+

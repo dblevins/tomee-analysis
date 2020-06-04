@@ -1,0 +1,7 @@
+= javax/persistence/AccessType.class
+
+ - link:AccessType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.AccessType - 21

@@ -1,0 +1,14 @@
+= org/apache/catalina/manager/ManagerServlet.class
+
+ - link:ManagerServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 47
+ - javax.servlet.ServletInputStream - 11
+ - javax.servlet.http.HttpServletResponse - 9
+ - javax.servlet.ServletException - 3
+ - javax.servlet.ServletConfig - 2
+ - javax.servlet.UnavailableException - 2
+ - javax.servlet.http.HttpServlet - 2
+ - javax.servlet.ServletContext - 2

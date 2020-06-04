@@ -1,0 +1,12 @@
+= org/apache/jasper/el/JspMethodExpression.class
+
+ - link:JspMethodExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.MethodExpression - 21
+ - javax.el.ELContext - 16
+ - javax.el.ELException - 10
+ - javax.el.PropertyNotFoundException - 10
+ - javax.el.MethodNotFoundException - 10
+ - javax.el.MethodInfo - 2

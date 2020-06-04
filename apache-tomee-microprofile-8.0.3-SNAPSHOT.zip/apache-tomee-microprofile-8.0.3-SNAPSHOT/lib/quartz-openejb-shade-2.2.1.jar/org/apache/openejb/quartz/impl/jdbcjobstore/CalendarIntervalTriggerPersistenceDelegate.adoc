@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/CalendarIntervalTriggerPersistenceDelegate.class
+
+ - link:CalendarIntervalTriggerPersistenceDelegate-asmified.java[Asmified]
+
+== References
+

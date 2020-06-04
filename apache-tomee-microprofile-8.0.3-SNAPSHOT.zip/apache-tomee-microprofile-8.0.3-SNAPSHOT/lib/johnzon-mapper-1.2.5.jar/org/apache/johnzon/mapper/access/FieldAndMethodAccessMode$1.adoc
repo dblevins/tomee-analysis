@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/FieldAndMethodAccessMode$1.class
+
+ - link:FieldAndMethodAccessMode$1-asmified.java[Asmified]
+
+== References
+

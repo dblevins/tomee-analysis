@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/FloatCache.class
+
+ - link:FloatCache-asmified.java[Asmified]
+
+== References
+

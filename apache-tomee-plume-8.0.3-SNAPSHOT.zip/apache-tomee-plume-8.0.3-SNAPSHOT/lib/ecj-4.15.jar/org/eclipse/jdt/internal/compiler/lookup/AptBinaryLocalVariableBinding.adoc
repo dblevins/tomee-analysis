@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/AptBinaryLocalVariableBinding.class
+
+ - link:AptBinaryLocalVariableBinding-asmified.java[Asmified]
+
+== References
+

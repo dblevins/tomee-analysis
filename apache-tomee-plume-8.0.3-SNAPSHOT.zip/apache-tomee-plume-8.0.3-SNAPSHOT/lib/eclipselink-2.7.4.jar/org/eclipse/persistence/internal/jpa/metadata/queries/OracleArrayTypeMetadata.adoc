@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/OracleArrayTypeMetadata.class
+
+ - link:OracleArrayTypeMetadata-asmified.java[Asmified]
+
+== References
+

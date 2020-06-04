@@ -1,0 +1,14 @@
+= org/apache/johnzon/jaxrs/ConfigurableJohnzonProvider.class
+
+ - link:ConfigurableJohnzonProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 10
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.json.JsonReaderFactory - 2
+ - javax.json.stream.JsonGeneratorFactory - 2
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

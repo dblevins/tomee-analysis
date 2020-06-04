@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/tag/jstl/core/MappedValueExpression.class
+
+ - link:MappedValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 18
+ - javax.el.ValueExpression - 17
+ - javax.el.ELResolver - 6

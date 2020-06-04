@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/VersionLockManager.class
+
+ - link:VersionLockManager-asmified.java[Asmified]
+
+== References
+

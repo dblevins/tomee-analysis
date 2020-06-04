@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Status.class
+
+ - link:Status-asmified.java[Asmified]
+
+== References
+

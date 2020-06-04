@@ -1,0 +1,8 @@
+= org/apache/openejb/web/LightweightWebAppBuilder$SimpleFilterConfig.class
+
+ - link:LightweightWebAppBuilder$SimpleFilterConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 5
+ - javax.servlet.FilterConfig - 1

@@ -1,0 +1,18 @@
+= javax/faces/webapp/ConverterTag.class
+
+ - link:ConverterTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspException - 9
+ - javax.faces.application.Application - 7
+ - javax.faces.convert.Converter - 7
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.webapp.UIComponentClassicTagBase - 5
+ - javax.faces.el.ValueBinding - 4
+ - javax.servlet.jsp.tagext.TagSupport - 3
+ - javax.faces.component.ValueHolder - 3
+ - javax.servlet.jsp.PageContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.webapp.ConverterTag - 1
+ - javax.faces.webapp.UIComponentTag - 1

@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/EnvironmentTypeImplBuilder.class
+
+ - link:EnvironmentTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

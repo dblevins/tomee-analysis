@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/tl/RequestDispatcherImpl.class
+
+ - link:RequestDispatcherImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.RequestDispatcher - 8
+ - javax.servlet.ServletRequest - 4
+ - javax.servlet.ServletResponse - 4
+ - javax.servlet.ServletException - 2

@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/ConfigurationImpl$LazyParticipant.class
+
+ - link:ConfigurationImpl$LazyParticipant-asmified.java[Asmified]
+
+== References
+

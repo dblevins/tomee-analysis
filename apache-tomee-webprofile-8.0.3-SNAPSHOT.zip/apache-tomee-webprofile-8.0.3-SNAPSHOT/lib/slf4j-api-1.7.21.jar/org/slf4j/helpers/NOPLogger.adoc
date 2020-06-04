@@ -1,0 +1,6 @@
+= org/slf4j/helpers/NOPLogger.class
+
+ - link:NOPLogger-asmified.java[Asmified]
+
+== References
+

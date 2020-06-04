@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/NamedStoredFunctionQueryImpl.class
+
+ - link:NamedStoredFunctionQueryImpl-asmified.java[Asmified]
+
+== References
+

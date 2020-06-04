@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/plugins/history/LoggingJobHistoryPlugin.class
+
+ - link:LoggingJobHistoryPlugin-asmified.java[Asmified]
+
+== References
+

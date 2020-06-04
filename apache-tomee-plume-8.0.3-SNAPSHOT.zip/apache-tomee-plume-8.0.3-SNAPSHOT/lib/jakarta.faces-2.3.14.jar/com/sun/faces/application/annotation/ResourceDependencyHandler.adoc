@@ -1,0 +1,12 @@
+= com/sun/faces/application/annotation/ResourceDependencyHandler.class
+
+ - link:ResourceDependencyHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceDependency - 27
+ - javax.faces.context.FacesContext - 23
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.application.Application - 5
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.application.ResourceHandler - 2

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/JAXBContext$JAXBContextInput.class
+
+ - link:JAXBContext$JAXBContextInput-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 1

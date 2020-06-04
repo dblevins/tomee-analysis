@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/buf/StringCache$1.class
+
+ - link:StringCache$1-asmified.java[Asmified]
+
+== References
+

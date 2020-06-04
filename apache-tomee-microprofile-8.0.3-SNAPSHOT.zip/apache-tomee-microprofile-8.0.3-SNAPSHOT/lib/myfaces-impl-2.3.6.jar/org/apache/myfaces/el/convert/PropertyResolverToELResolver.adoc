@@ -1,0 +1,19 @@
+= org/apache/myfaces/el/convert/PropertyResolverToELResolver.class
+
+ - link:PropertyResolverToELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 37
+ - javax.faces.el.PropertyResolver - 21
+ - javax.faces.el.PropertyNotFoundException - 12
+ - javax.faces.el.EvaluationException - 12
+ - javax.faces.context.FacesContext - 12
+ - javax.el.ELException - 12
+ - javax.el.PropertyNotFoundException - 12
+ - javax.el.ExpressionFactory - 10
+ - javax.el.ELResolver - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.application.ApplicationFactory - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.el.PropertyNotWritableException - 1

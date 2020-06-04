@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/JobPersistenceException.class
+
+ - link:JobPersistenceException-asmified.java[Asmified]
+
+== References
+

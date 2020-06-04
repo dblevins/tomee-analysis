@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredRequiresStatement.class
+
+ - link:RecoveredRequiresStatement-asmified.java[Asmified]
+
+== References
+

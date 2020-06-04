@@ -1,0 +1,11 @@
+= org/apache/myfaces/component/search/SearchExpressionContextImpl.class
+
+ - link:SearchExpressionContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.component.search.SearchExpressionHint - 3
+ - javax.faces.component.visit.VisitHint - 3
+ - javax.faces.component.search.SearchExpressionContext - 2

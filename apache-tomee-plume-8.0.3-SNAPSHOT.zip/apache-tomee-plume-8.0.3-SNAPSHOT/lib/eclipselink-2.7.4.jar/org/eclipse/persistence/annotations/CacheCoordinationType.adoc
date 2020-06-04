@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/CacheCoordinationType.class
+
+ - link:CacheCoordinationType-asmified.java[Asmified]
+
+== References
+

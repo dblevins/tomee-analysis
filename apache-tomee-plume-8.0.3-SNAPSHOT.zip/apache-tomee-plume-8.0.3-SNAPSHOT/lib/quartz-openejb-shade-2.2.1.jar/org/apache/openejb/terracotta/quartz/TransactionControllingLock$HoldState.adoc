@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/TransactionControllingLock$HoldState.class
+
+ - link:TransactionControllingLock$HoldState-asmified.java[Asmified]
+
+== References
+

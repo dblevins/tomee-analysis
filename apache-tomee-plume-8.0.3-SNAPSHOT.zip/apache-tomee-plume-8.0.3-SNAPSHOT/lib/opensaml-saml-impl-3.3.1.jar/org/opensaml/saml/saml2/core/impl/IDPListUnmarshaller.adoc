@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/IDPListUnmarshaller.class
+
+ - link:IDPListUnmarshaller-asmified.java[Asmified]
+
+== References
+

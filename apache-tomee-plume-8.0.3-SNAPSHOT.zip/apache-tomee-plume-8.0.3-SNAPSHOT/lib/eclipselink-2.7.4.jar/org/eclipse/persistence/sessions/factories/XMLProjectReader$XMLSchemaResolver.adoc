@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/XMLProjectReader$XMLSchemaResolver.class
+
+ - link:XMLProjectReader$XMLSchemaResolver-asmified.java[Asmified]
+
+== References
+

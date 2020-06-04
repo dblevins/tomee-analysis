@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/UtilObjects.class
+
+ - link:UtilObjects-asmified.java[Asmified]
+
+== References
+

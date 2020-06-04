@@ -1,0 +1,7 @@
+= com/sun/faces/application/annotation/FacesComponentUsage.class
+
+ - link:FacesComponentUsage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.FacesComponent - 5

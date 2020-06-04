@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/jdbc/router/FailOverRouter.class
+
+ - link:FailOverRouter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PostConstruct - 1

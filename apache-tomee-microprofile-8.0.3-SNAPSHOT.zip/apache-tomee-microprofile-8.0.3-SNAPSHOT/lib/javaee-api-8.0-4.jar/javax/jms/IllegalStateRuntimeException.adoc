@@ -1,0 +1,7 @@
+= javax/jms/IllegalStateRuntimeException.class
+
+ - link:IllegalStateRuntimeException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSRuntimeException - 4

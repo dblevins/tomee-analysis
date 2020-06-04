@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/jsf/ValueHolderRule$DynamicValueExpressionMetadata.class
+
+ - link:ValueHolderRule$DynamicValueExpressionMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 7
+ - javax.faces.view.facelets.FaceletContext - 6
+ - javax.faces.component.UIComponent - 6
+ - javax.el.ValueExpression - 2
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.component.UISelectBoolean - 1

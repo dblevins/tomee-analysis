@@ -1,0 +1,7 @@
+= javax/faces/annotation/ViewMap.class
+
+ - link:ViewMap-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

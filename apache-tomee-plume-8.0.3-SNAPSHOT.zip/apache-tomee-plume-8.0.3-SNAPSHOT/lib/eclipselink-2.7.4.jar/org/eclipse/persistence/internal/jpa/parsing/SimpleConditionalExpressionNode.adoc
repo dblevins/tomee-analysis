@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SimpleConditionalExpressionNode.class
+
+ - link:SimpleConditionalExpressionNode-asmified.java[Asmified]
+
+== References
+

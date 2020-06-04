@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/CollectionContainerPolicy.class
+
+ - link:CollectionContainerPolicy-asmified.java[Asmified]
+
+== References
+

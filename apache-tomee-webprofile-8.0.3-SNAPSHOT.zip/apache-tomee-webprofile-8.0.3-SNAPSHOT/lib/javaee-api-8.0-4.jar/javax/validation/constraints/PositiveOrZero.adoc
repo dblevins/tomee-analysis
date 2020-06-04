@@ -1,0 +1,9 @@
+= javax/validation/constraints/PositiveOrZero.class
+
+ - link:PositiveOrZero-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1
+ - javax.validation.constraints.PositiveOrZero$List - 1

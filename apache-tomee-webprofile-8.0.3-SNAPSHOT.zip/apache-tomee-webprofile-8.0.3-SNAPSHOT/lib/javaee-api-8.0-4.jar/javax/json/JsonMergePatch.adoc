@@ -1,0 +1,7 @@
+= javax/json/JsonMergePatch.class
+
+ - link:JsonMergePatch-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 3

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$IteratorWrapper.class
+
+ - link:SafeRepresenter$IteratorWrapper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/NoResultException.class
+
+ - link:NoResultException-asmified.java[Asmified]
+
+== References
+

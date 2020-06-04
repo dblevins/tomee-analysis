@@ -1,0 +1,9 @@
+= org/apache/tomee/jasper/TomEETldScanner.class
+
+ - link:TomEETldScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagAttributeInfo - 2696
+ - javax.servlet.jsp.tagext.FunctionInfo - 32
+ - javax.servlet.ServletContext - 2

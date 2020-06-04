@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jpa/JpaHelper.class
+
+ - link:JpaHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 13
+ - javax.persistence.Query - 11
+ - javax.persistence.EntityManager - 11

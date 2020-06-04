@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/ContainsValueExpression.class
+
+ - link:ContainsValueExpression-asmified.java[Asmified]
+
+== References
+

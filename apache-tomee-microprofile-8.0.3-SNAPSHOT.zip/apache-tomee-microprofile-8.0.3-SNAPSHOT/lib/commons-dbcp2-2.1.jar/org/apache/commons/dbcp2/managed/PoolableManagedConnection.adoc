@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/managed/PoolableManagedConnection.class
+
+ - link:PoolableManagedConnection-asmified.java[Asmified]
+
+== References
+

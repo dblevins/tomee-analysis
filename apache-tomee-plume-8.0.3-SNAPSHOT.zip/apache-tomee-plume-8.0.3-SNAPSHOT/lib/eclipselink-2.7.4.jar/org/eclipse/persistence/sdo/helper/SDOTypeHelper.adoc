@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOTypeHelper.class
+
+ - link:SDOTypeHelper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/SoapVersion.class
+
+ - link:SoapVersion-asmified.java[Asmified]
+
+== References
+

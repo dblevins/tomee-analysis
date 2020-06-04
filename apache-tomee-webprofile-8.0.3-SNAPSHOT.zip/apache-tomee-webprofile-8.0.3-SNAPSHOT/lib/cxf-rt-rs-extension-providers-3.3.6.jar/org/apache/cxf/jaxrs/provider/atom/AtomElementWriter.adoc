@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/atom/AtomElementWriter.class
+
+ - link:AtomElementWriter-asmified.java[Asmified]
+
+== References
+

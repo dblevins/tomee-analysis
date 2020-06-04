@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/AbsExpression.class
+
+ - link:AbsExpression-asmified.java[Asmified]
+
+== References
+

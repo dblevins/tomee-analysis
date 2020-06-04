@@ -1,0 +1,13 @@
+= com/sun/faces/facelets/tag/jsf/FacesComponentTagLibrary.class
+
+ - link:FacesComponentTagLibrary-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.FacesComponent - 5
+ - javax.faces.view.facelets.TagHandler - 4
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.FacesException - 1

@@ -1,0 +1,11 @@
+= com/sun/faces/el/CompositeComponentAttributesELResolver.class
+
+ - link:CompositeComponentAttributesELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 25
+ - javax.faces.context.FacesContext - 22
+ - javax.el.ELContext - 18
+ - javax.el.ValueExpression - 7
+ - javax.el.ELResolver - 2

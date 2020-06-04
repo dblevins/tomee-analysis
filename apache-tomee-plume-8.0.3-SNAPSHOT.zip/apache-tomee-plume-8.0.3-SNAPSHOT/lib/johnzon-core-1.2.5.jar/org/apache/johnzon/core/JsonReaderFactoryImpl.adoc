@@ -1,0 +1,9 @@
+= org/apache/johnzon/core/JsonReaderFactoryImpl.class
+
+ - link:JsonReaderFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser - 5
+ - javax.json.JsonReader - 4
+ - javax.json.JsonReaderFactory - 1

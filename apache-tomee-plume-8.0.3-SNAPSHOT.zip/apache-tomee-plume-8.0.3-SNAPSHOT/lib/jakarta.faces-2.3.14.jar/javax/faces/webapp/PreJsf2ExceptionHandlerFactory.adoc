@@ -1,0 +1,10 @@
+= javax/faces/webapp/PreJsf2ExceptionHandlerFactory.class
+
+ - link:PreJsf2ExceptionHandlerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.webapp.PreJsf2ExceptionHandlerFactory$PreJsf2ExceptionHandler - 2
+ - javax.faces.context.ExceptionHandlerFactory - 2
+ - javax.faces.webapp.PreJsf2ExceptionHandlerFactory$1 - 1
+ - javax.faces.context.ExceptionHandler - 1

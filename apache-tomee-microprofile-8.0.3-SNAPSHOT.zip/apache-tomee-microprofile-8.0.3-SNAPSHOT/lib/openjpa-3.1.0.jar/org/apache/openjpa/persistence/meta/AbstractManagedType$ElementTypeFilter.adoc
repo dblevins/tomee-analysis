@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/meta/AbstractManagedType$ElementTypeFilter.class
+
+ - link:AbstractManagedType$ElementTypeFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute - 4
+ - javax.persistence.metamodel.PluralAttribute - 3
+ - javax.persistence.metamodel.Type - 2

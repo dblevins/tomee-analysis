@@ -1,0 +1,7 @@
+= javax/enterprise/inject/AmbiguousResolutionException.class
+
+ - link:AmbiguousResolutionException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.ResolutionException - 5

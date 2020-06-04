@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLRecord$Nil.class
+
+ - link:XMLRecord$Nil-asmified.java[Asmified]
+
+== References
+

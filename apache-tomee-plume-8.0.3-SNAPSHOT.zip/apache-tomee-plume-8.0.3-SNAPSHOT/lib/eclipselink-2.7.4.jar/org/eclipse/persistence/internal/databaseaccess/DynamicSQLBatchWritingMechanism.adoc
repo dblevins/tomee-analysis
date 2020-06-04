@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/databaseaccess/DynamicSQLBatchWritingMechanism.class
+
+ - link:DynamicSQLBatchWritingMechanism-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/extensions/DefaultExtensionDeserializer.class
+
+ - link:DefaultExtensionDeserializer-asmified.java[Asmified]
+
+== References
+

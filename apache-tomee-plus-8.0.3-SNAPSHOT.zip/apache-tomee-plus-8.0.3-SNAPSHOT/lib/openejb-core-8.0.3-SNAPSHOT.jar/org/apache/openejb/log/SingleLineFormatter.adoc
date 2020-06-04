@@ -1,0 +1,6 @@
+= org/apache/openejb/log/SingleLineFormatter.class
+
+ - link:SingleLineFormatter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/impl/FinishedSpan.class
+
+ - link:FinishedSpan-asmified.java[Asmified]
+
+== References
+

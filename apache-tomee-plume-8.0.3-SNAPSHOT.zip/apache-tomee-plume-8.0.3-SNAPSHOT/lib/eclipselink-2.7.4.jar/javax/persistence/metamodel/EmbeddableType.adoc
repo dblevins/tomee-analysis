@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/EmbeddableType.class
+
+ - link:EmbeddableType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.ManagedType - 1

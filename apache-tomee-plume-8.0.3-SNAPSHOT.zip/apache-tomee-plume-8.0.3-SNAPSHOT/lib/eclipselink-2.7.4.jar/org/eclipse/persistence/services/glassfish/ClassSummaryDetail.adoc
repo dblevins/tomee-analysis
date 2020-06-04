@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/glassfish/ClassSummaryDetail.class
+
+ - link:ClassSummaryDetail-asmified.java[Asmified]
+
+== References
+

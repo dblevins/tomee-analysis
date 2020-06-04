@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/x509/sigi/SigIObjectIdentifiers.class
+
+ - link:SigIObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

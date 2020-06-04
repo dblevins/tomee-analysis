@@ -1,0 +1,7 @@
+= javax/batch/runtime/Metric.class
+
+ - link:Metric-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.Metric$MetricType - 1

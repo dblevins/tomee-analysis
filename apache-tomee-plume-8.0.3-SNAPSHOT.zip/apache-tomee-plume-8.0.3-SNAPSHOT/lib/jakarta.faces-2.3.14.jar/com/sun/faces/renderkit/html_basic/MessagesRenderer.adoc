@@ -1,0 +1,12 @@
+= com/sun/faces/renderkit/html_basic/MessagesRenderer.class
+
+ - link:MessagesRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 38
+ - javax.faces.component.UIComponent - 38
+ - javax.faces.component.UIMessages - 17
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.application.FacesMessage - 10
+ - javax.faces.application.FacesMessage$Severity - 8

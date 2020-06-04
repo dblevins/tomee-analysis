@@ -1,0 +1,13 @@
+= javax/jms/QueueSession.class
+
+ - link:QueueSession-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 7
+ - javax.jms.Queue - 6
+ - javax.jms.QueueBrowser - 2
+ - javax.jms.QueueReceiver - 2
+ - javax.jms.Session - 1
+ - javax.jms.TemporaryQueue - 1
+ - javax.jms.QueueSender - 1

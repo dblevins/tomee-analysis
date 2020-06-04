@@ -1,0 +1,16 @@
+= org/apache/myfaces/renderkit/html/HtmlRenderKitImpl.class
+
+ - link:HtmlRenderKitImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.render.Renderer - 9
+ - javax.faces.render.ResponseStateManager - 4
+ - javax.faces.render.ClientBehaviorRenderer - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.render.RenderKit - 2
+ - javax.faces.context.ResponseStream - 1
+ - javax.faces.context.ResponseWriter - 1

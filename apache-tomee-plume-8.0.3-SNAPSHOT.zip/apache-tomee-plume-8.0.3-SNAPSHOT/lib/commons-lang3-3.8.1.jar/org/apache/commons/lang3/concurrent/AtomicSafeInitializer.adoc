@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/concurrent/AtomicSafeInitializer.class
+
+ - link:AtomicSafeInitializer-asmified.java[Asmified]
+
+== References
+

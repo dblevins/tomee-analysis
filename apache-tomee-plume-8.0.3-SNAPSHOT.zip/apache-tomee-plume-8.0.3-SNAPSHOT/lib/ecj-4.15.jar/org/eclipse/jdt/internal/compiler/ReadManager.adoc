@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ReadManager.class
+
+ - link:ReadManager-asmified.java[Asmified]
+
+== References
+

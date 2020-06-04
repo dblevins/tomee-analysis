@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/dynamic/DynamicClientFactory$RelativeEntityResolver.class
+
+ - link:DynamicClientFactory$RelativeEntityResolver-asmified.java[Asmified]
+
+== References
+

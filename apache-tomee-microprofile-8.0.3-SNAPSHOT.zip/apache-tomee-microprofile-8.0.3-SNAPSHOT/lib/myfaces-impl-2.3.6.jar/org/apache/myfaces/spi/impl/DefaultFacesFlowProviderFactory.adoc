@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/impl/DefaultFacesFlowProviderFactory.class
+
+ - link:DefaultFacesFlowProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 3

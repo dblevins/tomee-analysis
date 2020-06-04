@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/Persistent.class
+
+ - link:Persistent-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 2
+ - javax.persistence.CascadeType - 1

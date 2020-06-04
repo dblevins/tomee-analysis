@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/antadapter/AntAdapterMessages.class
+
+ - link:AntAdapterMessages-asmified.java[Asmified]
+
+== References
+

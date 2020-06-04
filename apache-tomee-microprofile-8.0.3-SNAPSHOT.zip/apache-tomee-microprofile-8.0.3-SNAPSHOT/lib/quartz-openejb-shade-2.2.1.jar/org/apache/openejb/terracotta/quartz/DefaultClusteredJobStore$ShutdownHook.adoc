@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/DefaultClusteredJobStore$ShutdownHook.class
+
+ - link:DefaultClusteredJobStore$ShutdownHook-asmified.java[Asmified]
+
+== References
+

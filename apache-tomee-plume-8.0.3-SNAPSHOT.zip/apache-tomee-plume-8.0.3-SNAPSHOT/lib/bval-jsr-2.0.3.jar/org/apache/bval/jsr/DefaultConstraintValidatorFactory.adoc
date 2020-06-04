@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/DefaultConstraintValidatorFactory.class
+
+ - link:DefaultConstraintValidatorFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 7
+ - javax.validation.ValidationException - 2
+ - javax.validation.ConstraintValidatorFactory - 1
+ - javax.enterprise.inject.spi.BeanManager - 1

@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/modes/gcm/Tables4kGCMMultiplier.class
+
+ - link:Tables4kGCMMultiplier-asmified.java[Asmified]
+
+== References
+

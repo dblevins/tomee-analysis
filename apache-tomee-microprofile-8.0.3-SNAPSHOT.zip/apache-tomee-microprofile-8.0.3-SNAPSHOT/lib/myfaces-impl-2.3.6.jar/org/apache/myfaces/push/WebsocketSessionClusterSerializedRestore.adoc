@@ -1,0 +1,6 @@
+= org/apache/myfaces/push/WebsocketSessionClusterSerializedRestore.class
+
+ - link:WebsocketSessionClusterSerializedRestore-asmified.java[Asmified]
+
+== References
+

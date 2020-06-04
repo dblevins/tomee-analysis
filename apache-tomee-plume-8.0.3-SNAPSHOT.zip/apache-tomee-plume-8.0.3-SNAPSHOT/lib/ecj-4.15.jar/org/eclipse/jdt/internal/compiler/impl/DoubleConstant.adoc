@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/DoubleConstant.class
+
+ - link:DoubleConstant-asmified.java[Asmified]
+
+== References
+

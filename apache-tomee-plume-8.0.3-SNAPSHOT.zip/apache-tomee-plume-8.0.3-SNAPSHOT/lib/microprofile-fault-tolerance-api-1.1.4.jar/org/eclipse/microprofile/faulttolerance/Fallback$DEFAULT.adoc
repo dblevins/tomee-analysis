@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/faulttolerance/Fallback$DEFAULT.class
+
+ - link:Fallback$DEFAULT-asmified.java[Asmified]
+
+== References
+

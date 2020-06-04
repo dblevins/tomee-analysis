@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/input/ReferenceListInputHandler.class
+
+ - link:ReferenceListInputHandler-asmified.java[Asmified]
+
+== References
+

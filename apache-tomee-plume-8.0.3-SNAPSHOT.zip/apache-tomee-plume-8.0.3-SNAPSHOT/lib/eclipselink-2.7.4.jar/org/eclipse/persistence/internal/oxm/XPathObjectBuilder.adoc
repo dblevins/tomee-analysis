@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/XPathObjectBuilder.class
+
+ - link:XPathObjectBuilder-asmified.java[Asmified]
+
+== References
+

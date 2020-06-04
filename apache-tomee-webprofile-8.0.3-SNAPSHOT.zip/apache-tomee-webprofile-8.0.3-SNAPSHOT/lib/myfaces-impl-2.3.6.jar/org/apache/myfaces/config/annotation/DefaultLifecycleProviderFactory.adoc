@@ -1,0 +1,8 @@
+= org/apache/myfaces/config/annotation/DefaultLifecycleProviderFactory.class
+
+ - link:DefaultLifecycleProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 22
+ - javax.faces.FacesException - 2

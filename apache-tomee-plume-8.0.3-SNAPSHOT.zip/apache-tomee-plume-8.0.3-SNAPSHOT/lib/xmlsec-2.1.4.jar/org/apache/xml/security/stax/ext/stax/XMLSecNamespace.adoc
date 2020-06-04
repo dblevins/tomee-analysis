@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecNamespace.class
+
+ - link:XMLSecNamespace-asmified.java[Asmified]
+
+== References
+

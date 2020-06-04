@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/remote/ReplaceValueHoldersIterator.class
+
+ - link:ReplaceValueHoldersIterator-asmified.java[Asmified]
+
+== References
+

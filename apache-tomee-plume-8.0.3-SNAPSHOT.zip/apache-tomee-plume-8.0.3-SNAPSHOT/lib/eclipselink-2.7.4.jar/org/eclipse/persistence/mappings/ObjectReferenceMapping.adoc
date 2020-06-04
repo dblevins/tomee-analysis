@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/ObjectReferenceMapping.class
+
+ - link:ObjectReferenceMapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/BigIntegerNode.class
+
+ - link:BigIntegerNode-asmified.java[Asmified]
+
+== References
+

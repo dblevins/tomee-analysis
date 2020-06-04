@@ -1,0 +1,6 @@
+= org/apache/webbeans/spi/BeanArchiveService.class
+
+ - link:BeanArchiveService-asmified.java[Asmified]
+
+== References
+

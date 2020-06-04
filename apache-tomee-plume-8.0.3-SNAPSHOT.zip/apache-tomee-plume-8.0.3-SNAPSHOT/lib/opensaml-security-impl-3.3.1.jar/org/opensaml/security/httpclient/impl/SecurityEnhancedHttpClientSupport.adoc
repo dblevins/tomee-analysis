@@ -1,0 +1,7 @@
+= org/opensaml/security/httpclient/impl/SecurityEnhancedHttpClientSupport.class
+
+ - link:SecurityEnhancedHttpClientSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

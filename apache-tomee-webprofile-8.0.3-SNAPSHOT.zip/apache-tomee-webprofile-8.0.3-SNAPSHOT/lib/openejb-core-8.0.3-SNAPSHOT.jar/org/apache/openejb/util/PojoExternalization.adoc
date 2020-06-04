@@ -1,0 +1,6 @@
+= org/apache/openejb/util/PojoExternalization.class
+
+ - link:PojoExternalization-asmified.java[Asmified]
+
+== References
+

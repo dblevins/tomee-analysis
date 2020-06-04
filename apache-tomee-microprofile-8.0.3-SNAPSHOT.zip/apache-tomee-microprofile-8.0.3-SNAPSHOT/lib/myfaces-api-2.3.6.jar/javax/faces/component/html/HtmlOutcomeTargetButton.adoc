@@ -1,0 +1,17 @@
+= javax/faces/component/html/HtmlOutcomeTargetButton.class
+
+ - link:HtmlOutcomeTargetButton-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 92
+ - javax.faces.component.html.HtmlOutcomeTargetButton - 47
+ - javax.faces.component.html.HtmlOutcomeTargetButton$PropertyKeys - 46
+ - javax.faces.component.UIComponent - 25
+ - javax.faces.component.html._CommonPropertyConstants - 24
+ - javax.faces.component.UIOutcomeTarget - 5
+ - javax.el.ValueExpression - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.component.behavior.ClientBehavior - 2
+ - javax.faces.component.html._CommonEventConstants - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

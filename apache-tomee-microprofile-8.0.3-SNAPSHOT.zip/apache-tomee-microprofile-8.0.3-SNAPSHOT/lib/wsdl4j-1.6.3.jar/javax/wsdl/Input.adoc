@@ -1,0 +1,6 @@
+= javax/wsdl/Input.class
+
+ - link:Input-asmified.java[Asmified]
+
+== References
+

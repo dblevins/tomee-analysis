@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/RemoteMBeanScheduler.class
+
+ - link:RemoteMBeanScheduler-asmified.java[Asmified]
+
+== References
+

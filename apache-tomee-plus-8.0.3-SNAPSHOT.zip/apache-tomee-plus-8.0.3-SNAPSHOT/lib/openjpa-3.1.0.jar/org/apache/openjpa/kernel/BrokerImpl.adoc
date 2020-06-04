@@ -1,0 +1,9 @@
+= org/apache/openjpa/kernel/BrokerImpl.class
+
+ - link:BrokerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 14
+ - javax.transaction.Synchronization - 13
+ - javax.transaction.TransactionManager - 10

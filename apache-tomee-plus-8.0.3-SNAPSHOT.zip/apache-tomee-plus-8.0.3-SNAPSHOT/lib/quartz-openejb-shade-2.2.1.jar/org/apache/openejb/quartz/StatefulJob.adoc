@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/StatefulJob.class
+
+ - link:StatefulJob-asmified.java[Asmified]
+
+== References
+

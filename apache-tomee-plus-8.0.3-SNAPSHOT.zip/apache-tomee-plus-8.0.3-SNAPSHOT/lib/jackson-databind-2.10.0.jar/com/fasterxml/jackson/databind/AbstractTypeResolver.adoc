@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/AbstractTypeResolver.class
+
+ - link:AbstractTypeResolver-asmified.java[Asmified]
+
+== References
+

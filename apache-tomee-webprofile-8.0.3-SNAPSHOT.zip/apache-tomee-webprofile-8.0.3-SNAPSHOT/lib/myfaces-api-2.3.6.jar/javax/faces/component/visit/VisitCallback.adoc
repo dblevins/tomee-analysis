@@ -1,0 +1,9 @@
+= javax/faces/component/visit/VisitCallback.class
+
+ - link:VisitCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitResult - 1
+ - javax.faces.component.visit.VisitContext - 1
+ - javax.faces.component.UIComponent - 1

@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/CurrentFrame.class
+
+ - link:CurrentFrame-asmified.java[Asmified]
+
+== References
+

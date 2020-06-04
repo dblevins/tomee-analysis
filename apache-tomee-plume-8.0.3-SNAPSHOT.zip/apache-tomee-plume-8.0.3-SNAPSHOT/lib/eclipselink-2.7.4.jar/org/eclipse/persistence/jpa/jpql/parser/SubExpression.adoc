@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/SubExpression.class
+
+ - link:SubExpression-asmified.java[Asmified]
+
+== References
+

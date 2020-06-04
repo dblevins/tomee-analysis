@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ClassHelper$DefaultClassUnwrapper.class
+
+ - link:ClassHelper$DefaultClassUnwrapper-asmified.java[Asmified]
+
+== References
+

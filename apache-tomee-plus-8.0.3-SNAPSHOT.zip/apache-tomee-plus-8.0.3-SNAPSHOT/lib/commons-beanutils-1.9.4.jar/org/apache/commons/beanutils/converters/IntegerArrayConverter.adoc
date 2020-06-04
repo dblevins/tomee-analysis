@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/IntegerArrayConverter.class
+
+ - link:IntegerArrayConverter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/rop/SoftRandomAccessResultList.class
+
+ - link:SoftRandomAccessResultList-asmified.java[Asmified]
+
+== References
+

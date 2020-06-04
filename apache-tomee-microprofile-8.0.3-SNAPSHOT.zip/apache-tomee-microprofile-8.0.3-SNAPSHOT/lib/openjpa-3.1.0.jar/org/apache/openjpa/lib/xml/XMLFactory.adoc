@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/xml/XMLFactory.class
+
+ - link:XMLFactory-asmified.java[Asmified]
+
+== References
+

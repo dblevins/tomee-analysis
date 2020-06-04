@@ -1,0 +1,6 @@
+= org/apache/openejb/util/ServiceManagerProxy.class
+
+ - link:ServiceManagerProxy-asmified.java[Asmified]
+
+== References
+

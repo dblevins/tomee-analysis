@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/antlr/runtime/TokenRewriteStream$RewriteOperation.class
+
+ - link:TokenRewriteStream$RewriteOperation-asmified.java[Asmified]
+
+== References
+

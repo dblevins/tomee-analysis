@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/Loader.class
+
+ - link:Loader-asmified.java[Asmified]
+
+== References
+

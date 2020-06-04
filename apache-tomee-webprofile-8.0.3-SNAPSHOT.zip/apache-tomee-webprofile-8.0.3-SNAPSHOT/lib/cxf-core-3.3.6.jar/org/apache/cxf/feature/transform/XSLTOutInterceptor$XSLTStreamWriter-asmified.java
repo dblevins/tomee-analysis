@@ -1,0 +1,216 @@
+package asm.org.apache.cxf.feature.transform;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class XSLTOutInterceptor$XSLTStreamWriterDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", null, "org/apache/cxf/staxutils/DelegatingXMLStreamWriter", null);
+
+classWriter.visitInnerClass("org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "org/apache/cxf/feature/transform/XSLTOutInterceptor", "XSLTStreamWriter", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "xsltTemplate", "Ljavax/xml/transform/Templates;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "cachedWriter", "Lorg/apache/cxf/io/CachedWriter;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "origXWriter", "Ljavax/xml/stream/XMLStreamWriter;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/xml/transform/Templates;Lorg/apache/cxf/io/CachedWriter;Ljavax/xml/stream/XMLStreamWriter;Ljavax/xml/stream/XMLStreamWriter;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/staxutils/DelegatingXMLStreamWriter", "<init>", "(Ljavax/xml/stream/XMLStreamWriter;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "xsltTemplate", "Ljavax/xml/transform/Templates;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "cachedWriter", "Lorg/apache/cxf/io/CachedWriter;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "origXWriter", "Ljavax/xml/stream/XMLStreamWriter;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "close", "()V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label0, label4, "javax/xml/stream/XMLStreamException");
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label0, label5, "java/io/IOException");
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label0, label6, null);
+Label label7 = new Label();
+Label label8 = new Label();
+Label label9 = new Label();
+methodVisitor.visitTryCatchBlock(label7, label8, label9, "java/lang/Exception");
+methodVisitor.visitTryCatchBlock(label4, label7, label6, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/staxutils/DelegatingXMLStreamWriter", "flush", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "xsltTemplate", "Ljavax/xml/transform/Templates;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "cachedWriter", "Lorg/apache/cxf/io/CachedWriter;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/io/CachedWriter", "getReader", "()Ljava/io/Reader;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/feature/transform/XSLTUtils", "transform", "(Ljavax/xml/transform/Templates;Ljava/io/Reader;)Ljava/io/Reader;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "javax/xml/transform/stream/StreamSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/transform/stream/StreamSource", "<init>", "(Ljava/io/Reader;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "origXWriter", "Ljavax/xml/stream/XMLStreamWriter;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/staxutils/StaxUtils", "copy", "(Ljavax/xml/transform/Source;Ljavax/xml/stream/XMLStreamWriter;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label10);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/Reader", "close", "()V", false);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/io/Reader"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "cachedWriter", "Lorg/apache/cxf/io/CachedWriter;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/io/CachedWriter", "close", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "origXWriter", "Ljavax/xml/stream/XMLStreamWriter;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/staxutils/StaxUtils", "close", "(Ljavax/xml/stream/XMLStreamWriter;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/staxutils/DelegatingXMLStreamWriter", "close", "()V", false);
+methodVisitor.visitLabel(label1);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label11);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/feature/transform/XSLTOutInterceptor", "access$000", "()Ljava/util/logging/Logger;", false);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Cannot close stream after transformation: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Exception", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label11);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/xml/stream/XMLStreamException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/interceptor/Fault");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("STAX_COPY");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/feature/transform/XSLTOutInterceptor", "access$000", "()Ljava/util/logging/Logger;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/stream/XMLStreamException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/Fault", "<init>", "(Ljava/lang/String;Ljava/util/logging/Logger;Ljava/lang/Throwable;[Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/cxf/interceptor/Fault");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("GET_CACHED_INPUT_STREAM");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/feature/transform/XSLTOutInterceptor", "access$000", "()Ljava/util/logging/Logger;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/IOException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/interceptor/Fault", "<init>", "(Ljava/lang/String;Ljava/util/logging/Logger;Ljava/lang/Throwable;[Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label12);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/Reader", "close", "()V", false);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "java/lang/Throwable"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "cachedWriter", "Lorg/apache/cxf/io/CachedWriter;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/cxf/io/CachedWriter", "close", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTStreamWriter", "origXWriter", "Ljavax/xml/stream/XMLStreamWriter;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/staxutils/StaxUtils", "close", "(Ljavax/xml/stream/XMLStreamWriter;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/cxf/staxutils/DelegatingXMLStreamWriter", "close", "()V", false);
+methodVisitor.visitLabel(label8);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label13);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/cxf/feature/transform/XSLTOutInterceptor", "access$000", "()Ljava/util/logging/Logger;", false);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Cannot close stream after transformation: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Exception", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Logger", "warning", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(9, 5);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

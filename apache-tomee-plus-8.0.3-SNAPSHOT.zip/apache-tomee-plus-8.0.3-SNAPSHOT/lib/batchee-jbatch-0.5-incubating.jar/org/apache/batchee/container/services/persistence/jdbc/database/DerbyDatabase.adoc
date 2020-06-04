@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/persistence/jdbc/database/DerbyDatabase.class
+
+ - link:DerbyDatabase-asmified.java[Asmified]
+
+== References
+

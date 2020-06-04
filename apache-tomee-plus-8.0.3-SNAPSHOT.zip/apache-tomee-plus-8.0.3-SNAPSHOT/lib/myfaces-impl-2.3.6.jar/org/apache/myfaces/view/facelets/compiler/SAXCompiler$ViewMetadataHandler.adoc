@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/compiler/SAXCompiler$ViewMetadataHandler.class
+
+ - link:SAXCompiler$ViewMetadataHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.Location - 9
+ - javax.faces.view.facelets.Tag - 6
+ - javax.faces.view.facelets.TagAttributes - 5
+ - javax.faces.view.facelets.TagAttribute - 3

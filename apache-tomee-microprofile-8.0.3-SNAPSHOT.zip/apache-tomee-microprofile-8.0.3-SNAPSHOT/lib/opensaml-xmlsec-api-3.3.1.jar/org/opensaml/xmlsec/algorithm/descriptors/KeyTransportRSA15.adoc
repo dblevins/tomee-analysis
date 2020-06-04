@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/KeyTransportRSA15.class
+
+ - link:KeyTransportRSA15-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

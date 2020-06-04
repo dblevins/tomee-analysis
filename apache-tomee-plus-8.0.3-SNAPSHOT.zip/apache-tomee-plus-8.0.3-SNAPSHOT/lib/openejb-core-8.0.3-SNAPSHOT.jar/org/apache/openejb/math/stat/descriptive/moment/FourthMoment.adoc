@@ -1,0 +1,6 @@
+= org/apache/openejb/math/stat/descriptive/moment/FourthMoment.class
+
+ - link:FourthMoment-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$YearMonthDayWrapperImpl.class
+
+ - link:SDOWrapperType$YearMonthDayWrapperImpl-asmified.java[Asmified]
+
+== References
+

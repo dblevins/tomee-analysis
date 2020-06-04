@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2cb/impl/ChannelBindingsBuilder.class
+
+ - link:ChannelBindingsBuilder-asmified.java[Asmified]
+
+== References
+

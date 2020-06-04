@@ -1,0 +1,9 @@
+= javax/enterprise/inject/spi/ProcessProducerMethod.class
+
+ - link:ProcessProducerMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedParameter - 1
+ - javax.enterprise.inject.spi.ProcessBean - 1
+ - javax.enterprise.inject.spi.AnnotatedMethod - 1

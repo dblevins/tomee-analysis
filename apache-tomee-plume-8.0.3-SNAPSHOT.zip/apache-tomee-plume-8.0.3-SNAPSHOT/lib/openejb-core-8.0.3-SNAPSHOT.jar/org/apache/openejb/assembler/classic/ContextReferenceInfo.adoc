@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ContextReferenceInfo.class
+
+ - link:ContextReferenceInfo-asmified.java[Asmified]
+
+== References
+

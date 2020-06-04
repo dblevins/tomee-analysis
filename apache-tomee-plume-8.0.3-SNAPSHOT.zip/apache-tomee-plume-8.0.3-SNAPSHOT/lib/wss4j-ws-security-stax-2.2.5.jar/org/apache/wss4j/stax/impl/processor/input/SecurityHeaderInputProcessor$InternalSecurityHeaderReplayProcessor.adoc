@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/input/SecurityHeaderInputProcessor$InternalSecurityHeaderReplayProcessor.class
+
+ - link:SecurityHeaderInputProcessor$InternalSecurityHeaderReplayProcessor-asmified.java[Asmified]
+
+== References
+

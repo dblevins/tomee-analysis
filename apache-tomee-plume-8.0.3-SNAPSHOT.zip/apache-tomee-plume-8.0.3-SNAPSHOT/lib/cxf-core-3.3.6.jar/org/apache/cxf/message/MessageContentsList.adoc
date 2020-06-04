@@ -1,0 +1,6 @@
+= org/apache/cxf/message/MessageContentsList.class
+
+ - link:MessageContentsList-asmified.java[Asmified]
+
+== References
+

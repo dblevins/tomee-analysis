@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/model/annotation/XmlValueQuick.class
+
+ - link:XmlValueQuick-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlValue - 9

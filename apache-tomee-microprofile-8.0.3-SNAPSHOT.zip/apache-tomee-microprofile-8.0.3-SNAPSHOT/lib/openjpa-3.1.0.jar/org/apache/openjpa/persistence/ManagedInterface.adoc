@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ManagedInterface.class
+
+ - link:ManagedInterface-asmified.java[Asmified]
+
+== References
+

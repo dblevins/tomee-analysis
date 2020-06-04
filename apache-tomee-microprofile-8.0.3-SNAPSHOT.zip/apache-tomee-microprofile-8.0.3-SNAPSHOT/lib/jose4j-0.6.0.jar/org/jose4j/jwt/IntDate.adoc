@@ -1,0 +1,6 @@
+= org/jose4j/jwt/IntDate.class
+
+ - link:IntDate-asmified.java[Asmified]
+
+== References
+

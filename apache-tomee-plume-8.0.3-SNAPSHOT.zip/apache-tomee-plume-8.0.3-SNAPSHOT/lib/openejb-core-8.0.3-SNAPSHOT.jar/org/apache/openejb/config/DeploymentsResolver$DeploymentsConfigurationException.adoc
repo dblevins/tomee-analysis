@@ -1,0 +1,6 @@
+= org/apache/openejb/config/DeploymentsResolver$DeploymentsConfigurationException.class
+
+ - link:DeploymentsResolver$DeploymentsConfigurationException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/digester/SetPropertiesRule.class
+
+ - link:SetPropertiesRule-asmified.java[Asmified]
+
+== References
+

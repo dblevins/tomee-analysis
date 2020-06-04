@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/tag/TagHandlerUtils.class
+
+ - link:TagHandlerUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletHandler - 16
+ - javax.faces.view.facelets.CompositeFaceletHandler - 12

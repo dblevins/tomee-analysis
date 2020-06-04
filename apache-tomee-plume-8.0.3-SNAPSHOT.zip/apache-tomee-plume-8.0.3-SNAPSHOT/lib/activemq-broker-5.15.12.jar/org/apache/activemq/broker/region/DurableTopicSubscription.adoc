@@ -1,0 +1,8 @@
+= org/apache/activemq/broker/region/DurableTopicSubscription.class
+
+ - link:DurableTopicSubscription-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 4
+ - javax.jms.InvalidSelectorException - 1

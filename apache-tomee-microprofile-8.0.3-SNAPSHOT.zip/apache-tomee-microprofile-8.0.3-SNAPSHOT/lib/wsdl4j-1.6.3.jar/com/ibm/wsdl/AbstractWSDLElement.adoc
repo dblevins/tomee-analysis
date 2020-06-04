@@ -1,0 +1,6 @@
+= com/ibm/wsdl/AbstractWSDLElement.class
+
+ - link:AbstractWSDLElement-asmified.java[Asmified]
+
+== References
+

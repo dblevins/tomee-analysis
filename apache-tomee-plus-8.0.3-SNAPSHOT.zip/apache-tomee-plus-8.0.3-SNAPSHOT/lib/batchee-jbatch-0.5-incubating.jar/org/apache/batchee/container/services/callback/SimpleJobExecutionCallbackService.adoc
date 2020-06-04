@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/callback/SimpleJobExecutionCallbackService.class
+
+ - link:SimpleJobExecutionCallbackService-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 2

@@ -1,0 +1,6 @@
+= com/ctc/wstx/cfg/ParsingErrorMsgs.class
+
+ - link:ParsingErrorMsgs-asmified.java[Asmified]
+
+== References
+

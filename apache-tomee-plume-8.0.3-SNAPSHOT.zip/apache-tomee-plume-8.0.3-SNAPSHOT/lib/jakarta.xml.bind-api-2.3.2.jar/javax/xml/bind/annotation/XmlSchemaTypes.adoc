@@ -1,0 +1,7 @@
+= javax/xml/bind/annotation/XmlSchemaTypes.class
+
+ - link:XmlSchemaTypes-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlSchemaType - 1

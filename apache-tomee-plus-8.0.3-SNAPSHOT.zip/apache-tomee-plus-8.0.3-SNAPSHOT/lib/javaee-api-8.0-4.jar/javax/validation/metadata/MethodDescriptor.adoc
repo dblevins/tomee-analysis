@@ -1,0 +1,7 @@
+= javax/validation/metadata/MethodDescriptor.class
+
+ - link:MethodDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ExecutableDescriptor - 1

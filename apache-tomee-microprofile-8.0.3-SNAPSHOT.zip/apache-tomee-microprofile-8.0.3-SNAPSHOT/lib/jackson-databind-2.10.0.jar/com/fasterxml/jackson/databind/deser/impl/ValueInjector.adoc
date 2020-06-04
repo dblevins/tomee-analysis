@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/ValueInjector.class
+
+ - link:ValueInjector-asmified.java[Asmified]
+
+== References
+

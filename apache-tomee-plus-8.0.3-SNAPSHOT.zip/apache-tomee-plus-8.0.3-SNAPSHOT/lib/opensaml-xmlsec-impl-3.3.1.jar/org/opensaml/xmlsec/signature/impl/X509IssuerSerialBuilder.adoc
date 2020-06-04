@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509IssuerSerialBuilder.class
+
+ - link:X509IssuerSerialBuilder-asmified.java[Asmified]
+
+== References
+

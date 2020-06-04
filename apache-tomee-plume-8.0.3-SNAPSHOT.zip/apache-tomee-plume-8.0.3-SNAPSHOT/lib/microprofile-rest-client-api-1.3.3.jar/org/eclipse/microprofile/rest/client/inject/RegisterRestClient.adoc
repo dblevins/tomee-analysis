@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/rest/client/inject/RegisterRestClient.class
+
+ - link:RegisterRestClient-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Stereotype - 1
+ - javax.enterprise.context.Dependent - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/STSTokenOutInterceptor$AuthParams.class
+
+ - link:STSTokenOutInterceptor$AuthParams-asmified.java[Asmified]
+
+== References
+

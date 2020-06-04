@@ -1,0 +1,9 @@
+= org/apache/jasper/compiler/Validator$TagExtraInfoVisitor.class
+
+ - link:Validator$TagExtraInfoVisitor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.ValidationMessage - 11
+ - javax.servlet.jsp.tagext.TagInfo - 6
+ - javax.servlet.jsp.tagext.TagData - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/TypeMapping.class
+
+ - link:TypeMapping-asmified.java[Asmified]
+
+== References
+

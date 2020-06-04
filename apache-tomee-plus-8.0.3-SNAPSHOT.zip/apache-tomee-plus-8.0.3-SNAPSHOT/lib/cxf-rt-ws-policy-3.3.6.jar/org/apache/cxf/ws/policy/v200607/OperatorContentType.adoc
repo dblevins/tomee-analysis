@@ -1,0 +1,14 @@
+= org/apache/cxf/ws/policy/v200607/OperatorContentType.class
+
+ - link:OperatorContentType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElementRef - 4
+ - javax.xml.bind.JAXBElement - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlElementRefs - 1
+ - javax.xml.bind.annotation.XmlSeeAlso - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

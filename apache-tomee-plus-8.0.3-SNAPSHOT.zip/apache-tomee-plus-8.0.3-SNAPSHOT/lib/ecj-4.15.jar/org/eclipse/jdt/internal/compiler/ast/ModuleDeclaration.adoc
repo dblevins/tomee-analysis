@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ModuleDeclaration.class
+
+ - link:ModuleDeclaration-asmified.java[Asmified]
+
+== References
+

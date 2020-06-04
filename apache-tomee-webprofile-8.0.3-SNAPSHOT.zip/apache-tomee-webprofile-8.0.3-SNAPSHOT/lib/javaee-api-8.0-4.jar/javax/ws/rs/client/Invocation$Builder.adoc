@@ -1,0 +1,17 @@
+= javax/ws/rs/client/Invocation$Builder.class
+
+ - link:Invocation$Builder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.Invocation$Builder - 11
+ - javax.ws.rs.client.Invocation - 6
+ - javax.ws.rs.client.Entity - 3
+ - javax.ws.rs.core.MultivaluedMap - 1
+ - javax.ws.rs.client.AsyncInvoker - 1
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.client.RxInvoker - 1
+ - javax.ws.rs.client.CompletionStageRxInvoker - 1
+ - javax.ws.rs.core.CacheControl - 1
+ - javax.ws.rs.core.Cookie - 1
+ - javax.ws.rs.client.SyncInvoker - 1

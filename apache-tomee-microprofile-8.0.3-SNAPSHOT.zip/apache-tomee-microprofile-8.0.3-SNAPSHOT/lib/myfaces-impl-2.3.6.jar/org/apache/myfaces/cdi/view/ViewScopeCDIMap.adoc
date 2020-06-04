@@ -1,0 +1,9 @@
+= org/apache/myfaces/cdi/view/ViewScopeCDIMap.class
+
+ - link:ViewScopeCDIMap-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 12
+ - javax.faces.context.FacesContext - 11
+ - javax.faces.context.ExternalContext - 8

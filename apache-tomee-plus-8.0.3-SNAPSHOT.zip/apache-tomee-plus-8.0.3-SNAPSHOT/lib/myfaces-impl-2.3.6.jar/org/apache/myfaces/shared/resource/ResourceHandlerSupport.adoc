@@ -1,0 +1,7 @@
+= org/apache/myfaces/shared/resource/ResourceHandlerSupport.class
+
+ - link:ResourceHandlerSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1

@@ -1,0 +1,6 @@
+= serp/bytecode/InstructionPtr.class
+
+ - link:InstructionPtr-asmified.java[Asmified]
+
+== References
+

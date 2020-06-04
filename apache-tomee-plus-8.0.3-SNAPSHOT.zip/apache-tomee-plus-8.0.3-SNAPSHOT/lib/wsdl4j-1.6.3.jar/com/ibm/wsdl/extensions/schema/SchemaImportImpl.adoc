@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/schema/SchemaImportImpl.class
+
+ - link:SchemaImportImpl-asmified.java[Asmified]
+
+== References
+

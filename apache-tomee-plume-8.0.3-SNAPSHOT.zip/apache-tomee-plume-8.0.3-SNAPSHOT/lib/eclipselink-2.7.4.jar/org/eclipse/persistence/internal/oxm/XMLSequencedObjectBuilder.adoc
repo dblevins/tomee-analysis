@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/XMLSequencedObjectBuilder.class
+
+ - link:XMLSequencedObjectBuilder-asmified.java[Asmified]
+
+== References
+

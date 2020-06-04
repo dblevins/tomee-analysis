@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/JPARSErrorCodes.class
+
+ - link:JPARSErrorCodes-asmified.java[Asmified]
+
+== References
+

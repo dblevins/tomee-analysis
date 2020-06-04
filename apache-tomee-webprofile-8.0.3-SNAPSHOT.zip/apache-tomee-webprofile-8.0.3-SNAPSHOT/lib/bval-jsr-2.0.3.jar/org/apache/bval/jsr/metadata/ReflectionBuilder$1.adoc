@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/ReflectionBuilder$1.class
+
+ - link:ReflectionBuilder$1-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraintvalidation.ValidationTarget - 6

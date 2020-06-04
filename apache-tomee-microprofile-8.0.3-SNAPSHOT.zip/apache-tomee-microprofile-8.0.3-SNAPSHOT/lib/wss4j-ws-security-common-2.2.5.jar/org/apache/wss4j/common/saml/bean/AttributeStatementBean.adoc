@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/AttributeStatementBean.class
+
+ - link:AttributeStatementBean-asmified.java[Asmified]
+
+== References
+

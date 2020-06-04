@@ -1,0 +1,6 @@
+= org/jose4j/jwe/ContentEncryptionKeyDescriptor.class
+
+ - link:ContentEncryptionKeyDescriptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/myfaces/application/BackwardsCompatibleNavigationHandlerWrapper.class
+
+ - link:BackwardsCompatibleNavigationHandlerWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ConfigurableNavigationHandler - 9
+ - javax.faces.application.NavigationHandler - 5
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.application.NavigationCase - 3

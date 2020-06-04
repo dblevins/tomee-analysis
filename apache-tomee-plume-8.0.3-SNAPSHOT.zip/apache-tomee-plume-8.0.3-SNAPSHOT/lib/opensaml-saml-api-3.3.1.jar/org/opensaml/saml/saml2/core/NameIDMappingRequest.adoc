@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/NameIDMappingRequest.class
+
+ - link:NameIDMappingRequest-asmified.java[Asmified]
+
+== References
+

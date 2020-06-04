@@ -1,0 +1,10 @@
+= org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiDestination.class
+
+ - link:JAXWSHttpSpiDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 10
+ - javax.servlet.http.HttpServletRequest - 9
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.ServletConfig - 1

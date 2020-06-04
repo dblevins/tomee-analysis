@@ -1,0 +1,16 @@
+= org/apache/webbeans/portable/ProducerFieldProducer.class
+
+ - link:ProducerFieldProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 23
+ - javax.enterprise.context.spi.CreationalContext - 9
+ - javax.enterprise.inject.spi.AnnotatedField - 7
+ - javax.enterprise.context.spi.Context - 4
+ - javax.enterprise.context.spi.Contextual - 3
+ - javax.enterprise.inject.spi.AnnotatedMethod - 3
+ - javax.enterprise.context.Dependent - 2
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.BeanManager - 1
+ - javax.enterprise.inject.spi.Interceptor - 1

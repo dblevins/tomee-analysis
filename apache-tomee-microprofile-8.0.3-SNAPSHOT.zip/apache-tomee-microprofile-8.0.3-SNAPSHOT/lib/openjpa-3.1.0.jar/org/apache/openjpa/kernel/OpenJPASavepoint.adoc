@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/OpenJPASavepoint.class
+
+ - link:OpenJPASavepoint-asmified.java[Asmified]
+
+== References
+

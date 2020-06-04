@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/FilterValueImpl.class
+
+ - link:FilterValueImpl-asmified.java[Asmified]
+
+== References
+

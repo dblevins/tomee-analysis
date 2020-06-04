@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/Annotation.class
+
+ - link:Annotation-asmified.java[Asmified]
+
+== References
+

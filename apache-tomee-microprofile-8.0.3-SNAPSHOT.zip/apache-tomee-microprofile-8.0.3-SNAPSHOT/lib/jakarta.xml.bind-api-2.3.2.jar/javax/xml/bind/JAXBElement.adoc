@@ -1,0 +1,8 @@
+= javax/xml/bind/JAXBElement.class
+
+ - link:JAXBElement-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3
+ - javax.xml.bind.JAXBElement$GlobalScope - 3

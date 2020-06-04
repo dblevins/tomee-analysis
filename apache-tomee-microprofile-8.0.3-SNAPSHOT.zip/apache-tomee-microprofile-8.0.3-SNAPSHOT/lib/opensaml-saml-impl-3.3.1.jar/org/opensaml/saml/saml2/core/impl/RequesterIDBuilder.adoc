@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/RequesterIDBuilder.class
+
+ - link:RequesterIDBuilder-asmified.java[Asmified]
+
+== References
+

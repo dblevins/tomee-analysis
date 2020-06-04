@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/KeyInfoBean$CERT_IDENTIFIER.class
+
+ - link:KeyInfoBean$CERT_IDENTIFIER-asmified.java[Asmified]
+
+== References
+

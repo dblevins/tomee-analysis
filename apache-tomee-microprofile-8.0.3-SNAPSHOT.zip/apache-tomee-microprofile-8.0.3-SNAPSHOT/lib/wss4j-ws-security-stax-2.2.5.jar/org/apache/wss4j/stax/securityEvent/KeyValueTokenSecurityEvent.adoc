@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/KeyValueTokenSecurityEvent.class
+
+ - link:KeyValueTokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

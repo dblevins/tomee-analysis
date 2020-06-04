@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/OpenJPAVersionAndConfigurationTypeValidationPolicy.class
+
+ - link:OpenJPAVersionAndConfigurationTypeValidationPolicy-asmified.java[Asmified]
+
+== References
+

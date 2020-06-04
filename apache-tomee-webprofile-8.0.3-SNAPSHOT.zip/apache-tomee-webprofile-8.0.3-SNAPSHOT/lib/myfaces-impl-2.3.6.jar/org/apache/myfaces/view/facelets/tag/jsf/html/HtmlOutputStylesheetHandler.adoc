@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/jsf/html/HtmlOutputStylesheetHandler.class
+
+ - link:HtmlOutputStylesheetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.view.facelets.FaceletContext - 4
+ - javax.faces.view.facelets.ComponentConfig - 2

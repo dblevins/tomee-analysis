@@ -1,0 +1,15 @@
+= javax/faces/validator/RequiredValidator.class
+
+ - link:RequiredValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.FacesMessage - 5
+ - javax.faces.component.UIInput - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.application.FacesMessage$Severity - 4
+ - javax.faces.validator.ValidatorException - 4
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.validator._MessageUtils - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.validator.Validator - 1

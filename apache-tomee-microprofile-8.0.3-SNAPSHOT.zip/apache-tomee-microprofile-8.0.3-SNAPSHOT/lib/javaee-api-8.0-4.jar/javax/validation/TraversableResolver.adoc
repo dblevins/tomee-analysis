@@ -1,0 +1,8 @@
+= javax/validation/TraversableResolver.class
+
+ - link:TraversableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 2
+ - javax.validation.Path - 2

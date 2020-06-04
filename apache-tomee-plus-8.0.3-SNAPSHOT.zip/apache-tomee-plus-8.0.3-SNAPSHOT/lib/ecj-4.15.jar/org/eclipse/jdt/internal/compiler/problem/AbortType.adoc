@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/problem/AbortType.class
+
+ - link:AbortType-asmified.java[Asmified]
+
+== References
+

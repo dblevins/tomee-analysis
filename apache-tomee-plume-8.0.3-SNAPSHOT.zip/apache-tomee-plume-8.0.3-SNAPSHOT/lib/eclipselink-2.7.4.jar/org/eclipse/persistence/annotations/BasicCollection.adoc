@@ -1,0 +1,8 @@
+= org/eclipse/persistence/annotations/BasicCollection.class
+
+ - link:BasicCollection-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 2
+ - javax.persistence.FetchType - 2

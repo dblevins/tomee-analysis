@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/TimestampLockingPolicy.class
+
+ - link:TimestampLockingPolicy-asmified.java[Asmified]
+
+== References
+

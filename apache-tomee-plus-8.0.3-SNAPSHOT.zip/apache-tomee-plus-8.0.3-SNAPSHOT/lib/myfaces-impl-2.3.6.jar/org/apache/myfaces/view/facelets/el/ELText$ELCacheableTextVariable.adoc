@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/el/ELText$ELCacheableTextVariable.class
+
+ - link:ELText$ELCacheableTextVariable-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 27
+ - javax.el.ELContext - 9
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.view.Location - 6
+ - javax.el.ExpressionFactory - 3
+ - javax.el.ELException - 3
+ - javax.faces.context.ResponseWriter - 2

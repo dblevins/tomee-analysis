@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/SerializedObject.class
+
+ - link:SerializedObject-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 2

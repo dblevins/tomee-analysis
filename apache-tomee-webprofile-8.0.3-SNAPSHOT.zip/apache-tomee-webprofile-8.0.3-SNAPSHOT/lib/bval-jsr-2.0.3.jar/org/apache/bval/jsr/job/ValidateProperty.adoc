@@ -1,0 +1,11 @@
+= org/apache/bval/jsr/job/ValidateProperty.class
+
+ - link:ValidateProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ConstraintDescriptor - 4
+ - javax.validation.metadata.BeanDescriptor - 4
+ - javax.validation.Path - 1
+ - javax.validation.metadata.PropertyDescriptor - 1
+ - javax.validation.metadata.ElementDescriptor - 1

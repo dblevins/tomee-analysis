@@ -1,0 +1,8 @@
+= com/sun/activation/viewers/TextEditor.class
+
+ - link:TextEditor-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 8
+ - javax.activation.CommandObject - 1

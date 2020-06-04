@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/MissingAttributeDetailTypeImpl.class
+
+ - link:MissingAttributeDetailTypeImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/rop/ListResultList.class
+
+ - link:ListResultList-asmified.java[Asmified]
+
+== References
+

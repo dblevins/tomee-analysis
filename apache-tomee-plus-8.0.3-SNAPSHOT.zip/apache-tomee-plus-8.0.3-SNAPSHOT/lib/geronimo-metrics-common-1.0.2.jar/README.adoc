@@ -1,0 +1,8 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/geronimo-metrics-common-1.0.2.jar
+
+ - link:org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints.adoc[org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints.class] - 87
+ - link:org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator.adoc[org/apache/geronimo/microprofile/metrics/common/jaxrs/SecurityValidator.class] - 21
+ - link:org/apache/geronimo/microprofile/metrics/common/TimerImpl.adoc[org/apache/geronimo/microprofile/metrics/common/TimerImpl.class] - 4
+ - link:org/apache/geronimo/microprofile/metrics/common/MeterImpl.adoc[org/apache/geronimo/microprofile/metrics/common/MeterImpl.class] - 3
+ - link:org/apache/geronimo/microprofile/metrics/common/BaseMetrics$1.adoc[org/apache/geronimo/microprofile/metrics/common/BaseMetrics$1.class] - 2
+ - link:org/apache/geronimo/microprofile/metrics/common/HistogramImpl.adoc[org/apache/geronimo/microprofile/metrics/common/HistogramImpl.class] - 1

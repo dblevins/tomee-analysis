@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/mbean/MBeanRuntimeServicesMBean.class
+
+ - link:MBeanRuntimeServicesMBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/MimeUtility.class
+
+ - link:MimeUtility-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 8
+ - javax.activation.DataHandler - 8

@@ -1,0 +1,12 @@
+= org/apache/cxf/attachment/AttachmentUtil.class
+
+ - link:AttachmentUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 17
+ - javax.activation.DataSource - 9
+ - javax.activation.CommandMap - 7
+ - javax.activation.MailcapCommandMap - 5
+ - javax.activation.FileDataSource - 3
+ - javax.activation.URLDataSource - 2

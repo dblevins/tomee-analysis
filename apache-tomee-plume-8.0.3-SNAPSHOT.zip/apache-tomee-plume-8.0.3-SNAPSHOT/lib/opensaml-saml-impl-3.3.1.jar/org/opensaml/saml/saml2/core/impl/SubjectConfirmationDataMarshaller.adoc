@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/SubjectConfirmationDataMarshaller.class
+
+ - link:SubjectConfirmationDataMarshaller-asmified.java[Asmified]
+
+== References
+

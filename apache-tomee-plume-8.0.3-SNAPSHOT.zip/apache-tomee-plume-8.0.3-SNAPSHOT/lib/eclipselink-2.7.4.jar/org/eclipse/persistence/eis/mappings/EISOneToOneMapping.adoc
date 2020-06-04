@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/mappings/EISOneToOneMapping.class
+
+ - link:EISOneToOneMapping-asmified.java[Asmified]
+
+== References
+

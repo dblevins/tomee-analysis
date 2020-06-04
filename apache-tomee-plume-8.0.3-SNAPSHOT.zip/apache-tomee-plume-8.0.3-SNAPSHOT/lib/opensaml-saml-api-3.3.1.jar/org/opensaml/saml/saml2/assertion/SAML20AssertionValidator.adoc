@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/assertion/SAML20AssertionValidator.class
+
+ - link:SAML20AssertionValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 30
+ - javax.annotation.Nullable - 5

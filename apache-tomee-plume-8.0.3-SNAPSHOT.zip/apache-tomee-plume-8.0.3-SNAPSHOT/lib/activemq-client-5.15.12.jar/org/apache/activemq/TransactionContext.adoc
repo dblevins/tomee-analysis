@@ -1,0 +1,9 @@
+= org/apache/activemq/TransactionContext.class
+
+ - link:TransactionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 58
+ - javax.jms.TransactionInProgressException - 6
+ - javax.jms.TransactionRolledBackException - 6

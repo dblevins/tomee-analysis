@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/el/ActionsMap$CommandEntry.class
+
+ - link:ActionsMap$CommandEntry-asmified.java[Asmified]
+
+== References
+

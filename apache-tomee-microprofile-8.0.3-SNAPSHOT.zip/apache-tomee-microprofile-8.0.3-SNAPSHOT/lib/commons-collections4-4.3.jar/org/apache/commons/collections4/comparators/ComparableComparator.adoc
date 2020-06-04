@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/comparators/ComparableComparator.class
+
+ - link:ComparableComparator-asmified.java[Asmified]
+
+== References
+

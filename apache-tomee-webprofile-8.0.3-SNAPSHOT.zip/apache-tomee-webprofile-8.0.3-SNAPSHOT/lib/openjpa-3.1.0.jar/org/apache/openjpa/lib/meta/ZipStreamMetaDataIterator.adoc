@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/ZipStreamMetaDataIterator.class
+
+ - link:ZipStreamMetaDataIterator-asmified.java[Asmified]
+
+== References
+

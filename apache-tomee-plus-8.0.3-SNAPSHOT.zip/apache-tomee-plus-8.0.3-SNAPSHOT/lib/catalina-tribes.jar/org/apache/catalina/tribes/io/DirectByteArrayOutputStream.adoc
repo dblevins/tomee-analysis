@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/io/DirectByteArrayOutputStream.class
+
+ - link:DirectByteArrayOutputStream-asmified.java[Asmified]
+
+== References
+

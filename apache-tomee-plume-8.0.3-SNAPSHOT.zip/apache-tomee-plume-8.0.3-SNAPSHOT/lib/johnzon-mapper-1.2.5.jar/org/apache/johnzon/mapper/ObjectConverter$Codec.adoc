@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/ObjectConverter$Codec.class
+
+ - link:ObjectConverter$Codec-asmified.java[Asmified]
+
+== References
+

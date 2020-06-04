@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/dynamic/metadata/SchemaMetadata$XJCErrorListener.class
+
+ - link:SchemaMetadata$XJCErrorListener-asmified.java[Asmified]
+
+== References
+

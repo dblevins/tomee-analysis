@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/DataSourceConfig.class
+
+ - link:DataSourceConfig-asmified.java[Asmified]
+
+== References
+

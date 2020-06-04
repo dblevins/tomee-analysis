@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/helpers/PublicId.class
+
+ - link:PublicId-asmified.java[Asmified]
+
+== References
+

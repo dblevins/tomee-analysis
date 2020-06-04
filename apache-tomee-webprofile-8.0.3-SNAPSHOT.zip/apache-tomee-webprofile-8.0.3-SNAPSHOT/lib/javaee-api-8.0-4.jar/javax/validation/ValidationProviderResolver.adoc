@@ -1,0 +1,7 @@
+= javax/validation/ValidationProviderResolver.class
+
+ - link:ValidationProviderResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.spi.ValidationProvider - 1

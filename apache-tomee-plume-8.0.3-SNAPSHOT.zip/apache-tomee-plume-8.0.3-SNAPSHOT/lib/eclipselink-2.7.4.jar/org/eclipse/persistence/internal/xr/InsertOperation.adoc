@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/InsertOperation.class
+
+ - link:InsertOperation-asmified.java[Asmified]
+
+== References
+

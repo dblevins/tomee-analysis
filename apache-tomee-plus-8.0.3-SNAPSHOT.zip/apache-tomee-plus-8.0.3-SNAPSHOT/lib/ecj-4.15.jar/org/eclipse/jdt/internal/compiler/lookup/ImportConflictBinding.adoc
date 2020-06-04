@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/ImportConflictBinding.class
+
+ - link:ImportConflictBinding-asmified.java[Asmified]
+
+== References
+

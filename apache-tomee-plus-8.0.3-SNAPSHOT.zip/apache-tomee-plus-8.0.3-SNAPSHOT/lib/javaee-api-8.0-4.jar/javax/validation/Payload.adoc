@@ -1,0 +1,6 @@
+= javax/validation/Payload.class
+
+ - link:Payload-asmified.java[Asmified]
+
+== References
+

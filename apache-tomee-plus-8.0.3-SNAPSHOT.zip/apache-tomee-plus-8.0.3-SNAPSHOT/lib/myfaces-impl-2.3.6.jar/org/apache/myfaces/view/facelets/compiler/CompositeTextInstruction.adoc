@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/compiler/CompositeTextInstruction.class
+
+ - link:CompositeTextInstruction-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ELContext - 2

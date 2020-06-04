@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SSODescriptorMarshaller.class
+
+ - link:SSODescriptorMarshaller-asmified.java[Asmified]
+
+== References
+

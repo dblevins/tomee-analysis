@@ -1,0 +1,9 @@
+= com/sun/faces/context/AlwaysPuttingSessionMap.class
+
+ - link:AlwaysPuttingSessionMap-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 3
+ - javax.servlet.http.HttpServletRequest - 2
+ - javax.faces.application.ProjectStage - 2

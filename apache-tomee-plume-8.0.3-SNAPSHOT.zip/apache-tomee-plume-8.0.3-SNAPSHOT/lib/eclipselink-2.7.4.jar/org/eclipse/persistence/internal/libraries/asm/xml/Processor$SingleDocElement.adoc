@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/Processor$SingleDocElement.class
+
+ - link:Processor$SingleDocElement-asmified.java[Asmified]
+
+== References
+

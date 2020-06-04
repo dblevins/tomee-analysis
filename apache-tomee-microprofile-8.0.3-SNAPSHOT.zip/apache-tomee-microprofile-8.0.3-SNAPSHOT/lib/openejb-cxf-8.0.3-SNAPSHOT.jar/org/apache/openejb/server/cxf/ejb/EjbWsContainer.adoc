@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/ejb/EjbWsContainer.class
+
+ - link:EjbWsContainer-asmified.java[Asmified]
+
+== References
+

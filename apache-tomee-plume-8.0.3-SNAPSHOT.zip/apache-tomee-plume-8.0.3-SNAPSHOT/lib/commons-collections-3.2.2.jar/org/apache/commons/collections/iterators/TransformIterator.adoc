@@ -1,0 +1,6 @@
+= org/apache/commons/collections/iterators/TransformIterator.class
+
+ - link:TransformIterator-asmified.java[Asmified]
+
+== References
+

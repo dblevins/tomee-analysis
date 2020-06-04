@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/jaas/ScriptLoginModule$UserData.class
+
+ - link:ScriptLoginModule$UserData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/geronimo/microprofile/openapi/jaxrs/OpenAPIEndpoint.class
+
+ - link:OpenAPIEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$Status - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.GET - 1
+ - javax.ws.rs.Path - 1
+ - javax.enterprise.context.ApplicationScoped - 1

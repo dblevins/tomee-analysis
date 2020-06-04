@@ -1,0 +1,8 @@
+= javax/mail/event/ConnectionAdapter.class
+
+ - link:ConnectionAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.event.ConnectionEvent - 3
+ - javax.mail.event.ConnectionListener - 1

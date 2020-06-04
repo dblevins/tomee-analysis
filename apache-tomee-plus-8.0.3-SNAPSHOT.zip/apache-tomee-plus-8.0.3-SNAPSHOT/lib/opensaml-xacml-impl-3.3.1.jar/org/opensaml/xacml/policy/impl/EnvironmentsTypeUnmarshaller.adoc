@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/EnvironmentsTypeUnmarshaller.class
+
+ - link:EnvironmentsTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

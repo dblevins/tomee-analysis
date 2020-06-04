@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/resolver/Resolver.class
+
+ - link:Resolver-asmified.java[Asmified]
+
+== References
+

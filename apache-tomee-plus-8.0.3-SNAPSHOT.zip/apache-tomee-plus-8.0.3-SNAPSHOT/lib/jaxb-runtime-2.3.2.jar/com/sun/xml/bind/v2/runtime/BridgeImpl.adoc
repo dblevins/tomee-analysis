@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/runtime/BridgeImpl.class
+
+ - link:BridgeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 9
+ - javax.xml.bind.JAXBElement - 8
+ - javax.xml.bind.Marshaller - 5
+ - javax.xml.bind.Unmarshaller - 4

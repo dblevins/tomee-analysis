@@ -1,0 +1,6 @@
+= org/apache/openejb/util/DirectoryMonitor$FileInfo.class
+
+ - link:DirectoryMonitor$FileInfo-asmified.java[Asmified]
+
+== References
+

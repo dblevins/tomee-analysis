@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/transformers/ReadTransformerImpl.class
+
+ - link:ReadTransformerImpl-asmified.java[Asmified]
+
+== References
+

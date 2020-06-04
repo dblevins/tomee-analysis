@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/UnmodifiableEntrySet$UnmodifiableEntrySetIterator.class
+
+ - link:UnmodifiableEntrySet$UnmodifiableEntrySetIterator-asmified.java[Asmified]
+
+== References
+

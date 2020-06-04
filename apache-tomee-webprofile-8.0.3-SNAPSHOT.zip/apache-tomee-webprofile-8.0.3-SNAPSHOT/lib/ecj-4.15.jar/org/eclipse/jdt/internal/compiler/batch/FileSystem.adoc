@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/FileSystem.class
+
+ - link:FileSystem-asmified.java[Asmified]
+
+== References
+

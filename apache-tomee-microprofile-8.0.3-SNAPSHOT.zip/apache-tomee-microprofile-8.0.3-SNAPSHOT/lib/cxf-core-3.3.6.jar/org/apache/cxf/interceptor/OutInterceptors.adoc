@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/OutInterceptors.class
+
+ - link:OutInterceptors-asmified.java[Asmified]
+
+== References
+

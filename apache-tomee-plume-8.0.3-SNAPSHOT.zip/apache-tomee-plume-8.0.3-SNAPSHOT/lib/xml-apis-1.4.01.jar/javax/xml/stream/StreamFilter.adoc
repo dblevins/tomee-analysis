@@ -1,0 +1,6 @@
+= javax/xml/stream/StreamFilter.class
+
+ - link:StreamFilter-asmified.java[Asmified]
+
+== References
+

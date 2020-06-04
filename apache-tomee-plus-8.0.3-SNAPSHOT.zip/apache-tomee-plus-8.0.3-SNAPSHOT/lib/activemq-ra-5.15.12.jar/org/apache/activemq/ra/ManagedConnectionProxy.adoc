@@ -1,0 +1,22 @@
+= org/apache/activemq/ra/ManagedConnectionProxy.class
+
+ - link:ManagedConnectionProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 30
+ - javax.jms.Connection - 22
+ - javax.jms.ExceptionListener - 10
+ - javax.jms.ServerSessionPool - 4
+ - javax.jms.ConnectionConsumer - 4
+ - javax.jms.Session - 3
+ - javax.jms.QueueSession - 2
+ - javax.jms.Topic - 2
+ - javax.resource.spi.ConnectionRequestInfo - 2
+ - javax.jms.IllegalStateException - 2
+ - javax.jms.ConnectionMetaData - 2
+ - javax.jms.TopicSession - 2
+ - javax.jms.TopicConnection - 1
+ - javax.jms.QueueConnection - 1
+ - javax.jms.Queue - 1
+ - javax.jms.Destination - 1

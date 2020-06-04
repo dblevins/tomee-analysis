@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/linkedlist/ExposedNodeLinkedList.class
+
+ - link:ExposedNodeLinkedList-asmified.java[Asmified]
+
+== References
+

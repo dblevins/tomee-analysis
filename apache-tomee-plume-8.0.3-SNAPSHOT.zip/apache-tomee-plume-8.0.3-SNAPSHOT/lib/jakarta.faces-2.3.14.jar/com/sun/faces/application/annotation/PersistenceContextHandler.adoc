@@ -1,0 +1,8 @@
+= com/sun/faces/application/annotation/PersistenceContextHandler.class
+
+ - link:PersistenceContextHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceContext - 18
+ - javax.faces.context.FacesContext - 10

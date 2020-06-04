@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/InternetHeaders.class
+
+ - link:InternetHeaders-asmified.java[Asmified]
+
+== References
+

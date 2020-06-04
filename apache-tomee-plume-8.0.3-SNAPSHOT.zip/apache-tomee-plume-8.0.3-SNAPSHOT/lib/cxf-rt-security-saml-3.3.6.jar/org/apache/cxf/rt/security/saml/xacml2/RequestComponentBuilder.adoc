@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/saml/xacml2/RequestComponentBuilder.class
+
+ - link:RequestComponentBuilder-asmified.java[Asmified]
+
+== References
+

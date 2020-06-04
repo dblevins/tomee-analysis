@@ -1,0 +1,8 @@
+= org/opensaml/profile/logic/MessageContextPredicateAdapter.class
+
+ - link:MessageContextPredicateAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 2

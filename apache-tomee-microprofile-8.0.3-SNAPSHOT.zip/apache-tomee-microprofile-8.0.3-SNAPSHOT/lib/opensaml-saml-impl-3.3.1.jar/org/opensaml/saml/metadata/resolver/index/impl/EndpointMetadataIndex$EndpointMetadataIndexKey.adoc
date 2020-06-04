@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/index/impl/EndpointMetadataIndex$EndpointMetadataIndexKey.class
+
+ - link:EndpointMetadataIndex$EndpointMetadataIndexKey-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11

@@ -1,0 +1,6 @@
+= org/apache/openejb/log/logger/AbstractDelegatingLogger.class
+
+ - link:AbstractDelegatingLogger-asmified.java[Asmified]
+
+== References
+

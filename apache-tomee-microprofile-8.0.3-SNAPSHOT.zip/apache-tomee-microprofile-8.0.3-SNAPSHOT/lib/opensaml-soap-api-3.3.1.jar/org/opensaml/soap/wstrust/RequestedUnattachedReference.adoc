@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/RequestedUnattachedReference.class
+
+ - link:RequestedUnattachedReference-asmified.java[Asmified]
+
+== References
+

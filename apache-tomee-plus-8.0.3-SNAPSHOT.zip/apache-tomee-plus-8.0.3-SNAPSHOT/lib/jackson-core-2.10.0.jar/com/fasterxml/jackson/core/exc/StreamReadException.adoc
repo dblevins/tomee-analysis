@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/exc/StreamReadException.class
+
+ - link:StreamReadException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomee/microprofile/jwt/bval/ClassValidationGenerator.class
+
+ - link:ClassValidationGenerator-asmified.java[Asmified]
+
+== References
+

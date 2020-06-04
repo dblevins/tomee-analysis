@@ -1,0 +1,6 @@
+= org/cryptacular/bean/BufferedBlockCipherBean.class
+
+ - link:BufferedBlockCipherBean-asmified.java[Asmified]
+
+== References
+

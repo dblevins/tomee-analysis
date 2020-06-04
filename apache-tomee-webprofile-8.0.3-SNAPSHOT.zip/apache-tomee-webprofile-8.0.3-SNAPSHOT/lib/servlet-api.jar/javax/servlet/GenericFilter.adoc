@@ -1,0 +1,11 @@
+= javax/servlet/GenericFilter.class
+
+ - link:GenericFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.FilterConfig - 14
+ - javax.servlet.GenericFilter - 5
+ - javax.servlet.ServletException - 2
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.Filter - 1

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Snapshot.class
+
+ - link:Snapshot-asmified.java[Asmified]
+
+== References
+

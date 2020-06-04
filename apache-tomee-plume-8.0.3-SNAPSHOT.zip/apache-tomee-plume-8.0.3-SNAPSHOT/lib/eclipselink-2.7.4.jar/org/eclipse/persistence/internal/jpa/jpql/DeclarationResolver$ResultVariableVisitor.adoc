@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/DeclarationResolver$ResultVariableVisitor.class
+
+ - link:DeclarationResolver$ResultVariableVisitor-asmified.java[Asmified]
+
+== References
+

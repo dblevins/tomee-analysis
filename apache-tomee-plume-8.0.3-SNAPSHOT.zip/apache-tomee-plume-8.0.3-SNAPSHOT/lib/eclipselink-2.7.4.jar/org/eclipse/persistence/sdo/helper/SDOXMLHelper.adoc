@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOXMLHelper.class
+
+ - link:SDOXMLHelper-asmified.java[Asmified]
+
+== References
+

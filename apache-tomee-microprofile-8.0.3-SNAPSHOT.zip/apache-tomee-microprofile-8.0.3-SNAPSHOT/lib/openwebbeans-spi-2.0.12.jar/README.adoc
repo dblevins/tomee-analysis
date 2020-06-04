@@ -1,0 +1,10 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openwebbeans-spi-2.0.12.jar
+
+ - link:org/apache/webbeans/spi/plugins/OpenWebBeansEjbPlugin.adoc[org/apache/webbeans/spi/plugins/OpenWebBeansEjbPlugin.class] - 9
+ - link:org/apache/webbeans/spi/TransactionService.adoc[org/apache/webbeans/spi/TransactionService.class] - 5
+ - link:org/apache/webbeans/spi/ContextsService.adoc[org/apache/webbeans/spi/ContextsService.class] - 3
+ - link:org/apache/webbeans/spi/adaptor/ELAdaptor.adoc[org/apache/webbeans/spi/adaptor/ELAdaptor.class] - 3
+ - link:org/apache/webbeans/spi/ValidatorService.adoc[org/apache/webbeans/spi/ValidatorService.class] - 2
+ - link:org/apache/webbeans/spi/ResourceInjectionService.adoc[org/apache/webbeans/spi/ResourceInjectionService.class] - 2
+ - link:org/apache/webbeans/spi/ContainerLifecycle.adoc[org/apache/webbeans/spi/ContainerLifecycle.class] - 1
+ - link:org/apache/webbeans/spi/InjectionPointService.adoc[org/apache/webbeans/spi/InjectionPointService.class] - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Index$IndexListIterator.class
+
+ - link:Index$IndexListIterator-asmified.java[Asmified]
+
+== References
+

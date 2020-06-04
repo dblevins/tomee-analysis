@@ -1,0 +1,19 @@
+= org/apache/cxf/jaxrs/provider/RequestDispatcherProvider.class
+
+ - link:RequestDispatcherProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 12
+ - javax.servlet.ServletContext - 11
+ - javax.ws.rs.core.UriInfo - 10
+ - javax.servlet.RequestDispatcher - 9
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.servlet.http.HttpSession - 2
+ - javax.servlet.ServletRequest - 2
+ - javax.ws.rs.core.PathSegment - 2
+ - javax.servlet.http.HttpServletResponse - 2
+ - javax.ws.rs.core.Response - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.core.MediaType - 1

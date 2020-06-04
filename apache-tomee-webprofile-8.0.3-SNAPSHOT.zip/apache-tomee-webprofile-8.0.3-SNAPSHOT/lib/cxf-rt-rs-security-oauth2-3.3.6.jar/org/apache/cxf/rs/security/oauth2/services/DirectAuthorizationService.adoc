@@ -1,0 +1,15 @@
+= org/apache/cxf/rs/security/oauth2/services/DirectAuthorizationService.class
+
+ - link:DirectAuthorizationService-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 12
+ - javax.ws.rs.core.Response - 4
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.core.Response$ResponseBuilder - 2
+ - javax.ws.rs.POST - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Path - 1
+ - javax.ws.rs.WebApplicationException - 1

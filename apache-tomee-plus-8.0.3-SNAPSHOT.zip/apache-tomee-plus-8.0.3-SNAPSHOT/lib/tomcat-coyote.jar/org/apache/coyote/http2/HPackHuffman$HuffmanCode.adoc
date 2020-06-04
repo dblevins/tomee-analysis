@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/HPackHuffman$HuffmanCode.class
+
+ - link:HPackHuffman$HuffmanCode-asmified.java[Asmified]
+
+== References
+

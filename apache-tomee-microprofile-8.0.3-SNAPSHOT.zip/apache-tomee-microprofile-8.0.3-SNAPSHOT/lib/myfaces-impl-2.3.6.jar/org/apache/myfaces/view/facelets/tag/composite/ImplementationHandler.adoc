@@ -1,0 +1,14 @@
+= org/apache/myfaces/view/facelets/tag/composite/ImplementationHandler.class
+
+ - link:ImplementationHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.view.facelets.FaceletHandler - 4
+ - javax.faces.view.Location - 2
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.facelets.TagException - 2

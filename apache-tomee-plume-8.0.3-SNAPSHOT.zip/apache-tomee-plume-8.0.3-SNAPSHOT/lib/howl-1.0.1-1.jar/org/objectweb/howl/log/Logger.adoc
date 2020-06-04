@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/Logger.class
+
+ - link:Logger-asmified.java[Asmified]
+
+== References
+

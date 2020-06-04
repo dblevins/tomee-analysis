@@ -1,0 +1,7 @@
+= org/apache/cxf/transport/http/policy/impl/ServerPolicyCalculator.class
+
+ - link:ServerPolicyCalculator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 2

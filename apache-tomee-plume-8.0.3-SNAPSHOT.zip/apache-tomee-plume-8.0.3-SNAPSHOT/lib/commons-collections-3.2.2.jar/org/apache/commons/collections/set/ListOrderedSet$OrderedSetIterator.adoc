@@ -1,0 +1,6 @@
+= org/apache/commons/collections/set/ListOrderedSet$OrderedSetIterator.class
+
+ - link:ListOrderedSet$OrderedSetIterator-asmified.java[Asmified]
+
+== References
+

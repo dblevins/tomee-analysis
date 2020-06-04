@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/IntegerCodec.class
+
+ - link:IntegerCodec-asmified.java[Asmified]
+
+== References
+

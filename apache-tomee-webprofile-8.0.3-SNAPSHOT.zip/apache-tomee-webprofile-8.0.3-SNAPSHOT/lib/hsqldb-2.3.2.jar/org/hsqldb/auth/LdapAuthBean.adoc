@@ -1,0 +1,6 @@
+= org/hsqldb/auth/LdapAuthBean.class
+
+ - link:LdapAuthBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/jvnet/staxex/MtomEnabled.class
+
+ - link:MtomEnabled-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 1

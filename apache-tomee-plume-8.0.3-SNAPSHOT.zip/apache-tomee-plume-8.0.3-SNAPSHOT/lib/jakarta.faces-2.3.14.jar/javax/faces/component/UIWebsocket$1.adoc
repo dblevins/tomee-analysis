@@ -1,0 +1,6 @@
+= javax/faces/component/UIWebsocket$1.class
+
+ - link:UIWebsocket$1-asmified.java[Asmified]
+
+== References
+

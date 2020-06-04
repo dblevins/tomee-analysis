@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/MapRecipe.class
+
+ - link:MapRecipe-asmified.java[Asmified]
+
+== References
+

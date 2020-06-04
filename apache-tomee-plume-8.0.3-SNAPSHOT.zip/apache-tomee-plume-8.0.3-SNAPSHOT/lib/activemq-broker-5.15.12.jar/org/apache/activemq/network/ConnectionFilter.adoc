@@ -1,0 +1,6 @@
+= org/apache/activemq/network/ConnectionFilter.class
+
+ - link:ConnectionFilter-asmified.java[Asmified]
+
+== References
+

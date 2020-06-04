@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryFlushModes.class
+
+ - link:QueryFlushModes-asmified.java[Asmified]
+
+== References
+

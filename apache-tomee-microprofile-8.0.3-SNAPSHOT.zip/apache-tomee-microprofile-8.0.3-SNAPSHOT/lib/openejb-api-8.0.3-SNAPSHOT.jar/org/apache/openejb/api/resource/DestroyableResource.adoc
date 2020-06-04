@@ -1,0 +1,6 @@
+= org/apache/openejb/api/resource/DestroyableResource.class
+
+ - link:DestroyableResource-asmified.java[Asmified]
+
+== References
+

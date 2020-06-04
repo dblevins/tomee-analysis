@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/jdbc/dsfactory/DataSourceFactory.class
+
+ - link:DataSourceFactory-asmified.java[Asmified]
+
+== References
+

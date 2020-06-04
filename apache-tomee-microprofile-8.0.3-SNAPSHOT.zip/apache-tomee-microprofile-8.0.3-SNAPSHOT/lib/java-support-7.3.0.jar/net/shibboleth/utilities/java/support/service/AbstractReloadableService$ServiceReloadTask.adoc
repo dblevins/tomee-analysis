@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/service/AbstractReloadableService$ServiceReloadTask.class
+
+ - link:AbstractReloadableService$ServiceReloadTask-asmified.java[Asmified]
+
+== References
+

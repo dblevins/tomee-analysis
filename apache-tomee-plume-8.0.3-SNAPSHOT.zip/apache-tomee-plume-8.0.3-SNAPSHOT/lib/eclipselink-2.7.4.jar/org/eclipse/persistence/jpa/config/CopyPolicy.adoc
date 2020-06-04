@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/CopyPolicy.class
+
+ - link:CopyPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Pool$Supplier.class
+
+ - link:Pool$Supplier-asmified.java[Asmified]
+
+== References
+

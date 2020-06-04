@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ContainerAnnotation.class
+
+ - link:ContainerAnnotation-asmified.java[Asmified]
+
+== References
+

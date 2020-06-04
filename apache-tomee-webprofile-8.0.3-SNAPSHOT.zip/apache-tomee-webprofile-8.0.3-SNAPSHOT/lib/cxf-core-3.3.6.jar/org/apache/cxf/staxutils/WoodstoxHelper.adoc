@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/WoodstoxHelper.class
+
+ - link:WoodstoxHelper-asmified.java[Asmified]
+
+== References
+

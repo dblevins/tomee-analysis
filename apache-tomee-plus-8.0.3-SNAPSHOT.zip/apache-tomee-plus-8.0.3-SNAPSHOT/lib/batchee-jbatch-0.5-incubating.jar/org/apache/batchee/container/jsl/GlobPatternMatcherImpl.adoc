@@ -1,0 +1,6 @@
+= org/apache/batchee/container/jsl/GlobPatternMatcherImpl.class
+
+ - link:GlobPatternMatcherImpl-asmified.java[Asmified]
+
+== References
+

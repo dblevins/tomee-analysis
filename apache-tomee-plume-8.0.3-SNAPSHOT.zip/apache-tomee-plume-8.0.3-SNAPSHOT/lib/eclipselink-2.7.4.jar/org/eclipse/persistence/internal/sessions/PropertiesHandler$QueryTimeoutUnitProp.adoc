@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/PropertiesHandler$QueryTimeoutUnitProp.class
+
+ - link:PropertiesHandler$QueryTimeoutUnitProp-asmified.java[Asmified]
+
+== References
+

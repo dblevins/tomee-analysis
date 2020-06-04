@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/pkcs/SignerInfo.class
+
+ - link:SignerInfo-asmified.java[Asmified]
+
+== References
+

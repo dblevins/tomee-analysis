@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/EndDTDEvent.class
+
+ - link:EndDTDEvent-asmified.java[Asmified]
+
+== References
+

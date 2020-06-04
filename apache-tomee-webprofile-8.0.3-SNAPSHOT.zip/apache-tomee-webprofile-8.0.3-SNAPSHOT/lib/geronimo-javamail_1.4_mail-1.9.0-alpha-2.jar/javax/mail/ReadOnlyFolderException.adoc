@@ -1,0 +1,9 @@
+= javax/mail/ReadOnlyFolderException.class
+
+ - link:ReadOnlyFolderException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Folder - 8
+ - javax.mail.MessagingException - 2
+ - javax.mail.ReadOnlyFolderException - 1

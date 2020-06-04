@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/el/LegacyELContext$EmptyFunctionMapper.class
+
+ - link:LegacyELContext$EmptyFunctionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.FunctionMapper - 2

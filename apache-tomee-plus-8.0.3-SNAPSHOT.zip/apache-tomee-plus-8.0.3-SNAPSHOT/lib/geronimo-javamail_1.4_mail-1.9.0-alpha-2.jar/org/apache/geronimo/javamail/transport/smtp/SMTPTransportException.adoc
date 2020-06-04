@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/transport/smtp/SMTPTransportException.class
+
+ - link:SMTPTransportException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JwsDetachedSignatureProvider.class
+
+ - link:JwsDetachedSignatureProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 7
+ - javax.ws.rs.core.MultivaluedMap - 3
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.ext.MessageBodyWriter - 1

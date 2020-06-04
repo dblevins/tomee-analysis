@@ -1,0 +1,12 @@
+= org/apache/openejb/core/timer/TimerData.class
+
+ - link:TimerData-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 8
+ - javax.ejb.Timer - 7
+ - javax.ejb.TimerConfig - 6
+ - javax.transaction.Transaction - 4
+ - javax.transaction.TransactionManager - 2
+ - javax.transaction.Synchronization - 1

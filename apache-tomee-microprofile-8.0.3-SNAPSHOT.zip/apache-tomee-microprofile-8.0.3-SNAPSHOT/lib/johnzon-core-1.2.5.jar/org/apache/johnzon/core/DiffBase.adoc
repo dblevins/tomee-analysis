@@ -1,0 +1,9 @@
+= org/apache/johnzon/core/DiffBase.class
+
+ - link:DiffBase-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 2
+ - javax.json.JsonObject - 1
+ - javax.json.JsonArray - 1

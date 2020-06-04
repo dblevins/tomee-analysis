@@ -1,0 +1,11 @@
+= org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener.class
+
+ - link:WebBeansConfigurationHttpSessionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 8
+ - javax.servlet.http.HttpSessionEvent - 8
+ - javax.enterprise.context.SessionScoped - 2
+ - javax.servlet.http.HttpSessionListener - 1
+ - javax.enterprise.context.ConversationScoped - 1

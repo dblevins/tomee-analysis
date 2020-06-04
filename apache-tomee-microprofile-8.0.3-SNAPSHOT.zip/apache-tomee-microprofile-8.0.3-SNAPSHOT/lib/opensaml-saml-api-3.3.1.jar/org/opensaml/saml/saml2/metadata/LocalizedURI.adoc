@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/LocalizedURI.class
+
+ - link:LocalizedURI-asmified.java[Asmified]
+
+== References
+

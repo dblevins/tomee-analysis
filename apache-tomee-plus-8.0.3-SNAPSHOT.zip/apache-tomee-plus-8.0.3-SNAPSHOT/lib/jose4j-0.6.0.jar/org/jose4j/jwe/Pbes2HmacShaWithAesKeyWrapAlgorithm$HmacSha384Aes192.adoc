@@ -1,0 +1,6 @@
+= org/jose4j/jwe/Pbes2HmacShaWithAesKeyWrapAlgorithm$HmacSha384Aes192.class
+
+ - link:Pbes2HmacShaWithAesKeyWrapAlgorithm$HmacSha384Aes192-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AuthenticationQueryBuilder.class
+
+ - link:AuthenticationQueryBuilder-asmified.java[Asmified]
+
+== References
+

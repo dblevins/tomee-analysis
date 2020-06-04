@@ -1,0 +1,14 @@
+= org/apache/myfaces/taglib/core/ValidateRegexTag.class
+
+ - link:ValidateRegexTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 21
+ - javax.faces.context.FacesContext - 6
+ - javax.el.ELContext - 6
+ - javax.faces.validator.RegexValidator - 4
+ - javax.faces.application.Application - 3
+ - javax.servlet.jsp.JspException - 3
+ - javax.faces.validator.Validator - 3
+ - javax.faces.webapp.ValidatorELTag - 2

@@ -1,0 +1,7 @@
+= org/apache/openejb/server/cxf/JaxWsImplementorInfoImpl.class
+
+ - link:JaxWsImplementorInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.BindingType - 4

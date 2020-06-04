@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/auth/HttpAuthHeader.class
+
+ - link:HttpAuthHeader-asmified.java[Asmified]
+
+== References
+

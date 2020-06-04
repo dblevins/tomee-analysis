@@ -1,0 +1,6 @@
+= org/apache/bval/constraints/PastOrPresentValidator$ForChronoLocalDate.class
+
+ - link:PastOrPresentValidator$ForChronoLocalDate-asmified.java[Asmified]
+
+== References
+

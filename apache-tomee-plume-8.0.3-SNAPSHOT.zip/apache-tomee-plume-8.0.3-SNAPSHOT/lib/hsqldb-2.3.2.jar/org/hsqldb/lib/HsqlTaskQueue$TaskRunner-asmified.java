@@ -1,0 +1,170 @@
+package asm.org.hsqldb.lib;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class HsqlTaskQueue$TaskRunnerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", null, "java/lang/Object", new String[] { "java/lang/Runnable" });
+
+classWriter.visitInnerClass("org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "org/hsqldb/lib/HsqlTaskQueue", "TaskRunner", ACC_PROTECTED);
+
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "<init>", "(Lorg/hsqldb/lib/HsqlTaskQueue;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
+Label label4 = new Label();
+Label label5 = new Label();
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label4, label5, label6, null);
+Label label7 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label6, null);
+Label label8 = new Label();
+Label label9 = new Label();
+Label label10 = new Label();
+methodVisitor.visitTryCatchBlock(label8, label9, label10, null);
+Label label11 = new Label();
+methodVisitor.visitTryCatchBlock(label10, label11, label10, null);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue", "isShutdown", "Z");
+methodVisitor.visitJumpInsn(IFNE, label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue", "queue", "Lorg/hsqldb/lib/HsqlDeque;");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(MONITORENTER);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue", "queue", "Lorg/hsqldb/lib/HsqlDeque;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/lib/HsqlDeque", "getFirst", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Runnable");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label1);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label12);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/hsqldb/lib/HsqlTaskQueue$TaskRunner", Opcodes.TOP, "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "java/lang/Runnable"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/hsqldb/lib/HsqlTaskQueue", "SHUTDOWNTASK", "Ljava/lang/Runnable;");
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label13);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/lib/HsqlTaskQueue", "isShutdown", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue", "queue", "Lorg/hsqldb/lib/HsqlDeque;");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(MONITORENTER);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue", "queue", "Lorg/hsqldb/lib/HsqlDeque;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/lib/HsqlDeque", "clear", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label5);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label14);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "java/lang/Runnable", "java/lang/Object"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(MONITOREXIT);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitJumpInsn(IFNULL, label9);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/Runnable", "run", "()V", true);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/lib/HsqlTaskQueue", "clearThread", "()V", false);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label15);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/lib/HsqlTaskQueue$TaskRunner", "this$0", "Lorg/hsqldb/lib/HsqlTaskQueue;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/lib/HsqlTaskQueue", "clearThread", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 6);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,6 @@
+= org/apache/cxf/management/interceptor/PersistOutInterceptor$PersistOutInterceptorCallback.class
+
+ - link:PersistOutInterceptor$PersistOutInterceptorCallback-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/metatype/sxc/util/ArrayUtil$IntArray.class
+
+ - link:ArrayUtil$IntArray-asmified.java[Asmified]
+
+== References
+

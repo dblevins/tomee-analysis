@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/util/ResponseFormatException.class
+
+ - link:ResponseFormatException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 4

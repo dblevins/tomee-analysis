@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/DispatchImpl$1.class
+
+ - link:DispatchImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.AsyncHandler - 2

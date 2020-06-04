@@ -1,0 +1,6 @@
+= org/apache/openejb/log/commonslogging/Log4J4AppOpenEJB4ContainerLog.class
+
+ - link:Log4J4AppOpenEJB4ContainerLog-asmified.java[Asmified]
+
+== References
+

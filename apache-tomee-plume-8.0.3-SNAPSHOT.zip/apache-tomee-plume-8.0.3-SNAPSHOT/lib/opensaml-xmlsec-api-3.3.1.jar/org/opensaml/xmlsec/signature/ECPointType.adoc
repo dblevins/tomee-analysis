@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/ECPointType.class
+
+ - link:ECPointType-asmified.java[Asmified]
+
+== References
+

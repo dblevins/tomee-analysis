@@ -1,0 +1,6 @@
+= org/jose4j/jwe/KeyManagementAlgorithmIdentifiers.class
+
+ - link:KeyManagementAlgorithmIdentifiers-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/persistence/IdClass.class
+
+ - link:IdClass-asmified.java[Asmified]
+
+== References
+

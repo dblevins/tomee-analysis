@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/SessionBean$JAXB.class
+
+ - link:SessionBean$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 71

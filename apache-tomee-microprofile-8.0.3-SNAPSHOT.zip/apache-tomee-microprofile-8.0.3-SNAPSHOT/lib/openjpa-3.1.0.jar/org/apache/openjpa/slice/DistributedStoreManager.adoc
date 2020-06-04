@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/DistributedStoreManager.class
+
+ - link:DistributedStoreManager-asmified.java[Asmified]
+
+== References
+

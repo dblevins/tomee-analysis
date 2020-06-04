@@ -1,0 +1,11 @@
+= com/sun/faces/renderkit/html_basic/OutputMessageRenderer.class
+
+ - link:OutputMessageRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 23
+ - javax.faces.context.ResponseWriter - 16
+ - javax.faces.context.FacesContext - 11
+ - javax.faces.component.UIParameter - 3
+ - javax.faces.component.UIViewRoot - 2

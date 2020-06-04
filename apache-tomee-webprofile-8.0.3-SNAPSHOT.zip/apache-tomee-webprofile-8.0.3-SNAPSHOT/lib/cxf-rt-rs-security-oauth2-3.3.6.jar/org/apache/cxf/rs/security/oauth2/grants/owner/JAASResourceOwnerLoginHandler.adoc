@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/grants/owner/JAASResourceOwnerLoginHandler.class
+
+ - link:JAASResourceOwnerLoginHandler-asmified.java[Asmified]
+
+== References
+

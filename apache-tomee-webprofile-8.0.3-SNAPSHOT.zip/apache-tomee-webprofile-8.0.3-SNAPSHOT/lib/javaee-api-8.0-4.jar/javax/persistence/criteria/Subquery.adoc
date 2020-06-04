@@ -1,0 +1,18 @@
+= javax/persistence/criteria/Subquery.class
+
+ - link:Subquery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Subquery - 23
+ - javax.persistence.criteria.Expression - 14
+ - javax.persistence.criteria.AbstractQuery - 9
+ - javax.persistence.criteria.Predicate - 6
+ - javax.persistence.criteria.Join - 3
+ - javax.persistence.criteria.SetJoin - 2
+ - javax.persistence.criteria.ListJoin - 2
+ - javax.persistence.criteria.MapJoin - 2
+ - javax.persistence.criteria.CollectionJoin - 2
+ - javax.persistence.criteria.Root - 2
+ - javax.persistence.criteria.Selection - 1
+ - javax.persistence.criteria.CommonAbstractCriteria - 1

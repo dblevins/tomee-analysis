@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/utils/JAXRSUtils$2.class
+
+ - link:JAXRSUtils$2-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 9

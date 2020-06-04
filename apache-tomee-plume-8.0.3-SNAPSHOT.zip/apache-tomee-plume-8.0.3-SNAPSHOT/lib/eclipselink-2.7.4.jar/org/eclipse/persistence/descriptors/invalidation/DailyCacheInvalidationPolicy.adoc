@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/invalidation/DailyCacheInvalidationPolicy.class
+
+ - link:DailyCacheInvalidationPolicy-asmified.java[Asmified]
+
+== References
+

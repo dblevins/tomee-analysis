@@ -1,0 +1,11 @@
+= com/sun/faces/application/view/FaceletViewHandlingStrategy$4.class
+
+ - link:FaceletViewHandlingStrategy$4-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitResult - 4
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.visit.VisitContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.visit.VisitCallback - 1

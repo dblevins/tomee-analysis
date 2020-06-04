@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/property/ArrayReferenceNodeProperty.class
+
+ - link:ArrayReferenceNodeProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.DomHandler - 10
+ - javax.xml.bind.JAXBException - 2

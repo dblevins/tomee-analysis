@@ -1,0 +1,6 @@
+= com/sun/faces/application/ByteArrayWebOutputStream$DirectByteArrayOutputStream.class
+
+ - link:ByteArrayWebOutputStream$DirectByteArrayOutputStream-asmified.java[Asmified]
+
+== References
+

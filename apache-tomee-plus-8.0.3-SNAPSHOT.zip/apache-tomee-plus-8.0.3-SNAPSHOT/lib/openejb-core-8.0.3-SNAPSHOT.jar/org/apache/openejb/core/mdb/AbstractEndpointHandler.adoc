@@ -1,0 +1,11 @@
+= org/apache/openejb/core/mdb/AbstractEndpointHandler.class
+
+ - link:AbstractEndpointHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ApplicationServerInternalException - 23
+ - javax.resource.spi.UnavailableException - 14
+ - javax.ejb.EJBException - 7
+ - javax.jms.Message - 4
+ - javax.resource.spi.endpoint.MessageEndpoint - 1

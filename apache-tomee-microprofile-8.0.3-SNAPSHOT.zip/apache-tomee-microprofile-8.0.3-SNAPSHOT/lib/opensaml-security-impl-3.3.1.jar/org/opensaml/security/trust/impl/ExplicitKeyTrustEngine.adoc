@@ -1,0 +1,8 @@
+= org/opensaml/security/trust/impl/ExplicitKeyTrustEngine.class
+
+ - link:ExplicitKeyTrustEngine-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 2

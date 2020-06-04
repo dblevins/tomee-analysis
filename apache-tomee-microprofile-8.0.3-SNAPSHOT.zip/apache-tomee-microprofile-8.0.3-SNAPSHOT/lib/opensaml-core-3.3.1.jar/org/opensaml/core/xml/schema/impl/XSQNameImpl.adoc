@@ -1,0 +1,6 @@
+= org/opensaml/core/xml/schema/impl/XSQNameImpl.class
+
+ - link:XSQNameImpl-asmified.java[Asmified]
+
+== References
+

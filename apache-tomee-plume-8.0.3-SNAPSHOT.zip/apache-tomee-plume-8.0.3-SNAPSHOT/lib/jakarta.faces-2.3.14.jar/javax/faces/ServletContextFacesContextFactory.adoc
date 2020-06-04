@@ -1,0 +1,13 @@
+= javax/faces/ServletContextFacesContextFactory.class
+
+ - link:ServletContextFacesContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 13
+ - javax.servlet.ServletContext - 3
+ - javax.faces.CurrentThreadToServletContext - 2
+ - javax.faces.context.FacesContextFactory - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.ServletContextFacesContextFactory - 1
+ - javax.faces.lifecycle.Lifecycle - 1

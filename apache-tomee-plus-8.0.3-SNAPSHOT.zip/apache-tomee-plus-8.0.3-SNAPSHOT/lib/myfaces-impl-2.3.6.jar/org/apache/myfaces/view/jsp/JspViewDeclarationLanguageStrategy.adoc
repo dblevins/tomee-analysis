@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/jsp/JspViewDeclarationLanguageStrategy.class
+
+ - link:JspViewDeclarationLanguageStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.view.ViewDeclarationLanguage - 4

@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/input/SecurityTokenReferenceInputHandler$InternalSecurityTokenReferenceInputProcessor.class
+
+ - link:SecurityTokenReferenceInputHandler$InternalSecurityTokenReferenceInputProcessor-asmified.java[Asmified]
+
+== References
+

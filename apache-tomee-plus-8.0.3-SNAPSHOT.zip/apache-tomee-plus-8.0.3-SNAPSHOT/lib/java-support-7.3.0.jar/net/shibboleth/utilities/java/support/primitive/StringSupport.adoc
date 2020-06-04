@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/primitive/StringSupport.class
+
+ - link:StringSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 6

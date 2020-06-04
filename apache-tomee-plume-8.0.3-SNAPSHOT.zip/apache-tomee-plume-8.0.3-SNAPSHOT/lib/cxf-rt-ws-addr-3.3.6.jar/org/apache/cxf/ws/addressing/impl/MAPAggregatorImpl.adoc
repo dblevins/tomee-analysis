@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/addressing/impl/MAPAggregatorImpl.class
+
+ - link:MAPAggregatorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebFault - 3

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/DeploymentFilterable.class
+
+ - link:DeploymentFilterable-asmified.java[Asmified]
+
+== References
+

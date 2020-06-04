@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/server/UriTemplate.class
+
+ - link:UriTemplate-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.DeploymentException - 3

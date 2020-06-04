@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/QueryExpressions$ParameterExpressionVisitor.class
+
+ - link:QueryExpressions$ParameterExpressionVisitor-asmified.java[Asmified]
+
+== References
+

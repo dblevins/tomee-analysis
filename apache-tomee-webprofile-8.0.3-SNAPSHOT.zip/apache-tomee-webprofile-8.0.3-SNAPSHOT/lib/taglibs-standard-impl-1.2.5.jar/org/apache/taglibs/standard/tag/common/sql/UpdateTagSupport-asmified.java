@@ -1,0 +1,488 @@
+package asm.org.apache.taglibs.standard.tag.common.sql;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class UpdateTagSupportDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", null, "javax/servlet/jsp/tagext/BodyTagSupport", new String[] { "javax/servlet/jsp/tagext/TryCatchFinally", "javax/servlet/jsp/jstl/sql/SQLExecutionTag" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "var", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "scope", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "rawDataSource", "Ljava/lang/Object;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "dataSourceSpecified", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "sql", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "conn", "Ljava/sql/Connection;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "parameters", "Ljava/util/List;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "isPartOfTransaction", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/tagext/BodyTagSupport", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "init", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "init", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "rawDataSource", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "sql", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "conn", "Ljava/sql/Connection;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "parameters", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(DUP_X1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "dataSourceSpecified", "Z");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "isPartOfTransaction", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "scope", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "var", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setVar", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "var", "Ljava/lang/String;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setScope", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/core/Util", "getScope", "(Ljava/lang/String;)I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "scope", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doStartTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/sql/SQLException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "getConnection", "()Ljava/sql/Connection;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "conn", "Ljava/sql/Connection;");
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "sql", "Ljava/lang/String;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(": ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/sql/SQLException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doEndTag", "()I", null, new String[] { "javax/servlet/jsp/JspException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label3, label4, null);
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label5, label4, null);
+Label label6 = new Label();
+Label label7 = new Label();
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/sql/SQLException");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "sql", "Ljava/lang/String;");
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "sql", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "bodyContent", "Ljavax/servlet/jsp/tagext/BodyContent;");
+methodVisitor.visitJumpInsn(IFNULL, label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "bodyContent", "Ljavax/servlet/jsp/tagext/BodyContent;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/tagext/BodyContent", "getString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "trim", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label12);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspTagException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("SQL_NO_STATEMENT");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "conn", "Ljava/sql/Connection;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/Connection", "prepareStatement", "(Ljava/lang/String;)Ljava/sql/PreparedStatement;", true);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "parameters", "Ljava/util/List;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "setParameters", "(Ljava/sql/PreparedStatement;Ljava/util/List;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "executeUpdate", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitLabel(label1);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(JSR, label13);
+methodVisitor.visitLabel(label3);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label14);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(": ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitJumpInsn(JSR, label13);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label15);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "close", "()V", true);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitJumpInsn(GOTO, label15);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/sql/SQLException", "getMessage", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitVarInsn(RET, 6);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "var", "Ljava/lang/String;");
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label16);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "var", "Ljava/lang/String;");
+methodVisitor.visitTypeInsn(NEW, "java/lang/Integer");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Integer", "<init>", "(I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "scope", "I");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/servlet/jsp/PageContext", "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;I)V", false);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doCatch", "(Ljava/lang/Throwable;)V", null, new String[] { "java/lang/Throwable" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doFinally", "()V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/sql/SQLException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "conn", "Ljava/sql/Connection;");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "isPartOfTransaction", "Z");
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "conn", "Ljava/sql/Connection;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/Connection", "close", "()V", true);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "parameters", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "conn", "Ljava/sql/Connection;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "addSQLParameter", "(Ljava/lang/Object;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "parameters", "Ljava/util/List;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "parameters", "Ljava/util/List;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "parameters", "Ljava/util/List;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getConnection", "()Ljava/sql/Connection;", null, new String[] { "javax/servlet/jsp/JspException", "java/sql/SQLException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "isPartOfTransaction", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/taglibs/standard/tag/common/sql/TransactionTagSupport;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "findAncestorWithClass", "(Ljavax/servlet/jsp/tagext/Tag;Ljava/lang/Class;)Ljavax/servlet/jsp/tagext/Tag;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/taglibs/standard/tag/common/sql/TransactionTagSupport");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "dataSourceSpecified", "Z");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspTagException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("ERROR_NESTED_DATASOURCE");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspTagException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/taglibs/standard/tag/common/sql/TransactionTagSupport", "getSharedConnection", "()Ljava/sql/Connection;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "isPartOfTransaction", "Z");
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "rawDataSource", "Ljava/lang/Object;");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "dataSourceSpecified", "Z");
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("SQL_DATASOURCE_NULL");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "rawDataSource", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/taglibs/standard/tag/common/sql/UpdateTagSupport", "pageContext", "Ljavax/servlet/jsp/PageContext;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/tag/common/sql/DataSourceUtil", "getDataSource", "(Ljava/lang/Object;Ljavax/servlet/jsp/PageContext;)Ljavax/sql/DataSource;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/sql/DataSource", "getConnection", "()Ljava/sql/Connection;", true);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "javax/servlet/jsp/JspException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("DATASOURCE_INVALID");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Exception", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/taglibs/standard/resources/Resources", "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/servlet/jsp/JspException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "setParameters", "(Ljava/sql/PreparedStatement;Ljava/util/List;)V", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 3);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "size", "()I", true);
+methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "get", "(I)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/PreparedStatement", "setObject", "(ILjava/lang/Object;)V", true);
+methodVisitor.visitIincInsn(3, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

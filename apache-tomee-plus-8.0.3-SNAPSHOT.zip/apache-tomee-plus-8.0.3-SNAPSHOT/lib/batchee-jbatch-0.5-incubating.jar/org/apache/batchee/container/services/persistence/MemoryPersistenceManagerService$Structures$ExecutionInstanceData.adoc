@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/persistence/MemoryPersistenceManagerService$Structures$ExecutionInstanceData.class
+
+ - link:MemoryPersistenceManagerService$Structures$ExecutionInstanceData-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.StepExecution - 1

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/compiler/CharOperation.class
+
+ - link:CharOperation-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/job/ValidateReturnValue$ForConstructor.class
+
+ - link:ValidateReturnValue$ForConstructor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.BeanDescriptor - 2
+ - javax.validation.metadata.ExecutableDescriptor - 1
+ - javax.validation.metadata.ConstructorDescriptor - 1

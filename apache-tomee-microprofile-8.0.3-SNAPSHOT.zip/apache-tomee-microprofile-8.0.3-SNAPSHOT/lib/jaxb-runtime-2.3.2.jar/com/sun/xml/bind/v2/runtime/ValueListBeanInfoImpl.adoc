@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/runtime/ValueListBeanInfoImpl.class
+
+ - link:ValueListBeanInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.helpers.ValidationEventImpl - 2
+ - javax.xml.bind.ValidationEvent - 1
+ - javax.xml.bind.ValidationEventLocator - 1
+ - javax.xml.bind.JAXBException - 1

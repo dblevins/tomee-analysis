@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/RequestSecurityToken.class
+
+ - link:RequestSecurityToken-asmified.java[Asmified]
+
+== References
+

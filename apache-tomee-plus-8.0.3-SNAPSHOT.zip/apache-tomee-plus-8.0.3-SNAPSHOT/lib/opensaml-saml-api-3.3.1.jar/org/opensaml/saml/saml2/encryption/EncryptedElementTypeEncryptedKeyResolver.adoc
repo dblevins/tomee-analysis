@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml2/encryption/EncryptedElementTypeEncryptedKeyResolver.class
+
+ - link:EncryptedElementTypeEncryptedKeyResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

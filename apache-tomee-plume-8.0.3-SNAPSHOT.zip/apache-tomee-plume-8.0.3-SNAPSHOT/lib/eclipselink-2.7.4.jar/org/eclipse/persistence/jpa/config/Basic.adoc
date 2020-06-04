@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/Basic.class
+
+ - link:Basic-asmified.java[Asmified]
+
+== References
+

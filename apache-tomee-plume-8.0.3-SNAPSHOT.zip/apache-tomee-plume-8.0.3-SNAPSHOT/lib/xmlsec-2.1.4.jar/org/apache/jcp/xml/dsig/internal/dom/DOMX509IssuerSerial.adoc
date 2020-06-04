@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMX509IssuerSerial.class
+
+ - link:DOMX509IssuerSerial-asmified.java[Asmified]
+
+== References
+

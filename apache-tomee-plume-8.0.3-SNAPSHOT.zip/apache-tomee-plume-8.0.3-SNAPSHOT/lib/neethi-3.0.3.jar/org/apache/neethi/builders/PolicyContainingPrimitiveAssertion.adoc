@@ -1,0 +1,6 @@
+= org/apache/neethi/builders/PolicyContainingPrimitiveAssertion.class
+
+ - link:PolicyContainingPrimitiveAssertion-asmified.java[Asmified]
+
+== References
+

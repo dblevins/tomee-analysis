@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/SignatureECDSA$SignatureECDSARIPEMD160.class
+
+ - link:SignatureECDSA$SignatureECDSARIPEMD160-asmified.java[Asmified]
+
+== References
+

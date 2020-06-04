@@ -1,0 +1,6 @@
+= org/apache/cxf/validation/ClientBeanValidationFeature$Portable.class
+
+ - link:ClientBeanValidationFeature$Portable-asmified.java[Asmified]
+
+== References
+

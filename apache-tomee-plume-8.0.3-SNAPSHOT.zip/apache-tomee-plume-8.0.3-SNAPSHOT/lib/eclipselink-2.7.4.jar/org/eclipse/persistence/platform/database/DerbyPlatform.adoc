@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/DerbyPlatform.class
+
+ - link:DerbyPlatform-asmified.java[Asmified]
+
+== References
+

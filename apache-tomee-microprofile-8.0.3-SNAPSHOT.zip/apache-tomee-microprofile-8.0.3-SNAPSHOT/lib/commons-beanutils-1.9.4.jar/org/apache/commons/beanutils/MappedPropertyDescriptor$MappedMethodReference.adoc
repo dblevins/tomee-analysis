@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/MappedPropertyDescriptor$MappedMethodReference.class
+
+ - link:MappedPropertyDescriptor$MappedMethodReference-asmified.java[Asmified]
+
+== References
+

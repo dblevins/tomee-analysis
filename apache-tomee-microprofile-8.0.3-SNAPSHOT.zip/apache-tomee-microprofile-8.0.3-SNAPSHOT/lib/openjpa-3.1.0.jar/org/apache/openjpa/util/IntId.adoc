@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/IntId.class
+
+ - link:IntId-asmified.java[Asmified]
+
+== References
+

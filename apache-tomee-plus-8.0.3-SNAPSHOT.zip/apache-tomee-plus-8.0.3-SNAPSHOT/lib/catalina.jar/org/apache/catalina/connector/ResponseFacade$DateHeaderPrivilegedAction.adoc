@@ -1,0 +1,6 @@
+= org/apache/catalina/connector/ResponseFacade$DateHeaderPrivilegedAction.class
+
+ - link:ResponseFacade$DateHeaderPrivilegedAction-asmified.java[Asmified]
+
+== References
+

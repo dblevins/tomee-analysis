@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/PrimitiveArrayListerBoolean$BooleanArrayPack.class
+
+ - link:PrimitiveArrayListerBoolean$BooleanArrayPack-asmified.java[Asmified]
+
+== References
+

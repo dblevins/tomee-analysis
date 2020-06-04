@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Claims.class
+
+ - link:Claims-asmified.java[Asmified]
+
+== References
+

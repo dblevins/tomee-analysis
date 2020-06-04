@@ -1,0 +1,6 @@
+= com/ctc/wstx/ent/EntityDecl.class
+
+ - link:EntityDecl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/webbeans/lifecycle/test/OpenWebBeansTestMetaDataDiscoveryService.class
+
+ - link:OpenWebBeansTestMetaDataDiscoveryService-asmified.java[Asmified]
+
+== References
+

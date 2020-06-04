@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/JDBCExpressionFactory.class
+
+ - link:JDBCExpressionFactory-asmified.java[Asmified]
+
+== References
+

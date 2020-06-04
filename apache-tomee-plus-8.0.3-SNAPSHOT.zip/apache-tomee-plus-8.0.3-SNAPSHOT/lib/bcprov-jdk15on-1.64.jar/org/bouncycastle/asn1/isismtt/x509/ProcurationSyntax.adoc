@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/isismtt/x509/ProcurationSyntax.class
+
+ - link:ProcurationSyntax-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/composite/ActionSource2AttachedObjectTargetImpl.class
+
+ - link:ActionSource2AttachedObjectTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.ActionSource2AttachedObjectTarget - 1

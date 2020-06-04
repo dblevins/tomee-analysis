@@ -1,0 +1,14 @@
+= org/apache/openejb/cdi/OpenEJBTransactionService.class
+
+ - link:OpenEJBTransactionService-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 8
+ - javax.enterprise.inject.spi.ObserverMethod - 4
+ - javax.transaction.SystemException - 3
+ - javax.transaction.UserTransaction - 3
+ - javax.transaction.Transaction - 2
+ - javax.enterprise.event.TransactionPhase - 2
+ - javax.enterprise.inject.spi.EventMetadata - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1

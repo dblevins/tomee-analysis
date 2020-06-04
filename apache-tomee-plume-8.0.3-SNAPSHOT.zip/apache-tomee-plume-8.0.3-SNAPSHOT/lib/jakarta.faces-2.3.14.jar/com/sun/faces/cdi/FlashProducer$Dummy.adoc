@@ -1,0 +1,6 @@
+= com/sun/faces/cdi/FlashProducer$Dummy.class
+
+ - link:FlashProducer$Dummy-asmified.java[Asmified]
+
+== References
+

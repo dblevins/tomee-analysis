@@ -1,0 +1,6 @@
+= com/sun/faces/util/copier/SerializationCopier.class
+
+ - link:SerializationCopier-asmified.java[Asmified]
+
+== References
+

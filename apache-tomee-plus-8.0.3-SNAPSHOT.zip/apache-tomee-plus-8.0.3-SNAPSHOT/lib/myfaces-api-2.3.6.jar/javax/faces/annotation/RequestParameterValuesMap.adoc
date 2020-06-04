@@ -1,0 +1,7 @@
+= javax/faces/annotation/RequestParameterValuesMap.class
+
+ - link:RequestParameterValuesMap-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

@@ -1,0 +1,18 @@
+= com/sun/faces/lifecycle/Phase.class
+
+ - link:Phase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 35
+ - javax.faces.event.PhaseId - 21
+ - javax.faces.event.PhaseListener - 13
+ - javax.faces.event.PhaseEvent - 12
+ - javax.faces.context.ExceptionHandler - 6
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.context.Flash - 4
+ - javax.faces.event.ExceptionQueuedEventContext - 4
+ - javax.faces.lifecycle.Lifecycle - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.event.ExceptionQueuedEvent - 1

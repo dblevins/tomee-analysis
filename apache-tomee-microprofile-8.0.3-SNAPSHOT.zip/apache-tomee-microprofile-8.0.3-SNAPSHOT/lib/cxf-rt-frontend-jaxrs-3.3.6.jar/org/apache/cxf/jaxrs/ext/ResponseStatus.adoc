@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/ResponseStatus.class
+
+ - link:ResponseStatus-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$Status - 1

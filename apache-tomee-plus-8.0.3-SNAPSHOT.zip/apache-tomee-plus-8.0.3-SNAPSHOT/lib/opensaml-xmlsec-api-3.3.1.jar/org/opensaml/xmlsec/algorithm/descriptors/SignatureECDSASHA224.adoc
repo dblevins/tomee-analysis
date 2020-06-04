@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/SignatureECDSASHA224.class
+
+ - link:SignatureECDSASHA224-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

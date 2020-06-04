@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/LocalCollection.class
+
+ - link:LocalCollection-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ReportValidationResults.class
+
+ - link:ReportValidationResults-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/NameIDPolicyUnmarshaller.class
+
+ - link:NameIDPolicyUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/crmf/PKIPublicationInfo.class
+
+ - link:PKIPublicationInfo-asmified.java[Asmified]
+
+== References
+

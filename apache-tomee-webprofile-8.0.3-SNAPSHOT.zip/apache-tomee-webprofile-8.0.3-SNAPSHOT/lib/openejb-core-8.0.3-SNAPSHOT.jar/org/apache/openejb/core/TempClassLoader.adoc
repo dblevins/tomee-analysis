@@ -1,0 +1,6 @@
+= org/apache/openejb/core/TempClassLoader.class
+
+ - link:TempClassLoader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/phase/PhaseComparator.class
+
+ - link:PhaseComparator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/JohnzonConverter.class
+
+ - link:JohnzonConverter-asmified.java[Asmified]
+
+== References
+

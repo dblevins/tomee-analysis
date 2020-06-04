@@ -1,0 +1,16 @@
+= org/apache/johnzon/core/JsonPointerImpl.class
+
+ - link:JsonPointerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 86
+ - javax.json.JsonArray - 45
+ - javax.json.JsonObject - 34
+ - javax.json.JsonException - 23
+ - javax.json.JsonStructure - 21
+ - javax.json.JsonObjectBuilder - 19
+ - javax.json.JsonArrayBuilder - 15
+ - javax.json.spi.JsonProvider - 13
+ - javax.json.JsonValue$ValueType - 10
+ - javax.json.JsonPointer - 1

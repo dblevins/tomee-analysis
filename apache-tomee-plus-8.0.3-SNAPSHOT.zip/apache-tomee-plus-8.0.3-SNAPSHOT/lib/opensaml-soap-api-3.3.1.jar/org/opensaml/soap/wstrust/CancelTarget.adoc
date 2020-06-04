@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/CancelTarget.class
+
+ - link:CancelTarget-asmified.java[Asmified]
+
+== References
+

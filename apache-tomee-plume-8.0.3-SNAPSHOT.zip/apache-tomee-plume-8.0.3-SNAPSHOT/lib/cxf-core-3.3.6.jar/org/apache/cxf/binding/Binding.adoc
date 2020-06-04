@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/Binding.class
+
+ - link:Binding-asmified.java[Asmified]
+
+== References
+

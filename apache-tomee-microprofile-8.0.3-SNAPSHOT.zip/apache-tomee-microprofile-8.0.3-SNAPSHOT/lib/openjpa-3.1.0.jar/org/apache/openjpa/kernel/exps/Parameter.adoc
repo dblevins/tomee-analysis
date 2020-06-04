@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Parameter.class
+
+ - link:Parameter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/AssertionBuilderLoader.class
+
+ - link:AssertionBuilderLoader-asmified.java[Asmified]
+
+== References
+

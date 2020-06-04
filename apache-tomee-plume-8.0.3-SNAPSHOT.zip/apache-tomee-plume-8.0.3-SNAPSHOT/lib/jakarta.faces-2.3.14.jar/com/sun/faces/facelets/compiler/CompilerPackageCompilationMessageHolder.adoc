@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/compiler/CompilerPackageCompilationMessageHolder.class
+
+ - link:CompilerPackageCompilationMessageHolder-asmified.java[Asmified]
+
+== References
+

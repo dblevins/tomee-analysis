@@ -1,0 +1,8 @@
+= com/sun/faces/flow/builder/ViewBuilderImpl.class
+
+ - link:ViewBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.ViewBuilder - 4
+ - javax.faces.flow.builder.NodeBuilder - 1

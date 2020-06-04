@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/BranchingReaderSource.class
+
+ - link:BranchingReaderSource-asmified.java[Asmified]
+
+== References
+

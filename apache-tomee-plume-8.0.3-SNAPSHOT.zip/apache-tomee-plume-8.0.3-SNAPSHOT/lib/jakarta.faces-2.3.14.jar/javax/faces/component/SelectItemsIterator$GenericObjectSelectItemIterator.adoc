@@ -1,0 +1,11 @@
+= javax/faces/component/SelectItemsIterator$GenericObjectSelectItemIterator.class
+
+ - link:SelectItemsIterator$GenericObjectSelectItemIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.SelectItemsIterator$GenericObjectSelectItemIterator$GenericObjectSelectItem - 9
+ - javax.faces.component.UISelectItems - 5
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.model.SelectItem - 2
+ - javax.faces.component.SelectItemsIterator$1 - 1

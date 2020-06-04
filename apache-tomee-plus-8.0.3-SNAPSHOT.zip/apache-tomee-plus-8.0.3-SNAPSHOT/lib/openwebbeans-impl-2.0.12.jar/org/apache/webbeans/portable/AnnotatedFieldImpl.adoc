@@ -1,0 +1,8 @@
+= org/apache/webbeans/portable/AnnotatedFieldImpl.class
+
+ - link:AnnotatedFieldImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 5
+ - javax.enterprise.inject.spi.AnnotatedField - 1

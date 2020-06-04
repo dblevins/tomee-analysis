@@ -1,0 +1,6 @@
+= com/sun/faces/component/visit/PartialVisitContext$IteratorProxy.class
+
+ - link:PartialVisitContext$IteratorProxy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/ExponentialtIntervalRetryScheduler$TaskWrapper.class
+
+ - link:ExponentialtIntervalRetryScheduler$TaskWrapper-asmified.java[Asmified]
+
+== References
+

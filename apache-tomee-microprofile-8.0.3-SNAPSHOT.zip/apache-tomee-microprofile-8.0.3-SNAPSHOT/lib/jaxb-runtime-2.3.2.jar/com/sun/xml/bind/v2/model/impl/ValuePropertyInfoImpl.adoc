@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/ValuePropertyInfoImpl.class
+
+ - link:ValuePropertyInfoImpl-asmified.java[Asmified]
+
+== References
+

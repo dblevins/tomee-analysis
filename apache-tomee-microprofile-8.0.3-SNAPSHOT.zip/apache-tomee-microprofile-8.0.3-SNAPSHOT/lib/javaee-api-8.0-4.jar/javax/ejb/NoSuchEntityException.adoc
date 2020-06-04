@@ -1,0 +1,7 @@
+= javax/ejb/NoSuchEntityException.class
+
+ - link:NoSuchEntityException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 4

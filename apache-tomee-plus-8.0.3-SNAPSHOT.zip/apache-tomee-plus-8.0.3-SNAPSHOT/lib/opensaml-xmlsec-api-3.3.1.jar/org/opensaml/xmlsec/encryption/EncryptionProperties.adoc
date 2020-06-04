@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/encryption/EncryptionProperties.class
+
+ - link:EncryptionProperties-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2
+ - javax.annotation.Nonnull - 1

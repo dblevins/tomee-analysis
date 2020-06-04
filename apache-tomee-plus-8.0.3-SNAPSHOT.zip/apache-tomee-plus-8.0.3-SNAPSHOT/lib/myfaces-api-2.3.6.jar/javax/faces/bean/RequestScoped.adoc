@@ -1,0 +1,6 @@
+= javax/faces/bean/RequestScoped.class
+
+ - link:RequestScoped-asmified.java[Asmified]
+
+== References
+

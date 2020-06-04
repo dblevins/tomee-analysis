@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/meta/AbstractManagedType$PluralCategoryFilter.class
+
+ - link:AbstractManagedType$PluralCategoryFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 11
+ - javax.persistence.metamodel.Attribute - 4
+ - javax.persistence.metamodel.PluralAttribute - 3

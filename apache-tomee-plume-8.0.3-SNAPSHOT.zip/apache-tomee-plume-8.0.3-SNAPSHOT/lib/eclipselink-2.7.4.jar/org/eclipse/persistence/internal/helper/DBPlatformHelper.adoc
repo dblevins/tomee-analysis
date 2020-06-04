@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/DBPlatformHelper.class
+
+ - link:DBPlatformHelper-asmified.java[Asmified]
+
+== References
+

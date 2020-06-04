@@ -1,0 +1,15 @@
+= com/sun/xml/messaging/saaj/soap/SOAPPartImpl.class
+
+ - link:SOAPPartImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MimeHeaders - 30
+ - javax.xml.soap.SOAPException - 19
+ - javax.xml.soap.SOAPEnvelope - 5
+ - javax.activation.DataHandler - 5
+ - javax.xml.soap.MimeHeader - 3
+ - javax.xml.soap.SOAPElement - 2
+ - javax.xml.soap.SOAPPart - 2
+ - javax.xml.soap.Node - 2
+ - javax.activation.DataSource - 1

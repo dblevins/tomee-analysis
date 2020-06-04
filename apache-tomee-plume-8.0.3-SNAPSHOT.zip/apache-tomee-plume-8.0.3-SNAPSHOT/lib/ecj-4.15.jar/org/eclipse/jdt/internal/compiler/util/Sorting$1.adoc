@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/Sorting$1.class
+
+ - link:Sorting$1-asmified.java[Asmified]
+
+== References
+

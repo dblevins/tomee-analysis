@@ -1,0 +1,12 @@
+= com/sun/faces/lifecycle/HttpMethodRestrictionsPhaseListener.class
+
+ - link:HttpMethodRestrictionsPhaseListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.context.ExternalContext - 3
+ - javax.servlet.http.HttpServletRequest - 3
+ - javax.faces.event.PhaseEvent - 3
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.event.PhaseListener - 1

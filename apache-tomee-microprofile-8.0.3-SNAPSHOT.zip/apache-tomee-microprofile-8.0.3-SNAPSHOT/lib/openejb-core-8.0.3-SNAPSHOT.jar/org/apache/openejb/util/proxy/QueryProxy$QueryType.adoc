@@ -1,0 +1,6 @@
+= org/apache/openejb/util/proxy/QueryProxy$QueryType.class
+
+ - link:QueryProxy$QueryType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/EmbedFieldStrategy$NullEmbeddedStateManager.class
+
+ - link:EmbedFieldStrategy$NullEmbeddedStateManager-asmified.java[Asmified]
+
+== References
+

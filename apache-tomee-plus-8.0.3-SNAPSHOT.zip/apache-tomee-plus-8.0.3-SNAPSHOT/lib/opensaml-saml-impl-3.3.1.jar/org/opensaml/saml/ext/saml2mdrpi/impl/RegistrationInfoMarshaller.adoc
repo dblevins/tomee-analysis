@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdrpi/impl/RegistrationInfoMarshaller.class
+
+ - link:RegistrationInfoMarshaller-asmified.java[Asmified]
+
+== References
+

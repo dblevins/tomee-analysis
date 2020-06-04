@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/ui/LegacyUILibrary.class
+
+ - link:LegacyUILibrary-asmified.java[Asmified]
+
+== References
+

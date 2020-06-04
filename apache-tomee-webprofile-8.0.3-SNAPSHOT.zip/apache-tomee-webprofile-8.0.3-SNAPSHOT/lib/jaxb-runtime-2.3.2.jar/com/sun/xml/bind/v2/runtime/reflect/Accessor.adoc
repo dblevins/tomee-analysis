@@ -1,0 +1,9 @@
+= com/sun/xml/bind/v2/runtime/reflect/Accessor.class
+
+ - link:Accessor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 1
+ - javax.xml.bind.JAXBElement - 1
+ - javax.activation.DataHandler - 1

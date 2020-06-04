@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$LongParamConverter.class
+
+ - link:DefaultParamConverterProvider$LongParamConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 1

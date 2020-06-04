@@ -1,0 +1,7 @@
+= org/apache/catalina/authenticator/jaspic/AuthConfigFactoryImpl$RegistrationListenerWrapper.class
+
+ - link:AuthConfigFactoryImpl$RegistrationListenerWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.config.RegistrationListener - 7

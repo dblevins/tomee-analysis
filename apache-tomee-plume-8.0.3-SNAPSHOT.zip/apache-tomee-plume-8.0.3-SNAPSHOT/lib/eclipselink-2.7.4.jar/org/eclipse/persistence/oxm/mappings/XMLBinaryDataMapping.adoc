@@ -1,0 +1,7 @@
+= org/eclipse/persistence/oxm/mappings/XMLBinaryDataMapping.class
+
+ - link:XMLBinaryDataMapping-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 9

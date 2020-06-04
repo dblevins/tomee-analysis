@@ -1,0 +1,12 @@
+= org/apache/catalina/Context.class
+
+ - link:Context-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.descriptor.JspConfigDescriptor - 2
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletRegistration$Dynamic - 1
+ - javax.servlet.ServletContainerInitializer - 1
+ - javax.servlet.ServletSecurityElement - 1
+ - javax.servlet.ServletContext - 1

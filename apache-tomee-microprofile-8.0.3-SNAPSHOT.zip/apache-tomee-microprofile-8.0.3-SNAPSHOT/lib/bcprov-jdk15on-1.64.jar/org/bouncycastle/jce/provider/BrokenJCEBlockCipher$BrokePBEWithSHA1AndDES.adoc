@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/provider/BrokenJCEBlockCipher$BrokePBEWithSHA1AndDES.class
+
+ - link:BrokenJCEBlockCipher$BrokePBEWithSHA1AndDES-asmified.java[Asmified]
+
+== References
+

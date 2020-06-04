@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$UserBehaviorHandlerFactory.class
+
+ - link:AbstractTagLibrary$UserBehaviorHandlerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletException - 6
+ - javax.faces.view.facelets.TagHandler - 5
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.FacesException - 1
+ - javax.el.ELException - 1
+ - javax.faces.view.facelets.BehaviorConfig - 1

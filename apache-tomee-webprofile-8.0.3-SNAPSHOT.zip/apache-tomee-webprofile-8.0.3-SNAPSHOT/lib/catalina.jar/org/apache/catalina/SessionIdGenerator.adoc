@@ -1,0 +1,6 @@
+= org/apache/catalina/SessionIdGenerator.class
+
+ - link:SessionIdGenerator-asmified.java[Asmified]
+
+== References
+

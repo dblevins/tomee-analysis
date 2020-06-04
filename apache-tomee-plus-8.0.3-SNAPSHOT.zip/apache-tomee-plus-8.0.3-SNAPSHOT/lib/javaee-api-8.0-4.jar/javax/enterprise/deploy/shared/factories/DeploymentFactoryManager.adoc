@@ -1,0 +1,10 @@
+= javax/enterprise/deploy/shared/factories/DeploymentFactoryManager.class
+
+ - link:DeploymentFactoryManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.factories.DeploymentFactory - 11
+ - javax.enterprise.deploy.shared.factories.DeploymentFactoryManager - 7
+ - javax.enterprise.deploy.spi.exceptions.DeploymentManagerCreationException - 6
+ - javax.enterprise.deploy.spi.DeploymentManager - 4

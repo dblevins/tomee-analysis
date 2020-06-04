@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/AuthzDecisionStatement.class
+
+ - link:AuthzDecisionStatement-asmified.java[Asmified]
+
+== References
+

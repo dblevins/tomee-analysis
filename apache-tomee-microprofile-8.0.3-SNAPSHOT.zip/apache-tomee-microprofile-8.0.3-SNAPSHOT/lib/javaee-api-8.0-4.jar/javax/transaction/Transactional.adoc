@@ -1,0 +1,9 @@
+= javax/transaction/Transactional.class
+
+ - link:Transactional-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 2
+ - javax.transaction.Transactional$TxType - 2
+ - javax.interceptor.InterceptorBinding - 1

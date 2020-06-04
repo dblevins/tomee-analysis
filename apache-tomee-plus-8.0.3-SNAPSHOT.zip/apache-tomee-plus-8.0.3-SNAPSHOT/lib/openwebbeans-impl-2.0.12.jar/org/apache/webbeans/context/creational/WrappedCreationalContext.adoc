@@ -1,0 +1,8 @@
+= org/apache/webbeans/context/creational/WrappedCreationalContext.class
+
+ - link:WrappedCreationalContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 7
+ - javax.enterprise.context.spi.Contextual - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/WebAppInfo.class
+
+ - link:WebAppInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/jvnet/staxex/util/DummyLocation.class
+
+ - link:DummyLocation-asmified.java[Asmified]
+
+== References
+

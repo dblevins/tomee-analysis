@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/AttributeExtensible.class
+
+ - link:AttributeExtensible-asmified.java[Asmified]
+
+== References
+

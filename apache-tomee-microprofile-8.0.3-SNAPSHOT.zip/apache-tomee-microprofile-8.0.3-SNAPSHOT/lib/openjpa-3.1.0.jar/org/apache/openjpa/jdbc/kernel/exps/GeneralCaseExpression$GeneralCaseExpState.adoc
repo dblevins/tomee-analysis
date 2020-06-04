@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/GeneralCaseExpression$GeneralCaseExpState.class
+
+ - link:GeneralCaseExpression$GeneralCaseExpState-asmified.java[Asmified]
+
+== References
+

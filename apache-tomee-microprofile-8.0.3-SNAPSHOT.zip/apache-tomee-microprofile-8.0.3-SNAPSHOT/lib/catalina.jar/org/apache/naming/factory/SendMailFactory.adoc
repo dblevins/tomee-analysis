@@ -1,0 +1,6 @@
+= org/apache/naming/factory/SendMailFactory.class
+
+ - link:SendMailFactory-asmified.java[Asmified]
+
+== References
+

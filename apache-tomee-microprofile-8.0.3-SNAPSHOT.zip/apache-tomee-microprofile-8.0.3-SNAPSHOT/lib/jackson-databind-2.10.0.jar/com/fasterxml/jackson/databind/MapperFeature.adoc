@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/MapperFeature.class
+
+ - link:MapperFeature-asmified.java[Asmified]
+
+== References
+

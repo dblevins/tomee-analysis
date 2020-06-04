@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/CursoredStreamPolicy.class
+
+ - link:CursoredStreamPolicy-asmified.java[Asmified]
+
+== References
+

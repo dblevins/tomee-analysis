@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/UnidirectionalOneToManyMapping.class
+
+ - link:UnidirectionalOneToManyMapping-asmified.java[Asmified]
+
+== References
+

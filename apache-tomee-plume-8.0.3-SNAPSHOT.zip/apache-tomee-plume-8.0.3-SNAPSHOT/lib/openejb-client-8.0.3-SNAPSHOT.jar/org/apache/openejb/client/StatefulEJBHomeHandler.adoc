@@ -1,0 +1,7 @@
+= org/apache/openejb/client/StatefulEJBHomeHandler.class
+
+ - link:StatefulEJBHomeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.RemoveException - 2

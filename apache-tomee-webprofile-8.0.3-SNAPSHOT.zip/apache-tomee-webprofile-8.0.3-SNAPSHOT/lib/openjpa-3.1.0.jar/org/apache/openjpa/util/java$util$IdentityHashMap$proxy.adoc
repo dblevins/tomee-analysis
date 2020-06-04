@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/java$util$IdentityHashMap$proxy.class
+
+ - link:java$util$IdentityHashMap$proxy-asmified.java[Asmified]
+
+== References
+

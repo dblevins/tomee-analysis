@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCConnection$1.class
+
+ - link:JDBCConnection$1-asmified.java[Asmified]
+
+== References
+

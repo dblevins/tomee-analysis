@@ -1,0 +1,6 @@
+= org/apache/myfaces/taglib/core/LoadBundleTag$BundleMap.class
+
+ - link:LoadBundleTag$BundleMap-asmified.java[Asmified]
+
+== References
+

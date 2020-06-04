@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/AnnotationIntrospector$ReferenceProperty$Type.class
+
+ - link:AnnotationIntrospector$ReferenceProperty$Type-asmified.java[Asmified]
+
+== References
+

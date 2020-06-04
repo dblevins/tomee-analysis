@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/util/Vertex.class
+
+ - link:Vertex-asmified.java[Asmified]
+
+== References
+

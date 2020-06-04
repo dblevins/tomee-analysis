@@ -1,0 +1,6 @@
+= org/jose4j/jwt/consumer/InvalidJwtException.class
+
+ - link:InvalidJwtException-asmified.java[Asmified]
+
+== References
+

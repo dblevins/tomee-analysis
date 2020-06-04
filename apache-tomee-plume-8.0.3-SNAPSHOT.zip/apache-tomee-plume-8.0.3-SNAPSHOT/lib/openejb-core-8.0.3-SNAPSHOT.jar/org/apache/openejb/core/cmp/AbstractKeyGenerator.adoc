@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/AbstractKeyGenerator.class
+
+ - link:AbstractKeyGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 6

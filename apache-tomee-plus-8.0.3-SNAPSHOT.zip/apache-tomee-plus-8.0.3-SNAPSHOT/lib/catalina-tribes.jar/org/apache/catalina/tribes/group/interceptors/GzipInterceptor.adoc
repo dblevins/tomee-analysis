@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/interceptors/GzipInterceptor.class
+
+ - link:GzipInterceptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/johnzon/core/JsonBuilderFactoryImpl.class
+
+ - link:JsonBuilderFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonArrayBuilder - 3
+ - javax.json.JsonObjectBuilder - 3
+ - javax.json.JsonObject - 2
+ - javax.json.JsonArray - 2
+ - javax.json.JsonBuilderFactory - 1

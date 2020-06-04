@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/BindingException.class
+
+ - link:BindingException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

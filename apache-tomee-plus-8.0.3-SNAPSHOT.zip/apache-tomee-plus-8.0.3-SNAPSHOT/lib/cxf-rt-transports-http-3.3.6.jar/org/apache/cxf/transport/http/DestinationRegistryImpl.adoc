@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http/DestinationRegistryImpl.class
+
+ - link:DestinationRegistryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 2
+ - javax.servlet.ServletException - 1

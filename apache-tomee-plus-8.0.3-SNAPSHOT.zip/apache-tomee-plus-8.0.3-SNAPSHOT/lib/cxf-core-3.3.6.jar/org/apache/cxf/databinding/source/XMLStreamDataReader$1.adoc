@@ -1,0 +1,7 @@
+= org/apache/cxf/databinding/source/XMLStreamDataReader$1.class
+
+ - link:XMLStreamDataReader$1-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1

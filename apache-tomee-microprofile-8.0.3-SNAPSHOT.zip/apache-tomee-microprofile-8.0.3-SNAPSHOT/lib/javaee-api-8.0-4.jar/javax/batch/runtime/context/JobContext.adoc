@@ -1,0 +1,7 @@
+= javax/batch/runtime/context/JobContext.class
+
+ - link:JobContext-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 1

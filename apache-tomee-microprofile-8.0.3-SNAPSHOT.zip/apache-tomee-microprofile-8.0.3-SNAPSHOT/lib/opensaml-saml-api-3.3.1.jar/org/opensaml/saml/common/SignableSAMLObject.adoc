@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/SignableSAMLObject.class
+
+ - link:SignableSAMLObject-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 1

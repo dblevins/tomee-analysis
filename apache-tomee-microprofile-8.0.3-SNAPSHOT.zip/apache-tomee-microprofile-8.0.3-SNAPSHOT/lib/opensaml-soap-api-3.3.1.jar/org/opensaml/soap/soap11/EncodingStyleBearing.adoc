@@ -1,0 +1,7 @@
+= org/opensaml/soap/soap11/EncodingStyleBearing.class
+
+ - link:EncodingStyleBearing-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

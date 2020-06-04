@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/pool/JDBCXID.class
+
+ - link:JDBCXID-asmified.java[Asmified]
+
+== References
+

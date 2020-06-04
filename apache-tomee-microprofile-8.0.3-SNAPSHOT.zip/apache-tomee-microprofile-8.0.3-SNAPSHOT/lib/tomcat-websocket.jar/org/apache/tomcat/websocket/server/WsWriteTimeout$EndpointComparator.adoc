@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/server/WsWriteTimeout$EndpointComparator.class
+
+ - link:WsWriteTimeout$EndpointComparator-asmified.java[Asmified]
+
+== References
+

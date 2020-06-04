@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/PublicImpl.class
+
+ - link:PublicImpl-asmified.java[Asmified]
+
+== References
+

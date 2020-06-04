@@ -1,0 +1,6 @@
+= org/apache/cxf/resource/ClassLoaderResolver.class
+
+ - link:ClassLoaderResolver-asmified.java[Asmified]
+
+== References
+

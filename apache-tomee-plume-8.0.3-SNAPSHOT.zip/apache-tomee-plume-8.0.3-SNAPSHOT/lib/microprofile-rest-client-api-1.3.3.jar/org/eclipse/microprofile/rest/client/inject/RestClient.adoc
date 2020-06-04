@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/rest/client/inject/RestClient.class
+
+ - link:RestClient-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

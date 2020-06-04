@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/Processor$SAXWriterFactory.class
+
+ - link:Processor$SAXWriterFactory-asmified.java[Asmified]
+
+== References
+

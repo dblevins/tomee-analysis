@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/commons/Remapper.class
+
+ - link:Remapper-asmified.java[Asmified]
+
+== References
+

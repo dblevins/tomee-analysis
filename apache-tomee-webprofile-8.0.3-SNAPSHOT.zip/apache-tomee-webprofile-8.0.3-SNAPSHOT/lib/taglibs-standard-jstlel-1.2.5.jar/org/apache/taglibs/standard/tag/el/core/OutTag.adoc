@@ -1,0 +1,9 @@
+= org/apache/taglibs/standard/tag/el/core/OutTag.class
+
+ - link:OutTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 6
+ - javax.servlet.jsp.JspException - 3
+ - javax.servlet.jsp.tagext.Tag - 3

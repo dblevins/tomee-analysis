@@ -1,0 +1,6 @@
+= org/eclipse/persistence/indirection/ValueHolder.class
+
+ - link:ValueHolder-asmified.java[Asmified]
+
+== References
+

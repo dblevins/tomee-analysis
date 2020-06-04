@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$BooleanObjectWrapperImpl.class
+
+ - link:SDOWrapperType$BooleanObjectWrapperImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/SAMLObjectContentReference.class
+
+ - link:SAMLObjectContentReference-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 13

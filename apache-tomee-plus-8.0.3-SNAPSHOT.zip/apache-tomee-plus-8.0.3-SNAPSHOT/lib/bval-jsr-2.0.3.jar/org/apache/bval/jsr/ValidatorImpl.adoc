@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/ValidatorImpl.class
+
+ - link:ValidatorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintViolation - 7
+ - javax.validation.ValidationException - 6
+ - javax.validation.metadata.BeanDescriptor - 2
+ - javax.validation.executable.ExecutableValidator - 2

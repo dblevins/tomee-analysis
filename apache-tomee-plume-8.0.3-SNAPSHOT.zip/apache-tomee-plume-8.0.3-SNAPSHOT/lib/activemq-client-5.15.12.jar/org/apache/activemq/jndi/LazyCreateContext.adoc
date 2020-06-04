@@ -1,0 +1,6 @@
+= org/apache/activemq/jndi/LazyCreateContext.class
+
+ - link:LazyCreateContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= javax/ws/rs/ext/ReaderInterceptorContext.class
+
+ - link:ReaderInterceptorContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 1
+ - javax.ws.rs.ext.InterceptorContext - 1
+ - javax.ws.rs.WebApplicationException - 1

@@ -1,0 +1,6 @@
+= org/jasypt/intf/cli/JasyptStringDigestCLI.class
+
+ - link:JasyptStringDigestCLI-asmified.java[Asmified]
+
+== References
+

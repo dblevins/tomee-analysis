@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/CommandProcessor.class
+
+ - link:CommandProcessor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/cxf/catalog/OASISCatalogManager.class
+
+ - link:OASISCatalogManager-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

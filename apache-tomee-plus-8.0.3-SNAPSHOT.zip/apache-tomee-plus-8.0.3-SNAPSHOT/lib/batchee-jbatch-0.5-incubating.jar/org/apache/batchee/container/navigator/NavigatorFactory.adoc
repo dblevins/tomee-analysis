@@ -1,0 +1,6 @@
+= org/apache/batchee/container/navigator/NavigatorFactory.class
+
+ - link:NavigatorFactory-asmified.java[Asmified]
+
+== References
+

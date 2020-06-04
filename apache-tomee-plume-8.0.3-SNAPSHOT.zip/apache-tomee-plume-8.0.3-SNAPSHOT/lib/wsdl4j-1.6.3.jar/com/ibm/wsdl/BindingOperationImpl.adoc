@@ -1,0 +1,6 @@
+= com/ibm/wsdl/BindingOperationImpl.class
+
+ - link:BindingOperationImpl-asmified.java[Asmified]
+
+== References
+

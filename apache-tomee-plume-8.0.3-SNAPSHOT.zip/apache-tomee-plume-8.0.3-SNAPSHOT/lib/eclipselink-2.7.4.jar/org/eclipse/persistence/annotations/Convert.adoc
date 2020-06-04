@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Convert.class
+
+ - link:Convert-asmified.java[Asmified]
+
+== References
+

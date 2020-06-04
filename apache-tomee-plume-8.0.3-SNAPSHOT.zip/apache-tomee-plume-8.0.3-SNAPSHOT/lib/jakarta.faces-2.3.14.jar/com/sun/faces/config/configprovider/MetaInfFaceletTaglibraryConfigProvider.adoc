@@ -1,0 +1,8 @@
+= com/sun/faces/config/configprovider/MetaInfFaceletTaglibraryConfigProvider.class
+
+ - link:MetaInfFaceletTaglibraryConfigProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 7
+ - javax.faces.FacesException - 6

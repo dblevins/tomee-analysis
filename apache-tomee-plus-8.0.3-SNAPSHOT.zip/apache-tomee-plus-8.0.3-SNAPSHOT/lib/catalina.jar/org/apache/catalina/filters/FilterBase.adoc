@@ -1,0 +1,9 @@
+= org/apache/catalina/filters/FilterBase.class
+
+ - link:FilterBase-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletException - 3
+ - javax.servlet.FilterConfig - 3
+ - javax.servlet.Filter - 1

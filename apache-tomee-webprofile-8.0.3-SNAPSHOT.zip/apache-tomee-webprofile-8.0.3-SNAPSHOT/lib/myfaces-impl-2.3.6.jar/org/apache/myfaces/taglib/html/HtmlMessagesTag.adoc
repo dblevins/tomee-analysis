@@ -1,0 +1,10 @@
+= org/apache/myfaces/taglib/html/HtmlMessagesTag.class
+
+ - link:HtmlMessagesTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 140
+ - javax.faces.component.html.HtmlMessages - 23
+ - javax.faces.webapp.UIComponentELTag - 4
+ - javax.faces.component.UIComponent - 2

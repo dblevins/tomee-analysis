@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/XMLJavaTypeConverter.class
+
+ - link:XMLJavaTypeConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 17

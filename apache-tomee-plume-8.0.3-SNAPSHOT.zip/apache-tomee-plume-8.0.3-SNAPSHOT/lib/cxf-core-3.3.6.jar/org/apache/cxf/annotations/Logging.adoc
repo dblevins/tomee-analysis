@@ -1,0 +1,6 @@
+= org/apache/cxf/annotations/Logging.class
+
+ - link:Logging-asmified.java[Asmified]
+
+== References
+

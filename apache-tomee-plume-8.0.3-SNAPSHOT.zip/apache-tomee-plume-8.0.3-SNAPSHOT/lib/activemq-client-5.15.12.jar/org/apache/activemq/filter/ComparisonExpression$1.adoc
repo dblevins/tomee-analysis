@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/ComparisonExpression$1.class
+
+ - link:ComparisonExpression$1-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

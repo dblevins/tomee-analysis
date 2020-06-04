@@ -1,0 +1,10 @@
+= org/apache/bval/el/ELFacade$BValELContext.class
+
+ - link:ELFacade$BValELContext-asmified.java[Asmified]
+
+== References
+
+ - javax.el.FunctionMapper - 4
+ - javax.el.VariableMapper - 4
+ - javax.el.ELContext - 2
+ - javax.el.ELResolver - 2

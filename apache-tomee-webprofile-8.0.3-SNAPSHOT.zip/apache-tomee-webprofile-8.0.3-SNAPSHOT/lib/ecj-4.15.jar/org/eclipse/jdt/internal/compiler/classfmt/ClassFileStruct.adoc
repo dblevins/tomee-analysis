@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/ClassFileStruct.class
+
+ - link:ClassFileStruct-asmified.java[Asmified]
+
+== References
+

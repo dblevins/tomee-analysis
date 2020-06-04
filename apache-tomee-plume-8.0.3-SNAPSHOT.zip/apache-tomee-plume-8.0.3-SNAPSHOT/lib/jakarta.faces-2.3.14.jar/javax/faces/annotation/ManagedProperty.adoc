@@ -1,0 +1,8 @@
+= javax/faces/annotation/ManagedProperty.class
+
+ - link:ManagedProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1
+ - javax.enterprise.util.Nonbinding - 1

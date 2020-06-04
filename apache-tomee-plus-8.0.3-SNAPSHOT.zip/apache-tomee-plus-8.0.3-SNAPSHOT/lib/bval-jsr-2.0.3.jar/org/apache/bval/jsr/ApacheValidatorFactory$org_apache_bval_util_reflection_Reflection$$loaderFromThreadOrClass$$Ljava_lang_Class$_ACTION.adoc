@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/ApacheValidatorFactory$org_apache_bval_util_reflection_Reflection$$loaderFromThreadOrClass$$Ljava_lang_Class$_ACTION.class
+
+ - link:ApacheValidatorFactory$org_apache_bval_util_reflection_Reflection$$loaderFromThreadOrClass$$Ljava_lang_Class$_ACTION-asmified.java[Asmified]
+
+== References
+

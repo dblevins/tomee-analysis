@@ -1,0 +1,7 @@
+= javax/persistence/PersistenceContextType.class
+
+ - link:PersistenceContextType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceContextType - 21

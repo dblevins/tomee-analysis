@@ -1,0 +1,7 @@
+= org/apache/activemq/advisory/ProducerStartedEvent.class
+
+ - link:ProducerStartedEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Destination - 1

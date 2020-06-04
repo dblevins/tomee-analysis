@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/Embedded.class
+
+ - link:Embedded-asmified.java[Asmified]
+
+== References
+

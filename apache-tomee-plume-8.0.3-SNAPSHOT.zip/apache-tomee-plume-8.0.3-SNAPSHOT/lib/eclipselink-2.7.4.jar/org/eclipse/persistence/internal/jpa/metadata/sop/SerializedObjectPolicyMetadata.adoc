@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/sop/SerializedObjectPolicyMetadata.class
+
+ - link:SerializedObjectPolicyMetadata-asmified.java[Asmified]
+
+== References
+

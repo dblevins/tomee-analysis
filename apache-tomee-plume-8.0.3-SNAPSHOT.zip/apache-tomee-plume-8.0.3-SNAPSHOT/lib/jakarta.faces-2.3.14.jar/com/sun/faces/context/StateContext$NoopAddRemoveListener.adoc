@@ -1,0 +1,10 @@
+= com/sun/faces/context/StateContext$NoopAddRemoveListener.class
+
+ - link:StateContext$NoopAddRemoveListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.event.SystemEvent - 2
+ - javax.faces.event.AbortProcessingException - 1

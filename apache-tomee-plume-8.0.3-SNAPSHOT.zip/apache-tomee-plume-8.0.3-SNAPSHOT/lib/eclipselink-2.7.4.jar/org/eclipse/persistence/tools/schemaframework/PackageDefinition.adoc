@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/PackageDefinition.class
+
+ - link:PackageDefinition-asmified.java[Asmified]
+
+== References
+

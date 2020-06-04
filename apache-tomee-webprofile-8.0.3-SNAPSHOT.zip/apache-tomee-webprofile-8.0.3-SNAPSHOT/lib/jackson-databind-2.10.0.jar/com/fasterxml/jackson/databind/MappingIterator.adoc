@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/MappingIterator.class
+
+ - link:MappingIterator-asmified.java[Asmified]
+
+== References
+

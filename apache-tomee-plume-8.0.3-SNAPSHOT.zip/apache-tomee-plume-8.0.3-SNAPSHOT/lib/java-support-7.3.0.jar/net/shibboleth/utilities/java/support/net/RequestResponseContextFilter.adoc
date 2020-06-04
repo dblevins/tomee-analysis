@@ -1,0 +1,14 @@
+= net/shibboleth/utilities/java/support/net/RequestResponseContextFilter.class
+
+ - link:RequestResponseContextFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletException - 6
+ - javax.servlet.http.HttpServletRequest - 3
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.servlet.FilterChain - 2
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.FilterConfig - 1
+ - javax.servlet.Filter - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$PessimisticLockTimeoutHint.class
+
+ - link:QueryHintsHandler$PessimisticLockTimeoutHint-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/osgi/ValidationSchemaFactoryProviderImpl$DTD.class
+
+ - link:ValidationSchemaFactoryProviderImpl$DTD-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ClientSecurity$SimpleIdentityResolver.class
+
+ - link:ClientSecurity$SimpleIdentityResolver-asmified.java[Asmified]
+
+== References
+

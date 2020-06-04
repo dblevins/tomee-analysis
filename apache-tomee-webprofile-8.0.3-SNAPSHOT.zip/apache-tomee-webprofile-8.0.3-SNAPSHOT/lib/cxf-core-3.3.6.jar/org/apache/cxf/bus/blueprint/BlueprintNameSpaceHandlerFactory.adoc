@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/blueprint/BlueprintNameSpaceHandlerFactory.class
+
+ - link:BlueprintNameSpaceHandlerFactory-asmified.java[Asmified]
+
+== References
+

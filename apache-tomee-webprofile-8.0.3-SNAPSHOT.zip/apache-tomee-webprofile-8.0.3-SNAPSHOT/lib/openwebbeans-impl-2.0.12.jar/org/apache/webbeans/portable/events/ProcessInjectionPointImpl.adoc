@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/events/ProcessInjectionPointImpl.class
+
+ - link:ProcessInjectionPointImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 10
+ - javax.enterprise.inject.spi.ProcessInjectionPoint - 1
+ - javax.enterprise.inject.spi.configurator.InjectionPointConfigurator - 1

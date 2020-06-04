@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/SchemaGenerator$RegexMutator.class
+
+ - link:SchemaGenerator$RegexMutator-asmified.java[Asmified]
+
+== References
+

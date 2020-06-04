@@ -1,0 +1,6 @@
+= org/apache/xml/security/transforms/implementations/XPath2NodeFilter.class
+
+ - link:XPath2NodeFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/users/AbstractGroup.class
+
+ - link:AbstractGroup-asmified.java[Asmified]
+
+== References
+

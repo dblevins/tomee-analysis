@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/identifier/QualifiedDBIdentifier.class
+
+ - link:QualifiedDBIdentifier-asmified.java[Asmified]
+
+== References
+

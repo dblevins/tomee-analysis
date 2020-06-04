@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/TransducedAccessor_field_Short.class
+
+ - link:TransducedAccessor_field_Short-asmified.java[Asmified]
+
+== References
+

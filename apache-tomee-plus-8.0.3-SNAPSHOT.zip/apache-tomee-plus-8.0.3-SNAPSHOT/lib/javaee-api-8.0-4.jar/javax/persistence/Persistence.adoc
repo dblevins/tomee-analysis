@@ -1,0 +1,15 @@
+= javax/persistence/Persistence.class
+
+ - link:Persistence-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 10
+ - javax.persistence.spi.PersistenceProvider - 8
+ - javax.persistence.EntityManagerFactory - 7
+ - javax.persistence.Persistence - 5
+ - javax.persistence.spi.PersistenceProviderResolver - 2
+ - javax.persistence.Persistence$PersistenceUtilImpl - 2
+ - javax.persistence.spi.PersistenceProviderResolverHolder - 1
+ - javax.persistence.Persistence$1 - 1
+ - javax.persistence.PersistenceUtil - 1

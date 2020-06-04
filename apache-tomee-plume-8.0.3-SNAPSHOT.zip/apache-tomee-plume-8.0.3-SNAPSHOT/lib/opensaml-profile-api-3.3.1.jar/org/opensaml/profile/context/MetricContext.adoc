@@ -1,0 +1,7 @@
+= org/opensaml/profile/context/MetricContext.class
+
+ - link:MetricContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 17

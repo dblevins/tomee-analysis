@@ -1,0 +1,12 @@
+= org/apache/openjpa/persistence/QueryImpl.class
+
+ - link:QueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FlushModeType - 8
+ - javax.persistence.LockModeType - 8
+ - javax.persistence.TypedQuery - 6
+ - javax.persistence.Query - 5
+ - javax.persistence.NoResultException - 4
+ - javax.persistence.NonUniqueResultException - 2

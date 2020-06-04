@@ -1,0 +1,8 @@
+= org/apache/openejb/threads/task/ManagedTaskListenerTask$NoopManagedTaskListener.class
+
+ - link:ManagedTaskListenerTask$NoopManagedTaskListener-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedExecutorService - 4
+ - javax.enterprise.concurrent.ManagedTaskListener - 1

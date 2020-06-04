@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/QueryArgument.class
+
+ - link:QueryArgument-asmified.java[Asmified]
+
+== References
+

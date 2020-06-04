@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/tools/XML_SAX_StAX_FI.class
+
+ - link:XML_SAX_StAX_FI-asmified.java[Asmified]
+
+== References
+

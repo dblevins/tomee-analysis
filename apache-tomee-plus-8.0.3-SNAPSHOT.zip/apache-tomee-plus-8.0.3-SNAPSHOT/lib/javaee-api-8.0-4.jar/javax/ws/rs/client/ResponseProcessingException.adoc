@@ -1,0 +1,8 @@
+= javax/ws/rs/client/ResponseProcessingException.class
+
+ - link:ResponseProcessingException-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 9
+ - javax.ws.rs.ProcessingException - 4

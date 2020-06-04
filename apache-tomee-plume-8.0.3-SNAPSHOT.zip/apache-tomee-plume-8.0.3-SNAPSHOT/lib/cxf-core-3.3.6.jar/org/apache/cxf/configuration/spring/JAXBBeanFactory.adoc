@@ -1,0 +1,9 @@
+= org/apache/cxf/configuration/spring/JAXBBeanFactory.class
+
+ - link:JAXBBeanFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 6
+ - javax.xml.bind.JAXBElement - 5
+ - javax.xml.bind.JAXBException - 2

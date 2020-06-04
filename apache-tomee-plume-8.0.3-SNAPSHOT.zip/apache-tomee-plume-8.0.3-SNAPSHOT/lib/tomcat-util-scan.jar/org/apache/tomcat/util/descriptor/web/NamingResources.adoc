@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/descriptor/web/NamingResources.class
+
+ - link:NamingResources-asmified.java[Asmified]
+
+== References
+

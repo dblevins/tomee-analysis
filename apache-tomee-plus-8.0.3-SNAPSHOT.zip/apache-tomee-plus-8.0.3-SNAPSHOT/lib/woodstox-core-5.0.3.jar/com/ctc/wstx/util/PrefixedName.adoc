@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/PrefixedName.class
+
+ - link:PrefixedName-asmified.java[Asmified]
+
+== References
+

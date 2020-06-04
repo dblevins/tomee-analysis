@@ -1,0 +1,7 @@
+= org/apache/johnzon/mapper/MapperException.class
+
+ - link:MapperException-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonException - 4

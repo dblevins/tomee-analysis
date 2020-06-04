@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/ConcatExpression.class
+
+ - link:ConcatExpression-asmified.java[Asmified]
+
+== References
+

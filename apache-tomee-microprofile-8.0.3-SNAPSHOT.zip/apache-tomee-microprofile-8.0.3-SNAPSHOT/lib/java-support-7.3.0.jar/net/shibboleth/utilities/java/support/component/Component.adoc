@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/component/Component.class
+
+ - link:Component-asmified.java[Asmified]
+
+== References
+

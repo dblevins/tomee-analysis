@@ -1,0 +1,7 @@
+= org/apache/openejb/testing/ApplicationComposers$ExtensionAwareOptimizedLoaderService.class
+
+ - link:ApplicationComposers$ExtensionAwareOptimizedLoaderService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 3

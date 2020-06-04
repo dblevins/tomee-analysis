@@ -1,0 +1,6 @@
+= org/apache/catalina/core/DefaultInstanceManager$PrivilegedLoadClass.class
+
+ - link:DefaultInstanceManager$PrivilegedLoadClass-asmified.java[Asmified]
+
+== References
+

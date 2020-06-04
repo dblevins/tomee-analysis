@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/CharConstant.class
+
+ - link:CharConstant-asmified.java[Asmified]
+
+== References
+

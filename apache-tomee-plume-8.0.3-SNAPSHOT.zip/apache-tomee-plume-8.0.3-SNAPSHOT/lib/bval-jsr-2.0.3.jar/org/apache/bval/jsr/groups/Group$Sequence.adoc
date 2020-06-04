@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/groups/Group$Sequence.class
+
+ - link:Group$Sequence-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.GroupDefinitionException - 7

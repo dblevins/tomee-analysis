@@ -1,0 +1,187 @@
+package asm.org.apache.tomcat.util.http.fileupload.util.mime;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class QuotedPrintableDecoderDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_FINAL | ACC_SUPER, "org/apache/tomcat/util/http/fileupload/util/mime/QuotedPrintableDecoder", null, "java/lang/Object", null);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "UPPER_NIBBLE_SHIFT", "I", null, new Integer(4));
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "decode", "([BLjava/io/OutputStream;)I", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 5);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"[B", "java/io/OutputStream", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitIntInsn(BIPUSH, 95);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 32);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/OutputStream", "write", "(I)V", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitIntInsn(BIPUSH, 61);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label4);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 4);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label5);
+methodVisitor.visitTypeInsn(NEW, "java/io/IOException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Invalid quoted printable encoding; truncated escape sequence");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/IOException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIincInsn(2, 1);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitVarInsn(ISTORE, 8);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitIntInsn(BIPUSH, 13);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label6);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label7);
+methodVisitor.visitTypeInsn(NEW, "java/io/IOException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Invalid quoted printable encoding; CR must be followed by LF");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/IOException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/http/fileupload/util/mime/QuotedPrintableDecoder", "hexToBinary", "(B)I", false);
+methodVisitor.visitVarInsn(ISTORE, 9);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/http/fileupload/util/mime/QuotedPrintableDecoder", "hexToBinary", "(B)I", false);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/OutputStream", "write", "(I)V", false);
+methodVisitor.visitIincInsn(5, 1);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/OutputStream", "write", "(I)V", false);
+methodVisitor.visitIincInsn(5, 1);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 11);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "hexToBinary", "(B)I", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 0);
+methodVisitor.visitInsn(I2C);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Character", "digit", "(CI)I", false);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(ICONST_M1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/io/IOException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Invalid quoted printable encoding: not a valid hex digit: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/IOException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

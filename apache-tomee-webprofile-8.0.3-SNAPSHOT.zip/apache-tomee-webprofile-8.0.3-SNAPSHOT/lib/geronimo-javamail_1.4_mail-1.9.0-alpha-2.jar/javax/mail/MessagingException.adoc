@@ -1,0 +1,7 @@
+= javax/mail/MessagingException.class
+
+ - link:MessagingException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 4

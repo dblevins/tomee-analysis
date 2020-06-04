@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/logic/AllMatchPredicate.class
+
+ - link:AllMatchPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1
+ - javax.annotation.Nullable - 1

@@ -1,0 +1,11 @@
+= org/apache/myfaces/flow/builder/SwitchBuilderImpl.class
+
+ - link:SwitchBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.SwitchCaseBuilder - 4
+ - javax.el.ValueExpression - 4
+ - javax.faces.flow.builder.SwitchBuilder - 4
+ - javax.faces.flow.builder.NodeBuilder - 1
+ - javax.faces.flow.SwitchNode - 1

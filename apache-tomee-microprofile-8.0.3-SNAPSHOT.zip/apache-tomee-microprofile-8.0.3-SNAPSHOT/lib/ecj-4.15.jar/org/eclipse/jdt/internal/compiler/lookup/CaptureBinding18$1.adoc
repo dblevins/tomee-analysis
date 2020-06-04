@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/CaptureBinding18$1.class
+
+ - link:CaptureBinding18$1-asmified.java[Asmified]
+
+== References
+

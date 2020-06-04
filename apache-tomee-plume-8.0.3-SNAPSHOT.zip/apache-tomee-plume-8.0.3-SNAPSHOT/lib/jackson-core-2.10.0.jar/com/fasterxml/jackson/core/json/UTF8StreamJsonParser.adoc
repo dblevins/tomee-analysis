@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/json/UTF8StreamJsonParser.class
+
+ - link:UTF8StreamJsonParser-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/eclipse/persistence/internal/jpa/querydef/AbstractQueryImpl.class
+
+ - link:AbstractQueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 21
+ - javax.persistence.criteria.Expression - 14
+ - javax.persistence.criteria.AbstractQuery - 12
+ - javax.persistence.criteria.Root - 11
+ - javax.persistence.criteria.Selection - 7
+ - javax.persistence.criteria.CommonAbstractCriteria - 4
+ - javax.persistence.metamodel.EntityType - 2
+ - javax.persistence.metamodel.Metamodel - 2

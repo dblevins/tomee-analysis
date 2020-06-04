@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/securityToken/X509IssuerSerialTokenImpl.class
+
+ - link:X509IssuerSerialTokenImpl-asmified.java[Asmified]
+
+== References
+

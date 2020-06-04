@@ -1,0 +1,6 @@
+= org/hsqldb/TriggerDefSQL.class
+
+ - link:TriggerDefSQL-asmified.java[Asmified]
+
+== References
+

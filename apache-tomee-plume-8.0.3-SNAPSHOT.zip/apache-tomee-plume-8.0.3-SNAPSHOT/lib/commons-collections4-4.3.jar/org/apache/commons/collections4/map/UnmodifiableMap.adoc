@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/UnmodifiableMap.class
+
+ - link:UnmodifiableMap-asmified.java[Asmified]
+
+== References
+

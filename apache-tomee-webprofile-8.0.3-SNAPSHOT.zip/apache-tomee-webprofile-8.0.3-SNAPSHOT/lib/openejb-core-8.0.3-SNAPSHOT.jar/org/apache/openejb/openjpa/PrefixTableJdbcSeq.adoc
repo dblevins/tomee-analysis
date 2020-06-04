@@ -1,0 +1,6 @@
+= org/apache/openejb/openjpa/PrefixTableJdbcSeq.class
+
+ - link:PrefixTableJdbcSeq-asmified.java[Asmified]
+
+== References
+

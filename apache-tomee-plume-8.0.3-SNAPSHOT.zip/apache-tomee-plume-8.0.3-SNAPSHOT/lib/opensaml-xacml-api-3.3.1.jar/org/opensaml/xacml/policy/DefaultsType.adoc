@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/DefaultsType.class
+
+ - link:DefaultsType-asmified.java[Asmified]
+
+== References
+

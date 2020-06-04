@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/CollectionUtils$MapToDictionary$IteratorToEnumeration.class
+
+ - link:CollectionUtils$MapToDictionary$IteratorToEnumeration-asmified.java[Asmified]
+
+== References
+

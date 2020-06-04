@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/storage/implementations/CertsInFilesystemDirectoryResolver.class
+
+ - link:CertsInFilesystemDirectoryResolver-asmified.java[Asmified]
+
+== References
+

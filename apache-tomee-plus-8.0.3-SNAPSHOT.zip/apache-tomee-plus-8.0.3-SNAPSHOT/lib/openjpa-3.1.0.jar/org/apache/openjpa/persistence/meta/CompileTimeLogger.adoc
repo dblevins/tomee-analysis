@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/meta/CompileTimeLogger.class
+
+ - link:CompileTimeLogger-asmified.java[Asmified]
+
+== References
+

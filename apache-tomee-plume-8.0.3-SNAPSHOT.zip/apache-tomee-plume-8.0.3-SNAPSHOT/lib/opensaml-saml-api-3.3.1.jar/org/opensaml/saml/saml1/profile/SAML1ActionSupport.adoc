@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml1/profile/SAML1ActionSupport.class
+
+ - link:SAML1ActionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 13

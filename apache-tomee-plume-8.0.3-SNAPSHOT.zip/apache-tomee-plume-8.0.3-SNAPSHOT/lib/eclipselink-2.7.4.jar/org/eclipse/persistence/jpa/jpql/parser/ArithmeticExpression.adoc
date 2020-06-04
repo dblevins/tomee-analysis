@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/ArithmeticExpression.class
+
+ - link:ArithmeticExpression-asmified.java[Asmified]
+
+== References
+

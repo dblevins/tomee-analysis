@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/metadata/MetadataProject.class
+
+ - link:MetadataProject-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 22
+ - javax.persistence.spi.PersistenceUnitInfo - 11

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/ValueDecoderFactory$IntArrayDecoder.class
+
+ - link:ValueDecoderFactory$IntArrayDecoder-asmified.java[Asmified]
+
+== References
+

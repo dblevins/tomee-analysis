@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/ByteArrayBuilder.class
+
+ - link:ByteArrayBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/tomcat/util/http/LegacyCookieProcessor.class
+
+ - link:LegacyCookieProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 16
+ - javax.servlet.http.HttpServletRequest - 6

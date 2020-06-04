@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/CMCStatusInfoV2.class
+
+ - link:CMCStatusInfoV2-asmified.java[Asmified]
+
+== References
+

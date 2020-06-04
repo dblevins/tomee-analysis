@@ -1,0 +1,9 @@
+= org/apache/myfaces/shared/util/ViewProtectionUtils.class
+
+ - link:ViewProtectionUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.context.FacesContext - 2

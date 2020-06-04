@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/EqualPredicate.class
+
+ - link:EqualPredicate-asmified.java[Asmified]
+
+== References
+

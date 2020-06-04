@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/DecoratingDataSource.class
+
+ - link:DecoratingDataSource-asmified.java[Asmified]
+
+== References
+

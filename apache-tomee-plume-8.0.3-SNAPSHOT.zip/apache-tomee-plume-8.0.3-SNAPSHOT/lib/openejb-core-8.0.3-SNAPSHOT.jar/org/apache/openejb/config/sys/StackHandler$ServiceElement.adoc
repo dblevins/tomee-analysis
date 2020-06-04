@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/StackHandler$ServiceElement.class
+
+ - link:StackHandler$ServiceElement-asmified.java[Asmified]
+
+== References
+

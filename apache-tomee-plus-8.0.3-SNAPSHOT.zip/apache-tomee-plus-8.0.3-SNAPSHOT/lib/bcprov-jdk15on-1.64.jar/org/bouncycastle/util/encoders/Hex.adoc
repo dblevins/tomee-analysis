@@ -1,0 +1,6 @@
+= org/bouncycastle/util/encoders/Hex.class
+
+ - link:Hex-asmified.java[Asmified]
+
+== References
+

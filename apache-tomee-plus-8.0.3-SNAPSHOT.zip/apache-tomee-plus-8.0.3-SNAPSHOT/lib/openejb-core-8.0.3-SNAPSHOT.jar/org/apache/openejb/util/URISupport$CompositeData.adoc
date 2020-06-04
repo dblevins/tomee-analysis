@@ -1,0 +1,6 @@
+= org/apache/openejb/util/URISupport$CompositeData.class
+
+ - link:URISupport$CompositeData-asmified.java[Asmified]
+
+== References
+

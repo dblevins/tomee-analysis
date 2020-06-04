@@ -1,0 +1,6 @@
+= org/apache/commons/collections/set/CompositeSet.class
+
+ - link:CompositeSet-asmified.java[Asmified]
+
+== References
+

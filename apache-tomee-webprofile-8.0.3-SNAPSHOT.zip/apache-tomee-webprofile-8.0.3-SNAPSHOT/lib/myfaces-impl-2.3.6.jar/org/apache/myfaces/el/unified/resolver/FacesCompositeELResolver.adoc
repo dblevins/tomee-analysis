@@ -1,0 +1,8 @@
+= org/apache/myfaces/el/unified/resolver/FacesCompositeELResolver.class
+
+ - link:FacesCompositeELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 34
+ - javax.el.ELContext - 25

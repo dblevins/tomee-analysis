@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/UpdateItemStateFieldPathExpressionBNF.class
+
+ - link:UpdateItemStateFieldPathExpressionBNF-asmified.java[Asmified]
+
+== References
+

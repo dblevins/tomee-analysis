@@ -1,0 +1,8 @@
+= org/apache/activemq/network/jms/OutboundTopicBridge.class
+
+ - link:OutboundTopicBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TopicConnection - 8
+ - javax.jms.Topic - 8

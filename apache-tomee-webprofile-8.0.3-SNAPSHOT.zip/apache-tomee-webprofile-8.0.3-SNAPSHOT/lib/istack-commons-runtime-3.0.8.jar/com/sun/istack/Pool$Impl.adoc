@@ -1,0 +1,6 @@
+= com/sun/istack/Pool$Impl.class
+
+ - link:Pool$Impl-asmified.java[Asmified]
+
+== References
+

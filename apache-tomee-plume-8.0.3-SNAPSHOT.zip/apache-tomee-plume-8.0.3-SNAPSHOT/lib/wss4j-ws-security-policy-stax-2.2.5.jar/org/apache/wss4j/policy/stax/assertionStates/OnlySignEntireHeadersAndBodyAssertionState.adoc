@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/stax/assertionStates/OnlySignEntireHeadersAndBodyAssertionState.class
+
+ - link:OnlySignEntireHeadersAndBodyAssertionState-asmified.java[Asmified]
+
+== References
+

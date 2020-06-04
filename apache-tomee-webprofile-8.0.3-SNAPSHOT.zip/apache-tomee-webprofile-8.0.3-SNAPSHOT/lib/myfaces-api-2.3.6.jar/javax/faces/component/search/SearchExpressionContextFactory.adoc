@@ -1,0 +1,13 @@
+= javax/faces/component/search/SearchExpressionContextFactory.class
+
+ - link:SearchExpressionContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.search.SearchExpressionContextFactory - 8
+ - javax.faces.component.search.SearchExpressionHint - 1
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.context.FacesContext - 1
+ - javax.faces.component.search.SearchExpressionContext - 1
+ - javax.faces.FacesWrapper - 1
+ - javax.faces.component.UIComponent - 1

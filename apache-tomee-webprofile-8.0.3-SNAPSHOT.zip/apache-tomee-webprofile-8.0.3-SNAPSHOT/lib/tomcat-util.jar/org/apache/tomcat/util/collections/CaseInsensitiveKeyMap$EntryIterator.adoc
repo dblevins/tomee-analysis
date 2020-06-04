@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/collections/CaseInsensitiveKeyMap$EntryIterator.class
+
+ - link:CaseInsensitiveKeyMap$EntryIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/querydef/OrderImpl.class
+
+ - link:OrderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 9
+ - javax.persistence.criteria.Order - 2

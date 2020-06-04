@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Messages$EmptyResourceBundle.class
+
+ - link:Messages$EmptyResourceBundle-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/ZippingIterator.class
+
+ - link:ZippingIterator-asmified.java[Asmified]
+
+== References
+

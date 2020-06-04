@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/reflect/TransducedAccessor$IDREFTransducedAccessorImpl.class
+
+ - link:TransducedAccessor$IDREFTransducedAccessorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 2

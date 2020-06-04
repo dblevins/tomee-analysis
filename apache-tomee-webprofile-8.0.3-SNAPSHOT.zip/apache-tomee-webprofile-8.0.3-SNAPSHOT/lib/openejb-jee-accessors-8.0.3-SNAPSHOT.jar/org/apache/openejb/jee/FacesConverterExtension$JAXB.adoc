@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/FacesConverterExtension$JAXB.class
+
+ - link:FacesConverterExtension$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 5

@@ -1,0 +1,9 @@
+= javax/ws/rs/core/HttpHeaders.class
+
+ - link:HttpHeaders-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.core.MultivaluedMap - 1
+ - javax.ws.rs.core.Cookie - 1

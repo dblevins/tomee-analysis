@@ -1,0 +1,6 @@
+= javax/enterprise/inject/Vetoed.class
+
+ - link:Vetoed-asmified.java[Asmified]
+
+== References
+

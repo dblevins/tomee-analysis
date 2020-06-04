@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/EISMappedRecord.class
+
+ - link:EISMappedRecord-asmified.java[Asmified]
+
+== References
+

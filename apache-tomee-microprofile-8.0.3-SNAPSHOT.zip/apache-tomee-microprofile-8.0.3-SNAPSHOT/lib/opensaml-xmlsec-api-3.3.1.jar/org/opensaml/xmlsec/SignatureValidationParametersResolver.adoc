@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/SignatureValidationParametersResolver.class
+
+ - link:SignatureValidationParametersResolver-asmified.java[Asmified]
+
+== References
+

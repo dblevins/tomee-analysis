@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/FieldMetaData$MemberProvider.class
+
+ - link:FieldMetaData$MemberProvider-asmified.java[Asmified]
+
+== References
+

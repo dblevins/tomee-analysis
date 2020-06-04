@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowOutputTextLog.class
+
+ - link:RowOutputTextLog-asmified.java[Asmified]
+
+== References
+

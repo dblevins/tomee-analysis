@@ -1,0 +1,24 @@
+= com/sun/faces/renderkit/html_basic/MenuRenderer.class
+
+ - link:MenuRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 103
+ - javax.faces.context.FacesContext - 95
+ - javax.faces.context.ResponseWriter - 50
+ - javax.faces.component.UISelectMany - 46
+ - javax.faces.model.SelectItem - 45
+ - javax.faces.convert.Converter - 39
+ - javax.faces.component.UISelectOne - 10
+ - javax.faces.convert.ConverterException - 10
+ - javax.faces.FacesException - 8
+ - javax.el.ValueExpression - 7
+ - javax.faces.model.SelectItemGroup - 6
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.application.FacesMessage - 4
+ - javax.el.ELContext - 4
+ - javax.faces.component.ValueHolder - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.application.Application - 2
+ - javax.el.ELException - 1

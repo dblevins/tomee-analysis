@@ -1,0 +1,7 @@
+= org/apache/openjpa/jdbc/kernel/TableJDBCSeq.class
+
+ - link:TableJDBCSeq-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.NotSupportedException - 3

@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/generators/X25519KeyPairGenerator.class
+
+ - link:X25519KeyPairGenerator-asmified.java[Asmified]
+
+== References
+

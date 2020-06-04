@@ -1,0 +1,8 @@
+= javax/servlet/annotation/WebFilter.class
+
+ - link:WebFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.DispatcherType - 2
+ - javax.servlet.annotation.WebInitParam - 1

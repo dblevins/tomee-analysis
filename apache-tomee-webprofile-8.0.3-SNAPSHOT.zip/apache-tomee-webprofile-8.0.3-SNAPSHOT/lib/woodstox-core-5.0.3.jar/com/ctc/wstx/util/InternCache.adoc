@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/InternCache.class
+
+ - link:InternCache-asmified.java[Asmified]
+
+== References
+

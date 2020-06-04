@@ -1,0 +1,20 @@
+= org/apache/myfaces/view/facelets/impl/DefaultFaceletContext.class
+
+ - link:DefaultFaceletContext-asmified.java[Asmified]
+
+== References
+
+ - javax.el.VariableMapper - 24
+ - javax.el.ELContext - 20
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.context.FacesContext - 10
+ - javax.el.FunctionMapper - 9
+ - javax.el.ValueExpression - 7
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.FacesException - 4
+ - javax.el.ELException - 4
+ - javax.faces.view.facelets.FaceletException - 3
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.el.ELResolver - 2
+ - javax.faces.application.Resource - 2
+ - javax.faces.view.facelets.Facelet - 1

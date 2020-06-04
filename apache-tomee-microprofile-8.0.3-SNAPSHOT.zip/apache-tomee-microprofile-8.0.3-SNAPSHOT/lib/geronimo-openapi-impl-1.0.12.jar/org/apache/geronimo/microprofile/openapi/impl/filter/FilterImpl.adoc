@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/filter/FilterImpl.class
+
+ - link:FilterImpl-asmified.java[Asmified]
+
+== References
+

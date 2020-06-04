@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/support/ServiceDelegateAccessor.class
+
+ - link:ServiceDelegateAccessor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Service - 5
+ - javax.xml.ws.WebServiceException - 2

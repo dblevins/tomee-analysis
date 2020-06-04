@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/WebConfigProviderFactory.class
+
+ - link:WebConfigProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.FacesException - 2

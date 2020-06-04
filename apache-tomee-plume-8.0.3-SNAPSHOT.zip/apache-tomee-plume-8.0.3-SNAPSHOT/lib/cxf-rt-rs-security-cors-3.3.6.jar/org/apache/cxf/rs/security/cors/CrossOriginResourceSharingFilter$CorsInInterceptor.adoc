@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter$CorsInInterceptor.class
+
+ - link:CrossOriginResourceSharingFilter$CorsInInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 1

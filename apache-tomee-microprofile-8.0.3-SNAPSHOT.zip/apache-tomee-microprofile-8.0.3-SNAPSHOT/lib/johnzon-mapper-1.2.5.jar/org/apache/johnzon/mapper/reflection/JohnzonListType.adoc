@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/reflection/JohnzonListType.class
+
+ - link:JohnzonListType-asmified.java[Asmified]
+
+== References
+

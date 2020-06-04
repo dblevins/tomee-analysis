@@ -1,0 +1,6 @@
+= javax/cache/annotation/CacheResolver.class
+
+ - link:CacheResolver-asmified.java[Asmified]
+
+== References
+

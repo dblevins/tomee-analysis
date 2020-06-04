@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/Assertor.class
+
+ - link:Assertor-asmified.java[Asmified]
+
+== References
+

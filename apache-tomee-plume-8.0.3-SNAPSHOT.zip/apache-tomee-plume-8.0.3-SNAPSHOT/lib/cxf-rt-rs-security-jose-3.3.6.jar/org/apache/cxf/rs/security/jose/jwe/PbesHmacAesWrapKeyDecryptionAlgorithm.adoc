@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jwe/PbesHmacAesWrapKeyDecryptionAlgorithm.class
+
+ - link:PbesHmacAesWrapKeyDecryptionAlgorithm-asmified.java[Asmified]
+
+== References
+

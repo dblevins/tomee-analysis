@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/processor/EncryptedDataProcessor.class
+
+ - link:EncryptedDataProcessor-asmified.java[Asmified]
+
+== References
+

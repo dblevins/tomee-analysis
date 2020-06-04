@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/Receiver.class
+
+ - link:Receiver-asmified.java[Asmified]
+
+== References
+

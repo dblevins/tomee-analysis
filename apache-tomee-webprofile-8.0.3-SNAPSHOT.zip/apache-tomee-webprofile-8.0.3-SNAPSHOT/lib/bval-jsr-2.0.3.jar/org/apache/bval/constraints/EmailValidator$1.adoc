@@ -1,0 +1,8 @@
+= org/apache/bval/constraints/EmailValidator$1.class
+
+ - link:EmailValidator$1-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Email - 7
+ - javax.validation.constraints.Pattern$Flag - 2

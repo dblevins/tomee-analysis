@@ -1,0 +1,14 @@
+= org/apache/cxf/rs/security/oauth2/provider/OAuthJSONProvider.class
+
+ - link:OAuthJSONProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 5
+ - javax.ws.rs.WebApplicationException - 4
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/mappings/converters/AttributeNamePrefix.class
+
+ - link:AttributeNamePrefix-asmified.java[Asmified]
+
+== References
+

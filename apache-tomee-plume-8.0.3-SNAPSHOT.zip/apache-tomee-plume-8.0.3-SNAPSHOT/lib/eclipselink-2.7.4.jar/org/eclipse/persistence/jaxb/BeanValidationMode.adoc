@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/BeanValidationMode.class
+
+ - link:BeanValidationMode-asmified.java[Asmified]
+
+== References
+

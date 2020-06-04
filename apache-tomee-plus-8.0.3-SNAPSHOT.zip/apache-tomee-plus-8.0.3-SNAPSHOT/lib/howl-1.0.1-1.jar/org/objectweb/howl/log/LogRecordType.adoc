@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/LogRecordType.class
+
+ - link:LogRecordType-asmified.java[Asmified]
+
+== References
+

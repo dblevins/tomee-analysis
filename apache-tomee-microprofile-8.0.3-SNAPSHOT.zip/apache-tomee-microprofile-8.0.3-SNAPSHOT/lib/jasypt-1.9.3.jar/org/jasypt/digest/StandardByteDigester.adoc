@@ -1,0 +1,6 @@
+= org/jasypt/digest/StandardByteDigester.class
+
+ - link:StandardByteDigester-asmified.java[Asmified]
+
+== References
+

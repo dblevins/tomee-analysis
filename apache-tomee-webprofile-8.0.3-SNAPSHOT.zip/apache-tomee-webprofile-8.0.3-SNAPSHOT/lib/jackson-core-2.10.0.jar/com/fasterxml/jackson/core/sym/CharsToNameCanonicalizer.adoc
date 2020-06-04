@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer.class
+
+ - link:CharsToNameCanonicalizer-asmified.java[Asmified]
+
+== References
+

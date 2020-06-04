@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor$MultiPartDataSource.class
+
+ - link:MessageModeInInterceptor$MultiPartDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 11
+ - javax.activation.DataHandler - 2

@@ -1,0 +1,30 @@
+= com/sun/faces/config/processor/FacesFlowDefinitionConfigProcessor.class
+
+ - link:FacesFlowDefinitionConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.FlowBuilder - 51
+ - javax.faces.context.FacesContext - 35
+ - javax.faces.flow.builder.NavigationCaseBuilder - 16
+ - javax.faces.flow.builder.MethodCallBuilder - 16
+ - javax.faces.application.Application - 14
+ - javax.el.ExpressionFactory - 10
+ - javax.faces.flow.FlowHandler - 10
+ - javax.el.ValueExpression - 10
+ - javax.el.ELContext - 10
+ - javax.faces.flow.builder.SwitchBuilder - 9
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.flow.Parameter - 8
+ - javax.faces.flow.builder.SwitchCaseBuilder - 6
+ - javax.faces.flow.builder.FlowCallBuilder - 6
+ - javax.faces.flow.builder.NavigationCaseBuilder$RedirectBuilder - 6
+ - javax.faces.flow.builder.ViewBuilder - 4
+ - javax.faces.flow.FlowNode - 3
+ - javax.faces.flow.builder.ReturnBuilder - 3
+ - javax.faces.flow.FlowHandlerFactory - 2
+ - javax.faces.flow.Flow - 2
+ - javax.servlet.ServletContext - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.event.SystemEventListener - 1
+ - javax.faces.event.PostConstructApplicationEvent - 1

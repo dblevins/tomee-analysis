@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/meta/Members$KeyAttributeImpl.class
+
+ - link:Members$KeyAttributeImpl-asmified.java[Asmified]
+
+== References
+

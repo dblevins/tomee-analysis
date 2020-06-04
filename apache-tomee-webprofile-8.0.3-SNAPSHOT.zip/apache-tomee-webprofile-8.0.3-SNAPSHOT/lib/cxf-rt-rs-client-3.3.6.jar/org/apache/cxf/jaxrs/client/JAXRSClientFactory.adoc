@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/client/JAXRSClientFactory.class
+
+ - link:JAXRSClientFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 6

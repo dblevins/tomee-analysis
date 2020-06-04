@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/binding/soap/JaxWsSoapBindingConfiguration.class
+
+ - link:JaxWsSoapBindingConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.soap.SOAPBinding - 10
+ - javax.jws.soap.SOAPBinding$Style - 6
+ - javax.jws.soap.SOAPBinding$Use - 6

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/util/ASMifier.class
+
+ - link:ASMifier-asmified.java[Asmified]
+
+== References
+

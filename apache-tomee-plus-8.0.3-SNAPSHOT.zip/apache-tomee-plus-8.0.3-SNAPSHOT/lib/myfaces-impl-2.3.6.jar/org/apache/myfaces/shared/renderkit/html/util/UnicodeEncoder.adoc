@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/renderkit/html/util/UnicodeEncoder.class
+
+ - link:UnicodeEncoder-asmified.java[Asmified]
+
+== References
+

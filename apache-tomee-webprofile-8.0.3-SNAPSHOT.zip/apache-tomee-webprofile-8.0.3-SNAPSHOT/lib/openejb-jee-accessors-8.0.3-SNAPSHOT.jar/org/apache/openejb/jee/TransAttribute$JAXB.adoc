@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/TransAttribute$JAXB.class
+
+ - link:TransAttribute$JAXB-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/myfaces/application/ApplicationFactoryImpl.class
+
+ - link:ApplicationFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 8
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.ApplicationFactory - 2

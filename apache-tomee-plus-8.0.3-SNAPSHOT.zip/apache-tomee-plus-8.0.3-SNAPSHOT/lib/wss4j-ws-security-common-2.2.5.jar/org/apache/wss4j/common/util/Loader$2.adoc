@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/util/Loader$2.class
+
+ - link:Loader$2-asmified.java[Asmified]
+
+== References
+

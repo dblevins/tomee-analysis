@@ -1,0 +1,6 @@
+= org/apache/bval/util/EmulatedAnnotatedType$Variable.class
+
+ - link:EmulatedAnnotatedType$Variable-asmified.java[Asmified]
+
+== References
+

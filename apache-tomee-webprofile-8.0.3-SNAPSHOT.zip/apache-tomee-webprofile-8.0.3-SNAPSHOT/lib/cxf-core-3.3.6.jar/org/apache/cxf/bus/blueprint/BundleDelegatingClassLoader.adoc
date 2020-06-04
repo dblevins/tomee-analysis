@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/blueprint/BundleDelegatingClassLoader.class
+
+ - link:BundleDelegatingClassLoader-asmified.java[Asmified]
+
+== References
+

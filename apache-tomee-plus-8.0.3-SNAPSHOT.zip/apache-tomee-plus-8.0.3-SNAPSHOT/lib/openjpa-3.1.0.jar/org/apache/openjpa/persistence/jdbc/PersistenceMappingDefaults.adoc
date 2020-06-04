@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/PersistenceMappingDefaults.class
+
+ - link:PersistenceMappingDefaults-asmified.java[Asmified]
+
+== References
+

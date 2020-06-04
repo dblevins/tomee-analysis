@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/ProviderCache$1.class
+
+ - link:ProviderCache$1-asmified.java[Asmified]
+
+== References
+

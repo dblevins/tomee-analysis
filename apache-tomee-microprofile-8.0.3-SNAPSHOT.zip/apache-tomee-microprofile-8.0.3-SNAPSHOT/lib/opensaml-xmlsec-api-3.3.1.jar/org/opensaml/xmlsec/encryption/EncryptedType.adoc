@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/encryption/EncryptedType.class
+
+ - link:EncryptedType-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 16

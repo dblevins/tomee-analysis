@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/JaxbJavaee$4.class
+
+ - link:JaxbJavaee$4-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEvent - 1
+ - javax.xml.bind.ValidationEventHandler - 1

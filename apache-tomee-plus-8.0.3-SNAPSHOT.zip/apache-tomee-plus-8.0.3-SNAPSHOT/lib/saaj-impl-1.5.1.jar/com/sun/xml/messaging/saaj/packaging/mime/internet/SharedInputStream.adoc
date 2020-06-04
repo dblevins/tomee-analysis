@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/SharedInputStream.class
+
+ - link:SharedInputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/JaxmURI$MalformedURIException.class
+
+ - link:JaxmURI$MalformedURIException-asmified.java[Asmified]
+
+== References
+

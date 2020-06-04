@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Validator$ValidateVisitor$NamedAttributeVisitor.class
+
+ - link:Validator$ValidateVisitor$NamedAttributeVisitor-asmified.java[Asmified]
+
+== References
+

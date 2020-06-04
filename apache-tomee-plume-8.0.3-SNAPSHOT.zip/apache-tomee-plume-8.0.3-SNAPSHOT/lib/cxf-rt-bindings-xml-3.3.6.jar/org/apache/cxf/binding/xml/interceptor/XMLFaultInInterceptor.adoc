@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/xml/interceptor/XMLFaultInInterceptor.class
+
+ - link:XMLFaultInInterceptor-asmified.java[Asmified]
+
+== References
+

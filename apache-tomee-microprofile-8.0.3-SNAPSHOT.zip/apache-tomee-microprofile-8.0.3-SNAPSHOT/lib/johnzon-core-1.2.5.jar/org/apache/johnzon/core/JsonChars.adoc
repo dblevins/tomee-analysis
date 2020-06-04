@@ -1,0 +1,7 @@
+= org/apache/johnzon/core/JsonChars.class
+
+ - link:JsonChars-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser$Event - 24

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/ClientProxyImpl$BodyWriter.class
+
+ - link:ClientProxyImpl$BodyWriter-asmified.java[Asmified]
+
+== References
+

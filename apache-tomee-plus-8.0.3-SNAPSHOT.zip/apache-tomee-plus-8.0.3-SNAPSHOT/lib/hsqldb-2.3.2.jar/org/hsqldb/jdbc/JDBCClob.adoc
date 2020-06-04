@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCClob.class
+
+ - link:JDBCClob-asmified.java[Asmified]
+
+== References
+

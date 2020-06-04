@@ -1,0 +1,11 @@
+= org/apache/openejb/core/cmp/cmp2/CmrSet.class
+
+ - link:CmrSet-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 30
+ - javax.ejb.EJBLocalObject - 14
+ - javax.transaction.TransactionSynchronizationRegistry - 4
+ - javax.ejb.EJBException - 2
+ - javax.transaction.Synchronization - 1

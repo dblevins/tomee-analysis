@@ -1,0 +1,7 @@
+= javax/mail/event/StoreListener.class
+
+ - link:StoreListener-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.event.StoreEvent - 1

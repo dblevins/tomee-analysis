@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/IDEA$CFB8Mac.class
+
+ - link:IDEA$CFB8Mac-asmified.java[Asmified]
+
+== References
+

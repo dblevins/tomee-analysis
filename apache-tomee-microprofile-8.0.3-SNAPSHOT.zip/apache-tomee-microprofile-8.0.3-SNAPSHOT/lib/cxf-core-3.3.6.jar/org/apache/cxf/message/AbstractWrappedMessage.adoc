@@ -1,0 +1,6 @@
+= org/apache/cxf/message/AbstractWrappedMessage.class
+
+ - link:AbstractWrappedMessage-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= javax/resource/cci/Connection.class
+
+ - link:Connection-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 5
+ - javax.resource.cci.ConnectionMetaData - 1
+ - javax.resource.cci.LocalTransaction - 1
+ - javax.resource.cci.Interaction - 1
+ - javax.resource.cci.ResultSetInfo - 1

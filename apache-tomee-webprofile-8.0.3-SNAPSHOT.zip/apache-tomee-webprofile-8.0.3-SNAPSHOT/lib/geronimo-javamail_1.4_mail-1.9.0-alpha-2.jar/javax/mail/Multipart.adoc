@@ -1,0 +1,10 @@
+= javax/mail/Multipart.class
+
+ - link:Multipart-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 8
+ - javax.mail.BodyPart - 6
+ - javax.mail.Part - 5
+ - javax.mail.MultipartDataSource - 4

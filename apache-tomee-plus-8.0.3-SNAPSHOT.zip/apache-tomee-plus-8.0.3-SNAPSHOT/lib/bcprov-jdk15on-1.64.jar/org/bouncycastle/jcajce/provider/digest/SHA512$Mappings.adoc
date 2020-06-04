@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/digest/SHA512$Mappings.class
+
+ - link:SHA512$Mappings-asmified.java[Asmified]
+
+== References
+

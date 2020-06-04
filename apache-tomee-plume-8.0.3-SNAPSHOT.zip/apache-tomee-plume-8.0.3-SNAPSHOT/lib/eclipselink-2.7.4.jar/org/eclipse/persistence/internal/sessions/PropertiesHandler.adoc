@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/PropertiesHandler.class
+
+ - link:PropertiesHandler-asmified.java[Asmified]
+
+== References
+

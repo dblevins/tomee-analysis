@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/media/ExampleObject.class
+
+ - link:ExampleObject-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/cfg/ContextAttributes$Impl.class
+
+ - link:ContextAttributes$Impl-asmified.java[Asmified]
+
+== References
+

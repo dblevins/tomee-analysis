@@ -1,0 +1,9 @@
+= org/apache/xml/security/binding/xmlenc/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 45
+ - javax.xml.bind.annotation.XmlElementDecl - 15
+ - javax.xml.bind.annotation.XmlRegistry - 1

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Histogram.class
+
+ - link:Histogram-asmified.java[Asmified]
+
+== References
+

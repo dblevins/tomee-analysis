@@ -1,0 +1,7 @@
+= org/opensaml/profile/action/ProfileAction.class
+
+ - link:ProfileAction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

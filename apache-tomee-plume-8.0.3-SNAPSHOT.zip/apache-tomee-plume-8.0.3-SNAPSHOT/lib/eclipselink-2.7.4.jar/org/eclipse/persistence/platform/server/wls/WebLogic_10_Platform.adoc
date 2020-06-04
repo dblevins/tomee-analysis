@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/wls/WebLogic_10_Platform.class
+
+ - link:WebLogic_10_Platform-asmified.java[Asmified]
+
+== References
+

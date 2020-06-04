@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StdArraySerializers$TypedPrimitiveArraySerializer.class
+
+ - link:StdArraySerializers$TypedPrimitiveArraySerializer-asmified.java[Asmified]
+
+== References
+

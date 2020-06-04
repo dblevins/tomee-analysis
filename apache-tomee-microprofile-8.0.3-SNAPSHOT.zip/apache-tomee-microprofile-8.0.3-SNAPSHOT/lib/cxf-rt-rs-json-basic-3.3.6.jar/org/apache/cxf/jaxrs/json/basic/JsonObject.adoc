@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/json/basic/JsonObject.class
+
+ - link:JsonObject-asmified.java[Asmified]
+
+== References
+

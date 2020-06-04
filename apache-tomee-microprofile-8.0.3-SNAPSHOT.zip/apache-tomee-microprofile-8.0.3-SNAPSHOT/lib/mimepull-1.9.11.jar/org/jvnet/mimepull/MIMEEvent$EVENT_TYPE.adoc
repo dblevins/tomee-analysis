@@ -1,0 +1,6 @@
+= org/jvnet/mimepull/MIMEEvent$EVENT_TYPE.class
+
+ - link:MIMEEvent$EVENT_TYPE-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/impl/VariantListBuilderImpl.class
+
+ - link:VariantListBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 12
+ - javax.ws.rs.core.Variant - 12
+ - javax.ws.rs.core.Variant$VariantListBuilder - 6

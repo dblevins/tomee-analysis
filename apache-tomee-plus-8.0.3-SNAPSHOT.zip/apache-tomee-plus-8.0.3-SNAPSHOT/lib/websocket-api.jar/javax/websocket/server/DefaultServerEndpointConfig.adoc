@@ -1,0 +1,11 @@
+= javax/websocket/server/DefaultServerEndpointConfig.class
+
+ - link:DefaultServerEndpointConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.server.ServerEndpointConfig$Configurator - 5
+ - javax.websocket.Decoder - 3
+ - javax.websocket.Encoder - 3
+ - javax.websocket.Extension - 3
+ - javax.websocket.server.ServerEndpointConfig - 1

@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/ChannelReceiver.class
+
+ - link:ChannelReceiver-asmified.java[Asmified]
+
+== References
+

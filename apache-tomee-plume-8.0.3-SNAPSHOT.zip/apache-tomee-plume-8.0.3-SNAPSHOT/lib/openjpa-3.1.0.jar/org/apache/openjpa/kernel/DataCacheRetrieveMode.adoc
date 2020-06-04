@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DataCacheRetrieveMode.class
+
+ - link:DataCacheRetrieveMode-asmified.java[Asmified]
+
+== References
+

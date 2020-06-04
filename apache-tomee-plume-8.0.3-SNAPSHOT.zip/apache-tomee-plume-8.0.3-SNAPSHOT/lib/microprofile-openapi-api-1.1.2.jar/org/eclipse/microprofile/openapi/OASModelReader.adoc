@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/OASModelReader.class
+
+ - link:OASModelReader-asmified.java[Asmified]
+
+== References
+

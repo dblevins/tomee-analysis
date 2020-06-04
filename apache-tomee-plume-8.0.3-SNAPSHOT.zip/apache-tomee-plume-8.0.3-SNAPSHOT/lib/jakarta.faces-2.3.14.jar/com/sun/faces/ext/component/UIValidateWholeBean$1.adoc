@@ -1,0 +1,6 @@
+= com/sun/faces/ext/component/UIValidateWholeBean$1.class
+
+ - link:UIValidateWholeBean$1-asmified.java[Asmified]
+
+== References
+

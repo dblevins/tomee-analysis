@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multimap/AbstractListValuedMap$WrappedList.class
+
+ - link:AbstractListValuedMap$WrappedList-asmified.java[Asmified]
+
+== References
+

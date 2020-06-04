@@ -1,0 +1,6 @@
+= org/apache/openejb/jpa/integration/hibernate/PrefixNamingStrategy.class
+
+ - link:PrefixNamingStrategy-asmified.java[Asmified]
+
+== References
+

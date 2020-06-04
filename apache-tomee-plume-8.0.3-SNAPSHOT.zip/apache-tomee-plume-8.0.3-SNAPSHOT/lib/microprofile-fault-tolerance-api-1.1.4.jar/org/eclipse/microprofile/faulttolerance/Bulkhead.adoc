@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/faulttolerance/Bulkhead.class
+
+ - link:Bulkhead-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 2
+ - javax.interceptor.InterceptorBinding - 1

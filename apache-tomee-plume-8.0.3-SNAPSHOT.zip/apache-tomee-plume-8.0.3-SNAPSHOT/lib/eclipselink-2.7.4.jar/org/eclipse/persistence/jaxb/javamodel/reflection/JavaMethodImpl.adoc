@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/reflection/JavaMethodImpl.class
+
+ - link:JavaMethodImpl-asmified.java[Asmified]
+
+== References
+

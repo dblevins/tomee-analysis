@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/message/WSSecSecurityContextToken.class
+
+ - link:WSSecSecurityContextToken-asmified.java[Asmified]
+
+== References
+

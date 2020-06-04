@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/xml/ElementSupport.class
+
+ - link:ElementSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 31
+ - javax.annotation.Nonnull - 17

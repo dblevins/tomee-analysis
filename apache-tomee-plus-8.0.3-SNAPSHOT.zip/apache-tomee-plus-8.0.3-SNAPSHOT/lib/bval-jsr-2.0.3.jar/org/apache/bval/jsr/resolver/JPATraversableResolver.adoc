@@ -1,0 +1,11 @@
+= org/apache/bval/jsr/resolver/JPATraversableResolver.class
+
+ - link:JPATraversableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 3
+ - javax.validation.Path - 2
+ - javax.persistence.PersistenceUtil - 2
+ - javax.persistence.Persistence - 1
+ - javax.validation.TraversableResolver - 1

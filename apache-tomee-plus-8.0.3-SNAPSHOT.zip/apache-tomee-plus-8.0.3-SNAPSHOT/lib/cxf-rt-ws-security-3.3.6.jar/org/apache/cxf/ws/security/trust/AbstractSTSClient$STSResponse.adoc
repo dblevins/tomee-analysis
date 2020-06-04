@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/AbstractSTSClient$STSResponse.class
+
+ - link:AbstractSTSClient$STSResponse-asmified.java[Asmified]
+
+== References
+

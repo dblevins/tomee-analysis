@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller.class
+
+ - link:JAXBAttachmentMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 4
+ - javax.xml.bind.attachment.AttachmentMarshaller - 2

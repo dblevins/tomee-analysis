@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Path.class
+
+ - link:Path-asmified.java[Asmified]
+
+== References
+

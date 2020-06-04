@@ -1,0 +1,7 @@
+= org/apache/myfaces/shared/resource/ClassLoaderResourceLoaderIterator$JarDepthIterator.class
+
+ - link:ClassLoaderResourceLoaderIterator$JarDepthIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceVisitOption - 9

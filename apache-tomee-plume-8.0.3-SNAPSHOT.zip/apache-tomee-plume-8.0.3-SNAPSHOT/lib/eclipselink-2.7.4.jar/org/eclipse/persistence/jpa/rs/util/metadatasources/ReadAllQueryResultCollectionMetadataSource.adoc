@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/ReadAllQueryResultCollectionMetadataSource.class
+
+ - link:ReadAllQueryResultCollectionMetadataSource-asmified.java[Asmified]
+
+== References
+

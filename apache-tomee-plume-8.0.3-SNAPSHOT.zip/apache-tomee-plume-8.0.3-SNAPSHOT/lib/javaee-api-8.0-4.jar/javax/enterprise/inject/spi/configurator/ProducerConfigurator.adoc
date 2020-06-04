@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/configurator/ProducerConfigurator.class
+
+ - link:ProducerConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.ProducerConfigurator - 2
+ - javax.enterprise.context.spi.CreationalContext - 1

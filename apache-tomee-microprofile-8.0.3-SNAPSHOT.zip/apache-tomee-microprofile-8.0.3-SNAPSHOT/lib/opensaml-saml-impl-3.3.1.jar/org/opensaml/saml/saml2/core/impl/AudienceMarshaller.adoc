@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AudienceMarshaller.class
+
+ - link:AudienceMarshaller-asmified.java[Asmified]
+
+== References
+

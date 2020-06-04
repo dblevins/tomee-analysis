@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ASMHelper$MethodVisitor.class
+
+ - link:ASMHelper$MethodVisitor-asmified.java[Asmified]
+
+== References
+

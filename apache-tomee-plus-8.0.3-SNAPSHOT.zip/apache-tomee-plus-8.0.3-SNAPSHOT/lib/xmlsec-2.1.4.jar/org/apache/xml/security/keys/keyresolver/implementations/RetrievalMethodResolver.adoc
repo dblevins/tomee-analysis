@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/RetrievalMethodResolver.class
+
+ - link:RetrievalMethodResolver-asmified.java[Asmified]
+
+== References
+

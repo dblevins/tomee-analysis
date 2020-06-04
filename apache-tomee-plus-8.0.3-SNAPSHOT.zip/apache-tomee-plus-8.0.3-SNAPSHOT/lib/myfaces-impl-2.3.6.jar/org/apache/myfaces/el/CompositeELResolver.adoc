@@ -1,0 +1,9 @@
+= org/apache/myfaces/el/CompositeELResolver.class
+
+ - link:CompositeELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.CompositeELResolver - 3
+ - javax.el.ELResolver - 3
+ - javax.el.ELContext - 2

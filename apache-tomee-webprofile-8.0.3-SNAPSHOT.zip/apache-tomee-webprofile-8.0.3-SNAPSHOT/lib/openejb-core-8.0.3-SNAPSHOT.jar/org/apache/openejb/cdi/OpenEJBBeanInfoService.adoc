@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/OpenEJBBeanInfoService.class
+
+ - link:OpenEJBBeanInfoService-asmified.java[Asmified]
+
+== References
+

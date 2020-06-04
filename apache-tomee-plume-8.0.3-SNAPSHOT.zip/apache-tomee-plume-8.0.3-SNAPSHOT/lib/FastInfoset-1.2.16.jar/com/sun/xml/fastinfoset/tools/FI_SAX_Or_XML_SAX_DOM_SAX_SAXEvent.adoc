@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/tools/FI_SAX_Or_XML_SAX_DOM_SAX_SAXEvent.class
+
+ - link:FI_SAX_Or_XML_SAX_DOM_SAX_SAXEvent-asmified.java[Asmified]
+
+== References
+

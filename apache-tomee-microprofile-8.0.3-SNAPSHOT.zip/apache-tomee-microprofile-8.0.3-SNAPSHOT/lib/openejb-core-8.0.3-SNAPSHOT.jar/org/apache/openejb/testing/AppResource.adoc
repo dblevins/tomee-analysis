@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/AppResource.class
+
+ - link:AppResource-asmified.java[Asmified]
+
+== References
+

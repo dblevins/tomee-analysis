@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/RequestType.class
+
+ - link:RequestType-asmified.java[Asmified]
+
+== References
+

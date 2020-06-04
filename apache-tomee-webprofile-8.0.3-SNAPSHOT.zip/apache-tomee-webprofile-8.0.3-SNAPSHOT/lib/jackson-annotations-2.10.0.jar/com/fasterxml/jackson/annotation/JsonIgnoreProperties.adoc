@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonIgnoreProperties.class
+
+ - link:JsonIgnoreProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/faces/component/UIViewAction$PropertyKeys.class
+
+ - link:UIViewAction$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewAction$PropertyKeys - 36

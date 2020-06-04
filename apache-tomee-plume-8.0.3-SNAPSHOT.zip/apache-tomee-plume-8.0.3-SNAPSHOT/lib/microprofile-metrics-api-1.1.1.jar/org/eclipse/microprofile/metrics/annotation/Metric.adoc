@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/metrics/annotation/Metric.class
+
+ - link:Metric-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 6
+ - javax.interceptor.InterceptorBinding - 1

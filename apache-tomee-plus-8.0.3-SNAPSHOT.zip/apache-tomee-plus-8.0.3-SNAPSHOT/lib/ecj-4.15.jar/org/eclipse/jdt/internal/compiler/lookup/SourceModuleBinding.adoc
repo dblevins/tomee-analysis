@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/SourceModuleBinding.class
+
+ - link:SourceModuleBinding-asmified.java[Asmified]
+
+== References
+

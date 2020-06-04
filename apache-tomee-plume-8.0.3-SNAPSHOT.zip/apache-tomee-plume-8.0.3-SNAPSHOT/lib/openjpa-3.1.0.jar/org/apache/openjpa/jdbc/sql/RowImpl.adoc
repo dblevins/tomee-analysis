@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/RowImpl.class
+
+ - link:RowImpl-asmified.java[Asmified]
+
+== References
+

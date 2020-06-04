@@ -1,0 +1,6 @@
+= org/apache/activemq/network/DiscoveryNetworkConnector$1DiscoverNetworkBridgeListener.class
+
+ - link:DiscoveryNetworkConnector$1DiscoverNetworkBridgeListener-asmified.java[Asmified]
+
+== References
+

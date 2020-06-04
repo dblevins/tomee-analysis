@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/CMPPolicy$KeyElementAccessor.class
+
+ - link:CMPPolicy$KeyElementAccessor-asmified.java[Asmified]
+
+== References
+

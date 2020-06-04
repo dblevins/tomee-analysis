@@ -1,0 +1,9 @@
+= javax/websocket/ClientEndpointConfig.class
+
+ - link:ClientEndpointConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.EndpointConfig - 1
+ - javax.websocket.Extension - 1
+ - javax.websocket.ClientEndpointConfig$Configurator - 1

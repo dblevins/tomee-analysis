@@ -1,0 +1,6 @@
+= org/codehaus/stax2/evt/NotationDeclaration2.class
+
+ - link:NotationDeclaration2-asmified.java[Asmified]
+
+== References
+

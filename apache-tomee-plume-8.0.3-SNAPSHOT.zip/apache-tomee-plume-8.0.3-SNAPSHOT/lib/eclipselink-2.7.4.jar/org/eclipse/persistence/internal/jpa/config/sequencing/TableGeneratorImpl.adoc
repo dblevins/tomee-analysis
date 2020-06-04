@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/sequencing/TableGeneratorImpl.class
+
+ - link:TableGeneratorImpl-asmified.java[Asmified]
+
+== References
+

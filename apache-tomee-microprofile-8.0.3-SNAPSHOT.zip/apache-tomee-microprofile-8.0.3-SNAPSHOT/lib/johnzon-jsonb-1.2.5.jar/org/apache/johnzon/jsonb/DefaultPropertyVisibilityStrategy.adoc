@@ -1,0 +1,9 @@
+= org/apache/johnzon/jsonb/DefaultPropertyVisibilityStrategy.class
+
+ - link:DefaultPropertyVisibilityStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.config.PropertyVisibilityStrategy - 15
+ - javax.json.bind.annotation.JsonbVisibility - 10
+ - javax.json.bind.annotation.JsonbProperty - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/MethodDispatcher.class
+
+ - link:MethodDispatcher-asmified.java[Asmified]
+
+== References
+

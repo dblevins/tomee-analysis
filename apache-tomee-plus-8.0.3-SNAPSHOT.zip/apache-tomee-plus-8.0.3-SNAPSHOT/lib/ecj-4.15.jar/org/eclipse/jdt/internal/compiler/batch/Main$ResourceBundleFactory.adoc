@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/Main$ResourceBundleFactory.class
+
+ - link:Main$ResourceBundleFactory-asmified.java[Asmified]
+
+== References
+

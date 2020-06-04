@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Extension.class
+
+ - link:Extension-asmified.java[Asmified]
+
+== References
+

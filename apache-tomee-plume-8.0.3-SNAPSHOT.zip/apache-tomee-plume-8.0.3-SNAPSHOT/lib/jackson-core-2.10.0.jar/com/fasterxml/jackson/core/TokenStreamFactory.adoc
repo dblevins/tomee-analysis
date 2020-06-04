@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/TokenStreamFactory.class
+
+ - link:TokenStreamFactory-asmified.java[Asmified]
+
+== References
+

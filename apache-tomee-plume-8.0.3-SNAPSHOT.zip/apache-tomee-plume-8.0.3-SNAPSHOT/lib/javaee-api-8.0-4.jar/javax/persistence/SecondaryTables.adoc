@@ -1,0 +1,7 @@
+= javax/persistence/SecondaryTables.class
+
+ - link:SecondaryTables-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SecondaryTable - 1

@@ -1,0 +1,8 @@
+= javax/json/JsonPointer.class
+
+ - link:JsonPointer-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonStructure - 5
+ - javax.json.JsonValue - 3

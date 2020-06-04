@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/pool/PoolProperties$InterceptorProperty.class
+
+ - link:PoolProperties$InterceptorProperty-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/opentracing/config/DefaultOpenTracingConfig.class
+
+ - link:DefaultOpenTracingConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1

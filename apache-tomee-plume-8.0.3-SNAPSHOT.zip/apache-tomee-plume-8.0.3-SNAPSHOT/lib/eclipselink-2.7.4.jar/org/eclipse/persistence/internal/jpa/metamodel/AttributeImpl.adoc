@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/metamodel/AttributeImpl.class
+
+ - link:AttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute$PersistentAttributeType - 9
+ - javax.persistence.metamodel.Attribute - 1
+ - javax.persistence.metamodel.ManagedType - 1

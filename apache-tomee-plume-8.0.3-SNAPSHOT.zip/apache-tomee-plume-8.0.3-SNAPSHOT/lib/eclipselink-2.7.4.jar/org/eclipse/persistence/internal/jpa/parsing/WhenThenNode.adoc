@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/WhenThenNode.class
+
+ - link:WhenThenNode-asmified.java[Asmified]
+
+== References
+

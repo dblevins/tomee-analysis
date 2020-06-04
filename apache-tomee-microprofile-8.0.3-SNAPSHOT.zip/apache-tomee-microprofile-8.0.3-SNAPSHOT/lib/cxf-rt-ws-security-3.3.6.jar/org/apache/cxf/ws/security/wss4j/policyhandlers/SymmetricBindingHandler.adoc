@@ -1,0 +1,9 @@
+= org/apache/cxf/ws/security/wss4j/policyhandlers/SymmetricBindingHandler.class
+
+ - link:SymmetricBindingHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 6
+ - javax.xml.soap.SOAPPart - 2
+ - javax.xml.soap.SOAPException - 1

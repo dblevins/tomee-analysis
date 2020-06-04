@@ -1,0 +1,8 @@
+= com/sun/faces/application/ByteArrayWebOutputStream$NoOpOutputStream.class
+
+ - link:ByteArrayWebOutputStream$NoOpOutputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.WriteListener - 1

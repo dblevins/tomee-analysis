@@ -1,0 +1,6 @@
+= javax/wsdl/BindingFault.class
+
+ - link:BindingFault-asmified.java[Asmified]
+
+== References
+

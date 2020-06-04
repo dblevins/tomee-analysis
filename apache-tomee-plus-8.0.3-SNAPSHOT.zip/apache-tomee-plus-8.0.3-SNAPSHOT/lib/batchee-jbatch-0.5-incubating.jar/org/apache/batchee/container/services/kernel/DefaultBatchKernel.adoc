@@ -1,0 +1,13 @@
+= org/apache/batchee/container/services/kernel/DefaultBatchKernel.class
+
+ - link:DefaultBatchKernel-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.operations.NoSuchJobExecutionException - 7
+ - javax.batch.operations.JobRestartException - 5
+ - javax.batch.operations.JobExecutionAlreadyCompleteException - 5
+ - javax.batch.operations.JobExecutionNotMostRecentException - 3
+ - javax.batch.operations.JobExecutionNotRunningException - 3
+ - javax.batch.runtime.JobInstance - 2
+ - javax.batch.operations.JobStartException - 2

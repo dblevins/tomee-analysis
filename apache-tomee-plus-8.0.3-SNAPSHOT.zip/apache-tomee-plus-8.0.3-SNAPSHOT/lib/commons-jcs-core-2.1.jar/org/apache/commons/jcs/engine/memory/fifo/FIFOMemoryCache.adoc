@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/engine/memory/fifo/FIFOMemoryCache.class
+
+ - link:FIFOMemoryCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/lib/FileUtil$DatabaseFilenameFilter.class
+
+ - link:FileUtil$DatabaseFilenameFilter-asmified.java[Asmified]
+
+== References
+

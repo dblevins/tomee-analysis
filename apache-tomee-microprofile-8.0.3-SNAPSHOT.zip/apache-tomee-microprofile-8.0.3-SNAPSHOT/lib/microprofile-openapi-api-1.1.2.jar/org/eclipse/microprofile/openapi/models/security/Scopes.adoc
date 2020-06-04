@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/security/Scopes.class
+
+ - link:Scopes-asmified.java[Asmified]
+
+== References
+

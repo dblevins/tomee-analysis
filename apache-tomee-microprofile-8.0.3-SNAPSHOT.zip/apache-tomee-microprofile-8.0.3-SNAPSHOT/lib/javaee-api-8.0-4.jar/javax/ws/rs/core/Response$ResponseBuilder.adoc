@@ -1,0 +1,18 @@
+= javax/ws/rs/core/Response$ResponseBuilder.class
+
+ - link:Response$ResponseBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$ResponseBuilder - 38
+ - javax.ws.rs.core.Response$StatusType - 4
+ - javax.ws.rs.ext.RuntimeDelegate - 3
+ - javax.ws.rs.core.Variant - 3
+ - javax.ws.rs.core.MultivaluedMap - 1
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.core.Response$Status - 1
+ - javax.ws.rs.core.EntityTag - 1
+ - javax.ws.rs.core.NewCookie - 1
+ - javax.ws.rs.core.CacheControl - 1
+ - javax.ws.rs.core.Link - 1

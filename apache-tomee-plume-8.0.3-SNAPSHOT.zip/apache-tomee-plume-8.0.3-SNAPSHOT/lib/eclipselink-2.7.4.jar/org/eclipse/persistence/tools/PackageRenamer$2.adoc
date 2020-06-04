@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/PackageRenamer$2.class
+
+ - link:PackageRenamer$2-asmified.java[Asmified]
+
+== References
+

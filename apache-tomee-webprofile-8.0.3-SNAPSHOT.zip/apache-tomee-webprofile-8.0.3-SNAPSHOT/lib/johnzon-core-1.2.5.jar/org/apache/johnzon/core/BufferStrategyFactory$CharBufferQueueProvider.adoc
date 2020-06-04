@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/BufferStrategyFactory$CharBufferQueueProvider.class
+
+ - link:BufferStrategyFactory$CharBufferQueueProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxb/io/DataReaderImpl$WSUIDValidationHandler.class
+
+ - link:DataReaderImpl$WSUIDValidationHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventHandler - 7
+ - javax.xml.bind.ValidationEvent - 3

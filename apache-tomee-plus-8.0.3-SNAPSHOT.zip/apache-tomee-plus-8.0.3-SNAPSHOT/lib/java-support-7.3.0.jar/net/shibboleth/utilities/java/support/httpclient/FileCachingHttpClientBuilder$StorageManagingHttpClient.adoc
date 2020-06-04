@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/httpclient/FileCachingHttpClientBuilder$StorageManagingHttpClient.class
+
+ - link:FileCachingHttpClientBuilder$StorageManagingHttpClient-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

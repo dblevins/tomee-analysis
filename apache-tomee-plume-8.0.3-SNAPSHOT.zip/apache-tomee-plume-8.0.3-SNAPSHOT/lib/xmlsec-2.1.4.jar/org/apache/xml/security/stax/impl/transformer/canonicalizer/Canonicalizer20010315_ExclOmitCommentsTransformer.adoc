@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/transformer/canonicalizer/Canonicalizer20010315_ExclOmitCommentsTransformer.class
+
+ - link:Canonicalizer20010315_ExclOmitCommentsTransformer-asmified.java[Asmified]
+
+== References
+

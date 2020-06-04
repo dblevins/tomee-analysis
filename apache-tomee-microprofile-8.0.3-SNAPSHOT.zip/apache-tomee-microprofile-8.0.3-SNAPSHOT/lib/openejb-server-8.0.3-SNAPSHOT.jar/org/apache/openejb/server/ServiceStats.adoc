@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ServiceStats.class
+
+ - link:ServiceStats-asmified.java[Asmified]
+
+== References
+

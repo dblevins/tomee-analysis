@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWithSerializerProvider.class
+
+ - link:JsonFormatVisitorWithSerializerProvider-asmified.java[Asmified]
+
+== References
+

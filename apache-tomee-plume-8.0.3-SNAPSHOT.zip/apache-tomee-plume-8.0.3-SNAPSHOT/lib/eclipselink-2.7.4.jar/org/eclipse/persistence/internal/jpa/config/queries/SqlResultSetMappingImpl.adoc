@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/SqlResultSetMappingImpl.class
+
+ - link:SqlResultSetMappingImpl-asmified.java[Asmified]
+
+== References
+

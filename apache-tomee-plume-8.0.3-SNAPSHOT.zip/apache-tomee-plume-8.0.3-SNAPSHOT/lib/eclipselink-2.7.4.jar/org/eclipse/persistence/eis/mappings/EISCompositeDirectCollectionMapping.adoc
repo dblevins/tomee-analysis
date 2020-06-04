@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/mappings/EISCompositeDirectCollectionMapping.class
+
+ - link:EISCompositeDirectCollectionMapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/naming/factory/LookupFactory.class
+
+ - link:LookupFactory-asmified.java[Asmified]
+
+== References
+

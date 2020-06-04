@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/LRSProxyCollection$3.class
+
+ - link:LRSProxyCollection$3-asmified.java[Asmified]
+
+== References
+

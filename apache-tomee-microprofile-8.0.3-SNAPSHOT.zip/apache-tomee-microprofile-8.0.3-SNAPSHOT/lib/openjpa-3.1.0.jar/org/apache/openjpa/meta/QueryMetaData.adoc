@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/QueryMetaData.class
+
+ - link:QueryMetaData-asmified.java[Asmified]
+
+== References
+

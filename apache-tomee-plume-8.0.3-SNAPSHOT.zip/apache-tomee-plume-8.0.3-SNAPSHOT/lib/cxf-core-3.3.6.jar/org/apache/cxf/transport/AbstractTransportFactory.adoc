@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/AbstractTransportFactory.class
+
+ - link:AbstractTransportFactory-asmified.java[Asmified]
+
+== References
+

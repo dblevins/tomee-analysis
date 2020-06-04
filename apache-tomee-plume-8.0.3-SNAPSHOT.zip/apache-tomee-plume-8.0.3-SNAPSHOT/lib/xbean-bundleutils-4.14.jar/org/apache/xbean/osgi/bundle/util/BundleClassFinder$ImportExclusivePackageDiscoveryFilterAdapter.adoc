@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/BundleClassFinder$ImportExclusivePackageDiscoveryFilterAdapter.class
+
+ - link:BundleClassFinder$ImportExclusivePackageDiscoveryFilterAdapter-asmified.java[Asmified]
+
+== References
+

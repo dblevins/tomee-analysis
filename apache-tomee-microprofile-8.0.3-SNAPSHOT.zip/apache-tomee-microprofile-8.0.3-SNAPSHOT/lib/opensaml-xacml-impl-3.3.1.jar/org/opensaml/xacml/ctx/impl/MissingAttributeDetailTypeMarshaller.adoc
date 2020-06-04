@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/MissingAttributeDetailTypeMarshaller.class
+
+ - link:MissingAttributeDetailTypeMarshaller-asmified.java[Asmified]
+
+== References
+

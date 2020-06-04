@@ -1,0 +1,6 @@
+= javax/persistence/EntityListeners.class
+
+ - link:EntityListeners-asmified.java[Asmified]
+
+== References
+

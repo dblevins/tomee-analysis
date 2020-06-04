@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/SelectItem.class
+
+ - link:SelectItem-asmified.java[Asmified]
+
+== References
+

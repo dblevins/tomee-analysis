@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/jcajce/provider/mceliece/McElieceKobaraImaiCipherSpi$McElieceKobaraImai512.class
+
+ - link:McElieceKobaraImaiCipherSpi$McElieceKobaraImai512-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/LazySortedMap.class
+
+ - link:LazySortedMap-asmified.java[Asmified]
+
+== References
+

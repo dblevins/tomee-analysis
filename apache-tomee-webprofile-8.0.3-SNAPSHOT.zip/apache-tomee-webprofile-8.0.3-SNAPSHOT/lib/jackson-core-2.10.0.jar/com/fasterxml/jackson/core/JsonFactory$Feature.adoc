@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/JsonFactory$Feature.class
+
+ - link:JsonFactory$Feature-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,267 @@
+package asm.org.apache.openejb.client;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AbstractConnectionStrategyDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/openejb/client/AbstractConnectionStrategy", null, "java/lang/Object", new String[] { "org/apache/openejb/client/ConnectionStrategy" });
+
+classWriter.visitInnerClass("org/apache/openejb/client/AbstractConnectionStrategy$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
+
+classWriter.visitInnerClass("org/apache/openejb/client/AbstractConnectionStrategy$StrategyData", "org/apache/openejb/client/AbstractConnectionStrategy", "StrategyData", ACC_PRIVATE | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lock", "Ljava/util/concurrent/locks/ReentrantLock;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/locks/ReentrantLock");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/locks/ReentrantLock", "<init>", "(Z)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/client/AbstractConnectionStrategy", "lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "connect", "(Lorg/apache/openejb/client/ClusterMetaData;Lorg/apache/openejb/client/ServerMetaData;)Lorg/apache/openejb/client/Connection;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label1, label4, null);
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label5, label4, null);
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label4, label6, label4, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/client/AbstractConnectionStrategy", "lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/locks/ReentrantLock", "lock", "()V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/client/Client", "getFailed", "()Ljava/util/Set;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/AbstractConnectionStrategy", "getIterable", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/Iterable", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 8);
+Label label7 = new Label();
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/openejb/client/AbstractConnectionStrategy", "org/apache/openejb/client/ClusterMetaData", "org/apache/openejb/client/ServerMetaData", "java/util/concurrent/locks/ReentrantLock", "java/util/Set", "java/util/Set", Opcodes.INTEGER, "java/lang/Iterable", "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/net/URI");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label9);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/net/URI"}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/AbstractConnectionStrategy", "createFailureEvent", "(Ljava/util/Set;Ljava/util/Set;Ljava/net/URI;)Lorg/apache/openejb/client/event/FailoverSelection;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/client/Client", "fireEvent", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/AbstractConnectionStrategy", "connect", "(Lorg/apache/openejb/client/ClusterMetaData;Ljava/net/URI;)Lorg/apache/openejb/client/Connection;", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/locks/ReentrantLock", "unlock", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ILOAD, 6);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label10);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/ClusterMetaData", "getLocations", "()[Ljava/net/URI;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "addAll", "(Ljava/util/Collection;[Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "removeAll", "(Ljava/util/Collection;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/io/IOException"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "remove", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/ServerMetaData", "getLocation", "()Ljava/net/URI;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label11);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/client/RemoteFailoverException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Attempted to connect to ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "size", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" servers.");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/RemoteFailoverException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/net/URI"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/client/event/BootstrappingConnection");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/event/BootstrappingConnection", "<init>", "(Ljava/net/URI;)V", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/client/Client", "fireEvent", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/AbstractConnectionStrategy", "connect", "(Lorg/apache/openejb/client/ClusterMetaData;Ljava/net/URI;)Lorg/apache/openejb/client/Connection;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/locks/ReentrantLock", "unlock", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/client/AbstractConnectionStrategy", "org/apache/openejb/client/ClusterMetaData", "org/apache/openejb/client/ServerMetaData", "java/util/concurrent/locks/ReentrantLock"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/locks/ReentrantLock", "unlock", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(4, 12);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getIterable", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable;", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable<Ljava/net/URI;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/ClusterMetaData", "getContext", "()Lorg/apache/openejb/client/Context;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/client/AbstractConnectionStrategy$StrategyData;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/Context", "getComponent", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/client/AbstractConnectionStrategy$StrategyData");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/AbstractConnectionStrategy$StrategyData", "getIterable", "()Ljava/lang/Iterable;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/client/Context", "org/apache/openejb/client/AbstractConnectionStrategy$StrategyData"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/client/AbstractConnectionStrategy$StrategyData;"));
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/client/AbstractConnectionStrategy$StrategyData");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/AbstractConnectionStrategy", "createIterable", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable;", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/AbstractConnectionStrategy$StrategyData", "<init>", "(Ljava/lang/Iterable;Lorg/apache/openejb/client/AbstractConnectionStrategy$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/Context", "setComponent", "(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/client/AbstractConnectionStrategy", "getIterable", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createFailureEvent", "(Ljava/util/Set;Ljava/util/Set;Ljava/net/URI;)Lorg/apache/openejb/client/event/FailoverSelection;", "(Ljava/util/Set<Ljava/net/URI;>;Ljava/util/Set<Ljava/net/URI;>;Ljava/net/URI;)Lorg/apache/openejb/client/event/FailoverSelection;", null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "createIterable", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable;", "(Lorg/apache/openejb/client/ClusterMetaData;)Ljava/lang/Iterable<Ljava/net/URI;>;", null);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "connect", "(Lorg/apache/openejb/client/ClusterMetaData;Ljava/net/URI;)Lorg/apache/openejb/client/Connection;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/client/ConnectionManager", "getConnection", "(Ljava/net/URI;)Lorg/apache/openejb/client/Connection;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/client/Connection", "getURI", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/client/ClusterMetaData", "setLastLocation", "(Ljava/net/URI;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

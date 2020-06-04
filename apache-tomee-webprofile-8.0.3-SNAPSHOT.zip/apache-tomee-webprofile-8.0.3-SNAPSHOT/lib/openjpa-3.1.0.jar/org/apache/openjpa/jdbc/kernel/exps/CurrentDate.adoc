@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/CurrentDate.class
+
+ - link:CurrentDate-asmified.java[Asmified]
+
+== References
+

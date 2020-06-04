@@ -1,0 +1,6 @@
+= org/apache/openejb/server/osgi/ServiceManagerExtender$Service.class
+
+ - link:ServiceManagerExtender$Service-asmified.java[Asmified]
+
+== References
+

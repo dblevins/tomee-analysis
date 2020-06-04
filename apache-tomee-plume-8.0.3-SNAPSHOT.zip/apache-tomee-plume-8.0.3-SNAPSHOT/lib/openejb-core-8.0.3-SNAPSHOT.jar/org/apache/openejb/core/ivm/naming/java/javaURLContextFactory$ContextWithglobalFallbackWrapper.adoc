@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/java/javaURLContextFactory$ContextWithglobalFallbackWrapper.class
+
+ - link:javaURLContextFactory$ContextWithglobalFallbackWrapper-asmified.java[Asmified]
+
+== References
+

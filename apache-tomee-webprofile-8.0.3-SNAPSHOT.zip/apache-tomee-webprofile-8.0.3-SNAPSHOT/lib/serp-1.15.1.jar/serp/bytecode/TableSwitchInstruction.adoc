@@ -1,0 +1,6 @@
+= serp/bytecode/TableSwitchInstruction.class
+
+ - link:TableSwitchInstruction-asmified.java[Asmified]
+
+== References
+

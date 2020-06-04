@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jaxb/xmlmodel/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 66
+ - javax.xml.bind.annotation.XmlElementDecl - 22
+ - javax.xml.bind.annotation.XmlRegistry - 1

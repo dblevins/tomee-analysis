@@ -1,0 +1,7 @@
+= javax/security/auth/message/config/ServerAuthContext.class
+
+ - link:ServerAuthContext-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.ServerAuth - 1

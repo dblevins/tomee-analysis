@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/extensions/ExtensionRegistry.class
+
+ - link:ExtensionRegistry-asmified.java[Asmified]
+
+== References
+

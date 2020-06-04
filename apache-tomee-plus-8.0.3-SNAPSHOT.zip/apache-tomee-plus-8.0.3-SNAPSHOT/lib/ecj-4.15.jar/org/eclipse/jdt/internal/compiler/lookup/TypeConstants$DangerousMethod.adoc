@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/TypeConstants$DangerousMethod.class
+
+ - link:TypeConstants$DangerousMethod-asmified.java[Asmified]
+
+== References
+

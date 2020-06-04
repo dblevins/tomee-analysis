@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/Meta$ForField.class
+
+ - link:Meta$ForField-asmified.java[Asmified]
+
+== References
+

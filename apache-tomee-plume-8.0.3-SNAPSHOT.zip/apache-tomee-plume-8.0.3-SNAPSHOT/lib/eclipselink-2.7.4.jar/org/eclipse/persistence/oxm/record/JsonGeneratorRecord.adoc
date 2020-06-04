@@ -1,0 +1,7 @@
+= org/eclipse/persistence/oxm/record/JsonGeneratorRecord.class
+
+ - link:JsonGeneratorRecord-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 99

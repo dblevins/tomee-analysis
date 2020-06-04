@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/AbstractFinder$FieldInfo.class
+
+ - link:AbstractFinder$FieldInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/criterion/DecryptionConfigurationCriterion.class
+
+ - link:DecryptionConfigurationCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

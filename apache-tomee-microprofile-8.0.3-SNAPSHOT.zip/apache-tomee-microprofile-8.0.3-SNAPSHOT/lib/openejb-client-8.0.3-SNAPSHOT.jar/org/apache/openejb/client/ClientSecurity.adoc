@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ClientSecurity.class
+
+ - link:ClientSecurity-asmified.java[Asmified]
+
+== References
+

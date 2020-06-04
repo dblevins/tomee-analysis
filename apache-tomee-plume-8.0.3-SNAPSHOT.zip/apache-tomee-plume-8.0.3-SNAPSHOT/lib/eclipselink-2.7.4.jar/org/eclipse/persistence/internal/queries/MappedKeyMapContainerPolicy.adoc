@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/MappedKeyMapContainerPolicy.class
+
+ - link:MappedKeyMapContainerPolicy-asmified.java[Asmified]
+
+== References
+

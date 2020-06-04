@@ -1,0 +1,8 @@
+= org/apache/cxf/rs/security/oauth2/filters/AccessTokenIntrospectionClient.class
+
+ - link:AccessTokenIntrospectionClient-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.WebApplicationException - 2

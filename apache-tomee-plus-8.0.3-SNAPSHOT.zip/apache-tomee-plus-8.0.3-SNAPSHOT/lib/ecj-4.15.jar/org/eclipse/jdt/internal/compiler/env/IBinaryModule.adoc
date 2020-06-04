@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IBinaryModule.class
+
+ - link:IBinaryModule-asmified.java[Asmified]
+
+== References
+

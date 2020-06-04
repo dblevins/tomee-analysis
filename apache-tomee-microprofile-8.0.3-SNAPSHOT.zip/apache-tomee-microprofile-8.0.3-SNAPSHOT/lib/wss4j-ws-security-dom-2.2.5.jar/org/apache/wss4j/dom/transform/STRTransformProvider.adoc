@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/transform/STRTransformProvider.class
+
+ - link:STRTransformProvider-asmified.java[Asmified]
+
+== References
+

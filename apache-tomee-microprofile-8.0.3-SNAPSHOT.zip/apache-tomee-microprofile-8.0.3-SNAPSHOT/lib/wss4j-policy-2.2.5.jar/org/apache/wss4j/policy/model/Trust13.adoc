@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/model/Trust13.class
+
+ - link:Trust13-asmified.java[Asmified]
+
+== References
+

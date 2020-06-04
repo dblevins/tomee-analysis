@@ -1,0 +1,7 @@
+= org/apache/activemq/MessageAvailableConsumer.class
+
+ - link:MessageAvailableConsumer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageConsumer - 1

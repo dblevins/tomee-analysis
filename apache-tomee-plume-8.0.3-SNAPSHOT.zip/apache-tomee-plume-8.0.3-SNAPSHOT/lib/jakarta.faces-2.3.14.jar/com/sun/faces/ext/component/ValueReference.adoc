@@ -1,0 +1,6 @@
+= com/sun/faces/ext/component/ValueReference.class
+
+ - link:ValueReference-asmified.java[Asmified]
+
+== References
+

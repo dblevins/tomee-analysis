@@ -1,0 +1,6 @@
+= org/apache/cxf/common/security/SecurityToken.class
+
+ - link:SecurityToken-asmified.java[Asmified]
+
+== References
+

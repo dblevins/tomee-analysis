@@ -1,0 +1,6 @@
+= org/apache/tomcat/dbcp/dbcp2/managed/ManagedConnection.class
+
+ - link:ManagedConnection-asmified.java[Asmified]
+
+== References
+

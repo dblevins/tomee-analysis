@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/namespaces/UnmarshalNamespaceResolver.class
+
+ - link:UnmarshalNamespaceResolver-asmified.java[Asmified]
+
+== References
+

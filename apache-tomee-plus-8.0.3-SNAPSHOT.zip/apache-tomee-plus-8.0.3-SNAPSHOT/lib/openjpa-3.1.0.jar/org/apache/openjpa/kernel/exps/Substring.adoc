@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Substring.class
+
+ - link:Substring-asmified.java[Asmified]
+
+== References
+

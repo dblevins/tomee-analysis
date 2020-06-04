@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/LogicalExpression.class
+
+ - link:LogicalExpression-asmified.java[Asmified]
+
+== References
+

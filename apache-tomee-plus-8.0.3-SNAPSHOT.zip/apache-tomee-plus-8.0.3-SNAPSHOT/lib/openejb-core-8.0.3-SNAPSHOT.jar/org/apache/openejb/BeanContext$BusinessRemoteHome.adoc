@@ -1,0 +1,7 @@
+= org/apache/openejb/BeanContext$BusinessRemoteHome.class
+
+ - link:BeanContext$BusinessRemoteHome-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 1

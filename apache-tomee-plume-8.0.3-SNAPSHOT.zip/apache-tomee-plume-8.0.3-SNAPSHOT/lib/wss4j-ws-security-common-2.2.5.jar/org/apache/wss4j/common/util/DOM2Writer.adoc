@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/util/DOM2Writer.class
+
+ - link:DOM2Writer-asmified.java[Asmified]
+
+== References
+

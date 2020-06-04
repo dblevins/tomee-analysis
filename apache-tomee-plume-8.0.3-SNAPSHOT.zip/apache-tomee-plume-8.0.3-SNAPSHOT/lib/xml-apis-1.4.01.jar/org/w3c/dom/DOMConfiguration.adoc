@@ -1,0 +1,6 @@
+= org/w3c/dom/DOMConfiguration.class
+
+ - link:DOMConfiguration-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/XmlBuilder$ForReturnValue.class
+
+ - link:XmlBuilder$ForReturnValue-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintTarget - 2

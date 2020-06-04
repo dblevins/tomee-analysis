@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/SecurityRoleRef$JAXB.class
+
+ - link:SecurityRoleRef$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

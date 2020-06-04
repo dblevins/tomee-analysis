@@ -1,0 +1,8 @@
+= org/opensaml/saml/security/impl/SAMLMetadataEncryptionParametersResolver.class
+
+ - link:SAMLMetadataEncryptionParametersResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 26
+ - javax.annotation.Nullable - 4

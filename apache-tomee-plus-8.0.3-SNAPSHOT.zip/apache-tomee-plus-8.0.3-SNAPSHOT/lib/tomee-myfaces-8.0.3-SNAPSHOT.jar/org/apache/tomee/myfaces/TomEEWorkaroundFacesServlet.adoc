@@ -1,0 +1,14 @@
+= org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet.class
+
+ - link:TomEEWorkaroundFacesServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.webapp.FacesServlet - 14
+ - javax.faces.context.FacesContext - 6
+ - javax.servlet.ServletRequest - 4
+ - javax.servlet.ServletConfig - 4
+ - javax.servlet.ServletResponse - 4
+ - javax.servlet.ServletException - 2
+ - javax.servlet.annotation.MultipartConfig - 1
+ - javax.servlet.Servlet - 1

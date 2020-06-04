@@ -1,0 +1,8 @@
+= javax/xml/ws/handler/HandlerResolver.class
+
+ - link:HandlerResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.Handler - 1
+ - javax.xml.ws.handler.PortInfo - 1

@@ -1,0 +1,6 @@
+= com/sun/faces/context/BaseContextMap$Entry.class
+
+ - link:BaseContextMap$Entry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/AbstractEclipseLinkTraverseParentVisitor.class
+
+ - link:AbstractEclipseLinkTraverseParentVisitor-asmified.java[Asmified]
+
+== References
+

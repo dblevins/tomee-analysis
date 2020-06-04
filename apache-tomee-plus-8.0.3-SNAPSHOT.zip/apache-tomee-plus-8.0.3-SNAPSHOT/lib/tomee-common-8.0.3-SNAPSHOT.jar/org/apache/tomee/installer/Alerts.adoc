@@ -1,0 +1,6 @@
+= org/apache/tomee/installer/Alerts.class
+
+ - link:Alerts-asmified.java[Asmified]
+
+== References
+

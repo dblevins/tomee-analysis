@@ -1,0 +1,8 @@
+= org/apache/tomcat/websocket/server/WsRemoteEndpointImplServer$1.class
+
+ - link:WsRemoteEndpointImplServer$1-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.SendHandler - 7
+ - javax.websocket.SendResult - 5

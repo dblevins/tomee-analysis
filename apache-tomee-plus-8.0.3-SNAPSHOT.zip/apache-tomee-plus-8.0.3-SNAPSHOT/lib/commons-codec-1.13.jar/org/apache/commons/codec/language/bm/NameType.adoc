@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/bm/NameType.class
+
+ - link:NameType-asmified.java[Asmified]
+
+== References
+

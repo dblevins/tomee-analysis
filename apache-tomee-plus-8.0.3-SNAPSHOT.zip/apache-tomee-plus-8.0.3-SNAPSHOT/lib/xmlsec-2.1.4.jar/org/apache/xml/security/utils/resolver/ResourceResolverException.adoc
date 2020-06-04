@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/resolver/ResourceResolverException.class
+
+ - link:ResourceResolverException-asmified.java[Asmified]
+
+== References
+

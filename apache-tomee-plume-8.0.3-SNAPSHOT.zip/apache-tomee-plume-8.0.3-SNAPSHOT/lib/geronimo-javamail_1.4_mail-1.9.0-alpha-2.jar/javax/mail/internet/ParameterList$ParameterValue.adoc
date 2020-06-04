@@ -1,0 +1,8 @@
+= javax/mail/internet/ParameterList$ParameterValue.class
+
+ - link:ParameterList$ParameterValue-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.ParameterList - 5
+ - javax.mail.internet.MimeUtility - 2

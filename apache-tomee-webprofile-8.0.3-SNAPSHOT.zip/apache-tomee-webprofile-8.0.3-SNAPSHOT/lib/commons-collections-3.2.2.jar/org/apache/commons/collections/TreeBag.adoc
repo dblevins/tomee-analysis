@@ -1,0 +1,6 @@
+= org/apache/commons/collections/TreeBag.class
+
+ - link:TreeBag-asmified.java[Asmified]
+
+== References
+

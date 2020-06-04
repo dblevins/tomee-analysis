@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/sax/SAXDocumentSerializerWithPrefixMapping.class
+
+ - link:SAXDocumentSerializerWithPrefixMapping-asmified.java[Asmified]
+
+== References
+

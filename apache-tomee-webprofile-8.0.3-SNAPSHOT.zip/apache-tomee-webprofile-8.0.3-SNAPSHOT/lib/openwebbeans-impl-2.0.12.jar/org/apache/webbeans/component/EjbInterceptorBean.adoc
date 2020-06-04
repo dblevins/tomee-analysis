@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/EjbInterceptorBean.class
+
+ - link:EjbInterceptorBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.InterceptionType - 1

@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/ConditionTypeImplBuilder.class
+
+ - link:ConditionTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

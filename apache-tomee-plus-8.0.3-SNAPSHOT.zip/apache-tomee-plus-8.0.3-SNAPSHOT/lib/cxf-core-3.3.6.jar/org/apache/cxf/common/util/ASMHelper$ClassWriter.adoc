@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ASMHelper$ClassWriter.class
+
+ - link:ASMHelper$ClassWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/security/x509/impl/CertPathPKIXValidationOptions.class
+
+ - link:CertPathPKIXValidationOptions-asmified.java[Asmified]
+
+== References
+

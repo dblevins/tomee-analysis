@@ -1,0 +1,6 @@
+= org/apache/openejb/config/AnnotationDeployer$FolderDDMapper.class
+
+ - link:AnnotationDeployer$FolderDDMapper-asmified.java[Asmified]
+
+== References
+

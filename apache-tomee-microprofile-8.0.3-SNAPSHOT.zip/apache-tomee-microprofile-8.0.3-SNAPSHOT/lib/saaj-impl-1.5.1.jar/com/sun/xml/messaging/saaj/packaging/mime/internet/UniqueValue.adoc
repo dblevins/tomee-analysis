@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/UniqueValue.class
+
+ - link:UniqueValue-asmified.java[Asmified]
+
+== References
+

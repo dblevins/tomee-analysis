@@ -1,0 +1,7 @@
+= javax/xml/ws/Binding.class
+
+ - link:Binding-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.Handler - 2

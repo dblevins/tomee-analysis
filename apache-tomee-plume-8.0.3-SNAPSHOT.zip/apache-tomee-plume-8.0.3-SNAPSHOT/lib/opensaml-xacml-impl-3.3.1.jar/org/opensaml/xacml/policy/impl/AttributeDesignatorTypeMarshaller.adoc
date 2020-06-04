@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/AttributeDesignatorTypeMarshaller.class
+
+ - link:AttributeDesignatorTypeMarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/Query.class
+
+ - link:Query-asmified.java[Asmified]
+
+== References
+

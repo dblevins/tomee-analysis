@@ -1,0 +1,8 @@
+= org/apache/openejb/core/MailSessionFactory$1.class
+
+ - link:MailSessionFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.PasswordAuthentication - 5
+ - javax.mail.Authenticator - 2

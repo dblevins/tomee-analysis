@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IUpdatableModule$UpdateKind.class
+
+ - link:IUpdatableModule$UpdateKind-asmified.java[Asmified]
+
+== References
+

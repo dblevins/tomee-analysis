@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/reflection/JavaConstructorImpl.class
+
+ - link:JavaConstructorImpl-asmified.java[Asmified]
+
+== References
+

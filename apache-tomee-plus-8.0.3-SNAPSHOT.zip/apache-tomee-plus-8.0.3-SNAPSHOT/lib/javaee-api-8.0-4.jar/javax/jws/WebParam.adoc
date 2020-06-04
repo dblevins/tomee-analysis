@@ -1,0 +1,7 @@
+= javax/jws/WebParam.class
+
+ - link:WebParam-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.WebParam$Mode - 2

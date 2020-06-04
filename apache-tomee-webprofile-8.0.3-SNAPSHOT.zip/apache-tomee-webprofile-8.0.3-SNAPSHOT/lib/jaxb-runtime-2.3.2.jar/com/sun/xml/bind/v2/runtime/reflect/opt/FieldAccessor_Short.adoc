@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/FieldAccessor_Short.class
+
+ - link:FieldAccessor_Short-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/Bindable$BindableType.class
+
+ - link:Bindable$BindableType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Bindable$BindableType - 25

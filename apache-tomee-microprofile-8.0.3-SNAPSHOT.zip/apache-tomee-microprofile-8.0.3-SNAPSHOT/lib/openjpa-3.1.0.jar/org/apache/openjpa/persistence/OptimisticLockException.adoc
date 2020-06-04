@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/OptimisticLockException.class
+
+ - link:OptimisticLockException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.OptimisticLockException - 4

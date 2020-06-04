@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/ExponentialtIntervalRetryScheduler$1.class
+
+ - link:ExponentialtIntervalRetryScheduler$1-asmified.java[Asmified]
+
+== References
+

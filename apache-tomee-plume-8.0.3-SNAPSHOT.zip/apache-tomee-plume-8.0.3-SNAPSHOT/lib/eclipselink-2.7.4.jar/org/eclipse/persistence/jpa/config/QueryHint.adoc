@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/QueryHint.class
+
+ - link:QueryHint-asmified.java[Asmified]
+
+== References
+

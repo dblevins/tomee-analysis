@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/Raw.class
+
+ - link:Raw-asmified.java[Asmified]
+
+== References
+

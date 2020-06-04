@@ -1,0 +1,6 @@
+= org/apache/commons/digester/Rule.class
+
+ - link:Rule-asmified.java[Asmified]
+
+== References
+

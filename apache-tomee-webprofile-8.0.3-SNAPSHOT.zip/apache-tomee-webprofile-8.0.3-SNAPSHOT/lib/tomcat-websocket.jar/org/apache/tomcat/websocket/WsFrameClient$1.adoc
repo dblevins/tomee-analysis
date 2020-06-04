@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/WsFrameClient$1.class
+
+ - link:WsFrameClient$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Subtract.class
+
+ - link:Subtract-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/transforms/params/XPathContainer.class
+
+ - link:XPathContainer-asmified.java[Asmified]
+
+== References
+

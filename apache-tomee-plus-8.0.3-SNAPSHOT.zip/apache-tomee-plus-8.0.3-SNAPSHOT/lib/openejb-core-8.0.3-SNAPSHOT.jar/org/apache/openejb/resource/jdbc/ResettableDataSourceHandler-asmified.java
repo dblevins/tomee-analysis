@@ -1,0 +1,398 @@
+package asm.org.apache.openejb.resource.jdbc;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ResettableDataSourceHandlerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", null, "java/lang/Object", new String[] { "org/apache/openejb/resource/jdbc/DelegatableHandler" });
+
+classWriter.visitInnerClass("org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountResult", "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "CountResult", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy", "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "CountRetryStrategy", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result", "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "Result", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy", "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "RetryStrategy", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+classWriter.visitInnerClass("org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$1", null, null, 0);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "LOGGER", "Lorg/apache/openejb/util/Logger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "delegate", "Ljava/util/concurrent/atomic/AtomicReference;", "Ljava/util/concurrent/atomic/AtomicReference<Ljavax/sql/CommonDataSource;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "strategy", "Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "retryMethods", "Ljava/util/Set;", "Ljava/util/Set<Ljava/lang/String;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/sql/CommonDataSource;Ljava/lang/String;Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NumberFormatException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/InstantiationException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/IllegalAccessException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/ClassNotFoundException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/NoSuchMethodException");
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/reflect/InvocationTargetException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicReference");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicReference", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "delegate", "Ljava/util/concurrent/atomic/AtomicReference;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashSet", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "retryMethods", "Ljava/util/Set;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "delegate", "Ljava/util/concurrent/atomic/AtomicReference;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "set", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitLdcInsn("*");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "retryMethods", "Ljava/util/Set;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label7);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("getConnection");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLdcInsn("getXAConnection");
+methodVisitor.visitInsn(AASTORE);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "javax/sql/CommonDataSource", "java/lang/String", "java/lang/String"}, 1, new Object[] {"java/util/Set"});
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn(" *, *");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "split", "(Ljava/lang/String;)[Ljava/lang/String;", false);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "javax/sql/CommonDataSource", "java/lang/String", "java/lang/String"}, 2, new Object[] {"java/util/Set", "[Ljava/lang/String;"});
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Arrays", "asList", "([Ljava/lang/Object;)Ljava/util/List;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "addAll", "(Ljava/util/Collection;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$1", "<init>", "(Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("true");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label9);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy", "<init>", "(Ljava/lang/Runnable;I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Runnable"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("retry(");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn(")");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "endsWith", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("retry(");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "length", "()I", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(II)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "parseInt", "(Ljava/lang/String;)I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy", "<init>", "(Ljava/lang/Runnable;I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "trim", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "parseInt", "(Ljava/lang/String;)I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$CountRetryStrategy", "<init>", "(Ljava/lang/Runnable;I)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/NumberFormatException"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getContextClassLoader", "()Ljava/lang/ClassLoader;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Class");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Runnable;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/String;"));
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", false);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "cast", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "javax/sql/CommonDataSource", "java/lang/String", "java/lang/String", "java/lang/Runnable", Opcodes.TOP, "java/lang/NumberFormatException"}, 1, new Object[] {"java/lang/ReflectiveOperationException"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Unknown retry strategy: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "javax/sql/CommonDataSource", "java/lang/String", "java/lang/String", "java/lang/Runnable", "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "strategy", "Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", null, new String[] { "java/lang/Throwable" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/reflect/InvocationTargetException");
+methodVisitor.visitLdcInsn(Type.getType("Ljava/lang/Object;"));
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getDeclaringClass", "()Ljava/lang/Class;", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
+methodVisitor.visitLdcInsn("toString");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Resettable[");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "getDelegate", "()Ljavax/sql/CommonDataSource;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("]");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "getDelegate", "()Ljavax/sql/CommonDataSource;", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/reflect/InvocationTargetException"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/InvocationTargetException", "getCause", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLdcInsn(Type.getType("Ljava/sql/SQLException;"));
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "isRetryMethod", "(Ljava/lang/reflect/Method;)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "strategy", "Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$RetryStrategy", "shouldRetry", "(Ljava/lang/Throwable;Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result;)Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result", "access$200", "(Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler$Result;)Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/lang/reflect/InvocationTargetException", "java/lang/Throwable"}, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(3, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "isRetryMethod", "(Ljava/lang/reflect/Method;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "retryMethods", "Ljava/util/Set;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "isEmpty", "()Z", true);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "retryMethods", "Ljava/util/Set;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Method", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "contains", "(Ljava/lang/Object;)Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDelegate", "()Ljavax/sql/CommonDataSource;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "delegate", "Ljava/util/concurrent/atomic/AtomicReference;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "get", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/sql/CommonDataSource");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updateDelegate", "(Ljavax/sql/CommonDataSource;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "delegate", "Ljava/util/concurrent/atomic/AtomicReference;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicReference", "set", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$000", "(Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler;)Ljava/util/concurrent/atomic/AtomicReference;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "delegate", "Ljava/util/concurrent/atomic/AtomicReference;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "()Lorg/apache/openejb/util/Logger;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "LOGGER", "Lorg/apache/openejb/util/Logger;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/util/LogCategory", "OPENEJB", "Lorg/apache/openejb/util/LogCategory;");
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/resource/jdbc/ResettableDataSourceHandler;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/Logger", "getInstance", "(Lorg/apache/openejb/util/LogCategory;Ljava/lang/String;)Lorg/apache/openejb/util/Logger;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/resource/jdbc/ResettableDataSourceHandler", "LOGGER", "Lorg/apache/openejb/util/Logger;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

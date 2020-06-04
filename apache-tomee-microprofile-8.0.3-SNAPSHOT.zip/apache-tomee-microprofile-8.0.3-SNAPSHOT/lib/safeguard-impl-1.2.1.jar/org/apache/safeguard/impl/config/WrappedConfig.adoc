@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/config/WrappedConfig.class
+
+ - link:WrappedConfig-asmified.java[Asmified]
+
+== References
+

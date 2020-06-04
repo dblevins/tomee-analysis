@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/edec/KeyAgreementSpi$X25519withSHA512CKDF.class
+
+ - link:KeyAgreementSpi$X25519withSHA512CKDF-asmified.java[Asmified]
+
+== References
+

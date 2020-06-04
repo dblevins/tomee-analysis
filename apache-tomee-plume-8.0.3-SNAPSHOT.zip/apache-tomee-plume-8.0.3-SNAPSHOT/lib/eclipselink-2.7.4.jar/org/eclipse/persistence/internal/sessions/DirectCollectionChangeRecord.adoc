@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/DirectCollectionChangeRecord.class
+
+ - link:DirectCollectionChangeRecord-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/KeyExtractor.class
+
+ - link:KeyExtractor-asmified.java[Asmified]
+
+== References
+

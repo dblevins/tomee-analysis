@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/CompilationUnitScope.class
+
+ - link:CompilationUnitScope-asmified.java[Asmified]
+
+== References
+

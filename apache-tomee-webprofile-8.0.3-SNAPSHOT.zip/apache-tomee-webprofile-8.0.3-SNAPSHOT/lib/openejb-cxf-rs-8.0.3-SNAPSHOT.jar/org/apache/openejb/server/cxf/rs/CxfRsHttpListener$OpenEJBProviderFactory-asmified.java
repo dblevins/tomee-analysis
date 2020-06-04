@@ -1,0 +1,227 @@
+package asm.org.apache.openejb.server.cxf.rs;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class CxfRsHttpListener$OpenEJBProviderFactoryDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", null, "java/lang/Object", new String[] { "org/apache/openejb/assembler/classic/util/ServiceInfos$Factory" });
+
+classWriter.visitInnerClass("org/apache/openejb/assembler/classic/util/ServiceInfos$Factory", "org/apache/openejb/assembler/classic/util/ServiceInfos", "Factory", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+classWriter.visitInnerClass("org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "org/apache/openejb/server/cxf/rs/CxfRsHttpListener", "OpenEJBProviderFactory", ACC_PRIVATE | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "INSTANCE", "Lorg/apache/openejb/assembler/classic/util/ServiceInfos$Factory;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "newInstance", "(Ljava/lang/Class;)Ljava/lang/Object;", "(Ljava/lang/Class<*>;)Ljava/lang/Object;", new String[] { "java/lang/Exception" });
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getConstructors", "()[Ljava/lang/reflect/Constructor;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 6);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "java/lang/Class", Opcodes.INTEGER, "java/lang/Object", "[Ljava/lang/reflect/Constructor;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 5);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "getParameterAnnotations", "()[[Ljava/lang/annotation/Annotation;", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 11);
+Label label2 = new Label();
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "java/lang/Class", Opcodes.INTEGER, "java/lang/Object", "[Ljava/lang/reflect/Constructor;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/reflect/Constructor", Opcodes.INTEGER, "[[Ljava/lang/annotation/Annotation;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitVarInsn(ILOAD, 10);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 12);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitVarInsn(ASTORE, 13);
+methodVisitor.visitVarInsn(ALOAD, 13);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 14);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 15);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_FULL, 16, new Object[] {"org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "java/lang/Class", Opcodes.INTEGER, "java/lang/Object", "[Ljava/lang/reflect/Constructor;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/reflect/Constructor", Opcodes.INTEGER, "[[Ljava/lang/annotation/Annotation;", Opcodes.INTEGER, Opcodes.INTEGER, "[Ljava/lang/annotation/Annotation;", "[Ljava/lang/annotation/Annotation;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 15);
+methodVisitor.visitVarInsn(ILOAD, 14);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label5);
+methodVisitor.visitVarInsn(ALOAD, 13);
+methodVisitor.visitVarInsn(ILOAD, 15);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 16);
+methodVisitor.visitLdcInsn(Type.getType("Ljavax/ws/rs/core/Context;"));
+methodVisitor.visitVarInsn(ALOAD, 16);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/lang/annotation/Annotation", "annotationType", "()Ljava/lang/Class;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label6);
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitIincInsn(15, 1);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 12, new Object[] {"org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "java/lang/Class", Opcodes.INTEGER, "java/lang/Object", "[Ljava/lang/reflect/Constructor;", Opcodes.INTEGER, Opcodes.INTEGER, "java/lang/reflect/Constructor", Opcodes.INTEGER, "[[Ljava/lang/annotation/Annotation;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitIincInsn(11, 1);
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "getParameterTypes", "()[Ljava/lang/Class;", false);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label7);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener", "access$400", "()Lorg/apache/openejb/util/Logger;", false);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("Found multiple matching constructor for ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/Logger", "warning", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "getParameterTypes", "()[Ljava/lang/Class;", false);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 10);
+Label label9 = new Label();
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"[Ljava/lang/Object;", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "getParameterTypes", "()[Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/rest/ThreadLocalContextManager", "findThreadLocal", "(Ljava/lang/Class;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitIincInsn(10, 1);
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/reflect/Constructor", "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitIincInsn(6, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "newInstance", "()Ljava/lang/Object;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 17);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "()Lorg/apache/openejb/assembler/classic/util/ServiceInfos$Factory;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "INSTANCE", "Lorg/apache/openejb/assembler/classic/util/ServiceInfos$Factory;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/server/cxf/rs/CxfRsHttpListener$OpenEJBProviderFactory", "INSTANCE", "Lorg/apache/openejb/assembler/classic/util/ServiceInfos$Factory;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

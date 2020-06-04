@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/McastServiceImpl$ReceiverThread.class
+
+ - link:McastServiceImpl$ReceiverThread-asmified.java[Asmified]
+
+== References
+

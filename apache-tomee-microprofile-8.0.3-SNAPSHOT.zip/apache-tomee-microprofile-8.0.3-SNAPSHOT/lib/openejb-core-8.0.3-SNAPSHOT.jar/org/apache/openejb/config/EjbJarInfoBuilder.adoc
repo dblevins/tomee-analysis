@@ -1,0 +1,6 @@
+= org/apache/openejb/config/EjbJarInfoBuilder.class
+
+ - link:EjbJarInfoBuilder-asmified.java[Asmified]
+
+== References
+

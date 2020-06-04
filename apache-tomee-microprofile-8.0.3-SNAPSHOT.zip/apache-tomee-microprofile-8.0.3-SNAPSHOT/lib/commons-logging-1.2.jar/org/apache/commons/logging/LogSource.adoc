@@ -1,0 +1,6 @@
+= org/apache/commons/logging/LogSource.class
+
+ - link:LogSource-asmified.java[Asmified]
+
+== References
+

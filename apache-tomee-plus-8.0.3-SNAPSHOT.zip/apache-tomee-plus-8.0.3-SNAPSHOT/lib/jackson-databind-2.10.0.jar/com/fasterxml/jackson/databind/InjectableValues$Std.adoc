@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/InjectableValues$Std.class
+
+ - link:InjectableValues$Std-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/InjectionTarget$JAXB.class
+
+ - link:InjectionTarget$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 12

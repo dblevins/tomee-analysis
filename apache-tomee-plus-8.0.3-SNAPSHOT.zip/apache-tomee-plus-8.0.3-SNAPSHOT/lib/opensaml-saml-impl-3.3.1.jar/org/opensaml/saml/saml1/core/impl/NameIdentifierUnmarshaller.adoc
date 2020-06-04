@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/NameIdentifierUnmarshaller.class
+
+ - link:NameIdentifierUnmarshaller-asmified.java[Asmified]
+
+== References
+

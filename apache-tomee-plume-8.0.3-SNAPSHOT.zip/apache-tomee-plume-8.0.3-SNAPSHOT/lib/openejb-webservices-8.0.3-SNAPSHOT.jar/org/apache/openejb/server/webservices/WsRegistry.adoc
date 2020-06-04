@@ -1,0 +1,6 @@
+= org/apache/openejb/server/webservices/WsRegistry.class
+
+ - link:WsRegistry-asmified.java[Asmified]
+
+== References
+

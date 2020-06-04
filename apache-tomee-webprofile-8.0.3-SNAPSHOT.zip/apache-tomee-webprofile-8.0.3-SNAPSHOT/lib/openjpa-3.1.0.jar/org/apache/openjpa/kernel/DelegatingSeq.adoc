@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DelegatingSeq.class
+
+ - link:DelegatingSeq-asmified.java[Asmified]
+
+== References
+

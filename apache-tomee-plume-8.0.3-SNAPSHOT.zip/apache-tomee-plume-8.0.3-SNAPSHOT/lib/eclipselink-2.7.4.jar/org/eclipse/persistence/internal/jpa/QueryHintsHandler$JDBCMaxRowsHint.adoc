@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$JDBCMaxRowsHint.class
+
+ - link:QueryHintsHandler$JDBCMaxRowsHint-asmified.java[Asmified]
+
+== References
+

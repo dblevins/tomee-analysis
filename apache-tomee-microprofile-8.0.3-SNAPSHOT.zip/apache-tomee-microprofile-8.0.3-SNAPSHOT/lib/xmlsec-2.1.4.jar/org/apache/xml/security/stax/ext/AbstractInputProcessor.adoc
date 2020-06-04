@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/AbstractInputProcessor.class
+
+ - link:AbstractInputProcessor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/DecryptAssertions.class
+
+ - link:DecryptAssertions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6
+ - javax.annotation.Nullable - 1

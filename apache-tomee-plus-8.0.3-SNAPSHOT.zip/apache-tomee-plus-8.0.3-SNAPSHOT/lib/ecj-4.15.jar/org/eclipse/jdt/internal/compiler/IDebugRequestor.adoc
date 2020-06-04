@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/IDebugRequestor.class
+
+ - link:IDebugRequestor-asmified.java[Asmified]
+
+== References
+

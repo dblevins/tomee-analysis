@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/DoubleMetaphone.class
+
+ - link:DoubleMetaphone-asmified.java[Asmified]
+
+== References
+

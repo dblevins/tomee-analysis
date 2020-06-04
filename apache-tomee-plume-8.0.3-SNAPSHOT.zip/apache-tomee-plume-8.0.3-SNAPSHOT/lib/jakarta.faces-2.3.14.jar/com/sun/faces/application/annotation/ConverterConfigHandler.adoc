@@ -1,0 +1,9 @@
+= com/sun/faces/application/annotation/ConverterConfigHandler.class
+
+ - link:ConverterConfigHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.convert.FacesConverter - 10
+ - javax.faces.application.Application - 4
+ - javax.faces.context.FacesContext - 2

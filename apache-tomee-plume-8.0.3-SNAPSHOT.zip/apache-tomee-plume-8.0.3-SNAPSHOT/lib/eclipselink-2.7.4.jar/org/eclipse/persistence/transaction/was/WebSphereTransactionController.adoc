@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/was/WebSphereTransactionController.class
+
+ - link:WebSphereTransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3

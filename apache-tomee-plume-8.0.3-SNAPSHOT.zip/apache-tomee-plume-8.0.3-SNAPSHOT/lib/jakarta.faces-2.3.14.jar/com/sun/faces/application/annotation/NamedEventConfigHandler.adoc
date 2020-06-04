@@ -1,0 +1,9 @@
+= com/sun/faces/application/annotation/NamedEventConfigHandler.class
+
+ - link:NamedEventConfigHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.NamedEvent - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.context.FacesContext - 2

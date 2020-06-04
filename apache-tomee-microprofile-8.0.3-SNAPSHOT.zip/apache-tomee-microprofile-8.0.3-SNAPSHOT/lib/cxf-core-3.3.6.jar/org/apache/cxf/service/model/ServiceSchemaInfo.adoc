@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/ServiceSchemaInfo.class
+
+ - link:ServiceSchemaInfo-asmified.java[Asmified]
+
+== References
+

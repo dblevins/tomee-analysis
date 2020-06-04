@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/nio/NioReadListenerImpl.class
+
+ - link:NioReadListenerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.AsyncResponse - 5
+ - javax.servlet.ServletInputStream - 2
+ - javax.servlet.ReadListener - 1

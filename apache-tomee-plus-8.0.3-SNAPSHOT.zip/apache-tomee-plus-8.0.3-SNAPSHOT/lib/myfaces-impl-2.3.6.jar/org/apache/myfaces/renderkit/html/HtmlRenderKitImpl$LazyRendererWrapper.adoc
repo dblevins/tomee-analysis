@@ -1,0 +1,8 @@
+= org/apache/myfaces/renderkit/html/HtmlRenderKitImpl$LazyRendererWrapper.class
+
+ - link:HtmlRenderKitImpl$LazyRendererWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.render.Renderer - 7
+ - javax.faces.render.RendererWrapper - 2

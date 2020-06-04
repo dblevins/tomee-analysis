@@ -1,0 +1,6 @@
+= org/apache/openejb/client/CallbackMetaData.class
+
+ - link:CallbackMetaData-asmified.java[Asmified]
+
+== References
+

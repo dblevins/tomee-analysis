@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/net/URIException.class
+
+ - link:URIException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

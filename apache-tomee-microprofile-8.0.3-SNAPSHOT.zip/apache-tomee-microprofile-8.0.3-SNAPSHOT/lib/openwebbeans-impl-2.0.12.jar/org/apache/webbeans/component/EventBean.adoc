@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/EventBean.class
+
+ - link:EventBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.event.Event - 1
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Producer - 1

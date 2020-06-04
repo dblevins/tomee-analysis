@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ProxyConcurrentMaps.class
+
+ - link:ProxyConcurrentMaps-asmified.java[Asmified]
+
+== References
+

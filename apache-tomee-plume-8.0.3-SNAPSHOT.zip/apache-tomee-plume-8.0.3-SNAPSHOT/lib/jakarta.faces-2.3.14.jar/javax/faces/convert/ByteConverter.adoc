@@ -1,0 +1,12 @@
+= javax/faces/convert/ByteConverter.class
+
+ - link:ByteConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.convert.ConverterException - 6
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.convert.MessageFactory - 4
+ - javax.faces.application.FacesMessage - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.convert.Converter - 1

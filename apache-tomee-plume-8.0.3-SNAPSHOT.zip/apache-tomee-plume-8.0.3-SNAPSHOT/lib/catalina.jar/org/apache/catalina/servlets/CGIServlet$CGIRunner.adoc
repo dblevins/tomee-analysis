@@ -1,0 +1,8 @@
+= org/apache/catalina/servlets/CGIServlet$CGIRunner.class
+
+ - link:CGIServlet$CGIRunner-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 13
+ - javax.servlet.ServletOutputStream - 1

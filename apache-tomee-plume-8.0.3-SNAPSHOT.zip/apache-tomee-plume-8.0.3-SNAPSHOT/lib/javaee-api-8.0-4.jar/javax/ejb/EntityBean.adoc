@@ -1,0 +1,10 @@
+= javax/ejb/EntityBean.class
+
+ - link:EntityBean-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 7
+ - javax.ejb.RemoveException - 1
+ - javax.ejb.EnterpriseBean - 1
+ - javax.ejb.EntityContext - 1

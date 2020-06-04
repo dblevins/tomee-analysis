@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/impl/DefaultFaceletFactory$2.class
+
+ - link:DefaultFaceletFactory$2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Facelet - 3
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 1

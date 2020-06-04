@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/CoreXMLDeserializers$Std.class
+
+ - link:CoreXMLDeserializers$Std-asmified.java[Asmified]
+
+== References
+

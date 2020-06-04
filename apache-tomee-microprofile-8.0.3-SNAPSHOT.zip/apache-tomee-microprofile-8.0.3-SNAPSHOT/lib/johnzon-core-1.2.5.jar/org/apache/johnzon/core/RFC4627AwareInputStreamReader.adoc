@@ -1,0 +1,7 @@
+= org/apache/johnzon/core/RFC4627AwareInputStreamReader.class
+
+ - link:RFC4627AwareInputStreamReader-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonException - 4

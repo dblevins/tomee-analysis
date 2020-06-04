@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/BiLevelCacheMap.class
+
+ - link:BiLevelCacheMap-asmified.java[Asmified]
+
+== References
+

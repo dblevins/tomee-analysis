@@ -1,0 +1,6 @@
+= javax/wsdl/BindingOutput.class
+
+ - link:BindingOutput-asmified.java[Asmified]
+
+== References
+

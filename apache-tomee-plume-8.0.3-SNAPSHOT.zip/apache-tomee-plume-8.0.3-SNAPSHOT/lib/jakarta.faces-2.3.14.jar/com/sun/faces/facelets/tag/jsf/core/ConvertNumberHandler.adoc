@@ -1,0 +1,18 @@
+= com/sun/faces/facelets/tag/jsf/core/ConvertNumberHandler.class
+
+ - link:ConvertNumberHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 6
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.faces.view.facelets.MetaRuleset - 4
+ - javax.faces.view.facelets.ConverterHandler - 4
+ - javax.faces.convert.NumberConverter - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.convert.Converter - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.view.facelets.ConverterConfig - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.view.facelets.FaceletException - 1
+ - javax.el.ELException - 1

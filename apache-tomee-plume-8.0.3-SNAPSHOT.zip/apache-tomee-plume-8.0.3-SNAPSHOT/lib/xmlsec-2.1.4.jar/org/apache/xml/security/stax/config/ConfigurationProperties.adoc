@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/config/ConfigurationProperties.class
+
+ - link:ConfigurationProperties-asmified.java[Asmified]
+
+== References
+

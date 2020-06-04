@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/LoadingByteArrayOutputStream.class
+
+ - link:LoadingByteArrayOutputStream-asmified.java[Asmified]
+
+== References
+

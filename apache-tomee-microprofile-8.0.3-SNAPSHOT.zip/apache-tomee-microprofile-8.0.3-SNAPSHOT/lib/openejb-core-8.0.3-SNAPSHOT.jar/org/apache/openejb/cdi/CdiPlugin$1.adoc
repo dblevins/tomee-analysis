@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/CdiPlugin$1.class
+
+ - link:CdiPlugin$1-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 5

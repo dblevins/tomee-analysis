@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/JaxbJavaee$NoSourceFilter.class
+
+ - link:JaxbJavaee$NoSourceFilter-asmified.java[Asmified]
+
+== References
+

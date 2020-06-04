@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/helpers/BootstrapResolver.class
+
+ - link:BootstrapResolver-asmified.java[Asmified]
+
+== References
+

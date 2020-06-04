@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/TimesTenPlatform.class
+
+ - link:TimesTenPlatform-asmified.java[Asmified]
+
+== References
+

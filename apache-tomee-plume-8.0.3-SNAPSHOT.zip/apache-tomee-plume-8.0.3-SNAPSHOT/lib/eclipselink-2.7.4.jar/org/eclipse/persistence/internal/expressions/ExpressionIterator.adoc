@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/ExpressionIterator.class
+
+ - link:ExpressionIterator-asmified.java[Asmified]
+
+== References
+

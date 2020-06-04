@@ -1,0 +1,6 @@
+= javax/jms/JMSConnectionFactory.class
+
+ - link:JMSConnectionFactory-asmified.java[Asmified]
+
+== References
+

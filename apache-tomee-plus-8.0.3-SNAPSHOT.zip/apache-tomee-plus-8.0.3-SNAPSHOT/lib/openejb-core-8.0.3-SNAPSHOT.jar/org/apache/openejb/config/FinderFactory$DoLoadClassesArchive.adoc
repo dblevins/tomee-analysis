@@ -1,0 +1,6 @@
+= org/apache/openejb/config/FinderFactory$DoLoadClassesArchive.class
+
+ - link:FinderFactory$DoLoadClassesArchive-asmified.java[Asmified]
+
+== References
+

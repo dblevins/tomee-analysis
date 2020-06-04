@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/oauth2/grants/code/AuthorizationCodeGrant.class
+
+ - link:AuthorizationCodeGrant-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.persistence.Transient - 1
+ - javax.persistence.MappedSuperclass - 1
+ - javax.persistence.Id - 1

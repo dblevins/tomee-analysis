@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/token/Reference.class
+
+ - link:Reference-asmified.java[Asmified]
+
+== References
+

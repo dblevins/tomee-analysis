@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/StaxUtils$LocationUserDataHandler.class
+
+ - link:StaxUtils$LocationUserDataHandler-asmified.java[Asmified]
+
+== References
+

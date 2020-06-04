@@ -1,0 +1,7 @@
+= org/apache/myfaces/config/LogMetaInfUtils.class
+
+ - link:LogMetaInfUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 2

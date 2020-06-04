@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/jaas/ServiceProviderLoginModule.class
+
+ - link:ServiceProviderLoginModule-asmified.java[Asmified]
+
+== References
+

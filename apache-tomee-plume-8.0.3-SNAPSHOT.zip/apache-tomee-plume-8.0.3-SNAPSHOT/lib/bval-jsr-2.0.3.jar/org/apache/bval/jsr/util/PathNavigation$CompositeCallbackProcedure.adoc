@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/util/PathNavigation$CompositeCallbackProcedure.class
+
+ - link:PathNavigation$CompositeCallbackProcedure-asmified.java[Asmified]
+
+== References
+

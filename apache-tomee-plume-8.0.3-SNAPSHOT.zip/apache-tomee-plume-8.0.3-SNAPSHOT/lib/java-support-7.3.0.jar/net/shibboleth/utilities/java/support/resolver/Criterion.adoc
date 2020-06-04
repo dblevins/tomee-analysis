@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/resolver/Criterion.class
+
+ - link:Criterion-asmified.java[Asmified]
+
+== References
+

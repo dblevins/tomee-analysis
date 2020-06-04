@@ -1,0 +1,6 @@
+= org/apache/cxf/buslifecycle/BusLifeCycleManager.class
+
+ - link:BusLifeCycleManager-asmified.java[Asmified]
+
+== References
+

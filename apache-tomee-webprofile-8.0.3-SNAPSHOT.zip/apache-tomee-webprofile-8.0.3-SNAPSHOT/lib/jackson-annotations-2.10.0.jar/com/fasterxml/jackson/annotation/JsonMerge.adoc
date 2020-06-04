@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonMerge.class
+
+ - link:JsonMerge-asmified.java[Asmified]
+
+== References
+

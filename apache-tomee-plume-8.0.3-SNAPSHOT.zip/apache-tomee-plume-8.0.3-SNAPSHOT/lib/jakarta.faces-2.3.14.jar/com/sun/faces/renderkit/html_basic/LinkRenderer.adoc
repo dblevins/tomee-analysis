@@ -1,0 +1,9 @@
+= com/sun/faces/renderkit/html_basic/LinkRenderer.class
+
+ - link:LinkRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 13
+ - javax.faces.component.UIComponent - 12
+ - javax.faces.context.FacesContext - 5

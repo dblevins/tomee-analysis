@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/EqualExpression.class
+
+ - link:EqualExpression-asmified.java[Asmified]
+
+== References
+

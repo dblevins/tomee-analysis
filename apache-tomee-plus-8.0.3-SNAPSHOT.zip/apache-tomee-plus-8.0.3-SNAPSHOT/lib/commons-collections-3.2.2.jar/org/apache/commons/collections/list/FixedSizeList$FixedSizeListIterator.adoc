@@ -1,0 +1,6 @@
+= org/apache/commons/collections/list/FixedSizeList$FixedSizeListIterator.class
+
+ - link:FixedSizeList$FixedSizeListIterator-asmified.java[Asmified]
+
+== References
+

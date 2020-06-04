@@ -1,0 +1,7 @@
+= com/sun/faces/renderkit/html_basic/HtmlBasicRenderer$OptionComponentInfo.class
+
+ - link:HtmlBasicRenderer$OptionComponentInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 4

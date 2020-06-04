@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/TomEEWebappClassLoader$NoClassClassLoader.class
+
+ - link:TomEEWebappClassLoader$NoClassClassLoader-asmified.java[Asmified]
+
+== References
+

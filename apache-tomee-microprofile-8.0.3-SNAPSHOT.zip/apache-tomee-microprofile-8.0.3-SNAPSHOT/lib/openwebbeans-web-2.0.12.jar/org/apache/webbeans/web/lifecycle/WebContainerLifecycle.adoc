@@ -1,0 +1,18 @@
+= org/apache/webbeans/web/lifecycle/WebContainerLifecycle.class
+
+ - link:WebContainerLifecycle-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 23
+ - javax.servlet.jsp.JspFactory - 6
+ - javax.el.ELResolver - 4
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.servlet.ServletContextEvent - 3
+ - javax.enterprise.context.RequestScoped - 3
+ - javax.servlet.jsp.JspApplicationContext - 2
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.context.ConversationScoped - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.inject.Singleton - 1
+ - javax.enterprise.context.SessionScoped - 1

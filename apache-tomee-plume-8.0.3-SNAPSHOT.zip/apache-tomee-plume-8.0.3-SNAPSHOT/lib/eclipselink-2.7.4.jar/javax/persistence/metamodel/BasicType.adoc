@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/BasicType.class
+
+ - link:BasicType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type - 1

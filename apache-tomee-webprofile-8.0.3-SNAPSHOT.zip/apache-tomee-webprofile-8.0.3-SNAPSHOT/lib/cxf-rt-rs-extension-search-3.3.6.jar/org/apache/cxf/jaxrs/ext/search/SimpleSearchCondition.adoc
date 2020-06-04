@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.class
+
+ - link:SimpleSearchCondition-asmified.java[Asmified]
+
+== References
+

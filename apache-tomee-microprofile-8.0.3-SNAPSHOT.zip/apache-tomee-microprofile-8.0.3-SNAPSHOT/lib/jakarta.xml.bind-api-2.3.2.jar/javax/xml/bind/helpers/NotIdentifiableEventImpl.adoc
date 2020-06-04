@@ -1,0 +1,9 @@
+= javax/xml/bind/helpers/NotIdentifiableEventImpl.class
+
+ - link:NotIdentifiableEventImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventLocator - 4
+ - javax.xml.bind.helpers.ValidationEventImpl - 3
+ - javax.xml.bind.NotIdentifiableEvent - 1

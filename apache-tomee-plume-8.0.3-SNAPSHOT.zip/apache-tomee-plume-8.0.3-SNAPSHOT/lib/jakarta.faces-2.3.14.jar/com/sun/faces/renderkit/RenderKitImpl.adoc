@@ -1,0 +1,15 @@
+= com/sun/faces/renderkit/RenderKitImpl.class
+
+ - link:RenderKitImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 17
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.render.ResponseStateManager - 6
+ - javax.faces.render.Renderer - 6
+ - javax.faces.render.ClientBehaviorRenderer - 6
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.render.RenderKit - 2
+ - javax.faces.context.ResponseStream - 1
+ - javax.faces.context.ResponseWriter - 1

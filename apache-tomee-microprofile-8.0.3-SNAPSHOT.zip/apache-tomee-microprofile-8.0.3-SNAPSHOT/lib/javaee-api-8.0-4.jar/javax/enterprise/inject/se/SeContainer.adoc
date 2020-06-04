@@ -1,0 +1,8 @@
+= javax/enterprise/inject/se/SeContainer.class
+
+ - link:SeContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 1
+ - javax.enterprise.inject.Instance - 1

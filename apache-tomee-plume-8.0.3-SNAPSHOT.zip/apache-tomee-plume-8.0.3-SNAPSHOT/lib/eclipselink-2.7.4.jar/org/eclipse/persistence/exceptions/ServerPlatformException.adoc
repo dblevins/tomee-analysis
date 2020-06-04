@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/ServerPlatformException.class
+
+ - link:ServerPlatformException-asmified.java[Asmified]
+
+== References
+

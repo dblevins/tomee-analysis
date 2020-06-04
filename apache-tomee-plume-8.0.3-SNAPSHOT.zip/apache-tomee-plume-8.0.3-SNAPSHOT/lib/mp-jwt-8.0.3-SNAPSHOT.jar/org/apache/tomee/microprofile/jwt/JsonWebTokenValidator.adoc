@@ -1,0 +1,6 @@
+= org/apache/tomee/microprofile/jwt/JsonWebTokenValidator.class
+
+ - link:JsonWebTokenValidator-asmified.java[Asmified]
+
+== References
+

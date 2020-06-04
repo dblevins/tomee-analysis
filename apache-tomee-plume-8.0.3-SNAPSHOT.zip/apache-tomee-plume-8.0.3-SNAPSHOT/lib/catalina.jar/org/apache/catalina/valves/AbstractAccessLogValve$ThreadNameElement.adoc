@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/AbstractAccessLogValve$ThreadNameElement.class
+
+ - link:AbstractAccessLogValve$ThreadNameElement-asmified.java[Asmified]
+
+== References
+

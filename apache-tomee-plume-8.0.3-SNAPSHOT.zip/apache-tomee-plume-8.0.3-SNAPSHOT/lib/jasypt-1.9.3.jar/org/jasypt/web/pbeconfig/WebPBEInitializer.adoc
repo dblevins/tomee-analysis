@@ -1,0 +1,6 @@
+= org/jasypt/web/pbeconfig/WebPBEInitializer.class
+
+ - link:WebPBEInitializer-asmified.java[Asmified]
+
+== References
+

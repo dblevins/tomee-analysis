@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/AbstractConduitSelector$ContextualBooleanGetter.class
+
+ - link:AbstractConduitSelector$ContextualBooleanGetter-asmified.java[Asmified]
+
+== References
+

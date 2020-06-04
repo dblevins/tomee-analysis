@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/outbound/connectiontracking/ConnectionTrackingCoordinator.class
+
+ - link:ConnectionTrackingCoordinator-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 8
+ - javax.resource.spi.ManagedConnection - 2
+ - javax.resource.spi.DissociatableManagedConnection - 1

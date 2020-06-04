@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/SoapPreProtocolOutInterceptor.class
+
+ - link:SoapPreProtocolOutInterceptor-asmified.java[Asmified]
+
+== References
+

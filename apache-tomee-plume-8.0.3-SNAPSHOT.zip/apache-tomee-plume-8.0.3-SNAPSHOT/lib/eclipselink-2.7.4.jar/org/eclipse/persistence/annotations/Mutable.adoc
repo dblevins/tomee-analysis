@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Mutable.class
+
+ - link:Mutable-asmified.java[Asmified]
+
+== References
+

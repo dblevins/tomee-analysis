@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/PCData.class
+
+ - link:PCData-asmified.java[Asmified]
+
+== References
+

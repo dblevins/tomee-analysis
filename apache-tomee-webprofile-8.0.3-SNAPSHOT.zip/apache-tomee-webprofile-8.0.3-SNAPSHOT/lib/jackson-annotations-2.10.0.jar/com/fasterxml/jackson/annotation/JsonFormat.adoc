@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonFormat.class
+
+ - link:JsonFormat-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/mgbean/ManagedBeanBuilder$BakedMapProperty.class
+
+ - link:ManagedBeanBuilder$BakedMapProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3

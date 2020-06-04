@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/ResponseTypeImpl.class
+
+ - link:ResponseTypeImpl-asmified.java[Asmified]
+
+== References
+

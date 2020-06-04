@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/AbstractElementExtensibleXMLObject.class
+
+ - link:AbstractElementExtensibleXMLObject-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 3

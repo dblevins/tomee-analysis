@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ECleanState.class
+
+ - link:ECleanState-asmified.java[Asmified]
+
+== References
+

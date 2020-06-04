@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/securityToken/OutboundSecurityToken.class
+
+ - link:OutboundSecurityToken-asmified.java[Asmified]
+
+== References
+

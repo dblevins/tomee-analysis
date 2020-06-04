@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/utility/iterable/SnapshotCloneListIterable.class
+
+ - link:SnapshotCloneListIterable-asmified.java[Asmified]
+
+== References
+

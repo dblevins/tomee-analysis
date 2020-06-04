@@ -1,0 +1,8 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/ScopesImpl.class
+
+ - link:ScopesImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.annotation.JsonbTransient - 1

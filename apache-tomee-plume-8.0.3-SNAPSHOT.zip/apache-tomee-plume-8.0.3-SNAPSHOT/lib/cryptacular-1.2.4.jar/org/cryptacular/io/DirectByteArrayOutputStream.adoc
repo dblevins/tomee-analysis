@@ -1,0 +1,6 @@
+= org/cryptacular/io/DirectByteArrayOutputStream.class
+
+ - link:DirectByteArrayOutputStream-asmified.java[Asmified]
+
+== References
+

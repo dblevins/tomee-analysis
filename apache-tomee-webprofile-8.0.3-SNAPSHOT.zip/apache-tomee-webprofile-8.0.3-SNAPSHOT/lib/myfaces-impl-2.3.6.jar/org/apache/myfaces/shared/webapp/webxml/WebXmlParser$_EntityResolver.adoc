@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/webapp/webxml/WebXmlParser$_EntityResolver.class
+
+ - link:WebXmlParser$_EntityResolver-asmified.java[Asmified]
+
+== References
+

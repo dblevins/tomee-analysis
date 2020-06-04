@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/tools/TraceOptimizer.class
+
+ - link:TraceOptimizer-asmified.java[Asmified]
+
+== References
+

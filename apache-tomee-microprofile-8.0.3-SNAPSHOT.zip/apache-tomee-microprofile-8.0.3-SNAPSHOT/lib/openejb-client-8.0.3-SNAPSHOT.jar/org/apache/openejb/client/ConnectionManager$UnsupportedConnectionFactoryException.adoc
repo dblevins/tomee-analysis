@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ConnectionManager$UnsupportedConnectionFactoryException.class
+
+ - link:ConnectionManager$UnsupportedConnectionFactoryException-asmified.java[Asmified]
+
+== References
+

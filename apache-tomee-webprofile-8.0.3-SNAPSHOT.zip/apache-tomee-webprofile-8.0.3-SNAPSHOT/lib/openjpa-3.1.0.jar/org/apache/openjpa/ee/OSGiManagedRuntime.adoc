@@ -1,0 +1,8 @@
+= org/apache/openjpa/ee/OSGiManagedRuntime.class
+
+ - link:OSGiManagedRuntime-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 12
+ - javax.transaction.Transaction - 2

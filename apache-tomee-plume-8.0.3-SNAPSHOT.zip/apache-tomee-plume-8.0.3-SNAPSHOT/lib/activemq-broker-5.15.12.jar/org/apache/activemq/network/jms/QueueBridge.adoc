@@ -1,0 +1,17 @@
+= org/apache/activemq/network/jms/QueueBridge.class
+
+ - link:QueueBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.QueueSession - 18
+ - javax.jms.QueueConnection - 18
+ - javax.jms.Queue - 17
+ - javax.jms.QueueSender - 8
+ - javax.jms.JMSException - 7
+ - javax.jms.Connection - 4
+ - javax.jms.MessageConsumer - 4
+ - javax.jms.QueueReceiver - 2
+ - javax.jms.MessageProducer - 2
+ - javax.jms.Message - 2
+ - javax.jms.MessageListener - 1

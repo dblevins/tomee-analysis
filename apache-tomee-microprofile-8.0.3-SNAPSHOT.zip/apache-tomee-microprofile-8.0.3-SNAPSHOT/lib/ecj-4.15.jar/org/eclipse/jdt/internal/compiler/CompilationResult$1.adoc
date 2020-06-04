@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/CompilationResult$1.class
+
+ - link:CompilationResult$1-asmified.java[Asmified]
+
+== References
+

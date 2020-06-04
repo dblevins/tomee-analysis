@@ -1,0 +1,6 @@
+= org/apache/openejb/client/SocketConnectionFactory$Input.class
+
+ - link:SocketConnectionFactory$Input-asmified.java[Asmified]
+
+== References
+

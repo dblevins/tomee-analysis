@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOChangeSummaryType.class
+
+ - link:SDOChangeSummaryType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/myfaces/push/cdi/WebsocketViewBean.class
+
+ - link:WebsocketViewBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.CDI - 3
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.annotation.PreDestroy - 1
+ - javax.faces.view.ViewScoped - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/WeakIdentityHashMap$IdentityWeakReference.class
+
+ - link:WeakIdentityHashMap$IdentityWeakReference-asmified.java[Asmified]
+
+== References
+

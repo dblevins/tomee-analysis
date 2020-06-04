@@ -1,0 +1,8 @@
+= javax/servlet/jsp/jstl/core/LoopTag.class
+
+ - link:LoopTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.jstl.core.LoopTagStatus - 1
+ - javax.servlet.jsp.tagext.Tag - 1

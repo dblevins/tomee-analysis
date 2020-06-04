@@ -1,0 +1,14 @@
+= com/sun/faces/taglib/jsf_core/SubviewTag.class
+
+ - link:SubviewTag-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 8
+ - javax.faces.component.UIOutput - 7
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.FacesException - 2
+ - javax.servlet.jsp.JspException - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.webapp.UIComponentClassicTagBase - 1

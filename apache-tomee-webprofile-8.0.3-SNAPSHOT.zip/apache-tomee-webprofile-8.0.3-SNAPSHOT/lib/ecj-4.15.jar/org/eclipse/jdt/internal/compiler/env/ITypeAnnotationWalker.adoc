@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/ITypeAnnotationWalker.class
+
+ - link:ITypeAnnotationWalker-asmified.java[Asmified]
+
+== References
+

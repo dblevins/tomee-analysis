@@ -1,0 +1,6 @@
+= javax/xml/validation/SchemaFactory.class
+
+ - link:SchemaFactory-asmified.java[Asmified]
+
+== References
+

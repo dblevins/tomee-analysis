@@ -1,0 +1,12 @@
+= com/sun/faces/renderkit/html_basic/HeadRenderer.class
+
+ - link:HeadRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.context.ResponseWriter - 7
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.render.Renderer - 2

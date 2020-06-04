@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/security/RandomIdentifierGenerationStrategy.class
+
+ - link:RandomIdentifierGenerationStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

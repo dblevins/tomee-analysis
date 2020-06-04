@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/impl/ProvidersImpl.class
+
+ - link:ProvidersImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 6
+ - javax.ws.rs.ext.ContextResolver - 2
+ - javax.ws.rs.ext.ExceptionMapper - 2
+ - javax.ws.rs.ext.MessageBodyWriter - 2
+ - javax.ws.rs.ext.MessageBodyReader - 2
+ - javax.ws.rs.ext.Providers - 1

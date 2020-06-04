@@ -1,0 +1,6 @@
+= org/hsqldb/navigator/RowSetNavigatorData.class
+
+ - link:RowSetNavigatorData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/observer/ObserverManager$Phase.class
+
+ - link:ObserverManager$Phase-asmified.java[Asmified]
+
+== References
+

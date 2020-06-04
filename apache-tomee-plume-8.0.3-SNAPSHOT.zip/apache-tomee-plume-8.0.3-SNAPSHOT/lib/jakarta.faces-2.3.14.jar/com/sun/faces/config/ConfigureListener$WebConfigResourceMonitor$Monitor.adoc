@@ -1,0 +1,6 @@
+= com/sun/faces/config/ConfigureListener$WebConfigResourceMonitor$Monitor.class
+
+ - link:ConfigureListener$WebConfigResourceMonitor$Monitor-asmified.java[Asmified]
+
+== References
+

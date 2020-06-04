@@ -1,0 +1,11 @@
+= org/apache/catalina/filters/RemoteIpFilter$XForwardedRequest.class
+
+ - link:RemoteIpFilter$XForwardedRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 15
+ - javax.servlet.ServletRequest - 3
+ - javax.servlet.ServletRequestWrapper - 3
+ - javax.servlet.http.PushBuilder - 2
+ - javax.servlet.http.HttpServletRequestWrapper - 2

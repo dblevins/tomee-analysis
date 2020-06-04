@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/model/XPath$Version.class
+
+ - link:XPath$Version-asmified.java[Asmified]
+
+== References
+

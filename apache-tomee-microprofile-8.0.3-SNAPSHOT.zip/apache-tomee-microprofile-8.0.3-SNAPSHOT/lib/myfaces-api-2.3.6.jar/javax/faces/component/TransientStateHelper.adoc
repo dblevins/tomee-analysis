@@ -1,0 +1,7 @@
+= javax/faces/component/TransientStateHelper.class
+
+ - link:TransientStateHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.TransientStateHolder - 1

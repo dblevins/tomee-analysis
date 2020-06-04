@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentBeanInfo.class
+
+ - link:CompositeComponentBeanInfo-asmified.java[Asmified]
+
+== References
+

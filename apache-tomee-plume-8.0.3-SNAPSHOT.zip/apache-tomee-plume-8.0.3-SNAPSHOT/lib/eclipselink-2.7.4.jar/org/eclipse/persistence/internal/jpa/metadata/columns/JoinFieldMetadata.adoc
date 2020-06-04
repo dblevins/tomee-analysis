@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/columns/JoinFieldMetadata.class
+
+ - link:JoinFieldMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/LambdaExpression$CopyFailureException.class
+
+ - link:LambdaExpression$CopyFailureException-asmified.java[Asmified]
+
+== References
+

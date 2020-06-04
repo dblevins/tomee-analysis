@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/StandardRoot$BaseLocation.class
+
+ - link:StandardRoot$BaseLocation-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/bval/jsr/xml/SchemaManager.class
+
+ - link:SchemaManager-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 3
+ - javax.xml.bind.Unmarshaller - 2
+ - javax.xml.bind.UnmarshallerHandler - 2
+ - javax.xml.bind.JAXBElement - 2

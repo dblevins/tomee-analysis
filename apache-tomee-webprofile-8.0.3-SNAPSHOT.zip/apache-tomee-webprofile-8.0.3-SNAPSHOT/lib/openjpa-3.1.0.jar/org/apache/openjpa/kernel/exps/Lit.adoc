@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Lit.class
+
+ - link:Lit-asmified.java[Asmified]
+
+== References
+

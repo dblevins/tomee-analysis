@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/MethodIntf.class
+
+ - link:MethodIntf-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 7

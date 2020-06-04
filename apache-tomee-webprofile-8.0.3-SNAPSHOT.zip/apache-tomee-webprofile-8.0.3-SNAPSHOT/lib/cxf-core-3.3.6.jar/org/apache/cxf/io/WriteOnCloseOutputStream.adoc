@@ -1,0 +1,6 @@
+= org/apache/cxf/io/WriteOnCloseOutputStream.class
+
+ - link:WriteOnCloseOutputStream-asmified.java[Asmified]
+
+== References
+

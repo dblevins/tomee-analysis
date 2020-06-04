@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/common/CacheableSAMLObject.class
+
+ - link:CacheableSAMLObject-asmified.java[Asmified]
+
+== References
+

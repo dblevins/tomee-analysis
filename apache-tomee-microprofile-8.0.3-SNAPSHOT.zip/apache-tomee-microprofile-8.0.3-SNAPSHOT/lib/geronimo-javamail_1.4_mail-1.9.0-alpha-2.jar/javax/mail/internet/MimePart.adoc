@@ -1,0 +1,8 @@
+= javax/mail/internet/MimePart.class
+
+ - link:MimePart-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 14
+ - javax.mail.Part - 1

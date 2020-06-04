@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/handler/rotating/LocalFileHandler$CountingStream.class
+
+ - link:LocalFileHandler$CountingStream-asmified.java[Asmified]
+
+== References
+

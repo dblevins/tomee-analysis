@@ -1,0 +1,7 @@
+= org/apache/cxf/attachment/LazyAttachmentCollection$LazyAttachmentMap$1$1.class
+
+ - link:LazyAttachmentCollection$LazyAttachmentMap$1$1-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

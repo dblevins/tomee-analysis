@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/jwt/config/Names.class
+
+ - link:Names-asmified.java[Asmified]
+
+== References
+

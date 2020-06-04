@@ -1,0 +1,6 @@
+= org/w3c/dom/DOMImplementationSource.class
+
+ - link:DOMImplementationSource-asmified.java[Asmified]
+
+== References
+

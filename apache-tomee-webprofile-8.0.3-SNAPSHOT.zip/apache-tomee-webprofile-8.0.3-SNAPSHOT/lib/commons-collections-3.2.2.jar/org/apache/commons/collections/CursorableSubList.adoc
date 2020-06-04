@@ -1,0 +1,6 @@
+= org/apache/commons/collections/CursorableSubList.class
+
+ - link:CursorableSubList-asmified.java[Asmified]
+
+== References
+

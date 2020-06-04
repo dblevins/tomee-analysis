@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/spec/ElGamalPrivateKeySpec.class
+
+ - link:ElGamalPrivateKeySpec-asmified.java[Asmified]
+
+== References
+

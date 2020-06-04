@@ -1,0 +1,6 @@
+= org/hsqldb/types/ArrayType.class
+
+ - link:ArrayType-asmified.java[Asmified]
+
+== References
+

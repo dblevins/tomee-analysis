@@ -1,0 +1,6 @@
+= org/apache/tomcat/dbcp/pool2/impl/GenericKeyedObjectPoolConfig.class
+
+ - link:GenericKeyedObjectPoolConfig-asmified.java[Asmified]
+
+== References
+

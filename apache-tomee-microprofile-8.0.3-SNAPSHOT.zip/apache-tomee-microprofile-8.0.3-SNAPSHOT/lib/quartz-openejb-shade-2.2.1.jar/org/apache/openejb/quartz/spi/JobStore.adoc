@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/spi/JobStore.class
+
+ - link:JobStore-asmified.java[Asmified]
+
+== References
+

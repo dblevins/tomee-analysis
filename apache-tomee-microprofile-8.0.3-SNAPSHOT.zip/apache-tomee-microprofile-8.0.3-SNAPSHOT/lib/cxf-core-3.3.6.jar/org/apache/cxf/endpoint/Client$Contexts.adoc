@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/Client$Contexts.class
+
+ - link:Client$Contexts-asmified.java[Asmified]
+
+== References
+

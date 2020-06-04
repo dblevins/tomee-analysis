@@ -1,0 +1,6 @@
+= org/eclipse/persistence/indirection/IndirectCollectionsFactory$IndirectCollectionsProvider.class
+
+ - link:IndirectCollectionsFactory$IndirectCollectionsProvider-asmified.java[Asmified]
+
+== References
+

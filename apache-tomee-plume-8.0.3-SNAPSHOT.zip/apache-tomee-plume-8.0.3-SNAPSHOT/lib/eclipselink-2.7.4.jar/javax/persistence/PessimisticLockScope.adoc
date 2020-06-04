@@ -1,0 +1,7 @@
+= javax/persistence/PessimisticLockScope.class
+
+ - link:PessimisticLockScope-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PessimisticLockScope - 20

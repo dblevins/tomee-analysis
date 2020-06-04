@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/dataformat/yaml/YAMLGenerator.class
+
+ - link:YAMLGenerator-asmified.java[Asmified]
+
+== References
+

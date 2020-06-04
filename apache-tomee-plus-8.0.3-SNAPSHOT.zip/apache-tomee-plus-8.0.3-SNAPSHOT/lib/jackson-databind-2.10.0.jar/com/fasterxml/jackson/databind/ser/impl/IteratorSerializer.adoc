@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/IteratorSerializer.class
+
+ - link:IteratorSerializer-asmified.java[Asmified]
+
+== References
+

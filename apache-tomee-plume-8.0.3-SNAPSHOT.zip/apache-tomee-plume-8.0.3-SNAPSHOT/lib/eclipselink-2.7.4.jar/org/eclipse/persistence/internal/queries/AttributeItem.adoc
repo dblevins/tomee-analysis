@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/AttributeItem.class
+
+ - link:AttributeItem-asmified.java[Asmified]
+
+== References
+

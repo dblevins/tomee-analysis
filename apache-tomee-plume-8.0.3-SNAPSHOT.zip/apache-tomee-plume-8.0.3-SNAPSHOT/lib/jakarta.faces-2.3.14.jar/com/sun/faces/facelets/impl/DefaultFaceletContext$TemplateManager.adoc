@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/impl/DefaultFaceletContext$TemplateManager.class
+
+ - link:DefaultFaceletContext$TemplateManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.component.UIComponent - 2

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/AuthDecisionStatementBean.class
+
+ - link:AuthDecisionStatementBean-asmified.java[Asmified]
+
+== References
+

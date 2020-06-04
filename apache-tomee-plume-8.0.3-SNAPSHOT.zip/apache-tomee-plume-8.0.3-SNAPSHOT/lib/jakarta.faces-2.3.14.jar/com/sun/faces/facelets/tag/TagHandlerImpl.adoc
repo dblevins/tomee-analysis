@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/TagHandlerImpl.class
+
+ - link:TagHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletHandler - 9
+ - javax.faces.view.facelets.CompositeFaceletHandler - 6
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.TagConfig - 2

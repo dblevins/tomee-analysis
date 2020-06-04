@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/CharacterEscapeHandler.class
+
+ - link:CharacterEscapeHandler-asmified.java[Asmified]
+
+== References
+

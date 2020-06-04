@@ -1,0 +1,7 @@
+= javax/xml/bind/JAXBContext$1.class
+
+ - link:JAXBContext$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext$1 - 1

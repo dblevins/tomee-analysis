@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/xml/XMLSchemaReference.class
+
+ - link:XMLSchemaReference-asmified.java[Asmified]
+
+== References
+

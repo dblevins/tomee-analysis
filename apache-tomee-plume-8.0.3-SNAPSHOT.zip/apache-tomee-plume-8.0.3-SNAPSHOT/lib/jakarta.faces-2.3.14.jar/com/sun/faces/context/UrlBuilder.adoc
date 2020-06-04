@@ -1,0 +1,9 @@
+= com/sun/faces/context/UrlBuilder.class
+
+ - link:UrlBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.lifecycle.ClientWindow - 6
+ - javax.faces.context.ExternalContext - 4

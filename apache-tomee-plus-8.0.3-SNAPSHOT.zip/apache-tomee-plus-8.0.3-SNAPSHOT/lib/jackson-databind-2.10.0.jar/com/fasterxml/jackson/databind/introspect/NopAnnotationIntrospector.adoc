@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/NopAnnotationIntrospector.class
+
+ - link:NopAnnotationIntrospector-asmified.java[Asmified]
+
+== References
+

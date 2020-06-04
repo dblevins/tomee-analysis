@@ -1,0 +1,15 @@
+= org/apache/myfaces/lifecycle/PhaseListenerManager.class
+
+ - link:PhaseListenerManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.PhaseId - 18
+ - javax.faces.event.PhaseListener - 16
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.event.PhaseEvent - 9
+ - javax.faces.lifecycle.Lifecycle - 7
+ - javax.faces.event.ExceptionQueuedEventContext - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.event.ExceptionQueuedEvent - 1
+ - javax.faces.component.UIComponent - 1

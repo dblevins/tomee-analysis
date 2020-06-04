@@ -1,0 +1,10 @@
+= org/apache/webbeans/conversation/ConversationImpl.class
+
+ - link:ConversationImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.BusyConversationException - 2
+ - javax.enterprise.context.spi.Context - 2
+ - javax.enterprise.context.ConversationScoped - 2
+ - javax.enterprise.context.Conversation - 1

@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http_jaxws_spi/JAXWSHttpSpiTransportFactory.class
+
+ - link:JAXWSHttpSpiTransportFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.spi.http.HttpContext - 5
+ - javax.xml.ws.spi.http.HttpHandler - 1

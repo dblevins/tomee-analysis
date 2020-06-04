@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/Operation.class
+
+ - link:Operation-asmified.java[Asmified]
+
+== References
+

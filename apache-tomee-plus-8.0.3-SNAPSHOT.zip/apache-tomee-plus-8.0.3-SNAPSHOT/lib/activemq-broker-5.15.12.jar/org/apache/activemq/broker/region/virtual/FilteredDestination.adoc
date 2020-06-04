@@ -1,0 +1,8 @@
+= org/apache/activemq/broker/region/virtual/FilteredDestination.class
+
+ - link:FilteredDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.InvalidSelectorException - 1
+ - javax.jms.JMSException - 1

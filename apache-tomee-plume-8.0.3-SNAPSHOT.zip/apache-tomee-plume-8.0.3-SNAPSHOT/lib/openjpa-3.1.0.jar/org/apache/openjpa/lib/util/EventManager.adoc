@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/EventManager.class
+
+ - link:EventManager-asmified.java[Asmified]
+
+== References
+

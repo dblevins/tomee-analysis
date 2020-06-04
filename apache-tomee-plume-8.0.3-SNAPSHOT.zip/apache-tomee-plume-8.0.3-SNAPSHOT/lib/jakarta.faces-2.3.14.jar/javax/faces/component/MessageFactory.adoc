@@ -1,0 +1,17 @@
+= javax/faces/component/MessageFactory.class
+
+ - link:MessageFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 18
+ - javax.faces.application.FacesMessage - 17
+ - javax.faces.application.Application - 11
+ - javax.faces.component.MessageFactory - 10
+ - javax.faces.application.FacesMessage$Severity - 8
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.application.ApplicationFactory - 2
+ - javax.faces.component.MessageFactory$BindingFacesMessage - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.FactoryFinder - 1

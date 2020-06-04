@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/AttributeNodeImpl.class
+
+ - link:AttributeNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Subgraph - 4
+ - javax.persistence.AttributeNode - 1

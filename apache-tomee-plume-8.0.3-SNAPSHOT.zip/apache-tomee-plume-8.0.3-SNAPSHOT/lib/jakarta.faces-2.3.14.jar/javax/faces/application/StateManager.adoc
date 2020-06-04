@@ -1,0 +1,13 @@
+= javax/faces/application/StateManager.class
+
+ - link:StateManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 25
+ - javax.faces.application.StateManager$SerializedView - 13
+ - javax.faces.application.StateManager - 8
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.render.ResponseStateManager - 2
+ - javax.faces.render.RenderKit - 2

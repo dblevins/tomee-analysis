@@ -1,0 +1,9 @@
+= org/apache/cxf/microprofile/client/CxfTypeSafeClientBuilder.class
+
+ - link:CxfTypeSafeClientBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configurable - 20
+ - javax.ws.rs.core.Configuration - 6
+ - javax.ws.rs.ProcessingException - 4

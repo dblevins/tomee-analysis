@@ -1,0 +1,9 @@
+= javax/faces/view/facelets/MetaRule.class
+
+ - link:MetaRule-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Metadata - 1
+ - javax.faces.view.facelets.TagAttribute - 1
+ - javax.faces.view.facelets.MetadataTarget - 1

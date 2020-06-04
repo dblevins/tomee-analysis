@@ -1,0 +1,11 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension.class
+
+ - link:JMS2CDIExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 4
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.event.Observes - 1

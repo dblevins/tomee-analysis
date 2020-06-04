@@ -1,0 +1,7 @@
+= javax/persistence/InheritanceType.class
+
+ - link:InheritanceType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.InheritanceType - 26

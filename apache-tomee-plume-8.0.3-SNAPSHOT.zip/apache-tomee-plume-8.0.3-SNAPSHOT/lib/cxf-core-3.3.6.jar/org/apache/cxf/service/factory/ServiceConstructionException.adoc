@@ -1,0 +1,6 @@
+= org/apache/cxf/service/factory/ServiceConstructionException.class
+
+ - link:ServiceConstructionException-asmified.java[Asmified]
+
+== References
+

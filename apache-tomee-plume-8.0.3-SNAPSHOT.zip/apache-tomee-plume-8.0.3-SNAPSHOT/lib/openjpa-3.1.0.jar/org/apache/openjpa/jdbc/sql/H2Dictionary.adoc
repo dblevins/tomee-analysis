@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/H2Dictionary.class
+
+ - link:H2Dictionary-asmified.java[Asmified]
+
+== References
+

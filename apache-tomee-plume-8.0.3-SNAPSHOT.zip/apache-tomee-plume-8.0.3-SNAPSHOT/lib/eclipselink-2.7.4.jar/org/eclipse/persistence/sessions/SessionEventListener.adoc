@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/SessionEventListener.class
+
+ - link:SessionEventListener-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/rs/CdiSingletonResourceProvider$SingletonBeanCreator.class
+
+ - link:CdiSingletonResourceProvider$SingletonBeanCreator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/dom/DOMWrappingReader.class
+
+ - link:DOMWrappingReader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/myfaces/push/WebsocketFacesInit.class
+
+ - link:WebsocketFacesInit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 3

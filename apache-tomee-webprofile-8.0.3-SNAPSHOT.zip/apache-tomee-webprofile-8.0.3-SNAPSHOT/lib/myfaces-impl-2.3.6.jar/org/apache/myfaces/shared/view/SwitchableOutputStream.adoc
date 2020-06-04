@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/view/SwitchableOutputStream.class
+
+ - link:SwitchableOutputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 20
+ - javax.servlet.WriteListener - 2

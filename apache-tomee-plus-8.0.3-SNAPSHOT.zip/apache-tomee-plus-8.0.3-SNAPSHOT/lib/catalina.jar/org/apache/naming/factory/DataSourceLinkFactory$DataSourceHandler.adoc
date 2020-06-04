@@ -1,0 +1,6 @@
+= org/apache/naming/factory/DataSourceLinkFactory$DataSourceHandler.class
+
+ - link:DataSourceLinkFactory$DataSourceHandler-asmified.java[Asmified]
+
+== References
+

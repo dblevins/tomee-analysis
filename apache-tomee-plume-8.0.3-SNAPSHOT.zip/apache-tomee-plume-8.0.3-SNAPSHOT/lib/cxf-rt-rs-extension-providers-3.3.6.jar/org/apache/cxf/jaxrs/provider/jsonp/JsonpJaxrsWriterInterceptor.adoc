@@ -1,0 +1,11 @@
+= org/apache/cxf/jaxrs/provider/jsonp/JsonpJaxrsWriterInterceptor.class
+
+ - link:JsonpJaxrsWriterInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.WriterInterceptorContext - 4
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.WebApplicationException - 1
+ - javax.ws.rs.ext.WriterInterceptor - 1

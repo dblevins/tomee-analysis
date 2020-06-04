@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/BatchAnnotationProcessorManager.class
+
+ - link:BatchAnnotationProcessorManager-asmified.java[Asmified]
+
+== References
+

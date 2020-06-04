@@ -1,0 +1,10 @@
+= javax/faces/lifecycle/ClientWindowFactory.class
+
+ - link:ClientWindowFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.lifecycle.ClientWindowFactory - 8
+ - javax.faces.lifecycle.ClientWindow - 1
+ - javax.faces.context.FacesContext - 1
+ - javax.faces.FacesWrapper - 1

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/WSProviderConfig$7.class
+
+ - link:WSProviderConfig$7-asmified.java[Asmified]
+
+== References
+

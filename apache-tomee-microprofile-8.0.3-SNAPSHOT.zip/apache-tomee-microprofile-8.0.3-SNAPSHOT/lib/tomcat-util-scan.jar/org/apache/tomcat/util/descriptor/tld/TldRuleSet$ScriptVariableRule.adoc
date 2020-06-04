@@ -1,0 +1,7 @@
+= org/apache/tomcat/util/descriptor/tld/TldRuleSet$ScriptVariableRule.class
+
+ - link:TldRuleSet$ScriptVariableRule-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagVariableInfo - 1

@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/TupleFactory.class
+
+ - link:TupleFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TupleElement - 7
+ - javax.persistence.criteria.Selection - 3
+ - javax.persistence.Tuple - 1

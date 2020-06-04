@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$QueryCacheIgnoreNullHint.class
+
+ - link:QueryHintsHandler$QueryCacheIgnoreNullHint-asmified.java[Asmified]
+
+== References
+

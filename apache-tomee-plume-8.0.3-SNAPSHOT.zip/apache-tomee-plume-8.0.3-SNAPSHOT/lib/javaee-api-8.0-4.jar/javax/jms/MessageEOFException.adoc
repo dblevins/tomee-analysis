@@ -1,0 +1,8 @@
+= javax/jms/MessageEOFException.class
+
+ - link:MessageEOFException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.MessageEOFException - 1

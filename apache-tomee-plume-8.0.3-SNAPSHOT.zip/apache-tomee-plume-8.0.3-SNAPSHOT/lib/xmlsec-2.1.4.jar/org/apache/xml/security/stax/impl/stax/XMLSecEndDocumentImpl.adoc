@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/stax/XMLSecEndDocumentImpl.class
+
+ - link:XMLSecEndDocumentImpl-asmified.java[Asmified]
+
+== References
+

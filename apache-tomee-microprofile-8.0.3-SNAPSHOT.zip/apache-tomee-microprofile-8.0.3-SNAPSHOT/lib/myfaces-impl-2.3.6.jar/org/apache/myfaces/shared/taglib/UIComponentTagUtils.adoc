@@ -1,0 +1,22 @@
+= org/apache/myfaces/shared/taglib/UIComponentTagUtils.class
+
+ - link:UIComponentTagUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 34
+ - javax.faces.component.UIComponent - 31
+ - javax.faces.application.Application - 24
+ - javax.faces.el.ValueBinding - 14
+ - javax.faces.el.MethodBinding - 9
+ - javax.faces.component.ValueHolder - 6
+ - javax.faces.component.EditableValueHolder - 6
+ - javax.faces.component.ActionSource - 6
+ - javax.faces.component.UIParameter - 3
+ - javax.faces.component.UICommand - 3
+ - javax.faces.component.UISelectBoolean - 3
+ - javax.faces.component.UIGraphic - 3
+ - javax.faces.convert.Converter - 2
+ - javax.faces.webapp.UIComponentTag - 1
+ - javax.faces.event.ValueChangeEvent - 1
+ - javax.faces.event.ActionEvent - 1

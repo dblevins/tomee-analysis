@@ -1,0 +1,10 @@
+= javax/ejb/EJBObject.class
+
+ - link:EJBObject-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.RemoveException - 1
+ - javax.ejb.EJBObject - 1
+ - javax.ejb.Handle - 1

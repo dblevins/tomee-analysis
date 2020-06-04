@@ -1,0 +1,6 @@
+= org/opensaml/core/xml/schema/impl/XSIntegerMarshaller.class
+
+ - link:XSIntegerMarshaller-asmified.java[Asmified]
+
+== References
+

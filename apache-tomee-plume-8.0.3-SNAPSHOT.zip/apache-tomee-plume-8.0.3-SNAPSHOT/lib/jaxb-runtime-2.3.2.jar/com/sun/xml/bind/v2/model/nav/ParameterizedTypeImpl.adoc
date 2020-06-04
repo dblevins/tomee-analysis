@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/nav/ParameterizedTypeImpl.class
+
+ - link:ParameterizedTypeImpl-asmified.java[Asmified]
+
+== References
+

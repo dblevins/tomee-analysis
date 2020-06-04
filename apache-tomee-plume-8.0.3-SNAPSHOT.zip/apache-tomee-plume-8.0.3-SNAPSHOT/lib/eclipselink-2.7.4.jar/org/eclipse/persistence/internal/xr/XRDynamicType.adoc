@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/XRDynamicType.class
+
+ - link:XRDynamicType-asmified.java[Asmified]
+
+== References
+

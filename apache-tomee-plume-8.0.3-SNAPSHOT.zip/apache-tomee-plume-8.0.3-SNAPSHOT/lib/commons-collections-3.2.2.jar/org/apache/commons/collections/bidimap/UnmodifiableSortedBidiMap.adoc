@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bidimap/UnmodifiableSortedBidiMap.class
+
+ - link:UnmodifiableSortedBidiMap-asmified.java[Asmified]
+
+== References
+

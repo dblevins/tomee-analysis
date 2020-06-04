@@ -1,0 +1,6 @@
+= org/apache/openejb/core/transaction/JtaTransactionPolicyFactory$1.class
+
+ - link:JtaTransactionPolicyFactory$1-asmified.java[Asmified]
+
+== References
+

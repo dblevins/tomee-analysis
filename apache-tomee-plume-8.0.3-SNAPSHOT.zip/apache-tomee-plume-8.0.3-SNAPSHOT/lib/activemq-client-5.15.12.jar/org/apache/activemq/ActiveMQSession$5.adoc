@@ -1,0 +1,7 @@
+= org/apache/activemq/ActiveMQSession$5.class
+
+ - link:ActiveMQSession$5-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TransactionRolledBackException - 2

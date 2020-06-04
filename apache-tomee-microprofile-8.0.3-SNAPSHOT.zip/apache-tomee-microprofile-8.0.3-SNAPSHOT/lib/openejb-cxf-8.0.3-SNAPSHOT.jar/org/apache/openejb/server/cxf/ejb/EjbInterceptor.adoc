@@ -1,0 +1,11 @@
+= org/apache/openejb/server/cxf/ejb/EjbInterceptor.class
+
+ - link:EjbInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Binding - 8
+ - javax.interceptor.InvocationContext - 4
+ - javax.xml.soap.SOAPMessage - 4
+ - javax.xml.soap.SOAPPart - 1
+ - javax.interceptor.AroundInvoke - 1

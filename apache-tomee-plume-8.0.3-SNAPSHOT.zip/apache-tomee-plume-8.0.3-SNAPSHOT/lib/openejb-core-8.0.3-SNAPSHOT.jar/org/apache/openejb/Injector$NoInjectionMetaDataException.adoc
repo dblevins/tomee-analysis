@@ -1,0 +1,7 @@
+= org/apache/openejb/Injector$NoInjectionMetaDataException.class
+
+ - link:Injector$NoInjectionMetaDataException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.ManagedBean - 1

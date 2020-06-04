@@ -1,0 +1,6 @@
+= org/apache/openejb/spi/Serializer.class
+
+ - link:Serializer-asmified.java[Asmified]
+
+== References
+

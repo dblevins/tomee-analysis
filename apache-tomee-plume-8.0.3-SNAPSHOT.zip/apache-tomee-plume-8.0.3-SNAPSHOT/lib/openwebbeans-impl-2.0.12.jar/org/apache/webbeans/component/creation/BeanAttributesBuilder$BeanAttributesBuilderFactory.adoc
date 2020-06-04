@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/creation/BeanAttributesBuilder$BeanAttributesBuilderFactory.class
+
+ - link:BeanAttributesBuilder$BeanAttributesBuilderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.AnnotatedField - 3
+ - javax.enterprise.inject.spi.AnnotatedMethod - 3

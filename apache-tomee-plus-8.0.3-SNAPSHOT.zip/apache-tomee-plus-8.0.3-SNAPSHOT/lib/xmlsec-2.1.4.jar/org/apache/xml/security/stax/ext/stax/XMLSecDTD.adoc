@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecDTD.class
+
+ - link:XMLSecDTD-asmified.java[Asmified]
+
+== References
+

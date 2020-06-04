@@ -1,0 +1,6 @@
+= com/ibm/wsdl/OperationImpl.class
+
+ - link:OperationImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/FaultOutInterceptor.class
+
+ - link:FaultOutInterceptor-asmified.java[Asmified]
+
+== References
+

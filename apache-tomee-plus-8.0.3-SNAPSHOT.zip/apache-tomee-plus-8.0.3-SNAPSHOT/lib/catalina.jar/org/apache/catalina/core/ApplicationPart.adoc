@@ -1,0 +1,7 @@
+= org/apache/catalina/core/ApplicationPart.class
+
+ - link:ApplicationPart-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Part - 1

@@ -1,0 +1,8 @@
+= org/apache/myfaces/cdi/managedproperty/ManagedPropertyProducer$ManagedPropertyAnnotationLiteral.class
+
+ - link:ManagedPropertyProducer$ManagedPropertyAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.annotation.ManagedProperty - 2

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JsonValueInstantiator.class
+
+ - link:JsonValueInstantiator-asmified.java[Asmified]
+
+== References
+

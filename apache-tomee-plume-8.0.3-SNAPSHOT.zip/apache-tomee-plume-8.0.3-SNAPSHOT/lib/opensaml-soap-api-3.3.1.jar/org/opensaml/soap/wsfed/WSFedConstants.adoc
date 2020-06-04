@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsfed/WSFedConstants.class
+
+ - link:WSFedConstants-asmified.java[Asmified]
+
+== References
+

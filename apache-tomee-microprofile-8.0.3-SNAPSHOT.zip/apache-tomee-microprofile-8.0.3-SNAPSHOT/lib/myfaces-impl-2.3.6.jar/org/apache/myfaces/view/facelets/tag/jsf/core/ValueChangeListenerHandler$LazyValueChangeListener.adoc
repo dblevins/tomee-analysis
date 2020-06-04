@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/ValueChangeListenerHandler$LazyValueChangeListener.class
+
+ - link:ValueChangeListenerHandler$LazyValueChangeListener-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 9
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.event.ValueChangeListener - 5
+ - javax.el.ELContext - 4
+ - javax.faces.event.AbortProcessingException - 3
+ - javax.faces.event.ValueChangeEvent - 2

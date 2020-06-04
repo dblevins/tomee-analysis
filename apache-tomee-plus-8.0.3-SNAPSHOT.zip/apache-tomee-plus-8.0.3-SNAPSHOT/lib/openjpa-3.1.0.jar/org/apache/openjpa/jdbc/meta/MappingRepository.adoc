@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MappingRepository.class
+
+ - link:MappingRepository-asmified.java[Asmified]
+
+== References
+

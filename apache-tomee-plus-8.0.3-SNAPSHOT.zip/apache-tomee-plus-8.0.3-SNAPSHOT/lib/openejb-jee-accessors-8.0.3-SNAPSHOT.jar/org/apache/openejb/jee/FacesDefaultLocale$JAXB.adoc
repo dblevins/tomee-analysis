@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/FacesDefaultLocale$JAXB.class
+
+ - link:FacesDefaultLocale$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 5

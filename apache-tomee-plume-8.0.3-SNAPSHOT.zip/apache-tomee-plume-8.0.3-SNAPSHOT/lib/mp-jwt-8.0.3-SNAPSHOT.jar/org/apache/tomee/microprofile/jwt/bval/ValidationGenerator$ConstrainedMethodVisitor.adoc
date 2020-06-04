@@ -1,0 +1,6 @@
+= org/apache/tomee/microprofile/jwt/bval/ValidationGenerator$ConstrainedMethodVisitor.class
+
+ - link:ValidationGenerator$ConstrainedMethodVisitor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/activemq/util/JMSExceptionSupport.class
+
+ - link:JMSExceptionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 24
+ - javax.jms.MessageFormatException - 5
+ - javax.jms.MessageEOFException - 5
+ - javax.jms.JMSSecurityException - 4

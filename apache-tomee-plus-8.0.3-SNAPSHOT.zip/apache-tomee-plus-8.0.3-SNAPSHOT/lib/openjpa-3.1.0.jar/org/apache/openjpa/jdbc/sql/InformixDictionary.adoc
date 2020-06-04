@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/InformixDictionary.class
+
+ - link:InformixDictionary-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= com/sun/faces/application/applicationimpl/Version.class
+
+ - link:Version-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.enterprise.inject.spi.BeanManager - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.FacesException - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/FunctionalExpressionNode.class
+
+ - link:FunctionalExpressionNode-asmified.java[Asmified]
+
+== References
+

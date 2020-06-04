@@ -1,0 +1,6 @@
+= org/jvnet/mimepull/MIMEEvent$StartMessage.class
+
+ - link:MIMEEvent$StartMessage-asmified.java[Asmified]
+
+== References
+

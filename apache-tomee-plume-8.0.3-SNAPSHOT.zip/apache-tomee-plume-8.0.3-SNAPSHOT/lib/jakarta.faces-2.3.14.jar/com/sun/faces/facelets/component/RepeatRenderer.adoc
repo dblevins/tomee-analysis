@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/component/RepeatRenderer.class
+
+ - link:RepeatRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.context.ResponseWriter - 9
+ - javax.faces.render.Renderer - 2

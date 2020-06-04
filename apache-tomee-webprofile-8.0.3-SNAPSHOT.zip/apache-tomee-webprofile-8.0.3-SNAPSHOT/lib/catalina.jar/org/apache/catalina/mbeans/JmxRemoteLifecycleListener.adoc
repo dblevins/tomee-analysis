@@ -1,0 +1,6 @@
+= org/apache/catalina/mbeans/JmxRemoteLifecycleListener.class
+
+ - link:JmxRemoteLifecycleListener-asmified.java[Asmified]
+
+== References
+

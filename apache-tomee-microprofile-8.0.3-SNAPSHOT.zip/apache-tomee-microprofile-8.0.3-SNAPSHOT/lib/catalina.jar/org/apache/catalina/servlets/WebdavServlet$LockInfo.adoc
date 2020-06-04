@@ -1,0 +1,6 @@
+= org/apache/catalina/servlets/WebdavServlet$LockInfo.class
+
+ - link:WebdavServlet$LockInfo-asmified.java[Asmified]
+
+== References
+

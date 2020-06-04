@@ -1,0 +1,6 @@
+= org/apache/openejb/util/ArrayEnumeration.class
+
+ - link:ArrayEnumeration-asmified.java[Asmified]
+
+== References
+

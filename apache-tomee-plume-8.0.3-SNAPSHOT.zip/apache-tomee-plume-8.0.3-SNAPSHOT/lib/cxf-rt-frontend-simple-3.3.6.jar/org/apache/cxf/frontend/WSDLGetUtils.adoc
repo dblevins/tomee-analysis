@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/WSDLGetUtils.class
+
+ - link:WSDLGetUtils-asmified.java[Asmified]
+
+== References
+

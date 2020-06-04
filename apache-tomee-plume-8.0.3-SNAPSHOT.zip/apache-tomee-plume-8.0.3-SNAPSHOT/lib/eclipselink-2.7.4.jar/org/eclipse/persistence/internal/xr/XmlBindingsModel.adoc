@@ -1,0 +1,10 @@
+= org/eclipse/persistence/internal/xr/XmlBindingsModel.class
+
+ - link:XmlBindingsModel-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

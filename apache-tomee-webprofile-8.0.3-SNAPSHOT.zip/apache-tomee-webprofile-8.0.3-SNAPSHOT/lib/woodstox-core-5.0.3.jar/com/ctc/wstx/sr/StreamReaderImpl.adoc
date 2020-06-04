@@ -1,0 +1,6 @@
+= com/ctc/wstx/sr/StreamReaderImpl.class
+
+ - link:StreamReaderImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/webbeans/inject/InjectableField.class
+
+ - link:InjectableField-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 4
+ - javax.enterprise.inject.spi.InjectionTarget - 1
+ - javax.enterprise.inject.spi.Producer - 1

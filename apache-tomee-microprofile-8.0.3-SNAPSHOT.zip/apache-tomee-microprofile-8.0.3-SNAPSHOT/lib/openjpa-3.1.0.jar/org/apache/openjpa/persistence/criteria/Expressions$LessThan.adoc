@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/criteria/Expressions$LessThan.class
+
+ - link:Expressions$LessThan-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 9
+ - javax.persistence.criteria.Predicate - 1

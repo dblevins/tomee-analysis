@@ -1,0 +1,8 @@
+= org/apache/tomcat/util/descriptor/tld/TagXml.class
+
+ - link:TagXml-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagVariableInfo - 2
+ - javax.servlet.jsp.tagext.TagAttributeInfo - 2

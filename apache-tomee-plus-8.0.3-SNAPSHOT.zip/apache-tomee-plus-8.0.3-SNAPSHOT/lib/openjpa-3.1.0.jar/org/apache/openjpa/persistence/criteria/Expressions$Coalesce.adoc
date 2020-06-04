@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Coalesce.class
+
+ - link:Expressions$Coalesce-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 17
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.CriteriaBuilder$Coalesce - 3
+ - javax.persistence.criteria.Selection - 2

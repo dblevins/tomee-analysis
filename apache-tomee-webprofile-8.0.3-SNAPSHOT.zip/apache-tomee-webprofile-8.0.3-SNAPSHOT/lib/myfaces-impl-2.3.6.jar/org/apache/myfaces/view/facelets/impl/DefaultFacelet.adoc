@@ -1,0 +1,20 @@
+= org/apache/myfaces/view/facelets/impl/DefaultFacelet.class
+
+ - link:DefaultFacelet-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 62
+ - javax.faces.context.FacesContext - 39
+ - javax.faces.view.facelets.FaceletHandler - 18
+ - javax.faces.component.UniqueIdVendor - 12
+ - javax.faces.component.UIViewRoot - 11
+ - javax.faces.view.facelets.FaceletContext - 10
+ - javax.el.ExpressionFactory - 7
+ - javax.faces.FacesException - 6
+ - javax.el.ELException - 6
+ - javax.faces.view.facelets.FaceletException - 6
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.ViewResource - 2
+ - javax.faces.application.Resource - 2
+ - javax.faces.view.facelets.Facelet - 2

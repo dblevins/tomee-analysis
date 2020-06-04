@@ -1,0 +1,10 @@
+= org/apache/tomcat/util/descriptor/web/WebXml.class
+
+ - link:WebXml-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 20
+ - javax.servlet.DispatcherType - 2
+ - javax.servlet.SessionTrackingMode - 2
+ - javax.servlet.descriptor.JspConfigDescriptor - 1

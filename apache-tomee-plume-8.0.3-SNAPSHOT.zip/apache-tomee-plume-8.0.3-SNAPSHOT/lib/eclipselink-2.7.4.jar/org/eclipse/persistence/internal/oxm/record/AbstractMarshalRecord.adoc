@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/AbstractMarshalRecord.class
+
+ - link:AbstractMarshalRecord-asmified.java[Asmified]
+
+== References
+

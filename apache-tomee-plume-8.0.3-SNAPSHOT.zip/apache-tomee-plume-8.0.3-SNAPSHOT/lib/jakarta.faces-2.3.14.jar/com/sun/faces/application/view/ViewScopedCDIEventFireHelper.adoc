@@ -1,0 +1,7 @@
+= com/sun/faces/application/view/ViewScopedCDIEventFireHelper.class
+
+ - link:ViewScopedCDIEventFireHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 2

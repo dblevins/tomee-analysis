@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/Buffer.class
+
+ - link:Buffer-asmified.java[Asmified]
+
+== References
+

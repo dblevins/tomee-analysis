@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/resolver/CriterionPredicateRegistry.class
+
+ - link:CriterionPredicateRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 2

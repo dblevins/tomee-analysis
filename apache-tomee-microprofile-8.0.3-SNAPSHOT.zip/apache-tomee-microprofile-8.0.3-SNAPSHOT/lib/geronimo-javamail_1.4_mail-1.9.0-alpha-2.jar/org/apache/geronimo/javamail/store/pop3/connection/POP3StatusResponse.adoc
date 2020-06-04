@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/store/pop3/connection/POP3StatusResponse.class
+
+ - link:POP3StatusResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 5

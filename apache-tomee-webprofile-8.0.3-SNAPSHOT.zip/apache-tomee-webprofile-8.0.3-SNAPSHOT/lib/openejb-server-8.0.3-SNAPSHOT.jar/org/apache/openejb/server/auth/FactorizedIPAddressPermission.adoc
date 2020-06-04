@@ -1,0 +1,6 @@
+= org/apache/openejb/server/auth/FactorizedIPAddressPermission.class
+
+ - link:FactorizedIPAddressPermission-asmified.java[Asmified]
+
+== References
+

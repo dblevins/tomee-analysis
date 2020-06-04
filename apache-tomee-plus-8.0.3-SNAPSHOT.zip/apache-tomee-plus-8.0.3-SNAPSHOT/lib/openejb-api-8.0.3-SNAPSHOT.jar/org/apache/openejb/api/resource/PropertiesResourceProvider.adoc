@@ -1,0 +1,6 @@
+= org/apache/openejb/api/resource/PropertiesResourceProvider.class
+
+ - link:PropertiesResourceProvider-asmified.java[Asmified]
+
+== References
+

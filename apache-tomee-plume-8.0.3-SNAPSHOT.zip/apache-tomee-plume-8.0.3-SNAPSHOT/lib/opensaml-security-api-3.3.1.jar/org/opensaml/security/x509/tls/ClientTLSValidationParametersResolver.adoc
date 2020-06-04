@@ -1,0 +1,6 @@
+= org/opensaml/security/x509/tls/ClientTLSValidationParametersResolver.class
+
+ - link:ClientTLSValidationParametersResolver-asmified.java[Asmified]
+
+== References
+

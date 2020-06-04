@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLEventReader.class
+
+ - link:XMLEventReader-asmified.java[Asmified]
+
+== References
+

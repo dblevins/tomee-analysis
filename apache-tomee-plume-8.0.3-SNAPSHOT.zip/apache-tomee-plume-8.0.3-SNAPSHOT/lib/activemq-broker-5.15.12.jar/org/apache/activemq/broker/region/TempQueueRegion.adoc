@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/TempQueueRegion.class
+
+ - link:TempQueueRegion-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

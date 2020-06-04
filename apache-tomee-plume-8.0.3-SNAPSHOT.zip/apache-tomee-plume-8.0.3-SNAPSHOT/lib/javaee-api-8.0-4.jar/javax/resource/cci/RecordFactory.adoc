@@ -1,0 +1,9 @@
+= javax/resource/cci/RecordFactory.class
+
+ - link:RecordFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 2
+ - javax.resource.cci.MappedRecord - 1
+ - javax.resource.cci.IndexedRecord - 1

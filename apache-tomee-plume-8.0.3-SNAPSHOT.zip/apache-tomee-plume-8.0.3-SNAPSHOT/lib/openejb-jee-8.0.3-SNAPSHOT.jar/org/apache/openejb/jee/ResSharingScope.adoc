@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ResSharingScope.class
+
+ - link:ResSharingScope-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2

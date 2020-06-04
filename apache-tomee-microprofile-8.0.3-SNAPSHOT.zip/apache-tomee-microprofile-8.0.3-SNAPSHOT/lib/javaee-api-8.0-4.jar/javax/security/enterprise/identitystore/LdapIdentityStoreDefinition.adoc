@@ -1,0 +1,8 @@
+= javax/security/enterprise/identitystore/LdapIdentityStoreDefinition.class
+
+ - link:LdapIdentityStoreDefinition-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.identitystore.LdapIdentityStoreDefinition$LdapSearchScope - 4
+ - javax.security.enterprise.identitystore.IdentityStore$ValidationType - 3

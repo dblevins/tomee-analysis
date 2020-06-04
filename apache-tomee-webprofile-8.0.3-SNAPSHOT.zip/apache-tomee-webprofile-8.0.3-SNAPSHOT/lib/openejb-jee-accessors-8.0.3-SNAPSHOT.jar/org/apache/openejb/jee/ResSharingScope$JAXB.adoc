@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/ResSharingScope$JAXB.class
+
+ - link:ResSharingScope$JAXB-asmified.java[Asmified]
+
+== References
+

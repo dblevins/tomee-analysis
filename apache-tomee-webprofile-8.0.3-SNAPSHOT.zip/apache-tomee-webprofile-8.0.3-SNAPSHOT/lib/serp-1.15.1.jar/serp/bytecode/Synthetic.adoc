@@ -1,0 +1,6 @@
+= serp/bytecode/Synthetic.class
+
+ - link:Synthetic-asmified.java[Asmified]
+
+== References
+

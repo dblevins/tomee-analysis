@@ -1,0 +1,8 @@
+= javax/xml/soap/SOAPHeaderElement.class
+
+ - link:SOAPHeaderElement-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 2
+ - javax.xml.soap.SOAPElement - 1

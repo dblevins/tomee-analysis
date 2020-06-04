@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/transport/HttpDestination.class
+
+ - link:HttpDestination-asmified.java[Asmified]
+
+== References
+

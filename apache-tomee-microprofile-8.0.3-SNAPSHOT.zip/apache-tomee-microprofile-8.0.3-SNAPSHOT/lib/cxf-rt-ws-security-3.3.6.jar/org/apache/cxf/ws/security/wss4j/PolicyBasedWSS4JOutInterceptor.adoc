@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.class
+
+ - link:PolicyBasedWSS4JOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 1

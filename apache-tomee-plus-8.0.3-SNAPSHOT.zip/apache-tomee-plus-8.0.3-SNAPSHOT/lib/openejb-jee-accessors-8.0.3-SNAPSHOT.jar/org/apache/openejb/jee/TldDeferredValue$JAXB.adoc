@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/TldDeferredValue$JAXB.class
+
+ - link:TldDeferredValue$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 11

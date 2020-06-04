@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/ResourcesTask.class
+
+ - link:ResourcesTask-asmified.java[Asmified]
+
+== References
+

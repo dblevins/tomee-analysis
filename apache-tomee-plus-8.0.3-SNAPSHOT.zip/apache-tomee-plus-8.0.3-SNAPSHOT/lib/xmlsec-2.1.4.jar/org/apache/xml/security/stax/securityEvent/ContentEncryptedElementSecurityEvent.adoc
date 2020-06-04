@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/securityEvent/ContentEncryptedElementSecurityEvent.class
+
+ - link:ContentEncryptedElementSecurityEvent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/RequestType.class
+
+ - link:RequestType-asmified.java[Asmified]
+
+== References
+

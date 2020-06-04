@@ -1,0 +1,6 @@
+= org/opensaml/saml/common/messaging/context/SAMLPresenterEntityContext.class
+
+ - link:SAMLPresenterEntityContext-asmified.java[Asmified]
+
+== References
+

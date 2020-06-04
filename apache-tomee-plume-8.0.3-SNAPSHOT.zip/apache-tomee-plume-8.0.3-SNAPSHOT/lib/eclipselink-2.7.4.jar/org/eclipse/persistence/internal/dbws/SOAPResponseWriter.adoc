@@ -1,0 +1,16 @@
+= org/eclipse/persistence/internal/dbws/SOAPResponseWriter.class
+
+ - link:SOAPResponseWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 17
+ - javax.xml.soap.MessageFactory - 15
+ - javax.xml.soap.SOAPPart - 12
+ - javax.xml.soap.SOAPEnvelope - 12
+ - javax.xml.soap.SOAPBody - 7
+ - javax.xml.soap.SOAPException - 6
+ - javax.xml.soap.AttachmentPart - 5
+ - javax.xml.soap.SOAPElement - 4
+ - javax.activation.DataHandler - 3
+ - javax.xml.soap.SOAPFault - 1

@@ -1,0 +1,7 @@
+= javax/mail/MessageRemovedException.class
+
+ - link:MessageRemovedException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 3

@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/signature/support/impl/SignatureAlgorithmValidator.class
+
+ - link:SignatureAlgorithmValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8
+ - javax.annotation.Nullable - 2

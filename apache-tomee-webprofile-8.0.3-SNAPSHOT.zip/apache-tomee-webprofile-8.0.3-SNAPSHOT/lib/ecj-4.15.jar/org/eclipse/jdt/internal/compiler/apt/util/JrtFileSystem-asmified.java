@@ -1,0 +1,423 @@
+package asm.org.eclipse.jdt.internal.compiler.apt.util;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class JrtFileSystemDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", null, "org/eclipse/jdt/internal/compiler/apt/util/Archive", null);
+
+classWriter.visitInnerClass("java/lang/invoke/MethodHandles$Lookup", "java/lang/invoke/MethodHandles", "Lookup", ACC_PUBLIC | ACC_FINAL | ACC_STATIC);
+
+classWriter.visitInnerClass("javax/tools/JavaFileObject$Kind", "javax/tools/JavaFileObject", "Kind", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+classWriter.visitInnerClass("org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$1", null, null, 0);
+
+classWriter.visitInnerClass("org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject", "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "JrtFileObject", 0);
+
+classWriter.visitInnerClass("org/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper", "org/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler", "ModuleLocationWrapper", 0);
+
+classWriter.visitInnerClass("org/eclipse/jdt/internal/compiler/util/JRTUtil$JrtFileVisitor", "org/eclipse/jdt/internal/compiler/util/JRTUtil", "JrtFileVisitor", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC, "JRT_URI", "Ljava/net/URI;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC, "BOOT_MODULE", "Ljava/lang/String;", null, "jrt-fs.jar");
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PUBLIC, "modulePathMap", "Ljava/util/HashMap;", "Ljava/util/HashMap<Ljava/lang/String;Ljava/nio/file/Path;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "modules", "Ljava/nio/file/Path;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "jrtfs", "Ljava/nio/file/FileSystem;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn("jrt:/");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/net/URI", "create", "(Ljava/lang/String;)Ljava/net/URI;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "JRT_URI", "Ljava/net/URI;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/io/File;)V", null, new String[] { "java/util/zip/ZipException", "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/jdt/internal/compiler/apt/util/Archive", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "initialize", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "initialize", "()V", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label4, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "modulePathMap", "Ljava/util/HashMap;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "exists", "()Z", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "toPath", "()Ljava/nio/file/Path;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/nio/file/Path", "toString", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn("lib");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLdcInsn("jrt-fs.jar");
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/nio/file/Paths", "get", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/nio/file/Path", "toUri", "()Ljava/net/URI;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URI", "toURL", "()Ljava/net/URL;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitTypeInsn(NEW, "java/net/URLClassLoader");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/net/URL");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/net/URLClassLoader", "<init>", "([Ljava/net/URL;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "java/util/HashMap");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/HashMap", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "JRT_URI", "Ljava/net/URI;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/nio/file/FileSystems", "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "jrtfs", "Ljava/nio/file/FileSystem;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "jrtfs", "Ljava/nio/file/FileSystem;");
+methodVisitor.visitLdcInsn("/modules");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/nio/file/FileSystem", "getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "modules", "Ljava/nio/file/Path;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URLClassLoader", "close", "()V", false);
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "java/net/URL", "java/lang/Throwable", "java/lang/Throwable", "java/net/URLClassLoader"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/URLClassLoader", "close", "()V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label8);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label9);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "addSuppressed", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$1", "<init>", "(Lorg/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem;)V", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/jdt/internal/compiler/util/JRTUtil", "NOTIFY_MODULES", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/jdt/internal/compiler/util/JRTUtil", "walkModuleImage", "(Ljava/io/File;Lorg/eclipse/jdt/internal/compiler/util/JRTUtil$JrtFileVisitor;I)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "list", "(Lorg/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper;Ljava/lang/String;Ljava/util/Set;ZLjava/nio/charset/Charset;)Ljava/util/List;", "(Lorg/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper;Ljava/lang/String;Ljava/util/Set<Ljavax/tools/JavaFileObject$Kind;>;ZLjava/nio/charset/Charset;)Ljava/util/List<Lorg/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject;>;", null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label4, null);
+Label label5 = new Label();
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label5, label6, label6, "java/io/IOException");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper", "modName", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "modules", "Ljava/nio/file/Path;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/nio/file/Path", "resolve", "(Ljava/lang/String;)Ljava/nio/file/Path;", true);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/nio/file/Path", "resolve", "(Ljava/lang/String;)Ljava/nio/file/Path;", true);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/nio/file/Files", "list", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;", false);
+methodVisitor.visitVarInsn(ASTORE, 12);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitInvokeDynamicInsn("test", "()Ljava/util/function/Predicate;", new Handle(Opcodes.H_INVOKESTATIC, "java/lang/invoke/LambdaMetafactory", "metafactory", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", false), new Object[]{Type.getType("(Ljava/lang/Object;)Z"), new Handle(Opcodes.H_INVOKESTATIC, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "lambda$0", "(Ljava/nio/file/Path;)Z", false), Type.getType("(Ljava/nio/file/Path;)Z")});
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "filter", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", true);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/stream/Collectors", "toList", "()Ljava/util/stream/Collector;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/List");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 12);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "close", "()V", true);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "org/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper", "java/lang/String", "java/util/Set", Opcodes.INTEGER, "java/nio/charset/Charset", "java/lang/String", "java/nio/file/Path", "java/nio/file/Path", "java/util/List", "java/lang/Throwable", "java/lang/Throwable", "java/util/stream/Stream"}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 12);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label8);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/stream/Stream", "close", "()V", true);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 10);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label9);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitVarInsn(ASTORE, 10);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label10);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "addSuppressed", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "org/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper", "java/lang/String", "java/util/Set", Opcodes.INTEGER, "java/nio/charset/Charset", "java/lang/String", "java/nio/file/Path", "java/nio/file/Path", "java/util/List"}, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 12);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label11);
+Label label12 = new Label();
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_FULL, 13, new Object[] {"org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "org/eclipse/jdt/internal/compiler/apt/util/ModuleLocationHandler$ModuleLocationWrapper", "java/lang/String", "java/util/Set", Opcodes.INTEGER, "java/nio/charset/Charset", "java/lang/String", "java/nio/file/Path", "java/nio/file/Path", "java/util/List", "java/util/List", Opcodes.TOP, "java/util/Iterator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/nio/file/Path");
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject", "<init>", "(Lorg/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem;Ljava/io/File;Ljava/nio/file/Path;Ljava/lang/String;Ljava/nio/charset/Charset;Lorg/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+methodVisitor.visitJumpInsn(IFNE, label12);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(9, 13);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getArchiveFileObject", "(Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)Lorg/eclipse/jdt/internal/compiler/apt/util/ArchiveFileObject;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "modules", "Ljava/nio/file/Path;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/nio/file/Path", "resolve", "(Ljava/lang/String;)Ljava/nio/file/Path;", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/nio/file/Path", "resolve", "(Ljava/lang/String;)Ljava/nio/file/Path;", true);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject", "<init>", "(Lorg/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem;Ljava/io/File;Ljava/nio/file/Path;Ljava/lang/String;Ljava/nio/charset/Charset;Lorg/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem$JrtFileObject;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(8, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contains", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("JRT: ");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitLdcInsn("UNKNOWN_ARCHIVE");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/StringBuilder"});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem", "file", "Ljava/io/File;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/File", "getAbsolutePath", "()Ljava/lang/String;", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem"}, 2, new Object[] {"java/lang/StringBuilder", "java/lang/String"});
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "lambda$0", "(Ljava/nio/file/Path;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/nio/file/LinkOption");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/nio/file/Files", "isDirectory", "(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

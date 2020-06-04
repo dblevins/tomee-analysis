@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/WsFrameBase$State.class
+
+ - link:WsFrameBase$State-asmified.java[Asmified]
+
+== References
+

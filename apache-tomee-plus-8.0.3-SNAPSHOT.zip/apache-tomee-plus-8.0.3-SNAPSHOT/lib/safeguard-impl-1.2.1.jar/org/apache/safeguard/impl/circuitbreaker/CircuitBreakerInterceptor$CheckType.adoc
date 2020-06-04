@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CheckType.class
+
+ - link:CircuitBreakerInterceptor$CheckType-asmified.java[Asmified]
+
+== References
+

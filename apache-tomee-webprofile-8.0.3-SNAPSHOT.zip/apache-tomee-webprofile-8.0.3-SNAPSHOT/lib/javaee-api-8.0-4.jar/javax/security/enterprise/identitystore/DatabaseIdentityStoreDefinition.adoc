@@ -1,0 +1,9 @@
+= javax/security/enterprise/identitystore/DatabaseIdentityStoreDefinition.class
+
+ - link:DatabaseIdentityStoreDefinition-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.identitystore.IdentityStore$ValidationType - 3
+ - javax.security.enterprise.identitystore.Pbkdf2PasswordHash - 1
+ - javax.security.enterprise.identitystore.PasswordHash - 1

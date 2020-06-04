@@ -1,0 +1,6 @@
+= javax/management/j2ee/statistics/Statistic.class
+
+ - link:Statistic-asmified.java[Asmified]
+
+== References
+

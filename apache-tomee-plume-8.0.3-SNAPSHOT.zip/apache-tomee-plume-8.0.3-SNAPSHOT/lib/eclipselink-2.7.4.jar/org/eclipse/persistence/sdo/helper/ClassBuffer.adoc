@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/ClassBuffer.class
+
+ - link:ClassBuffer-asmified.java[Asmified]
+
+== References
+

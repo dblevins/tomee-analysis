@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/impl/AbstractDynamicHTTPMetadataResolver$1.class
+
+ - link:AbstractDynamicHTTPMetadataResolver$1-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

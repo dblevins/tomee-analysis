@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/IllegalAnnotationException.class
+
+ - link:IllegalAnnotationException-asmified.java[Asmified]
+
+== References
+

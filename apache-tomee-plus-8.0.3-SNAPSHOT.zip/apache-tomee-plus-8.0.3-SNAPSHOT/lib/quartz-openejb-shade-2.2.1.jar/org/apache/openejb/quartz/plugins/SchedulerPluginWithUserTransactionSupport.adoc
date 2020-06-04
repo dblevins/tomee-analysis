@@ -1,0 +1,7 @@
+= org/apache/openejb/quartz/plugins/SchedulerPluginWithUserTransactionSupport.class
+
+ - link:SchedulerPluginWithUserTransactionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 24

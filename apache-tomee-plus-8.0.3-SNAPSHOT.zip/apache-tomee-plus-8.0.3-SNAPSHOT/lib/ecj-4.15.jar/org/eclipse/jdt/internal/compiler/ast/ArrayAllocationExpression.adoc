@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ArrayAllocationExpression.class
+
+ - link:ArrayAllocationExpression-asmified.java[Asmified]
+
+== References
+

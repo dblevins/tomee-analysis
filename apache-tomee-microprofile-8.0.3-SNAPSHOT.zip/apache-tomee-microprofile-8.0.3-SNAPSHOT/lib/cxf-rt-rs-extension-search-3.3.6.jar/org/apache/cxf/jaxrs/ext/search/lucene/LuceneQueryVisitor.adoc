@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/search/lucene/LuceneQueryVisitor.class
+
+ - link:LuceneQueryVisitor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverterProvider - 4

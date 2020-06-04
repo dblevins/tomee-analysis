@@ -1,0 +1,8 @@
+= org/metatype/sxc/jaxb/LifecycleCallback.class
+
+ - link:LifecycleCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 4
+ - javax.xml.bind.Marshaller - 4

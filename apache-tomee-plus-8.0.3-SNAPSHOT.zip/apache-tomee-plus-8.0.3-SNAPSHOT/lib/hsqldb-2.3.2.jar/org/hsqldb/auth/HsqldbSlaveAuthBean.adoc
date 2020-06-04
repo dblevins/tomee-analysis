@@ -1,0 +1,6 @@
+= org/hsqldb/auth/HsqldbSlaveAuthBean.class
+
+ - link:HsqldbSlaveAuthBean-asmified.java[Asmified]
+
+== References
+

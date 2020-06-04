@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/ProxyOutputStream.class
+
+ - link:ProxyOutputStream-asmified.java[Asmified]
+
+== References
+

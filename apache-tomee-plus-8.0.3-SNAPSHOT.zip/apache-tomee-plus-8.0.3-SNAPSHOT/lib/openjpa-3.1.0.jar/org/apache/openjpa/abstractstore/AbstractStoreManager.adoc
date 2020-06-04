@@ -1,0 +1,6 @@
+= org/apache/openjpa/abstractstore/AbstractStoreManager.class
+
+ - link:AbstractStoreManager-asmified.java[Asmified]
+
+== References
+

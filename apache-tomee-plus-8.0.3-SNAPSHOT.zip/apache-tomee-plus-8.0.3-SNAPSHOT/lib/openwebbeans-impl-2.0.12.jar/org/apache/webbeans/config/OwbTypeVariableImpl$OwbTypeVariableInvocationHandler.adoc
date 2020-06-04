@@ -1,0 +1,6 @@
+= org/apache/webbeans/config/OwbTypeVariableImpl$OwbTypeVariableInvocationHandler.class
+
+ - link:OwbTypeVariableImpl$OwbTypeVariableInvocationHandler-asmified.java[Asmified]
+
+== References
+

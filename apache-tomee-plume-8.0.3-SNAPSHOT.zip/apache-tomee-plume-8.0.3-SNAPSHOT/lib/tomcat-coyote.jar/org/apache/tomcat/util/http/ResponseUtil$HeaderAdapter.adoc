@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/ResponseUtil$HeaderAdapter.class
+
+ - link:ResponseUtil$HeaderAdapter-asmified.java[Asmified]
+
+== References
+

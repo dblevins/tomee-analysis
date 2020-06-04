@@ -1,0 +1,6 @@
+= org/jasypt/encryption/ByteEncryptor.class
+
+ - link:ByteEncryptor-asmified.java[Asmified]
+
+== References
+

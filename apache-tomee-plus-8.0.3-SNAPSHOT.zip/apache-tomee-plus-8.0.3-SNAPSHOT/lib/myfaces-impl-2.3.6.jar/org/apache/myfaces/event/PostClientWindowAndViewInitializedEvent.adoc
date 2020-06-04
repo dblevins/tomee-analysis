@@ -1,0 +1,7 @@
+= org/apache/myfaces/event/PostClientWindowAndViewInitializedEvent.class
+
+ - link:PostClientWindowAndViewInitializedEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.SystemEvent - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/DirectReadQuery.class
+
+ - link:DirectReadQuery-asmified.java[Asmified]
+
+== References
+

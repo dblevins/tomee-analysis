@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$KindFilter.class
+
+ - link:SourceAnnotationHandler$KindFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/validation/XMLValidator.class
+
+ - link:XMLValidator-asmified.java[Asmified]
+
+== References
+

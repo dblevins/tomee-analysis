@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/enums/ParameterStyle.class
+
+ - link:ParameterStyle-asmified.java[Asmified]
+
+== References
+

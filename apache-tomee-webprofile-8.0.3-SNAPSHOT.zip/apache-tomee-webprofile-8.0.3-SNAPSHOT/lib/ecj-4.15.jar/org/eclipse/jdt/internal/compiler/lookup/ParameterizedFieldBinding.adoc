@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/ParameterizedFieldBinding.class
+
+ - link:ParameterizedFieldBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JoseJaxrsUtils.class
+
+ - link:JoseJaxrsUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.WebApplicationException - 1

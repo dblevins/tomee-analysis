@@ -1,0 +1,11 @@
+= org/apache/webbeans/portable/AbstractDecoratorInjectionTarget.class
+
+ - link:AbstractDecoratorInjectionTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 8
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 6
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.enterprise.inject.spi.InjectionTarget - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1

@@ -1,0 +1,13 @@
+= org/apache/tomee/catalina/TomcatJndiBuilder.class
+
+ - link:TomcatJndiBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 6
+ - javax.transaction.TransactionSynchronizationRegistry - 5
+ - javax.transaction.TransactionManager - 5
+ - javax.ejb.spi.HandleDelegate - 3
+ - javax.servlet.ServletContext - 2
+ - javax.transaction.UserTransaction - 1
+ - javax.persistence.EntityManager - 1

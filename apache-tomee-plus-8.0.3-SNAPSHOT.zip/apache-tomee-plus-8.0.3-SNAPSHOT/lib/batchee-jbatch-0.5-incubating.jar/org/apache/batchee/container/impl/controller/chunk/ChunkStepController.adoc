@@ -1,0 +1,24 @@
+= org/apache/batchee/container/impl/controller/chunk/ChunkStepController.class
+
+ - link:ChunkStepController-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.Metric$MetricType - 24
+ - javax.batch.api.chunk.ItemWriter - 18
+ - javax.batch.api.chunk.listener.ChunkListener - 18
+ - javax.batch.api.chunk.ItemReader - 18
+ - javax.batch.runtime.JobInstance - 10
+ - javax.batch.api.chunk.listener.ItemProcessListener - 9
+ - javax.batch.api.chunk.listener.ItemWriteListener - 9
+ - javax.batch.api.chunk.listener.ItemReadListener - 9
+ - javax.batch.api.chunk.ItemProcessor - 7
+ - javax.batch.runtime.BatchStatus - 5
+ - javax.batch.api.chunk.CheckpointAlgorithm - 2
+ - javax.batch.api.chunk.listener.RetryWriteListener - 1
+ - javax.batch.api.chunk.listener.RetryProcessListener - 1
+ - javax.batch.api.chunk.listener.SkipReadListener - 1
+ - javax.batch.api.chunk.listener.SkipWriteListener - 1
+ - javax.batch.operations.BatchRuntimeException - 1
+ - javax.batch.api.chunk.listener.SkipProcessListener - 1
+ - javax.batch.api.chunk.listener.RetryReadListener - 1

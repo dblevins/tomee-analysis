@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/EjbRefType.class
+
+ - link:EjbRefType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2

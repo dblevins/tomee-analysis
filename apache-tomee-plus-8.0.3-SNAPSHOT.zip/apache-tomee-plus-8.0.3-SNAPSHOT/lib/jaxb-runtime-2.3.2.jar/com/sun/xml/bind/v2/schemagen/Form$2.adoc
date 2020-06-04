@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/schemagen/Form$2.class
+
+ - link:Form$2-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlNsForm - 2

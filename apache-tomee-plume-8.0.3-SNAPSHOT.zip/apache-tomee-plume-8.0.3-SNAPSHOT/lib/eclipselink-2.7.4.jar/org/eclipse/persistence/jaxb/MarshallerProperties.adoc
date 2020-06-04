@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/MarshallerProperties.class
+
+ - link:MarshallerProperties-asmified.java[Asmified]
+
+== References
+

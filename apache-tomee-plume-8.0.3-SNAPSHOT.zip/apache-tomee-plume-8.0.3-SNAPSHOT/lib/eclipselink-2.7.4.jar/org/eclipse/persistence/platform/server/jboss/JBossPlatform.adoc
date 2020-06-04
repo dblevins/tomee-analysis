@@ -1,0 +1,7 @@
+= org/eclipse/persistence/platform/server/jboss/JBossPlatform.class
+
+ - link:JBossPlatform-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 3

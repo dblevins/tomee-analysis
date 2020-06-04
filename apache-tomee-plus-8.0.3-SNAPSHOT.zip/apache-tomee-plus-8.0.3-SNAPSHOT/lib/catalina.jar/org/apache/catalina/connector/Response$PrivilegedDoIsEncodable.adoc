@@ -1,0 +1,6 @@
+= org/apache/catalina/connector/Response$PrivilegedDoIsEncodable.class
+
+ - link:Response$PrivilegedDoIsEncodable-asmified.java[Asmified]
+
+== References
+

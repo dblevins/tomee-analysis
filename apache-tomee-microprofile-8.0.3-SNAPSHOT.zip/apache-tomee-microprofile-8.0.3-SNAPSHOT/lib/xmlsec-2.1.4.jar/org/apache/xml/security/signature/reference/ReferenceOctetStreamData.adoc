@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/reference/ReferenceOctetStreamData.class
+
+ - link:ReferenceOctetStreamData-asmified.java[Asmified]
+
+== References
+

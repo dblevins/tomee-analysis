@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/weaving/jpa/StaticWeaveAntTask.class
+
+ - link:StaticWeaveAntTask-asmified.java[Asmified]
+
+== References
+

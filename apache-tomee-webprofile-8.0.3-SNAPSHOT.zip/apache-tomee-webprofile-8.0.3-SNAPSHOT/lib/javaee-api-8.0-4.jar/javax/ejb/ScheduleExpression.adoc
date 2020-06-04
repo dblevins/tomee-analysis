@@ -1,0 +1,7 @@
+= javax/ejb/ScheduleExpression.class
+
+ - link:ScheduleExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ScheduleExpression - 17

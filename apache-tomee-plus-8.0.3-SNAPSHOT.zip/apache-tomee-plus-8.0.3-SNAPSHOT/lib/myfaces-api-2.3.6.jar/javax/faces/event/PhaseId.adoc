@@ -1,0 +1,8 @@
+= javax/faces/event/PhaseId.class
+
+ - link:PhaseId-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.PhaseId - 40
+ - javax.faces.FacesException - 2

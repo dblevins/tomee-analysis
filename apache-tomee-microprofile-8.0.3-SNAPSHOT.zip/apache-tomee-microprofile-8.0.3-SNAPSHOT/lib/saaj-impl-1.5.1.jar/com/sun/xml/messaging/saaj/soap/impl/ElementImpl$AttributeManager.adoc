@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/impl/ElementImpl$AttributeManager.class
+
+ - link:ElementImpl$AttributeManager-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.Name - 16
+ - javax.xml.soap.SOAPException - 3
+ - javax.xml.soap.SOAPElement - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/TimeSeededSeq.class
+
+ - link:TimeSeededSeq-asmified.java[Asmified]
+
+== References
+

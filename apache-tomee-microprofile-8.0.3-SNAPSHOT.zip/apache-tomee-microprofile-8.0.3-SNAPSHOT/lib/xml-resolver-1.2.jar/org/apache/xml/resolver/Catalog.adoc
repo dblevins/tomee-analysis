@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/Catalog.class
+
+ - link:Catalog-asmified.java[Asmified]
+
+== References
+

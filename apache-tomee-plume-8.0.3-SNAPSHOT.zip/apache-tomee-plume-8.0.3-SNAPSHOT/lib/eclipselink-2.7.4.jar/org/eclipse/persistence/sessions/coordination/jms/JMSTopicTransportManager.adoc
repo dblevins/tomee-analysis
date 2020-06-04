@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/jms/JMSTopicTransportManager.class
+
+ - link:JMSTopicTransportManager-asmified.java[Asmified]
+
+== References
+

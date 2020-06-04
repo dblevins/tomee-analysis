@@ -1,0 +1,7 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/mp-common-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/tomee/microprofile/config/TomEEOpenAPIExtension.adoc[org/apache/tomee/microprofile/config/TomEEOpenAPIExtension.class] - 107
+ - link:org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$MethodElementImpl.adoc[org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$MethodElementImpl.class] - 21
+ - link:org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$ElementImpl.adoc[org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$ElementImpl.class] - 11
+ - link:org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$TypeElementImpl.adoc[org/apache/tomee/microprofile/config/TomEEOpenAPIExtension$TypeElementImpl.class] - 4
+ - link:org/apache/tomee/microprofile/TomEEMicroProfileListener.adoc[org/apache/tomee/microprofile/TomEEMicroProfileListener.class] - 4

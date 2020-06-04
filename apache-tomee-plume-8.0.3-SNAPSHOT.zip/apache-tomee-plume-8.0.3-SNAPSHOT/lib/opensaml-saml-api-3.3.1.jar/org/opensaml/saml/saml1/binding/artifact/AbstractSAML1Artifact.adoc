@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/binding/artifact/AbstractSAML1Artifact.class
+
+ - link:AbstractSAML1Artifact-asmified.java[Asmified]
+
+== References
+

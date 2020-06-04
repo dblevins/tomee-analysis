@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/el/DefaultVariableMapper.class
+
+ - link:DefaultVariableMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 11
+ - javax.el.VariableMapper - 6

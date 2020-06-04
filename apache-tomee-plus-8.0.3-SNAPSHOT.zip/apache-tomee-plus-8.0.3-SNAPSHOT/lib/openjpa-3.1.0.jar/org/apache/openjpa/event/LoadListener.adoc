@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/LoadListener.class
+
+ - link:LoadListener-asmified.java[Asmified]
+
+== References
+

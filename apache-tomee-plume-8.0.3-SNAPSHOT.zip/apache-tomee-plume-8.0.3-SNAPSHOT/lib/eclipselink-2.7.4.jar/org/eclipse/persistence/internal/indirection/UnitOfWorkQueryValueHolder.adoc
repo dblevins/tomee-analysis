@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/UnitOfWorkQueryValueHolder.class
+
+ - link:UnitOfWorkQueryValueHolder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/struct/AbstractLRUMap.class
+
+ - link:AbstractLRUMap-asmified.java[Asmified]
+
+== References
+

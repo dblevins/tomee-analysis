@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/cmd/Info2Properties.class
+
+ - link:Info2Properties-asmified.java[Asmified]
+
+== References
+

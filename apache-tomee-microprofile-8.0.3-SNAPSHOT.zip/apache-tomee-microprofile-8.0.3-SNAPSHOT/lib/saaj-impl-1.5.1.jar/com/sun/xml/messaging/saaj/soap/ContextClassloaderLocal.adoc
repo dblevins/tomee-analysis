@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/ContextClassloaderLocal.class
+
+ - link:ContextClassloaderLocal-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/bval/cdi/BValAnnotatedType$BValBindingLiteral.class
+
+ - link:BValAnnotatedType$BValBindingLiteral-asmified.java[Asmified]
+
+== References
+

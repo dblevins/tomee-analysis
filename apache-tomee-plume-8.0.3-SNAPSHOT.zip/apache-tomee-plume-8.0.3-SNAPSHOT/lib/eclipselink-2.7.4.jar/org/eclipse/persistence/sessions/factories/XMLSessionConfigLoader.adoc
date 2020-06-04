@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/XMLSessionConfigLoader.class
+
+ - link:XMLSessionConfigLoader-asmified.java[Asmified]
+
+== References
+

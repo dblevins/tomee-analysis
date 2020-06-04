@@ -1,0 +1,10 @@
+= javax/faces/event/PostRenderViewEvent.class
+
+ - link:PostRenderViewEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.context.FacesContext - 1

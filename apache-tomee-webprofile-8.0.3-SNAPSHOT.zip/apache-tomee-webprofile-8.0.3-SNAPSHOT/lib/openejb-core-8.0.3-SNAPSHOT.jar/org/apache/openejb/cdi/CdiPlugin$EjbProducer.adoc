@@ -1,0 +1,9 @@
+= org/apache/openejb/cdi/CdiPlugin$EjbProducer.class
+
+ - link:CdiPlugin$EjbProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Producer - 1

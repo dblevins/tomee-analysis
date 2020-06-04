@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/OWBContextThreadListener.class
+
+ - link:OWBContextThreadListener-asmified.java[Asmified]
+
+== References
+

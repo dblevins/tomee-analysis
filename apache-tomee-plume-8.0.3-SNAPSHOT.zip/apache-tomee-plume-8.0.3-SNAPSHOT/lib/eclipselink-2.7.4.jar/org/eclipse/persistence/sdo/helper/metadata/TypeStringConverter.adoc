@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/metadata/TypeStringConverter.class
+
+ - link:TypeStringConverter-asmified.java[Asmified]
+
+== References
+

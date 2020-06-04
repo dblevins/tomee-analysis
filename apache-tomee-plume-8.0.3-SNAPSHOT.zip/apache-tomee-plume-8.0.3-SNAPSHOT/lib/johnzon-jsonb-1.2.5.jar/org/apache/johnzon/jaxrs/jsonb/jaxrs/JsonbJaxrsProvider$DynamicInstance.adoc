@@ -1,0 +1,8 @@
+= org/apache/johnzon/jaxrs/jsonb/jaxrs/JsonbJaxrsProvider$DynamicInstance.class
+
+ - link:JsonbJaxrsProvider$DynamicInstance-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ContextResolver - 7
+ - javax.json.bind.Jsonb - 6

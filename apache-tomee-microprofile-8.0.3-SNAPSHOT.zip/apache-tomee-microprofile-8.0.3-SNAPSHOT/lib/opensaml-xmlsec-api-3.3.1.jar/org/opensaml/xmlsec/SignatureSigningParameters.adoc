@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/SignatureSigningParameters.class
+
+ - link:SignatureSigningParameters-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 12

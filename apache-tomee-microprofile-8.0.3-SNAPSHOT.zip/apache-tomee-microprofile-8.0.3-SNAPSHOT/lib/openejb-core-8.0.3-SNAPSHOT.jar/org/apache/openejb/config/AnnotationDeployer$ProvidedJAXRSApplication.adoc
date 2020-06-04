@@ -1,0 +1,7 @@
+= org/apache/openejb/config/AnnotationDeployer$ProvidedJAXRSApplication.class
+
+ - link:AnnotationDeployer$ProvidedJAXRSApplication-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 2

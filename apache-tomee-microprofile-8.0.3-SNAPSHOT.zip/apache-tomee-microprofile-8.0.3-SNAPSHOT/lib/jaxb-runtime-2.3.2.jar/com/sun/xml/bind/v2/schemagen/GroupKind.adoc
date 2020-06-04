@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/GroupKind.class
+
+ - link:GroupKind-asmified.java[Asmified]
+
+== References
+

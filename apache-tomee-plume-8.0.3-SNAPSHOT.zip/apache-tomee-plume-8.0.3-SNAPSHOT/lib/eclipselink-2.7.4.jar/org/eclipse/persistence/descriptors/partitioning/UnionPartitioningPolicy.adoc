@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/partitioning/UnionPartitioningPolicy.class
+
+ - link:UnionPartitioningPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/dynamic/ValuesAccessor.class
+
+ - link:ValuesAccessor-asmified.java[Asmified]
+
+== References
+

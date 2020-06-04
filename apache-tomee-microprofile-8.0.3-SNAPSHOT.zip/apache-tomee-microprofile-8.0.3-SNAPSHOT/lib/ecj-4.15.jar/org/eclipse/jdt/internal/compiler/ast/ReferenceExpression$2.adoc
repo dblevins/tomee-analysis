@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ReferenceExpression$2.class
+
+ - link:ReferenceExpression$2-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,37 @@
+package asm.org.apache.openjpa.persistence.meta;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SourceAnnotationHandler$InclusiveFilterDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openjpa/persistence/meta/SourceAnnotationHandler$InclusiveFilter", "<T::Ljavax/lang/model/element/Element;>Ljava/lang/Object;", "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/apache/openjpa/persistence/meta/SourceAnnotationHandler$InclusiveFilter", "org/apache/openjpa/persistence/meta/SourceAnnotationHandler", "InclusiveFilter", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "includes", "(Ljavax/lang/model/element/Element;)Z", "(TT;)Z", null);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

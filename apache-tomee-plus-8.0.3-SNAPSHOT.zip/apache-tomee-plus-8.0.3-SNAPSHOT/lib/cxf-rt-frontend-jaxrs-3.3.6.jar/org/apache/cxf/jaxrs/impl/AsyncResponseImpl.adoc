@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxrs/impl/AsyncResponseImpl.class
+
+ - link:AsyncResponseImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$ResponseBuilder - 11
+ - javax.ws.rs.core.Response - 7
+ - javax.ws.rs.container.TimeoutHandler - 6
+ - javax.ws.rs.container.CompletionCallback - 6
+ - javax.ws.rs.container.AsyncResponse - 6
+ - javax.ws.rs.container.ConnectionCallback - 6
+ - javax.ws.rs.ServiceUnavailableException - 2

@@ -1,0 +1,7 @@
+= javax/persistence/criteria/JoinType.class
+
+ - link:JoinType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.JoinType - 26

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/ObjectIdGenerators$PropertyGenerator.class
+
+ - link:ObjectIdGenerators$PropertyGenerator-asmified.java[Asmified]
+
+== References
+

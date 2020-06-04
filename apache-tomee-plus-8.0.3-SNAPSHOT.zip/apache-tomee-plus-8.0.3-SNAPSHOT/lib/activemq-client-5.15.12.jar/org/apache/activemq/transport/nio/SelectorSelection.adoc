@@ -1,0 +1,6 @@
+= org/apache/activemq/transport/nio/SelectorSelection.class
+
+ - link:SelectorSelection-asmified.java[Asmified]
+
+== References
+

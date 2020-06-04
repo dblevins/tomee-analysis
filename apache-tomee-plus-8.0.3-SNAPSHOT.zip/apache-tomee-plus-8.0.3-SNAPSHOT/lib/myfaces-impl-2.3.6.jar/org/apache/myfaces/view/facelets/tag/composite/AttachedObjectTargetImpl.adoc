@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/composite/AttachedObjectTargetImpl.class
+
+ - link:AttachedObjectTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 18
+ - javax.el.ValueExpression - 12
+ - javax.faces.context.FacesContext - 10
+ - javax.el.ELContext - 4
+ - javax.faces.view.AttachedObjectTarget - 1

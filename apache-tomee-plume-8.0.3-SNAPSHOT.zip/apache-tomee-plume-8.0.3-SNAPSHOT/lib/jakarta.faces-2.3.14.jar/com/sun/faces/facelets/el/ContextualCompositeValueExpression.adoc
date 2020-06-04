@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/el/ContextualCompositeValueExpression.class
+
+ - link:ContextualCompositeValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 43
+ - javax.el.ValueExpression - 25
+ - javax.el.ELContext - 17
+ - javax.faces.view.Location - 7
+ - javax.faces.component.UIComponent - 2

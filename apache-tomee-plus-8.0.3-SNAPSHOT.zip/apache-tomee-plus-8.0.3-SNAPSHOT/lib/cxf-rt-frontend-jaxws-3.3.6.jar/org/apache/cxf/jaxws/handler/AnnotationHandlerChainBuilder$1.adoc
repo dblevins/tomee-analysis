@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/handler/AnnotationHandlerChainBuilder$1.class
+
+ - link:AnnotationHandlerChainBuilder$1-asmified.java[Asmified]
+
+== References
+

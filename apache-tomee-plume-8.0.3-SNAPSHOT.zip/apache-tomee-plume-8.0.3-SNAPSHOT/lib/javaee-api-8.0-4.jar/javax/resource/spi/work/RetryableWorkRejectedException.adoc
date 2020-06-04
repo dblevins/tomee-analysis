@@ -1,0 +1,8 @@
+= javax/resource/spi/work/RetryableWorkRejectedException.class
+
+ - link:RetryableWorkRejectedException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkRejectedException - 6
+ - javax.resource.spi.RetryableException - 1

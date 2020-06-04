@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/STSTokenOutInterceptor.class
+
+ - link:STSTokenOutInterceptor-asmified.java[Asmified]
+
+== References
+

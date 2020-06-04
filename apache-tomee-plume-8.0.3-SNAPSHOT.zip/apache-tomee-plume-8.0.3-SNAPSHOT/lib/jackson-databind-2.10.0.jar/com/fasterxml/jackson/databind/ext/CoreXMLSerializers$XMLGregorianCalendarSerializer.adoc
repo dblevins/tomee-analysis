@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/CoreXMLSerializers$XMLGregorianCalendarSerializer.class
+
+ - link:CoreXMLSerializers$XMLGregorianCalendarSerializer-asmified.java[Asmified]
+
+== References
+

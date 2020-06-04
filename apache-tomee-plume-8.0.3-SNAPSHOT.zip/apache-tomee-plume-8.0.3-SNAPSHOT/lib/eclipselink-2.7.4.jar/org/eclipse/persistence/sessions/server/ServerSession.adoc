@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/server/ServerSession.class
+
+ - link:ServerSession-asmified.java[Asmified]
+
+== References
+

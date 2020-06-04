@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/SubQ.class
+
+ - link:SubQ-asmified.java[Asmified]
+
+== References
+

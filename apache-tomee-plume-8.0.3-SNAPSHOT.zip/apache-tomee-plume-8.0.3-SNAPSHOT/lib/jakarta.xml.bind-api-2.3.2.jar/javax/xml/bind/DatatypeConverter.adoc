@@ -1,0 +1,11 @@
+= javax/xml/bind/DatatypeConverter.class
+
+ - link:DatatypeConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.DatatypeConverterInterface - 120
+ - javax.xml.bind.DatatypeConverter - 38
+ - javax.xml.bind.JAXBPermission - 5
+ - javax.xml.bind.DatatypeConverterImpl - 2
+ - javax.xml.bind.Messages - 1

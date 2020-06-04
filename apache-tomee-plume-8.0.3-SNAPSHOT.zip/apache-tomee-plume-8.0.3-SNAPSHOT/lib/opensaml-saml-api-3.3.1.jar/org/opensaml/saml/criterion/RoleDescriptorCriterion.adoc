@@ -1,0 +1,7 @@
+= org/opensaml/saml/criterion/RoleDescriptorCriterion.class
+
+ - link:RoleDescriptorCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

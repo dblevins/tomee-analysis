@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/IDResolver.class
+
+ - link:IDResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventHandler - 3

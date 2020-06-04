@@ -1,0 +1,13 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlResponseWriterImpl.class
+
+ - link:HtmlResponseWriterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 16
+ - javax.faces.component.UIComponent - 14
+ - javax.el.ValueExpression - 6
+ - javax.el.ELContext - 4
+ - javax.faces.context.ResponseWriter - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.FacesException - 1

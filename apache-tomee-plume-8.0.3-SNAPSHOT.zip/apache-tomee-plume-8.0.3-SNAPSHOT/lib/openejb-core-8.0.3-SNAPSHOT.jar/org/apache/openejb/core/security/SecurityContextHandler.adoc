@@ -1,0 +1,9 @@
+= org/apache/openejb/core/security/SecurityContextHandler.class
+
+ - link:SecurityContextHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.SecurityContext - 10
+ - javax.resource.spi.work.WorkCompletedException - 4
+ - javax.resource.spi.work.WorkContext - 3

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/MarshalRecord$CycleDetectionStack.class
+
+ - link:MarshalRecord$CycleDetectionStack-asmified.java[Asmified]
+
+== References
+

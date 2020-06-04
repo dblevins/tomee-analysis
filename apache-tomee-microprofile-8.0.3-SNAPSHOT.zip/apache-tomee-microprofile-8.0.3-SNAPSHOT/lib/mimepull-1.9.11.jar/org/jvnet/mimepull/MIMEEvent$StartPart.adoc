@@ -1,0 +1,6 @@
+= org/jvnet/mimepull/MIMEEvent$StartPart.class
+
+ - link:MIMEEvent$StartPart-asmified.java[Asmified]
+
+== References
+

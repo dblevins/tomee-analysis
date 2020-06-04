@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Node$ChildInfo.class
+
+ - link:Node$ChildInfo-asmified.java[Asmified]
+
+== References
+

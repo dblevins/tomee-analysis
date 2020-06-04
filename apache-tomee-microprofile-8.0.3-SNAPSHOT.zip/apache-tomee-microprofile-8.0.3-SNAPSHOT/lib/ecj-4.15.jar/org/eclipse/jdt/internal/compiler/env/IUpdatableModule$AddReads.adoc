@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IUpdatableModule$AddReads.class
+
+ - link:IUpdatableModule$AddReads-asmified.java[Asmified]
+
+== References
+

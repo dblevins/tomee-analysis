@@ -1,0 +1,7 @@
+= org/apache/webbeans/component/third/ThirdpartyBeanAttributesImpl.class
+
+ - link:ThirdpartyBeanAttributesImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 5

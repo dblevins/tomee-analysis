@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/provider/X509LDAPCertStoreSpi.class
+
+ - link:X509LDAPCertStoreSpi-asmified.java[Asmified]
+
+== References
+

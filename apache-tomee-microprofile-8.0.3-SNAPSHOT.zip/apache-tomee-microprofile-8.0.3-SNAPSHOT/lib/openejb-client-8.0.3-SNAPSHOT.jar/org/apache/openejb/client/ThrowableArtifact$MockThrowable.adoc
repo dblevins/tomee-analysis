@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ThrowableArtifact$MockThrowable.class
+
+ - link:ThrowableArtifact$MockThrowable-asmified.java[Asmified]
+
+== References
+

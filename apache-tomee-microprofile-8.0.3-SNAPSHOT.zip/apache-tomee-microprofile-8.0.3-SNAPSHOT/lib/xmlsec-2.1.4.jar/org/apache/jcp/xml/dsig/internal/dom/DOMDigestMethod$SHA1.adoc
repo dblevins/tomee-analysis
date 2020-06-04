@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMDigestMethod$SHA1.class
+
+ - link:DOMDigestMethod$SHA1-asmified.java[Asmified]
+
+== References
+

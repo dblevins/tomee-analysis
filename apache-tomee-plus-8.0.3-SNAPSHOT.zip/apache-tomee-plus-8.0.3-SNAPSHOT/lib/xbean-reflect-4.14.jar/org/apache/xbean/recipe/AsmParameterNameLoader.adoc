@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/AsmParameterNameLoader.class
+
+ - link:AsmParameterNameLoader-asmified.java[Asmified]
+
+== References
+

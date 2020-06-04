@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/jmx/DestinationViewMBean.class
+
+ - link:DestinationViewMBean-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.InvalidSelectorException - 4

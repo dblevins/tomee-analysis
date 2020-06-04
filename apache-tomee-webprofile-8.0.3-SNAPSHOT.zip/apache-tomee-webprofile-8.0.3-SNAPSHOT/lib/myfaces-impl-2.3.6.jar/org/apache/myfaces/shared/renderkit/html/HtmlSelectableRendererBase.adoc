@@ -1,0 +1,13 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlSelectableRendererBase.class
+
+ - link:HtmlSelectableRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 25
+ - javax.faces.component.UIComponent - 24
+ - javax.faces.context.FacesContext - 19
+ - javax.faces.component.behavior.ClientBehaviorHolder - 6
+ - javax.faces.convert.Converter - 3
+ - javax.faces.component.UISelectMany - 2
+ - javax.faces.component.UISelectOne - 2

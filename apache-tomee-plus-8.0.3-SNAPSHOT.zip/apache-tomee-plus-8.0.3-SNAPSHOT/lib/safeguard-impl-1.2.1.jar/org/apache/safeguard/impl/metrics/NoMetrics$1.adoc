@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/metrics/NoMetrics$1.class
+
+ - link:NoMetrics$1-asmified.java[Asmified]
+
+== References
+

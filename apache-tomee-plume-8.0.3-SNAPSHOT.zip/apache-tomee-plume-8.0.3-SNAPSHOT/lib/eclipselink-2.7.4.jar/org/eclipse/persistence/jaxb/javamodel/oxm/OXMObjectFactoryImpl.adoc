@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/javamodel/oxm/OXMObjectFactoryImpl.class
+
+ - link:OXMObjectFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElementDecl - 1

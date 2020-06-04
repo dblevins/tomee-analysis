@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/internal/ConverterAdapter.class
+
+ - link:ConverterAdapter-asmified.java[Asmified]
+
+== References
+

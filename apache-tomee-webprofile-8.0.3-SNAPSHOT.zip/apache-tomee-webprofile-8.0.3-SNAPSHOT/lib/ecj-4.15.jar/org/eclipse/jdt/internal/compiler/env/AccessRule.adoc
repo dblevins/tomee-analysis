@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/AccessRule.class
+
+ - link:AccessRule-asmified.java[Asmified]
+
+== References
+

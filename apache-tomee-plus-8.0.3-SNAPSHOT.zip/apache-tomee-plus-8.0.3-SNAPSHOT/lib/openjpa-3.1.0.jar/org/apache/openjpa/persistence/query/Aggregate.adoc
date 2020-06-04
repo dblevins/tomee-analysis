@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/Aggregate.class
+
+ - link:Aggregate-asmified.java[Asmified]
+
+== References
+

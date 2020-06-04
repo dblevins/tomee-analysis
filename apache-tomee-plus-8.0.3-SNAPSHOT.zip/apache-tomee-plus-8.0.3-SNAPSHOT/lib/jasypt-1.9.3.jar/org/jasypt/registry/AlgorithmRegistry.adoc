@@ -1,0 +1,6 @@
+= org/jasypt/registry/AlgorithmRegistry.class
+
+ - link:AlgorithmRegistry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/tls/CertificateStatusType.class
+
+ - link:CertificateStatusType-asmified.java[Asmified]
+
+== References
+

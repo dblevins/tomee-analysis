@@ -1,0 +1,6 @@
+= javax/ws/rs/ext/ParamConverter$Lazy.class
+
+ - link:ParamConverter$Lazy-asmified.java[Asmified]
+
+== References
+

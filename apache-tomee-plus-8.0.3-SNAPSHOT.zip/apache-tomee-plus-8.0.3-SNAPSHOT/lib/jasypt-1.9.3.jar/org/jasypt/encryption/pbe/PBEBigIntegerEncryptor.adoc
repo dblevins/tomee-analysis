@@ -1,0 +1,6 @@
+= org/jasypt/encryption/pbe/PBEBigIntegerEncryptor.class
+
+ - link:PBEBigIntegerEncryptor-asmified.java[Asmified]
+
+== References
+

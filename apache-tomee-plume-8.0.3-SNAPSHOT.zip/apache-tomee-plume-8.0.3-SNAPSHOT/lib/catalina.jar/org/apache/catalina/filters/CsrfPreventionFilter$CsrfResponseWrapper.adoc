@@ -1,0 +1,8 @@
+= org/apache/catalina/filters/CsrfPreventionFilter$CsrfResponseWrapper.class
+
+ - link:CsrfPreventionFilter$CsrfResponseWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponseWrapper - 4
+ - javax.servlet.http.HttpServletResponse - 2

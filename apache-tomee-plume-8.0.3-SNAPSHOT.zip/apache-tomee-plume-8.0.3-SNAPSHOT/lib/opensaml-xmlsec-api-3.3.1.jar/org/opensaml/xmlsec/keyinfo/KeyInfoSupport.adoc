@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/keyinfo/KeyInfoSupport.class
+
+ - link:KeyInfoSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 47
+ - javax.annotation.Nullable - 20

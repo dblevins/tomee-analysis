@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/JpegDataContentHandler.class
+
+ - link:JpegDataContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 6
+ - javax.activation.ActivationDataFlavor - 2
+ - javax.activation.DataContentHandler - 1

@@ -1,0 +1,8 @@
+= org/apache/openejb/core/cmp/CmpEngineFactory.class
+
+ - link:CmpEngineFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2
+ - javax.transaction.TransactionSynchronizationRegistry - 1

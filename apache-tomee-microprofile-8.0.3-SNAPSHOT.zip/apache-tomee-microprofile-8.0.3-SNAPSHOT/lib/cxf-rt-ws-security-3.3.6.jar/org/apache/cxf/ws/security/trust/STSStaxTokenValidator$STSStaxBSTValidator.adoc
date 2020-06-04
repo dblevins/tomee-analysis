@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/security/trust/STSStaxTokenValidator$STSStaxBSTValidator.class
+
+ - link:STSStaxTokenValidator$STSStaxBSTValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4

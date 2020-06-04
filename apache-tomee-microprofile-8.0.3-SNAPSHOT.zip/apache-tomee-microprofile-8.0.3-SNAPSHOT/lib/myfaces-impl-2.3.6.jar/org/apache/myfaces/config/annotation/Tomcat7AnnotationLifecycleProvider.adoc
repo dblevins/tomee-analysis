@@ -1,0 +1,9 @@
+= org/apache/myfaces/config/annotation/Tomcat7AnnotationLifecycleProvider.class
+
+ - link:Tomcat7AnnotationLifecycleProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.FacesException - 2

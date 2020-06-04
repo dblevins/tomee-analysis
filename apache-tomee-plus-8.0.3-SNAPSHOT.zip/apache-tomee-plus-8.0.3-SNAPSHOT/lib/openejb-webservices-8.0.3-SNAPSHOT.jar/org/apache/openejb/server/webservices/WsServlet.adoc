@@ -1,0 +1,17 @@
+= org/apache/openejb/server/webservices/WsServlet.class
+
+ - link:WsServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 13
+ - javax.servlet.ServletException - 12
+ - javax.servlet.ServletContext - 10
+ - javax.xml.rpc.server.ServletEndpointContext - 9
+ - javax.xml.rpc.server.ServiceLifecycle - 6
+ - javax.servlet.http.HttpServletRequest - 4
+ - javax.servlet.http.HttpServletResponse - 4
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.xml.rpc.ServiceException - 2
+ - javax.servlet.Servlet - 1

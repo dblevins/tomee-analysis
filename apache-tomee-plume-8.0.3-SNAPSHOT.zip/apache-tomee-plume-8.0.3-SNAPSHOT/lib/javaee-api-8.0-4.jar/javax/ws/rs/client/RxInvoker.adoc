@@ -1,0 +1,8 @@
+= javax/ws/rs/client/RxInvoker.class
+
+ - link:RxInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.Entity - 9
+ - javax.ws.rs.core.GenericType - 8

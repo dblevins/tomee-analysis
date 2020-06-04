@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/mappings/ReturnInsertMetadata.class
+
+ - link:ReturnInsertMetadata-asmified.java[Asmified]
+
+== References
+

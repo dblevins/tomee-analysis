@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Distinct.class
+
+ - link:Distinct-asmified.java[Asmified]
+
+== References
+

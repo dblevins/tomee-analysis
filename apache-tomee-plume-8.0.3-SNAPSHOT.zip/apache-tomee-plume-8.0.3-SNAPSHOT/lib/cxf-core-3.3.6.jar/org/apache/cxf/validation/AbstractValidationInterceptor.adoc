@@ -1,0 +1,8 @@
+= org/apache/cxf/validation/AbstractValidationInterceptor.class
+
+ - link:AbstractValidationInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.executable.ValidateOnExecution - 4
+ - javax.validation.executable.ExecutableType - 2

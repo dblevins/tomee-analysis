@@ -1,0 +1,11 @@
+= com/sun/faces/mgbean/BeanManager$ScopeManager.class
+
+ - link:BeanManager$ScopeManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.application.Application - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.el.ValueExpression - 2
+ - javax.el.ELContext - 2

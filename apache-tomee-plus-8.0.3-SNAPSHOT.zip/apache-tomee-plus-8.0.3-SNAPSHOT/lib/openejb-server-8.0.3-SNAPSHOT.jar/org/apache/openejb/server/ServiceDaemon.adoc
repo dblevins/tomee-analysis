@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ServiceDaemon.class
+
+ - link:ServiceDaemon-asmified.java[Asmified]
+
+== References
+

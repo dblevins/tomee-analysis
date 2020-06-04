@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/AbstractHashedMap$HashIterator.class
+
+ - link:AbstractHashedMap$HashIterator-asmified.java[Asmified]
+
+== References
+

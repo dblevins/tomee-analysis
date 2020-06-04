@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/spring/AbstractJaxrsClassesScanServer.class
+
+ - link:AbstractJaxrsClassesScanServer-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.Provider - 2
+ - javax.ws.rs.Path - 2

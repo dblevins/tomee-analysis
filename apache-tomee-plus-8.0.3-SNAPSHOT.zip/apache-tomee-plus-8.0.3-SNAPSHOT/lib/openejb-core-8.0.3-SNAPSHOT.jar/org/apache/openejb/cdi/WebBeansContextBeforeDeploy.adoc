@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/WebBeansContextBeforeDeploy.class
+
+ - link:WebBeansContextBeforeDeploy-asmified.java[Asmified]
+
+== References
+

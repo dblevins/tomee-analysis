@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/DatabaseTypeQueryBNF.class
+
+ - link:DatabaseTypeQueryBNF-asmified.java[Asmified]
+
+== References
+

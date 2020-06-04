@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/OutboundSecurityContextImpl.class
+
+ - link:OutboundSecurityContextImpl-asmified.java[Asmified]
+
+== References
+

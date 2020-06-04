@@ -1,0 +1,6 @@
+= io/opentracing/tag/IntOrStringTag.class
+
+ - link:IntOrStringTag-asmified.java[Asmified]
+
+== References
+

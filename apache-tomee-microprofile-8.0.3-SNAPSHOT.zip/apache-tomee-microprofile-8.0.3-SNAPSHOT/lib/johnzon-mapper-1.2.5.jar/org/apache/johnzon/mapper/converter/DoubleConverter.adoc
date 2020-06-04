@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/DoubleConverter.class
+
+ - link:DoubleConverter-asmified.java[Asmified]
+
+== References
+

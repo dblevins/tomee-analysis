@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/Proxys.class
+
+ - link:Proxys-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 5
+ - javax.servlet.http.HttpServletRequest - 1

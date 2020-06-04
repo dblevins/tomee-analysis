@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/impl/FaceletCacheFactoryImpl.class
+
+ - link:FaceletCacheFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCacheFactory - 3
+ - javax.faces.view.facelets.FaceletCache - 1

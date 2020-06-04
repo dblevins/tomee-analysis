@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/UnaryFunctionalOperator.class
+
+ - link:UnaryFunctionalOperator-asmified.java[Asmified]
+
+== References
+

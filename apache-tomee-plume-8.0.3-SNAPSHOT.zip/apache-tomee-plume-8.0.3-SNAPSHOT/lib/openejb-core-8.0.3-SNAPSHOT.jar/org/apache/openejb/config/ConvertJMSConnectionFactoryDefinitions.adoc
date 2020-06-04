@@ -1,0 +1,7 @@
+= org/apache/openejb/config/ConvertJMSConnectionFactoryDefinitions.class
+
+ - link:ConvertJMSConnectionFactoryDefinitions-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.ConnectionFactory - 1

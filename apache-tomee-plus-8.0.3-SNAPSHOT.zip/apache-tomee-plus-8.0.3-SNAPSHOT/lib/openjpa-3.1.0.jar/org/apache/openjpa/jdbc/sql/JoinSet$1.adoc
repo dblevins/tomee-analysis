@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/JoinSet$1.class
+
+ - link:JoinSet$1-asmified.java[Asmified]
+
+== References
+

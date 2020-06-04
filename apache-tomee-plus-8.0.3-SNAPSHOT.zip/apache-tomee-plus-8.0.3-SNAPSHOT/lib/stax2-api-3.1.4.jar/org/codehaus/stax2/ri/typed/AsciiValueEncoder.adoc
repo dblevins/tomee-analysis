@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/typed/AsciiValueEncoder.class
+
+ - link:AsciiValueEncoder-asmified.java[Asmified]
+
+== References
+

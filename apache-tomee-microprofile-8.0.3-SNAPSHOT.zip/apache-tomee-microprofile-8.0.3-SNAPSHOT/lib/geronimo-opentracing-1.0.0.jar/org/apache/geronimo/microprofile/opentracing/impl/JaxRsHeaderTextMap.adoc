@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/opentracing/impl/JaxRsHeaderTextMap.class
+
+ - link:JaxRsHeaderTextMap-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 11

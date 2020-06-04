@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/pool/PoolConfiguration.class
+
+ - link:PoolConfiguration-asmified.java[Asmified]
+
+== References
+

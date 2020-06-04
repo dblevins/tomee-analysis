@@ -1,0 +1,8 @@
+= org/apache/openejb/ri/sp/PseudoPolicyConfigurationFactory$1.class
+
+ - link:PseudoPolicyConfigurationFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.PolicyContextException - 14
+ - javax.security.jacc.PolicyConfiguration - 2

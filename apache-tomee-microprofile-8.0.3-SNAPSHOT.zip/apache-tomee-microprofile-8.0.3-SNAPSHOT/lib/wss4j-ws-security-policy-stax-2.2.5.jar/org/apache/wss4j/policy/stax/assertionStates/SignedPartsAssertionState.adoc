@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/stax/assertionStates/SignedPartsAssertionState.class
+
+ - link:SignedPartsAssertionState-asmified.java[Asmified]
+
+== References
+

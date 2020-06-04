@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/XMLSessionConfigToplinkProject.class
+
+ - link:XMLSessionConfigToplinkProject-asmified.java[Asmified]
+
+== References
+

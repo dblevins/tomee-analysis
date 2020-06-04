@@ -1,0 +1,8 @@
+= org/apache/geronimo/connector/outbound/transactionlog/LogXAResource.class
+
+ - link:LogXAResource-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.LocalTransaction - 7
+ - javax.resource.ResourceException - 4

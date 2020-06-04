@@ -1,0 +1,6 @@
+= org/hsqldb/lib/StringInputStream.class
+
+ - link:StringInputStream-asmified.java[Asmified]
+
+== References
+

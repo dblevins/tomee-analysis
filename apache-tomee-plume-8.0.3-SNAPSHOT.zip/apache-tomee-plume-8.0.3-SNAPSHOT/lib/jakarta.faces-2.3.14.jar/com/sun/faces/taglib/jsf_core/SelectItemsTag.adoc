@@ -1,0 +1,9 @@
+= com/sun/faces/taglib/jsf_core/SelectItemsTag.class
+
+ - link:SelectItemsTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 42
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.webapp.UIComponentELTag - 3

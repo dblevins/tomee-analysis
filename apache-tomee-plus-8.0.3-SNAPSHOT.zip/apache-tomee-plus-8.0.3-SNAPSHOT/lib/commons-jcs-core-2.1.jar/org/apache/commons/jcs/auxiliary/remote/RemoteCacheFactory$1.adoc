@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/remote/RemoteCacheFactory$1.class
+
+ - link:RemoteCacheFactory$1-asmified.java[Asmified]
+
+== References
+

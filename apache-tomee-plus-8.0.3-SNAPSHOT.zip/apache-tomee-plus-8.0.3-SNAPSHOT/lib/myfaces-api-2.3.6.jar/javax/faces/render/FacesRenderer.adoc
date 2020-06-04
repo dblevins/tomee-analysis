@@ -1,0 +1,6 @@
+= javax/faces/render/FacesRenderer.class
+
+ - link:FacesRenderer-asmified.java[Asmified]
+
+== References
+

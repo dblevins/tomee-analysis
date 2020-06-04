@@ -1,0 +1,8 @@
+= org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter.class
+
+ - link:XMLStreamReaderToXMLStreamWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.attachment.AttachmentMarshaller - 4
+ - javax.activation.DataHandler - 2

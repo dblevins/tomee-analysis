@@ -1,0 +1,9 @@
+= javax/ws/rs/core/Link$JaxbLink.class
+
+ - link:Link$JaxbLink-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Link$JaxbLink - 5
+ - javax.xml.bind.annotation.XmlAttribute - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1

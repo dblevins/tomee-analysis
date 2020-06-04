@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/CommitOrderType.class
+
+ - link:CommitOrderType-asmified.java[Asmified]
+
+== References
+

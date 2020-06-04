@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/SPConstants$IncludeTokenType.class
+
+ - link:SPConstants$IncludeTokenType-asmified.java[Asmified]
+
+== References
+

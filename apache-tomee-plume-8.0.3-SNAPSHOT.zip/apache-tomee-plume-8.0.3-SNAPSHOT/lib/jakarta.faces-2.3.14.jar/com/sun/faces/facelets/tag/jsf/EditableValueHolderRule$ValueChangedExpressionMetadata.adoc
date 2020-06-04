@@ -1,0 +1,13 @@
+= com/sun/faces/facelets/tag/jsf/EditableValueHolderRule$ValueChangedExpressionMetadata.class
+
+ - link:EditableValueHolderRule$ValueChangedExpressionMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.event.MethodExpressionValueChangeListener - 2
+ - javax.faces.component.EditableValueHolder - 2
+ - javax.el.MethodExpression - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.event.ValueChangeListener - 1

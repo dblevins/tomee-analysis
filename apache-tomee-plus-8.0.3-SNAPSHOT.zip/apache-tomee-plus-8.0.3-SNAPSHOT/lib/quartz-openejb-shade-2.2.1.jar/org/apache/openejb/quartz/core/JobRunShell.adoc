@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/JobRunShell.class
+
+ - link:JobRunShell-asmified.java[Asmified]
+
+== References
+

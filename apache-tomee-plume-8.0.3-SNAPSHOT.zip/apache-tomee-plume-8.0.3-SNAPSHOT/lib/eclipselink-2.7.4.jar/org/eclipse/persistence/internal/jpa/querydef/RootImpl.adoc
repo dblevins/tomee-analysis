@@ -1,0 +1,12 @@
+= org/eclipse/persistence/internal/jpa/querydef/RootImpl.class
+
+ - link:RootImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Bindable - 5
+ - javax.persistence.metamodel.ManagedType - 4
+ - javax.persistence.metamodel.Metamodel - 4
+ - javax.persistence.metamodel.EntityType - 3
+ - javax.persistence.criteria.Path - 2
+ - javax.persistence.criteria.Root - 1

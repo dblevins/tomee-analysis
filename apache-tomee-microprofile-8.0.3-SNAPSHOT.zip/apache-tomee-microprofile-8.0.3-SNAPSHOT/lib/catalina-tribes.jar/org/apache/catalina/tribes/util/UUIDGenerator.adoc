@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/util/UUIDGenerator.class
+
+ - link:UUIDGenerator-asmified.java[Asmified]
+
+== References
+

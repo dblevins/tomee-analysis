@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/graph/DepthFirstAnalysis$NodeInfoComparator.class
+
+ - link:DepthFirstAnalysis$NodeInfoComparator-asmified.java[Asmified]
+
+== References
+

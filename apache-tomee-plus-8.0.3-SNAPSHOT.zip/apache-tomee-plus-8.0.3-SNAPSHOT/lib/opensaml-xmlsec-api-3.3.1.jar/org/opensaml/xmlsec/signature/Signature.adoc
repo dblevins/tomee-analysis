@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/signature/Signature.class
+
+ - link:Signature-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 10
+ - javax.annotation.Nonnull - 1

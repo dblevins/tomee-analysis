@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/security/DelegatingAccessControlService.class
+
+ - link:DelegatingAccessControlService-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/CodeGenerator.class
+
+ - link:CodeGenerator-asmified.java[Asmified]
+
+== References
+

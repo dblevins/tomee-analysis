@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/CompositeValidatorMappingProvider.class
+
+ - link:CompositeValidatorMappingProvider-asmified.java[Asmified]
+
+== References
+

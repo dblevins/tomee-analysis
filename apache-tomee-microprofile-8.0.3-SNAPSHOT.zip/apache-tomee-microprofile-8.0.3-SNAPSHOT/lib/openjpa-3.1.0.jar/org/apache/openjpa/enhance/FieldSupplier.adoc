@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/FieldSupplier.class
+
+ - link:FieldSupplier-asmified.java[Asmified]
+
+== References
+

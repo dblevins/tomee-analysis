@@ -1,0 +1,9 @@
+= javax/mail/search/AndTerm.class
+
+ - link:AndTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.SearchTerm - 19
+ - javax.mail.Message - 2
+ - javax.mail.search.AndTerm - 2

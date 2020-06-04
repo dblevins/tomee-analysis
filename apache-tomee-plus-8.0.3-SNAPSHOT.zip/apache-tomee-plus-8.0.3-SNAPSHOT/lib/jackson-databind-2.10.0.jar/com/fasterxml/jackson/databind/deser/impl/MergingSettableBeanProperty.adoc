@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/MergingSettableBeanProperty.class
+
+ - link:MergingSettableBeanProperty-asmified.java[Asmified]
+
+== References
+

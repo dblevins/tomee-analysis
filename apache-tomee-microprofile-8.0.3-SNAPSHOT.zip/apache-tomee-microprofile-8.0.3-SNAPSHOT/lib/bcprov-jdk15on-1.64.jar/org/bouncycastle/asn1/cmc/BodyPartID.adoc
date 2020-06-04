@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/BodyPartID.class
+
+ - link:BodyPartID-asmified.java[Asmified]
+
+== References
+

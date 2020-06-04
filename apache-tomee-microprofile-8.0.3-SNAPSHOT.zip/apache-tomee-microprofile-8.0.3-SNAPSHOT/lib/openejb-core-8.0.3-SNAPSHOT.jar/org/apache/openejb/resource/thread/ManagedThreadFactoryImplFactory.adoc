@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/thread/ManagedThreadFactoryImplFactory.class
+
+ - link:ManagedThreadFactoryImplFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedThreadFactory - 1

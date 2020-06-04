@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxws/CXFService.class
+
+ - link:CXFService-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceFeature - 8
+ - javax.xml.ws.Service - 6
+ - javax.xml.ws.WebServiceException - 4
+ - javax.xml.ws.spi.ServiceDelegate - 4

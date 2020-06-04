@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/soap/MessageImpl$1.class
+
+ - link:MessageImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1

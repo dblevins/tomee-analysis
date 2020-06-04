@@ -1,0 +1,6 @@
+= javax/enterprise/deploy/spi/exceptions/InvalidModuleException.class
+
+ - link:InvalidModuleException-asmified.java[Asmified]
+
+== References
+

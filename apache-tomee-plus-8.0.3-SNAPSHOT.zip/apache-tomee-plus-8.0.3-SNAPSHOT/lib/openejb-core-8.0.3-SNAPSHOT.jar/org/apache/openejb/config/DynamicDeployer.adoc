@@ -1,0 +1,6 @@
+= org/apache/openejb/config/DynamicDeployer.class
+
+ - link:DynamicDeployer-asmified.java[Asmified]
+
+== References
+

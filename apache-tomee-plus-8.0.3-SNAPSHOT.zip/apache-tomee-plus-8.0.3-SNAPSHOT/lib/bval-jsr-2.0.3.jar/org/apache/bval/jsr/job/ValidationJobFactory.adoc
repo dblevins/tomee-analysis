@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/job/ValidationJobFactory.class
+
+ - link:ValidationJobFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 2

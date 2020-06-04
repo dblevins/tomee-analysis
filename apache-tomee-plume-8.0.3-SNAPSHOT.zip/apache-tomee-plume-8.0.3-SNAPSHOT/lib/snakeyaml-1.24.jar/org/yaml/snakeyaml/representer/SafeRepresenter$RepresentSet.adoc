@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentSet.class
+
+ - link:SafeRepresenter$RepresentSet-asmified.java[Asmified]
+
+== References
+

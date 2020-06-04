@@ -1,0 +1,6 @@
+= org/jose4j/jwe/SimpleAeadCipher.class
+
+ - link:SimpleAeadCipher-asmified.java[Asmified]
+
+== References
+

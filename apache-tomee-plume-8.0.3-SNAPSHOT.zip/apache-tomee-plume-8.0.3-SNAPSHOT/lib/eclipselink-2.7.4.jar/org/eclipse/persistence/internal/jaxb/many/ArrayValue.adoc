@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/many/ArrayValue.class
+
+ - link:ArrayValue-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlTransient - 1

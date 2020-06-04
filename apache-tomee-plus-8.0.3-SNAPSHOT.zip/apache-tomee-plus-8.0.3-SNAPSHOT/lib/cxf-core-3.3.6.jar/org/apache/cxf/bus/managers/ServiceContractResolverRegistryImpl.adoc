@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/managers/ServiceContractResolverRegistryImpl.class
+
+ - link:ServiceContractResolverRegistryImpl-asmified.java[Asmified]
+
+== References
+

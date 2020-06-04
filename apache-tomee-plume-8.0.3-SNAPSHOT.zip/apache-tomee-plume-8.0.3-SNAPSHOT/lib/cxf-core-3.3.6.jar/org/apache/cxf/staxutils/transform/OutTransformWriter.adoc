@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/transform/OutTransformWriter.class
+
+ - link:OutTransformWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/rsa/PSSSignatureSpi$SHA3_512withRSA.class
+
+ - link:PSSSignatureSpi$SHA3_512withRSA-asmified.java[Asmified]
+
+== References
+

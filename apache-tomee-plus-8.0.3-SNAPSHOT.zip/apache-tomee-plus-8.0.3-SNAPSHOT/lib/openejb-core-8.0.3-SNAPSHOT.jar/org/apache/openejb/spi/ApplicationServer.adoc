@@ -1,0 +1,11 @@
+= org/apache/openejb/spi/ApplicationServer.class
+
+ - link:ApplicationServer-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.EJBObject - 1
+ - javax.ejb.HomeHandle - 1
+ - javax.ejb.EJBMetaData - 1
+ - javax.ejb.Handle - 1

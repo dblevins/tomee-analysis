@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/IvmContext.class
+
+ - link:IvmContext-asmified.java[Asmified]
+
+== References
+

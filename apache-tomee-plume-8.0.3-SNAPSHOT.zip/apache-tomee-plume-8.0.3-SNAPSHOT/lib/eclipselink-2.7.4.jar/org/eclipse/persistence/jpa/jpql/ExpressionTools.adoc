@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/ExpressionTools.class
+
+ - link:ExpressionTools-asmified.java[Asmified]
+
+== References
+

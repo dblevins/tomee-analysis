@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/objects/MetadataAsmFactory$MetadataMethodVisitor.class
+
+ - link:MetadataAsmFactory$MetadataMethodVisitor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/spnego/SpnegoClientAction.class
+
+ - link:SpnegoClientAction-asmified.java[Asmified]
+
+== References
+

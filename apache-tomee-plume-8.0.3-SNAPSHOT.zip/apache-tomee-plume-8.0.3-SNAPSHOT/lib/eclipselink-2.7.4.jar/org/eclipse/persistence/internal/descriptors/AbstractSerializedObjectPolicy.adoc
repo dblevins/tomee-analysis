@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/AbstractSerializedObjectPolicy.class
+
+ - link:AbstractSerializedObjectPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/validation/AttributeContainer.class
+
+ - link:AttributeContainer-asmified.java[Asmified]
+
+== References
+

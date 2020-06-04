@@ -1,0 +1,6 @@
+= javax/jws/Oneway.class
+
+ - link:Oneway-asmified.java[Asmified]
+
+== References
+

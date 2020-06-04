@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/SystemInstance.class
+
+ - link:SystemInstance-asmified.java[Asmified]
+
+== References
+

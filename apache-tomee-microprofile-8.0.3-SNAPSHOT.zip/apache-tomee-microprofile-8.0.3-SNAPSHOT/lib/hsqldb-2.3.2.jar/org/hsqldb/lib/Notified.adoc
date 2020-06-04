@@ -1,0 +1,6 @@
+= org/hsqldb/lib/Notified.class
+
+ - link:Notified-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= javax/el/MethodExpression.class
+
+ - link:MethodExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.Expression - 2
+ - javax.el.ELContext - 2
+ - javax.el.MethodInfo - 1

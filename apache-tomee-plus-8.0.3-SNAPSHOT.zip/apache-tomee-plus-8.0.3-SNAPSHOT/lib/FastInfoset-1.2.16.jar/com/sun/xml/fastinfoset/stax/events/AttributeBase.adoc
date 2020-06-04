@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/AttributeBase.class
+
+ - link:AttributeBase-asmified.java[Asmified]
+
+== References
+

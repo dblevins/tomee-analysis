@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/logic/CaseInsensitiveStringMatchPredicate.class
+
+ - link:CaseInsensitiveStringMatchPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

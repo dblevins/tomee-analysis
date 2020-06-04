@@ -1,0 +1,6 @@
+= org/apache/webbeans/service/DefaultLoaderService.class
+
+ - link:DefaultLoaderService-asmified.java[Asmified]
+
+== References
+

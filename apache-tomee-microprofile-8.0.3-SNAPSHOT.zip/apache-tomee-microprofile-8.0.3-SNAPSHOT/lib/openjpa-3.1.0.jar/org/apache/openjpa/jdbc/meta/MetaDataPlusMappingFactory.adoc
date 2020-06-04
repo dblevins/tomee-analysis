@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MetaDataPlusMappingFactory.class
+
+ - link:MetaDataPlusMappingFactory-asmified.java[Asmified]
+
+== References
+

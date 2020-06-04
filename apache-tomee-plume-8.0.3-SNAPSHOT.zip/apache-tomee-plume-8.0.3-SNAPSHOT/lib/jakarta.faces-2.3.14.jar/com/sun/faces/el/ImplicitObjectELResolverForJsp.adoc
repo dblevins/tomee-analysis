@@ -1,0 +1,16 @@
+= com/sun/faces/el/ImplicitObjectELResolverForJsp.class
+
+ - link:ImplicitObjectELResolverForJsp-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 15
+ - javax.faces.context.FacesContext - 8
+ - javax.el.PropertyNotFoundException - 8
+ - javax.faces.component.UIViewRoot - 4
+ - javax.el.ELException - 4
+ - javax.el.PropertyNotWritableException - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.context.Flash - 1
+ - javax.faces.application.ResourceHandler - 1

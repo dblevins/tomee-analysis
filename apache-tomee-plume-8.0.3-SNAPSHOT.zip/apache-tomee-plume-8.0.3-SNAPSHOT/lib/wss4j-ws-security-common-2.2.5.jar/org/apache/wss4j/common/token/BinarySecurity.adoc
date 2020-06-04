@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/token/BinarySecurity.class
+
+ - link:BinarySecurity-asmified.java[Asmified]
+
+== References
+

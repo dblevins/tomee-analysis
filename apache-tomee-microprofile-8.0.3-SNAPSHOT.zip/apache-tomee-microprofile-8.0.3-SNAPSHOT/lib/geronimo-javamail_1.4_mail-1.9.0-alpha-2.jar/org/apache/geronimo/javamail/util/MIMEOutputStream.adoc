@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/util/MIMEOutputStream.class
+
+ - link:MIMEOutputStream-asmified.java[Asmified]
+
+== References
+

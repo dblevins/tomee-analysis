@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AuthnQueryServiceUnmarshaller.class
+
+ - link:AuthnQueryServiceUnmarshaller-asmified.java[Asmified]
+
+== References
+

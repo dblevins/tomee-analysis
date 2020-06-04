@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2alg/impl/DigestMethodMarshaller.class
+
+ - link:DigestMethodMarshaller-asmified.java[Asmified]
+
+== References
+

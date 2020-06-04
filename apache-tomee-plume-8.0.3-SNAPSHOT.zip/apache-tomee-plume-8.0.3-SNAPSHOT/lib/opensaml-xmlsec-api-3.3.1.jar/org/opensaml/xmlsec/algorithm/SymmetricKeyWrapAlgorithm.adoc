@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/algorithm/SymmetricKeyWrapAlgorithm.class
+
+ - link:SymmetricKeyWrapAlgorithm-asmified.java[Asmified]
+
+== References
+

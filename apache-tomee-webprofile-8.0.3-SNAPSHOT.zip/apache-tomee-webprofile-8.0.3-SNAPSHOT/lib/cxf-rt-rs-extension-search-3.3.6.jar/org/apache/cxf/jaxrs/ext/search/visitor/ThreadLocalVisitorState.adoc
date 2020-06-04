@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/visitor/ThreadLocalVisitorState.class
+
+ - link:ThreadLocalVisitorState-asmified.java[Asmified]
+
+== References
+

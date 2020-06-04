@@ -1,0 +1,8 @@
+= org/apache/myfaces/lifecycle/RestoreViewSupport.class
+
+ - link:RestoreViewSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.component.UIComponent - 1

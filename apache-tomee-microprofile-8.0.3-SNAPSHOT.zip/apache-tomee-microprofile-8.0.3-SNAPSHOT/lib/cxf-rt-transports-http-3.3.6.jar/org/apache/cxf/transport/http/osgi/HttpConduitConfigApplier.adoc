@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/osgi/HttpConduitConfigApplier.class
+
+ - link:HttpConduitConfigApplier-asmified.java[Asmified]
+
+== References
+

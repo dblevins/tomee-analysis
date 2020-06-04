@@ -1,0 +1,6 @@
+= serp/bytecode/NewArrayInstruction.class
+
+ - link:NewArrayInstruction-asmified.java[Asmified]
+
+== References
+

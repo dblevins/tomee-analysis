@@ -1,0 +1,6 @@
+= org/apache/activemq/network/MBeanBridgeDestination$NetworkDestinationContainer.class
+
+ - link:MBeanBridgeDestination$NetworkDestinationContainer-asmified.java[Asmified]
+
+== References
+

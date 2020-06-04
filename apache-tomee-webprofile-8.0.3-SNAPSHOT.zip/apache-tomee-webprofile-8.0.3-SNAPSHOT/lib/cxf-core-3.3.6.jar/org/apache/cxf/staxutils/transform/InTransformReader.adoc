@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/transform/InTransformReader.class
+
+ - link:InTransformReader-asmified.java[Asmified]
+
+== References
+

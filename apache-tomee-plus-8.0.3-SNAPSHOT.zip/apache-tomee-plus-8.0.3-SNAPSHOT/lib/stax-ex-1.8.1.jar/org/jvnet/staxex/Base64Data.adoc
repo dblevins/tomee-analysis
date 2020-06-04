@@ -1,0 +1,8 @@
+= org/jvnet/staxex/Base64Data.class
+
+ - link:Base64Data-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 27
+ - javax.activation.DataSource - 5

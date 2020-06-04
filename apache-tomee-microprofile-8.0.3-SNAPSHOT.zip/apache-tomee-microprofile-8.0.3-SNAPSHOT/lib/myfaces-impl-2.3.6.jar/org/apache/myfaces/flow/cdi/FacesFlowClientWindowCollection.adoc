@@ -1,0 +1,6 @@
+= org/apache/myfaces/flow/cdi/FacesFlowClientWindowCollection.class
+
+ - link:FacesFlowClientWindowCollection-asmified.java[Asmified]
+
+== References
+

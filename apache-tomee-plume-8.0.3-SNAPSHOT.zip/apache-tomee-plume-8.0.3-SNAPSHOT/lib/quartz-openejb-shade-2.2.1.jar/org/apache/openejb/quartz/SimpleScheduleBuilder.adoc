@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/SimpleScheduleBuilder.class
+
+ - link:SimpleScheduleBuilder-asmified.java[Asmified]
+
+== References
+

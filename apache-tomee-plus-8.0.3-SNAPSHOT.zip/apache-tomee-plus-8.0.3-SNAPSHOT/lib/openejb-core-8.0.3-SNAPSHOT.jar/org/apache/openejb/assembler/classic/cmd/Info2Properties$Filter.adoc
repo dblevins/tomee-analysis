@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/cmd/Info2Properties$Filter.class
+
+ - link:Info2Properties$Filter-asmified.java[Asmified]
+
+== References
+

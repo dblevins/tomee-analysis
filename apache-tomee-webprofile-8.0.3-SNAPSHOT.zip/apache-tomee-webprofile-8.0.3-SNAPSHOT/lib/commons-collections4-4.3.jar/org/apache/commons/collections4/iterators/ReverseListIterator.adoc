@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/ReverseListIterator.class
+
+ - link:ReverseListIterator-asmified.java[Asmified]
+
+== References
+

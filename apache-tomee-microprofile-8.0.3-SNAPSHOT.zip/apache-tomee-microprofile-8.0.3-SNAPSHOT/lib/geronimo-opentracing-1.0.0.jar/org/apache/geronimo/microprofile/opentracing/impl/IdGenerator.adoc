@@ -1,0 +1,9 @@
+= org/apache/geronimo/microprofile/opentracing/impl/IdGenerator.class
+
+ - link:IdGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Inject - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.enterprise.context.ApplicationScoped - 1

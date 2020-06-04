@@ -1,0 +1,6 @@
+= org/apache/batchee/container/impl/controller/chunk/ChunkHelper.class
+
+ - link:ChunkHelper-asmified.java[Asmified]
+
+== References
+

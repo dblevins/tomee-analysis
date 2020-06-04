@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/engine/logging/behavior/ICacheEventLogger.class
+
+ - link:ICacheEventLogger-asmified.java[Asmified]
+
+== References
+

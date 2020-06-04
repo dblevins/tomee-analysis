@@ -1,0 +1,6 @@
+= org/jasypt/contrib/org/apache/commons/codec_1_3/BinaryEncoder.class
+
+ - link:BinaryEncoder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/descriptor/web/SetPublicIdRule.class
+
+ - link:SetPublicIdRule-asmified.java[Asmified]
+
+== References
+

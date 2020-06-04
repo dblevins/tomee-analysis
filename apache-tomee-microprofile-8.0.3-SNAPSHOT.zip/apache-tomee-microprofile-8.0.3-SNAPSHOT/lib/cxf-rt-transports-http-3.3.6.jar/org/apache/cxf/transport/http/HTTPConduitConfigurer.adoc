@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/HTTPConduitConfigurer.class
+
+ - link:HTTPConduitConfigurer-asmified.java[Asmified]
+
+== References
+

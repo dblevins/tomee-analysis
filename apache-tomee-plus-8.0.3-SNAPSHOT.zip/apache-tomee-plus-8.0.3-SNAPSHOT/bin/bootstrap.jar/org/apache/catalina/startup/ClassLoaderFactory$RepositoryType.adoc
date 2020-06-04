@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/ClassLoaderFactory$RepositoryType.class
+
+ - link:ClassLoaderFactory$RepositoryType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/webbeans/event/EventMetadataImpl.class
+
+ - link:EventMetadataImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 9
+ - javax.enterprise.util.TypeLiteral - 3
+ - javax.enterprise.inject.spi.EventMetadata - 1

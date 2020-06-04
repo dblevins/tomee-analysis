@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/CharSequenceUtils.class
+
+ - link:CharSequenceUtils-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/converters/ClassInstanceConverter.class
+
+ - link:ClassInstanceConverter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,19 @@
+= org/apache/myfaces/application/ResourceHandlerImpl.class
+
+ - link:ResourceHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 141
+ - javax.faces.application.Resource - 71
+ - javax.faces.context.ExternalContext - 41
+ - javax.servlet.http.HttpServletResponse - 21
+ - javax.faces.application.Application - 16
+ - javax.faces.application.ResourceHandler - 10
+ - javax.faces.component.UIViewRoot - 7
+ - javax.faces.component.TransientStateHelper - 4
+ - javax.faces.application.ResourceWrapper - 3
+ - javax.faces.application.ResourceVisitOption - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.ViewResource - 1
+ - javax.servlet.ServletOutputStream - 1

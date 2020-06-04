@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/ConnectionInfo.class
+
+ - link:ConnectionInfo-asmified.java[Asmified]
+
+== References
+

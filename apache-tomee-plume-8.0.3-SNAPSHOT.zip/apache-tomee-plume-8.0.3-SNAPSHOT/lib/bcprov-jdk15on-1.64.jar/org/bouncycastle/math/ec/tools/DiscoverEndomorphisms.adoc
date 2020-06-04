@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/tools/DiscoverEndomorphisms.class
+
+ - link:DiscoverEndomorphisms-asmified.java[Asmified]
+
+== References
+

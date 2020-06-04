@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/archive/ClasspathArchive.class
+
+ - link:ClasspathArchive-asmified.java[Asmified]
+
+== References
+

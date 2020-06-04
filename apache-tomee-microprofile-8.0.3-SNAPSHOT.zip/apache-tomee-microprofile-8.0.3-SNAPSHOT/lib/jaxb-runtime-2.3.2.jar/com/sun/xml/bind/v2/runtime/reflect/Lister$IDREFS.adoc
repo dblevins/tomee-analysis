@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/Lister$IDREFS.class
+
+ - link:Lister$IDREFS-asmified.java[Asmified]
+
+== References
+

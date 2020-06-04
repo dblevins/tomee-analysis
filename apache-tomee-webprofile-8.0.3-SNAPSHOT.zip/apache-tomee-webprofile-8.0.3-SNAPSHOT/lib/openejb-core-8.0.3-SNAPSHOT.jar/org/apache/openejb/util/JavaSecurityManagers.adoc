@@ -1,0 +1,7 @@
+= org/apache/openejb/util/JavaSecurityManagers.class
+
+ - link:JavaSecurityManagers-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.PolicyContext - 1

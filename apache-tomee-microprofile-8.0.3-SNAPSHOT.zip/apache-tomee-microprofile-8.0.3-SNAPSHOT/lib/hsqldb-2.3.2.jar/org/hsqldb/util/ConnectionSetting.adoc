@@ -1,0 +1,6 @@
+= org/hsqldb/util/ConnectionSetting.class
+
+ - link:ConnectionSetting-asmified.java[Asmified]
+
+== References
+

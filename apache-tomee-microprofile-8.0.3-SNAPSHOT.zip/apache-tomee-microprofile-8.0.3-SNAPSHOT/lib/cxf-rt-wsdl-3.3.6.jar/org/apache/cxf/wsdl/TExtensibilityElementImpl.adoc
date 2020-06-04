@@ -1,0 +1,8 @@
+= org/apache/cxf/wsdl/TExtensibilityElementImpl.class
+
+ - link:TExtensibilityElementImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlTransient - 2
+ - javax.xml.bind.annotation.XmlAttribute - 1

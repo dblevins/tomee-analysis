@@ -1,0 +1,6 @@
+= org/apache/openejb/config/EmptyEjbJar.class
+
+ - link:EmptyEjbJar-asmified.java[Asmified]
+
+== References
+

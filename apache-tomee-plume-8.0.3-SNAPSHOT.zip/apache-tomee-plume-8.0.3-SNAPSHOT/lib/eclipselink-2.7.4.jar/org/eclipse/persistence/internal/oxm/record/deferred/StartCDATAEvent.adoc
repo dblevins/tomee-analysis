@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/StartCDATAEvent.class
+
+ - link:StartCDATAEvent-asmified.java[Asmified]
+
+== References
+

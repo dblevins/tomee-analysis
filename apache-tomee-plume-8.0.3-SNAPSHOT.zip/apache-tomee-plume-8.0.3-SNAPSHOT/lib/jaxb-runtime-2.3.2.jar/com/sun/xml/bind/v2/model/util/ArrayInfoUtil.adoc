@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/util/ArrayInfoUtil.class
+
+ - link:ArrayInfoUtil-asmified.java[Asmified]
+
+== References
+

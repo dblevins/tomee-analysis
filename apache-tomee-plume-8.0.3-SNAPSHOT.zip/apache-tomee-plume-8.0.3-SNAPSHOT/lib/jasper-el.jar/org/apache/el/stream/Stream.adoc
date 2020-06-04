@@ -1,0 +1,9 @@
+= org/apache/el/stream/Stream.class
+
+ - link:Stream-asmified.java[Asmified]
+
+== References
+
+ - javax.el.LambdaExpression - 31
+ - javax.el.ELException - 4
+ - javax.el.ELContext - 2

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/AnnotatedClassResolver.class
+
+ - link:AnnotatedClassResolver-asmified.java[Asmified]
+
+== References
+

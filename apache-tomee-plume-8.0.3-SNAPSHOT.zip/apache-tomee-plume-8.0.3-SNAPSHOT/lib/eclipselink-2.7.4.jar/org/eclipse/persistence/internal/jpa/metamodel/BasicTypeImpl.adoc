@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/metamodel/BasicTypeImpl.class
+
+ - link:BasicTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type$PersistenceType - 2
+ - javax.persistence.metamodel.BasicType - 1

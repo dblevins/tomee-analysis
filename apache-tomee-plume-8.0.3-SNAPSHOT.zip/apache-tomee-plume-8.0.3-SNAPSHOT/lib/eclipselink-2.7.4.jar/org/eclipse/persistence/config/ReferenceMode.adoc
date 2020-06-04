@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ReferenceMode.class
+
+ - link:ReferenceMode-asmified.java[Asmified]
+
+== References
+

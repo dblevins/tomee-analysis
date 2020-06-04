@@ -1,0 +1,8 @@
+= javax/resource/cci/ResourceWarning.class
+
+ - link:ResourceWarning-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 6
+ - javax.resource.cci.ResourceWarning - 5

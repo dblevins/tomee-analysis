@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/Node.class
+
+ - link:Node-asmified.java[Asmified]
+
+== References
+

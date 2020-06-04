@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/util/DigestOutputStream.class
+
+ - link:DigestOutputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,12 @@
+= org/apache/cxf/ws/addressing/v200403/ReplyAfterType.class
+
+ - link:ReplyAfterType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.xml.bind.annotation.XmlSchemaType - 1
+ - javax.xml.bind.annotation.XmlValue - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

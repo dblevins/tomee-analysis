@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/rsa/DigestSignatureSpi.class
+
+ - link:DigestSignatureSpi-asmified.java[Asmified]
+
+== References
+

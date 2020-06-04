@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/transport/util/CxfUtil.class
+
+ - link:CxfUtil-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/source/mime/CustomExtensionRegistry.class
+
+ - link:CustomExtensionRegistry-asmified.java[Asmified]
+
+== References
+

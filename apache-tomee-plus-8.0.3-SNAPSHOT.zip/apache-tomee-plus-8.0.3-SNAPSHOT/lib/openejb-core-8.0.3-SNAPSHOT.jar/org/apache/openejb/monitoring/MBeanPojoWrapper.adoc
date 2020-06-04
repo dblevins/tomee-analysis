@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/MBeanPojoWrapper.class
+
+ - link:MBeanPojoWrapper-asmified.java[Asmified]
+
+== References
+

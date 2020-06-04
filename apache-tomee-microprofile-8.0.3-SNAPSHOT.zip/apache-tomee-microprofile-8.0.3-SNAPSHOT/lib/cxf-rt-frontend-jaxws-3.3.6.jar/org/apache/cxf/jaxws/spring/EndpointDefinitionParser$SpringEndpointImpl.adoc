@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/spring/EndpointDefinitionParser$SpringEndpointImpl.class
+
+ - link:EndpointDefinitionParser$SpringEndpointImpl-asmified.java[Asmified]
+
+== References
+

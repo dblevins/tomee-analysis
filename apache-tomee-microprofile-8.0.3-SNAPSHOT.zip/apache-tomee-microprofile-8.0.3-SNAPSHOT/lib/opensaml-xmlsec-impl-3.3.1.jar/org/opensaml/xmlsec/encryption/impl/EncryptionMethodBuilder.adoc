@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/EncryptionMethodBuilder.class
+
+ - link:EncryptionMethodBuilder-asmified.java[Asmified]
+
+== References
+

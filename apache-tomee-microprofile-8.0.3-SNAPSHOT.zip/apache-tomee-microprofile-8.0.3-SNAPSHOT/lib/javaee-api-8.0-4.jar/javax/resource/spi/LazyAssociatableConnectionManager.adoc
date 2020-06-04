@@ -1,0 +1,9 @@
+= javax/resource/spi/LazyAssociatableConnectionManager.class
+
+ - link:LazyAssociatableConnectionManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ManagedConnectionFactory - 2
+ - javax.resource.ResourceException - 1
+ - javax.resource.spi.ConnectionRequestInfo - 1

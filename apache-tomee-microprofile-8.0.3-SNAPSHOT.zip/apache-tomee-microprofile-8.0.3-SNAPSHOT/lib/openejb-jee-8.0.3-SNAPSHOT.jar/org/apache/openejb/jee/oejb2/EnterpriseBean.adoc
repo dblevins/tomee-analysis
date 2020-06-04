@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/oejb2/EnterpriseBean.class
+
+ - link:EnterpriseBean-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 1

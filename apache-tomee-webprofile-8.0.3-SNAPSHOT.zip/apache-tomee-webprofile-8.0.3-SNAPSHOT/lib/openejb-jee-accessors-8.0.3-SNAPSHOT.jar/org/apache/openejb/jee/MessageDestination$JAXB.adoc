@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/MessageDestination$JAXB.class
+
+ - link:MessageDestination$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 23

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/TypeLit.class
+
+ - link:TypeLit-asmified.java[Asmified]
+
+== References
+

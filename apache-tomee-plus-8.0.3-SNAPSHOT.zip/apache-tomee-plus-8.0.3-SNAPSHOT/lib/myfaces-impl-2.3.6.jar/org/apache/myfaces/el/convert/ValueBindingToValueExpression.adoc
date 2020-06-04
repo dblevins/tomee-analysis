@@ -1,0 +1,16 @@
+= org/apache/myfaces/el/convert/ValueBindingToValueExpression.class
+
+ - link:ValueBindingToValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.ValueBinding - 35
+ - javax.faces.context.FacesContext - 13
+ - javax.el.ELContext - 12
+ - javax.faces.component.StateHolder - 6
+ - javax.el.ELException - 6
+ - javax.el.PropertyNotFoundException - 6
+ - javax.faces.el.PropertyNotFoundException - 3
+ - javax.faces.el.EvaluationException - 3
+ - javax.el.ValueExpression - 3
+ - javax.el.PropertyNotWritableException - 1

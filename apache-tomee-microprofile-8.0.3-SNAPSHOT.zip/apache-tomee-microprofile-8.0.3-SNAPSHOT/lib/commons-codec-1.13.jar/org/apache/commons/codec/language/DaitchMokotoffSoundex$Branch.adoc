@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch.class
+
+ - link:DaitchMokotoffSoundex$Branch-asmified.java[Asmified]
+
+== References
+

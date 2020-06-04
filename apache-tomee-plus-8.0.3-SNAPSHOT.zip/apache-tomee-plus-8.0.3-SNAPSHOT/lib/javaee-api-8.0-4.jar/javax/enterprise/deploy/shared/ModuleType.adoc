@@ -1,0 +1,7 @@
+= javax/enterprise/deploy/shared/ModuleType.class
+
+ - link:ModuleType-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.shared.ModuleType - 32

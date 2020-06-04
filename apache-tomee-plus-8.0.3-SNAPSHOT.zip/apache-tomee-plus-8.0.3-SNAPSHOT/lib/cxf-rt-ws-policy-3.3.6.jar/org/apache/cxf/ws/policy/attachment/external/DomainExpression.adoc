@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/attachment/external/DomainExpression.class
+
+ - link:DomainExpression-asmified.java[Asmified]
+
+== References
+

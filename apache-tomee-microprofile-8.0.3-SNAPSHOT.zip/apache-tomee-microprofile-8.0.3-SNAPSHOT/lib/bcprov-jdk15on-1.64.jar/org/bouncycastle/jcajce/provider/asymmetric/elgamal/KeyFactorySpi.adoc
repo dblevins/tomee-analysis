@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/elgamal/KeyFactorySpi.class
+
+ - link:KeyFactorySpi-asmified.java[Asmified]
+
+== References
+

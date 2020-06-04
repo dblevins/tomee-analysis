@@ -1,0 +1,6 @@
+= com/ctc/wstx/cfg/OutputConfigFlags.class
+
+ - link:OutputConfigFlags-asmified.java[Asmified]
+
+== References
+

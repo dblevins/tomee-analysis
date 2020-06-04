@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/AbstractDomainObject.class
+
+ - link:AbstractDomainObject-asmified.java[Asmified]
+
+== References
+

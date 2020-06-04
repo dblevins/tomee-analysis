@@ -1,0 +1,11 @@
+= com/sun/faces/renderkit/ClientSideStateHelper.class
+
+ - link:ClientSideStateHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 40
+ - javax.faces.FacesException - 12
+ - javax.faces.context.ResponseWriter - 11
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.component.UIComponent - 1

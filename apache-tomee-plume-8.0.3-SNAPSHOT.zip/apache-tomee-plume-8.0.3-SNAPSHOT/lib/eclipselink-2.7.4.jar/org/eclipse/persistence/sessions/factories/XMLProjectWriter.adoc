@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/XMLProjectWriter.class
+
+ - link:XMLProjectWriter-asmified.java[Asmified]
+
+== References
+

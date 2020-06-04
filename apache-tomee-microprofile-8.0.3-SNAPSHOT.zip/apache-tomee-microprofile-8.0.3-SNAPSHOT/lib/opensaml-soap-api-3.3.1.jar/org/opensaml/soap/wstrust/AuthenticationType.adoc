@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/AuthenticationType.class
+
+ - link:AuthenticationType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/validation/constraints/PositiveOrZero$List.class
+
+ - link:PositiveOrZero$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.PositiveOrZero - 1

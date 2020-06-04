@@ -1,0 +1,11 @@
+= org/apache/myfaces/taglib/core/VerbatimTag.class
+
+ - link:VerbatimTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 10
+ - javax.faces.component.UIComponent - 6
+ - javax.servlet.jsp.tagext.BodyContent - 4
+ - javax.faces.component.UIOutput - 2
+ - javax.servlet.jsp.JspException - 1

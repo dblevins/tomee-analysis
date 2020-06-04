@@ -1,0 +1,17 @@
+= org/eclipse/persistence/internal/jpa/QueryImpl.class
+
+ - link:QueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Parameter - 30
+ - javax.persistence.PersistenceException - 21
+ - javax.persistence.LockModeType - 20
+ - javax.persistence.LockTimeoutException - 8
+ - javax.persistence.FlushModeType - 6
+ - javax.persistence.TemporalType - 4
+ - javax.persistence.NonUniqueResultException - 2
+ - javax.persistence.NoResultException - 2
+ - javax.persistence.PessimisticLockException - 2
+ - javax.persistence.metamodel.Metamodel - 2
+ - javax.persistence.Query - 1

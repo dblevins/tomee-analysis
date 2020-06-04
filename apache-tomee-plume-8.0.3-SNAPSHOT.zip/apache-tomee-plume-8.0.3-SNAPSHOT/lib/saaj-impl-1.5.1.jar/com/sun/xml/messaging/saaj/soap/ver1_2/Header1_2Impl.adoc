@@ -1,0 +1,10 @@
+= com/sun/xml/messaging/saaj/soap/ver1_2/Header1_2Impl.class
+
+ - link:Header1_2Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 11
+ - javax.xml.soap.Name - 9
+ - javax.xml.soap.SOAPElement - 8
+ - javax.xml.soap.SOAPHeaderElement - 6

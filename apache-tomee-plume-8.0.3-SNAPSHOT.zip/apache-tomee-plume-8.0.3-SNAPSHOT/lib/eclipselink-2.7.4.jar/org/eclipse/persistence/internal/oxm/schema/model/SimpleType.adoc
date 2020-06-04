@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/SimpleType.class
+
+ - link:SimpleType-asmified.java[Asmified]
+
+== References
+

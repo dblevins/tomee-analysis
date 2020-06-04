@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/Yaml$YamlIterable.class
+
+ - link:Yaml$YamlIterable-asmified.java[Asmified]
+
+== References
+

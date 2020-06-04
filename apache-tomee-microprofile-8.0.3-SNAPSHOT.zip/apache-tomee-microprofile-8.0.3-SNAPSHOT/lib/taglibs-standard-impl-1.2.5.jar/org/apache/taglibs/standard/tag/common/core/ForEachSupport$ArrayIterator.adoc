@@ -1,0 +1,6 @@
+= org/apache/taglibs/standard/tag/common/core/ForEachSupport$ArrayIterator.class
+
+ - link:ForEachSupport$ArrayIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/logging/Log4jLoggerFactory.class
+
+ - link:Log4jLoggerFactory-asmified.java[Asmified]
+
+== References
+

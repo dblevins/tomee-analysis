@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/concurrent/ConcurrentReferenceHashSet.class
+
+ - link:ConcurrentReferenceHashSet-asmified.java[Asmified]
+
+== References
+

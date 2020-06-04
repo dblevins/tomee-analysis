@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jwk/KeyOperation.class
+
+ - link:KeyOperation-asmified.java[Asmified]
+
+== References
+

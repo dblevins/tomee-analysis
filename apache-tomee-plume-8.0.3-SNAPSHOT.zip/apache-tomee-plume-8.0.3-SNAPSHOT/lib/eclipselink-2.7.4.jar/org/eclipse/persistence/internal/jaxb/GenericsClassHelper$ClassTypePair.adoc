@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/GenericsClassHelper$ClassTypePair.class
+
+ - link:GenericsClassHelper$ClassTypePair-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/FormatSchema.class
+
+ - link:FormatSchema-asmified.java[Asmified]
+
+== References
+

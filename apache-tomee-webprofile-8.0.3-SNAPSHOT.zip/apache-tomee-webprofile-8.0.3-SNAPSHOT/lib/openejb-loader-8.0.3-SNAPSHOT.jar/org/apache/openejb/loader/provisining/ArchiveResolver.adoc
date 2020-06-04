@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/provisining/ArchiveResolver.class
+
+ - link:ArchiveResolver-asmified.java[Asmified]
+
+== References
+

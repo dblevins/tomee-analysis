@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/ApplyType.class
+
+ - link:ApplyType-asmified.java[Asmified]
+
+== References
+

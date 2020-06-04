@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/bcel/classfile/JavaClass.class
+
+ - link:JavaClass-asmified.java[Asmified]
+
+== References
+

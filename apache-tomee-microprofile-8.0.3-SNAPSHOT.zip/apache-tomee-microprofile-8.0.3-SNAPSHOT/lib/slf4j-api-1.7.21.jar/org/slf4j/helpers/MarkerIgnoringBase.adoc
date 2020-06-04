@@ -1,0 +1,6 @@
+= org/slf4j/helpers/MarkerIgnoringBase.class
+
+ - link:MarkerIgnoringBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/ext/WSInboundSecurityContext.class
+
+ - link:WSInboundSecurityContext-asmified.java[Asmified]
+
+== References
+

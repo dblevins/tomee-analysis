@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/SPKIDataBuilder.class
+
+ - link:SPKIDataBuilder-asmified.java[Asmified]
+
+== References
+

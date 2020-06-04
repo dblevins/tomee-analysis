@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml1/binding/encoding/impl/HTTPPostEncoder.class
+
+ - link:HTTPPostEncoder-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 5
+ - javax.servlet.ServletOutputStream - 1

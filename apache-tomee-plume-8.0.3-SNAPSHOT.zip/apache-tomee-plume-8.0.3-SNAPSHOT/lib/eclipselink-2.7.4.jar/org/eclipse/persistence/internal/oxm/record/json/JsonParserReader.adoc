@@ -1,0 +1,14 @@
+= org/eclipse/persistence/internal/oxm/record/json/JsonParserReader.class
+
+ - link:JsonParserReader-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser$Event - 25
+ - javax.json.stream.JsonParser - 19
+ - javax.json.Json - 5
+ - javax.json.JsonException - 3
+ - javax.json.JsonValue - 2
+ - javax.json.JsonStructure - 2
+ - javax.json.JsonArrayBuilder - 2
+ - javax.json.JsonObjectBuilder - 2

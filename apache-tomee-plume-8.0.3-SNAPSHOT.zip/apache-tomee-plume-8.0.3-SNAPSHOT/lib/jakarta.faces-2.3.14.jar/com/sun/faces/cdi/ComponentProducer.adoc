@@ -1,0 +1,9 @@
+= com/sun/faces/cdi/ComponentProducer.class
+
+ - link:ComponentProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 7
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.faces.context.FacesContext - 3

@@ -1,0 +1,8 @@
+= com/sun/activation/viewers/TextViewer.class
+
+ - link:TextViewer-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 6
+ - javax.activation.CommandObject - 1

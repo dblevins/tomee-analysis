@@ -1,0 +1,6 @@
+= javax/xml/stream/events/StartDocument.class
+
+ - link:StartDocument-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/BaseEjbProxyHandler$ProxyRegistry.class
+
+ - link:BaseEjbProxyHandler$ProxyRegistry-asmified.java[Asmified]
+
+== References
+

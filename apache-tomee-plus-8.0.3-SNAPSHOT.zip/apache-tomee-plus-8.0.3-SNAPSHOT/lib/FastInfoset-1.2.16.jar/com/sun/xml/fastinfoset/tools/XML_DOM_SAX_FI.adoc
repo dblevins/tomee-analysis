@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/tools/XML_DOM_SAX_FI.class
+
+ - link:XML_DOM_SAX_FI-asmified.java[Asmified]
+
+== References
+

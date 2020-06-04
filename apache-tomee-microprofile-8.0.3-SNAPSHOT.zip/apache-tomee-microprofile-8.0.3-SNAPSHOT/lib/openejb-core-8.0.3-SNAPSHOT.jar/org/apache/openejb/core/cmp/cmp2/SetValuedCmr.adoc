@@ -1,0 +1,10 @@
+= org/apache/openejb/core/cmp/cmp2/SetValuedCmr.class
+
+ - link:SetValuedCmr-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 15
+ - javax.transaction.TransactionSynchronizationRegistry - 12
+ - javax.ejb.EJBLocalObject - 5
+ - javax.ejb.EJBException - 4

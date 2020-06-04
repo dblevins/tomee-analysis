@@ -1,0 +1,6 @@
+= org/apache/openejb/core/managed/SimplePassivater.class
+
+ - link:SimplePassivater-asmified.java[Asmified]
+
+== References
+

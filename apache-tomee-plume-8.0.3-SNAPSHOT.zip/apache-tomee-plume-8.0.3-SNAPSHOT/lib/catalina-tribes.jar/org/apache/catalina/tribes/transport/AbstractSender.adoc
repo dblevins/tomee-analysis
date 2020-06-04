@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/transport/AbstractSender.class
+
+ - link:AbstractSender-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/cxf/jaxrs/impl/UriBuilderImpl.class
+
+ - link:UriBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 62
+ - javax.ws.rs.core.UriBuilder - 48
+ - javax.ws.rs.core.PathSegment - 15
+ - javax.ws.rs.Path - 14
+ - javax.ws.rs.core.UriBuilderException - 11

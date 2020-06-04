@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DelegatingResultList.class
+
+ - link:DelegatingResultList-asmified.java[Asmified]
+
+== References
+

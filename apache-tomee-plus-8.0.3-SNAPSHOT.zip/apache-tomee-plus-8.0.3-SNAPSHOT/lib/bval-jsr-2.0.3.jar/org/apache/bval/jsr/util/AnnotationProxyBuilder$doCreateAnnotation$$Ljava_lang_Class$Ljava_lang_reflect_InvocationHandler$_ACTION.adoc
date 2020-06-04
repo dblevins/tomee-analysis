@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/util/AnnotationProxyBuilder$doCreateAnnotation$$Ljava_lang_Class$Ljava_lang_reflect_InvocationHandler$_ACTION.class
+
+ - link:AnnotationProxyBuilder$doCreateAnnotation$$Ljava_lang_Class$Ljava_lang_reflect_InvocationHandler$_ACTION-asmified.java[Asmified]
+
+== References
+

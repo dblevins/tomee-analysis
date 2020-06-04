@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/CoreLibrary.class
+
+ - link:CoreLibrary-asmified.java[Asmified]
+
+== References
+

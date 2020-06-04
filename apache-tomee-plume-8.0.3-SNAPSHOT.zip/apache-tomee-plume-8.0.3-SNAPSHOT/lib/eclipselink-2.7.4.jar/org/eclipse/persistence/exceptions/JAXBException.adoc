@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/JAXBException.class
+
+ - link:JAXBException-asmified.java[Asmified]
+
+== References
+

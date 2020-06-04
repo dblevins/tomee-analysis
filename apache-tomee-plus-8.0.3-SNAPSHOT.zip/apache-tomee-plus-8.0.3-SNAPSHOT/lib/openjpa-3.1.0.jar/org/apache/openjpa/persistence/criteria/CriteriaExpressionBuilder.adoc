@@ -1,0 +1,18 @@
+= org/apache/openjpa/persistence/criteria/CriteriaExpressionBuilder.class
+
+ - link:CriteriaExpressionBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 24
+ - javax.persistence.criteria.Root - 16
+ - javax.persistence.criteria.Join - 7
+ - javax.persistence.metamodel.Attribute - 5
+ - javax.persistence.metamodel.Type$PersistenceType - 5
+ - javax.persistence.criteria.CompoundSelection - 3
+ - javax.persistence.criteria.Fetch - 3
+ - javax.persistence.TupleElement - 3
+ - javax.persistence.metamodel.EntityType - 2
+ - javax.persistence.criteria.JoinType - 2
+ - javax.persistence.Tuple - 2
+ - javax.persistence.criteria.Expression - 1

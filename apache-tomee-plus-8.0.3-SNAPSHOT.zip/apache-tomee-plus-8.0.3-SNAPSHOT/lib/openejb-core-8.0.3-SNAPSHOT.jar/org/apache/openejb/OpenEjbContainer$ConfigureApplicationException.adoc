@@ -1,0 +1,6 @@
+= org/apache/openejb/OpenEjbContainer$ConfigureApplicationException.class
+
+ - link:OpenEjbContainer$ConfigureApplicationException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openejb/jee/was/v6/wsclient/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 15
+ - javax.xml.bind.annotation.XmlElementDecl - 5
+ - javax.xml.bind.annotation.XmlRegistry - 1

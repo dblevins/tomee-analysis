@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/OrderByItemBNF.class
+
+ - link:OrderByItemBNF-asmified.java[Asmified]
+
+== References
+

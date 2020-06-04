@@ -1,0 +1,11 @@
+= org/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl.class
+
+ - link:ManagedScheduledExecutorServiceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.Trigger - 6
+ - javax.enterprise.concurrent.ManagedExecutorService - 5
+ - javax.enterprise.concurrent.LastExecution - 4
+ - javax.enterprise.concurrent.ManagedTask - 4
+ - javax.enterprise.concurrent.ManagedScheduledExecutorService - 1

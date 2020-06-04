@@ -1,0 +1,6 @@
+= org/jose4j/jws/RsaUsingShaAlgorithm$RsaSha256.class
+
+ - link:RsaUsingShaAlgorithm$RsaSha256-asmified.java[Asmified]
+
+== References
+

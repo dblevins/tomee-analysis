@@ -1,0 +1,6 @@
+= org/hsqldb/types/BitType.class
+
+ - link:BitType-asmified.java[Asmified]
+
+== References
+

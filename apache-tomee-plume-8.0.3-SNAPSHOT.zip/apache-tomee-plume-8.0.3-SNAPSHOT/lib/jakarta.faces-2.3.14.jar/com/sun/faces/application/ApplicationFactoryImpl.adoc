@@ -1,0 +1,9 @@
+= com/sun/faces/application/ApplicationFactoryImpl.class
+
+ - link:ApplicationFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 9
+ - javax.faces.application.ApplicationFactory - 3
+ - javax.faces.context.FacesContext - 3

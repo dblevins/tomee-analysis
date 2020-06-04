@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/composite/ValueHolderAttachedObjectTargetImpl.class
+
+ - link:ValueHolderAttachedObjectTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.ValueHolderAttachedObjectTarget - 1

@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LockFile$1.class
+
+ - link:LockFile$1-asmified.java[Asmified]
+
+== References
+

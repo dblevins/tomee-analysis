@@ -1,0 +1,7 @@
+= javax/json/stream/JsonGeneratorFactory.class
+
+ - link:JsonGeneratorFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 3

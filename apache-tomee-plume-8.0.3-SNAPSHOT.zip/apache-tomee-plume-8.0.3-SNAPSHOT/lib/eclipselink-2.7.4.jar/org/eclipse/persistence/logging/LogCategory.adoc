@@ -1,0 +1,6 @@
+= org/eclipse/persistence/logging/LogCategory.class
+
+ - link:LogCategory-asmified.java[Asmified]
+
+== References
+

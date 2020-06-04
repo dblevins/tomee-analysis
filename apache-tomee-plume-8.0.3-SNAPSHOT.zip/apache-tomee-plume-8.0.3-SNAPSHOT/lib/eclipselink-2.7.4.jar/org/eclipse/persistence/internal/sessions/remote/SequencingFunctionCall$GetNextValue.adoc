@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/remote/SequencingFunctionCall$GetNextValue.class
+
+ - link:SequencingFunctionCall$GetNextValue-asmified.java[Asmified]
+
+== References
+

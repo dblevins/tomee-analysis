@@ -1,0 +1,6 @@
+= org/xml/sax/helpers/AttributesImpl.class
+
+ - link:AttributesImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/list/AbstractListDecorator.class
+
+ - link:AbstractListDecorator-asmified.java[Asmified]
+
+== References
+

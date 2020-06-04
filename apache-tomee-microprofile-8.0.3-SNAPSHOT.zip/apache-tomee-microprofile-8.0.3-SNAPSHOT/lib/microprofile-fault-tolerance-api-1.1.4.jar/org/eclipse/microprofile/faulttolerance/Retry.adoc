@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/faulttolerance/Retry.class
+
+ - link:Retry-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 9
+ - javax.interceptor.InterceptorBinding - 1

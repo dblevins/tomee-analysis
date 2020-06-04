@@ -1,0 +1,6 @@
+= org/apache/webbeans/exception/helper/ViolationMessageBuilder.class
+
+ - link:ViolationMessageBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/mgbean/ManagedBeanInfo$MapEntry.class
+
+ - link:ManagedBeanInfo$MapEntry-asmified.java[Asmified]
+
+== References
+

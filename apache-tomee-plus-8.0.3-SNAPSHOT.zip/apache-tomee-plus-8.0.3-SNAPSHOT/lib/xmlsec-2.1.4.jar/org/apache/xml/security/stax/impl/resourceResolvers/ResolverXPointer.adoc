@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/resourceResolvers/ResolverXPointer.class
+
+ - link:ResolverXPointer-asmified.java[Asmified]
+
+== References
+

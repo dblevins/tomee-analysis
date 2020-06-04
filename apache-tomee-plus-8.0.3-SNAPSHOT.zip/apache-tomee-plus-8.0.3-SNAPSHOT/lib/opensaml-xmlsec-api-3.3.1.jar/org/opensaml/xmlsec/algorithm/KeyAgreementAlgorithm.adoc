@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/algorithm/KeyAgreementAlgorithm.class
+
+ - link:KeyAgreementAlgorithm-asmified.java[Asmified]
+
+== References
+

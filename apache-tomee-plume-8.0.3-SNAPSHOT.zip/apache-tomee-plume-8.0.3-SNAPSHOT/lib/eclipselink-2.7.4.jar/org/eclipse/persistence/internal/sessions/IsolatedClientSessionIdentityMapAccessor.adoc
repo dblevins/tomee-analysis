@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/IsolatedClientSessionIdentityMapAccessor.class
+
+ - link:IsolatedClientSessionIdentityMapAccessor-asmified.java[Asmified]
+
+== References
+

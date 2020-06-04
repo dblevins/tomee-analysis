@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/factory/CDIBatchArtifactFactory$1.class
+
+ - link:CDIBatchArtifactFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 5

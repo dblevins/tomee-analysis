@@ -1,0 +1,9 @@
+= org/apache/openejb/resource/activemq/jms2/TomEEProducer$ProducerAsyncCallback.class
+
+ - link:TomEEProducer$ProducerAsyncCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 9
+ - javax.jms.CompletionListener - 9
+ - javax.jms.JMSException - 1

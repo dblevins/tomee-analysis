@@ -1,0 +1,11 @@
+= com/sun/faces/component/search/SearchKeywordResolverImplNext.class
+
+ - link:SearchKeywordResolverImplNext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 11
+ - javax.faces.component.search.SearchKeywordContext - 4
+ - javax.faces.component.search.SearchKeywordResolver - 2
+ - javax.faces.component.search.UntargetableComponent - 1
+ - javax.faces.component.search.SearchExpressionContext - 1

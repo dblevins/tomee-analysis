@@ -1,0 +1,380 @@
+package asm.org.apache.openejb.core.transaction;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SimpleWorkManagerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/core/transaction/SimpleWorkManager", null, "java/lang/Object", new String[] { "javax/resource/spi/work/WorkManager" });
+
+classWriter.visitInnerClass("org/apache/openejb/core/transaction/SimpleWorkManager$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
+
+classWriter.visitInnerClass("org/apache/openejb/core/transaction/SimpleWorkManager$LoggingWorkListener", "org/apache/openejb/core/transaction/SimpleWorkManager", "LoggingWorkListener", ACC_PRIVATE | ACC_FINAL | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "org/apache/openejb/core/transaction/SimpleWorkManager", "Worker", ACC_PRIVATE);
+
+classWriter.visitInnerClass("org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "org/apache/openejb/core/transaction/SimpleWorkManager", "WorkType", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "logger", "Lorg/apache/openejb/util/Logger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "executor", "Ljava/util/concurrent/Executor;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/util/concurrent/Executor;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("executor is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openejb/core/transaction/SimpleWorkManager", "java/util/concurrent/Executor"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/core/transaction/SimpleWorkManager", "executor", "Ljava/util/concurrent/Executor;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doWork", "(Ljavax/resource/spi/work/Work;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("work is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(new Long(9223372036854775807L));
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager", "doWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("work is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "DO", "Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/SimpleWorkManager", "executeWork", "(Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startWork", "(Ljavax/resource/spi/work/Work;)J", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("work is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(new Long(9223372036854775807L));
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager", "startWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", false);
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(6, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("work is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "START", "Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/SimpleWorkManager", "executeWork", "(Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", false);
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(7, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheduleWork", "(Ljavax/resource/spi/work/Work;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("work is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn(new Long(9223372036854775807L));
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager", "scheduleWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "scheduleWork", "(Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/NullPointerException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("work is null");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/NullPointerException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "SCHEDULE", "Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/SimpleWorkManager", "executeWork", "(Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "executeWork", "(Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J", null, new String[] { "javax/resource/spi/work/WorkException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/InterruptedException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/InterruptedException");
+methodVisitor.visitVarInsn(ALOAD, 6);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label6);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/transaction/SimpleWorkManager$LoggingWorkListener");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/SimpleWorkManager$LoggingWorkListener", "<init>", "(Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;Lorg/apache/openejb/core/transaction/SimpleWorkManager$1;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/ExecutionContext", "getXid", "()Ljavax/transaction/xa/Xid;", false);
+methodVisitor.visitJumpInsn(IFNULL, label7);
+methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/work/WorkRejectedException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("SimpleWorkManager can not import an XID");
+methodVisitor.visitLdcInsn("3");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkRejectedException", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/work/WorkEvent");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkEvent", "<init>", "(Ljava/lang/Object;ILjavax/resource/spi/work/Work;Ljavax/resource/spi/work/WorkException;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/work/WorkListener", "workRejected", "(Ljavax/resource/spi/work/WorkEvent;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/work/WorkEvent");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkEvent", "<init>", "(Ljava/lang/Object;ILjavax/resource/spi/work/Work;Ljavax/resource/spi/work/WorkException;)V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/resource/spi/work/WorkListener", "workAccepted", "(Ljavax/resource/spi/work/WorkEvent;)V", true);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "<init>", "(Lorg/apache/openejb/core/transaction/SimpleWorkManager;Ljavax/resource/spi/work/Work;Ljavax/resource/spi/work/WorkListener;J)V", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/core/transaction/SimpleWorkManager", "executor", "Ljava/util/concurrent/Executor;");
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/Executor", "execute", "(Ljava/lang/Runnable;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "DO", "Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;");
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label8);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "waitForCompletion", "()V", false);
+methodVisitor.visitLabel(label1);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openejb/core/transaction/SimpleWorkManager", "org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "javax/resource/spi/work/Work", Opcodes.LONG, "javax/resource/spi/work/ExecutionContext", "javax/resource/spi/work/WorkListener", "org/apache/openejb/core/transaction/SimpleWorkManager$Worker"}, 1, new Object[] {"java/lang/InterruptedException"});
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/work/WorkException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Work submission thread was interrupted");
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitLdcInsn("-1");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkException", "setErrorCode", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "getWorkException", "()Ljavax/resource/spi/work/WorkException;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label10);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label11);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager$WorkType", "START", "Lorg/apache/openejb/core/transaction/SimpleWorkManager$WorkType;");
+methodVisitor.visitJumpInsn(IF_ACMPNE, label11);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "waitForStart", "()V", false);
+methodVisitor.visitLabel(label4);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label12);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/InterruptedException"});
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitTypeInsn(NEW, "javax/resource/spi/work/WorkException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Work submission thread was interrupted");
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/resource/spi/work/WorkException", "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitLdcInsn("-1");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/resource/spi/work/WorkException", "setErrorCode", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "getWorkException", "()Ljavax/resource/spi/work/WorkException;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/resource/spi/work/WorkRejectedException");
+methodVisitor.visitJumpInsn(IFEQ, label11);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/core/transaction/SimpleWorkManager$Worker", "getStartDelay", "()J", false);
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(7, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "()Lorg/apache/openejb/util/Logger;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager", "logger", "Lorg/apache/openejb/util/Logger;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openejb/util/LogCategory", "OPENEJB", "Lorg/apache/openejb/util/LogCategory;");
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/core/transaction/SimpleWorkManager;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/util/Logger", "getInstance", "(Lorg/apache/openejb/util/LogCategory;Ljava/lang/Class;)Lorg/apache/openejb/util/Logger;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openejb/core/transaction/SimpleWorkManager", "logger", "Lorg/apache/openejb/util/Logger;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,7 @@
+= org/apache/johnzon/core/JsonPatchImpl$1.class
+
+ - link:JsonPatchImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonPatch$Operation - 14

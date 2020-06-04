@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/MessageDigestAlgorithm.class
+
+ - link:MessageDigestAlgorithm-asmified.java[Asmified]
+
+== References
+

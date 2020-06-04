@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/Catalina$CatalinaShutdownHook.class
+
+ - link:Catalina$CatalinaShutdownHook-asmified.java[Asmified]
+
+== References
+

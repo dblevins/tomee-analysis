@@ -1,0 +1,6 @@
+= org/slf4j/MarkerFactory.class
+
+ - link:MarkerFactory-asmified.java[Asmified]
+
+== References
+

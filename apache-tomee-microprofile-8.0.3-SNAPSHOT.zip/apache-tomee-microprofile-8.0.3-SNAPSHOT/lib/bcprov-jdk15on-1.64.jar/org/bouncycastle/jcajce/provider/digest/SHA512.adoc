@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/digest/SHA512.class
+
+ - link:SHA512-asmified.java[Asmified]
+
+== References
+

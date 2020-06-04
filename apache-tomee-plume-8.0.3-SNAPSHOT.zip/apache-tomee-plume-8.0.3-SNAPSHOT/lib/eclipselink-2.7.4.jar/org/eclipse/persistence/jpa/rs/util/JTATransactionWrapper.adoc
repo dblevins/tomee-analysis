@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/util/JTATransactionWrapper.class
+
+ - link:JTATransactionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 8

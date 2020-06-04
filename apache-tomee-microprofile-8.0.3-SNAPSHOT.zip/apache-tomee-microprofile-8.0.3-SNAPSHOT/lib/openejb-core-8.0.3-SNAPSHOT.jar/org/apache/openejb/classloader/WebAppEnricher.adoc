@@ -1,0 +1,6 @@
+= org/apache/openejb/classloader/WebAppEnricher.class
+
+ - link:WebAppEnricher-asmified.java[Asmified]
+
+== References
+

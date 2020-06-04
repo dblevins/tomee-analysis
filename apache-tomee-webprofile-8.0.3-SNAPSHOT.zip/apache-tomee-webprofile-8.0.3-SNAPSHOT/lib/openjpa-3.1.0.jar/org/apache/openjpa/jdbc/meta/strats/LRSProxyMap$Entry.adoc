@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/LRSProxyMap$Entry.class
+
+ - link:LRSProxyMap$Entry-asmified.java[Asmified]
+
+== References
+

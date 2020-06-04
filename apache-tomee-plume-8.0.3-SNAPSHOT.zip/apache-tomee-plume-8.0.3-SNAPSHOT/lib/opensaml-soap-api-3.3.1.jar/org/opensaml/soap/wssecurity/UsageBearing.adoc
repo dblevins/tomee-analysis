@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/UsageBearing.class
+
+ - link:UsageBearing-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,16 @@
+= org/apache/openejb/jee/DataSource.class
+
+ - link:DataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 13
+ - javax.xml.bind.annotation.XmlAttribute - 1
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 1
+ - javax.xml.bind.annotation.XmlSchemaType - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.annotation.XmlID - 1
+ - javax.xml.bind.annotation.XmlTransient - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

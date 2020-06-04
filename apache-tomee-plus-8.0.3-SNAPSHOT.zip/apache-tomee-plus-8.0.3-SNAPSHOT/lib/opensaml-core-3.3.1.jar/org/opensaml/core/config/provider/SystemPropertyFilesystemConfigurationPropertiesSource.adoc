@@ -1,0 +1,7 @@
+= org/opensaml/core/config/provider/SystemPropertyFilesystemConfigurationPropertiesSource.class
+
+ - link:SystemPropertyFilesystemConfigurationPropertiesSource-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

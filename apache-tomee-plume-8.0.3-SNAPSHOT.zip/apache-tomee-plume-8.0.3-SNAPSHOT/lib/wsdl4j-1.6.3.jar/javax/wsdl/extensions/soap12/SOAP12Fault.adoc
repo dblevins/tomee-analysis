@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/soap12/SOAP12Fault.class
+
+ - link:SOAP12Fault-asmified.java[Asmified]
+
+== References
+

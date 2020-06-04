@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/AlgorithmIdentifierTypeMarshaller.class
+
+ - link:AlgorithmIdentifierTypeMarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,19 @@
+= com/sun/xml/bind/v2/runtime/JAXBContextImpl.class
+
+ - link:JAXBContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 20
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 11
+ - javax.xml.bind.annotation.XmlList - 10
+ - javax.xml.bind.annotation.XmlSchema - 7
+ - javax.xml.bind.annotation.XmlNs - 5
+ - javax.xml.bind.Binder - 4
+ - javax.xml.bind.Unmarshaller - 2
+ - javax.xml.bind.Marshaller - 2
+ - javax.xml.bind.SchemaOutputResolver - 2
+ - javax.xml.bind.JAXBElement - 1
+ - javax.xml.bind.Validator - 1
+ - javax.xml.bind.annotation.XmlAttachmentRef - 1
+ - javax.xml.bind.JAXBIntrospector - 1

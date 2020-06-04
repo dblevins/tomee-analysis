@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/SPKIData.class
+
+ - link:SPKIData-asmified.java[Asmified]
+
+== References
+

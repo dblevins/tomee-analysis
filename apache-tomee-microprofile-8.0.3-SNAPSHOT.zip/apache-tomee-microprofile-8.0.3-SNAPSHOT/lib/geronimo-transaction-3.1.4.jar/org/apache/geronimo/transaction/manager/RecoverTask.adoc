@@ -1,0 +1,7 @@
+= org/apache/geronimo/transaction/manager/RecoverTask.class
+
+ - link:RecoverTask-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.SystemException - 2

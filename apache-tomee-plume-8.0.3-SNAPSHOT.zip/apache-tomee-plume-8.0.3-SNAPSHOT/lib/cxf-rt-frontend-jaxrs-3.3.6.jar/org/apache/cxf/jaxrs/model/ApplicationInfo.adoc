@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/model/ApplicationInfo.class
+
+ - link:ApplicationInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 6

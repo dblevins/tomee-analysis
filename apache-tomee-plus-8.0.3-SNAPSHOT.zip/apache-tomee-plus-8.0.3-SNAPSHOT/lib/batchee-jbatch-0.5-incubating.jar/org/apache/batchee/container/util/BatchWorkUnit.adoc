@@ -1,0 +1,7 @@
+= org/apache/batchee/container/util/BatchWorkUnit.class
+
+ - link:BatchWorkUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 2

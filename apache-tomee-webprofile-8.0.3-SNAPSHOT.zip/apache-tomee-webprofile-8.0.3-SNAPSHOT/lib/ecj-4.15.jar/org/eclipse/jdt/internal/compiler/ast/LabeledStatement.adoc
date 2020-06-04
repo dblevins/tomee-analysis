@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/LabeledStatement.class
+
+ - link:LabeledStatement-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/msv/AttributeProxy.class
+
+ - link:AttributeProxy-asmified.java[Asmified]
+
+== References
+

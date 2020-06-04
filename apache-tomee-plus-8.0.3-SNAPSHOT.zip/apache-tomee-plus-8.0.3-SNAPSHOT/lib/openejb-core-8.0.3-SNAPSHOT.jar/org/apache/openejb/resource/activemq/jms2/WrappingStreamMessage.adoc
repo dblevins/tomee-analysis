@@ -1,0 +1,10 @@
+= org/apache/openejb/resource/activemq/jms2/WrappingStreamMessage.class
+
+ - link:WrappingStreamMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.StreamMessage - 52
+ - javax.jms.JMSException - 26
+ - javax.jms.MessageFormatException - 2
+ - javax.jms.Message - 1

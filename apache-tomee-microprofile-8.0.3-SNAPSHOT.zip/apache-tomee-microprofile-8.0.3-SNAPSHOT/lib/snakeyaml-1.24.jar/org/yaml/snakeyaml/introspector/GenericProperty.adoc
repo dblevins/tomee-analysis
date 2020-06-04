@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/introspector/GenericProperty.class
+
+ - link:GenericProperty-asmified.java[Asmified]
+
+== References
+

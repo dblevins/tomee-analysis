@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/DB2Platform.class
+
+ - link:DB2Platform-asmified.java[Asmified]
+
+== References
+

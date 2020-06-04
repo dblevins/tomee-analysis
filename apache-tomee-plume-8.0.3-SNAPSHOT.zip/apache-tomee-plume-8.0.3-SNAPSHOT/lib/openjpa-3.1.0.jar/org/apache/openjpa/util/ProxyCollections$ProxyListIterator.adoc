@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ProxyCollections$ProxyListIterator.class
+
+ - link:ProxyCollections$ProxyListIterator-asmified.java[Asmified]
+
+== References
+

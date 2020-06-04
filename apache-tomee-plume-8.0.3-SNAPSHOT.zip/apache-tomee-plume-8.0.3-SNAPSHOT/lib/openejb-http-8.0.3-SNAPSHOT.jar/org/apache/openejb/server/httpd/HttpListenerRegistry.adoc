@@ -1,0 +1,10 @@
+= org/apache/openejb/server/httpd/HttpListenerRegistry.class
+
+ - link:HttpListenerRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 7
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.servlet.ServletContext - 5
+ - javax.servlet.ServletOutputStream - 3

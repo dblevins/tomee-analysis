@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/SOAPDocumentFragment.class
+
+ - link:SOAPDocumentFragment-asmified.java[Asmified]
+
+== References
+

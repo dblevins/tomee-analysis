@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/ForClosure.class
+
+ - link:ForClosure-asmified.java[Asmified]
+
+== References
+

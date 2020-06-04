@@ -1,0 +1,8 @@
+= org/metatype/sxc/jaxb/ExtendedUnmarshaller.class
+
+ - link:ExtendedUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 1
+ - javax.xml.bind.JAXBException - 1

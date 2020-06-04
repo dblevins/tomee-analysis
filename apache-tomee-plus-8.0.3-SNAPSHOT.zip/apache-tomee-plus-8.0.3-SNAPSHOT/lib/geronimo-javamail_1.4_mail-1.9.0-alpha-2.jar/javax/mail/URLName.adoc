@@ -1,0 +1,7 @@
+= javax/mail/URLName.class
+
+ - link:URLName-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.URLName - 29

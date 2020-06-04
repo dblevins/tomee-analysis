@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/AbstractLinkedMap$EntrySetIterator.class
+
+ - link:AbstractLinkedMap$EntrySetIterator-asmified.java[Asmified]
+
+== References
+

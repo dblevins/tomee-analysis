@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/compiler/CompositeComponentUnit.class
+
+ - link:CompositeComponentUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletHandler - 3

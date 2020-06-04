@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/remote/RemoteSession.class
+
+ - link:RemoteSession-asmified.java[Asmified]
+
+== References
+

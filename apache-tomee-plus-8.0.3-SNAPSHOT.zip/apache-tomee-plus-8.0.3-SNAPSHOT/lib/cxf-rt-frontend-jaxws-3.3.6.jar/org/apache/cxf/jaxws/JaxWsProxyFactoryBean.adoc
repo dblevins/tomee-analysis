@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/JaxWsProxyFactoryBean.class
+
+ - link:JaxWsProxyFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.Handler - 5
+ - javax.xml.ws.Binding - 4
+ - javax.xml.ws.BindingProvider - 1

@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/faulttolerance/Fallback.class
+
+ - link:Fallback-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 2
+ - javax.interceptor.InterceptorBinding - 1

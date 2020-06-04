@@ -1,0 +1,7 @@
+= org/apache/openejb/core/timer/IntervalTimerData.class
+
+ - link:IntervalTimerData-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.TimerConfig - 2

@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/ComparableType.class
+
+ - link:ComparableType-asmified.java[Asmified]
+
+== References
+

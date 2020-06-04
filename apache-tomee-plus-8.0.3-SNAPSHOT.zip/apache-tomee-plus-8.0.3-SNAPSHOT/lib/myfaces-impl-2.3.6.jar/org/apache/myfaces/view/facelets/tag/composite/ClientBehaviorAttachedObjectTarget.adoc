@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/tag/composite/ClientBehaviorAttachedObjectTarget.class
+
+ - link:ClientBehaviorAttachedObjectTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.BehaviorHolderAttachedObjectTarget - 1

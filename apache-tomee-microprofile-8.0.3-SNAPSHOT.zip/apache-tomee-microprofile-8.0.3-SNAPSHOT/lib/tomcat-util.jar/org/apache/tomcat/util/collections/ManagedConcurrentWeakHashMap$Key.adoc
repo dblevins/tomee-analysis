@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap$Key.class
+
+ - link:ManagedConcurrentWeakHashMap$Key-asmified.java[Asmified]
+
+== References
+

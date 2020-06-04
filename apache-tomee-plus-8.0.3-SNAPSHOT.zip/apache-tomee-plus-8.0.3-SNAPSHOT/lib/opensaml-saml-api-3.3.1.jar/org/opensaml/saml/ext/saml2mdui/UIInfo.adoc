@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/UIInfo.class
+
+ - link:UIInfo-asmified.java[Asmified]
+
+== References
+

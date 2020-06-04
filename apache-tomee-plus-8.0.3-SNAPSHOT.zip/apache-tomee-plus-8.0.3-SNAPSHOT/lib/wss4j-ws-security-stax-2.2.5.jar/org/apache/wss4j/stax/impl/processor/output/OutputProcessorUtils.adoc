@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/output/OutputProcessorUtils.class
+
+ - link:OutputProcessorUtils-asmified.java[Asmified]
+
+== References
+

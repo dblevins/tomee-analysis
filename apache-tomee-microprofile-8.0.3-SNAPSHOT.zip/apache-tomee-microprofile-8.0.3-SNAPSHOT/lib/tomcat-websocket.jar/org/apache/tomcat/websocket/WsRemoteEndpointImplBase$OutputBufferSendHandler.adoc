@@ -1,0 +1,8 @@
+= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$OutputBufferSendHandler.class
+
+ - link:WsRemoteEndpointImplBase$OutputBufferSendHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.SendHandler - 14
+ - javax.websocket.SendResult - 7

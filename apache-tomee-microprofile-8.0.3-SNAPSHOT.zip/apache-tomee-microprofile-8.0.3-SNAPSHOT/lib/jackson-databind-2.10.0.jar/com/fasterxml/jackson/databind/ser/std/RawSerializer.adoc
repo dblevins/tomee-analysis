@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/RawSerializer.class
+
+ - link:RawSerializer-asmified.java[Asmified]
+
+== References
+

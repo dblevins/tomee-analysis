@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/core/ReferencePropertyInfo.class
+
+ - link:ReferencePropertyInfo-asmified.java[Asmified]
+
+== References
+

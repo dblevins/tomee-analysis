@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml1/binding/encoding/impl/BaseSAML1MessageEncoder.class
+
+ - link:BaseSAML1MessageEncoder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

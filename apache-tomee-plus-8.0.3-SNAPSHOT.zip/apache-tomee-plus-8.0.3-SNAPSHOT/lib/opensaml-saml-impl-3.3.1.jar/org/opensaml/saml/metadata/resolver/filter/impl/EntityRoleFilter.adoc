@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/filter/impl/EntityRoleFilter.class
+
+ - link:EntityRoleFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 3

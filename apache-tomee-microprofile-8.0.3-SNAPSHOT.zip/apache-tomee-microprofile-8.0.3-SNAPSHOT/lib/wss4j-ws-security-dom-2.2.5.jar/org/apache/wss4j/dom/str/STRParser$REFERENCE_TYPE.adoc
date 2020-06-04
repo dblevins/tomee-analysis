@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/str/STRParser$REFERENCE_TYPE.class
+
+ - link:STRParser$REFERENCE_TYPE-asmified.java[Asmified]
+
+== References
+

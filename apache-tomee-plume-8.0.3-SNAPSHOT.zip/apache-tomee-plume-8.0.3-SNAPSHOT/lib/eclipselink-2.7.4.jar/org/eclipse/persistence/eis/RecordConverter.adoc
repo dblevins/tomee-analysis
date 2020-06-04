@@ -1,0 +1,7 @@
+= org/eclipse/persistence/eis/RecordConverter.class
+
+ - link:RecordConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.Record - 4

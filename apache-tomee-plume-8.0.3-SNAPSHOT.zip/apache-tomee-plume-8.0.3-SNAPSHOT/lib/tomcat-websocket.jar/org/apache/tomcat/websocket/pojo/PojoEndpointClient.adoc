@@ -1,0 +1,10 @@
+= org/apache/tomcat/websocket/pojo/PojoEndpointClient.class
+
+ - link:PojoEndpointClient-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 2
+ - javax.websocket.EndpointConfig - 2
+ - javax.websocket.Decoder - 1
+ - javax.websocket.DeploymentException - 1

@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/converters/LongConverter.class
+
+ - link:LongConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 1
+ - javax.enterprise.inject.Vetoed - 1

@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/ThreadLocalBufferCache.class
+
+ - link:ThreadLocalBufferCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/CallbackMethod.class
+
+ - link:CallbackMethod-asmified.java[Asmified]
+
+== References
+

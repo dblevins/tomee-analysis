@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/OpenEJBLifecycle$HttpServletRequestBean.class
+
+ - link:OpenEJBLifecycle$HttpServletRequestBean-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 4
+ - javax.servlet.ServletRequest - 1

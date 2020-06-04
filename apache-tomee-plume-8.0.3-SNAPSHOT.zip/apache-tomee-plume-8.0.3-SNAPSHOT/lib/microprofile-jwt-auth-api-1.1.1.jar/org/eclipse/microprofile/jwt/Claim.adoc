@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/jwt/Claim.class
+
+ - link:Claim-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 2
+ - javax.inject.Qualifier - 1

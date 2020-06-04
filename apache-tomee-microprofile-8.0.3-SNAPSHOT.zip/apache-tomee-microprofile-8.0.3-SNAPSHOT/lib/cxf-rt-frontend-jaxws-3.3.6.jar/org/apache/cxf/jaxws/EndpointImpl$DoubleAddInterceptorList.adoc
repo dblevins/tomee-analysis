@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/EndpointImpl$DoubleAddInterceptorList.class
+
+ - link:EndpointImpl$DoubleAddInterceptorList-asmified.java[Asmified]
+
+== References
+

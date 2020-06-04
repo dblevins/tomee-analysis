@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/eventlistener/ChangeListener.class
+
+ - link:ChangeListener-asmified.java[Asmified]
+
+== References
+

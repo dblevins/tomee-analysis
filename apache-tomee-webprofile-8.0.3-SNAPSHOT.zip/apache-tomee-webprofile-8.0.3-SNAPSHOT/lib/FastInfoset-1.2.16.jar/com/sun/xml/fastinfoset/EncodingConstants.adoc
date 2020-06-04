@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/EncodingConstants.class
+
+ - link:EncodingConstants-asmified.java[Asmified]
+
+== References
+

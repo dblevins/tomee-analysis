@@ -1,0 +1,6 @@
+= com/ctc/wstx/msv/RelaxNGSchema.class
+
+ - link:RelaxNGSchema-asmified.java[Asmified]
+
+== References
+

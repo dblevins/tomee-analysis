@@ -1,0 +1,9 @@
+= javax/enterprise/inject/literal/InjectLiteral.class
+
+ - link:InjectLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.literal.InjectLiteral - 4
+ - javax.inject.Inject - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

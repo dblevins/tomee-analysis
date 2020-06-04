@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/text/StrMatcher$CharMatcher.class
+
+ - link:StrMatcher$CharMatcher-asmified.java[Asmified]
+
+== References
+

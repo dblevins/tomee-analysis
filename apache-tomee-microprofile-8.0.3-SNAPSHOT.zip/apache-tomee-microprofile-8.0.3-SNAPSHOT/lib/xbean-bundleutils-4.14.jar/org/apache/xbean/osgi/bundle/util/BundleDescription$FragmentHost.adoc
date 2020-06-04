@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/BundleDescription$FragmentHost.class
+
+ - link:BundleDescription$FragmentHost-asmified.java[Asmified]
+
+== References
+

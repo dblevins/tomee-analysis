@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/NonSynchronizedProperties.class
+
+ - link:NonSynchronizedProperties-asmified.java[Asmified]
+
+== References
+

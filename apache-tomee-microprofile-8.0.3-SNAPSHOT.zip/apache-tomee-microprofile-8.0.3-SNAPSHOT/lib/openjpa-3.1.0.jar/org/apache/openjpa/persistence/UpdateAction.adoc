@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/UpdateAction.class
+
+ - link:UpdateAction-asmified.java[Asmified]
+
+== References
+

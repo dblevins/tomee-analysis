@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/converters/LobMetadata.class
+
+ - link:LobMetadata-asmified.java[Asmified]
+
+== References
+

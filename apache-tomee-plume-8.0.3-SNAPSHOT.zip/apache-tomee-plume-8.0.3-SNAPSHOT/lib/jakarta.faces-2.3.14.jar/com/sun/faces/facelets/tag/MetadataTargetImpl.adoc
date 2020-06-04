@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/MetadataTargetImpl.class
+
+ - link:MetadataTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.MetadataTarget - 2

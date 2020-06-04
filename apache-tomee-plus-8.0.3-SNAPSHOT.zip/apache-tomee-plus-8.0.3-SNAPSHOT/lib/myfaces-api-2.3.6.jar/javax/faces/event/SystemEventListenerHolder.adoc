@@ -1,0 +1,8 @@
+= javax/faces/event/SystemEventListenerHolder.class
+
+ - link:SystemEventListenerHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.SystemEvent - 1
+ - javax.faces.event.SystemEventListener - 1

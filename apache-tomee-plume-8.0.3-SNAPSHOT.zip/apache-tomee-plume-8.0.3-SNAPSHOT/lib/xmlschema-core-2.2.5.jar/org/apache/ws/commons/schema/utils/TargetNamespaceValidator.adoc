@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/TargetNamespaceValidator.class
+
+ - link:TargetNamespaceValidator-asmified.java[Asmified]
+
+== References
+

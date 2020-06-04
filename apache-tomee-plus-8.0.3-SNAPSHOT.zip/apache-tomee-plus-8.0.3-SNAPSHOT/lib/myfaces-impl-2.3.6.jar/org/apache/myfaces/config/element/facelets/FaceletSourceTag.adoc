@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/facelets/FaceletSourceTag.class
+
+ - link:FaceletSourceTag-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/ResultSetIterator.class
+
+ - link:ResultSetIterator-asmified.java[Asmified]
+
+== References
+

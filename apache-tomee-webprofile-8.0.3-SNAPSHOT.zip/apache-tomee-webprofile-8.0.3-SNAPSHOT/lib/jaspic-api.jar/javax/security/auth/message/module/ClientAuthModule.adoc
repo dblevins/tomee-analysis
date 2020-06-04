@@ -1,0 +1,9 @@
+= javax/security/auth/message/module/ClientAuthModule.class
+
+ - link:ClientAuthModule-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.MessagePolicy - 2
+ - javax.security.auth.message.AuthException - 1
+ - javax.security.auth.message.ClientAuth - 1

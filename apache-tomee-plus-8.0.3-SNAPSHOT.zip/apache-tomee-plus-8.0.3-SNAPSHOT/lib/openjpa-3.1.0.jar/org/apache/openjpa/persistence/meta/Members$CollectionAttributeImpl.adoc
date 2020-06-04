@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/meta/Members$CollectionAttributeImpl.class
+
+ - link:Members$CollectionAttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 2
+ - javax.persistence.metamodel.CollectionAttribute - 1

@@ -1,0 +1,11 @@
+= org/apache/cxf/jaxrs/impl/HttpServletRequestFilter.class
+
+ - link:HttpServletRequestFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 11
+ - javax.servlet.http.HttpServletRequestWrapper - 5
+ - javax.servlet.ServletInputStream - 4
+ - javax.ws.rs.core.MediaType - 2
+ - javax.servlet.http.HttpServletRequest - 2

@@ -1,0 +1,16 @@
+= org/apache/myfaces/taglib/core/GenericListenerTag.class
+
+ - link:GenericListenerTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 34
+ - javax.servlet.jsp.JspException - 14
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.context.FacesContext - 8
+ - javax.el.ELContext - 6
+ - javax.faces.webapp.UIComponentClassicTagBase - 5
+ - javax.el.ELException - 4
+ - javax.servlet.jsp.tagext.TagSupport - 3
+ - javax.servlet.jsp.PageContext - 2
+ - javax.faces.webapp.UIComponentELTag - 1

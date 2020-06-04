@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/IPHint.class
+
+ - link:IPHint-asmified.java[Asmified]
+
+== References
+

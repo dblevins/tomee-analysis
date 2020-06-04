@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/event/NewEjbAvailableAfterApplicationCreated.class
+
+ - link:NewEjbAvailableAfterApplicationCreated-asmified.java[Asmified]
+
+== References
+

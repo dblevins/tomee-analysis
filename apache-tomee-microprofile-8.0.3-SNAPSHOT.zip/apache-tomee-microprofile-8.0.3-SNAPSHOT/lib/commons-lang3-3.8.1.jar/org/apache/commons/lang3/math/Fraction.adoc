@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/math/Fraction.class
+
+ - link:Fraction-asmified.java[Asmified]
+
+== References
+

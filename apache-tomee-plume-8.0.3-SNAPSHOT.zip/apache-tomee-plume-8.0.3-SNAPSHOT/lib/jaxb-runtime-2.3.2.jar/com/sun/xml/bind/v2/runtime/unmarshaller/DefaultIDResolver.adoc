@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/DefaultIDResolver.class
+
+ - link:DefaultIDResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventHandler - 1

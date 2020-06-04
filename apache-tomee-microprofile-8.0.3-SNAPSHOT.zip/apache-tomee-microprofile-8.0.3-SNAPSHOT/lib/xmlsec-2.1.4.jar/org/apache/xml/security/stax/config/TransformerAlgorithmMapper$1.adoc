@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/config/TransformerAlgorithmMapper$1.class
+
+ - link:TransformerAlgorithmMapper$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/openapi/impl/processor/AnnotationProcessor$1.class
+
+ - link:AnnotationProcessor$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue$ValueType - 10

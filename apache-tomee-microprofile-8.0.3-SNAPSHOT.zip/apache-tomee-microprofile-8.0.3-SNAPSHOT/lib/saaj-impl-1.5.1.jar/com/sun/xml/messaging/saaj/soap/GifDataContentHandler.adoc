@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/GifDataContentHandler.class
+
+ - link:GifDataContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.ActivationDataFlavor - 13
+ - javax.activation.DataSource - 6
+ - javax.activation.DataContentHandler - 1

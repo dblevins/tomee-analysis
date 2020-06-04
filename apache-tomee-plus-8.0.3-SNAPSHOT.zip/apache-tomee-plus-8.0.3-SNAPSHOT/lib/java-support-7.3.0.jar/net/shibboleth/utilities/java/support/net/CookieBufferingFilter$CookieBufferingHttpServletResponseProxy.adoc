@@ -1,0 +1,12 @@
+= net/shibboleth/utilities/java/support/net/CookieBufferingFilter$CookieBufferingHttpServletResponseProxy.class
+
+ - link:CookieBufferingFilter$CookieBufferingHttpServletResponseProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponseWrapper - 7
+ - javax.servlet.http.Cookie - 6
+ - javax.servlet.http.HttpServletResponse - 4
+ - javax.annotation.Nonnull - 3
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.ServletResponse - 1

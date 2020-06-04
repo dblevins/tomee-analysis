@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$ListArgument.class
+
+ - link:Expressions$ListArgument-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Expression - 7
+ - javax.persistence.criteria.Selection - 2

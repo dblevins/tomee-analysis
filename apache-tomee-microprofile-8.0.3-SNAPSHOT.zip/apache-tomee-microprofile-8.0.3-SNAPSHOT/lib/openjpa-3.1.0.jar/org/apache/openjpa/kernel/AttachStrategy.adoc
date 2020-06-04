@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AttachStrategy.class
+
+ - link:AttachStrategy-asmified.java[Asmified]
+
+== References
+

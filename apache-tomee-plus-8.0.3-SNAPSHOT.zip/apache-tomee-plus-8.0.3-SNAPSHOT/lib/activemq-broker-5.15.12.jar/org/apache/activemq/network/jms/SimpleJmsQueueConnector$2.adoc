@@ -1,0 +1,9 @@
+= org/apache/activemq/network/jms/SimpleJmsQueueConnector$2.class
+
+ - link:SimpleJmsQueueConnector$2-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Connection - 2
+ - javax.jms.JMSException - 1
+ - javax.jms.ExceptionListener - 1

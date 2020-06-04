@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/math/linearalgebra/GoppaCode$MatrixSet.class
+
+ - link:GoppaCode$MatrixSet-asmified.java[Asmified]
+
+== References
+

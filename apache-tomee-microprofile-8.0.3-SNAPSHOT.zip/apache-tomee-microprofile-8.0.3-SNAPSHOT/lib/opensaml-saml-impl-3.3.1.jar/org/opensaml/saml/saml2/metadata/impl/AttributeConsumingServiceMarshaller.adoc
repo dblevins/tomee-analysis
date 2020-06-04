@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AttributeConsumingServiceMarshaller.class
+
+ - link:AttributeConsumingServiceMarshaller-asmified.java[Asmified]
+
+== References
+

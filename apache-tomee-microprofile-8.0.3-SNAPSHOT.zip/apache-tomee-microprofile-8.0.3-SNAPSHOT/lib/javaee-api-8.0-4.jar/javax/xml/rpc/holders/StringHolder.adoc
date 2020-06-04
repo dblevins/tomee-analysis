@@ -1,0 +1,7 @@
+= javax/xml/rpc/holders/StringHolder.class
+
+ - link:StringHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.holders.Holder - 1

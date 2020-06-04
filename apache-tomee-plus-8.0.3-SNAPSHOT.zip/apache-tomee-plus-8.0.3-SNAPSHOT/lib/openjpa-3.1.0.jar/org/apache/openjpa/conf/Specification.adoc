@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/Specification.class
+
+ - link:Specification-asmified.java[Asmified]
+
+== References
+

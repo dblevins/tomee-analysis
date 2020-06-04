@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/cfg/HandlerInstantiator.class
+
+ - link:HandlerInstantiator-asmified.java[Asmified]
+
+== References
+

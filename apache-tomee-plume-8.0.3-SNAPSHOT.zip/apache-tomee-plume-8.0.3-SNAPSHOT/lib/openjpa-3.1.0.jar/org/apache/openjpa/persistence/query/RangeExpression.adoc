@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/RangeExpression.class
+
+ - link:RangeExpression-asmified.java[Asmified]
+
+== References
+

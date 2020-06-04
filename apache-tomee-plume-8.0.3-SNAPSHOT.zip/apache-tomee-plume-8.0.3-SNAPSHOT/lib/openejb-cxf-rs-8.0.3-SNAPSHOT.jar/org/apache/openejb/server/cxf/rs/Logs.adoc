@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/rs/Logs.class
+
+ - link:Logs-asmified.java[Asmified]
+
+== References
+

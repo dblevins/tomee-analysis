@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/antlr/runtime/ANTLRStringStream.class
+
+ - link:ANTLRStringStream-asmified.java[Asmified]
+
+== References
+

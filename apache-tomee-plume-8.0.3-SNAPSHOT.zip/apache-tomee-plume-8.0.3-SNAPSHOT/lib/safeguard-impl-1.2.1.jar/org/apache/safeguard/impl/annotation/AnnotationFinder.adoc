@@ -1,0 +1,12 @@
+= org/apache/safeguard/impl/annotation/AnnotationFinder.class
+
+ - link:AnnotationFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 30
+ - javax.enterprise.inject.spi.AnnotatedMethod - 20
+ - javax.interceptor.InvocationContext - 7
+ - javax.enterprise.inject.spi.BeanManager - 5
+ - javax.inject.Inject - 2
+ - javax.enterprise.context.ApplicationScoped - 1

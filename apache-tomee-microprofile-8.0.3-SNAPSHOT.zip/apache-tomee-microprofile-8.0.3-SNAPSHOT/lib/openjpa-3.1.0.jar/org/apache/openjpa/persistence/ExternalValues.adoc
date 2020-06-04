@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ExternalValues.class
+
+ - link:ExternalValues-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/openejb/cdi/CdiEjbBean$EjbInjectionTargetImpl.class
+
+ - link:CdiEjbBean$EjbInjectionTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionTarget - 21
+ - javax.enterprise.inject.spi.AnnotatedType - 12
+ - javax.enterprise.context.spi.CreationalContext - 11
+ - javax.enterprise.inject.spi.Bean - 11
+ - javax.enterprise.inject.spi.Interceptor - 8
+ - javax.enterprise.context.spi.Contextual - 2
+ - javax.enterprise.inject.spi.InjectionPoint - 2

@@ -1,0 +1,24 @@
+= org/apache/myfaces/application/ViewHandlerImpl.class
+
+ - link:ViewHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 86
+ - javax.faces.context.ExternalContext - 18
+ - javax.faces.component.UIViewRoot - 16
+ - javax.faces.view.ViewDeclarationLanguage - 15
+ - javax.faces.component.UIViewParameter - 11
+ - javax.faces.application.Application - 10
+ - javax.faces.application.ViewHandler - 9
+ - javax.faces.render.ResponseStateManager - 8
+ - javax.faces.view.ViewDeclarationLanguageFactory - 7
+ - javax.faces.FacesException - 4
+ - javax.faces.context.ResponseWriter - 4
+ - javax.faces.view.ViewMetadata - 4
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.faces.application.StateManager - 3
+ - javax.faces.application.ViewVisitOption - 2
+ - javax.faces.render.RenderKit - 2
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.FactoryFinder - 1

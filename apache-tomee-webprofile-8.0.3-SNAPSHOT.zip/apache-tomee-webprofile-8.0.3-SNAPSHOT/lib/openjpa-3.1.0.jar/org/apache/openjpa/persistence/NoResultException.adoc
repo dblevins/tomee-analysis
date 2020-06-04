@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/NoResultException.class
+
+ - link:NoResultException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.NoResultException - 4

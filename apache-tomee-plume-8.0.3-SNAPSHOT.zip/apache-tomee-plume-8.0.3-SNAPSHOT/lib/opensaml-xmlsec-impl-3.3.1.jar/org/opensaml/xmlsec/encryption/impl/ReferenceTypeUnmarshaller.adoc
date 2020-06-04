@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/ReferenceTypeUnmarshaller.class
+
+ - link:ReferenceTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

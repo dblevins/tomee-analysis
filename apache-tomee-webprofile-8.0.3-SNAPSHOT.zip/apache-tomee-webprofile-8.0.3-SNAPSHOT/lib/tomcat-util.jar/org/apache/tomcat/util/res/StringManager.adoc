@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/res/StringManager.class
+
+ - link:StringManager-asmified.java[Asmified]
+
+== References
+

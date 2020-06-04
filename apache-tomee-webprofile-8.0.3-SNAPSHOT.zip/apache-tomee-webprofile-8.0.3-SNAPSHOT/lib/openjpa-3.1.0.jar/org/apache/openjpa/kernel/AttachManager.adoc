@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AttachManager.class
+
+ - link:AttachManager-asmified.java[Asmified]
+
+== References
+

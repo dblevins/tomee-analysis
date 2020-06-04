@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/MultiplexDestination.class
+
+ - link:MultiplexDestination-asmified.java[Asmified]
+
+== References
+

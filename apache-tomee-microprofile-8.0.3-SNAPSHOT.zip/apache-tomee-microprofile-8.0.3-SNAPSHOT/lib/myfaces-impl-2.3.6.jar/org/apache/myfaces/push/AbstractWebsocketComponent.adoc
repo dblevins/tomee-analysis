@@ -1,0 +1,8 @@
+= org/apache/myfaces/push/AbstractWebsocketComponent.class
+
+ - link:AbstractWebsocketComponent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIOutput - 2
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

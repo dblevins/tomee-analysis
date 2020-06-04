@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/outbound/ConnectionInterceptor.class
+
+ - link:ConnectionInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 1

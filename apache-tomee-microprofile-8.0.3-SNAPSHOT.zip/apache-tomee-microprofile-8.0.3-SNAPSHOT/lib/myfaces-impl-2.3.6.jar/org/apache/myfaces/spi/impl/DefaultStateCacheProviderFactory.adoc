@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/impl/DefaultStateCacheProviderFactory.class
+
+ - link:DefaultStateCacheProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 14
+ - javax.faces.FacesException - 2

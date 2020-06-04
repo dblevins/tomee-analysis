@@ -1,0 +1,8 @@
+= javax/faces/view/facelets/FaceletCache.class
+
+ - link:FaceletCache-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 14
+ - javax.faces.view.facelets.FaceletCache - 1

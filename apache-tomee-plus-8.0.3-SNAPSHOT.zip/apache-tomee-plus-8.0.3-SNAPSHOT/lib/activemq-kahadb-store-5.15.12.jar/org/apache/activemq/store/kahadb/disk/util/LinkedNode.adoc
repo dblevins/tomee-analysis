@@ -1,0 +1,6 @@
+= org/apache/activemq/store/kahadb/disk/util/LinkedNode.class
+
+ - link:LinkedNode-asmified.java[Asmified]
+
+== References
+

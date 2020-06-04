@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/DefaultRepository.class
+
+ - link:DefaultRepository-asmified.java[Asmified]
+
+== References
+

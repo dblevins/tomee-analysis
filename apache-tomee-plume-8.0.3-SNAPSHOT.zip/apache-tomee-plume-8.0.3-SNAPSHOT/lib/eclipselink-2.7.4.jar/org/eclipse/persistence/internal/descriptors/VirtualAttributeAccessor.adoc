@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/VirtualAttributeAccessor.class
+
+ - link:VirtualAttributeAccessor-asmified.java[Asmified]
+
+== References
+

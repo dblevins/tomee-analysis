@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/NoConversion.class
+
+ - link:NoConversion-asmified.java[Asmified]
+
+== References
+

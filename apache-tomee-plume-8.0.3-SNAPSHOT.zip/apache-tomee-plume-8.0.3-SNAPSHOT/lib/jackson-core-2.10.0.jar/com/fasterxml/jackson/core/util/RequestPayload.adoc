@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/RequestPayload.class
+
+ - link:RequestPayload-asmified.java[Asmified]
+
+== References
+

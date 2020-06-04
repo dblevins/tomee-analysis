@@ -1,0 +1,6 @@
+= org/hsqldb/types/OtherType.class
+
+ - link:OtherType-asmified.java[Asmified]
+
+== References
+

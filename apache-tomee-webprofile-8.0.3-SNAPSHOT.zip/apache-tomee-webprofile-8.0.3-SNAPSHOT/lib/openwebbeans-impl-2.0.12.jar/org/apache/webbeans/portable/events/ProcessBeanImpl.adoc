@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/events/ProcessBeanImpl.class
+
+ - link:ProcessBeanImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 5
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.inject.spi.ProcessBean - 1

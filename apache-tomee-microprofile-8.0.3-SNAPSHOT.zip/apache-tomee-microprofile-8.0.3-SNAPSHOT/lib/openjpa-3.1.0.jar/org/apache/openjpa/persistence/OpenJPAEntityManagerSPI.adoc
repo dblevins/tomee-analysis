@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/OpenJPAEntityManagerSPI.class
+
+ - link:OpenJPAEntityManagerSPI-asmified.java[Asmified]
+
+== References
+

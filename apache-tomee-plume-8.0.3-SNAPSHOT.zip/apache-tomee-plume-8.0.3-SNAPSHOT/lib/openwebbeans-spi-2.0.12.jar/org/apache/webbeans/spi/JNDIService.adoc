@@ -1,0 +1,6 @@
+= org/apache/webbeans/spi/JNDIService.class
+
+ - link:JNDIService-asmified.java[Asmified]
+
+== References
+

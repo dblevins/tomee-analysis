@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/HashtableOfObjectToIntArray.class
+
+ - link:HashtableOfObjectToIntArray-asmified.java[Asmified]
+
+== References
+

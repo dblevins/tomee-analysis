@@ -1,0 +1,7 @@
+= org/eclipse/persistence/eis/interactions/XQueryInteraction.class
+
+ - link:XQueryInteraction-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.InteractionSpec - 1

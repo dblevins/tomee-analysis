@@ -1,0 +1,7 @@
+= org/apache/openejb/rest/ThreadLocalResourceContext.class
+
+ - link:ThreadLocalResourceContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ResourceContext - 7

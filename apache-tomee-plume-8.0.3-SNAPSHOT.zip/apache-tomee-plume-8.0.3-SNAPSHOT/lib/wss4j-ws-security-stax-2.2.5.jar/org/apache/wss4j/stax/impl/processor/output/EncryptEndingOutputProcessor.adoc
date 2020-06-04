@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/output/EncryptEndingOutputProcessor.class
+
+ - link:EncryptEndingOutputProcessor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/ejb/ObjectNotFoundException.class
+
+ - link:ObjectNotFoundException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.FinderException - 3

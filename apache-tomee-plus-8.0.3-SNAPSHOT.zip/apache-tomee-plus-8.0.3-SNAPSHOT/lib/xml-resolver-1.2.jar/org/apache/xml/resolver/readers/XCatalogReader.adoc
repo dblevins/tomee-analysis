@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/readers/XCatalogReader.class
+
+ - link:XCatalogReader-asmified.java[Asmified]
+
+== References
+

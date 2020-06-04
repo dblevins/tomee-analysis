@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/tag/jsf/html/DefaultTagDecorator$TagSelector.class
+
+ - link:DefaultTagDecorator$TagSelector-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 1

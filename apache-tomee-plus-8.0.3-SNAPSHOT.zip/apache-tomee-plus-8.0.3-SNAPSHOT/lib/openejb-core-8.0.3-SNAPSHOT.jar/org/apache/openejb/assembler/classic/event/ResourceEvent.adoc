@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/event/ResourceEvent.class
+
+ - link:ResourceEvent-asmified.java[Asmified]
+
+== References
+

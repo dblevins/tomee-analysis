@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/InvalidObject.class
+
+ - link:InvalidObject-asmified.java[Asmified]
+
+== References
+

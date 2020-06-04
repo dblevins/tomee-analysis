@@ -1,0 +1,8 @@
+= org/apache/catalina/session/StandardSessionContext.class
+
+ - link:StandardSessionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 1
+ - javax.servlet.http.HttpSessionContext - 1

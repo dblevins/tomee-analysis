@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/glassfish/GlassfishPlatform.class
+
+ - link:GlassfishPlatform-asmified.java[Asmified]
+
+== References
+

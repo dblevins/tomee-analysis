@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/SimpleRestriction.class
+
+ - link:SimpleRestriction-asmified.java[Asmified]
+
+== References
+

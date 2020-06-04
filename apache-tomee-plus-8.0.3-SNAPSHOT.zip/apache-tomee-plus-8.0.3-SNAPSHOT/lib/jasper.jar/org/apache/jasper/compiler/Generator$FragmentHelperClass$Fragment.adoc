@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Generator$FragmentHelperClass$Fragment.class
+
+ - link:Generator$FragmentHelperClass$Fragment-asmified.java[Asmified]
+
+== References
+

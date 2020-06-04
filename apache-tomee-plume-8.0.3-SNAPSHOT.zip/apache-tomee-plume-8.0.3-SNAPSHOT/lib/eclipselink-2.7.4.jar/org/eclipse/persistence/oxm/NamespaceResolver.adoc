@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/NamespaceResolver.class
+
+ - link:NamespaceResolver-asmified.java[Asmified]
+
+== References
+

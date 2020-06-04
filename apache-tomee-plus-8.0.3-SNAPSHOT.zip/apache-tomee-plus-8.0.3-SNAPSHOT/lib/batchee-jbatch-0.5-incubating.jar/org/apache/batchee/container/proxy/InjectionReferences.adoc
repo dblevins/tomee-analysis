@@ -1,0 +1,6 @@
+= org/apache/batchee/container/proxy/InjectionReferences.class
+
+ - link:InjectionReferences-asmified.java[Asmified]
+
+== References
+

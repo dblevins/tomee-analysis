@@ -1,0 +1,6 @@
+= org/jasypt/encryption/pbe/PooledPBEBigDecimalEncryptor.class
+
+ - link:PooledPBEBigDecimalEncryptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/NameBuilder.class
+
+ - link:NameBuilder-asmified.java[Asmified]
+
+== References
+

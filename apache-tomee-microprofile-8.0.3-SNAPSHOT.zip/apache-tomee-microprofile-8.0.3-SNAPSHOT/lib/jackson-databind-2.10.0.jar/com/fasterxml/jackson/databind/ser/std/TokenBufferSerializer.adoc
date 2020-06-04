@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/TokenBufferSerializer.class
+
+ - link:TokenBufferSerializer-asmified.java[Asmified]
+
+== References
+

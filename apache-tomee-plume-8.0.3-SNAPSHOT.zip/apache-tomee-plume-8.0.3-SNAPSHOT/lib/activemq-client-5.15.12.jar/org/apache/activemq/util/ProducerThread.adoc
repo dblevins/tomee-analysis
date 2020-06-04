@@ -1,0 +1,13 @@
+= org/apache/activemq/util/ProducerThread.class
+
+ - link:ProducerThread-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageProducer - 21
+ - javax.jms.Session - 11
+ - javax.jms.JMSException - 10
+ - javax.jms.Message - 8
+ - javax.jms.Destination - 5
+ - javax.jms.TextMessage - 4
+ - javax.jms.BytesMessage - 3

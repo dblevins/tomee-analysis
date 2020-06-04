@@ -1,0 +1,6 @@
+= org/apache/webbeans/exception/WebBeansCreationException.class
+
+ - link:WebBeansCreationException-asmified.java[Asmified]
+
+== References
+

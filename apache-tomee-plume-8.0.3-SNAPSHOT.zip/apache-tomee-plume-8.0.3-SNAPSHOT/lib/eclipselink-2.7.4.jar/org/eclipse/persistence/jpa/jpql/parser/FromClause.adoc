@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/FromClause.class
+
+ - link:FromClause-asmified.java[Asmified]
+
+== References
+

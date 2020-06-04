@@ -1,0 +1,6 @@
+= org/apache/commons/digester/plugins/strategies/FinderFromResource.class
+
+ - link:FinderFromResource-asmified.java[Asmified]
+
+== References
+

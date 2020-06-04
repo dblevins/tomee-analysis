@@ -1,0 +1,32 @@
+= com/sun/faces/application/NavigationHandlerImpl.class
+
+ - link:NavigationHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 228
+ - javax.faces.flow.Flow - 148
+ - javax.faces.flow.FlowHandler - 85
+ - javax.faces.application.NavigationCase - 52
+ - javax.faces.application.Application - 36
+ - javax.faces.flow.FlowCallNode - 24
+ - javax.faces.flow.FlowNode - 19
+ - javax.faces.component.UIViewRoot - 19
+ - javax.faces.flow.MethodCallNode - 11
+ - javax.el.ELContext - 10
+ - javax.faces.application.ViewHandler - 9
+ - javax.faces.flow.SwitchNode - 9
+ - javax.faces.context.ExternalContext - 8
+ - javax.el.MethodExpression - 6
+ - javax.faces.application.FacesMessage - 6
+ - javax.faces.flow.ReturnNode - 6
+ - javax.faces.flow.ViewNode - 4
+ - javax.faces.context.Flash - 4
+ - javax.el.ValueExpression - 4
+ - javax.faces.application.FacesMessage$Severity - 4
+ - javax.faces.flow.SwitchCase - 3
+ - javax.faces.context.PartialViewContext - 3
+ - javax.faces.flow.Parameter - 2
+ - javax.faces.application.ConfigurableNavigationHandler - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.component.UIViewAction - 1

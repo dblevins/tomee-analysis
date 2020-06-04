@@ -1,0 +1,6 @@
+= org/apache/bval/util/CollectionSet.class
+
+ - link:CollectionSet-asmified.java[Asmified]
+
+== References
+

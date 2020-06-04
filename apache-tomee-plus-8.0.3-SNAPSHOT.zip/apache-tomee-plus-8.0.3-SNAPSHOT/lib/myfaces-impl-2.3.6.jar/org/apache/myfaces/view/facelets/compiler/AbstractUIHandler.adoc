@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/compiler/AbstractUIHandler.class
+
+ - link:AbstractUIHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 8
+ - javax.faces.view.facelets.FaceletContext - 4
+ - javax.faces.view.facelets.TextHandler - 1
+ - javax.faces.view.facelets.FaceletHandler - 1

@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/jmx/JMXAccessorConditionBase.class
+
+ - link:JMXAccessorConditionBase-asmified.java[Asmified]
+
+== References
+

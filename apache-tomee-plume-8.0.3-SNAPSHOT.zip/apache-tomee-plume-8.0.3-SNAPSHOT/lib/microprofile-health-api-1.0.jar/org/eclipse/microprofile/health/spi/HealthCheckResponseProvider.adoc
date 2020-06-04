@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/health/spi/HealthCheckResponseProvider.class
+
+ - link:HealthCheckResponseProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/AndExpression.class
+
+ - link:AndExpression-asmified.java[Asmified]
+
+== References
+

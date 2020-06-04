@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/validate/UsernameTokenValidatorImpl.class
+
+ - link:UsernameTokenValidatorImpl-asmified.java[Asmified]
+
+== References
+

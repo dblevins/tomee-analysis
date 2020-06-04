@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/DirectAccessor.class
+
+ - link:DirectAccessor-asmified.java[Asmified]
+
+== References
+

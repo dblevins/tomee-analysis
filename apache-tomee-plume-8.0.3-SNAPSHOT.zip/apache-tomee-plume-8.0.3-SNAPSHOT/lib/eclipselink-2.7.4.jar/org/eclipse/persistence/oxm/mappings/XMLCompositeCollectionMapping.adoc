@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/XMLCompositeCollectionMapping.class
+
+ - link:XMLCompositeCollectionMapping-asmified.java[Asmified]
+
+== References
+

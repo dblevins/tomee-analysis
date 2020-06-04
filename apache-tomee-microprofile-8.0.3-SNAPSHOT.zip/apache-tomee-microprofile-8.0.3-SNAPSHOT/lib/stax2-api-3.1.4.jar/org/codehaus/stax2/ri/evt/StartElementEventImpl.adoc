@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/StartElementEventImpl.class
+
+ - link:StartElementEventImpl-asmified.java[Asmified]
+
+== References
+

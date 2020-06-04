@@ -1,0 +1,6 @@
+= org/apache/batchee/container/impl/controller/PartitionThreadRootController.class
+
+ - link:PartitionThreadRootController-asmified.java[Asmified]
+
+== References
+

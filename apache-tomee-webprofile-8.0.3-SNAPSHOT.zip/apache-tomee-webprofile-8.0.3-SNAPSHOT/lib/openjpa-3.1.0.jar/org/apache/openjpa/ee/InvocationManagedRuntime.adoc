@@ -1,0 +1,8 @@
+= org/apache/openjpa/ee/InvocationManagedRuntime.class
+
+ - link:InvocationManagedRuntime-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 4
+ - javax.transaction.Transaction - 2

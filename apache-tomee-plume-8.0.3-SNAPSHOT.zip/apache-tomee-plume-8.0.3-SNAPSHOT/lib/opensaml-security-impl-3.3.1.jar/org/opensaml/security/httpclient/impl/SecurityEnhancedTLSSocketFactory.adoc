@@ -1,0 +1,8 @@
+= org/opensaml/security/httpclient/impl/SecurityEnhancedTLSSocketFactory.class
+
+ - link:SecurityEnhancedTLSSocketFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 5

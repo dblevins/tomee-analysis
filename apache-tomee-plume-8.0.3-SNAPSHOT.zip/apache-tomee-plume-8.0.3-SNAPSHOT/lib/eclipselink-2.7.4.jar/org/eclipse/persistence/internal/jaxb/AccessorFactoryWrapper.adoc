@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/AccessorFactoryWrapper.class
+
+ - link:AccessorFactoryWrapper-asmified.java[Asmified]
+
+== References
+

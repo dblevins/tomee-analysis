@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/compiler/Generator.class
+
+ - link:Generator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.SchemaOutputResolver - 8

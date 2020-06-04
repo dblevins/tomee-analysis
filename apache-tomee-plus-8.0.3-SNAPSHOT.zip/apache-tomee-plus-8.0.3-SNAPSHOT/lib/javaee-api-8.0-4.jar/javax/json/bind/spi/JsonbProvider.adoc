@@ -1,0 +1,9 @@
+= javax/json/bind/spi/JsonbProvider.class
+
+ - link:JsonbProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.spi.JsonbProvider - 26
+ - javax.json.bind.JsonbException - 6
+ - javax.json.bind.JsonbBuilder - 1

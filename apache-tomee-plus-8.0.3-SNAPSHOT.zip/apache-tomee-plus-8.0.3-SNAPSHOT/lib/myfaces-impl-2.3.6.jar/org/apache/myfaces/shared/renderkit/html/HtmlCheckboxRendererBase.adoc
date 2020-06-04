@@ -1,0 +1,19 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlCheckboxRendererBase.class
+
+ - link:HtmlCheckboxRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 118
+ - javax.faces.context.ResponseWriter - 108
+ - javax.faces.context.FacesContext - 93
+ - javax.faces.model.SelectItem - 27
+ - javax.faces.component.UISelectMany - 25
+ - javax.faces.convert.Converter - 16
+ - javax.faces.component.behavior.ClientBehaviorHolder - 13
+ - javax.faces.model.SelectItemGroup - 8
+ - javax.faces.component.html.HtmlSelectManyCheckbox - 6
+ - javax.faces.component.UISelectBoolean - 4
+ - javax.faces.component.html.HtmlSelectBooleanCheckbox - 3
+ - javax.faces.component.UISelectOne - 1
+ - javax.faces.convert.ConverterException - 1

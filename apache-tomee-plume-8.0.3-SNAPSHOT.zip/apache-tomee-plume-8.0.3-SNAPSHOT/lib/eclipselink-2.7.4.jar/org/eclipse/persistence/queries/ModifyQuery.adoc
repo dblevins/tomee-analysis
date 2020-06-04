@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ModifyQuery.class
+
+ - link:ModifyQuery-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/management/interceptor/PersistInInterceptor.class
+
+ - link:PersistInInterceptor-asmified.java[Asmified]
+
+== References
+

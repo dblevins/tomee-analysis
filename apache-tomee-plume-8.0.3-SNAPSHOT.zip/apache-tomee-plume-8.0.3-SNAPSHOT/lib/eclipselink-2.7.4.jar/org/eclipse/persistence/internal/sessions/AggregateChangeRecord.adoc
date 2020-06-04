@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/AggregateChangeRecord.class
+
+ - link:AggregateChangeRecord-asmified.java[Asmified]
+
+== References
+

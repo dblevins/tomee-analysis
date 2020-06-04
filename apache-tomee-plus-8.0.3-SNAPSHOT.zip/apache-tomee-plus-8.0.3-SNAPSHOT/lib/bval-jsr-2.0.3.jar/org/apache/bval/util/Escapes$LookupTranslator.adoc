@@ -1,0 +1,6 @@
+= org/apache/bval/util/Escapes$LookupTranslator.class
+
+ - link:Escapes$LookupTranslator-asmified.java[Asmified]
+
+== References
+

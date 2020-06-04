@@ -1,0 +1,10 @@
+= org/apache/webbeans/intercept/LifecycleInterceptorInvocationContext.class
+
+ - link:LifecycleInterceptorInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Interceptor - 8
+ - javax.enterprise.inject.spi.InterceptionType - 7
+ - javax.enterprise.inject.spi.AnnotatedMethod - 5
+ - javax.interceptor.InvocationContext - 2

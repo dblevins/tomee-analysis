@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/IndexNode.class
+
+ - link:IndexNode-asmified.java[Asmified]
+
+== References
+

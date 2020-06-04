@@ -1,0 +1,8 @@
+= org/apache/cxf/ws/addressing/ContextJAXBUtils.class
+
+ - link:ContextJAXBUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 9
+ - javax.xml.bind.JAXBException - 1

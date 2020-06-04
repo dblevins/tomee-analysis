@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/ScaleXPointMap.class
+
+ - link:ScaleXPointMap-asmified.java[Asmified]
+
+== References
+

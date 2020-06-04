@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/mappings/MapKeyMetadata.class
+
+ - link:MapKeyMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/CaseLabel.class
+
+ - link:CaseLabel-asmified.java[Asmified]
+
+== References
+

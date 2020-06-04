@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/ForeignKey$FKMapKey.class
+
+ - link:ForeignKey$FKMapKey-asmified.java[Asmified]
+
+== References
+

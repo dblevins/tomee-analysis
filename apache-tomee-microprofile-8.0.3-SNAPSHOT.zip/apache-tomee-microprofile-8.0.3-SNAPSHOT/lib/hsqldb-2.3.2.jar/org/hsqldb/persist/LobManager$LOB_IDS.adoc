@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LobManager$LOB_IDS.class
+
+ - link:LobManager$LOB_IDS-asmified.java[Asmified]
+
+== References
+

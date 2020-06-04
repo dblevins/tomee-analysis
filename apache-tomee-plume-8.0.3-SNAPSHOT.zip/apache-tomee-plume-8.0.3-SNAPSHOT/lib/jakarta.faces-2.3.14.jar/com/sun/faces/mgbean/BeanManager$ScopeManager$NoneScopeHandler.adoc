@@ -1,0 +1,7 @@
+= com/sun/faces/mgbean/BeanManager$ScopeManager$NoneScopeHandler.class
+
+ - link:BeanManager$ScopeManager$NoneScopeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3

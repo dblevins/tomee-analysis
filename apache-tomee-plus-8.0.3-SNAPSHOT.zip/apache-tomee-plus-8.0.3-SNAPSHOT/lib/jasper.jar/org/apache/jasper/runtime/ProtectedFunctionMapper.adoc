@@ -1,0 +1,8 @@
+= org/apache/jasper/runtime/ProtectedFunctionMapper.class
+
+ - link:ProtectedFunctionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.FunctionMapper - 2
+ - javax.servlet.jsp.el.FunctionMapper - 1

@@ -1,0 +1,9 @@
+= org/apache/openejb/core/cmp/cmp2/SingleValuedCmr.class
+
+ - link:SingleValuedCmr-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 12
+ - javax.ejb.EJBException - 5
+ - javax.ejb.EJBLocalObject - 4

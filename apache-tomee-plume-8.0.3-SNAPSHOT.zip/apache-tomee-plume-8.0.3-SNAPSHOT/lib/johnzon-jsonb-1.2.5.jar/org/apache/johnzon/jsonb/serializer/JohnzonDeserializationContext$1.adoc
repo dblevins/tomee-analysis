@@ -1,0 +1,7 @@
+= org/apache/johnzon/jsonb/serializer/JohnzonDeserializationContext$1.class
+
+ - link:JohnzonDeserializationContext$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser$Event - 22

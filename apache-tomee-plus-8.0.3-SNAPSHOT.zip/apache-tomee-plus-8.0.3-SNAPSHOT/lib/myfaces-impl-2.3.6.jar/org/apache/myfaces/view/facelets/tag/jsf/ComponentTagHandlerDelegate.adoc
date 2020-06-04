@@ -1,0 +1,40 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ComponentTagHandlerDelegate.class
+
+ - link:ComponentTagHandlerDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 93
+ - javax.faces.context.FacesContext - 52
+ - javax.faces.view.facelets.ComponentHandler - 41
+ - javax.faces.view.facelets.FaceletContext - 40
+ - javax.faces.view.facelets.MetaRuleset - 22
+ - javax.faces.component.EditableValueHolder - 18
+ - javax.faces.application.Application - 14
+ - javax.faces.validator.Validator - 14
+ - javax.faces.view.facelets.TagAttribute - 13
+ - javax.faces.validator.BeanValidator - 10
+ - javax.el.ValueExpression - 9
+ - javax.faces.view.facelets.Tag - 8
+ - javax.faces.FacesWrapper - 8
+ - javax.faces.component.UniqueIdVendor - 7
+ - javax.el.ELContext - 6
+ - javax.faces.view.facelets.MetaRule - 5
+ - javax.faces.view.EditableValueHolderAttachedObjectHandler - 4
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.view.facelets.ComponentConfig - 4
+ - javax.faces.component.visit.VisitContext - 2
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.faces.view.facelets.TagHandlerDelegate - 2
+ - javax.validation.groups.Default - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.ValidatorHandler - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.component.visit.VisitContextFactory - 2
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.event.ComponentSystemEventListener - 1
+ - javax.faces.view.Location - 1
+ - javax.faces.component.ValueHolder - 1
+ - javax.faces.component.ActionSource - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

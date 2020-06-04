@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/utils/ParameterizedCollectionType.class
+
+ - link:ParameterizedCollectionType-asmified.java[Asmified]
+
+== References
+

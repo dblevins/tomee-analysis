@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/impl/DefaultFaceletFactory$IdMapperFactory.class
+
+ - link:DefaultFaceletFactory$IdMapperFactory-asmified.java[Asmified]
+
+== References
+

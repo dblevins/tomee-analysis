@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/Topic.class
+
+ - link:Topic-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.ResourceAllocationException - 4

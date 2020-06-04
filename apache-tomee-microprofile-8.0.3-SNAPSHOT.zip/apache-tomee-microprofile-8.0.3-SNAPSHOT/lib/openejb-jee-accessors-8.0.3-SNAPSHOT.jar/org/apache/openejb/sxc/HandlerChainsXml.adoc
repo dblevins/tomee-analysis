@@ -1,0 +1,6 @@
+= org/apache/openejb/sxc/HandlerChainsXml.class
+
+ - link:HandlerChainsXml-asmified.java[Asmified]
+
+== References
+

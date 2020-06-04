@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/EndpointUtils.class
+
+ - link:EndpointUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.WebService - 2
+ - javax.xml.ws.WebServiceProvider - 2
+ - javax.xml.ws.Provider - 1

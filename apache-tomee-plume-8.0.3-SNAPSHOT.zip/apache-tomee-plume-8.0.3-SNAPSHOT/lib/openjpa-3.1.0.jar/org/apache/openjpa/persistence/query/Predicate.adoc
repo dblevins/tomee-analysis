@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/Predicate.class
+
+ - link:Predicate-asmified.java[Asmified]
+
+== References
+

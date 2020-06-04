@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/remote/corba/sun/TransporterDefaultFactory.class
+
+ - link:TransporterDefaultFactory-asmified.java[Asmified]
+
+== References
+

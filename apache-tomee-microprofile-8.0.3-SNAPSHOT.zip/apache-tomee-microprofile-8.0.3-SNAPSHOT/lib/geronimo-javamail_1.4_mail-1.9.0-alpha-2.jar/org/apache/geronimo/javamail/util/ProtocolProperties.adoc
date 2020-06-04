@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/util/ProtocolProperties.class
+
+ - link:ProtocolProperties-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Session - 17

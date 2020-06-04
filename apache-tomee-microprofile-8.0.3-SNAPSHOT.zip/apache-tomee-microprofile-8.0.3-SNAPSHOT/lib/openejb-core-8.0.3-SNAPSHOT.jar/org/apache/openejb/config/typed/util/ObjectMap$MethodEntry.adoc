@@ -1,0 +1,6 @@
+= org/apache/openejb/config/typed/util/ObjectMap$MethodEntry.class
+
+ - link:ObjectMap$MethodEntry-asmified.java[Asmified]
+
+== References
+

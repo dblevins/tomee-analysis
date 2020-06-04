@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/tables/CollectionTableMetadata.class
+
+ - link:CollectionTableMetadata-asmified.java[Asmified]
+
+== References
+

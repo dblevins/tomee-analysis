@@ -1,0 +1,9 @@
+= javax/faces/event/ComponentSystemEventListener.class
+
+ - link:ComponentSystemEventListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.FacesListener - 1
+ - javax.faces.event.ComponentSystemEvent - 1
+ - javax.faces.event.AbortProcessingException - 1

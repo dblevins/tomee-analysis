@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/namespaces/PrefixMapperNamespaceResolver.class
+
+ - link:PrefixMapperNamespaceResolver-asmified.java[Asmified]
+
+== References
+

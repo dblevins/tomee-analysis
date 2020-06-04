@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/TemplateClient.class
+
+ - link:TemplateClient-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 1
+ - javax.faces.component.UIComponent - 1

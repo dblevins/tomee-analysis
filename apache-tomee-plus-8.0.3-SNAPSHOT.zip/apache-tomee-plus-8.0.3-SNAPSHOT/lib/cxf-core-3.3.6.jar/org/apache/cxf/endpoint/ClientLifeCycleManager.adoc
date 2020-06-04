@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ClientLifeCycleManager.class
+
+ - link:ClientLifeCycleManager-asmified.java[Asmified]
+
+== References
+

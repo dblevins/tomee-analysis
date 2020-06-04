@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/TenantDiscriminatorColumns.class
+
+ - link:TenantDiscriminatorColumns-asmified.java[Asmified]
+
+== References
+

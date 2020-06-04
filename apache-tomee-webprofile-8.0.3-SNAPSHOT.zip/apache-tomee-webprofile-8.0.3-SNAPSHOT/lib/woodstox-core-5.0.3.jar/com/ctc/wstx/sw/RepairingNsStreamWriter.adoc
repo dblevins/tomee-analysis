@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/RepairingNsStreamWriter.class
+
+ - link:RepairingNsStreamWriter-asmified.java[Asmified]
+
+== References
+

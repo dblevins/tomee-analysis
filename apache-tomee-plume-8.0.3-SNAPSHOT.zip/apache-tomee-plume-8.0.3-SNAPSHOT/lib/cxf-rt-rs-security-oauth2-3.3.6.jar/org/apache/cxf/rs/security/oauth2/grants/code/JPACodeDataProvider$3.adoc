@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/oauth2/grants/code/JPACodeDataProvider$3.class
+
+ - link:JPACodeDataProvider$3-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 4

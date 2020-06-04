@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/validation/JAXRSClientBeanValidationFeature.class
+
+ - link:JAXRSClientBeanValidationFeature-asmified.java[Asmified]
+
+== References
+

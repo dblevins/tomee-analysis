@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/runtime/RuntimeMapPropertyInfo.class
+
+ - link:RuntimeMapPropertyInfo-asmified.java[Asmified]
+
+== References
+

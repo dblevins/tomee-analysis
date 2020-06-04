@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/pool/impl/ViewStructureMetadataImpl.class
+
+ - link:ViewStructureMetadataImpl-asmified.java[Asmified]
+
+== References
+

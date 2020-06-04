@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/StackMapFrameCodeStream$FramePosition.class
+
+ - link:StackMapFrameCodeStream$FramePosition-asmified.java[Asmified]
+
+== References
+

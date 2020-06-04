@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/DeleteObjectQuery.class
+
+ - link:DeleteObjectQuery-asmified.java[Asmified]
+
+== References
+

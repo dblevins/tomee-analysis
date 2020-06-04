@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/FirebirdPlatform.class
+
+ - link:FirebirdPlatform-asmified.java[Asmified]
+
+== References
+

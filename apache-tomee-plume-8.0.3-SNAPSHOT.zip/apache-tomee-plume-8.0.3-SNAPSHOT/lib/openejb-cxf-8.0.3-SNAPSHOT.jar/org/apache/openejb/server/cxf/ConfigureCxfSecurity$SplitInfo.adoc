@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/ConfigureCxfSecurity$SplitInfo.class
+
+ - link:ConfigureCxfSecurity$SplitInfo-asmified.java[Asmified]
+
+== References
+

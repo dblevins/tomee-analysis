@@ -1,0 +1,9 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/APIResponseImpl.class
+
+ - link:APIResponseImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbTypeDeserializer - 2
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.annotation.JsonbTransient - 1

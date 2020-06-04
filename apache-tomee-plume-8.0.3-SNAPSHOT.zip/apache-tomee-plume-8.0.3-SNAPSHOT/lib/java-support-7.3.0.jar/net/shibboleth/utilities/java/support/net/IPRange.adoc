@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/net/IPRange.class
+
+ - link:IPRange-asmified.java[Asmified]
+
+== References
+

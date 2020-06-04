@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/ConnectionFactoryMonitor$PartitionStrategy.class
+
+ - link:ConnectionFactoryMonitor$PartitionStrategy-asmified.java[Asmified]
+
+== References
+

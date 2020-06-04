@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/crypto/mceliece/McEliecePublicKeyParameters.class
+
+ - link:McEliecePublicKeyParameters-asmified.java[Asmified]
+
+== References
+

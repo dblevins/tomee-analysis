@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsfed/EndPointReference.class
+
+ - link:EndPointReference-asmified.java[Asmified]
+
+== References
+

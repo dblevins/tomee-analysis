@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/keyvalues/ECKeyValue$Curve.class
+
+ - link:ECKeyValue$Curve-asmified.java[Asmified]
+
+== References
+

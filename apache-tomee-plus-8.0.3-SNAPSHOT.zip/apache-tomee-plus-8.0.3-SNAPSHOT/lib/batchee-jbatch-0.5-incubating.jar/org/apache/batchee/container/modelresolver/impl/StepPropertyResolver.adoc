@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/StepPropertyResolver.class
+
+ - link:StepPropertyResolver-asmified.java[Asmified]
+
+== References
+

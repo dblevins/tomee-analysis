@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/transport/ReplicationTransmitter.class
+
+ - link:ReplicationTransmitter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/jstl/core/JstlIterationStatus.class
+
+ - link:JstlIterationStatus-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.jstl.core.LoopTagStatus - 1

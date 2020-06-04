@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/cdi/SafeguardExtension$MockInvocationContext.class
+
+ - link:SafeguardExtension$MockInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 1

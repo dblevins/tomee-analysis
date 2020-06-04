@@ -1,0 +1,9 @@
+= org/apache/myfaces/lifecycle/InvokeApplicationExecutor.class
+
+ - link:InvokeApplicationExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.event.PhaseId - 3

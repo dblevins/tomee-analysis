@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/edec/EdECObjectIdentifiers.class
+
+ - link:EdECObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

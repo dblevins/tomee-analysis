@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/Soap12FaultOutInterceptor.class
+
+ - link:Soap12FaultOutInterceptor-asmified.java[Asmified]
+
+== References
+

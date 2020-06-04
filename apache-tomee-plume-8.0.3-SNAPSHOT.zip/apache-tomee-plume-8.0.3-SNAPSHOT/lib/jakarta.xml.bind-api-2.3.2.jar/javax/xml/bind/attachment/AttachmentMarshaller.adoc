@@ -1,0 +1,7 @@
+= javax/xml/bind/attachment/AttachmentMarshaller.class
+
+ - link:AttachmentMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

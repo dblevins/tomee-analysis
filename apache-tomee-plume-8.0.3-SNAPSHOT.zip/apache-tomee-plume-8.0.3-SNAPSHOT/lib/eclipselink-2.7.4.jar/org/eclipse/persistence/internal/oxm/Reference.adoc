@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/Reference.class
+
+ - link:Reference-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/HandlerHandlerMapTableFieldStrategy.class
+
+ - link:HandlerHandlerMapTableFieldStrategy-asmified.java[Asmified]
+
+== References
+

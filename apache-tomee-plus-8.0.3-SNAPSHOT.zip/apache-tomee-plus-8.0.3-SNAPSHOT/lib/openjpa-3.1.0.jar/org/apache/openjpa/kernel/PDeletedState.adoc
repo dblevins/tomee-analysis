@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/PDeletedState.class
+
+ - link:PDeletedState-asmified.java[Asmified]
+
+== References
+

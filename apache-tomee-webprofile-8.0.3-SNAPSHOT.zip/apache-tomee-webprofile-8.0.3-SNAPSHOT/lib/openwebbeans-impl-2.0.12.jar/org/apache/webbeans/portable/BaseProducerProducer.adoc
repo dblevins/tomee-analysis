@@ -1,0 +1,16 @@
+= org/apache/webbeans/portable/BaseProducerProducer.class
+
+ - link:BaseProducerProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 13
+ - javax.enterprise.inject.spi.AnnotatedMethod - 10
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.inject.spi.InjectionPoint - 4
+ - javax.enterprise.inject.spi.AnnotatedParameter - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.Disposes - 1
+ - javax.enterprise.inject.Any - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.enterprise.inject.spi.Producer - 1

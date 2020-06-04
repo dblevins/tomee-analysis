@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/BERSequenceGenerator.class
+
+ - link:BERSequenceGenerator-asmified.java[Asmified]
+
+== References
+

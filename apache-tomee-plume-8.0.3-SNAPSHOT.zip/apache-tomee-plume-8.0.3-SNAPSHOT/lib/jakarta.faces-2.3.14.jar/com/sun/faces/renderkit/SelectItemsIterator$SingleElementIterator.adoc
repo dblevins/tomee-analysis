@@ -1,0 +1,8 @@
+= com/sun/faces/renderkit/SelectItemsIterator$SingleElementIterator.class
+
+ - link:SelectItemsIterator$SingleElementIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.SelectItem - 9
+ - javax.faces.component.UIComponent - 7

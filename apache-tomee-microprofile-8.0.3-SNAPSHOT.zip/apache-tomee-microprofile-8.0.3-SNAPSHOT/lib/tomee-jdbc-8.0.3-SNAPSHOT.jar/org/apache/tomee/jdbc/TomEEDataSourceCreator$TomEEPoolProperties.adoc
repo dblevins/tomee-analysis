@@ -1,0 +1,6 @@
+= org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEPoolProperties.class
+
+ - link:TomEEDataSourceCreator$TomEEPoolProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/util/UUEncoderStream.class
+
+ - link:UUEncoderStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/geronimo/javamail/handlers/AbstractTextHandler.class
+
+ - link:AbstractTextHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 5
+ - javax.mail.internet.ContentType - 3
+ - javax.mail.internet.MimeUtility - 1
+ - javax.activation.DataContentHandler - 1

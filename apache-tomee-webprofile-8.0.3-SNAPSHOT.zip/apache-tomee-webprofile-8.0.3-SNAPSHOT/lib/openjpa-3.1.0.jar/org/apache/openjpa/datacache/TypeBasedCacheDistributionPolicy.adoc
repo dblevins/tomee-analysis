@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/TypeBasedCacheDistributionPolicy.class
+
+ - link:TypeBasedCacheDistributionPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/validation/constraints/Future$List.class
+
+ - link:Future$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Future - 1

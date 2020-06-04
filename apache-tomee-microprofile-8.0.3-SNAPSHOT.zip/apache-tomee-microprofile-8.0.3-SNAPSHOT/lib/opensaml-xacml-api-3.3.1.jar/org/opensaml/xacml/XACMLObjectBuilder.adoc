@@ -1,0 +1,6 @@
+= org/opensaml/xacml/XACMLObjectBuilder.class
+
+ - link:XACMLObjectBuilder-asmified.java[Asmified]
+
+== References
+

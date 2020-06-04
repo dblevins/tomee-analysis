@@ -1,0 +1,13 @@
+= org/apache/activemq/advisory/DestinationSource.class
+
+ - link:DestinationSource-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageConsumer - 20
+ - javax.jms.Session - 14
+ - javax.jms.Connection - 5
+ - javax.jms.MessageListener - 5
+ - javax.jms.Destination - 4
+ - javax.jms.JMSException - 3
+ - javax.jms.Message - 1

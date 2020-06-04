@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sequencing/QuerySequence.class
+
+ - link:QuerySequence-asmified.java[Asmified]
+
+== References
+

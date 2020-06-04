@@ -1,0 +1,8 @@
+= org/apache/activemq/ra/ActiveMQConnectionSupport.class
+
+ - link:ActiveMQConnectionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.Connection - 1

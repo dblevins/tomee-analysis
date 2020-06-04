@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/ejb/EjbMethodInvoker$MostSpecificMethodCache.class
+
+ - link:EjbMethodInvoker$MostSpecificMethodCache-asmified.java[Asmified]
+
+== References
+

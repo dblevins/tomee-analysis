@@ -1,0 +1,10 @@
+= org/apache/geronimo/config/cdi/ConfigInjectionPoint.class
+
+ - link:ConfigInjectionPoint-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.inject.spi.InjectionPoint - 2
+ - javax.enterprise.inject.Default - 1
+ - javax.enterprise.inject.spi.Annotated - 1

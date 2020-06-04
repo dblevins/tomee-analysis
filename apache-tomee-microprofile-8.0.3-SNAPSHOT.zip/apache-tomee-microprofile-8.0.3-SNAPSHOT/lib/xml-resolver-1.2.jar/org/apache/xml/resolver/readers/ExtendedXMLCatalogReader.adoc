@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/readers/ExtendedXMLCatalogReader.class
+
+ - link:ExtendedXMLCatalogReader-asmified.java[Asmified]
+
+== References
+

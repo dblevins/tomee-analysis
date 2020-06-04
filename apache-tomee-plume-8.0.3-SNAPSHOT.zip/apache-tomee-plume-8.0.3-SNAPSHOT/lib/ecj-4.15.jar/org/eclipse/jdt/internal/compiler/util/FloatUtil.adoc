@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/FloatUtil.class
+
+ - link:FloatUtil-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/Converter$None.class
+
+ - link:Converter$None-asmified.java[Asmified]
+
+== References
+

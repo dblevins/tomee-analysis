@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/DomToXMLEventWriter.class
+
+ - link:DomToXMLEventWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= serp/bytecode/GetFieldInstruction.class
+
+ - link:GetFieldInstruction-asmified.java[Asmified]
+
+== References
+

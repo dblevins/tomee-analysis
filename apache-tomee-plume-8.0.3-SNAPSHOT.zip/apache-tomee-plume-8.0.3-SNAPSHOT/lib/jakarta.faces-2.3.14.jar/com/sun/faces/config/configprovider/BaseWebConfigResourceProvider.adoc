@@ -1,0 +1,8 @@
+= com/sun/faces/config/configprovider/BaseWebConfigResourceProvider.class
+
+ - link:BaseWebConfigResourceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 7
+ - javax.faces.FacesException - 2

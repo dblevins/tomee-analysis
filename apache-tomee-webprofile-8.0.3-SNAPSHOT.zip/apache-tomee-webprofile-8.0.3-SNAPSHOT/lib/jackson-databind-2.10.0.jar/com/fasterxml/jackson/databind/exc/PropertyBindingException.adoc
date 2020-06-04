@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/exc/PropertyBindingException.class
+
+ - link:PropertyBindingException-asmified.java[Asmified]
+
+== References
+

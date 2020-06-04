@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/UpdateNode.class
+
+ - link:UpdateNode-asmified.java[Asmified]
+
+== References
+

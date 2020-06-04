@@ -1,0 +1,12 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/v2/ResourceSchema.class
+
+ - link:ResourceSchema-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 10
+ - javax.xml.bind.annotation.XmlAnyElement - 2
+ - javax.xml.bind.annotation.XmlElementWrapper - 2
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlElement - 1

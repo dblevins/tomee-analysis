@@ -1,0 +1,7 @@
+= org/apache/catalina/connector/RequestFacade$GetSessionPrivilegedAction.class
+
+ - link:RequestFacade$GetSessionPrivilegedAction-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 4

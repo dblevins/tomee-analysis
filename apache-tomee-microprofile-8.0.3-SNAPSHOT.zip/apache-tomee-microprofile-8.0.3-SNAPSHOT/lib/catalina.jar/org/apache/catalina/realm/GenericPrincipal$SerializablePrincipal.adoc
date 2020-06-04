@@ -1,0 +1,6 @@
+= org/apache/catalina/realm/GenericPrincipal$SerializablePrincipal.class
+
+ - link:GenericPrincipal$SerializablePrincipal-asmified.java[Asmified]
+
+== References
+

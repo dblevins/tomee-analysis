@@ -1,0 +1,6 @@
+= org/apache/openejb/server/auth/StartWithIPAddressPermission.class
+
+ - link:StartWithIPAddressPermission-asmified.java[Asmified]
+
+== References
+

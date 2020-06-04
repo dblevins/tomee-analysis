@@ -1,0 +1,10 @@
+= org/apache/johnzon/mapper/MapperBuilder.class
+
+ - link:MapperBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.json.spi.JsonProvider - 19
+ - javax.json.JsonReaderFactory - 9
+ - javax.json.stream.JsonGeneratorFactory - 9
+ - javax.json.JsonBuilderFactory - 8

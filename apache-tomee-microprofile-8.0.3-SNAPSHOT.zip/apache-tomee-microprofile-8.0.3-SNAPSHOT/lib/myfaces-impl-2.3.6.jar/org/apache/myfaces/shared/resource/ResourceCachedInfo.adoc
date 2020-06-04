@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/resource/ResourceCachedInfo.class
+
+ - link:ResourceCachedInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/builder/helper/TransformerReflectionHelper.class
+
+ - link:TransformerReflectionHelper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/IssuedTokenBuilder.class
+
+ - link:IssuedTokenBuilder-asmified.java[Asmified]
+
+== References
+

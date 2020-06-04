@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/AbstractAccessorImpl.class
+
+ - link:AbstractAccessorImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/SAML2ObjectSupport.class
+
+ - link:SAML2ObjectSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 2

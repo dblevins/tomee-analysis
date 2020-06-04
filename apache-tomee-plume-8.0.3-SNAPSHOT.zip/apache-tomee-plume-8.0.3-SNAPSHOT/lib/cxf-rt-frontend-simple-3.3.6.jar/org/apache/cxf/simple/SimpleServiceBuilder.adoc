@@ -1,0 +1,6 @@
+= org/apache/cxf/simple/SimpleServiceBuilder.class
+
+ - link:SimpleServiceBuilder-asmified.java[Asmified]
+
+== References
+

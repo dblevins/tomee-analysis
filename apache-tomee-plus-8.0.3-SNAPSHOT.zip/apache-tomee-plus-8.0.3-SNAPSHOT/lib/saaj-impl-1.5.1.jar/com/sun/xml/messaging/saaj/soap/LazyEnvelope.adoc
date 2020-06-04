@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/soap/LazyEnvelope.class
+
+ - link:LazyEnvelope-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 5

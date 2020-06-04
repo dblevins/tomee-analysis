@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/cloud/InsecureStreamProvider.class
+
+ - link:InsecureStreamProvider-asmified.java[Asmified]
+
+== References
+

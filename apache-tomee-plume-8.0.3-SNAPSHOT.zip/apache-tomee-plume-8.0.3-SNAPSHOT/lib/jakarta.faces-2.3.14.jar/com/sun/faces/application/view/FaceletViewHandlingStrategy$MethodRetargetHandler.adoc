@@ -1,0 +1,8 @@
+= com/sun/faces/application/view/FaceletViewHandlingStrategy$MethodRetargetHandler.class
+
+ - link:FaceletViewHandlingStrategy$MethodRetargetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1
+ - javax.faces.component.UIComponent - 1

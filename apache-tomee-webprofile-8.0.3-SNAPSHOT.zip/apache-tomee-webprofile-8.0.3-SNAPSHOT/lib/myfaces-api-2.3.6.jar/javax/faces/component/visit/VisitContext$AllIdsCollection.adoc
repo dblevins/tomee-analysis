@@ -1,0 +1,8 @@
+= javax/faces/component/visit/VisitContext$AllIdsCollection.class
+
+ - link:VisitContext$AllIdsCollection-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitContext$AllIdsCollection - 2
+ - javax.faces.component.visit.VisitContext$1 - 1

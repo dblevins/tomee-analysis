@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/FunctionalExpression$VisibilityInspector.class
+
+ - link:FunctionalExpression$VisibilityInspector-asmified.java[Asmified]
+
+== References
+

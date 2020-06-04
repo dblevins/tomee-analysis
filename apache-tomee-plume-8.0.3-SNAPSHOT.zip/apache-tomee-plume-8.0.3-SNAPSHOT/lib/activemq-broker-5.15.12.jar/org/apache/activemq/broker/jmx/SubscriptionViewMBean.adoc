@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/jmx/SubscriptionViewMBean.class
+
+ - link:SubscriptionViewMBean-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.InvalidSelectorException - 1

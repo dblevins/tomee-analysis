@@ -1,0 +1,6 @@
+= org/apache/myfaces/component/visit/PartialVisitContext$1.class
+
+ - link:PartialVisitContext$1-asmified.java[Asmified]
+
+== References
+

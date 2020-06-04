@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/triggers/CoreTrigger.class
+
+ - link:CoreTrigger-asmified.java[Asmified]
+
+== References
+

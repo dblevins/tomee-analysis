@@ -1,0 +1,11 @@
+= org/apache/jasper/compiler/Node$JspAttribute.class
+
+ - link:Node$JspAttribute-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagAttributeInfo - 21
+ - javax.el.ExpressionFactory - 2
+ - javax.el.ELContext - 2
+ - javax.el.ValueExpression - 1
+ - javax.el.ELException - 1

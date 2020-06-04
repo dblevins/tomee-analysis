@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/stax/assertionStates/SecurityContextTokenAssertionState.class
+
+ - link:SecurityContextTokenAssertionState-asmified.java[Asmified]
+
+== References
+

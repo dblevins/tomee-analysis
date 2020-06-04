@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/handler/rotating/Duration$Normalize.class
+
+ - link:Duration$Normalize-asmified.java[Asmified]
+
+== References
+

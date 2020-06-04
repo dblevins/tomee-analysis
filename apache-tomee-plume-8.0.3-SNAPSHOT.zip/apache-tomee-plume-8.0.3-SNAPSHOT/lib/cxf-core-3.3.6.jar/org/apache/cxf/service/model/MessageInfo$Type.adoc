@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/MessageInfo$Type.class
+
+ - link:MessageInfo$Type-asmified.java[Asmified]
+
+== References
+

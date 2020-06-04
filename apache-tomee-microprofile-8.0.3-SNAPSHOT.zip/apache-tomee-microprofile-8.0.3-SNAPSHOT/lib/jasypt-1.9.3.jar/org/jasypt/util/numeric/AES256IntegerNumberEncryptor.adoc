@@ -1,0 +1,6 @@
+= org/jasypt/util/numeric/AES256IntegerNumberEncryptor.class
+
+ - link:AES256IntegerNumberEncryptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/digester/substitution/VariableSubstitutor.class
+
+ - link:VariableSubstitutor-asmified.java[Asmified]
+
+== References
+

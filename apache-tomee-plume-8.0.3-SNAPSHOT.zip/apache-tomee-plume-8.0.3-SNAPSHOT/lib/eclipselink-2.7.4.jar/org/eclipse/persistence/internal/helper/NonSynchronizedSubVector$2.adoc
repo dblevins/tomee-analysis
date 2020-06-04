@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/NonSynchronizedSubVector$2.class
+
+ - link:NonSynchronizedSubVector$2-asmified.java[Asmified]
+
+== References
+

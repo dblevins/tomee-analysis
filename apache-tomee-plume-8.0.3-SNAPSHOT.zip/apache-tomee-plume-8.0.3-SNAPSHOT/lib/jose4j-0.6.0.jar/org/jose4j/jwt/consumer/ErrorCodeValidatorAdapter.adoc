@@ -1,0 +1,6 @@
+= org/jose4j/jwt/consumer/ErrorCodeValidatorAdapter.class
+
+ - link:ErrorCodeValidatorAdapter-asmified.java[Asmified]
+
+== References
+

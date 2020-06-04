@@ -1,0 +1,6 @@
+= org/apache/commons/digester/CallMethodRule.class
+
+ - link:CallMethodRule-asmified.java[Asmified]
+
+== References
+

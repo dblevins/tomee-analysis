@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/spnego/SpnegoTokenContext.class
+
+ - link:SpnegoTokenContext-asmified.java[Asmified]
+
+== References
+

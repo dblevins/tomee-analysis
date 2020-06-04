@@ -1,0 +1,11 @@
+= javax/el/BeanELResolver$BeanProperty.class
+
+ - link:BeanELResolver$BeanProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 8
+ - javax.el.Util - 5
+ - javax.el.BeanELResolver$BeanProperty - 4
+ - javax.el.PropertyNotFoundException - 2
+ - javax.el.PropertyNotWritableException - 2

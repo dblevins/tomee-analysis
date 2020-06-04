@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/CxfService.class
+
+ - link:CxfService-asmified.java[Asmified]
+
+== References
+

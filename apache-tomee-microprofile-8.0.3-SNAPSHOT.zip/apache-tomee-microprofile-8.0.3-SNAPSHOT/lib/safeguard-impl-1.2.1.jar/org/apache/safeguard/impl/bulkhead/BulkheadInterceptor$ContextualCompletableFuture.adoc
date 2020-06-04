@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/bulkhead/BulkheadInterceptor$ContextualCompletableFuture.class
+
+ - link:BulkheadInterceptor$ContextualCompletableFuture-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/StartDocumentEvent.class
+
+ - link:StartDocumentEvent-asmified.java[Asmified]
+
+== References
+

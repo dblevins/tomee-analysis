@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/nodes/AnchorNode.class
+
+ - link:AnchorNode-asmified.java[Asmified]
+
+== References
+

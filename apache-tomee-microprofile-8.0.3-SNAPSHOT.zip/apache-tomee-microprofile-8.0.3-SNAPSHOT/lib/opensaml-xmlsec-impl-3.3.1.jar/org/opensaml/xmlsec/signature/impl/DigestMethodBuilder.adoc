@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/DigestMethodBuilder.class
+
+ - link:DigestMethodBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/AbstractSAMLObjectUnmarshaller.class
+
+ - link:AbstractSAMLObjectUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

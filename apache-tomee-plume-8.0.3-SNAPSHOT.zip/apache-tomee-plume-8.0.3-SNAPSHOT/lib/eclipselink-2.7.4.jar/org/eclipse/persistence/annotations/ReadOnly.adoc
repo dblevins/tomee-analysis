@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/ReadOnly.class
+
+ - link:ReadOnly-asmified.java[Asmified]
+
+== References
+

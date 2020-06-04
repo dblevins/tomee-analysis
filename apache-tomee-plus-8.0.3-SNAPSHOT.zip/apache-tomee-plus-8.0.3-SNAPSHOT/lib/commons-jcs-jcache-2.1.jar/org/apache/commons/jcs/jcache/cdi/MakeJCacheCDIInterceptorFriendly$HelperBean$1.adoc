@@ -1,0 +1,8 @@
+= org/apache/commons/jcs/jcache/cdi/MakeJCacheCDIInterceptorFriendly$HelperBean$1.class
+
+ - link:MakeJCacheCDIInterceptorFriendly$HelperBean$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.enterprise.inject.Default - 1

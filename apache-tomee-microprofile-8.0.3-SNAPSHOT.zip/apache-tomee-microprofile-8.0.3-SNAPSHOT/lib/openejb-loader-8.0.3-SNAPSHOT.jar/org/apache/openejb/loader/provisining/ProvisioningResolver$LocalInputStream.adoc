@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/provisining/ProvisioningResolver$LocalInputStream.class
+
+ - link:ProvisioningResolver$LocalInputStream-asmified.java[Asmified]
+
+== References
+

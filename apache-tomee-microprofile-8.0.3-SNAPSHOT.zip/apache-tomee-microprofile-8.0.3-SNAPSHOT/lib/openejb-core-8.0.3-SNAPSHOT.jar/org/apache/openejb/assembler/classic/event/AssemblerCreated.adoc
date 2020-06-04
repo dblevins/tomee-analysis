@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/event/AssemblerCreated.class
+
+ - link:AssemblerCreated-asmified.java[Asmified]
+
+== References
+

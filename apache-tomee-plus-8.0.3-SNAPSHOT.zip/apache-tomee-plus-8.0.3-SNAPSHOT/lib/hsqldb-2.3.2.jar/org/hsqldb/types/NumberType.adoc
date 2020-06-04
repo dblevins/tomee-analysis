@@ -1,0 +1,6 @@
+= org/hsqldb/types/NumberType.class
+
+ - link:NumberType-asmified.java[Asmified]
+
+== References
+

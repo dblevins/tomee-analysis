@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/source/SourceDataBinding.class
+
+ - link:SourceDataBinding-asmified.java[Asmified]
+
+== References
+

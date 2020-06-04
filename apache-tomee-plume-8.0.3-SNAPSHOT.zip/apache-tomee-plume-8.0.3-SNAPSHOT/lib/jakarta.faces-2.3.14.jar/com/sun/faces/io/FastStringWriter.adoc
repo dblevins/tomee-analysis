@@ -1,0 +1,6 @@
+= com/sun/faces/io/FastStringWriter.class
+
+ - link:FastStringWriter-asmified.java[Asmified]
+
+== References
+

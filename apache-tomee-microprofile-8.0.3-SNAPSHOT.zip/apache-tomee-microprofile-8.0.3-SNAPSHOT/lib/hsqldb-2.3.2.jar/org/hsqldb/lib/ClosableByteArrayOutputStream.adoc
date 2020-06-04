@@ -1,0 +1,6 @@
+= org/hsqldb/lib/ClosableByteArrayOutputStream.class
+
+ - link:ClosableByteArrayOutputStream-asmified.java[Asmified]
+
+== References
+

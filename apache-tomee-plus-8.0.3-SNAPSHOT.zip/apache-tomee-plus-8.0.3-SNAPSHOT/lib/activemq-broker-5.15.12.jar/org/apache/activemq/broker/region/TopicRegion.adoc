@@ -1,0 +1,8 @@
+= org/apache/activemq/broker/region/TopicRegion.class
+
+ - link:TopicRegion-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 16
+ - javax.jms.InvalidDestinationException - 2

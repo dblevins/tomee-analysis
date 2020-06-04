@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryResultCallback.class
+
+ - link:QueryResultCallback-asmified.java[Asmified]
+
+== References
+

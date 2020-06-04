@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/NodeListIterator.class
+
+ - link:NodeListIterator-asmified.java[Asmified]
+
+== References
+

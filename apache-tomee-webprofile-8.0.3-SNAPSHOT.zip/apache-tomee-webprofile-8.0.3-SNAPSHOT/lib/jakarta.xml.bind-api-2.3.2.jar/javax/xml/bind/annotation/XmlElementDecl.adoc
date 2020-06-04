@@ -1,0 +1,7 @@
+= javax/xml/bind/annotation/XmlElementDecl.class
+
+ - link:XmlElementDecl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElementDecl$GLOBAL - 1

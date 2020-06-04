@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jaxb/metadata/XMLMetadataSource.class
+
+ - link:XMLMetadataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 5
+ - javax.xml.bind.JAXBException - 4

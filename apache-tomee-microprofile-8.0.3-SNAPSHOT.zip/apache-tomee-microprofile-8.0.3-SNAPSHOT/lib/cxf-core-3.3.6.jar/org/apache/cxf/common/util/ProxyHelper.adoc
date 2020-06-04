@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ProxyHelper.class
+
+ - link:ProxyHelper-asmified.java[Asmified]
+
+== References
+

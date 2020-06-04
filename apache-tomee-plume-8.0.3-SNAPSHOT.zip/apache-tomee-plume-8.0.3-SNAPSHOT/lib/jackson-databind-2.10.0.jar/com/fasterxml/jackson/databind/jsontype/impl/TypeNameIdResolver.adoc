@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver.class
+
+ - link:TypeNameIdResolver-asmified.java[Asmified]
+
+== References
+

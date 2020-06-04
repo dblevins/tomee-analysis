@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlSelectManyCheckbox.class
+
+ - link:HtmlSelectManyCheckbox-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 124
+ - javax.faces.component.html.HtmlSelectManyCheckbox - 87
+ - javax.faces.component.html.HtmlSelectManyCheckbox$PropertyKeys - 62
+ - javax.faces.component.UISelectMany - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

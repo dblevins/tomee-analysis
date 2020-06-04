@@ -1,0 +1,7 @@
+= javax/validation/metadata/CascadableDescriptor.class
+
+ - link:CascadableDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.GroupConversionDescriptor - 1

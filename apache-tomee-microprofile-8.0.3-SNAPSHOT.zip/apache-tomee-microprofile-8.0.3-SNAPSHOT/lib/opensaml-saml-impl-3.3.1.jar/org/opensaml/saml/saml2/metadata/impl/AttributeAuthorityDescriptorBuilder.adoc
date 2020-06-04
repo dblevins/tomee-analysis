@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AttributeAuthorityDescriptorBuilder.class
+
+ - link:AttributeAuthorityDescriptorBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,46 @@
+= javax/faces/component/UIComponent.class
+
+ - link:UIComponent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 153
+ - javax.faces.context.FacesContext - 97
+ - javax.faces.component.visit.VisitContext - 16
+ - javax.faces.application.Resource - 15
+ - javax.faces.component._DeltaStateHelper - 14
+ - javax.faces.component.StateHelper - 11
+ - javax.el.ValueExpression - 9
+ - javax.faces.component.UIComponent$EventListenerWrapper - 8
+ - javax.faces.component.ContextCallback - 8
+ - javax.faces.component.TransientStateHelper - 7
+ - javax.faces.event.SystemEventListener - 7
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.component.visit.VisitCallback - 5
+ - javax.faces.event.ComponentSystemEventListener - 5
+ - javax.faces.event.SystemEvent - 5
+ - javax.faces.FacesException - 5
+ - javax.faces.component.UIComponent$PropertyKeys - 4
+ - javax.faces.component.UIComponent$BundleMap - 4
+ - javax.faces.el.ValueBinding - 4
+ - javax.el.ELContext - 4
+ - javax.faces.event.FacesListener - 3
+ - javax.faces.component.visit.VisitResult - 3
+ - javax.faces.component._ValueBindingToValueExpression - 2
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.faces.event.PostRestoreStateEvent - 2
+ - javax.faces.event.ComponentSystemEvent - 2
+ - javax.el.ELException - 2
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.component._DeltaList - 2
+ - javax.faces.event.AbortProcessingException - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.event.FacesEvent - 2
+ - javax.faces.component.TransientStateHolder - 1
+ - javax.faces.component._ClassUtils - 1
+ - javax.faces.component.NamingContainer - 1
+ - javax.faces.render.Renderer - 1
+ - javax.faces.component.PartialStateHolder - 1
+ - javax.faces.event.SystemEventListenerHolder - 1
+ - javax.faces.component.UIComponentBase - 1

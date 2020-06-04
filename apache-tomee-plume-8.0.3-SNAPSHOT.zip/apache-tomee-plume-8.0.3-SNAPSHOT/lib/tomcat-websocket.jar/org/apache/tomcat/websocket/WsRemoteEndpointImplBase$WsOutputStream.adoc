@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/WsRemoteEndpointImplBase$WsOutputStream.class
+
+ - link:WsRemoteEndpointImplBase$WsOutputStream-asmified.java[Asmified]
+
+== References
+

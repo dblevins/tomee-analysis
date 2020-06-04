@@ -1,0 +1,9 @@
+= javax/xml/ws/wsaddressing/W3CEndpointReferenceBuilder.class
+
+ - link:W3CEndpointReferenceBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.wsaddressing.W3CEndpointReferenceBuilder - 9
+ - javax.xml.ws.spi.Provider - 6
+ - javax.xml.ws.wsaddressing.W3CEndpointReference - 3

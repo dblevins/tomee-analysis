@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/ReferencingAuthenticator.class
+
+ - link:ReferencingAuthenticator-asmified.java[Asmified]
+
+== References
+

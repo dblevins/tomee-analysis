@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/JavaBinaryNames.class
+
+ - link:JavaBinaryNames-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/openejb/core/transaction/SimpleWorkManager$LoggingWorkListener.class
+
+ - link:SimpleWorkManager$LoggingWorkListener-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkException - 5
+ - javax.resource.spi.work.WorkEvent - 5
+ - javax.resource.spi.work.WorkAdapter - 2
+ - javax.resource.spi.work.Work - 1

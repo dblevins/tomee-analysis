@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/pool/JDBCXADataSource.class
+
+ - link:JDBCXADataSource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/webbeans/service/DefaultInjectionPointService.class
+
+ - link:DefaultInjectionPointService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 8
+ - javax.annotation.Priority - 3
+ - javax.inject.Inject - 1
+ - javax.enterprise.inject.Produces - 1

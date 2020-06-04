@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageBase.class
+
+ - link:FaceletViewDeclarationLanguageBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.component.visit.VisitContextFactory - 7
+ - javax.faces.component.UIViewRoot - 7
+ - javax.faces.render.RenderKitFactory - 7
+ - javax.faces.FactoryFinder - 2

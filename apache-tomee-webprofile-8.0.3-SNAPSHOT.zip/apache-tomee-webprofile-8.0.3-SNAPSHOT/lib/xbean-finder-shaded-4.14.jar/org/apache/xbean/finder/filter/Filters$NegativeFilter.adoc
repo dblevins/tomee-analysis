@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/filter/Filters$NegativeFilter.class
+
+ - link:Filters$NegativeFilter-asmified.java[Asmified]
+
+== References
+

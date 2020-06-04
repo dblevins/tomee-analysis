@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/AbstractTagLibrary.class
+
+ - link:AbstractTagLibrary-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagHandler - 7
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.FacesException - 1

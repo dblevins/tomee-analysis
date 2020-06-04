@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/RefreshableMetadataResolver.class
+
+ - link:RefreshableMetadataResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

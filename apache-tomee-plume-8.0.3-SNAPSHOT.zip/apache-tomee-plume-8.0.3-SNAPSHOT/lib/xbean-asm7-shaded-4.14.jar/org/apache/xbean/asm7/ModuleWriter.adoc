@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/ModuleWriter.class
+
+ - link:ModuleWriter-asmified.java[Asmified]
+
+== References
+

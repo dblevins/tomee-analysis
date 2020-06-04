@@ -1,0 +1,6 @@
+= org/eclipse/persistence/dynamic/DynamicEnumBuilder.class
+
+ - link:DynamicEnumBuilder-asmified.java[Asmified]
+
+== References
+

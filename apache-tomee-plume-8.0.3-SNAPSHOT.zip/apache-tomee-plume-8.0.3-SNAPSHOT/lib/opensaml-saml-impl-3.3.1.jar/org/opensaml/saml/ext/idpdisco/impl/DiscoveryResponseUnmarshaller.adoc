@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/idpdisco/impl/DiscoveryResponseUnmarshaller.class
+
+ - link:DiscoveryResponseUnmarshaller-asmified.java[Asmified]
+
+== References
+

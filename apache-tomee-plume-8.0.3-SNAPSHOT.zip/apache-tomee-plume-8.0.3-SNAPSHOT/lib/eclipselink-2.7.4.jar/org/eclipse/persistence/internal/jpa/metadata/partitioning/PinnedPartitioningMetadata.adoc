@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/partitioning/PinnedPartitioningMetadata.class
+
+ - link:PinnedPartitioningMetadata-asmified.java[Asmified]
+
+== References
+

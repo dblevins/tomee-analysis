@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/SimpleCaseExpression$SimpleCaseExpState.class
+
+ - link:SimpleCaseExpression$SimpleCaseExpState-asmified.java[Asmified]
+
+== References
+

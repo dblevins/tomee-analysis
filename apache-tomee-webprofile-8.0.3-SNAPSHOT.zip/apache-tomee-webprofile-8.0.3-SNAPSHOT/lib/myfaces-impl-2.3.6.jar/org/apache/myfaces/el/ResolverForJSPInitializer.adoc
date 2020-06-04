@@ -1,0 +1,14 @@
+= org/apache/myfaces/el/ResolverForJSPInitializer.class
+
+ - link:ResolverForJSPInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 6
+ - javax.el.CompositeELResolver - 5
+ - javax.faces.lifecycle.LifecycleFactory - 4
+ - javax.faces.event.PhaseEvent - 3
+ - javax.faces.event.PhaseListener - 2
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.lifecycle.Lifecycle - 2
+ - javax.faces.FactoryFinder - 1

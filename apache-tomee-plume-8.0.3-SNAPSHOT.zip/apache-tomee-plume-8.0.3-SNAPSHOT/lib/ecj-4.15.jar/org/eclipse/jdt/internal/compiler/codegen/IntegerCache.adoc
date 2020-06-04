@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/IntegerCache.class
+
+ - link:IntegerCache-asmified.java[Asmified]
+
+== References
+

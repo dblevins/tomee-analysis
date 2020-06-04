@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/weaving/PersistenceWeavedLazy.class
+
+ - link:PersistenceWeavedLazy-asmified.java[Asmified]
+
+== References
+

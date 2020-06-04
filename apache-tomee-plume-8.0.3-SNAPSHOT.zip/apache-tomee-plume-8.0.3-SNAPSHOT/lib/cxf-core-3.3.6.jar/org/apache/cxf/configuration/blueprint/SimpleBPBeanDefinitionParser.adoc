@@ -1,0 +1,6 @@
+= org/apache/cxf/configuration/blueprint/SimpleBPBeanDefinitionParser.class
+
+ - link:SimpleBPBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

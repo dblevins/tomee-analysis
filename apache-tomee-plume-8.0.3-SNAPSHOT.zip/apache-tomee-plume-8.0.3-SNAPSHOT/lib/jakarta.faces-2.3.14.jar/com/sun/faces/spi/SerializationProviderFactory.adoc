@@ -1,0 +1,7 @@
+= com/sun/faces/spi/SerializationProviderFactory.class
+
+ - link:SerializationProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 4

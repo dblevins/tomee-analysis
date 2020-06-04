@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/WriterInterceptorContextImpl.class
+
+ - link:WriterInterceptorContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 10
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.ext.WriterInterceptor - 5
+ - javax.ws.rs.ext.WriterInterceptorContext - 2

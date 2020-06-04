@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext$DynamicJAXBContextState.class
+
+ - link:DynamicJAXBContext$DynamicJAXBContextState-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/pool/XADataSourceResource$LazyXADataSourceHandler.class
+
+ - link:XADataSourceResource$LazyXADataSourceHandler-asmified.java[Asmified]
+
+== References
+

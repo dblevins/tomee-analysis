@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/job/ValidateProperty$Step.class
+
+ - link:ValidateProperty$Step-asmified.java[Asmified]
+
+== References
+

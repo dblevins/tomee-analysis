@@ -1,0 +1,10 @@
+= org/apache/webbeans/container/InterceptionFactoryImpl.class
+
+ - link:InterceptionFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.inject.spi.InterceptionFactory - 3
+ - javax.enterprise.context.spi.CreationalContext - 1
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

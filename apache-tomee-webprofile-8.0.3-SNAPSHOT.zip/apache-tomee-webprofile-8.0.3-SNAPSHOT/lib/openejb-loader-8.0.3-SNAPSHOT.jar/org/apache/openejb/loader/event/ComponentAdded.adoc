@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/event/ComponentAdded.class
+
+ - link:ComponentAdded-asmified.java[Asmified]
+
+== References
+

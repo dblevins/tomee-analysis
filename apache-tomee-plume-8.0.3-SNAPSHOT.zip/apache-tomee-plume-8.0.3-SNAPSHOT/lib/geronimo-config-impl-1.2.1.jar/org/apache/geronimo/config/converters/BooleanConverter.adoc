@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/converters/BooleanConverter.class
+
+ - link:BooleanConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 1
+ - javax.enterprise.inject.Vetoed - 1

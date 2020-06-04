@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cms/IssuerAndSerialNumber.class
+
+ - link:IssuerAndSerialNumber-asmified.java[Asmified]
+
+== References
+

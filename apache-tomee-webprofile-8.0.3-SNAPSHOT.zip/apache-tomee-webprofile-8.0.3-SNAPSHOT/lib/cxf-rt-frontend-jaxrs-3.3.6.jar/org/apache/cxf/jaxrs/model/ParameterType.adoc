@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/ParameterType.class
+
+ - link:ParameterType-asmified.java[Asmified]
+
+== References
+

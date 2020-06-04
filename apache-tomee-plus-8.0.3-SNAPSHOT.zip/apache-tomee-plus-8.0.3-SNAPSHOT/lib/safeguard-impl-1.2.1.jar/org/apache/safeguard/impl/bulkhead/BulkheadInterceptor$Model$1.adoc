@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/bulkhead/BulkheadInterceptor$Model$1.class
+
+ - link:BulkheadInterceptor$Model$1-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 5

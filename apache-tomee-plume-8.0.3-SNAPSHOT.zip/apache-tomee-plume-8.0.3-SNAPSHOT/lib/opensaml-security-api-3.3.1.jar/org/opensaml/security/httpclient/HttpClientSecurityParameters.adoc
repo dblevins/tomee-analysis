@@ -1,0 +1,7 @@
+= org/opensaml/security/httpclient/HttpClientSecurityParameters.class
+
+ - link:HttpClientSecurityParameters-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 17

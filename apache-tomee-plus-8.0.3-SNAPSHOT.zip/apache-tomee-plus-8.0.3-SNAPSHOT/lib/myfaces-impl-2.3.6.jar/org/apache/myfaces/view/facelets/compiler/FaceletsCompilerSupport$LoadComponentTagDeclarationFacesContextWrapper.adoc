@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper.class
+
+ - link:FaceletsCompilerSupport$LoadComponentTagDeclarationFacesContextWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.context.FacesContextWrapper - 2

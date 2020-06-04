@@ -1,0 +1,8 @@
+= com/sun/faces/flow/builder/SwitchCaseBuilderImpl.class
+
+ - link:SwitchCaseBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.SwitchCaseBuilder - 6
+ - javax.el.ValueExpression - 2

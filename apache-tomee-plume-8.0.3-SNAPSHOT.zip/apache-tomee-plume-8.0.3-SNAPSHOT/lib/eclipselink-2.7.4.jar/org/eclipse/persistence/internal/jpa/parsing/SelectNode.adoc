@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SelectNode.class
+
+ - link:SelectNode-asmified.java[Asmified]
+
+== References
+

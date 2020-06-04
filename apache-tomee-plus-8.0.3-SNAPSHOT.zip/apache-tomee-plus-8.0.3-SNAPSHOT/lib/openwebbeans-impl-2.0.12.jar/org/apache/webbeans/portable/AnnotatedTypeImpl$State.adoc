@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/AnnotatedTypeImpl$State.class
+
+ - link:AnnotatedTypeImpl$State-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 14
+ - javax.enterprise.inject.spi.AnnotatedField - 7
+ - javax.enterprise.inject.spi.AnnotatedMethod - 7
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 5

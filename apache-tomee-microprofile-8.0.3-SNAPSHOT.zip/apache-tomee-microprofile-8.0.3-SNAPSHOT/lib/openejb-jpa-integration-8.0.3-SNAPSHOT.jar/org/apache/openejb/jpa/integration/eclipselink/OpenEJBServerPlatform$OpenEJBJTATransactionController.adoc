@@ -1,0 +1,8 @@
+= org/apache/openejb/jpa/integration/eclipselink/OpenEJBServerPlatform$OpenEJBJTATransactionController.class
+
+ - link:OpenEJBServerPlatform$OpenEJBJTATransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3
+ - javax.transaction.Synchronization - 2

@@ -1,0 +1,6 @@
+= com/ctc/wstx/sr/NsDefaultProvider.class
+
+ - link:NsDefaultProvider-asmified.java[Asmified]
+
+== References
+

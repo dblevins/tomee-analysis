@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/ProcessingInstructionEvent.class
+
+ - link:ProcessingInstructionEvent-asmified.java[Asmified]
+
+== References
+

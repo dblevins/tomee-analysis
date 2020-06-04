@@ -1,0 +1,11 @@
+= org/apache/catalina/core/ApplicationFilterFactory.class
+
+ - link:ApplicationFilterFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.DispatcherType - 12
+ - javax.servlet.Servlet - 5
+ - javax.servlet.ServletRequest - 4
+ - javax.servlet.FilterChain - 2
+ - javax.servlet.FilterConfig - 2

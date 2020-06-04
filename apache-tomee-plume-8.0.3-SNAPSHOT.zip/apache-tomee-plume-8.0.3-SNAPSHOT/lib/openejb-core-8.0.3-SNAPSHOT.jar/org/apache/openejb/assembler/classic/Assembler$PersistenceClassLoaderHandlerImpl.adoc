@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/Assembler$PersistenceClassLoaderHandlerImpl.class
+
+ - link:Assembler$PersistenceClassLoaderHandlerImpl-asmified.java[Asmified]
+
+== References
+

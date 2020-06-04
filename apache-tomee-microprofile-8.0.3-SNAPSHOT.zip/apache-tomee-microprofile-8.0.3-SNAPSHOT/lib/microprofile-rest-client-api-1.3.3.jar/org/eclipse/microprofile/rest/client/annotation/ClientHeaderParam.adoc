@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/rest/client/annotation/ClientHeaderParam.class
+
+ - link:ClientHeaderParam-asmified.java[Asmified]
+
+== References
+

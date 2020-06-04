@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaDerivationMethod.class
+
+ - link:XmlSchemaDerivationMethod-asmified.java[Asmified]
+
+== References
+

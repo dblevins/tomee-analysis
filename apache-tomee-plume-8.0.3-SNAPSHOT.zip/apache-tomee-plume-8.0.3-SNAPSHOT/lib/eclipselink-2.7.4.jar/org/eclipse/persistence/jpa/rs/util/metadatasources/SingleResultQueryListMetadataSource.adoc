@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/SingleResultQueryListMetadataSource.class
+
+ - link:SingleResultQueryListMetadataSource-asmified.java[Asmified]
+
+== References
+

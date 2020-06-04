@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/cloud/KubernetesMembershipProvider.class
+
+ - link:KubernetesMembershipProvider-asmified.java[Asmified]
+
+== References
+

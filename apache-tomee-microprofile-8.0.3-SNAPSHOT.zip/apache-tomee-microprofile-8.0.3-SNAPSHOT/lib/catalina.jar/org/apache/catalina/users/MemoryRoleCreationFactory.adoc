@@ -1,0 +1,6 @@
+= org/apache/catalina/users/MemoryRoleCreationFactory.class
+
+ - link:MemoryRoleCreationFactory-asmified.java[Asmified]
+
+== References
+

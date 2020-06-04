@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/DomainHintUnmarshaller.class
+
+ - link:DomainHintUnmarshaller-asmified.java[Asmified]
+
+== References
+

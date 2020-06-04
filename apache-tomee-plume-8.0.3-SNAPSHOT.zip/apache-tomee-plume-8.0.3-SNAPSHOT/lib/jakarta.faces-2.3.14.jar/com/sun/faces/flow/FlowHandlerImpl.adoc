@@ -1,0 +1,20 @@
+= com/sun/faces/flow/FlowHandlerImpl.class
+
+ - link:FlowHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.Flow - 76
+ - javax.faces.context.FacesContext - 70
+ - javax.el.ELContext - 14
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.flow.FlowCallNode - 10
+ - javax.faces.flow.FlowHandler - 8
+ - javax.el.MethodExpression - 6
+ - javax.faces.application.Application - 4
+ - javax.el.ValueExpression - 4
+ - javax.faces.flow.Parameter - 4
+ - javax.faces.application.ConfigurableNavigationHandler - 3
+ - javax.faces.lifecycle.ClientWindow - 2
+ - javax.faces.application.NavigationHandler - 2
+ - javax.faces.component.UIViewRoot - 2

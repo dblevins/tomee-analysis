@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/AbstractAnnotatedCallable.class
+
+ - link:AbstractAnnotatedCallable-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedParameter - 5
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.inject.spi.AnnotatedCallable - 2

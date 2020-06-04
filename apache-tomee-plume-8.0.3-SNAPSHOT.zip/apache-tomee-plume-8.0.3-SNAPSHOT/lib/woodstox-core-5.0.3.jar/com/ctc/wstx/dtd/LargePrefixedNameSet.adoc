@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/LargePrefixedNameSet.class
+
+ - link:LargePrefixedNameSet-asmified.java[Asmified]
+
+== References
+

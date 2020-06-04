@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/AppendNewElementsOrderingPolicyConfig.class
+
+ - link:AppendNewElementsOrderingPolicyConfig-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/JAXBContextImpl$4.class
+
+ - link:JAXBContextImpl$4-asmified.java[Asmified]
+
+== References
+

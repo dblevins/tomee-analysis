@@ -1,0 +1,7 @@
+= org/eclipse/persistence/oxm/attachment/XMLAttachmentUnmarshaller.class
+
+ - link:XMLAttachmentUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 1

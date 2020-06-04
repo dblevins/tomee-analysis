@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/PrefixedNameSet.class
+
+ - link:PrefixedNameSet-asmified.java[Asmified]
+
+== References
+

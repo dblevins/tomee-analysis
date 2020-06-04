@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/region/policy/OldestMessageEvictionStrategy.class
+
+ - link:OldestMessageEvictionStrategy-asmified.java[Asmified]
+
+== References
+

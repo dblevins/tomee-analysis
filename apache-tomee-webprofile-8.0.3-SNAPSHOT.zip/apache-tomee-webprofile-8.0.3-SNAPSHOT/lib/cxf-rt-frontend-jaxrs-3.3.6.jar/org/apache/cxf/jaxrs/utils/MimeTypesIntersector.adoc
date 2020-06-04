@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/utils/MimeTypesIntersector.class
+
+ - link:MimeTypesIntersector-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 2

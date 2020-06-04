@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$ScrollableCursorHint.class
+
+ - link:QueryHintsHandler$ScrollableCursorHint-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/CollectionUtils.class
+
+ - link:CollectionUtils-asmified.java[Asmified]
+
+== References
+

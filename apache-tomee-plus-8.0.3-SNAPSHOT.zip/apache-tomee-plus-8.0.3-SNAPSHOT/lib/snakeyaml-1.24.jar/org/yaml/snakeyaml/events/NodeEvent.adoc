@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/events/NodeEvent.class
+
+ - link:NodeEvent-asmified.java[Asmified]
+
+== References
+

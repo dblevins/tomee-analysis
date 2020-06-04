@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy$SaveStateAndResetViewCallback.class
+
+ - link:DefaultFaceletsStateManagementStrategy$SaveStateAndResetViewCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 40
+ - javax.faces.context.FacesContext - 20
+ - javax.faces.component.UIViewRoot - 8
+ - javax.faces.component.visit.VisitResult - 8
+ - javax.faces.component.visit.VisitContext - 4
+ - javax.faces.component.visit.VisitCallback - 1

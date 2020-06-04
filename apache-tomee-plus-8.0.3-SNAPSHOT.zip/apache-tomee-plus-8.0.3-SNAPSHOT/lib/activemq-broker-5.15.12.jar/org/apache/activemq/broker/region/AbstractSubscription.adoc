@@ -1,0 +1,8 @@
+= org/apache/activemq/broker/region/AbstractSubscription.class
+
+ - link:AbstractSubscription-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.InvalidSelectorException - 3
+ - javax.jms.JMSException - 3

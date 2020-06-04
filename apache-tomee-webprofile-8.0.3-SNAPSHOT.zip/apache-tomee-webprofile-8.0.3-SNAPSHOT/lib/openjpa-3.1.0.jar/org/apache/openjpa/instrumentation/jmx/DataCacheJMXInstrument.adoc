@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/jmx/DataCacheJMXInstrument.class
+
+ - link:DataCacheJMXInstrument-asmified.java[Asmified]
+
+== References
+

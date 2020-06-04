@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/codegen/MethodDefinition.class
+
+ - link:MethodDefinition-asmified.java[Asmified]
+
+== References
+

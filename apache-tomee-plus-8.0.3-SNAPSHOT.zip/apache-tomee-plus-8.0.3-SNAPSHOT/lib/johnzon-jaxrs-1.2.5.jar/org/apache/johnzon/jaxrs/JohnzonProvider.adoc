@@ -1,0 +1,11 @@
+= org/apache/johnzon/jaxrs/JohnzonProvider.class
+
+ - link:JohnzonProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

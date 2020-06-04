@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/jstl/core/LegacyForEachHandler$ArrayIterator.class
+
+ - link:LegacyForEachHandler$ArrayIterator-asmified.java[Asmified]
+
+== References
+

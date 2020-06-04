@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/saml/claims/SAMLSecurityContext.class
+
+ - link:SAMLSecurityContext-asmified.java[Asmified]
+
+== References
+

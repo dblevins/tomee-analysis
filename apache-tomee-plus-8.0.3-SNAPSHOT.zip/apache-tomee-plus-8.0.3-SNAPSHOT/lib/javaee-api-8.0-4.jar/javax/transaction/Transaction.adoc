@@ -1,0 +1,11 @@
+= javax/transaction/Transaction.class
+
+ - link:Transaction-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.SystemException - 7
+ - javax.transaction.RollbackException - 3
+ - javax.transaction.HeuristicRollbackException - 1
+ - javax.transaction.HeuristicMixedException - 1
+ - javax.transaction.Synchronization - 1

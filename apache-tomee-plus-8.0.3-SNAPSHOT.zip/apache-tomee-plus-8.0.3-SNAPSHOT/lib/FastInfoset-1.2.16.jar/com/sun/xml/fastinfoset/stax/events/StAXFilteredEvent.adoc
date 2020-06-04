@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/StAXFilteredEvent.class
+
+ - link:StAXFilteredEvent-asmified.java[Asmified]
+
+== References
+

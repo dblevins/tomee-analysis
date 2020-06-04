@@ -1,0 +1,8 @@
+= org/apache/activemq/command/UnresolvedDestinationTransformer.class
+
+ - link:UnresolvedDestinationTransformer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.Destination - 1

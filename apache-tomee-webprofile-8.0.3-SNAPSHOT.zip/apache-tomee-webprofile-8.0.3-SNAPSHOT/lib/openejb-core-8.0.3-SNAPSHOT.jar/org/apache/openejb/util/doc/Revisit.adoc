@@ -1,0 +1,6 @@
+= org/apache/openejb/util/doc/Revisit.class
+
+ - link:Revisit-asmified.java[Asmified]
+
+== References
+

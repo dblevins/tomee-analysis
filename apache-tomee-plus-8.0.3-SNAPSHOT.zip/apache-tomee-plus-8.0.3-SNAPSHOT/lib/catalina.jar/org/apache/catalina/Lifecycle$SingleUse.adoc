@@ -1,0 +1,6 @@
+= org/apache/catalina/Lifecycle$SingleUse.class
+
+ - link:Lifecycle$SingleUse-asmified.java[Asmified]
+
+== References
+

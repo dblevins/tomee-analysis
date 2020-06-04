@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/remote/RemoteCommand.class
+
+ - link:RemoteCommand-asmified.java[Asmified]
+
+== References
+

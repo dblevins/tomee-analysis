@@ -1,0 +1,9 @@
+= javax/persistence/Subgraph.class
+
+ - link:Subgraph-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Subgraph - 8
+ - javax.persistence.metamodel.Attribute - 5
+ - javax.persistence.AttributeNode - 1

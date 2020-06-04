@@ -1,0 +1,9 @@
+= org/eclipse/persistence/eis/EISLogin.class
+
+ - link:EISLogin-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.ConnectionFactory - 4
+ - javax.resource.cci.ConnectionSpec - 4
+ - javax.resource.cci.Connection - 1

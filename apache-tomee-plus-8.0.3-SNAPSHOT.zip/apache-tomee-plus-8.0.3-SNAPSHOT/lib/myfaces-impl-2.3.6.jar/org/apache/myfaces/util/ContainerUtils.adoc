@@ -1,0 +1,8 @@
+= org/apache/myfaces/util/ContainerUtils.class
+
+ - link:ContainerUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 4
+ - javax.faces.context.ExternalContext - 2

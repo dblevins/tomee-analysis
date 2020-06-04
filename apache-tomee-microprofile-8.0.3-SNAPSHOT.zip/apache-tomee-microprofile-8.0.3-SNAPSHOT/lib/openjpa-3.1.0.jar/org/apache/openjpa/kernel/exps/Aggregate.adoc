@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Aggregate.class
+
+ - link:Aggregate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/RemoteFailoverException.class
+
+ - link:RemoteFailoverException-asmified.java[Asmified]
+
+== References
+

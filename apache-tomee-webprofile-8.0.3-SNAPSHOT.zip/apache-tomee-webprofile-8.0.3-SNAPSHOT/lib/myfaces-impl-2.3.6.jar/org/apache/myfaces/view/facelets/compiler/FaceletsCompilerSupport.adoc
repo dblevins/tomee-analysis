@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/compiler/FaceletsCompilerSupport.class
+
+ - link:FaceletsCompilerSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.context.ExternalContext - 12
+ - javax.faces.component.UIViewRoot - 8
+ - javax.faces.application.Application - 2
+ - javax.faces.view.facelets.TagDecorator - 2
+ - javax.faces.component.UIComponent - 2

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/PortTypeImpl.class
+
+ - link:PortTypeImpl-asmified.java[Asmified]
+
+== References
+

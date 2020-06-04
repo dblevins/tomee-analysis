@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/FetchJoinNode.class
+
+ - link:FetchJoinNode-asmified.java[Asmified]
+
+== References
+

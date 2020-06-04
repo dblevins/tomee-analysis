@@ -1,0 +1,6 @@
+= org/hsqldb/lib/HashSet.class
+
+ - link:HashSet-asmified.java[Asmified]
+
+== References
+

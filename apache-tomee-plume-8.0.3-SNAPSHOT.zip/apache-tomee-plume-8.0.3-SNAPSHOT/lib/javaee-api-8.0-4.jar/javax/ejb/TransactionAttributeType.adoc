@@ -1,0 +1,7 @@
+= javax/ejb/TransactionAttributeType.class
+
+ - link:TransactionAttributeType-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.TransactionAttributeType - 41

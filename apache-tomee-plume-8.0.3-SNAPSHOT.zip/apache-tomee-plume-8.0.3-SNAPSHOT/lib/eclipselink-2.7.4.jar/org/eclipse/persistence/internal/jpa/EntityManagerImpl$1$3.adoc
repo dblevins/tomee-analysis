@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/EntityManagerImpl$1$3.class
+
+ - link:EntityManagerImpl$1$3-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FlushModeType - 3

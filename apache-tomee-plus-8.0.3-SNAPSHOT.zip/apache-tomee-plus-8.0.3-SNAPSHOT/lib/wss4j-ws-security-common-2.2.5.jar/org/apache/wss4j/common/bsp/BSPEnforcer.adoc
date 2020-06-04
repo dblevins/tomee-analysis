@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/bsp/BSPEnforcer.class
+
+ - link:BSPEnforcer-asmified.java[Asmified]
+
+== References
+

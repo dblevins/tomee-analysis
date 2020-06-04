@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/jstl/core/LegacyJstlCoreLibrary.class
+
+ - link:LegacyJstlCoreLibrary-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/cxf/microprofile/client/cdi/InterceptorInvoker.class
+
+ - link:InterceptorInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Interceptor - 5
+ - javax.interceptor.InvocationContext - 2
+ - javax.enterprise.inject.spi.InterceptionType - 2

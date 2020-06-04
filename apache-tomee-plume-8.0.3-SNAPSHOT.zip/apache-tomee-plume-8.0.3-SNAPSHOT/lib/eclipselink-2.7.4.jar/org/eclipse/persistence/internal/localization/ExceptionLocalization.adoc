@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/localization/ExceptionLocalization.class
+
+ - link:ExceptionLocalization-asmified.java[Asmified]
+
+== References
+

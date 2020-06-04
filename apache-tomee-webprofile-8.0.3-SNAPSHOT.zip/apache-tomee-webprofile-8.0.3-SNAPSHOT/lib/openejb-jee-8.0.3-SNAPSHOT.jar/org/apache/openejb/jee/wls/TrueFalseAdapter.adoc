@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/wls/TrueFalseAdapter.class
+
+ - link:TrueFalseAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

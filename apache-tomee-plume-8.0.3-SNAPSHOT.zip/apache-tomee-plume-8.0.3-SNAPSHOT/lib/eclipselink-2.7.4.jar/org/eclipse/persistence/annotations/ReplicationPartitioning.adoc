@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/ReplicationPartitioning.class
+
+ - link:ReplicationPartitioning-asmified.java[Asmified]
+
+== References
+

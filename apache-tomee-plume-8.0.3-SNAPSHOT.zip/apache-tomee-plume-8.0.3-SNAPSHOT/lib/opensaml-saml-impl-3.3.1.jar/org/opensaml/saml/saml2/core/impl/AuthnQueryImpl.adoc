@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthnQueryImpl.class
+
+ - link:AuthnQueryImpl-asmified.java[Asmified]
+
+== References
+

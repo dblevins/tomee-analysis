@@ -1,0 +1,6 @@
+= org/apache/openejb/util/proxy/ProxyEJB.class
+
+ - link:ProxyEJB-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/ReverseMappingTool$AnnotatedCodeGenerator.class
+
+ - link:ReverseMappingTool$AnnotatedCodeGenerator-asmified.java[Asmified]
+
+== References
+

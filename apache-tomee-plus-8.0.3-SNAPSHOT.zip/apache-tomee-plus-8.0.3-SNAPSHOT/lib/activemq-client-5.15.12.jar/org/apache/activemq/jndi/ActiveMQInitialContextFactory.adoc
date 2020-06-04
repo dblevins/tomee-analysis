@@ -1,0 +1,8 @@
+= org/apache/activemq/jndi/ActiveMQInitialContextFactory.class
+
+ - link:ActiveMQInitialContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 2
+ - javax.jms.Topic - 2

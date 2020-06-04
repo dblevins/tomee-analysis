@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/spring/BusDefinitionParser.class
+
+ - link:BusDefinitionParser-asmified.java[Asmified]
+
+== References
+

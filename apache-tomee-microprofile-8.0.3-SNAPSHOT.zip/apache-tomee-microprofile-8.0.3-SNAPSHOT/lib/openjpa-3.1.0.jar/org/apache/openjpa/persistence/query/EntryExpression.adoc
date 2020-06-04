@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/EntryExpression.class
+
+ - link:EntryExpression-asmified.java[Asmified]
+
+== References
+

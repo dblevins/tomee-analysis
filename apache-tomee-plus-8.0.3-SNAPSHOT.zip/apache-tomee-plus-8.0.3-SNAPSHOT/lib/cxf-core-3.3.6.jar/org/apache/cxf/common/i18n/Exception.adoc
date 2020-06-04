@@ -1,0 +1,6 @@
+= org/apache/cxf/common/i18n/Exception.class
+
+ - link:Exception-asmified.java[Asmified]
+
+== References
+

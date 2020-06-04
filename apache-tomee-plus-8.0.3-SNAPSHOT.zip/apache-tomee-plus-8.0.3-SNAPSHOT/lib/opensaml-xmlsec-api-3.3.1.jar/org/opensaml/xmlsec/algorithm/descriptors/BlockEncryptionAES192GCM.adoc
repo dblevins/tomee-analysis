@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/BlockEncryptionAES192GCM.class
+
+ - link:BlockEncryptionAES192GCM-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7

@@ -1,0 +1,8 @@
+= org/apache/openejb/client/EJBMetaDataImpl.class
+
+ - link:EJBMetaDataImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 7
+ - javax.ejb.EJBMetaData - 1

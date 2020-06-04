@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/cache/EHCacheReplayCache$RefCountCache.class
+
+ - link:EHCacheReplayCache$RefCountCache-asmified.java[Asmified]
+
+== References
+

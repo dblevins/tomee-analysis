@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/record/JSONWriterRecord$Output.class
+
+ - link:JSONWriterRecord$Output-asmified.java[Asmified]
+
+== References
+

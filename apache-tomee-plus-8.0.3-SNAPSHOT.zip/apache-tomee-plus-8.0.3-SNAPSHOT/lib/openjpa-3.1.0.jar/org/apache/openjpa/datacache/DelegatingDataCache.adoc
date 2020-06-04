@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/DelegatingDataCache.class
+
+ - link:DelegatingDataCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/activemq/broker/region/RegionBroker.class
+
+ - link:RegionBroker-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 11
+ - javax.jms.InvalidClientIDException - 6

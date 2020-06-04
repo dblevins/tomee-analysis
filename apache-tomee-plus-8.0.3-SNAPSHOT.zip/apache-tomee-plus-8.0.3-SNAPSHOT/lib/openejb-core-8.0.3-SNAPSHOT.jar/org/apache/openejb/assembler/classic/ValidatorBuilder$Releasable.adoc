@@ -1,0 +1,8 @@
+= org/apache/openejb/assembler/classic/ValidatorBuilder$Releasable.class
+
+ - link:ValidatorBuilder$Releasable-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionTarget - 9
+ - javax.enterprise.context.spi.CreationalContext - 7

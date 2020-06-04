@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/OpenJPAStateManager.class
+
+ - link:OpenJPAStateManager-asmified.java[Asmified]
+
+== References
+

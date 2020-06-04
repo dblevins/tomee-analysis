@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/util/SourceCode$ACCESS.class
+
+ - link:SourceCode$ACCESS-asmified.java[Asmified]
+
+== References
+

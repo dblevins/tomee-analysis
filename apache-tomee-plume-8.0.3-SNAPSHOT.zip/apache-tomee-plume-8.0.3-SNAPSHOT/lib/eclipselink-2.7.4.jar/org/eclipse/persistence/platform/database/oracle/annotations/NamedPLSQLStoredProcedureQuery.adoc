@@ -1,0 +1,7 @@
+= org/eclipse/persistence/platform/database/oracle/annotations/NamedPLSQLStoredProcedureQuery.class
+
+ - link:NamedPLSQLStoredProcedureQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.QueryHint - 1

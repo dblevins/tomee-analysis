@@ -1,0 +1,10 @@
+= javax/mail/util/ByteArrayDataSource.class
+
+ - link:ByteArrayDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.ContentType - 3
+ - javax.mail.internet.MimeUtility - 2
+ - javax.mail.internet.ParseException - 1
+ - javax.activation.DataSource - 1

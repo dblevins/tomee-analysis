@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/ChannelInterceptorBase.class
+
+ - link:ChannelInterceptorBase-asmified.java[Asmified]
+
+== References
+

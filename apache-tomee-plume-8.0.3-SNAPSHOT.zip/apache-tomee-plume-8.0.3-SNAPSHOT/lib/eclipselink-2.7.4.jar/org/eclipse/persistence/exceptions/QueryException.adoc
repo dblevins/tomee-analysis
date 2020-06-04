@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/QueryException.class
+
+ - link:QueryException-asmified.java[Asmified]
+
+== References
+

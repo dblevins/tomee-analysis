@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/ExpressionParser.class
+
+ - link:ExpressionParser-asmified.java[Asmified]
+
+== References
+

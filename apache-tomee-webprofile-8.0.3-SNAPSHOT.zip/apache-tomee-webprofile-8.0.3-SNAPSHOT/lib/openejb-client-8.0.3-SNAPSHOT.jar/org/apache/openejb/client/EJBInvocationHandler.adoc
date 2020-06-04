@@ -1,0 +1,17 @@
+= org/apache/openejb/client/EJBInvocationHandler.class
+
+ - link:EJBInvocationHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.TransactionRolledbackLocalException - 6
+ - javax.ejb.NoSuchEJBException - 5
+ - javax.ejb.EJBException - 3
+ - javax.ejb.AccessLocalException - 3
+ - javax.ejb.TransactionRequiredLocalException - 3
+ - javax.ejb.EJBHome - 1
+ - javax.transaction.TransactionRequiredException - 1
+ - javax.ejb.EJBObject - 1
+ - javax.ejb.EJBAccessException - 1
+ - javax.transaction.TransactionRolledbackException - 1
+ - javax.ejb.EJBTransactionRolledbackException - 1

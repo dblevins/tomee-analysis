@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/ResAuth$JAXB.class
+
+ - link:ResAuth$JAXB-asmified.java[Asmified]
+
+== References
+

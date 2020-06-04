@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentArray.class
+
+ - link:SafeRepresenter$RepresentArray-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/querydef/CriteriaBuilderImpl$SimpleCaseImpl.class
+
+ - link:CriteriaBuilderImpl$SimpleCaseImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 13
+ - javax.persistence.metamodel.Metamodel - 4
+ - javax.persistence.criteria.CriteriaBuilder$SimpleCase - 3

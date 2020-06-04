@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/MetadataBuilder$ForElement.class
+
+ - link:MetadataBuilder$ForElement-asmified.java[Asmified]
+
+== References
+

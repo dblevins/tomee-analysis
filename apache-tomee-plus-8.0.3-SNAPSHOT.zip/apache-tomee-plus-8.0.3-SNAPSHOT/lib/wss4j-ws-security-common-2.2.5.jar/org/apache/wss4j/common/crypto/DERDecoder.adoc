@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/DERDecoder.class
+
+ - link:DERDecoder-asmified.java[Asmified]
+
+== References
+

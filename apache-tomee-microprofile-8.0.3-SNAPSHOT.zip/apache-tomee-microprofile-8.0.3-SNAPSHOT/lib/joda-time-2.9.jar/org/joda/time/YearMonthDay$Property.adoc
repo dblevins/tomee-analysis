@@ -1,0 +1,6 @@
+= org/joda/time/YearMonthDay$Property.class
+
+ - link:YearMonthDay$Property-asmified.java[Asmified]
+
+== References
+

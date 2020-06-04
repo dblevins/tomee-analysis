@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/faulttolerance/CircuitBreaker.class
+
+ - link:CircuitBreaker-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 6
+ - javax.interceptor.InterceptorBinding - 1

@@ -1,0 +1,9 @@
+= org/apache/openejb/jee/AbsoluteOrdering.class
+
+ - link:AbsoluteOrdering-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 2
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElements - 1

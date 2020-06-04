@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/AnnotationMirrorImpl.class
+
+ - link:AnnotationMirrorImpl-asmified.java[Asmified]
+
+== References
+

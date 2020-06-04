@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/MaxEmbeddedCharArrayFieldStrategy.class
+
+ - link:MaxEmbeddedCharArrayFieldStrategy-asmified.java[Asmified]
+
+== References
+

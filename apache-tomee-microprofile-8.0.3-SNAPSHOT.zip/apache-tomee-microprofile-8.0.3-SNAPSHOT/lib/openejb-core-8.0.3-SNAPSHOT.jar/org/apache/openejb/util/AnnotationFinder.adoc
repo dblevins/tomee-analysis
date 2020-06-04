@@ -1,0 +1,6 @@
+= org/apache/openejb/util/AnnotationFinder.class
+
+ - link:AnnotationFinder-asmified.java[Asmified]
+
+== References
+

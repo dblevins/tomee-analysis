@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/FaultInfo.class
+
+ - link:FaultInfo-asmified.java[Asmified]
+
+== References
+

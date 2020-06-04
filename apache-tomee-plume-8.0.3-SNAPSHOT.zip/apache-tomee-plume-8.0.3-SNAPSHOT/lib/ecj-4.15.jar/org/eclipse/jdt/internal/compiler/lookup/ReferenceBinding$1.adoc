@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/ReferenceBinding$1.class
+
+ - link:ReferenceBinding$1-asmified.java[Asmified]
+
+== References
+

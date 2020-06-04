@@ -1,0 +1,6 @@
+= javax/ws/rs/ext/ContextResolver.class
+
+ - link:ContextResolver-asmified.java[Asmified]
+
+== References
+

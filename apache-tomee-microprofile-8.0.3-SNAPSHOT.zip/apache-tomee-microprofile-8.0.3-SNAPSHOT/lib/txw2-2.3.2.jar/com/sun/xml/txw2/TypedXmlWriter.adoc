@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/TypedXmlWriter.class
+
+ - link:TypedXmlWriter-asmified.java[Asmified]
+
+== References
+

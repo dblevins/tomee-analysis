@@ -1,0 +1,6 @@
+= org/eclipse/persistence/transaction/was/WebSphereLibertyTransactionController.class
+
+ - link:WebSphereLibertyTransactionController-asmified.java[Asmified]
+
+== References
+

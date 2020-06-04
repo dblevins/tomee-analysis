@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/handler/rotating/Size$Normalize.class
+
+ - link:Size$Normalize-asmified.java[Asmified]
+
+== References
+

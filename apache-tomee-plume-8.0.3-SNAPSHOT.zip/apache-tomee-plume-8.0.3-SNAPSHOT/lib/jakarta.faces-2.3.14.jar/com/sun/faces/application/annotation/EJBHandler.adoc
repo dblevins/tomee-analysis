@@ -1,0 +1,8 @@
+= com/sun/faces/application/annotation/EJBHandler.class
+
+ - link:EJBHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJB - 24
+ - javax.faces.context.FacesContext - 12

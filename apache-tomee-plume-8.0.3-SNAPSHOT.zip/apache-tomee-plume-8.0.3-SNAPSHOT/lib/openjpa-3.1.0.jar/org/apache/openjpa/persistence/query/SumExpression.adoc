@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/SumExpression.class
+
+ - link:SumExpression-asmified.java[Asmified]
+
+== References
+

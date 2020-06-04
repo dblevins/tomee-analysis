@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/exc/MismatchedInputException.class
+
+ - link:MismatchedInputException-asmified.java[Asmified]
+
+== References
+

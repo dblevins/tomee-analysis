@@ -1,0 +1,7 @@
+= org/apache/cxf/transport/http/AbstractHTTPDestination$2.class
+
+ - link:AbstractHTTPDestination$2-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 7

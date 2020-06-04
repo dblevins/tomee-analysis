@@ -1,0 +1,18 @@
+= org/apache/openejb/config/LinkBuiltInTypes.class
+
+ - link:LinkBuiltInTypes-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 1
+ - javax.ejb.TimerService - 1
+ - javax.xml.ws.WebServiceContext - 1
+ - javax.ejb.EntityContext - 1
+ - javax.transaction.UserTransaction - 1
+ - javax.ejb.SessionContext - 1
+ - javax.validation.Validator - 1
+ - javax.validation.ValidatorFactory - 1
+ - javax.transaction.TransactionManager - 1
+ - javax.ejb.EJBContext - 1
+ - javax.enterprise.inject.spi.BeanManager - 1
+ - javax.ejb.MessageDrivenContext - 1

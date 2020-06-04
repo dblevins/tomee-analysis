@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/CommonInfoObject.class
+
+ - link:CommonInfoObject-asmified.java[Asmified]
+
+== References
+

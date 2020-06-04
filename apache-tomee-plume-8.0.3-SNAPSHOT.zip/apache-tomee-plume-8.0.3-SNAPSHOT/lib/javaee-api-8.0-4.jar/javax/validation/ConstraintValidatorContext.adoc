@@ -1,0 +1,8 @@
+= javax/validation/ConstraintValidatorContext.class
+
+ - link:ConstraintValidatorContext-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ClockProvider - 1
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder - 1

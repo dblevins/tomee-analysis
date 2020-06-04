@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/NamedStoredProcedureQuery.class
+
+ - link:NamedStoredProcedureQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.QueryHint - 1

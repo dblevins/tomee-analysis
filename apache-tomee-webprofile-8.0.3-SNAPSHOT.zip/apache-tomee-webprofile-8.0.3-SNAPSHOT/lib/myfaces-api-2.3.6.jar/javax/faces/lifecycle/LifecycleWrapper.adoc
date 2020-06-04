@@ -1,0 +1,12 @@
+= javax/faces/lifecycle/LifecycleWrapper.class
+
+ - link:LifecycleWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.lifecycle.Lifecycle - 22
+ - javax.faces.lifecycle.LifecycleWrapper - 7
+ - javax.faces.event.PhaseListener - 6
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.FacesException - 2
+ - javax.faces.FacesWrapper - 1

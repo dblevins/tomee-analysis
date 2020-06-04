@@ -1,0 +1,9 @@
+= org/apache/myfaces/spi/impl/DefaultInjectionProviderFactory.class
+
+ - link:DefaultInjectionProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 27
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.FacesException - 2

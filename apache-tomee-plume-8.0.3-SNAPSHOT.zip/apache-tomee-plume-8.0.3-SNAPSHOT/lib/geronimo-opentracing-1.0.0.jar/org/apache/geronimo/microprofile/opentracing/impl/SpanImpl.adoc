@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/impl/SpanImpl.class
+
+ - link:SpanImpl-asmified.java[Asmified]
+
+== References
+

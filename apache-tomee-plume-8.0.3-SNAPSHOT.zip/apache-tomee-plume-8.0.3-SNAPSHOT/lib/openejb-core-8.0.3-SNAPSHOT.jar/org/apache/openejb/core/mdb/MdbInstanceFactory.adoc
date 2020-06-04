@@ -1,0 +1,10 @@
+= org/apache/openejb/core/mdb/MdbInstanceFactory.class
+
+ - link:MdbInstanceFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.UnavailableException - 10
+ - javax.enterprise.context.spi.CreationalContext - 5
+ - javax.ejb.MessageDrivenBean - 3
+ - javax.ejb.EJBContext - 1

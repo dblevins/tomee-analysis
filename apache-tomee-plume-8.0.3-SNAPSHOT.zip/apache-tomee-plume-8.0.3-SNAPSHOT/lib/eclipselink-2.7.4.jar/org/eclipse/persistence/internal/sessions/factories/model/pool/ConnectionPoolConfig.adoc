@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/pool/ConnectionPoolConfig.class
+
+ - link:ConnectionPoolConfig-asmified.java[Asmified]
+
+== References
+

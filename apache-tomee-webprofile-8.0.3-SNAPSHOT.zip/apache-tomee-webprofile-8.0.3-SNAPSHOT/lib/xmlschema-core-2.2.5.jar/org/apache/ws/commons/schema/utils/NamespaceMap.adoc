@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/NamespaceMap.class
+
+ - link:NamespaceMap-asmified.java[Asmified]
+
+== References
+

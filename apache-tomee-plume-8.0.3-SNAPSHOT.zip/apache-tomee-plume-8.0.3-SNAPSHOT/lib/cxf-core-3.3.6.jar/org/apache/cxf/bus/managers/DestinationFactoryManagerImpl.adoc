@@ -1,0 +1,7 @@
+= org/apache/cxf/bus/managers/DestinationFactoryManagerImpl.class
+
+ - link:DestinationFactoryManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

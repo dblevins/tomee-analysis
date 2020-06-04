@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataSerializer$FieldComparator.class
+
+ - link:AnnotationPersistenceMetaDataSerializer$FieldComparator-asmified.java[Asmified]
+
+== References
+

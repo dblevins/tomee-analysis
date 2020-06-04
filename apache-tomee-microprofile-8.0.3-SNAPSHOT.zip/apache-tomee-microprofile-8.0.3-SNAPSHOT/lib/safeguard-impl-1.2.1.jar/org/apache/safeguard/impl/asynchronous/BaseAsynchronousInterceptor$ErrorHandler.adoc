@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$ErrorHandler.class
+
+ - link:BaseAsynchronousInterceptor$ErrorHandler-asmified.java[Asmified]
+
+== References
+

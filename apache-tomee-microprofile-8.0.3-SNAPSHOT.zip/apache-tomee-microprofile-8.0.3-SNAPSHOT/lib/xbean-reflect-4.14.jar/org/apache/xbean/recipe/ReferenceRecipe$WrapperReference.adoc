@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/ReferenceRecipe$WrapperReference.class
+
+ - link:ReferenceRecipe$WrapperReference-asmified.java[Asmified]
+
+== References
+

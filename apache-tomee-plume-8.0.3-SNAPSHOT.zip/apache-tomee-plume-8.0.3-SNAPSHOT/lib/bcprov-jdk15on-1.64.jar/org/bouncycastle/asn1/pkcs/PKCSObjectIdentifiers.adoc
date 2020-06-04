@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/pkcs/PKCSObjectIdentifiers.class
+
+ - link:PKCSObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

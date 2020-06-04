@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/history/UniversalAsOfClause.class
+
+ - link:UniversalAsOfClause-asmified.java[Asmified]
+
+== References
+

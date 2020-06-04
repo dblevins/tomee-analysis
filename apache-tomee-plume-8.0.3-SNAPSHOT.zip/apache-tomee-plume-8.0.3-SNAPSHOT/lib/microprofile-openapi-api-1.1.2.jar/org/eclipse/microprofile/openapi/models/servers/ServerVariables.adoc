@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/servers/ServerVariables.class
+
+ - link:ServerVariables-asmified.java[Asmified]
+
+== References
+

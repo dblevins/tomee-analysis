@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/filter/impl/NameIDFormatFilter.class
+
+ - link:NameIDFormatFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6
+ - javax.annotation.Nullable - 2

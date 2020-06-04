@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/pool/impl/ViewPoolEntryHolder.class
+
+ - link:ViewPoolEntryHolder-asmified.java[Asmified]
+
+== References
+

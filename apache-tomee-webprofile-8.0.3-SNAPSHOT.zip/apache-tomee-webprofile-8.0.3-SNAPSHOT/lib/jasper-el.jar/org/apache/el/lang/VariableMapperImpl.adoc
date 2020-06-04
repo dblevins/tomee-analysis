@@ -1,0 +1,8 @@
+= org/apache/el/lang/VariableMapperImpl.class
+
+ - link:VariableMapperImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 7
+ - javax.el.VariableMapper - 2

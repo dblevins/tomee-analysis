@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/AbstractXMLObject.class
+
+ - link:AbstractXMLObject-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 37
+ - javax.annotation.Nonnull - 14

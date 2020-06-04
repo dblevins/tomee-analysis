@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/ResetValuesActionListenerHandler$LiteralResetValuesActionListener.class
+
+ - link:ResetValuesActionListenerHandler$LiteralResetValuesActionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.view.Location - 6
+ - javax.faces.event.ActionEvent - 4
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.event.ActionListener - 1
+ - javax.faces.event.AbortProcessingException - 1

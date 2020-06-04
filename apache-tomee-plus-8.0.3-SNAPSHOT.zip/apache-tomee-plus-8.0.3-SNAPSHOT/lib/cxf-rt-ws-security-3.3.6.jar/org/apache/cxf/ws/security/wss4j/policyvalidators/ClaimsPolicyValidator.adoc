@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/ClaimsPolicyValidator.class
+
+ - link:ClaimsPolicyValidator-asmified.java[Asmified]
+
+== References
+

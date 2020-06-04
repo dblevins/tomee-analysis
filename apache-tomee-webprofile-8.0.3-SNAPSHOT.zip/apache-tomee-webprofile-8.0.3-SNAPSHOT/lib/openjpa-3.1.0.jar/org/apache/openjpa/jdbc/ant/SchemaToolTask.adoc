@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/ant/SchemaToolTask.class
+
+ - link:SchemaToolTask-asmified.java[Asmified]
+
+== References
+

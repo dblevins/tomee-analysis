@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/BoundVariable.class
+
+ - link:BoundVariable-asmified.java[Asmified]
+
+== References
+

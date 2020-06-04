@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jpa/transaction/EntityTransactionImpl.class
+
+ - link:EntityTransactionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.RollbackException - 7
+ - javax.persistence.OptimisticLockException - 2
+ - javax.persistence.EntityTransaction - 1

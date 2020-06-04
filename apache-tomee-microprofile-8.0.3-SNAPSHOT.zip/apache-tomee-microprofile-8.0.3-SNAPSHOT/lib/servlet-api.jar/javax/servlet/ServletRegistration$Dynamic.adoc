@@ -1,0 +1,10 @@
+= javax/servlet/ServletRegistration$Dynamic.class
+
+ - link:ServletRegistration$Dynamic-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRegistration - 1
+ - javax.servlet.ServletSecurityElement - 1
+ - javax.servlet.MultipartConfigElement - 1
+ - javax.servlet.Registration$Dynamic - 1

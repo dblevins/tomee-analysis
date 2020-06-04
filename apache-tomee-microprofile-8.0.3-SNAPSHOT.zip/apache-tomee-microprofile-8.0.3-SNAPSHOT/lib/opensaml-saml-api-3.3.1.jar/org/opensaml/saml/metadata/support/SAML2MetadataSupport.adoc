@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/support/SAML2MetadataSupport.class
+
+ - link:SAML2MetadataSupport-asmified.java[Asmified]
+
+== References
+

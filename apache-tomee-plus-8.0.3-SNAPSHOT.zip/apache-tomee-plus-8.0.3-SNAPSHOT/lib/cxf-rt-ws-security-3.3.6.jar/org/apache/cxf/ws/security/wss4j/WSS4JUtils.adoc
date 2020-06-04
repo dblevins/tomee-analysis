@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/WSS4JUtils.class
+
+ - link:WSS4JUtils-asmified.java[Asmified]
+
+== References
+

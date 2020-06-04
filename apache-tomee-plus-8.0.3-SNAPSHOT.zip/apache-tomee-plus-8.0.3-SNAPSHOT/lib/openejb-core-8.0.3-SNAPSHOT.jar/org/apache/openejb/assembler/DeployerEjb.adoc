@@ -1,0 +1,14 @@
+= org/apache/openejb/assembler/DeployerEjb.class
+
+ - link:DeployerEjb-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 4
+ - javax.ejb.TransactionManagement - 1
+ - javax.ejb.Lock - 1
+ - javax.ejb.Singleton - 1
+ - javax.ejb.Remote - 1
+ - javax.enterprise.inject.Alternative - 1
+ - javax.ejb.LockType - 1
+ - javax.ejb.TransactionManagementType - 1

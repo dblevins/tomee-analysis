@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/ClassUtil.class
+
+ - link:ClassUtil-asmified.java[Asmified]
+
+== References
+

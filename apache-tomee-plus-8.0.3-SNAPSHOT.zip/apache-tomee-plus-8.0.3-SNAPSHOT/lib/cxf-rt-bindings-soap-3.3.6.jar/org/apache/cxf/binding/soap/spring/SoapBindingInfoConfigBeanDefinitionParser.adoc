@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/spring/SoapBindingInfoConfigBeanDefinitionParser.class
+
+ - link:SoapBindingInfoConfigBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

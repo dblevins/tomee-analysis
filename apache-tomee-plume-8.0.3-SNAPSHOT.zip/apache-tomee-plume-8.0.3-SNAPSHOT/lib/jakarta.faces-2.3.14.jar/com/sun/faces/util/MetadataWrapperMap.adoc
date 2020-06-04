@@ -1,0 +1,6 @@
+= com/sun/faces/util/MetadataWrapperMap.class
+
+ - link:MetadataWrapperMap-asmified.java[Asmified]
+
+== References
+

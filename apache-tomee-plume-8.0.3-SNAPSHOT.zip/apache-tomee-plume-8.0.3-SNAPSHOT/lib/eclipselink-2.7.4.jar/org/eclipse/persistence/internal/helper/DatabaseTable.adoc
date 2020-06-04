@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/DatabaseTable.class
+
+ - link:DatabaseTable-asmified.java[Asmified]
+
+== References
+

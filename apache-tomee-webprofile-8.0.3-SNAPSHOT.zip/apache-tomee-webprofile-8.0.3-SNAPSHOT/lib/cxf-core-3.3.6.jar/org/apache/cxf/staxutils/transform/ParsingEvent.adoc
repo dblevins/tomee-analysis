@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/transform/ParsingEvent.class
+
+ - link:ParsingEvent-asmified.java[Asmified]
+
+== References
+

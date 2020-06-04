@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/SubclassJoinDiscriminatorStrategy.class
+
+ - link:SubclassJoinDiscriminatorStrategy-asmified.java[Asmified]
+
+== References
+

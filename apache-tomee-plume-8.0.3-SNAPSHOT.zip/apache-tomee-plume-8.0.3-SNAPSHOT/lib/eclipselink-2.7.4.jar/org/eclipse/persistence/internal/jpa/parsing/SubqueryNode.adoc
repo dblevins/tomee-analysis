@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SubqueryNode.class
+
+ - link:SubqueryNode-asmified.java[Asmified]
+
+== References
+

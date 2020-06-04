@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/XQueryExpression.class
+
+ - link:XQueryExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

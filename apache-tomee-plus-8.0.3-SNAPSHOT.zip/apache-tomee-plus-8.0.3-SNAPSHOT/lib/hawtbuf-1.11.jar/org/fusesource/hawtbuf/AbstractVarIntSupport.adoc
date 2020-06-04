@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/AbstractVarIntSupport.class
+
+ - link:AbstractVarIntSupport-asmified.java[Asmified]
+
+== References
+

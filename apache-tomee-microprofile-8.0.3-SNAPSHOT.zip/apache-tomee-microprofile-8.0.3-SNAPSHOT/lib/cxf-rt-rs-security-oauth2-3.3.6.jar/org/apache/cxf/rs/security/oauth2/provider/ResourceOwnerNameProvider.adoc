@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/provider/ResourceOwnerNameProvider.class
+
+ - link:ResourceOwnerNameProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= javax/validation/constraints/AssertTrue.class
+
+ - link:AssertTrue-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1
+ - javax.validation.constraints.AssertTrue$List - 1

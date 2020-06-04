@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/ApplicationConfiguration.class
+
+ - link:ApplicationConfiguration-asmified.java[Asmified]
+
+== References
+

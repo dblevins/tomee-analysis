@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/NestedTypeBinding.class
+
+ - link:NestedTypeBinding-asmified.java[Asmified]
+
+== References
+

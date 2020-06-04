@@ -1,0 +1,24 @@
+= javax/mail/internet/MimeBodyPart.class
+
+ - link:MimeBodyPart-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 65
+ - javax.mail.internet.MimeBodyPart - 53
+ - javax.mail.internet.InternetHeaders - 39
+ - javax.activation.DataHandler - 29
+ - javax.mail.internet.ContentType - 21
+ - javax.mail.internet.ContentDisposition - 17
+ - javax.mail.internet.MimeUtility - 11
+ - javax.mail.Multipart - 6
+ - javax.mail.internet.HeaderTokenizer$Token - 4
+ - javax.mail.BodyPart - 4
+ - javax.mail.internet.HeaderTokenizer - 3
+ - javax.activation.FileDataSource - 3
+ - javax.mail.internet.MimeMultipart - 2
+ - javax.mail.internet.MimePartDataSource - 2
+ - javax.mail.internet.MimePart - 2
+ - javax.activation.DataSource - 2
+ - javax.mail.Part - 1
+ - javax.mail.internet.ParseException - 1

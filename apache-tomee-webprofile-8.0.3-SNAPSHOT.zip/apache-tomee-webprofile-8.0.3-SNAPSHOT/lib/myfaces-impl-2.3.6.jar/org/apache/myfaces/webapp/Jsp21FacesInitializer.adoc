@@ -1,0 +1,18 @@
+= org/apache/myfaces/webapp/Jsp21FacesInitializer.class
+
+ - link:Jsp21FacesInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspFactory - 11
+ - javax.servlet.jsp.JspApplicationContext - 8
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.lifecycle.LifecycleFactory - 4
+ - javax.faces.context.ExternalContext - 3
+ - javax.servlet.ServletContext - 3
+ - javax.faces.event.PhaseListener - 2
+ - javax.faces.lifecycle.Lifecycle - 2
+ - javax.faces.FactoryFinder - 1
+ - javax.el.ELContextListener - 1
+ - javax.el.CompositeELResolver - 1
+ - javax.el.ELResolver - 1

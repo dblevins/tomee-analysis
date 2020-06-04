@@ -1,0 +1,6 @@
+= org/opensaml/soap/wspolicy/ExactlyOne.class
+
+ - link:ExactlyOne-asmified.java[Asmified]
+
+== References
+

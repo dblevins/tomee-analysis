@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/ManagedBean.class
+
+ - link:ManagedBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bag/AbstractMapBag.class
+
+ - link:AbstractMapBag-asmified.java[Asmified]
+
+== References
+

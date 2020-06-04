@@ -1,0 +1,7 @@
+= org/apache/webbeans/config/BeansDeployer$ExtendedBeanAttributes.class
+
+ - link:BeansDeployer$ExtendedBeanAttributes-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 5

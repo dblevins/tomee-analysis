@@ -1,0 +1,7 @@
+= org/apache/openejb/async/AsynchronousPool.class
+
+ - link:AsynchronousPool-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 2

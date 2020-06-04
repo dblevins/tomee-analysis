@@ -1,0 +1,6 @@
+= org/hsqldb/rights/GranteeManager.class
+
+ - link:GranteeManager-asmified.java[Asmified]
+
+== References
+

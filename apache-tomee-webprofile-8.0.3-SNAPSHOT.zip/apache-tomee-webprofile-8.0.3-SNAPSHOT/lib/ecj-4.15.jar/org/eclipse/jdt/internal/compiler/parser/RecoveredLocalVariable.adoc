@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredLocalVariable.class
+
+ - link:RecoveredLocalVariable-asmified.java[Asmified]
+
+== References
+

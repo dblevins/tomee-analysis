@@ -1,0 +1,6 @@
+= org/apache/activemq/util/ByteArrayOutputStream.class
+
+ - link:ByteArrayOutputStream-asmified.java[Asmified]
+
+== References
+

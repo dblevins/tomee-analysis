@@ -1,0 +1,8 @@
+= javax/mail/event/TransportAdapter.class
+
+ - link:TransportAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.event.TransportEvent - 3
+ - javax.mail.event.TransportListener - 1

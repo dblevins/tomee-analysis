@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.class
+
+ - link:AbstractInterceptorProvidingDataBinding-asmified.java[Asmified]
+
+== References
+

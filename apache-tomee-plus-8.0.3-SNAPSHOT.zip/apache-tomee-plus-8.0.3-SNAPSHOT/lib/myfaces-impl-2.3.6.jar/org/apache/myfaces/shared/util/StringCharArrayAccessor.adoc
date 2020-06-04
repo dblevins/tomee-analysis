@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/StringCharArrayAccessor.class
+
+ - link:StringCharArrayAccessor-asmified.java[Asmified]
+
+== References
+

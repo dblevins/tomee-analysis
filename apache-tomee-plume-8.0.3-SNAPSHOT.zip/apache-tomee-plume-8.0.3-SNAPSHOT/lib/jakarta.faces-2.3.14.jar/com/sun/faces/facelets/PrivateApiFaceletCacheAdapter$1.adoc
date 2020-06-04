@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/PrivateApiFaceletCacheAdapter$1.class
+
+ - link:PrivateApiFaceletCacheAdapter$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 5

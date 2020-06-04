@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/mappings/converters/AttributeNameTokenizer$TokensIterator.class
+
+ - link:AttributeNameTokenizer$TokensIterator-asmified.java[Asmified]
+
+== References
+

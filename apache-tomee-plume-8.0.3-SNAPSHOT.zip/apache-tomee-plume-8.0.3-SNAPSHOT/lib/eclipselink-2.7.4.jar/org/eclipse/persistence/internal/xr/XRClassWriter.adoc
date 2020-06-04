@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/XRClassWriter.class
+
+ - link:XRClassWriter-asmified.java[Asmified]
+
+== References
+

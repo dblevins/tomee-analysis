@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentMap.class
+
+ - link:SafeRepresenter$RepresentMap-asmified.java[Asmified]
+
+== References
+

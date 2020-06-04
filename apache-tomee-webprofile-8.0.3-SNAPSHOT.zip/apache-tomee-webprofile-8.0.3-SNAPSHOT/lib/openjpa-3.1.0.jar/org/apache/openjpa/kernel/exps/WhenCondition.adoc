@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/WhenCondition.class
+
+ - link:WhenCondition-asmified.java[Asmified]
+
+== References
+

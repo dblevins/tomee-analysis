@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/GBuilder.class
+
+ - link:GBuilder-asmified.java[Asmified]
+
+== References
+

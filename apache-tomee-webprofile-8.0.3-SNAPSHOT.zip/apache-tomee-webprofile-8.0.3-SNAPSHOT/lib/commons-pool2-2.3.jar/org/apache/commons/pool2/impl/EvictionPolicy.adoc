@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/impl/EvictionPolicy.class
+
+ - link:EvictionPolicy-asmified.java[Asmified]
+
+== References
+

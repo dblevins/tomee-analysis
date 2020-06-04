@@ -1,0 +1,21 @@
+= com/sun/faces/facelets/tag/jsf/core/SetPropertyActionListenerHandler.class
+
+ - link:SetPropertyActionListenerHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 15
+ - javax.el.ValueExpression - 12
+ - javax.faces.view.facelets.FaceletContext - 9
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.ActionSource - 5
+ - javax.faces.view.facelets.TagException - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.event.ActionListener - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.view.facelets.ComponentHandler - 1
+ - javax.faces.view.ActionSource2AttachedObjectHandler - 1
+ - javax.faces.component.ActionSource2 - 1
+ - javax.el.ELContext - 1

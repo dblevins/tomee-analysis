@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/JDBCStoreManager$ClientConnection.class
+
+ - link:JDBCStoreManager$ClientConnection-asmified.java[Asmified]
+
+== References
+

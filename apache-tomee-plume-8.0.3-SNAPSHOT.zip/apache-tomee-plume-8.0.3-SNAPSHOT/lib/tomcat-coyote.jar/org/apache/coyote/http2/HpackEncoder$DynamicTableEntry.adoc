@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/HpackEncoder$DynamicTableEntry.class
+
+ - link:HpackEncoder$DynamicTableEntry-asmified.java[Asmified]
+
+== References
+

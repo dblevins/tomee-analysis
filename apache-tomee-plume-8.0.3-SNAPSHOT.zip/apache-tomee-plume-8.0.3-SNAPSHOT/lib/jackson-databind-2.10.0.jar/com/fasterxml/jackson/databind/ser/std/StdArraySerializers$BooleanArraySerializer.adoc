@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StdArraySerializers$BooleanArraySerializer.class
+
+ - link:StdArraySerializers$BooleanArraySerializer-asmified.java[Asmified]
+
+== References
+

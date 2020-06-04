@@ -1,0 +1,6 @@
+= com/sun/faces/mgbean/ManagedBeanBuilder$1.class
+
+ - link:ManagedBeanBuilder$1-asmified.java[Asmified]
+
+== References
+

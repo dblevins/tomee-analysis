@@ -1,0 +1,6 @@
+= org/apache/geronimo/config/cdi/configsource/Reloadable.class
+
+ - link:Reloadable-asmified.java[Asmified]
+
+== References
+

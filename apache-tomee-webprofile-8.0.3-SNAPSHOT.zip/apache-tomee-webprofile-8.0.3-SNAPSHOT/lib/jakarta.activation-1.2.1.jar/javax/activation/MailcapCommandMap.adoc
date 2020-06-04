@@ -1,0 +1,12 @@
+= javax/activation/MailcapCommandMap.class
+
+ - link:MailcapCommandMap-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.CommandInfo - 19
+ - javax.activation.MailcapCommandMap - 14
+ - javax.activation.SecuritySupport - 6
+ - javax.activation.DataContentHandler - 5
+ - javax.activation.CommandMap - 2
+ - javax.activation.MailcapCommandMap$1 - 2

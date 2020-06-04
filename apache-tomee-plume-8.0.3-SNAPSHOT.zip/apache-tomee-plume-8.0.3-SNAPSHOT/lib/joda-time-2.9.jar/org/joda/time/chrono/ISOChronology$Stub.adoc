@@ -1,0 +1,6 @@
+= org/joda/time/chrono/ISOChronology$Stub.class
+
+ - link:ISOChronology$Stub-asmified.java[Asmified]
+
+== References
+

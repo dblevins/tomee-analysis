@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/isismtt/x509/AdditionalInformationSyntax.class
+
+ - link:AdditionalInformationSyntax-asmified.java[Asmified]
+
+== References
+

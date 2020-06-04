@@ -1,0 +1,9 @@
+= org/apache/openejb/core/mdb/MdbContext.class
+
+ - link:MdbContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.EJBLocalHome - 1
+ - javax.ejb.MessageDrivenContext - 1

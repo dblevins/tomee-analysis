@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/atom/AbstractFeedBuilder.class
+
+ - link:AbstractFeedBuilder-asmified.java[Asmified]
+
+== References
+

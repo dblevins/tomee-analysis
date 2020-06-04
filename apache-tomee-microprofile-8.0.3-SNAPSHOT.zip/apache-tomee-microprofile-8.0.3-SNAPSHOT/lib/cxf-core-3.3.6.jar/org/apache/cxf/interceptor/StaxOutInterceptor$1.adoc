@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/StaxOutInterceptor$1.class
+
+ - link:StaxOutInterceptor$1-asmified.java[Asmified]
+
+== References
+

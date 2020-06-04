@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/QueryResultMapping$SingleColumnMap.class
+
+ - link:QueryResultMapping$SingleColumnMap-asmified.java[Asmified]
+
+== References
+

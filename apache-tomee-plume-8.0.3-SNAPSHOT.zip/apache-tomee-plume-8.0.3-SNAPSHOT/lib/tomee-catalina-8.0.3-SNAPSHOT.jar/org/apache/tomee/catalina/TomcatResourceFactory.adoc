@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/TomcatResourceFactory.class
+
+ - link:TomcatResourceFactory-asmified.java[Asmified]
+
+== References
+

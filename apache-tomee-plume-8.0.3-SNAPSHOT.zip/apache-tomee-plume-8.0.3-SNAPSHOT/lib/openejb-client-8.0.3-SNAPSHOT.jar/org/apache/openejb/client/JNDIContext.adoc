@@ -1,0 +1,8 @@
+= org/apache/openejb/client/JNDIContext.class
+
+ - link:JNDIContext-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Session - 2
+ - javax.ejb.EJBHome - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/rop/BatchedResultObjectProvider.class
+
+ - link:BatchedResultObjectProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/DefaultXmlSymbolTable.class
+
+ - link:DefaultXmlSymbolTable-asmified.java[Asmified]
+
+== References
+

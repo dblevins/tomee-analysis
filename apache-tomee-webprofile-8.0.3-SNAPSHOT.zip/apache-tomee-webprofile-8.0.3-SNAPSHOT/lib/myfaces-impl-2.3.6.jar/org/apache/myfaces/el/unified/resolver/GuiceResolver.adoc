@@ -1,0 +1,12 @@
+= org/apache/myfaces/el/unified/resolver/GuiceResolver.class
+
+ - link:GuiceResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 8
+ - javax.el.ELContext - 6
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.FacesException - 2
+ - javax.el.ELException - 1
+ - javax.el.PropertyNotFoundException - 1

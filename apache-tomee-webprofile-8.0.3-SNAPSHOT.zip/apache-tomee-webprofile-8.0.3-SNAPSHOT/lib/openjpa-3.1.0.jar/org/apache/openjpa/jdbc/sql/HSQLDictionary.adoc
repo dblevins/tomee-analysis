@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/HSQLDictionary.class
+
+ - link:HSQLDictionary-asmified.java[Asmified]
+
+== References
+

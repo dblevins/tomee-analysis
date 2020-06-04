@@ -1,0 +1,7 @@
+= javax/inject/Singleton.class
+
+ - link:Singleton-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Scope - 1

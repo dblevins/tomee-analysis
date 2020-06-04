@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/JpaCriteriaBuilder.class
+
+ - link:JpaCriteriaBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 3
+ - javax.persistence.criteria.CriteriaBuilder - 1

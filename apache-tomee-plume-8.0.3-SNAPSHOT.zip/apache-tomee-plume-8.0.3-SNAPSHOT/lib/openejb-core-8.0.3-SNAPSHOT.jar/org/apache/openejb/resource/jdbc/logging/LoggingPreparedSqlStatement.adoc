@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/logging/LoggingPreparedSqlStatement.class
+
+ - link:LoggingPreparedSqlStatement-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/Embeddable.class
+
+ - link:Embeddable-asmified.java[Asmified]
+
+== References
+

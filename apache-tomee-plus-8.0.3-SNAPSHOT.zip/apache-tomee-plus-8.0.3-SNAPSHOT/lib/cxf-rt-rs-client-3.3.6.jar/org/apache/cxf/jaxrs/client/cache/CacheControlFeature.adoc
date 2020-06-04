@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/client/cache/CacheControlFeature.class
+
+ - link:CacheControlFeature-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.FeatureContext - 4
+ - javax.ws.rs.core.Configuration - 2
+ - javax.ws.rs.core.Configurable - 2
+ - javax.annotation.PreDestroy - 1
+ - javax.ws.rs.core.Feature - 1
+ - javax.ws.rs.ext.Provider - 1

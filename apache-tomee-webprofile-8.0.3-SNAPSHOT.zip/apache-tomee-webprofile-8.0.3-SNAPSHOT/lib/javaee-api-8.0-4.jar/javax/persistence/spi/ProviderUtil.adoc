@@ -1,0 +1,7 @@
+= javax/persistence/spi/ProviderUtil.class
+
+ - link:ProviderUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.LoadState - 3

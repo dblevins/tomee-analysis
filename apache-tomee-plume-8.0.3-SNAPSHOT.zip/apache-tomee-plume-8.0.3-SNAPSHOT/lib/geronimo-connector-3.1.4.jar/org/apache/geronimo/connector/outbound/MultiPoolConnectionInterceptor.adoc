@@ -1,0 +1,8 @@
+= org/apache/geronimo/connector/outbound/MultiPoolConnectionInterceptor.class
+
+ - link:MultiPoolConnectionInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionRequestInfo - 4
+ - javax.resource.ResourceException - 3

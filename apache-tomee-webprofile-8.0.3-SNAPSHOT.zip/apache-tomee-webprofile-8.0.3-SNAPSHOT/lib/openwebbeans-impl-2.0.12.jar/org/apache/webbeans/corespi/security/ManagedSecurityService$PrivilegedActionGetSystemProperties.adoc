@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/security/ManagedSecurityService$PrivilegedActionGetSystemProperties.class
+
+ - link:ManagedSecurityService$PrivilegedActionGetSystemProperties-asmified.java[Asmified]
+
+== References
+

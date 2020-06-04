@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/AddressingResponses$JAXB.class
+
+ - link:AddressingResponses$JAXB-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/Deploy.class
+
+ - link:Deploy-asmified.java[Asmified]
+
+== References
+

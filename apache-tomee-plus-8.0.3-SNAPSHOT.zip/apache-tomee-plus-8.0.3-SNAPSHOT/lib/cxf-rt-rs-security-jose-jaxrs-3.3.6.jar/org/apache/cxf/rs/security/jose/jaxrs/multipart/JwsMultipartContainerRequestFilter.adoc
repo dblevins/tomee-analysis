@@ -1,0 +1,11 @@
+= org/apache/cxf/rs/security/jose/jaxrs/multipart/JwsMultipartContainerRequestFilter.class
+
+ - link:JwsMultipartContainerRequestFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.container.ContainerRequestContext - 2
+ - javax.ws.rs.container.PreMatching - 1
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.container.ContainerRequestFilter - 1

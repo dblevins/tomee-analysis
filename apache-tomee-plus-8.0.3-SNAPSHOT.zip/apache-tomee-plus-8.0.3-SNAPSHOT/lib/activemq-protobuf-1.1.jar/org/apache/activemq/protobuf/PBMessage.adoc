@@ -1,0 +1,6 @@
+= org/apache/activemq/protobuf/PBMessage.class
+
+ - link:PBMessage-asmified.java[Asmified]
+
+== References
+

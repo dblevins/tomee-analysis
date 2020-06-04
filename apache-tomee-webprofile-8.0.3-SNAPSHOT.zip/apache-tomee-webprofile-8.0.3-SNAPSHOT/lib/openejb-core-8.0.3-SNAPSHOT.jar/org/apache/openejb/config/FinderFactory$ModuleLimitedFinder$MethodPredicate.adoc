@@ -1,0 +1,6 @@
+= org/apache/openejb/config/FinderFactory$ModuleLimitedFinder$MethodPredicate.class
+
+ - link:FinderFactory$ModuleLimitedFinder$MethodPredicate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/faces/component/UIData$2.class
+
+ - link:UIData$2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitResult - 6

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/BaseMessagerImpl.class
+
+ - link:BaseMessagerImpl-asmified.java[Asmified]
+
+== References
+

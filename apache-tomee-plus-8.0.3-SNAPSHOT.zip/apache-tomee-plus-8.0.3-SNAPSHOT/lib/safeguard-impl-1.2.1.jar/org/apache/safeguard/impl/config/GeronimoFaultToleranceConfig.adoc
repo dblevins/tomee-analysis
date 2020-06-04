@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/config/GeronimoFaultToleranceConfig.class
+
+ - link:GeronimoFaultToleranceConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 3

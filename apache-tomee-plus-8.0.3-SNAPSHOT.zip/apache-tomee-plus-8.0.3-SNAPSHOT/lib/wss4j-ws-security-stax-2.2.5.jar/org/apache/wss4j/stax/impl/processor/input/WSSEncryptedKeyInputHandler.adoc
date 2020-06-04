@@ -1,0 +1,7 @@
+= org/apache/wss4j/stax/impl/processor/input/WSSEncryptedKeyInputHandler.class
+
+ - link:WSSEncryptedKeyInputHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 2

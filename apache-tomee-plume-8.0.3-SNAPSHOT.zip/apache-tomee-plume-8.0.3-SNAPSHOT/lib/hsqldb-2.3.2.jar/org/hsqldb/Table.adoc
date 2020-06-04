@@ -1,0 +1,6 @@
+= org/hsqldb/Table.class
+
+ - link:Table-asmified.java[Asmified]
+
+== References
+

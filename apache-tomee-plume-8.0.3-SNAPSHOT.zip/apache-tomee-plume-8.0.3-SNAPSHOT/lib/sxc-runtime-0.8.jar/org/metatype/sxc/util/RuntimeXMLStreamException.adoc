@@ -1,0 +1,6 @@
+= org/metatype/sxc/util/RuntimeXMLStreamException.class
+
+ - link:RuntimeXMLStreamException-asmified.java[Asmified]
+
+== References
+

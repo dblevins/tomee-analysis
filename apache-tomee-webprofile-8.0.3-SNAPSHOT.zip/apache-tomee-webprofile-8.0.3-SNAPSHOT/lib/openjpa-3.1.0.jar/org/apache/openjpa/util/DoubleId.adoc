@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/DoubleId.class
+
+ - link:DoubleId-asmified.java[Asmified]
+
+== References
+

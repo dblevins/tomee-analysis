@@ -1,0 +1,7 @@
+= javax/json/JsonValue$ValueType.class
+
+ - link:JsonValue$ValueType-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue$ValueType - 46

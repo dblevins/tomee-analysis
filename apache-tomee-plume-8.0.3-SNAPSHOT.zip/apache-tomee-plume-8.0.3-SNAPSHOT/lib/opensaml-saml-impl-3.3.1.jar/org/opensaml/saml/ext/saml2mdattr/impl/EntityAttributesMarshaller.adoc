@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdattr/impl/EntityAttributesMarshaller.class
+
+ - link:EntityAttributesMarshaller-asmified.java[Asmified]
+
+== References
+

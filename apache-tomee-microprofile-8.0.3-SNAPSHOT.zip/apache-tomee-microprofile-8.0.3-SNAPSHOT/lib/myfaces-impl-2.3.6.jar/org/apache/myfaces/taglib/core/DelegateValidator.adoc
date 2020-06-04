@@ -1,0 +1,15 @@
+= org/apache/myfaces/taglib/core/DelegateValidator.class
+
+ - link:DelegateValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 21
+ - javax.faces.validator.Validator - 11
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.application.FacesMessage - 9
+ - javax.faces.validator.ValidatorException - 7
+ - javax.el.ELContext - 7
+ - javax.faces.application.Application - 4
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.StateHolder - 1

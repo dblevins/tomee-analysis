@@ -1,0 +1,6 @@
+= org/hsqldb/ClientConnectionHTTP.class
+
+ - link:ClientConnectionHTTP-asmified.java[Asmified]
+
+== References
+

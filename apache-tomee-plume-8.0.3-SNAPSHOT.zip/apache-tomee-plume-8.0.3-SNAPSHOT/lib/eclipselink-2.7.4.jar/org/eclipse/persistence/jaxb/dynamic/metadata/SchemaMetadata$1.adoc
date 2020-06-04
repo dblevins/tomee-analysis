@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/dynamic/metadata/SchemaMetadata$1.class
+
+ - link:SchemaMetadata$1-asmified.java[Asmified]
+
+== References
+

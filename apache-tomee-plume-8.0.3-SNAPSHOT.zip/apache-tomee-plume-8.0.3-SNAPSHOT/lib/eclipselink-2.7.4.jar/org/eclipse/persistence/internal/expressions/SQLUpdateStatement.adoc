@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/SQLUpdateStatement.class
+
+ - link:SQLUpdateStatement-asmified.java[Asmified]
+
+== References
+

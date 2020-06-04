@@ -1,0 +1,18 @@
+= org/apache/johnzon/mapper/Mapper.class
+
+ - link:Mapper-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonReader - 141
+ - javax.json.stream.JsonGenerator - 60
+ - javax.json.JsonReaderFactory - 41
+ - javax.json.stream.JsonParser - 20
+ - javax.json.spi.JsonProvider - 19
+ - javax.json.JsonArray - 12
+ - javax.json.JsonValue - 10
+ - javax.json.stream.JsonGeneratorFactory - 9
+ - javax.json.JsonBuilderFactory - 7
+ - javax.json.JsonNumber - 6
+ - javax.json.JsonStructure - 2
+ - javax.json.JsonString - 2

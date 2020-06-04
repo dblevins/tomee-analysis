@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/UsernameTokenInterceptorProvider.class
+
+ - link:UsernameTokenInterceptorProvider-asmified.java[Asmified]
+
+== References
+

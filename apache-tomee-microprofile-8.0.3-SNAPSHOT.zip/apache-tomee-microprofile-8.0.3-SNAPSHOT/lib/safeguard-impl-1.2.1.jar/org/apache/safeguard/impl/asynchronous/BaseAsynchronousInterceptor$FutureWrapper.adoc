@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor$FutureWrapper.class
+
+ - link:BaseAsynchronousInterceptor$FutureWrapper-asmified.java[Asmified]
+
+== References
+

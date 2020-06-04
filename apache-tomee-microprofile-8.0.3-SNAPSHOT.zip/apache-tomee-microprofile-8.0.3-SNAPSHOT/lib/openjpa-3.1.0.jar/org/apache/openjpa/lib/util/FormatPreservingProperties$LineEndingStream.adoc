@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/FormatPreservingProperties$LineEndingStream.class
+
+ - link:FormatPreservingProperties$LineEndingStream-asmified.java[Asmified]
+
+== References
+

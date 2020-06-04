@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/NameTransformer$2.class
+
+ - link:NameTransformer$2-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/bval/constraints/NumberSignValidator$ForNegative$OrZero.class
+
+ - link:NumberSignValidator$ForNegative$OrZero-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 2
+ - javax.validation.constraints.NegativeOrZero - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/XMLPersistenceMetaDataSerializer$1.class
+
+ - link:XMLPersistenceMetaDataSerializer$1-asmified.java[Asmified]
+
+== References
+

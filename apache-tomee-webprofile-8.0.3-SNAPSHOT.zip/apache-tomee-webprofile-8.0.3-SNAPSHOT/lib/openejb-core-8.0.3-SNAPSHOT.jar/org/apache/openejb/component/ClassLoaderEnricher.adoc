@@ -1,0 +1,6 @@
+= org/apache/openejb/component/ClassLoaderEnricher.class
+
+ - link:ClassLoaderEnricher-asmified.java[Asmified]
+
+== References
+

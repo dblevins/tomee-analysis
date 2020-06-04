@@ -1,0 +1,9 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/ServerVariableImpl.class
+
+ - link:ServerVariableImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbProperty - 4
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.json.bind.annotation.JsonbTransient - 1

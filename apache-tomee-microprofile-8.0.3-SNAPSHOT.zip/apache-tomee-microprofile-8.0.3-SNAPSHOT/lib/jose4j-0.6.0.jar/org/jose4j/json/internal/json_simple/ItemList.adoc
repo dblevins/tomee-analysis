@@ -1,0 +1,6 @@
+= org/jose4j/json/internal/json_simple/ItemList.class
+
+ - link:ItemList-asmified.java[Asmified]
+
+== References
+

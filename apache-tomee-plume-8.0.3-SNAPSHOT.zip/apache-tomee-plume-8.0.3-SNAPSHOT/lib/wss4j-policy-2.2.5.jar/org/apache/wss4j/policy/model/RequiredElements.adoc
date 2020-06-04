@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/model/RequiredElements.class
+
+ - link:RequiredElements-asmified.java[Asmified]
+
+== References
+

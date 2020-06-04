@@ -1,0 +1,9 @@
+= javax/json/JsonPatchBuilder.class
+
+ - link:JsonPatchBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonPatchBuilder - 15
+ - javax.json.JsonValue - 3
+ - javax.json.JsonPatch - 1

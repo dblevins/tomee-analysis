@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/Session.class
+
+ - link:Session-asmified.java[Asmified]
+
+== References
+

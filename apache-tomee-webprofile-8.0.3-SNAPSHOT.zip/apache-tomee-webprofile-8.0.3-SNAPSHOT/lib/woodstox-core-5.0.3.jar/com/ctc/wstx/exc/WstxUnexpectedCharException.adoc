@@ -1,0 +1,6 @@
+= com/ctc/wstx/exc/WstxUnexpectedCharException.class
+
+ - link:WstxUnexpectedCharException-asmified.java[Asmified]
+
+== References
+

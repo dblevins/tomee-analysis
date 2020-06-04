@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/criteria/ComparisonStyle$Default.class
+
+ - link:ComparisonStyle$Default-asmified.java[Asmified]
+
+== References
+

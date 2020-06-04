@@ -1,0 +1,11 @@
+= javax/xml/soap/SOAPBody.class
+
+ - link:SOAPBody-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 9
+ - javax.xml.soap.SOAPFault - 6
+ - javax.xml.soap.Name - 3
+ - javax.xml.soap.SOAPBodyElement - 3
+ - javax.xml.soap.SOAPElement - 1

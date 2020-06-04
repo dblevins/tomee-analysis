@@ -1,0 +1,9 @@
+= org/apache/myfaces/taglib/core/ValidateDoubleRangeTag.class
+
+ - link:ValidateDoubleRangeTag-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.validator.DoubleRangeValidator - 4
+ - javax.faces.validator.Validator - 2
+ - javax.servlet.jsp.JspException - 1

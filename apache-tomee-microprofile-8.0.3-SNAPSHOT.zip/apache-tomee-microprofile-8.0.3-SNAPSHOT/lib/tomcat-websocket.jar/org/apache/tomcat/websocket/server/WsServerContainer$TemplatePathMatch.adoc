@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/server/WsServerContainer$TemplatePathMatch.class
+
+ - link:WsServerContainer$TemplatePathMatch-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.server.ServerEndpointConfig - 5

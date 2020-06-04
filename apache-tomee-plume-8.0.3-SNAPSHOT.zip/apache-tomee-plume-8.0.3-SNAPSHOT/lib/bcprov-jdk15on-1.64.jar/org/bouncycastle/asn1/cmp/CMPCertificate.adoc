@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmp/CMPCertificate.class
+
+ - link:CMPCertificate-asmified.java[Asmified]
+
+== References
+

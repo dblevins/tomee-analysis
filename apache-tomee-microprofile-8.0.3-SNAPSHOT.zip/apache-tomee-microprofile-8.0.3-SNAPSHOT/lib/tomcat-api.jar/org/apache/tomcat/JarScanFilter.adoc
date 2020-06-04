@@ -1,0 +1,6 @@
+= org/apache/tomcat/JarScanFilter.class
+
+ - link:JarScanFilter-asmified.java[Asmified]
+
+== References
+

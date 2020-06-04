@@ -1,0 +1,11 @@
+= org/apache/webbeans/portable/events/generics/GProcessInjectionPoint.class
+
+ - link:GProcessInjectionPoint-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 14
+ - javax.enterprise.inject.spi.AnnotatedMember - 3
+ - javax.enterprise.inject.spi.Bean - 3
+ - javax.enterprise.inject.spi.Annotated - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2

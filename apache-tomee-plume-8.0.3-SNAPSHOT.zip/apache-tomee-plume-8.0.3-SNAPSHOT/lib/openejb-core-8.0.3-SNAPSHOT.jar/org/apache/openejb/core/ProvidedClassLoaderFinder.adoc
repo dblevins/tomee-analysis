@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ProvidedClassLoaderFinder.class
+
+ - link:ProvidedClassLoaderFinder-asmified.java[Asmified]
+
+== References
+

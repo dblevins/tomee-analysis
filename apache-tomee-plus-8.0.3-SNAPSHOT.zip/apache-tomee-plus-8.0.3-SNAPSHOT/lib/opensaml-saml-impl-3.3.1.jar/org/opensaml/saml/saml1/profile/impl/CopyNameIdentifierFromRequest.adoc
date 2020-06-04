@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml1/profile/impl/CopyNameIdentifierFromRequest.class
+
+ - link:CopyNameIdentifierFromRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 12
+ - javax.annotation.Nullable - 2

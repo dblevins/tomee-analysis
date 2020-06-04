@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/bag/PredicatedSortedBag.class
+
+ - link:PredicatedSortedBag-asmified.java[Asmified]
+
+== References
+

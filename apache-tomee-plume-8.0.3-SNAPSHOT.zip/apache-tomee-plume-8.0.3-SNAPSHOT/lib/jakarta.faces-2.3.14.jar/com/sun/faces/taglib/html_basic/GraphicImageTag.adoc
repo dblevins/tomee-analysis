@@ -1,0 +1,11 @@
+= com/sun/faces/taglib/html_basic/GraphicImageTag.class
+
+ - link:GraphicImageTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 182
+ - javax.faces.component.UIGraphic - 28
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.servlet.jsp.JspException - 6
+ - javax.faces.component.UIComponent - 3

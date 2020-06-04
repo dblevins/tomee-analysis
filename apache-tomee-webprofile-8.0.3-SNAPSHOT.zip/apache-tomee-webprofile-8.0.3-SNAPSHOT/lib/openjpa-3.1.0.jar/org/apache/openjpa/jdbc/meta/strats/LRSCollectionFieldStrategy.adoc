@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/LRSCollectionFieldStrategy.class
+
+ - link:LRSCollectionFieldStrategy-asmified.java[Asmified]
+
+== References
+

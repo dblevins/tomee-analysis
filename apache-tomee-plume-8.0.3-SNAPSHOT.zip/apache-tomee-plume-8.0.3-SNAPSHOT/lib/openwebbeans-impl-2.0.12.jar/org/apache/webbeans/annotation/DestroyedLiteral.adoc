@@ -1,0 +1,13 @@
+= org/apache/webbeans/annotation/DestroyedLiteral.class
+
+ - link:DestroyedLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.Destroyed - 3
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.enterprise.context.RequestScoped - 1
+ - javax.enterprise.context.ConversationScoped - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.enterprise.context.SessionScoped - 1
+ - javax.inject.Singleton - 1

@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/faulttolerance/Asynchronous.class
+
+ - link:Asynchronous-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InterceptorBinding - 1

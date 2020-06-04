@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/KeyResolver$ResolverIterator.class
+
+ - link:KeyResolver$ResolverIterator-asmified.java[Asmified]
+
+== References
+

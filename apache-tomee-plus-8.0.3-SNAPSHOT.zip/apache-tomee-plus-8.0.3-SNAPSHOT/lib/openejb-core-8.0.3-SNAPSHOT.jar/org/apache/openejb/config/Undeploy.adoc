@@ -1,0 +1,6 @@
+= org/apache/openejb/config/Undeploy.class
+
+ - link:Undeploy-asmified.java[Asmified]
+
+== References
+

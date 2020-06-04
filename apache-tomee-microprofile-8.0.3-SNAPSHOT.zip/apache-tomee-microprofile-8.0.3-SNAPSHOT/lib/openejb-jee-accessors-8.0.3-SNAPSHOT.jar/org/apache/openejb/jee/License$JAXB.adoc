@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/License$JAXB.class
+
+ - link:License$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 5

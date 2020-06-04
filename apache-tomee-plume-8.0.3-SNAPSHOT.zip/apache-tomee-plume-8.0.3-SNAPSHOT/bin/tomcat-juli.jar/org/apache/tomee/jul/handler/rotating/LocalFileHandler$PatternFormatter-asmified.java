@@ -1,0 +1,226 @@
+package asm.org.apache.tomee.jul.handler.rotating;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class LocalFileHandler$PatternFormatterDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", null, "java/util/logging/Formatter", null);
+
+classWriter.visitInnerClass("org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "org/apache/tomee/jul/handler/rotating/LocalFileHandler", "PatternFormatter", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter$1", null, null, 0);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "date", "Ljava/lang/ThreadLocal;", "Ljava/lang/ThreadLocal<Ljava/util/Date;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "format", "Ljava/lang/String;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "locale", "Ljava/util/Locale;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Ljava/util/Locale;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/logging/Formatter", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter$1", "<init>", "(Lorg/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "date", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "format", "Ljava/lang/String;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "locale", "Ljava/util/Locale;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "date", "Ljava/lang/ThreadLocal;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ThreadLocal", "get", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Date");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Date", "setTime", "(J)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getSourceClassName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getSourceMethodName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label1);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", Opcodes.TOP, "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getLoggerName", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 6, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "formatMessage", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getThrown", "()Ljava/lang/Throwable;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitTypeInsn(NEW, "java/io/StringWriter");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/StringWriter", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitTypeInsn(NEW, "java/io/PrintWriter");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/io/PrintWriter", "<init>", "(Ljava/io/Writer;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/PrintWriter", "println", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Throwable", "printStackTrace", "(Ljava/io/PrintWriter;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/PrintWriter", "close", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/io/StringWriter", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"java/lang/String", "java/lang/String", "java/lang/Throwable"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "locale", "Ljava/util/Locale;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "format", "Ljava/lang/String;");
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getLoggerName", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitFieldInsn(GETSTATIC, "java/util/Locale", "ENGLISH", "Ljava/util/Locale;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "locale", "Ljava/util/Locale;");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getLevel", "()Ljava/util/logging/Level;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Level", "getName", "()Ljava/lang/String;", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/Throwable"}, 5, new Object[] {"java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "[Ljava/lang/Object;", Opcodes.INTEGER});
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/LogRecord", "getLevel", "()Ljava/util/logging/Level;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/logging/Level", "getLocalizedName", "()Ljava/lang/String;", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/Throwable"}, 6, new Object[] {"java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "[Ljava/lang/Object;", Opcodes.INTEGER, "java/lang/Object"});
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_5);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/Throwable"}, 5, new Object[] {"java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "[Ljava/lang/Object;", Opcodes.INTEGER});
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/Throwable"}, 6, new Object[] {"java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "[Ljava/lang/Object;", Opcodes.INTEGER, "java/lang/Object"});
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label7);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/Throwable"}, 5, new Object[] {"java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "[Ljava/lang/Object;", Opcodes.INTEGER});
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/tomee/jul/handler/rotating/LocalFileHandler$PatternFormatter", "java/util/logging/LogRecord", "java/util/Date", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/String", "java/lang/Throwable"}, 6, new Object[] {"java/util/Locale", "java/lang/String", "[Ljava/lang/Object;", "[Ljava/lang/Object;", Opcodes.INTEGER, "java/lang/Object"});
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/String", "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 11);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

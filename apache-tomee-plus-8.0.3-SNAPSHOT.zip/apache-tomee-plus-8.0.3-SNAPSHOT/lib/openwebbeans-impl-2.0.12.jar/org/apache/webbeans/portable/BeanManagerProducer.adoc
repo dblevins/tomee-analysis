@@ -1,0 +1,8 @@
+= org/apache/webbeans/portable/BeanManagerProducer.class
+
+ - link:BeanManagerProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 12
+ - javax.enterprise.inject.spi.Interceptor - 1

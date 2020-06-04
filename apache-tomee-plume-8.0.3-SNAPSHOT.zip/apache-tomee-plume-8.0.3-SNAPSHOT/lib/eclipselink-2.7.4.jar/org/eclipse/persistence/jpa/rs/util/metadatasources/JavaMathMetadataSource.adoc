@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/JavaMathMetadataSource.class
+
+ - link:JavaMathMetadataSource-asmified.java[Asmified]
+
+== References
+

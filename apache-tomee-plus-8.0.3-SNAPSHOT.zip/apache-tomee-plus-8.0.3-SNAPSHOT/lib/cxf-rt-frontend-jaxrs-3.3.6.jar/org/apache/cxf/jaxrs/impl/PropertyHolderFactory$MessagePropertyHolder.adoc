@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/impl/PropertyHolderFactory$MessagePropertyHolder.class
+
+ - link:PropertyHolderFactory$MessagePropertyHolder-asmified.java[Asmified]
+
+== References
+

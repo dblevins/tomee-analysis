@@ -1,0 +1,9 @@
+= org/apache/openejb/threads/task/ManagedTaskListenerTask.class
+
+ - link:ManagedTaskListenerTask-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedTaskListener - 17
+ - javax.enterprise.concurrent.ManagedExecutorService - 13
+ - javax.enterprise.concurrent.ManagedTask - 4

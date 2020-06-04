@@ -1,0 +1,6 @@
+= org/jose4j/jws/HmacUsingShaAlgorithm$HmacSha384.class
+
+ - link:HmacUsingShaAlgorithm$HmacSha384-asmified.java[Asmified]
+
+== References
+

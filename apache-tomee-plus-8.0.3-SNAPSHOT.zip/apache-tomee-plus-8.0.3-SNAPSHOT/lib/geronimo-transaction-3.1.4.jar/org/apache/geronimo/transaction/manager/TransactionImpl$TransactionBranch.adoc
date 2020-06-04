@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/TransactionImpl$TransactionBranch.class
+
+ - link:TransactionImpl$TransactionBranch-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/ByteArraySource.class
+
+ - link:ByteArraySource-asmified.java[Asmified]
+
+== References
+

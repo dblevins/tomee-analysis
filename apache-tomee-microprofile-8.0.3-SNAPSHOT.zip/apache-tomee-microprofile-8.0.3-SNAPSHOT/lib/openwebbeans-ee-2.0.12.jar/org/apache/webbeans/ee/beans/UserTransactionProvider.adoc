@@ -1,0 +1,8 @@
+= org/apache/webbeans/ee/beans/UserTransactionProvider.class
+
+ - link:UserTransactionProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 5
+ - javax.inject.Provider - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.class
+
+ - link:PolicyBasedWSS4JStaxInInterceptor-asmified.java[Asmified]
+
+== References
+

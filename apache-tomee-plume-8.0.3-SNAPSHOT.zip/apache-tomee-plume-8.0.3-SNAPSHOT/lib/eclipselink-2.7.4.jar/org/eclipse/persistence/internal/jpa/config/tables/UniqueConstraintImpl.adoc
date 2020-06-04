@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/tables/UniqueConstraintImpl.class
+
+ - link:UniqueConstraintImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/inheritance/InheritanceMetadata.class
+
+ - link:InheritanceMetadata-asmified.java[Asmified]
+
+== References
+

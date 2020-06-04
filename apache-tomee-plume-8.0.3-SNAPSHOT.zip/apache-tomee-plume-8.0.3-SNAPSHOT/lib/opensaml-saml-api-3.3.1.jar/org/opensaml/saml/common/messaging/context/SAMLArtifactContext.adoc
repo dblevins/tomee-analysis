@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/messaging/context/SAMLArtifactContext.class
+
+ - link:SAMLArtifactContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 12

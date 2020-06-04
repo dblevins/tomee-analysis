@@ -1,0 +1,6 @@
+= org/apache/cxf/phase/PhaseInterceptorChain$PhaseInterceptorIterator.class
+
+ - link:PhaseInterceptorChain$PhaseInterceptorIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/activemq/advisory/ConsumerStartedEvent.class
+
+ - link:ConsumerStartedEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Destination - 1

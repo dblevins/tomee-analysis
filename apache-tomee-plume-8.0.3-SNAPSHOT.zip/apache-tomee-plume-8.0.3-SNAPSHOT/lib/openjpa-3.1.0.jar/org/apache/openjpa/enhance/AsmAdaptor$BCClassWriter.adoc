@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/AsmAdaptor$BCClassWriter.class
+
+ - link:AsmAdaptor$BCClassWriter-asmified.java[Asmified]
+
+== References
+

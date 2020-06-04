@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/PropertyValue$Regular.class
+
+ - link:PropertyValue$Regular-asmified.java[Asmified]
+
+== References
+

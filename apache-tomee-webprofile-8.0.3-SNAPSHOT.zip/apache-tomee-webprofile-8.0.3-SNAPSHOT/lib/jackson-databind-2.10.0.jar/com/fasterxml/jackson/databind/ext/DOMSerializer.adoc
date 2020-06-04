@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/DOMSerializer.class
+
+ - link:DOMSerializer-asmified.java[Asmified]
+
+== References
+

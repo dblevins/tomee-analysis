@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/health/Health.class
+
+ - link:Health-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

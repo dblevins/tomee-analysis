@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/HashtableOfLong.class
+
+ - link:HashtableOfLong-asmified.java[Asmified]
+
+== References
+

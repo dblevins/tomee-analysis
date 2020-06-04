@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/ComparisonExpressionBNF.class
+
+ - link:ComparisonExpressionBNF-asmified.java[Asmified]
+
+== References
+

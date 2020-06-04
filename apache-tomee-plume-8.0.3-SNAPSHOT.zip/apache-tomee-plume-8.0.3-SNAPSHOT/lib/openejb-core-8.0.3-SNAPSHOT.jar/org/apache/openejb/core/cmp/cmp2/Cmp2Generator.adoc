@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/cmp2/Cmp2Generator.class
+
+ - link:Cmp2Generator-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityContext - 1

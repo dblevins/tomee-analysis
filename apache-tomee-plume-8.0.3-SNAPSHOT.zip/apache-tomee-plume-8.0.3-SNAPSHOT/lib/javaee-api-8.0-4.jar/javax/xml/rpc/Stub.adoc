@@ -1,0 +1,6 @@
+= javax/xml/rpc/Stub.class
+
+ - link:Stub-asmified.java[Asmified]
+
+== References
+

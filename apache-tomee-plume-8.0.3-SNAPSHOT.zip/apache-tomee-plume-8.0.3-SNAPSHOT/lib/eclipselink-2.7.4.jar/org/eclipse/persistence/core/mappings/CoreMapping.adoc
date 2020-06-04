@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/mappings/CoreMapping.class
+
+ - link:CoreMapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/StickyConnectionStrategy$StickyIterable.class
+
+ - link:StickyConnectionStrategy$StickyIterable-asmified.java[Asmified]
+
+== References
+

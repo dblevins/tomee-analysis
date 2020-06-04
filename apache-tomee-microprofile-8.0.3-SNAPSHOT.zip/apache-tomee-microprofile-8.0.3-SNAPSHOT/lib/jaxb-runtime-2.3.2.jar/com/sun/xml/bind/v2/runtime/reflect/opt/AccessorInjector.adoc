@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/AccessorInjector.class
+
+ - link:AccessorInjector-asmified.java[Asmified]
+
+== References
+

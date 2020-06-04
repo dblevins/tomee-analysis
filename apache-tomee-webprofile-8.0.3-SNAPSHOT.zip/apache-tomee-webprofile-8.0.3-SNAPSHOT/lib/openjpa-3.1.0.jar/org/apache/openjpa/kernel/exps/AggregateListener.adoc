@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/AggregateListener.class
+
+ - link:AggregateListener-asmified.java[Asmified]
+
+== References
+

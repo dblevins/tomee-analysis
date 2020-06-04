@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/bag/TransformedSortedBag.class
+
+ - link:TransformedSortedBag-asmified.java[Asmified]
+
+== References
+

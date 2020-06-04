@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/UnsyncBufferedOutputStream.class
+
+ - link:UnsyncBufferedOutputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/slf4j/event/SubstituteLoggingEvent.class
+
+ - link:SubstituteLoggingEvent-asmified.java[Asmified]
+
+== References
+

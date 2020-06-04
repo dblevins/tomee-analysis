@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/constructor/SafeConstructor$ConstructUndefined.class
+
+ - link:SafeConstructor$ConstructUndefined-asmified.java[Asmified]
+
+== References
+

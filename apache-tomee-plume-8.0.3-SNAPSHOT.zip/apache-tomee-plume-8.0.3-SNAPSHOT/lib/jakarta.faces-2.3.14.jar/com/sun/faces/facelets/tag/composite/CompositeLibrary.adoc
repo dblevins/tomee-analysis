@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/tag/composite/CompositeLibrary.class
+
+ - link:CompositeLibrary-asmified.java[Asmified]
+
+== References
+

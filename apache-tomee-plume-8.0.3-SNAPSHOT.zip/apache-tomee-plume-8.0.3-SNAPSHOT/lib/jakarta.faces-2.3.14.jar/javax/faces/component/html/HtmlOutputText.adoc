@@ -1,0 +1,11 @@
+= javax/faces/component/html/HtmlOutputText.class
+
+ - link:HtmlOutputText-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 28
+ - javax.faces.component.html.HtmlOutputText - 23
+ - javax.faces.component.html.HtmlOutputText$PropertyKeys - 14
+ - javax.faces.component.UIOutput - 2
+ - javax.el.ValueExpression - 1

@@ -1,0 +1,6 @@
+= org/apache/webbeans/util/SingleItemSet$SingleItemIterator.class
+
+ - link:SingleItemSet$SingleItemIterator-asmified.java[Asmified]
+
+== References
+

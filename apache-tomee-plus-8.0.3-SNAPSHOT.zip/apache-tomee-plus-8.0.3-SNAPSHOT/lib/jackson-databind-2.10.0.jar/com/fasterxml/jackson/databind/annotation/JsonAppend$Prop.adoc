@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JsonAppend$Prop.class
+
+ - link:JsonAppend$Prop-asmified.java[Asmified]
+
+== References
+

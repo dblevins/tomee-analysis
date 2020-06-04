@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonUnwrapped.class
+
+ - link:JsonUnwrapped-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/FactoryTransformer.class
+
+ - link:FactoryTransformer-asmified.java[Asmified]
+
+== References
+

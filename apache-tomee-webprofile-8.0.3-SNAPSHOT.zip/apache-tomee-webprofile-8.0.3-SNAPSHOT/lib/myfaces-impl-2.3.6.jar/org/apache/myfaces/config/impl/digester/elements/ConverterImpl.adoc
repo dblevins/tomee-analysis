@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/ConverterImpl.class
+
+ - link:ConverterImpl-asmified.java[Asmified]
+
+== References
+

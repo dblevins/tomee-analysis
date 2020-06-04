@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Null.class
+
+ - link:Null-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/JpaEntityManagerFactory.class
+
+ - link:JpaEntityManagerFactory-asmified.java[Asmified]
+
+== References
+

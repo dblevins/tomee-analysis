@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Delegatable.class
+
+ - link:Delegatable-asmified.java[Asmified]
+
+== References
+

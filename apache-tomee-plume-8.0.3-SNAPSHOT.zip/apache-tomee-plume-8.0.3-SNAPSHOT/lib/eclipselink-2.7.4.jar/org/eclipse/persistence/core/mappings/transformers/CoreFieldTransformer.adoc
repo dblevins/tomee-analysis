@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/mappings/transformers/CoreFieldTransformer.class
+
+ - link:CoreFieldTransformer-asmified.java[Asmified]
+
+== References
+

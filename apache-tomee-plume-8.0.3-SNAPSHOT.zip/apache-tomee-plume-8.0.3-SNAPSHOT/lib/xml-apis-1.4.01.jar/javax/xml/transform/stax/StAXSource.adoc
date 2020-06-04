@@ -1,0 +1,6 @@
+= javax/xml/transform/stax/StAXSource.class
+
+ - link:StAXSource-asmified.java[Asmified]
+
+== References
+

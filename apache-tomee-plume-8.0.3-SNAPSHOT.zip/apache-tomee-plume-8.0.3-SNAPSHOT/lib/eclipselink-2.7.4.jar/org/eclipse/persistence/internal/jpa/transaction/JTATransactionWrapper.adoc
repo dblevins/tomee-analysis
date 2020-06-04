@@ -1,0 +1,11 @@
+= org/eclipse/persistence/internal/jpa/transaction/JTATransactionWrapper.class
+
+ - link:JTATransactionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 2
+ - javax.persistence.TransactionRequiredException - 2
+ - javax.persistence.PersistenceException - 2
+ - javax.persistence.EntityTransaction - 1
+ - javax.transaction.Synchronization - 1

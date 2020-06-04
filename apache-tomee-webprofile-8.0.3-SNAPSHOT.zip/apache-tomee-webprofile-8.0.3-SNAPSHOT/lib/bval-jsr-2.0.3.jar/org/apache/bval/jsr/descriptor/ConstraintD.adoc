@@ -1,0 +1,18 @@
+= org/apache/bval/jsr/descriptor/ConstraintD.class
+
+ - link:ConstraintD-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintTarget - 11
+ - javax.validation.metadata.ValidateUnwrappedValue - 10
+ - javax.validation.ConstraintDeclarationException - 8
+ - javax.validation.metadata.Scope - 8
+ - javax.validation.metadata.ConstraintDescriptor - 4
+ - javax.validation.Payload - 3
+ - javax.validation.ValidationException - 3
+ - javax.validation.ConstraintValidator - 3
+ - javax.validation.valueextraction.Unwrapping$Skip - 3
+ - javax.validation.valueextraction.Unwrapping$Unwrap - 3
+ - javax.validation.ConstraintDefinitionException - 2
+ - javax.validation.ReportAsSingleViolation - 1

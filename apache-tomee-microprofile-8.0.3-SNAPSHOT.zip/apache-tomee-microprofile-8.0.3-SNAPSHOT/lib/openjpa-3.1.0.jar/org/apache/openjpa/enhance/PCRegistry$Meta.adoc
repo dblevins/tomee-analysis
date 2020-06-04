@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/PCRegistry$Meta.class
+
+ - link:PCRegistry$Meta-asmified.java[Asmified]
+
+== References
+

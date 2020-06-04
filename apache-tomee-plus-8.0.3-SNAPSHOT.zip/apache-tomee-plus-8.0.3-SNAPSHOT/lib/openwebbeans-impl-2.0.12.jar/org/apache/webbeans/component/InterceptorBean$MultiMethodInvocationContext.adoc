@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/InterceptorBean$MultiMethodInvocationContext.class
+
+ - link:InterceptorBean$MultiMethodInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 19
+ - javax.enterprise.inject.spi.InterceptionType - 5
+ - javax.enterprise.inject.spi.Interceptor - 5

@@ -1,0 +1,16 @@
+= org/apache/activemq/network/jms/SimpleJmsQueueConnector.class
+
+ - link:SimpleJmsQueueConnector-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.QueueConnection - 63
+ - javax.jms.Queue - 38
+ - javax.jms.QueueSession - 37
+ - javax.jms.QueueConnectionFactory - 34
+ - javax.jms.JMSException - 23
+ - javax.jms.Connection - 11
+ - javax.jms.Destination - 5
+ - javax.jms.MessageConsumer - 2
+ - javax.jms.TemporaryQueue - 2
+ - javax.jms.ExceptionListener - 2

@@ -1,0 +1,16 @@
+= org/apache/webbeans/inject/InjectableMethod.class
+
+ - link:InjectableMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 10
+ - javax.enterprise.inject.spi.AnnotatedParameter - 6
+ - javax.enterprise.inject.spi.Producer - 5
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.inject.Disposes - 1
+ - javax.enterprise.context.spi.CreationalContext - 1
+ - javax.enterprise.inject.spi.Annotated - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.enterprise.inject.spi.BeanManager - 1

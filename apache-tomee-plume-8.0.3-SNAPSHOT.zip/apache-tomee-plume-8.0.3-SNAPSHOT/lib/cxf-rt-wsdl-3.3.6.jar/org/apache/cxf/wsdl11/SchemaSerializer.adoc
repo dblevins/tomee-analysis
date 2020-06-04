@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl11/SchemaSerializer.class
+
+ - link:SchemaSerializer-asmified.java[Asmified]
+
+== References
+

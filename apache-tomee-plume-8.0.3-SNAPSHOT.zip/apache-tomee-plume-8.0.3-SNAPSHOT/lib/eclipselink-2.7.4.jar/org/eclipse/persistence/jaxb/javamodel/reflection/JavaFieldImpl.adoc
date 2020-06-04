@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/reflection/JavaFieldImpl.class
+
+ - link:JavaFieldImpl-asmified.java[Asmified]
+
+== References
+

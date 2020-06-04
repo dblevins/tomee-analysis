@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/MimeMultipart.class
+
+ - link:MimeMultipart-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 9

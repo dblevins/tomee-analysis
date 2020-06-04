@@ -1,0 +1,12 @@
+= com/sun/faces/taglib/jsf_core/ValueChangeListenerTag$BindingValueChangeListener.class
+
+ - link:ValueChangeListenerTag$BindingValueChangeListener-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 10
+ - javax.faces.event.ValueChangeListener - 4
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.event.ValueChangeEvent - 3
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.event.AbortProcessingException - 1

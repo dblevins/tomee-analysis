@@ -1,0 +1,6 @@
+= org/apache/openejb/client/LogoutResponse.class
+
+ - link:LogoutResponse-asmified.java[Asmified]
+
+== References
+

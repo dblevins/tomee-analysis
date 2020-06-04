@@ -1,0 +1,8 @@
+= org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$LockHandler.class
+
+ - link:AnnotationDeployer$ProcessAnnotatedBeans$LockHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.Lock - 15
+ - javax.ejb.LockType - 7

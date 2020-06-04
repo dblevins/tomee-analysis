@@ -1,0 +1,6 @@
+= org/cryptacular/codec/AbstractBaseNDecoder.class
+
+ - link:AbstractBaseNDecoder-asmified.java[Asmified]
+
+== References
+

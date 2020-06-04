@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/QueryType.class
+
+ - link:QueryType-asmified.java[Asmified]
+
+== References
+

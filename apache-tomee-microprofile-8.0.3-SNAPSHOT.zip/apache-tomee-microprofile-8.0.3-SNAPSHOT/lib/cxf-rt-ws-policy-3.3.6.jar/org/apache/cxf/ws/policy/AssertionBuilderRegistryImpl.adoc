@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/policy/AssertionBuilderRegistryImpl.class
+
+ - link:AssertionBuilderRegistryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

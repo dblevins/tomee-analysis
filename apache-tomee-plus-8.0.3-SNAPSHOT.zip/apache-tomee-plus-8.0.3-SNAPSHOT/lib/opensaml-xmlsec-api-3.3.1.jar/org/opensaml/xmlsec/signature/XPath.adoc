@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/XPath.class
+
+ - link:XPath-asmified.java[Asmified]
+
+== References
+

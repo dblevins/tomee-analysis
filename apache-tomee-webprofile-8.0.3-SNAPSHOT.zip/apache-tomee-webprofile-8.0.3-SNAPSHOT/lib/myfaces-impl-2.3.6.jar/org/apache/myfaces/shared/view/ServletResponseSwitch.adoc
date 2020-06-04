@@ -1,0 +1,9 @@
+= org/apache/myfaces/shared/view/ServletResponseSwitch.class
+
+ - link:ServletResponseSwitch-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponseWrapper - 10
+ - javax.servlet.ServletResponse - 5
+ - javax.servlet.ServletOutputStream - 3

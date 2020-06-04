@@ -1,0 +1,20 @@
+= org/apache/openejb/server/httpd/ServletRequestAdapter.class
+
+ - link:ServletRequestAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 160
+ - javax.servlet.http.HttpSession - 8
+ - javax.servlet.ServletException - 6
+ - javax.servlet.AsyncContext - 6
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.servlet.http.Part - 3
+ - javax.servlet.ServletContext - 3
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.RequestDispatcher - 2
+ - javax.servlet.ServletInputStream - 2
+ - javax.servlet.http.HttpUpgradeHandler - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.DispatcherType - 2
+ - javax.servlet.http.Cookie - 2

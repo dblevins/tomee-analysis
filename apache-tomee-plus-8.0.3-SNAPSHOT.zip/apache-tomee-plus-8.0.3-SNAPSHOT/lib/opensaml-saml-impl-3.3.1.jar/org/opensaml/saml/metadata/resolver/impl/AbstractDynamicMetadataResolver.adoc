@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/impl/AbstractDynamicMetadataResolver.class
+
+ - link:AbstractDynamicMetadataResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 39
+ - javax.annotation.Nullable - 13

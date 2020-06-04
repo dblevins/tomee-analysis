@@ -1,0 +1,9 @@
+= javax/enterprise/event/ImmutableNotificationOptions.class
+
+ - link:ImmutableNotificationOptions-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.event.NotificationOptions - 1
+ - javax.enterprise.event.ImmutableNotificationOptions$1 - 1
+ - javax.enterprise.event.ImmutableNotificationOptions - 1

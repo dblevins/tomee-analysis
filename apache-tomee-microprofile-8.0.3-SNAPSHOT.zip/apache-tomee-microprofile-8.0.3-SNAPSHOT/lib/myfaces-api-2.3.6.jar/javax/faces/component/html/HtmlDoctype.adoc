@@ -1,0 +1,10 @@
+= javax/faces/component/html/HtmlDoctype.class
+
+ - link:HtmlDoctype-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 12
+ - javax.faces.component.html.HtmlDoctype - 7
+ - javax.faces.component.html.HtmlDoctype$PropertyKeys - 6
+ - javax.faces.component.UIOutput - 2

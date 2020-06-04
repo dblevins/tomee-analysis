@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/TypeAnnotationCodeStream.class
+
+ - link:TypeAnnotationCodeStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/io/NumberInput.class
+
+ - link:NumberInput-asmified.java[Asmified]
+
+== References
+

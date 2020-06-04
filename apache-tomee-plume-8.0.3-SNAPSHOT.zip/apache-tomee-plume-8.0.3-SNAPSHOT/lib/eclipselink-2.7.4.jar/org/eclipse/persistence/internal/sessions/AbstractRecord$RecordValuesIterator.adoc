@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/AbstractRecord$RecordValuesIterator.class
+
+ - link:AbstractRecord$RecordValuesIterator-asmified.java[Asmified]
+
+== References
+

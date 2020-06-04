@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlOmap.class
+
+ - link:SafeConstructor$ConstructYamlOmap-asmified.java[Asmified]
+
+== References
+

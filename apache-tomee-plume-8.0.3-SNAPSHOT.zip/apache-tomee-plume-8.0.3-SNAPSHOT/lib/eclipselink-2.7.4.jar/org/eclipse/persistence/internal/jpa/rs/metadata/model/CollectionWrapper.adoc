@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/CollectionWrapper.class
+
+ - link:CollectionWrapper-asmified.java[Asmified]
+
+== References
+

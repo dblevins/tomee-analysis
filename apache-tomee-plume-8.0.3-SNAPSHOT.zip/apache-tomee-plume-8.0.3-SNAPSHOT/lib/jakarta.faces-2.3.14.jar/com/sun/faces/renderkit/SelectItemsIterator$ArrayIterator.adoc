@@ -1,0 +1,9 @@
+= com/sun/faces/renderkit/SelectItemsIterator$ArrayIterator.class
+
+ - link:SelectItemsIterator$ArrayIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.model.SelectItem - 5
+ - javax.faces.component.UISelectItems - 4

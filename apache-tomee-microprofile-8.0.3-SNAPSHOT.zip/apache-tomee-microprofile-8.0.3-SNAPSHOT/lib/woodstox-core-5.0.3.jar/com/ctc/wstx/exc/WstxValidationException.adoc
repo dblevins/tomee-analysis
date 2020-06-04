@@ -1,0 +1,6 @@
+= com/ctc/wstx/exc/WstxValidationException.class
+
+ - link:WstxValidationException-asmified.java[Asmified]
+
+== References
+

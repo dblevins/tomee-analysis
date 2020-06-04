@@ -1,0 +1,6 @@
+= com/sun/istack/localization/NullLocalizable.class
+
+ - link:NullLocalizable-asmified.java[Asmified]
+
+== References
+

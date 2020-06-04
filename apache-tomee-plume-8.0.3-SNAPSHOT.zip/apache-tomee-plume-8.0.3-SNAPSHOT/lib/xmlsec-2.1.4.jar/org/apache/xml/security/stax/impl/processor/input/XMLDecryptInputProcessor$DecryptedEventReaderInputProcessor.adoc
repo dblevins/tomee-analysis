@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/input/XMLDecryptInputProcessor$DecryptedEventReaderInputProcessor.class
+
+ - link:XMLDecryptInputProcessor$DecryptedEventReaderInputProcessor-asmified.java[Asmified]
+
+== References
+

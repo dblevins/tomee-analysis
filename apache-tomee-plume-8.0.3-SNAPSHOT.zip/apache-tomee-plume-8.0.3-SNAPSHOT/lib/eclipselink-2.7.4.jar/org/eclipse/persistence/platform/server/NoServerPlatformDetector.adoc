@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/NoServerPlatformDetector.class
+
+ - link:NoServerPlatformDetector-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/token/DOMX509Data.class
+
+ - link:DOMX509Data-asmified.java[Asmified]
+
+== References
+

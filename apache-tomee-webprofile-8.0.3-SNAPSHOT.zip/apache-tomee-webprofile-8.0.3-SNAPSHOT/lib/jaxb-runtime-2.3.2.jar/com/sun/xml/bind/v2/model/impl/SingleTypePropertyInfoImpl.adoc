@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/model/impl/SingleTypePropertyInfoImpl.class
+
+ - link:SingleTypePropertyInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlList - 1

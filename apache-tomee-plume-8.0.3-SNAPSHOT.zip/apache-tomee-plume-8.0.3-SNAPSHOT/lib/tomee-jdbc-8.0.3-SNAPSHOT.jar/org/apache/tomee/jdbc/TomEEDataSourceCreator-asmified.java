@@ -1,0 +1,276 @@
+package asm.org.apache.tomee.jdbc;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class TomEEDataSourceCreatorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomee/jdbc/TomEEDataSourceCreator", null, "org/apache/openejb/resource/jdbc/pool/PoolDataSourceCreator", null);
+
+classWriter.visitInnerClass("org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEPoolProperties", "org/apache/tomee/jdbc/TomEEDataSourceCreator", "TomEEPoolProperties", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEConnectionPool", "org/apache/tomee/jdbc/TomEEDataSourceCreator", "TomEEConnectionPool", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/tomee/jdbc/TomEEDataSourceCreator$ReadOnlyConnectionpool", "org/apache/tomee/jdbc/TomEEDataSourceCreator", "ReadOnlyConnectionpool", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource", "org/apache/tomee/jdbc/TomEEDataSourceCreator", "TomEEDataSource", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/tomee/jdbc/TomEEDataSourceCreator$1", null, null, 0);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/pool/PoolDataSourceCreator", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "pool", "(Ljava/lang/String;Ljavax/sql/DataSource;Ljava/util/Properties;)Ljavax/sql/DataSource;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/sql/SQLException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEPoolProperties;"));
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "createProperties", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/openejb/util/SuperProperties;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "build", "(Ljava/lang/Class;Ljava/util/Properties;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/jdbc/pool/PoolConfiguration");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/tomcat/jdbc/pool/PoolConfiguration", "setDataSource", "(Ljava/lang/Object;)V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/jdbc/pool/ConnectionPool");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/jdbc/pool/ConnectionPool", "<init>", "(Lorg/apache/tomcat/jdbc/pool/PoolConfiguration;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/tomee/jdbc/TomEEDataSourceCreator", "java/lang/String", "javax/sql/DataSource", "java/util/Properties", "org/apache/tomcat/jdbc/pool/PoolConfiguration"}, 1, new Object[] {"java/sql/SQLException"});
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/tomcat/jdbc/pool/ConnectionPool"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource", "<init>", "(Lorg/apache/tomcat/jdbc/pool/PoolConfiguration;Lorg/apache/tomcat/jdbc/pool/ConnectionPool;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "recipes", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "recipes", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "pool", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Properties;)Ljavax/sql/CommonDataSource;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEPoolProperties;"));
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "createProperties", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/openejb/util/SuperProperties;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "build", "(Ljava/lang/Class;Ljava/util/Properties;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/jdbc/pool/PoolConfiguration");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource", "<init>", "(Lorg/apache/tomcat/jdbc/pool/PoolConfiguration;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "recipes", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomee/jdbc/TomEEDataSourceCreator", "recipes", "Ljava/util/Map;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "doDestroy", "(Ljavax/sql/CommonDataSource;)V", null, new String[] { "java/lang/Throwable" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/jdbc/pool/DataSource");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEDataSource", "internalJMXUnregister", "()V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/tomcat/jdbc/pool/DataSource"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/jdbc/pool/DataSource", "close", "(Z)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "trackRecipeFor", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/resource/jdbc/pool/PoolDataSourceCreator", "trackRecipeFor", "(Ljava/lang/Object;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/tomee/jdbc/TomEEDataSourceCreator$TomEEPoolProperties;"));
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isInstance", "(Ljava/lang/Object;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createProperties", "(Ljava/lang/String;Ljava/util/Properties;)Lorg/apache/openejb/util/SuperProperties;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomee/jdbc/TomEEDataSourceCreator$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator$1", "<init>", "(Lorg/apache/tomee/jdbc/TomEEDataSourceCreator;)V", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomee/jdbc/TomEEDataSourceCreator$1", "caseInsensitive", "(Z)Lorg/apache/openejb/util/SuperProperties;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("name");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("url");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("url");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("JdbcUrl");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("driverClassName");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("driverClassName");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("JdbcDriver");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("username");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("username");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("password");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("password");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "putAll", "(Ljava/util/Map;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("PasswordCipher");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "remove", "(Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitLdcInsn("PlainText");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("password");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/cipher/PasswordCipherFactory", "getPasswordCipher", "(Ljava/lang/String;)Lorg/apache/openejb/cipher/PasswordCipher;", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitLdcInsn("Password");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "toCharArray", "()[C", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openejb/cipher/PasswordCipher", "decrypt", "([C)Ljava/lang/String;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/util/SuperProperties", "setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openejb/util/SuperProperties", "java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 5);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

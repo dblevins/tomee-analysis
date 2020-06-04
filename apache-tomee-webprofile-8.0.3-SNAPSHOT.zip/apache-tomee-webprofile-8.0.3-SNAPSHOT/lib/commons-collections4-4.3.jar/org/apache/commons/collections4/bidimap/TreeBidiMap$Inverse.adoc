@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/bidimap/TreeBidiMap$Inverse.class
+
+ - link:TreeBidiMap$Inverse-asmified.java[Asmified]
+
+== References
+

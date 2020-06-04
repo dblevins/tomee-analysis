@@ -1,0 +1,12 @@
+= javax/jms/QueueConnection.class
+
+ - link:QueueConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.Queue - 1
+ - javax.jms.Connection - 1
+ - javax.jms.ConnectionConsumer - 1
+ - javax.jms.QueueSession - 1
+ - javax.jms.ServerSessionPool - 1

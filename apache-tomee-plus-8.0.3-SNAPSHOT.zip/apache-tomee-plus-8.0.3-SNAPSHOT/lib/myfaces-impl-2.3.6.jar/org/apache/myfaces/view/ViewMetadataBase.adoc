@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/ViewMetadataBase.class
+
+ - link:ViewMetadataBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.ViewMetadata - 2

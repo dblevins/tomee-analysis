@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/JAXBEnum.class
+
+ - link:JAXBEnum-asmified.java[Asmified]
+
+== References
+

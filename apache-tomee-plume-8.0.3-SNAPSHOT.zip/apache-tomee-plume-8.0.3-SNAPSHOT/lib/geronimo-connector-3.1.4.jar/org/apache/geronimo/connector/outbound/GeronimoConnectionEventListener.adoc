@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/outbound/GeronimoConnectionEventListener.class
+
+ - link:GeronimoConnectionEventListener-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionEvent - 17
+ - javax.resource.spi.ManagedConnection - 6
+ - javax.resource.spi.ConnectionEventListener - 1

@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/MapEntry.class
+
+ - link:MapEntry-asmified.java[Asmified]
+
+== References
+

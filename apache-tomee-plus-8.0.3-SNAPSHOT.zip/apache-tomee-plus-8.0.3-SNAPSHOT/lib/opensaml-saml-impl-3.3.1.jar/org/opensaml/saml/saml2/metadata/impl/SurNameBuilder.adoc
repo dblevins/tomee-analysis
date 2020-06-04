@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SurNameBuilder.class
+
+ - link:SurNameBuilder-asmified.java[Asmified]
+
+== References
+

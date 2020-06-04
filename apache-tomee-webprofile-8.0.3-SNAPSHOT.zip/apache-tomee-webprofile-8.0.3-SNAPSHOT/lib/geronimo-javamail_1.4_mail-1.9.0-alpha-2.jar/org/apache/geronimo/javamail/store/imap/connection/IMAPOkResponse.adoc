@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPOkResponse.class
+
+ - link:IMAPOkResponse-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/mbeans/MBeanUtils.class
+
+ - link:MBeanUtils-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/headers/Header.class
+
+ - link:Header-asmified.java[Asmified]
+
+== References
+

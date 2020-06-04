@@ -1,0 +1,7 @@
+= org/apache/activemq/advisory/ProducerStoppedEvent.class
+
+ - link:ProducerStoppedEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Destination - 1

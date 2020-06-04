@@ -1,0 +1,6 @@
+= javax/xml/stream/events/EntityDeclaration.class
+
+ - link:EntityDeclaration-asmified.java[Asmified]
+
+== References
+

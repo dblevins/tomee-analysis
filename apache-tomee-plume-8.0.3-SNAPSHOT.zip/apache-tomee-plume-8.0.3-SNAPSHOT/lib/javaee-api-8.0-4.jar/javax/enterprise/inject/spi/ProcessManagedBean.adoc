@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/ProcessManagedBean.class
+
+ - link:ProcessManagedBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.ProcessBean - 1
+ - javax.enterprise.inject.spi.AnnotatedType - 1

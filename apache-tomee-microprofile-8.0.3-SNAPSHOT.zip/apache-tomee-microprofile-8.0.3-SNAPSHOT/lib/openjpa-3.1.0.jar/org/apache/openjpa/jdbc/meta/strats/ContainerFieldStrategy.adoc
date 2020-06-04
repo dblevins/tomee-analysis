@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/ContainerFieldStrategy.class
+
+ - link:ContainerFieldStrategy-asmified.java[Asmified]
+
+== References
+

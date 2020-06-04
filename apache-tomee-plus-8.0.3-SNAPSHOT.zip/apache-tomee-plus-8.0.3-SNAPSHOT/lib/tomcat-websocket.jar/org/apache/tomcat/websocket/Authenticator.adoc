@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/Authenticator.class
+
+ - link:Authenticator-asmified.java[Asmified]
+
+== References
+

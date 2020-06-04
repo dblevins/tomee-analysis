@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ClassListInfo.class
+
+ - link:ClassListInfo-asmified.java[Asmified]
+
+== References
+

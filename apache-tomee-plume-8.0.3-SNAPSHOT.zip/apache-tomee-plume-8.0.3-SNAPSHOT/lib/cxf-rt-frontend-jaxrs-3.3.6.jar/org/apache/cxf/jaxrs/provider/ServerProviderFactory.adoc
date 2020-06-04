@@ -1,0 +1,18 @@
+= org/apache/cxf/jaxrs/provider/ServerProviderFactory.class
+
+ - link:ServerProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.FeatureContext - 17
+ - javax.ws.rs.container.ContainerRequestFilter - 16
+ - javax.ws.rs.core.Configuration - 15
+ - javax.ws.rs.core.Feature - 10
+ - javax.ws.rs.container.DynamicFeature - 8
+ - javax.ws.rs.core.Application - 7
+ - javax.ws.rs.core.Configurable - 6
+ - javax.ws.rs.ext.ExceptionMapper - 6
+ - javax.ws.rs.container.ContainerResponseFilter - 4
+ - javax.ws.rs.BeanParam - 2
+ - javax.ws.rs.container.PreMatching - 1
+ - javax.ws.rs.container.ResourceInfo - 1

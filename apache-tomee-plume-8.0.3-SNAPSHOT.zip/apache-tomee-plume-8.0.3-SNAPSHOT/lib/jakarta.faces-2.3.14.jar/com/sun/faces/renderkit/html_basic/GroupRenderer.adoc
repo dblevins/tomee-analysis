@@ -1,0 +1,9 @@
+= com/sun/faces/renderkit/html_basic/GroupRenderer.class
+
+ - link:GroupRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 26
+ - javax.faces.context.ResponseWriter - 11
+ - javax.faces.context.FacesContext - 11

@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl11/WSDLEndpointFactory.class
+
+ - link:WSDLEndpointFactory-asmified.java[Asmified]
+
+== References
+

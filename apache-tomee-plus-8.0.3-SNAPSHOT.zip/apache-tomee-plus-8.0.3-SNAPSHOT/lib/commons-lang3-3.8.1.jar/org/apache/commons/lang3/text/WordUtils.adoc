@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/text/WordUtils.class
+
+ - link:WordUtils-asmified.java[Asmified]
+
+== References
+

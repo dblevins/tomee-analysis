@@ -1,0 +1,6 @@
+= org/apache/openejb/client/corba/InstanceOf.class
+
+ - link:InstanceOf-asmified.java[Asmified]
+
+== References
+

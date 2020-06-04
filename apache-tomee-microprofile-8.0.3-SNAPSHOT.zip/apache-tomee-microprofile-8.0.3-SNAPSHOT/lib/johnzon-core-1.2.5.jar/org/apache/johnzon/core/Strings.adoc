@@ -1,0 +1,8 @@
+= org/apache/johnzon/core/Strings.class
+
+ - link:Strings-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonLocation - 2
+ - javax.json.stream.JsonParsingException - 2

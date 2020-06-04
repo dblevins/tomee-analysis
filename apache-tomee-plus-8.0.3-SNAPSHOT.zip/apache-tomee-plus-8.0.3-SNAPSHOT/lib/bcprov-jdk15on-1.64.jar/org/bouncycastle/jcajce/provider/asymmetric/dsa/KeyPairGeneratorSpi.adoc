@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/dsa/KeyPairGeneratorSpi.class
+
+ - link:KeyPairGeneratorSpi-asmified.java[Asmified]
+
+== References
+

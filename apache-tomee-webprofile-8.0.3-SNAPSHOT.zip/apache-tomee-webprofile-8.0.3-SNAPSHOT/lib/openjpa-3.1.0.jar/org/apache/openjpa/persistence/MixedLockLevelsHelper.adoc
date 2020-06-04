@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/MixedLockLevelsHelper.class
+
+ - link:MixedLockLevelsHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.LockModeType - 24

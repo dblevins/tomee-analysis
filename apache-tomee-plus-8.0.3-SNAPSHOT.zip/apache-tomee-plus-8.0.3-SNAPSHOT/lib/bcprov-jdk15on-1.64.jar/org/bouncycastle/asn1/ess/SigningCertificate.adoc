@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/ess/SigningCertificate.class
+
+ - link:SigningCertificate-asmified.java[Asmified]
+
+== References
+

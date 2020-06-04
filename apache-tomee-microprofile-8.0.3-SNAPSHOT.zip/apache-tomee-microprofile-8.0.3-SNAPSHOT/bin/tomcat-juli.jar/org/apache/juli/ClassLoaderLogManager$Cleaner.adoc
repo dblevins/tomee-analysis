@@ -1,0 +1,6 @@
+= org/apache/juli/ClassLoaderLogManager$Cleaner.class
+
+ - link:ClassLoaderLogManager$Cleaner-asmified.java[Asmified]
+
+== References
+

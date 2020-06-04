@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/metrics/annotation/Counted.class
+
+ - link:Counted-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 8
+ - javax.interceptor.InterceptorBinding - 1

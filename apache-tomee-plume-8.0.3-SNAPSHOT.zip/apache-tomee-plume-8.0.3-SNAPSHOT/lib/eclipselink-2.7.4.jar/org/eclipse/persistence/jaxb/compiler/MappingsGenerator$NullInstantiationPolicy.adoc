@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/MappingsGenerator$NullInstantiationPolicy.class
+
+ - link:MappingsGenerator$NullInstantiationPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/JsonParserSequence.class
+
+ - link:JsonParserSequence-asmified.java[Asmified]
+
+== References
+

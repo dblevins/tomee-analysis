@@ -1,0 +1,14 @@
+= com/sun/faces/application/resource/ResourceHandlerImpl.class
+
+ - link:ResourceHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 72
+ - javax.faces.context.ExternalContext - 31
+ - javax.faces.application.Resource - 22
+ - javax.faces.application.ProjectStage - 6
+ - javax.faces.application.ResourceVisitOption - 4
+ - javax.faces.application.ResourceHandler - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.application.ViewResource - 1

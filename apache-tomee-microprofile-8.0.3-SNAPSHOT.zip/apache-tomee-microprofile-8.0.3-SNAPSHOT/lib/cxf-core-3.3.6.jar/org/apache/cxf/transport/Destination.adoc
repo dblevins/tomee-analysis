@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/Destination.class
+
+ - link:Destination-asmified.java[Asmified]
+
+== References
+

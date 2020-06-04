@@ -1,0 +1,6 @@
+= org/apache/commons/digester/xmlrules/DigesterRuleParser$PatternStack.class
+
+ - link:DigesterRuleParser$PatternStack-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/StdScalarDeserializer.class
+
+ - link:StdScalarDeserializer-asmified.java[Asmified]
+
+== References
+

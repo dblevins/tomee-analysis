@@ -1,0 +1,7 @@
+= org/apache/openejb/cdi/OptimizedLoaderService$FilterableServiceLoader.class
+
+ - link:OptimizedLoaderService$FilterableServiceLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 3

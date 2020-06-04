@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlPanelGroup.class
+
+ - link:HtmlPanelGroup-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 52
+ - javax.faces.component.html.HtmlPanelGroup - 41
+ - javax.faces.component.html.HtmlPanelGroup$PropertyKeys - 26
+ - javax.faces.component.UIPanel - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

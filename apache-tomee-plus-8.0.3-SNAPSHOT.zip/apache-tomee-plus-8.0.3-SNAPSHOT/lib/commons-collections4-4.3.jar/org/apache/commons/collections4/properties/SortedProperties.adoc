@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/properties/SortedProperties.class
+
+ - link:SortedProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/cxf/transport/http_jaxws_spi/HttpServletResponseAdapter.class
+
+ - link:HttpServletResponseAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.spi.http.HttpExchange - 29
+ - javax.servlet.ServletOutputStream - 1
+ - javax.servlet.http.HttpServletResponse - 1
+ - javax.servlet.http.Cookie - 1

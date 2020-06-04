@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/service/factory/DefaultServiceConfiguration.class
+
+ - link:DefaultServiceConfiguration-asmified.java[Asmified]
+
+== References
+

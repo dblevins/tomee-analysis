@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/ocsp/SingleResponse.class
+
+ - link:SingleResponse-asmified.java[Asmified]
+
+== References
+

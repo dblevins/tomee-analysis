@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/JAXBClass.class
+
+ - link:JAXBClass-asmified.java[Asmified]
+
+== References
+

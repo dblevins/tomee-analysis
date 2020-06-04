@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/VisibilityChecker.class
+
+ - link:VisibilityChecker-asmified.java[Asmified]
+
+== References
+

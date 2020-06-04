@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/renderkit/JSFAttr.class
+
+ - link:JSFAttr-asmified.java[Asmified]
+
+== References
+

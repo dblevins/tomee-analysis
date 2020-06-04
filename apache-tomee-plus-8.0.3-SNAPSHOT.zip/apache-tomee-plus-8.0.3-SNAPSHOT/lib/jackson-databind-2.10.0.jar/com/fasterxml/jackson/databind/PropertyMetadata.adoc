@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/PropertyMetadata.class
+
+ - link:PropertyMetadata-asmified.java[Asmified]
+
+== References
+

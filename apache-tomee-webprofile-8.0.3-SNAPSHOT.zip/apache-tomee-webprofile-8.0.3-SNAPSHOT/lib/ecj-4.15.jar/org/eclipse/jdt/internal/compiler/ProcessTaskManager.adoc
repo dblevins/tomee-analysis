@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ProcessTaskManager.class
+
+ - link:ProcessTaskManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/SimpleType.class
+
+ - link:SimpleType-asmified.java[Asmified]
+
+== References
+

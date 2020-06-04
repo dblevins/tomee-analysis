@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/DefaultAnnotationLiteral.class
+
+ - link:DefaultAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

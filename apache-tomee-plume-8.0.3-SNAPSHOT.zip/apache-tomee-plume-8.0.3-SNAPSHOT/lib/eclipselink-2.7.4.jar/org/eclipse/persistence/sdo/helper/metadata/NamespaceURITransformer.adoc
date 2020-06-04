@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/metadata/NamespaceURITransformer.class
+
+ - link:NamespaceURITransformer-asmified.java[Asmified]
+
+== References
+

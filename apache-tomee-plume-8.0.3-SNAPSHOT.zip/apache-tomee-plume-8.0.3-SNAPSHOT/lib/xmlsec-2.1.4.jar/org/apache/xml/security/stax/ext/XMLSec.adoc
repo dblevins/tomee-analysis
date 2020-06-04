@@ -1,0 +1,8 @@
+= org/apache/xml/security/stax/ext/XMLSec.class
+
+ - link:XMLSec-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 3
+ - javax.xml.bind.JAXBException - 2

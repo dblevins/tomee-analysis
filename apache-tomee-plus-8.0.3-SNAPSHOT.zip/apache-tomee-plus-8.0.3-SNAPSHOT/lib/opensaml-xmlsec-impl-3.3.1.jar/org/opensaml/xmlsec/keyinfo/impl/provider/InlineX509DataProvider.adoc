@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/keyinfo/impl/provider/InlineX509DataProvider.class
+
+ - link:InlineX509DataProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 20
+ - javax.annotation.Nullable - 11

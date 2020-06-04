@@ -1,0 +1,6 @@
+= org/jose4j/jwk/SelectorSupport.class
+
+ - link:SelectorSupport-asmified.java[Asmified]
+
+== References
+

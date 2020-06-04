@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/XMLSecurityStreamReader.class
+
+ - link:XMLSecurityStreamReader-asmified.java[Asmified]
+
+== References
+

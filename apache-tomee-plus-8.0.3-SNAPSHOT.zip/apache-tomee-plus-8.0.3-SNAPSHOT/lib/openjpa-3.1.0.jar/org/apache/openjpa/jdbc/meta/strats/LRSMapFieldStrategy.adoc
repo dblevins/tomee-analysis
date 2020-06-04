@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/LRSMapFieldStrategy.class
+
+ - link:LRSMapFieldStrategy-asmified.java[Asmified]
+
+== References
+

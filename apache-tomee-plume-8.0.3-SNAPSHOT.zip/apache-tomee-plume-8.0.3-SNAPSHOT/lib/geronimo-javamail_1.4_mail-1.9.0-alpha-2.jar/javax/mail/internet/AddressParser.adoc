@@ -1,0 +1,11 @@
+= javax/mail/internet/AddressParser.class
+
+ - link:AddressParser-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.AddressParser$AddressToken - 152
+ - javax.mail.internet.AddressParser - 144
+ - javax.mail.internet.AddressParser$TokenStream - 136
+ - javax.mail.internet.AddressException - 38
+ - javax.mail.internet.InternetAddress - 18

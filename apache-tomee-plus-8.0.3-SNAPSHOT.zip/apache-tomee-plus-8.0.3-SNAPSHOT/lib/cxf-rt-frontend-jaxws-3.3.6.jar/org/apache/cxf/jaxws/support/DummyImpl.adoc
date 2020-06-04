@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/support/DummyImpl.class
+
+ - link:DummyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.soap.SOAPBinding - 1
+ - javax.jws.soap.SOAPBinding$ParameterStyle - 1

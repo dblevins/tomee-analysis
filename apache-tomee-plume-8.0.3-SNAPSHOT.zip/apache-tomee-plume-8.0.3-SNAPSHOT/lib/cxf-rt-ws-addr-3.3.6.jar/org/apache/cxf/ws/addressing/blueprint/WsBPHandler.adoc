@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/blueprint/WsBPHandler.class
+
+ - link:WsBPHandler-asmified.java[Asmified]
+
+== References
+

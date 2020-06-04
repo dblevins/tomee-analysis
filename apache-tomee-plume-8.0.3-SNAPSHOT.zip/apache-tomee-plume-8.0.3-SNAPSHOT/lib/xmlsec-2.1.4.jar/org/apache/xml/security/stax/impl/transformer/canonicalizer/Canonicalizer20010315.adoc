@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/transformer/canonicalizer/Canonicalizer20010315.class
+
+ - link:Canonicalizer20010315-asmified.java[Asmified]
+
+== References
+

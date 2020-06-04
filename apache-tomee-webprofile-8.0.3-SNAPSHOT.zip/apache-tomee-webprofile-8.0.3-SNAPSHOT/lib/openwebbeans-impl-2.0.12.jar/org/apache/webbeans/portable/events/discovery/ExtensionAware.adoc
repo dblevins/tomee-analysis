@@ -1,0 +1,7 @@
+= org/apache/webbeans/portable/events/discovery/ExtensionAware.class
+
+ - link:ExtensionAware-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 1

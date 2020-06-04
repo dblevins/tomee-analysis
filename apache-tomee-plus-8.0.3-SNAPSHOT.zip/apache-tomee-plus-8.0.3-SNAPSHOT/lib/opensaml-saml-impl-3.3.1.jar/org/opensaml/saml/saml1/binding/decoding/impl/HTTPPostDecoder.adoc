@@ -1,0 +1,9 @@
+= org/opensaml/saml/saml1/binding/decoding/impl/HTTPPostDecoder.class
+
+ - link:HTTPPostDecoder-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 5
+ - javax.annotation.Nullable - 3
+ - javax.annotation.Nonnull - 2

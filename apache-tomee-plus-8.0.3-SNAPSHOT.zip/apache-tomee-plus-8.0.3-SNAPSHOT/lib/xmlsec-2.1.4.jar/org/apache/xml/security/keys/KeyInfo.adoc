@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/KeyInfo.class
+
+ - link:KeyInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/iterators/ObjectGraphIterator.class
+
+ - link:ObjectGraphIterator-asmified.java[Asmified]
+
+== References
+

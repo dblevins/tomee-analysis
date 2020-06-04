@@ -1,0 +1,7 @@
+= org/apache/activemq/network/jms/SimpleJmsTopicConnector$4.class
+
+ - link:SimpleJmsTopicConnector$4-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Destination - 2

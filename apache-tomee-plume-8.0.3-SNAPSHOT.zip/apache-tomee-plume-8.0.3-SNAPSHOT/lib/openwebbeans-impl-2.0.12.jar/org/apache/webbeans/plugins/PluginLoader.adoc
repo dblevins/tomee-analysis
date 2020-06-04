@@ -1,0 +1,7 @@
+= org/apache/webbeans/plugins/PluginLoader.class
+
+ - link:PluginLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DefinitionException - 2

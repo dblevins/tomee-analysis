@@ -1,0 +1,12 @@
+= javax/security/auth/message/config/AuthConfigFactory.class
+
+ - link:AuthConfigFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.config.AuthConfigFactory - 14
+ - javax.security.auth.message.config.AuthConfigProvider - 3
+ - javax.security.auth.message.config.AuthConfigFactory$1 - 2
+ - javax.security.auth.message.config.AuthConfigFactory$2 - 2
+ - javax.security.auth.message.config.RegistrationListener - 2
+ - javax.security.auth.message.config.AuthConfigFactory$RegistrationContext - 1

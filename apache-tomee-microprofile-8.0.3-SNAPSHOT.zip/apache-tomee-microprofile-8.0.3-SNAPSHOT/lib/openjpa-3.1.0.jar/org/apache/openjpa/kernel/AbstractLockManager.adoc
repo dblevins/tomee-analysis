@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AbstractLockManager.class
+
+ - link:AbstractLockManager-asmified.java[Asmified]
+
+== References
+

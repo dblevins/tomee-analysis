@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DetachedStateManager.class
+
+ - link:DetachedStateManager-asmified.java[Asmified]
+
+== References
+

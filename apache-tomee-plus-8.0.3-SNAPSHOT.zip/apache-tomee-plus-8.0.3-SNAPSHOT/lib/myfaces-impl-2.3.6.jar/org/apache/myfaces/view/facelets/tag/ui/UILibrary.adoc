@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/ui/UILibrary.class
+
+ - link:UILibrary-asmified.java[Asmified]
+
+== References
+

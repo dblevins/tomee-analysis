@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/FuncNode.class
+
+ - link:FuncNode-asmified.java[Asmified]
+
+== References
+

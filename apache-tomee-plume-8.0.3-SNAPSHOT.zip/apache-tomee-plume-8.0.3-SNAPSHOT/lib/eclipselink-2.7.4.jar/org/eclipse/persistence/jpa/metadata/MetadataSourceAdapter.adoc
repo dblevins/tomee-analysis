@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/metadata/MetadataSourceAdapter.class
+
+ - link:MetadataSourceAdapter-asmified.java[Asmified]
+
+== References
+

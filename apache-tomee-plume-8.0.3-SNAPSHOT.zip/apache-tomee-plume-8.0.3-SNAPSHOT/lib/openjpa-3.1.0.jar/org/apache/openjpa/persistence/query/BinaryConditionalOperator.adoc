@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/BinaryConditionalOperator.class
+
+ - link:BinaryConditionalOperator-asmified.java[Asmified]
+
+== References
+

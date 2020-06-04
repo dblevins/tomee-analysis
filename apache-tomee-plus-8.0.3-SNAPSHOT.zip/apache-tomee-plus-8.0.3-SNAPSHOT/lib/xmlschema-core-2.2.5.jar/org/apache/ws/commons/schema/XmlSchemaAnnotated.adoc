@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaAnnotated.class
+
+ - link:XmlSchemaAnnotated-asmified.java[Asmified]
+
+== References
+

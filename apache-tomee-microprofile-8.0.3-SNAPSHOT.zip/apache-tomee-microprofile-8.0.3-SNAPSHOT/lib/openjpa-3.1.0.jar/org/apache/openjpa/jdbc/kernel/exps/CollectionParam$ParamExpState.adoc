@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/CollectionParam$ParamExpState.class
+
+ - link:CollectionParam$ParamExpState-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/metatype/sxc/util/ArrayUtil$FloatArray.class
+
+ - link:ArrayUtil$FloatArray-asmified.java[Asmified]
+
+== References
+

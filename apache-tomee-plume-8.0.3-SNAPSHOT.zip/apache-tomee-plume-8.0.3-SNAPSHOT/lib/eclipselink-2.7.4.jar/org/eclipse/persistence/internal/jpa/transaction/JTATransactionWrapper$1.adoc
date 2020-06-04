@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/transaction/JTATransactionWrapper$1.class
+
+ - link:JTATransactionWrapper$1-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 1

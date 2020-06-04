@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/DefaultPrettyPrinter$FixedSpaceIndenter.class
+
+ - link:DefaultPrettyPrinter$FixedSpaceIndenter-asmified.java[Asmified]
+
+== References
+

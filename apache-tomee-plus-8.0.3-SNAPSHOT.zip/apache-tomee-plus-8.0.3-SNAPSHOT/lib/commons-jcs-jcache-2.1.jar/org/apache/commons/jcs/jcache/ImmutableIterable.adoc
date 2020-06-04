@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/jcache/ImmutableIterable.class
+
+ - link:ImmutableIterable-asmified.java[Asmified]
+
+== References
+

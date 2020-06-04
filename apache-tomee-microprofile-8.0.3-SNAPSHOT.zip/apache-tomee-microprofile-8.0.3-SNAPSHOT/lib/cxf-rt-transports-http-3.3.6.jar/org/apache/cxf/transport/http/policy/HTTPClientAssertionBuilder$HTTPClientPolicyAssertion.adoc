@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/policy/HTTPClientAssertionBuilder$HTTPClientPolicyAssertion.class
+
+ - link:HTTPClientAssertionBuilder$HTTPClientPolicyAssertion-asmified.java[Asmified]
+
+== References
+

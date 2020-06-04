@@ -1,0 +1,8 @@
+= javax/activation/DataHandlerDataSource.class
+
+ - link:DataHandlerDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 12
+ - javax.activation.DataSource - 1

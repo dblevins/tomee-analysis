@@ -1,0 +1,6 @@
+= org/apache/openejb/api/Monitor.class
+
+ - link:Monitor-asmified.java[Asmified]
+
+== References
+

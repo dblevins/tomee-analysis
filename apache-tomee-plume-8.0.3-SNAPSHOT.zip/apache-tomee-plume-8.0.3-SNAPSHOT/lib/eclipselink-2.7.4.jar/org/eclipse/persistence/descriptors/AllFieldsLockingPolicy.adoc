@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/AllFieldsLockingPolicy.class
+
+ - link:AllFieldsLockingPolicy-asmified.java[Asmified]
+
+== References
+

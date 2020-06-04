@@ -1,0 +1,8 @@
+= org/apache/webbeans/proxy/SubclassProxyFactory.class
+
+ - link:SubclassProxyFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 7
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 3

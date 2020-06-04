@@ -1,0 +1,22 @@
+= javax/faces/component/UISelectOne.class
+
+ - link:UISelectOne-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UISelectOne - 17
+ - javax.faces.component.UIComponent - 16
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.component.StateHelper - 4
+ - javax.faces.convert.Converter - 4
+ - javax.faces.component.UIInput - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.component._SelectItemsIterator - 2
+ - javax.faces.component.UISelectOne$1 - 2
+ - javax.faces.component._SelectItemsUtil - 2
+ - javax.faces.component.UISelectOne$PropertyKeys - 2
+ - javax.el.ValueExpression - 2
+ - javax.faces.component._MessageUtils - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.UIForm - 1
+ - javax.faces.component.UIViewRoot - 1

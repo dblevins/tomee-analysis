@@ -1,0 +1,7 @@
+= javax/validation/BootstrapConfiguration.class
+
+ - link:BootstrapConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.executable.ExecutableType - 1

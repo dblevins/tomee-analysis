@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/impl/NodeListImpl.class
+
+ - link:NodeListImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/core/EnumLeafInfo.class
+
+ - link:EnumLeafInfo-asmified.java[Asmified]
+
+== References
+

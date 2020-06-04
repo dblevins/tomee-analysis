@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/BasicSerializerFactory.class
+
+ - link:BasicSerializerFactory-asmified.java[Asmified]
+
+== References
+

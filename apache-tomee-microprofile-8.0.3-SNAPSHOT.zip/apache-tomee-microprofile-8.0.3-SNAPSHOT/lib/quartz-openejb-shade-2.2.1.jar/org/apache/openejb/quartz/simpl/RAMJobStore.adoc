@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/simpl/RAMJobStore.class
+
+ - link:RAMJobStore-asmified.java[Asmified]
+
+== References
+

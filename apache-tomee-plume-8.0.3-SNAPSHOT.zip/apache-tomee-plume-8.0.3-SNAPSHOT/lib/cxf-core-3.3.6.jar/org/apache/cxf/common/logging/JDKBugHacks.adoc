@@ -1,0 +1,6 @@
+= org/apache/cxf/common/logging/JDKBugHacks.class
+
+ - link:JDKBugHacks-asmified.java[Asmified]
+
+== References
+

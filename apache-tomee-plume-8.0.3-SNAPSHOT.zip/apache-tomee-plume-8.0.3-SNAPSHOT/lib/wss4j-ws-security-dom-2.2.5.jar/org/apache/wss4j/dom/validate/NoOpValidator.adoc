@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/validate/NoOpValidator.class
+
+ - link:NoOpValidator-asmified.java[Asmified]
+
+== References
+

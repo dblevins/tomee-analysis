@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/AnnotationFinder$SubArchive$E.class
+
+ - link:AnnotationFinder$SubArchive$E-asmified.java[Asmified]
+
+== References
+

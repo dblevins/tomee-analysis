@@ -1,0 +1,7 @@
+= com/sun/faces/application/annotation/RuntimeAnnotationHandler.class
+
+ - link:RuntimeAnnotationHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1

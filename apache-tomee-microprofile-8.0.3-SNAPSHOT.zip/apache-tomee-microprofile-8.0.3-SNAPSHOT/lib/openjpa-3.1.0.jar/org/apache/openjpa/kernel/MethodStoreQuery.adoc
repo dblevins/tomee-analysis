@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/MethodStoreQuery.class
+
+ - link:MethodStoreQuery-asmified.java[Asmified]
+
+== References
+

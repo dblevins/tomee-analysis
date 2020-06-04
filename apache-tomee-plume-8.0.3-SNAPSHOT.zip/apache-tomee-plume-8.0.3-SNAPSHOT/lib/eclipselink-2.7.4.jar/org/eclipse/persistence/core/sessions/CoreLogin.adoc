@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/sessions/CoreLogin.class
+
+ - link:CoreLogin-asmified.java[Asmified]
+
+== References
+

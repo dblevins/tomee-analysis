@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandlerManager.class
+
+ - link:PropertyHandlerManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.view.facelets.FaceletContext - 2

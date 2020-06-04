@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/EndpointPolicy.class
+
+ - link:EndpointPolicy-asmified.java[Asmified]
+
+== References
+

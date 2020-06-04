@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/CharsetNames.class
+
+ - link:CharsetNames-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/persistence/Temporal.class
+
+ - link:Temporal-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TemporalType - 1

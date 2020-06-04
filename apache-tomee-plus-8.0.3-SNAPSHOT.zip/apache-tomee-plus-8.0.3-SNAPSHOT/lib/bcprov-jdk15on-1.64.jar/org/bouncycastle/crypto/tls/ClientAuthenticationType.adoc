@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/tls/ClientAuthenticationType.class
+
+ - link:ClientAuthenticationType-asmified.java[Asmified]
+
+== References
+

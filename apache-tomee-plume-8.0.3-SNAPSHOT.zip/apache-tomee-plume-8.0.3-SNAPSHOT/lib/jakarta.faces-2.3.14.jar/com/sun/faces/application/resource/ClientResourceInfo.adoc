@@ -1,0 +1,8 @@
+= com/sun/faces/application/resource/ClientResourceInfo.class
+
+ - link:ClientResourceInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.context.ExternalContext - 2

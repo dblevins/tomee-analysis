@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/jsf/CompositeComponentTagHandler$CompositeComponentMetaRuleset.class
+
+ - link:CompositeComponentTagHandler$CompositeComponentMetaRuleset-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 2
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.view.facelets.MetadataTarget - 1

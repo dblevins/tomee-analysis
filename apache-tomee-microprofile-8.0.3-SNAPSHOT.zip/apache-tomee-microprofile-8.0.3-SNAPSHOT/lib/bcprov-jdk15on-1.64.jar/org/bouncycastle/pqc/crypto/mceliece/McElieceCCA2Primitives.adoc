@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/crypto/mceliece/McElieceCCA2Primitives.class
+
+ - link:McElieceCCA2Primitives-asmified.java[Asmified]
+
+== References
+

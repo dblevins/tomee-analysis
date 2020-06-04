@@ -1,0 +1,7 @@
+= org/eclipse/persistence/transaction/sap/SAPNetWeaverTransactionController.class
+
+ - link:SAPNetWeaverTransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2

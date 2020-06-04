@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/DigesterFacesConfigDispenserImpl.class
+
+ - link:DigesterFacesConfigDispenserImpl-asmified.java[Asmified]
+
+== References
+

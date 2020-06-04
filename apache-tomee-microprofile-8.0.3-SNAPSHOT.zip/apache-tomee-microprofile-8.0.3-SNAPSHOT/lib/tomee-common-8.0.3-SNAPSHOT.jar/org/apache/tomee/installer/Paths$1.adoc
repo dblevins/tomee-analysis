@@ -1,0 +1,6 @@
+= org/apache/tomee/installer/Paths$1.class
+
+ - link:Paths$1-asmified.java[Asmified]
+
+== References
+

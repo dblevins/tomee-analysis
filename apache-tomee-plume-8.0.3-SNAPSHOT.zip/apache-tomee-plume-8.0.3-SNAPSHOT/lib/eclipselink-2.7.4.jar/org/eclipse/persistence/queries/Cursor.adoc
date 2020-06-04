@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/Cursor.class
+
+ - link:Cursor-asmified.java[Asmified]
+
+== References
+

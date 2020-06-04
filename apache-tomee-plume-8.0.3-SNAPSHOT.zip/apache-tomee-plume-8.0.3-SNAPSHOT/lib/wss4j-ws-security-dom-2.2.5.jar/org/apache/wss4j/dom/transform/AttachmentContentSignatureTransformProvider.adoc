@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/transform/AttachmentContentSignatureTransformProvider.class
+
+ - link:AttachmentContentSignatureTransformProvider-asmified.java[Asmified]
+
+== References
+

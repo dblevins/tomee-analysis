@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdquery/impl/QueryDescriptorTypeUnmarshaller.class
+
+ - link:QueryDescriptorTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/provisining/ProvisioningResolver$1.class
+
+ - link:ProvisioningResolver$1-asmified.java[Asmified]
+
+== References
+

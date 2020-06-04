@@ -1,0 +1,8 @@
+= javax/persistence/OneToMany.class
+
+ - link:OneToMany-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 2
+ - javax.persistence.CascadeType - 1

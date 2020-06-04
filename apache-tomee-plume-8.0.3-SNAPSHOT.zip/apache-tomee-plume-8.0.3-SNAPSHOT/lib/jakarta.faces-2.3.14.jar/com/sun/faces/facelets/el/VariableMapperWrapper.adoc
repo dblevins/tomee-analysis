@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/el/VariableMapperWrapper.class
+
+ - link:VariableMapperWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 7
+ - javax.el.VariableMapper - 7
+ - javax.el.ELException - 2

@@ -1,0 +1,9 @@
+= org/apache/catalina/core/ApplicationServletRegistration.class
+
+ - link:ApplicationServletRegistration-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletSecurityElement - 7
+ - javax.servlet.ServletRegistration$Dynamic - 3
+ - javax.servlet.MultipartConfigElement - 2

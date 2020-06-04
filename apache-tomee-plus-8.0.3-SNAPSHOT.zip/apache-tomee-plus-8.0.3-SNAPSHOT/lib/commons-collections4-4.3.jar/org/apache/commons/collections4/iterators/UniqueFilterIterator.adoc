@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/UniqueFilterIterator.class
+
+ - link:UniqueFilterIterator-asmified.java[Asmified]
+
+== References
+

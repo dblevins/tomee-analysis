@@ -1,0 +1,6 @@
+= org/apache/bval/util/LazyInt.class
+
+ - link:LazyInt-asmified.java[Asmified]
+
+== References
+

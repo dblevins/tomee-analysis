@@ -1,0 +1,6 @@
+= com/sun/faces/renderkit/html_basic/HtmlResponseWriter$1.class
+
+ - link:HtmlResponseWriter$1-asmified.java[Asmified]
+
+== References
+

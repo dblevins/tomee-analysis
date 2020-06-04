@@ -1,0 +1,6 @@
+= org/apache/openejb/client/Injection.class
+
+ - link:Injection-asmified.java[Asmified]
+
+== References
+

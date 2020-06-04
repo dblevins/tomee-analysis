@@ -1,0 +1,19 @@
+= org/eclipse/persistence/internal/dbws/ProviderHelper.class
+
+ - link:ProviderHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPMessage - 38
+ - javax.xml.soap.SOAPEnvelope - 26
+ - javax.xml.soap.SOAPException - 25
+ - javax.xml.ws.WebServiceException - 22
+ - javax.xml.soap.SOAPFactory - 22
+ - javax.xml.soap.SOAPElement - 20
+ - javax.servlet.ServletContext - 16
+ - javax.xml.soap.SOAPFault - 16
+ - javax.xml.ws.soap.SOAPFaultException - 6
+ - javax.xml.ws.handler.MessageContext - 5
+ - javax.xml.soap.SOAPPart - 2
+ - javax.xml.soap.SOAPBody - 2
+ - javax.xml.soap.SOAPBodyElement - 1

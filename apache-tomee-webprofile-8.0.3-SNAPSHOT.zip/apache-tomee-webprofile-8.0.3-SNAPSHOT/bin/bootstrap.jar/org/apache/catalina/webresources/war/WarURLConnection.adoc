@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/war/WarURLConnection.class
+
+ - link:WarURLConnection-asmified.java[Asmified]
+
+== References
+

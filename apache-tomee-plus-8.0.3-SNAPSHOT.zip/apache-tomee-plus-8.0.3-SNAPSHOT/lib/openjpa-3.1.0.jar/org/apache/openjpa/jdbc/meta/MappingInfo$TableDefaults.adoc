@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MappingInfo$TableDefaults.class
+
+ - link:MappingInfo$TableDefaults-asmified.java[Asmified]
+
+== References
+

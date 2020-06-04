@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/bag/CollectionBag.class
+
+ - link:CollectionBag-asmified.java[Asmified]
+
+== References
+

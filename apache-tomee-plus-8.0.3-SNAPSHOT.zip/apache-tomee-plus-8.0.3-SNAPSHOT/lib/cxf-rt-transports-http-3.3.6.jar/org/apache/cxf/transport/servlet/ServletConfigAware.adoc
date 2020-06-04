@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/servlet/ServletConfigAware.class
+
+ - link:ServletConfigAware-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 1
+ - javax.servlet.ServletException - 1

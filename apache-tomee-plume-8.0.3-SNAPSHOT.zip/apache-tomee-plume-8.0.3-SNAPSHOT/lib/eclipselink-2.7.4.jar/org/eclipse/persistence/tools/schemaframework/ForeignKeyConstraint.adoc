@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/ForeignKeyConstraint.class
+
+ - link:ForeignKeyConstraint-asmified.java[Asmified]
+
+== References
+

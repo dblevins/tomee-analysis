@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/SpatialExpressionOperators.class
+
+ - link:SpatialExpressionOperators-asmified.java[Asmified]
+
+== References
+

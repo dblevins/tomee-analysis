@@ -1,0 +1,12 @@
+= org/apache/webbeans/component/creation/ProducerMethodBeanBuilder.class
+
+ - link:ProducerMethodBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 10
+ - javax.enterprise.inject.spi.AnnotatedMember - 6
+ - javax.enterprise.inject.spi.BeanAttributes - 4
+ - javax.enterprise.inject.spi.AnnotatedParameter - 2
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.inject.spi.DefinitionException - 1

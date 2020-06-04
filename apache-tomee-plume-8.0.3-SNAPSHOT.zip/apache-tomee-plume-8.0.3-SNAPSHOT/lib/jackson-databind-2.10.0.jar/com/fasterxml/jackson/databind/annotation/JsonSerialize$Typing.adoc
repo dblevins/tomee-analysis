@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JsonSerialize$Typing.class
+
+ - link:JsonSerialize$Typing-asmified.java[Asmified]
+
+== References
+

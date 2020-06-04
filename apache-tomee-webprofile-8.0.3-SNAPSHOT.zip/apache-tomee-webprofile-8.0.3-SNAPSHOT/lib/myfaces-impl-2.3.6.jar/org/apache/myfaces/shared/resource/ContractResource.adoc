@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/resource/ContractResource.class
+
+ - link:ContractResource-asmified.java[Asmified]
+
+== References
+

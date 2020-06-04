@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/ReferenceTypeSerializer$1.class
+
+ - link:ReferenceTypeSerializer$1-asmified.java[Asmified]
+
+== References
+

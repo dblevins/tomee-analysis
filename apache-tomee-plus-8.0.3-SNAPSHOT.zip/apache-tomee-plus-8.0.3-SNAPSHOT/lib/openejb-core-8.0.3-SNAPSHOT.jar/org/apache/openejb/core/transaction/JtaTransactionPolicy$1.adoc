@@ -1,0 +1,7 @@
+= org/apache/openejb/core/transaction/JtaTransactionPolicy$1.class
+
+ - link:JtaTransactionPolicy$1-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 1

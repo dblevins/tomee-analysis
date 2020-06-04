@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/net/AprEndpoint$SocketInfo.class
+
+ - link:AprEndpoint$SocketInfo-asmified.java[Asmified]
+
+== References
+

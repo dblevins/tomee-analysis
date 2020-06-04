@@ -1,0 +1,8 @@
+= apache-tomee-plus-8.0.3-SNAPSHOT/lib/sxc-jaxb-core-0.8.jar
+
+ - link:org/metatype/sxc/jaxb/RuntimeContext.adoc[org/metatype/sxc/jaxb/RuntimeContext.class] - 54
+ - link:org/metatype/sxc/jaxb/LifecycleCallback.adoc[org/metatype/sxc/jaxb/LifecycleCallback.class] - 8
+ - link:org/metatype/sxc/jaxb/ExtendedMarshaller.adoc[org/metatype/sxc/jaxb/ExtendedMarshaller.class] - 2
+ - link:org/metatype/sxc/jaxb/ExtendedUnmarshaller.adoc[org/metatype/sxc/jaxb/ExtendedUnmarshaller.class] - 2
+ - link:org/metatype/sxc/jaxb/IdRefTarget.adoc[org/metatype/sxc/jaxb/IdRefTarget.class] - 1
+ - link:org/metatype/sxc/jaxb/ValidationEventLocatorImpl.adoc[org/metatype/sxc/jaxb/ValidationEventLocatorImpl.class] - 1

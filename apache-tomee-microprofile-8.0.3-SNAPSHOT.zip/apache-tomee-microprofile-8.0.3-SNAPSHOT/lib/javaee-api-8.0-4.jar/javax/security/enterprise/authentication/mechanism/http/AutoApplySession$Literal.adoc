@@ -1,0 +1,9 @@
+= javax/security/enterprise/authentication/mechanism/http/AutoApplySession$Literal.class
+
+ - link:AutoApplySession$Literal-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.authentication.mechanism.http.AutoApplySession$Literal - 4
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.security.enterprise.authentication.mechanism.http.AutoApplySession - 2

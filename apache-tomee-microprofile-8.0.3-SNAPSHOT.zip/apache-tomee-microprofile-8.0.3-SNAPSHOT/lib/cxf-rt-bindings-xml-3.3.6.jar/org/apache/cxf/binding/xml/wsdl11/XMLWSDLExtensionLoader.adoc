@@ -1,0 +1,7 @@
+= org/apache/cxf/binding/xml/wsdl11/XMLWSDLExtensionLoader.class
+
+ - link:XMLWSDLExtensionLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 2

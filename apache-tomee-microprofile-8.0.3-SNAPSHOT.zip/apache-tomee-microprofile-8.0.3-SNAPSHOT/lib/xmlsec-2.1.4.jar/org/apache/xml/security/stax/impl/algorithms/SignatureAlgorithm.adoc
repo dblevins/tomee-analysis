@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/algorithms/SignatureAlgorithm.class
+
+ - link:SignatureAlgorithm-asmified.java[Asmified]
+
+== References
+

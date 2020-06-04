@@ -1,0 +1,6 @@
+= javax/ws/rs/NameBinding.class
+
+ - link:NameBinding-asmified.java[Asmified]
+
+== References
+

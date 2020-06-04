@@ -1,0 +1,6 @@
+= org/apache/commons/codec/binary/Base32.class
+
+ - link:Base32-asmified.java[Asmified]
+
+== References
+

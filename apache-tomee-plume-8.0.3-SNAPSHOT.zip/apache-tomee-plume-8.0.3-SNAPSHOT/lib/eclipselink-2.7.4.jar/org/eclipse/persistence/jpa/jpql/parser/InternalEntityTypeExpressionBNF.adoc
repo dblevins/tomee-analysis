@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/InternalEntityTypeExpressionBNF.class
+
+ - link:InternalEntityTypeExpressionBNF-asmified.java[Asmified]
+
+== References
+

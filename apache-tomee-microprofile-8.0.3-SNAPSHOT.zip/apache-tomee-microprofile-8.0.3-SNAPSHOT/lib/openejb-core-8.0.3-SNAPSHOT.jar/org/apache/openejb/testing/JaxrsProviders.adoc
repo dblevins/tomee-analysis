@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/JaxrsProviders.class
+
+ - link:JaxrsProviders-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/DefaultIndenter.class
+
+ - link:DefaultIndenter-asmified.java[Asmified]
+
+== References
+

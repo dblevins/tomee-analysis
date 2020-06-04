@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/oauth2/grants/owner/ResourceOwnerGrantHandler.class
+
+ - link:ResourceOwnerGrantHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 4

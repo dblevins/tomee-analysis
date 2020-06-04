@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/JAXRSBinding.class
+
+ - link:JAXRSBinding-asmified.java[Asmified]
+
+== References
+

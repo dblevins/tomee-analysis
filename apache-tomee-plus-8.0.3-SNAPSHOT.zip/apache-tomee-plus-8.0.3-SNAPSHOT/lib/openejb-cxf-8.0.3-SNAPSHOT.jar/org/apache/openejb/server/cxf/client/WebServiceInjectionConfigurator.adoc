@@ -1,0 +1,7 @@
+= org/apache/openejb/server/cxf/client/WebServiceInjectionConfigurator.class
+
+ - link:WebServiceInjectionConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceFeature - 6

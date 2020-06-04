@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/CmpVersion$JAXB.class
+
+ - link:CmpVersion$JAXB-asmified.java[Asmified]
+
+== References
+

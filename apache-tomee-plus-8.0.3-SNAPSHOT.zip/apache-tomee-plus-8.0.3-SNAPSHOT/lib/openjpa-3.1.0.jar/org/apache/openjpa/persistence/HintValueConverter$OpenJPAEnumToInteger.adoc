@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/HintValueConverter$OpenJPAEnumToInteger.class
+
+ - link:HintValueConverter$OpenJPAEnumToInteger-asmified.java[Asmified]
+
+== References
+

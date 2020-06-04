@@ -1,0 +1,11 @@
+= org/apache/geronimo/javamail/store/imap/IMAPMultipartDataSource.class
+
+ - link:IMAPMultipartDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.BodyPart - 8
+ - javax.mail.internet.MimePart - 2
+ - javax.mail.internet.MimePartDataSource - 2
+ - javax.mail.MessagingException - 1
+ - javax.mail.MultipartDataSource - 1

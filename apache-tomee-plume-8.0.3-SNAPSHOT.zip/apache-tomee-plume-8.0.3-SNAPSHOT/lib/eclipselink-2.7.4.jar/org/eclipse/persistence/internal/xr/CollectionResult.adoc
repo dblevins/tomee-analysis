@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/CollectionResult.class
+
+ - link:CollectionResult-asmified.java[Asmified]
+
+== References
+

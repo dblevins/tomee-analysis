@@ -1,0 +1,6 @@
+= org/apache/catalina/realm/RealmBase$AllRolesMode.class
+
+ - link:RealmBase$AllRolesMode-asmified.java[Asmified]
+
+== References
+

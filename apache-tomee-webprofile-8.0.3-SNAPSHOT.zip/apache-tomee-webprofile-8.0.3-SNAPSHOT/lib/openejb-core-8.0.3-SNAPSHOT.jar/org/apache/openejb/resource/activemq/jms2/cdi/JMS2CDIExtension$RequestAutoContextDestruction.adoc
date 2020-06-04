@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$RequestAutoContextDestruction.class
+
+ - link:JMS2CDIExtension$RequestAutoContextDestruction-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.RequestScoped - 1

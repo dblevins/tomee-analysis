@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/TypeVariableBinding.class
+
+ - link:TypeVariableBinding-asmified.java[Asmified]
+
+== References
+

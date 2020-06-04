@@ -1,0 +1,10 @@
+= org/apache/myfaces/el/NullVariableResolver.class
+
+ - link:NullVariableResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.el.VariableResolver - 2
+ - javax.el.ELContext - 2
+ - javax.faces.el.EvaluationException - 1

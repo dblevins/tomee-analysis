@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/stax/assertionStates/TokenAssertionState.class
+
+ - link:TokenAssertionState-asmified.java[Asmified]
+
+== References
+

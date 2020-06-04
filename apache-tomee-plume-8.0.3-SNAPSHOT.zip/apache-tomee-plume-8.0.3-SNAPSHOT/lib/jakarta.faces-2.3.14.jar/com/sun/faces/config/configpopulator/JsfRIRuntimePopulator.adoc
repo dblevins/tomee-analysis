@@ -1,0 +1,7 @@
+= com/sun/faces/config/configpopulator/JsfRIRuntimePopulator.class
+
+ - link:JsfRIRuntimePopulator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ApplicationConfigurationPopulator - 2

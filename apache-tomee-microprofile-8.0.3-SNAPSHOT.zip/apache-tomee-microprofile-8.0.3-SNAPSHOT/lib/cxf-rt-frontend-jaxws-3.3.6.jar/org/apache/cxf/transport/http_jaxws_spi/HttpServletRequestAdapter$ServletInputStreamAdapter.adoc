@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http_jaxws_spi/HttpServletRequestAdapter$ServletInputStreamAdapter.class
+
+ - link:HttpServletRequestAdapter$ServletInputStreamAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletInputStream - 2
+ - javax.servlet.ReadListener - 1

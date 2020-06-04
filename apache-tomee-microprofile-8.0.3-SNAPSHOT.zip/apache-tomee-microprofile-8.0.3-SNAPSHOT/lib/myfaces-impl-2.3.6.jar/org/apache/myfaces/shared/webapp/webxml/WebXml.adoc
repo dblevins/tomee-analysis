@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/webapp/webxml/WebXml.class
+
+ - link:WebXml-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 14
+ - javax.faces.webapp.FacesServlet - 1

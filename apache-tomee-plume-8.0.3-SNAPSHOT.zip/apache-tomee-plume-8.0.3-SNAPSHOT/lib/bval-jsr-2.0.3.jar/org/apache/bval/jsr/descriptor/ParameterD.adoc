@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/descriptor/ParameterD.class
+
+ - link:ParameterD-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ParameterDescriptor - 1

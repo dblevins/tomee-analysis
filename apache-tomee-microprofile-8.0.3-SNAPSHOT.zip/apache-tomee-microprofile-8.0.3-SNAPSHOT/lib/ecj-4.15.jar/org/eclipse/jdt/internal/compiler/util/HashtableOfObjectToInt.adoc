@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/HashtableOfObjectToInt.class
+
+ - link:HashtableOfObjectToInt-asmified.java[Asmified]
+
+== References
+

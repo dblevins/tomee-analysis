@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/events/ProcessSyntheticAnnotatedTypeImpl.class
+
+ - link:ProcessSyntheticAnnotatedTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 5
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.ProcessSyntheticAnnotatedType - 1

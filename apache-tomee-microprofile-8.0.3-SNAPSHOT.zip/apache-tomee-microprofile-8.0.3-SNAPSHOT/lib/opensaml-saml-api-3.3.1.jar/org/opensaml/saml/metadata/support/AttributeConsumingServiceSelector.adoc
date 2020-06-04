@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/support/AttributeConsumingServiceSelector.class
+
+ - link:AttributeConsumingServiceSelector-asmified.java[Asmified]
+
+== References
+

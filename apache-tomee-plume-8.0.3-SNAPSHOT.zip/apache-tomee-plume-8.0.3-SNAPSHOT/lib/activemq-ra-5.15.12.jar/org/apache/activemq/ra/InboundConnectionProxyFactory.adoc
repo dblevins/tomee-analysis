@@ -1,0 +1,13 @@
+= org/apache/activemq/ra/InboundConnectionProxyFactory.class
+
+ - link:InboundConnectionProxyFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 6
+ - javax.jms.Connection - 3
+ - javax.jms.TopicConnection - 3
+ - javax.jms.QueueConnection - 3
+ - javax.jms.TopicConnectionFactory - 1
+ - javax.jms.ConnectionFactory - 1
+ - javax.jms.QueueConnectionFactory - 1

@@ -1,0 +1,6 @@
+= org/w3c/dom/html/HTMLTableColElement.class
+
+ - link:HTMLTableColElement-asmified.java[Asmified]
+
+== References
+

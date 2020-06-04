@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/EndpointReferenceUtils$SchemaLSResourceResolver.class
+
+ - link:EndpointReferenceUtils$SchemaLSResourceResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= com/sun/faces/cdi/DataModelClassesMapProducer.class
+
+ - link:DataModelClassesMapProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.inject.spi.CDI - 3
+ - javax.enterprise.inject.Instance - 2
+ - javax.faces.model.DataModel - 1
+ - javax.enterprise.context.ApplicationScoped - 1

@@ -1,0 +1,12 @@
+= javax/faces/component/behavior/_DeltaList.class
+
+ - link:_DeltaList-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior._DeltaList - 14
+ - javax.faces.component.PartialStateHolder - 12
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.behavior._AttachedDeltaWrapper - 5
+ - javax.faces.component.UIComponentBase - 4
+ - javax.faces.component.StateHolder - 3

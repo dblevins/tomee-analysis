@@ -1,0 +1,8 @@
+= org/apache/myfaces/taglib/core/ParamTag.class
+
+ - link:ParamTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 5
+ - javax.faces.component.UIComponent - 3

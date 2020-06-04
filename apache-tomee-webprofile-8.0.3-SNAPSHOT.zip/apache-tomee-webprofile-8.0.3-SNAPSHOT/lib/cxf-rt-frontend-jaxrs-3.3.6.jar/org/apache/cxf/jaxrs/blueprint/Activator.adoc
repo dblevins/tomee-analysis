@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/blueprint/Activator.class
+
+ - link:Activator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.RuntimeDelegate - 2

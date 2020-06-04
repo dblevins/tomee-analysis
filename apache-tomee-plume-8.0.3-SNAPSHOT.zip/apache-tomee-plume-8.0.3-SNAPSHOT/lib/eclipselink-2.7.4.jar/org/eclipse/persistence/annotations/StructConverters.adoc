@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/StructConverters.class
+
+ - link:StructConverters-asmified.java[Asmified]
+
+== References
+

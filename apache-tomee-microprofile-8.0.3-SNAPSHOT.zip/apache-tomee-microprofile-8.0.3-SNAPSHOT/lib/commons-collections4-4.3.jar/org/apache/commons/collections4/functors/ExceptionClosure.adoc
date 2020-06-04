@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/ExceptionClosure.class
+
+ - link:ExceptionClosure-asmified.java[Asmified]
+
+== References
+

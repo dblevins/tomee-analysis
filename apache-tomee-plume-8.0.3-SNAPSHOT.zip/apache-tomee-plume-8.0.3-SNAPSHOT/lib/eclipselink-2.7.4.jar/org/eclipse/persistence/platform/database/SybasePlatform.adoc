@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/SybasePlatform.class
+
+ - link:SybasePlatform-asmified.java[Asmified]
+
+== References
+

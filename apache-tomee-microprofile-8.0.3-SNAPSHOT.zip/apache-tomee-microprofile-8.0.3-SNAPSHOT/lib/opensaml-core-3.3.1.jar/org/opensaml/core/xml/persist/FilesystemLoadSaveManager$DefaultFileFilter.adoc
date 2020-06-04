@@ -1,0 +1,6 @@
+= org/opensaml/core/xml/persist/FilesystemLoadSaveManager$DefaultFileFilter.class
+
+ - link:FilesystemLoadSaveManager$DefaultFileFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/ha/session/ClusterManagerBase.class
+
+ - link:ClusterManagerBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/JPQLTreeConstants.class
+
+ - link:JPQLTreeConstants-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/Extensions$Finder.class
+
+ - link:Extensions$Finder-asmified.java[Asmified]
+
+== References
+

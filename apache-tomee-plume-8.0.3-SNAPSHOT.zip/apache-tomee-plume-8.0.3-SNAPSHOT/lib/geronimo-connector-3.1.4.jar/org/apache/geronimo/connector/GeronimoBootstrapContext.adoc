@@ -1,0 +1,12 @@
+= org/apache/geronimo/connector/GeronimoBootstrapContext.class
+
+ - link:GeronimoBootstrapContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 6
+ - javax.resource.spi.XATerminator - 6
+ - javax.resource.spi.work.WorkContext - 1
+ - javax.resource.spi.BootstrapContext - 1
+ - javax.resource.spi.UnavailableException - 1
+ - javax.resource.spi.work.WorkManager - 1

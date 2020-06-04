@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/CursorPolicy.class
+
+ - link:CursorPolicy-asmified.java[Asmified]
+
+== References
+

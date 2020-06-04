@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/impl/BasicEncryptionConfiguration.class
+
+ - link:BasicEncryptionConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 15
+ - javax.annotation.Nonnull - 9

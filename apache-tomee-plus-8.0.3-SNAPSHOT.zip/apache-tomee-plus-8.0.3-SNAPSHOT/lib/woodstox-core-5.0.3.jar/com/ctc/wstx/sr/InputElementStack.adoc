@@ -1,0 +1,6 @@
+= com/ctc/wstx/sr/InputElementStack.class
+
+ - link:InputElementStack-asmified.java[Asmified]
+
+== References
+

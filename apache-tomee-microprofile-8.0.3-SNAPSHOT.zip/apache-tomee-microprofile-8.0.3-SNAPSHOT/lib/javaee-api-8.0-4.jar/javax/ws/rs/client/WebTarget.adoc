@@ -1,0 +1,11 @@
+= javax/ws/rs/client/WebTarget.class
+
+ - link:WebTarget-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.WebTarget - 10
+ - javax.ws.rs.client.Invocation$Builder - 3
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.core.Configurable - 1
+ - javax.ws.rs.core.UriBuilder - 1

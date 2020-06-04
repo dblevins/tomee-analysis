@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowOutputBinary.class
+
+ - link:RowOutputBinary-asmified.java[Asmified]
+
+== References
+

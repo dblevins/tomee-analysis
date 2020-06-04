@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/DataSourceFactory$DefaultsDataSource.class
+
+ - link:DataSourceFactory$DefaultsDataSource-asmified.java[Asmified]
+
+== References
+

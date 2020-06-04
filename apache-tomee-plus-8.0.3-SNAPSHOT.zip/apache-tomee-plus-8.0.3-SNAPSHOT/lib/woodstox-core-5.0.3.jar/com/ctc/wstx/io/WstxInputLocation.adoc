@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/WstxInputLocation.class
+
+ - link:WstxInputLocation-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/NoneStrategyInstaller.class
+
+ - link:NoneStrategyInstaller-asmified.java[Asmified]
+
+== References
+

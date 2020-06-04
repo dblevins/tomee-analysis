@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOProperty.class
+
+ - link:SDOProperty-asmified.java[Asmified]
+
+== References
+

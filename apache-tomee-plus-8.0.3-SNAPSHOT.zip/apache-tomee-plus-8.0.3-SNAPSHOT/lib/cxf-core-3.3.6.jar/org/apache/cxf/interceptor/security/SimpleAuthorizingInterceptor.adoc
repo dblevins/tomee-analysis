@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/SimpleAuthorizingInterceptor.class
+
+ - link:SimpleAuthorizingInterceptor-asmified.java[Asmified]
+
+== References
+

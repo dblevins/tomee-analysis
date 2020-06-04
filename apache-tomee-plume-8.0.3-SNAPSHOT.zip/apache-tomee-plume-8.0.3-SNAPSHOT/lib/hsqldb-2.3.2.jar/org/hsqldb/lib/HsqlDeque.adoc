@@ -1,0 +1,6 @@
+= org/hsqldb/lib/HsqlDeque.class
+
+ - link:HsqlDeque-asmified.java[Asmified]
+
+== References
+

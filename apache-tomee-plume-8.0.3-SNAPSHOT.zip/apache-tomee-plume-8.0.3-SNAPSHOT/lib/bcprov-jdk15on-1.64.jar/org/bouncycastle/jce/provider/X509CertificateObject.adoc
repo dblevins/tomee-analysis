@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/provider/X509CertificateObject.class
+
+ - link:X509CertificateObject-asmified.java[Asmified]
+
+== References
+

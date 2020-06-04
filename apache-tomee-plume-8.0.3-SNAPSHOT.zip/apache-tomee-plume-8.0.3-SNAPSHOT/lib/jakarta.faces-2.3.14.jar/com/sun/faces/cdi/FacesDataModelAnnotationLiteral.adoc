@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/FacesDataModelAnnotationLiteral.class
+
+ - link:FacesDataModelAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.model.FacesDataModel - 2

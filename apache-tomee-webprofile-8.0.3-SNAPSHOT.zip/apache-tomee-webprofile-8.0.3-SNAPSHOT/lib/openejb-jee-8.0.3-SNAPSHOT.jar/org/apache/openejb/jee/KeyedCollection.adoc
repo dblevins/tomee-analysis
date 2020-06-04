@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/KeyedCollection.class
+
+ - link:KeyedCollection-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/faces/validator/FacesValidator.class
+
+ - link:FacesValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

@@ -1,0 +1,12 @@
+= javax/faces/application/ResourceHandler.class
+
+ - link:ResourceHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.application.Resource - 5
+ - javax.faces.application.ResourceHandler - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.application.ResourceVisitOption - 2
+ - javax.faces.application.ViewResource - 1

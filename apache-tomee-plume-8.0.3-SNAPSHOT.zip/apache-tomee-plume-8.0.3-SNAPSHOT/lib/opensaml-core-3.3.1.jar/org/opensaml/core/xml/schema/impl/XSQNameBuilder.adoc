@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/schema/impl/XSQNameBuilder.class
+
+ - link:XSQNameBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 4

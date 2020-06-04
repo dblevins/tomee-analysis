@@ -1,0 +1,6 @@
+= org/metatype/sxc/util/ArrayUtil.class
+
+ - link:ArrayUtil-asmified.java[Asmified]
+
+== References
+

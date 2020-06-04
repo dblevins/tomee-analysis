@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/DescriptorLevelDocumentPreservationPolicyConfig.class
+
+ - link:DescriptorLevelDocumentPreservationPolicyConfig-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/lib/StringUtil.class
+
+ - link:StringUtil-asmified.java[Asmified]
+
+== References
+

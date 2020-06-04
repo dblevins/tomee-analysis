@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/CertificateStore.class
+
+ - link:CertificateStore-asmified.java[Asmified]
+
+== References
+

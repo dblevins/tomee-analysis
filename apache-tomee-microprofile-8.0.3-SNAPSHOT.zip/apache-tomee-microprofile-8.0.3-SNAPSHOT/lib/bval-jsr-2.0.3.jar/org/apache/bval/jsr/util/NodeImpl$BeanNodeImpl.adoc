@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/util/NodeImpl$BeanNodeImpl.class
+
+ - link:NodeImpl$BeanNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$BeanNode - 7
+ - javax.validation.Path$Node - 2
+ - javax.validation.ElementKind - 2

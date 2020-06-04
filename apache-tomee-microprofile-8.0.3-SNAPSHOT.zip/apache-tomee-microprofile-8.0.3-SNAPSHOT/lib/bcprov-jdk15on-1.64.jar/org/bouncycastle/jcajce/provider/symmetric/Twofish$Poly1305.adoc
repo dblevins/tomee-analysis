@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/Twofish$Poly1305.class
+
+ - link:Twofish$Poly1305-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/core/queries/CoreAttributeConverter.class
+
+ - link:CoreAttributeConverter-asmified.java[Asmified]
+
+== References
+

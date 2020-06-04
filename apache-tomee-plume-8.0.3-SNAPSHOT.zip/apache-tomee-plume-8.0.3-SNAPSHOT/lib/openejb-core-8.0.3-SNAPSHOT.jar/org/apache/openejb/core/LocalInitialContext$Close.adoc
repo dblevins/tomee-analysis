@@ -1,0 +1,6 @@
+= org/apache/openejb/core/LocalInitialContext$Close.class
+
+ - link:LocalInitialContext$Close-asmified.java[Asmified]
+
+== References
+

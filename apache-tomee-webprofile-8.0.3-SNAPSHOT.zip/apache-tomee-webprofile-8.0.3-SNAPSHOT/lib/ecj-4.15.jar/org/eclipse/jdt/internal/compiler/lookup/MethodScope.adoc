@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/MethodScope.class
+
+ - link:MethodScope-asmified.java[Asmified]
+
+== References
+

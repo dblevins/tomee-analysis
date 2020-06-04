@@ -1,0 +1,12 @@
+= javax/ws/rs/NotAllowedException.class
+
+ - link:NotAllowedException-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 44
+ - javax.ws.rs.core.Response$Status - 14
+ - javax.ws.rs.core.Response$ResponseBuilder - 12
+ - javax.ws.rs.NotAllowedException - 12
+ - javax.ws.rs.ClientErrorException - 9
+ - javax.ws.rs.core.MultivaluedMap - 2

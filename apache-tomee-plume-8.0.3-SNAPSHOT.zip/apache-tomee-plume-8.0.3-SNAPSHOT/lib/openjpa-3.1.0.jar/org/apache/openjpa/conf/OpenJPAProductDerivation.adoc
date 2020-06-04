@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/OpenJPAProductDerivation.class
+
+ - link:OpenJPAProductDerivation-asmified.java[Asmified]
+
+== References
+

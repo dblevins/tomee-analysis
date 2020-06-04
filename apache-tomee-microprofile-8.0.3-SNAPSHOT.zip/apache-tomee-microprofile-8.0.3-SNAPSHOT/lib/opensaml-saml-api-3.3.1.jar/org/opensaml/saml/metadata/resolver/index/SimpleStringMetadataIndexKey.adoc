@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/index/SimpleStringMetadataIndexKey.class
+
+ - link:SimpleStringMetadataIndexKey-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

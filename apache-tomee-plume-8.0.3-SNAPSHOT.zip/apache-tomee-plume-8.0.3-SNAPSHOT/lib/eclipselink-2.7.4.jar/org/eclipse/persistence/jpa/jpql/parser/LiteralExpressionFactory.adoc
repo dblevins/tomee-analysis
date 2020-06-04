@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/LiteralExpressionFactory.class
+
+ - link:LiteralExpressionFactory-asmified.java[Asmified]
+
+== References
+

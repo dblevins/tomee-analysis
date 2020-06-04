@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/output/AbstractEncryptOutputProcessor$CharacterEventGeneratorOutputStream.class
+
+ - link:AbstractEncryptOutputProcessor$CharacterEventGeneratorOutputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/oracle/Oracle10Platform.class
+
+ - link:Oracle10Platform-asmified.java[Asmified]
+
+== References
+

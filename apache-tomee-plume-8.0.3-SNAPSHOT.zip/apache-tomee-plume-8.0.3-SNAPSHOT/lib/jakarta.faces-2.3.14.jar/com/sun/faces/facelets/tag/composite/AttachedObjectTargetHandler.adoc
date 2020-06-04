@@ -1,0 +1,17 @@
+= com/sun/faces/facelets/tag/composite/AttachedObjectTargetHandler.class
+
+ - link:AttachedObjectTargetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 13
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.view.facelets.FaceletContext - 6
+ - javax.el.ValueExpression - 5
+ - javax.faces.view.facelets.TagException - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.view.facelets.ComponentHandler - 1
+ - javax.el.ELContext - 1

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/introspector/MissingProperty.class
+
+ - link:MissingProperty-asmified.java[Asmified]
+
+== References
+

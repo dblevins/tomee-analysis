@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/jcajce/spec/XMSSMTParameterSpec.class
+
+ - link:XMSSMTParameterSpec-asmified.java[Asmified]
+
+== References
+

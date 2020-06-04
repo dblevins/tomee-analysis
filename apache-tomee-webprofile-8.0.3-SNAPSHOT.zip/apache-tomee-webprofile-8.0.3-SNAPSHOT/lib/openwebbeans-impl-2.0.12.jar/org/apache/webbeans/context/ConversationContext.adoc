@@ -1,0 +1,7 @@
+= org/apache/webbeans/context/ConversationContext.class
+
+ - link:ConversationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.ConversationScoped - 1

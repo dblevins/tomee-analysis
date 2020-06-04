@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/CacheKeyType.class
+
+ - link:CacheKeyType-asmified.java[Asmified]
+
+== References
+

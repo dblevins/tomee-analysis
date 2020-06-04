@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/ObjectArrayListIterator.class
+
+ - link:ObjectArrayListIterator-asmified.java[Asmified]
+
+== References
+

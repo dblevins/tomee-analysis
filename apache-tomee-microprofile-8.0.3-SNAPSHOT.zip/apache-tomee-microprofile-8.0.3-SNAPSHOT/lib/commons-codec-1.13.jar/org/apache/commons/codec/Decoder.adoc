@@ -1,0 +1,6 @@
+= org/apache/commons/codec/Decoder.class
+
+ - link:Decoder-asmified.java[Asmified]
+
+== References
+

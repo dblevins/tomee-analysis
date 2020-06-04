@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/ConcurrentDataCache.class
+
+ - link:ConcurrentDataCache-asmified.java[Asmified]
+
+== References
+

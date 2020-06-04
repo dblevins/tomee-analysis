@@ -1,0 +1,6 @@
+= org/apache/commons/digester/SetNestedPropertiesRule.class
+
+ - link:SetNestedPropertiesRule-asmified.java[Asmified]
+
+== References
+

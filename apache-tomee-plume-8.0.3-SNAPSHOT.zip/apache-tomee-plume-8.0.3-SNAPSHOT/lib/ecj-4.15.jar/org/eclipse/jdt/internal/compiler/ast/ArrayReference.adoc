@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ArrayReference.class
+
+ - link:ArrayReference-asmified.java[Asmified]
+
+== References
+

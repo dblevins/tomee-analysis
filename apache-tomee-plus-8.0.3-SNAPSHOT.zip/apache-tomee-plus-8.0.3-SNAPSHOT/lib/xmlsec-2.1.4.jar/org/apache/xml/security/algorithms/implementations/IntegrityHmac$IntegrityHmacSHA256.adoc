@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/IntegrityHmac$IntegrityHmacSHA256.class
+
+ - link:IntegrityHmac$IntegrityHmacSHA256-asmified.java[Asmified]
+
+== References
+

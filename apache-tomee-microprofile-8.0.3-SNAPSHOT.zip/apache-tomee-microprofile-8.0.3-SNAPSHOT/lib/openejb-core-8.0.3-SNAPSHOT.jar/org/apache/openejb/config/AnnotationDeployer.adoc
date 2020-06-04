@@ -1,0 +1,18 @@
+= org/apache/openejb/config/AnnotationDeployer.class
+
+ - link:AnnotationDeployer-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ApplicationException - 5
+ - javax.ws.rs.Path - 2
+ - javax.enterprise.inject.spi.DefinitionException - 2
+ - javax.ejb.Stateful - 1
+ - javax.ejb.Stateless - 1
+ - javax.persistence.Entity - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.ejb.Singleton - 1
+ - javax.persistence.MappedSuperclass - 1
+ - javax.persistence.Converter - 1
+ - javax.persistence.Embeddable - 1
+ - javax.annotation.ManagedBean - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/mappings/EISTransformationMapping.class
+
+ - link:EISTransformationMapping-asmified.java[Asmified]
+
+== References
+

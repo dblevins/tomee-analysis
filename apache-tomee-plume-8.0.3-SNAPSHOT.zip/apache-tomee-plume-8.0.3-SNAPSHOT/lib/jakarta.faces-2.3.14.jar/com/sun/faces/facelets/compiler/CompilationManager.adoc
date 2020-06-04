@@ -1,0 +1,14 @@
+= com/sun/faces/facelets/compiler/CompilationManager.class
+
+ - link:CompilationManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 52
+ - javax.faces.view.facelets.TagAttribute - 24
+ - javax.faces.view.facelets.TagAttributes - 10
+ - javax.faces.view.facelets.TagDecorator - 5
+ - javax.faces.view.facelets.TagException - 4
+ - javax.faces.view.Location - 2
+ - javax.faces.view.facelets.TagAttributeException - 2
+ - javax.faces.view.facelets.FaceletHandler - 2

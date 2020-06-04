@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/AttributeMimeTypePolicy.class
+
+ - link:AttributeMimeTypePolicy-asmified.java[Asmified]
+
+== References
+

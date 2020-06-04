@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/StreamWriteFeature.class
+
+ - link:StreamWriteFeature-asmified.java[Asmified]
+
+== References
+

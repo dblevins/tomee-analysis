@@ -1,0 +1,6 @@
+= org/apache/batchee/spi/BatchArtifactFactory$Instance.class
+
+ - link:BatchArtifactFactory$Instance-asmified.java[Asmified]
+
+== References
+

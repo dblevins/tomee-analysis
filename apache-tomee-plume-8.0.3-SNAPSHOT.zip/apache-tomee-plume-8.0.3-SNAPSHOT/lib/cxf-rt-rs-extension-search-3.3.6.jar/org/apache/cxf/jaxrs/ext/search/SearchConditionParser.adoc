@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/SearchConditionParser.class
+
+ - link:SearchConditionParser-asmified.java[Asmified]
+
+== References
+

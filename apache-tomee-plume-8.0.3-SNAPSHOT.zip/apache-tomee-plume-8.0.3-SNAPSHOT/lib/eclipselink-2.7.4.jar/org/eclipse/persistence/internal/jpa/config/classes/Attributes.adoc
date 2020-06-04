@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/classes/Attributes.class
+
+ - link:Attributes-asmified.java[Asmified]
+
+== References
+

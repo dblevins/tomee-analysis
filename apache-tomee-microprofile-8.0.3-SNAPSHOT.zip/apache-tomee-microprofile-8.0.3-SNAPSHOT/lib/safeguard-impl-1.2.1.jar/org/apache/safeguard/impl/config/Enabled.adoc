@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/config/Enabled.class
+
+ - link:Enabled-asmified.java[Asmified]
+
+== References
+

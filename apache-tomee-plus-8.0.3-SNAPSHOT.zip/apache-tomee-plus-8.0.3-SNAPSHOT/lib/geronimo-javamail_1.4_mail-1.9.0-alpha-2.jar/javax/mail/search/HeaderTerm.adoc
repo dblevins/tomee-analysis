@@ -1,0 +1,10 @@
+= javax/mail/search/HeaderTerm.class
+
+ - link:HeaderTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.StringTerm - 4
+ - javax.mail.search.HeaderTerm - 3
+ - javax.mail.Message - 2
+ - javax.mail.MessagingException - 2

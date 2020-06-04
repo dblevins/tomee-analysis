@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/WSS4JResourceBundle.class
+
+ - link:WSS4JResourceBundle-asmified.java[Asmified]
+
+== References
+

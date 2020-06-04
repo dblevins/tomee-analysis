@@ -1,0 +1,6 @@
+= org/hsqldb/rights/GrantConstants.class
+
+ - link:GrantConstants-asmified.java[Asmified]
+
+== References
+

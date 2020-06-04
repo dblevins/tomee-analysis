@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/BigDecimalId.class
+
+ - link:BigDecimalId-asmified.java[Asmified]
+
+== References
+

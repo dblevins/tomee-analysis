@@ -1,0 +1,6 @@
+= javax/xml/xpath/XPathFactoryFinder$1.class
+
+ - link:XPathFactoryFinder$1-asmified.java[Asmified]
+
+== References
+

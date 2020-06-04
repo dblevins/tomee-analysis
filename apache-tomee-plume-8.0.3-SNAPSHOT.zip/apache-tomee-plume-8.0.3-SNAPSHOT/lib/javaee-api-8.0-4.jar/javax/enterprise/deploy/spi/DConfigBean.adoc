@@ -1,0 +1,11 @@
+= javax/enterprise/deploy/spi/DConfigBean.class
+
+ - link:DConfigBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.model.DDBean - 2
+ - javax.enterprise.deploy.spi.DConfigBean - 2
+ - javax.enterprise.deploy.model.XpathEvent - 1
+ - javax.enterprise.deploy.spi.exceptions.ConfigurationException - 1
+ - javax.enterprise.deploy.spi.exceptions.BeanNotFoundException - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/TCPRemoteCommitProvider$TCPPortListener.class
+
+ - link:TCPRemoteCommitProvider$TCPPortListener-asmified.java[Asmified]
+
+== References
+

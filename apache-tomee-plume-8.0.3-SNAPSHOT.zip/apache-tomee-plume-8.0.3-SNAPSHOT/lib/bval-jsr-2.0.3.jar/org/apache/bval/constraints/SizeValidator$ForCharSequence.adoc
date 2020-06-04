@@ -1,0 +1,7 @@
+= org/apache/bval/constraints/SizeValidator$ForCharSequence.class
+
+ - link:SizeValidator$ForCharSequence-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Size - 2

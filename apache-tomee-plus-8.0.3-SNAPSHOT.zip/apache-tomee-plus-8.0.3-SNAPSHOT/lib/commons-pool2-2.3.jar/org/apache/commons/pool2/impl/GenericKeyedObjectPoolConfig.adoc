@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/impl/GenericKeyedObjectPoolConfig.class
+
+ - link:GenericKeyedObjectPoolConfig-asmified.java[Asmified]
+
+== References
+

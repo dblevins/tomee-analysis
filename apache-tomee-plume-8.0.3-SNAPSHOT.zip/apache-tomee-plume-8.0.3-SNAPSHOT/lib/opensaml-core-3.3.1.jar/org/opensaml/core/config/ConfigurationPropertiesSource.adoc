@@ -1,0 +1,6 @@
+= org/opensaml/core/config/ConfigurationPropertiesSource.class
+
+ - link:ConfigurationPropertiesSource-asmified.java[Asmified]
+
+== References
+

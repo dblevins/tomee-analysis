@@ -1,0 +1,235 @@
+package asm.org.jvnet.mimepull;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class MIMEParser$LineInputStreamDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_7, ACC_SUPER, "org/jvnet/mimepull/MIMEParser$LineInputStream", null, "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/jvnet/mimepull/MIMEParser$LineInputStream", "org/jvnet/mimepull/MIMEParser", "LineInputStream", 0);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "offset", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_STATIC | ACC_SYNTHETIC, "$assertionsDisabled", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/jvnet/mimepull/MIMEParser;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/jvnet/mimepull/MIMEParser;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readLine", "()Ljava/lang/String;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$800", "(Lorg/jvnet/mimepull/MIMEParser;)I", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$900", "(Lorg/jvnet/mimepull/MIMEParser;)[B", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$800", "(Lorg/jvnet/mimepull/MIMEParser;)I", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$1000", "(Lorg/jvnet/mimepull/MIMEParser;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$800", "(Lorg/jvnet/mimepull/MIMEParser;)I", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label4);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/jvnet/mimepull/MIMEParser$LineInputStream", "$assertionsDisabled", "Z");
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$1100", "(Lorg/jvnet/mimepull/MIMEParser;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitTypeInsn(NEW, "java/lang/AssertionError");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/AssertionError", "<init>", "()V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$900", "(Lorg/jvnet/mimepull/MIMEParser;)[B", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 13);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$900", "(Lorg/jvnet/mimepull/MIMEParser;)[B", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label6);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitIincInsn(1, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$800", "(Lorg/jvnet/mimepull/MIMEParser;)I", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$1200", "(Lorg/jvnet/mimepull/MIMEParser;II)Ljava/nio/ByteBuffer;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "this$0", "Lorg/jvnet/mimepull/MIMEParser;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/jvnet/mimepull/MIMEParser", "access$900", "(Lorg/jvnet/mimepull/MIMEParser;)[B", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitLdcInsn("ISO8859-1");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/String", "<init>", "([BIILjava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/jvnet/mimepull/MIMEParser$LineInputStream", "offset", "I");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(Type.getType("Lorg/jvnet/mimepull/MIMEParser;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "desiredAssertionStatus", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitInsn(ICONST_1);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/jvnet/mimepull/MIMEParser$LineInputStream", "$assertionsDisabled", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

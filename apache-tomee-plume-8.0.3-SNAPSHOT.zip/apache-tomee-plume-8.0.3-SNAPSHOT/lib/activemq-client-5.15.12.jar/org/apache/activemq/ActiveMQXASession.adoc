@@ -1,0 +1,13 @@
+= org/apache/activemq/ActiveMQXASession.class
+
+ - link:ActiveMQXASession-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 8
+ - javax.jms.TransactionInProgressException - 4
+ - javax.jms.QueueSession - 3
+ - javax.jms.TopicSession - 3
+ - javax.jms.Session - 1
+ - javax.jms.XAQueueSession - 1
+ - javax.jms.XATopicSession - 1

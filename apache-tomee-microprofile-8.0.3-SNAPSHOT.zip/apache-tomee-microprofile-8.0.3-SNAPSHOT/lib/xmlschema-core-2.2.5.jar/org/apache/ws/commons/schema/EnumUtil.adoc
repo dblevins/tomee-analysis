@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/EnumUtil.class
+
+ - link:EnumUtil-asmified.java[Asmified]
+
+== References
+

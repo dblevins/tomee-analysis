@@ -1,0 +1,12 @@
+= org/apache/myfaces/shared/renderkit/html/CommonEventUtils.class
+
+ - link:CommonEventUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 55
+ - javax.faces.context.ResponseWriter - 53
+ - javax.faces.context.FacesContext - 52
+ - javax.faces.component.behavior.ClientBehavior - 15
+ - javax.faces.component.behavior.ClientBehaviorContext - 3
+ - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 2

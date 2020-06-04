@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/x509/IssuerSerial.class
+
+ - link:IssuerSerial-asmified.java[Asmified]
+
+== References
+

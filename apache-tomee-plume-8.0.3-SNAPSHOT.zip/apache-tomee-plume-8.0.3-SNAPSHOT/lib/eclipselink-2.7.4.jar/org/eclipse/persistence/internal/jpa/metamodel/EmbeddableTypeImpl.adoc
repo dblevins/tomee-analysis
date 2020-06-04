@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/metamodel/EmbeddableTypeImpl.class
+
+ - link:EmbeddableTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type$PersistenceType - 2
+ - javax.persistence.metamodel.EmbeddableType - 1

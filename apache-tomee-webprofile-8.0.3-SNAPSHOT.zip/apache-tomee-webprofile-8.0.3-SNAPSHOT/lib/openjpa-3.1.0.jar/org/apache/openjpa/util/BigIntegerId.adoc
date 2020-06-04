@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/BigIntegerId.class
+
+ - link:BigIntegerId-asmified.java[Asmified]
+
+== References
+

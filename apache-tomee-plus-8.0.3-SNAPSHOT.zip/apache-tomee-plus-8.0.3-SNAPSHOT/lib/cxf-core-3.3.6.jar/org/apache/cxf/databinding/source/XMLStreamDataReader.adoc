@@ -1,0 +1,8 @@
+= org/apache/cxf/databinding/source/XMLStreamDataReader.class
+
+ - link:XMLStreamDataReader-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1
+ - javax.xml.bind.DatatypeConverter - 1

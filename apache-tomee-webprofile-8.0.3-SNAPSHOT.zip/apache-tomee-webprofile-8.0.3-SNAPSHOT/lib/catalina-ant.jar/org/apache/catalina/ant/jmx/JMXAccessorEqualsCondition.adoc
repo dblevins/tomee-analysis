@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/jmx/JMXAccessorEqualsCondition.class
+
+ - link:JMXAccessorEqualsCondition-asmified.java[Asmified]
+
+== References
+

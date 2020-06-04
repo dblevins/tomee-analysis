@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/rfc8032/Ed25519$PointAffine.class
+
+ - link:Ed25519$PointAffine-asmified.java[Asmified]
+
+== References
+

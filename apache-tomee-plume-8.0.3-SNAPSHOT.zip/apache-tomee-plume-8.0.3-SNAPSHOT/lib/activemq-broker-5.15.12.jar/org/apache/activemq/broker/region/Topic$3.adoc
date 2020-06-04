@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/Topic$3.class
+
+ - link:Topic$3-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

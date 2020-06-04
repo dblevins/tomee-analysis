@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/KeyType.class
+
+ - link:KeyType-asmified.java[Asmified]
+
+== References
+

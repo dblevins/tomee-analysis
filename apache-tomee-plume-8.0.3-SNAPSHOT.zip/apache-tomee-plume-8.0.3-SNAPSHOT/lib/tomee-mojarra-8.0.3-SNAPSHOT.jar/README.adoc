@@ -1,0 +1,2 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/tomee-mojarra-8.0.3-SNAPSHOT.jar
+

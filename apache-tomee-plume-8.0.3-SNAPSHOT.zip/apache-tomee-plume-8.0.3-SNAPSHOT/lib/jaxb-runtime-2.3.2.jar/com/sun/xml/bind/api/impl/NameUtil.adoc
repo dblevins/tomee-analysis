@@ -1,0 +1,6 @@
+= com/sun/xml/bind/api/impl/NameUtil.class
+
+ - link:NameUtil-asmified.java[Asmified]
+
+== References
+

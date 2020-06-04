@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/config/FaultToleranceConfigMpConfigImpl.class
+
+ - link:FaultToleranceConfigMpConfigImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1

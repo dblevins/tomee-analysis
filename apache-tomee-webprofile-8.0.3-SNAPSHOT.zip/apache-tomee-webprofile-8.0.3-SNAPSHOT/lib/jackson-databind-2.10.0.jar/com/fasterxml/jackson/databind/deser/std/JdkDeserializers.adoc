@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/JdkDeserializers.class
+
+ - link:JdkDeserializers-asmified.java[Asmified]
+
+== References
+

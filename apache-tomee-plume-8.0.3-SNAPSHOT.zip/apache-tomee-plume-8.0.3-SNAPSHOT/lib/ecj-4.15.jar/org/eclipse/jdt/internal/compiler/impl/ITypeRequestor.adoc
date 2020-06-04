@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/ITypeRequestor.class
+
+ - link:ITypeRequestor-asmified.java[Asmified]
+
+== References
+

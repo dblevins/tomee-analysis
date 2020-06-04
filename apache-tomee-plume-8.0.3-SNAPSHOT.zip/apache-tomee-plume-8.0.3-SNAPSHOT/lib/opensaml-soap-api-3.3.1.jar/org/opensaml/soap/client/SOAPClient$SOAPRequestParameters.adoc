@@ -1,0 +1,6 @@
+= org/opensaml/soap/client/SOAPClient$SOAPRequestParameters.class
+
+ - link:SOAPClient$SOAPRequestParameters-asmified.java[Asmified]
+
+== References
+

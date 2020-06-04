@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/deployment/JavaSECMPInitializerAgent.class
+
+ - link:JavaSECMPInitializerAgent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= javax/security/enterprise/authentication/mechanism/http/HttpAuthenticationMechanismWrapper.class
+
+ - link:HttpAuthenticationMechanismWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.authentication.mechanism.http.HttpAuthenticationMechanism - 12
+ - javax.servlet.http.HttpServletRequest - 6
+ - javax.security.enterprise.authentication.mechanism.http.HttpMessageContext - 6
+ - javax.servlet.http.HttpServletResponse - 6
+ - javax.security.enterprise.AuthenticationStatus - 4
+ - javax.security.enterprise.authentication.mechanism.http.HttpAuthenticationMechanismWrapper - 3
+ - javax.security.enterprise.AuthenticationException - 2

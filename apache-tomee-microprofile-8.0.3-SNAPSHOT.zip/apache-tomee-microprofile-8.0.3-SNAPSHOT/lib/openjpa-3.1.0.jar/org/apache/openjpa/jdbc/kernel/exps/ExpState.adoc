@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/ExpState.class
+
+ - link:ExpState-asmified.java[Asmified]
+
+== References
+

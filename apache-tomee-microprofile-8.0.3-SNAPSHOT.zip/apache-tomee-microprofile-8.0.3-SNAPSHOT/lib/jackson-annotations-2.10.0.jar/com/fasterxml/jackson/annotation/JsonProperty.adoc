@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonProperty.class
+
+ - link:JsonProperty-asmified.java[Asmified]
+
+== References
+

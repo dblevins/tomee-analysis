@@ -1,0 +1,8 @@
+= org/apache/openejb/resource/activemq/jms2/TomEEConnectionFactory.class
+
+ - link:TomEEConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSContext - 4
+ - javax.jms.ConnectionFactory - 4

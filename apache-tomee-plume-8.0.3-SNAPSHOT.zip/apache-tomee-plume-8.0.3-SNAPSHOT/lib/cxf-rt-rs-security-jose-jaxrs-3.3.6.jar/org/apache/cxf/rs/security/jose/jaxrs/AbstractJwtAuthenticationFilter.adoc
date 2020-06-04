@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/jose/jaxrs/AbstractJwtAuthenticationFilter.class
+
+ - link:AbstractJwtAuthenticationFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ContainerRequestContext - 3
+ - javax.ws.rs.container.PreMatching - 1
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.container.ContainerRequestFilter - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/SQLDeleteAllStatementForTempTable.class
+
+ - link:SQLDeleteAllStatementForTempTable-asmified.java[Asmified]
+
+== References
+

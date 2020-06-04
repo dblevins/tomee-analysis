@@ -1,0 +1,6 @@
+= org/hsqldb/map/ValuePoolHashMap.class
+
+ - link:ValuePoolHashMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Value.class
+
+ - link:Value-asmified.java[Asmified]
+
+== References
+

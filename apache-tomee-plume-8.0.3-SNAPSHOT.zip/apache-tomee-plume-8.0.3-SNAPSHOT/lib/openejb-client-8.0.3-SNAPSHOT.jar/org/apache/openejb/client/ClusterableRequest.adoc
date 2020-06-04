@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ClusterableRequest.class
+
+ - link:ClusterableRequest-asmified.java[Asmified]
+
+== References
+

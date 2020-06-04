@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/MarkerAnnotation.class
+
+ - link:MarkerAnnotation-asmified.java[Asmified]
+
+== References
+

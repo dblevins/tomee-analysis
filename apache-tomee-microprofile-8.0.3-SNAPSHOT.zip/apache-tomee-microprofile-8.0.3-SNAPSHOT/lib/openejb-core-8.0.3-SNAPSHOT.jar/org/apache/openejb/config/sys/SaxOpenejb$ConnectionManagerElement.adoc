@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/SaxOpenejb$ConnectionManagerElement.class
+
+ - link:SaxOpenejb$ConnectionManagerElement-asmified.java[Asmified]
+
+== References
+

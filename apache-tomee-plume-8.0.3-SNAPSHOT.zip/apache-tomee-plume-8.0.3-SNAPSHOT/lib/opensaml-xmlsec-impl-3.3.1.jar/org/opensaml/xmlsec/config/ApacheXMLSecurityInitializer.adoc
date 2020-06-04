@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/config/ApacheXMLSecurityInitializer.class
+
+ - link:ApacheXMLSecurityInitializer-asmified.java[Asmified]
+
+== References
+

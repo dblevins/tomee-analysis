@@ -1,0 +1,7 @@
+= javax/mail/internet/MimeMultipart$MimeBodyPartInputStream.class
+
+ - link:MimeMultipart$MimeBodyPartInputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.MimeMultipart - 3

@@ -1,0 +1,8 @@
+= org/apache/catalina/core/StandardWrapperFacade.class
+
+ - link:StandardWrapperFacade-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 11
+ - javax.servlet.ServletContext - 11

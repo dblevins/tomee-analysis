@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/list/LazyList.class
+
+ - link:LazyList-asmified.java[Asmified]
+
+== References
+

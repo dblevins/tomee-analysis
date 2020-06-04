@@ -1,0 +1,15 @@
+= org/apache/myfaces/view/facelets/el/ContextAwareTagMethodExpression.class
+
+ - link:ContextAwareTagMethodExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.MethodExpression - 26
+ - javax.faces.view.Location - 21
+ - javax.el.ELException - 4
+ - javax.el.ELContext - 4
+ - javax.el.PropertyNotFoundException - 4
+ - javax.el.MethodNotFoundException - 4
+ - javax.faces.view.facelets.TagAttribute - 3
+ - javax.el.MethodInfo - 2
+ - javax.faces.FacesWrapper - 1

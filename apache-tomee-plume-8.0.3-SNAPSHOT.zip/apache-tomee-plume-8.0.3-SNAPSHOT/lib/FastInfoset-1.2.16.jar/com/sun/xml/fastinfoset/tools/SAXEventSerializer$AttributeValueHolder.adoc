@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/tools/SAXEventSerializer$AttributeValueHolder.class
+
+ - link:SAXEventSerializer$AttributeValueHolder-asmified.java[Asmified]
+
+== References
+

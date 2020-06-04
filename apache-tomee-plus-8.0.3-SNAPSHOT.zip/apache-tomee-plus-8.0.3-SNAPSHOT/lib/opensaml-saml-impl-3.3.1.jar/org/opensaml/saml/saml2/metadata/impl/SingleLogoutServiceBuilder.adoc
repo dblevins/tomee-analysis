@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SingleLogoutServiceBuilder.class
+
+ - link:SingleLogoutServiceBuilder-asmified.java[Asmified]
+
+== References
+

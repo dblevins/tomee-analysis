@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/props/AbstractPropertyContainer.class
+
+ - link:AbstractPropertyContainer-asmified.java[Asmified]
+
+== References
+

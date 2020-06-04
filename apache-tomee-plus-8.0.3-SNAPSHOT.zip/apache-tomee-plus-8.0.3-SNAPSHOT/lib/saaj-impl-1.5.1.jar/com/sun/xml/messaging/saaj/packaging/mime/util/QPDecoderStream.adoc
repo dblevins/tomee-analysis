@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/util/QPDecoderStream.class
+
+ - link:QPDecoderStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/jasper/tagplugins/jstl/core/Out.class
+
+ - link:Out-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspWriter - 5

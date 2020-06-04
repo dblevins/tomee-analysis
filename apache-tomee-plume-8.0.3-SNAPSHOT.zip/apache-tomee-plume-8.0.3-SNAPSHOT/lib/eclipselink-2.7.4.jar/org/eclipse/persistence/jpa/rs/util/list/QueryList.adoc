@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/rs/util/list/QueryList.class
+
+ - link:QueryList-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlElement - 1

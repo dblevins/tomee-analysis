@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/cmd/ConfigurationInfo.class
+
+ - link:ConfigurationInfo-asmified.java[Asmified]
+
+== References
+

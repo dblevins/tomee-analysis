@@ -1,0 +1,11 @@
+= org/apache/openejb/resource/activemq/jms2/TomEEConnection.class
+
+ - link:TomEEConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 9
+ - javax.jms.Session - 5
+ - javax.jms.ConnectionConsumer - 2
+ - javax.jms.Topic - 2
+ - javax.jms.ServerSessionPool - 2

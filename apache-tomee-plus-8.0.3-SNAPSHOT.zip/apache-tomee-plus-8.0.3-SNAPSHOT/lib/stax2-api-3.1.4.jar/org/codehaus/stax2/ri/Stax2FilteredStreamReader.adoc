@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2FilteredStreamReader.class
+
+ - link:Stax2FilteredStreamReader-asmified.java[Asmified]
+
+== References
+

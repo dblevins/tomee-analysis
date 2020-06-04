@@ -1,0 +1,13 @@
+= org/apache/tomee/catalina/TomcatWebAppBuilder.class
+
+ - link:TomcatWebAppBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 49
+ - javax.servlet.http.HttpSession - 3
+ - javax.servlet.http.HttpServletRequest - 3
+ - javax.transaction.TransactionSynchronizationRegistry - 2
+ - javax.ejb.spi.HandleDelegate - 2
+ - javax.transaction.TransactionManager - 2
+ - javax.servlet.SessionTrackingMode - 2

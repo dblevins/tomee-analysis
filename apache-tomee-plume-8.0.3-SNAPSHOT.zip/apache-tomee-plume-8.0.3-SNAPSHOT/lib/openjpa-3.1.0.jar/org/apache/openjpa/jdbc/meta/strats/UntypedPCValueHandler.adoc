@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/UntypedPCValueHandler.class
+
+ - link:UntypedPCValueHandler-asmified.java[Asmified]
+
+== References
+

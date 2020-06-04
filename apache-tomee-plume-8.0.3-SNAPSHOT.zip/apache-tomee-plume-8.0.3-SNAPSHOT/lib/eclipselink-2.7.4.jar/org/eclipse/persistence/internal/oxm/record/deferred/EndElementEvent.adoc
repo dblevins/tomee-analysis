@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/EndElementEvent.class
+
+ - link:EndElementEvent-asmified.java[Asmified]
+
+== References
+

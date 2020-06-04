@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller.class
+
+ - link:JAXBAttachmentUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 4
+ - javax.activation.DataHandler - 3
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 2

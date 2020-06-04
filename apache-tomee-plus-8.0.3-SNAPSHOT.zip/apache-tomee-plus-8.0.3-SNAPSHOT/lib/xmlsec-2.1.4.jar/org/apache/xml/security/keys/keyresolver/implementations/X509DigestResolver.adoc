@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/X509DigestResolver.class
+
+ - link:X509DigestResolver-asmified.java[Asmified]
+
+== References
+

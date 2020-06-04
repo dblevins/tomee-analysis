@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMHMACSignatureMethod$SHA384.class
+
+ - link:DOMHMACSignatureMethod$SHA384-asmified.java[Asmified]
+
+== References
+

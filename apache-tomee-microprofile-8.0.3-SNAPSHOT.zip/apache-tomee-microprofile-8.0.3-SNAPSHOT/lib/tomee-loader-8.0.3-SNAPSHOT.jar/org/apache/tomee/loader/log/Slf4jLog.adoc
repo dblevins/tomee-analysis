@@ -1,0 +1,6 @@
+= org/apache/tomee/loader/log/Slf4jLog.class
+
+ - link:Slf4jLog-asmified.java[Asmified]
+
+== References
+

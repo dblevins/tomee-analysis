@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsfed/WSFedObject.class
+
+ - link:WSFedObject-asmified.java[Asmified]
+
+== References
+

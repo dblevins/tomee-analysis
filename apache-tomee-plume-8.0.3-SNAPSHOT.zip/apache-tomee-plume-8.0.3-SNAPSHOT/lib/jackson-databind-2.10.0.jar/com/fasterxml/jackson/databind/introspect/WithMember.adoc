@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/WithMember.class
+
+ - link:WithMember-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/record/JsonRecord$Level.class
+
+ - link:JsonRecord$Level-asmified.java[Asmified]
+
+== References
+

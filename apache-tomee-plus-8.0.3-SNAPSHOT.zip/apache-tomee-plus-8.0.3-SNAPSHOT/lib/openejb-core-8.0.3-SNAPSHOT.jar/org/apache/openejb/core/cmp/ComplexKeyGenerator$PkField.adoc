@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/ComplexKeyGenerator$PkField.class
+
+ - link:ComplexKeyGenerator$PkField-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 1

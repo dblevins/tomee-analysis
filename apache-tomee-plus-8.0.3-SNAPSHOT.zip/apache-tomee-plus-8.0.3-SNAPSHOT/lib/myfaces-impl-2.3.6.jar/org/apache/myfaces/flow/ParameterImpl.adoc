@@ -1,0 +1,8 @@
+= org/apache/myfaces/flow/ParameterImpl.class
+
+ - link:ParameterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 7
+ - javax.faces.flow.Parameter - 2

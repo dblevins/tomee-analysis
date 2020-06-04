@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/annotation/Prototype.class
+
+ - link:Prototype-asmified.java[Asmified]
+
+== References
+

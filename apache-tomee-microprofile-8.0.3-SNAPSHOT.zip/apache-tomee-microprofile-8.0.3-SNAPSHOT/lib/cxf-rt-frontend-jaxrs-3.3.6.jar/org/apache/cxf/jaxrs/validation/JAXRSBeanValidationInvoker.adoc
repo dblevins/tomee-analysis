@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/validation/JAXRSBeanValidationInvoker.class
+
+ - link:JAXRSBeanValidationInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 3

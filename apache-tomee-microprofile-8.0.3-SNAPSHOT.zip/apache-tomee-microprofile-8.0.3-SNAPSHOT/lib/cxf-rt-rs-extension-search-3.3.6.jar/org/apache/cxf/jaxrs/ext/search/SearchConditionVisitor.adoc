@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/ext/search/SearchConditionVisitor.class
+
+ - link:SearchConditionVisitor-asmified.java[Asmified]
+
+== References
+

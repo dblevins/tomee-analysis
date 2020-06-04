@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/ElementDependent.class
+
+ - link:ElementDependent-asmified.java[Asmified]
+
+== References
+

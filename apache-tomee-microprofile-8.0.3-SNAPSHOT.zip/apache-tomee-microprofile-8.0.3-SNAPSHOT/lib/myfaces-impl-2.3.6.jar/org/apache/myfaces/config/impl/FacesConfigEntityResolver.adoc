@@ -1,0 +1,7 @@
+= org/apache/myfaces/config/impl/FacesConfigEntityResolver.class
+
+ - link:FacesConfigEntityResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 8

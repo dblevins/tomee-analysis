@@ -1,0 +1,6 @@
+= org/apache/openejb/core/managed/Cache$CacheFilter.class
+
+ - link:Cache$CacheFilter-asmified.java[Asmified]
+
+== References
+

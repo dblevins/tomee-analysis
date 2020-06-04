@@ -1,0 +1,9 @@
+= javax/servlet/jsp/JspApplicationContext.class
+
+ - link:JspApplicationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 1
+ - javax.el.ELContextListener - 1
+ - javax.el.ELResolver - 1

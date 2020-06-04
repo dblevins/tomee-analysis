@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/SuffixConstants.class
+
+ - link:SuffixConstants-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,19 @@
+= org/apache/cxf/jaxrs/provider/json/JSONProvider.class
+
+ - link:JSONProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 22
+ - javax.xml.bind.JAXBElement - 19
+ - javax.xml.bind.Unmarshaller - 18
+ - javax.ws.rs.WebApplicationException - 14
+ - javax.ws.rs.core.MultivaluedMap - 13
+ - javax.ws.rs.core.Response - 9
+ - javax.xml.bind.Marshaller - 8
+ - javax.xml.bind.JAXBException - 8
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 6
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.Consumes - 1

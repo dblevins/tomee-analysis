@@ -1,0 +1,6 @@
+= com/sun/activation/registries/MailcapFile.class
+
+ - link:MailcapFile-asmified.java[Asmified]
+
+== References
+

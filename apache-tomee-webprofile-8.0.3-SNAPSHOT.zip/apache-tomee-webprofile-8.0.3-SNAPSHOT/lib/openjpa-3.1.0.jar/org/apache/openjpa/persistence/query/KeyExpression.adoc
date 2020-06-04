@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/KeyExpression.class
+
+ - link:KeyExpression-asmified.java[Asmified]
+
+== References
+

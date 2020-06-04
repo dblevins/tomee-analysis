@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cms/OriginatorPublicKey.class
+
+ - link:OriginatorPublicKey-asmified.java[Asmified]
+
+== References
+

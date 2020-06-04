@@ -1,0 +1,203 @@
+package asm.org.apache.openejb.config;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SystemAppsDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/config/SystemApps", null, "java/lang/Object", null);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "getSystemModule", "()Lorg/apache/openejb/config/EjbModule;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/config/EjbModule");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/EjbJar");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("openejb");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/EjbJar", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/oejb3/OpenejbJar");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/oejb3/OpenejbJar", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/config/EjbModule", "<init>", "(Lorg/apache/openejb/jee/EjbJar;Lorg/apache/openejb/jee/oejb3/OpenejbJar;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/EjbModule", "getOpenejbJar", "()Lorg/apache/openejb/jee/oejb3/OpenejbJar;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/EjbModule", "getEjbJar", "()Lorg/apache/openejb/jee/EjbJar;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/assembler/DeployerEjb;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/config/SystemApps", "singleton", "(Ljava/lang/Class;)Lorg/apache/openejb/jee/SingletonBean;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "addEnterpriseBean", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/EnterpriseBean;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/assembler/classic/cmd/ConfigurationInfoEjb;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/config/SystemApps", "singleton", "(Ljava/lang/Class;)Lorg/apache/openejb/jee/SingletonBean;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "addEnterpriseBean", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/EnterpriseBean;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/mgmt/MEJBBean;"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/config/SystemApps", "singleton", "(Ljava/lang/Class;)Lorg/apache/openejb/jee/SingletonBean;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "addEnterpriseBean", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/EnterpriseBean;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/Interceptor");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/security/internal/InternalSecurityInterceptor;"));
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/Interceptor", "<init>", "(Ljava/lang/Class;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "addInterceptor", "(Lorg/apache/openejb/jee/Interceptor;)Lorg/apache/openejb/jee/Interceptor;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "getAssemblyDescriptor", "()Lorg/apache/openejb/jee/AssemblyDescriptor;", false);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/InterceptorBinding");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("*");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/String");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/security/internal/InternalSecurityInterceptor;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/InterceptorBinding", "<init>", "(Ljava/lang/String;[Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/AssemblyDescriptor", "addInterceptorBinding", "(Lorg/apache/openejb/jee/InterceptorBinding;)Lorg/apache/openejb/jee/InterceptorBinding;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/config/EjbModule", "getMbeans", "()Ljava/util/Set;", false);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/assembler/monitoring/JMXDeployer;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/SingletonBean");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("openejb/WebappDeployer");
+methodVisitor.visitLdcInsn("org.apache.tomee.catalina.deployer.WebappDeployer");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/SingletonBean", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "addEnterpriseBean", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/EnterpriseBean;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/jee/SingletonBean");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/oejb3/OpenejbJar", "addEjbDeployment", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/oejb3/EjbDeployment;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/oejb3/EjbDeployment", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitLdcInsn("openejb.jndiname.format");
+methodVisitor.visitLdcInsn("{deploymentId}{interfaceType.annotationName}");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/SingletonBean");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("openejb/ExceptionManagerFacade");
+methodVisitor.visitLdcInsn("org.apache.tomee.catalina.facade.ExceptionManagerFacadeBean");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/SingletonBean", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/EjbJar", "addEnterpriseBean", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/EnterpriseBean;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openejb/jee/SingletonBean");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/oejb3/OpenejbJar", "addEjbDeployment", "(Lorg/apache/openejb/jee/EnterpriseBean;)Lorg/apache/openejb/jee/oejb3/EjbDeployment;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/oejb3/EjbDeployment", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitLdcInsn("openejb.jndiname.format");
+methodVisitor.visitLdcInsn("{deploymentId}{interfaceType.annotationName}");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/oejb3/OpenejbJar", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitLdcInsn("openejb.deploymentId.format");
+methodVisitor.visitLdcInsn("{ejbName}");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/jee/oejb3/OpenejbJar", "getProperties", "()Ljava/util/Properties;", false);
+methodVisitor.visitLdcInsn("openejb.jndiname.format");
+methodVisitor.visitLdcInsn("{deploymentId}{interfaceType.openejbLegacyName}");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Properties", "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(8, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "isExtended", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn("org.apache.tomee.catalina.deployer.WebappDeployer");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/config/SystemApps", "exists", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "singleton", "(Ljava/lang/Class;)Lorg/apache/openejb/jee/SingletonBean;", "(Ljava/lang/Class<*>;)Lorg/apache/openejb/jee/SingletonBean;", null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/jee/SingletonBean");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/jee/SingletonBean", "<init>", "(Ljava/lang/String;Ljava/lang/Class;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE | ACC_STATIC, "exists", "(Ljava/lang/String;)Z", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Throwable");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitLdcInsn(Type.getType("Lorg/apache/openejb/config/SystemApps;"));
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getClassLoader", "()Ljava/lang/ClassLoader;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/ClassLoader", "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

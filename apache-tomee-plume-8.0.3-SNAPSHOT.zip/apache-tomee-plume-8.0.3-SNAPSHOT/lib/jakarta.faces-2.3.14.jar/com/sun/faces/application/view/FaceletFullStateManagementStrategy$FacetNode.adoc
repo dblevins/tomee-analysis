@@ -1,0 +1,7 @@
+= com/sun/faces/application/view/FaceletFullStateManagementStrategy$FacetNode.class
+
+ - link:FaceletFullStateManagementStrategy$FacetNode-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 2

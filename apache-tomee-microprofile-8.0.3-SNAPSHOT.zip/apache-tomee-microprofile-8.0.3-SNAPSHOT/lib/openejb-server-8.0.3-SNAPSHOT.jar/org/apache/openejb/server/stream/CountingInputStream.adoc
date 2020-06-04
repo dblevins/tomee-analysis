@@ -1,0 +1,6 @@
+= org/apache/openejb/server/stream/CountingInputStream.class
+
+ - link:CountingInputStream-asmified.java[Asmified]
+
+== References
+

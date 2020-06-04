@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaTool$Flags.class
+
+ - link:SchemaTool$Flags-asmified.java[Asmified]
+
+== References
+

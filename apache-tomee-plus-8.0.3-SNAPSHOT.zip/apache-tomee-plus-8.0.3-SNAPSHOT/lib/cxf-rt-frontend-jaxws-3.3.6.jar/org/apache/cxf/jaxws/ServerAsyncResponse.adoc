@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/ServerAsyncResponse.class
+
+ - link:ServerAsyncResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Response - 1

@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/validate/Validator.class
+
+ - link:Validator-asmified.java[Asmified]
+
+== References
+

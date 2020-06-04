@@ -1,0 +1,6 @@
+= org/bouncycastle/i18n/filter/TrustedInput.class
+
+ - link:TrustedInput-asmified.java[Asmified]
+
+== References
+

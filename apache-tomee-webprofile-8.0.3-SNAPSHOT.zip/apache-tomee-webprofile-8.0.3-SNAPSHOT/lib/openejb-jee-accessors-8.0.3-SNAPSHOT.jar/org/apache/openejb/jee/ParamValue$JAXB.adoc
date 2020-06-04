@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ParamValue$JAXB.class
+
+ - link:ParamValue$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

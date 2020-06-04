@@ -1,0 +1,6 @@
+= org/apache/openejb/client/RandomConnectionStrategy.class
+
+ - link:RandomConnectionStrategy-asmified.java[Asmified]
+
+== References
+

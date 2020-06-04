@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/EISLoginConfig.class
+
+ - link:EISLoginConfig-asmified.java[Asmified]
+
+== References
+

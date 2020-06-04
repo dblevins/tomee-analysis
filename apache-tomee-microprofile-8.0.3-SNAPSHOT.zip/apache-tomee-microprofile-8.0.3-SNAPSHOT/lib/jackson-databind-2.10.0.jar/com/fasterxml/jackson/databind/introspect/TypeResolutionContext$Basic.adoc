@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/TypeResolutionContext$Basic.class
+
+ - link:TypeResolutionContext$Basic-asmified.java[Asmified]
+
+== References
+

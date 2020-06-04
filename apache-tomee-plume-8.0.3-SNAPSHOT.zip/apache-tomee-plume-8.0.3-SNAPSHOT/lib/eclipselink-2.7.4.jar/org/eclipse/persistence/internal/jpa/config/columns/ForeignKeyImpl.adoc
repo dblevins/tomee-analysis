@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/columns/ForeignKeyImpl.class
+
+ - link:ForeignKeyImpl-asmified.java[Asmified]
+
+== References
+

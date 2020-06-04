@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/config/persistenceunit/DataServiceImpl.class
+
+ - link:DataServiceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitInfo - 2

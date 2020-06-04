@@ -1,0 +1,14 @@
+= org/apache/myfaces/taglib/core/SetPropertyActionListenerTag.class
+
+ - link:SetPropertyActionListenerTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 16
+ - javax.faces.webapp.UIComponentClassicTagBase - 8
+ - javax.servlet.jsp.JspException - 7
+ - javax.faces.component.ActionSource - 4
+ - javax.faces.component.UIComponent - 3
+ - javax.servlet.jsp.tagext.TagSupport - 2
+ - javax.servlet.jsp.PageContext - 2
+ - javax.faces.event.ActionListener - 2

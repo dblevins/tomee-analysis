@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/LayoutPolicyValidator.class
+
+ - link:LayoutPolicyValidator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/jose/jaxrs/JwtAuthenticationClientFilter.class
+
+ - link:JwtAuthenticationClientFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.ClientRequestContext - 6
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.annotation.Priority - 1
+ - javax.ws.rs.client.ClientRequestFilter - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/typed/util/Builders.class
+
+ - link:Builders-asmified.java[Asmified]
+
+== References
+

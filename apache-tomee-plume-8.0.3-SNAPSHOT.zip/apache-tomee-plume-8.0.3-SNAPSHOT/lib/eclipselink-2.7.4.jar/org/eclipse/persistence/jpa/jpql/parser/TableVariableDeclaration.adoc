@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/TableVariableDeclaration.class
+
+ - link:TableVariableDeclaration-asmified.java[Asmified]
+
+== References
+

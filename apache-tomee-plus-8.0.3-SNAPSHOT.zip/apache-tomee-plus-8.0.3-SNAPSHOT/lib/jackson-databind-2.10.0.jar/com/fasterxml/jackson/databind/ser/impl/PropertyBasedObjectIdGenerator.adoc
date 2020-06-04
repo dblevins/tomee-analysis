@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/PropertyBasedObjectIdGenerator.class
+
+ - link:PropertyBasedObjectIdGenerator-asmified.java[Asmified]
+
+== References
+

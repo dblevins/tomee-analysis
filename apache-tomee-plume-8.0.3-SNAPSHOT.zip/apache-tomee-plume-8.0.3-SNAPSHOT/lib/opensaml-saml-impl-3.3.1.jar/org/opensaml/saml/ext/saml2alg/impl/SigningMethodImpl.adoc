@@ -1,0 +1,8 @@
+= org/opensaml/saml/ext/saml2alg/impl/SigningMethodImpl.class
+
+ - link:SigningMethodImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 8
+ - javax.annotation.Nonnull - 1

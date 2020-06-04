@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedGetMethods.class
+
+ - link:PrivilegedGetMethods-asmified.java[Asmified]
+
+== References
+

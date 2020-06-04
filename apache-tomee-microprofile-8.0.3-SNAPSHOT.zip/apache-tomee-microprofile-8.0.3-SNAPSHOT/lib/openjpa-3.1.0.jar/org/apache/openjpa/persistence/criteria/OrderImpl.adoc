@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/criteria/OrderImpl.class
+
+ - link:OrderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 4
+ - javax.persistence.criteria.Order - 2

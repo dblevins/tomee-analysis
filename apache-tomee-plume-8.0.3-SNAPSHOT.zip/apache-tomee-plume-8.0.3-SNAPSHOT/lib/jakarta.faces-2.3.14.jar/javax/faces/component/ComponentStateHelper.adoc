@@ -1,0 +1,17 @@
+= javax/faces/component/ComponentStateHelper.class
+
+ - link:ComponentStateHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 40
+ - javax.faces.component.ComponentStateHelper - 18
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.component.StateHolderSaver - 3
+ - javax.el.ValueExpression - 3
+ - javax.faces.component.UIComponentBase - 3
+ - javax.el.ELContext - 2
+ - javax.faces.component.PartialStateHolder - 2
+ - javax.faces.component.StateHelper - 1
+ - javax.faces.component.TransientStateHelper - 1
+ - javax.faces.component.StateHolder - 1

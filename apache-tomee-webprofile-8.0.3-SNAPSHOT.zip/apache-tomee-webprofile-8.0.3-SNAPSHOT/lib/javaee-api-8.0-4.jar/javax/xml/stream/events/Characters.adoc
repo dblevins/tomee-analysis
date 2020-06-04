@@ -1,0 +1,6 @@
+= javax/xml/stream/events/Characters.class
+
+ - link:Characters-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= javax/mail/internet/MimePartDataSource.class
+
+ - link:MimePartDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.MimePart - 17
+ - javax.mail.MessagingException - 7
+ - javax.mail.internet.MimeBodyPart - 6
+ - javax.mail.internet.ContentType - 3
+ - javax.mail.MessageContext - 3
+ - javax.mail.internet.MimeMessage - 3
+ - javax.mail.internet.MimeUtility - 1
+ - javax.mail.internet.ParseException - 1
+ - javax.mail.internet.MimePartDataSource - 1
+ - javax.mail.MessageAware - 1
+ - javax.mail.Part - 1
+ - javax.activation.DataSource - 1

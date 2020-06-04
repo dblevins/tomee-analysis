@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/VarIntegerCodec.class
+
+ - link:VarIntegerCodec-asmified.java[Asmified]
+
+== References
+

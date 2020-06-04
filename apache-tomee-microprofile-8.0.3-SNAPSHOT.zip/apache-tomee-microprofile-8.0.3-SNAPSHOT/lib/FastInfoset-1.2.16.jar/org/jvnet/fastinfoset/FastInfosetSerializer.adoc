@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/FastInfosetSerializer.class
+
+ - link:FastInfosetSerializer-asmified.java[Asmified]
+
+== References
+

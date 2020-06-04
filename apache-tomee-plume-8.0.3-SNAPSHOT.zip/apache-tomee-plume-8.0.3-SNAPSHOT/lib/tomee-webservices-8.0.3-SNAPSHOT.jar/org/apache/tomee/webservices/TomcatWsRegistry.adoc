@@ -1,0 +1,9 @@
+= org/apache/tomee/webservices/TomcatWsRegistry.class
+
+ - link:TomcatWsRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 4
+ - javax.servlet.Servlet - 3
+ - javax.servlet.ServletConfig - 2

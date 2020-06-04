@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/outbound/connectionmanagerconfig/NoTransactions.class
+
+ - link:NoTransactions-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 1

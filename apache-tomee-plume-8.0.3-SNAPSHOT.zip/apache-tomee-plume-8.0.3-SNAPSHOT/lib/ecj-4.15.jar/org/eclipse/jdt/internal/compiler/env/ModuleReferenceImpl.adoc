@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/ModuleReferenceImpl.class
+
+ - link:ModuleReferenceImpl-asmified.java[Asmified]
+
+== References
+

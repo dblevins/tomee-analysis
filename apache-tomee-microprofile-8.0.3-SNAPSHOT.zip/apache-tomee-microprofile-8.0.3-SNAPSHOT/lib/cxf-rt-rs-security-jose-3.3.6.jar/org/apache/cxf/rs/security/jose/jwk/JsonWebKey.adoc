@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/jwk/JsonWebKey.class
+
+ - link:JsonWebKey-asmified.java[Asmified]
+
+== References
+

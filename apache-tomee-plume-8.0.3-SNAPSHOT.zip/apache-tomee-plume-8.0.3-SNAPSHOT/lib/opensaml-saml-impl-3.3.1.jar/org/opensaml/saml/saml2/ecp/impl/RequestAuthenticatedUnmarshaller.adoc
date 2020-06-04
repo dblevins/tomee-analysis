@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/ecp/impl/RequestAuthenticatedUnmarshaller.class
+
+ - link:RequestAuthenticatedUnmarshaller-asmified.java[Asmified]
+
+== References
+

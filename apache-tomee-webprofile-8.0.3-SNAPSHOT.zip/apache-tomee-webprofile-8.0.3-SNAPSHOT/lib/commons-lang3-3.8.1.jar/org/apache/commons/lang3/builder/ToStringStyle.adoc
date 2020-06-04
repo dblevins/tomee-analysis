@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/builder/ToStringStyle.class
+
+ - link:ToStringStyle-asmified.java[Asmified]
+
+== References
+

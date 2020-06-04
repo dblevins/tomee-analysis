@@ -1,0 +1,8 @@
+= javax/ws/rs/core/GenericType.class
+
+ - link:GenericType-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.GenericType - 16
+ - javax.ws.rs.core.GenericEntity - 3

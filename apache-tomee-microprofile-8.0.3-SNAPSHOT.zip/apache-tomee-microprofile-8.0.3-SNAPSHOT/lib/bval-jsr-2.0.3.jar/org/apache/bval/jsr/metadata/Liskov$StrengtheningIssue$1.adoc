@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/Liskov$StrengtheningIssue$1.class
+
+ - link:Liskov$StrengtheningIssue$1-asmified.java[Asmified]
+
+== References
+

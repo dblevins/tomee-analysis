@@ -1,0 +1,8 @@
+= org/apache/jasper/compiler/PageInfo.class
+
+ - link:PageInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 6
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 5

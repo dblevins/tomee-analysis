@@ -1,0 +1,15 @@
+= org/apache/geronimo/connector/ActivationSpecWrapper.class
+
+ - link:ActivationSpecWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ActivationSpec - 21
+ - javax.validation.ValidatorFactory - 9
+ - javax.resource.spi.ResourceAdapter - 4
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 4
+ - javax.validation.ConstraintViolationException - 2
+ - javax.validation.Validator - 2
+ - javax.resource.ResourceException - 1
+ - javax.resource.spi.InvalidPropertyException - 1
+ - javax.resource.spi.ResourceAdapterAssociation - 1

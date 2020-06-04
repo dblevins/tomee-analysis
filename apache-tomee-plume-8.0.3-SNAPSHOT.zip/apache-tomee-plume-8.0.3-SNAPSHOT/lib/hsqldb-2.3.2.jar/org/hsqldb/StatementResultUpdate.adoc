@@ -1,0 +1,6 @@
+= org/hsqldb/StatementResultUpdate.class
+
+ - link:StatementResultUpdate-asmified.java[Asmified]
+
+== References
+

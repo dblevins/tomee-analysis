@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/WrappedException.class
+
+ - link:WrappedException-asmified.java[Asmified]
+
+== References
+

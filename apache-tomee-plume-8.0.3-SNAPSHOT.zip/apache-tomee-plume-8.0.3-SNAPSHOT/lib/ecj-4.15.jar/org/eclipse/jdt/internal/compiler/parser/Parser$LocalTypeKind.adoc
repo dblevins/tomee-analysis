@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/Parser$LocalTypeKind.class
+
+ - link:Parser$LocalTypeKind-asmified.java[Asmified]
+
+== References
+

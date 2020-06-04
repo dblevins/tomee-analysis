@@ -1,0 +1,6 @@
+= org/apache/cxf/common/security/SimplePrincipal.class
+
+ - link:SimplePrincipal-asmified.java[Asmified]
+
+== References
+

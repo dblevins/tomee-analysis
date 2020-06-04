@@ -1,0 +1,6 @@
+= org/apache/openejb/log/LoggerCreator$Get.class
+
+ - link:LoggerCreator$Get-asmified.java[Asmified]
+
+== References
+

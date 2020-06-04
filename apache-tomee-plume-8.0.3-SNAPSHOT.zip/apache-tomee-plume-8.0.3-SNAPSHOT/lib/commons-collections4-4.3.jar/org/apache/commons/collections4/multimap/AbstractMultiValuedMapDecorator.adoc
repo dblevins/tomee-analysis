@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multimap/AbstractMultiValuedMapDecorator.class
+
+ - link:AbstractMultiValuedMapDecorator-asmified.java[Asmified]
+
+== References
+

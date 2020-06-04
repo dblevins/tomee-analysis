@@ -1,0 +1,12 @@
+= javax/persistence/spi/PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver.class
+
+ - link:PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceProvider - 4
+ - javax.persistence.spi.PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver - 2
+ - javax.persistence.PersistenceException - 2
+ - javax.persistence.spi.PersistenceProviderResolverHolder$DefaultPersistenceProviderResolver$PrivClassLoader - 2
+ - javax.persistence.spi.PersistenceProviderResolver - 1
+ - javax.persistence.spi.PersistenceProviderResolverHolder$1 - 1

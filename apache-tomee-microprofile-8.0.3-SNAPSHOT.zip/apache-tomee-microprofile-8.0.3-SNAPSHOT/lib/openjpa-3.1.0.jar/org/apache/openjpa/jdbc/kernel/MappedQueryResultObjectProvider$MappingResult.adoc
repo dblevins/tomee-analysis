@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/MappedQueryResultObjectProvider$MappingResult.class
+
+ - link:MappedQueryResultObjectProvider$MappingResult-asmified.java[Asmified]
+
+== References
+

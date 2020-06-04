@@ -1,0 +1,8 @@
+= org/apache/webbeans/component/OwbBean.class
+
+ - link:OwbBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Producer - 1
+ - javax.enterprise.inject.spi.Bean - 1

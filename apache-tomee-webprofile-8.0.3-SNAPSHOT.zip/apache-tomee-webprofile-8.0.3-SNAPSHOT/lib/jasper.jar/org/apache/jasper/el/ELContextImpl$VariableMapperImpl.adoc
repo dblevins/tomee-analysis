@@ -1,0 +1,8 @@
+= org/apache/jasper/el/ELContextImpl$VariableMapperImpl.class
+
+ - link:ELContextImpl$VariableMapperImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 7
+ - javax.el.VariableMapper - 2

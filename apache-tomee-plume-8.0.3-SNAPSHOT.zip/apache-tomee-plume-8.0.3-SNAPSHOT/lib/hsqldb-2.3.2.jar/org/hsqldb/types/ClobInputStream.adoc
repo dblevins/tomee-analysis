@@ -1,0 +1,6 @@
+= org/hsqldb/types/ClobInputStream.class
+
+ - link:ClobInputStream-asmified.java[Asmified]
+
+== References
+

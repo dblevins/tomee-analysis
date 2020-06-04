@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/constructor/CustomClassLoaderConstructor.class
+
+ - link:CustomClassLoaderConstructor-asmified.java[Asmified]
+
+== References
+

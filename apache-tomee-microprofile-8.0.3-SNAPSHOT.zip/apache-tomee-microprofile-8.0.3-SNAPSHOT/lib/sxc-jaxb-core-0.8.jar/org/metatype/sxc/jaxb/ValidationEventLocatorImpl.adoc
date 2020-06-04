@@ -1,0 +1,7 @@
+= org/metatype/sxc/jaxb/ValidationEventLocatorImpl.class
+
+ - link:ValidationEventLocatorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventLocator - 1

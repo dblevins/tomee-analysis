@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/NavigationCase.class
+
+ - link:NavigationCase-asmified.java[Asmified]
+
+== References
+

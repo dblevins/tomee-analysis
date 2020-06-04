@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/OptimisticLockingPolicy$LockOnChange.class
+
+ - link:OptimisticLockingPolicy$LockOnChange-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/XMLConstants.class
+
+ - link:XMLConstants-asmified.java[Asmified]
+
+== References
+

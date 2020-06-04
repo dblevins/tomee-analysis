@@ -1,0 +1,18 @@
+= org/eclipse/persistence/internal/jpa/EntityManagerFactoryImpl.class
+
+ - link:EntityManagerFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SynchronizationType - 9
+ - javax.persistence.FlushModeType - 4
+ - javax.persistence.EntityManager - 4
+ - javax.persistence.metamodel.Metamodel - 4
+ - javax.persistence.PersistenceUnitUtil - 3
+ - javax.persistence.LockModeType - 3
+ - javax.persistence.Query - 2
+ - javax.persistence.PersistenceException - 2
+ - javax.persistence.EntityManagerFactory - 2
+ - javax.persistence.criteria.CriteriaBuilder - 2
+ - javax.persistence.Cache - 2
+ - javax.persistence.EntityGraph - 1

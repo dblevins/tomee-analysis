@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/LazyObjectReference$LazyNamingException.class
+
+ - link:LazyObjectReference$LazyNamingException-asmified.java[Asmified]
+
+== References
+

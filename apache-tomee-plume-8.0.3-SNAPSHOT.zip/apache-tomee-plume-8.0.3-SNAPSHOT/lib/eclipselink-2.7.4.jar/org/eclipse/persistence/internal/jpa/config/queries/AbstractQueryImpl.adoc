@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/AbstractQueryImpl.class
+
+ - link:AbstractQueryImpl-asmified.java[Asmified]
+
+== References
+

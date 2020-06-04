@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentString.class
+
+ - link:SafeRepresenter$RepresentString-asmified.java[Asmified]
+
+== References
+

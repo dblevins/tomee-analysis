@@ -1,0 +1,6 @@
+= org/hsqldb/dbinfo/DatabaseInformationFull.class
+
+ - link:DatabaseInformationFull-asmified.java[Asmified]
+
+== References
+

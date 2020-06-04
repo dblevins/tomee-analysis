@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/EmptyIterator.class
+
+ - link:EmptyIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/SequencedHashMap$Entry.class
+
+ - link:SequencedHashMap$Entry-asmified.java[Asmified]
+
+== References
+

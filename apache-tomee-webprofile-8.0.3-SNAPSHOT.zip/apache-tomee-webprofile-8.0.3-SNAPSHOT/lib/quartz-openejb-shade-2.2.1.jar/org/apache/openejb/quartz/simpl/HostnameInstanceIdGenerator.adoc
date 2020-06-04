@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/simpl/HostnameInstanceIdGenerator.class
+
+ - link:HostnameInstanceIdGenerator-asmified.java[Asmified]
+
+== References
+

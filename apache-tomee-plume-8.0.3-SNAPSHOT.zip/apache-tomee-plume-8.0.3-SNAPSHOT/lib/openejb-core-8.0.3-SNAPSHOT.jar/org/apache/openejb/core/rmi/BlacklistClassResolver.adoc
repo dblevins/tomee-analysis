@@ -1,0 +1,6 @@
+= org/apache/openejb/core/rmi/BlacklistClassResolver.class
+
+ - link:BlacklistClassResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/SignatureValidationConfiguration.class
+
+ - link:SignatureValidationConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 1

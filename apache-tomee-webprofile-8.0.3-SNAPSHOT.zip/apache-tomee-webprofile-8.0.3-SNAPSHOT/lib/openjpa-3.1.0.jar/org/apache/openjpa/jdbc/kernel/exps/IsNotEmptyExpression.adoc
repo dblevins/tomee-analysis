@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/IsNotEmptyExpression.class
+
+ - link:IsNotEmptyExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/jasypt/encryption/pbe/StandardPBEByteEncryptor.class
+
+ - link:StandardPBEByteEncryptor-asmified.java[Asmified]
+
+== References
+

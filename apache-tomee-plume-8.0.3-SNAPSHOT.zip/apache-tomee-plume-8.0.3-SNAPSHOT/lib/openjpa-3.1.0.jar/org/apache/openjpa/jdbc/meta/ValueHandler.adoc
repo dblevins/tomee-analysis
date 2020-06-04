@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/ValueHandler.class
+
+ - link:ValueHandler-asmified.java[Asmified]
+
+== References
+

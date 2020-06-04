@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/NamedModule.class
+
+ - link:NamedModule-asmified.java[Asmified]
+
+== References
+

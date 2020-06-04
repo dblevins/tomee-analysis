@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/apps/xparse.class
+
+ - link:xparse-asmified.java[Asmified]
+
+== References
+

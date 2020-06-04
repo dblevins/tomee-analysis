@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/tree/analysis/SourceInterpreter.class
+
+ - link:SourceInterpreter-asmified.java[Asmified]
+
+== References
+

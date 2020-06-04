@@ -1,0 +1,6 @@
+= org/apache/cxf/validation/ClientBeanValidationFeature.class
+
+ - link:ClientBeanValidationFeature-asmified.java[Asmified]
+
+== References
+

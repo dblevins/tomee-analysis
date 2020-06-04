@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Metadata.class
+
+ - link:Metadata-asmified.java[Asmified]
+
+== References
+

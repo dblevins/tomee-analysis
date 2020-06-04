@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/tool/EclipseBatchRequestor.class
+
+ - link:EclipseBatchRequestor-asmified.java[Asmified]
+
+== References
+

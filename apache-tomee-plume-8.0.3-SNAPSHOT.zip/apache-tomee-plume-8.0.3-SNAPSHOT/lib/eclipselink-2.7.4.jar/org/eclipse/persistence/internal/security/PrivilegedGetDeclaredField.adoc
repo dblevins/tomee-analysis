@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedGetDeclaredField.class
+
+ - link:PrivilegedGetDeclaredField-asmified.java[Asmified]
+
+== References
+

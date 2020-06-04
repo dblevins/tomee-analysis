@@ -1,0 +1,6 @@
+= org/hsqldb/lib/IntKeyHashMap$KeySet.class
+
+ - link:IntKeyHashMap$KeySet-asmified.java[Asmified]
+
+== References
+

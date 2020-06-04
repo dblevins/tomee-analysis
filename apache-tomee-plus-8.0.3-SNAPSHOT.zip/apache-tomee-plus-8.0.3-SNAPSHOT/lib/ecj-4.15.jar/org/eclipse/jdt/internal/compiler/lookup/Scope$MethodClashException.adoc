@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/Scope$MethodClashException.class
+
+ - link:Scope$MethodClashException-asmified.java[Asmified]
+
+== References
+

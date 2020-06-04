@@ -1,0 +1,19 @@
+= org/apache/cxf/jaxrs/provider/ProviderFactory.class
+
+ - link:ProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 36
+ - javax.ws.rs.ext.MessageBodyWriter - 25
+ - javax.ws.rs.ext.MessageBodyReader - 24
+ - javax.ws.rs.ext.ContextResolver - 10
+ - javax.ws.rs.core.Application - 8
+ - javax.ws.rs.ext.ReaderInterceptor - 5
+ - javax.ws.rs.ext.WriterInterceptor - 5
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.ext.ParamConverterProvider - 4
+ - javax.ws.rs.Produces - 3
+ - javax.ws.rs.ext.ParamConverter - 3
+ - javax.ws.rs.core.Configuration - 1
+ - javax.ws.rs.ext.ExceptionMapper - 1

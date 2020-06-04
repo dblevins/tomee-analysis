@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/UnsupportedException.class
+
+ - link:UnsupportedException-asmified.java[Asmified]
+
+== References
+

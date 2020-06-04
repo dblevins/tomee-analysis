@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/provider/ProviderCache.class
+
+ - link:ProviderCache-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 10
+ - javax.ws.rs.ext.MessageBodyWriter - 3
+ - javax.ws.rs.ext.MessageBodyReader - 3

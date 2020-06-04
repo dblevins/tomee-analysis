@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/TypeDefinition.class
+
+ - link:TypeDefinition-asmified.java[Asmified]
+
+== References
+

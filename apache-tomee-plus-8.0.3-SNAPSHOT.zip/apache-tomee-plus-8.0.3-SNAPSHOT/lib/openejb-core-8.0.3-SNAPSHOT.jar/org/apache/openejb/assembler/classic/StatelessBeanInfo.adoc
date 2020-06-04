@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/StatelessBeanInfo.class
+
+ - link:StatelessBeanInfo-asmified.java[Asmified]
+
+== References
+

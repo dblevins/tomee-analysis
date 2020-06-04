@@ -1,0 +1,11 @@
+= org/eclipse/persistence/internal/xr/XRServiceFactory$XRPersistenceUnitInfo.class
+
+ - link:XRServiceFactory$XRPersistenceUnitInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 1
+ - javax.persistence.ValidationMode - 1
+ - javax.persistence.spi.ClassTransformer - 1
+ - javax.persistence.spi.PersistenceUnitInfo - 1
+ - javax.persistence.spi.PersistenceUnitTransactionType - 1

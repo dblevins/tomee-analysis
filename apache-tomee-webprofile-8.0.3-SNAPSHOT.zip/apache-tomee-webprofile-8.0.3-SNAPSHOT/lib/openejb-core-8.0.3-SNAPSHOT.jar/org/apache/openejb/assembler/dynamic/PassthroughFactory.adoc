@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/dynamic/PassthroughFactory.class
+
+ - link:PassthroughFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/PolicySetCombinerParametersTypeMarshaller.class
+
+ - link:PolicySetCombinerParametersTypeMarshaller-asmified.java[Asmified]
+
+== References
+

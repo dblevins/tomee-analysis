@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/tags/Tag.class
+
+ - link:Tag-asmified.java[Asmified]
+
+== References
+

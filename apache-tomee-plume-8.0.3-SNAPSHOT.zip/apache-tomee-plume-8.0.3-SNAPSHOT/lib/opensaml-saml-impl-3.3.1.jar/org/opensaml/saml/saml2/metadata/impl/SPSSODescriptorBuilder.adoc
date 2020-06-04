@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/SPSSODescriptorBuilder.class
+
+ - link:SPSSODescriptorBuilder-asmified.java[Asmified]
+
+== References
+

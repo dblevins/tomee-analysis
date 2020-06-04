@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/interceptors/OrderInterceptor$Counter.class
+
+ - link:OrderInterceptor$Counter-asmified.java[Asmified]
+
+== References
+

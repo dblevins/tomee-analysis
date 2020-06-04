@@ -1,0 +1,12 @@
+= javax/faces/render/ResponseStateManager.class
+
+ - link:ResponseStateManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 17
+ - javax.faces.application.StateManager$SerializedView - 11
+ - javax.faces.render.ResponseStateManager - 5
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.application.StateManager - 2

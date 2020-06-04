@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/URITemplate$Literal.class
+
+ - link:URITemplate$Literal-asmified.java[Asmified]
+
+== References
+

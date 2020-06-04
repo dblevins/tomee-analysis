@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/thread/ScopePropagatingCallable.class
+
+ - link:ScopePropagatingCallable-asmified.java[Asmified]
+
+== References
+

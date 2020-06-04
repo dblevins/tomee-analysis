@@ -1,0 +1,8 @@
+= javax/jms/MapMessage.class
+
+ - link:MapMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 25
+ - javax.jms.Message - 1

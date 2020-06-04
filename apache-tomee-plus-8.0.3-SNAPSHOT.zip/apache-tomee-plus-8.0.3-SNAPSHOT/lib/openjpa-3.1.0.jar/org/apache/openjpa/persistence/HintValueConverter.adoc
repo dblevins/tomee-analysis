@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/HintValueConverter.class
+
+ - link:HintValueConverter-asmified.java[Asmified]
+
+== References
+

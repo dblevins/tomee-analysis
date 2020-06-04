@@ -1,0 +1,8 @@
+= org/apache/cxf/ws/addressing/VersionTransformer$Names200408.class
+
+ - link:VersionTransformer$Names200408-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 10
+ - javax.xml.bind.JAXBException - 2

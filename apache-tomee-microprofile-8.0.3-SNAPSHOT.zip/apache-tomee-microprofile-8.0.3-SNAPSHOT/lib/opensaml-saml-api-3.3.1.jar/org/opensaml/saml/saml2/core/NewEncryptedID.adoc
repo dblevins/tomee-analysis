@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/NewEncryptedID.class
+
+ - link:NewEncryptedID-asmified.java[Asmified]
+
+== References
+

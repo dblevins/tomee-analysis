@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/compiler/TrimmedTagUnit.class
+
+ - link:TrimmedTagUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 2

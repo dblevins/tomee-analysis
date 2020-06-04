@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/processor/input/DecryptInputProcessor$1.class
+
+ - link:DecryptInputProcessor$1-asmified.java[Asmified]
+
+== References
+

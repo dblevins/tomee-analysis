@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/WhileClosure.class
+
+ - link:WhileClosure-asmified.java[Asmified]
+
+== References
+

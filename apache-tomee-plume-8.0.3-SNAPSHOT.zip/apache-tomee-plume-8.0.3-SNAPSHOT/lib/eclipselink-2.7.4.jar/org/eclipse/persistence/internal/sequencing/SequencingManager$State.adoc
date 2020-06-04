@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sequencing/SequencingManager$State.class
+
+ - link:SequencingManager$State-asmified.java[Asmified]
+
+== References
+

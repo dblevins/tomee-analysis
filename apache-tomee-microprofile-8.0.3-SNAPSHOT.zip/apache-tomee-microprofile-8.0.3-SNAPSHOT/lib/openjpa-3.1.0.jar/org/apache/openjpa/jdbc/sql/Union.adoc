@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/Union.class
+
+ - link:Union-asmified.java[Asmified]
+
+== References
+

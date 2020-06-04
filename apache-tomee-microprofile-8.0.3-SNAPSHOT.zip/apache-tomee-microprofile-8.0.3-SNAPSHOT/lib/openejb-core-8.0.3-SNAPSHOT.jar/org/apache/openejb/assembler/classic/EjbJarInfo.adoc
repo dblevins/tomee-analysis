@@ -1,0 +1,8 @@
+= org/apache/openejb/assembler/classic/EjbJarInfo.class
+
+ - link:EjbJarInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 6
+ - javax.xml.bind.annotation.XmlElements - 1

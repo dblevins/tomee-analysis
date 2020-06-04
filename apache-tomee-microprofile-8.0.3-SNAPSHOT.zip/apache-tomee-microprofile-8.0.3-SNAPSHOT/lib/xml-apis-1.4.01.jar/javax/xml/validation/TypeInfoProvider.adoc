@@ -1,0 +1,6 @@
+= javax/xml/validation/TypeInfoProvider.class
+
+ - link:TypeInfoProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/FieldReference.class
+
+ - link:FieldReference-asmified.java[Asmified]
+
+== References
+

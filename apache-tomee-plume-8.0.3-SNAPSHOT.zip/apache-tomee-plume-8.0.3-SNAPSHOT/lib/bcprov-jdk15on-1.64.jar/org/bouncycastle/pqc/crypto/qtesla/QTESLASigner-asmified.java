@@ -1,0 +1,241 @@
+package asm.org.bouncycastle.pqc.crypto.qtesla;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class QTESLASignerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", null, "java/lang/Object", new String[] { "org/bouncycastle/pqc/crypto/MessageSigner" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "secureRandom", "Ljava/security/SecureRandom;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(ZLorg/bouncycastle/crypto/CipherParameters;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/crypto/params/ParametersWithRandom");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/ParametersWithRandom");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/ParametersWithRandom", "getRandom", "()Ljava/security/SecureRandom;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "secureRandom", "Ljava/security/SecureRandom;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/ParametersWithRandom");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/ParametersWithRandom", "getParameters", "()Lorg/bouncycastle/crypto/CipherParameters;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/CryptoServicesRegistrar", "getSecureRandom", "()Ljava/security/SecureRandom;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "secureRandom", "Ljava/security/SecureRandom;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters", "getSecurityCategory", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTESLASecurityCategory", "validate", "(I)V", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters", "getSecurityCategory", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTESLASecurityCategory", "validate", "(I)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateSignature", "([B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters", "getSecurityCategory", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTESLASecurityCategory", "getSignatureSize", "(I)I", false);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters", "getSecurityCategory", "()I", false);
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitLookupSwitchInsn(label2, new int[] { 5, 6 }, new Label[] { label0, label1 });
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters", "getSecret", "()[B", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "secureRandom", "Ljava/security/SecureRandom;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTesla1p", "generateSignature", "([B[BII[BLjava/security/SecureRandom;)I", false);
+methodVisitor.visitInsn(POP);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters", "getSecret", "()[B", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "secureRandom", "Ljava/security/SecureRandom;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTesla3p", "generateSignature", "([B[BII[BLjava/security/SecureRandom;)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("unknown security category: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "privateKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPrivateKeyParameters", "getSecurityCategory", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "verifySignature", "([B[B)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters", "getSecurityCategory", "()I", false);
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitLookupSwitchInsn(label2, new int[] { 5, 6 }, new Label[] { label0, label1 });
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters", "getPublicData", "()[B", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTesla1p", "verifying", "([B[BII[B)I", false);
+methodVisitor.visitVarInsn(ISTORE, 3);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters", "getPublicData", "()[B", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/pqc/crypto/qtesla/QTesla3p", "verifying", "([B[BII[B)I", false);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("unknown security category: ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/pqc/crypto/qtesla/QTESLASigner", "publicKey", "Lorg/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/pqc/crypto/qtesla/QTESLAPublicKeyParameters", "getSecurityCategory", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label4);
+methodVisitor.visitInsn(ICONST_1);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

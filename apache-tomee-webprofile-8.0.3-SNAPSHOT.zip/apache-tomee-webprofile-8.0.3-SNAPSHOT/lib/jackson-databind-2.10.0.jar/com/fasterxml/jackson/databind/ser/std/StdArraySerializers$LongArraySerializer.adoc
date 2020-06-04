@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StdArraySerializers$LongArraySerializer.class
+
+ - link:StdArraySerializers$LongArraySerializer-asmified.java[Asmified]
+
+== References
+

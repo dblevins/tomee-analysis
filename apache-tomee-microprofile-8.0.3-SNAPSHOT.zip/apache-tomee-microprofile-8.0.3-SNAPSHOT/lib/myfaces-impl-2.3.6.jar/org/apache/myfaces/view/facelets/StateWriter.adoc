@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/StateWriter.class
+
+ - link:StateWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 18

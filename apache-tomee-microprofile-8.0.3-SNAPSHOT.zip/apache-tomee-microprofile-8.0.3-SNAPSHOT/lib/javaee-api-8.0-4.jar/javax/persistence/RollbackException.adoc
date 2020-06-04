@@ -1,0 +1,7 @@
+= javax/persistence/RollbackException.class
+
+ - link:RollbackException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 5

@@ -1,0 +1,6 @@
+= org/apache/catalina/users/MemoryRole.class
+
+ - link:MemoryRole-asmified.java[Asmified]
+
+== References
+

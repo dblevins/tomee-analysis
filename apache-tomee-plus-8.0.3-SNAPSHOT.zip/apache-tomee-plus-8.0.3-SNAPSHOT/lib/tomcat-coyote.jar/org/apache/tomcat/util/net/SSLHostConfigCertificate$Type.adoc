@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/net/SSLHostConfigCertificate$Type.class
+
+ - link:SSLHostConfigCertificate$Type-asmified.java[Asmified]
+
+== References
+

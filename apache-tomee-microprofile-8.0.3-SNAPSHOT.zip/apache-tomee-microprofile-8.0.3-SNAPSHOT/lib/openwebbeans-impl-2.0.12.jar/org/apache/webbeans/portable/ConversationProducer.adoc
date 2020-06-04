@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/ConversationProducer.class
+
+ - link:ConversationProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Context - 2
+ - javax.enterprise.context.ContextNotActiveException - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.context.ConversationScoped - 1

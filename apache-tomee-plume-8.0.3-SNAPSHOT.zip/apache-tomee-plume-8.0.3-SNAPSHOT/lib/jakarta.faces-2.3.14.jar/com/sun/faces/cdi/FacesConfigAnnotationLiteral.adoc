@@ -1,0 +1,9 @@
+= com/sun/faces/cdi/FacesConfigAnnotationLiteral.class
+
+ - link:FacesConfigAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.annotation.FacesConfig$Version - 2
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.annotation.FacesConfig - 2

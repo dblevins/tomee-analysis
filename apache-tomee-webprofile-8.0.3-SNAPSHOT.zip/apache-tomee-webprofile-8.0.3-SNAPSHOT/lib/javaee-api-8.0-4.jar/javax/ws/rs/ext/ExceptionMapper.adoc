@@ -1,0 +1,7 @@
+= javax/ws/rs/ext/ExceptionMapper.class
+
+ - link:ExceptionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 1

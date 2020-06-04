@@ -1,0 +1,7 @@
+= javax/json/bind/annotation/JsonbPropertyOrder.class
+
+ - link:JsonbPropertyOrder-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbAnnotation - 1

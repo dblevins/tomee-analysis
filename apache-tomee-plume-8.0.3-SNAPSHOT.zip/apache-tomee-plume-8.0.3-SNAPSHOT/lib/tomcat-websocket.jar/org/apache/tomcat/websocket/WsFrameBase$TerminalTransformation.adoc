@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/WsFrameBase$TerminalTransformation.class
+
+ - link:WsFrameBase$TerminalTransformation-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Extension - 1

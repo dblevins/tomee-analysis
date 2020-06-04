@@ -1,0 +1,6 @@
+= org/apache/openejb/config/QuickJarsTxtParser.class
+
+ - link:QuickJarsTxtParser-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/FunctionTypeImpl.class
+
+ - link:FunctionTypeImpl-asmified.java[Asmified]
+
+== References
+

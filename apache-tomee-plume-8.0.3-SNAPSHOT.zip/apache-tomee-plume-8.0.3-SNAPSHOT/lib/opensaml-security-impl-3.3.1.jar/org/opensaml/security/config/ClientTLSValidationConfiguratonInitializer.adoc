@@ -1,0 +1,6 @@
+= org/opensaml/security/config/ClientTLSValidationConfiguratonInitializer.class
+
+ - link:ClientTLSValidationConfiguratonInitializer-asmified.java[Asmified]
+
+== References
+

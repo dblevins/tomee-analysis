@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/ShortNode.class
+
+ - link:ShortNode-asmified.java[Asmified]
+
+== References
+

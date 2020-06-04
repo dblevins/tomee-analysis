@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/RecipeVisitor.class
+
+ - link:RecipeVisitor-asmified.java[Asmified]
+
+== References
+

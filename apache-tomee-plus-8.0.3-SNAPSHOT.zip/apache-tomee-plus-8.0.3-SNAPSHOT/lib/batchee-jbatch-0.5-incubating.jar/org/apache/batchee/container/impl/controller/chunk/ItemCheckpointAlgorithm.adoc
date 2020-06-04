@@ -1,0 +1,7 @@
+= org/apache/batchee/container/impl/controller/chunk/ItemCheckpointAlgorithm.class
+
+ - link:ItemCheckpointAlgorithm-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.chunk.CheckpointAlgorithm - 1

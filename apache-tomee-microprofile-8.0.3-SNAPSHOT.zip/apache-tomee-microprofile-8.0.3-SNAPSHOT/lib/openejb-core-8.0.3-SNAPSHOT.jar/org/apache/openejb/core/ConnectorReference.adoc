@@ -1,0 +1,9 @@
+= org/apache/openejb/core/ConnectorReference.class
+
+ - link:ConnectorReference-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionManager - 7
+ - javax.resource.spi.ManagedConnectionFactory - 6
+ - javax.resource.ResourceException - 2

@@ -1,0 +1,6 @@
+= org/apache/cxf/message/StringMapImpl.class
+
+ - link:StringMapImpl-asmified.java[Asmified]
+
+== References
+

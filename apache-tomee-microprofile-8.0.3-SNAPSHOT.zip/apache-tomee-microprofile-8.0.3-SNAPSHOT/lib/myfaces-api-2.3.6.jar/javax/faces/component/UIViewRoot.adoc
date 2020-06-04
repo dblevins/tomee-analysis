@@ -1,0 +1,51 @@
+= javax/faces/component/UIViewRoot.class
+
+ - link:UIViewRoot-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 183
+ - javax.faces.component.UIViewRoot - 133
+ - javax.faces.component.UIComponent - 98
+ - javax.faces.event.PhaseId - 58
+ - javax.faces.component.StateHelper - 36
+ - javax.faces.component.UIViewRoot$PropertyKeys - 20
+ - javax.faces.event.FacesEvent - 20
+ - javax.faces.component.UIViewRoot$Events - 19
+ - javax.el.MethodExpression - 18
+ - javax.faces.component.UIComponentBase - 17
+ - javax.faces.component.UIViewRoot$PhaseProcessor - 15
+ - javax.faces.application.Application - 14
+ - javax.faces.context.PartialViewContext - 13
+ - javax.faces.event.PhaseListener - 11
+ - javax.faces.event.PhaseEvent - 7
+ - javax.faces.context.ExternalContext - 7
+ - javax.faces.lifecycle.Lifecycle - 7
+ - javax.faces.event.ExceptionQueuedEventContext - 6
+ - javax.faces.application.ViewHandler - 6
+ - javax.faces.event.AbortProcessingException - 5
+ - javax.faces.component.UIViewRoot$1 - 5
+ - javax.faces.component.visit.VisitCallback - 4
+ - javax.faces.view.ViewMetadata - 4
+ - javax.faces.event.SystemEvent - 4
+ - javax.faces.event.SystemEventListener - 4
+ - javax.faces.view.ViewDeclarationLanguage - 4
+ - javax.el.ELContext - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.component._ClassUtils - 3
+ - javax.el.ValueExpression - 3
+ - javax.faces.lifecycle.LifecycleFactory - 3
+ - javax.faces.component.UIViewRoot$ResetValuesCallback - 2
+ - javax.faces.component.UIViewRoot$UpdateModelPhaseProcessor - 2
+ - javax.faces.component._ViewAttributeMap - 2
+ - javax.faces.component.UIViewRoot$ApplyRequestValuesPhaseProcessor - 2
+ - javax.faces.component.UIViewRoot$ProcessValidatorPhaseProcessor - 2
+ - javax.faces.event.ExceptionQueuedEvent - 2
+ - javax.faces.component.UIViewParameter - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.component._LocaleUtils - 2
+ - javax.faces.component.UIViewRoot$ViewScope - 2
+ - javax.faces.component.UniqueIdVendor - 1
+ - javax.faces.event.PostConstructViewMapEvent - 1
+ - javax.faces.component.StateHolder - 1
+ - javax.faces.FactoryFinder - 1

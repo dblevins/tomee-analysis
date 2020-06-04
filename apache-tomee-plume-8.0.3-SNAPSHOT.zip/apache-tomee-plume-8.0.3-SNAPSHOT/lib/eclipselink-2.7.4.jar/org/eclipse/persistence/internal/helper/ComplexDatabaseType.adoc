@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/ComplexDatabaseType.class
+
+ - link:ComplexDatabaseType-asmified.java[Asmified]
+
+== References
+

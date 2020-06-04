@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/JsonPointerUtil.class
+
+ - link:JsonPointerUtil-asmified.java[Asmified]
+
+== References
+

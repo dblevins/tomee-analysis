@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/ProtocolHeaders.class
+
+ - link:ProtocolHeaders-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 1

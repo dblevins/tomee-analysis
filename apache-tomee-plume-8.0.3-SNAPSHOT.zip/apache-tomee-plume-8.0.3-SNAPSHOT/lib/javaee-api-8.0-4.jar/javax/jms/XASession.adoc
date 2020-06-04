@@ -1,0 +1,8 @@
+= javax/jms/XASession.class
+
+ - link:XASession-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 4
+ - javax.jms.Session - 2

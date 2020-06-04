@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/HttpHeaderHelper.class
+
+ - link:HttpHeaderHelper-asmified.java[Asmified]
+
+== References
+

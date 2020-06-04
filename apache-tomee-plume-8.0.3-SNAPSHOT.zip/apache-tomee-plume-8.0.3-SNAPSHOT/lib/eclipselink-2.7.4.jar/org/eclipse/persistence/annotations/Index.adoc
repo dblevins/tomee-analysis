@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Index.class
+
+ - link:Index-asmified.java[Asmified]
+
+== References
+

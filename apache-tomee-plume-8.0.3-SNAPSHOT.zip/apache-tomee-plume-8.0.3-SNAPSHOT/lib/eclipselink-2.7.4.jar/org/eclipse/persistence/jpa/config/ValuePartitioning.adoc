@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/ValuePartitioning.class
+
+ - link:ValuePartitioning-asmified.java[Asmified]
+
+== References
+

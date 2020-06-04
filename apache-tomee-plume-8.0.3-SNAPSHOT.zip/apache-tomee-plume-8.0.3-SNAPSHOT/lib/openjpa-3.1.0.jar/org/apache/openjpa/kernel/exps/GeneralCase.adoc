@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/GeneralCase.class
+
+ - link:GeneralCase-asmified.java[Asmified]
+
+== References
+

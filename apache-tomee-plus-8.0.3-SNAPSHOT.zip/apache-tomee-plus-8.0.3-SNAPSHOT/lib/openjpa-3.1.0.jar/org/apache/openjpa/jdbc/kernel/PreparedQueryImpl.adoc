@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/PreparedQueryImpl.class
+
+ - link:PreparedQueryImpl-asmified.java[Asmified]
+
+== References
+

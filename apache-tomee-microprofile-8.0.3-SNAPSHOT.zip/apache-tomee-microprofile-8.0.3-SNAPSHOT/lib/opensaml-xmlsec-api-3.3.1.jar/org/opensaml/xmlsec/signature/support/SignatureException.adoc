@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/support/SignatureException.class
+
+ - link:SignatureException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/OXMSystemProperties.class
+
+ - link:OXMSystemProperties-asmified.java[Asmified]
+
+== References
+

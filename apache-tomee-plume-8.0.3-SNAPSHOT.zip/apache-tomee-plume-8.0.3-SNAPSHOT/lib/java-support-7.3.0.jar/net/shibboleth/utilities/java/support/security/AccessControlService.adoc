@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/security/AccessControlService.class
+
+ - link:AccessControlService-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

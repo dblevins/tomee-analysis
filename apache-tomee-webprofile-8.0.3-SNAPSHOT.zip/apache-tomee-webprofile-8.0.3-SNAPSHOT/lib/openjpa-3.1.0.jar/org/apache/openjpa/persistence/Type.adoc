@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/Type.class
+
+ - link:Type-asmified.java[Asmified]
+
+== References
+

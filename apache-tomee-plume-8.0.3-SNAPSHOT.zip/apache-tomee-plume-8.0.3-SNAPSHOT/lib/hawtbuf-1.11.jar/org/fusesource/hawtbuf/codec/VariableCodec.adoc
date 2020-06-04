@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/codec/VariableCodec.class
+
+ - link:VariableCodec-asmified.java[Asmified]
+
+== References
+

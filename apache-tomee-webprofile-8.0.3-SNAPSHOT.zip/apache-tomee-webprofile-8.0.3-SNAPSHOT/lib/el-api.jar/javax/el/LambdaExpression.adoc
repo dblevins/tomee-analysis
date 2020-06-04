@@ -1,0 +1,11 @@
+= javax/el/LambdaExpression.class
+
+ - link:LambdaExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 13
+ - javax.el.ValueExpression - 5
+ - javax.el.LambdaExpression - 4
+ - javax.el.ELException - 3
+ - javax.el.Util - 1

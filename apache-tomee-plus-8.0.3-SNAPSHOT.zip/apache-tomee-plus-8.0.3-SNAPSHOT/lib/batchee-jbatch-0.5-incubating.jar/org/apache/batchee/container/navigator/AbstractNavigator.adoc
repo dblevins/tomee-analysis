@@ -1,0 +1,6 @@
+= org/apache/batchee/container/navigator/AbstractNavigator.class
+
+ - link:AbstractNavigator-asmified.java[Asmified]
+
+== References
+

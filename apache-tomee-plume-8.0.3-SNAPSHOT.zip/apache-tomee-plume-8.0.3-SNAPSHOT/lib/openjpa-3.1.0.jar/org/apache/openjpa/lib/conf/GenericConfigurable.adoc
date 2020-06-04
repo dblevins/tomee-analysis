@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/conf/GenericConfigurable.class
+
+ - link:GenericConfigurable-asmified.java[Asmified]
+
+== References
+

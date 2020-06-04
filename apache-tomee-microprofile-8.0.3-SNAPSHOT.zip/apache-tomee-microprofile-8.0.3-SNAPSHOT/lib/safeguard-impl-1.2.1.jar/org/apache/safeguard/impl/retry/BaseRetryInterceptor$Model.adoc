@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/retry/BaseRetryInterceptor$Model.class
+
+ - link:BaseRetryInterceptor$Model-asmified.java[Asmified]
+
+== References
+

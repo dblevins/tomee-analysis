@@ -1,0 +1,13 @@
+= org/apache/myfaces/application/viewstate/ServerSideStateCacheImpl.class
+
+ - link:ServerSideStateCacheImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 80
+ - javax.faces.context.ExternalContext - 42
+ - javax.faces.context.PartialViewContext - 8
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.context.Flash - 6
+ - javax.faces.lifecycle.ClientWindow - 6
+ - javax.faces.FacesWrapper - 3

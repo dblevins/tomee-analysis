@@ -1,0 +1,12 @@
+= org/apache/webbeans/component/creation/FieldProducerFactory.class
+
+ - link:FieldProducerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedField - 13
+ - javax.enterprise.inject.spi.Bean - 8
+ - javax.enterprise.inject.spi.Producer - 3
+ - javax.enterprise.inject.spi.AnnotatedMember - 2
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.inject.Inject - 1

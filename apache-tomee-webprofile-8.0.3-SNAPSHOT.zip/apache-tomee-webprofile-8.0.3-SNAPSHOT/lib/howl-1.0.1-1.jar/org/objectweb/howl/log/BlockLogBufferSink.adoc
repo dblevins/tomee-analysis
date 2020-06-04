@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/BlockLogBufferSink.class
+
+ - link:BlockLogBufferSink-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/myfaces/el/convert/ELResolverToPropertyResolver.class
+
+ - link:ELResolverToPropertyResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.PropertyNotFoundException - 24
+ - javax.faces.el.EvaluationException - 24
+ - javax.el.ELResolver - 19
+ - javax.el.ELContext - 18
+ - javax.el.ELException - 16
+ - javax.el.PropertyNotFoundException - 16
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.el.PropertyResolver - 2

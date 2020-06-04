@@ -1,0 +1,6 @@
+= org/apache/geronimo/config/configsource/BaseConfigSource.class
+
+ - link:BaseConfigSource-asmified.java[Asmified]
+
+== References
+

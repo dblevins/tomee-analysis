@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/KeySizeImpl.class
+
+ - link:KeySizeImpl-asmified.java[Asmified]
+
+== References
+

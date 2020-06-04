@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/generators/Ed448KeyPairGenerator.class
+
+ - link:Ed448KeyPairGenerator-asmified.java[Asmified]
+
+== References
+

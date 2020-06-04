@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/DestinationRegistry.class
+
+ - link:DestinationRegistry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/AbstractLinkedMap$KeySetIterator.class
+
+ - link:AbstractLinkedMap$KeySetIterator-asmified.java[Asmified]
+
+== References
+

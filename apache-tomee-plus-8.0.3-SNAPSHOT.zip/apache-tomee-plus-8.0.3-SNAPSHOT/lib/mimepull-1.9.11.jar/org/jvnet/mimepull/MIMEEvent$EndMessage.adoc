@@ -1,0 +1,6 @@
+= org/jvnet/mimepull/MIMEEvent$EndMessage.class
+
+ - link:MIMEEvent$EndMessage-asmified.java[Asmified]
+
+== References
+

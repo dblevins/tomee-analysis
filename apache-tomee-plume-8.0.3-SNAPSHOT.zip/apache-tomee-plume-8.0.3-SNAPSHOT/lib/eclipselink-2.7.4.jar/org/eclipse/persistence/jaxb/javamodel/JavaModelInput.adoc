@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/JavaModelInput.class
+
+ - link:JavaModelInput-asmified.java[Asmified]
+
+== References
+

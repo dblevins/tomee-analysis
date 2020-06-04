@@ -1,0 +1,7 @@
+= javax/faces/view/facelets/TagDecorator.class
+
+ - link:TagDecorator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 2

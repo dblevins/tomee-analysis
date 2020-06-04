@@ -1,0 +1,7 @@
+= javax/persistence/EntityNotFoundException.class
+
+ - link:EntityNotFoundException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 3

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/DynamicSchemaManager.class
+
+ - link:DynamicSchemaManager-asmified.java[Asmified]
+
+== References
+

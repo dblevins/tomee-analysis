@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Counter.class
+
+ - link:Counter-asmified.java[Asmified]
+
+== References
+

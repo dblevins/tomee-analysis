@@ -1,0 +1,11 @@
+= org/apache/myfaces/cdi/JsfApplicationArtifactHolderExtension.class
+
+ - link:JsfApplicationArtifactHolderExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.event.Observes - 1

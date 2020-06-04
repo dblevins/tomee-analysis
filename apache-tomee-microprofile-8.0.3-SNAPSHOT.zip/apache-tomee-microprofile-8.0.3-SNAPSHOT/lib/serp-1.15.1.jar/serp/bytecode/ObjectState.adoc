@@ -1,0 +1,6 @@
+= serp/bytecode/ObjectState.class
+
+ - link:ObjectState-asmified.java[Asmified]
+
+== References
+

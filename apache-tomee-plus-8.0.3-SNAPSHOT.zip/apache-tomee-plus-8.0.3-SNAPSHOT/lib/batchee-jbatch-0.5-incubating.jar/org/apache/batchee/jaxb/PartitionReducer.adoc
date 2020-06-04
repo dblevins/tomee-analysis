@@ -1,0 +1,10 @@
+= org/apache/batchee/jaxb/PartitionReducer.class
+
+ - link:PartitionReducer-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAttribute - 1
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

@@ -1,0 +1,7 @@
+= javax/validation/MessageInterpolator.class
+
+ - link:MessageInterpolator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.MessageInterpolator$Context - 2

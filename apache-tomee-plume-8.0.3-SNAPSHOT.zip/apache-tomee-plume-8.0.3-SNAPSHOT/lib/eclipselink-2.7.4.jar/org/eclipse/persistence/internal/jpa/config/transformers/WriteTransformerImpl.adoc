@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/transformers/WriteTransformerImpl.class
+
+ - link:WriteTransformerImpl-asmified.java[Asmified]
+
+== References
+

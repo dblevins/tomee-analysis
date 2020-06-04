@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/partitioning/ReplicationPartitioningImpl.class
+
+ - link:ReplicationPartitioningImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomee/common/NamingUtil.class
+
+ - link:NamingUtil-asmified.java[Asmified]
+
+== References
+

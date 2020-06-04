@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/was/v6/common/EnvEntryEnum.class
+
+ - link:EnvEntryEnum-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 9
+ - javax.xml.bind.annotation.XmlEnum - 1

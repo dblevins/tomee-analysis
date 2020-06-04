@@ -1,0 +1,8 @@
+= javax/mail/search/StringTerm.class
+
+ - link:StringTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.StringTerm - 3
+ - javax.mail.search.SearchTerm - 2

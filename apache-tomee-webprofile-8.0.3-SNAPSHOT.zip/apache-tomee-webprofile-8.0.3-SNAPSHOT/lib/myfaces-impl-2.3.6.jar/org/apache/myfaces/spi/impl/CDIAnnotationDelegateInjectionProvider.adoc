@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/impl/CDIAnnotationDelegateInjectionProvider.class
+
+ - link:CDIAnnotationDelegateInjectionProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 5

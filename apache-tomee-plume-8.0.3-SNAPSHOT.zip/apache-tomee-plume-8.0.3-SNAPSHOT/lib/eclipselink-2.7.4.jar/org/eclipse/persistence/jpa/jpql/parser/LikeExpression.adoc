@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/LikeExpression.class
+
+ - link:LikeExpression-asmified.java[Asmified]
+
+== References
+

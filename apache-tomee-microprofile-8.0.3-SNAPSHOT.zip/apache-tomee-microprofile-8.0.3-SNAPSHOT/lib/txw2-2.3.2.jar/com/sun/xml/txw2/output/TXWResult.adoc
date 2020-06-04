@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/TXWResult.class
+
+ - link:TXWResult-asmified.java[Asmified]
+
+== References
+

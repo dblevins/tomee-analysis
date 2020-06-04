@@ -1,0 +1,6 @@
+= org/apache/cxf/io/CacheSizeExceededException.class
+
+ - link:CacheSizeExceededException-asmified.java[Asmified]
+
+== References
+

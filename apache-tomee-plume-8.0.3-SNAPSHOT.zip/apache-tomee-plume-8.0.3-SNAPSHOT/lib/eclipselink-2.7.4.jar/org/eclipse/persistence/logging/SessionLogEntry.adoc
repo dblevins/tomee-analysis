@@ -1,0 +1,6 @@
+= org/eclipse/persistence/logging/SessionLogEntry.class
+
+ - link:SessionLogEntry-asmified.java[Asmified]
+
+== References
+

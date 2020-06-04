@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/DynamicMetadataResolver.class
+
+ - link:DynamicMetadataResolver-asmified.java[Asmified]
+
+== References
+

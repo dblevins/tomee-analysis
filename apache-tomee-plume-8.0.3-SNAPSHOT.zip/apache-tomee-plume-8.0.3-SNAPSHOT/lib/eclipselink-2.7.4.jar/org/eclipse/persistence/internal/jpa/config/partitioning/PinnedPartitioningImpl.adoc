@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/partitioning/PinnedPartitioningImpl.class
+
+ - link:PinnedPartitioningImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/config/MyfacesConfig.class
+
+ - link:MyfacesConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 54
+ - javax.servlet.ServletContext - 2

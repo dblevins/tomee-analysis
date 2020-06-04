@@ -1,0 +1,12 @@
+= org/apache/cxf/common/jaxb/SchemaCollectionContextProxy.class
+
+ - link:SchemaCollectionContextProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 5
+ - javax.xml.bind.annotation.XmlRootElement - 5
+ - javax.xml.bind.annotation.XmlSchema - 3
+ - javax.xml.bind.JAXBContext - 3
+ - javax.activation.DataSource - 1
+ - javax.activation.DataHandler - 1

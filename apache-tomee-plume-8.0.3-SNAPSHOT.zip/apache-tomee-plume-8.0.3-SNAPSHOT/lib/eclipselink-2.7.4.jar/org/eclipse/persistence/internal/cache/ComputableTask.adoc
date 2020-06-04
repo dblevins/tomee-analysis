@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/cache/ComputableTask.class
+
+ - link:ComputableTask-asmified.java[Asmified]
+
+== References
+

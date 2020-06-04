@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/SubjectQuery.class
+
+ - link:SubjectQuery-asmified.java[Asmified]
+
+== References
+

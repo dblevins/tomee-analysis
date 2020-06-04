@@ -1,0 +1,9 @@
+= org/eclipse/persistence/internal/jaxb/many/ManyValue.class
+
+ - link:ManyValue-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlTransient - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

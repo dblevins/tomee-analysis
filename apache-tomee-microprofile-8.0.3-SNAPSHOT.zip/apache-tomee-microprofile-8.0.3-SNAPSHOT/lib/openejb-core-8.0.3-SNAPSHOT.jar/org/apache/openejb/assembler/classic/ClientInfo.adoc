@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ClientInfo.class
+
+ - link:ClientInfo-asmified.java[Asmified]
+
+== References
+

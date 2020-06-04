@@ -1,0 +1,6 @@
+= org/opensaml/core/xml/util/AbstractWrappedSingletonFactory.class
+
+ - link:AbstractWrappedSingletonFactory-asmified.java[Asmified]
+
+== References
+

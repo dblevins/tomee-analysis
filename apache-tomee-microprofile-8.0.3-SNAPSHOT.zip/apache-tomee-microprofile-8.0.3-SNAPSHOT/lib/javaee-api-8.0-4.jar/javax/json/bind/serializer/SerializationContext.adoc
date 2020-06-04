@@ -1,0 +1,7 @@
+= javax/json/bind/serializer/SerializationContext.class
+
+ - link:SerializationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 2

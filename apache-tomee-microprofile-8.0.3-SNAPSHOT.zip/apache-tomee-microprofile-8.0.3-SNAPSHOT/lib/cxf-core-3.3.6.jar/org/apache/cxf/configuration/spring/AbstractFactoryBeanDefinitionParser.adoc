@@ -1,0 +1,6 @@
+= org/apache/cxf/configuration/spring/AbstractFactoryBeanDefinitionParser.class
+
+ - link:AbstractFactoryBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

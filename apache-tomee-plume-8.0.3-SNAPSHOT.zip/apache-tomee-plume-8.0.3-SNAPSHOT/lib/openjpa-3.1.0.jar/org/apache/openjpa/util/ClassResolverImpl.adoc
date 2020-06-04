@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ClassResolverImpl.class
+
+ - link:ClassResolverImpl-asmified.java[Asmified]
+
+== References
+

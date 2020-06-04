@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/log/LogOutputStream.class
+
+ - link:LogOutputStream-asmified.java[Asmified]
+
+== References
+

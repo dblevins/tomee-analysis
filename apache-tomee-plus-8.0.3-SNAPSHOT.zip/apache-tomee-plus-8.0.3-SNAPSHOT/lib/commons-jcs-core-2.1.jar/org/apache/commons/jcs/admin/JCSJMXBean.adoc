@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/admin/JCSJMXBean.class
+
+ - link:JCSJMXBean-asmified.java[Asmified]
+
+== References
+

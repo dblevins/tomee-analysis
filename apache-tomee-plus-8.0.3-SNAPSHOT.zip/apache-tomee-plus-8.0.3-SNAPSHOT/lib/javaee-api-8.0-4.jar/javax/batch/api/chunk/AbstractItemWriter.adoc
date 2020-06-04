@@ -1,0 +1,7 @@
+= javax/batch/api/chunk/AbstractItemWriter.class
+
+ - link:AbstractItemWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.chunk.ItemWriter - 1

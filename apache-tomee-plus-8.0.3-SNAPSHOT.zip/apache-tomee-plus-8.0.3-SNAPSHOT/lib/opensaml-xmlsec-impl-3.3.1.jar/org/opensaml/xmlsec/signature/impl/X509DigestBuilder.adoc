@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509DigestBuilder.class
+
+ - link:X509DigestBuilder-asmified.java[Asmified]
+
+== References
+

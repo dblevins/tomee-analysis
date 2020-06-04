@@ -1,0 +1,8 @@
+= org/apache/webbeans/intercept/AbstractInvocationContext.class
+
+ - link:AbstractInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Provider - 10
+ - javax.interceptor.InvocationContext - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/FlushClearCache.class
+
+ - link:FlushClearCache-asmified.java[Asmified]
+
+== References
+

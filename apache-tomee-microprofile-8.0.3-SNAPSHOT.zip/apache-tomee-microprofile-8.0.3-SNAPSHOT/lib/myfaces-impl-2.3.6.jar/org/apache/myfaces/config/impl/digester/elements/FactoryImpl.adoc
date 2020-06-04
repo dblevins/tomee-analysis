@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/FactoryImpl.class
+
+ - link:FactoryImpl-asmified.java[Asmified]
+
+== References
+

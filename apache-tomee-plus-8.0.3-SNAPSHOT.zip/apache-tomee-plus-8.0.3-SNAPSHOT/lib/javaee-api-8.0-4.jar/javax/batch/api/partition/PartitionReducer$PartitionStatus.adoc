@@ -1,0 +1,7 @@
+= javax/batch/api/partition/PartitionReducer$PartitionStatus.class
+
+ - link:PartitionReducer$PartitionStatus-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.partition.PartitionReducer$PartitionStatus - 21

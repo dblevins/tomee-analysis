@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+

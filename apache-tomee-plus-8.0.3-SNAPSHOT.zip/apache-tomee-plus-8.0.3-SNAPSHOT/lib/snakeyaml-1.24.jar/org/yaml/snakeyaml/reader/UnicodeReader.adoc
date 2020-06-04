@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/reader/UnicodeReader.class
+
+ - link:UnicodeReader-asmified.java[Asmified]
+
+== References
+

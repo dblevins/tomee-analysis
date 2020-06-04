@@ -1,0 +1,6 @@
+= org/hsqldb/lib/StringComparator.class
+
+ - link:StringComparator-asmified.java[Asmified]
+
+== References
+

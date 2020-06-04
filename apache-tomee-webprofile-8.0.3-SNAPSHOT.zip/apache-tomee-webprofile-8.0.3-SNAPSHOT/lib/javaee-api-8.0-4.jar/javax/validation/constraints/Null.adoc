@@ -1,0 +1,9 @@
+= javax/validation/constraints/Null.class
+
+ - link:Null-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Null$List - 1
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1

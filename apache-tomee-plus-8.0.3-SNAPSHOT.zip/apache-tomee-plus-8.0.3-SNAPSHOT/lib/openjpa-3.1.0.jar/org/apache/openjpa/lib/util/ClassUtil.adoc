@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/ClassUtil.class
+
+ - link:ClassUtil-asmified.java[Asmified]
+
+== References
+

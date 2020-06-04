@@ -1,0 +1,7 @@
+= org/apache/activemq/state/ConnectionStateTracker.class
+
+ - link:ConnectionStateTracker-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TransactionRolledBackException - 2

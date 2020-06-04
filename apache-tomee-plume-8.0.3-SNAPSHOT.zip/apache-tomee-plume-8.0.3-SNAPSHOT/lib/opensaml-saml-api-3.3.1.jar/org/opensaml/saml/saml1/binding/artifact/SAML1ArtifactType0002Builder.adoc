@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml1/binding/artifact/SAML1ArtifactType0002Builder.class
+
+ - link:SAML1ArtifactType0002Builder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 6

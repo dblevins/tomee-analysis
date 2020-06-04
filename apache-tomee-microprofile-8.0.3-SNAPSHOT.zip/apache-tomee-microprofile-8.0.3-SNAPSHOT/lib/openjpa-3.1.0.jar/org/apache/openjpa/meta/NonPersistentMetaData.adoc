@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/NonPersistentMetaData.class
+
+ - link:NonPersistentMetaData-asmified.java[Asmified]
+
+== References
+

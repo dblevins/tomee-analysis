@@ -1,0 +1,9 @@
+= org/apache/openejb/rest/ThreadLocalConfiguration.class
+
+ - link:ThreadLocalConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configuration - 25
+ - javax.ws.rs.core.Feature - 3
+ - javax.ws.rs.RuntimeType - 2

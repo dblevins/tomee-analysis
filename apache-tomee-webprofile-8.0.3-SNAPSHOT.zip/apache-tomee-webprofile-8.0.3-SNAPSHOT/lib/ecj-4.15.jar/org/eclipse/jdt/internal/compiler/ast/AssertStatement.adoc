@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/AssertStatement.class
+
+ - link:AssertStatement-asmified.java[Asmified]
+
+== References
+

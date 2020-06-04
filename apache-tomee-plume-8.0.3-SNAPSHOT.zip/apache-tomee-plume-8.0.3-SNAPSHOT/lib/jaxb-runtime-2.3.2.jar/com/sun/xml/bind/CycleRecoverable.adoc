@@ -1,0 +1,6 @@
+= com/sun/xml/bind/CycleRecoverable.class
+
+ - link:CycleRecoverable-asmified.java[Asmified]
+
+== References
+

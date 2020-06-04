@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/LessEqualExpression.class
+
+ - link:LessEqualExpression-asmified.java[Asmified]
+
+== References
+

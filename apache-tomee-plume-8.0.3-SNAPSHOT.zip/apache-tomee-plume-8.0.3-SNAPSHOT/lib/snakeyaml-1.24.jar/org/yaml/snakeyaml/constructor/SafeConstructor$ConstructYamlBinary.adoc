@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlBinary.class
+
+ - link:SafeConstructor$ConstructYamlBinary-asmified.java[Asmified]
+
+== References
+

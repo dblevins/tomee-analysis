@@ -1,0 +1,15 @@
+= org/apache/cxf/jaxb/io/DataWriterImpl.class
+
+ - link:DataWriterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 34
+ - javax.xml.bind.ValidationEventHandler - 15
+ - javax.xml.bind.MarshalException - 9
+ - javax.xml.bind.attachment.AttachmentMarshaller - 4
+ - javax.xml.bind.JAXBContext - 4
+ - javax.xml.bind.JAXBException - 3
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2
+ - javax.xml.bind.PropertyException - 2
+ - javax.xml.bind.Marshaller$Listener - 2

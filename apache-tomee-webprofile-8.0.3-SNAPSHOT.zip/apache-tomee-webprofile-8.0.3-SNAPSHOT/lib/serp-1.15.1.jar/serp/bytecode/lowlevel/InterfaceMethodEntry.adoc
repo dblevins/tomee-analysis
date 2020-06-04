@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/InterfaceMethodEntry.class
+
+ - link:InterfaceMethodEntry-asmified.java[Asmified]
+
+== References
+

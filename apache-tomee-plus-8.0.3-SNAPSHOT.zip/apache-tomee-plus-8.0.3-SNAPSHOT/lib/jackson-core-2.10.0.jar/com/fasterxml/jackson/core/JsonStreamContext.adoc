@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/JsonStreamContext.class
+
+ - link:JsonStreamContext-asmified.java[Asmified]
+
+== References
+

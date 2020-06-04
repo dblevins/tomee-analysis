@@ -1,0 +1,11 @@
+= org/apache/webbeans/configurator/BeanConfiguratorImpl$ConstructedBean$1.class
+
+ - link:BeanConfiguratorImpl$ConstructedBean$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Instance - 4
+ - javax.enterprise.inject.spi.CDI - 2
+ - javax.enterprise.context.spi.CreationalContext - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Producer - 1

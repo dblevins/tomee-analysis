@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/nodes/SequenceNode.class
+
+ - link:SequenceNode-asmified.java[Asmified]
+
+== References
+

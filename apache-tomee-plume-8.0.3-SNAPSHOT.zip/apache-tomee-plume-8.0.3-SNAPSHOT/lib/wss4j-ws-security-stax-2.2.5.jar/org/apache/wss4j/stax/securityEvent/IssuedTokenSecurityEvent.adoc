@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/IssuedTokenSecurityEvent.class
+
+ - link:IssuedTokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

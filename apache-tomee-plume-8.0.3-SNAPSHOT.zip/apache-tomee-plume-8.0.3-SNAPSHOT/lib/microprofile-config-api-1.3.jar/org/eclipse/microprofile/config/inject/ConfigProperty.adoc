@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/config/inject/ConfigProperty.class
+
+ - link:ConfigProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 2
+ - javax.inject.Qualifier - 1

@@ -1,0 +1,13 @@
+= org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl$ConfiguredObserverMethod.class
+
+ - link:ObserverMethodConfiguratorImpl$ConfiguredObserverMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.EventContext - 4
+ - javax.enterprise.inject.spi.ObserverMethod - 4
+ - javax.enterprise.inject.spi.configurator.ObserverMethodConfigurator$EventConsumer - 3
+ - javax.enterprise.event.Reception - 2
+ - javax.enterprise.event.TransactionPhase - 2
+ - javax.enterprise.inject.spi.EventMetadata - 1
+ - javax.enterprise.inject.spi.Extension - 1

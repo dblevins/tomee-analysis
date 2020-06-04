@@ -1,0 +1,6 @@
+= javax/enterprise/inject/TransientReference.class
+
+ - link:TransientReference-asmified.java[Asmified]
+
+== References
+

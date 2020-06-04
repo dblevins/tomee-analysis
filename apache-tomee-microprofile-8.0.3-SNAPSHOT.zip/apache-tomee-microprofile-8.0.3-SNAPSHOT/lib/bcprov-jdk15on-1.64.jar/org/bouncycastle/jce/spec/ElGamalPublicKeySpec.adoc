@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/spec/ElGamalPublicKeySpec.class
+
+ - link:ElGamalPublicKeySpec-asmified.java[Asmified]
+
+== References
+

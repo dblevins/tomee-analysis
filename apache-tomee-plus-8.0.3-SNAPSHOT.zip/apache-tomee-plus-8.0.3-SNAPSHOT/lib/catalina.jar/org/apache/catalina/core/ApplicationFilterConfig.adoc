@@ -1,0 +1,10 @@
+= org/apache/catalina/core/ApplicationFilterConfig.class
+
+ - link:ApplicationFilterConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Filter - 26
+ - javax.servlet.ServletContext - 6
+ - javax.servlet.ServletException - 3
+ - javax.servlet.FilterConfig - 3

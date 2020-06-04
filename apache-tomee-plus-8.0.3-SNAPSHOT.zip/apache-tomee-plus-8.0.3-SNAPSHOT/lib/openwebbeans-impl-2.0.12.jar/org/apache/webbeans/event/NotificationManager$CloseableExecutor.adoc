@@ -1,0 +1,6 @@
+= org/apache/webbeans/event/NotificationManager$CloseableExecutor.class
+
+ - link:NotificationManager$CloseableExecutor-asmified.java[Asmified]
+
+== References
+

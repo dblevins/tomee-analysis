@@ -1,0 +1,6 @@
+= org/apache/openejb/client/MulticastSearch$Filter.class
+
+ - link:MulticastSearch$Filter-asmified.java[Asmified]
+
+== References
+

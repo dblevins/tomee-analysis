@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/TokenMgrError.class
+
+ - link:TokenMgrError-asmified.java[Asmified]
+
+== References
+

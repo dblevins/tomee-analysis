@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/copypolicy/InstantiationCopyPolicyMetadata.class
+
+ - link:InstantiationCopyPolicyMetadata-asmified.java[Asmified]
+
+== References
+

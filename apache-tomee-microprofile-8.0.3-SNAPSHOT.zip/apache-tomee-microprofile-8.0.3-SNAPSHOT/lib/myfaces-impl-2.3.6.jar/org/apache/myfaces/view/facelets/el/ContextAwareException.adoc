@@ -1,0 +1,7 @@
+= org/apache/myfaces/view/facelets/el/ContextAwareException.class
+
+ - link:ContextAwareException-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.Location - 4

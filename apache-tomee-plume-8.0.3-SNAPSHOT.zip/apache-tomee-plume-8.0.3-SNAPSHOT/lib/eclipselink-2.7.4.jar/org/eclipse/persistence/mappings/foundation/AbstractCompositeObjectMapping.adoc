@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/foundation/AbstractCompositeObjectMapping.class
+
+ - link:AbstractCompositeObjectMapping-asmified.java[Asmified]
+
+== References
+

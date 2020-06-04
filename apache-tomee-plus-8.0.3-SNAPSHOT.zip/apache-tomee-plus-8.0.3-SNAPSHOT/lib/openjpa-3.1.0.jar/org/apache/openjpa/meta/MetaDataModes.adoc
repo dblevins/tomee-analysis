@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/MetaDataModes.class
+
+ - link:MetaDataModes-asmified.java[Asmified]
+
+== References
+

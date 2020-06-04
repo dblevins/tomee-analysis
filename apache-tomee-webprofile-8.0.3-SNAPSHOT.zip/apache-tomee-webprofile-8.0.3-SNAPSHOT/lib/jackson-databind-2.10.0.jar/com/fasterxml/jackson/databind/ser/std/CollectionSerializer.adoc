@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/CollectionSerializer.class
+
+ - link:CollectionSerializer-asmified.java[Asmified]
+
+== References
+

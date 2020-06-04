@@ -1,0 +1,8 @@
+= org/apache/webbeans/portable/AbstractAnnotatedMember.class
+
+ - link:AbstractAnnotatedMember-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 8
+ - javax.enterprise.inject.spi.AnnotatedMember - 1

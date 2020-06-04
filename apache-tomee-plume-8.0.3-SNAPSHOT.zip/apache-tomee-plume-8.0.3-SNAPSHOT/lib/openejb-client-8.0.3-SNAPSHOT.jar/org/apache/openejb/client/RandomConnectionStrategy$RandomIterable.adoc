@@ -1,0 +1,6 @@
+= org/apache/openejb/client/RandomConnectionStrategy$RandomIterable.class
+
+ - link:RandomConnectionStrategy$RandomIterable-asmified.java[Asmified]
+
+== References
+

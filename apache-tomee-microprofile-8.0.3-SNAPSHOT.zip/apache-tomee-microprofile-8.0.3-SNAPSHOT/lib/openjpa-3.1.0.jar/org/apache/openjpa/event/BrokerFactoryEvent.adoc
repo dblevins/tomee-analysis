@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/BrokerFactoryEvent.class
+
+ - link:BrokerFactoryEvent-asmified.java[Asmified]
+
+== References
+

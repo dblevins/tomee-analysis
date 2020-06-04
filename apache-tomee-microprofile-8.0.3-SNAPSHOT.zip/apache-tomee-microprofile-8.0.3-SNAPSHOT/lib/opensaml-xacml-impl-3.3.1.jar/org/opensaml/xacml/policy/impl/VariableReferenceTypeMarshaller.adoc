@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/VariableReferenceTypeMarshaller.class
+
+ - link:VariableReferenceTypeMarshaller-asmified.java[Asmified]
+
+== References
+

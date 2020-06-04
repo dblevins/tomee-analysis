@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/Reference.class
+
+ - link:Reference-asmified.java[Asmified]
+
+== References
+

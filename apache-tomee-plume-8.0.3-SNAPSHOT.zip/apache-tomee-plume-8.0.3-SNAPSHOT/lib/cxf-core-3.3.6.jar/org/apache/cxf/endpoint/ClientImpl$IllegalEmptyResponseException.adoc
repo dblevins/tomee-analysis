@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ClientImpl$IllegalEmptyResponseException.class
+
+ - link:ClientImpl$IllegalEmptyResponseException-asmified.java[Asmified]
+
+== References
+

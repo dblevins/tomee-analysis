@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/xml/jaxp/JAXPParser.class
+
+ - link:JAXPParser-asmified.java[Asmified]
+
+== References
+

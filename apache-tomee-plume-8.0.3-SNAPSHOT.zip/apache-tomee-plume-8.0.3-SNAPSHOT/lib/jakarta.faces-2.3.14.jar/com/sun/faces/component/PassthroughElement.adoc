@@ -1,0 +1,10 @@
+= com/sun/faces/component/PassthroughElement.class
+
+ - link:PassthroughElement-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 48
+ - javax.faces.component.UIPanel - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

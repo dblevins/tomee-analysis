@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/ver1_2/SOAPMessageFactory1_2Impl.class
+
+ - link:SOAPMessageFactory1_2Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MimeHeaders - 6
+ - javax.xml.soap.SOAPMessage - 3
+ - javax.xml.soap.SOAPException - 2

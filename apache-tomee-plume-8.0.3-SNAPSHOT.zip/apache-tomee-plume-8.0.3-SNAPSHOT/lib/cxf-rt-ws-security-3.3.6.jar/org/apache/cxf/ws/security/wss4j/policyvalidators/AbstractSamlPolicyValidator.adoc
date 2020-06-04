@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/AbstractSamlPolicyValidator.class
+
+ - link:AbstractSamlPolicyValidator-asmified.java[Asmified]
+
+== References
+

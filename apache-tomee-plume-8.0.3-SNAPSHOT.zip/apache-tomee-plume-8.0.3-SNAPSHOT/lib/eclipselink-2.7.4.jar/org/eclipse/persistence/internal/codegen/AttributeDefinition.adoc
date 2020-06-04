@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/codegen/AttributeDefinition.class
+
+ - link:AttributeDefinition-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/Mappings$CompositeWriter.class
+
+ - link:Mappings$CompositeWriter-asmified.java[Asmified]
+
+== References
+

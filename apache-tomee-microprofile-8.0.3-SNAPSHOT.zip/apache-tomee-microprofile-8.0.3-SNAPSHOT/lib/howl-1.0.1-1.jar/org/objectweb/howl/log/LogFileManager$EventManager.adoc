@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/LogFileManager$EventManager.class
+
+ - link:LogFileManager$EventManager-asmified.java[Asmified]
+
+== References
+

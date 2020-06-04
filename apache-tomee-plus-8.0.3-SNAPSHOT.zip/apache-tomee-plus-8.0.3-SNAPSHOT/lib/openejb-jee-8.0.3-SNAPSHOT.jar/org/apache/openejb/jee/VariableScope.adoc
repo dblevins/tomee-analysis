@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/VariableScope.class
+
+ - link:VariableScope-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnum - 1

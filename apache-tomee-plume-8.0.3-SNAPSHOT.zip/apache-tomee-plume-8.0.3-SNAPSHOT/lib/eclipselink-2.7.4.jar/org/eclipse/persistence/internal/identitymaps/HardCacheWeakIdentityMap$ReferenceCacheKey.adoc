@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/HardCacheWeakIdentityMap$ReferenceCacheKey.class
+
+ - link:HardCacheWeakIdentityMap$ReferenceCacheKey-asmified.java[Asmified]
+
+== References
+

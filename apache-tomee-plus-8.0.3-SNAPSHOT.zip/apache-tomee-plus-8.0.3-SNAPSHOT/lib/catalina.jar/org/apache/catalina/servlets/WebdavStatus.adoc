@@ -1,0 +1,6 @@
+= org/apache/catalina/servlets/WebdavStatus.class
+
+ - link:WebdavStatus-asmified.java[Asmified]
+
+== References
+

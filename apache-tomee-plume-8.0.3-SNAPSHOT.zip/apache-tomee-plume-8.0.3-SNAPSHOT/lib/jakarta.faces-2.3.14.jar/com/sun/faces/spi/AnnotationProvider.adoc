@@ -1,0 +1,7 @@
+= com/sun/faces/spi/AnnotationProvider.class
+
+ - link:AnnotationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 6

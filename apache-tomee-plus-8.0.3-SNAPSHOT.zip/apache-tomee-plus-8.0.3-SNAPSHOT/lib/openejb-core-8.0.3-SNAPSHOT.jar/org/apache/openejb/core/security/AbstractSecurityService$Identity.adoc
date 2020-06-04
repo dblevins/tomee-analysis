@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/AbstractSecurityService$Identity.class
+
+ - link:AbstractSecurityService$Identity-asmified.java[Asmified]
+
+== References
+

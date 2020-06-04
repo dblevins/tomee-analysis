@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/EndsWithExpression.class
+
+ - link:EndsWithExpression-asmified.java[Asmified]
+
+== References
+

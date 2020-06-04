@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/jpa/Mapping.class
+
+ - link:Mapping-asmified.java[Asmified]
+
+== References
+

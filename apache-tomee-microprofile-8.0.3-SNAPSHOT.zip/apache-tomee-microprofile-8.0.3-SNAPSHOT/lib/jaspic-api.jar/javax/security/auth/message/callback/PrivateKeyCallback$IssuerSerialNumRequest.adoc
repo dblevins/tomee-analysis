@@ -1,0 +1,7 @@
+= javax/security/auth/message/callback/PrivateKeyCallback$IssuerSerialNumRequest.class
+
+ - link:PrivateKeyCallback$IssuerSerialNumRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.callback.PrivateKeyCallback$Request - 1

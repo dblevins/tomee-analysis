@@ -1,0 +1,6 @@
+= org/codehaus/stax2/osgi/Stax2OutputFactoryProvider.class
+
+ - link:Stax2OutputFactoryProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/jstl/core/ChooseOtherwiseHandler.class
+
+ - link:ChooseOtherwiseHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.component.UIComponent - 2

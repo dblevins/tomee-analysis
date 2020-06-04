@@ -1,0 +1,7 @@
+= javax/persistence/SqlResultSetMappings.class
+
+ - link:SqlResultSetMappings-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SqlResultSetMapping - 1

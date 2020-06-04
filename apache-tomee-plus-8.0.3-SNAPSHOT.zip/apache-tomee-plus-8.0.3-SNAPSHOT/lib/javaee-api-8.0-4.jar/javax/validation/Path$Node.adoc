@@ -1,0 +1,8 @@
+= javax/validation/Path$Node.class
+
+ - link:Path$Node-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 1
+ - javax.validation.ElementKind - 1

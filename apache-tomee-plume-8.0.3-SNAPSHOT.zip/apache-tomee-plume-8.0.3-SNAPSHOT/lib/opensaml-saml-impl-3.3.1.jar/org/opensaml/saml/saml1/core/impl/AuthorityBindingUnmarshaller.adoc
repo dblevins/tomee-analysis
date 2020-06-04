@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AuthorityBindingUnmarshaller.class
+
+ - link:AuthorityBindingUnmarshaller-asmified.java[Asmified]
+
+== References
+

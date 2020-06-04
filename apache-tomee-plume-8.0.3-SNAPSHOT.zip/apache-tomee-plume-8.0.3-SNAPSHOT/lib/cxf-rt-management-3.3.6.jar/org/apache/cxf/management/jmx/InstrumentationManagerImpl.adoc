@@ -1,0 +1,7 @@
+= org/apache/cxf/management/jmx/InstrumentationManagerImpl.class
+
+ - link:InstrumentationManagerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PostConstruct - 1

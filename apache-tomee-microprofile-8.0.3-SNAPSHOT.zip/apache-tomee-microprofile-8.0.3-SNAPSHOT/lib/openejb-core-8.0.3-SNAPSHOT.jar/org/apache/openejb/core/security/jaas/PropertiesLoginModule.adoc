@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/jaas/PropertiesLoginModule.class
+
+ - link:PropertiesLoginModule-asmified.java[Asmified]
+
+== References
+

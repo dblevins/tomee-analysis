@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/SchemaGenerationSource.class
+
+ - link:SchemaGenerationSource-asmified.java[Asmified]
+
+== References
+

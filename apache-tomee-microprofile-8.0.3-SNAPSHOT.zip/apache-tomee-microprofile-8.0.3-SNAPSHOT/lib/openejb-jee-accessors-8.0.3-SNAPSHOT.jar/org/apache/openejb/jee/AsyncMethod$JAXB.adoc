@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/AsyncMethod$JAXB.class
+
+ - link:AsyncMethod$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 11

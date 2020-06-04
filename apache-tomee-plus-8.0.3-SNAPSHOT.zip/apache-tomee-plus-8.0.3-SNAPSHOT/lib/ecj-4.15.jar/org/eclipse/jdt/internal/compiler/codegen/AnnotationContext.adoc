@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/AnnotationContext.class
+
+ - link:AnnotationContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/bcel/classfile/ConstantInteger.class
+
+ - link:ConstantInteger-asmified.java[Asmified]
+
+== References
+

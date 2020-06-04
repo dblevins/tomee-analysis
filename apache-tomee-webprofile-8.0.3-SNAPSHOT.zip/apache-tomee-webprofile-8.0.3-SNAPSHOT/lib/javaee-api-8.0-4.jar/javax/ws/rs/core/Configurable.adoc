@@ -1,0 +1,8 @@
+= javax/ws/rs/core/Configurable.class
+
+ - link:Configurable-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configuration - 1
+ - javax.ws.rs.core.Configurable - 1

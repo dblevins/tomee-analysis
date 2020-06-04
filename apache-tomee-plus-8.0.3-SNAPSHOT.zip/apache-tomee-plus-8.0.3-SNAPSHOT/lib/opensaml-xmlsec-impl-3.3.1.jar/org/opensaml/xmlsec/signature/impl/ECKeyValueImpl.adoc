@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/ECKeyValueImpl.class
+
+ - link:ECKeyValueImpl-asmified.java[Asmified]
+
+== References
+

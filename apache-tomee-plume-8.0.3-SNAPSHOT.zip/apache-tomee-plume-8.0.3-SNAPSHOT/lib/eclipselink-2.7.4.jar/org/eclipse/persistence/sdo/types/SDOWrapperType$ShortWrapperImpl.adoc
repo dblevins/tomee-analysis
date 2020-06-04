@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$ShortWrapperImpl.class
+
+ - link:SDOWrapperType$ShortWrapperImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/KerberosTokenBuilder.class
+
+ - link:KerberosTokenBuilder-asmified.java[Asmified]
+
+== References
+

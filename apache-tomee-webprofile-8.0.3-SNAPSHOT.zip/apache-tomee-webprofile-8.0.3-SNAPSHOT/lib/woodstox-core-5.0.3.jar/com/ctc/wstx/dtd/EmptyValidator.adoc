@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/EmptyValidator.class
+
+ - link:EmptyValidator-asmified.java[Asmified]
+
+== References
+

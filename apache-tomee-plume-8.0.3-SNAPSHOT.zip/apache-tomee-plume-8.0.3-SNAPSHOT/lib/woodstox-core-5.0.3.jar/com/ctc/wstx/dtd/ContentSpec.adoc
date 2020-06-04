@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/ContentSpec.class
+
+ - link:ContentSpec-asmified.java[Asmified]
+
+== References
+

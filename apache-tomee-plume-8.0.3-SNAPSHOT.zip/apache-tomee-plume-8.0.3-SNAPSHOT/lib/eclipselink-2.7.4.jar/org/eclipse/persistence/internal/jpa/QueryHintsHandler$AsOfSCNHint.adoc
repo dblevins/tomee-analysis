@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$AsOfSCNHint.class
+
+ - link:QueryHintsHandler$AsOfSCNHint-asmified.java[Asmified]
+
+== References
+

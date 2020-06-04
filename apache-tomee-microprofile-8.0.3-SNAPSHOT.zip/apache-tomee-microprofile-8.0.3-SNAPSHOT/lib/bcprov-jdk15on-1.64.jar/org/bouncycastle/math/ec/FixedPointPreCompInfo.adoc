@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/FixedPointPreCompInfo.class
+
+ - link:FixedPointPreCompInfo-asmified.java[Asmified]
+
+== References
+

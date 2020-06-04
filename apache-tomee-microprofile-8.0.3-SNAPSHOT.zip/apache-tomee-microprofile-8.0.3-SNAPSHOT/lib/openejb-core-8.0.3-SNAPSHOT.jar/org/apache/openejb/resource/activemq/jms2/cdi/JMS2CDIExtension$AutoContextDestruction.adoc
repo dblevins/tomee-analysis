@@ -1,0 +1,9 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$AutoContextDestruction.class
+
+ - link:JMS2CDIExtension$AutoContextDestruction-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSContext - 7
+ - javax.jms.JMSRuntimeException - 4
+ - javax.annotation.PreDestroy - 1

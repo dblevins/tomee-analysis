@@ -1,0 +1,6 @@
+= org/apache/catalina/ha/context/ReplicatedContext$MultiEnumeration.class
+
+ - link:ReplicatedContext$MultiEnumeration-asmified.java[Asmified]
+
+== References
+

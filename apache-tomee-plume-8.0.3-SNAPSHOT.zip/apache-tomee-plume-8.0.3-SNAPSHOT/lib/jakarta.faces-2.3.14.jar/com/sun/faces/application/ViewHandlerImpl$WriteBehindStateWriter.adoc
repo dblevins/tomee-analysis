@@ -1,0 +1,9 @@
+= com/sun/faces/application/ViewHandlerImpl$WriteBehindStateWriter.class
+
+ - link:ViewHandlerImpl$WriteBehindStateWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 17
+ - javax.faces.context.ResponseWriter - 9
+ - javax.faces.application.StateManager - 7

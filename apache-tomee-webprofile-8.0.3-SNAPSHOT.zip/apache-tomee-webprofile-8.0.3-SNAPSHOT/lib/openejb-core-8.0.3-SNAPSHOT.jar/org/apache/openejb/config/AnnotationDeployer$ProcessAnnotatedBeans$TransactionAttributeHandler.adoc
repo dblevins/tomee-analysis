@@ -1,0 +1,8 @@
+= org/apache/openejb/config/AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler.class
+
+ - link:AnnotationDeployer$ProcessAnnotatedBeans$TransactionAttributeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.TransactionAttribute - 11
+ - javax.ejb.TransactionAttributeType - 6

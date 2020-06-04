@@ -1,0 +1,12 @@
+= com/sun/faces/renderkit/html_basic/RadioRenderer$GroupSelectItem.class
+
+ - link:RadioRenderer$GroupSelectItem-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.SelectItem - 19
+ - javax.faces.component.UISelectOne - 7
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.component.UISelectItem - 2

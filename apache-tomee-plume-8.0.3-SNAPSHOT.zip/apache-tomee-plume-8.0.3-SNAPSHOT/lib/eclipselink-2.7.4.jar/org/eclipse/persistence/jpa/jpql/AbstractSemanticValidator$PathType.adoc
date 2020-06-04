@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractSemanticValidator$PathType.class
+
+ - link:AbstractSemanticValidator$PathType-asmified.java[Asmified]
+
+== References
+

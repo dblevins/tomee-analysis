@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/proxy/CglibProxySource.class
+
+ - link:CglibProxySource-asmified.java[Asmified]
+
+== References
+

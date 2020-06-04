@@ -1,0 +1,41 @@
+= org/apache/openejb/config/AnnotationDeployer$DiscoverAnnotatedBeans.class
+
+ - link:AnnotationDeployer$DiscoverAnnotatedBeans-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConfigProperty - 33
+ - javax.resource.spi.Connector - 29
+ - javax.ejb.Stateful - 24
+ - javax.resource.spi.ConnectionDefinition - 23
+ - javax.ejb.Stateless - 23
+ - javax.ejb.Singleton - 23
+ - javax.ejb.MessageDriven - 19
+ - javax.resource.spi.AuthenticationMechanism - 16
+ - javax.annotation.ManagedBean - 11
+ - javax.resource.spi.ConnectionDefinitions - 10
+ - javax.resource.spi.SecurityPermission - 10
+ - javax.resource.spi.AdministeredObject - 10
+ - javax.ejb.ApplicationException - 8
+ - javax.resource.spi.Activation - 8
+ - javax.ws.rs.core.Application - 6
+ - javax.inject.Inject - 3
+ - javax.ws.rs.ext.Provider - 2
+ - javax.resource.spi.AuthenticationMechanism$CredentialInterface - 2
+ - javax.resource.spi.TransactionSupport$TransactionSupportLevel - 2
+ - javax.enterprise.inject.Stereotype - 1
+ - javax.decorator.Delegate - 1
+ - javax.xml.ws.WebServiceProvider - 1
+ - javax.enterprise.inject.Model - 1
+ - javax.enterprise.context.ConversationScoped - 1
+ - javax.enterprise.context.SessionScoped - 1
+ - javax.interceptor.Interceptor - 1
+ - javax.decorator.Decorator - 1
+ - javax.jws.WebService - 1
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.context.NormalScope - 1
+ - javax.ws.rs.ApplicationPath - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.context.RequestScoped - 1
+ - javax.ejb.Startup - 1
+ - javax.enterprise.context.ApplicationScoped - 1

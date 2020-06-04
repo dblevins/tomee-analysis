@@ -1,0 +1,11 @@
+= javax/servlet/jsp/jstl/core/Config.class
+
+ - link:Config-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 22
+ - javax.servlet.http.HttpSession - 9
+ - javax.servlet.ServletContext - 8
+ - javax.servlet.ServletRequest - 6
+ - javax.servlet.jsp.jstl.core.Config - 5

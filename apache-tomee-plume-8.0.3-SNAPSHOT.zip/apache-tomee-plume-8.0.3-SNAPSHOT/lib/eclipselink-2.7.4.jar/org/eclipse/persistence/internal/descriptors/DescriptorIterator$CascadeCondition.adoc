@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/DescriptorIterator$CascadeCondition.class
+
+ - link:DescriptorIterator$CascadeCondition-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/databaseaccess/InParameterForCallableStatement.class
+
+ - link:InParameterForCallableStatement-asmified.java[Asmified]
+
+== References
+

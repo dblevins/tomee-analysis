@@ -1,0 +1,24 @@
+= org/apache/openejb/cdi/OpenEJBLifecycle.class
+
+ - link:OpenEJBLifecycle-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 15
+ - javax.enterprise.inject.spi.BeanManager - 12
+ - javax.enterprise.inject.spi.Bean - 8
+ - javax.servlet.jsp.JspFactory - 6
+ - javax.el.ELResolver - 6
+ - javax.servlet.ServletContextEvent - 5
+ - javax.servlet.http.HttpSession - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.servlet.jsp.JspApplicationContext - 2
+ - javax.enterprise.context.ConversationScoped - 1
+ - javax.inject.Singleton - 1
+ - javax.enterprise.context.SessionScoped - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.enterprise.context.RequestScoped - 1
+ - javax.enterprise.context.ApplicationScoped - 1
+ - javax.enterprise.inject.spi.InjectionTarget - 1

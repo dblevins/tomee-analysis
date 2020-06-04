@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/xml/NamespaceSupport.class
+
+ - link:NamespaceSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 9
+ - javax.annotation.Nonnull - 5

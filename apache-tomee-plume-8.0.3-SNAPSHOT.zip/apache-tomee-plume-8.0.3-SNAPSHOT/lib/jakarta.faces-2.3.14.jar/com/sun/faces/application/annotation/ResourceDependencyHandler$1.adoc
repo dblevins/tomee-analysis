@@ -1,0 +1,6 @@
+= com/sun/faces/application/annotation/ResourceDependencyHandler$1.class
+
+ - link:ResourceDependencyHandler$1-asmified.java[Asmified]
+
+== References
+

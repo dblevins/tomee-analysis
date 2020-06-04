@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/Receiver.class
+
+ - link:Receiver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap12/SOAP12OperationImpl.class
+
+ - link:SOAP12OperationImpl-asmified.java[Asmified]
+
+== References
+

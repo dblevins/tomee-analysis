@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/FullClassStrategy.class
+
+ - link:FullClassStrategy-asmified.java[Asmified]
+
+== References
+

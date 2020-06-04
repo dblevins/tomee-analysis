@@ -1,0 +1,7 @@
+= org/apache/openejb/server/cxf/ejb/EjbEndpoint.class
+
+ - link:EjbEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceException - 2

@@ -1,0 +1,6 @@
+= org/apache/xml/security/algorithms/implementations/ECDSAUtils.class
+
+ - link:ECDSAUtils-asmified.java[Asmified]
+
+== References
+

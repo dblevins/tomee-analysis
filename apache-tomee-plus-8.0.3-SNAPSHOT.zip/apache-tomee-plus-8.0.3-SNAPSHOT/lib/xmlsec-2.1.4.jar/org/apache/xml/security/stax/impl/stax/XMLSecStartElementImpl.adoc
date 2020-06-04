@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/stax/XMLSecStartElementImpl.class
+
+ - link:XMLSecStartElementImpl-asmified.java[Asmified]
+
+== References
+

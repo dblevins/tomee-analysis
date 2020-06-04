@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/P.class
+
+ - link:P-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/meta/MetadataProcessor.class
+
+ - link:MetadataProcessor-asmified.java[Asmified]
+
+== References
+

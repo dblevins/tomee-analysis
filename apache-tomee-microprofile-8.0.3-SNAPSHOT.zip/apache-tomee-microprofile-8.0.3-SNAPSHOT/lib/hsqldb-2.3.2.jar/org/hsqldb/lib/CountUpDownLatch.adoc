@@ -1,0 +1,6 @@
+= org/hsqldb/lib/CountUpDownLatch.class
+
+ - link:CountUpDownLatch-asmified.java[Asmified]
+
+== References
+

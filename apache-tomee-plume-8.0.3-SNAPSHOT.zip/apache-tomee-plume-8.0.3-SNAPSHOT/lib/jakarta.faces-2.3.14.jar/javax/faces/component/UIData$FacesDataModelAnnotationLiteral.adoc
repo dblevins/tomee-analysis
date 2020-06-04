@@ -1,0 +1,8 @@
+= javax/faces/component/UIData$FacesDataModelAnnotationLiteral.class
+
+ - link:UIData$FacesDataModelAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.model.FacesDataModel - 2

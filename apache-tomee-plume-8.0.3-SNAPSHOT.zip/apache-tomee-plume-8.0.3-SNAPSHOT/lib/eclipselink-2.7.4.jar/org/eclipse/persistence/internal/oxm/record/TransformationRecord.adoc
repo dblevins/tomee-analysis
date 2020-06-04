@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/TransformationRecord.class
+
+ - link:TransformationRecord-asmified.java[Asmified]
+
+== References
+

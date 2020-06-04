@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/common/gzip/GZIPFeature.class
+
+ - link:GZIPFeature-asmified.java[Asmified]
+
+== References
+

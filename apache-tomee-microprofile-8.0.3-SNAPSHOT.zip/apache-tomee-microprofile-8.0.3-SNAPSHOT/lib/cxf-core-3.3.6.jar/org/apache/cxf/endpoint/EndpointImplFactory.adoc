@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/EndpointImplFactory.class
+
+ - link:EndpointImplFactory-asmified.java[Asmified]
+
+== References
+

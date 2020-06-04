@@ -1,0 +1,8 @@
+= org/apache/myfaces/webapp/FacesInitializerFactory.class
+
+ - link:FacesInitializerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 9
+ - javax.faces.FacesException - 4

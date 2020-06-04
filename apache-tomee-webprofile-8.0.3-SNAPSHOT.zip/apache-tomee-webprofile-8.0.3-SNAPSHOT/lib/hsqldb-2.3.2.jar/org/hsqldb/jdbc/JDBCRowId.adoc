@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCRowId.class
+
+ - link:JDBCRowId-asmified.java[Asmified]
+
+== References
+

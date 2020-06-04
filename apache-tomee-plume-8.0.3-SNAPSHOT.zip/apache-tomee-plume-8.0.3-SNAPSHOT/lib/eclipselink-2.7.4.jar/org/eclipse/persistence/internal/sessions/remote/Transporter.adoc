@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/remote/Transporter.class
+
+ - link:Transporter-asmified.java[Asmified]
+
+== References
+

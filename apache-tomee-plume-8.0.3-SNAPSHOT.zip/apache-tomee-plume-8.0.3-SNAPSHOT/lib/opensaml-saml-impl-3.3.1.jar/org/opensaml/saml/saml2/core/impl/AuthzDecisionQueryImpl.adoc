@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/AuthzDecisionQueryImpl.class
+
+ - link:AuthzDecisionQueryImpl-asmified.java[Asmified]
+
+== References
+

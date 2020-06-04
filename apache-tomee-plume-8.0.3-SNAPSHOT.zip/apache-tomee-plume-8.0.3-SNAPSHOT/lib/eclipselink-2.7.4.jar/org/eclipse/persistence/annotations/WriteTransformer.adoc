@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/WriteTransformer.class
+
+ - link:WriteTransformer-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/HashPartitioning.class
+
+ - link:HashPartitioning-asmified.java[Asmified]
+
+== References
+

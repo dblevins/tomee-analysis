@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/MethodDispatcher.class
+
+ - link:MethodDispatcher-asmified.java[Asmified]
+
+== References
+

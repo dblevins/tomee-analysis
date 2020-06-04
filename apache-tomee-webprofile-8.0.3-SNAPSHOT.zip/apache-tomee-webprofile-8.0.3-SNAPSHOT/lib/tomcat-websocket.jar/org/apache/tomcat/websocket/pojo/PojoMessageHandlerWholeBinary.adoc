@@ -1,0 +1,12 @@
+= org/apache/tomcat/websocket/pojo/PojoMessageHandlerWholeBinary.class
+
+ - link:PojoMessageHandlerWholeBinary-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Decoder$Binary - 8
+ - javax.websocket.Session - 7
+ - javax.websocket.Decoder - 7
+ - javax.websocket.EndpointConfig - 6
+ - javax.websocket.Decoder$BinaryStream - 5
+ - javax.websocket.DecodeException - 4

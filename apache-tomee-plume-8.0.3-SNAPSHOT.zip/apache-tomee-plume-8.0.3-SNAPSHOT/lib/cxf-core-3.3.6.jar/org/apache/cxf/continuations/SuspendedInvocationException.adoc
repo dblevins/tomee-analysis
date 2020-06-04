@@ -1,0 +1,6 @@
+= org/apache/cxf/continuations/SuspendedInvocationException.class
+
+ - link:SuspendedInvocationException-asmified.java[Asmified]
+
+== References
+

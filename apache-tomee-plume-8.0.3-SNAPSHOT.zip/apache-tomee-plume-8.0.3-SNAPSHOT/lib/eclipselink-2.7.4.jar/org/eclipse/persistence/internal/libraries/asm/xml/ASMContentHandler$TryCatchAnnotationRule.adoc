@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$TryCatchAnnotationRule.class
+
+ - link:ASMContentHandler$TryCatchAnnotationRule-asmified.java[Asmified]
+
+== References
+

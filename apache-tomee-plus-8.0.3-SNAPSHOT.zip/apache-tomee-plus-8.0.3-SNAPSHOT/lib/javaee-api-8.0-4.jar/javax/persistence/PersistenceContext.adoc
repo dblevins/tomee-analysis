@@ -1,0 +1,10 @@
+= javax/persistence/PersistenceContext.class
+
+ - link:PersistenceContext-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceContextType - 2
+ - javax.persistence.SynchronizationType - 2
+ - javax.persistence.PersistenceContexts - 1
+ - javax.persistence.PersistenceProperty - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/OrbFactory.class
+
+ - link:OrbFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/TransformerBasedValueHolder.class
+
+ - link:TransformerBasedValueHolder-asmified.java[Asmified]
+
+== References
+

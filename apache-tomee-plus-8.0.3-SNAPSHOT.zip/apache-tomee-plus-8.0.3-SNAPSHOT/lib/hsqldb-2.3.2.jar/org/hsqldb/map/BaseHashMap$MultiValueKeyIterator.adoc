@@ -1,0 +1,6 @@
+= org/hsqldb/map/BaseHashMap$MultiValueKeyIterator.class
+
+ - link:BaseHashMap$MultiValueKeyIterator-asmified.java[Asmified]
+
+== References
+

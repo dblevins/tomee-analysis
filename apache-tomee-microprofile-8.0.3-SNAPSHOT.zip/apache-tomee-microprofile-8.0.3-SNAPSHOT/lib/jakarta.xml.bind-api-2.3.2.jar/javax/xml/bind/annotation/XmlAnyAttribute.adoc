@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/XmlAnyAttribute.class
+
+ - link:XmlAnyAttribute-asmified.java[Asmified]
+
+== References
+

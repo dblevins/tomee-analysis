@@ -1,0 +1,10 @@
+= javax/xml/bind/helpers/ValidationEventImpl.class
+
+ - link:ValidationEventImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.ValidationEventLocator - 10
+ - javax.xml.bind.helpers.ValidationEventImpl - 6
+ - javax.xml.bind.ValidationEvent - 1
+ - javax.xml.bind.helpers.Messages - 1

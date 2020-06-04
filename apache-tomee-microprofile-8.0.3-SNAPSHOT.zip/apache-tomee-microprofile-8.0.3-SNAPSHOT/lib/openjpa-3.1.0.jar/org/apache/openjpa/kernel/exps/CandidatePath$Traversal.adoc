@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/CandidatePath$Traversal.class
+
+ - link:CandidatePath$Traversal-asmified.java[Asmified]
+
+== References
+

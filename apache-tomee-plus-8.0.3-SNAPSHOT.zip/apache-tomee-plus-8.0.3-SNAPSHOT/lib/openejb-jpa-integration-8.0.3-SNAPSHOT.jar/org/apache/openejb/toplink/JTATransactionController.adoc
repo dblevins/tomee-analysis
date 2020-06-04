@@ -1,0 +1,7 @@
+= org/apache/openejb/toplink/JTATransactionController.class
+
+ - link:JTATransactionController-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2

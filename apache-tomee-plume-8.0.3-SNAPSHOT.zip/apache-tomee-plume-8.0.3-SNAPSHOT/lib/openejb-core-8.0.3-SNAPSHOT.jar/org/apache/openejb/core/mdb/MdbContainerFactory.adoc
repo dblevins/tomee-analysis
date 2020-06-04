@@ -1,0 +1,7 @@
+= org/apache/openejb/core/mdb/MdbContainerFactory.class
+
+ - link:MdbContainerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ResourceAdapter - 9

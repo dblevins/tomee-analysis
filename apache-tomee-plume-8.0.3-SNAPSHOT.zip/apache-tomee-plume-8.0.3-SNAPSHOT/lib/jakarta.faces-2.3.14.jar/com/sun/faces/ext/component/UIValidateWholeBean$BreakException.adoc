@@ -1,0 +1,6 @@
+= com/sun/faces/ext/component/UIValidateWholeBean$BreakException.class
+
+ - link:UIValidateWholeBean$BreakException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,16 @@
+= javax/jms/QueueRequestor.class
+
+ - link:QueueRequestor-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.QueueSession - 13
+ - javax.jms.QueueRequestor - 11
+ - javax.jms.TemporaryQueue - 11
+ - javax.jms.QueueReceiver - 9
+ - javax.jms.QueueSender - 9
+ - javax.jms.Message - 5
+ - javax.jms.Queue - 4
+ - javax.jms.JMSException - 3
+ - javax.jms.InvalidDestinationException - 2
+ - javax.jms.Destination - 1

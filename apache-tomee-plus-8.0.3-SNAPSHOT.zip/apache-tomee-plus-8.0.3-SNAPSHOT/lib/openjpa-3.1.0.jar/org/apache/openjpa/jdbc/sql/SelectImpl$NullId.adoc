@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SelectImpl$NullId.class
+
+ - link:SelectImpl$NullId-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/Attribute.class
+
+ - link:Attribute-asmified.java[Asmified]
+
+== References
+

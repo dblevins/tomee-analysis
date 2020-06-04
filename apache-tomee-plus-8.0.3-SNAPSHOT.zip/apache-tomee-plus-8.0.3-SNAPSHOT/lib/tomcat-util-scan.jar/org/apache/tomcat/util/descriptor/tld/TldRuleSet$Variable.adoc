@@ -1,0 +1,7 @@
+= org/apache/tomcat/util/descriptor/tld/TldRuleSet$Variable.class
+
+ - link:TldRuleSet$Variable-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagVariableInfo - 3

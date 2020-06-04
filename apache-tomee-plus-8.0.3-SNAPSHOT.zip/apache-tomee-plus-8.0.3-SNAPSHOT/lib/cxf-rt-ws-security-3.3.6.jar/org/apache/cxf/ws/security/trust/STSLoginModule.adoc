@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/STSLoginModule.class
+
+ - link:STSLoginModule-asmified.java[Asmified]
+
+== References
+

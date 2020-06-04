@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/MetaDataContext.class
+
+ - link:MetaDataContext-asmified.java[Asmified]
+
+== References
+

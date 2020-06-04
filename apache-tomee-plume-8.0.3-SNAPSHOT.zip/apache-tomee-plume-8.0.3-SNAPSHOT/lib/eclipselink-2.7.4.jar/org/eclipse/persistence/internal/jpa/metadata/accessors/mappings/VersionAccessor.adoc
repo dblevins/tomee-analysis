@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/VersionAccessor.class
+
+ - link:VersionAccessor-asmified.java[Asmified]
+
+== References
+

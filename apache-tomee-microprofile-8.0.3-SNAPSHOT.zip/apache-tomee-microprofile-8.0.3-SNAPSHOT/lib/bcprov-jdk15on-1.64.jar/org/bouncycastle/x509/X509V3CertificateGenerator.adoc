@@ -1,0 +1,6 @@
+= org/bouncycastle/x509/X509V3CertificateGenerator.class
+
+ - link:X509V3CertificateGenerator-asmified.java[Asmified]
+
+== References
+

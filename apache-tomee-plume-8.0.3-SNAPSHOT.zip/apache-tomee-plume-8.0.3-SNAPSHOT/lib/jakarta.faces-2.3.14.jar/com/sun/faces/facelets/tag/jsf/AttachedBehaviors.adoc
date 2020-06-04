@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/jsf/AttachedBehaviors.class
+
+ - link:AttachedBehaviors-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagHandler - 4
+ - javax.faces.component.UIComponent - 2

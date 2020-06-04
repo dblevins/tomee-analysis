@@ -1,0 +1,8 @@
+= org/apache/myfaces/context/servlet/StartupServletExternalContextImpl.class
+
+ - link:StartupServletExternalContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 6
+ - javax.faces.context.Flash - 1

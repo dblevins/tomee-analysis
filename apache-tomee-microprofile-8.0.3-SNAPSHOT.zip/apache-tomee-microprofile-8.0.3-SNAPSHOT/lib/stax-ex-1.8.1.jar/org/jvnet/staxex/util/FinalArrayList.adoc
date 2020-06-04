@@ -1,0 +1,6 @@
+= org/jvnet/staxex/util/FinalArrayList.class
+
+ - link:FinalArrayList-asmified.java[Asmified]
+
+== References
+

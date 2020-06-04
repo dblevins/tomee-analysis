@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/oauth2/client/ClientCodeStateManager.class
+
+ - link:ClientCodeStateManager-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 4

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/FinderCache.class
+
+ - link:FinderCache-asmified.java[Asmified]
+
+== References
+

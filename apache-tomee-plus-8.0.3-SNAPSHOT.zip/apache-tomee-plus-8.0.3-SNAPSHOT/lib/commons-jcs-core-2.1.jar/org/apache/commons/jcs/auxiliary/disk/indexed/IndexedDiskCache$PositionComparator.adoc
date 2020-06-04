@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/indexed/IndexedDiskCache$PositionComparator.class
+
+ - link:IndexedDiskCache$PositionComparator-asmified.java[Asmified]
+
+== References
+

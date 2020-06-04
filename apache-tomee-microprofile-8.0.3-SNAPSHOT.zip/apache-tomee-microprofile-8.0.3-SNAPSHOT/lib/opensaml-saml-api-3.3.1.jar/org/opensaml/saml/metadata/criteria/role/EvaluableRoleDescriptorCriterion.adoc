@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/criteria/role/EvaluableRoleDescriptorCriterion.class
+
+ - link:EvaluableRoleDescriptorCriterion-asmified.java[Asmified]
+
+== References
+

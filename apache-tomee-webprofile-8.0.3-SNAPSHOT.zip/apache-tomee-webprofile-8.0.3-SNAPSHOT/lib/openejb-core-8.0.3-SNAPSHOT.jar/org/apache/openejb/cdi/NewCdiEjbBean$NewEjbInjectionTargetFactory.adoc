@@ -1,0 +1,9 @@
+= org/apache/openejb/cdi/NewCdiEjbBean$NewEjbInjectionTargetFactory.class
+
+ - link:NewCdiEjbBean$NewEjbInjectionTargetFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionTarget - 5
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Bean - 1

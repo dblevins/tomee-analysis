@@ -1,0 +1,6 @@
+= org/apache/webbeans/util/UrlSet.class
+
+ - link:UrlSet-asmified.java[Asmified]
+
+== References
+

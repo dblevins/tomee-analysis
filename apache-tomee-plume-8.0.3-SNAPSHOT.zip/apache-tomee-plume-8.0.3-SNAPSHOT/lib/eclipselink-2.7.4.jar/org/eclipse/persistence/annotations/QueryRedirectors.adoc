@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/QueryRedirectors.class
+
+ - link:QueryRedirectors-asmified.java[Asmified]
+
+== References
+

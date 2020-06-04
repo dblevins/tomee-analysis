@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/crypto/xmss/WOTSPlusSignature.class
+
+ - link:WOTSPlusSignature-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MappingTool.class
+
+ - link:MappingTool-asmified.java[Asmified]
+
+== References
+

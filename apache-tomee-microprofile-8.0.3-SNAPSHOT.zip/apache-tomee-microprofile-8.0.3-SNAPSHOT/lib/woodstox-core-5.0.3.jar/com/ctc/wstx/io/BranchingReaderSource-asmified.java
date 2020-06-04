@@ -1,0 +1,307 @@
+package asm.com.ctc.wstx.io;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class BranchingReaderSourceDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_FINAL | ACC_SUPER, "com/ctc/wstx/io/BranchingReaderSource", null, "com/ctc/wstx/io/ReaderSource", null);
+
+{
+fieldVisitor = classWriter.visitField(0, "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mBranchStartOffset", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mConvertLFs", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "mGotCR", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lcom/ctc/wstx/api/ReaderConfig;Ljava/lang/String;Lcom/ctc/wstx/io/SystemId;Ljava/io/Reader;Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ctc/wstx/io/ReaderSource", "<init>", "(Lcom/ctc/wstx/api/ReaderConfig;Lcom/ctc/wstx/io/WstxInputSource;Ljava/lang/String;Ljava/lang/String;Lcom/ctc/wstx/io/SystemId;Ljava/io/Reader;Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mConvertLFs", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mGotCR", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(8, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readInto", "(Lcom/ctc/wstx/io/WstxInputData;)I", null, new String[] { "java/io/IOException", "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mInputLast", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mInputLast", "I");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ctc/wstx/io/BranchingReaderSource", "appendBranched", "(II)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ctc/wstx/io/ReaderSource", "readInto", "(Lcom/ctc/wstx/io/WstxInputData;)I", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "readMore", "(Lcom/ctc/wstx/io/WstxInputData;I)Z", null, new String[] { "java/io/IOException", "javax/xml/stream/XMLStreamException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/WstxInputData", "mInputPtr", "I");
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mInputLast", "I");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ctc/wstx/io/BranchingReaderSource", "appendBranched", "(II)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ctc/wstx/io/ReaderSource", "readMore", "(Lcom/ctc/wstx/io/WstxInputData;I)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "startBranch", "(Lcom/ctc/wstx/util/TextBuffer;IZ)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mConvertLFs", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mGotCR", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "endBranch", "(I)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchStartOffset", "I");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "com/ctc/wstx/io/BranchingReaderSource", "appendBranched", "(II)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "appendBranched", "(II)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mConvertLFs", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBuffer", "[C");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ctc/wstx/util/TextBuffer", "getCurrentSegment", "()[C", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ctc/wstx/util/TextBuffer", "getCurrentSegmentSize", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mGotCR", "Z");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(CALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label1);
+methodVisitor.visitIincInsn(1, 1);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[C", "[C", Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIincInsn(1, 1);
+methodVisitor.visitInsn(CALOAD);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitIntInsn(BIPUSH, 13);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(CALOAD);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label5);
+methodVisitor.visitIincInsn(1, 1);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mGotCR", "Z");
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitIntInsn(BIPUSH, 10);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitIincInsn(5, 1);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(CASTORE);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ctc/wstx/util/TextBuffer", "finishCurrentSegment", "()[C", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ctc/wstx/util/TextBuffer", "setCurrentLength", "(I)V", false);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBranchBuffer", "Lcom/ctc/wstx/util/TextBuffer;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "com/ctc/wstx/io/BranchingReaderSource", "mBuffer", "[C");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "com/ctc/wstx/util/TextBuffer", "append", "([CII)V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 7);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

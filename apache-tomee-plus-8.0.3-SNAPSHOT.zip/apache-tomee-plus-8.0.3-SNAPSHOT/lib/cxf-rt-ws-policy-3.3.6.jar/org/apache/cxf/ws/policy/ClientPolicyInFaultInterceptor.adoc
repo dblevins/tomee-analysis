@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/ClientPolicyInFaultInterceptor.class
+
+ - link:ClientPolicyInFaultInterceptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/StaxInInterceptor.class
+
+ - link:StaxInInterceptor-asmified.java[Asmified]
+
+== References
+

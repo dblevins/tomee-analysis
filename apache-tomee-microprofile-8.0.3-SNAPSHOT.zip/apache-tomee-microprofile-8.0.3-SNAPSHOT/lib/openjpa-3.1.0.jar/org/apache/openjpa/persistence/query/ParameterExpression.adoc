@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/ParameterExpression.class
+
+ - link:ParameterExpression-asmified.java[Asmified]
+
+== References
+

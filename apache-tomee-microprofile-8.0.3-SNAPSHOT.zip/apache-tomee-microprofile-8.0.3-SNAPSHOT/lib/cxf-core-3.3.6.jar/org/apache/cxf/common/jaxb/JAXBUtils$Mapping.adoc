@@ -1,0 +1,6 @@
+= org/apache/cxf/common/jaxb/JAXBUtils$Mapping.class
+
+ - link:JAXBUtils$Mapping-asmified.java[Asmified]
+
+== References
+

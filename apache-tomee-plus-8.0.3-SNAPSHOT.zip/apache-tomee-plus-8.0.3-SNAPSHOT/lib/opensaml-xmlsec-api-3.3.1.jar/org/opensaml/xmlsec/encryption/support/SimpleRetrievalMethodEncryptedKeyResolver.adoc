@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/encryption/support/SimpleRetrievalMethodEncryptedKeyResolver.class
+
+ - link:SimpleRetrievalMethodEncryptedKeyResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 3

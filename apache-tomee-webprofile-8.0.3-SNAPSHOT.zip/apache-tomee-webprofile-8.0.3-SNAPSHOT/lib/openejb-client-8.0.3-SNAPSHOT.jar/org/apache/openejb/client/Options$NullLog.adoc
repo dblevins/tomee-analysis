@@ -1,0 +1,6 @@
+= org/apache/openejb/client/Options$NullLog.class
+
+ - link:Options$NullLog-asmified.java[Asmified]
+
+== References
+

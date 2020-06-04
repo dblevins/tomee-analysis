@@ -1,0 +1,15 @@
+= javax/validation/Validation$ProviderSpecificBootstrapImpl.class
+
+ - link:Validation$ProviderSpecificBootstrapImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationProviderResolver - 10
+ - javax.validation.Validation$GenericBootstrapImpl - 5
+ - javax.validation.ValidationException - 4
+ - javax.validation.spi.ValidationProvider - 4
+ - javax.validation.bootstrap.ProviderSpecificBootstrap - 2
+ - javax.validation.Configuration - 2
+ - javax.validation.bootstrap.GenericBootstrap - 1
+ - javax.validation.Validation$1 - 1
+ - javax.validation.spi.BootstrapState - 1

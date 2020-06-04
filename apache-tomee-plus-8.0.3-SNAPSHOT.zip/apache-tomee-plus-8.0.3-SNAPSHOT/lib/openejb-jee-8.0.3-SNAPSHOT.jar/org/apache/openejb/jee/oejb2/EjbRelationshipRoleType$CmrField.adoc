@@ -1,0 +1,10 @@
+= org/apache/openejb/jee/oejb2/EjbRelationshipRoleType$CmrField.class
+
+ - link:EjbRelationshipRoleType$CmrField-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

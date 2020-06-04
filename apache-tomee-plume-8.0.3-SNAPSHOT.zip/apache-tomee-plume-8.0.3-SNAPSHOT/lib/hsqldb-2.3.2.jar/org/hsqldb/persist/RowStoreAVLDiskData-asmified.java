@@ -1,0 +1,564 @@
+package asm.org.hsqldb.persist;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class RowStoreAVLDiskDataDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_6, ACC_PUBLIC | ACC_SUPER, "org/hsqldb/persist/RowStoreAVLDiskData", null, "org/hsqldb/persist/RowStoreAVL", null);
+
+{
+fieldVisitor = classWriter.visitField(0, "cache", "Lorg/hsqldb/persist/DataFileCache;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(0, "rowOut", "Lorg/hsqldb/rowio/RowOutputInterface;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/hsqldb/persist/PersistentStoreCollection;Lorg/hsqldb/Table;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/persist/RowStoreAVL", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/Table", "database", "Lorg/hsqldb/Database;");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "database", "Lorg/hsqldb/Database;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "manager", "Lorg/hsqldb/persist/PersistentStoreCollection;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/Table", "getIndexList", "()[Lorg/hsqldb/index/Index;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "indexList", "[Lorg/hsqldb/index/Index;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "indexList", "[Lorg/hsqldb/index/Index;");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitTypeInsn(ANEWARRAY, "org/hsqldb/persist/CachedObject");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "accessorList", "[Lorg/hsqldb/persist/CachedObject;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/persist/PersistentStoreCollection", "setStore", "(Ljava/lang/Object;Lorg/hsqldb/persist/PersistentStore;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(JZ)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "get", "(JLorg/hsqldb/persist/PersistentStore;Z)Lorg/hsqldb/persist/CachedObject;", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Lorg/hsqldb/persist/CachedObject;Z)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "get", "(Lorg/hsqldb/persist/CachedObject;Lorg/hsqldb/persist/PersistentStore;Z)Lorg/hsqldb/persist/CachedObject;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "add", "(Lorg/hsqldb/Session;Lorg/hsqldb/persist/CachedObject;Z)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/DataFileCache", "writeLock", "Ljava/util/concurrent/locks/Lock;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/locks/Lock", "lock", "()V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/DataFileCache", "rowOut", "Lorg/hsqldb/rowio/RowOutputInterface;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/persist/CachedObject", "getRealSize", "(Lorg/hsqldb/rowio/RowOutputInterface;)I", true);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/persist/CachedObject", "setStorageSize", "(I)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "tableSpace", "Lorg/hsqldb/persist/TableSpaceManager;");
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(I2L);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/persist/TableSpaceManager", "getFilePosition", "(JZ)J", true);
+methodVisitor.visitVarInsn(LSTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/persist/CachedObject", "setPos", "(J)V", true);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/hsqldb/Row");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/RowAction", "addInsertAction", "(Lorg/hsqldb/Session;Lorg/hsqldb/TableBase;Lorg/hsqldb/Row;)Lorg/hsqldb/RowAction;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.INTEGER, Opcodes.LONG}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "add", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/DataFileCache", "writeLock", "Ljava/util/concurrent/locks/Lock;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/locks/Lock", "unlock", "()V", true);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 4, new Object[] {"org/hsqldb/persist/RowStoreAVLDiskData", "org/hsqldb/Session", "org/hsqldb/persist/CachedObject", Opcodes.INTEGER}, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/DataFileCache", "writeLock", "Ljava/util/concurrent/locks/Lock;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/concurrent/locks/Lock", "unlock", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Lorg/hsqldb/rowio/RowInputInterface;)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "org/hsqldb/RowAVLDiskData");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/RowAVLDiskData", "<init>", "(Lorg/hsqldb/persist/PersistentStore;Lorg/hsqldb/TableBase;Lorg/hsqldb/rowio/RowInputInterface;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/rowio/RowInputInterface", "getPos", "()J", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/RowAVLDiskData", "setPos", "(J)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/rowio/RowInputInterface", "getSize", "()I", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/RowAVLDiskData", "setStorageSize", "(I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/RowAVLDiskData", "setChanged", "(Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/hsqldb/persist/TextCache");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/TextCache", "addInit", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitIntInsn(SIPUSH, 484);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/error/Error", "error", "(ILjava/lang/Throwable;)Lorg/hsqldb/HsqlException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(Lorg/hsqldb/persist/CachedObject;Lorg/hsqldb/rowio/RowInputInterface;)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/io/IOException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/hsqldb/RowAVLDiskData");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/RowAVLDiskData", "getRowData", "(Lorg/hsqldb/TableBase;Lorg/hsqldb/rowio/RowInputInterface;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/io/IOException"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitIntInsn(SIPUSH, 484);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/error/Error", "error", "(ILjava/lang/Throwable;)Lorg/hsqldb/HsqlException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNewCachedObject", "(Lorg/hsqldb/Session;Ljava/lang/Object;Z)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/hsqldb/RowAVLDiskData");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
+methodVisitor.visitTypeInsn(CHECKCAST, "[Ljava/lang/Object;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/RowAVLDiskData", "<init>", "(Lorg/hsqldb/persist/PersistentStore;Lorg/hsqldb/TableBase;[Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "add", "(Lorg/hsqldb/Session;Lorg/hsqldb/persist/CachedObject;Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "indexRow", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/hsqldb/persist/RowStoreAVL", "indexRow", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isMemory", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAccessCount", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "getAccessCount", "()I", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "set", "(Lorg/hsqldb/persist/CachedObject;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(0, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "get", "(J)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "get", "(JLorg/hsqldb/persist/PersistentStore;Z)Lorg/hsqldb/persist/CachedObject;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "removeAll", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "destroy", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "elementCount", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "set", "(J)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "accessorList", "[Lorg/hsqldb/persist/CachedObject;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/lib/ArrayUtil", "fillArray", "([Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "remove", "(Lorg/hsqldb/persist/CachedObject;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAccessor", "(Lorg/hsqldb/index/Index;)Lorg/hsqldb/persist/CachedObject;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/index/Index", "getPosition", "()I", true);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "accessorList", "[Lorg/hsqldb/persist/CachedObject;");
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label0);
+methodVisitor.visitIntInsn(SIPUSH, 201);
+methodVisitor.visitLdcInsn("RowStoreAVL");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/error/Error", "runtimeError", "(ILjava/lang/String;)Ljava/lang/RuntimeException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "accessorList", "[Lorg/hsqldb/persist/CachedObject;");
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commitPersistence", "(Lorg/hsqldb/persist/CachedObject;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/hsqldb/HsqlException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "saveRow", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/hsqldb/HsqlException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "commitRow", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;II)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 4, label4, new Label[] { label0, label1, label2, label3 });
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/DataFileCache", "removePersistence", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "commitPersistence", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "delete", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "delete", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "rollbackRow", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;II)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+Label label3 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 4, label2, new Label[] { label0, label1, label2, label3 });
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/hsqldb/RowAVL");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/RowAVL", "setNewNodes", "(Lorg/hsqldb/persist/PersistentStore;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "indexRow", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "delete", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "delete", "(Lorg/hsqldb/Session;Lorg/hsqldb/Row;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "remove", "(Lorg/hsqldb/persist/CachedObject;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCache", "()Lorg/hsqldb/persist/DataFileCache;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setCache", "(Lorg/hsqldb/persist/DataFileCache;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/DataFileCache", "spaceManager", "Lorg/hsqldb/persist/DataSpaceManager;");
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/hsqldb/persist/DataSpaceManager", "getTableSpace", "(I)Lorg/hsqldb/persist/TableSpaceManager;", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "tableSpace", "Lorg/hsqldb/persist/TableSpaceManager;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "release", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/RowStoreAVLDiskData", "destroy", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/TableBase", "database", "Lorg/hsqldb/Database;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/Database", "logger", "Lorg/hsqldb/persist/Logger;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "table", "Lorg/hsqldb/TableBase;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/hsqldb/Table");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/hsqldb/persist/Logger", "closeTextCache", "(Lorg/hsqldb/Table;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "cache", "Lorg/hsqldb/persist/DataFileCache;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/hsqldb/persist/RowStoreAVLDiskData", "accessorList", "[Lorg/hsqldb/persist/CachedObject;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/hsqldb/lib/ArrayUtil", "fillArray", "([Ljava/lang/Object;Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

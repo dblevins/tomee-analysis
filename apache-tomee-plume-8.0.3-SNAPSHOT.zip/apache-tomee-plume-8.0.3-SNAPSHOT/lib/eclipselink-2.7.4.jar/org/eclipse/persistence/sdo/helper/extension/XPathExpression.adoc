@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/extension/XPathExpression.class
+
+ - link:XPathExpression-asmified.java[Asmified]
+
+== References
+

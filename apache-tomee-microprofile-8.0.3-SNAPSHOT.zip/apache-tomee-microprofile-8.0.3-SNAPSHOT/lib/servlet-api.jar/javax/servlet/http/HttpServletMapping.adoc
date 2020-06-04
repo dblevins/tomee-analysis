@@ -1,0 +1,7 @@
+= javax/servlet/http/HttpServletMapping.class
+
+ - link:HttpServletMapping-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.MappingMatch - 1

@@ -1,0 +1,6 @@
+= org/apache/naming/NamingContext.class
+
+ - link:NamingContext-asmified.java[Asmified]
+
+== References
+

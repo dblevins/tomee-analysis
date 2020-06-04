@@ -1,0 +1,6 @@
+= org/apache/commons/collections/collection/CompositeCollection.class
+
+ - link:CompositeCollection-asmified.java[Asmified]
+
+== References
+

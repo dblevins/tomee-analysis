@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ObjectWriter$Prefetch.class
+
+ - link:ObjectWriter$Prefetch-asmified.java[Asmified]
+
+== References
+

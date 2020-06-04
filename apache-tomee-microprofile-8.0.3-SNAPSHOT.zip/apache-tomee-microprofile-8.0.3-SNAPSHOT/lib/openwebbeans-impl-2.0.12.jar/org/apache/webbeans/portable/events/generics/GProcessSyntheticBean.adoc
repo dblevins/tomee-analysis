@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/events/generics/GProcessSyntheticBean.class
+
+ - link:GProcessSyntheticBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 5
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.inject.spi.ProcessSyntheticBean - 1

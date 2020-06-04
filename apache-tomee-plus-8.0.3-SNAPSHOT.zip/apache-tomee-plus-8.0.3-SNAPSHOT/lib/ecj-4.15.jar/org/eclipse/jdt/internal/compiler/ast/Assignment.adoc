@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/Assignment.class
+
+ - link:Assignment-asmified.java[Asmified]
+
+== References
+

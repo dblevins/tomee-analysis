@@ -1,0 +1,18 @@
+= org/apache/myfaces/flow/FlowImpl.class
+
+ - link:FlowImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.FlowCallNode - 11
+ - javax.el.MethodExpression - 10
+ - javax.faces.application.NavigationCase - 9
+ - javax.faces.flow.ViewNode - 6
+ - javax.faces.flow.MethodCallNode - 6
+ - javax.faces.flow.ReturnNode - 5
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.flow.Flow - 5
+ - javax.faces.flow.SwitchNode - 5
+ - javax.faces.flow.Parameter - 4
+ - javax.faces.flow.FlowNode - 3
+ - javax.faces.lifecycle.ClientWindow - 2

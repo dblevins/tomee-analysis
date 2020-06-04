@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/ExtendedAccessLogValve$8.class
+
+ - link:ExtendedAccessLogValve$8-asmified.java[Asmified]
+
+== References
+

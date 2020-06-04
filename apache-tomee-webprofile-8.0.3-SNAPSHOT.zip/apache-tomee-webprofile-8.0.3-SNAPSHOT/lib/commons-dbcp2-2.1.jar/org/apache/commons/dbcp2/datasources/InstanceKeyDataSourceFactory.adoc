@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/datasources/InstanceKeyDataSourceFactory.class
+
+ - link:InstanceKeyDataSourceFactory-asmified.java[Asmified]
+
+== References
+

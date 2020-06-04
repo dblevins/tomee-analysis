@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/StoredProcedureQuery$StoredProcedureQueryExecutor.class
+
+ - link:StoredProcedureQuery$StoredProcedureQueryExecutor-asmified.java[Asmified]
+
+== References
+

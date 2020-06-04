@@ -1,0 +1,7 @@
+= org/apache/openejb/core/cmp/cmp2/Cmp2KeyGenerator.class
+
+ - link:Cmp2KeyGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 1

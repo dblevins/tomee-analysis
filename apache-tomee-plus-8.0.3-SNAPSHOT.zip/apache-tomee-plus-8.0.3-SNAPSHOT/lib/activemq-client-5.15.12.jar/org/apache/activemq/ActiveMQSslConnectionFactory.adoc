@@ -1,0 +1,7 @@
+= org/apache/activemq/ActiveMQSslConnectionFactory.class
+
+ - link:ActiveMQSslConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

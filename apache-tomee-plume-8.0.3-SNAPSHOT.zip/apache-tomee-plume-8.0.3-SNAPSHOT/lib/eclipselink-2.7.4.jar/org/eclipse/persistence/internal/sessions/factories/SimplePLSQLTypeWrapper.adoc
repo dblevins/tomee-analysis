@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/SimplePLSQLTypeWrapper.class
+
+ - link:SimplePLSQLTypeWrapper-asmified.java[Asmified]
+
+== References
+

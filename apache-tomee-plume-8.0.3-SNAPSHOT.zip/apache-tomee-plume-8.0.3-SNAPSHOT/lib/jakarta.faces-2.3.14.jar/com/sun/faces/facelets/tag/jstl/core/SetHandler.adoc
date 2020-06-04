@@ -1,0 +1,20 @@
+= com/sun/faces/facelets/tag/jstl/core/SetHandler.class
+
+ - link:SetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 53
+ - javax.faces.view.facelets.FaceletContext - 17
+ - javax.el.ValueExpression - 16
+ - javax.el.ELContext - 10
+ - javax.faces.view.facelets.TagException - 8
+ - javax.faces.view.facelets.Tag - 8
+ - javax.faces.component.UIComponent - 6
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.view.facelets.TextHandler - 3
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.el.ELResolver - 2
+ - javax.el.VariableMapper - 2
+ - javax.faces.view.facelets.FaceletHandler - 2

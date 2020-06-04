@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/DefaultValueLoaderDecorator.class
+
+ - link:DefaultValueLoaderDecorator-asmified.java[Asmified]
+
+== References
+

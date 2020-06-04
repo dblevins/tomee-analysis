@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/AbstractPropertyResolver.class
+
+ - link:AbstractPropertyResolver-asmified.java[Asmified]
+
+== References
+

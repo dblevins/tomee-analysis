@@ -1,0 +1,8 @@
+= javax/jms/MessageNotWriteableException.class
+
+ - link:MessageNotWriteableException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.MessageNotWriteableException - 1

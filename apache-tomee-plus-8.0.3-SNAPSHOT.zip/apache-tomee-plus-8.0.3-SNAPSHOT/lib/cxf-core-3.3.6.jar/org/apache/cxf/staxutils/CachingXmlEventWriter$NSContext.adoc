@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/CachingXmlEventWriter$NSContext.class
+
+ - link:CachingXmlEventWriter$NSContext-asmified.java[Asmified]
+
+== References
+

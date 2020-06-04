@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/MultiValueMap$ValuesIterator.class
+
+ - link:MultiValueMap$ValuesIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/AnnotationDeployer$FilledMember.class
+
+ - link:AnnotationDeployer$FilledMember-asmified.java[Asmified]
+
+== References
+

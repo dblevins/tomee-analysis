@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/keyvalues/DSAKeyValue.class
+
+ - link:DSAKeyValue-asmified.java[Asmified]
+
+== References
+

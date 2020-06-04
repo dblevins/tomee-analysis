@@ -1,0 +1,8 @@
+= org/apache/openejb/persistence/JtaQuery$9.class
+
+ - link:JtaQuery$9-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TemporalType - 5
+ - javax.persistence.Query - 4

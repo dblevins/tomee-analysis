@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/AnyAttributeMapping.class
+
+ - link:AnyAttributeMapping-asmified.java[Asmified]
+
+== References
+

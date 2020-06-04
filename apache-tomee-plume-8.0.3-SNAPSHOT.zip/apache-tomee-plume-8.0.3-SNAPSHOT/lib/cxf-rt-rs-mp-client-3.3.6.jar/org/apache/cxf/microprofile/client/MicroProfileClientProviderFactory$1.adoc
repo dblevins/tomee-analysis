@@ -1,0 +1,6 @@
+= org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory$1.class
+
+ - link:MicroProfileClientProviderFactory$1-asmified.java[Asmified]
+
+== References
+

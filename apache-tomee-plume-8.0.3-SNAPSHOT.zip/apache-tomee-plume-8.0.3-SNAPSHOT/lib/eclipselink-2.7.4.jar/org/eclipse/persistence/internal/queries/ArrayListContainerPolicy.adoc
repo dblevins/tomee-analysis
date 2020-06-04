@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/queries/ArrayListContainerPolicy.class
+
+ - link:ArrayListContainerPolicy-asmified.java[Asmified]
+
+== References
+

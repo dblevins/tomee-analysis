@@ -1,0 +1,10 @@
+= org/apache/webbeans/component/InterceptionFactoryBean$InterceptionFactoryProducer.class
+
+ - link:InterceptionFactoryBean$InterceptionFactoryProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InterceptionFactory - 4
+ - javax.enterprise.inject.spi.InjectionPoint - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Interceptor - 1

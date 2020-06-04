@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlInputText.class
+
+ - link:HtmlInputText-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 116
+ - javax.faces.component.html.HtmlInputText - 85
+ - javax.faces.component.html.HtmlInputText$PropertyKeys - 58
+ - javax.faces.component.UIInput - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

@@ -1,0 +1,7 @@
+= org/apache/tomcat/util/http/ResponseUtil$ResponseAdapter.class
+
+ - link:ResponseUtil$ResponseAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 9

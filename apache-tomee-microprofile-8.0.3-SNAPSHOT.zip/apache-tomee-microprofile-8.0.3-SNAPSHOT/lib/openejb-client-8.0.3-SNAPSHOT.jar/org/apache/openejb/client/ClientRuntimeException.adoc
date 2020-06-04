@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ClientRuntimeException.class
+
+ - link:ClientRuntimeException-asmified.java[Asmified]
+
+== References
+

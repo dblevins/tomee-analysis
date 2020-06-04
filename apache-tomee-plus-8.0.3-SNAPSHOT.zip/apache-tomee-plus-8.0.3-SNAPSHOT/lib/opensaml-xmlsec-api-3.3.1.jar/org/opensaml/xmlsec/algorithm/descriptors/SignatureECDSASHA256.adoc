@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/SignatureECDSASHA256.class
+
+ - link:SignatureECDSASHA256-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

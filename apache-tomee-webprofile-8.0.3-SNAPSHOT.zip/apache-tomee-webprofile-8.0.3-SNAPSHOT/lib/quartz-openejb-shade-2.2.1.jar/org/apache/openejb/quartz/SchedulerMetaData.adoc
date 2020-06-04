@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/SchedulerMetaData.class
+
+ - link:SchedulerMetaData-asmified.java[Asmified]
+
+== References
+

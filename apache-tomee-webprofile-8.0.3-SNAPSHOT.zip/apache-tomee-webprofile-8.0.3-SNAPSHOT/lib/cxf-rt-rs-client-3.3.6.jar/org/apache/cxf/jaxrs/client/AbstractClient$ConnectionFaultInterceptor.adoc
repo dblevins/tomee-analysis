@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/client/AbstractClient$ConnectionFaultInterceptor.class
+
+ - link:AbstractClient$ConnectionFaultInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ProcessingException - 3

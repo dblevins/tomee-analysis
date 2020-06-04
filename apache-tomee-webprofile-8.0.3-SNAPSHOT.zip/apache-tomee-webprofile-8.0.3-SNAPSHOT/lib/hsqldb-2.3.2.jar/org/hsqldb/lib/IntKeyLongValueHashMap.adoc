@@ -1,0 +1,6 @@
+= org/hsqldb/lib/IntKeyLongValueHashMap.class
+
+ - link:IntKeyLongValueHashMap-asmified.java[Asmified]
+
+== References
+

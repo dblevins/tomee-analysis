@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/DOMUtils$NullResolver.class
+
+ - link:DOMUtils$NullResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/Result.class
+
+ - link:Result-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/MethodVerifier15.class
+
+ - link:MethodVerifier15-asmified.java[Asmified]
+
+== References
+

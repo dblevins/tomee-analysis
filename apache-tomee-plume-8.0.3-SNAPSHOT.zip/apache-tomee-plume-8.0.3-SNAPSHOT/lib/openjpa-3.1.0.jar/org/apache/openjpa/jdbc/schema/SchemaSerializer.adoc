@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaSerializer.class
+
+ - link:SchemaSerializer-asmified.java[Asmified]
+
+== References
+

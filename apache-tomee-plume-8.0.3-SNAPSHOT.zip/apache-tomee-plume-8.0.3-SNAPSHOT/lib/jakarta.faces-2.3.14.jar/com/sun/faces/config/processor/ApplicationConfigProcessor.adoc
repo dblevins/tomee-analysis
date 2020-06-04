@@ -1,0 +1,27 @@
+= com/sun/faces/config/processor/ApplicationConfigProcessor.class
+
+ - link:ApplicationConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 82
+ - javax.servlet.ServletContext - 74
+ - javax.faces.application.Application - 71
+ - javax.faces.application.NavigationHandler - 7
+ - javax.faces.event.SystemEventListener - 7
+ - javax.faces.component.search.SearchExpressionHandler - 7
+ - javax.faces.event.ActionListener - 6
+ - javax.faces.application.StateManager - 6
+ - javax.faces.application.ResourceHandler - 6
+ - javax.faces.application.ViewHandler - 6
+ - javax.faces.component.search.SearchKeywordResolver - 5
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.el.PropertyResolver - 4
+ - javax.faces.el.VariableResolver - 4
+ - javax.el.ELResolver - 4
+ - javax.validation.ValidatorFactory - 3
+ - javax.validation.Validator - 1
+ - javax.faces.event.SystemEvent - 1
+ - javax.validation.Validation - 1
+ - javax.faces.event.NamedEvent - 1
+ - javax.faces.application.ConfigurableNavigationHandler - 1

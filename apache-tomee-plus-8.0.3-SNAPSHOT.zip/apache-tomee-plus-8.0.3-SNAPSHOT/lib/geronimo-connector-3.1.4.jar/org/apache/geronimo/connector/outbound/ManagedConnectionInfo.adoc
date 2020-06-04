@@ -1,0 +1,9 @@
+= org/apache/geronimo/connector/outbound/ManagedConnectionInfo.class
+
+ - link:ManagedConnectionInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionRequestInfo - 12
+ - javax.resource.spi.ManagedConnection - 7
+ - javax.resource.spi.ManagedConnectionFactory - 7

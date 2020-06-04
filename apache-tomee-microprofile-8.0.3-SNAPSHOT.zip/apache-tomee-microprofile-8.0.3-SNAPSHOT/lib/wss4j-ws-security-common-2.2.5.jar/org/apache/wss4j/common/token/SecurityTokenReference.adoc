@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/token/SecurityTokenReference.class
+
+ - link:SecurityTokenReference-asmified.java[Asmified]
+
+== References
+

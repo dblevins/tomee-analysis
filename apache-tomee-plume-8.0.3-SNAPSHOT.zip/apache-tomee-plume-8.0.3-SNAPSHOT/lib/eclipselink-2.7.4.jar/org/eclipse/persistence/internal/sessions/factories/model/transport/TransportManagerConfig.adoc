@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/transport/TransportManagerConfig.class
+
+ - link:TransportManagerConfig-asmified.java[Asmified]
+
+== References
+

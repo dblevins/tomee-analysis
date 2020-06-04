@@ -1,0 +1,6 @@
+= org/apache/catalina/util/ManifestResource.class
+
+ - link:ManifestResource-asmified.java[Asmified]
+
+== References
+

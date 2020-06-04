@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/EmbeddableMapping.class
+
+ - link:EmbeddableMapping-asmified.java[Asmified]
+
+== References
+

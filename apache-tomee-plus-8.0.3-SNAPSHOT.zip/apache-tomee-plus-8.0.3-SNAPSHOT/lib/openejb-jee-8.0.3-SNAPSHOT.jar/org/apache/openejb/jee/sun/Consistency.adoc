@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/sun/Consistency.class
+
+ - link:Consistency-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 6
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElements - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

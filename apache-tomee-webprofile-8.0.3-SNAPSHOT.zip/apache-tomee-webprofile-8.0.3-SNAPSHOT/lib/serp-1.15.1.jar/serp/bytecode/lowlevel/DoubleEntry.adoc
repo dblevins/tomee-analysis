@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/DoubleEntry.class
+
+ - link:DoubleEntry-asmified.java[Asmified]
+
+== References
+

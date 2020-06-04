@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/EnableServices.class
+
+ - link:EnableServices-asmified.java[Asmified]
+
+== References
+

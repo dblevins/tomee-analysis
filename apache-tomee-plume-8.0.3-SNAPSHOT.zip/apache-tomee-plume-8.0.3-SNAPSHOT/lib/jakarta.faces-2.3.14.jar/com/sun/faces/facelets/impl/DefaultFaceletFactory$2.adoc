@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/impl/DefaultFaceletFactory$2.class
+
+ - link:DefaultFaceletFactory$2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 1

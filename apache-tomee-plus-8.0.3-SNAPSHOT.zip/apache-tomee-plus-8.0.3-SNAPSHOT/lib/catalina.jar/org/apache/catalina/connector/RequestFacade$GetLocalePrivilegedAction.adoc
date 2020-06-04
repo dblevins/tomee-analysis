@@ -1,0 +1,6 @@
+= org/apache/catalina/connector/RequestFacade$GetLocalePrivilegedAction.class
+
+ - link:RequestFacade$GetLocalePrivilegedAction-asmified.java[Asmified]
+
+== References
+

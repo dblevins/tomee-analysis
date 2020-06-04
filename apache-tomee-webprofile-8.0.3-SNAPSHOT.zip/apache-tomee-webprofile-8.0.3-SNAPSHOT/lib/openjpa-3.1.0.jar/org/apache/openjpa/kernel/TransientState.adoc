@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/TransientState.class
+
+ - link:TransientState-asmified.java[Asmified]
+
+== References
+

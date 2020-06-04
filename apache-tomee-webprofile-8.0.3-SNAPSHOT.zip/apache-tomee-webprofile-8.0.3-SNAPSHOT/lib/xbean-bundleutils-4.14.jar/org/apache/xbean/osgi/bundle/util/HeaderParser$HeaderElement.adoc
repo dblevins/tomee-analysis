@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/HeaderParser$HeaderElement.class
+
+ - link:HeaderParser$HeaderElement-asmified.java[Asmified]
+
+== References
+

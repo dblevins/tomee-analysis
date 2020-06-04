@@ -1,0 +1,8 @@
+= javax/jms/TemporaryQueue.class
+
+ - link:TemporaryQueue-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Queue - 1
+ - javax.jms.JMSException - 1

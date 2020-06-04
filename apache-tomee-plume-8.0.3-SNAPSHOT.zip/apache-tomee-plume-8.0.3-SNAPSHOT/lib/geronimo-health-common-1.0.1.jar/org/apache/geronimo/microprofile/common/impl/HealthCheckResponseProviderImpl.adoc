@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/common/impl/HealthCheckResponseProviderImpl.class
+
+ - link:HealthCheckResponseProviderImpl-asmified.java[Asmified]
+
+== References
+

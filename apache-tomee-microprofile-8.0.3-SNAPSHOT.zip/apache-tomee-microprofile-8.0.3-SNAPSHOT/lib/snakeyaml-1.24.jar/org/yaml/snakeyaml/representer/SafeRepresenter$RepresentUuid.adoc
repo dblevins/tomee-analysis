@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentUuid.class
+
+ - link:SafeRepresenter$RepresentUuid-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/util/CollectionsUtils$ConstMap.class
+
+ - link:CollectionsUtils$ConstMap-asmified.java[Asmified]
+
+== References
+

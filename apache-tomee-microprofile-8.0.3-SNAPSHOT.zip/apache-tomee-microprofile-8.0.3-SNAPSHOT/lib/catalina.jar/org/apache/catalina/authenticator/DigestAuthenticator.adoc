@@ -1,0 +1,8 @@
+= org/apache/catalina/authenticator/DigestAuthenticator.class
+
+ - link:DigestAuthenticator-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 11
+ - javax.servlet.http.HttpServletRequest - 2

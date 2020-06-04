@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/Yaml$SilentEmitter.class
+
+ - link:Yaml$SilentEmitter-asmified.java[Asmified]
+
+== References
+

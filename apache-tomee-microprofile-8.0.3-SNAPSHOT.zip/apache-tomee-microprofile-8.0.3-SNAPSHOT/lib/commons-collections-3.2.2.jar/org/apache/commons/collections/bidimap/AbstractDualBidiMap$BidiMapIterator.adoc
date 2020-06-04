@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bidimap/AbstractDualBidiMap$BidiMapIterator.class
+
+ - link:AbstractDualBidiMap$BidiMapIterator-asmified.java[Asmified]
+
+== References
+

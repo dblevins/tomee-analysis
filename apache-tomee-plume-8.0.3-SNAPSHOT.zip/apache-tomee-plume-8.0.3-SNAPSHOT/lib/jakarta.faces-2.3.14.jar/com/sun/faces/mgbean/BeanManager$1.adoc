@@ -1,0 +1,6 @@
+= com/sun/faces/mgbean/BeanManager$1.class
+
+ - link:BeanManager$1-asmified.java[Asmified]
+
+== References
+

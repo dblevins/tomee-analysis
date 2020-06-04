@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/ManyToOneAccessor.class
+
+ - link:ManyToOneAccessor-asmified.java[Asmified]
+
+== References
+

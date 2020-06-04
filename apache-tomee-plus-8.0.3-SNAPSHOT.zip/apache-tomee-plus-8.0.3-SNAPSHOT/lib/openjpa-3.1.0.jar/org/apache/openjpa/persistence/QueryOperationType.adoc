@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/QueryOperationType.class
+
+ - link:QueryOperationType-asmified.java[Asmified]
+
+== References
+

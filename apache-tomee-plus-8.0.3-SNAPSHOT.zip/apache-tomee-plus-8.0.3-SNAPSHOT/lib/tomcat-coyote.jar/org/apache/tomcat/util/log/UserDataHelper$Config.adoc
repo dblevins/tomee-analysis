@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/log/UserDataHelper$Config.class
+
+ - link:UserDataHelper$Config-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlMessagesRendererBase$MessagesIterator.class
+
+ - link:HtmlMessagesRendererBase$MessagesIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.application.FacesMessage - 6

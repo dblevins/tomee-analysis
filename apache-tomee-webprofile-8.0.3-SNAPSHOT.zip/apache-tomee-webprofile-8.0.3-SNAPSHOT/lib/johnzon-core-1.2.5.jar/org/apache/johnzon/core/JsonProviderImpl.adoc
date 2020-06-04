@@ -1,0 +1,28 @@
+= org/apache/johnzon/core/JsonProviderImpl.class
+
+ - link:JsonProviderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonBuilderFactory - 20
+ - javax.json.JsonReaderFactory - 9
+ - javax.json.JsonWriterFactory - 9
+ - javax.json.stream.JsonGeneratorFactory - 9
+ - javax.json.stream.JsonParserFactory - 9
+ - javax.json.JsonArrayBuilder - 6
+ - javax.json.JsonArray - 6
+ - javax.json.spi.JsonProvider - 6
+ - javax.json.JsonValue - 6
+ - javax.json.JsonObjectBuilder - 6
+ - javax.json.JsonNumber - 5
+ - javax.json.stream.JsonGenerator - 4
+ - javax.json.stream.JsonParser - 4
+ - javax.json.JsonReader - 4
+ - javax.json.JsonPatch - 4
+ - javax.json.JsonStructure - 4
+ - javax.json.JsonPatchBuilder - 4
+ - javax.json.JsonWriter - 4
+ - javax.json.JsonMergePatch - 3
+ - javax.json.JsonObject - 2
+ - javax.json.JsonString - 1
+ - javax.json.JsonPointer - 1

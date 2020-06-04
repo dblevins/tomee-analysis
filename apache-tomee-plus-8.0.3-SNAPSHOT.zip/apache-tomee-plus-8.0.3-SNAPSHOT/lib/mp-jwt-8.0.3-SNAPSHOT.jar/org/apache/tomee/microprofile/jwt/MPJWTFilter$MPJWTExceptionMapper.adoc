@@ -1,0 +1,10 @@
+= org/apache/tomee/microprofile/jwt/MPJWTFilter$MPJWTExceptionMapper.class
+
+ - link:MPJWTFilter$MPJWTExceptionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 5
+ - javax.ws.rs.core.Response$ResponseBuilder - 4
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.ExceptionMapper - 1

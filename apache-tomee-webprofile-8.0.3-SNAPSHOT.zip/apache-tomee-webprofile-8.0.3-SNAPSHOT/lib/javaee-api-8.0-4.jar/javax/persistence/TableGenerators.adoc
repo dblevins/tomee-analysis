@@ -1,0 +1,7 @@
+= javax/persistence/TableGenerators.class
+
+ - link:TableGenerators-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TableGenerator - 1

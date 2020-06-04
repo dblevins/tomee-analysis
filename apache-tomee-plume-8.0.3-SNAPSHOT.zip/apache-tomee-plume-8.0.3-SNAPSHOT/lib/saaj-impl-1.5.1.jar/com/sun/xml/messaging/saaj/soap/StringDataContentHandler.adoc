@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/StringDataContentHandler.class
+
+ - link:StringDataContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.ActivationDataFlavor - 11
+ - javax.activation.DataSource - 10
+ - javax.activation.DataContentHandler - 1

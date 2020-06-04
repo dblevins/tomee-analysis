@@ -1,0 +1,6 @@
+= org/jose4j/jwt/consumer/InvalidJwtSignatureException.class
+
+ - link:InvalidJwtSignatureException-asmified.java[Asmified]
+
+== References
+

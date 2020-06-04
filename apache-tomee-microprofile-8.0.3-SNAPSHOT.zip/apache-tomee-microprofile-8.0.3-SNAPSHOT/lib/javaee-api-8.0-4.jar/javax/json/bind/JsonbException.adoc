@@ -1,0 +1,6 @@
+= javax/json/bind/JsonbException.class
+
+ - link:JsonbException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/activemq/jms2/cdi/JMS2CDIExtension$TransactionAutoContextDestruction.class
+
+ - link:JMS2CDIExtension$TransactionAutoContextDestruction-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionScoped - 1

@@ -1,0 +1,6 @@
+= javax/decorator/Delegate.class
+
+ - link:Delegate-asmified.java[Asmified]
+
+== References
+

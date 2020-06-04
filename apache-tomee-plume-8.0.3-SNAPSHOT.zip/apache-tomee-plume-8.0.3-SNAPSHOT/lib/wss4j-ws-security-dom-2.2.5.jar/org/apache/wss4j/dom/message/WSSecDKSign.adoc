@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/message/WSSecDKSign.class
+
+ - link:WSSecDKSign-asmified.java[Asmified]
+
+== References
+

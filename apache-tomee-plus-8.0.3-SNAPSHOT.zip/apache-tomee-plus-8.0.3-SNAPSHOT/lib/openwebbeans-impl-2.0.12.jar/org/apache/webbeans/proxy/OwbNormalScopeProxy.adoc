@@ -1,0 +1,6 @@
+= org/apache/webbeans/proxy/OwbNormalScopeProxy.class
+
+ - link:OwbNormalScopeProxy-asmified.java[Asmified]
+
+== References
+

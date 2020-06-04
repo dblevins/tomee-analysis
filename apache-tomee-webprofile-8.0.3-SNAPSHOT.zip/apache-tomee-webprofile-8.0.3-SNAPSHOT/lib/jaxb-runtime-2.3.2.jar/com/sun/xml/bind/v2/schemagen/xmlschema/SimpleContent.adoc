@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/SimpleContent.class
+
+ - link:SimpleContent-asmified.java[Asmified]
+
+== References
+

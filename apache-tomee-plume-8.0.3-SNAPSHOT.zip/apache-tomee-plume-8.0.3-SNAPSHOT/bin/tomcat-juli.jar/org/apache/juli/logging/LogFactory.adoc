@@ -1,0 +1,6 @@
+= org/apache/juli/logging/LogFactory.class
+
+ - link:LogFactory-asmified.java[Asmified]
+
+== References
+

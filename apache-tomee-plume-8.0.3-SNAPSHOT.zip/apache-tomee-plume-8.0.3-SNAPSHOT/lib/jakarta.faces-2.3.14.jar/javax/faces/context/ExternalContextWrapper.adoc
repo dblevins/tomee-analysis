@@ -1,0 +1,11 @@
+= javax/faces/context/ExternalContextWrapper.class
+
+ - link:ExternalContextWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 162
+ - javax.faces.context.ExternalContextWrapper - 77
+ - javax.faces.lifecycle.ClientWindow - 4
+ - javax.faces.context.Flash - 2
+ - javax.faces.FacesWrapper - 1

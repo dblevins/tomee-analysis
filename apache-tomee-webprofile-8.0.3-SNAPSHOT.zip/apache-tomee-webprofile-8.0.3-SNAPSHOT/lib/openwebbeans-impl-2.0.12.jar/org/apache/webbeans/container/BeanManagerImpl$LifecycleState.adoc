@@ -1,0 +1,6 @@
+= org/apache/webbeans/container/BeanManagerImpl$LifecycleState.class
+
+ - link:BeanManagerImpl$LifecycleState-asmified.java[Asmified]
+
+== References
+

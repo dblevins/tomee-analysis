@@ -1,0 +1,494 @@
+package asm.org.apache.xbean.naming.context;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class AbstractFederatedContextDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER | ACC_ABSTRACT, "org/apache/xbean/naming/context/AbstractFederatedContext", null, "org/apache/xbean/naming/context/AbstractContext", null);
+
+classWriter.visitInnerClass("java/util/Map$Entry", "java/util/Map", "Entry", ACC_PUBLIC | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "masterContext", "Lorg/apache/xbean/naming/context/AbstractFederatedContext;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xbean/naming/context/ContextAccess", "MODIFIABLE", "Lorg/apache/xbean/naming/context/ContextAccess;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xbean/naming/context/ContextAccess", "MODIFIABLE", "Lorg/apache/xbean/naming/context/ContextAccess;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/AbstractContext", "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "masterContext", "Lorg/apache/xbean/naming/context/AbstractFederatedContext;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xbean/naming/context/ContextFederation");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/ContextFederation", "<init>", "(Ljavax/naming/Context;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;Ljava/util/Set;)V", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;Ljava/util/Set<Ljavax/naming/Context;>;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/AbstractContext", "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "masterContext", "Lorg/apache/xbean/naming/context/AbstractFederatedContext;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xbean/naming/context/ContextFederation");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/ContextFederation", "<init>", "(Ljavax/naming/Context;Ljava/util/Set;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljava/lang/String;)V", null, new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getContextAccess", "()Lorg/apache/xbean/naming/context/ContextAccess;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/AbstractContext", "<init>", "(Ljava/lang/String;Lorg/apache/xbean/naming/context/ContextAccess;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "masterContext", "Lorg/apache/xbean/naming/context/AbstractFederatedContext;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "masterContext", "Lorg/apache/xbean/naming/context/AbstractFederatedContext;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "createSubcontextFederation", "(Ljava/lang/String;Ljavax/naming/Context;)Lorg/apache/xbean/naming/context/ContextFederation;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "faultLookup", "(Ljava/lang/String;Ljavax/naming/Name;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "lookup", "(Ljavax/naming/Name;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/AbstractContext", "faultLookup", "(Ljava/lang/String;Ljavax/naming/Name;)Ljava/lang/Object;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDeepBinding", "(Ljava/lang/String;)Ljava/lang/Object;", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "javax/naming/NamingException");
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label2, "javax/naming/NamingException");
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "getFederatedBinding", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/naming/Context");
+methodVisitor.visitJumpInsn(IFEQ, label3);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getBinding", "(Ljava/lang/String;)Ljava/lang/Object;", null, new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "getFederatedBinding", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/naming/Context");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getBindings", "(Ljava/lang/String;)Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "createNestedSubcontext", "(Ljava/lang/String;Ljava/util/Map;)Ljavax/naming/Context;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getWrapperBindings", "()Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "getBindings", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn("");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getBindings", "(Ljava/lang/String;)Ljava/util/Map;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_FINAL, "getBindings", "(Ljava/lang/String;)Ljava/util/Map;", "(Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "getFederatedBindings", "(Ljava/lang/String;)Ljava/util/Map;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getWrapperBindings", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "putAll", "(Ljava/util/Map;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_ABSTRACT, "getWrapperBindings", "()Ljava/util/Map;", "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;", new String[] { "javax/naming/NamingException" });
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "addBinding", "(Ljava/lang/String;Ljava/lang/Object;Z)Z", null, new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(INSTANCEOF, "javax/naming/Context");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "isNestedSubcontext", "(Ljava/lang/Object;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "addBinding", "(Ljava/lang/String;Ljava/lang/Object;Z)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "isNestedSubcontext", "(Ljava/lang/Object;)Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/naming/Context");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getBinding", "(Ljava/lang/String;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/xbean/naming/context/AbstractFederatedContext");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitTypeInsn(NEW, "javax/naming/NameAlreadyBoundException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/naming/NameAlreadyBoundException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xbean/naming/context/AbstractFederatedContext");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xbean/naming/context/AbstractFederatedContext", "addFederatedContext", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljavax/naming/Context;)V", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/util/Collections", "emptyMap", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "createNestedSubcontext", "(Ljava/lang/String;Ljava/util/Map;)Ljavax/naming/Context;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xbean/naming/context/AbstractFederatedContext");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xbean/naming/context/AbstractFederatedContext", "addFederatedContext", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljavax/naming/Context;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "addBinding", "(Ljava/lang/String;Ljava/lang/Object;Z)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "removeBinding", "(Ljava/lang/String;Z)Z", null, new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "removeBinding", "(Ljava/lang/String;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "addFederatedContext", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljavax/naming/Context;)V", null, new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "addContext", "(Ljavax/naming/Context;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getWrapperBindings", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map$Entry");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/xbean/naming/context/AbstractFederatedContext");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xbean/naming/context/AbstractFederatedContext");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getNameParser", "()Ljavax/naming/NameParser;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/NameParser", "parse", "(Ljava/lang/String;)Ljavax/naming/Name;", true);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getNameInNamespace", "(Ljavax/naming/Name;)Ljavax/naming/Name;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xbean/naming/context/VirtualSubcontext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/VirtualSubcontext", "<init>", "(Ljavax/naming/Name;Ljavax/naming/Context;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xbean/naming/context/AbstractFederatedContext", "addFederatedContext", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljavax/naming/Context;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED | ACC_STATIC, "removeFederatedContext", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljavax/naming/Context;)V", null, new String[] { "javax/naming/NamingException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "contextFederation", "Lorg/apache/xbean/naming/context/ContextFederation;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/ContextFederation", "removeContext", "(Ljavax/naming/Context;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getWrapperBindings", "()Ljava/util/Map;", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "entrySet", "()Ljava/util/Set;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Set", "iterator", "()Ljava/util/Iterator;", true);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/util/Map$Entry");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getKey", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Map$Entry", "getValue", "()Ljava/lang/Object;", true);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/xbean/naming/context/AbstractFederatedContext");
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xbean/naming/context/AbstractFederatedContext");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getNameParser", "()Ljavax/naming/NameParser;", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "javax/naming/NameParser", "parse", "(Ljava/lang/String;)Ljavax/naming/Name;", true);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getNameInNamespace", "(Ljavax/naming/Name;)Ljavax/naming/Name;", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xbean/naming/context/VirtualSubcontext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xbean/naming/context/VirtualSubcontext", "<init>", "(Ljavax/naming/Name;Ljavax/naming/Context;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xbean/naming/context/AbstractFederatedContext", "removeFederatedContext", "(Lorg/apache/xbean/naming/context/AbstractFederatedContext;Ljavax/naming/Context;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isNestedSubcontext", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/xbean/naming/context/AbstractFederatedContext");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xbean/naming/context/AbstractFederatedContext");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getMasterContext", "()Lorg/apache/xbean/naming/context/AbstractFederatedContext;", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xbean/naming/context/AbstractFederatedContext", "getMasterContext", "()Lorg/apache/xbean/naming/context/AbstractFederatedContext;", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label1);
+methodVisitor.visitInsn(ICONST_1);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getMasterContext", "()Lorg/apache/xbean/naming/context/AbstractFederatedContext;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xbean/naming/context/AbstractFederatedContext", "masterContext", "Lorg/apache/xbean/naming/context/AbstractFederatedContext;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

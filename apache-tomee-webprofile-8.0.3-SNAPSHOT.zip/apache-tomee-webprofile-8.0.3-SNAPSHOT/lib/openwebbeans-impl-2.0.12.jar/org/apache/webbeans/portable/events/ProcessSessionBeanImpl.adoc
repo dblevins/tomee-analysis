@@ -1,0 +1,11 @@
+= org/apache/webbeans/portable/events/ProcessSessionBeanImpl.class
+
+ - link:ProcessSessionBeanImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.SessionBeanType - 5
+ - javax.enterprise.inject.spi.AnnotatedType - 5
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.inject.spi.ProcessSessionBean - 1
+ - javax.enterprise.inject.spi.Annotated - 1

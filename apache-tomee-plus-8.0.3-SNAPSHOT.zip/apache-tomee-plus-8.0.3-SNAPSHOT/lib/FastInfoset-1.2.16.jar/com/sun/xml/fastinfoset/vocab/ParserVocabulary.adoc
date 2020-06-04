@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/vocab/ParserVocabulary.class
+
+ - link:ParserVocabulary-asmified.java[Asmified]
+
+== References
+

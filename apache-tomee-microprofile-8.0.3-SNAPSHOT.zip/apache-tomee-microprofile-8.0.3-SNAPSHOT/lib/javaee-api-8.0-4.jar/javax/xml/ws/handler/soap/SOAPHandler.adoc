@@ -1,0 +1,8 @@
+= javax/xml/ws/handler/soap/SOAPHandler.class
+
+ - link:SOAPHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.soap.SOAPMessageContext - 1
+ - javax.xml.ws.handler.Handler - 1

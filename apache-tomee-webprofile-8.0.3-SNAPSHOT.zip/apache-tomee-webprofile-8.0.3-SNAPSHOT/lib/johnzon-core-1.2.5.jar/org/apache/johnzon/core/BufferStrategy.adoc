@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/BufferStrategy.class
+
+ - link:BufferStrategy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= com/sun/faces/application/view/ViewScopeContext.class
+
+ - link:ViewScopeContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 14
+ - javax.enterprise.context.spi.Contextual - 6
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.context.ContextNotActiveException - 2
+ - javax.faces.component.UIViewRoot - 1
+ - javax.enterprise.context.spi.Context - 1
+ - javax.faces.view.ViewScoped - 1

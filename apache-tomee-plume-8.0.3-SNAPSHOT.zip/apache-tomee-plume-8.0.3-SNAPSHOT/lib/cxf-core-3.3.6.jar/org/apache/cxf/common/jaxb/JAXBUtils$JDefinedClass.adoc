@@ -1,0 +1,6 @@
+= org/apache/cxf/common/jaxb/JAXBUtils$JDefinedClass.class
+
+ - link:JAXBUtils$JDefinedClass-asmified.java[Asmified]
+
+== References
+

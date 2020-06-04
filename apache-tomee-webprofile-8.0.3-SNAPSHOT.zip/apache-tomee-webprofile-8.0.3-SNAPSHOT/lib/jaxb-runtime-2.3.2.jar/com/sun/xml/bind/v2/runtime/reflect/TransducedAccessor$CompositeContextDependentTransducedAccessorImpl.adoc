@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/TransducedAccessor$CompositeContextDependentTransducedAccessorImpl.class
+
+ - link:TransducedAccessor$CompositeContextDependentTransducedAccessorImpl-asmified.java[Asmified]
+
+== References
+

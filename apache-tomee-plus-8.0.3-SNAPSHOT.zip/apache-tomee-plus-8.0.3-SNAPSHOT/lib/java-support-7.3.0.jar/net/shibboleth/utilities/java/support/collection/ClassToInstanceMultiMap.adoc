@@ -1,0 +1,9 @@
+= net/shibboleth/utilities/java/support/collection/ClassToInstanceMultiMap.class
+
+ - link:ClassToInstanceMultiMap-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 12
+ - javax.annotation.Nullable - 7
+ - javax.annotation.concurrent.NotThreadSafe - 1

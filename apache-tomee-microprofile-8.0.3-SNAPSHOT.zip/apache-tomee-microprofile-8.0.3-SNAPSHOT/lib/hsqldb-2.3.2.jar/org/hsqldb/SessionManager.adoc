@@ -1,0 +1,6 @@
+= org/hsqldb/SessionManager.class
+
+ - link:SessionManager-asmified.java[Asmified]
+
+== References
+

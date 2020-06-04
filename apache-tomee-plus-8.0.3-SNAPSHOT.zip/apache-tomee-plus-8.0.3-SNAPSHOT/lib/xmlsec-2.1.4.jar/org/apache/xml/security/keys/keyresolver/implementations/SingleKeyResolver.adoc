@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/SingleKeyResolver.class
+
+ - link:SingleKeyResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/SimpleResourceBundleProvider.class
+
+ - link:SimpleResourceBundleProvider-asmified.java[Asmified]
+
+== References
+

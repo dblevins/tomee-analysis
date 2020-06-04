@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml1/core/impl/ResponseAbstractTypeUnmarshaller.class
+
+ - link:ResponseAbstractTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

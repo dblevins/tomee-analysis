@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$BatchTypeHint.class
+
+ - link:QueryHintsHandler$BatchTypeHint-asmified.java[Asmified]
+
+== References
+

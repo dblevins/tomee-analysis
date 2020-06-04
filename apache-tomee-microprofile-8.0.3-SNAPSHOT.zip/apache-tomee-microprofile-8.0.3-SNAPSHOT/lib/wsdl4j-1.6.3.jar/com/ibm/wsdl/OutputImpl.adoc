@@ -1,0 +1,6 @@
+= com/ibm/wsdl/OutputImpl.class
+
+ - link:OutputImpl-asmified.java[Asmified]
+
+== References
+

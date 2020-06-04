@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/impl/AlgorithmRuntimeSupportedPredicate.class
+
+ - link:AlgorithmRuntimeSupportedPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

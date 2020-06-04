@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/StaxActionInInterceptor.class
+
+ - link:StaxActionInInterceptor-asmified.java[Asmified]
+
+== References
+

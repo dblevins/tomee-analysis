@@ -1,0 +1,6 @@
+= org/apache/webbeans/xml/DefaultBeanArchiveInformation.class
+
+ - link:DefaultBeanArchiveInformation-asmified.java[Asmified]
+
+== References
+

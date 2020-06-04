@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/FloatConstant.class
+
+ - link:FloatConstant-asmified.java[Asmified]
+
+== References
+

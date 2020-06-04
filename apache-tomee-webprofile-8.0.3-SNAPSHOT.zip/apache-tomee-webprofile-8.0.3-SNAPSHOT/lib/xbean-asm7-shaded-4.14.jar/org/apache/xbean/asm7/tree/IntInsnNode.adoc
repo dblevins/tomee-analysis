@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/tree/IntInsnNode.class
+
+ - link:IntInsnNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/WebBeansContextCreated.class
+
+ - link:WebBeansContextCreated-asmified.java[Asmified]
+
+== References
+

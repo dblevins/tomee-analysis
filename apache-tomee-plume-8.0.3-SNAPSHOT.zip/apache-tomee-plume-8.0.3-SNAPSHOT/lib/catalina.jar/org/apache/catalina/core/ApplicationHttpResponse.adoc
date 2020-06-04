@@ -1,0 +1,10 @@
+= org/apache/catalina/core/ApplicationHttpResponse.class
+
+ - link:ApplicationHttpResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponse - 27
+ - javax.servlet.http.HttpServletResponse - 27
+ - javax.servlet.http.HttpServletResponseWrapper - 3
+ - javax.servlet.http.Cookie - 2

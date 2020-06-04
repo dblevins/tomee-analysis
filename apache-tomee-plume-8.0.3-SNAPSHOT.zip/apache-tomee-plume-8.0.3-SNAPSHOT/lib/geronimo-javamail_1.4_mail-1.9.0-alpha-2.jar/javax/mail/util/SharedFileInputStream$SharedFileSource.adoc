@@ -1,0 +1,7 @@
+= javax/mail/util/SharedFileInputStream$SharedFileSource.class
+
+ - link:SharedFileInputStream$SharedFileSource-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.util.SharedFileInputStream - 3

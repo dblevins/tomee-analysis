@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/kerberos/KerberosServiceContext.class
+
+ - link:KerberosServiceContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/STSTokenRetriever.class
+
+ - link:STSTokenRetriever-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/naming/reference/SimpleReference$SimpleObjectFactory.class
+
+ - link:SimpleReference$SimpleObjectFactory-asmified.java[Asmified]
+
+== References
+

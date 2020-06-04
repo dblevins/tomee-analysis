@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/SecurePart.class
+
+ - link:SecurePart-asmified.java[Asmified]
+
+== References
+

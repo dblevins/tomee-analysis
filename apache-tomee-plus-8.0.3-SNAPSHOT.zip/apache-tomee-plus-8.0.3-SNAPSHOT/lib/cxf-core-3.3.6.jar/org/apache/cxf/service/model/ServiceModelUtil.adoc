@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/ServiceModelUtil.class
+
+ - link:ServiceModelUtil-asmified.java[Asmified]
+
+== References
+

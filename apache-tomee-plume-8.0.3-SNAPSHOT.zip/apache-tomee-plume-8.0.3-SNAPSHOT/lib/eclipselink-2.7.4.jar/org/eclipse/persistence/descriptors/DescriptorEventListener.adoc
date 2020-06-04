@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/DescriptorEventListener.class
+
+ - link:DescriptorEventListener-asmified.java[Asmified]
+
+== References
+

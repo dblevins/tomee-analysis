@@ -1,0 +1,10 @@
+= org/apache/webbeans/decorator/DecoratorsManager.class
+
+ - link:DecoratorsManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Decorator - 11
+ - javax.annotation.Priority - 2
+ - javax.enterprise.inject.spi.Bean - 1
+ - javax.decorator.Decorator - 1

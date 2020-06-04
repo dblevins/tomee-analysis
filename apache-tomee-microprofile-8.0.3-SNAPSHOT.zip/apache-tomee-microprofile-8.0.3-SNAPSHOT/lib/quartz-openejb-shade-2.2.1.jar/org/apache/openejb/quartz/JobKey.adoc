@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/JobKey.class
+
+ - link:JobKey-asmified.java[Asmified]
+
+== References
+

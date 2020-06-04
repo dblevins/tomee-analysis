@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/mappings/EISCompositeCollectionMapping.class
+
+ - link:EISCompositeCollectionMapping-asmified.java[Asmified]
+
+== References
+

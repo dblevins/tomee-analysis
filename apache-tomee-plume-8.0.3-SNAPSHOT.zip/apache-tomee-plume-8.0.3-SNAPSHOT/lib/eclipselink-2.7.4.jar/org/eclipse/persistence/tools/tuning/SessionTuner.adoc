@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/tuning/SessionTuner.class
+
+ - link:SessionTuner-asmified.java[Asmified]
+
+== References
+

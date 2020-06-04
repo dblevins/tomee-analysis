@@ -1,0 +1,9 @@
+= org/apache/openejb/core/ivm/naming/JaxWsServiceReference.class
+
+ - link:JaxWsServiceReference-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Service - 14
+ - javax.xml.ws.WebServiceFeature - 5
+ - javax.xml.ws.handler.HandlerResolver - 1

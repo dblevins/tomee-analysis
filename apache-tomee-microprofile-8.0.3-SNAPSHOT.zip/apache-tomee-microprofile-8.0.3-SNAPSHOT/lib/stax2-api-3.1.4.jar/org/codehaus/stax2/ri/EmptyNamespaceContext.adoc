@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/EmptyNamespaceContext.class
+
+ - link:EmptyNamespaceContext-asmified.java[Asmified]
+
+== References
+

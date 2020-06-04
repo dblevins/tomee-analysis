@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/auth/DigestAuthSupplier$DigestInfo.class
+
+ - link:DigestAuthSupplier$DigestInfo-asmified.java[Asmified]
+
+== References
+

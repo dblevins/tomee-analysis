@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/FetchGroup.class
+
+ - link:FetchGroup-asmified.java[Asmified]
+
+== References
+

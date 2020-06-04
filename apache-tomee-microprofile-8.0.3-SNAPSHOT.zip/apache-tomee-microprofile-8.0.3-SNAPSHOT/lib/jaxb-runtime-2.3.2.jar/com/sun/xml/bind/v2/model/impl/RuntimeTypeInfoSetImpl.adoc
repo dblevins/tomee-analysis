@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/RuntimeTypeInfoSetImpl.class
+
+ - link:RuntimeTypeInfoSetImpl-asmified.java[Asmified]
+
+== References
+

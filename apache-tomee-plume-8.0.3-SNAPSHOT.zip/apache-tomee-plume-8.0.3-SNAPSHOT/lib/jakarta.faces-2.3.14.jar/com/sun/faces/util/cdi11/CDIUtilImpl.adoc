@@ -1,0 +1,11 @@
+= com/sun/faces/util/cdi11/CDIUtilImpl.class
+
+ - link:CDIUtilImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 3
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.InjectionTargetFactory - 2
+ - javax.enterprise.inject.spi.Bean - 2

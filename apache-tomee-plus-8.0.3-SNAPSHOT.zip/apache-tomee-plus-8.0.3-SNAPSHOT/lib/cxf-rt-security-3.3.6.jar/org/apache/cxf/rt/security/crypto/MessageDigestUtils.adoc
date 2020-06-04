@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/crypto/MessageDigestUtils.class
+
+ - link:MessageDigestUtils-asmified.java[Asmified]
+
+== References
+

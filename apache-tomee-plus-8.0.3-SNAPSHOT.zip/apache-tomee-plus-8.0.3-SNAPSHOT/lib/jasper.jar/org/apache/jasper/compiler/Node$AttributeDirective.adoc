@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Node$AttributeDirective.class
+
+ - link:Node$AttributeDirective-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/AccessRestriction.class
+
+ - link:AccessRestriction-asmified.java[Asmified]
+
+== References
+

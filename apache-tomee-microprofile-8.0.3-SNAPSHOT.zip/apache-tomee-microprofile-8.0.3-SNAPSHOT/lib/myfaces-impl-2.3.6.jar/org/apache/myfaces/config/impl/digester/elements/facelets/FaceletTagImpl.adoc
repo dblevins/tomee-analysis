@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/facelets/FaceletTagImpl.class
+
+ - link:FaceletTagImpl-asmified.java[Asmified]
+
+== References
+

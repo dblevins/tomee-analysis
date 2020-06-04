@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/output/UTF8XmlOutput.class
+
+ - link:UTF8XmlOutput-asmified.java[Asmified]
+
+== References
+

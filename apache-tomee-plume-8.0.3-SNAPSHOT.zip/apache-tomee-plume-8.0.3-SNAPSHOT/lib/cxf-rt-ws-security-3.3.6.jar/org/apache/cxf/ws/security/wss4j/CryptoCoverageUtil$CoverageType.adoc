@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/CryptoCoverageUtil$CoverageType.class
+
+ - link:CryptoCoverageUtil$CoverageType-asmified.java[Asmified]
+
+== References
+

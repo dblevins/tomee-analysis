@@ -1,0 +1,17 @@
+= com/sun/faces/lifecycle/RenderResponsePhase.class
+
+ - link:RenderResponsePhase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 22
+ - javax.faces.component.UIViewRoot - 17
+ - javax.faces.application.Application - 8
+ - javax.faces.application.ViewHandler - 6
+ - javax.faces.view.ViewDeclarationLanguage - 6
+ - javax.faces.FacesException - 3
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.event.PreRenderViewEvent - 1
+ - javax.faces.context.PartialViewContext - 1
+ - javax.faces.component.UIComponent - 1
+ - javax.faces.event.PostRenderViewEvent - 1

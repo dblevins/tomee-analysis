@@ -1,0 +1,6 @@
+= org/apache/commons/collections/buffer/SynchronizedBuffer.class
+
+ - link:SynchronizedBuffer-asmified.java[Asmified]
+
+== References
+

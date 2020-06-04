@@ -1,0 +1,10 @@
+= org/apache/myfaces/shared/renderkit/RendererUtils$PassThroughAsStringConverter.class
+
+ - link:RendererUtils$PassThroughAsStringConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.convert.Converter - 6
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.convert.ConverterException - 2

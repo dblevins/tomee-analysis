@@ -1,0 +1,7 @@
+= org/apache/johnzon/mapper/Mapper$2.class
+
+ - link:Mapper$2-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue$ValueType - 12

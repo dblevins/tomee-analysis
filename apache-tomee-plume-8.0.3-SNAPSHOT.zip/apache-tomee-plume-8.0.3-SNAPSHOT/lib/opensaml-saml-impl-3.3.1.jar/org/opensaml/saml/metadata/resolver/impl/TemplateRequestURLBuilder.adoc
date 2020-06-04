@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/impl/TemplateRequestURLBuilder.class
+
+ - link:TemplateRequestURLBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8
+ - javax.annotation.Nullable - 5

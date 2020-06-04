@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/SortedCharArrays.class
+
+ - link:SortedCharArrays-asmified.java[Asmified]
+
+== References
+

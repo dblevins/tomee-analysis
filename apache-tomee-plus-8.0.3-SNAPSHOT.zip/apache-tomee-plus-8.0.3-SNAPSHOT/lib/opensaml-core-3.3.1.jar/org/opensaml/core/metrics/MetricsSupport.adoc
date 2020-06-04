@@ -1,0 +1,8 @@
+= org/opensaml/core/metrics/MetricsSupport.class
+
+ - link:MetricsSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 12
+ - javax.annotation.Nullable - 12

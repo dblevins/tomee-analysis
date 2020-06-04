@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/ORMetadata$SimpleORMetadata.class
+
+ - link:ORMetadata$SimpleORMetadata-asmified.java[Asmified]
+
+== References
+

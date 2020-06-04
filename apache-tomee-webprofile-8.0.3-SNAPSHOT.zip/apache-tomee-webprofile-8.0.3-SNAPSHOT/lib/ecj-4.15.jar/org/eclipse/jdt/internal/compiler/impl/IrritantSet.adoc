@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/IrritantSet.class
+
+ - link:IrritantSet-asmified.java[Asmified]
+
+== References
+

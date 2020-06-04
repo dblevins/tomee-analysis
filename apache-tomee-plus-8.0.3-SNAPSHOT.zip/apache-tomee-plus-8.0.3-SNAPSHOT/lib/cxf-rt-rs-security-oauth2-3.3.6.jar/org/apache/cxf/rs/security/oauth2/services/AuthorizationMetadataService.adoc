@@ -1,0 +1,12 @@
+= org/apache/cxf/rs/security/oauth2/services/AuthorizationMetadataService.class
+
+ - link:AuthorizationMetadataService-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriBuilder - 13
+ - javax.ws.rs.core.UriInfo - 4
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.GET - 1
+ - javax.ws.rs.Path - 1

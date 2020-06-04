@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/LockTimeoutException.class
+
+ - link:LockTimeoutException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.LockTimeoutException - 4

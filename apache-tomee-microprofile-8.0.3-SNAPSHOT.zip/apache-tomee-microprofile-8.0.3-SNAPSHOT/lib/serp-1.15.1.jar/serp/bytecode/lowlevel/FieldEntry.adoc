@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/FieldEntry.class
+
+ - link:FieldEntry-asmified.java[Asmified]
+
+== References
+

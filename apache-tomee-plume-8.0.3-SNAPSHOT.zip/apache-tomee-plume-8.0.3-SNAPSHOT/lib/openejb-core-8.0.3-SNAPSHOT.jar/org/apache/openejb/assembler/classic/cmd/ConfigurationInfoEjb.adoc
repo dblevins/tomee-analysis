@@ -1,0 +1,10 @@
+= org/apache/openejb/assembler/classic/cmd/ConfigurationInfoEjb.class
+
+ - link:ConfigurationInfoEjb-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.Lock - 1
+ - javax.ejb.Singleton - 1
+ - javax.ejb.Remote - 1
+ - javax.ejb.LockType - 1

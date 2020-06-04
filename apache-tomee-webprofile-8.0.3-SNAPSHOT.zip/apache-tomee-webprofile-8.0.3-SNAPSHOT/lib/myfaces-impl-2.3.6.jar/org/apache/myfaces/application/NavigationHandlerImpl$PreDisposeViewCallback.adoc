@@ -1,0 +1,12 @@
+= org/apache/myfaces/application/NavigationHandlerImpl$PreDisposeViewCallback.class
+
+ - link:NavigationHandlerImpl$PreDisposeViewCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.component.visit.VisitResult - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.UIComponent - 1

@@ -1,0 +1,11 @@
+= javax/faces/component/html/_HtmlMessage.class
+
+ - link:_HtmlMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIMessage - 2
+ - javax.faces.component.html._MessageProperties - 1
+ - javax.faces.component.html._UniversalProperties - 1
+ - javax.faces.component.html._RoleProperty - 1
+ - javax.faces.component.html._StyleProperties - 1

@@ -1,0 +1,6 @@
+= org/hsqldb/map/BaseHashMap.class
+
+ - link:BaseHashMap-asmified.java[Asmified]
+
+== References
+

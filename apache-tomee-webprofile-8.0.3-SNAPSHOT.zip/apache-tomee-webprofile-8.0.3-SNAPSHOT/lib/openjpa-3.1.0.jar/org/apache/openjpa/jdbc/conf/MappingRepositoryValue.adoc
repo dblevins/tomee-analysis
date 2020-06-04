@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/conf/MappingRepositoryValue.class
+
+ - link:MappingRepositoryValue-asmified.java[Asmified]
+
+== References
+

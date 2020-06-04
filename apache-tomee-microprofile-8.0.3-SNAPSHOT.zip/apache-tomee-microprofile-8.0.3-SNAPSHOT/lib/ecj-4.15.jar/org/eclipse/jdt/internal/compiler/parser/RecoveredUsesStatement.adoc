@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredUsesStatement.class
+
+ - link:RecoveredUsesStatement-asmified.java[Asmified]
+
+== References
+

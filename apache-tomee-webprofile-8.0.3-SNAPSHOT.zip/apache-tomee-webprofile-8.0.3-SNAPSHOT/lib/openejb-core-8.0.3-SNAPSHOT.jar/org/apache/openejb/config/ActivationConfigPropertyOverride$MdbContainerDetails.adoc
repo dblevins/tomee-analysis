@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ActivationConfigPropertyOverride$MdbContainerDetails.class
+
+ - link:ActivationConfigPropertyOverride$MdbContainerDetails-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/security/criteria/KeyLengthCriterion.class
+
+ - link:KeyLengthCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

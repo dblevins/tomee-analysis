@@ -1,0 +1,7 @@
+= com/sun/faces/renderkit/html_basic/ListboxRenderer.class
+
+ - link:ListboxRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 2

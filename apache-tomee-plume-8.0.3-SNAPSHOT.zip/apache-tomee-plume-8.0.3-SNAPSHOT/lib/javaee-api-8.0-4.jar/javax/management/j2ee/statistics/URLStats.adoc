@@ -1,0 +1,7 @@
+= javax/management/j2ee/statistics/URLStats.class
+
+ - link:URLStats-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.Stats - 1

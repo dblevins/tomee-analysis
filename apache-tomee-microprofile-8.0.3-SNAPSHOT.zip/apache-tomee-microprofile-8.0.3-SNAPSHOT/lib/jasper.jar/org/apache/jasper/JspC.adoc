@@ -1,0 +1,9 @@
+= org/apache/jasper/JspC.class
+
+ - link:JspC-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 6
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 2
+ - javax.servlet.jsp.JspFactory - 2

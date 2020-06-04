@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/stax/assertionStates/EncryptedPartsAssertionState.class
+
+ - link:EncryptedPartsAssertionState-asmified.java[Asmified]
+
+== References
+

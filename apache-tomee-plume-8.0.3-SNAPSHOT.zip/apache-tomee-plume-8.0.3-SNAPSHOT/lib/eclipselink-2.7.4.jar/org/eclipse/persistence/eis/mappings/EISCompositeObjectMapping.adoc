@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/mappings/EISCompositeObjectMapping.class
+
+ - link:EISCompositeObjectMapping-asmified.java[Asmified]
+
+== References
+

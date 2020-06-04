@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/EndpointResolverRegistry.class
+
+ - link:EndpointResolverRegistry-asmified.java[Asmified]
+
+== References
+

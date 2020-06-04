@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/SoapMessage.class
+
+ - link:SoapMessage-asmified.java[Asmified]
+
+== References
+

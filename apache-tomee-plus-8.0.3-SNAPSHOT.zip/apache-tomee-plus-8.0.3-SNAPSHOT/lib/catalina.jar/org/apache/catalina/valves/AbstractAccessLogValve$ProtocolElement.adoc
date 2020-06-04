@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/AbstractAccessLogValve$ProtocolElement.class
+
+ - link:AbstractAccessLogValve$ProtocolElement-asmified.java[Asmified]
+
+== References
+

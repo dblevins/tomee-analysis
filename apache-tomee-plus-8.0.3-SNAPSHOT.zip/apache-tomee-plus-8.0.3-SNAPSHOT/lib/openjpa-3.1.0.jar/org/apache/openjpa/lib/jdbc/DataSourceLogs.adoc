@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/DataSourceLogs.class
+
+ - link:DataSourceLogs-asmified.java[Asmified]
+
+== References
+

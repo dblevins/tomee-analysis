@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/validation/JAXRSBeanValidationInInterceptor.class
+
+ - link:JAXRSBeanValidationInInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 2
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.container.ContainerRequestFilter - 1
+ - javax.ws.rs.container.ContainerRequestContext - 1

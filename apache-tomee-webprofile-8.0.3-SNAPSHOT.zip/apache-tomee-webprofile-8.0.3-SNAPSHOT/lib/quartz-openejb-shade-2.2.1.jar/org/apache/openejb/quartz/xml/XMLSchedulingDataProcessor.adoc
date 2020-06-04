@@ -1,0 +1,7 @@
+= org/apache/openejb/quartz/xml/XMLSchedulingDataProcessor.class
+
+ - link:XMLSchedulingDataProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.DatatypeConverter - 2

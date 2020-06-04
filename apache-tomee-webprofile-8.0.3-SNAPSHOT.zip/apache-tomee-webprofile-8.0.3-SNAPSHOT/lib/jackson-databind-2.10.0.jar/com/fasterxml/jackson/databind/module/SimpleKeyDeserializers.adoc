@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/module/SimpleKeyDeserializers.class
+
+ - link:SimpleKeyDeserializers-asmified.java[Asmified]
+
+== References
+

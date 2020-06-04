@@ -1,0 +1,7 @@
+= org/apache/xml/security/stax/impl/processor/input/AbstractSignatureInputHandler.class
+
+ - link:AbstractSignatureInputHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4

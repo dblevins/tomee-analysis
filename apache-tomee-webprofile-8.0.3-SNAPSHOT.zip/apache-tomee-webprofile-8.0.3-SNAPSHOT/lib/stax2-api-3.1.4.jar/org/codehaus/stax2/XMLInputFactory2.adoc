@@ -1,0 +1,6 @@
+= org/codehaus/stax2/XMLInputFactory2.class
+
+ - link:XMLInputFactory2-asmified.java[Asmified]
+
+== References
+

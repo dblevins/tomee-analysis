@@ -1,0 +1,16 @@
+= org/apache/myfaces/cdi/config/FacesConfigExtension.class
+
+ - link:FacesConfigExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.annotation.FacesConfig$Version - 14
+ - javax.faces.annotation.FacesConfig - 8
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.ProcessManagedBean - 5
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.inject.spi.Annotated - 3
+ - javax.enterprise.event.Observes - 3
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 1

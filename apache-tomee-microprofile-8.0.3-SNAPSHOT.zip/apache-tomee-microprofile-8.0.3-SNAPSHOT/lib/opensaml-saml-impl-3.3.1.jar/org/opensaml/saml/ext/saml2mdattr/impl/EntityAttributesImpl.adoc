@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdattr/impl/EntityAttributesImpl.class
+
+ - link:EntityAttributesImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= org/apache/cxf/ws/security/sts/provider/model/wstrust14/TitleType.class
+
+ - link:TitleType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyAttribute - 1
+ - javax.xml.bind.annotation.XmlValue - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

@@ -1,0 +1,6 @@
+= javax/xml/stream/events/NotationDeclaration.class
+
+ - link:NotationDeclaration-asmified.java[Asmified]
+
+== References
+

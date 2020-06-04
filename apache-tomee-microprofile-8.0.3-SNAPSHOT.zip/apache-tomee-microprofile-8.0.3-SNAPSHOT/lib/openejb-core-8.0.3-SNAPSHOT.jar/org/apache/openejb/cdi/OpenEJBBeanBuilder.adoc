@@ -1,0 +1,9 @@
+= org/apache/openejb/cdi/OpenEJBBeanBuilder.class
+
+ - link:OpenEJBBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 7
+ - javax.enterprise.inject.spi.BeanAttributes - 4
+ - javax.enterprise.inject.spi.AnnotatedType - 4

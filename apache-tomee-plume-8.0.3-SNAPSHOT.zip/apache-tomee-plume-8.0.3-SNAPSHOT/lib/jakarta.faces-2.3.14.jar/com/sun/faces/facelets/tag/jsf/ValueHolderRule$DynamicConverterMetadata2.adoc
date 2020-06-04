@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/jsf/ValueHolderRule$DynamicConverterMetadata2.class
+
+ - link:ValueHolderRule$DynamicConverterMetadata2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.el.ValueExpression - 2
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.convert.Converter - 1

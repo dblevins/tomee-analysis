@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ActivationConfig$JAXB.class
+
+ - link:ActivationConfig$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 5

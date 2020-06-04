@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/ReplaceVariablesInputStream.class
+
+ - link:ReplaceVariablesInputStream-asmified.java[Asmified]
+
+== References
+

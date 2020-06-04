@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/DailyTimeIntervalTriggerPersistenceDelegate.class
+
+ - link:DailyTimeIntervalTriggerPersistenceDelegate-asmified.java[Asmified]
+
+== References
+

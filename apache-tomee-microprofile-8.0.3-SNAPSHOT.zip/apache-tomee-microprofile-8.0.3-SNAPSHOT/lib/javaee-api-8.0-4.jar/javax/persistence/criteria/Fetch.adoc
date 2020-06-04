@@ -1,0 +1,9 @@
+= javax/persistence/criteria/Fetch.class
+
+ - link:Fetch-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.FetchParent - 2
+ - javax.persistence.metamodel.Attribute - 1
+ - javax.persistence.criteria.JoinType - 1

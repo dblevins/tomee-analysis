@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/CombinedBinaryExpression.class
+
+ - link:CombinedBinaryExpression-asmified.java[Asmified]
+
+== References
+

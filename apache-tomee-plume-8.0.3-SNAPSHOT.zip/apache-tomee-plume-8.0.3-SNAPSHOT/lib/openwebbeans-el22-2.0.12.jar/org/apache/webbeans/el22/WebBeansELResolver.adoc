@@ -1,0 +1,13 @@
+= org/apache/webbeans/el22/WebBeansELResolver.class
+
+ - link:WebBeansELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 14
+ - javax.el.ELContext - 14
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.el.ELException - 4
+ - javax.enterprise.context.spi.Contextual - 2
+ - javax.el.ELResolver - 2
+ - javax.enterprise.context.Dependent - 1

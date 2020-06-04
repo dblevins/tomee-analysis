@@ -1,0 +1,7 @@
+= org/apache/cxf/transport/http/osgi/HttpServiceTrackerCust.class
+
+ - link:HttpServiceTrackerCust-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/Restriction.class
+
+ - link:Restriction-asmified.java[Asmified]
+
+== References
+

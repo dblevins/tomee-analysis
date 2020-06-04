@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/component/IdentifiedComponent.class
+
+ - link:IdentifiedComponent-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 1

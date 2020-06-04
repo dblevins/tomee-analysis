@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/AnnotatedMethodImpl.class
+
+ - link:AnnotatedMethodImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 7
+ - javax.enterprise.inject.spi.AnnotatedMethod - 7
+ - javax.enterprise.inject.spi.AnnotatedParameter - 2

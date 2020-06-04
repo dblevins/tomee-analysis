@@ -1,0 +1,6 @@
+= org/apache/openejb/client/java/javaURLContextFactory.class
+
+ - link:javaURLContextFactory-asmified.java[Asmified]
+
+== References
+

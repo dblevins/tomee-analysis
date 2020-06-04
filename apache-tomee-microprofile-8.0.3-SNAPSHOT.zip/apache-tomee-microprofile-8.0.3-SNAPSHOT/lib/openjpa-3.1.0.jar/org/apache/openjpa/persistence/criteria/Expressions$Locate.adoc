@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Locate.class
+
+ - link:Expressions$Locate-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 28
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Selection - 2

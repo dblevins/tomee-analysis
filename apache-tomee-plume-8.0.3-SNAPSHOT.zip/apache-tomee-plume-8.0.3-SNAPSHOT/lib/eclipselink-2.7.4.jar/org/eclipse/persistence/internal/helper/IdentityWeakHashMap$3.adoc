@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/IdentityWeakHashMap$3.class
+
+ - link:IdentityWeakHashMap$3-asmified.java[Asmified]
+
+== References
+

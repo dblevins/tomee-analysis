@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/ExplicitGroup.class
+
+ - link:ExplicitGroup-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/taglibs/standard/lang/jstl/ImplicitObjects$2.class
+
+ - link:ImplicitObjects$2-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.PageContext - 7

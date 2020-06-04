@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/analysis/Subroutine.class
+
+ - link:Subroutine-asmified.java[Asmified]
+
+== References
+

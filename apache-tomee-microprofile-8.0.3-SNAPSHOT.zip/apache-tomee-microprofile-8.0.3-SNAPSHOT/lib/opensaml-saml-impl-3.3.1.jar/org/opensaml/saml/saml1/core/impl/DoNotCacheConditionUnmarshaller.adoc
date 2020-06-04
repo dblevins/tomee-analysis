@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/DoNotCacheConditionUnmarshaller.class
+
+ - link:DoNotCacheConditionUnmarshaller-asmified.java[Asmified]
+
+== References
+

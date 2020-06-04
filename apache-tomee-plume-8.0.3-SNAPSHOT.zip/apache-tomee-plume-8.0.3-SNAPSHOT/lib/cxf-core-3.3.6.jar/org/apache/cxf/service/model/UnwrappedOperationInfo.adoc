@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/UnwrappedOperationInfo.class
+
+ - link:UnwrappedOperationInfo-asmified.java[Asmified]
+
+== References
+

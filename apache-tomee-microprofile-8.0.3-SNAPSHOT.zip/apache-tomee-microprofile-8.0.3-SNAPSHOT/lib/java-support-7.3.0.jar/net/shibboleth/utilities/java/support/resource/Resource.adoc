@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/resource/Resource.class
+
+ - link:Resource-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

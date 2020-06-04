@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker.class
+
+ - link:AbstractJAXWSMethodInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.soap.SOAPFaultException - 11
+ - javax.xml.soap.SOAPFault - 10
+ - javax.xml.ws.handler.MessageContext - 8
+ - javax.xml.ws.handler.MessageContext$Scope - 3
+ - javax.xml.ws.Provider - 2
+ - javax.xml.soap.Detail - 1
+ - javax.xml.ws.AsyncHandler - 1

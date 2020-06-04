@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/meta/Types$Entity.class
+
+ - link:Types$Entity-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Bindable$BindableType - 2
+ - javax.persistence.metamodel.Type$PersistenceType - 2
+ - javax.persistence.metamodel.EntityType - 1

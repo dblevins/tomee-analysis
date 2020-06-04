@@ -1,0 +1,6 @@
+= org/apache/catalina/ha/authenticator/ClusterSingleSignOn.class
+
+ - link:ClusterSingleSignOn-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/DelegateBean.class
+
+ - link:DelegateBean-asmified.java[Asmified]
+
+== References
+

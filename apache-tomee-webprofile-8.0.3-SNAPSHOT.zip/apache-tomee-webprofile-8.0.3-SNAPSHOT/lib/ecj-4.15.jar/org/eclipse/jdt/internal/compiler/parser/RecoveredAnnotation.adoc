@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredAnnotation.class
+
+ - link:RecoveredAnnotation-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/StoredProcedure$SQL.class
+
+ - link:StoredProcedure$SQL-asmified.java[Asmified]
+
+== References
+

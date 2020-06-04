@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/DomLoader$State.class
+
+ - link:DomLoader$State-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.DomHandler - 4
+ - javax.xml.bind.ValidationEventHandler - 1

@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/StopTask.class
+
+ - link:StopTask-asmified.java[Asmified]
+
+== References
+

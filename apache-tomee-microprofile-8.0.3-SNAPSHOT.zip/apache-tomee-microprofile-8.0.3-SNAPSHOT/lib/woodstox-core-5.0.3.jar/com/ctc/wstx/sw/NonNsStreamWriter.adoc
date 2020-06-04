@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/NonNsStreamWriter.class
+
+ - link:NonNsStreamWriter-asmified.java[Asmified]
+
+== References
+

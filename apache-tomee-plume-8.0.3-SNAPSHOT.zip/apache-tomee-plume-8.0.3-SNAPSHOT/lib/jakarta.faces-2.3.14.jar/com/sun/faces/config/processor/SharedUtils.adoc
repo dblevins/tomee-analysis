@@ -1,0 +1,8 @@
+= com/sun/faces/config/processor/SharedUtils.class
+
+ - link:SharedUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.application.Application - 3

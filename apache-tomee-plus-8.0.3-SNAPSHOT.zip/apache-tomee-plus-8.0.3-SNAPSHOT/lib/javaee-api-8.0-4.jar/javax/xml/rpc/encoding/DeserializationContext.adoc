@@ -1,0 +1,6 @@
+= javax/xml/rpc/encoding/DeserializationContext.class
+
+ - link:DeserializationContext-asmified.java[Asmified]
+
+== References
+

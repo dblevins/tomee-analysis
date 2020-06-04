@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/block/BlockDiskElementDescriptor.class
+
+ - link:BlockDiskElementDescriptor-asmified.java[Asmified]
+
+== References
+

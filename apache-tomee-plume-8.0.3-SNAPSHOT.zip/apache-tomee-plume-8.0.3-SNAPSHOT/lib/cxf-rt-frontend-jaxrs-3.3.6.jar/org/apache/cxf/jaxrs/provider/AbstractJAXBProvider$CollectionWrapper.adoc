@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/provider/AbstractJAXBProvider$CollectionWrapper.class
+
+ - link:AbstractJAXBProvider$CollectionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 11
+ - javax.xml.bind.JAXBElement - 9
+ - javax.xml.bind.annotation.XmlRootElement - 9
+ - javax.xml.bind.Unmarshaller - 6
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.JAXBException - 1

@@ -1,0 +1,7 @@
+= org/apache/activemq/blob/DefaultStrategy.class
+
+ - link:DefaultStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

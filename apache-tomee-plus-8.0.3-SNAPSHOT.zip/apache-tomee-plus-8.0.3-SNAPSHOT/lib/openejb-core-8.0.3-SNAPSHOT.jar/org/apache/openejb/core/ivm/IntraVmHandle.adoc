@@ -1,0 +1,10 @@
+= org/apache/openejb/core/ivm/IntraVmHandle.class
+
+ - link:IntraVmHandle-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 3
+ - javax.ejb.EJBObject - 3
+ - javax.ejb.HomeHandle - 2
+ - javax.ejb.Handle - 2

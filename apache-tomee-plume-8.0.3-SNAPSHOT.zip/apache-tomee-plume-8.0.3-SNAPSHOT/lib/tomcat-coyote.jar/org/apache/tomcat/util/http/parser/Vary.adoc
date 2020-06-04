@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/http/parser/Vary.class
+
+ - link:Vary-asmified.java[Asmified]
+
+== References
+

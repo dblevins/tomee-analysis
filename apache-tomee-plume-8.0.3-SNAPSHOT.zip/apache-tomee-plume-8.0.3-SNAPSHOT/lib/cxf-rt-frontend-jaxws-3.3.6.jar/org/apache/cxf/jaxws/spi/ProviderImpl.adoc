@@ -1,0 +1,19 @@
+= org/apache/cxf/jaxws/spi/ProviderImpl.class
+
+ - link:ProviderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebServiceException - 16
+ - javax.xml.ws.WebServiceFeature - 16
+ - javax.xml.bind.JAXBContext - 12
+ - javax.xml.ws.Endpoint - 10
+ - javax.xml.ws.EndpointReference - 7
+ - javax.xml.bind.JAXBException - 7
+ - javax.xml.ws.wsaddressing.W3CEndpointReference - 6
+ - javax.xml.bind.Unmarshaller - 5
+ - javax.xml.ws.spi.ServiceDelegate - 4
+ - javax.xml.ws.spi.Invoker - 3
+ - javax.xml.bind.JAXBElement - 2
+ - javax.xml.ws.spi.Provider - 2
+ - javax.xml.ws.WebServiceContext - 1

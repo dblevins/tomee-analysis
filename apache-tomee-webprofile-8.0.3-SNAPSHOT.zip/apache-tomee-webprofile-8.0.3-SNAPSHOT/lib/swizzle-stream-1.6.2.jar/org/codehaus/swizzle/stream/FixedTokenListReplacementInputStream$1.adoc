@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/FixedTokenListReplacementInputStream$1.class
+
+ - link:FixedTokenListReplacementInputStream$1-asmified.java[Asmified]
+
+== References
+

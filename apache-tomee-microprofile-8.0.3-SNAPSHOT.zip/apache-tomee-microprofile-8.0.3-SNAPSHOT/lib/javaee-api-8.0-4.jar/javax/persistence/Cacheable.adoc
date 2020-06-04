@@ -1,0 +1,6 @@
+= javax/persistence/Cacheable.class
+
+ - link:Cacheable-asmified.java[Asmified]
+
+== References
+

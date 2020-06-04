@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/SessionBrokerIdentityMapAccessor.class
+
+ - link:SessionBrokerIdentityMapAccessor-asmified.java[Asmified]
+
+== References
+

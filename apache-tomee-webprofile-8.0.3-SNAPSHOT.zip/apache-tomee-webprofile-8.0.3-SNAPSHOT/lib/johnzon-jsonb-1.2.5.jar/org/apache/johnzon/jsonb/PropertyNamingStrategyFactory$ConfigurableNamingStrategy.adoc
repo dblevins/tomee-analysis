@@ -1,0 +1,7 @@
+= org/apache/johnzon/jsonb/PropertyNamingStrategyFactory$ConfigurableNamingStrategy.class
+
+ - link:PropertyNamingStrategyFactory$ConfigurableNamingStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.config.PropertyNamingStrategy - 1

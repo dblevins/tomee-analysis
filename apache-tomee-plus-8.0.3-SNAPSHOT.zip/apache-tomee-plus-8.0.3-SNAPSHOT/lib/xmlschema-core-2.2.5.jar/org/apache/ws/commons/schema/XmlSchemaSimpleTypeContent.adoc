@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaSimpleTypeContent.class
+
+ - link:XmlSchemaSimpleTypeContent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/media/XML.class
+
+ - link:XML-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/valueextraction/MapExtractor$ForKey.class
+
+ - link:MapExtractor$ForKey-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 7
+ - javax.validation.valueextraction.ExtractedValue - 1
+ - javax.validation.valueextraction.ValueExtractor - 1

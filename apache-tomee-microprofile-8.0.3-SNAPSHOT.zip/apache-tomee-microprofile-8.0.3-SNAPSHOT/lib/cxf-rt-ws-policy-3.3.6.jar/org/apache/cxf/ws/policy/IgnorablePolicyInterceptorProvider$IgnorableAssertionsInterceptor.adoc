@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/IgnorablePolicyInterceptorProvider$IgnorableAssertionsInterceptor.class
+
+ - link:IgnorablePolicyInterceptorProvider$IgnorableAssertionsInterceptor-asmified.java[Asmified]
+
+== References
+

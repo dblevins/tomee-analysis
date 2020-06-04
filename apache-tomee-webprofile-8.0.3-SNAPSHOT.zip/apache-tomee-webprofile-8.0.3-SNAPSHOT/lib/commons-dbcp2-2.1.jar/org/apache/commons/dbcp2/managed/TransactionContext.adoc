@@ -1,0 +1,10 @@
+= org/apache/commons/dbcp2/managed/TransactionContext.class
+
+ - link:TransactionContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 14
+ - javax.transaction.SystemException - 5
+ - javax.transaction.RollbackException - 4
+ - javax.transaction.Synchronization - 1

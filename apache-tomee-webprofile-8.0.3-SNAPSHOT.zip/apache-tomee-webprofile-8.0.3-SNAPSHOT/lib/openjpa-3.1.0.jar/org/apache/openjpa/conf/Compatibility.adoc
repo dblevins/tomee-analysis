@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/Compatibility.class
+
+ - link:Compatibility-asmified.java[Asmified]
+
+== References
+

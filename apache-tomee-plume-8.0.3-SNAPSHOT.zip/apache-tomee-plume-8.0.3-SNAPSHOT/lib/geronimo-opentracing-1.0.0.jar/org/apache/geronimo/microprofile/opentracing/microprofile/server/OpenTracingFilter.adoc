@@ -1,0 +1,17 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/server/OpenTracingFilter.class
+
+ - link:OpenTracingFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 21
+ - javax.servlet.ServletRequest - 19
+ - javax.servlet.ServletResponse - 14
+ - javax.servlet.FilterChain - 6
+ - javax.servlet.http.HttpServletResponse - 6
+ - javax.inject.Inject - 3
+ - javax.servlet.AsyncContext - 2
+ - javax.servlet.ServletException - 2
+ - javax.servlet.AsyncListener - 1
+ - javax.servlet.FilterConfig - 1
+ - javax.servlet.Filter - 1

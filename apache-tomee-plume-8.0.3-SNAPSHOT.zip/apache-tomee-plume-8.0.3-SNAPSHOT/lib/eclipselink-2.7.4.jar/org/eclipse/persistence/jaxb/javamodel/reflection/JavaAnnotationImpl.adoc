@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/reflection/JavaAnnotationImpl.class
+
+ - link:JavaAnnotationImpl-asmified.java[Asmified]
+
+== References
+

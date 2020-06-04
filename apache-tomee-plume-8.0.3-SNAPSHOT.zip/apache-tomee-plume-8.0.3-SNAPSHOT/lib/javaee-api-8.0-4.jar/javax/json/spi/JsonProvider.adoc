@@ -1,0 +1,30 @@
+= javax/json/spi/JsonProvider.class
+
+ - link:JsonProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.json.spi.JsonProvider - 15
+ - javax.json.JsonException - 6
+ - javax.json.JsonNumber - 5
+ - javax.json.JsonArrayBuilder - 3
+ - javax.json.JsonArray - 3
+ - javax.json.JsonValue - 3
+ - javax.json.JsonObjectBuilder - 3
+ - javax.json.stream.JsonGenerator - 2
+ - javax.json.stream.JsonParser - 2
+ - javax.json.JsonReader - 2
+ - javax.json.JsonPatch - 2
+ - javax.json.JsonMergePatch - 2
+ - javax.json.JsonStructure - 2
+ - javax.json.JsonPatchBuilder - 2
+ - javax.json.JsonWriter - 2
+ - javax.json.spi.JsonProvider$1 - 2
+ - javax.json.JsonObject - 1
+ - javax.json.JsonReaderFactory - 1
+ - javax.json.JsonWriterFactory - 1
+ - javax.json.JsonBuilderFactory - 1
+ - javax.json.stream.JsonGeneratorFactory - 1
+ - javax.json.stream.JsonParserFactory - 1
+ - javax.json.JsonString - 1
+ - javax.json.JsonPointer - 1

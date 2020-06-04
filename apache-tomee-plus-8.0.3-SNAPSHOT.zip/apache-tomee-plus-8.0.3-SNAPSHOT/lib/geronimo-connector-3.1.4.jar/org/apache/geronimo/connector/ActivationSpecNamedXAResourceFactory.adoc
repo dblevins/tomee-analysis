@@ -1,0 +1,10 @@
+= org/apache/geronimo/connector/ActivationSpecNamedXAResourceFactory.class
+
+ - link:ActivationSpecNamedXAResourceFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ActivationSpec - 6
+ - javax.transaction.SystemException - 5
+ - javax.resource.spi.ResourceAdapter - 5
+ - javax.resource.ResourceException - 3

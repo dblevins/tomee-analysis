@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ReadObjectQuery.class
+
+ - link:ReadObjectQuery-asmified.java[Asmified]
+
+== References
+

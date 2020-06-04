@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/saml/xacml2/DefaultXACMLRequestBuilder.class
+
+ - link:DefaultXACMLRequestBuilder-asmified.java[Asmified]
+
+== References
+

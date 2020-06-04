@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/blueprint/Activator.class
+
+ - link:Activator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/provider/JavaTimeTypesParamConverterProvider$LocalTimeConverter.class
+
+ - link:JavaTimeTypesParamConverterProvider$LocalTimeConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 1

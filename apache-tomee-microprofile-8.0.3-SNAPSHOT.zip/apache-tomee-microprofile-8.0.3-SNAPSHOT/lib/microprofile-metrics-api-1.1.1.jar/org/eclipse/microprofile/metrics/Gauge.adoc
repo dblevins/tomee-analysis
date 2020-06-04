@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Gauge.class
+
+ - link:Gauge-asmified.java[Asmified]
+
+== References
+

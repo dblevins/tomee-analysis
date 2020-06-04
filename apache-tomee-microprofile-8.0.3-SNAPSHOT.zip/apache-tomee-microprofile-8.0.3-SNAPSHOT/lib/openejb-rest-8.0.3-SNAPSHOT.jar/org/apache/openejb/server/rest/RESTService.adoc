@@ -1,0 +1,21 @@
+= org/apache/openejb/server/rest/RESTService.class
+
+ - link:RESTService-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 84
+ - javax.ws.rs.Path - 7
+ - javax.ws.rs.core.UriBuilder - 5
+ - javax.ws.rs.ApplicationPath - 4
+ - javax.ws.rs.core.Feature - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.container.ContainerRequestFilter - 1
+ - javax.ws.rs.container.ContainerResponseFilter - 1
+ - javax.ws.rs.ext.ParamConverter - 1
+ - javax.ws.rs.ext.ContextResolver - 1
+ - javax.ws.rs.ext.ReaderInterceptor - 1
+ - javax.ws.rs.ext.ParamConverterProvider - 1
+ - javax.ws.rs.ext.WriterInterceptor - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

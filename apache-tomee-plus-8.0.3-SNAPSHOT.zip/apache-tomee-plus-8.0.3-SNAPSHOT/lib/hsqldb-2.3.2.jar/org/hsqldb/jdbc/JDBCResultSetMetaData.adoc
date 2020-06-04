@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/JDBCResultSetMetaData.class
+
+ - link:JDBCResultSetMetaData-asmified.java[Asmified]
+
+== References
+

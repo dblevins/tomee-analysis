@@ -1,0 +1,6 @@
+= com/sun/faces/application/applicationimpl/InstanceFactory$ComponentResourceClassNotFound.class
+
+ - link:InstanceFactory$ComponentResourceClassNotFound-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/myfaces/lifecycle/ProcessValidationsExecutor.class
+
+ - link:ProcessValidationsExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.event.PhaseId - 3

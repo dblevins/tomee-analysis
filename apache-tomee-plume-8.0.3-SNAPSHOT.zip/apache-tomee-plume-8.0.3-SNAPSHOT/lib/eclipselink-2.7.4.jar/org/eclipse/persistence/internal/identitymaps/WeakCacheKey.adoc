@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/WeakCacheKey.class
+
+ - link:WeakCacheKey-asmified.java[Asmified]
+
+== References
+

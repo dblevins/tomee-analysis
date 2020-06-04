@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker$JaxwsServerHandler.class
+
+ - link:AbstractJAXWSMethodInvoker$JaxwsServerHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Response - 5
+ - javax.xml.ws.AsyncHandler - 1

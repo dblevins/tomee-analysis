@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Multi.class
+
+ - link:PropertySerializerMap$Multi-asmified.java[Asmified]
+
+== References
+

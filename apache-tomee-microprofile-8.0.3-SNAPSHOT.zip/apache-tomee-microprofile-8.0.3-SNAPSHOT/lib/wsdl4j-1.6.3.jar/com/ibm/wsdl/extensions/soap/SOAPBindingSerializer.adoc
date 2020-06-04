@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap/SOAPBindingSerializer.class
+
+ - link:SOAPBindingSerializer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/RC2$PBEWithSHAAnd128BitRC2.class
+
+ - link:RC2$PBEWithSHAAnd128BitRC2-asmified.java[Asmified]
+
+== References
+

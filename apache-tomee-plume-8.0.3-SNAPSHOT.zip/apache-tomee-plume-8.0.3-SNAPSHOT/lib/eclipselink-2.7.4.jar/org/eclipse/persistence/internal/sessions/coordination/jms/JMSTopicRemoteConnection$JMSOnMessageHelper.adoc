@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/sessions/coordination/jms/JMSTopicRemoteConnection$JMSOnMessageHelper.class
+
+ - link:JMSTopicRemoteConnection$JMSOnMessageHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 6

@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/openapi/cdi/GeronimoOpenAPIExtension$ElementImpl.class
+
+ - link:GeronimoOpenAPIExtension$ElementImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 11

@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/input/AbstractSignatureReferenceVerifyInputProcessor$InternalSignatureReferenceVerifier.class
+
+ - link:AbstractSignatureReferenceVerifyInputProcessor$InternalSignatureReferenceVerifier-asmified.java[Asmified]
+
+== References
+

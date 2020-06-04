@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/impl/SignAssertions.class
+
+ - link:SignAssertions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8
+ - javax.annotation.Nullable - 2

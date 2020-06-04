@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/episode/SchemaBindings.class
+
+ - link:SchemaBindings-asmified.java[Asmified]
+
+== References
+

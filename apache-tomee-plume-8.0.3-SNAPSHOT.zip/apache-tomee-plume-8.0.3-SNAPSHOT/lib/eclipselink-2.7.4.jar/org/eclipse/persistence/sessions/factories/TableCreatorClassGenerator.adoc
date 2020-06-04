@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/TableCreatorClassGenerator.class
+
+ - link:TableCreatorClassGenerator-asmified.java[Asmified]
+
+== References
+

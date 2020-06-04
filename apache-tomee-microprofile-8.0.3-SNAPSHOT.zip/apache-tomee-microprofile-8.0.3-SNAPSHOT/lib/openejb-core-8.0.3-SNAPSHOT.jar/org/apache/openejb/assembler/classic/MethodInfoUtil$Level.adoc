@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MethodInfoUtil$Level.class
+
+ - link:MethodInfoUtil$Level-asmified.java[Asmified]
+
+== References
+

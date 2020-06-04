@@ -1,0 +1,6 @@
+= javax/ws/rs/BeanParam.class
+
+ - link:BeanParam-asmified.java[Asmified]
+
+== References
+

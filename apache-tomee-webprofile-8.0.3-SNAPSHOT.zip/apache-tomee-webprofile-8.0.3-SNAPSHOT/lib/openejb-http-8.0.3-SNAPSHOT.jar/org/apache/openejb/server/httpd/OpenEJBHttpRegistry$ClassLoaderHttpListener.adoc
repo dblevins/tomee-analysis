@@ -1,0 +1,6 @@
+= org/apache/openejb/server/httpd/OpenEJBHttpRegistry$ClassLoaderHttpListener.class
+
+ - link:OpenEJBHttpRegistry$ClassLoaderHttpListener-asmified.java[Asmified]
+
+== References
+

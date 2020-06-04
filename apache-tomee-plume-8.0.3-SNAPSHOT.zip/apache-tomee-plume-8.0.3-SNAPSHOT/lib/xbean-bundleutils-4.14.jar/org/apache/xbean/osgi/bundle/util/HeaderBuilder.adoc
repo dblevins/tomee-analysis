@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/HeaderBuilder.class
+
+ - link:HeaderBuilder-asmified.java[Asmified]
+
+== References
+

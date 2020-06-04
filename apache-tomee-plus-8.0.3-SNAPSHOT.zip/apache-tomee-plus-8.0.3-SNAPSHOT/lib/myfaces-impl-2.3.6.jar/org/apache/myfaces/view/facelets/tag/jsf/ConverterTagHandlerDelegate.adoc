@@ -1,0 +1,23 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ConverterTagHandlerDelegate.class
+
+ - link:ConverterTagHandlerDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.ConverterHandler - 26
+ - javax.faces.view.facelets.FaceletContext - 14
+ - javax.faces.view.facelets.Tag - 10
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.convert.Converter - 9
+ - javax.faces.view.facelets.TagException - 8
+ - javax.faces.component.ValueHolder - 7
+ - javax.faces.view.facelets.TagAttribute - 6
+ - javax.el.ValueExpression - 5
+ - javax.faces.view.facelets.MetaRuleset - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.view.facelets.TagHandlerDelegate - 2
+ - javax.el.ELContext - 2
+ - javax.faces.view.ValueHolderAttachedObjectHandler - 1
+ - javax.faces.view.facelets.ComponentHandler - 1
+ - javax.faces.view.AttachedObjectHandler - 1

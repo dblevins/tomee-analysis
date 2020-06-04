@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/cdi/DefaultLiteral.class
+
+ - link:DefaultLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 5
+ - javax.enterprise.util.AnnotationLiteral - 2

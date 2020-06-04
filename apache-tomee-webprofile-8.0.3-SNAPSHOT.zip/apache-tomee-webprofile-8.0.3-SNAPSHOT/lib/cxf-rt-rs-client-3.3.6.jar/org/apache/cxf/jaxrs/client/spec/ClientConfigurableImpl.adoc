@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl.class
+
+ - link:ClientConfigurableImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configuration - 7
+ - javax.ws.rs.core.Configurable - 7
+ - javax.ws.rs.RuntimeType - 2

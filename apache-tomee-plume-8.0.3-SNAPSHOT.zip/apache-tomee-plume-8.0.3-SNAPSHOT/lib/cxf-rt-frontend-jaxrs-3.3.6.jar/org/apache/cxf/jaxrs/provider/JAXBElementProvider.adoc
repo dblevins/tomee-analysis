@@ -1,0 +1,24 @@
+= org/apache/cxf/jaxrs/provider/JAXBElementProvider.class
+
+ - link:JAXBElementProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 53
+ - javax.xml.bind.Marshaller - 40
+ - javax.xml.bind.Unmarshaller - 29
+ - javax.xml.bind.JAXBElement - 18
+ - javax.ws.rs.WebApplicationException - 13
+ - javax.xml.bind.JAXBException - 11
+ - javax.ws.rs.core.Response - 11
+ - javax.ws.rs.core.UriBuilder - 9
+ - javax.ws.rs.core.MultivaluedMap - 8
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 6
+ - javax.ws.rs.core.Response$ResponseBuilder - 4
+ - javax.ws.rs.core.UriInfo - 2
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 1
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.xml.bind.attachment.AttachmentMarshaller - 1

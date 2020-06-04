@@ -1,0 +1,9 @@
+= javax/persistence/JoinColumns.class
+
+ - link:JoinColumns-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ForeignKey - 2
+ - javax.persistence.ConstraintMode - 1
+ - javax.persistence.JoinColumn - 1

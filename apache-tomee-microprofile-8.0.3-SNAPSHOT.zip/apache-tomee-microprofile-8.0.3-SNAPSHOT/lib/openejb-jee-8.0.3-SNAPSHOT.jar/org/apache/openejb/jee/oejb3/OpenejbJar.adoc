@@ -1,0 +1,12 @@
+= org/apache/openejb/jee/oejb3/OpenejbJar.class
+
+ - link:OpenejbJar-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 4
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

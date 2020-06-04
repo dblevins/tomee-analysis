@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/metadata/ProjectCache.class
+
+ - link:ProjectCache-asmified.java[Asmified]
+
+== References
+

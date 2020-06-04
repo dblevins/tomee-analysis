@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/StatusResponseTypeMarshaller.class
+
+ - link:StatusResponseTypeMarshaller-asmified.java[Asmified]
+
+== References
+

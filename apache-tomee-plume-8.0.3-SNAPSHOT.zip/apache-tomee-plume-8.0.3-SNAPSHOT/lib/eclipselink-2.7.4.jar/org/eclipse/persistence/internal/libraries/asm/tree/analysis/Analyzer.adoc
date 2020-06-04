@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/analysis/Analyzer.class
+
+ - link:Analyzer-asmified.java[Asmified]
+
+== References
+

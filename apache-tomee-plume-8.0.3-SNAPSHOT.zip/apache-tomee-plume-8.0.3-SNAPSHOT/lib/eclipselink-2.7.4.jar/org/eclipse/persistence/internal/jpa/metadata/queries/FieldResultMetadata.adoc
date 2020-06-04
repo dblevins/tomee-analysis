@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/FieldResultMetadata.class
+
+ - link:FieldResultMetadata-asmified.java[Asmified]
+
+== References
+

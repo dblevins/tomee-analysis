@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/WsBuilder.class
+
+ - link:WsBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/application/annotation/ConfigAnnotationHandler.class
+
+ - link:ConfigAnnotationHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1

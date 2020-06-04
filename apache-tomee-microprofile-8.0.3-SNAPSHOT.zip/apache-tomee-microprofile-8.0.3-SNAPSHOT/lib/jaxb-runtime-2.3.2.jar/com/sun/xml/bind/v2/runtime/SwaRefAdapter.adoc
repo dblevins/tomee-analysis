@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/runtime/SwaRefAdapter.class
+
+ - link:SwaRefAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 8
+ - javax.xml.bind.attachment.AttachmentUnmarshaller - 2
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2
+ - javax.xml.bind.attachment.AttachmentMarshaller - 2

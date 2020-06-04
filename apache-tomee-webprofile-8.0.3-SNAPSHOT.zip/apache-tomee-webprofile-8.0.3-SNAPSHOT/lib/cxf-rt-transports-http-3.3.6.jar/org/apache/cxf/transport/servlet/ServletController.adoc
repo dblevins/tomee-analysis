@@ -1,0 +1,14 @@
+= org/apache/cxf/transport/servlet/ServletController.class
+
+ - link:ServletController-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 34
+ - javax.servlet.ServletConfig - 22
+ - javax.servlet.http.HttpServletResponse - 14
+ - javax.servlet.ServletException - 11
+ - javax.servlet.http.HttpServlet - 7
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.ServletRequest - 1
+ - javax.servlet.ServletResponse - 1

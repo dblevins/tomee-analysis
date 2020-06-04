@@ -1,0 +1,6 @@
+= javax/ejb/AfterBegin.class
+
+ - link:AfterBegin-asmified.java[Asmified]
+
+== References
+

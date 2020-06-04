@@ -1,0 +1,7 @@
+= javax/persistence/MapKeyEnumerated.class
+
+ - link:MapKeyEnumerated-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EnumType - 2

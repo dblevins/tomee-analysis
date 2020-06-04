@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jaxb/xmlmodel/XmlVirtualAccessMethodsSchema.class
+
+ - link:XmlVirtualAccessMethodsSchema-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlEnum - 1

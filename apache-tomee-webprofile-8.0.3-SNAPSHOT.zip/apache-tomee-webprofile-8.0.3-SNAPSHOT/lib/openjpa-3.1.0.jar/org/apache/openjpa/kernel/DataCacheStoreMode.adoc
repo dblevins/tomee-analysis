@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DataCacheStoreMode.class
+
+ - link:DataCacheStoreMode-asmified.java[Asmified]
+
+== References
+

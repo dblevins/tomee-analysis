@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/VerifiedReference.class
+
+ - link:VerifiedReference-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/mappings/RelationshipAccessor.class
+
+ - link:RelationshipAccessor-asmified.java[Asmified]
+
+== References
+

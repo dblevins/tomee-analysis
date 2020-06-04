@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/SimpleProducerFactory.class
+
+ - link:SimpleProducerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Producer - 5
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Bean - 1

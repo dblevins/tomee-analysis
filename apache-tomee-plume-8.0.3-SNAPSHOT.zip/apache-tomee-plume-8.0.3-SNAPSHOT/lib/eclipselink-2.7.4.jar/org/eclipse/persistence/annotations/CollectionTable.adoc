@@ -1,0 +1,8 @@
+= org/eclipse/persistence/annotations/CollectionTable.class
+
+ - link:CollectionTable-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.UniqueConstraint - 1
+ - javax.persistence.PrimaryKeyJoinColumn - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/common/i18n/Message.class
+
+ - link:Message-asmified.java[Asmified]
+
+== References
+

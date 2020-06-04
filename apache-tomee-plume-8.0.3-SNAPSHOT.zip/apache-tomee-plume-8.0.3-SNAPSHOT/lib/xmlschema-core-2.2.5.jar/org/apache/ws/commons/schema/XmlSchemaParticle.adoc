@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaParticle.class
+
+ - link:XmlSchemaParticle-asmified.java[Asmified]
+
+== References
+

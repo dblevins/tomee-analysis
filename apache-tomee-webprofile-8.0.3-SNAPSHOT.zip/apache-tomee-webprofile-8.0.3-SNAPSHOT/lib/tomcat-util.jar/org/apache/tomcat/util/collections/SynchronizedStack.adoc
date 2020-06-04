@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/collections/SynchronizedStack.class
+
+ - link:SynchronizedStack-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieIterator.class
+
+ - link:AbstractPatriciaTrie$TrieIterator-asmified.java[Asmified]
+
+== References
+

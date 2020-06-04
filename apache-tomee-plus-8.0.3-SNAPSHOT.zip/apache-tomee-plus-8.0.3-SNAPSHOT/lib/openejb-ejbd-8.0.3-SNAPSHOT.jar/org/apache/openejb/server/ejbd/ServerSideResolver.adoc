@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ejbd/ServerSideResolver.class
+
+ - link:ServerSideResolver-asmified.java[Asmified]
+
+== References
+

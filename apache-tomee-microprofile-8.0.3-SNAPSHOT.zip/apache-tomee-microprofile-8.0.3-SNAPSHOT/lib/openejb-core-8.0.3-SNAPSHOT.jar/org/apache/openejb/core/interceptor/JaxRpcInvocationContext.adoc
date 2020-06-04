@@ -1,0 +1,7 @@
+= org/apache/openejb/core/interceptor/JaxRpcInvocationContext.class
+
+ - link:JaxRpcInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.handler.MessageContext - 2

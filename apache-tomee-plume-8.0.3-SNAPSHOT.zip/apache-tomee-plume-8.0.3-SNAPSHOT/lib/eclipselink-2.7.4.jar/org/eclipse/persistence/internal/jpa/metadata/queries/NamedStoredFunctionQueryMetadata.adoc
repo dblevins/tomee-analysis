@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/NamedStoredFunctionQueryMetadata.class
+
+ - link:NamedStoredFunctionQueryMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/AttributeTranslator.class
+
+ - link:AttributeTranslator-asmified.java[Asmified]
+
+== References
+

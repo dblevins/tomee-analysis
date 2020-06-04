@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/Types$ParameterizedTypeImpl.class
+
+ - link:Types$ParameterizedTypeImpl-asmified.java[Asmified]
+
+== References
+

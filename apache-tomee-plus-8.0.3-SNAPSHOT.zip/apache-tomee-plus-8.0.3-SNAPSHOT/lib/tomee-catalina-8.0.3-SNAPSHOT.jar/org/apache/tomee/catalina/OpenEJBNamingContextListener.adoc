@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/OpenEJBNamingContextListener.class
+
+ - link:OpenEJBNamingContextListener-asmified.java[Asmified]
+
+== References
+

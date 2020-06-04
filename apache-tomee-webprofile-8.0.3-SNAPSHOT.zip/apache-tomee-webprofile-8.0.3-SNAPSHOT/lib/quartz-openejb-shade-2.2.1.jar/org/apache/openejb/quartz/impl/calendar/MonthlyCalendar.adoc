@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/calendar/MonthlyCalendar.class
+
+ - link:MonthlyCalendar-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/myfaces/renderkit/html/HtmlHeadRenderer.class
+
+ - link:HtmlHeadRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.component.UIComponent - 11
+ - javax.faces.context.ResponseWriter - 9
+ - javax.faces.render.Renderer - 4
+ - javax.faces.component.UIViewRoot - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.ProjectStage - 2

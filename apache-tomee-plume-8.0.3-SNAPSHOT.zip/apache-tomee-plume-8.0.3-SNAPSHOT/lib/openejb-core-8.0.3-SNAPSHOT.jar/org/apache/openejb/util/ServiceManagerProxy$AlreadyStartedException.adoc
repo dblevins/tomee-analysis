@@ -1,0 +1,6 @@
+= org/apache/openejb/util/ServiceManagerProxy$AlreadyStartedException.class
+
+ - link:ServiceManagerProxy$AlreadyStartedException-asmified.java[Asmified]
+
+== References
+

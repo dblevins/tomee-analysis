@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/resolver/implementations/ResolverDirectHTTP.class
+
+ - link:ResolverDirectHTTP-asmified.java[Asmified]
+
+== References
+

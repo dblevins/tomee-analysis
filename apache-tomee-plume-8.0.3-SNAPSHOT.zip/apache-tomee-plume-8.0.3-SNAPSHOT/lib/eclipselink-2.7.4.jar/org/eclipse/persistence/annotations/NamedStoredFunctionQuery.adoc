@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/NamedStoredFunctionQuery.class
+
+ - link:NamedStoredFunctionQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.QueryHint - 1

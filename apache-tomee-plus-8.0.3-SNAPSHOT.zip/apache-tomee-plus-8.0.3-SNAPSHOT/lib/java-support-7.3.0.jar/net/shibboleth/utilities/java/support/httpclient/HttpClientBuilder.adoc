@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/httpclient/HttpClientBuilder.class
+
+ - link:HttpClientBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 31
+ - javax.annotation.Nonnull - 1

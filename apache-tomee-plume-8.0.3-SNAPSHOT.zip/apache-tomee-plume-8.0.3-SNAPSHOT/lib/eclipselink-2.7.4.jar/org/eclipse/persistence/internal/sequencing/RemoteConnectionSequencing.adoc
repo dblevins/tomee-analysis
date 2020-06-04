@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sequencing/RemoteConnectionSequencing.class
+
+ - link:RemoteConnectionSequencing-asmified.java[Asmified]
+
+== References
+

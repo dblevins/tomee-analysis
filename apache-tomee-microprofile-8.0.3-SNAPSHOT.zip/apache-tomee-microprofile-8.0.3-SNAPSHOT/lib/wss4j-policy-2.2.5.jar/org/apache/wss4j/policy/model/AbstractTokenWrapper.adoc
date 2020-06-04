@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/model/AbstractTokenWrapper.class
+
+ - link:AbstractTokenWrapper-asmified.java[Asmified]
+
+== References
+

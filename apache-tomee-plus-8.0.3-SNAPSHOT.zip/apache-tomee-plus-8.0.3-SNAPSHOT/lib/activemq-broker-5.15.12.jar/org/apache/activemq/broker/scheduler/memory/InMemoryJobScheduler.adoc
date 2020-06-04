@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/scheduler/memory/InMemoryJobScheduler.class
+
+ - link:InMemoryJobScheduler-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageFormatException - 5

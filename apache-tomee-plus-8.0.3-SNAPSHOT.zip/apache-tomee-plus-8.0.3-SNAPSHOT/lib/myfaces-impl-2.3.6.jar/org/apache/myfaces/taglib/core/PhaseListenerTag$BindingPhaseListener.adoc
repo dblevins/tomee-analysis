@@ -1,0 +1,14 @@
+= org/apache/myfaces/taglib/core/PhaseListenerTag$BindingPhaseListener.class
+
+ - link:PhaseListenerTag$BindingPhaseListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.PhaseListener - 21
+ - javax.el.ValueExpression - 14
+ - javax.faces.context.FacesContext - 5
+ - javax.el.ELContext - 4
+ - javax.faces.event.PhaseEvent - 4
+ - javax.faces.FacesException - 3
+ - javax.faces.event.PhaseId - 2
+ - javax.faces.event.AbortProcessingException - 2

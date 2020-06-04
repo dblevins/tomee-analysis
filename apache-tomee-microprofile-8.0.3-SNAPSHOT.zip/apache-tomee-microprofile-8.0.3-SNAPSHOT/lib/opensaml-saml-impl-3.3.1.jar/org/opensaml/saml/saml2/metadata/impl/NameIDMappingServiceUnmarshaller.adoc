@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/NameIDMappingServiceUnmarshaller.class
+
+ - link:NameIDMappingServiceUnmarshaller-asmified.java[Asmified]
+
+== References
+

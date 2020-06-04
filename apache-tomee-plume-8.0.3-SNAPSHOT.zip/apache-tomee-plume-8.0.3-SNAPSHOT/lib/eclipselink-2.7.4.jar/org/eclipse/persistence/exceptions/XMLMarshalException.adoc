@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/XMLMarshalException.class
+
+ - link:XMLMarshalException-asmified.java[Asmified]
+
+== References
+

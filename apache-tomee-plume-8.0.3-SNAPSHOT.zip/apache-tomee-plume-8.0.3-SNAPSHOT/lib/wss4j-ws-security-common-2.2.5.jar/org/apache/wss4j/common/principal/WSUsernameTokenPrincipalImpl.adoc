@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/principal/WSUsernameTokenPrincipalImpl.class
+
+ - link:WSUsernameTokenPrincipalImpl-asmified.java[Asmified]
+
+== References
+

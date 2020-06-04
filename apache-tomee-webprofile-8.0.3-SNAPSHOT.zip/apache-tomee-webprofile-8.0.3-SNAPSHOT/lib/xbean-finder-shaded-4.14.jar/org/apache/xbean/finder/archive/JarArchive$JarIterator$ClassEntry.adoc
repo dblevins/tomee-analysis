@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/archive/JarArchive$JarIterator$ClassEntry.class
+
+ - link:JarArchive$JarIterator$ClassEntry-asmified.java[Asmified]
+
+== References
+

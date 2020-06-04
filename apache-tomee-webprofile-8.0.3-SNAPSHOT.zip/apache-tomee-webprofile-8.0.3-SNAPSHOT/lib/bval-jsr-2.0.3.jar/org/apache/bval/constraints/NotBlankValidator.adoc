@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/NotBlankValidator.class
+
+ - link:NotBlankValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.constraints.NotBlank - 1
+ - javax.validation.ConstraintValidator - 1

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/ManifestAnalyzer.class
+
+ - link:ManifestAnalyzer-asmified.java[Asmified]
+
+== References
+

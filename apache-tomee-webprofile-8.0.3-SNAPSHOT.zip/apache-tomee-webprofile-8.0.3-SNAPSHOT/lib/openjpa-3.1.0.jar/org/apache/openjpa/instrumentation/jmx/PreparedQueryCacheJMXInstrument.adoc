@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/jmx/PreparedQueryCacheJMXInstrument.class
+
+ - link:PreparedQueryCacheJMXInstrument-asmified.java[Asmified]
+
+== References
+

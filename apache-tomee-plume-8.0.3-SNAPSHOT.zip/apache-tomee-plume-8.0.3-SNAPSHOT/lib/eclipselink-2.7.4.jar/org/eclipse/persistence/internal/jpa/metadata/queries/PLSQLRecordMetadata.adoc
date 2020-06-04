@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/PLSQLRecordMetadata.class
+
+ - link:PLSQLRecordMetadata-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/delegates/SDOTypeHelperDelegator.class
+
+ - link:SDOTypeHelperDelegator-asmified.java[Asmified]
+
+== References
+

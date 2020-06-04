@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Constant.class
+
+ - link:Constant-asmified.java[Asmified]
+
+== References
+

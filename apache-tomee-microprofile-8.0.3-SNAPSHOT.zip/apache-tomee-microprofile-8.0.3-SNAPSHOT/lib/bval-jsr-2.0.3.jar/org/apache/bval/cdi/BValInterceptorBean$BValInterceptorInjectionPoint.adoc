@@ -1,0 +1,9 @@
+= org/apache/bval/cdi/BValInterceptorBean$BValInterceptorInjectionPoint.class
+
+ - link:BValInterceptorBean$BValInterceptorInjectionPoint-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 16
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.inject.spi.Annotated - 2

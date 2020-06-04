@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/StringUtils.class
+
+ - link:StringUtils-asmified.java[Asmified]
+
+== References
+

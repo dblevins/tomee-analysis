@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/OrderingOthers$JAXB.class
+
+ - link:OrderingOthers$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 5

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/serializer/SerializationWrapper.class
+
+ - link:SerializationWrapper-asmified.java[Asmified]
+
+== References
+

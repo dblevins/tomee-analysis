@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/util/MailConnection$SSLTrustManager.class
+
+ - link:MailConnection$SSLTrustManager-asmified.java[Asmified]
+
+== References
+

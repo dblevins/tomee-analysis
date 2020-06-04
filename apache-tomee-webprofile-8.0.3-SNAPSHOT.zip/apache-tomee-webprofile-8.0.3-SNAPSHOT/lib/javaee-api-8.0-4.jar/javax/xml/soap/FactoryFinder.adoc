@@ -1,0 +1,8 @@
+= javax/xml/soap/FactoryFinder.class
+
+ - link:FactoryFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 10
+ - javax.xml.soap.FactoryFinder - 5

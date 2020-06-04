@@ -1,0 +1,6 @@
+= com/sun/faces/config/manager/tasks/ProvideMetadataToAnnotationScanTask.class
+
+ - link:ProvideMetadataToAnnotationScanTask-asmified.java[Asmified]
+
+== References
+

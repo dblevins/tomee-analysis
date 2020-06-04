@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ResultSetMappingQuery.class
+
+ - link:ResultSetMappingQuery-asmified.java[Asmified]
+
+== References
+

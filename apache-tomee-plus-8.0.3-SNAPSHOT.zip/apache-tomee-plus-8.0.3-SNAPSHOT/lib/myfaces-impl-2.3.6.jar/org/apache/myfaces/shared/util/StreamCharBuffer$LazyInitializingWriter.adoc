@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/StreamCharBuffer$LazyInitializingWriter.class
+
+ - link:StreamCharBuffer$LazyInitializingWriter-asmified.java[Asmified]
+
+== References
+

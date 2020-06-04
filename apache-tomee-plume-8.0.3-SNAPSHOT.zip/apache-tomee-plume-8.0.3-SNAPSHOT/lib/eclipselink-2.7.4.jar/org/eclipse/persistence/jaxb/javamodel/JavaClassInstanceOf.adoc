@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/JavaClassInstanceOf.class
+
+ - link:JavaClassInstanceOf-asmified.java[Asmified]
+
+== References
+

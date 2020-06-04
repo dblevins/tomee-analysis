@@ -1,0 +1,12 @@
+= javax/faces/model/ResultSetDataModel$WrapResultSetMap.class
+
+ - link:ResultSetDataModel$WrapResultSetMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.ResultSetDataModel - 31
+ - javax.faces.model.ResultSetDataModel$WrapResultSetMap - 14
+ - javax.faces.FacesException - 4
+ - javax.faces.model.ResultSetDataModel$WrapResultSetEntries - 2
+ - javax.faces.model.ResultSetDataModel$WrapResultSetValues - 2
+ - javax.faces.model.ResultSetDataModel$WrapResultSetKeys - 2

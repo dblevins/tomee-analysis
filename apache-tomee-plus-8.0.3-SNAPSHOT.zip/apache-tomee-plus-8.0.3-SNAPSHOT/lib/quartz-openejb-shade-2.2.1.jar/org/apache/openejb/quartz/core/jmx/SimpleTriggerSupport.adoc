@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/jmx/SimpleTriggerSupport.class
+
+ - link:SimpleTriggerSupport-asmified.java[Asmified]
+
+== References
+

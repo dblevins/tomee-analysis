@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/SignChallenge.class
+
+ - link:SignChallenge-asmified.java[Asmified]
+
+== References
+

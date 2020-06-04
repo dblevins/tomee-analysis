@@ -1,0 +1,6 @@
+= com/sun/faces/renderkit/AttributeManager$Key.class
+
+ - link:AttributeManager$Key-asmified.java[Asmified]
+
+== References
+

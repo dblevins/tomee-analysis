@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/jmx/OpenTypeSupport$ActiveMQBlobMessageOpenTypeFactory.class
+
+ - link:OpenTypeSupport$ActiveMQBlobMessageOpenTypeFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

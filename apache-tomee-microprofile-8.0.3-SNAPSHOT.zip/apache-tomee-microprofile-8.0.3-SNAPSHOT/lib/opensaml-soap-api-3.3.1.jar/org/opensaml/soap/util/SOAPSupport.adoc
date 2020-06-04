@@ -1,0 +1,8 @@
+= org/opensaml/soap/util/SOAPSupport.class
+
+ - link:SOAPSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 34
+ - javax.annotation.Nullable - 10

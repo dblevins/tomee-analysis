@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AuthenticationQueryUnmarshaller.class
+
+ - link:AuthenticationQueryUnmarshaller-asmified.java[Asmified]
+
+== References
+

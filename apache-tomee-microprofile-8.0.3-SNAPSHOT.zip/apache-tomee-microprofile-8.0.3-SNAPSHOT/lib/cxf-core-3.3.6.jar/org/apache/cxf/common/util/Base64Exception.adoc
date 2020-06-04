@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/Base64Exception.class
+
+ - link:Base64Exception-asmified.java[Asmified]
+
+== References
+

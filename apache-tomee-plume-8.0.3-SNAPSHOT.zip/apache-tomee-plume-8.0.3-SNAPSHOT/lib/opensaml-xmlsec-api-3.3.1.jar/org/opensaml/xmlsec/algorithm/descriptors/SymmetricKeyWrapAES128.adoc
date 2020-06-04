@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/SymmetricKeyWrapAES128.class
+
+ - link:SymmetricKeyWrapAES128-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

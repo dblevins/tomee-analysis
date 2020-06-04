@@ -1,0 +1,8 @@
+= org/apache/tomee/myfaces/TomEEFacesConfigurationProviderFactory.class
+
+ - link:TomEEFacesConfigurationProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.FacesException - 2

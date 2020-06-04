@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Debug$Trace$Node.class
+
+ - link:Debug$Trace$Node-asmified.java[Asmified]
+
+== References
+

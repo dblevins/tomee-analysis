@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/security/DataSealerException.class
+
+ - link:DataSealerException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/pool/JDBCPooledConnection.class
+
+ - link:JDBCPooledConnection-asmified.java[Asmified]
+
+== References
+

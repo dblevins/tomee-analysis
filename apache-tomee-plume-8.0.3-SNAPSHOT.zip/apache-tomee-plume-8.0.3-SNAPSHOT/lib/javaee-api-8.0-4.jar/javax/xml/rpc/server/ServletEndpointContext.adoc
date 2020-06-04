@@ -1,0 +1,9 @@
+= javax/xml/rpc/server/ServletEndpointContext.class
+
+ - link:ServletEndpointContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 1
+ - javax.servlet.ServletContext - 1
+ - javax.xml.rpc.handler.MessageContext - 1

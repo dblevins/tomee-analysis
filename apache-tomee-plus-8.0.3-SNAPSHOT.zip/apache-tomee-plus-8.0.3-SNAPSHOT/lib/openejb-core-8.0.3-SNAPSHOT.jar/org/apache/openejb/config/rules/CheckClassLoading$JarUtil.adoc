@@ -1,0 +1,6 @@
+= org/apache/openejb/config/rules/CheckClassLoading$JarUtil.class
+
+ - link:CheckClassLoading$JarUtil-asmified.java[Asmified]
+
+== References
+

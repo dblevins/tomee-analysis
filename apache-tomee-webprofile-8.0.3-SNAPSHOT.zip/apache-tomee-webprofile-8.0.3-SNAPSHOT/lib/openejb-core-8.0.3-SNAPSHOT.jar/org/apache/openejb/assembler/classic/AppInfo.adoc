@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/AppInfo.class
+
+ - link:AppInfo-asmified.java[Asmified]
+
+== References
+

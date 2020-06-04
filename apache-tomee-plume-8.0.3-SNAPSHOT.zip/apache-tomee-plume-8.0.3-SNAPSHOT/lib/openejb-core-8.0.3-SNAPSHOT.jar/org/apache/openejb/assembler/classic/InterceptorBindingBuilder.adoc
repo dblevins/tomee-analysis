@@ -1,0 +1,7 @@
+= org/apache/openejb/assembler/classic/InterceptorBindingBuilder.class
+
+ - link:InterceptorBindingBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 2

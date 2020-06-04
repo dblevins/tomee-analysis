@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/ThreadLocalBufferManager$ThreadLocalBufferManagerHolder.class
+
+ - link:ThreadLocalBufferManager$ThreadLocalBufferManagerHolder-asmified.java[Asmified]
+
+== References
+

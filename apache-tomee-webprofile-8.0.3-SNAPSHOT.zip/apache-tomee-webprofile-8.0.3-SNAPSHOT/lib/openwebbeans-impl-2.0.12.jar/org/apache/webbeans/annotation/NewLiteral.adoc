@@ -1,0 +1,8 @@
+= org/apache/webbeans/annotation/NewLiteral.class
+
+ - link:NewLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 3
+ - javax.enterprise.inject.New - 3

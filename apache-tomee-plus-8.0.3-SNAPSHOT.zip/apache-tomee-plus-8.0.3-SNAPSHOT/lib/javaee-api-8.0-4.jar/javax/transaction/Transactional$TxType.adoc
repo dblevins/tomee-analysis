@@ -1,0 +1,7 @@
+= javax/transaction/Transactional$TxType.class
+
+ - link:Transactional$TxType-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transactional$TxType - 41

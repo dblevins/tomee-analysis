@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/AggregateNode.class
+
+ - link:AggregateNode-asmified.java[Asmified]
+
+== References
+

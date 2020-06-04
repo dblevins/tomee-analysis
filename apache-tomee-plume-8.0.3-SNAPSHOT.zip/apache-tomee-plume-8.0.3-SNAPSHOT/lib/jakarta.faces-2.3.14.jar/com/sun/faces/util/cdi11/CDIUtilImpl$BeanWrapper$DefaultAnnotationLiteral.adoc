@@ -1,0 +1,8 @@
+= com/sun/faces/util/cdi11/CDIUtilImpl$BeanWrapper$DefaultAnnotationLiteral.class
+
+ - link:CDIUtilImpl$BeanWrapper$DefaultAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.enterprise.inject.Default - 1

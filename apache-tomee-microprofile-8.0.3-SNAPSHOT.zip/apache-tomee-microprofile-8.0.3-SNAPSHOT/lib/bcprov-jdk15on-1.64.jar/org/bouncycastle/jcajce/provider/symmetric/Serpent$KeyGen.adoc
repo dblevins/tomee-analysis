@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/Serpent$KeyGen.class
+
+ - link:Serpent$KeyGen-asmified.java[Asmified]
+
+== References
+

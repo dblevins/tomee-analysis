@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/partitioning/DataPartitioningCallback.class
+
+ - link:DataPartitioningCallback-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/Condition.class
+
+ - link:Condition-asmified.java[Asmified]
+
+== References
+

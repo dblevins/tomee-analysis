@@ -1,0 +1,6 @@
+= javax/persistence/PostUpdate.class
+
+ - link:PostUpdate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/converters/StringConverter.class
+
+ - link:StringConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 1
+ - javax.enterprise.inject.Vetoed - 1

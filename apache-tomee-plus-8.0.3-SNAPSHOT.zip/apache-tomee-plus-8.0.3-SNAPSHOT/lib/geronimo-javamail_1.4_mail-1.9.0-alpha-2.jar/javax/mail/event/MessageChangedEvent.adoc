@@ -1,0 +1,10 @@
+= javax/mail/event/MessageChangedEvent.class
+
+ - link:MessageChangedEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Message - 5
+ - javax.mail.event.MessageChangedListener - 2
+ - javax.mail.event.MailEvent - 2
+ - javax.mail.event.MessageChangedEvent - 1

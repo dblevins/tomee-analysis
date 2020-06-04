@@ -1,0 +1,19 @@
+= com/sun/faces/renderkit/html_basic/OutcomeTargetRenderer.class
+
+ - link:OutcomeTargetRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 29
+ - javax.faces.component.UIComponent - 22
+ - javax.faces.application.NavigationCase - 17
+ - javax.faces.component.UIOutcomeTarget - 8
+ - javax.faces.lifecycle.ClientWindow - 7
+ - javax.faces.application.Application - 6
+ - javax.faces.application.ConfigurableNavigationHandler - 5
+ - javax.faces.context.ResponseWriter - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.NavigationHandler - 2
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.flow.FlowHandler - 1

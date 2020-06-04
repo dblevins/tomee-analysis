@@ -1,0 +1,11 @@
+= javax/security/enterprise/authentication/mechanism/http/HttpAuthenticationMechanism.class
+
+ - link:HttpAuthenticationMechanism-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.authentication.mechanism.http.HttpMessageContext - 4
+ - javax.security.enterprise.AuthenticationStatus - 3
+ - javax.servlet.http.HttpServletRequest - 3
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.security.enterprise.AuthenticationException - 2

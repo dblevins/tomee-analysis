@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/Generator.class
+
+ - link:Generator-asmified.java[Asmified]
+
+== References
+

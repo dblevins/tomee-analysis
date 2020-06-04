@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/Stats.class
+
+ - link:Stats-asmified.java[Asmified]
+
+== References
+

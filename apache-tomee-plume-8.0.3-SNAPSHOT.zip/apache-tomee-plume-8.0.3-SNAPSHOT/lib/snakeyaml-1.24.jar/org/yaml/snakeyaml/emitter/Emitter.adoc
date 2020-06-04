@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/emitter/Emitter.class
+
+ - link:Emitter-asmified.java[Asmified]
+
+== References
+

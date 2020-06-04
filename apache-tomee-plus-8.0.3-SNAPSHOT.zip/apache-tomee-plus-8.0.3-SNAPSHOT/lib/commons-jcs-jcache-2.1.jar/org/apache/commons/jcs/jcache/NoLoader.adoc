@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/jcache/NoLoader.class
+
+ - link:NoLoader-asmified.java[Asmified]
+
+== References
+

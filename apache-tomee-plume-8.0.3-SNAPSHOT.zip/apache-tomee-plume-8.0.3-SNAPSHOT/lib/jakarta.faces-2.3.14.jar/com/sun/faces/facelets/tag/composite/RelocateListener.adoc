@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/composite/RelocateListener.class
+
+ - link:RelocateListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Resource - 5
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.view.Location - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.ComponentSystemEventListener - 1
+ - javax.faces.component.StateHolder - 1

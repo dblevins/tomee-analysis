@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/DefaultMethod.class
+
+ - link:DefaultMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.HttpMethod - 1

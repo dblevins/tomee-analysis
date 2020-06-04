@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/descriptor/ConstraintD$Optionality.class
+
+ - link:ConstraintD$Optionality-asmified.java[Asmified]
+
+== References
+

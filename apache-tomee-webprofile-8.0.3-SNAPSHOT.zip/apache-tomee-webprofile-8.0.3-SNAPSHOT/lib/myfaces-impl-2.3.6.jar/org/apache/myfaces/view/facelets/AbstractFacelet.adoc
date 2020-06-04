@@ -1,0 +1,14 @@
+= org/apache/myfaces/view/facelets/AbstractFacelet.class
+
+ - link:AbstractFacelet-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 4
+ - javax.el.ELException - 4
+ - javax.faces.view.facelets.FaceletException - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.view.facelets.Facelet - 2
+ - javax.faces.application.Resource - 1
+ - javax.el.ExpressionFactory - 1
+ - javax.faces.context.FacesContext - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/AlternativeSelector.class
+
+ - link:AlternativeSelector-asmified.java[Asmified]
+
+== References
+

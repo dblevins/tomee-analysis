@@ -1,0 +1,7 @@
+= javax/validation/groups/ConvertGroup$List.class
+
+ - link:ConvertGroup$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.groups.ConvertGroup - 1

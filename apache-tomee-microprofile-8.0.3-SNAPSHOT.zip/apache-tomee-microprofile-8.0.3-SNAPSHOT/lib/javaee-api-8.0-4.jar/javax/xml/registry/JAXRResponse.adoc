@@ -1,0 +1,7 @@
+= javax/xml/registry/JAXRResponse.class
+
+ - link:JAXRResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 3

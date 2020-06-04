@@ -1,0 +1,7 @@
+= org/apache/openejb/server/httpd/HttpResponse.class
+
+ - link:HttpResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/KeyForeignKey.class
+
+ - link:KeyForeignKey-asmified.java[Asmified]
+
+== References
+

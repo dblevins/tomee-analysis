@@ -1,0 +1,13 @@
+= org/apache/activemq/ActiveMQMessageProducer.class
+
+ - link:ActiveMQMessageProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 14
+ - javax.jms.Destination - 12
+ - javax.jms.Message - 12
+ - javax.jms.IllegalStateException - 3
+ - javax.jms.InvalidDestinationException - 2
+ - javax.jms.Session - 1
+ - javax.jms.MessageProducer - 1

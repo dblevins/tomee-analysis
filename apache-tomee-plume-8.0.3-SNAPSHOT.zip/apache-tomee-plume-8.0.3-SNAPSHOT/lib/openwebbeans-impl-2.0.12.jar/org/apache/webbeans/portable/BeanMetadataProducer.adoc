@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/BeanMetadataProducer.class
+
+ - link:BeanMetadataProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 4
+ - javax.enterprise.inject.spi.Bean - 1
+ - javax.enterprise.inject.spi.Interceptor - 1

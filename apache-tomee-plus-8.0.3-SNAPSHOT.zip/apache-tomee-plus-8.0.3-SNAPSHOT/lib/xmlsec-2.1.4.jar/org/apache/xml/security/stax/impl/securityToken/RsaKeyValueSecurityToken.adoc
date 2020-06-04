@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/securityToken/RsaKeyValueSecurityToken.class
+
+ - link:RsaKeyValueSecurityToken-asmified.java[Asmified]
+
+== References
+

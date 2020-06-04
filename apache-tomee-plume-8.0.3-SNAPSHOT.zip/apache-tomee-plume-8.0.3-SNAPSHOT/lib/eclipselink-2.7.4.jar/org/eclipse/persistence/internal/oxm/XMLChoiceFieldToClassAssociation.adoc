@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/XMLChoiceFieldToClassAssociation.class
+
+ - link:XMLChoiceFieldToClassAssociation-asmified.java[Asmified]
+
+== References
+

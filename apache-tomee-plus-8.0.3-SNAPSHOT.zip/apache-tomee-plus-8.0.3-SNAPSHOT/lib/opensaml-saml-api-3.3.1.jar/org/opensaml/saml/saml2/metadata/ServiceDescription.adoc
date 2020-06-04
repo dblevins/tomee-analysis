@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/ServiceDescription.class
+
+ - link:ServiceDescription-asmified.java[Asmified]
+
+== References
+

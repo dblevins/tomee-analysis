@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/KeyDependent.class
+
+ - link:KeyDependent-asmified.java[Asmified]
+
+== References
+

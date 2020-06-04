@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/MessageObserver.class
+
+ - link:MessageObserver-asmified.java[Asmified]
+
+== References
+

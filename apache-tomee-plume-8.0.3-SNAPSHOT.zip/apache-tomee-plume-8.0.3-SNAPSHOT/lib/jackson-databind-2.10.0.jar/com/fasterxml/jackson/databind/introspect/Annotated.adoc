@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/Annotated.class
+
+ - link:Annotated-asmified.java[Asmified]
+
+== References
+

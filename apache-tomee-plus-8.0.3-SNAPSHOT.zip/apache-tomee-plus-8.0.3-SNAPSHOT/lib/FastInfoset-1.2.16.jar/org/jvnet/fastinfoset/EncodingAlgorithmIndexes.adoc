@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/EncodingAlgorithmIndexes.class
+
+ - link:EncodingAlgorithmIndexes-asmified.java[Asmified]
+
+== References
+

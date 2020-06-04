@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/DeferredContentHandler.class
+
+ - link:DeferredContentHandler-asmified.java[Asmified]
+
+== References
+

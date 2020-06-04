@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/NotExpression.class
+
+ - link:NotExpression-asmified.java[Asmified]
+
+== References
+

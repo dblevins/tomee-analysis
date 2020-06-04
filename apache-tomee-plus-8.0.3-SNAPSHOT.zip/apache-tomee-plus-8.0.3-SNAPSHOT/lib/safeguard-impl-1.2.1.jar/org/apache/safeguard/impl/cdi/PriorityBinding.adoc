@@ -1,0 +1,8 @@
+= org/apache/safeguard/impl/cdi/PriorityBinding.class
+
+ - link:PriorityBinding-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

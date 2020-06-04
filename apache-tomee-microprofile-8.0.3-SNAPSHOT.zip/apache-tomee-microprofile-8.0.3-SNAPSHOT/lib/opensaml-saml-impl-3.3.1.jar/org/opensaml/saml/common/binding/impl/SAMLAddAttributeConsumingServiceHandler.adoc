@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/impl/SAMLAddAttributeConsumingServiceHandler.class
+
+ - link:SAMLAddAttributeConsumingServiceHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 3

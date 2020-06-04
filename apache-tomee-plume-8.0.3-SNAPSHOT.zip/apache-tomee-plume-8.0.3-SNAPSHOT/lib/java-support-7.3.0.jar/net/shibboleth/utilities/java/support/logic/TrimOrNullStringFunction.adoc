@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/logic/TrimOrNullStringFunction.class
+
+ - link:TrimOrNullStringFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

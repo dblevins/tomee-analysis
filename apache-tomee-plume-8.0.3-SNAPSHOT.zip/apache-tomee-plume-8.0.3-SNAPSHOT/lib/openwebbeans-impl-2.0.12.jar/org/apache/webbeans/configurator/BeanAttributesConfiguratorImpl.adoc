@@ -1,0 +1,9 @@
+= org/apache/webbeans/configurator/BeanAttributesConfiguratorImpl.class
+
+ - link:BeanAttributesConfiguratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.BeanAttributesConfigurator - 25
+ - javax.enterprise.inject.spi.BeanAttributes - 8
+ - javax.enterprise.util.TypeLiteral - 2

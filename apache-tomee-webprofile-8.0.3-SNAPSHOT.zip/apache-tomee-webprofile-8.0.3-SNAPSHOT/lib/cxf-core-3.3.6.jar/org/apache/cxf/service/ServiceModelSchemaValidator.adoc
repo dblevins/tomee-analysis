@@ -1,0 +1,6 @@
+= org/apache/cxf/service/ServiceModelSchemaValidator.class
+
+ - link:ServiceModelSchemaValidator-asmified.java[Asmified]
+
+== References
+

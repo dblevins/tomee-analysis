@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedStoreQuery$DeleteExecutor.class
+
+ - link:DistributedStoreQuery$DeleteExecutor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/ejb/Handle.class
+
+ - link:Handle-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBObject - 1

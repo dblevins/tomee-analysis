@@ -1,0 +1,10 @@
+= com/sun/faces/config/processor/ProtectedViewsConfigProcessor.class
+
+ - link:ProtectedViewsConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.application.ViewHandler - 6
+ - javax.faces.application.Application - 2
+ - javax.servlet.ServletContext - 1

@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/client/ClientState.class
+
+ - link:ClientState-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 10
+ - javax.ws.rs.core.Response - 2
+ - javax.ws.rs.core.UriBuilder - 2

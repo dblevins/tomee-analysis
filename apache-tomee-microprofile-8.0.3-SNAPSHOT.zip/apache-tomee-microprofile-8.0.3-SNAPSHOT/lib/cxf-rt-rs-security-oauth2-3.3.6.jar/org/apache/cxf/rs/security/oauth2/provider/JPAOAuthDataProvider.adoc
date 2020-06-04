@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/oauth2/provider/JPAOAuthDataProvider.class
+
+ - link:JPAOAuthDataProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 36
+ - javax.persistence.TypedQuery - 14
+ - javax.persistence.EntityTransaction - 11
+ - javax.persistence.EntityManagerFactory - 5

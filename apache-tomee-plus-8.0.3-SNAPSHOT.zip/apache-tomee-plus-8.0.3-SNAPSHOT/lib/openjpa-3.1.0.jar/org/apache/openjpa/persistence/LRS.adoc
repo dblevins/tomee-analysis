@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/LRS.class
+
+ - link:LRS-asmified.java[Asmified]
+
+== References
+

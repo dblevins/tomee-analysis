@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/CryptoType.class
+
+ - link:CryptoType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/Messages.class
+
+ - link:Messages-asmified.java[Asmified]
+
+== References
+

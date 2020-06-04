@@ -1,0 +1,8 @@
+= javax/ws/rs/container/ContainerResponseFilter.class
+
+ - link:ContainerResponseFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.container.ContainerResponseContext - 1
+ - javax.ws.rs.container.ContainerRequestContext - 1

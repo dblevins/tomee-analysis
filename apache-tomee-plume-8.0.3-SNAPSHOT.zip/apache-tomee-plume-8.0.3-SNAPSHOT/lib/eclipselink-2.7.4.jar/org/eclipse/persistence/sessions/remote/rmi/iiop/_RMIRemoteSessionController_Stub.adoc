@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/remote/rmi/iiop/_RMIRemoteSessionController_Stub.class
+
+ - link:_RMIRemoteSessionController_Stub-asmified.java[Asmified]
+
+== References
+

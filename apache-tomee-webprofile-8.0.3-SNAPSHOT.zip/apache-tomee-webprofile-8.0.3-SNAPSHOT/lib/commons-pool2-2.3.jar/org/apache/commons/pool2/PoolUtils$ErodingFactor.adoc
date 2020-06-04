@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/PoolUtils$ErodingFactor.class
+
+ - link:PoolUtils$ErodingFactor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/openejb/config/OpenEJBDeploymentManager$DeploymentStatusImpl.class
+
+ - link:OpenEJBDeploymentManager$DeploymentStatusImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.shared.StateType - 14
+ - javax.enterprise.deploy.shared.CommandType - 8
+ - javax.enterprise.deploy.shared.ActionType - 2
+ - javax.enterprise.deploy.spi.status.DeploymentStatus - 1

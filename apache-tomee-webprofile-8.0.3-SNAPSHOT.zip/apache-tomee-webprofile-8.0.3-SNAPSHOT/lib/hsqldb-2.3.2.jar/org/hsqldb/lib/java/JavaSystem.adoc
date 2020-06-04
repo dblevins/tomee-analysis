@@ -1,0 +1,6 @@
+= org/hsqldb/lib/java/JavaSystem.class
+
+ - link:JavaSystem-asmified.java[Asmified]
+
+== References
+

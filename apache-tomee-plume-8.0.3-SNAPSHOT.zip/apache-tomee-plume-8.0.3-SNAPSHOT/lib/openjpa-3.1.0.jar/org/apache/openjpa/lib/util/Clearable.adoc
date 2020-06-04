@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/Clearable.class
+
+ - link:Clearable-asmified.java[Asmified]
+
+== References
+

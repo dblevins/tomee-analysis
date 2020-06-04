@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor.class
+
+ - link:AbstractUsernameTokenAuthenticatingInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 1

@@ -1,0 +1,6 @@
+= javax/security/auth/message/config/AuthConfigFactory$RegistrationContext.class
+
+ - link:AuthConfigFactory$RegistrationContext-asmified.java[Asmified]
+
+== References
+

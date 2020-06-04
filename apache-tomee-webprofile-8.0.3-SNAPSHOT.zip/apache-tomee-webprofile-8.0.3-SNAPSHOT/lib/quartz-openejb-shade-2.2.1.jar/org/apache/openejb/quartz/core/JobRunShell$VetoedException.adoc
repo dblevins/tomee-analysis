@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/JobRunShell$VetoedException.class
+
+ - link:JobRunShell$VetoedException-asmified.java[Asmified]
+
+== References
+

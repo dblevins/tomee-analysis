@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/filter/SuffixFilter.class
+
+ - link:SuffixFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/SyntheticFieldBinding.class
+
+ - link:SyntheticFieldBinding-asmified.java[Asmified]
+
+== References
+

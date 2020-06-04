@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/Annotation.class
+
+ - link:Annotation-asmified.java[Asmified]
+
+== References
+

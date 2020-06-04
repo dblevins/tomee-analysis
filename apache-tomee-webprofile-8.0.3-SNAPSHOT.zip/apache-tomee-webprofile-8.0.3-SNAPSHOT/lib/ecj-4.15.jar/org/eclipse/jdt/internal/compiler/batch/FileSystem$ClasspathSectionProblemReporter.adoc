@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/FileSystem$ClasspathSectionProblemReporter.class
+
+ - link:FileSystem$ClasspathSectionProblemReporter-asmified.java[Asmified]
+
+== References
+

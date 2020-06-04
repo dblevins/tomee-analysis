@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/changetracking/AttributeChangeListener.class
+
+ - link:AttributeChangeListener-asmified.java[Asmified]
+
+== References
+

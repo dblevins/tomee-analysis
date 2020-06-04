@@ -1,0 +1,16 @@
+= org/apache/openejb/config/rules/CheckCallbacks.class
+
+ - link:CheckCallbacks-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 3
+ - javax.ejb.AfterBegin - 2
+ - javax.ejb.BeforeCompletion - 2
+ - javax.ejb.AfterCompletion - 2
+ - javax.ejb.Remove - 1
+ - javax.ejb.PrePassivate - 1
+ - javax.ejb.Init - 1
+ - javax.ejb.SessionSynchronization - 1
+ - javax.ejb.PostActivate - 1
+ - javax.ejb.SessionBean - 1

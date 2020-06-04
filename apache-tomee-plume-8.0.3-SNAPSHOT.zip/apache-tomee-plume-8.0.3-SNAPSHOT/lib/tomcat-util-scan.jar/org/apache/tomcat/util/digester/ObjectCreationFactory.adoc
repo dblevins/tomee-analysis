@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/digester/ObjectCreationFactory.class
+
+ - link:ObjectCreationFactory-asmified.java[Asmified]
+
+== References
+

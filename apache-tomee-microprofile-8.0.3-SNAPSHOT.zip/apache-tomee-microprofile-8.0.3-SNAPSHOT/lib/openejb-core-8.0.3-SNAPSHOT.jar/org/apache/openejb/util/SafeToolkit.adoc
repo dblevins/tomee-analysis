@@ -1,0 +1,6 @@
+= org/apache/openejb/util/SafeToolkit.class
+
+ - link:SafeToolkit-asmified.java[Asmified]
+
+== References
+

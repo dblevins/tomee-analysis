@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/json/JsonWriteContext.class
+
+ - link:JsonWriteContext-asmified.java[Asmified]
+
+== References
+

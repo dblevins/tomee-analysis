@@ -1,0 +1,10 @@
+= com/sun/faces/mgbean/BeanManager$ScopeManager$CustomScopeHandler$CustomScopeELContext.class
+
+ - link:BeanManager$ScopeManager$CustomScopeHandler$CustomScopeELContext-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 19
+ - javax.el.FunctionMapper - 2
+ - javax.el.ELResolver - 2
+ - javax.el.VariableMapper - 2

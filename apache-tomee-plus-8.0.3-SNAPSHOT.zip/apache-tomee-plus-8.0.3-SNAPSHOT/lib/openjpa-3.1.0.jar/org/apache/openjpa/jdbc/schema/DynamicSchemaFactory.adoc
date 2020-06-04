@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/DynamicSchemaFactory.class
+
+ - link:DynamicSchemaFactory-asmified.java[Asmified]
+
+== References
+

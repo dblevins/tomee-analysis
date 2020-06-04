@@ -1,0 +1,6 @@
+= org/hsqldb/lib/OrderedIntHashSet.class
+
+ - link:OrderedIntHashSet-asmified.java[Asmified]
+
+== References
+

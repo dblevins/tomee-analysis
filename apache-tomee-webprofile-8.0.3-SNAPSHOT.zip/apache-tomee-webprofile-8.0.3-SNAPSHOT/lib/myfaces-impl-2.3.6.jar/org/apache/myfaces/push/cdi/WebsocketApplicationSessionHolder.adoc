@@ -1,0 +1,9 @@
+= org/apache/myfaces/push/cdi/WebsocketApplicationSessionHolder.class
+
+ - link:WebsocketApplicationSessionHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 24
+ - javax.faces.context.ExternalContext - 3
+ - javax.websocket.RemoteEndpoint$Async - 2

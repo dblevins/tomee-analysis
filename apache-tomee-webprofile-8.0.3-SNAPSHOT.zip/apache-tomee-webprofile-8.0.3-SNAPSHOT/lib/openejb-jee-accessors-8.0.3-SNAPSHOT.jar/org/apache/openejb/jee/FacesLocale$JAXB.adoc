@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/FacesLocale$JAXB.class
+
+ - link:FacesLocale$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 6

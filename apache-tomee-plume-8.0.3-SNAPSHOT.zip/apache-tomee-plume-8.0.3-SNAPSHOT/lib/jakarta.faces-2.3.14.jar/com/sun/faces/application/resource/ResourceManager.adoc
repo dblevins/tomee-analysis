@@ -1,0 +1,14 @@
+= com/sun/faces/application/resource/ResourceManager.class
+
+ - link:ResourceManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 64
+ - javax.faces.application.Application - 6
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.ResourceVisitOption - 2
+ - javax.faces.application.ResourceHandler - 2
+ - javax.faces.application.ProjectStage - 2

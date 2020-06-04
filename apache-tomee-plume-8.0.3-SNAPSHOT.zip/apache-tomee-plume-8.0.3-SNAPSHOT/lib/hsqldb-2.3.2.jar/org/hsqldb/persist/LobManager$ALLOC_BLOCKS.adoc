@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LobManager$ALLOC_BLOCKS.class
+
+ - link:LobManager$ALLOC_BLOCKS-asmified.java[Asmified]
+
+== References
+

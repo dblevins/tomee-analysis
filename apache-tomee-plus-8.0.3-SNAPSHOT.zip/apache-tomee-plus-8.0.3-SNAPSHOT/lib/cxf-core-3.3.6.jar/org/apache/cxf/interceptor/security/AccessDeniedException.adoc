@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/AccessDeniedException.class
+
+ - link:AccessDeniedException-asmified.java[Asmified]
+
+== References
+

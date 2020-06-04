@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cms/Attributes.class
+
+ - link:Attributes-asmified.java[Asmified]
+
+== References
+

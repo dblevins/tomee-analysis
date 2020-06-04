@@ -1,0 +1,8 @@
+= org/apache/tomcat/websocket/FutureToSendHandler.class
+
+ - link:FutureToSendHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.SendResult - 10
+ - javax.websocket.SendHandler - 1

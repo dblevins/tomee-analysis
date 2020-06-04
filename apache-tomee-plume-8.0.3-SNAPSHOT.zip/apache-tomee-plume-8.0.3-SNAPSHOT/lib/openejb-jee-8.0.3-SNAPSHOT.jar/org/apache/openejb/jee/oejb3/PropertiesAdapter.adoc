@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/oejb3/PropertiesAdapter.class
+
+ - link:PropertiesAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

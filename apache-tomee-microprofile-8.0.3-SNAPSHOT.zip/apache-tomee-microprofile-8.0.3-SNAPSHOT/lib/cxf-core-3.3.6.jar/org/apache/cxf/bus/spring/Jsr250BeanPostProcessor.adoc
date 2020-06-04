@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/spring/Jsr250BeanPostProcessor.class
+
+ - link:Jsr250BeanPostProcessor-asmified.java[Asmified]
+
+== References
+

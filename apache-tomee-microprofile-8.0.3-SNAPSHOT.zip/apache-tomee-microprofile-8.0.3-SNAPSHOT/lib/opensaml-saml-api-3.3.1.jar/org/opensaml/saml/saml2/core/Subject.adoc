@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/Subject.class
+
+ - link:Subject-asmified.java[Asmified]
+
+== References
+

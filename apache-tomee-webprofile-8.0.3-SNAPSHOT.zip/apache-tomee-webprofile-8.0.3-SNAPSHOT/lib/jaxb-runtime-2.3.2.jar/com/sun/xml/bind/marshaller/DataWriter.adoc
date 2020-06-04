@@ -1,0 +1,6 @@
+= com/sun/xml/bind/marshaller/DataWriter.class
+
+ - link:DataWriter-asmified.java[Asmified]
+
+== References
+

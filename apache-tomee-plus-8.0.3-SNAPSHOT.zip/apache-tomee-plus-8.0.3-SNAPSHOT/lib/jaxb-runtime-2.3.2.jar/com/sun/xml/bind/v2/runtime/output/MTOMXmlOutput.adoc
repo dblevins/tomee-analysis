@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/output/MTOMXmlOutput.class
+
+ - link:MTOMXmlOutput-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.attachment.AttachmentMarshaller - 4
+ - javax.activation.DataHandler - 2

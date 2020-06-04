@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/transformer/TransformIdentity$5.class
+
+ - link:TransformIdentity$5-asmified.java[Asmified]
+
+== References
+

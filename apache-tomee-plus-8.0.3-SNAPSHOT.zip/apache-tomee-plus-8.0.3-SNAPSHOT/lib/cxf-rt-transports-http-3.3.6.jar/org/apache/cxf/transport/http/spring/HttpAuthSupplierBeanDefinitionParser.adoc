@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/spring/HttpAuthSupplierBeanDefinitionParser.class
+
+ - link:HttpAuthSupplierBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

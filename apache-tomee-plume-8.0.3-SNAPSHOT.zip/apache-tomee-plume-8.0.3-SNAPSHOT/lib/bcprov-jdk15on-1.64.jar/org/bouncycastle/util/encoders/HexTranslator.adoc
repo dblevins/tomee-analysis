@@ -1,0 +1,6 @@
+= org/bouncycastle/util/encoders/HexTranslator.class
+
+ - link:HexTranslator-asmified.java[Asmified]
+
+== References
+

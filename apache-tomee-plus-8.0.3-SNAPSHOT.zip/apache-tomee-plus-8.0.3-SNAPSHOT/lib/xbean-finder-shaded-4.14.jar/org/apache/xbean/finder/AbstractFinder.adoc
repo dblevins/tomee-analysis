@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/AbstractFinder.class
+
+ - link:AbstractFinder-asmified.java[Asmified]
+
+== References
+

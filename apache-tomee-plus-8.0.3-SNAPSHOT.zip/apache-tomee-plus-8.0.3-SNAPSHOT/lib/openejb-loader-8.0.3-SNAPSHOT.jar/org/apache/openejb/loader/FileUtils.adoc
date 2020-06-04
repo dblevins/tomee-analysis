@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/FileUtils.class
+
+ - link:FileUtils-asmified.java[Asmified]
+
+== References
+

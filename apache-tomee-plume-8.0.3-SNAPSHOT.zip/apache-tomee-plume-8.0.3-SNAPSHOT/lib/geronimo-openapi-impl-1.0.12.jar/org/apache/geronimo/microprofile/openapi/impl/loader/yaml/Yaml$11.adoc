@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml$11.class
+
+ - link:Yaml$11-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue$ValueType - 10

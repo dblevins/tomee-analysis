@@ -1,0 +1,8 @@
+= javax/servlet/FilterRegistration.class
+
+ - link:FilterRegistration-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.DispatcherType - 2
+ - javax.servlet.Registration - 1

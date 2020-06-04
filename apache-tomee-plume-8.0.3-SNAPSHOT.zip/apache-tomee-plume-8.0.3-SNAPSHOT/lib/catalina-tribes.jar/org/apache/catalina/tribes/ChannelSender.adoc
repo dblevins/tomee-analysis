@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/ChannelSender.class
+
+ - link:ChannelSender-asmified.java[Asmified]
+
+== References
+

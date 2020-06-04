@@ -1,0 +1,6 @@
+= org/apache/activemq/transport/nio/NIOOutputStream.class
+
+ - link:NIOOutputStream-asmified.java[Asmified]
+
+== References
+

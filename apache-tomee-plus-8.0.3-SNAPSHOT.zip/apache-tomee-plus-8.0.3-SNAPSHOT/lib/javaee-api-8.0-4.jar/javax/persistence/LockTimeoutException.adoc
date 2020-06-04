@@ -1,0 +1,7 @@
+= javax/persistence/LockTimeoutException.class
+
+ - link:LockTimeoutException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 7

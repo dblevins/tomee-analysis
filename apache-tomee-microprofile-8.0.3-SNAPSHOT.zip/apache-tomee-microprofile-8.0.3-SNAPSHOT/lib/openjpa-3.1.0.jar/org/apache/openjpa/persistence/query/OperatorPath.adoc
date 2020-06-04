@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/OperatorPath.class
+
+ - link:OperatorPath-asmified.java[Asmified]
+
+== References
+

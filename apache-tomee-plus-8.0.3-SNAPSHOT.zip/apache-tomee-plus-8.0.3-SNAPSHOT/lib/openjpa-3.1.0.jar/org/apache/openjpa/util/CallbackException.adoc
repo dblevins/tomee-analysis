@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/CallbackException.class
+
+ - link:CallbackException-asmified.java[Asmified]
+
+== References
+

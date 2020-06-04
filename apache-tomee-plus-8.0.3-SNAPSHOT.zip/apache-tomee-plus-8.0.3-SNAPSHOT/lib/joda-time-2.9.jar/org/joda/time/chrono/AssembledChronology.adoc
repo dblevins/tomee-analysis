@@ -1,0 +1,6 @@
+= org/joda/time/chrono/AssembledChronology.class
+
+ - link:AssembledChronology-asmified.java[Asmified]
+
+== References
+

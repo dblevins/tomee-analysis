@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/Invokable.class
+
+ - link:Invokable-asmified.java[Asmified]
+
+== References
+

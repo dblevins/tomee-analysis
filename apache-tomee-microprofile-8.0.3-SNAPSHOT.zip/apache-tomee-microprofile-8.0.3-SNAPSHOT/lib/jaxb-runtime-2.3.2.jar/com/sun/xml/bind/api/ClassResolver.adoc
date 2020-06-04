@@ -1,0 +1,6 @@
+= com/sun/xml/bind/api/ClassResolver.class
+
+ - link:ClassResolver-asmified.java[Asmified]
+
+== References
+

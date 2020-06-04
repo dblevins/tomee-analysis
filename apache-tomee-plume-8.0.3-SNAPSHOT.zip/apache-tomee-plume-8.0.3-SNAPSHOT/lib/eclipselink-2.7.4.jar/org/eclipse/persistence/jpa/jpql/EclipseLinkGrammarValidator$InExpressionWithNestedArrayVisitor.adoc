@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/EclipseLinkGrammarValidator$InExpressionWithNestedArrayVisitor.class
+
+ - link:EclipseLinkGrammarValidator$InExpressionWithNestedArrayVisitor-asmified.java[Asmified]
+
+== References
+

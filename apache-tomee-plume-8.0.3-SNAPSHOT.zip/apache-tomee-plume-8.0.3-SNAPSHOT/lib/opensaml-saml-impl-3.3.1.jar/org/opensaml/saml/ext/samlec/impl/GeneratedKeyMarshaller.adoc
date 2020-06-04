@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/samlec/impl/GeneratedKeyMarshaller.class
+
+ - link:GeneratedKeyMarshaller-asmified.java[Asmified]
+
+== References
+

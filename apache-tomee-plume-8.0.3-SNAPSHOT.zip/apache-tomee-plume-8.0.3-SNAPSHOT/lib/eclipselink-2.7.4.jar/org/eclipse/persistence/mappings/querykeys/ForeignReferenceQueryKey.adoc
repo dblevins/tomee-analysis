@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/querykeys/ForeignReferenceQueryKey.class
+
+ - link:ForeignReferenceQueryKey-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/ModelNode.class
+
+ - link:ModelNode-asmified.java[Asmified]
+
+== References
+

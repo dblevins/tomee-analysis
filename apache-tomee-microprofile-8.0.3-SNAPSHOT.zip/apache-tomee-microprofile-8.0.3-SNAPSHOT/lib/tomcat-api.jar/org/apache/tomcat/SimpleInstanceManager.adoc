@@ -1,0 +1,6 @@
+= org/apache/tomcat/SimpleInstanceManager.class
+
+ - link:SimpleInstanceManager-asmified.java[Asmified]
+
+== References
+

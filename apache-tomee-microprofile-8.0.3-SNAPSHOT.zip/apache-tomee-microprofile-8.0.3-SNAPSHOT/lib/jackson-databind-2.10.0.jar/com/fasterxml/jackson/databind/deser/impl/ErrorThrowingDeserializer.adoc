@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/ErrorThrowingDeserializer.class
+
+ - link:ErrorThrowingDeserializer-asmified.java[Asmified]
+
+== References
+

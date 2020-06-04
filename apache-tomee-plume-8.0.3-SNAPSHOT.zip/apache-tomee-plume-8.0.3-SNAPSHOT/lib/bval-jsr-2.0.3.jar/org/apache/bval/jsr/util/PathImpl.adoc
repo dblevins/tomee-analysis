@@ -1,0 +1,16 @@
+= org/apache/bval/jsr/util/PathImpl.class
+
+ - link:PathImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 45
+ - javax.validation.Path - 7
+ - javax.validation.Path$ReturnValueNode - 1
+ - javax.validation.Path$MethodNode - 1
+ - javax.validation.Path$ConstructorNode - 1
+ - javax.validation.Path$BeanNode - 1
+ - javax.validation.Path$PropertyNode - 1
+ - javax.validation.Path$ParameterNode - 1
+ - javax.validation.Path$ContainerElementNode - 1
+ - javax.validation.Path$CrossParameterNode - 1

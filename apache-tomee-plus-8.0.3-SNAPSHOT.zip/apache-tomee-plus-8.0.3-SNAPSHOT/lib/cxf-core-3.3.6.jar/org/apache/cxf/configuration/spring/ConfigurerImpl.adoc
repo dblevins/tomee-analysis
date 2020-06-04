@@ -1,0 +1,6 @@
+= org/apache/cxf/configuration/spring/ConfigurerImpl.class
+
+ - link:ConfigurerImpl-asmified.java[Asmified]
+
+== References
+

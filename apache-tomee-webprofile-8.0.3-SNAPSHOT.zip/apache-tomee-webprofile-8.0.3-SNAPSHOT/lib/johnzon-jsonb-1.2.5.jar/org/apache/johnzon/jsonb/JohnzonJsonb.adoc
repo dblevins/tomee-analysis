@@ -1,0 +1,17 @@
+= org/apache/johnzon/jsonb/JohnzonJsonb.class
+
+ - link:JohnzonJsonb-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.JsonbException - 50
+ - javax.json.JsonValue - 34
+ - javax.json.JsonArray - 14
+ - javax.json.JsonNumber - 11
+ - javax.json.stream.JsonParser - 8
+ - javax.json.JsonValue$ValueType - 7
+ - javax.json.stream.JsonGenerator - 5
+ - javax.json.JsonString - 3
+ - javax.json.JsonBuilderFactory - 2
+ - javax.json.JsonStructure - 1
+ - javax.json.bind.Jsonb - 1

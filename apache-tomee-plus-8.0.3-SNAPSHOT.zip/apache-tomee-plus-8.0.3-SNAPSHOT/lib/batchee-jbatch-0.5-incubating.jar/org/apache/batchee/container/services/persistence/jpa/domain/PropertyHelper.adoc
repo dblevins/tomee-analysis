@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/persistence/jpa/domain/PropertyHelper.class
+
+ - link:PropertyHelper-asmified.java[Asmified]
+
+== References
+

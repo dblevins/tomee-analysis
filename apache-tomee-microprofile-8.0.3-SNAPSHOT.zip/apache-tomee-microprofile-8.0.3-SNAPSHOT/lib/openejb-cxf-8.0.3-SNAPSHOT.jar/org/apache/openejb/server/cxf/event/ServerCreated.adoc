@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/event/ServerCreated.class
+
+ - link:ServerCreated-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/BusinessRemoteReference.class
+
+ - link:BusinessRemoteReference-asmified.java[Asmified]
+
+== References
+

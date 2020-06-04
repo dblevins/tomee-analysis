@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/SessionCustomizer.class
+
+ - link:SessionCustomizer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/router/FailOverRouter$Strategy.class
+
+ - link:FailOverRouter$Strategy-asmified.java[Asmified]
+
+== References
+

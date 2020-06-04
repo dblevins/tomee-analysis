@@ -1,0 +1,10 @@
+= com/sun/faces/application/ViewHandlerResponseWrapper.class
+
+ - link:ViewHandlerResponseWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponse - 6
+ - javax.servlet.http.HttpServletResponseWrapper - 6
+ - javax.servlet.ServletOutputStream - 3
+ - javax.servlet.http.HttpServletResponse - 2

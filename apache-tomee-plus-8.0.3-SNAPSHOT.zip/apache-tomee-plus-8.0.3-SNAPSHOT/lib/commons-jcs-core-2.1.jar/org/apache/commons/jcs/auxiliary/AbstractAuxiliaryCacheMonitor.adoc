@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/AbstractAuxiliaryCacheMonitor.class
+
+ - link:AbstractAuxiliaryCacheMonitor-asmified.java[Asmified]
+
+== References
+

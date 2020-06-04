@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/TelephoneNumberUnmarshaller.class
+
+ - link:TelephoneNumberUnmarshaller-asmified.java[Asmified]
+
+== References
+

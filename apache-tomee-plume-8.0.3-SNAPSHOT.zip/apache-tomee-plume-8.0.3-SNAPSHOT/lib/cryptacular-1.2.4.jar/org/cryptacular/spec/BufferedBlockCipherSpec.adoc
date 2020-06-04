@@ -1,0 +1,6 @@
+= org/cryptacular/spec/BufferedBlockCipherSpec.class
+
+ - link:BufferedBlockCipherSpec-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/SecurityTokenReference.class
+
+ - link:SecurityTokenReference-asmified.java[Asmified]
+
+== References
+

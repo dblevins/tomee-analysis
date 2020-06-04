@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/resourceResolvers/ResolverSameDocument.class
+
+ - link:ResolverSameDocument-asmified.java[Asmified]
+
+== References
+

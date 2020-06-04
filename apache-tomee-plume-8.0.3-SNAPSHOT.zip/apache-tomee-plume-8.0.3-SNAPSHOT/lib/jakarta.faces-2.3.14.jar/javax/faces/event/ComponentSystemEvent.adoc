@@ -1,0 +1,13 @@
+= javax/faces/event/ComponentSystemEvent.class
+
+ - link:ComponentSystemEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 15
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.event.FacesListener - 6
+ - javax.faces.event.SystemEvent - 5
+ - javax.faces.event.ComponentSystemEventListener - 4
+ - javax.faces.event.ComponentSystemEvent - 4
+ - javax.faces.event.SystemEventListener - 1

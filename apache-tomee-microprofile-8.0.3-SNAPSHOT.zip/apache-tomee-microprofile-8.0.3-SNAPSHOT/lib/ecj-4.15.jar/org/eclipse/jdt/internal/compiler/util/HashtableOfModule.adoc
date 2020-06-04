@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/HashtableOfModule.class
+
+ - link:HashtableOfModule-asmified.java[Asmified]
+
+== References
+

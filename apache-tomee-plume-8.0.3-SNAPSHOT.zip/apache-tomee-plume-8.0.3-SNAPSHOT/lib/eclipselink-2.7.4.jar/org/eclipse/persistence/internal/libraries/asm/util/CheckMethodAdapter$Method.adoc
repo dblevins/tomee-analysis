@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/util/CheckMethodAdapter$Method.class
+
+ - link:CheckMethodAdapter$Method-asmified.java[Asmified]
+
+== References
+

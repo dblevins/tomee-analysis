@@ -1,0 +1,216 @@
+package asm.org.apache.activemq.transport.discovery.simple;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SimpleDiscoveryAgent$1Dump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", null, "java/lang/Object", new String[] { "java/lang/Runnable" });
+
+classWriter.visitOuterClass("org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "serviceFailed", "(Lorg/apache/activemq/command/DiscoveryEvent;)V");
+
+classWriter.visitInnerClass("org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "SimpleDiscoveryEvent", 0);
+
+classWriter.visitInnerClass("org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", null, null, 0);
+
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "val$sevent", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_FINAL | ACC_SYNTHETIC, "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "val$sevent", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "run", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "val$sevent", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "<init>", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$100", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$200", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)J", false);
+methodVisitor.visitInsn(LADD);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$300", "()Lorg/slf4j/Logger;", false);
+methodVisitor.visitLdcInsn("Failure occurred soon after the discovery event was generated.  It will be classified as a connection failure: {}");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$408", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$500", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)I", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$400", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)I", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$500", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)I", false);
+methodVisitor.visitJumpInsn(IF_ICMPLT, label1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$300", "()Lorg/slf4j/Logger;", false);
+methodVisitor.visitLdcInsn("Reconnect attempts exceeded {} tries.  Reconnecting has been disabled for: {}");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$500", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "warn", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$600", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)Z", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$700", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)J", false);
+methodVisitor.visitLdcInsn(new Long(-1L));
+methodVisitor.visitInsn(LCMP);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$800", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$702", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;J)J", false);
+methodVisitor.visitInsn(POP2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$700", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$900", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)J", false);
+methodVisitor.visitInsn(LMUL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$702", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;J)J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$700", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$1000", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)J", false);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFLE, label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$1000", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$702", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;J)J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "doReconnectDelay", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)V", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$300", "()Lorg/slf4j/Logger;", false);
+methodVisitor.visitLdcInsn("Failure occurred to long after the discovery event was generated.  It will not be classified as a connection failure: {}");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "trace", "(Ljava/lang/String;Ljava/lang/Object;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$402", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;I)I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$800", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$702", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;J)J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "doReconnectDelay", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)V", false);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$1100", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)Ljava/util/concurrent/atomic/AtomicBoolean;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicBoolean", "get", "()Z", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label6);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$300", "()Lorg/slf4j/Logger;", false);
+methodVisitor.visitLdcInsn("Reconnecting disabled: stopped");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/slf4j/Logger", "debug", "(Ljava/lang/String;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$102", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;J)J", false);
+methodVisitor.visitInsn(POP2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent", "access$000", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$SimpleDiscoveryEvent;)Ljava/util/concurrent/atomic/AtomicBoolean;", false);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicBoolean", "set", "(Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent$1", "this$0", "Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent", "access$1200", "(Lorg/apache/activemq/transport/discovery/simple/SimpleDiscoveryAgent;)Lorg/apache/activemq/transport/discovery/DiscoveryListener;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/activemq/transport/discovery/DiscoveryListener", "onServiceAdd", "(Lorg/apache/activemq/command/DiscoveryEvent;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

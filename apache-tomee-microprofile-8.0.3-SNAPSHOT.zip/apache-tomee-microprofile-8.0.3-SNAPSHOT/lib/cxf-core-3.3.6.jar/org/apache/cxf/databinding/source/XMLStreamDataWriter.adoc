@@ -1,0 +1,7 @@
+= org/apache/cxf/databinding/source/XMLStreamDataWriter.class
+
+ - link:XMLStreamDataWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 5

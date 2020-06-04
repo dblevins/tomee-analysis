@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$FetchGraphHint.class
+
+ - link:QueryHintsHandler$FetchGraphHint-asmified.java[Asmified]
+
+== References
+

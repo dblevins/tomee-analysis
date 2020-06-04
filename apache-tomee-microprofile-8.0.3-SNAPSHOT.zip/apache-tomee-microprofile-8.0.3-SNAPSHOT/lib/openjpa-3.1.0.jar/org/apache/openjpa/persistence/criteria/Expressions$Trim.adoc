@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Trim.class
+
+ - link:Expressions$Trim-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 24
+ - javax.persistence.criteria.CriteriaBuilder$Trimspec - 19

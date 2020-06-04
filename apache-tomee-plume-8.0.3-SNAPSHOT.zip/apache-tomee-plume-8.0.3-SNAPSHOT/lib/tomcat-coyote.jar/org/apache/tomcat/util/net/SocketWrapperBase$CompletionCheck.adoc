@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/net/SocketWrapperBase$CompletionCheck.class
+
+ - link:SocketWrapperBase$CompletionCheck-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/LoggingFeature.class
+
+ - link:LoggingFeature-asmified.java[Asmified]
+
+== References
+

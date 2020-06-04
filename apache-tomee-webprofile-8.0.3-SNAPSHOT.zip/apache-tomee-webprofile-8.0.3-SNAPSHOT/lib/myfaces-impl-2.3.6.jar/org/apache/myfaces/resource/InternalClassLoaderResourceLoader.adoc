@@ -1,0 +1,10 @@
+= org/apache/myfaces/resource/InternalClassLoaderResourceLoader.class
+
+ - link:InternalClassLoaderResourceLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.application.ResourceVisitOption - 4
+ - javax.faces.application.ProjectStage - 2

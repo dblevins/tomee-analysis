@@ -1,0 +1,7 @@
+= org/opensaml/soap/client/SOAPFaultException.class
+
+ - link:SOAPFaultException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/annotations/XmlWriteOnly.class
+
+ - link:XmlWriteOnly-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/log/XidImpl2.class
+
+ - link:XidImpl2-asmified.java[Asmified]
+
+== References
+

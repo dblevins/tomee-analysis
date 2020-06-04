@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/transport/util/CxfUtil$LifecycleManager.class
+
+ - link:CxfUtil$LifecycleManager-asmified.java[Asmified]
+
+== References
+

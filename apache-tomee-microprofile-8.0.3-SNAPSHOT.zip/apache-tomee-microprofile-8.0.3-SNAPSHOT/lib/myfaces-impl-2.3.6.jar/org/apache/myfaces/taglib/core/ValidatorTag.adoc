@@ -1,0 +1,13 @@
+= org/apache/myfaces/taglib/core/ValidatorTag.class
+
+ - link:ValidatorTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 17
+ - javax.servlet.jsp.JspException - 7
+ - javax.el.ELContext - 7
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.validator.Validator - 6
+ - javax.faces.application.Application - 4
+ - javax.faces.webapp.ValidatorELTag - 3

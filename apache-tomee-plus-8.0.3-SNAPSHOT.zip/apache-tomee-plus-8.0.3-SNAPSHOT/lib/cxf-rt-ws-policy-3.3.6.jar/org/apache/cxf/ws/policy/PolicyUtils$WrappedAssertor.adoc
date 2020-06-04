@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/PolicyUtils$WrappedAssertor.class
+
+ - link:PolicyUtils$WrappedAssertor-asmified.java[Asmified]
+
+== References
+

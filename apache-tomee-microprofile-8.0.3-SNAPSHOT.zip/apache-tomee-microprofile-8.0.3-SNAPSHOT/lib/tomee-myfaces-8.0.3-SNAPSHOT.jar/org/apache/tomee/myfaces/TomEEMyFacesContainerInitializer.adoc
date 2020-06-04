@@ -1,0 +1,10 @@
+= org/apache/tomee/myfaces/TomEEMyFacesContainerInitializer.class
+
+ - link:TomEEMyFacesContainerInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 23
+ - javax.faces.context.ExternalContext - 1
+ - javax.servlet.ServletContainerInitializer - 1
+ - javax.servlet.ServletException - 1

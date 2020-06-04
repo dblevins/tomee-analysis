@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/DatabaseException.class
+
+ - link:DatabaseException-asmified.java[Asmified]
+
+== References
+

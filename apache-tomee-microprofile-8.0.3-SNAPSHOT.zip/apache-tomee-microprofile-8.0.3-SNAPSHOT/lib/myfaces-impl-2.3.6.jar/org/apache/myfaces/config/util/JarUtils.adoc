@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/util/JarUtils.class
+
+ - link:JarUtils-asmified.java[Asmified]
+
+== References
+

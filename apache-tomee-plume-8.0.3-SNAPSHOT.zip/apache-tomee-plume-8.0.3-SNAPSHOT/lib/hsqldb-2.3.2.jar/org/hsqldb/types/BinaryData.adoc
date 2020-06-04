@@ -1,0 +1,6 @@
+= org/hsqldb/types/BinaryData.class
+
+ - link:BinaryData-asmified.java[Asmified]
+
+== References
+

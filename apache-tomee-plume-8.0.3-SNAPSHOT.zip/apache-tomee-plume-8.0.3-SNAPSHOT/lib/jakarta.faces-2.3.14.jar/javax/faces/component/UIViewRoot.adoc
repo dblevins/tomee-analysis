@@ -1,0 +1,46 @@
+= javax/faces/component/UIViewRoot.class
+
+ - link:UIViewRoot-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 171
+ - javax.faces.component.UIViewRoot - 107
+ - javax.faces.event.PhaseId - 78
+ - javax.faces.component.UIComponent - 62
+ - javax.el.MethodExpression - 47
+ - javax.faces.component.StateHelper - 32
+ - javax.faces.context.PartialViewContext - 28
+ - javax.faces.application.Application - 20
+ - javax.faces.event.PhaseEvent - 17
+ - javax.faces.component.UIViewRoot$PropertyKeys - 16
+ - javax.faces.event.PhaseListener - 15
+ - javax.faces.component.UIComponentBase - 14
+ - javax.faces.event.ExceptionQueuedEventContext - 12
+ - javax.faces.event.FacesEvent - 11
+ - javax.faces.component.TransientStateHelper - 10
+ - javax.faces.lifecycle.Lifecycle - 6
+ - javax.faces.event.AbortProcessingException - 5
+ - javax.faces.application.ViewHandler - 4
+ - javax.faces.event.SystemEvent - 4
+ - javax.faces.event.ExceptionQueuedEvent - 4
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.event.SystemEventListener - 4
+ - javax.el.ELContext - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.view.ViewMetadata - 3
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.application.ResourceHandler - 3
+ - javax.faces.lifecycle.LifecycleFactory - 3
+ - javax.faces.view.ViewDeclarationLanguage - 3
+ - javax.faces.component.UIViewRoot$DoResetValues - 2
+ - javax.faces.component.UIViewParameter - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.component.UIViewRoot$ViewMap - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.UniqueIdVendor - 1
+ - javax.faces.event.PostConstructViewMapEvent - 1
+ - javax.faces.event.PostRestoreStateEvent - 1
+ - javax.faces.FactoryFinder - 1
+ - javax.faces.FacesException - 1
+ - javax.faces.component.UIViewRoot$1 - 1

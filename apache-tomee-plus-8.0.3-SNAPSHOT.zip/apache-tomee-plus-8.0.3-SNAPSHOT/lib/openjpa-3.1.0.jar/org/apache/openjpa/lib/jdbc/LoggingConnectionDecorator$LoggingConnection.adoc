@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/LoggingConnectionDecorator$LoggingConnection.class
+
+ - link:LoggingConnectionDecorator$LoggingConnection-asmified.java[Asmified]
+
+== References
+

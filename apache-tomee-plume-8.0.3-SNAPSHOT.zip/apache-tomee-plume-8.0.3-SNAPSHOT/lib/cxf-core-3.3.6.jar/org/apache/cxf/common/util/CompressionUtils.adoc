@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/CompressionUtils.class
+
+ - link:CompressionUtils-asmified.java[Asmified]
+
+== References
+

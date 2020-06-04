@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/Features.class
+
+ - link:Features-asmified.java[Asmified]
+
+== References
+

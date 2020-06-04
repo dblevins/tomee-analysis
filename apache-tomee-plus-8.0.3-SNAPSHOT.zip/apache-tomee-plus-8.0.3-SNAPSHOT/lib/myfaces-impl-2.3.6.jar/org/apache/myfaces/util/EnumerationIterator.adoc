@@ -1,0 +1,6 @@
+= org/apache/myfaces/util/EnumerationIterator.class
+
+ - link:EnumerationIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,24 @@
+= com/sun/faces/renderkit/html_basic/RadioRenderer.class
+
+ - link:RadioRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 49
+ - javax.faces.component.UIComponent - 43
+ - javax.faces.context.ResponseWriter - 40
+ - javax.faces.component.UISelectOne - 30
+ - javax.faces.model.SelectItem - 14
+ - javax.faces.convert.Converter - 7
+ - javax.faces.component.UINamingContainer - 4
+ - javax.faces.event.ComponentSystemEvent - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.UIForm - 1
+ - javax.faces.event.PostAddToViewEvent - 1
+ - javax.faces.event.ListenerFor - 1
+ - javax.faces.event.ComponentSystemEventListener - 1
+ - javax.faces.component.UIViewRoot - 1
+ - javax.el.ELException - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/DataSourceFactory$2.class
+
+ - link:DataSourceFactory$2-asmified.java[Asmified]
+
+== References
+

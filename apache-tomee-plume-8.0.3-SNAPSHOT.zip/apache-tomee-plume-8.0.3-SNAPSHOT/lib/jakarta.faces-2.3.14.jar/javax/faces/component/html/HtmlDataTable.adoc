@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlDataTable.class
+
+ - link:HtmlDataTable-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 128
+ - javax.faces.component.html.HtmlDataTable - 91
+ - javax.faces.component.html.HtmlDataTable$PropertyKeys - 64
+ - javax.faces.component.UIData - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

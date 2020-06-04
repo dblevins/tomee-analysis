@@ -1,0 +1,6 @@
+= org/hsqldb/navigator/RowSetNavigatorData$DataIterator.class
+
+ - link:RowSetNavigatorData$DataIterator-asmified.java[Asmified]
+
+== References
+

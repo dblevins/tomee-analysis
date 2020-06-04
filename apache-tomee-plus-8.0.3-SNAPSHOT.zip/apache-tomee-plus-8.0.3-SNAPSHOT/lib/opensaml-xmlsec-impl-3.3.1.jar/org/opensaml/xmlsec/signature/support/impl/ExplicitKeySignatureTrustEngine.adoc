@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/signature/support/impl/ExplicitKeySignatureTrustEngine.class
+
+ - link:ExplicitKeySignatureTrustEngine-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 5

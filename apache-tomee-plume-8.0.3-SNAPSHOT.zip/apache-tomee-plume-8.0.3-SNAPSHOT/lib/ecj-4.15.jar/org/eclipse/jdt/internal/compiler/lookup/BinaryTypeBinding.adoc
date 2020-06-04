@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/BinaryTypeBinding.class
+
+ - link:BinaryTypeBinding-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/bidimap/DualTreeBidiMap$BidiOrderedMapIterator.class
+
+ - link:DualTreeBidiMap$BidiOrderedMapIterator-asmified.java[Asmified]
+
+== References
+

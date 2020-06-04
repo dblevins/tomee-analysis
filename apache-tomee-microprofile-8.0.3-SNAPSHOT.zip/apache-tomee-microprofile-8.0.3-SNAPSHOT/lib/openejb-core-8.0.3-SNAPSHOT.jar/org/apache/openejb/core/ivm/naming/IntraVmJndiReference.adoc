@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/IntraVmJndiReference.class
+
+ - link:IntraVmJndiReference-asmified.java[Asmified]
+
+== References
+

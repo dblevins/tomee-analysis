@@ -1,0 +1,6 @@
+= org/apache/catalina/session/PersistentManager.class
+
+ - link:PersistentManager-asmified.java[Asmified]
+
+== References
+

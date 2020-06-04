@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/localization/i18n/TraceLocalizationResource.class
+
+ - link:TraceLocalizationResource-asmified.java[Asmified]
+
+== References
+

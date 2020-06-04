@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/webapp/webxml/WebXmlParser$1.class
+
+ - link:WebXmlParser$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/proxy/Jdk13ProxyFactory.class
+
+ - link:Jdk13ProxyFactory-asmified.java[Asmified]
+
+== References
+

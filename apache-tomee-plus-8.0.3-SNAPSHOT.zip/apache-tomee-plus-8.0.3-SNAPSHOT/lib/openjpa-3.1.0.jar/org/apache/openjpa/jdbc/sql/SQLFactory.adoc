@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SQLFactory.class
+
+ - link:SQLFactory-asmified.java[Asmified]
+
+== References
+

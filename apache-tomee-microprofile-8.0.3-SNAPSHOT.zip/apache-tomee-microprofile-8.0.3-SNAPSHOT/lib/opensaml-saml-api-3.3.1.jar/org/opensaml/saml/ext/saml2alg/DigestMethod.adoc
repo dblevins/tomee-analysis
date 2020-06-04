@@ -1,0 +1,7 @@
+= org/opensaml/saml/ext/saml2alg/DigestMethod.class
+
+ - link:DigestMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

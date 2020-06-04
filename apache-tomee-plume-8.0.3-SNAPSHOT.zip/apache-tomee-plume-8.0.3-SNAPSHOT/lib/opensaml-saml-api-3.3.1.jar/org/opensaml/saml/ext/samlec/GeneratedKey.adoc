@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/samlec/GeneratedKey.class
+
+ - link:GeneratedKey-asmified.java[Asmified]
+
+== References
+

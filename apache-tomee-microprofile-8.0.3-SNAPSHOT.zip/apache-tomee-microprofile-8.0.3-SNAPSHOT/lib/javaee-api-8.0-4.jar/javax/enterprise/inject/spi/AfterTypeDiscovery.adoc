@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/AfterTypeDiscovery.class
+
+ - link:AfterTypeDiscovery-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 1
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

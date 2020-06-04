@@ -1,0 +1,8 @@
+= com/sun/faces/mgbean/BeanManager$ScopeManager$ViewScopeHandler.class
+
+ - link:BeanManager$ScopeManager$ViewScopeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.context.FacesContext - 6

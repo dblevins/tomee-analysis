@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/SelectResultObjectProvider.class
+
+ - link:SelectResultObjectProvider-asmified.java[Asmified]
+
+== References
+

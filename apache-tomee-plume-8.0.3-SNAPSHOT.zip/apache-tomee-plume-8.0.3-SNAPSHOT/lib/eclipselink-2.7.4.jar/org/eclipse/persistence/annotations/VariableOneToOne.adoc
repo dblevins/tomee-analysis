@@ -1,0 +1,9 @@
+= org/eclipse/persistence/annotations/VariableOneToOne.class
+
+ - link:VariableOneToOne-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.DiscriminatorColumn - 2
+ - javax.persistence.FetchType - 2
+ - javax.persistence.CascadeType - 1

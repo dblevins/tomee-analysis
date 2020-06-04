@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/SignatureConfirmationSecurityEvent.class
+
+ - link:SignatureConfirmationSecurityEvent-asmified.java[Asmified]
+
+== References
+

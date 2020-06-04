@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/CookieConfig$JAXB.class
+
+ - link:CookieConfig$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 29

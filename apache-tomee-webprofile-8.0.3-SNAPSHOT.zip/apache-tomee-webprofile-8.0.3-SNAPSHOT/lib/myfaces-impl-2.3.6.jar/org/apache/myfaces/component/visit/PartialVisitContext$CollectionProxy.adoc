@@ -1,0 +1,6 @@
+= org/apache/myfaces/component/visit/PartialVisitContext$CollectionProxy.class
+
+ - link:PartialVisitContext$CollectionProxy-asmified.java[Asmified]
+
+== References
+

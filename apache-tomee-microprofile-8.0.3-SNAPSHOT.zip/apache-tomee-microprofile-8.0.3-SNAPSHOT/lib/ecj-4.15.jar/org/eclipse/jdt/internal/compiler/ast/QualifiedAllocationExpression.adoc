@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/QualifiedAllocationExpression.class
+
+ - link:QualifiedAllocationExpression-asmified.java[Asmified]
+
+== References
+

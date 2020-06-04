@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/openapi/impl/loader/yaml/Yaml.class
+
+ - link:Yaml-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 2
+ - javax.json.JsonNumber - 2
+ - javax.json.JsonString - 2
+ - javax.enterprise.inject.Vetoed - 1

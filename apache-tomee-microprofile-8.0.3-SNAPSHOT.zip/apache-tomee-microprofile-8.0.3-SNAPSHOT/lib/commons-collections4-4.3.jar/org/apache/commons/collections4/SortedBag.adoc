@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/SortedBag.class
+
+ - link:SortedBag-asmified.java[Asmified]
+
+== References
+

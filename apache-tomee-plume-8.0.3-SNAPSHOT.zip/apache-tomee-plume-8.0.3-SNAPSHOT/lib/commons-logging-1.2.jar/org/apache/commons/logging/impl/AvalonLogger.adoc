@@ -1,0 +1,6 @@
+= org/apache/commons/logging/impl/AvalonLogger.class
+
+ - link:AvalonLogger-asmified.java[Asmified]
+
+== References
+

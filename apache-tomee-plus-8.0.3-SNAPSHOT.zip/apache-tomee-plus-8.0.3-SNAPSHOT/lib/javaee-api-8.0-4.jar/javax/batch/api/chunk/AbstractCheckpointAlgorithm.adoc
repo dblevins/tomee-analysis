@@ -1,0 +1,7 @@
+= javax/batch/api/chunk/AbstractCheckpointAlgorithm.class
+
+ - link:AbstractCheckpointAlgorithm-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.chunk.CheckpointAlgorithm - 1

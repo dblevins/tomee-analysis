@@ -1,0 +1,14 @@
+= org/apache/myfaces/cdi/validator/FacesValidatorCDIWrapper.class
+
+ - link:FacesValidatorCDIWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.validator.Validator - 13
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.context.ExternalContext - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.FacesWrapper - 1
+ - javax.faces.validator.ValidatorException - 1
+ - javax.faces.component.PartialStateHolder - 1

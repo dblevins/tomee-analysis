@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/impl/ElementFactory.class
+
+ - link:ElementFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPElement - 10
+ - javax.xml.soap.Name - 4
+ - javax.xml.soap.SOAPFault - 1

@@ -1,0 +1,6 @@
+= org/w3c/dom/NamedNodeMap.class
+
+ - link:NamedNodeMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/CachedDelegateConverter.class
+
+ - link:CachedDelegateConverter-asmified.java[Asmified]
+
+== References
+

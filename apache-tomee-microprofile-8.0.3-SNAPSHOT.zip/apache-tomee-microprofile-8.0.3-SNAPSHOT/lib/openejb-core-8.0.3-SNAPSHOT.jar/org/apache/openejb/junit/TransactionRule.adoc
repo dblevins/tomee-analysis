@@ -1,0 +1,6 @@
+= org/apache/openejb/junit/TransactionRule.class
+
+ - link:TransactionRule-asmified.java[Asmified]
+
+== References
+

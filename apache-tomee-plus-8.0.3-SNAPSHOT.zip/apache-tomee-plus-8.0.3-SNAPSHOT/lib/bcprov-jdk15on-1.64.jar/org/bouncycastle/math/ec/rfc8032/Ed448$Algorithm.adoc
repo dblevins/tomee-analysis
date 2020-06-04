@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/rfc8032/Ed448$Algorithm.class
+
+ - link:Ed448$Algorithm-asmified.java[Asmified]
+
+== References
+

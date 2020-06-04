@@ -1,0 +1,8 @@
+= org/apache/openejb/security/internal/InternalSecurityInterceptor.class
+
+ - link:InternalSecurityInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 4
+ - javax.interceptor.AroundInvoke - 1

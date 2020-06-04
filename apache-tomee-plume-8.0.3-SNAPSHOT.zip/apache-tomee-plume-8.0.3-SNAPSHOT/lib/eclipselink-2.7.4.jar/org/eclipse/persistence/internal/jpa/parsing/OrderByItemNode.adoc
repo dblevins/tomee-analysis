@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/OrderByItemNode.class
+
+ - link:OrderByItemNode-asmified.java[Asmified]
+
+== References
+

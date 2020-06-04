@@ -1,0 +1,7 @@
+= org/apache/geronimo/javamail/store/imap/IMAPFolder$FetchProfileItem.class
+
+ - link:IMAPFolder$FetchProfileItem-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.FetchProfile$Item - 2

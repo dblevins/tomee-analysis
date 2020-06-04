@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/BaseProcessingEnvImpl.class
+
+ - link:BaseProcessingEnvImpl-asmified.java[Asmified]
+
+== References
+

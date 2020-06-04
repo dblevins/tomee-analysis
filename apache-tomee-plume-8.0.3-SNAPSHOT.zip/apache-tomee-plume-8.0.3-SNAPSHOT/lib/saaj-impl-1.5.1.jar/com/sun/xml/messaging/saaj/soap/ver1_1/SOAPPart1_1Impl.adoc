@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/ver1_1/SOAPPart1_1Impl.class
+
+ - link:SOAPPart1_1Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 4
+ - javax.xml.soap.SOAPConstants - 1

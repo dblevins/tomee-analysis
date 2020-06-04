@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/el/CacheableValueExpressionWrapper.class
+
+ - link:CacheableValueExpressionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 33
+ - javax.el.ELContext - 10
+ - javax.el.ValueReference - 2
+ - javax.faces.FacesWrapper - 1

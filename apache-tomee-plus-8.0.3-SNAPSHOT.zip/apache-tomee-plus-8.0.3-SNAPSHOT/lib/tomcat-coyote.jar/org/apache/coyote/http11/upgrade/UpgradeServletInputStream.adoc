@@ -1,0 +1,8 @@
+= org/apache/coyote/http11/upgrade/UpgradeServletInputStream.class
+
+ - link:UpgradeServletInputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ReadListener - 18
+ - javax.servlet.ServletInputStream - 2

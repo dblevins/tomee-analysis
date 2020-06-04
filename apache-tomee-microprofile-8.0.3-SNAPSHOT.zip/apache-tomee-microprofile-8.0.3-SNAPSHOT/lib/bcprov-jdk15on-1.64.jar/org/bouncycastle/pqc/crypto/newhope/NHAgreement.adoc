@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/crypto/newhope/NHAgreement.class
+
+ - link:NHAgreement-asmified.java[Asmified]
+
+== References
+

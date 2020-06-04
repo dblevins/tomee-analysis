@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/AccessCode.class
+
+ - link:AccessCode-asmified.java[Asmified]
+
+== References
+

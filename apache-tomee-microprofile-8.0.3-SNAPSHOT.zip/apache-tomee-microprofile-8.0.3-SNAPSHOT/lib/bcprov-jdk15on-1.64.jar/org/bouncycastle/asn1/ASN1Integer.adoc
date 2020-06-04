@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/ASN1Integer.class
+
+ - link:ASN1Integer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/KeyResolverSpi.class
+
+ - link:KeyResolverSpi-asmified.java[Asmified]
+
+== References
+

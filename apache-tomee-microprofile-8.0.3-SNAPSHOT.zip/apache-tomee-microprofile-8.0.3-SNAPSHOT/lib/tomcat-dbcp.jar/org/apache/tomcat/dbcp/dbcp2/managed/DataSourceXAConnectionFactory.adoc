@@ -1,0 +1,8 @@
+= org/apache/tomcat/dbcp/dbcp2/managed/DataSourceXAConnectionFactory.class
+
+ - link:DataSourceXAConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 10
+ - javax.transaction.TransactionSynchronizationRegistry - 7

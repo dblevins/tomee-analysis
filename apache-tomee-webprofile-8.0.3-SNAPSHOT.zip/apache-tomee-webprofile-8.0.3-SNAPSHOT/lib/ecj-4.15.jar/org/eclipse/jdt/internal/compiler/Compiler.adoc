@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/Compiler.class
+
+ - link:Compiler-asmified.java[Asmified]
+
+== References
+

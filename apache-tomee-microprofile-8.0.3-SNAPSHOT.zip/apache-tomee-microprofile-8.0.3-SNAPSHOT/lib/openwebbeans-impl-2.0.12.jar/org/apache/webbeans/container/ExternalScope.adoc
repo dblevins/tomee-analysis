@@ -1,0 +1,6 @@
+= org/apache/webbeans/container/ExternalScope.class
+
+ - link:ExternalScope-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/xml/stream/FactoryLocator.class
+
+ - link:FactoryLocator-asmified.java[Asmified]
+
+== References
+

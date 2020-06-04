@@ -1,0 +1,16 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlListboxRendererBase.class
+
+ - link:HtmlListboxRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 27
+ - javax.faces.component.UIComponent - 22
+ - javax.faces.convert.Converter - 11
+ - javax.faces.component.UISelectMany - 10
+ - javax.faces.component.UISelectOne - 8
+ - javax.faces.component.html.HtmlSelectOneListbox - 4
+ - javax.faces.component.behavior.ClientBehaviorHolder - 4
+ - javax.faces.component.html.HtmlSelectManyListbox - 3
+ - javax.faces.context.ResponseWriter - 2
+ - javax.faces.convert.ConverterException - 1

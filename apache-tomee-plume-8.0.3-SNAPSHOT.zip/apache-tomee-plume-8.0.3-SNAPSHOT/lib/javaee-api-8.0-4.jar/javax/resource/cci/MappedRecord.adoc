@@ -1,0 +1,7 @@
+= javax/resource/cci/MappedRecord.class
+
+ - link:MappedRecord-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.Record - 1

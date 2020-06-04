@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/InputSourceFactory.class
+
+ - link:InputSourceFactory-asmified.java[Asmified]
+
+== References
+

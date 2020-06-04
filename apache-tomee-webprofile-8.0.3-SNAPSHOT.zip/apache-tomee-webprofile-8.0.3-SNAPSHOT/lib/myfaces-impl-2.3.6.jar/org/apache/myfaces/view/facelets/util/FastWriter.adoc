@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/util/FastWriter.class
+
+ - link:FastWriter-asmified.java[Asmified]
+
+== References
+

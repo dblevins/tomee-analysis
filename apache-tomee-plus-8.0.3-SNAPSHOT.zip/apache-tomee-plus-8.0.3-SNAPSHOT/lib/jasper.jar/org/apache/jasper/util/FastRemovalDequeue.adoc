@@ -1,0 +1,6 @@
+= org/apache/jasper/util/FastRemovalDequeue.class
+
+ - link:FastRemovalDequeue-asmified.java[Asmified]
+
+== References
+

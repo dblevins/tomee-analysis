@@ -1,0 +1,6 @@
+= org/apache/cxf/annotations/FactoryType$Type.class
+
+ - link:FactoryType$Type-asmified.java[Asmified]
+
+== References
+

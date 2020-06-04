@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/text/FormatFactory.class
+
+ - link:FormatFactory-asmified.java[Asmified]
+
+== References
+

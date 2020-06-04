@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/TypeModifier.class
+
+ - link:TypeModifier-asmified.java[Asmified]
+
+== References
+

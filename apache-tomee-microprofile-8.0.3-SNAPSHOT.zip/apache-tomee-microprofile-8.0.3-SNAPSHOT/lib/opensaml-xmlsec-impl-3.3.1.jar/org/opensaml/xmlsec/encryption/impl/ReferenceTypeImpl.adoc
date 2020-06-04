@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/ReferenceTypeImpl.class
+
+ - link:ReferenceTypeImpl-asmified.java[Asmified]
+
+== References
+

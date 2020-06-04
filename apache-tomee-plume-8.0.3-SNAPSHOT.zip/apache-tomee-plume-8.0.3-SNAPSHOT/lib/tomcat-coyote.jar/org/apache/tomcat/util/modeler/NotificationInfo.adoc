@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/NotificationInfo.class
+
+ - link:NotificationInfo-asmified.java[Asmified]
+
+== References
+

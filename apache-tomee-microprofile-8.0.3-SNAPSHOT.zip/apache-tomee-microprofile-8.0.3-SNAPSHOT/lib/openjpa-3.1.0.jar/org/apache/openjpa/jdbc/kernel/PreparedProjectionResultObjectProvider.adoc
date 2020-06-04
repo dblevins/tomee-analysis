@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/PreparedProjectionResultObjectProvider.class
+
+ - link:PreparedProjectionResultObjectProvider-asmified.java[Asmified]
+
+== References
+

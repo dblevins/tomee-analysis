@@ -1,0 +1,6 @@
+= org/apache/webbeans/spi/api/ResourceReference.class
+
+ - link:ResourceReference-asmified.java[Asmified]
+
+== References
+

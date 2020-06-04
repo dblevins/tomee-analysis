@@ -1,0 +1,11 @@
+= org/apache/webbeans/conversation/ConversationStorageBean.class
+
+ - link:ConversationStorageBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 6
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.enterprise.context.SessionScoped - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Bean - 1

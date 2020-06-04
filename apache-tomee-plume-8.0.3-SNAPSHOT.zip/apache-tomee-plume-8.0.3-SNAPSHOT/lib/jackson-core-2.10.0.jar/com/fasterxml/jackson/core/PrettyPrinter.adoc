@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/PrettyPrinter.class
+
+ - link:PrettyPrinter-asmified.java[Asmified]
+
+== References
+

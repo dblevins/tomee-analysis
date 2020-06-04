@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/diagnose/LexStream$Token.class
+
+ - link:LexStream$Token-asmified.java[Asmified]
+
+== References
+

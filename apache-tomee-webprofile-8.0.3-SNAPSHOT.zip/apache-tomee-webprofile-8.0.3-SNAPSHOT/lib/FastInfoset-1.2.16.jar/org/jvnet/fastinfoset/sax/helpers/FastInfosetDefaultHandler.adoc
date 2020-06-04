@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/sax/helpers/FastInfosetDefaultHandler.class
+
+ - link:FastInfosetDefaultHandler-asmified.java[Asmified]
+
+== References
+

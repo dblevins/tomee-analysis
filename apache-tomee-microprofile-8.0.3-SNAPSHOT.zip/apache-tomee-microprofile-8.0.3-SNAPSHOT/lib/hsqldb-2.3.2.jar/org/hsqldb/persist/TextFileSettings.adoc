@@ -1,0 +1,6 @@
+= org/hsqldb/persist/TextFileSettings.class
+
+ - link:TextFileSettings-asmified.java[Asmified]
+
+== References
+

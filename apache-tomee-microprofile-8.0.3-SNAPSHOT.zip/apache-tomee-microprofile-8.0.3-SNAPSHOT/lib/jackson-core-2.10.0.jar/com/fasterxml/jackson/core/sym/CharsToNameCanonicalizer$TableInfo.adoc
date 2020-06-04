@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer$TableInfo.class
+
+ - link:CharsToNameCanonicalizer$TableInfo-asmified.java[Asmified]
+
+== References
+

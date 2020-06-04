@@ -1,0 +1,6 @@
+= org/apache/openejb/core/security/jaas/GroupPrincipal.class
+
+ - link:GroupPrincipal-asmified.java[Asmified]
+
+== References
+

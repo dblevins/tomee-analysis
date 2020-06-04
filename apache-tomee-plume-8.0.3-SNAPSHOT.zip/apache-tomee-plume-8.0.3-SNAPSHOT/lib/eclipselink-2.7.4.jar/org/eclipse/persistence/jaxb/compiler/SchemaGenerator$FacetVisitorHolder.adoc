@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/SchemaGenerator$FacetVisitorHolder.class
+
+ - link:SchemaGenerator$FacetVisitorHolder-asmified.java[Asmified]
+
+== References
+

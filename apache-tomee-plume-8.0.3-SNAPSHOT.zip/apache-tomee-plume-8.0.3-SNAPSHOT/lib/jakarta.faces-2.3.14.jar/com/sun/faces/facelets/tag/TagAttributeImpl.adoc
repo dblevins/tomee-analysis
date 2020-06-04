@@ -1,0 +1,16 @@
+= com/sun/faces/facelets/tag/TagAttributeImpl.class
+
+ - link:TagAttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 23
+ - javax.faces.view.facelets.TagAttributeException - 16
+ - javax.faces.view.facelets.TagAttribute - 14
+ - javax.faces.view.Location - 13
+ - javax.el.ValueExpression - 13
+ - javax.el.MethodExpression - 11
+ - javax.el.ExpressionFactory - 9
+ - javax.faces.view.facelets.Tag - 6
+ - javax.el.ELContext - 4
+ - javax.el.ELException - 2

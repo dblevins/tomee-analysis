@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/FieldAccessMode$FieldDecoratedType.class
+
+ - link:FieldAccessMode$FieldDecoratedType-asmified.java[Asmified]
+
+== References
+

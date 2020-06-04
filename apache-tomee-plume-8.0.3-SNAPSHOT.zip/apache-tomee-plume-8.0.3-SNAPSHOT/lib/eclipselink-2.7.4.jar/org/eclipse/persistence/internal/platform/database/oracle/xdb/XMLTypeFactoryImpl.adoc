@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/platform/database/oracle/xdb/XMLTypeFactoryImpl.class
+
+ - link:XMLTypeFactoryImpl-asmified.java[Asmified]
+
+== References
+

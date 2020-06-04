@@ -1,0 +1,15 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeResourceLibrary.class
+
+ - link:CompositeResourceLibrary-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 9
+ - javax.faces.application.ResourceHandler - 9
+ - javax.faces.application.Resource - 8
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.view.facelets.TagConfig - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 1
+ - javax.faces.view.facelets.TagHandler - 1
+ - javax.faces.view.facelets.ComponentConfig - 1

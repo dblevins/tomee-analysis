@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/ASMContentHandler$InvokeDynamicBsmArgumentsRule.class
+
+ - link:ASMContentHandler$InvokeDynamicBsmArgumentsRule-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdquery/AttributeQueryDescriptorType.class
+
+ - link:AttributeQueryDescriptorType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/serializer/Serializer$1.class
+
+ - link:Serializer$1-asmified.java[Asmified]
+
+== References
+

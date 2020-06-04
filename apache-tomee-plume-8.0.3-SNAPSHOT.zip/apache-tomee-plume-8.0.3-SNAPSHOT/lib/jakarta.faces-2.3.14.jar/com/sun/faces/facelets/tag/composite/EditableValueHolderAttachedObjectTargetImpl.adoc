@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/composite/EditableValueHolderAttachedObjectTargetImpl.class
+
+ - link:EditableValueHolderAttachedObjectTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.EditableValueHolderAttachedObjectTarget - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/CollectionMemberDeclarationFactory.class
+
+ - link:CollectionMemberDeclarationFactory-asmified.java[Asmified]
+
+== References
+

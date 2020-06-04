@@ -1,0 +1,9 @@
+= org/apache/openjpa/kernel/AbstractBrokerFactory.class
+
+ - link:AbstractBrokerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 15
+ - javax.transaction.TransactionManager - 10
+ - javax.transaction.Synchronization - 2

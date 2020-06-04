@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/YieldStatement.class
+
+ - link:YieldStatement-asmified.java[Asmified]
+
+== References
+

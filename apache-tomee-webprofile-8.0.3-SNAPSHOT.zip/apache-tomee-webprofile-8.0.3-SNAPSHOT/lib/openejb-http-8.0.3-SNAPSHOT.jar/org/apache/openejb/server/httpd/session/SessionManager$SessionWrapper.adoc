@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/session/SessionManager$SessionWrapper.class
+
+ - link:SessionManager$SessionWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSessionEvent - 2
+ - javax.servlet.http.HttpSession - 1

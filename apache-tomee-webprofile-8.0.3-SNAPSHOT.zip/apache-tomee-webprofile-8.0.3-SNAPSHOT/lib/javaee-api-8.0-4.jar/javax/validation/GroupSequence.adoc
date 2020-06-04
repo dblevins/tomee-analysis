@@ -1,0 +1,6 @@
+= javax/validation/GroupSequence.class
+
+ - link:GroupSequence-asmified.java[Asmified]
+
+== References
+

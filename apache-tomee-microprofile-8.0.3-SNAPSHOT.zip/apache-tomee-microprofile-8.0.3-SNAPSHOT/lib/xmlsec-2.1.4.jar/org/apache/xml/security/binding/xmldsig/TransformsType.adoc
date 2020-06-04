@@ -1,0 +1,10 @@
+= org/apache/xml/security/binding/xmldsig/TransformsType.class
+
+ - link:TransformsType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

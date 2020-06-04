@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/TransformSerializer.class
+
+ - link:TransformSerializer-asmified.java[Asmified]
+
+== References
+

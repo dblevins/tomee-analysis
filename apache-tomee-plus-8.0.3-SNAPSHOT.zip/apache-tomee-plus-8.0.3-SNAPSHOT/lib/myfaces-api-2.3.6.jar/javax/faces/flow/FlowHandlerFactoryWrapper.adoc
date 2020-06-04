@@ -1,0 +1,11 @@
+= javax/faces/flow/FlowHandlerFactoryWrapper.class
+
+ - link:FlowHandlerFactoryWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.FlowHandlerFactory - 12
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.flow.FlowHandler - 2
+ - javax.faces.flow.FlowHandlerFactoryWrapper - 2
+ - javax.faces.FacesWrapper - 1

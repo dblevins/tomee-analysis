@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/weaving/CollectionProxyClassWriter.class
+
+ - link:CollectionProxyClassWriter-asmified.java[Asmified]
+
+== References
+

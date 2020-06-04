@@ -1,0 +1,7 @@
+= javax/security/jacc/WebRoleRefPermission.class
+
+ - link:WebRoleRefPermission-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.WebRoleRefPermission - 6

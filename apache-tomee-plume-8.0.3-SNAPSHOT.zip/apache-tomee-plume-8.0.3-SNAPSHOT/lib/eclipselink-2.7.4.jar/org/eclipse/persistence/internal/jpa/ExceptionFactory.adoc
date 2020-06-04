@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/ExceptionFactory.class
+
+ - link:ExceptionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.SystemException - 14
+ - javax.transaction.RollbackException - 3

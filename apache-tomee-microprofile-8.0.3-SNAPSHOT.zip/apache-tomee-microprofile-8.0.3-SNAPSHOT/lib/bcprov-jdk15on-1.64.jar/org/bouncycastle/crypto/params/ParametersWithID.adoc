@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/params/ParametersWithID.class
+
+ - link:ParametersWithID-asmified.java[Asmified]
+
+== References
+

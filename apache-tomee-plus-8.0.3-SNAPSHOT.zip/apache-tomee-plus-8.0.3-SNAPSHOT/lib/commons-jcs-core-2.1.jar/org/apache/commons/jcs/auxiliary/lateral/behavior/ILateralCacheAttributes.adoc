@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/lateral/behavior/ILateralCacheAttributes.class
+
+ - link:ILateralCacheAttributes-asmified.java[Asmified]
+
+== References
+

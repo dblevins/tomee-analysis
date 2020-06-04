@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/UnaryMathVal.class
+
+ - link:UnaryMathVal-asmified.java[Asmified]
+
+== References
+

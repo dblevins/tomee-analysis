@@ -1,0 +1,7 @@
+= org/apache/webbeans/annotation/AnyLiteral.class
+
+ - link:AnyLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Any - 2

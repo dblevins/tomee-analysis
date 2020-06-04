@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/trace/TracingSupport.class
+
+ - link:TracingSupport-asmified.java[Asmified]
+
+== References
+

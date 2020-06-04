@@ -1,0 +1,7 @@
+= com/sun/xml/messaging/saaj/util/stax/SaajStaxWriterEx$1.class
+
+ - link:SaajStaxWriterEx$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPElement - 4

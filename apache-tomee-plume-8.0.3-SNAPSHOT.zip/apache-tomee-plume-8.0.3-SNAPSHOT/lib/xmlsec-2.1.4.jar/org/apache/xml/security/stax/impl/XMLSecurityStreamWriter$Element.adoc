@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/XMLSecurityStreamWriter$Element.class
+
+ - link:XMLSecurityStreamWriter$Element-asmified.java[Asmified]
+
+== References
+

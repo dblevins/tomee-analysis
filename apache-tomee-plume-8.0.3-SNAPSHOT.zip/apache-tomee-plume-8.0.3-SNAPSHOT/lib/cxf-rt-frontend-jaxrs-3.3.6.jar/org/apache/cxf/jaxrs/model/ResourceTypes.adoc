@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/ResourceTypes.class
+
+ - link:ResourceTypes-asmified.java[Asmified]
+
+== References
+

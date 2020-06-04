@@ -1,0 +1,6 @@
+= org/apache/bval/util/Lazy.class
+
+ - link:Lazy-asmified.java[Asmified]
+
+== References
+

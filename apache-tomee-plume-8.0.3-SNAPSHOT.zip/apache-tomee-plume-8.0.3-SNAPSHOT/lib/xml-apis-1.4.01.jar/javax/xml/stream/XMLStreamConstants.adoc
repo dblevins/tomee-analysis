@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLStreamConstants.class
+
+ - link:XMLStreamConstants-asmified.java[Asmified]
+
+== References
+

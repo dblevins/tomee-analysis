@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/LraPopWitness.class
+
+ - link:LraPopWitness-asmified.java[Asmified]
+
+== References
+

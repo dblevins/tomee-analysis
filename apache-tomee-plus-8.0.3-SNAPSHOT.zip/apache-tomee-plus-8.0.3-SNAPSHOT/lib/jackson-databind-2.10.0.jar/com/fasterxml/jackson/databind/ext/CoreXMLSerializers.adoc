@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/CoreXMLSerializers.class
+
+ - link:CoreXMLSerializers-asmified.java[Asmified]
+
+== References
+

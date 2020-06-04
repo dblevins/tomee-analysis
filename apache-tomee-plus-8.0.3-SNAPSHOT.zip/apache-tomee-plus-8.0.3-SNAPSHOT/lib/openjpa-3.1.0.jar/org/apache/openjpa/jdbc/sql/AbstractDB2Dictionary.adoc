@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/AbstractDB2Dictionary.class
+
+ - link:AbstractDB2Dictionary-asmified.java[Asmified]
+
+== References
+

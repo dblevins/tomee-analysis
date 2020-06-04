@@ -1,0 +1,6 @@
+= org/apache/commons/digester/NodeCreateRule$NodeBuilder.class
+
+ - link:NodeCreateRule$NodeBuilder-asmified.java[Asmified]
+
+== References
+

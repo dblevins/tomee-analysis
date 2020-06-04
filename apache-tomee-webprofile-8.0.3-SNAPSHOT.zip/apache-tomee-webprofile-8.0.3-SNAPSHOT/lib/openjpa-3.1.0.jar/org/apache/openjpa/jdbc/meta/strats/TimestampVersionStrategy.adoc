@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/TimestampVersionStrategy.class
+
+ - link:TimestampVersionStrategy-asmified.java[Asmified]
+
+== References
+

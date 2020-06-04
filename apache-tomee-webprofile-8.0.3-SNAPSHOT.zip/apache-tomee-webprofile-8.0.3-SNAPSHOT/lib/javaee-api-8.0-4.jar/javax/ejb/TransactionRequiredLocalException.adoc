@@ -1,0 +1,7 @@
+= javax/ejb/TransactionRequiredLocalException.class
+
+ - link:TransactionRequiredLocalException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 3

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/LinkV2MetadataSource.class
+
+ - link:LinkV2MetadataSource-asmified.java[Asmified]
+
+== References
+

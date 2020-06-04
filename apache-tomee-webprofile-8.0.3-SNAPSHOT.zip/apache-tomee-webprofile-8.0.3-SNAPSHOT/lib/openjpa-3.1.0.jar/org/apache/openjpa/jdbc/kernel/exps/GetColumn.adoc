@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/GetColumn.class
+
+ - link:GetColumn-asmified.java[Asmified]
+
+== References
+

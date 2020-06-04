@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$QueryCacheRandomizedExpiryHint.class
+
+ - link:QueryHintsHandler$QueryCacheRandomizedExpiryHint-asmified.java[Asmified]
+
+== References
+

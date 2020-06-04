@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/KeyReference.class
+
+ - link:KeyReference-asmified.java[Asmified]
+
+== References
+

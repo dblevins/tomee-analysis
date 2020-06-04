@@ -1,0 +1,2 @@
+= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/slf4j-api-1.7.21.jar
+

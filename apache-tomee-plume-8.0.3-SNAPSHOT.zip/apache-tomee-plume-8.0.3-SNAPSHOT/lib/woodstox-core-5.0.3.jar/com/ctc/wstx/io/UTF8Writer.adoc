@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/UTF8Writer.class
+
+ - link:UTF8Writer-asmified.java[Asmified]
+
+== References
+

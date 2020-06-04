@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/PessimisticLock.class
+
+ - link:PessimisticLock-asmified.java[Asmified]
+
+== References
+

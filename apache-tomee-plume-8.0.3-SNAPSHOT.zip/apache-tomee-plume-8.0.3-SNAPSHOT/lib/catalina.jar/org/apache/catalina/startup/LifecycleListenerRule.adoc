@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/LifecycleListenerRule.class
+
+ - link:LifecycleListenerRule-asmified.java[Asmified]
+
+== References
+

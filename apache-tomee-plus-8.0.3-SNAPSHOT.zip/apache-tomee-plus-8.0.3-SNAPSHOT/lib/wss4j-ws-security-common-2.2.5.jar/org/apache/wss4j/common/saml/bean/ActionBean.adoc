@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/ActionBean.class
+
+ - link:ActionBean-asmified.java[Asmified]
+
+== References
+

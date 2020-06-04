@@ -1,0 +1,10 @@
+= org/apache/cxf/rs/security/oauth2/tokens/refresh/RefreshToken.class
+
+ - link:RefreshToken-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Entity - 1
+ - javax.persistence.OrderColumn - 1
+ - javax.persistence.FetchType - 1
+ - javax.persistence.ElementCollection - 1

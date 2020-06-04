@@ -1,0 +1,13 @@
+= javax/faces/component/UIViewRoot$DoResetValues.class
+
+ - link:UIViewRoot$DoResetValues-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.EditableValueHolder - 3
+ - javax.faces.component.visit.VisitResult - 2
+ - javax.faces.component.UIViewRoot$DoResetValues - 1
+ - javax.faces.component.UIViewRoot$1 - 1
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.visit.VisitContext - 1
+ - javax.faces.component.UIComponent - 1

@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmp/PKIStatus.class
+
+ - link:PKIStatus-asmified.java[Asmified]
+
+== References
+

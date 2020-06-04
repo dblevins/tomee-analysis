@@ -1,0 +1,7 @@
+= javax/security/enterprise/identitystore/LdapIdentityStoreDefinition$LdapSearchScope.class
+
+ - link:LdapIdentityStoreDefinition$LdapSearchScope-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.identitystore.LdapIdentityStoreDefinition$LdapSearchScope - 21

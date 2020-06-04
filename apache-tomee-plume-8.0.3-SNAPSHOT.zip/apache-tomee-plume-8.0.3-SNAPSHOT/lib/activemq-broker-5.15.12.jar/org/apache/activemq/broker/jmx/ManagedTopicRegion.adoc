@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/jmx/ManagedTopicRegion.class
+
+ - link:ManagedTopicRegion-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/TCPRemoteCommitProvider$BroadcastQueue.class
+
+ - link:TCPRemoteCommitProvider$BroadcastQueue-asmified.java[Asmified]
+
+== References
+

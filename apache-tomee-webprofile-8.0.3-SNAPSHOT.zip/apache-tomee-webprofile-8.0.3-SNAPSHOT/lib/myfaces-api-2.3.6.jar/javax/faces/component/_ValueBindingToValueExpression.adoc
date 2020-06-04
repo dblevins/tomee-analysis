@@ -1,0 +1,23 @@
+= javax/faces/component/_ValueBindingToValueExpression.class
+
+ - link:_ValueBindingToValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.ValueBinding - 35
+ - javax.faces.component._ValueBindingToValueExpression - 21
+ - javax.faces.context.FacesContext - 13
+ - javax.el.ELContext - 12
+ - javax.faces.component.StateHolder - 6
+ - javax.faces.component._ValueBindingToValueExpression$Invoker - 6
+ - javax.el.ELException - 6
+ - javax.el.PropertyNotFoundException - 6
+ - javax.faces.el.PropertyNotFoundException - 3
+ - javax.faces.el.EvaluationException - 3
+ - javax.el.ValueExpression - 3
+ - javax.faces.component._ValueBindingToValueExpression$2 - 2
+ - javax.faces.component._ValueBindingToValueExpression$3 - 2
+ - javax.faces.component._ValueBindingToValueExpression$1 - 2
+ - javax.faces.component._ValueBindingToValueExpression$4 - 2
+ - javax.faces.component._ClassUtils - 1
+ - javax.el.PropertyNotWritableException - 1

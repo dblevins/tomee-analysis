@@ -1,0 +1,6 @@
+= org/apache/tomcat/dbcp/dbcp2/ObjectNameWrapper.class
+
+ - link:ObjectNameWrapper-asmified.java[Asmified]
+
+== References
+

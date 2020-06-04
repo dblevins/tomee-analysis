@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/jmx/ProxyConnectorView.class
+
+ - link:ProxyConnectorView-asmified.java[Asmified]
+
+== References
+

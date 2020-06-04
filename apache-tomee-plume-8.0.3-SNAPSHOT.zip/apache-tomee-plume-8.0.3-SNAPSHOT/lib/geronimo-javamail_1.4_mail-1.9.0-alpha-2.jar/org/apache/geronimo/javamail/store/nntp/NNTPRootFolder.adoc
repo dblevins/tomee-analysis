@@ -1,0 +1,9 @@
+= org/apache/geronimo/javamail/store/nntp/NNTPRootFolder.class
+
+ - link:NNTPRootFolder-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Folder - 20
+ - javax.mail.MessagingException - 11
+ - javax.mail.Store - 3

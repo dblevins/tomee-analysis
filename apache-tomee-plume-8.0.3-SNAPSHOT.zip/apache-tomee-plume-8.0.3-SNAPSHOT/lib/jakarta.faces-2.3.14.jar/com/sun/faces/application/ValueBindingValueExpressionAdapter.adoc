@@ -1,0 +1,16 @@
+= com/sun/faces/application/ValueBindingValueExpressionAdapter.class
+
+ - link:ValueBindingValueExpressionAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 37
+ - javax.faces.context.FacesContext - 21
+ - javax.faces.el.PropertyNotFoundException - 12
+ - javax.faces.el.EvaluationException - 12
+ - javax.el.ELContext - 10
+ - javax.el.ELException - 8
+ - javax.faces.component.StateHolder - 6
+ - javax.faces.el.ValueBinding - 6
+ - javax.el.PropertyNotFoundException - 6
+ - javax.el.PropertyNotWritableException - 2

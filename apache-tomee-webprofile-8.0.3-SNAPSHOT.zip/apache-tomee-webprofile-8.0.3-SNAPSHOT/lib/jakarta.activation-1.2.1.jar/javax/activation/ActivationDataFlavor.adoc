@@ -1,0 +1,9 @@
+= javax/activation/ActivationDataFlavor.class
+
+ - link:ActivationDataFlavor-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.MimeType - 13
+ - javax.activation.MimeTypeParseException - 1
+ - javax.activation.ActivationDataFlavor - 1

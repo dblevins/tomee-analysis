@@ -1,0 +1,6 @@
+= org/apache/openejb/OpenEjbContainer$InvalidModulesPropertyException.class
+
+ - link:OpenEjbContainer$InvalidModulesPropertyException-asmified.java[Asmified]
+
+== References
+

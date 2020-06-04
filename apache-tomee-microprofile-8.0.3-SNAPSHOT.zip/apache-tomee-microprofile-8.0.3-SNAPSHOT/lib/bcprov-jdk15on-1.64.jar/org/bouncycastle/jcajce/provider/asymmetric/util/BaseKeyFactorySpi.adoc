@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/util/BaseKeyFactorySpi.class
+
+ - link:BaseKeyFactorySpi-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/myfaces/context/PartialResponseWriterImpl$StackEntry.class
+
+ - link:PartialResponseWriterImpl$StackEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 7

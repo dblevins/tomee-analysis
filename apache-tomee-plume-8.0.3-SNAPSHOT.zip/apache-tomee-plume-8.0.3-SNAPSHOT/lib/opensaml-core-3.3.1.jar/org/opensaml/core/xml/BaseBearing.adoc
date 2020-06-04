@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/BaseBearing.class
+
+ - link:BaseBearing-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

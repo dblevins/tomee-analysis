@@ -1,0 +1,6 @@
+= org/apache/openejb/server/httpd/HttpRequest$Method.class
+
+ - link:HttpRequest$Method-asmified.java[Asmified]
+
+== References
+

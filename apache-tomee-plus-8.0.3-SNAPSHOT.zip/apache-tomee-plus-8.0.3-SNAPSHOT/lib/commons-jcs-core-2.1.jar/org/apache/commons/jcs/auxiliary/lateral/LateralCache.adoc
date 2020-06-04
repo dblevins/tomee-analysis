@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/lateral/LateralCache.class
+
+ - link:LateralCache-asmified.java[Asmified]
+
+== References
+

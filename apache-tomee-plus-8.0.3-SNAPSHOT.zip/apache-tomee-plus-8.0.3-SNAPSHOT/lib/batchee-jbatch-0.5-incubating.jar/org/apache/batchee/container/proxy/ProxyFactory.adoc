@@ -1,0 +1,16 @@
+= org/apache/batchee/container/proxy/ProxyFactory.class
+
+ - link:ProxyFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.chunk.ItemProcessor - 3
+ - javax.batch.api.partition.PartitionAnalyzer - 3
+ - javax.batch.api.partition.PartitionMapper - 3
+ - javax.batch.api.chunk.ItemWriter - 3
+ - javax.batch.api.partition.PartitionCollector - 3
+ - javax.batch.api.Batchlet - 3
+ - javax.batch.api.chunk.ItemReader - 3
+ - javax.batch.api.Decider - 3
+ - javax.batch.api.partition.PartitionReducer - 3
+ - javax.batch.api.chunk.CheckpointAlgorithm - 2

@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/configurator/BeanAttributesConfigurator.class
+
+ - link:BeanAttributesConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.BeanAttributesConfigurator - 18
+ - javax.enterprise.util.TypeLiteral - 1

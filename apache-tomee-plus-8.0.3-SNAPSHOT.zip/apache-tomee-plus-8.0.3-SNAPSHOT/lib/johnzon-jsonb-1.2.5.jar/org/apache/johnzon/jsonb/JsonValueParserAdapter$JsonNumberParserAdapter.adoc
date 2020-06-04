@@ -1,0 +1,8 @@
+= org/apache/johnzon/jsonb/JsonValueParserAdapter$JsonNumberParserAdapter.class
+
+ - link:JsonValueParserAdapter$JsonNumberParserAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonNumber - 10
+ - javax.json.JsonValue - 5

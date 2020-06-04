@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/FirebirdDictionary.class
+
+ - link:FirebirdDictionary-asmified.java[Asmified]
+
+== References
+

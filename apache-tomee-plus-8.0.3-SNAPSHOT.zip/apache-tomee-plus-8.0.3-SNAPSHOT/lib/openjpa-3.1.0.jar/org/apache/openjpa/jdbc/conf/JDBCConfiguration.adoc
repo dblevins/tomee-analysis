@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/conf/JDBCConfiguration.class
+
+ - link:JDBCConfiguration-asmified.java[Asmified]
+
+== References
+

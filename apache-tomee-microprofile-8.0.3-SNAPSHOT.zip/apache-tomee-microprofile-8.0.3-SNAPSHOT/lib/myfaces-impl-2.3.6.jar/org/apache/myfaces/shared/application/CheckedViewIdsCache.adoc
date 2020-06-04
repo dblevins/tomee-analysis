@@ -1,0 +1,9 @@
+= org/apache/myfaces/shared/application/CheckedViewIdsCache.class
+
+ - link:CheckedViewIdsCache-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.context.FacesContext - 8
+ - javax.faces.application.ProjectStage - 2

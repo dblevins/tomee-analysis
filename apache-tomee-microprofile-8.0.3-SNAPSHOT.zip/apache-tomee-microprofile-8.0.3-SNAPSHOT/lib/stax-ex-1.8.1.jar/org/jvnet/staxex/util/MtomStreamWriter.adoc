@@ -1,0 +1,7 @@
+= org/jvnet/staxex/util/MtomStreamWriter.class
+
+ - link:MtomStreamWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.attachment.AttachmentMarshaller - 1

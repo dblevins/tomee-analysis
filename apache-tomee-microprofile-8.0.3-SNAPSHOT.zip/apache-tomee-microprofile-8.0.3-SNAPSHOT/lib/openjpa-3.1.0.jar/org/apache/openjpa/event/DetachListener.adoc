@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/DetachListener.class
+
+ - link:DetachListener-asmified.java[Asmified]
+
+== References
+

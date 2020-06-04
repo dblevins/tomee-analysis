@@ -1,0 +1,8 @@
+= com/sun/faces/config/configprovider/MojarraFacesConfigResourceProvider.class
+
+ - link:MojarraFacesConfigResourceProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 3
+ - javax.faces.FacesException - 2

@@ -1,0 +1,6 @@
+= com/ctc/wstx/ent/IntEntity.class
+
+ - link:IntEntity-asmified.java[Asmified]
+
+== References
+

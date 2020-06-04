@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/impl/DefaultPooledObject.class
+
+ - link:DefaultPooledObject-asmified.java[Asmified]
+
+== References
+

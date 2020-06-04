@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Case.class
+
+ - link:Expressions$Case-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 38
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.CriteriaBuilder$Case - 3
+ - javax.persistence.criteria.Selection - 2

@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/index/impl/MetadataIndexManager$EntityIDExtractionFunction.class
+
+ - link:MetadataIndexManager$EntityIDExtractionFunction-asmified.java[Asmified]
+
+== References
+

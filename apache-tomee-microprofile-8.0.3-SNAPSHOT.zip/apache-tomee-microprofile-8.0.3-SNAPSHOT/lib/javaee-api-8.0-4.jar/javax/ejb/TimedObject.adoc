@@ -1,0 +1,7 @@
+= javax/ejb/TimedObject.class
+
+ - link:TimedObject-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.Timer - 1

@@ -1,0 +1,10 @@
+= org/apache/myfaces/spi/impl/AllAnnotationInjectionProvider.class
+
+ - link:AllAnnotationInjectionProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceContext - 8
+ - javax.persistence.PersistenceUnit - 8
+ - javax.ejb.EJB - 8
+ - javax.annotation.Resource - 4

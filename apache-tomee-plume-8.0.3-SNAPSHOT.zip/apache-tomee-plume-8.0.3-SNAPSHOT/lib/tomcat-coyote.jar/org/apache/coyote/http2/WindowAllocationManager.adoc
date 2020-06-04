@@ -1,0 +1,7 @@
+= org/apache/coyote/http2/WindowAllocationManager.class
+
+ - link:WindowAllocationManager-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.WriteListener - 1

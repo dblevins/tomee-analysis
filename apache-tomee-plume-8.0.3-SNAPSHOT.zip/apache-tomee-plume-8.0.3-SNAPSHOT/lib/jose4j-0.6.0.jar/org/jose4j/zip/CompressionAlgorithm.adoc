@@ -1,0 +1,6 @@
+= org/jose4j/zip/CompressionAlgorithm.class
+
+ - link:CompressionAlgorithm-asmified.java[Asmified]
+
+== References
+

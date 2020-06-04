@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/FormatFeature.class
+
+ - link:FormatFeature-asmified.java[Asmified]
+
+== References
+

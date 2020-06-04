@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/analysis/SmallSet.class
+
+ - link:SmallSet-asmified.java[Asmified]
+
+== References
+

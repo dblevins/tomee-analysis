@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/Bytes.class
+
+ - link:Bytes-asmified.java[Asmified]
+
+== References
+

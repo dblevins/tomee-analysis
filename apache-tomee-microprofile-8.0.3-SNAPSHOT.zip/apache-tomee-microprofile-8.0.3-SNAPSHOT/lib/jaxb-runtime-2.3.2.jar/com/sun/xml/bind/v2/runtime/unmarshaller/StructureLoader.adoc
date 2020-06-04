@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/StructureLoader.class
+
+ - link:StructureLoader-asmified.java[Asmified]
+
+== References
+

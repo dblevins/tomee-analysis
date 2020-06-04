@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/EventMetadataProducer.class
+
+ - link:EventMetadataProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.EventMetadata - 8
+ - javax.enterprise.context.spi.CreationalContext - 3
+ - javax.enterprise.inject.spi.InjectionPoint - 1
+ - javax.enterprise.inject.spi.Producer - 1

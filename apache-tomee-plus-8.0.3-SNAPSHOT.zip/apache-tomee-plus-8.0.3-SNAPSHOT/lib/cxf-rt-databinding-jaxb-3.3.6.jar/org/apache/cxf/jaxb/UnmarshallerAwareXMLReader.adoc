@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxb/UnmarshallerAwareXMLReader.class
+
+ - link:UnmarshallerAwareXMLReader-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 1

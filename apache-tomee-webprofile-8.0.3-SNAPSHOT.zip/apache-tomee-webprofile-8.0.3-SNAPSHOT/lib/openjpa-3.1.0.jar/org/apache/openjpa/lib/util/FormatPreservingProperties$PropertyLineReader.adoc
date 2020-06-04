@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/FormatPreservingProperties$PropertyLineReader.class
+
+ - link:FormatPreservingProperties$PropertyLineReader-asmified.java[Asmified]
+
+== References
+

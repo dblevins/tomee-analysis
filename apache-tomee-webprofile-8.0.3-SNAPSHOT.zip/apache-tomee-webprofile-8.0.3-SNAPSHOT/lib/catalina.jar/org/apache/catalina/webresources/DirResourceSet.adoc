@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/DirResourceSet.class
+
+ - link:DirResourceSet-asmified.java[Asmified]
+
+== References
+

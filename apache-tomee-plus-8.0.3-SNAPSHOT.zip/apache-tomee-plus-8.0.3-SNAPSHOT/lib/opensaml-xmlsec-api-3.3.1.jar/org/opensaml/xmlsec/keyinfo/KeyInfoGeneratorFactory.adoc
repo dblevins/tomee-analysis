@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/keyinfo/KeyInfoGeneratorFactory.class
+
+ - link:KeyInfoGeneratorFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

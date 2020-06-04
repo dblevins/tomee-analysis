@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/ConstraintDefaults.class
+
+ - link:ConstraintDefaults-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 1

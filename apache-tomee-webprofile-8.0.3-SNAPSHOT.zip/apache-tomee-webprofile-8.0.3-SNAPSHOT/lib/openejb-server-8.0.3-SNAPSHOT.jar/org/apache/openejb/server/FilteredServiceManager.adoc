@@ -1,0 +1,6 @@
+= org/apache/openejb/server/FilteredServiceManager.class
+
+ - link:FilteredServiceManager-asmified.java[Asmified]
+
+== References
+

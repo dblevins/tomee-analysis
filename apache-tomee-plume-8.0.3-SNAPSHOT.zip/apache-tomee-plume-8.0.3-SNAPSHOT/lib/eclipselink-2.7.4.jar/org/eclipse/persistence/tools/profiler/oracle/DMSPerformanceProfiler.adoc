@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/profiler/oracle/DMSPerformanceProfiler.class
+
+ - link:DMSPerformanceProfiler-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/reflection/JavaPackageImpl.class
+
+ - link:JavaPackageImpl-asmified.java[Asmified]
+
+== References
+

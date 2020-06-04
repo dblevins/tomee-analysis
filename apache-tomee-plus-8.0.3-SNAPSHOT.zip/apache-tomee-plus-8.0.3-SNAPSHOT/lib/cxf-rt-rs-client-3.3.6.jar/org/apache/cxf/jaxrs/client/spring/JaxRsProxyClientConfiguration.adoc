@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/client/spring/JaxRsProxyClientConfiguration.class
+
+ - link:JaxRsProxyClientConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.Provider - 2
+ - javax.ws.rs.Path - 2

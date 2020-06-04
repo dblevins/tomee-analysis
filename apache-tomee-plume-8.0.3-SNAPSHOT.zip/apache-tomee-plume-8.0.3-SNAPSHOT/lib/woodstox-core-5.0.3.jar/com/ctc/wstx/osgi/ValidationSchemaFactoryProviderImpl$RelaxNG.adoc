@@ -1,0 +1,6 @@
+= com/ctc/wstx/osgi/ValidationSchemaFactoryProviderImpl$RelaxNG.class
+
+ - link:ValidationSchemaFactoryProviderImpl$RelaxNG-asmified.java[Asmified]
+
+== References
+

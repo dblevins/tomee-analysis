@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/TypeReference.class
+
+ - link:TypeReference-asmified.java[Asmified]
+
+== References
+

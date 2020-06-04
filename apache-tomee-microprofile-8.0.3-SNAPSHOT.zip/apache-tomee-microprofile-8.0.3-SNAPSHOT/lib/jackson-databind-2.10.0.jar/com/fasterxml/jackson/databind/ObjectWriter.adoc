@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ObjectWriter.class
+
+ - link:ObjectWriter-asmified.java[Asmified]
+
+== References
+

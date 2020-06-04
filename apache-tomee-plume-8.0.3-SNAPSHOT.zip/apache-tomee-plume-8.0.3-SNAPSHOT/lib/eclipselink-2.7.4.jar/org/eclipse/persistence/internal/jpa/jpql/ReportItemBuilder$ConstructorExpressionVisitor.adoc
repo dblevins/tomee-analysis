@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/ReportItemBuilder$ConstructorExpressionVisitor.class
+
+ - link:ReportItemBuilder$ConstructorExpressionVisitor-asmified.java[Asmified]
+
+== References
+

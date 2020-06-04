@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/schema/SchemaDeserializer.class
+
+ - link:SchemaDeserializer-asmified.java[Asmified]
+
+== References
+

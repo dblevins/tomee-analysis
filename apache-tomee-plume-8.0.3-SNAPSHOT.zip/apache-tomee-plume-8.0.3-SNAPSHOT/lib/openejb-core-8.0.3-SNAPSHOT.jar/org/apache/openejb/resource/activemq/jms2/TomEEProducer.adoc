@@ -1,0 +1,10 @@
+= org/apache/openejb/resource/activemq/jms2/TomEEProducer.class
+
+ - link:TomEEProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 12
+ - javax.jms.CompletionListener - 8
+ - javax.jms.JMSException - 7
+ - javax.jms.Destination - 6

@@ -1,0 +1,6 @@
+= org/apache/cxf/annotations/UseAsyncMethod.class
+
+ - link:UseAsyncMethod-asmified.java[Asmified]
+
+== References
+

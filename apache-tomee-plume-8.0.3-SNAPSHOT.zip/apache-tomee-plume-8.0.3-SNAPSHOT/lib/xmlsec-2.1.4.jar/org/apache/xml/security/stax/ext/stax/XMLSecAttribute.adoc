@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/stax/XMLSecAttribute.class
+
+ - link:XMLSecAttribute-asmified.java[Asmified]
+
+== References
+

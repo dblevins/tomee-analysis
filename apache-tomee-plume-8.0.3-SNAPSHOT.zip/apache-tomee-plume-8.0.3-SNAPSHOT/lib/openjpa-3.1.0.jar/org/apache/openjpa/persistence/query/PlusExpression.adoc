@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/PlusExpression.class
+
+ - link:PlusExpression-asmified.java[Asmified]
+
+== References
+

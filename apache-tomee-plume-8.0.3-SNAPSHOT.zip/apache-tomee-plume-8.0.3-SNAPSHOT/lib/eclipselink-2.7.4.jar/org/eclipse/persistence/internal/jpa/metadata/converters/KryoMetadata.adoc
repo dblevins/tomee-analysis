@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/converters/KryoMetadata.class
+
+ - link:KryoMetadata-asmified.java[Asmified]
+
+== References
+

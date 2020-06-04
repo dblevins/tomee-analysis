@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDODataObjectType.class
+
+ - link:SDODataObjectType-asmified.java[Asmified]
+
+== References
+

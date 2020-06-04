@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/factory/StAXOutputFactory.class
+
+ - link:StAXOutputFactory-asmified.java[Asmified]
+
+== References
+

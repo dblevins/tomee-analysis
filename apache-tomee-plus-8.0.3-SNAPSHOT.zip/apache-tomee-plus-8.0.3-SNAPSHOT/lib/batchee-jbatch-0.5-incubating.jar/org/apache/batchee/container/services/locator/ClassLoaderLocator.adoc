@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/locator/ClassLoaderLocator.class
+
+ - link:ClassLoaderLocator-asmified.java[Asmified]
+
+== References
+

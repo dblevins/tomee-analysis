@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/UriInfoImpl.class
+
+ - link:UriInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 17
+ - javax.ws.rs.core.UriBuilder - 10
+ - javax.ws.rs.core.PathSegment - 2
+ - javax.ws.rs.core.UriInfo - 1

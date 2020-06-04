@@ -1,0 +1,8 @@
+= javax/mail/internet/MimeMessage$RecipientType.class
+
+ - link:MimeMessage$RecipientType-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.MimeMessage$RecipientType - 5
+ - javax.mail.Message$RecipientType - 3

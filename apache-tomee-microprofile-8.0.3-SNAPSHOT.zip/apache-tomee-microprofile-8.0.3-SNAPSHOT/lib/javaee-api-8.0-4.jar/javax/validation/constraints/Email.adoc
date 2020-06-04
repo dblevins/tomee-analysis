@@ -1,0 +1,10 @@
+= javax/validation/constraints/Email.class
+
+ - link:Email-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Email$List - 1
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1
+ - javax.validation.constraints.Pattern$Flag - 1

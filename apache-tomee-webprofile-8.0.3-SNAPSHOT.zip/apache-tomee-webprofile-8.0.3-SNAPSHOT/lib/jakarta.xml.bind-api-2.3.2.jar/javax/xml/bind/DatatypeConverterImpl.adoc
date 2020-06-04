@@ -1,0 +1,11 @@
+= javax/xml/bind/DatatypeConverterImpl.class
+
+ - link:DatatypeConverterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.DatatypeConverterImpl - 64
+ - javax.xml.bind.WhiteSpaceProcessor - 11
+ - javax.xml.bind.DatatypeConverterInterface - 5
+ - javax.xml.bind.DatatypeConverterImpl$CalendarFormatter - 3
+ - javax.xml.bind.DatatypeConverter - 1

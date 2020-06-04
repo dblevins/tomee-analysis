@@ -1,0 +1,7 @@
+= org/opensaml/security/criteria/PeerEntityIDCriterion.class
+
+ - link:PeerEntityIDCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

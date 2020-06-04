@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/SuperclassDiscriminatorStrategy.class
+
+ - link:SuperclassDiscriminatorStrategy-asmified.java[Asmified]
+
+== References
+

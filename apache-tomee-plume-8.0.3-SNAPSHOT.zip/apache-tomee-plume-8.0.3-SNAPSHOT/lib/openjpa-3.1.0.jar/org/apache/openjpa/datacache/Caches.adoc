@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/Caches.class
+
+ - link:Caches-asmified.java[Asmified]
+
+== References
+

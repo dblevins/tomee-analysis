@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/SchemaGenerator$AddToSchemaResult.class
+
+ - link:SchemaGenerator$AddToSchemaResult-asmified.java[Asmified]
+
+== References
+

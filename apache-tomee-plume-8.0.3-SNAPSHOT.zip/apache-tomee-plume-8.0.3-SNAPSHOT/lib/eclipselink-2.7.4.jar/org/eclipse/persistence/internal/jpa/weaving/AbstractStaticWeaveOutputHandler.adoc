@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/weaving/AbstractStaticWeaveOutputHandler.class
+
+ - link:AbstractStaticWeaveOutputHandler-asmified.java[Asmified]
+
+== References
+

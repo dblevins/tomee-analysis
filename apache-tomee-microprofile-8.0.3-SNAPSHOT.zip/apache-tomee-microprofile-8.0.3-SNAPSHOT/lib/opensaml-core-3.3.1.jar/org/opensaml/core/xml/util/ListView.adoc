@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/util/ListView.class
+
+ - link:ListView-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.annotation.Nullable - 5

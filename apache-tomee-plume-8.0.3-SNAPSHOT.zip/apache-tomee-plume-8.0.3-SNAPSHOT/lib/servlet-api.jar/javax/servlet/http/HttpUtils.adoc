@@ -1,0 +1,9 @@
+= javax/servlet/http/HttpUtils.class
+
+ - link:HttpUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 7
+ - javax.servlet.ServletInputStream - 3
+ - javax.servlet.http.HttpUtils - 3

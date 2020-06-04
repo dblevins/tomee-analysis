@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/Empty$JAXB.class
+
+ - link:Empty$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 5

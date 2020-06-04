@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/events/ProcessAnnotatedTypeImpl.class
+
+ - link:ProcessAnnotatedTypeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 9
+ - javax.enterprise.inject.spi.ProcessAnnotatedType - 1
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

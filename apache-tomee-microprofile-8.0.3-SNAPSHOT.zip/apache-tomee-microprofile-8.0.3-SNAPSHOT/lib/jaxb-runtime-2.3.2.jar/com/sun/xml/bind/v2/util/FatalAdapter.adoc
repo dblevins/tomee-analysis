@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/util/FatalAdapter.class
+
+ - link:FatalAdapter-asmified.java[Asmified]
+
+== References
+

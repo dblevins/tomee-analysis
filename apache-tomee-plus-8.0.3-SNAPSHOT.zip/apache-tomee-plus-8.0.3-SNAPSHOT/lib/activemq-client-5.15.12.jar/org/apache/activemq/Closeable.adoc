@@ -1,0 +1,7 @@
+= org/apache/activemq/Closeable.class
+
+ - link:Closeable-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

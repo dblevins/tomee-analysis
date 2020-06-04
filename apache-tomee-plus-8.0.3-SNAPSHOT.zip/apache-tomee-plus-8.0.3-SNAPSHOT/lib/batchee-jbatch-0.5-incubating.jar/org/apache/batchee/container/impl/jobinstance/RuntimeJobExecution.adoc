@@ -1,0 +1,8 @@
+= org/apache/batchee/container/impl/jobinstance/RuntimeJobExecution.class
+
+ - link:RuntimeJobExecution-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.JobInstance - 11
+ - javax.batch.runtime.BatchStatus - 2

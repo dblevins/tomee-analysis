@@ -1,0 +1,9 @@
+= org/opensaml/profile/logic/PredicateAccessControl.class
+
+ - link:PredicateAccessControl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.servlet.ServletRequest - 2
+ - javax.annotation.Nullable - 2

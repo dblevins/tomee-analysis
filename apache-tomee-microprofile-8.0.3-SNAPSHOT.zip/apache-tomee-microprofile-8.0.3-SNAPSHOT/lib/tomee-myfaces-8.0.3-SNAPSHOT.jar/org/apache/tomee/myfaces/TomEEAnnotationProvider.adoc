@@ -1,0 +1,7 @@
+= org/apache/tomee/myfaces/TomEEAnnotationProvider.class
+
+ - link:TomEEAnnotationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 5

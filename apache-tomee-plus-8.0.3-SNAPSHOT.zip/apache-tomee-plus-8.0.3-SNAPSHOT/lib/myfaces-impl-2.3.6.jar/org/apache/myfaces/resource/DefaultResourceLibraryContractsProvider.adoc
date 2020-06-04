@@ -1,0 +1,7 @@
+= org/apache/myfaces/resource/DefaultResourceLibraryContractsProvider.class
+
+ - link:DefaultResourceLibraryContractsProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 4

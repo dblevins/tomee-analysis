@@ -1,0 +1,11 @@
+= com/sun/faces/application/view/ViewScopeEventListener.class
+
+ - link:ViewScopeEventListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.event.SystemEvent - 2
+ - javax.faces.event.ViewMapListener - 1
+ - javax.faces.component.UIViewRoot - 1
+ - javax.faces.event.AbortProcessingException - 1

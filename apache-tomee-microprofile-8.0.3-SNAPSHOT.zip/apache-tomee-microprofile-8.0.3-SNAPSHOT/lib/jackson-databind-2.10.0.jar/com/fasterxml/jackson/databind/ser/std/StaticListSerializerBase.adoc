@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StaticListSerializerBase.class
+
+ - link:StaticListSerializerBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/jdbc/mysql/MySQLDiskCacheAttributes.class
+
+ - link:MySQLDiskCacheAttributes-asmified.java[Asmified]
+
+== References
+

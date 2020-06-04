@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2ReaderAdapter.class
+
+ - link:Stax2ReaderAdapter-asmified.java[Asmified]
+
+== References
+

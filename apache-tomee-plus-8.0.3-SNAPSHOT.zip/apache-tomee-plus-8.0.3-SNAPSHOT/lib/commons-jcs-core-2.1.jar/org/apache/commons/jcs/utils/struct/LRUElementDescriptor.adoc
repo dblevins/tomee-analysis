@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/struct/LRUElementDescriptor.class
+
+ - link:LRUElementDescriptor-asmified.java[Asmified]
+
+== References
+

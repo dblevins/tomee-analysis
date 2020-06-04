@@ -1,0 +1,7 @@
+= org/apache/webbeans/component/PassivationBeanWrapper.class
+
+ - link:PassivationBeanWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 1

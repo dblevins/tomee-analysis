@@ -1,0 +1,6 @@
+= com/ctc/wstx/sr/TypedStreamReader.class
+
+ - link:TypedStreamReader-asmified.java[Asmified]
+
+== References
+

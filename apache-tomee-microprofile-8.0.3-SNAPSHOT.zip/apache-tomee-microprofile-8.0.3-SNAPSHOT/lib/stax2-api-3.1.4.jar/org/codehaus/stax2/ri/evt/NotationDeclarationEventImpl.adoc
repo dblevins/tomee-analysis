@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/NotationDeclarationEventImpl.class
+
+ - link:NotationDeclarationEventImpl-asmified.java[Asmified]
+
+== References
+

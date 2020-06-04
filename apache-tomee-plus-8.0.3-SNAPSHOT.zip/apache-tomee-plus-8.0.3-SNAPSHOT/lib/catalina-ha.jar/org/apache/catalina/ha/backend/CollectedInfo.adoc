@@ -1,0 +1,6 @@
+= org/apache/catalina/ha/backend/CollectedInfo.class
+
+ - link:CollectedInfo-asmified.java[Asmified]
+
+== References
+

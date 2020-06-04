@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/ec/SignatureSpi$ecDetDSA512.class
+
+ - link:SignatureSpi$ecDetDSA512-asmified.java[Asmified]
+
+== References
+

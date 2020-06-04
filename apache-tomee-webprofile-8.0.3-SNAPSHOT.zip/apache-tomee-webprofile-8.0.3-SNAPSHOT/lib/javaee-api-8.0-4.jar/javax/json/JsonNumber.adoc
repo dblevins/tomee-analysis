@@ -1,0 +1,7 @@
+= javax/json/JsonNumber.class
+
+ - link:JsonNumber-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 1

@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http/HTTPSession.class
+
+ - link:HTTPSession-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 10
+ - javax.servlet.http.HttpServletRequest - 5

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/ObjectCodec.class
+
+ - link:ObjectCodec-asmified.java[Asmified]
+
+== References
+

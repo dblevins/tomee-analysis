@@ -1,0 +1,12 @@
+= org/apache/openejb/core/stateless/StatelessInstanceManager.class
+
+ - link:StatelessInstanceManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 5
+ - javax.ejb.SessionContext - 4
+ - javax.ejb.ConcurrentAccessTimeoutException - 3
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.ejb.SessionBean - 2
+ - javax.ejb.EJBContext - 1

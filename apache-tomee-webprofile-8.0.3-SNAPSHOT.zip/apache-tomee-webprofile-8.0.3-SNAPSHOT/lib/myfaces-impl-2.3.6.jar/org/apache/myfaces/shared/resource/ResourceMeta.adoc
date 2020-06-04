@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/resource/ResourceMeta.class
+
+ - link:ResourceMeta-asmified.java[Asmified]
+
+== References
+

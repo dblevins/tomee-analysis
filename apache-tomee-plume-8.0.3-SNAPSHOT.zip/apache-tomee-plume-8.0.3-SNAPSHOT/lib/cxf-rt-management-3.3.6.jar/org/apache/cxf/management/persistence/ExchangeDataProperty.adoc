@@ -1,0 +1,6 @@
+= org/apache/cxf/management/persistence/ExchangeDataProperty.class
+
+ - link:ExchangeDataProperty-asmified.java[Asmified]
+
+== References
+

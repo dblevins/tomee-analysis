@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/JDataStoreDictionary.class
+
+ - link:JDataStoreDictionary-asmified.java[Asmified]
+
+== References
+

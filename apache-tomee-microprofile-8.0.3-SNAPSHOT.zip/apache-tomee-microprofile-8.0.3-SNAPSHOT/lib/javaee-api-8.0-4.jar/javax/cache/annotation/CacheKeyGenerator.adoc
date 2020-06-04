@@ -1,0 +1,6 @@
+= javax/cache/annotation/CacheKeyGenerator.class
+
+ - link:CacheKeyGenerator-asmified.java[Asmified]
+
+== References
+

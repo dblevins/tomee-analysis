@@ -1,0 +1,8 @@
+= org/hsqldb/jdbc/JDBCSQLXML.class
+
+ - link:JDBCSQLXML-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.util.JAXBResult - 1
+ - javax.xml.bind.util.JAXBSource - 1

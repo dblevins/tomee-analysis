@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentPropertyDescriptor.class
+
+ - link:CompositeComponentPropertyDescriptor-asmified.java[Asmified]
+
+== References
+

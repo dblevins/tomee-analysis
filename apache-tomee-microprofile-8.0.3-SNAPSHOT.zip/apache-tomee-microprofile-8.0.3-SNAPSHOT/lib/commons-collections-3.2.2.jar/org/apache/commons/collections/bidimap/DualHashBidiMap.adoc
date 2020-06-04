@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bidimap/DualHashBidiMap.class
+
+ - link:DualHashBidiMap-asmified.java[Asmified]
+
+== References
+

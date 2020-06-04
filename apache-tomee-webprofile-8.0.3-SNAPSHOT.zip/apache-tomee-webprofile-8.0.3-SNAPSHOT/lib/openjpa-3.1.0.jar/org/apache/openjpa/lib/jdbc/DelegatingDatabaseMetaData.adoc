@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData.class
+
+ - link:DelegatingDatabaseMetaData-asmified.java[Asmified]
+
+== References
+

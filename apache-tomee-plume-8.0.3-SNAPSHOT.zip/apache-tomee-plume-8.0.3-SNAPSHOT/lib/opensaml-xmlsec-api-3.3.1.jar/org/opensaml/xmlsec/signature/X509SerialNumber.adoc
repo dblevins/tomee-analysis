@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/X509SerialNumber.class
+
+ - link:X509SerialNumber-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

@@ -1,0 +1,6 @@
+= org/hsqldb/server/OdbcPacketOutputStream.class
+
+ - link:OdbcPacketOutputStream-asmified.java[Asmified]
+
+== References
+

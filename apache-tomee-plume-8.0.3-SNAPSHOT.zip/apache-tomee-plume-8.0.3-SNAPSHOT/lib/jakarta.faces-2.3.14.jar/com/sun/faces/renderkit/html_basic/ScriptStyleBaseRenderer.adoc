@@ -1,0 +1,24 @@
+= com/sun/faces/renderkit/html_basic/ScriptStyleBaseRenderer.class
+
+ - link:ScriptStyleBaseRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 60
+ - javax.faces.context.FacesContext - 41
+ - javax.faces.context.ResponseWriter - 14
+ - javax.faces.application.ResourceHandler - 9
+ - javax.faces.application.FacesMessage - 9
+ - javax.faces.application.ProjectStage - 6
+ - javax.faces.application.Resource - 6
+ - javax.faces.application.FacesMessage$Severity - 6
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.render.Renderer - 3
+ - javax.faces.event.ComponentSystemEvent - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.UINamingContainer - 1
+ - javax.faces.event.PostAddToViewEvent - 1
+ - javax.faces.event.ListenerFor - 1
+ - javax.faces.event.ComponentSystemEventListener - 1

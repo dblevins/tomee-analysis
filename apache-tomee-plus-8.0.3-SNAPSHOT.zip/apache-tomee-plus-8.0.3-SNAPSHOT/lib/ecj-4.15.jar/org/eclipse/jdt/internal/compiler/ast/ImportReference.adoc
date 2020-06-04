@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ImportReference.class
+
+ - link:ImportReference-asmified.java[Asmified]
+
+== References
+

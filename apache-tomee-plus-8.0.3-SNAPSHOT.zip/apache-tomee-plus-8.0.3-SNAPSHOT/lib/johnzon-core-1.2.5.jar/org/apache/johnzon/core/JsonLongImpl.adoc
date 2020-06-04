@@ -1,0 +1,8 @@
+= org/apache/johnzon/core/JsonLongImpl.class
+
+ - link:JsonLongImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonNumber - 5
+ - javax.json.JsonValue$ValueType - 2

@@ -1,0 +1,6 @@
+= org/apache/catalina/util/Introspection.class
+
+ - link:Introspection-asmified.java[Asmified]
+
+== References
+

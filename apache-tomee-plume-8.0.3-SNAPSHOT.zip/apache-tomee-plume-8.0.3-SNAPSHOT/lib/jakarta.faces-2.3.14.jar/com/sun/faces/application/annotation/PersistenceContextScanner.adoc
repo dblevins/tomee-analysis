@@ -1,0 +1,7 @@
+= com/sun/faces/application/annotation/PersistenceContextScanner.class
+
+ - link:PersistenceContextScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceContext - 11

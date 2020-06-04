@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/DelimitedTokenReplacementInputStream$StreamReadingStrategy.class
+
+ - link:DelimitedTokenReplacementInputStream$StreamReadingStrategy-asmified.java[Asmified]
+
+== References
+

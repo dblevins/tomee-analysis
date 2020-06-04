@@ -1,0 +1,6 @@
+= org/opensaml/soap/messaging/SOAPMessagingSupport$1.class
+
+ - link:SOAPMessagingSupport$1-asmified.java[Asmified]
+
+== References
+

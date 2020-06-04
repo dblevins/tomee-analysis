@@ -1,0 +1,6 @@
+= org/hsqldb/RangeVariableJoined.class
+
+ - link:RangeVariableJoined-asmified.java[Asmified]
+
+== References
+

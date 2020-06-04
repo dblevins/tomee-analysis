@@ -1,0 +1,6 @@
+= com/sun/faces/config/manager/FacesConfigInfo.class
+
+ - link:FacesConfigInfo-asmified.java[Asmified]
+
+== References
+

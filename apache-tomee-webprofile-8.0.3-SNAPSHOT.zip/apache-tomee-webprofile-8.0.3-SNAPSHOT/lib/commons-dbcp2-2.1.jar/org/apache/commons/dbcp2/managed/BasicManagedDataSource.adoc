@@ -1,0 +1,7 @@
+= org/apache/commons/dbcp2/managed/BasicManagedDataSource.class
+
+ - link:BasicManagedDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 10

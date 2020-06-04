@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/DistributionPolicy.class
+
+ - link:DistributionPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openejb/core/cmp/jpa/JpaCmpEngine$OpenJPALifecycleListener.class
+
+ - link:JpaCmpEngine$OpenJPALifecycleListener-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 17
+ - javax.ejb.RemoveException - 2
+ - javax.persistence.PersistenceException - 2

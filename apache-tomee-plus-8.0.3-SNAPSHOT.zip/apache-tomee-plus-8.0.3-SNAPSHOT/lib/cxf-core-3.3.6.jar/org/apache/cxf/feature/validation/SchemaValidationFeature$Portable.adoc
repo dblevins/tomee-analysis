@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/validation/SchemaValidationFeature$Portable.class
+
+ - link:SchemaValidationFeature$Portable-asmified.java[Asmified]
+
+== References
+

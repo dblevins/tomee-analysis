@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/EISSequence.class
+
+ - link:EISSequence-asmified.java[Asmified]
+
+== References
+

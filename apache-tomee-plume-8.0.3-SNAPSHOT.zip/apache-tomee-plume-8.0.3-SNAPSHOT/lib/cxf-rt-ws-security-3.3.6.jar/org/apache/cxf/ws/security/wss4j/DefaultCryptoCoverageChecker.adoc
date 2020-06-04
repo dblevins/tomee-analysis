@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/DefaultCryptoCoverageChecker.class
+
+ - link:DefaultCryptoCoverageChecker-asmified.java[Asmified]
+
+== References
+

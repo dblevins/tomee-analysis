@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/QualifiedAllocationExpression$1ValidityInspector.class
+
+ - link:QualifiedAllocationExpression$1ValidityInspector-asmified.java[Asmified]
+
+== References
+

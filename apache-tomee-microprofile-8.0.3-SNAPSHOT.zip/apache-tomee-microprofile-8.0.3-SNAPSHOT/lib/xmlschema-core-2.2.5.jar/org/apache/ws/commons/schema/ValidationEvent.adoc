@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/ValidationEvent.class
+
+ - link:ValidationEvent-asmified.java[Asmified]
+
+== References
+

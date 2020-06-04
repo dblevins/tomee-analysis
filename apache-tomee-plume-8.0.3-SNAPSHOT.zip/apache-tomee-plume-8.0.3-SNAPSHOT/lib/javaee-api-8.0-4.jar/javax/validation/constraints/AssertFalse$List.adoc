@@ -1,0 +1,7 @@
+= javax/validation/constraints/AssertFalse$List.class
+
+ - link:AssertFalse$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.AssertFalse - 1

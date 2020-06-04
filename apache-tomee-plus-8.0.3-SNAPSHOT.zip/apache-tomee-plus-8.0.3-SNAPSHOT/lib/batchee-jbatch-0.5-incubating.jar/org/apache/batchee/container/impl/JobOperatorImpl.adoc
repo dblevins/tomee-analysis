@@ -1,0 +1,21 @@
+= org/apache/batchee/container/impl/JobOperatorImpl.class
+
+ - link:JobOperatorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.operations.JobSecurityException - 20
+ - javax.batch.operations.NoSuchJobExecutionException - 15
+ - javax.batch.operations.NoSuchJobException - 9
+ - javax.batch.runtime.BatchStatus - 8
+ - javax.batch.runtime.JobInstance - 7
+ - javax.batch.operations.JobRestartException - 4
+ - javax.batch.operations.JobStartException - 4
+ - javax.batch.operations.JobExecutionNotMostRecentException - 4
+ - javax.batch.operations.JobExecutionAlreadyCompleteException - 4
+ - javax.batch.operations.NoSuchJobInstanceException - 3
+ - javax.batch.operations.JobExecutionIsRunningException - 3
+ - javax.batch.runtime.JobExecution - 2
+ - javax.batch.operations.JobOperator - 1
+ - javax.batch.runtime.StepExecution - 1
+ - javax.batch.operations.JobExecutionNotRunningException - 1

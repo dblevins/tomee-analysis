@@ -1,0 +1,10 @@
+= org/apache/johnzon/core/JsonWriterFactoryImpl.class
+
+ - link:JsonWriterFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonWriter - 5
+ - javax.json.stream.JsonGeneratorFactory - 4
+ - javax.json.stream.JsonGenerator - 2
+ - javax.json.JsonWriterFactory - 1

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/StatusMarshaller.class
+
+ - link:StatusMarshaller-asmified.java[Asmified]
+
+== References
+

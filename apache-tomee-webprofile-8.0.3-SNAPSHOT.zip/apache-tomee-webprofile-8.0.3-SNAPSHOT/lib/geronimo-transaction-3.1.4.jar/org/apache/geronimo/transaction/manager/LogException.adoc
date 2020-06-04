@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/manager/LogException.class
+
+ - link:LogException-asmified.java[Asmified]
+
+== References
+

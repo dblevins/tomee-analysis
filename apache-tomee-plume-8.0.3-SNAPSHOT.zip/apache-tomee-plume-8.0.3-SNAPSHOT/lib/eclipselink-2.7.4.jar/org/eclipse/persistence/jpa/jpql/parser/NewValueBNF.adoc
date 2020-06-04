@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/NewValueBNF.class
+
+ - link:NewValueBNF-asmified.java[Asmified]
+
+== References
+

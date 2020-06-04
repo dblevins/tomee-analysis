@@ -1,0 +1,15 @@
+= org/eclipse/persistence/jpa/rs/resources/unversioned/PersistenceUnitResource.class
+
+ - link:PersistenceUnitResource-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Context - 8
+ - javax.ws.rs.core.HttpHeaders - 8
+ - javax.ws.rs.core.Response - 8
+ - javax.ws.rs.core.UriInfo - 8
+ - javax.ws.rs.PathParam - 6
+ - javax.ws.rs.GET - 4
+ - javax.ws.rs.Path - 4
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1

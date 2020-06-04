@@ -1,0 +1,6 @@
+= com/ctc/wstx/evt/WstxEventReader.class
+
+ - link:WstxEventReader-asmified.java[Asmified]
+
+== References
+

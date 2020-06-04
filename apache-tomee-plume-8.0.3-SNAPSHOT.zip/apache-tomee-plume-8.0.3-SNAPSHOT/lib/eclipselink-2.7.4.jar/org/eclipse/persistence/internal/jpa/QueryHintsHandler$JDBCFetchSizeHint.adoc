@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$JDBCFetchSizeHint.class
+
+ - link:QueryHintsHandler$JDBCFetchSizeHint-asmified.java[Asmified]
+
+== References
+

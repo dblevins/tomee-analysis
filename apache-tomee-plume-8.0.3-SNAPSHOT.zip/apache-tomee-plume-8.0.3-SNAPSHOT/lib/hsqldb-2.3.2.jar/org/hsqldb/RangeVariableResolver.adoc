@@ -1,0 +1,6 @@
+= org/hsqldb/RangeVariableResolver.class
+
+ - link:RangeVariableResolver-asmified.java[Asmified]
+
+== References
+

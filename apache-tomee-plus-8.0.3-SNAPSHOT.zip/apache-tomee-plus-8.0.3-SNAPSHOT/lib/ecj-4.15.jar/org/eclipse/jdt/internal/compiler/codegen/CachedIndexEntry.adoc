@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/CachedIndexEntry.class
+
+ - link:CachedIndexEntry-asmified.java[Asmified]
+
+== References
+

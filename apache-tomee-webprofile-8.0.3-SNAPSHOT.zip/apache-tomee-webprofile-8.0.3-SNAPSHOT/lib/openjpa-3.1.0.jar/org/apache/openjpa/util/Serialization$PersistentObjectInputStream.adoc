@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/Serialization$PersistentObjectInputStream.class
+
+ - link:Serialization$PersistentObjectInputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/jose4j/jwk/PublicJsonWebKey.class
+
+ - link:PublicJsonWebKey-asmified.java[Asmified]
+
+== References
+

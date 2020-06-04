@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMSignatureMethod$SHA256withDSA.class
+
+ - link:DOMSignatureMethod$SHA256withDSA-asmified.java[Asmified]
+
+== References
+

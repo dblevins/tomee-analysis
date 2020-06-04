@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/TomcatWebAppBuilder$StandardContextInfo.class
+
+ - link:TomcatWebAppBuilder$StandardContextInfo-asmified.java[Asmified]
+
+== References
+

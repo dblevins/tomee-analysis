@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/RpcChannel$1.class
+
+ - link:RpcChannel$1-asmified.java[Asmified]
+
+== References
+

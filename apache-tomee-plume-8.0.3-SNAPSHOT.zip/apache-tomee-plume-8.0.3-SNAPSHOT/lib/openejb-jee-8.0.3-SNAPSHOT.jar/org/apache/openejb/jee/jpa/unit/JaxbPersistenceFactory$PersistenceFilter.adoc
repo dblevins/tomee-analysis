@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/jpa/unit/JaxbPersistenceFactory$PersistenceFilter.class
+
+ - link:JaxbPersistenceFactory$PersistenceFilter-asmified.java[Asmified]
+
+== References
+

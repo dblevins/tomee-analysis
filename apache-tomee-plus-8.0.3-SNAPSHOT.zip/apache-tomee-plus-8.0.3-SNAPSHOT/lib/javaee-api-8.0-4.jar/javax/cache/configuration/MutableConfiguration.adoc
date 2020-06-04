@@ -1,0 +1,6 @@
+= javax/cache/configuration/MutableConfiguration.class
+
+ - link:MutableConfiguration-asmified.java[Asmified]
+
+== References
+

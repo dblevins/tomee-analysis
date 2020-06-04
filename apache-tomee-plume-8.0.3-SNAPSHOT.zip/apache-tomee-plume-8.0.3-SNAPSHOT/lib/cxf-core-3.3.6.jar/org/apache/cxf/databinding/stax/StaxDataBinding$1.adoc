@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/stax/StaxDataBinding$1.class
+
+ - link:StaxDataBinding$1-asmified.java[Asmified]
+
+== References
+

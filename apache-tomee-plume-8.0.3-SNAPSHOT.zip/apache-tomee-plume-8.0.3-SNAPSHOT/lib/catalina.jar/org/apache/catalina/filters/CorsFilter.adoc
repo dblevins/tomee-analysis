@@ -1,0 +1,13 @@
+= org/apache/catalina/filters/CorsFilter.class
+
+ - link:CorsFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 57
+ - javax.servlet.http.HttpServletResponse - 38
+ - javax.servlet.FilterChain - 21
+ - javax.servlet.ServletException - 12
+ - javax.servlet.ServletRequest - 3
+ - javax.servlet.ServletResponse - 3
+ - javax.servlet.GenericFilter - 2

@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/support/provider/ApacheSantuarioSignerProviderImpl.class
+
+ - link:ApacheSantuarioSignerProviderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

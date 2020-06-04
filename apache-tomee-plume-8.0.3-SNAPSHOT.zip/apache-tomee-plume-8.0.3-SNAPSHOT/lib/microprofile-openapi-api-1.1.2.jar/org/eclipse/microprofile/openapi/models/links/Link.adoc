@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/links/Link.class
+
+ - link:Link-asmified.java[Asmified]
+
+== References
+

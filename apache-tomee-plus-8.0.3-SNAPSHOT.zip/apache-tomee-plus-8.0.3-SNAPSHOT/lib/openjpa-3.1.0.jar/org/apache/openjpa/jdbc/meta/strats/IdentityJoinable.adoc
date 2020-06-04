@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/IdentityJoinable.class
+
+ - link:IdentityJoinable-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/pool/MultiLockFairBlockingQueue.class
+
+ - link:MultiLockFairBlockingQueue-asmified.java[Asmified]
+
+== References
+

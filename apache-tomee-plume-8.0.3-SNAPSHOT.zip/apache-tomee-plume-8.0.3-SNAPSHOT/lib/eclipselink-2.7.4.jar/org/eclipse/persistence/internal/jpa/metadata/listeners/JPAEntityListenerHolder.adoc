@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/metadata/listeners/JPAEntityListenerHolder.class
+
+ - link:JPAEntityListenerHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 2

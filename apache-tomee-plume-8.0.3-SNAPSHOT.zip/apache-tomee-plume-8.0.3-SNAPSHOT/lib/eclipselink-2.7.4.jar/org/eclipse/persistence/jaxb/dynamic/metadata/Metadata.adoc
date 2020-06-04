@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/dynamic/metadata/Metadata.class
+
+ - link:Metadata-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 1

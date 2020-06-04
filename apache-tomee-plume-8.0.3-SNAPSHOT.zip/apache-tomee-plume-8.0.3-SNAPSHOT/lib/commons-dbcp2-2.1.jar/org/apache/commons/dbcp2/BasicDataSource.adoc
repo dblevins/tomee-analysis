@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/BasicDataSource.class
+
+ - link:BasicDataSource-asmified.java[Asmified]
+
+== References
+

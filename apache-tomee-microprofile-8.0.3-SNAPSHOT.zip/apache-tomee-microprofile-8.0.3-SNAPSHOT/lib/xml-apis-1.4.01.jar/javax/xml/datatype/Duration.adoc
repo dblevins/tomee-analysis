@@ -1,0 +1,6 @@
+= javax/xml/datatype/Duration.class
+
+ - link:Duration-asmified.java[Asmified]
+
+== References
+

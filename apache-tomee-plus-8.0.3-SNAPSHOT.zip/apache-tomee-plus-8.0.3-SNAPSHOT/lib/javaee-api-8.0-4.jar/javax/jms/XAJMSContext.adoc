@@ -1,0 +1,7 @@
+= javax/jms/XAJMSContext.class
+
+ - link:XAJMSContext-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSContext - 2

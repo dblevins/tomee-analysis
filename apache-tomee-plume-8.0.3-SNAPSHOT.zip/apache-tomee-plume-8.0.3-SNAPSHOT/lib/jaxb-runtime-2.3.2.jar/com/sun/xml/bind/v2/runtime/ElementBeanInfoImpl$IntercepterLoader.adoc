@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl$IntercepterLoader.class
+
+ - link:ElementBeanInfoImpl$IntercepterLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 6

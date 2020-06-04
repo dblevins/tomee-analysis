@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/remote/value/RemoteCacheRequest.class
+
+ - link:RemoteCacheRequest-asmified.java[Asmified]
+
+== References
+

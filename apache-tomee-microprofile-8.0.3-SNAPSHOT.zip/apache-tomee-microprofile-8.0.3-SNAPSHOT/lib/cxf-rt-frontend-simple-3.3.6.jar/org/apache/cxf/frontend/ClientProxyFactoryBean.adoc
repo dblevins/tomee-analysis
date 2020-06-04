@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/ClientProxyFactoryBean.class
+
+ - link:ClientProxyFactoryBean-asmified.java[Asmified]
+
+== References
+

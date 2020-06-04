@@ -1,0 +1,9 @@
+= org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver.class
+
+ - link:SAAJFactoryResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.MessageFactory - 14
+ - javax.xml.soap.SOAPFactory - 14
+ - javax.xml.soap.SOAPException - 9

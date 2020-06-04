@@ -1,0 +1,7 @@
+= org/apache/myfaces/renderkit/html/HtmlInputFileRenderer.class
+
+ - link:HtmlInputFileRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

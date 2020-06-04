@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LobStoreInJar.class
+
+ - link:LobStoreInJar-asmified.java[Asmified]
+
+== References
+

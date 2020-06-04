@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/ContainerNode.class
+
+ - link:ContainerNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/webbeans/config/OpenWebBeansConfiguration.class
+
+ - link:OpenWebBeansConfiguration-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/CustomObjectInputStream.class
+
+ - link:CustomObjectInputStream-asmified.java[Asmified]
+
+== References
+

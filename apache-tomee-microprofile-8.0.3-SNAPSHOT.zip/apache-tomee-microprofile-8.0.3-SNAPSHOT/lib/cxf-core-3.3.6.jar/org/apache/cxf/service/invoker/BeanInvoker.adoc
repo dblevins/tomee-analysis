@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/BeanInvoker.class
+
+ - link:BeanInvoker-asmified.java[Asmified]
+
+== References
+

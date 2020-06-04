@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/algorithm/IEEE754FloatingPointEncodingAlgorithm.class
+
+ - link:IEEE754FloatingPointEncodingAlgorithm-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/EncryptionMethodImpl.class
+
+ - link:EncryptionMethodImpl-asmified.java[Asmified]
+
+== References
+

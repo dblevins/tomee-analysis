@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/ObjectIdValueProperty.class
+
+ - link:ObjectIdValueProperty-asmified.java[Asmified]
+
+== References
+

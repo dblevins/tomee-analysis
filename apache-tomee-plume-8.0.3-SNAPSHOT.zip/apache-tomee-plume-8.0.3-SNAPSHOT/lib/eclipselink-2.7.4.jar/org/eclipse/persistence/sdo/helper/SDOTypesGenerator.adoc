@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOTypesGenerator.class
+
+ - link:SDOTypesGenerator-asmified.java[Asmified]
+
+== References
+

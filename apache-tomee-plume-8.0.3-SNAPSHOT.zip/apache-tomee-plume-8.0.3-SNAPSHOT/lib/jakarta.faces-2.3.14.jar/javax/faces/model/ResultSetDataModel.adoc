@@ -1,0 +1,13 @@
+= javax/faces/model/ResultSetDataModel.class
+
+ - link:ResultSetDataModel-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.ResultSetDataModel - 17
+ - javax.faces.FacesException - 8
+ - javax.faces.model.DataModelListener - 4
+ - javax.faces.model.DataModelEvent - 4
+ - javax.faces.model.DataModel - 3
+ - javax.faces.model.ResultSetDataModel$ResultSetMap - 2
+ - javax.faces.model.NoRowAvailableException - 2

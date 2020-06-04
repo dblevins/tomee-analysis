@@ -1,0 +1,9 @@
+= org/apache/myfaces/application/viewstate/RandomCsrfSessionTokenFactory.class
+
+ - link:RandomCsrfSessionTokenFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.context.ExternalContext - 8
+ - javax.xml.bind.DatatypeConverter - 1

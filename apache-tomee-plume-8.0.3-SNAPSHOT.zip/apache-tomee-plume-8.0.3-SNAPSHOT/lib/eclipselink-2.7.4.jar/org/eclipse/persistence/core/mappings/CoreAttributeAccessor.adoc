@@ -1,0 +1,6 @@
+= org/eclipse/persistence/core/mappings/CoreAttributeAccessor.class
+
+ - link:CoreAttributeAccessor-asmified.java[Asmified]
+
+== References
+

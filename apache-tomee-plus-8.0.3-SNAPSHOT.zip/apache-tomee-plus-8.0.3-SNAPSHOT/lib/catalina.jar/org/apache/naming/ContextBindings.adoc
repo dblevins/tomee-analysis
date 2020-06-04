@@ -1,0 +1,6 @@
+= org/apache/naming/ContextBindings.class
+
+ - link:ContextBindings-asmified.java[Asmified]
+
+== References
+

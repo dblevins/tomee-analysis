@@ -1,0 +1,23 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/openejb-client-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/openejb/client/JaxWsProviderWrapper$ServiceDelegateWrapper.adoc[org/apache/openejb/client/JaxWsProviderWrapper$ServiceDelegateWrapper.class] - 98
+ - link:org/apache/openejb/client/JaxWsProviderWrapper.adoc[org/apache/openejb/client/JaxWsProviderWrapper.class] - 90
+ - link:org/apache/openejb/client/ClientHandlerResolverImpl.adoc[org/apache/openejb/client/ClientHandlerResolverImpl.class] - 30
+ - link:org/apache/openejb/client/EJBInvocationHandler.adoc[org/apache/openejb/client/EJBInvocationHandler.class] - 26
+ - link:org/apache/openejb/client/Exceptions.adoc[org/apache/openejb/client/Exceptions.class] - 16
+ - link:org/apache/openejb/client/EJBObjectHandler.adoc[org/apache/openejb/client/EJBObjectHandler.class] - 16
+ - link:org/apache/openejb/client/WsMetaData.adoc[org/apache/openejb/client/WsMetaData.class] - 13
+ - link:org/apache/openejb/client/EJBHomeHandler.adoc[org/apache/openejb/client/EJBHomeHandler.class] - 11
+ - link:org/apache/openejb/client/EJBMetaDataImpl.adoc[org/apache/openejb/client/EJBMetaDataImpl.class] - 8
+ - link:org/apache/openejb/client/EntityEJBHomeHandler.adoc[org/apache/openejb/client/EntityEJBHomeHandler.class] - 7
+ - link:javax/xml/ws/wsaddressing/W3CEndpointReference.adoc[javax/xml/ws/wsaddressing/W3CEndpointReference.class] - 3
+ - link:org/apache/openejb/client/EJBObjectHandle.adoc[org/apache/openejb/client/EJBObjectHandle.class] - 3
+ - link:org/apache/openejb/client/JNDIContext.adoc[org/apache/openejb/client/JNDIContext.class] - 3
+ - link:org/apache/openejb/client/EJBHomeProxyHandle$ClientSideResovler.adoc[org/apache/openejb/client/EJBHomeProxyHandle$ClientSideResovler.class] - 2
+ - link:org/apache/openejb/client/SingletonEJBHomeHandler.adoc[org/apache/openejb/client/SingletonEJBHomeHandler.class] - 2
+ - link:org/apache/openejb/client/EJBHomeHandle.adoc[org/apache/openejb/client/EJBHomeHandle.class] - 2
+ - link:org/apache/openejb/client/StatelessEJBHomeHandler.adoc[org/apache/openejb/client/StatelessEJBHomeHandler.class] - 2
+ - link:javax/xml/ws/EndpointReference.adoc[javax/xml/ws/EndpointReference.class] - 2
+ - link:org/apache/openejb/client/StatefulEJBHomeHandler.adoc[org/apache/openejb/client/StatefulEJBHomeHandler.class] - 2
+ - link:org/apache/openejb/client/HttpConnectionFactory$HttpConnection.adoc[org/apache/openejb/client/HttpConnectionFactory$HttpConnection.class] - 1
+ - link:org/apache/openejb/client/EJBHomeProxy.adoc[org/apache/openejb/client/EJBHomeProxy.class] - 1

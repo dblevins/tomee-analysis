@@ -1,0 +1,6 @@
+= org/apache/commons/collections/FastTreeMap$EntrySet.class
+
+ - link:FastTreeMap$EntrySet-asmified.java[Asmified]
+
+== References
+

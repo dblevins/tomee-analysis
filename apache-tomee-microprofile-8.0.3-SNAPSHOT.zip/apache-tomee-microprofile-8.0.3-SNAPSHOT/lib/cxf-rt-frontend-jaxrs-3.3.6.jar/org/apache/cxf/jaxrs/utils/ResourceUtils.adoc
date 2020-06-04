@@ -1,0 +1,27 @@
+= org/apache/cxf/jaxrs/utils/ResourceUtils.class
+
+ - link:ResourceUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.MessageBodyWriter - 21
+ - javax.ws.rs.PathParam - 9
+ - javax.ws.rs.Path - 9
+ - javax.ws.rs.ApplicationPath - 7
+ - javax.ws.rs.core.Application - 7
+ - javax.ws.rs.core.Context - 5
+ - javax.ws.rs.FormParam - 4
+ - javax.ws.rs.core.MediaType - 4
+ - javax.ws.rs.QueryParam - 4
+ - javax.ws.rs.MatrixParam - 4
+ - javax.ws.rs.HeaderParam - 4
+ - javax.ws.rs.CookieParam - 4
+ - javax.ws.rs.BeanParam - 3
+ - javax.ws.rs.core.MultivaluedMap - 3
+ - javax.ws.rs.core.Response - 3
+ - javax.ws.rs.container.AsyncResponse - 2
+ - javax.ws.rs.Encoded - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.container.Suspended - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1

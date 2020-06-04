@@ -1,0 +1,6 @@
+= org/jasypt/encryption/pbe/PooledPBEStringEncryptor.class
+
+ - link:PooledPBEStringEncryptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/mime/MIMEConstants.class
+
+ - link:MIMEConstants-asmified.java[Asmified]
+
+== References
+

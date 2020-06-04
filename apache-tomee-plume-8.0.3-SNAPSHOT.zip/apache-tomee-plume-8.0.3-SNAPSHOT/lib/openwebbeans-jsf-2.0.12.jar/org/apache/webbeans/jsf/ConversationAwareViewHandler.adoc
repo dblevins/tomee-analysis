@@ -1,0 +1,12 @@
+= org/apache/webbeans/jsf/ConversationAwareViewHandler.class
+
+ - link:ConversationAwareViewHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ViewHandler - 14
+ - javax.faces.context.FacesContext - 8
+ - javax.enterprise.context.Conversation - 6
+ - javax.faces.context.ExternalContext - 4
+ - javax.enterprise.context.ContextNotActiveException - 4
+ - javax.faces.application.ViewHandlerWrapper - 2

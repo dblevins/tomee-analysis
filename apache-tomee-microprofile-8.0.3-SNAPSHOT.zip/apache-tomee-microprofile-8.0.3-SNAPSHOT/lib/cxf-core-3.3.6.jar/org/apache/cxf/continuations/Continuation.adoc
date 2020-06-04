@@ -1,0 +1,6 @@
+= org/apache/cxf/continuations/Continuation.class
+
+ - link:Continuation-asmified.java[Asmified]
+
+== References
+

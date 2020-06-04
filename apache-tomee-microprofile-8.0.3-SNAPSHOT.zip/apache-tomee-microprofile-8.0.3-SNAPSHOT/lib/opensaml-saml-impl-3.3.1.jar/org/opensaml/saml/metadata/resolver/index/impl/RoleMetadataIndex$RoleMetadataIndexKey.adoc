@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/index/impl/RoleMetadataIndex$RoleMetadataIndexKey.class
+
+ - link:RoleMetadataIndex$RoleMetadataIndexKey-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

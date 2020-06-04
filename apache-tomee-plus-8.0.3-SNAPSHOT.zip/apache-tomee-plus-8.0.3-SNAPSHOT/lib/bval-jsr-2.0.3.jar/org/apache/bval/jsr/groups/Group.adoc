@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/groups/Group.class
+
+ - link:Group-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.groups.Default - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/log/logger/Log4jLogger$HandlerWrapper.class
+
+ - link:Log4jLogger$HandlerWrapper-asmified.java[Asmified]
+
+== References
+

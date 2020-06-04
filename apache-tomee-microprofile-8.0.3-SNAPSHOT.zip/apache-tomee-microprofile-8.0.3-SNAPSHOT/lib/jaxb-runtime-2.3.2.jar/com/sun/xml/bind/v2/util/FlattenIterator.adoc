@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/util/FlattenIterator.class
+
+ - link:FlattenIterator-asmified.java[Asmified]
+
+== References
+

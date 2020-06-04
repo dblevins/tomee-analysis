@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/modes/kgcm/Tables4kKGCMMultiplier_128.class
+
+ - link:Tables4kKGCMMultiplier_128-asmified.java[Asmified]
+
+== References
+

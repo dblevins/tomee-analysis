@@ -1,0 +1,10 @@
+= com/sun/xml/messaging/saaj/soap/ver1_1/Body1_1Impl.class
+
+ - link:Body1_1Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.Name - 3
+ - javax.xml.soap.SOAPElement - 2
+ - javax.xml.soap.SOAPFault - 2
+ - javax.xml.soap.SOAPBodyElement - 2

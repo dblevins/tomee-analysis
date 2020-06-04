@@ -1,0 +1,15 @@
+= javax/xml/bind/JAXB.class
+
+ - link:JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.DataBindingException - 30
+ - javax.xml.bind.JAXB - 24
+ - javax.xml.bind.JAXBContext - 21
+ - javax.xml.bind.JAXBElement - 19
+ - javax.xml.bind.JAXBException - 17
+ - javax.xml.bind.Unmarshaller - 14
+ - javax.xml.bind.JAXB$Cache - 4
+ - javax.xml.bind.Marshaller - 3
+ - javax.xml.bind.annotation.XmlRootElement - 2

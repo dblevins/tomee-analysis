@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/RestrictedAlphabet.class
+
+ - link:RestrictedAlphabet-asmified.java[Asmified]
+
+== References
+

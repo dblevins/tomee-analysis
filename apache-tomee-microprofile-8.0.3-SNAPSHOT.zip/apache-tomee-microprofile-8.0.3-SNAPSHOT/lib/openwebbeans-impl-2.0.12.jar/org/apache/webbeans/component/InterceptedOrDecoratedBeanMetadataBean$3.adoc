@@ -1,0 +1,8 @@
+= org/apache/webbeans/component/InterceptedOrDecoratedBeanMetadataBean$3.class
+
+ - link:InterceptedOrDecoratedBeanMetadataBean$3-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.TypeLiteral - 2
+ - javax.enterprise.inject.spi.Bean - 1

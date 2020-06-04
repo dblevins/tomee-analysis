@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/model/impl/RuntimeBuiltinLeafInfoImpl$11.class
+
+ - link:RuntimeBuiltinLeafInfoImpl$11-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 12
+ - javax.activation.DataSource - 1

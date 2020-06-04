@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/DTDEnumAttr.class
+
+ - link:DTDEnumAttr-asmified.java[Asmified]
+
+== References
+

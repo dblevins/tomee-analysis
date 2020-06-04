@@ -1,0 +1,7 @@
+= org/apache/bval/cdi/AnyLiteral.class
+
+ - link:AnyLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Any - 3

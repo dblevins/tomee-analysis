@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/WildcardMatch.class
+
+ - link:WildcardMatch-asmified.java[Asmified]
+
+== References
+

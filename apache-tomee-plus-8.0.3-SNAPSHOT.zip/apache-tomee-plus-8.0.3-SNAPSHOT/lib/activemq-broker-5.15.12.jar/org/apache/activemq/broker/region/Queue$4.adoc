@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/Queue$4.class
+
+ - link:Queue$4-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

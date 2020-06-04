@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ParameterDelimiterType.class
+
+ - link:ParameterDelimiterType-asmified.java[Asmified]
+
+== References
+

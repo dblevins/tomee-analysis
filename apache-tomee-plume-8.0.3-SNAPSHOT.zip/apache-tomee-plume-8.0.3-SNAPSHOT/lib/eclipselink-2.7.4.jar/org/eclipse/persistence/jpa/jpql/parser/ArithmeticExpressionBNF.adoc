@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/ArithmeticExpressionBNF.class
+
+ - link:ArithmeticExpressionBNF-asmified.java[Asmified]
+
+== References
+

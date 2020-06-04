@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/Location.class
+
+ - link:Location-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/ResourcesType.class
+
+ - link:ResourcesType-asmified.java[Asmified]
+
+== References
+

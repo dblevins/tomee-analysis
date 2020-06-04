@@ -1,0 +1,15 @@
+= org/apache/activemq/ActiveMQMessageTransformation.class
+
+ - link:ActiveMQMessageTransformation-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 28
+ - javax.jms.Destination - 8
+ - javax.jms.JMSException - 7
+ - javax.jms.StreamMessage - 5
+ - javax.jms.MapMessage - 5
+ - javax.jms.BytesMessage - 5
+ - javax.jms.MessageEOFException - 4
+ - javax.jms.TextMessage - 3
+ - javax.jms.ObjectMessage - 3

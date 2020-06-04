@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/impl/AddressingFeatureApplier.class
+
+ - link:AddressingFeatureApplier-asmified.java[Asmified]
+
+== References
+

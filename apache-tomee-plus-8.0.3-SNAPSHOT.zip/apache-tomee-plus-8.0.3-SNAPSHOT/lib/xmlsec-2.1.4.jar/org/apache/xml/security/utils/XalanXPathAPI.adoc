@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/XalanXPathAPI.class
+
+ - link:XalanXPathAPI-asmified.java[Asmified]
+
+== References
+

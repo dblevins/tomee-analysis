@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/reference/ReferenceData.class
+
+ - link:ReferenceData-asmified.java[Asmified]
+
+== References
+

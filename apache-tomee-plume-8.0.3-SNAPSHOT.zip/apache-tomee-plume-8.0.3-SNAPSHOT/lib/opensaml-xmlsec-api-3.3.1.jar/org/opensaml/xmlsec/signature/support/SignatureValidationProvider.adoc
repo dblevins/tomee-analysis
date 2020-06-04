@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/signature/support/SignatureValidationProvider.class
+
+ - link:SignatureValidationProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.concurrent.ThreadSafe - 1

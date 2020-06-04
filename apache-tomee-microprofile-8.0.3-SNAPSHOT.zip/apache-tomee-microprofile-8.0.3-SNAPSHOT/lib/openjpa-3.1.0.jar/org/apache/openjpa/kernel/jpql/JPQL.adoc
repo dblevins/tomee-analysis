@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/JPQL.class
+
+ - link:JPQL-asmified.java[Asmified]
+
+== References
+

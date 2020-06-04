@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ImplHelper.class
+
+ - link:ImplHelper-asmified.java[Asmified]
+
+== References
+

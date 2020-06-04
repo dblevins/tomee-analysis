@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/WSSecurityPolicyLoader.class
+
+ - link:WSSecurityPolicyLoader-asmified.java[Asmified]
+
+== References
+

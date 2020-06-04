@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/membership/StaticMembershipProvider$MemberMessage.class
+
+ - link:StaticMembershipProvider$MemberMessage-asmified.java[Asmified]
+
+== References
+

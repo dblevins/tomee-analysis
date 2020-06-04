@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/ec/CustomNamedCurves$24.class
+
+ - link:CustomNamedCurves$24-asmified.java[Asmified]
+
+== References
+

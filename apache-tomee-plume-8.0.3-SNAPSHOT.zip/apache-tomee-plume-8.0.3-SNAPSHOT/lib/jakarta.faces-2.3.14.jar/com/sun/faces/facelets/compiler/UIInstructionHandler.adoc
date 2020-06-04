@@ -1,0 +1,14 @@
+= com/sun/faces/facelets/compiler/UIInstructionHandler.class
+
+ - link:UIInstructionHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 31
+ - javax.faces.context.FacesContext - 21
+ - javax.faces.view.facelets.FaceletContext - 18
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.component.UniqueIdVendor - 3
+ - javax.el.ELContext - 3
+ - javax.faces.component.UIViewRoot - 2
+ - javax.el.ELException - 2

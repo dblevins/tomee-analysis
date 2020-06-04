@@ -1,0 +1,6 @@
+= org/apache/tomcat/jni/Registry.class
+
+ - link:Registry-asmified.java[Asmified]
+
+== References
+

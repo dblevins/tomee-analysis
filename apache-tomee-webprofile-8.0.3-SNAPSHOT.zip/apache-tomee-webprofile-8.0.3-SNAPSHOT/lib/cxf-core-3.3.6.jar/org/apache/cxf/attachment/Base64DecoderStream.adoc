@@ -1,0 +1,6 @@
+= org/apache/cxf/attachment/Base64DecoderStream.class
+
+ - link:Base64DecoderStream-asmified.java[Asmified]
+
+== References
+

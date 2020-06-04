@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/client/cache/Entry.class
+
+ - link:Entry-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.core.MultivaluedHashMap - 3

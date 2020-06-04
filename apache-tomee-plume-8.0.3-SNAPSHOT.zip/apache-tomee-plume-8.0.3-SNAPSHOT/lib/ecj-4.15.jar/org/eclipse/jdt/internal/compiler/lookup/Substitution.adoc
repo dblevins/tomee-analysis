@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/Substitution.class
+
+ - link:Substitution-asmified.java[Asmified]
+
+== References
+

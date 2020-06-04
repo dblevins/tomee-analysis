@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bag/HashBag.class
+
+ - link:HashBag-asmified.java[Asmified]
+
+== References
+

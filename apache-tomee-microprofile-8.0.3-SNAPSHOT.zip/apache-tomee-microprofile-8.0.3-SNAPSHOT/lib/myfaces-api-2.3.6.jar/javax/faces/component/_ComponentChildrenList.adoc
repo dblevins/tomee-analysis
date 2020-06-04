@@ -1,0 +1,8 @@
+= javax/faces/component/_ComponentChildrenList.class
+
+ - link:_ComponentChildrenList-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 56
+ - javax.faces.component._ComponentChildrenList - 23

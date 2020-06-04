@@ -1,0 +1,6 @@
+= org/apache/tomee/webservices/TomeeJaxRsService.class
+
+ - link:TomeeJaxRsService-asmified.java[Asmified]
+
+== References
+

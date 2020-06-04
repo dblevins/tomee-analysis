@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/CacheMarshallerImpl.class
+
+ - link:CacheMarshallerImpl-asmified.java[Asmified]
+
+== References
+

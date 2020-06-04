@@ -1,0 +1,9 @@
+= com/sun/faces/mgbean/BeanManager$ScopeManager$CustomScopeHandler.class
+
+ - link:BeanManager$ScopeManager$CustomScopeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 15
+ - javax.faces.context.FacesContext - 9
+ - javax.el.ELContext - 9

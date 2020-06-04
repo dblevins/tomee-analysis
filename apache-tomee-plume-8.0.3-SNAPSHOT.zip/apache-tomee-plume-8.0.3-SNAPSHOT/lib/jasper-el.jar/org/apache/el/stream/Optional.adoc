@@ -1,0 +1,8 @@
+= org/apache/el/stream/Optional.class
+
+ - link:Optional-asmified.java[Asmified]
+
+== References
+
+ - javax.el.LambdaExpression - 5
+ - javax.el.ELException - 3

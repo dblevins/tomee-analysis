@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/InFaultChainInitiatorObserver.class
+
+ - link:InFaultChainInitiatorObserver-asmified.java[Asmified]
+
+== References
+

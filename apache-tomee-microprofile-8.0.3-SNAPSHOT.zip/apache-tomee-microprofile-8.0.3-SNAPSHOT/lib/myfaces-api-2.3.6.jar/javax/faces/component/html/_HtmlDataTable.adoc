@@ -1,0 +1,12 @@
+= javax/faces/component/html/_HtmlDataTable.class
+
+ - link:_HtmlDataTable-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIData - 2
+ - javax.faces.component.html._UniversalProperties - 1
+ - javax.faces.component.html._RoleProperty - 1
+ - javax.faces.component.html._EventProperties - 1
+ - javax.faces.component.html._StyleProperties - 1
+ - javax.faces.component.UIComponent - 1

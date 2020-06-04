@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/AbstractCaverphone.class
+
+ - link:AbstractCaverphone-asmified.java[Asmified]
+
+== References
+

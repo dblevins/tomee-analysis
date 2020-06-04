@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ClearBindingValueExpressionListener.class
+
+ - link:ClearBindingValueExpressionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.event.ComponentSystemEvent - 4
+ - javax.faces.context.FacesContext - 3
+ - javax.el.ValueExpression - 2
+ - javax.el.ELException - 2
+ - javax.el.ELContext - 2
+ - javax.faces.event.ComponentSystemEventListener - 1

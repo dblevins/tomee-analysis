@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/httpclient/TLSSocketFactoryBuilder.class
+
+ - link:TLSSocketFactoryBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 16
+ - javax.annotation.Nonnull - 2

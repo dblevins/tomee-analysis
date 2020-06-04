@@ -1,0 +1,7 @@
+= org/apache/webbeans/exception/WebBeansConfigurationException.class
+
+ - link:WebBeansConfigurationException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DefinitionException - 6

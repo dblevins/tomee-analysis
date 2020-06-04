@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/logic/FunctionSupport.class
+
+ - link:FunctionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

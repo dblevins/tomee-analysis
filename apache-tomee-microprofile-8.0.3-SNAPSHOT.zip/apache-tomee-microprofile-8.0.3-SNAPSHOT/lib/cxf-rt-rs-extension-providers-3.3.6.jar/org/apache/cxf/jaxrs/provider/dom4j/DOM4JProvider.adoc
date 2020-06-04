@@ -1,0 +1,16 @@
+= org/apache/cxf/jaxrs/provider/dom4j/DOM4JProvider.class
+
+ - link:DOM4JProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 16
+ - javax.ws.rs.core.MultivaluedMap - 8
+ - javax.ws.rs.ext.Providers - 7
+ - javax.ws.rs.WebApplicationException - 7
+ - javax.ws.rs.ext.MessageBodyWriter - 4
+ - javax.ws.rs.ext.MessageBodyReader - 4
+ - javax.ws.rs.core.Response - 3
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1

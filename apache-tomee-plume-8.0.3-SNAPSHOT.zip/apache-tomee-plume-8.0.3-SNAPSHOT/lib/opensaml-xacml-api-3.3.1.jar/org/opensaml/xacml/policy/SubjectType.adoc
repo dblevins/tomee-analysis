@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/SubjectType.class
+
+ - link:SubjectType-asmified.java[Asmified]
+
+== References
+

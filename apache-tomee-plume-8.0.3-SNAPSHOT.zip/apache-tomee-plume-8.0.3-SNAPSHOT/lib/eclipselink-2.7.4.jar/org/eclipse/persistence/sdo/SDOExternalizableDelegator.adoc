@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOExternalizableDelegator.class
+
+ - link:SDOExternalizableDelegator-asmified.java[Asmified]
+
+== References
+

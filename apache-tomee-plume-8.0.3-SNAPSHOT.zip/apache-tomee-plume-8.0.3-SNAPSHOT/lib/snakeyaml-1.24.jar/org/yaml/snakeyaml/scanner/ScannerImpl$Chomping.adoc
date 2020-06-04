@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/scanner/ScannerImpl$Chomping.class
+
+ - link:ScannerImpl$Chomping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/PostgreSQLPlatform.class
+
+ - link:PostgreSQLPlatform-asmified.java[Asmified]
+
+== References
+

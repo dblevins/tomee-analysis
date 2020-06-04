@@ -1,0 +1,9 @@
+= org/apache/openejb/core/transaction/TxBeanManaged.class
+
+ - link:TxBeanManaged-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 19
+ - javax.transaction.TransactionManager - 4
+ - javax.transaction.UserTransaction - 1

@@ -1,0 +1,7 @@
+= org/apache/batchee/container/services/persistence/jpa/domain/JobExecutionEntity$Queries.class
+
+ - link:JobExecutionEntity$Queries-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 5

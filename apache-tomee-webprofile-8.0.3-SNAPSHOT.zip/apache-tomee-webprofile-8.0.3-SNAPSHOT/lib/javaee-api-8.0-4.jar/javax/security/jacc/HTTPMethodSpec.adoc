@@ -1,0 +1,7 @@
+= javax/security/jacc/HTTPMethodSpec.class
+
+ - link:HTTPMethodSpec-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.HTTPMethodSpec - 15

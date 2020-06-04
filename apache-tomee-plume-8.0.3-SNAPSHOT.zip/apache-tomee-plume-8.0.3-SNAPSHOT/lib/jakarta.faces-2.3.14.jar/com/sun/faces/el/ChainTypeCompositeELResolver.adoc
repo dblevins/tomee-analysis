@@ -1,0 +1,10 @@
+= com/sun/faces/el/ChainTypeCompositeELResolver.class
+
+ - link:ChainTypeCompositeELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 22
+ - javax.el.ELContext - 22
+ - javax.el.ELResolver - 6
+ - javax.el.ELException - 4

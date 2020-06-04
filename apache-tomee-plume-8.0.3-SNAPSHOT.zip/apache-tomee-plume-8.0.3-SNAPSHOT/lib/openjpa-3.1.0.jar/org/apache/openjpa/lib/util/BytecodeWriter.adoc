@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/BytecodeWriter.class
+
+ - link:BytecodeWriter-asmified.java[Asmified]
+
+== References
+

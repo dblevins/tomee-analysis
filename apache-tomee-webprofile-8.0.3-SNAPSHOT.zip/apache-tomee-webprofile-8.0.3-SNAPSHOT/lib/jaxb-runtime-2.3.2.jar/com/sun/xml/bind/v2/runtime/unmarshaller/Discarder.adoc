@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/Discarder.class
+
+ - link:Discarder-asmified.java[Asmified]
+
+== References
+

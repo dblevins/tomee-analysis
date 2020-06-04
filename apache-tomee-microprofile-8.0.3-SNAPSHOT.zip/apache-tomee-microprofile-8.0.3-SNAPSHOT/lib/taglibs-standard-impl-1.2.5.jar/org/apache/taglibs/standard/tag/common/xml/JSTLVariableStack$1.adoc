@@ -1,0 +1,6 @@
+= org/apache/taglibs/standard/tag/common/xml/JSTLVariableStack$1.class
+
+ - link:JSTLVariableStack$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/ExecutingJobsManager.class
+
+ - link:ExecutingJobsManager-asmified.java[Asmified]
+
+== References
+

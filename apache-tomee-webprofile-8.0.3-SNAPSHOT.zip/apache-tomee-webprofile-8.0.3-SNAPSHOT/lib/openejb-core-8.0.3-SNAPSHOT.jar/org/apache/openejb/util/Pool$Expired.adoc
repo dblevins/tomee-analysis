@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Pool$Expired.class
+
+ - link:Pool$Expired-asmified.java[Asmified]
+
+== References
+

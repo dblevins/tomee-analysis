@@ -1,0 +1,19 @@
+= org/apache/openjpa/persistence/criteria/CriteriaQueryImpl.class
+
+ - link:CriteriaQueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 36
+ - javax.persistence.criteria.Root - 23
+ - javax.persistence.criteria.CriteriaQuery - 20
+ - javax.persistence.criteria.Expression - 15
+ - javax.persistence.criteria.AbstractQuery - 12
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.metamodel.EntityType - 6
+ - javax.persistence.criteria.Order - 6
+ - javax.persistence.criteria.Join - 5
+ - javax.persistence.criteria.Subquery - 3
+ - javax.persistence.criteria.From - 3
+ - javax.persistence.criteria.Fetch - 2
+ - javax.persistence.criteria.ParameterExpression - 1

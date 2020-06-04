@@ -1,0 +1,6 @@
+= org/apache/cxf/management/interceptor/ResponseTimeFeature$Portable.class
+
+ - link:ResponseTimeFeature$Portable-asmified.java[Asmified]
+
+== References
+

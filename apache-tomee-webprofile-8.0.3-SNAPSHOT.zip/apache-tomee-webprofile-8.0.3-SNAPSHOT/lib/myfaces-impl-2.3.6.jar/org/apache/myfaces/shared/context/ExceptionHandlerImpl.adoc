@@ -1,0 +1,16 @@
+= org/apache/myfaces/shared/context/ExceptionHandlerImpl.class
+
+ - link:ExceptionHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ExceptionQueuedEvent - 18
+ - javax.faces.FacesException - 17
+ - javax.faces.event.ExceptionQueuedEventContext - 16
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.context.ExceptionHandler - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.AbortProcessingException - 2
+ - javax.faces.event.PhaseId - 1
+ - javax.faces.event.SystemEvent - 1
+ - javax.el.ELException - 1

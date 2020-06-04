@@ -1,0 +1,12 @@
+= org/apache/myfaces/cdi/scope/ScopeExtension.class
+
+ - link:ScopeExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 3
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 3
+ - javax.enterprise.context.spi.Context - 2
+ - javax.enterprise.event.Observes - 2
+ - javax.enterprise.inject.spi.Extension - 1

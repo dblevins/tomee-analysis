@@ -1,0 +1,7 @@
+= org/apache/activemq/MessageAvailableListener.class
+
+ - link:MessageAvailableListener-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageConsumer - 1

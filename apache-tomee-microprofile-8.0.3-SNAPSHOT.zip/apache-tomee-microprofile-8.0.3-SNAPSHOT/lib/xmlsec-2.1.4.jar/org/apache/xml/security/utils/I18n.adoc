@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/I18n.class
+
+ - link:I18n-asmified.java[Asmified]
+
+== References
+

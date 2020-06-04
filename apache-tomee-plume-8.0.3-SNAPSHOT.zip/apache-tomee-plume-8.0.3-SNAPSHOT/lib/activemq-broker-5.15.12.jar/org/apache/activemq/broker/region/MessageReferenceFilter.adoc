@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/MessageReferenceFilter.class
+
+ - link:MessageReferenceFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

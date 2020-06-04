@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/LogicalUnion.class
+
+ - link:LogicalUnion-asmified.java[Asmified]
+
+== References
+

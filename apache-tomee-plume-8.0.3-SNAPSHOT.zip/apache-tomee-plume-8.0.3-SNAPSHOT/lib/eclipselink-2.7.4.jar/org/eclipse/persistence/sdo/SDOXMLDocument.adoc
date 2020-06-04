@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOXMLDocument.class
+
+ - link:SDOXMLDocument-asmified.java[Asmified]
+
+== References
+

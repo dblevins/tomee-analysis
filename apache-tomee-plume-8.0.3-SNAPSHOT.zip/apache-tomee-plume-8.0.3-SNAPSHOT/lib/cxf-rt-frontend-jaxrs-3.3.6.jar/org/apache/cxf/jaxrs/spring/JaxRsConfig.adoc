@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/spring/JaxRsConfig.class
+
+ - link:JaxRsConfig-asmified.java[Asmified]
+
+== References
+

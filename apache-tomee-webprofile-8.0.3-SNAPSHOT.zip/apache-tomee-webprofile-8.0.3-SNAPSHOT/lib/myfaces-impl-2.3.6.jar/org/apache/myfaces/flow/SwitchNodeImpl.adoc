@@ -1,0 +1,11 @@
+= org/apache/myfaces/flow/SwitchNodeImpl.class
+
+ - link:SwitchNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 7
+ - javax.faces.flow.SwitchCase - 5
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ELContext - 2
+ - javax.faces.flow.SwitchNode - 2

@@ -1,0 +1,26 @@
+= org/apache/cxf/jaxrs/client/WebClient.class
+
+ - link:WebClient-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 79
+ - javax.ws.rs.core.MultivaluedMap - 41
+ - javax.ws.rs.core.UriBuilder - 35
+ - javax.ws.rs.client.Entity - 16
+ - javax.ws.rs.core.Response$ResponseBuilder - 13
+ - javax.ws.rs.client.InvocationCallback - 11
+ - javax.ws.rs.core.GenericEntity - 10
+ - javax.ws.rs.core.MediaType - 10
+ - javax.ws.rs.core.GenericType - 9
+ - javax.ws.rs.ProcessingException - 7
+ - javax.ws.rs.client.CompletionStageRxInvoker - 5
+ - javax.ws.rs.core.EntityTag - 4
+ - javax.ws.rs.core.Cookie - 4
+ - javax.ws.rs.client.RxInvoker - 4
+ - javax.ws.rs.client.RxInvokerProvider - 4
+ - javax.ws.rs.core.Form - 3
+ - javax.ws.rs.client.SyncInvoker - 3
+ - javax.ws.rs.core.PathSegment - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.client.AsyncInvoker - 1

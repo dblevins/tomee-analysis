@@ -1,0 +1,11 @@
+= com/sun/faces/el/DummyPropertyResolverImpl.class
+
+ - link:DummyPropertyResolverImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 24
+ - javax.el.ELContext - 16
+ - javax.faces.el.PropertyNotFoundException - 8
+ - javax.faces.el.EvaluationException - 8
+ - javax.faces.el.PropertyResolver - 2

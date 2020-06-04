@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/ScaleYPointMap.class
+
+ - link:ScaleYPointMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/ClassResourceInfoComparator.class
+
+ - link:ClassResourceInfoComparator-asmified.java[Asmified]
+
+== References
+

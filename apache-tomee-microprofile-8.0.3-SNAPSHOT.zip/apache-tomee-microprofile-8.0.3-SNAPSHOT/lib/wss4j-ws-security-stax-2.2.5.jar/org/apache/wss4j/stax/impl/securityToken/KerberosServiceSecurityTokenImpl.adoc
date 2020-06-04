@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/securityToken/KerberosServiceSecurityTokenImpl.class
+
+ - link:KerberosServiceSecurityTokenImpl-asmified.java[Asmified]
+
+== References
+

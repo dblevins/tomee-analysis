@@ -1,0 +1,6 @@
+= org/apache/batchee/spi/TransactionManagerAdapter.class
+
+ - link:TransactionManagerAdapter-asmified.java[Asmified]
+
+== References
+

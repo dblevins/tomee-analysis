@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/AllPropertiesRecipe.class
+
+ - link:AllPropertiesRecipe-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Not.class
+
+ - link:Expressions$Not-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Expression - 11
+ - javax.persistence.criteria.Selection - 2

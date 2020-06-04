@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/ArrayInitializer.class
+
+ - link:ArrayInitializer-asmified.java[Asmified]
+
+== References
+

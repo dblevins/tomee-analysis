@@ -1,0 +1,6 @@
+= org/apache/tomee/jul/formatter/log/LoggerFactory.class
+
+ - link:LoggerFactory-asmified.java[Asmified]
+
+== References
+

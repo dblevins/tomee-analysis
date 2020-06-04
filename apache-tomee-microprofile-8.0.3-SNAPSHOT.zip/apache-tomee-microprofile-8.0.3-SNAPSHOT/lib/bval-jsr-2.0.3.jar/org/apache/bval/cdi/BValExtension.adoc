@@ -1,0 +1,35 @@
+= org/apache/bval/cdi/BValExtension.class
+
+ - link:BValExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 20
+ - javax.validation.Configuration - 10
+ - javax.enterprise.inject.spi.BeanManager - 10
+ - javax.validation.ValidatorFactory - 9
+ - javax.enterprise.inject.spi.CDI - 9
+ - javax.enterprise.inject.spi.Annotated - 7
+ - javax.enterprise.event.Observes - 5
+ - javax.enterprise.inject.spi.InjectionTarget - 5
+ - javax.validation.Validator - 5
+ - javax.validation.ValidationException - 5
+ - javax.enterprise.inject.spi.Bean - 5
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.inject.spi.ProcessAnnotatedType - 4
+ - javax.enterprise.inject.spi.AnnotatedCallable - 4
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 3
+ - javax.validation.BootstrapConfiguration - 3
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 3
+ - javax.enterprise.inject.spi.ProcessBean - 2
+ - javax.validation.bootstrap.GenericBootstrap - 2
+ - javax.enterprise.inject.Instance - 2
+ - javax.validation.executable.ExecutableType - 2
+ - javax.validation.Valid - 1
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 1
+ - javax.validation.Validation - 1
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.AnnotatedParameter - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.validation.Constraint - 1
+ - javax.validation.executable.ValidateOnExecution - 1

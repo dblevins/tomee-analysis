@@ -1,0 +1,10 @@
+= org/apache/myfaces/taglib/html/HtmlPanelGroupTag.class
+
+ - link:HtmlPanelGroupTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 91
+ - javax.faces.component.html.HtmlPanelGroup - 16
+ - javax.faces.webapp.UIComponentELTag - 4
+ - javax.faces.component.UIComponent - 2

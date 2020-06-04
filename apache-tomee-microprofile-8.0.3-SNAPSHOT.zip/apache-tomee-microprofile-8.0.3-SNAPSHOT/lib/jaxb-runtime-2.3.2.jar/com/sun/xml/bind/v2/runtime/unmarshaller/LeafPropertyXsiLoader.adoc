@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/LeafPropertyXsiLoader.class
+
+ - link:LeafPropertyXsiLoader-asmified.java[Asmified]
+
+== References
+

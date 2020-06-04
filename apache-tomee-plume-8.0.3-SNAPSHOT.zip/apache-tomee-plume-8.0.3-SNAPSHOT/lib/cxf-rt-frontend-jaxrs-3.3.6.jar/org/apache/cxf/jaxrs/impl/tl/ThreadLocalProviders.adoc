@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/impl/tl/ThreadLocalProviders.class
+
+ - link:ThreadLocalProviders-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.Providers - 21
+ - javax.ws.rs.core.MediaType - 6
+ - javax.ws.rs.ext.ContextResolver - 3
+ - javax.ws.rs.ext.ExceptionMapper - 3
+ - javax.ws.rs.ext.MessageBodyWriter - 3
+ - javax.ws.rs.ext.MessageBodyReader - 3

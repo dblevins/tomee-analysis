@@ -1,0 +1,8 @@
+= javax/ws/rs/sse/OutboundSseEvent.class
+
+ - link:OutboundSseEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.sse.SseEvent - 1

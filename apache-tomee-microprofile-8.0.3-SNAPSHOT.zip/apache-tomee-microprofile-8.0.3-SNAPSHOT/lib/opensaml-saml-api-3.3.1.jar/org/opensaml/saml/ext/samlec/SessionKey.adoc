@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/samlec/SessionKey.class
+
+ - link:SessionKey-asmified.java[Asmified]
+
+== References
+

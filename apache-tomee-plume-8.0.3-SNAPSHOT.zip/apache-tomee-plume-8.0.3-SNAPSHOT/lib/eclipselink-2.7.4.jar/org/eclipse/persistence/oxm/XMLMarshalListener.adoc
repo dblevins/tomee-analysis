@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/XMLMarshalListener.class
+
+ - link:XMLMarshalListener-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/exceptions/AlgorithmAlreadyRegisteredException.class
+
+ - link:AlgorithmAlreadyRegisteredException-asmified.java[Asmified]
+
+== References
+

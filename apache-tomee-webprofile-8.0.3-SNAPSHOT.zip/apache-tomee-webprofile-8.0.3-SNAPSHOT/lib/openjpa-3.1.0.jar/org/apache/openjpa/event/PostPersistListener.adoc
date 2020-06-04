@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/PostPersistListener.class
+
+ - link:PostPersistListener-asmified.java[Asmified]
+
+== References
+

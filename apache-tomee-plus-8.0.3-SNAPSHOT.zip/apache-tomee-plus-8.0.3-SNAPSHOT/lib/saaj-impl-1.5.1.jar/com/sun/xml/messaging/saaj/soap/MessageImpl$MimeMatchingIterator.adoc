@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/MessageImpl$MimeMatchingIterator.class
+
+ - link:MessageImpl$MimeMatchingIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.AttachmentPart - 14
+ - javax.xml.soap.MimeHeaders - 5

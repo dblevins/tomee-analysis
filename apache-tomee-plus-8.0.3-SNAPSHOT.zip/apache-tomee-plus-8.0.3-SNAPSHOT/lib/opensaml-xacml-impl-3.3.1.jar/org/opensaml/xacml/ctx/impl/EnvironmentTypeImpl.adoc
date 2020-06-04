@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/EnvironmentTypeImpl.class
+
+ - link:EnvironmentTypeImpl-asmified.java[Asmified]
+
+== References
+

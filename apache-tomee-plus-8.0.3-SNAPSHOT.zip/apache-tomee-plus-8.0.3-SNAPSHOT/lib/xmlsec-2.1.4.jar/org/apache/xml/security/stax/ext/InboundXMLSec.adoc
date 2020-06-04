@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/InboundXMLSec.class
+
+ - link:InboundXMLSec-asmified.java[Asmified]
+
+== References
+

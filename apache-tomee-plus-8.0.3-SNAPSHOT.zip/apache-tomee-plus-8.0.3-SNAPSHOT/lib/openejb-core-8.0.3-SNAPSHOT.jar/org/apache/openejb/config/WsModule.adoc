@@ -1,0 +1,6 @@
+= org/apache/openejb/config/WsModule.class
+
+ - link:WsModule-asmified.java[Asmified]
+
+== References
+

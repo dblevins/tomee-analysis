@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/JndiBuilder$RemoteInterfaceComparator.class
+
+ - link:JndiBuilder$RemoteInterfaceComparator-asmified.java[Asmified]
+
+== References
+

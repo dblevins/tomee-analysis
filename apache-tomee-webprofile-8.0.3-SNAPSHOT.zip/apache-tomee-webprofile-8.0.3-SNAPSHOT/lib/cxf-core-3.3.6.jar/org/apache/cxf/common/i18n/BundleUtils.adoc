@@ -1,0 +1,6 @@
+= org/apache/cxf/common/i18n/BundleUtils.class
+
+ - link:BundleUtils-asmified.java[Asmified]
+
+== References
+

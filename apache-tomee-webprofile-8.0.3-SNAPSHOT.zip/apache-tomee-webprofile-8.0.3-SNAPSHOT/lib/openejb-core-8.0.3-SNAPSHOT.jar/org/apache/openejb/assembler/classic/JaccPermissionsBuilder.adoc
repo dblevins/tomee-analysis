@@ -1,0 +1,11 @@
+= org/apache/openejb/assembler/classic/JaccPermissionsBuilder.class
+
+ - link:JaccPermissionsBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.PolicyConfiguration - 6
+ - javax.security.jacc.EJBMethodPermission - 5
+ - javax.security.jacc.PolicyConfigurationFactory - 4
+ - javax.security.jacc.EJBRoleRefPermission - 2
+ - javax.security.jacc.PolicyContextException - 2

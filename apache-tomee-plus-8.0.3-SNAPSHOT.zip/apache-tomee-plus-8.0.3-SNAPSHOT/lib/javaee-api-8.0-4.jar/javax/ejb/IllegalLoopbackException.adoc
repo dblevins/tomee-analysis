@@ -1,0 +1,7 @@
+= javax/ejb/IllegalLoopbackException.class
+
+ - link:IllegalLoopbackException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ConcurrentAccessException - 3

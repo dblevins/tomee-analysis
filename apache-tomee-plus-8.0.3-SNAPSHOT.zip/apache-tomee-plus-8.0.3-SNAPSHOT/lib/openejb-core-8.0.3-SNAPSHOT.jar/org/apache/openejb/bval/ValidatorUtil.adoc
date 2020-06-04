@@ -1,0 +1,8 @@
+= org/apache/openejb/bval/ValidatorUtil.class
+
+ - link:ValidatorUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 8
+ - javax.validation.Validator - 4

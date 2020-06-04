@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/KeyInfoConfirmationDataTypeBuilder.class
+
+ - link:KeyInfoConfirmationDataTypeBuilder-asmified.java[Asmified]
+
+== References
+

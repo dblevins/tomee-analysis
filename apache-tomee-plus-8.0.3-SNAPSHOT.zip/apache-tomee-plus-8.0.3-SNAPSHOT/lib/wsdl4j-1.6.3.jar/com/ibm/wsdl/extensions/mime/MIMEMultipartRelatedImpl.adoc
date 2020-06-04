@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/mime/MIMEMultipartRelatedImpl.class
+
+ - link:MIMEMultipartRelatedImpl-asmified.java[Asmified]
+
+== References
+

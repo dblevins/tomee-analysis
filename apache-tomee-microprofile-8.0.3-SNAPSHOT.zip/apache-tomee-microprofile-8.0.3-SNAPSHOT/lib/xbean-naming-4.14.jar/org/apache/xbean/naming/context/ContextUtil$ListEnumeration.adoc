@@ -1,0 +1,6 @@
+= org/apache/xbean/naming/context/ContextUtil$ListEnumeration.class
+
+ - link:ContextUtil$ListEnumeration-asmified.java[Asmified]
+
+== References
+

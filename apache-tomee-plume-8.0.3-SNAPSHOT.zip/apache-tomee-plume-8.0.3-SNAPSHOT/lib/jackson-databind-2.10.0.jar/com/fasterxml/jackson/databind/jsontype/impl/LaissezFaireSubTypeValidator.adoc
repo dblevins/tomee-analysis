@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/LaissezFaireSubTypeValidator.class
+
+ - link:LaissezFaireSubTypeValidator-asmified.java[Asmified]
+
+== References
+

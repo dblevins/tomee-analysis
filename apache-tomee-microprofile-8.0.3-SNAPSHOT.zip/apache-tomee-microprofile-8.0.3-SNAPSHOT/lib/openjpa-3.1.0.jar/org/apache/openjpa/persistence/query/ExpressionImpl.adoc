@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/ExpressionImpl.class
+
+ - link:ExpressionImpl-asmified.java[Asmified]
+
+== References
+

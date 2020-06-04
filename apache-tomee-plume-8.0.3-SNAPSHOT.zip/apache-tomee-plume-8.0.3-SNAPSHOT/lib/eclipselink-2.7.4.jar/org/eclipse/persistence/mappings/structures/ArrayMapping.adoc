@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/structures/ArrayMapping.class
+
+ - link:ArrayMapping-asmified.java[Asmified]
+
+== References
+

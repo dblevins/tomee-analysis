@@ -1,0 +1,16 @@
+= com/sun/faces/facelets/tag/composite/InsertFacetHandler$RelocateFacetListener.class
+
+ - link:InsertFacetHandler$RelocateFacetListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 30
+ - javax.faces.view.facelets.FaceletContext - 13
+ - javax.faces.view.Location - 7
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.application.Resource - 4
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.ComponentSystemEvent - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.event.AbortProcessingException - 1

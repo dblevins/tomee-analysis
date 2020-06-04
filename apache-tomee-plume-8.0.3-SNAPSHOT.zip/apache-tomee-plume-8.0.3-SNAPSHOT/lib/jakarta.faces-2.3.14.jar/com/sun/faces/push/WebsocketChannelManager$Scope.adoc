@@ -1,0 +1,6 @@
+= com/sun/faces/push/WebsocketChannelManager$Scope.class
+
+ - link:WebsocketChannelManager$Scope-asmified.java[Asmified]
+
+== References
+

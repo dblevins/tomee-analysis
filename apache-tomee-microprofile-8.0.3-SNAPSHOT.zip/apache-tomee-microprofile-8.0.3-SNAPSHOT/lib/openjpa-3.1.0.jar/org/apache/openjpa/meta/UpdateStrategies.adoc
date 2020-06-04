@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/UpdateStrategies.class
+
+ - link:UpdateStrategies-asmified.java[Asmified]
+
+== References
+

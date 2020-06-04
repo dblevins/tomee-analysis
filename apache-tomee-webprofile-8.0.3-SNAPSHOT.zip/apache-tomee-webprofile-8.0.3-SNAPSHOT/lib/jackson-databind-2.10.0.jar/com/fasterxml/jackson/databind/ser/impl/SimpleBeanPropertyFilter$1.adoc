@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter$1.class
+
+ - link:SimpleBeanPropertyFilter$1-asmified.java[Asmified]
+
+== References
+

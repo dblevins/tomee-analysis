@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/SpringClassUnwrapper.class
+
+ - link:SpringClassUnwrapper-asmified.java[Asmified]
+
+== References
+

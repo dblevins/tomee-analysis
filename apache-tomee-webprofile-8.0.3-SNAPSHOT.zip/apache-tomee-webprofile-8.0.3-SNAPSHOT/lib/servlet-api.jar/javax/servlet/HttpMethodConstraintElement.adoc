@@ -1,0 +1,10 @@
+= javax/servlet/HttpMethodConstraintElement.class
+
+ - link:HttpMethodConstraintElement-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.HttpConstraintElement - 8
+ - javax.servlet.annotation.ServletSecurity$EmptyRoleSemantic - 2
+ - javax.servlet.HttpMethodConstraintElement - 2
+ - javax.servlet.annotation.ServletSecurity$TransportGuarantee - 2

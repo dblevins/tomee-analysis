@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/NoneDiscriminatorStrategy.class
+
+ - link:NoneDiscriminatorStrategy-asmified.java[Asmified]
+
+== References
+

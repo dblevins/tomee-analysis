@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/SDOConstants.class
+
+ - link:SDOConstants-asmified.java[Asmified]
+
+== References
+

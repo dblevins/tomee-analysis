@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/ManagedCollection.class
+
+ - link:ManagedCollection-asmified.java[Asmified]
+
+== References
+

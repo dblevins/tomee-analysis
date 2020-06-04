@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/BeanProperty$Bogus.class
+
+ - link:BeanProperty$Bogus-asmified.java[Asmified]
+
+== References
+

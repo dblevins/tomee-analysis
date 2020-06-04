@@ -1,0 +1,23 @@
+= org/apache/openejb/resource/activemq/jms2/TomEEManagedConnectionProxy.class
+
+ - link:TomEEManagedConnectionProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.TransactionSupport$TransactionSupportLevel - 16
+ - javax.jms.Connection - 12
+ - javax.jms.XASession - 7
+ - javax.jms.JMSException - 6
+ - javax.jms.Session - 6
+ - javax.jms.Topic - 4
+ - javax.jms.ServerSessionPool - 4
+ - javax.jms.ConnectionConsumer - 4
+ - javax.jms.XAConnection - 3
+ - javax.transaction.Transaction - 2
+ - javax.resource.spi.ConnectionRequestInfo - 2
+ - javax.transaction.TransactionManager - 2
+ - javax.jms.TopicConnection - 1
+ - javax.jms.QueueConnection - 1
+ - javax.jms.ExceptionListener - 1
+ - javax.transaction.SystemException - 1
+ - javax.transaction.RollbackException - 1

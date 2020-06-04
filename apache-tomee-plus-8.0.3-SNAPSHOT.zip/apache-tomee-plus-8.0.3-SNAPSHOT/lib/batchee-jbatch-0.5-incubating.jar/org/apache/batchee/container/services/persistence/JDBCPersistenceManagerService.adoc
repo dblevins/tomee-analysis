@@ -1,0 +1,12 @@
+= org/apache/batchee/container/services/persistence/JDBCPersistenceManagerService.class
+
+ - link:JDBCPersistenceManagerService-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.BatchStatus - 54
+ - javax.batch.runtime.Metric$MetricType - 48
+ - javax.batch.runtime.Metric - 44
+ - javax.batch.runtime.JobInstance - 15
+ - javax.batch.operations.NoSuchJobExecutionException - 6
+ - javax.batch.runtime.StepExecution - 2

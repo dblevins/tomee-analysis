@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/ByteArrayValueHandler.class
+
+ - link:ByteArrayValueHandler-asmified.java[Asmified]
+
+== References
+

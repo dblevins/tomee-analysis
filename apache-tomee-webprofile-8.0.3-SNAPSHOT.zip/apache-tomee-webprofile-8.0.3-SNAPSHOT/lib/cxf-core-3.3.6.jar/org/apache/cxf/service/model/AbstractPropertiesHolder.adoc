@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/AbstractPropertiesHolder.class
+
+ - link:AbstractPropertiesHolder-asmified.java[Asmified]
+
+== References
+

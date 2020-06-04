@@ -1,0 +1,18 @@
+= org/apache/myfaces/flow/cdi/FlowScopeCDIExtension.class
+
+ - link:FlowScopeCDIExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.FlowScoped - 6
+ - javax.enterprise.inject.spi.BeanManager - 6
+ - javax.enterprise.inject.spi.Annotated - 4
+ - javax.enterprise.event.Observes - 4
+ - javax.enterprise.inject.spi.ProcessBean - 4
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 3
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 2
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.context.spi.Context - 1
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 1

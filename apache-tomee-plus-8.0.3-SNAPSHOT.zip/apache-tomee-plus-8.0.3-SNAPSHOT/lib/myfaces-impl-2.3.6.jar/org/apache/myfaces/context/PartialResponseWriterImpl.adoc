@@ -1,0 +1,9 @@
+= org/apache/myfaces/context/PartialResponseWriterImpl.class
+
+ - link:PartialResponseWriterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 58
+ - javax.faces.context.PartialResponseWriter - 29
+ - javax.faces.component.UIComponent - 6

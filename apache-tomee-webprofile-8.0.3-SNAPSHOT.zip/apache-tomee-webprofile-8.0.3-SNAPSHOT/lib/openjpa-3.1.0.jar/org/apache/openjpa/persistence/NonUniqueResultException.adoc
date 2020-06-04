@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/NonUniqueResultException.class
+
+ - link:NonUniqueResultException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.NonUniqueResultException - 4

@@ -1,0 +1,16 @@
+= org/apache/cxf/jaxrs/provider/ServerProviderFactory$ServerConfigurationImpl.class
+
+ - link:ServerProviderFactory$ServerConfigurationImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 4
+ - javax.ws.rs.ext.ReaderInterceptor - 3
+ - javax.ws.rs.ext.WriterInterceptor - 3
+ - javax.ws.rs.container.ContainerRequestFilter - 3
+ - javax.ws.rs.container.ContainerResponseFilter - 3
+ - javax.ws.rs.core.Feature - 2
+ - javax.ws.rs.RuntimeType - 2
+ - javax.ws.rs.container.PreMatching - 1
+ - javax.ws.rs.container.DynamicFeature - 1
+ - javax.ws.rs.core.Configuration - 1

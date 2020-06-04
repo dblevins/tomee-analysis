@@ -1,0 +1,6 @@
+= org/apache/cxf/common/logging/RegexLoggingFilter$ReplaceRegEx.class
+
+ - link:RegexLoggingFilter$ReplaceRegEx-asmified.java[Asmified]
+
+== References
+

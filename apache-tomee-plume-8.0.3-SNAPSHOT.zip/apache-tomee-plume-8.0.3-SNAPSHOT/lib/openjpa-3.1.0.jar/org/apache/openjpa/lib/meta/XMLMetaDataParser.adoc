@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/XMLMetaDataParser.class
+
+ - link:XMLMetaDataParser-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/model/OperationResourceInfoComparatorBase.class
+
+ - link:OperationResourceInfoComparatorBase-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 9

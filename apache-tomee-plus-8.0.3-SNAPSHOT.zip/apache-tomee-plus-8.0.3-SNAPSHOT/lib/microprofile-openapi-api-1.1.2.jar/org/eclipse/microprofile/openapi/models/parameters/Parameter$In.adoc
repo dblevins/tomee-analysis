@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/parameters/Parameter$In.class
+
+ - link:Parameter$In-asmified.java[Asmified]
+
+== References
+

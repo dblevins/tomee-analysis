@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/DateSerializer.class
+
+ - link:DateSerializer-asmified.java[Asmified]
+
+== References
+

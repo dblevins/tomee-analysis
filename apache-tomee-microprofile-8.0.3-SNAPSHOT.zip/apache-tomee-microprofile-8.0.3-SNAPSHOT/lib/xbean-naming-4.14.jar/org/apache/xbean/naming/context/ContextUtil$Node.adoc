@@ -1,0 +1,6 @@
+= org/apache/xbean/naming/context/ContextUtil$Node.class
+
+ - link:ContextUtil$Node-asmified.java[Asmified]
+
+== References
+

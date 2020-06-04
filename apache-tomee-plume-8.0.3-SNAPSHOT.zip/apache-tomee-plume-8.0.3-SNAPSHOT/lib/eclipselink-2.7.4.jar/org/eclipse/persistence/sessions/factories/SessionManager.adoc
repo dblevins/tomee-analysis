@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/factories/SessionManager.class
+
+ - link:SessionManager-asmified.java[Asmified]
+
+== References
+

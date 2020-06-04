@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/EndDocumentEvent.class
+
+ - link:EndDocumentEvent-asmified.java[Asmified]
+
+== References
+

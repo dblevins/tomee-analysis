@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/resolver/URIResolver.class
+
+ - link:URIResolver-asmified.java[Asmified]
+
+== References
+

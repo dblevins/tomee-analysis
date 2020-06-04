@@ -1,0 +1,6 @@
+= org/hsqldb/ExpressionLogical.class
+
+ - link:ExpressionLogical-asmified.java[Asmified]
+
+== References
+

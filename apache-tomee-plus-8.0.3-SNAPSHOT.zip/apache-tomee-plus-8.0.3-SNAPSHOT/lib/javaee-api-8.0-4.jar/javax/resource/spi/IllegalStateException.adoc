@@ -1,0 +1,7 @@
+= javax/resource/spi/IllegalStateException.class
+
+ - link:IllegalStateException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 6

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/HandlerStrategies.class
+
+ - link:HandlerStrategies-asmified.java[Asmified]
+
+== References
+

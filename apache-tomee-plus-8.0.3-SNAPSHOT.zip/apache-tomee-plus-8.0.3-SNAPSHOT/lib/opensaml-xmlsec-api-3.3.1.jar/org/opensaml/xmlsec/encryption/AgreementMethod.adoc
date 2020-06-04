@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/encryption/AgreementMethod.class
+
+ - link:AgreementMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 8

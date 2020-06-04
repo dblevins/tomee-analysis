@@ -1,0 +1,10 @@
+= javax/ws/rs/sse/OutboundSseEvent$Builder.class
+
+ - link:OutboundSseEvent$Builder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.sse.OutboundSseEvent$Builder - 8
+ - javax.ws.rs.core.GenericType - 1
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.sse.OutboundSseEvent - 1

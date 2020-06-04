@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/index/impl/SAMLArtifactMetadataIndex$ArtifactSourceIDMetadataIndexKey.class
+
+ - link:SAMLArtifactMetadataIndex$ArtifactSourceIDMetadataIndexKey-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

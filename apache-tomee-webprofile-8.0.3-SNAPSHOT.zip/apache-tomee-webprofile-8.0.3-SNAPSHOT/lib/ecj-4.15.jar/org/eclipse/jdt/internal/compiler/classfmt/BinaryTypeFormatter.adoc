@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/BinaryTypeFormatter.class
+
+ - link:BinaryTypeFormatter-asmified.java[Asmified]
+
+== References
+

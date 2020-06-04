@@ -1,0 +1,6 @@
+= javax/ejb/EJB.class
+
+ - link:EJB-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/TruncateInputStream$StreamReadingStrategy.class
+
+ - link:TruncateInputStream$StreamReadingStrategy-asmified.java[Asmified]
+
+== References
+

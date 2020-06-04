@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/meta/SourceAnnotationHandler$AnnotatedFilter.class
+
+ - link:SourceAnnotationHandler$AnnotatedFilter-asmified.java[Asmified]
+
+== References
+

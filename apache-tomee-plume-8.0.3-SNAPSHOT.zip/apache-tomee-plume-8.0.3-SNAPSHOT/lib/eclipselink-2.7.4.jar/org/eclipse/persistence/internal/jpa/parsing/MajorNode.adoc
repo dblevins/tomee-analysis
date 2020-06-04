@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/MajorNode.class
+
+ - link:MajorNode-asmified.java[Asmified]
+
+== References
+

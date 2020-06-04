@@ -1,0 +1,6 @@
+= com/sun/xml/bind/api/TypeReference.class
+
+ - link:TypeReference-asmified.java[Asmified]
+
+== References
+

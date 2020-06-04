@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxb/JAXBDataBinding$DelayedDOMResult.class
+
+ - link:JAXBDataBinding$DelayedDOMResult-asmified.java[Asmified]
+
+== References
+

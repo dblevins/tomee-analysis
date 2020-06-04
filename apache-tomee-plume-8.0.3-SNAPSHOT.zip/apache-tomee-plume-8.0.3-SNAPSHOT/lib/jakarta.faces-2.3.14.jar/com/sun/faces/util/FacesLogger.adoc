@@ -1,0 +1,8 @@
+= com/sun/faces/util/FacesLogger.class
+
+ - link:FacesLogger-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.context.FacesContext - 5

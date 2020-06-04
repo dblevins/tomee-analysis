@@ -1,0 +1,9 @@
+= javax/jws/soap/SOAPBinding.class
+
+ - link:SOAPBinding-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.soap.SOAPBinding$Style - 2
+ - javax.jws.soap.SOAPBinding$ParameterStyle - 2
+ - javax.jws.soap.SOAPBinding$Use - 2

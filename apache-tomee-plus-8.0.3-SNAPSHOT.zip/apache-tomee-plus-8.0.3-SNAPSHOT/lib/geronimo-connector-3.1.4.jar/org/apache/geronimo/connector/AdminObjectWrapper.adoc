@@ -1,0 +1,10 @@
+= org/apache/geronimo/connector/AdminObjectWrapper.class
+
+ - link:AdminObjectWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 6
+ - javax.resource.spi.ResourceAdapterAssociation - 3
+ - javax.validation.ConstraintViolationException - 2
+ - javax.validation.Validator - 2

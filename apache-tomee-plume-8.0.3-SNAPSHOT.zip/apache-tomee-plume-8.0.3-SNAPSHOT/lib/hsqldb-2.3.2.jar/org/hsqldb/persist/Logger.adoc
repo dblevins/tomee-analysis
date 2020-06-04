@@ -1,0 +1,6 @@
+= org/hsqldb/persist/Logger.class
+
+ - link:Logger-asmified.java[Asmified]
+
+== References
+

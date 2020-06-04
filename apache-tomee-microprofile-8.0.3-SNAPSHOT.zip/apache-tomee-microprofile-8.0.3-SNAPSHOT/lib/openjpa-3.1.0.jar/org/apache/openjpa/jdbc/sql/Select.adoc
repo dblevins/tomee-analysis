@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/Select.class
+
+ - link:Select-asmified.java[Asmified]
+
+== References
+

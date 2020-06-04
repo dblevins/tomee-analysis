@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/BufferEditor.class
+
+ - link:BufferEditor-asmified.java[Asmified]
+
+== References
+

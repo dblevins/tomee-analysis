@@ -1,0 +1,9 @@
+= org/apache/webbeans/context/AbstractContextsService.class
+
+ - link:AbstractContextsService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Context - 7
+ - javax.enterprise.context.ContextException - 1
+ - javax.enterprise.context.SessionScoped - 1

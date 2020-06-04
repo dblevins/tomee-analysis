@@ -1,0 +1,14 @@
+= com/sun/faces/config/processor/AbstractConfigProcessor.class
+
+ - link:AbstractConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 31
+ - javax.faces.context.FacesContext - 29
+ - javax.faces.FacesException - 9
+ - javax.faces.application.ProjectStage - 9
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.application.ApplicationFactory - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.FactoryFinder - 1

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonGetter.class
+
+ - link:JsonGetter-asmified.java[Asmified]
+
+== References
+

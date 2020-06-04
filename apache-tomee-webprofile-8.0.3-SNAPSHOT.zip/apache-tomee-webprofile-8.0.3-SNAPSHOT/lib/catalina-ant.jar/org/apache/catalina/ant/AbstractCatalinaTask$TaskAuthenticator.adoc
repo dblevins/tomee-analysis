@@ -1,0 +1,6 @@
+= org/apache/catalina/ant/AbstractCatalinaTask$TaskAuthenticator.class
+
+ - link:AbstractCatalinaTask$TaskAuthenticator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/security/enterprise/authentication/mechanism/http/BasicAuthenticationMechanismDefinition.class
+
+ - link:BasicAuthenticationMechanismDefinition-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/core/timer/EJBCronTriggerPersistenceDelegate.class
+
+ - link:EJBCronTriggerPersistenceDelegate-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.ScheduleExpression - 19

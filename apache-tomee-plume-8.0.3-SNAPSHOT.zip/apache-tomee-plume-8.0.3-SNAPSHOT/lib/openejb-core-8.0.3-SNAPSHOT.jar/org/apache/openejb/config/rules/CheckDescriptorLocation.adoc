@@ -1,0 +1,6 @@
+= org/apache/openejb/config/rules/CheckDescriptorLocation.class
+
+ - link:CheckDescriptorLocation-asmified.java[Asmified]
+
+== References
+

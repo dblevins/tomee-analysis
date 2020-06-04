@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/disk/jdbc/mysql/MySQLTableOptimizer.class
+
+ - link:MySQLTableOptimizer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= META-INF/versions/9/javax/xml/bind/ModuleUtil.class
+
+ - link:ModuleUtil-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 9
+ - javax.xml.bind.Messages - 2
+ - javax.xml.bind.ModuleUtil - 1
+ - javax.xml.bind.JAXBContext - 1

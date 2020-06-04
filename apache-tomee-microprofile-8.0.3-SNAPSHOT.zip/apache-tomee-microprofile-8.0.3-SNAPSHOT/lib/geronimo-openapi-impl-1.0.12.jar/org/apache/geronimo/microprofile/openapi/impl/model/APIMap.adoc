@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/APIMap.class
+
+ - link:APIMap-asmified.java[Asmified]
+
+== References
+

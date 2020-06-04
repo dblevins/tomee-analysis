@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/servlet/CXFNonSpringJaxrsServlet.class
+
+ - link:CXFNonSpringJaxrsServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletConfig - 107
+ - javax.servlet.ServletException - 42
+ - javax.ws.rs.core.Application - 28
+ - javax.servlet.ServletContext - 7

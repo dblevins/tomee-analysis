@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/ConnectionFactoryMonitor.class
+
+ - link:ConnectionFactoryMonitor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/comparators/FixedOrderComparator.class
+
+ - link:FixedOrderComparator-asmified.java[Asmified]
+
+== References
+

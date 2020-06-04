@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/weaving/PersistenceWeavedChangeTracking.class
+
+ - link:PersistenceWeavedChangeTracking-asmified.java[Asmified]
+
+== References
+

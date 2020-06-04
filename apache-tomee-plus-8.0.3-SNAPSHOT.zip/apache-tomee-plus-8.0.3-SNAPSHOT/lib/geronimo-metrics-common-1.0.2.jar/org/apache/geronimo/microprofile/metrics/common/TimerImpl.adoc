@@ -1,0 +1,8 @@
+= org/apache/geronimo/microprofile/metrics/common/TimerImpl.class
+
+ - link:TimerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbProperty - 3
+ - javax.json.bind.annotation.JsonbTransient - 1

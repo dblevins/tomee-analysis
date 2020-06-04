@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlOutcomeTargetLink.class
+
+ - link:HtmlOutcomeTargetLink-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 116
+ - javax.faces.component.html.HtmlOutcomeTargetLink - 87
+ - javax.faces.component.html.HtmlOutcomeTargetLink$PropertyKeys - 58
+ - javax.faces.component.UIOutcomeTarget - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

@@ -1,0 +1,16 @@
+= org/apache/catalina/session/StandardSession.class
+
+ - link:StandardSession-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSessionEvent - 31
+ - javax.servlet.http.HttpSession - 26
+ - javax.servlet.http.HttpSessionBindingEvent - 21
+ - javax.servlet.http.HttpSessionListener - 13
+ - javax.servlet.http.HttpSessionAttributeListener - 10
+ - javax.servlet.http.HttpSessionBindingListener - 9
+ - javax.servlet.http.HttpSessionActivationListener - 6
+ - javax.servlet.http.HttpSessionContext - 6
+ - javax.servlet.http.HttpSessionIdListener - 5
+ - javax.servlet.ServletContext - 2

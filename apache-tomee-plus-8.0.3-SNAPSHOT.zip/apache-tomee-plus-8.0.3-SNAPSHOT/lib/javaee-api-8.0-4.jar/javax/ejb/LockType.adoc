@@ -1,0 +1,7 @@
+= javax/ejb/LockType.class
+
+ - link:LockType-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.LockType - 21

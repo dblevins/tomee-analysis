@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/ManualQueryKeyExpression.class
+
+ - link:ManualQueryKeyExpression-asmified.java[Asmified]
+
+== References
+

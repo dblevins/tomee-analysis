@@ -1,0 +1,8 @@
+= org/apache/geronimo/config/configsource/SystemPropertyConfigSource.class
+
+ - link:SystemPropertyConfigSource-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1
+ - javax.enterprise.inject.Typed - 1

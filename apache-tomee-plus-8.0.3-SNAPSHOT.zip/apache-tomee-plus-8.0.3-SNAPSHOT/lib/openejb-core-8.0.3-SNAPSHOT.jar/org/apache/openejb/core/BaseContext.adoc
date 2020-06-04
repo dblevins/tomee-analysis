@@ -1,0 +1,12 @@
+= org/apache/openejb/core/BaseContext.class
+
+ - link:BaseContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 11
+ - javax.interceptor.InvocationContext - 3
+ - javax.ejb.EJBHome - 2
+ - javax.ejb.EJBLocalHome - 2
+ - javax.ejb.TimerService - 1
+ - javax.ejb.EJBContext - 1

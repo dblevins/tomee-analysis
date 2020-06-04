@@ -1,0 +1,10 @@
+= org/apache/openejb/jee/jpa/EmbeddableAttributes.class
+
+ - link:EmbeddableAttributes-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 6
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

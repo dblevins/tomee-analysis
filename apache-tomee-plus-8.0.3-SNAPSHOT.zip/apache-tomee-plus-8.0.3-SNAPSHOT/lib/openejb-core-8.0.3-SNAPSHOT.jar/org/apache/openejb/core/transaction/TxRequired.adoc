@@ -1,0 +1,8 @@
+= org/apache/openejb/core/transaction/TxRequired.class
+
+ - link:TxRequired-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 15
+ - javax.transaction.TransactionManager - 3

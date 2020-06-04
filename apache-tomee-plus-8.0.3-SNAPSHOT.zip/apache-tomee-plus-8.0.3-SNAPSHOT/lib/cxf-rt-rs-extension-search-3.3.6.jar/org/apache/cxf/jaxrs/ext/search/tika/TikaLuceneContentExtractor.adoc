@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/search/tika/TikaLuceneContentExtractor.class
+
+ - link:TikaLuceneContentExtractor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverterProvider - 8

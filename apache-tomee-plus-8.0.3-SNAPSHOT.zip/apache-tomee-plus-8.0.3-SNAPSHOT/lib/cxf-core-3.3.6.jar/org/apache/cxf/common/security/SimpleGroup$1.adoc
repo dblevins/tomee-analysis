@@ -1,0 +1,6 @@
+= org/apache/cxf/common/security/SimpleGroup$1.class
+
+ - link:SimpleGroup$1-asmified.java[Asmified]
+
+== References
+

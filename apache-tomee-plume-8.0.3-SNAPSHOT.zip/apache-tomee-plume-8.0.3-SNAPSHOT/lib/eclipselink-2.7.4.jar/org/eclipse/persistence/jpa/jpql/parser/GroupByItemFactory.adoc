@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/GroupByItemFactory.class
+
+ - link:GroupByItemFactory-asmified.java[Asmified]
+
+== References
+

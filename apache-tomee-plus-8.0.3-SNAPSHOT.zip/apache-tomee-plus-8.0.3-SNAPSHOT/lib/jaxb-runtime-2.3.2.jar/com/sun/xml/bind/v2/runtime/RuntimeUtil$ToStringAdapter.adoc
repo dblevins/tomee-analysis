@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/RuntimeUtil$ToStringAdapter.class
+
+ - link:RuntimeUtil$ToStringAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$XMLGregorianCalendarJAXB.class
+
+ - link:StandardJAXBObjects$XMLGregorianCalendarJAXB-asmified.java[Asmified]
+
+== References
+

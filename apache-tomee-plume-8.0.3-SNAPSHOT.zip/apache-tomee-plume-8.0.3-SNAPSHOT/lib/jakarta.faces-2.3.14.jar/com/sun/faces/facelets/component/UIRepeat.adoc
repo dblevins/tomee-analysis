@@ -1,0 +1,34 @@
+= com/sun/faces/facelets/component/UIRepeat.class
+
+ - link:UIRepeat-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 200
+ - javax.faces.component.UIComponent - 94
+ - javax.faces.model.DataModel - 45
+ - javax.faces.event.PhaseId - 32
+ - javax.faces.event.FacesEvent - 31
+ - javax.faces.component.visit.VisitContext - 29
+ - javax.faces.render.Renderer - 18
+ - javax.faces.component.visit.VisitCallback - 17
+ - javax.el.ValueExpression - 17
+ - javax.el.ELContext - 12
+ - javax.faces.component.UINamingContainer - 11
+ - javax.faces.component.EditableValueHolder - 9
+ - javax.faces.FacesException - 9
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.component.ContextCallback - 6
+ - javax.faces.component.visit.VisitResult - 4
+ - javax.faces.model.ListDataModel - 4
+ - javax.faces.model.IterableDataModel - 4
+ - javax.faces.model.ArrayDataModel - 4
+ - javax.faces.application.FacesMessage$Severity - 4
+ - javax.faces.application.Application - 3
+ - javax.faces.model.ScalarDataModel - 2
+ - javax.faces.model.ResultSetDataModel - 2
+ - javax.faces.event.PreValidateEvent - 1
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.UIData - 1
+ - javax.faces.event.PostValidateEvent - 1

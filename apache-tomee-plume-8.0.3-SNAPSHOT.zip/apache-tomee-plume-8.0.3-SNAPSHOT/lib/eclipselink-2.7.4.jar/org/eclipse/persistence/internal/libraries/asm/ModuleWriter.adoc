@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/ModuleWriter.class
+
+ - link:ModuleWriter-asmified.java[Asmified]
+
+== References
+

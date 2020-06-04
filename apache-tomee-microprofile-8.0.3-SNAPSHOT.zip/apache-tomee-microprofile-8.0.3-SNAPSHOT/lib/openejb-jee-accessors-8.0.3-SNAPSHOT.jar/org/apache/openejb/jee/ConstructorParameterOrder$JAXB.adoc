@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ConstructorParameterOrder$JAXB.class
+
+ - link:ConstructorParameterOrder$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 11

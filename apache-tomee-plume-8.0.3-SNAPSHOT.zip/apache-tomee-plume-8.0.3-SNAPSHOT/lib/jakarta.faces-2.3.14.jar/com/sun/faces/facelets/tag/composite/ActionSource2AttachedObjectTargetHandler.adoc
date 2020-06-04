@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/composite/ActionSource2AttachedObjectTargetHandler.class
+
+ - link:ActionSource2AttachedObjectTargetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagConfig - 2

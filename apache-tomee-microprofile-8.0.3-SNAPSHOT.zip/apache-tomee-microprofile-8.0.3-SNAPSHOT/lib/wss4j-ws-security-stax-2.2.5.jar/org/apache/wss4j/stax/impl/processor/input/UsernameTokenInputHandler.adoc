@@ -1,0 +1,7 @@
+= org/apache/wss4j/stax/impl/processor/input/UsernameTokenInputHandler.class
+
+ - link:UsernameTokenInputHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 2

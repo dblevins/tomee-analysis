@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryImpl$Compilation.class
+
+ - link:QueryImpl$Compilation-asmified.java[Asmified]
+
+== References
+

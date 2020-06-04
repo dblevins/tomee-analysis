@@ -1,0 +1,9 @@
+= javax/faces/component/UIComponentBase$PassThroughAttributesMap.class
+
+ - link:UIComponentBase$PassThroughAttributesMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponentBase$PassThroughAttributesMap - 5
+ - javax.faces.component.UIComponentBase$1 - 1
+ - javax.el.ValueExpression - 1

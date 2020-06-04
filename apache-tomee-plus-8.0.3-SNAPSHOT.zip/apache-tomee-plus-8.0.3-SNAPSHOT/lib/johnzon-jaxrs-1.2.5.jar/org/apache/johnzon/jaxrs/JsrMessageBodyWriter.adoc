@@ -1,0 +1,15 @@
+= org/apache/johnzon/jaxrs/JsrMessageBodyWriter.class
+
+ - link:JsrMessageBodyWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonStructure - 12
+ - javax.ws.rs.core.MediaType - 10
+ - javax.json.JsonWriterFactory - 9
+ - javax.json.JsonWriter - 7
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.Produces - 1
+ - javax.json.Json - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1

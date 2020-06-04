@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/OnBehalfOf.class
+
+ - link:OnBehalfOf-asmified.java[Asmified]
+
+== References
+

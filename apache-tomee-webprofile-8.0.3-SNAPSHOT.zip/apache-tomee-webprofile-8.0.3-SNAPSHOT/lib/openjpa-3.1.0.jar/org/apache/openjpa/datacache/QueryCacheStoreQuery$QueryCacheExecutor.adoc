@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/QueryCacheStoreQuery$QueryCacheExecutor.class
+
+ - link:QueryCacheStoreQuery$QueryCacheExecutor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/persist/BitMapCachedObject.class
+
+ - link:BitMapCachedObject-asmified.java[Asmified]
+
+== References
+

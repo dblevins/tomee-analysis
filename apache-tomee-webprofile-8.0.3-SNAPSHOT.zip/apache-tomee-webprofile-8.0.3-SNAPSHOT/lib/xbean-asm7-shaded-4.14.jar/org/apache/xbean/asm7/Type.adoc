@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/Type.class
+
+ - link:Type-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= com/sun/faces/application/view/FormOmittedChecker.class
+
+ - link:FormOmittedChecker-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 18
+ - javax.faces.component.UIComponent - 16
+ - javax.faces.application.FacesMessage - 7
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.application.FacesMessage$Severity - 2
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.UIForm - 1
+ - javax.faces.component.ActionSource2 - 1
+ - javax.faces.component.EditableValueHolder - 1
+ - javax.faces.component.ActionSource - 1

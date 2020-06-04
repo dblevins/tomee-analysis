@@ -1,0 +1,6 @@
+= org/jose4j/json/JsonHeaderUtil.class
+
+ - link:JsonHeaderUtil-asmified.java[Asmified]
+
+== References
+

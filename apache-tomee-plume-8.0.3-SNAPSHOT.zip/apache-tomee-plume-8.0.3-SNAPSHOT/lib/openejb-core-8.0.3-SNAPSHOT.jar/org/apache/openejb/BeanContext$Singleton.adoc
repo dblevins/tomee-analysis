@@ -1,0 +1,7 @@
+= org/apache/openejb/BeanContext$Singleton.class
+
+ - link:BeanContext$Singleton-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.LockType - 8

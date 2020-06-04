@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/Extensible.class
+
+ - link:Extensible-asmified.java[Asmified]
+
+== References
+

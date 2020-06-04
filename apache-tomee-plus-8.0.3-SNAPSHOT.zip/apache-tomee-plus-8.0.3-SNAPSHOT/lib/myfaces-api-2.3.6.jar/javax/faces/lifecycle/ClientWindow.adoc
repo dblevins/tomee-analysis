@@ -1,0 +1,7 @@
+= javax/faces/lifecycle/ClientWindow.class
+
+ - link:ClientWindow-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 8

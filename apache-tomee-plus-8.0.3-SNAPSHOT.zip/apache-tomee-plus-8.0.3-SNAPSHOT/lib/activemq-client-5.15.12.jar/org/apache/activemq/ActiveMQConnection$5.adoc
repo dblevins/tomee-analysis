@@ -1,0 +1,8 @@
+= org/apache/activemq/ActiveMQConnection$5.class
+
+ - link:ActiveMQConnection$5-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 5
+ - javax.jms.ExceptionListener - 2

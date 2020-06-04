@@ -1,0 +1,6 @@
+= org/apache/openejb/config/RemoveWebServices.class
+
+ - link:RemoveWebServices-asmified.java[Asmified]
+
+== References
+

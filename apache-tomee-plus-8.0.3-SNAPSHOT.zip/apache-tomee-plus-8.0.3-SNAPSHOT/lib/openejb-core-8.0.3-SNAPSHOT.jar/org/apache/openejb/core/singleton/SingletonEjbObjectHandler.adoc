@@ -1,0 +1,6 @@
+= org/apache/openejb/core/singleton/SingletonEjbObjectHandler.class
+
+ - link:SingletonEjbObjectHandler-asmified.java[Asmified]
+
+== References
+

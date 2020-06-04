@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ConfigurableClasspathArchive$FakeModule.class
+
+ - link:ConfigurableClasspathArchive$FakeModule-asmified.java[Asmified]
+
+== References
+

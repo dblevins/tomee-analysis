@@ -1,0 +1,6 @@
+= org/hsqldb/lib/HsqlByteArrayInputStream.class
+
+ - link:HsqlByteArrayInputStream-asmified.java[Asmified]
+
+== References
+

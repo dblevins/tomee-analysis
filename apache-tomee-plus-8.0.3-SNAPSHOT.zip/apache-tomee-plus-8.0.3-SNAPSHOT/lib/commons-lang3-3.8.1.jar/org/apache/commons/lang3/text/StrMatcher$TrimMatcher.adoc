@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/text/StrMatcher$TrimMatcher.class
+
+ - link:StrMatcher$TrimMatcher-asmified.java[Asmified]
+
+== References
+

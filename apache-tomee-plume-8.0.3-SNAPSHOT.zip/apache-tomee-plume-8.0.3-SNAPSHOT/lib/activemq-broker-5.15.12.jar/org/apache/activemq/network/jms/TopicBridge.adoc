@@ -1,0 +1,17 @@
+= org/apache/activemq/network/jms/TopicBridge.class
+
+ - link:TopicBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.TopicSession - 22
+ - javax.jms.Topic - 21
+ - javax.jms.TopicConnection - 18
+ - javax.jms.TopicPublisher - 8
+ - javax.jms.JMSException - 7
+ - javax.jms.Connection - 4
+ - javax.jms.MessageConsumer - 4
+ - javax.jms.TopicSubscriber - 4
+ - javax.jms.MessageProducer - 2
+ - javax.jms.Message - 2
+ - javax.jms.MessageListener - 1

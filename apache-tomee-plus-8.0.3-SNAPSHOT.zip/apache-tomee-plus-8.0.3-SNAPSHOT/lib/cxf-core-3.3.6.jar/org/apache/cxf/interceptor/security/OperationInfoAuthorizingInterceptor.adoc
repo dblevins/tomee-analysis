@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/OperationInfoAuthorizingInterceptor.class
+
+ - link:OperationInfoAuthorizingInterceptor-asmified.java[Asmified]
+
+== References
+

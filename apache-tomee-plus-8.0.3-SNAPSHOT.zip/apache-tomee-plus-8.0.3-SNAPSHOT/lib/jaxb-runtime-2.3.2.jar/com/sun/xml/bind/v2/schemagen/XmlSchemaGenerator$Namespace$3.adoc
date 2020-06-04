@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/XmlSchemaGenerator$Namespace$3.class
+
+ - link:XmlSchemaGenerator$Namespace$3-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$ExistingBoundaryValueActionExecutor$PrivilegedActionWith.class
+
+ - link:BeanValidationPlugin$ExistingBoundaryValueActionExecutor$PrivilegedActionWith-asmified.java[Asmified]
+
+== References
+

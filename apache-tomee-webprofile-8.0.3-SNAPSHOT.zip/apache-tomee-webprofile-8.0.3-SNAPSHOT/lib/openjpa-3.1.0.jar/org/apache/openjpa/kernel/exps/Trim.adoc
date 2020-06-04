@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Trim.class
+
+ - link:Trim-asmified.java[Asmified]
+
+== References
+

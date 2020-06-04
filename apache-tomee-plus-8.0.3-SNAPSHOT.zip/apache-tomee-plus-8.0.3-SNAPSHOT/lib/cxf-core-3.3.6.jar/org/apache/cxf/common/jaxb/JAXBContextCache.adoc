@@ -1,0 +1,10 @@
+= org/apache/cxf/common/jaxb/JAXBContextCache.class
+
+ - link:JAXBContextCache-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 21
+ - javax.xml.bind.JAXBException - 17
+ - javax.xml.bind.annotation.XmlElementDecl - 4
+ - javax.xml.bind.annotation.XmlElementDecl$GLOBAL - 1

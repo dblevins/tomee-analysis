@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/logging/LoggingPreparedSqlStatement$Parameter.class
+
+ - link:LoggingPreparedSqlStatement$Parameter-asmified.java[Asmified]
+
+== References
+

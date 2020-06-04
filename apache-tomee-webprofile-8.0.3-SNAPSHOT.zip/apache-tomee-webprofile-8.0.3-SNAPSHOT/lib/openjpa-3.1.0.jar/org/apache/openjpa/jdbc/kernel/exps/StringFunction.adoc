@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/StringFunction.class
+
+ - link:StringFunction-asmified.java[Asmified]
+
+== References
+

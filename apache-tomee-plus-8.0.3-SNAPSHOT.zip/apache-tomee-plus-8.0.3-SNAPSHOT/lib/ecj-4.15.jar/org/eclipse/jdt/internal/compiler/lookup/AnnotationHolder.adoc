@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/AnnotationHolder.class
+
+ - link:AnnotationHolder-asmified.java[Asmified]
+
+== References
+

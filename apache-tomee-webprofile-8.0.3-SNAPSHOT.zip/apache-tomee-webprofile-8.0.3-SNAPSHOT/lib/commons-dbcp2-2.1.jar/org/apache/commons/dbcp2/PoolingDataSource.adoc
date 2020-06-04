@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/PoolingDataSource.class
+
+ - link:PoolingDataSource-asmified.java[Asmified]
+
+== References
+

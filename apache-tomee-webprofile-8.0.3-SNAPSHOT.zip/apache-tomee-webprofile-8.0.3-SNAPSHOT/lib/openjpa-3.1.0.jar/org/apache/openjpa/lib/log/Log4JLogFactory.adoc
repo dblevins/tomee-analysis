@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/log/Log4JLogFactory.class
+
+ - link:Log4JLogFactory-asmified.java[Asmified]
+
+== References
+

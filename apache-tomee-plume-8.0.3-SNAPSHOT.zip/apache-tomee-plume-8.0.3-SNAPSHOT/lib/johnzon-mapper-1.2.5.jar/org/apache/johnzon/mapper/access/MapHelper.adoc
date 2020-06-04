@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/MapHelper.class
+
+ - link:MapHelper-asmified.java[Asmified]
+
+== References
+

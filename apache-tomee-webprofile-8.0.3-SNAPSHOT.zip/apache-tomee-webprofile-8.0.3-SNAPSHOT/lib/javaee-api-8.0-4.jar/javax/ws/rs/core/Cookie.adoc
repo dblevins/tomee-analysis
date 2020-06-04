@@ -1,0 +1,9 @@
+= javax/ws/rs/core/Cookie.class
+
+ - link:Cookie-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Cookie - 14
+ - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 7
+ - javax.ws.rs.ext.RuntimeDelegate - 3

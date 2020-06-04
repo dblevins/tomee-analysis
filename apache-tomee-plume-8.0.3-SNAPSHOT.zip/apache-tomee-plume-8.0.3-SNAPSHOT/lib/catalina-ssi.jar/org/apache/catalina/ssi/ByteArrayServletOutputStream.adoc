@@ -1,0 +1,8 @@
+= org/apache/catalina/ssi/ByteArrayServletOutputStream.class
+
+ - link:ByteArrayServletOutputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.WriteListener - 1

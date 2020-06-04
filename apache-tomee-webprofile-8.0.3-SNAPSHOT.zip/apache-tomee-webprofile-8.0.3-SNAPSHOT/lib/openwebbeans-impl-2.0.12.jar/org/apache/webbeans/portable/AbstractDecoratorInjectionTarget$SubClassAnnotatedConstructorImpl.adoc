@@ -1,0 +1,7 @@
+= org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl.class
+
+ - link:AbstractDecoratorInjectionTarget$SubClassAnnotatedConstructorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 2

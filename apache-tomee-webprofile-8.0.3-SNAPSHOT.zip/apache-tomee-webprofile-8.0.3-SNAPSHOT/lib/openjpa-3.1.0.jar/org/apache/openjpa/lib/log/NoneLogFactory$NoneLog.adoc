@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/log/NoneLogFactory$NoneLog.class
+
+ - link:NoneLogFactory$NoneLog-asmified.java[Asmified]
+
+== References
+

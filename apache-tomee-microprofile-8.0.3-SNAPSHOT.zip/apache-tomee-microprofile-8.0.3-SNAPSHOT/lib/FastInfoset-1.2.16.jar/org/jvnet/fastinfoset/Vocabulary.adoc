@@ -1,0 +1,6 @@
+= org/jvnet/fastinfoset/Vocabulary.class
+
+ - link:Vocabulary-asmified.java[Asmified]
+
+== References
+

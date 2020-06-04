@@ -1,0 +1,9 @@
+= com/sun/faces/config/FaceletsConfiguration.class
+
+ - link:FaceletsConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.component.UIViewRoot - 2

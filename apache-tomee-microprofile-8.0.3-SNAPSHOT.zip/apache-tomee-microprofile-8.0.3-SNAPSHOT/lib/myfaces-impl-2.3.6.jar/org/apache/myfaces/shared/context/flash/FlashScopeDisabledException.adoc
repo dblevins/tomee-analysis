@@ -1,0 +1,7 @@
+= org/apache/myfaces/shared/context/flash/FlashScopeDisabledException.class
+
+ - link:FlashScopeDisabledException-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 5

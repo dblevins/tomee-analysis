@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/XRDynamicClassLoader.class
+
+ - link:XRDynamicClassLoader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/BeanPropertyValueEqualsPredicate.class
+
+ - link:BeanPropertyValueEqualsPredicate-asmified.java[Asmified]
+
+== References
+

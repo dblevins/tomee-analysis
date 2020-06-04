@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/utility/iterator/ArrayIterator.class
+
+ - link:ArrayIterator-asmified.java[Asmified]
+
+== References
+

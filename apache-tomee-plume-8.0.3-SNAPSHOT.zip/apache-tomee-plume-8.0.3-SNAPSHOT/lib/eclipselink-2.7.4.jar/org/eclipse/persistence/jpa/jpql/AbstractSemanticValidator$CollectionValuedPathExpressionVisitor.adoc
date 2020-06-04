@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractSemanticValidator$CollectionValuedPathExpressionVisitor.class
+
+ - link:AbstractSemanticValidator$CollectionValuedPathExpressionVisitor-asmified.java[Asmified]
+
+== References
+

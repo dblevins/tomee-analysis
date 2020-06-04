@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/WsIOException.class
+
+ - link:WsIOException-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.CloseReason - 5

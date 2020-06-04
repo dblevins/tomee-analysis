@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jpa/rs/exceptions/JPARSExceptionMapper.class
+
+ - link:JPARSExceptionMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 4
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.ExceptionMapper - 1

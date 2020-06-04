@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/BaseAccessMode.class
+
+ - link:BaseAccessMode-asmified.java[Asmified]
+
+== References
+

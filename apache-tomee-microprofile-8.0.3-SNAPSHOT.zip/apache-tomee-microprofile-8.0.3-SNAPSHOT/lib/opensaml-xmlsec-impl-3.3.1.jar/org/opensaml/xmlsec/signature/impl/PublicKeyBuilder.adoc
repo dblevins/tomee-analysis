@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/PublicKeyBuilder.class
+
+ - link:PublicKeyBuilder-asmified.java[Asmified]
+
+== References
+

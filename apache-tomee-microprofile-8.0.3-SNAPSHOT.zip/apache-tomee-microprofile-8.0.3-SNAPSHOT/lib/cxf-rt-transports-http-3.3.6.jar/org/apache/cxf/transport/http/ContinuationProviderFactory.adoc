@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http/ContinuationProviderFactory.class
+
+ - link:ContinuationProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 2
+ - javax.servlet.http.HttpServletResponse - 1

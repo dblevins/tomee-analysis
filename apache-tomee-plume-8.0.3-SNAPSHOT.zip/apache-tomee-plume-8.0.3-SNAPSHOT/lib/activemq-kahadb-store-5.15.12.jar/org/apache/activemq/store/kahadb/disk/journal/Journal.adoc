@@ -1,0 +1,6 @@
+= org/apache/activemq/store/kahadb/disk/journal/Journal.class
+
+ - link:Journal-asmified.java[Asmified]
+
+== References
+

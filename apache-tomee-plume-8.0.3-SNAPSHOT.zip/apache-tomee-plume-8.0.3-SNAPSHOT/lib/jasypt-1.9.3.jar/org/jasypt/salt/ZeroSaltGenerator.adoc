@@ -1,0 +1,6 @@
+= org/jasypt/salt/ZeroSaltGenerator.class
+
+ - link:ZeroSaltGenerator-asmified.java[Asmified]
+
+== References
+

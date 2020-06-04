@@ -1,0 +1,7 @@
+= org/apache/bval/cdi/BValExtension$AnnotatedTypeFilter.class
+
+ - link:BValExtension$AnnotatedTypeFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 1

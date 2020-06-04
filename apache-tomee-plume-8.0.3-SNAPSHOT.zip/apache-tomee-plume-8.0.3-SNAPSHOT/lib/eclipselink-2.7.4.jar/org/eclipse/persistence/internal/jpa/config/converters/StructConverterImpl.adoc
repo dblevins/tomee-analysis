@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/converters/StructConverterImpl.class
+
+ - link:StructConverterImpl-asmified.java[Asmified]
+
+== References
+

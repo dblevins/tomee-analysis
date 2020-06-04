@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/json/basic/JsonMapObjectReaderWriter$MapSettable.class
+
+ - link:JsonMapObjectReaderWriter$MapSettable-asmified.java[Asmified]
+
+== References
+

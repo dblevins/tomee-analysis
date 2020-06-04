@@ -1,0 +1,10 @@
+= org/apache/cxf/ws/security/sts/provider/model/StatusType.class
+
+ - link:StatusType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

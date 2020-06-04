@@ -1,0 +1,8 @@
+= javax/persistence/criteria/Selection.class
+
+ - link:Selection-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 2
+ - javax.persistence.TupleElement - 1

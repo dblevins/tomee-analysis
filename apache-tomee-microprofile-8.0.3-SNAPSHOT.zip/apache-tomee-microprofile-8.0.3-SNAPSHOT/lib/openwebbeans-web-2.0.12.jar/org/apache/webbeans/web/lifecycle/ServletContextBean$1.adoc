@@ -1,0 +1,8 @@
+= org/apache/webbeans/web/lifecycle/ServletContextBean$1.class
+
+ - link:ServletContextBean$1-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 7
+ - javax.inject.Provider - 1

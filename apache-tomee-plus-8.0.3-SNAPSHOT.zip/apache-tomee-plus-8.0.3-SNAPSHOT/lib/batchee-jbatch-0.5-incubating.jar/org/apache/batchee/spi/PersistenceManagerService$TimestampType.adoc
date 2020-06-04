@@ -1,0 +1,6 @@
+= org/apache/batchee/spi/PersistenceManagerService$TimestampType.class
+
+ - link:PersistenceManagerService$TimestampType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/XMLSchemaParser$PrimaryKeyInfo.class
+
+ - link:XMLSchemaParser$PrimaryKeyInfo-asmified.java[Asmified]
+
+== References
+

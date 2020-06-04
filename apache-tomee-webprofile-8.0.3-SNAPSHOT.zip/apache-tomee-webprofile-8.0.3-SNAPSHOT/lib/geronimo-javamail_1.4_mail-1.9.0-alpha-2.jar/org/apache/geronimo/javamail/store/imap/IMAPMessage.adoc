@@ -1,0 +1,29 @@
+= org/apache/geronimo/javamail/store/imap/IMAPMessage.class
+
+ - link:IMAPMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 71
+ - javax.mail.internet.InternetHeaders - 46
+ - javax.mail.IllegalWriteException - 44
+ - javax.mail.Address - 24
+ - javax.mail.internet.InternetAddress - 20
+ - javax.activation.DataHandler - 12
+ - javax.mail.Flags - 11
+ - javax.mail.Folder - 11
+ - javax.mail.FetchProfile$Item - 9
+ - javax.mail.internet.ContentType - 8
+ - javax.mail.internet.MimeMessage - 8
+ - javax.mail.FetchProfile - 8
+ - javax.mail.Message$RecipientType - 8
+ - javax.mail.internet.ContentDisposition - 6
+ - javax.mail.internet.MailDateFormat - 4
+ - javax.mail.Header - 3
+ - javax.mail.internet.MimeUtility - 2
+ - javax.mail.Flags$Flag - 2
+ - javax.mail.MessageRemovedException - 2
+ - javax.mail.Message - 1
+ - javax.mail.internet.MimePart - 1
+ - javax.activation.DataSource - 1
+ - javax.mail.UIDFolder$FetchProfileItem - 1

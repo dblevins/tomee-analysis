@@ -1,0 +1,14 @@
+= org/apache/cxf/jaxrs/client/spec/ClientImpl.class
+
+ - link:ClientImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Configurable - 41
+ - javax.ws.rs.client.Client - 29
+ - javax.ws.rs.core.UriBuilder - 12
+ - javax.ws.rs.client.WebTarget - 9
+ - javax.ws.rs.core.Configuration - 6
+ - javax.ws.rs.client.Invocation$Builder - 5
+ - javax.ws.rs.core.Link - 5
+ - javax.ws.rs.ProcessingException - 2

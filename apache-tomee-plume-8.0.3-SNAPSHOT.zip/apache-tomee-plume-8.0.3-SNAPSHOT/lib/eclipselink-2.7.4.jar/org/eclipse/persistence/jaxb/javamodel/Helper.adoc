@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/javamodel/Helper.class
+
+ - link:Helper-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 1

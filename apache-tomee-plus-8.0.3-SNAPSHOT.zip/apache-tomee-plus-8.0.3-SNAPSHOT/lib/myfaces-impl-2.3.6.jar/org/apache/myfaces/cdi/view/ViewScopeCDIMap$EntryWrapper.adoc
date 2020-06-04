@@ -1,0 +1,6 @@
+= org/apache/myfaces/cdi/view/ViewScopeCDIMap$EntryWrapper.class
+
+ - link:ViewScopeCDIMap$EntryWrapper-asmified.java[Asmified]
+
+== References
+

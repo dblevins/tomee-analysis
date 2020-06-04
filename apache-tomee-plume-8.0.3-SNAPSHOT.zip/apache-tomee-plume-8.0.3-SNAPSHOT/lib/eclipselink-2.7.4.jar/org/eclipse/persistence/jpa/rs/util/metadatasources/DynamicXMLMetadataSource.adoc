@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jpa/rs/util/metadatasources/DynamicXMLMetadataSource.class
+
+ - link:DynamicXMLMetadataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3

@@ -1,0 +1,6 @@
+= org/apache/cxf/service/factory/AnnotationsFactoryBeanListener.class
+
+ - link:AnnotationsFactoryBeanListener-asmified.java[Asmified]
+
+== References
+

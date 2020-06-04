@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/MappingJsonFactory.class
+
+ - link:MappingJsonFactory-asmified.java[Asmified]
+
+== References
+

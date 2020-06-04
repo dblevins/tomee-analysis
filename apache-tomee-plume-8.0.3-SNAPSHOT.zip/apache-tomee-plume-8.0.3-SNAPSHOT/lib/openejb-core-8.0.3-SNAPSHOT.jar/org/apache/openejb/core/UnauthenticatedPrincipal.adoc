@@ -1,0 +1,6 @@
+= org/apache/openejb/core/UnauthenticatedPrincipal.class
+
+ - link:UnauthenticatedPrincipal-asmified.java[Asmified]
+
+== References
+

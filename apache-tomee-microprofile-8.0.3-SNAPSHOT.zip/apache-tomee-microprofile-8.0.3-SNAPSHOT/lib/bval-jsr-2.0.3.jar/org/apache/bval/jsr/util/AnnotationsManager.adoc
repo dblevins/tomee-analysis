@@ -1,0 +1,11 @@
+= org/apache/bval/jsr/util/AnnotationsManager.class
+
+ - link:AnnotationsManager-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintDefinitionException - 16
+ - javax.validation.Constraint - 3
+ - javax.validation.ConstraintDeclarationException - 2
+ - javax.validation.ValidationException - 2
+ - javax.validation.constraintvalidation.ValidationTarget - 2

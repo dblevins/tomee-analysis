@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/VirtualBeanPropertyWriter.class
+
+ - link:VirtualBeanPropertyWriter-asmified.java[Asmified]
+
+== References
+

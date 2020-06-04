@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/Lister$ArrayLister.class
+
+ - link:Lister$ArrayLister-asmified.java[Asmified]
+
+== References
+

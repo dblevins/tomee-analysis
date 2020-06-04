@@ -1,0 +1,7 @@
+= javax/xml/rpc/holders/BooleanWrapperHolder.class
+
+ - link:BooleanWrapperHolder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.holders.Holder - 1

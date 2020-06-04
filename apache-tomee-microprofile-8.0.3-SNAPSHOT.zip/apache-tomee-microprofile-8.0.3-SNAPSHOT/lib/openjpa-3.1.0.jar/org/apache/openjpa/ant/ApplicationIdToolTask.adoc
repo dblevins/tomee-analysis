@@ -1,0 +1,6 @@
+= org/apache/openjpa/ant/ApplicationIdToolTask.class
+
+ - link:ApplicationIdToolTask-asmified.java[Asmified]
+
+== References
+

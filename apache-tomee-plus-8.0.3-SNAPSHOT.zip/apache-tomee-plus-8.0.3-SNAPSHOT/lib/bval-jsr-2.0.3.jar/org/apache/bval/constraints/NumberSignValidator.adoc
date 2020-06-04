@@ -1,0 +1,8 @@
+= org/apache/bval/constraints/NumberSignValidator.class
+
+ - link:NumberSignValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 1

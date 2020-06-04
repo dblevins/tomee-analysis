@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/querydef/ParameterExpressionImpl.class
+
+ - link:ParameterExpressionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Metamodel - 6
+ - javax.persistence.criteria.ParameterExpression - 2

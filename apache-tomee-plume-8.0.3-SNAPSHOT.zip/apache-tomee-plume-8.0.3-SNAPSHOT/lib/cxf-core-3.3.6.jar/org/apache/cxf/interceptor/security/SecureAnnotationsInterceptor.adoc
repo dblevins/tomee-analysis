@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/SecureAnnotationsInterceptor.class
+
+ - link:SecureAnnotationsInterceptor-asmified.java[Asmified]
+
+== References
+

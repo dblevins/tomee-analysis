@@ -1,0 +1,12 @@
+= javax/jms/TopicConnection.class
+
+ - link:TopicConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 3
+ - javax.jms.ConnectionConsumer - 2
+ - javax.jms.Topic - 2
+ - javax.jms.ServerSessionPool - 2
+ - javax.jms.Connection - 1
+ - javax.jms.TopicSession - 1

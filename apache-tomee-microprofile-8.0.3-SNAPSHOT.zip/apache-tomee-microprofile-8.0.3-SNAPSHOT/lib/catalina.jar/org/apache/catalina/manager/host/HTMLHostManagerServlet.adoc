@@ -1,0 +1,9 @@
+= org/apache/catalina/manager/host/HTMLHostManagerServlet.class
+
+ - link:HTMLHostManagerServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 27
+ - javax.servlet.http.HttpServletResponse - 20
+ - javax.servlet.ServletException - 2

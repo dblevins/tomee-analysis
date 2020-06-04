@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxb/WrapperHelperCompiler.class
+
+ - link:WrapperHelperCompiler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3

@@ -1,0 +1,15 @@
+= org/apache/openejb/core/mdb/MdbInstanceManager.class
+
+ - link:MdbInstanceManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ResourceAdapter - 10
+ - javax.resource.spi.ActivationSpec - 10
+ - javax.enterprise.context.spi.CreationalContext - 5
+ - javax.resource.ResourceException - 3
+ - javax.ejb.ConcurrentAccessTimeoutException - 3
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.ejb.SessionBean - 2
+ - javax.resource.spi.endpoint.MessageEndpointFactory - 1
+ - javax.ejb.EJBContext - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/CoalesceNode.class
+
+ - link:CoalesceNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/mgbean/ManagedBeanBuilder$PropertyType.class
+
+ - link:ManagedBeanBuilder$PropertyType-asmified.java[Asmified]
+
+== References
+

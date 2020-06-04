@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/HistogramImpl$Value.class
+
+ - link:HistogramImpl$Value-asmified.java[Asmified]
+
+== References
+

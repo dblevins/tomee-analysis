@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/XPathFactory.class
+
+ - link:XPathFactory-asmified.java[Asmified]
+
+== References
+

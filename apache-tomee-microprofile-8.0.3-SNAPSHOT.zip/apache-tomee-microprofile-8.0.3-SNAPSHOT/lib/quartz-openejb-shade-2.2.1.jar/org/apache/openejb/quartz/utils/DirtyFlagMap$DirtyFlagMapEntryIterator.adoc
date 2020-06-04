@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/utils/DirtyFlagMap$DirtyFlagMapEntryIterator.class
+
+ - link:DirtyFlagMap$DirtyFlagMapEntryIterator-asmified.java[Asmified]
+
+== References
+

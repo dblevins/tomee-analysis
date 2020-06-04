@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/EntitiesDescriptorMarshaller.class
+
+ - link:EntitiesDescriptorMarshaller-asmified.java[Asmified]
+
+== References
+

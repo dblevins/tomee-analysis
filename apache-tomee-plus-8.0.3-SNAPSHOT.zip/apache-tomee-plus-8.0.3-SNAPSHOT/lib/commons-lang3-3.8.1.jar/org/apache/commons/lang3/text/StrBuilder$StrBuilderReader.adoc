@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/text/StrBuilder$StrBuilderReader.class
+
+ - link:StrBuilder$StrBuilderReader-asmified.java[Asmified]
+
+== References
+

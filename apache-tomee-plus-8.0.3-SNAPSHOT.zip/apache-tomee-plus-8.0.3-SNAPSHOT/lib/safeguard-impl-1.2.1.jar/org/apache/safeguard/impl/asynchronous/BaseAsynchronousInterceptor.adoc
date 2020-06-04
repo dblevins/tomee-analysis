@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/asynchronous/BaseAsynchronousInterceptor.class
+
+ - link:BaseAsynchronousInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 23

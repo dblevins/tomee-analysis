@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaGroup.class
+
+ - link:SchemaGroup-asmified.java[Asmified]
+
+== References
+

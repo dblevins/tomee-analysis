@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/IDEA$PBEWithSHAAndIDEA.class
+
+ - link:IDEA$PBEWithSHAAndIDEA-asmified.java[Asmified]
+
+== References
+

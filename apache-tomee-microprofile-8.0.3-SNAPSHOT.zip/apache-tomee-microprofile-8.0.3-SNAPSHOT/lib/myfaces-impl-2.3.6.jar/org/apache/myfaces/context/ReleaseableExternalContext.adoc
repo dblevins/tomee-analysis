@@ -1,0 +1,6 @@
+= org/apache/myfaces/context/ReleaseableExternalContext.class
+
+ - link:ReleaseableExternalContext-asmified.java[Asmified]
+
+== References
+

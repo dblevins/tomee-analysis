@@ -1,0 +1,8 @@
+= org/apache/activemq/management/StatsImpl.class
+
+ - link:StatsImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.Statistic - 5
+ - javax.management.j2ee.statistics.Stats - 1

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/marshaller/NamespacePrefixMapper.class
+
+ - link:NamespacePrefixMapper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/util/DSAEncoder.class
+
+ - link:DSAEncoder-asmified.java[Asmified]
+
+== References
+

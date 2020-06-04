@@ -1,0 +1,7 @@
+= javax/jws/soap/SOAPBinding$ParameterStyle.class
+
+ - link:SOAPBinding$ParameterStyle-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.soap.SOAPBinding$ParameterStyle - 21

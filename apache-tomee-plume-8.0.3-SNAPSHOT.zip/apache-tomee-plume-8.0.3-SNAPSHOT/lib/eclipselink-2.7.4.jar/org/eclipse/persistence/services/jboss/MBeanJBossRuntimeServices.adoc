@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/jboss/MBeanJBossRuntimeServices.class
+
+ - link:MBeanJBossRuntimeServices-asmified.java[Asmified]
+
+== References
+

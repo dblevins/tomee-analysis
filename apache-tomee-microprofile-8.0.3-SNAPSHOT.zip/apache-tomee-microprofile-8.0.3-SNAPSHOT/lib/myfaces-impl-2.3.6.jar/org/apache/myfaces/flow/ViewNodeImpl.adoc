@@ -1,0 +1,7 @@
+= org/apache/myfaces/flow/ViewNodeImpl.class
+
+ - link:ViewNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.ViewNode - 2

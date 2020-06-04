@@ -1,0 +1,6 @@
+= org/apache/commons/collections/iterators/UnmodifiableMapIterator.class
+
+ - link:UnmodifiableMapIterator-asmified.java[Asmified]
+
+== References
+

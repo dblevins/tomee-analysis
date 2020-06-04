@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/ConcurrencyManagementType$JAXB.class
+
+ - link:ConcurrencyManagementType$JAXB-asmified.java[Asmified]
+
+== References
+

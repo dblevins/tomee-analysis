@@ -1,0 +1,23 @@
+= org/apache/webbeans/event/ObserverMethodImpl.class
+
+ - link:ObserverMethodImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.EventMetadata - 31
+ - javax.enterprise.inject.spi.Bean - 30
+ - javax.enterprise.inject.spi.AnnotatedParameter - 29
+ - javax.enterprise.inject.spi.InjectionPoint - 22
+ - javax.enterprise.inject.spi.AnnotatedMethod - 21
+ - javax.enterprise.context.spi.CreationalContext - 20
+ - javax.enterprise.event.Observes - 14
+ - javax.enterprise.event.ObservesAsync - 11
+ - javax.enterprise.context.Dependent - 10
+ - javax.enterprise.inject.spi.EventContext - 9
+ - javax.enterprise.event.Reception - 8
+ - javax.enterprise.context.spi.Context - 7
+ - javax.enterprise.event.TransactionPhase - 7
+ - javax.enterprise.context.spi.Contextual - 4
+ - javax.annotation.Priority - 4
+ - javax.enterprise.context.ContextNotActiveException - 4
+ - javax.enterprise.inject.spi.WithAnnotations - 1

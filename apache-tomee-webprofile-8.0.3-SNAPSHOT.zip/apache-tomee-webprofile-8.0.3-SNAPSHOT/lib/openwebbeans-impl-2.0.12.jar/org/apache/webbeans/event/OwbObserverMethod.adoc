@@ -1,0 +1,8 @@
+= org/apache/webbeans/event/OwbObserverMethod.class
+
+ - link:OwbObserverMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.ObserverMethod - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1

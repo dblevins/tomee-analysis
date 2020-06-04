@@ -1,0 +1,17 @@
+= javax/faces/webapp/AttributeTag.class
+
+ - link:AttributeTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspException - 6
+ - javax.el.ELContext - 6
+ - javax.faces.webapp.UIComponentClassicTagBase - 5
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.component.UIComponent - 5
+ - javax.el.ExpressionFactory - 4
+ - javax.el.ValueExpression - 4
+ - javax.servlet.jsp.tagext.TagSupport - 2
+ - javax.faces.application.Application - 2
+ - javax.servlet.jsp.PageContext - 2
+ - javax.faces.webapp.AttributeTag - 2

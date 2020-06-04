@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/ContextUtils.class
+
+ - link:ContextUtils-asmified.java[Asmified]
+
+== References
+

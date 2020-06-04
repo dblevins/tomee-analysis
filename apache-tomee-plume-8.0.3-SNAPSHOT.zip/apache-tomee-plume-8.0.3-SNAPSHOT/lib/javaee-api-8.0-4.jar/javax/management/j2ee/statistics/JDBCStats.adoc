@@ -1,0 +1,9 @@
+= javax/management/j2ee/statistics/JDBCStats.class
+
+ - link:JDBCStats-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.JDBCConnectionStats - 1
+ - javax.management.j2ee.statistics.Stats - 1
+ - javax.management.j2ee.statistics.JDBCConnectionPoolStats - 1

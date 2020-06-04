@@ -1,0 +1,16 @@
+= com/sun/faces/taglib/jsf_core/SetPropertyActionListenerImpl.class
+
+ - link:SetPropertyActionListenerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 18
+ - javax.faces.context.FacesContext - 8
+ - javax.el.ELContext - 6
+ - javax.faces.event.AbortProcessingException - 3
+ - javax.faces.application.Application - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.event.ActionEvent - 2
+ - javax.el.ELException - 2
+ - javax.faces.component.StateHolder - 1
+ - javax.faces.event.ActionListener - 1

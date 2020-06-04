@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/MissingFactoryMethodException.class
+
+ - link:MissingFactoryMethodException-asmified.java[Asmified]
+
+== References
+

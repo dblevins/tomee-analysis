@@ -1,0 +1,268 @@
+package asm.org.apache.openjpa.kernel;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DetachManager$DetachFieldManagerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_SUPER, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", null, "org/apache/openjpa/kernel/TransferFieldManager", null);
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "org/apache/openjpa/kernel/DetachManager", "DetachFieldManager", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/DetachManager$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/kernel/TransferFieldManager", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setStateManager", "(Lorg/apache/openjpa/kernel/StateManagerImpl;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "detachVersion", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "getMetaData", "()Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "getVersionField", "()Lorg/apache/openjpa/meta/FieldMetaData;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openjpa/meta/FieldMetaData"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "getVersion", "()Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getTypeCode", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/meta/JavaTypes", "convert", "(Ljava/lang/Object;I)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "getBroker", "()Lorg/apache/openjpa/kernel/BrokerImpl;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getFieldValue", "(Ljava/lang/Object;Lorg/apache/openjpa/kernel/StoreContext;)Ljava/lang/Object;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getDeclaredTypeCode", "()I", false);
+Label label1 = new Label();
+Label label2 = new Label();
+Label label3 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 7, label2, new Label[] { label1, label2, label3, label3, label1, label1, label1 });
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/Object"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label4);
+methodVisitor.visitInsn(LCONST_0);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager"});
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Number");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Number", "longValue", "()J", false);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "org/apache/openjpa/meta/FieldMetaData", "java/lang/Object"}, 2, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager", Opcodes.LONG});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "longval", "J");
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label7);
+methodVisitor.visitInsn(DCONST_0);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager"});
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/Number");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Number", "doubleValue", "()D", false);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "org/apache/openjpa/meta/FieldMetaData", "java/lang/Object"}, 2, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager", Opcodes.DOUBLE});
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "dblval", "D");
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "objval", "Ljava/lang/Object;");
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "getDetachedPersistenceCapable", "()Lorg/apache/openjpa/enhance/PersistenceCapable;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getIndex", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "replaceField", "(Lorg/apache/openjpa/enhance/PersistenceCapable;Lorg/apache/openjpa/enhance/FieldManager;I)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reproxy", "(Lorg/apache/openjpa/kernel/DetachedStateManager;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "getMetaData", "()Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "getProxyFields", "()[Lorg/apache/openjpa/meta/FieldMetaData;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label0 = new Label();
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,3, new Object[] {"[Lorg/apache/openjpa/meta/FieldMetaData;", Opcodes.INTEGER, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getDeclaredTypeCode", "()I", false);
+Label label2 = new Label();
+Label label3 = new Label();
+Label label4 = new Label();
+methodVisitor.visitLookupSwitchInsn(label4, new int[] { 8, 12, 13, 14, 28 }, new Label[] { label2, label3, label3, label2, label2 });
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openjpa/meta/FieldMetaData"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "isLRS", "()Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "objval", "Ljava/lang/Object;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "getDetachedPersistenceCapable", "()Lorg/apache/openjpa/enhance/PersistenceCapable;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getIndex", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "replaceField", "(Lorg/apache/openjpa/enhance/PersistenceCapable;Lorg/apache/openjpa/enhance/FieldManager;I)V", false);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "getDetachedPersistenceCapable", "()Lorg/apache/openjpa/enhance/PersistenceCapable;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getIndex", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "provideField", "(Lorg/apache/openjpa/enhance/PersistenceCapable;Lorg/apache/openjpa/enhance/FieldManager;I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "objval", "Ljava/lang/Object;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/util/Proxy");
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "objval", "Ljava/lang/Object;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/util/Proxy");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/util/Proxy", "getChangeTracker", "()Lorg/apache/openjpa/util/ChangeTracker;", true);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/util/Proxy", "getChangeTracker", "()Lorg/apache/openjpa/util/ChangeTracker;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/util/ChangeTracker", "stopTracking", "()V", true);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/openjpa/util/Proxy"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label6);
+methodVisitor.visitInsn(ICONST_M1);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "org/apache/openjpa/kernel/DetachedStateManager", "[Lorg/apache/openjpa/meta/FieldMetaData;", Opcodes.INTEGER, Opcodes.INTEGER, "org/apache/openjpa/meta/FieldMetaData", "org/apache/openjpa/util/Proxy"}, 2, new Object[] {"org/apache/openjpa/util/Proxy", "org/apache/openjpa/kernel/DetachedStateManager"});
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/FieldMetaData", "getIndex", "()I", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "org/apache/openjpa/kernel/DetachedStateManager", "[Lorg/apache/openjpa/meta/FieldMetaData;", Opcodes.INTEGER, Opcodes.INTEGER, "org/apache/openjpa/meta/FieldMetaData", "org/apache/openjpa/util/Proxy"}, 3, new Object[] {"org/apache/openjpa/util/Proxy", "org/apache/openjpa/kernel/DetachedStateManager", Opcodes.INTEGER});
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/util/Proxy", "setOwner", "(Lorg/apache/openjpa/kernel/OpenJPAStateManager;I)V", true);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_CHOP,3, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "clear", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "getDetachedPersistenceCapable", "()Lorg/apache/openjpa/enhance/PersistenceCapable;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "sm", "Lorg/apache/openjpa/kernel/StateManagerImpl;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/StateManagerImpl", "getPersistenceCapable", "()Lorg/apache/openjpa/enhance/PersistenceCapable;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_SYNTHETIC, "<init>", "(Lorg/apache/openjpa/kernel/DetachManager$1;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/kernel/DetachManager$DetachFieldManager", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 2);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

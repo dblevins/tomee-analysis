@@ -1,0 +1,9 @@
+= javax/ws/rs/core/Link$Builder.class
+
+ - link:Link$Builder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Link$Builder - 11
+ - javax.ws.rs.core.Link - 3
+ - javax.ws.rs.core.UriBuilder - 1

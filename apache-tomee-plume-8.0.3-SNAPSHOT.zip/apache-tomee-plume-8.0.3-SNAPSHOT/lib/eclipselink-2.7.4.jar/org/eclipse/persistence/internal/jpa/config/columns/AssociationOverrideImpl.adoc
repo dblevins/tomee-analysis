@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/columns/AssociationOverrideImpl.class
+
+ - link:AssociationOverrideImpl-asmified.java[Asmified]
+
+== References
+

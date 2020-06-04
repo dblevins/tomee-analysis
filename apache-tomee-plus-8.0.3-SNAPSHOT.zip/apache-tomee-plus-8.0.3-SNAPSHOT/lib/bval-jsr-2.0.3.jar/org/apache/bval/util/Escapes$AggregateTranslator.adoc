@@ -1,0 +1,6 @@
+= org/apache/bval/util/Escapes$AggregateTranslator.class
+
+ - link:Escapes$AggregateTranslator-asmified.java[Asmified]
+
+== References
+

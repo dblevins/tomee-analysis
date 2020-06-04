@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/ExtensionsImpl.class
+
+ - link:ExtensionsImpl-asmified.java[Asmified]
+
+== References
+

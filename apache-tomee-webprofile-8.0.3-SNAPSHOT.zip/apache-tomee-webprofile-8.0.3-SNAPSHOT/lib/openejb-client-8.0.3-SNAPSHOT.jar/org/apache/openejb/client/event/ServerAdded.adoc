@@ -1,0 +1,6 @@
+= org/apache/openejb/client/event/ServerAdded.class
+
+ - link:ServerAdded-asmified.java[Asmified]
+
+== References
+

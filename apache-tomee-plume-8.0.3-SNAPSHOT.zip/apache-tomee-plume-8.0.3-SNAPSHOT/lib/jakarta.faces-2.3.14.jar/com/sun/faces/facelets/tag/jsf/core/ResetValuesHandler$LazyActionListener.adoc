@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/tag/jsf/core/ResetValuesHandler$LazyActionListener.class
+
+ - link:ResetValuesHandler$LazyActionListener-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.event.ActionEvent - 1
+ - javax.faces.event.ActionListener - 1
+ - javax.faces.event.AbortProcessingException - 1

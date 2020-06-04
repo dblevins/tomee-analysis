@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ConnectionStrategy.class
+
+ - link:ConnectionStrategy-asmified.java[Asmified]
+
+== References
+

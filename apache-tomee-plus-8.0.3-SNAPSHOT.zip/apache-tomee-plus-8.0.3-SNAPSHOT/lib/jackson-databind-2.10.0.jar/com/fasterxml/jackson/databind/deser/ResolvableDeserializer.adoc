@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/ResolvableDeserializer.class
+
+ - link:ResolvableDeserializer-asmified.java[Asmified]
+
+== References
+

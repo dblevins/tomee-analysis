@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/el/ContextAwarePropertyNotWritableException.class
+
+ - link:ContextAwarePropertyNotWritableException-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.Location - 4
+ - javax.el.PropertyNotWritableException - 2

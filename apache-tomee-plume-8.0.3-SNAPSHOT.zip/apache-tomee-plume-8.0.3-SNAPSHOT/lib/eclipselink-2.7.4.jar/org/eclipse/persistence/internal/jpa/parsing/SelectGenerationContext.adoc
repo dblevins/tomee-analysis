@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SelectGenerationContext.class
+
+ - link:SelectGenerationContext-asmified.java[Asmified]
+
+== References
+

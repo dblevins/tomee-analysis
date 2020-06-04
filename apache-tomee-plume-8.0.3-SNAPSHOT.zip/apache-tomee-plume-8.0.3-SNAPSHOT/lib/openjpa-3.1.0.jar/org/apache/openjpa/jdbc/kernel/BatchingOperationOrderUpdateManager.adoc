@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/BatchingOperationOrderUpdateManager.class
+
+ - link:BatchingOperationOrderUpdateManager-asmified.java[Asmified]
+
+== References
+

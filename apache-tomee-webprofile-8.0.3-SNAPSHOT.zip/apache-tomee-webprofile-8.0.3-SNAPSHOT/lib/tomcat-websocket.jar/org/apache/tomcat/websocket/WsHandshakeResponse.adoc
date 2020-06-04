@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/WsHandshakeResponse.class
+
+ - link:WsHandshakeResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.HandshakeResponse - 1

@@ -1,0 +1,8 @@
+= org/apache/cxf/endpoint/dynamic/DynamicClientFactory.class
+
+ - link:DynamicClientFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 7
+ - javax.xml.bind.JAXBException - 4

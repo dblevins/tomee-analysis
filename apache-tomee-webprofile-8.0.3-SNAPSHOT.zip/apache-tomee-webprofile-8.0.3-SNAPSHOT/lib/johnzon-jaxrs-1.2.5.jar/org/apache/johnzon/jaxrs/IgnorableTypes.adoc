@@ -1,0 +1,6 @@
+= org/apache/johnzon/jaxrs/IgnorableTypes.class
+
+ - link:IgnorableTypes-asmified.java[Asmified]
+
+== References
+

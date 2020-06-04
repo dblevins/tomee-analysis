@@ -1,0 +1,9 @@
+= net/shibboleth/utilities/java/support/xml/SimpleNamespaceContext.class
+
+ - link:SimpleNamespaceContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 3
+ - javax.annotation.concurrent.ThreadSafe - 1

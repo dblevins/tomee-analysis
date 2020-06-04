@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/SecurableObjectHolder$PassThroughEncryptor.class
+
+ - link:SecurableObjectHolder$PassThroughEncryptor-asmified.java[Asmified]
+
+== References
+

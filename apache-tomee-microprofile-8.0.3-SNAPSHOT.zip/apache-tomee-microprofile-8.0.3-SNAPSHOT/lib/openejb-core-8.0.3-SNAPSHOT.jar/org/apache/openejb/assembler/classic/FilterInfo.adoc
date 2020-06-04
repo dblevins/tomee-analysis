@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/FilterInfo.class
+
+ - link:FilterInfo-asmified.java[Asmified]
+
+== References
+

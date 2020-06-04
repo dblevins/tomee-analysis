@@ -1,0 +1,10 @@
+= org/apache/activemq/command/ActiveMQMessage.class
+
+ - link:ActiveMQMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 47
+ - javax.jms.MessageFormatException - 25
+ - javax.jms.MessageNotWriteableException - 6
+ - javax.jms.Destination - 6

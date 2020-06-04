@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/CompositeBuilder$ForClass.class
+
+ - link:CompositeBuilder$ForClass-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/transport/smtp/SMTPSTransport.class
+
+ - link:SMTPSTransport-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.URLName - 2
+ - javax.mail.Session - 2

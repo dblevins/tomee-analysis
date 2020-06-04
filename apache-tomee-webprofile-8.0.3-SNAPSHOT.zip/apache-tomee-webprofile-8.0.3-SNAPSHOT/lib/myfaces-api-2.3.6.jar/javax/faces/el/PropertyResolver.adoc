@@ -1,0 +1,8 @@
+= javax/faces/el/PropertyResolver.class
+
+ - link:PropertyResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.PropertyNotFoundException - 8
+ - javax.faces.el.EvaluationException - 8

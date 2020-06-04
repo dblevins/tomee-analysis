@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/OpenEJBAsyncContext$2.class
+
+ - link:OpenEJBAsyncContext$2-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 18
+ - javax.servlet.ServletInputStream - 2

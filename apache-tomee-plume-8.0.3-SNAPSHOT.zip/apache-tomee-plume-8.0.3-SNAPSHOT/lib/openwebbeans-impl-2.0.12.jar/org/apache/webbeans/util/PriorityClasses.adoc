@@ -1,0 +1,7 @@
+= org/apache/webbeans/util/PriorityClasses.class
+
+ - link:PriorityClasses-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Priority - 2

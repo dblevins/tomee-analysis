@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/querydef/ConstructorSelectionImpl.class
+
+ - link:ConstructorSelectionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 5

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/Trim$TrimExpState.class
+
+ - link:Trim$TrimExpState-asmified.java[Asmified]
+
+== References
+

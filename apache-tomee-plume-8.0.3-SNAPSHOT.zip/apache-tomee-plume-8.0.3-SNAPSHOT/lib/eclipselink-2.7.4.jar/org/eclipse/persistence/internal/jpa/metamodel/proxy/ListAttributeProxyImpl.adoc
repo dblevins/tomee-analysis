@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/metamodel/proxy/ListAttributeProxyImpl.class
+
+ - link:ListAttributeProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.ListAttribute - 1

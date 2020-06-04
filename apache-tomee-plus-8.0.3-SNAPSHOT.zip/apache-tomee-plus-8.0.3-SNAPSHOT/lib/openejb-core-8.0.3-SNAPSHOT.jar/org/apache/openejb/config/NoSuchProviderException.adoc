@@ -1,0 +1,6 @@
+= org/apache/openejb/config/NoSuchProviderException.class
+
+ - link:NoSuchProviderException-asmified.java[Asmified]
+
+== References
+

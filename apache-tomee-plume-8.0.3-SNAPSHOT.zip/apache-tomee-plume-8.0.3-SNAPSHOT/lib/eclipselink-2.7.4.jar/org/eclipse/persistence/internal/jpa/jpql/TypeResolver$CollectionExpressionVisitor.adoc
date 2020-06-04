@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/TypeResolver$CollectionExpressionVisitor.class
+
+ - link:TypeResolver$CollectionExpressionVisitor-asmified.java[Asmified]
+
+== References
+

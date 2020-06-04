@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ShortId.class
+
+ - link:ShortId-asmified.java[Asmified]
+
+== References
+

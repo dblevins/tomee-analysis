@@ -1,0 +1,7 @@
+= org/apache/openejb/core/transaction/TransactionRolledbackException.class
+
+ - link:TransactionRolledbackException-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionRolledbackException - 7

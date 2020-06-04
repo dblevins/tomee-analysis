@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/ResolvableSerializer.class
+
+ - link:ResolvableSerializer-asmified.java[Asmified]
+
+== References
+

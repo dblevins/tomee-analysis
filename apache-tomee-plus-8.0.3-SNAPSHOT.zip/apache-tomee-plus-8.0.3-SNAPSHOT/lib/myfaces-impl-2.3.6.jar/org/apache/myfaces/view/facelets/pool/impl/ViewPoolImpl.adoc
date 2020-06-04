@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/pool/impl/ViewPoolImpl.class
+
+ - link:ViewPoolImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 71
+ - javax.faces.component.UIViewRoot - 50
+ - javax.faces.context.ExternalContext - 16

@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/archive/Archive$Entry.class
+
+ - link:Archive$Entry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/RespondWith.class
+
+ - link:RespondWith-asmified.java[Asmified]
+
+== References
+

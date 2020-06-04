@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/spring/PolicyBeanDefinitionParser.class
+
+ - link:PolicyBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

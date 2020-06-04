@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/SpnegoContextTokenInInterceptor$SpnegoContextTokenFinderInterceptor.class
+
+ - link:SpnegoContextTokenInInterceptor$SpnegoContextTokenFinderInterceptor-asmified.java[Asmified]
+
+== References
+

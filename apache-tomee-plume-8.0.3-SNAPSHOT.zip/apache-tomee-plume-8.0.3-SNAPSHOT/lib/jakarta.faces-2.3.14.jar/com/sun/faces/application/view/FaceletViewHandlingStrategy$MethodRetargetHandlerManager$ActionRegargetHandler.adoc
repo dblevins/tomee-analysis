@@ -1,0 +1,14 @@
+= com/sun/faces/application/view/FaceletViewHandlingStrategy$MethodRetargetHandlerManager$ActionRegargetHandler.class
+
+ - link:FaceletViewHandlingStrategy$MethodRetargetHandlerManager$ActionRegargetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 7
+ - javax.faces.context.FacesContext - 5
+ - javax.el.MethodExpression - 5
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.component.ActionSource2 - 4
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.application.Application - 2
+ - javax.el.ELContext - 2

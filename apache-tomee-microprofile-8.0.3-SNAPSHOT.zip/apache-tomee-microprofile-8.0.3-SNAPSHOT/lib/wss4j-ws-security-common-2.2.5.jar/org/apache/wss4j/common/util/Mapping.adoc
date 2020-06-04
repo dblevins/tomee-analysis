@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/util/Mapping.class
+
+ - link:Mapping-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/MethodAccessor_Ref.class
+
+ - link:MethodAccessor_Ref-asmified.java[Asmified]
+
+== References
+

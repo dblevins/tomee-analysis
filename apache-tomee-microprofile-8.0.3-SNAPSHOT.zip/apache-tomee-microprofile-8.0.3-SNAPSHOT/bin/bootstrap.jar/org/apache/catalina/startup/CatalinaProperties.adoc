@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/CatalinaProperties.class
+
+ - link:CatalinaProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,13 @@
+= org/apache/activemq/ActiveMQXASslConnectionFactory.class
+
+ - link:ActiveMQXASslConnectionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 6
+ - javax.jms.XAQueueConnection - 4
+ - javax.jms.XAConnection - 4
+ - javax.jms.XATopicConnection - 4
+ - javax.jms.XATopicConnectionFactory - 1
+ - javax.jms.XAConnectionFactory - 1
+ - javax.jms.XAQueueConnectionFactory - 1

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/Predicate.class
+
+ - link:Predicate-asmified.java[Asmified]
+
+== References
+

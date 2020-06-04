@@ -1,0 +1,11 @@
+= org/apache/cxf/jaxws/spring/JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter.class
+
+ - link:JaxWsWebServicePublisherBeanPostProcessor$ServletAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 5
+ - javax.servlet.ServletRequest - 1
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.servlet.ServletResponse - 1
+ - javax.servlet.http.HttpServletResponse - 1

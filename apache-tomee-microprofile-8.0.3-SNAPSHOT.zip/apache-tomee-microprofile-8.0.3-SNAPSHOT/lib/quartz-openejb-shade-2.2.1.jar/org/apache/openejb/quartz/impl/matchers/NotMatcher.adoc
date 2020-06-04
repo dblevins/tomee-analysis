@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/matchers/NotMatcher.class
+
+ - link:NotMatcher-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/digester/substitution/VariableExpander.class
+
+ - link:VariableExpander-asmified.java[Asmified]
+
+== References
+

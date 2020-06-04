@@ -1,0 +1,11 @@
+= org/apache/webbeans/component/NewManagedBean.class
+
+ - link:NewManagedBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 4
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.inject.spi.BeanAttributes - 1
+ - javax.enterprise.inject.spi.Bean - 1
+ - javax.enterprise.inject.spi.InjectionPoint - 1

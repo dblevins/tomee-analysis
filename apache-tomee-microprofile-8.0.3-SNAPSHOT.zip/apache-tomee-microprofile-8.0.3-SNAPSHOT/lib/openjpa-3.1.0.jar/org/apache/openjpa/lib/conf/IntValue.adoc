@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/conf/IntValue.class
+
+ - link:IntValue-asmified.java[Asmified]
+
+== References
+

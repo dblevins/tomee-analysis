@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/LazyStopStandardRoot.class
+
+ - link:LazyStopStandardRoot-asmified.java[Asmified]
+
+== References
+

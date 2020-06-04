@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/faulttolerance/FallbackHandler.class
+
+ - link:FallbackHandler-asmified.java[Asmified]
+
+== References
+

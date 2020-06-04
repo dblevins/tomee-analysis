@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/ChoiceContentSpec$Validator.class
+
+ - link:ChoiceContentSpec$Validator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/batchee/container/impl/MetricImpl.class
+
+ - link:MetricImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.Metric$MetricType - 5
+ - javax.batch.runtime.Metric - 1

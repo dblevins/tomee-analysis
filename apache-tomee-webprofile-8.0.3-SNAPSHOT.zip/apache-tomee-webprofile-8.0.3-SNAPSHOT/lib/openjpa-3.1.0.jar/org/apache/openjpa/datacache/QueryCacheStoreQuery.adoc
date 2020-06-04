@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/QueryCacheStoreQuery.class
+
+ - link:QueryCacheStoreQuery-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/NameIDFormatImpl.class
+
+ - link:NameIDFormatImpl-asmified.java[Asmified]
+
+== References
+

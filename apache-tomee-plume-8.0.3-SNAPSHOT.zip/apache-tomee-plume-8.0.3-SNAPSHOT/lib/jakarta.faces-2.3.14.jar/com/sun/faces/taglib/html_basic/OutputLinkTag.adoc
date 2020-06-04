@@ -1,0 +1,14 @@
+= com/sun/faces/taglib/html_basic/OutputLinkTag.class
+
+ - link:OutputLinkTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 221
+ - javax.faces.component.UIOutput - 34
+ - javax.faces.webapp.UIComponentELTag - 6
+ - javax.servlet.jsp.JspException - 6
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.convert.Converter - 2
+ - javax.faces.application.Application - 2

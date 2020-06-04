@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/trie/AbstractPatriciaTrie.class
+
+ - link:AbstractPatriciaTrie-asmified.java[Asmified]
+
+== References
+

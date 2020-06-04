@@ -1,0 +1,8 @@
+= org/apache/myfaces/config/impl/digester/elements/ManagedPropertyImpl$DummyValueBinding.class
+
+ - link:ManagedPropertyImpl$DummyValueBinding-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.el.ValueBinding - 2

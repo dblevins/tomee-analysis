@@ -1,0 +1,6 @@
+= org/apache/cxf/io/ReaderInputStream.class
+
+ - link:ReaderInputStream-asmified.java[Asmified]
+
+== References
+

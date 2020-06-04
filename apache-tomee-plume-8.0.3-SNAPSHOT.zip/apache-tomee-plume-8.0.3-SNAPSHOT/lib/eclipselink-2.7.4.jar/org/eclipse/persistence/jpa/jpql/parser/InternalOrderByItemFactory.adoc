@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/InternalOrderByItemFactory.class
+
+ - link:InternalOrderByItemFactory-asmified.java[Asmified]
+
+== References
+

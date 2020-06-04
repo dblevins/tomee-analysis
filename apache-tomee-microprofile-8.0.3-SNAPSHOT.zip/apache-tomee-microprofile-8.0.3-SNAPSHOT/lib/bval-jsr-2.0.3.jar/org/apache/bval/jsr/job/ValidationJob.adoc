@@ -1,0 +1,17 @@
+= org/apache/bval/jsr/job/ValidationJob.class
+
+ - link:ValidationJob-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 5
+ - javax.validation.ValidationException - 4
+ - javax.validation.ConstraintValidatorContext - 4
+ - javax.validation.MessageInterpolator$Context - 3
+ - javax.validation.ConstraintViolation - 3
+ - javax.validation.MessageInterpolator - 2
+ - javax.validation.ElementKind - 2
+ - javax.validation.groups.Default - 1
+ - javax.validation.metadata.ConstraintDescriptor - 1
+ - javax.validation.Path - 1
+ - javax.validation.metadata.BeanDescriptor - 1

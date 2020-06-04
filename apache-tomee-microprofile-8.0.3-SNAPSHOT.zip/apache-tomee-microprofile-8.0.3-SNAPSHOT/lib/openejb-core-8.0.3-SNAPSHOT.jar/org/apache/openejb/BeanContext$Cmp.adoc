@@ -1,0 +1,6 @@
+= org/apache/openejb/BeanContext$Cmp.class
+
+ - link:BeanContext$Cmp-asmified.java[Asmified]
+
+== References
+

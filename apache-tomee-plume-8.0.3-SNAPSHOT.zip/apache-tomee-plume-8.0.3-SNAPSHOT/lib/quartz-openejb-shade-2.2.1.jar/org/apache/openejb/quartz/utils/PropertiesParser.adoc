@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/utils/PropertiesParser.class
+
+ - link:PropertiesParser-asmified.java[Asmified]
+
+== References
+

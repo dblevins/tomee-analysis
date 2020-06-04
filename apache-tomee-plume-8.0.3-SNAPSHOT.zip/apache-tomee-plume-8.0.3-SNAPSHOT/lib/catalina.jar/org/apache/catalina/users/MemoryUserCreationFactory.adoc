@@ -1,0 +1,6 @@
+= org/apache/catalina/users/MemoryUserCreationFactory.class
+
+ - link:MemoryUserCreationFactory-asmified.java[Asmified]
+
+== References
+

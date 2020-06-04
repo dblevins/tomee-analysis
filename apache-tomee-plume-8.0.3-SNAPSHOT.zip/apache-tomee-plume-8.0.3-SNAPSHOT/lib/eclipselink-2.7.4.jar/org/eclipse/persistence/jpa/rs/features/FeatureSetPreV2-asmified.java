@@ -1,0 +1,270 @@
+package asm.org.eclipse.persistence.jpa.rs.features;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class FeatureSetPreV2Dump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/eclipse/persistence/jpa/rs/features/FeatureSetPreV2", null, "java/lang/Object", new String[] { "org/eclipse/persistence/jpa/rs/features/FeatureSet" });
+
+classWriter.visitInnerClass("org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "org/eclipse/persistence/jpa/rs/features/FeatureSet", "Feature", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_STATIC | ACC_SYNTHETIC, "$SWITCH_TABLE$org$eclipse$persistence$jpa$rs$features$FeatureSet$Feature", "[I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isSupported", "(Lorg/eclipse/persistence/jpa/rs/features/FeatureSet$Feature;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSetPreV2", "$SWITCH_TABLE$org$eclipse$persistence$jpa$rs$features$FeatureSet$Feature", "()[I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "ordinal", "()I", false);
+methodVisitor.visitInsn(IALOAD);
+Label label0 = new Label();
+Label label1 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 2, label1, new Label[] { label0, label1 });
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResponseBuilder", "(Lorg/eclipse/persistence/jpa/rs/features/FeatureSet$Feature;)Lorg/eclipse/persistence/jpa/rs/features/FeatureResponseBuilder;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSetPreV2", "$SWITCH_TABLE$org$eclipse$persistence$jpa$rs$features$FeatureSet$Feature", "()[I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "ordinal", "()I", false);
+methodVisitor.visitInsn(IALOAD);
+Label label0 = new Label();
+methodVisitor.visitTableSwitchInsn(1, 2, label0, new Label[] { label0, label0 });
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/features/FeatureResponseBuilderImpl");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/features/FeatureResponseBuilderImpl", "<init>", "()V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMetadataSources", "()Ljava/util/List;", "()Ljava/util/List<Lorg/eclipse/persistence/jaxb/metadata/MetadataSource;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/LinkMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/LinkMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultListMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultListMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultListItemMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultListItemMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/SingleResultQueryListMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/SingleResultQueryListMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/SimpleHomogeneousListMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/SimpleHomogeneousListMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultCollectionMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReportQueryResultCollectionMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReadAllQueryResultCollectionMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/ReadAllQueryResultCollectionMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/JavaLangMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/JavaLangMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/JavaMathMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/JavaMathMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/JavaUtilMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/JavaUtilMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/LinkV2MetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/LinkV2MetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/ItemLinksMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/ItemLinksMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/ErrorResponseMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/ErrorResponseMetadataSource", "<init>", "()V", false);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDynamicMetadataSource", "(Lorg/eclipse/persistence/internal/sessions/AbstractSession;Ljava/lang/String;)Lorg/eclipse/persistence/jaxb/metadata/MetadataSource;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/metadatasources/DynamicXMLMetadataSource");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/metadatasources/DynamicXMLMetadataSource", "<init>", "(Lorg/eclipse/persistence/internal/sessions/AbstractSession;Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSessionEventListener", "(Lorg/eclipse/persistence/internal/sessions/AbstractSession;)Lorg/eclipse/persistence/internal/jaxb/SessionEventListener;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/eclipse/persistence/jpa/rs/util/PreLoginMappingAdapter");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/eclipse/persistence/jpa/rs/util/PreLoginMappingAdapter", "<init>", "(Lorg/eclipse/persistence/internal/sessions/AbstractSession;)V", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "$SWITCH_TABLE$org$eclipse$persistence$jpa$rs$features$FeatureSet$Feature", "()[I", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/NoSuchFieldError");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/NoSuchFieldError");
+Label label6 = new Label();
+Label label7 = new Label();
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label8, "java/lang/NoSuchFieldError");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSetPreV2", "$SWITCH_TABLE$org$eclipse$persistence$jpa$rs$features$FeatureSet$Feature", "[I");
+methodVisitor.visitInsn(DUP);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label9);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"[I"});
+methodVisitor.visitInsn(POP);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "values", "()[Lorg/eclipse/persistence/jpa/rs/features/FeatureSet$Feature;", false);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(NEWARRAY, T_INT);
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "FIELDS_FILTERING", "Lorg/eclipse/persistence/jpa/rs/features/FeatureSet$Feature;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "ordinal", "()I", false);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitInsn(IASTORE);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 1, new Object[] {"[I"}, 1, new Object[] {"java/lang/NoSuchFieldError"});
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "NO_PAGING", "Lorg/eclipse/persistence/jpa/rs/features/FeatureSet$Feature;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "ordinal", "()I", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IASTORE);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/NoSuchFieldError"});
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "PAGING", "Lorg/eclipse/persistence/jpa/rs/features/FeatureSet$Feature;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/eclipse/persistence/jpa/rs/features/FeatureSet$Feature", "ordinal", "()I", false);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitInsn(IASTORE);
+methodVisitor.visitLabel(label7);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/NoSuchFieldError"});
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/eclipse/persistence/jpa/rs/features/FeatureSetPreV2", "$SWITCH_TABLE$org$eclipse$persistence$jpa$rs$features$FeatureSet$Feature", "[I");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

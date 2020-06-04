@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/QImpl.class
+
+ - link:QImpl-asmified.java[Asmified]
+
+== References
+

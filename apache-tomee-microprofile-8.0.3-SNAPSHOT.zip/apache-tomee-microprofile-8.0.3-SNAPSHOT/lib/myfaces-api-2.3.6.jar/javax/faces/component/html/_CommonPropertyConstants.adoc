@@ -1,0 +1,7 @@
+= javax/faces/component/html/_CommonPropertyConstants.class
+
+ - link:_CommonPropertyConstants-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 6

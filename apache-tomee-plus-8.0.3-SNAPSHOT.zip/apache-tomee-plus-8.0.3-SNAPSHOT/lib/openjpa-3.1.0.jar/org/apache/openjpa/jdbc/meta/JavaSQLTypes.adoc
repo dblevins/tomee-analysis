@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/JavaSQLTypes.class
+
+ - link:JavaSQLTypes-asmified.java[Asmified]
+
+== References
+

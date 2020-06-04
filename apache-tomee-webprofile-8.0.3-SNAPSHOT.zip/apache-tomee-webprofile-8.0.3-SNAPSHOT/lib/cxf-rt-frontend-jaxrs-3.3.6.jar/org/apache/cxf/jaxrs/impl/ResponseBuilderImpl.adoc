@@ -1,0 +1,18 @@
+= org/apache/cxf/jaxrs/impl/ResponseBuilderImpl.class
+
+ - link:ResponseBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response$ResponseBuilder - 63
+ - javax.ws.rs.core.MultivaluedMap - 32
+ - javax.ws.rs.core.Variant - 15
+ - javax.ws.rs.core.Link$Builder - 10
+ - javax.ws.rs.core.MediaType - 8
+ - javax.ws.rs.core.UriBuilder - 8
+ - javax.ws.rs.core.Link - 7
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.core.UriInfo - 1
+ - javax.ws.rs.core.NewCookie - 1
+ - javax.ws.rs.core.CacheControl - 1
+ - javax.ws.rs.core.EntityTag - 1

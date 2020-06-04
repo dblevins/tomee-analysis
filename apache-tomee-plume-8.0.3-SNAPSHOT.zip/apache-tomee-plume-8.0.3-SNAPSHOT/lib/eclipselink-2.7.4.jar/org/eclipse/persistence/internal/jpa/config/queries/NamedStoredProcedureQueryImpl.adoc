@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/NamedStoredProcedureQueryImpl.class
+
+ - link:NamedStoredProcedureQueryImpl-asmified.java[Asmified]
+
+== References
+

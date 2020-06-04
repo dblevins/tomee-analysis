@@ -1,0 +1,7 @@
+= javax/management/j2ee/statistics/BoundaryStatistic.class
+
+ - link:BoundaryStatistic-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.Statistic - 1

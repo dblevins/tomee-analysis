@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/NumberSerializers$LongSerializer.class
+
+ - link:NumberSerializers$LongSerializer-asmified.java[Asmified]
+
+== References
+

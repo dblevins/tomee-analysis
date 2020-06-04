@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/ArrayERProperty$ReceiverImpl.class
+
+ - link:ArrayERProperty$ReceiverImpl-asmified.java[Asmified]
+
+== References
+

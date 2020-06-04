@@ -1,0 +1,9 @@
+= com/sun/faces/renderkit/html_basic/CompositeRenderer.class
+
+ - link:CompositeRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.render.Renderer - 2

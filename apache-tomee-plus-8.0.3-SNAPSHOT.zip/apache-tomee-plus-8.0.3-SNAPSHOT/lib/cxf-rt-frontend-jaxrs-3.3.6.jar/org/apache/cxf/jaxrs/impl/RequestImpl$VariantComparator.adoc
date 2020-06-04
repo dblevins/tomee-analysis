@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/impl/RequestImpl$VariantComparator.class
+
+ - link:RequestImpl$VariantComparator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Variant - 13
+ - javax.ws.rs.core.MediaType - 8

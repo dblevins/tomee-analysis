@@ -1,0 +1,17 @@
+= javax/mail/Store.class
+
+ - link:Store-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Folder - 19
+ - javax.mail.MessagingException - 6
+ - javax.mail.Store - 5
+ - javax.mail.event.FolderEvent - 4
+ - javax.mail.URLName - 3
+ - javax.mail.event.MailEvent - 3
+ - javax.mail.event.FolderListener - 2
+ - javax.mail.event.StoreEvent - 2
+ - javax.mail.Service - 2
+ - javax.mail.event.StoreListener - 2
+ - javax.mail.Session - 2

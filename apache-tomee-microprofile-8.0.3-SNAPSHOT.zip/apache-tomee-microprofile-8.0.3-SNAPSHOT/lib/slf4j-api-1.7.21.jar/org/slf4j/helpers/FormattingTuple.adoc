@@ -1,0 +1,6 @@
+= org/slf4j/helpers/FormattingTuple.class
+
+ - link:FormattingTuple-asmified.java[Asmified]
+
+== References
+

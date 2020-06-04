@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Primary.class
+
+ - link:Primary-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/DatabaseMapping$WriteType.class
+
+ - link:DatabaseMapping$WriteType-asmified.java[Asmified]
+
+== References
+

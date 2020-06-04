@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/Evidence.class
+
+ - link:Evidence-asmified.java[Asmified]
+
+== References
+

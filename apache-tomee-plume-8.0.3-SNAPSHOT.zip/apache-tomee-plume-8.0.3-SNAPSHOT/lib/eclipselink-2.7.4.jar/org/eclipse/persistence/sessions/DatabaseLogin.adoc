@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/DatabaseLogin.class
+
+ - link:DatabaseLogin-asmified.java[Asmified]
+
+== References
+

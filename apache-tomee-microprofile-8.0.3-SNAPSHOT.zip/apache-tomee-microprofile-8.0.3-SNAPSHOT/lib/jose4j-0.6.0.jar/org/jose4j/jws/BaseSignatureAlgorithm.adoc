@@ -1,0 +1,6 @@
+= org/jose4j/jws/BaseSignatureAlgorithm.class
+
+ - link:BaseSignatureAlgorithm-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/RespectBinding$JAXB.class
+
+ - link:RespectBinding$JAXB-asmified.java[Asmified]
+
+== References
+

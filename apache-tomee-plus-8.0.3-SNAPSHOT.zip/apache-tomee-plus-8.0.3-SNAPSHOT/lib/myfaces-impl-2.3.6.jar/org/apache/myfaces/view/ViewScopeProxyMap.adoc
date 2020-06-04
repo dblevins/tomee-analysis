@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/ViewScopeProxyMap.class
+
+ - link:ViewScopeProxyMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 16
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.application.Application - 2
+ - javax.faces.component.UIViewRoot - 1
+ - javax.faces.event.PreDestroyViewMapEvent - 1
+ - javax.faces.component.StateHolder - 1

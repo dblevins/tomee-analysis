@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/remote/RemoteCursoredStream.class
+
+ - link:RemoteCursoredStream-asmified.java[Asmified]
+
+== References
+

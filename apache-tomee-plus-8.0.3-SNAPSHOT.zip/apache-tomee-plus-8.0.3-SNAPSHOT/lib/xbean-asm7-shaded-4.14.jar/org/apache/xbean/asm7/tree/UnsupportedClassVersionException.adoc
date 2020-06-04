@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/tree/UnsupportedClassVersionException.class
+
+ - link:UnsupportedClassVersionException-asmified.java[Asmified]
+
+== References
+

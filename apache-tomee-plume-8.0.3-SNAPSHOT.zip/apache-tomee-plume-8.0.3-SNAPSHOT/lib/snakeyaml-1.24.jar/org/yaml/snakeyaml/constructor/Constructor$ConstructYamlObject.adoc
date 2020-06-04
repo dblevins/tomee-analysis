@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/constructor/Constructor$ConstructYamlObject.class
+
+ - link:Constructor$ConstructYamlObject-asmified.java[Asmified]
+
+== References
+

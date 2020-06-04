@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/SingleApplicationComposerRunner$Start.class
+
+ - link:SingleApplicationComposerRunner$Start-asmified.java[Asmified]
+
+== References
+

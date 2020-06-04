@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/JAXWSAConstants.class
+
+ - link:JAXWSAConstants-asmified.java[Asmified]
+
+== References
+

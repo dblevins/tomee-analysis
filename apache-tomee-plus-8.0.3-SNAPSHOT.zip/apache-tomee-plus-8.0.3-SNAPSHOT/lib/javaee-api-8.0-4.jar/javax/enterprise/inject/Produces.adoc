@@ -1,0 +1,6 @@
+= javax/enterprise/inject/Produces.class
+
+ - link:Produces-asmified.java[Asmified]
+
+== References
+

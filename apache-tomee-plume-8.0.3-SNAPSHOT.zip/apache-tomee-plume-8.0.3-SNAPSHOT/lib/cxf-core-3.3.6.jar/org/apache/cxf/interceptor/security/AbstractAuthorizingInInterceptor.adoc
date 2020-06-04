@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/AbstractAuthorizingInInterceptor.class
+
+ - link:AbstractAuthorizingInInterceptor-asmified.java[Asmified]
+
+== References
+

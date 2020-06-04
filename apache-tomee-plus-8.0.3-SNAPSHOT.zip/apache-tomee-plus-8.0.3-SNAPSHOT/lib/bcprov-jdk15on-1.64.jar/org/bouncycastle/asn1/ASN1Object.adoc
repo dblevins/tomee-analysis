@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/ASN1Object.class
+
+ - link:ASN1Object-asmified.java[Asmified]
+
+== References
+

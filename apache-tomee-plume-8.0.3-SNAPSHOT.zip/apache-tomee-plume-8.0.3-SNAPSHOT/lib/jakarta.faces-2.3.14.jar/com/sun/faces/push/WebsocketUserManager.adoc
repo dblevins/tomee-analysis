@@ -1,0 +1,7 @@
+= com/sun/faces/push/WebsocketUserManager.class
+
+ - link:WebsocketUserManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.ApplicationScoped - 1

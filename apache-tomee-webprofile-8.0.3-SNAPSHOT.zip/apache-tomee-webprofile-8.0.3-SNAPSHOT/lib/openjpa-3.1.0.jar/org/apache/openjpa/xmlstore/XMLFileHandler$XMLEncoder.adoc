@@ -1,0 +1,6 @@
+= org/apache/openjpa/xmlstore/XMLFileHandler$XMLEncoder.class
+
+ - link:XMLFileHandler$XMLEncoder-asmified.java[Asmified]
+
+== References
+

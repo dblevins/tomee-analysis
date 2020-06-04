@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/SchemaFactory.class
+
+ - link:SchemaFactory-asmified.java[Asmified]
+
+== References
+

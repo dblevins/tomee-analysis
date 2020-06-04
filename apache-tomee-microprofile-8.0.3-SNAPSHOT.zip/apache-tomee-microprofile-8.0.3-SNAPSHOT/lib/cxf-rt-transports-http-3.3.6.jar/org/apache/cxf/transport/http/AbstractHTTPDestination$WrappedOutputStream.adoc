@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/AbstractHTTPDestination$WrappedOutputStream.class
+
+ - link:AbstractHTTPDestination$WrappedOutputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/expressions/spatial/SpatialParameters$QueryType.class
+
+ - link:SpatialParameters$QueryType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/ElementForeignKey.class
+
+ - link:ElementForeignKey-asmified.java[Asmified]
+
+== References
+

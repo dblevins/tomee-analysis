@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/openshift/OpenshiftMySQLPropertiesProvider.class
+
+ - link:OpenshiftMySQLPropertiesProvider-asmified.java[Asmified]
+
+== References
+

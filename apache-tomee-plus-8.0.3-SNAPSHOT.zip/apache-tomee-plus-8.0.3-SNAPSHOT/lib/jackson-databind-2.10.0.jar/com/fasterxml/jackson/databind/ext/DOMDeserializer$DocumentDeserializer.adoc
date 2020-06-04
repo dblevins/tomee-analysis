@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/DOMDeserializer$DocumentDeserializer.class
+
+ - link:DOMDeserializer$DocumentDeserializer-asmified.java[Asmified]
+
+== References
+

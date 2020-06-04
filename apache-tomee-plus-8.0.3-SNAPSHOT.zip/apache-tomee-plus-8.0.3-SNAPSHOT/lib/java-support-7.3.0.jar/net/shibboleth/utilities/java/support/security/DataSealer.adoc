@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/security/DataSealer.class
+
+ - link:DataSealer-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 16
+ - javax.annotation.Nullable - 1

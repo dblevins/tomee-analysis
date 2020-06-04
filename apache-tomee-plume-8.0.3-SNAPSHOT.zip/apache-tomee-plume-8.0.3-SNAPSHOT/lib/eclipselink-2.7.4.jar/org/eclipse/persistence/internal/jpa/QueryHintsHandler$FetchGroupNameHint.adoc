@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$FetchGroupNameHint.class
+
+ - link:QueryHintsHandler$FetchGroupNameHint-asmified.java[Asmified]
+
+== References
+

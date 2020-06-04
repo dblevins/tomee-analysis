@@ -1,0 +1,7 @@
+= javax/jms/JMSDestinationDefinitions.class
+
+ - link:JMSDestinationDefinitions-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSDestinationDefinition - 1

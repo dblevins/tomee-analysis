@@ -1,0 +1,9 @@
+= javax/ws/rs/core/Variant.class
+
+ - link:Variant-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 32
+ - javax.ws.rs.core.Variant - 23
+ - javax.ws.rs.core.Variant$VariantListBuilder - 15

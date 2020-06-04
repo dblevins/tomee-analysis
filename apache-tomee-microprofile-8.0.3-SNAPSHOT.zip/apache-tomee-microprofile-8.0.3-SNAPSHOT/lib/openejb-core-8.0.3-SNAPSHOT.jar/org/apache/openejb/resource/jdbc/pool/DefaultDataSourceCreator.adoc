@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/pool/DefaultDataSourceCreator.class
+
+ - link:DefaultDataSourceCreator-asmified.java[Asmified]
+
+== References
+

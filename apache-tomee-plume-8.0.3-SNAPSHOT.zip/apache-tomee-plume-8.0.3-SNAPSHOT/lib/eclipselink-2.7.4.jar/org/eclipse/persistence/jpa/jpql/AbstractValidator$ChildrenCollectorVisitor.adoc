@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractValidator$ChildrenCollectorVisitor.class
+
+ - link:AbstractValidator$ChildrenCollectorVisitor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/AbstractJDBCListener.class
+
+ - link:AbstractJDBCListener-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,21 @@
+= org/apache/myfaces/lifecycle/DefaultRestoreViewSupport.class
+
+ - link:DefaultRestoreViewSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 53
+ - javax.faces.context.ExternalContext - 21
+ - javax.faces.render.RenderKitFactory - 10
+ - javax.faces.component.visit.VisitContextFactory - 10
+ - javax.faces.application.ViewHandler - 4
+ - javax.faces.application.Application - 4
+ - javax.faces.view.ViewDeclarationLanguage - 3
+ - javax.faces.render.ResponseStateManager - 2
+ - javax.faces.FactoryFinder - 2
+ - javax.faces.component.visit.VisitContext - 2
+ - javax.faces.render.RenderKit - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.component.visit.VisitCallback - 1

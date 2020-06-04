@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/server/was/WebSpherePlatform.class
+
+ - link:WebSpherePlatform-asmified.java[Asmified]
+
+== References
+

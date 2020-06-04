@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/TokenTypeBearing.class
+
+ - link:TokenTypeBearing-asmified.java[Asmified]
+
+== References
+

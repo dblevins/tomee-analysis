@@ -1,0 +1,6 @@
+= org/apache/naming/ResourceRef.class
+
+ - link:ResourceRef-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/httpclient/IdleConnectionSweeper.class
+
+ - link:IdleConnectionSweeper-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

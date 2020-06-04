@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/crypto/BouncyCastleInstaller.class
+
+ - link:BouncyCastleInstaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AbstractFieldManager.class
+
+ - link:AbstractFieldManager-asmified.java[Asmified]
+
+== References
+

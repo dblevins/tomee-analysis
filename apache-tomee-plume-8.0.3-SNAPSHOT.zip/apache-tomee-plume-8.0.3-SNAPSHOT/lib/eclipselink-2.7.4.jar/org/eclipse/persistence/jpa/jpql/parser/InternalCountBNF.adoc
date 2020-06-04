@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/InternalCountBNF.class
+
+ - link:InternalCountBNF-asmified.java[Asmified]
+
+== References
+

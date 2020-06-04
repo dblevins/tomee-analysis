@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/CAST6$KeyGen.class
+
+ - link:CAST6$KeyGen-asmified.java[Asmified]
+
+== References
+

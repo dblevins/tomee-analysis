@@ -1,0 +1,6 @@
+= org/apache/commons/daemon/support/DaemonWrapper.class
+
+ - link:DaemonWrapper-asmified.java[Asmified]
+
+== References
+

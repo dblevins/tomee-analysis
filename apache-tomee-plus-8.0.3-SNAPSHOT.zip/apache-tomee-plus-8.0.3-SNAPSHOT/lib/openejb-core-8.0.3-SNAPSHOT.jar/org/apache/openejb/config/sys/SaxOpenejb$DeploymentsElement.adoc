@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/SaxOpenejb$DeploymentsElement.class
+
+ - link:SaxOpenejb$DeploymentsElement-asmified.java[Asmified]
+
+== References
+

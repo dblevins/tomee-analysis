@@ -1,0 +1,6 @@
+= org/apache/catalina/mbeans/JmxRemoteLifecycleListener$RmiClientLocalhostSocketFactory.class
+
+ - link:JmxRemoteLifecycleListener$RmiClientLocalhostSocketFactory-asmified.java[Asmified]
+
+== References
+

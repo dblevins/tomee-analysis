@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/UUIDType4StringSeq.class
+
+ - link:UUIDType4StringSeq-asmified.java[Asmified]
+
+== References
+

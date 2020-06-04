@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.class
+
+ - link:AbstractConfigurableProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.core.NoContentException - 3
+ - javax.ws.rs.core.HttpHeaders - 2

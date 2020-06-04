@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/reflect/Lister$IDREFSIterator.class
+
+ - link:Lister$IDREFSIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 2

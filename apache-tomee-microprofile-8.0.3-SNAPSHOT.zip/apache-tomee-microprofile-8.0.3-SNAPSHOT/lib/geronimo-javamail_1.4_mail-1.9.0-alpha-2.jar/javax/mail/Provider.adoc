@@ -1,0 +1,7 @@
+= javax/mail/Provider.class
+
+ - link:Provider-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Provider$Type - 6

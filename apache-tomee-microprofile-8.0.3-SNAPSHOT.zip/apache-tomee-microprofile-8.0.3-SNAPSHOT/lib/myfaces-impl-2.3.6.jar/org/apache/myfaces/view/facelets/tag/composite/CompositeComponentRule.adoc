@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/tag/composite/CompositeComponentRule.class
+
+ - link:CompositeComponentRule-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 7
+ - javax.faces.view.facelets.MetadataTarget - 7
+ - javax.faces.view.facelets.MetaRule - 2
+ - javax.faces.view.facelets.Metadata - 1
+ - javax.faces.component.UIComponent - 1

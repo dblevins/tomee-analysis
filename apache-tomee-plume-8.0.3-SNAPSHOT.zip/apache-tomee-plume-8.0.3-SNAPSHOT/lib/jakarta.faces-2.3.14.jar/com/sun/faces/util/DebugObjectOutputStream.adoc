@@ -1,0 +1,6 @@
+= com/sun/faces/util/DebugObjectOutputStream.class
+
+ - link:DebugObjectOutputStream-asmified.java[Asmified]
+
+== References
+

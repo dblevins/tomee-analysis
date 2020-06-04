@@ -1,0 +1,11 @@
+= org/apache/batchee/container/services/factory/CDIBatchArtifactFactory.class
+
+ - link:CDIBatchArtifactFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 9
+ - javax.enterprise.inject.spi.Bean - 6
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.context.spi.Contextual - 1

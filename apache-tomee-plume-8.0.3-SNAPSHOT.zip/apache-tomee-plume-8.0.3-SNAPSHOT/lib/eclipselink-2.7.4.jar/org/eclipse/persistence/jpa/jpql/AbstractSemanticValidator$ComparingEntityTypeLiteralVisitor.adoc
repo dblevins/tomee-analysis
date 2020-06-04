@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractSemanticValidator$ComparingEntityTypeLiteralVisitor.class
+
+ - link:AbstractSemanticValidator$ComparingEntityTypeLiteralVisitor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/serial/SerialFactory.class
+
+ - link:SerialFactory-asmified.java[Asmified]
+
+== References
+

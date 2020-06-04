@@ -1,0 +1,8 @@
+= org/opensaml/security/x509/impl/StaticPKIXValidationInformationResolver.class
+
+ - link:StaticPKIXValidationInformationResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 11
+ - javax.annotation.Nonnull - 3

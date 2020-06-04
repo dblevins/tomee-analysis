@@ -1,0 +1,6 @@
+= org/apache/cxf/io/CachedWriterCallback.class
+
+ - link:CachedWriterCallback-asmified.java[Asmified]
+
+== References
+

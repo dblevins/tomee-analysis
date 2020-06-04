@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/input/XMLSecurityInputProcessor$InternalReplayProcessor.class
+
+ - link:XMLSecurityInputProcessor$InternalReplayProcessor-asmified.java[Asmified]
+
+== References
+

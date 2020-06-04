@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/webapp/webxml/FilterMapping.class
+
+ - link:FilterMapping-asmified.java[Asmified]
+
+== References
+

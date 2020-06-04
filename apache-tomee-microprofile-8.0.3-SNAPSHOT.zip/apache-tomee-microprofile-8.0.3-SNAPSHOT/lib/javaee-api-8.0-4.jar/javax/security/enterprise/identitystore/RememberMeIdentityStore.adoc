@@ -1,0 +1,9 @@
+= javax/security/enterprise/identitystore/RememberMeIdentityStore.class
+
+ - link:RememberMeIdentityStore-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.identitystore.CredentialValidationResult - 1
+ - javax.security.enterprise.credential.RememberMeCredential - 1
+ - javax.security.enterprise.CallerPrincipal - 1

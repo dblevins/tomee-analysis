@@ -1,0 +1,145 @@
+package asm.org.apache.openejb.testing;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ClassesDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_ANNOTATION | ACC_ABSTRACT | ACC_INTERFACE, "org/apache/openejb/testing/Classes", null, "java/lang/Object", new String[] { "java/lang/annotation/Annotation" });
+
+{
+annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Target;", true);
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray("value");
+annotationVisitor1.visitEnum(null, "Ljava/lang/annotation/ElementType;", "METHOD");
+annotationVisitor1.visitEnum(null, "Ljava/lang/annotation/ElementType;", "TYPE");
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+{
+annotationVisitor0 = classWriter.visitAnnotation("Ljava/lang/annotation/Retention;", true);
+annotationVisitor0.visitEnum("value", "Ljava/lang/annotation/RetentionPolicy;", "RUNTIME");
+annotationVisitor0.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "value", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<*>;", null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray(null);
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "excludes", "()[Ljava/lang/String;", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray(null);
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cdiInterceptors", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<*>;", null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray(null);
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cdiDecorators", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<*>;", null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray(null);
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cdiAlternatives", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<*>;", null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray(null);
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cdiStereotypes", "()[Ljava/lang/Class;", "()[Ljava/lang/Class<*>;", null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+{
+AnnotationVisitor annotationVisitor1 = annotationVisitor0.visitArray(null);
+annotationVisitor1.visitEnd();
+}
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "cdi", "()Z", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+annotationVisitor0.visit(null, Boolean.FALSE);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "innerClassesAsBean", "()Z", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+annotationVisitor0.visit(null, Boolean.FALSE);
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_ABSTRACT, "context", "()Ljava/lang/String;", null, null);
+{
+annotationVisitor0 = methodVisitor.visitAnnotationDefault();
+annotationVisitor0.visit(null, "openejb");
+annotationVisitor0.visitEnd();
+}
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

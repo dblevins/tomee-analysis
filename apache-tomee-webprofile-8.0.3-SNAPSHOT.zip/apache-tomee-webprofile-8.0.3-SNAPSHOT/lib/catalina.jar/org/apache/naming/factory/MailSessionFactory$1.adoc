@@ -1,0 +1,9 @@
+= org/apache/naming/factory/MailSessionFactory$1.class
+
+ - link:MailSessionFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Session - 5
+ - javax.mail.PasswordAuthentication - 3
+ - javax.mail.Authenticator - 2

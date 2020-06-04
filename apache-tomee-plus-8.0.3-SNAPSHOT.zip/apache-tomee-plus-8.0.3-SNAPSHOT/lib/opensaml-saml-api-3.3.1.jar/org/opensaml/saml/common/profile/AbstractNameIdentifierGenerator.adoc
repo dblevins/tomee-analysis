@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/profile/AbstractNameIdentifierGenerator.class
+
+ - link:AbstractNameIdentifierGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 22
+ - javax.annotation.Nonnull - 9

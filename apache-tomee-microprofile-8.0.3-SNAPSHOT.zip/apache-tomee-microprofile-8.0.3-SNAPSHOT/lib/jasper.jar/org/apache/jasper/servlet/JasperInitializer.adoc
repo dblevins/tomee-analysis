@@ -1,0 +1,10 @@
+= org/apache/jasper/servlet/JasperInitializer.class
+
+ - link:JasperInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 14
+ - javax.servlet.jsp.JspFactory - 4
+ - javax.servlet.ServletException - 3
+ - javax.servlet.ServletContainerInitializer - 1

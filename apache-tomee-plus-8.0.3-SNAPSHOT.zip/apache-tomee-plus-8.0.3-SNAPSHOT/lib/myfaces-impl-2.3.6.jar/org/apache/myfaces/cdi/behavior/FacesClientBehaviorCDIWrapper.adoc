@@ -1,0 +1,16 @@
+= org/apache/myfaces/cdi/behavior/FacesClientBehaviorCDIWrapper.class
+
+ - link:FacesClientBehaviorCDIWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.ClientBehavior - 19
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.event.BehaviorEvent - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.faces.component.behavior.ClientBehaviorContext - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.behavior.ClientBehaviorHint - 1
+ - javax.faces.FacesWrapper - 1
+ - javax.faces.component.PartialStateHolder - 1

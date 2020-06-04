@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/validation/JAXRSParameterNameProvider.class
+
+ - link:JAXRSParameterNameProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ParameterNameProvider - 1

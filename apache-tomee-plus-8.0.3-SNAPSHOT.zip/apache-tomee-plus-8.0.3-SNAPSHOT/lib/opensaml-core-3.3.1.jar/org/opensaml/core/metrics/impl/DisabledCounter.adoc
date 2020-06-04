@@ -1,0 +1,6 @@
+= org/opensaml/core/metrics/impl/DisabledCounter.class
+
+ - link:DisabledCounter-asmified.java[Asmified]
+
+== References
+

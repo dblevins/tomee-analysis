@@ -1,0 +1,10 @@
+= org/apache/openejb/assembler/classic/PersistenceBuilder.class
+
+ - link:PersistenceBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SharedCacheMode - 5
+ - javax.persistence.ValidationMode - 5
+ - javax.persistence.spi.PersistenceUnitTransactionType - 5
+ - javax.validation.ValidatorFactory - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/java$util$PriorityQueue$proxy.class
+
+ - link:java$util$PriorityQueue$proxy-asmified.java[Asmified]
+
+== References
+

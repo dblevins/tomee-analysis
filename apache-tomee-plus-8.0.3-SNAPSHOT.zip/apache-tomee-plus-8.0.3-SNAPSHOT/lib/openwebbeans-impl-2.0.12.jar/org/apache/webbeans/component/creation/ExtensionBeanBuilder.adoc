@@ -1,0 +1,7 @@
+= org/apache/webbeans/component/creation/ExtensionBeanBuilder.class
+
+ - link:ExtensionBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 7

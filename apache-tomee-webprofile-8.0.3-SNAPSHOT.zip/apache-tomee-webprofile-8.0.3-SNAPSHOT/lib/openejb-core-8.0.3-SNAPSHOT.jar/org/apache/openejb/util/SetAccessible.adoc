@@ -1,0 +1,6 @@
+= org/apache/openejb/util/SetAccessible.class
+
+ - link:SetAccessible-asmified.java[Asmified]
+
+== References
+

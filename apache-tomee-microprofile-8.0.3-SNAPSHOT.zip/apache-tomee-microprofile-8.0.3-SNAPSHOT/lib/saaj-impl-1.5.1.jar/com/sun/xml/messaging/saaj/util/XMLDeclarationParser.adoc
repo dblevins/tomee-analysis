@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/XMLDeclarationParser.class
+
+ - link:XMLDeclarationParser-asmified.java[Asmified]
+
+== References
+

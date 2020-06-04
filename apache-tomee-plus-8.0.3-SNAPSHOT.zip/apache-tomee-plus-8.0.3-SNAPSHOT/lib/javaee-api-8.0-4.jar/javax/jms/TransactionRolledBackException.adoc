@@ -1,0 +1,8 @@
+= javax/jms/TransactionRolledBackException.class
+
+ - link:TransactionRolledBackException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.TransactionRolledBackException - 1

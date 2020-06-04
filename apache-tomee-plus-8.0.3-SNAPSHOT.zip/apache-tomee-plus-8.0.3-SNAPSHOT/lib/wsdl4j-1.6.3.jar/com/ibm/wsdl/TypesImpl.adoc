@@ -1,0 +1,6 @@
+= com/ibm/wsdl/TypesImpl.class
+
+ - link:TypesImpl-asmified.java[Asmified]
+
+== References
+

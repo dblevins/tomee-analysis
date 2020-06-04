@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/CompoundExpression.class
+
+ - link:CompoundExpression-asmified.java[Asmified]
+
+== References
+

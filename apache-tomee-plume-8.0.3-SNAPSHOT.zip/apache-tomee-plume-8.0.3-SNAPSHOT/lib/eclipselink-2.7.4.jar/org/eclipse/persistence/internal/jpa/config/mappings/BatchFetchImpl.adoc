@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/mappings/BatchFetchImpl.class
+
+ - link:BatchFetchImpl-asmified.java[Asmified]
+
+== References
+

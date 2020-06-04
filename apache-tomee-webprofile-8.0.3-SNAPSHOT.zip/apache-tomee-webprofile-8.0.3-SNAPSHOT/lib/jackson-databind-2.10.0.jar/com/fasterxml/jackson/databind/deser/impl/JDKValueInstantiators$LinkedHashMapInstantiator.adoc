@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/JDKValueInstantiators$LinkedHashMapInstantiator.class
+
+ - link:JDKValueInstantiators$LinkedHashMapInstantiator-asmified.java[Asmified]
+
+== References
+

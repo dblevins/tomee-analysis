@@ -1,0 +1,11 @@
+= org/apache/webbeans/inject/OWBInjector.class
+
+ - link:OWBInjector-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.inject.spi.BeanManager - 4
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.context.spi.Contextual - 1

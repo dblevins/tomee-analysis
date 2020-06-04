@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/client/JaxrsClientCallback$JaxrsResponseFuture.class
+
+ - link:JaxrsClientCallback$JaxrsResponseFuture-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.InvocationCallback - 6

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/ChoiceObjectMapping.class
+
+ - link:ChoiceObjectMapping-asmified.java[Asmified]
+
+== References
+

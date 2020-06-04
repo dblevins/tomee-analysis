@@ -1,0 +1,7 @@
+= javax/batch/operations/JobExecutionIsRunningException.class
+
+ - link:JobExecutionIsRunningException-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.operations.BatchRuntimeException - 5

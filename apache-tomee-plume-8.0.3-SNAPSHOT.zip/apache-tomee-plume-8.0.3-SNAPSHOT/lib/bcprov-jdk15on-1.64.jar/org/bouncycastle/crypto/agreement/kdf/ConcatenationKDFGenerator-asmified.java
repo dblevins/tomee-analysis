@@ -1,0 +1,287 @@
+package asm.org.bouncycastle.crypto.agreement.kdf;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ConcatenationKDFGeneratorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", null, "java/lang/Object", new String[] { "org/bouncycastle/crypto/DerivationFunction" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "digest", "Lorg/bouncycastle/crypto/Digest;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "shared", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "otherInfo", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "hLen", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/bouncycastle/crypto/Digest;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "getDigestSize", "()I", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "hLen", "I");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "init", "(Lorg/bouncycastle/crypto/DerivationParameters;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/bouncycastle/crypto/params/KDFParameters");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/params/KDFParameters");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/KDFParameters", "getSharedSecret", "()[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "shared", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/params/KDFParameters", "getIV", "()[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "otherInfo", "[B");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("KDF parameters required for generator");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDigest", "()Lorg/bouncycastle/crypto/Digest;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "ItoOSP", "(I[B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 24);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IUSHR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generateBytes", "([BII)I", null, new String[] { "org/bouncycastle/crypto/DataLengthException", "java/lang/IllegalArgumentException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/OutputLengthException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("output buffer too small");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/OutputLengthException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "hLen", "I");
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitInsn(ICONST_4);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "reset", "()V", true);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "hLen", "I");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
+Label label2 = new Label();
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "ItoOSP", "(I[B)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "update", "([BII)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "shared", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "shared", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "update", "([BII)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "otherInfo", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "otherInfo", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "update", "([BII)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "doFinal", "([BI)I", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "hLen", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "hLen", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitIincInsn(6, 1);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "hLen", "I");
+methodVisitor.visitInsn(IDIV);
+methodVisitor.visitJumpInsn(IF_ICMPLT, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "ItoOSP", "(I[B)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "update", "([BII)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "shared", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "shared", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "update", "([BII)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "otherInfo", "[B");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "otherInfo", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "update", "([BII)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/agreement/kdf/ConcatenationKDFGenerator", "digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/Digest", "doFinal", "([BI)I", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 8);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,8 @@
+= org/apache/cxf/configuration/security/CombinatorType.class
+
+ - link:CombinatorType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlEnum - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/XMLCompositeDirectCollectionMappingNodeValue.class
+
+ - link:XMLCompositeDirectCollectionMappingNodeValue-asmified.java[Asmified]
+
+== References
+

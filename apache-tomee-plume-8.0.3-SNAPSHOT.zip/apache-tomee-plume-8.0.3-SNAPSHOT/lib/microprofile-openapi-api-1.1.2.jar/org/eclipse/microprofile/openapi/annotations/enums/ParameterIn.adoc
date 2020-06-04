@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/enums/ParameterIn.class
+
+ - link:ParameterIn-asmified.java[Asmified]
+
+== References
+

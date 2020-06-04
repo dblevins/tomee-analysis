@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/XMLAnyAttributeMappingNodeValue.class
+
+ - link:XMLAnyAttributeMappingNodeValue-asmified.java[Asmified]
+
+== References
+

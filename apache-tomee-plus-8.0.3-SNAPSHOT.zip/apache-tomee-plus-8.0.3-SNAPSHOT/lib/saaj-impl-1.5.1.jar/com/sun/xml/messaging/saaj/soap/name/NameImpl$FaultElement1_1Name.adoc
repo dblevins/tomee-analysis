@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/name/NameImpl$FaultElement1_1Name.class
+
+ - link:NameImpl$FaultElement1_1Name-asmified.java[Asmified]
+
+== References
+

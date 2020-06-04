@@ -1,0 +1,8 @@
+= org/apache/webbeans/ejb/common/component/EjbBeanBuilder$1.class
+
+ - link:EjbBeanBuilder$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2

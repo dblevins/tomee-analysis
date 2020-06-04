@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/annotations/media/Schema.class
+
+ - link:Schema-asmified.java[Asmified]
+
+== References
+

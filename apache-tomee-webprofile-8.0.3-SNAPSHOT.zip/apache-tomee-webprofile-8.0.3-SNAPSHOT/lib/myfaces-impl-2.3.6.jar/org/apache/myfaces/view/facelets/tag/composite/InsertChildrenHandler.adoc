@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/composite/InsertChildrenHandler.class
+
+ - link:InsertChildrenHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.facelets.FaceletContext - 2

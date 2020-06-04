@@ -1,0 +1,7 @@
+= javax/validation/constraints/Email$List.class
+
+ - link:Email$List-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Email - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/IvmContext$MyBindingEnumeration.class
+
+ - link:IvmContext$MyBindingEnumeration-asmified.java[Asmified]
+
+== References
+

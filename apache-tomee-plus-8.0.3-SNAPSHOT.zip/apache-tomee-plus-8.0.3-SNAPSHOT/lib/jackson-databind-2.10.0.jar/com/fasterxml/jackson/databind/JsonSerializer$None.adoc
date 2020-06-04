@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/JsonSerializer$None.class
+
+ - link:JsonSerializer$None-asmified.java[Asmified]
+
+== References
+

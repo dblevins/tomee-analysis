@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/packaging/mime/internet/HeaderTokenizer$Token.class
+
+ - link:HeaderTokenizer$Token-asmified.java[Asmified]
+
+== References
+

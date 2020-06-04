@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/Union.class
+
+ - link:Union-asmified.java[Asmified]
+
+== References
+

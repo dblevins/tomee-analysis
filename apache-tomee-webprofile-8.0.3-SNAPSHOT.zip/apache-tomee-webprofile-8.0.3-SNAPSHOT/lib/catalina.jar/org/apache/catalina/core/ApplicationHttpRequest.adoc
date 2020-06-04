@@ -1,0 +1,16 @@
+= org/apache/catalina/core/ApplicationHttpRequest.class
+
+ - link:ApplicationHttpRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 14
+ - javax.servlet.http.HttpServletRequest - 14
+ - javax.servlet.http.HttpSession - 11
+ - javax.servlet.DispatcherType - 9
+ - javax.servlet.ServletContext - 9
+ - javax.servlet.http.HttpServletMapping - 8
+ - javax.servlet.http.HttpServletRequestWrapper - 7
+ - javax.servlet.RequestDispatcher - 3
+ - javax.servlet.ServletRequestWrapper - 3
+ - javax.servlet.http.PushBuilder - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/LowerNode.class
+
+ - link:LowerNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ServerMetaData.class
+
+ - link:ServerMetaData-asmified.java[Asmified]
+
+== References
+

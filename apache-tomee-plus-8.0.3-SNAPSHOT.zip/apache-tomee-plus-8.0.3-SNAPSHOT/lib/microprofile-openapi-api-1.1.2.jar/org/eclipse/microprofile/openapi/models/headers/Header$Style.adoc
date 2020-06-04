@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/headers/Header$Style.class
+
+ - link:Header$Style-asmified.java[Asmified]
+
+== References
+

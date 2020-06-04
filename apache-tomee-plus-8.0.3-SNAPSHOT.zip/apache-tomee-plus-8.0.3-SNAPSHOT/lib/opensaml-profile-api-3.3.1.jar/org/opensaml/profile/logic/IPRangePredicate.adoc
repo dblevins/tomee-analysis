@@ -1,0 +1,9 @@
+= org/opensaml/profile/logic/IPRangePredicate.class
+
+ - link:IPRangePredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 7
+ - javax.annotation.Nonnull - 4
+ - javax.annotation.Nullable - 3

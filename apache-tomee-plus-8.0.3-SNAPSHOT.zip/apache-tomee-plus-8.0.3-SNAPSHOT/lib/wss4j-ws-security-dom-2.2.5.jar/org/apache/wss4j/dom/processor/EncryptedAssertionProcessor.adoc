@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/processor/EncryptedAssertionProcessor.class
+
+ - link:EncryptedAssertionProcessor-asmified.java[Asmified]
+
+== References
+

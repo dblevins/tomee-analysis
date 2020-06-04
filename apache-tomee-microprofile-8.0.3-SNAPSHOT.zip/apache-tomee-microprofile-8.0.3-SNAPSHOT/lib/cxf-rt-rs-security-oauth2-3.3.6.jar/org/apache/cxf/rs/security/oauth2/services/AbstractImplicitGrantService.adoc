@@ -1,0 +1,8 @@
+= org/apache/cxf/rs/security/oauth2/services/AbstractImplicitGrantService.class
+
+ - link:AbstractImplicitGrantService-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 7
+ - javax.ws.rs.core.Response$ResponseBuilder - 4

@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/AbstractObservable.class
+
+ - link:AbstractObservable-asmified.java[Asmified]
+
+== References
+

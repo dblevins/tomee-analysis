@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/buf/UEncoder$SafeCharsSet.class
+
+ - link:UEncoder$SafeCharsSet-asmified.java[Asmified]
+
+== References
+

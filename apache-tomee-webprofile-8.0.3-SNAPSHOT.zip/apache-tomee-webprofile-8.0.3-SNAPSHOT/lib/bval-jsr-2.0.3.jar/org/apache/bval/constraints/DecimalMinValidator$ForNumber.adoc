@@ -1,0 +1,8 @@
+= org/apache/bval/constraints/DecimalMinValidator$ForNumber.class
+
+ - link:DecimalMinValidator$ForNumber-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.constraints.DecimalMin - 2

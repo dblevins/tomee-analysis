@@ -1,0 +1,9 @@
+= javax/xml/registry/infomodel/AuditableEvent.class
+
+ - link:AuditableEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 4
+ - javax.xml.registry.infomodel.RegistryObject - 2
+ - javax.xml.registry.infomodel.User - 1

@@ -1,0 +1,9 @@
+= org/apache/webbeans/context/control/RequestContextControllerBean.class
+
+ - link:RequestContextControllerBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.control.RequestContextController - 4
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Producer - 1

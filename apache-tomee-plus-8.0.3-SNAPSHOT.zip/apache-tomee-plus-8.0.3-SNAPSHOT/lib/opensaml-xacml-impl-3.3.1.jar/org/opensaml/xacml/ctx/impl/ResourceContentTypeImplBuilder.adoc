@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/ResourceContentTypeImplBuilder.class
+
+ - link:ResourceContentTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

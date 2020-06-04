@@ -1,0 +1,10 @@
+= org/apache/tomee/microprofile/jwt/bval/ClassValidationData.class
+
+ - link:ClassValidationData-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.Scope - 2
+ - javax.validation.ConstraintDefinitionException - 2
+ - javax.validation.Validation - 1
+ - javax.validation.ValidatorFactory - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLEventReaderInputSource.class
+
+ - link:XMLEventReaderInputSource-asmified.java[Asmified]
+
+== References
+

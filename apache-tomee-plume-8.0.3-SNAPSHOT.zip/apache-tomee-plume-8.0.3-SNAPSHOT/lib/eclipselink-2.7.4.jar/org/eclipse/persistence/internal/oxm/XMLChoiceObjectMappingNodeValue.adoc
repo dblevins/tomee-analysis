@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/XMLChoiceObjectMappingNodeValue.class
+
+ - link:XMLChoiceObjectMappingNodeValue-asmified.java[Asmified]
+
+== References
+

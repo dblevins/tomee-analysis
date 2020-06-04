@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedJDBCStoreManager$Flusher.class
+
+ - link:DistributedJDBCStoreManager$Flusher-asmified.java[Asmified]
+
+== References
+

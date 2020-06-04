@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/compiler/CategorizedProblem.class
+
+ - link:CategorizedProblem-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/PopLinkWitnessV2.class
+
+ - link:PopLinkWitnessV2-asmified.java[Asmified]
+
+== References
+

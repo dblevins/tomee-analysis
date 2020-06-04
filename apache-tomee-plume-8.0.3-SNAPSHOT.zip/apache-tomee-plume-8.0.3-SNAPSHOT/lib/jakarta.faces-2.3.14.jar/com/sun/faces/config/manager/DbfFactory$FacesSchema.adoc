@@ -1,0 +1,6 @@
+= com/sun/faces/config/manager/DbfFactory$FacesSchema.class
+
+ - link:DbfFactory$FacesSchema-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,188 @@
+package asm.org.apache.wss4j.stax.impl.processor.input;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class SecurityContextTokenInputHandlerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler", null, "org/apache/xml/security/stax/ext/AbstractInputSecurityHeaderHandler", null);
+
+classWriter.visitInnerClass("org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler$2", null, null, 0);
+
+classWriter.visitInnerClass("org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler$1", null, null, 0);
+
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/stax/ext/AbstractInputSecurityHeaderHandler", "<init>", "()V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "handle", "(Lorg/apache/xml/security/stax/ext/InputProcessorChain;Lorg/apache/xml/security/stax/ext/XMLSecurityProperties;Ljava/util/Deque;Ljava/lang/Integer;)V", "(Lorg/apache/xml/security/stax/ext/InputProcessorChain;Lorg/apache/xml/security/stax/ext/XMLSecurityProperties;Ljava/util/Deque<Lorg/apache/xml/security/stax/ext/stax/XMLSecEvent;>;Ljava/lang/Integer;)V", new String[] { "org/apache/xml/security/exceptions/XMLSecurityException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Integer", "intValue", "()I", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler", "parseStructure", "(Ljava/util/Deque;ILorg/apache/xml/security/stax/ext/XMLSecurityProperties;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/xml/bind/JAXBElement");
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getValue", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType", "getId", "()Ljava/lang/String;", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xml/security/stax/impl/util/IDGenerator", "generateID", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType", "setId", "(Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/xml/bind/JAXBElement", "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "javax/xml/namespace/QName");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getNamespaceURI", "()Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/wss4j/stax/ext/WSSConstants", "TAG_WSC0502_IDENTIFIER", "Ljavax/xml/namespace/QName;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/namespace/QName", "getLocalPart", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/xml/namespace/QName", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType", "getAny", "()Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xml/security/stax/ext/XMLSecurityUtils", "getQNameType", "(Ljava/util/List;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "java/lang/String");
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/xml/security/stax/ext/InputProcessorChain", "getSecurityContext", "()Lorg/apache/xml/security/stax/ext/InboundSecurityContext;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/stax/ext/WSInboundSecurityContext");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/stax/ext/WSSSecurityProperties");
+methodVisitor.visitVarInsn(ASTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Integer", "intValue", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler", "getResponsibleXMLSecEvents", "(Ljava/util/Deque;I)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler", "getElementPath", "(Ljava/util/Deque;)Ljava/util/List;", false);
+methodVisitor.visitVarInsn(ASTORE, 12);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/stax/validate/TokenContext");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 12);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/stax/validate/TokenContext", "<init>", "(Lorg/apache/wss4j/stax/ext/WSSSecurityProperties;Lorg/apache/wss4j/stax/ext/WSInboundSecurityContext;Ljava/util/List;Ljava/util/List;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 13);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/xml/bind/JAXBElement", "getName", "()Ljavax/xml/namespace/QName;", false);
+methodVisitor.visitVarInsn(ASTORE, 14);
+methodVisitor.visitVarInsn(ALOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 14);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/stax/ext/WSSSecurityProperties", "getValidator", "(Ljavax/xml/namespace/QName;)Lorg/apache/wss4j/stax/validate/Validator;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/wss4j/stax/validate/SecurityContextTokenValidator");
+methodVisitor.visitVarInsn(ASTORE, 15);
+methodVisitor.visitVarInsn(ALOAD, 15);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/stax/validate/SecurityContextTokenValidatorImpl");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/stax/validate/SecurityContextTokenValidatorImpl", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 15);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 16, new Object[] {"org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler", "org/apache/xml/security/stax/ext/InputProcessorChain", "org/apache/xml/security/stax/ext/XMLSecurityProperties", "java/util/Deque", "java/lang/Integer", "javax/xml/bind/JAXBElement", "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType", "javax/xml/namespace/QName", "java/lang/String", "org/apache/wss4j/stax/ext/WSInboundSecurityContext", "org/apache/wss4j/stax/ext/WSSSecurityProperties", "java/util/List", "java/util/List", "org/apache/wss4j/stax/validate/TokenContext", "javax/xml/namespace/QName", "org/apache/wss4j/stax/validate/SecurityContextTokenValidator"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 15);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 13);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/stax/validate/SecurityContextTokenValidator", "validate", "(Lorg/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType;Ljava/lang/String;Lorg/apache/wss4j/stax/validate/TokenContext;)Lorg/apache/xml/security/stax/securityToken/InboundSecurityToken;", true);
+methodVisitor.visitVarInsn(ASTORE, 16);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler$1");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 16);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler$1", "<init>", "(Lorg/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler;Lorg/apache/xml/security/stax/securityToken/InboundSecurityToken;Lorg/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 17);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType", "getId", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 17);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/stax/ext/WSInboundSecurityContext", "registerSecurityTokenProvider", "(Ljava/lang/String;Lorg/apache/xml/security/stax/securityToken/SecurityTokenProvider;)V", true);
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler$2");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 16);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler$2", "<init>", "(Lorg/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler;Lorg/apache/xml/security/stax/securityToken/InboundSecurityToken;Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 18);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 18);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/stax/ext/WSInboundSecurityContext", "registerSecurityTokenProvider", "(Ljava/lang/String;Lorg/apache/xml/security/stax/securityToken/SecurityTokenProvider;)V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 17);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler", "createTokenSecurityEvent", "(Lorg/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType;Lorg/apache/xml/security/stax/securityToken/SecurityTokenProvider;)Lorg/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent;", false);
+methodVisitor.visitVarInsn(ASTORE, 19);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 19);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/wss4j/stax/ext/WSInboundSecurityContext", "registerSecurityEvent", "(Lorg/apache/xml/security/stax/securityEvent/SecurityEvent;)V", true);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(6, 20);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "createTokenSecurityEvent", "(Lorg/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType;Lorg/apache/xml/security/stax/securityToken/SecurityTokenProvider;)Lorg/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent;", "(Lorg/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType;Lorg/apache/xml/security/stax/securityToken/SecurityTokenProvider<Lorg/apache/xml/security/stax/securityToken/InboundSecurityToken;>;)Lorg/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent;", new String[] { "org/apache/xml/security/exceptions/XMLSecurityException" });
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/xml/security/stax/securityToken/SecurityTokenProvider", "getSecurityToken", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/xml/security/stax/securityToken/SecurityToken");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent", "setSecurityToken", "(Lorg/apache/xml/security/stax/securityToken/SecurityToken;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/binding/wssc/AbstractSecurityContextTokenType", "getId", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/wss4j/stax/securityEvent/SecurityContextTokenSecurityEvent", "setCorrelationID", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 4);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

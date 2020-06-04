@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/DomToXMLStreamWriter.class
+
+ - link:DomToXMLStreamWriter-asmified.java[Asmified]
+
+== References
+

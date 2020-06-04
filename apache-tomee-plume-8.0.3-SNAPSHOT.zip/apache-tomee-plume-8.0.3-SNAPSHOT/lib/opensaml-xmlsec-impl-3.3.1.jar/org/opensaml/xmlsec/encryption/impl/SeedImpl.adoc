@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/SeedImpl.class
+
+ - link:SeedImpl-asmified.java[Asmified]
+
+== References
+

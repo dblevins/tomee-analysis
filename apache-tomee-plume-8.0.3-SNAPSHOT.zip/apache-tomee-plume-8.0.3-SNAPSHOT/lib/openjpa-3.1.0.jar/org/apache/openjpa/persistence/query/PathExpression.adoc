@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/PathExpression.class
+
+ - link:PathExpression-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/evt/DefaultEventAllocator.class
+
+ - link:DefaultEventAllocator-asmified.java[Asmified]
+
+== References
+

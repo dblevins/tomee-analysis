@@ -1,0 +1,6 @@
+= org/apache/cxf/service/factory/SimpleMethodDispatcher.class
+
+ - link:SimpleMethodDispatcher-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/PropertyMetadata.class
+
+ - link:PropertyMetadata-asmified.java[Asmified]
+
+== References
+

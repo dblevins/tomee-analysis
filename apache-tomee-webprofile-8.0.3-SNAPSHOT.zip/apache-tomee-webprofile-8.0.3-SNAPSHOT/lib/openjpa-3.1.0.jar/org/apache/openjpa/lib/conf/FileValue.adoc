@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/conf/FileValue.class
+
+ - link:FileValue-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/activation/registries/LogSupport.class
+
+ - link:LogSupport-asmified.java[Asmified]
+
+== References
+

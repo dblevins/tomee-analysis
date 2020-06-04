@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/mappings/OneToManyImpl.class
+
+ - link:OneToManyImpl-asmified.java[Asmified]
+
+== References
+

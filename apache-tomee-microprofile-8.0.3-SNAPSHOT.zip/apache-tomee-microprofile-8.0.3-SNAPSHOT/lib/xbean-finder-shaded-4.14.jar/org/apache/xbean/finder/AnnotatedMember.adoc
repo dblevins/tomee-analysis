@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/AnnotatedMember.class
+
+ - link:AnnotatedMember-asmified.java[Asmified]
+
+== References
+

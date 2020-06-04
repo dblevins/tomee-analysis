@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/impl/DefaultAnnotationProviderFactory.class
+
+ - link:DefaultAnnotationProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 14
+ - javax.faces.FacesException - 2

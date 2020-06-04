@@ -1,0 +1,9 @@
+= org/apache/openejb/core/transaction/TxMandatory.class
+
+ - link:TxMandatory-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 6
+ - javax.transaction.TransactionManager - 3
+ - javax.transaction.TransactionRequiredException - 2

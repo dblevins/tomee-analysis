@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/ext/multipart/AttachmentBuilder.class
+
+ - link:AttachmentBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 14
+ - javax.activation.DataHandler - 5

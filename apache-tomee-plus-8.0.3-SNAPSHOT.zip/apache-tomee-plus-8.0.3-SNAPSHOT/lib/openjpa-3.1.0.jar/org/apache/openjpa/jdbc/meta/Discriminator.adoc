@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/Discriminator.class
+
+ - link:Discriminator-asmified.java[Asmified]
+
+== References
+

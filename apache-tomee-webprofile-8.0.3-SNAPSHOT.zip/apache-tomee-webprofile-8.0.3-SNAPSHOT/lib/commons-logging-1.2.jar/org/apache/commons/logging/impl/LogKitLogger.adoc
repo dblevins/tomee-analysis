@@ -1,0 +1,6 @@
+= org/apache/commons/logging/impl/LogKitLogger.class
+
+ - link:LogKitLogger-asmified.java[Asmified]
+
+== References
+

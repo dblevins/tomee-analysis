@@ -1,0 +1,11 @@
+= org/apache/openejb/core/transaction/SimpleBootstrapContext.class
+
+ - link:SimpleBootstrapContext-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.XATerminator - 9
+ - javax.resource.spi.work.WorkManager - 9
+ - javax.transaction.TransactionSynchronizationRegistry - 3
+ - javax.resource.spi.work.WorkContext - 1
+ - javax.resource.spi.BootstrapContext - 1

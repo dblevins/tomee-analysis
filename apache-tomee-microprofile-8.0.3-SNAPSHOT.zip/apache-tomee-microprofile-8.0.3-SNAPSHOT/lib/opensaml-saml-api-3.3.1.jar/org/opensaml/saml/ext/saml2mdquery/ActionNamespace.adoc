@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdquery/ActionNamespace.class
+
+ - link:ActionNamespace-asmified.java[Asmified]
+
+== References
+

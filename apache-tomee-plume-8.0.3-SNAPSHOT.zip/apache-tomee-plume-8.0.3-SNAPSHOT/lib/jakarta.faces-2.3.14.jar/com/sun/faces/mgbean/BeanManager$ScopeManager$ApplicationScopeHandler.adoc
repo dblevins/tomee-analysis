@@ -1,0 +1,8 @@
+= com/sun/faces/mgbean/BeanManager$ScopeManager$ApplicationScopeHandler.class
+
+ - link:BeanManager$ScopeManager$ApplicationScopeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.context.FacesContext - 8

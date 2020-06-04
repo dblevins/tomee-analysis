@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/SplitMapUtils$WrappedPut.class
+
+ - link:SplitMapUtils$WrappedPut-asmified.java[Asmified]
+
+== References
+

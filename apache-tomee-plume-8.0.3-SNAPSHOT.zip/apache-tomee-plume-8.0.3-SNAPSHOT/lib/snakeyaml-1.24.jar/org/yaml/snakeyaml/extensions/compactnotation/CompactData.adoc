@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/extensions/compactnotation/CompactData.class
+
+ - link:CompactData-asmified.java[Asmified]
+
+== References
+

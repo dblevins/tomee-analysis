@@ -1,0 +1,11 @@
+= org/apache/xml/security/binding/xmlenc11/PBKDF2ParameterType.class
+
+ - link:PBKDF2ParameterType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 4
+ - javax.xml.bind.annotation.XmlSchemaType - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

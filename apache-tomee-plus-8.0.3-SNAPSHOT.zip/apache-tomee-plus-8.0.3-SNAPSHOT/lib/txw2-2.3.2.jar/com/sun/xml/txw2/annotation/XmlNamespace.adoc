@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/annotation/XmlNamespace.class
+
+ - link:XmlNamespace-asmified.java[Asmified]
+
+== References
+

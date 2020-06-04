@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/AbstractTagLibrary$ValidatorConfigWrapper.class
+
+ - link:AbstractTagLibrary$ValidatorConfigWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagConfig - 9
+ - javax.faces.view.facelets.Tag - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.view.facelets.ValidatorConfig - 1

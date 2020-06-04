@@ -1,0 +1,8 @@
+= org/apache/tomcat/util/http/Rfc6265CookieProcessor.class
+
+ - link:Rfc6265CookieProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 10
+ - javax.servlet.http.HttpServletRequest - 2

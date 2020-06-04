@@ -1,0 +1,6 @@
+= javax/interceptor/Interceptor.class
+
+ - link:Interceptor-asmified.java[Asmified]
+
+== References
+

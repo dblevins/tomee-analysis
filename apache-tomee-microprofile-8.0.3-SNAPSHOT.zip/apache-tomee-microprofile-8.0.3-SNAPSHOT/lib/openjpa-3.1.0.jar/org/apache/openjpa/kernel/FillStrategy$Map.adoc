@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/FillStrategy$Map.class
+
+ - link:FillStrategy$Map-asmified.java[Asmified]
+
+== References
+

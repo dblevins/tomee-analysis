@@ -1,0 +1,12 @@
+= com/sun/faces/flow/FlowDiscoveryCDIHelper.class
+
+ - link:FlowDiscoveryCDIHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.flow.builder.FlowBuilderParameter - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.faces.flow.builder.FlowBuilder - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.inject.Named - 1

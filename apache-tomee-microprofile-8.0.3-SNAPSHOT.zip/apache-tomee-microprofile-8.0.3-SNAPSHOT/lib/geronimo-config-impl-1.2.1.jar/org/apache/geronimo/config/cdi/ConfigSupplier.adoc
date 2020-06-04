@@ -1,0 +1,6 @@
+= org/apache/geronimo/config/cdi/ConfigSupplier.class
+
+ - link:ConfigSupplier-asmified.java[Asmified]
+
+== References
+

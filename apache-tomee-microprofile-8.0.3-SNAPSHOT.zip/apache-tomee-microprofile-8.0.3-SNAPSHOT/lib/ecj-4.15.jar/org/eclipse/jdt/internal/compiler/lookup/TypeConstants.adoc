@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/TypeConstants.class
+
+ - link:TypeConstants-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/activemq/command/ActiveMQTempDestination.class
+
+ - link:ActiveMQTempDestination-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

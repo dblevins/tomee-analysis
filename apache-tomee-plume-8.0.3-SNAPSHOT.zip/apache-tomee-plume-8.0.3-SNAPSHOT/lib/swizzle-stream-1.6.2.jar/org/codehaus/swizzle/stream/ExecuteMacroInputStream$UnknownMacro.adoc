@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/ExecuteMacroInputStream$UnknownMacro.class
+
+ - link:ExecuteMacroInputStream$UnknownMacro-asmified.java[Asmified]
+
+== References
+

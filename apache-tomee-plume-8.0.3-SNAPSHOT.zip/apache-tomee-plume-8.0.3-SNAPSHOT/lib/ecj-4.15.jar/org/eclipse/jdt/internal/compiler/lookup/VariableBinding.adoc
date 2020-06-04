@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/VariableBinding.class
+
+ - link:VariableBinding-asmified.java[Asmified]
+
+== References
+

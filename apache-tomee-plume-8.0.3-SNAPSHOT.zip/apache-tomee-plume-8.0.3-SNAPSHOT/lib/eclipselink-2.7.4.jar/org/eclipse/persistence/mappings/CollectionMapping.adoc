@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/CollectionMapping.class
+
+ - link:CollectionMapping-asmified.java[Asmified]
+
+== References
+

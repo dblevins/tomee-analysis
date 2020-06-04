@@ -1,0 +1,6 @@
+= org/apache/commons/digester/xmlrules/DigesterRuleParser$SetPropertiesAliasRule.class
+
+ - link:DigesterRuleParser$SetPropertiesAliasRule-asmified.java[Asmified]
+
+== References
+

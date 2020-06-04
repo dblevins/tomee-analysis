@@ -1,0 +1,7 @@
+= org/opensaml/security/x509/X509SubjectNameCriterion.class
+
+ - link:X509SubjectNameCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

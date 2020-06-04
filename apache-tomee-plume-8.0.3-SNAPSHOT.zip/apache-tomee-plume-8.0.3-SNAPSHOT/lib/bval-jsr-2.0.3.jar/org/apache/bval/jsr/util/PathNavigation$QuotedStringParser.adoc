@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/util/PathNavigation$QuotedStringParser.class
+
+ - link:PathNavigation$QuotedStringParser-asmified.java[Asmified]
+
+== References
+

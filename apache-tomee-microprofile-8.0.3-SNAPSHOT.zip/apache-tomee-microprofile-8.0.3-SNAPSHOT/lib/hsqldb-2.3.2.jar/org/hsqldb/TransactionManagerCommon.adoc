@@ -1,0 +1,6 @@
+= org/hsqldb/TransactionManagerCommon.class
+
+ - link:TransactionManagerCommon-asmified.java[Asmified]
+
+== References
+

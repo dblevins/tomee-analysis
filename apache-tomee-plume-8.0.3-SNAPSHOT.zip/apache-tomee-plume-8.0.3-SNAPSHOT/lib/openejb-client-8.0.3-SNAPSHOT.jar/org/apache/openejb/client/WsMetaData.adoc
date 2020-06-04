@@ -1,0 +1,8 @@
+= org/apache/openejb/client/WsMetaData.class
+
+ - link:WsMetaData-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Service - 12
+ - javax.xml.ws.handler.HandlerResolver - 1

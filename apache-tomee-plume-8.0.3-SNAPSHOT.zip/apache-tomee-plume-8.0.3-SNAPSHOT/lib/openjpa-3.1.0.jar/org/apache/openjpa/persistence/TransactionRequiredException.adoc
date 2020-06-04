@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/TransactionRequiredException.class
+
+ - link:TransactionRequiredException-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TransactionRequiredException - 4

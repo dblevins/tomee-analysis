@@ -1,0 +1,6 @@
+= com/sun/faces/mgbean/ManagedBeanInfo.class
+
+ - link:ManagedBeanInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/jdbc/pool/JDBCXAConnection.class
+
+ - link:JDBCXAConnection-asmified.java[Asmified]
+
+== References
+

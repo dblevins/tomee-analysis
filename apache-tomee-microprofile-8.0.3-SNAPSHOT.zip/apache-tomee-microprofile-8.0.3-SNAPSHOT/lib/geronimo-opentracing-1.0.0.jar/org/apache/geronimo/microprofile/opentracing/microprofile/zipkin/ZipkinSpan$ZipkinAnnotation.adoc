@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/opentracing/microprofile/zipkin/ZipkinSpan$ZipkinAnnotation.class
+
+ - link:ZipkinSpan$ZipkinAnnotation-asmified.java[Asmified]
+
+== References
+

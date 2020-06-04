@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/codegen/ClassDefinition.class
+
+ - link:ClassDefinition-asmified.java[Asmified]
+
+== References
+

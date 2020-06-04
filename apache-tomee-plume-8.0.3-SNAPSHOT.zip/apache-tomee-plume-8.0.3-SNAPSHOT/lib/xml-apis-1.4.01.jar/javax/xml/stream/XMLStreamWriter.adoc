@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLStreamWriter.class
+
+ - link:XMLStreamWriter-asmified.java[Asmified]
+
+== References
+

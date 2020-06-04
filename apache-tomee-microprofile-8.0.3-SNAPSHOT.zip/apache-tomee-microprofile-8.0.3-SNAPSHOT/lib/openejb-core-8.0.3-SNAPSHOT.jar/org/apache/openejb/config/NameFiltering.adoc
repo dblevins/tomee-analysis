@@ -1,0 +1,6 @@
+= org/apache/openejb/config/NameFiltering.class
+
+ - link:NameFiltering-asmified.java[Asmified]
+
+== References
+

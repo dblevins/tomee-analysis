@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/PersistenceEntity.class
+
+ - link:PersistenceEntity-asmified.java[Asmified]
+
+== References
+

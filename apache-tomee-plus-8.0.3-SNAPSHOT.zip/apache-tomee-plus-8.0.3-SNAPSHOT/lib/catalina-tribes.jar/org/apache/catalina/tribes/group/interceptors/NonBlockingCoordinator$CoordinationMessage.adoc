@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/interceptors/NonBlockingCoordinator$CoordinationMessage.class
+
+ - link:NonBlockingCoordinator$CoordinationMessage-asmified.java[Asmified]
+
+== References
+

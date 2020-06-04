@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPPermanentFlagsResponse.class
+
+ - link:IMAPPermanentFlagsResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Flags - 3
+ - javax.mail.MessagingException - 1

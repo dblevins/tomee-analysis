@@ -1,0 +1,6 @@
+= org/apache/xml/security/transforms/params/InclusiveNamespaces.class
+
+ - link:InclusiveNamespaces-asmified.java[Asmified]
+
+== References
+

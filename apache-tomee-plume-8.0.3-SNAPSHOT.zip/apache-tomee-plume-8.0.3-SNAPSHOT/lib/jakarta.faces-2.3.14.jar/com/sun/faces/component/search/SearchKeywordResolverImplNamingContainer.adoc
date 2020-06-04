@@ -1,0 +1,10 @@
+= com/sun/faces/component/search/SearchKeywordResolverImplNamingContainer.class
+
+ - link:SearchKeywordResolverImplNamingContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component.search.SearchKeywordContext - 2
+ - javax.faces.component.NamingContainer - 1
+ - javax.faces.component.search.SearchExpressionContext - 1

@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/persist/XMLObjectLoadSaveManager.class
+
+ - link:XMLObjectLoadSaveManager-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.annotation.Nullable - 1

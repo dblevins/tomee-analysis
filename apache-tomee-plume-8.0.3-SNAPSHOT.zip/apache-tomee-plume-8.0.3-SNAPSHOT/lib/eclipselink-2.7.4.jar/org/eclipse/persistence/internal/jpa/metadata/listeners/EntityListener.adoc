@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/listeners/EntityListener.class
+
+ - link:EntityListener-asmified.java[Asmified]
+
+== References
+

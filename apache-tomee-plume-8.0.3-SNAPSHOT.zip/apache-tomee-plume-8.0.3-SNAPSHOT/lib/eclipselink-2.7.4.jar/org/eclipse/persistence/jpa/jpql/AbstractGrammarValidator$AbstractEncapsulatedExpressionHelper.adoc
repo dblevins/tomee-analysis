@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractGrammarValidator$AbstractEncapsulatedExpressionHelper.class
+
+ - link:AbstractGrammarValidator$AbstractEncapsulatedExpressionHelper-asmified.java[Asmified]
+
+== References
+

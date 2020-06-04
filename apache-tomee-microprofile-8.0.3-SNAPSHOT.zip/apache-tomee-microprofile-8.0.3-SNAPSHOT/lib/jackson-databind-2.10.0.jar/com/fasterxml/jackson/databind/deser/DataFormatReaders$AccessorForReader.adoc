@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/DataFormatReaders$AccessorForReader.class
+
+ - link:DataFormatReaders$AccessorForReader-asmified.java[Asmified]
+
+== References
+

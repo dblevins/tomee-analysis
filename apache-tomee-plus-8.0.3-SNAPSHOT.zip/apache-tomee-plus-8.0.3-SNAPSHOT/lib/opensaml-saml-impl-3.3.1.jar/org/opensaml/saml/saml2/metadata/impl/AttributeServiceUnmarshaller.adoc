@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AttributeServiceUnmarshaller.class
+
+ - link:AttributeServiceUnmarshaller-asmified.java[Asmified]
+
+== References
+

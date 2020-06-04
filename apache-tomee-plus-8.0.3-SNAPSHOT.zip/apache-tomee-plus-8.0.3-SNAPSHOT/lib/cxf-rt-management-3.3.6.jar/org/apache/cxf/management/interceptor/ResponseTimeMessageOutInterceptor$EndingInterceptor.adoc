@@ -1,0 +1,6 @@
+= org/apache/cxf/management/interceptor/ResponseTimeMessageOutInterceptor$EndingInterceptor.class
+
+ - link:ResponseTimeMessageOutInterceptor$EndingInterceptor-asmified.java[Asmified]
+
+== References
+

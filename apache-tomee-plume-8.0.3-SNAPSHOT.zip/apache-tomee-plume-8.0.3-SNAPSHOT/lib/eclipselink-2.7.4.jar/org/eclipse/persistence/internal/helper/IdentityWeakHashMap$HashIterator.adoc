@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/helper/IdentityWeakHashMap$HashIterator.class
+
+ - link:IdentityWeakHashMap$HashIterator-asmified.java[Asmified]
+
+== References
+

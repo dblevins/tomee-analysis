@@ -1,0 +1,6 @@
+= org/apache/openejb/threads/impl/ManagedScheduledExecutorServiceImpl$ScheduledFutureFacade.class
+
+ - link:ManagedScheduledExecutorServiceImpl$ScheduledFutureFacade-asmified.java[Asmified]
+
+== References
+

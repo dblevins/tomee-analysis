@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/isismtt/x509/MonetaryLimit.class
+
+ - link:MonetaryLimit-asmified.java[Asmified]
+
+== References
+

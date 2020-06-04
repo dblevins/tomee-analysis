@@ -1,0 +1,10 @@
+= org/apache/webbeans/el22/WrappedMethodExpression.class
+
+ - link:WrappedMethodExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.MethodExpression - 17
+ - javax.el.ELContext - 5
+ - javax.el.MethodInfo - 2
+ - javax.el.ELException - 2

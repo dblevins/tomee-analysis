@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/modes/gcm/Tables1kGCMExponentiator.class
+
+ - link:Tables1kGCMExponentiator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,15 @@
+= org/apache/bval/jsr/ApacheFactoryContext.class
+
+ - link:ApacheFactoryContext-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ParameterNameProvider - 10
+ - javax.validation.ClockProvider - 10
+ - javax.validation.MessageInterpolator - 10
+ - javax.validation.ConstraintValidatorFactory - 10
+ - javax.validation.TraversableResolver - 10
+ - javax.validation.ConstraintValidator - 8
+ - javax.validation.ValidatorContext - 7
+ - javax.validation.valueextraction.ValueExtractor - 4
+ - javax.validation.Validator - 1

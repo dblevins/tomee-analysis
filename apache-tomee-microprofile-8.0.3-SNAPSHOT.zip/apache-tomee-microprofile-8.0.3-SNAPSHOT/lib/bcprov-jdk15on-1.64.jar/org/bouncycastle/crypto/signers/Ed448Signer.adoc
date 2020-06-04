@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/signers/Ed448Signer.class
+
+ - link:Ed448Signer-asmified.java[Asmified]
+
+== References
+

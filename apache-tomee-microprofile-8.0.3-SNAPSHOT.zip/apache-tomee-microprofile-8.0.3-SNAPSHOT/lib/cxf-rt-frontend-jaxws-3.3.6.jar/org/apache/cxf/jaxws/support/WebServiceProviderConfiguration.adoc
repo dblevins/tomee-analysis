@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/support/WebServiceProviderConfiguration.class
+
+ - link:WebServiceProviderConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1
+ - javax.xml.soap.SOAPMessage - 1

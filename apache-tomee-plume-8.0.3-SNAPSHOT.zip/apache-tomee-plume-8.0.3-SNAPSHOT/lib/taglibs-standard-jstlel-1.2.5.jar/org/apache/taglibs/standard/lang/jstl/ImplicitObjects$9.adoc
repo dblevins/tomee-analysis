@@ -1,0 +1,7 @@
+= org/apache/taglibs/standard/lang/jstl/ImplicitObjects$9.class
+
+ - link:ImplicitObjects$9-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 7

@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/media/Encoding.class
+
+ - link:Encoding-asmified.java[Asmified]
+
+== References
+

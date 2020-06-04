@@ -1,0 +1,6 @@
+= org/apache/openejb/client/Connection.class
+
+ - link:Connection-asmified.java[Asmified]
+
+== References
+

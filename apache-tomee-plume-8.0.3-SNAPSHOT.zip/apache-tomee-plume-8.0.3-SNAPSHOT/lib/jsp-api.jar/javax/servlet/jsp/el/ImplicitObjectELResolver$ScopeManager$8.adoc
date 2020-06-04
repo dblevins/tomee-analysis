@@ -1,0 +1,12 @@
+= javax/servlet/jsp/el/ImplicitObjectELResolver$ScopeManager$8.class
+
+ - link:ImplicitObjectELResolver$ScopeManager$8-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager - 9
+ - javax.servlet.ServletRequest - 4
+ - javax.servlet.jsp.PageContext - 4
+ - javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeMap - 2
+ - javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$8 - 1
+ - javax.servlet.jsp.el.ImplicitObjectELResolver$1 - 1

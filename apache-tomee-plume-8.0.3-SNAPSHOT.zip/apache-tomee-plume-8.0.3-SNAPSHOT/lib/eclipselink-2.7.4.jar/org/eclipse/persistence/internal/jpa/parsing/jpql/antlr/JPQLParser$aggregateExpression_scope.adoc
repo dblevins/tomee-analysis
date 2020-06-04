@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$aggregateExpression_scope.class
+
+ - link:JPQLParser$aggregateExpression_scope-asmified.java[Asmified]
+
+== References
+

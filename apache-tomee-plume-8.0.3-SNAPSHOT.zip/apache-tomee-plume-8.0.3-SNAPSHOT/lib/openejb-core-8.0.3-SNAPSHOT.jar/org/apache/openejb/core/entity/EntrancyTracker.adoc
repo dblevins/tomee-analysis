@@ -1,0 +1,7 @@
+= org/apache/openejb/core/entity/EntrancyTracker.class
+
+ - link:EntrancyTracker-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 9

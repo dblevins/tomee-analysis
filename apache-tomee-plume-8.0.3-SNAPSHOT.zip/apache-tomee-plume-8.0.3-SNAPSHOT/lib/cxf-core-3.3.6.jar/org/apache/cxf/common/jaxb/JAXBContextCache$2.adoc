@@ -1,0 +1,7 @@
+= org/apache/cxf/common/jaxb/JAXBContextCache$2.class
+
+ - link:JAXBContextCache$2-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 5

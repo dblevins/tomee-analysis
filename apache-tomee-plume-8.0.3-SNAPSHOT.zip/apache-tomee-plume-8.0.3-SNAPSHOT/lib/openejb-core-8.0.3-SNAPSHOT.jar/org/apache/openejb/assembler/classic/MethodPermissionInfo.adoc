@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MethodPermissionInfo.class
+
+ - link:MethodPermissionInfo-asmified.java[Asmified]
+
+== References
+

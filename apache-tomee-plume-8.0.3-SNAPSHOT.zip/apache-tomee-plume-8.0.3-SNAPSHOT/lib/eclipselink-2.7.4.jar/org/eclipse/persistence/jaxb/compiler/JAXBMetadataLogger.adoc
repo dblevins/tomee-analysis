@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/JAXBMetadataLogger.class
+
+ - link:JAXBMetadataLogger-asmified.java[Asmified]
+
+== References
+

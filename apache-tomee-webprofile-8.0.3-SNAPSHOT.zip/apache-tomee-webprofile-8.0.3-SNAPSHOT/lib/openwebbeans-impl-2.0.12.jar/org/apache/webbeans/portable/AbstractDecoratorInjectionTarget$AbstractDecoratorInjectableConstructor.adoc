@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/AbstractDecoratorInjectionTarget$AbstractDecoratorInjectableConstructor.class
+
+ - link:AbstractDecoratorInjectionTarget$AbstractDecoratorInjectableConstructor-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 3
+ - javax.enterprise.inject.spi.InjectionTarget - 2
+ - javax.enterprise.inject.spi.Producer - 2

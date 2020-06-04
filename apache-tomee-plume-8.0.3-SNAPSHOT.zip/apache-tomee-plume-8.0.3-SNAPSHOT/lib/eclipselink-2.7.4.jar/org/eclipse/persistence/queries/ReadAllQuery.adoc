@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ReadAllQuery.class
+
+ - link:ReadAllQuery-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/util/RendererUtils.class
+
+ - link:RendererUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 12
+ - javax.faces.context.FacesContext - 7

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/JDBCFetchConfigurationImpl.class
+
+ - link:JDBCFetchConfigurationImpl-asmified.java[Asmified]
+
+== References
+

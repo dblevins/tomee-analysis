@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/logic/StrategyIndirectedPredicate.class
+
+ - link:StrategyIndirectedPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 12
+ - javax.annotation.Nullable - 1

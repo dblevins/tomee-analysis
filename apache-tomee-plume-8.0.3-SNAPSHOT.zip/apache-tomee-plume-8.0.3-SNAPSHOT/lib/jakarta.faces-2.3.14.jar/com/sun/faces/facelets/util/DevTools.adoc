@@ -1,0 +1,14 @@
+= com/sun/faces/facelets/util/DevTools.class
+
+ - link:DevTools-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 28
+ - javax.faces.context.FacesContext - 14
+ - javax.faces.context.ExternalContext - 10
+ - javax.faces.component.UIViewRoot - 7
+ - javax.faces.el.ValueBinding - 5
+ - javax.faces.context.Flash - 3
+ - javax.el.Expression - 3
+ - javax.faces.el.MethodBinding - 3

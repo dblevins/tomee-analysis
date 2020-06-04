@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ScanUtil.class
+
+ - link:ScanUtil-asmified.java[Asmified]
+
+== References
+

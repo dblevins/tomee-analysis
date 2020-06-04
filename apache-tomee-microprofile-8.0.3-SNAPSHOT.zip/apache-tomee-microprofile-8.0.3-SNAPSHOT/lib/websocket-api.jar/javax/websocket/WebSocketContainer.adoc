@@ -1,0 +1,11 @@
+= javax/websocket/WebSocketContainer.class
+
+ - link:WebSocketContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 4
+ - javax.websocket.DeploymentException - 4
+ - javax.websocket.Endpoint - 2
+ - javax.websocket.ClientEndpointConfig - 2
+ - javax.websocket.Extension - 1

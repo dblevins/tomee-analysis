@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/customizable/Safeguard.class
+
+ - link:Safeguard-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

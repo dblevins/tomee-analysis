@@ -1,0 +1,9 @@
+= org/apache/myfaces/application/viewstate/token/ServiceSideStateTokenProcessor.class
+
+ - link:ServiceSideStateTokenProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 4
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.component.UIViewRoot - 2

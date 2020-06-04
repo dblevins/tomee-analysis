@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/tls/OCSPStatusRequest.class
+
+ - link:OCSPStatusRequest-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Args.class
+
+ - link:Args-asmified.java[Asmified]
+
+== References
+

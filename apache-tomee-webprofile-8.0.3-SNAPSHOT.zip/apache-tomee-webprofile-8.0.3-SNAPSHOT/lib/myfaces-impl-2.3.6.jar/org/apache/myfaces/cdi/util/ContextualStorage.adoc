@@ -1,0 +1,11 @@
+= org/apache/myfaces/cdi/util/ContextualStorage.class
+
+ - link:ContextualStorage-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 10
+ - javax.enterprise.context.spi.CreationalContext - 9
+ - javax.enterprise.inject.spi.BeanManager - 6
+ - javax.enterprise.inject.spi.PassivationCapable - 2
+ - javax.enterprise.inject.spi.Bean - 1

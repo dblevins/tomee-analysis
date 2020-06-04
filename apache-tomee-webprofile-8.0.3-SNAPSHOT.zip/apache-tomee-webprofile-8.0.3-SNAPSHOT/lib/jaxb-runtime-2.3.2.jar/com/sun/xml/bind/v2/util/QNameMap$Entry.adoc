@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/util/QNameMap$Entry.class
+
+ - link:QNameMap$Entry-asmified.java[Asmified]
+
+== References
+

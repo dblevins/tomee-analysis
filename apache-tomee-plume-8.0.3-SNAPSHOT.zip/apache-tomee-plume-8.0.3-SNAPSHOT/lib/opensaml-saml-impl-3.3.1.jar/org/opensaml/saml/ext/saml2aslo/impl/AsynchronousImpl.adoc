@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2aslo/impl/AsynchronousImpl.class
+
+ - link:AsynchronousImpl-asmified.java[Asmified]
+
+== References
+

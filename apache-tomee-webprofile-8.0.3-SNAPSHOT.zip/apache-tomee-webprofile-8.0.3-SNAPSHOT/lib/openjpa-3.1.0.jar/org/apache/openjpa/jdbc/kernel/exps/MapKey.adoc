@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/MapKey.class
+
+ - link:MapKey-asmified.java[Asmified]
+
+== References
+

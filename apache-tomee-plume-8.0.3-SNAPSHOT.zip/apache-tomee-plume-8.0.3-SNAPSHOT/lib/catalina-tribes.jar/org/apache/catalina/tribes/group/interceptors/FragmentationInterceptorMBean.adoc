@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/interceptors/FragmentationInterceptorMBean.class
+
+ - link:FragmentationInterceptorMBean-asmified.java[Asmified]
+
+== References
+

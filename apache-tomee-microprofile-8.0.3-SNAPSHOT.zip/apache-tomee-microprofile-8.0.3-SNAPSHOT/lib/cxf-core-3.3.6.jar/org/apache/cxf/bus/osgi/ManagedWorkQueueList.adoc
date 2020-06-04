@@ -1,0 +1,6 @@
+= org/apache/cxf/bus/osgi/ManagedWorkQueueList.class
+
+ - link:ManagedWorkQueueList-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/security/SelfSignedCertificateGenerator$CommandLineArgs.class
+
+ - link:SelfSignedCertificateGenerator$CommandLineArgs-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 17
+ - javax.annotation.Nullable - 6

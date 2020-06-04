@@ -1,0 +1,7 @@
+= org/apache/openejb/core/webservices/AddressingSupport.class
+
+ - link:AddressingSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.EndpointReference - 2

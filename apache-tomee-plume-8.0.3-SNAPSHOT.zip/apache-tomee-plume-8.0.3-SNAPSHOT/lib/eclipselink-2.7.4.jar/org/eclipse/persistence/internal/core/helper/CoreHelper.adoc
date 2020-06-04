@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/core/helper/CoreHelper.class
+
+ - link:CoreHelper-asmified.java[Asmified]
+
+== References
+

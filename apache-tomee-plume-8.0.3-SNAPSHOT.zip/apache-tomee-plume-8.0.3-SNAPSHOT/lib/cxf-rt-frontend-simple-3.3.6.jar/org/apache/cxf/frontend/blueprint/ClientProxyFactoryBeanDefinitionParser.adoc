@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/blueprint/ClientProxyFactoryBeanDefinitionParser.class
+
+ - link:ClientProxyFactoryBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

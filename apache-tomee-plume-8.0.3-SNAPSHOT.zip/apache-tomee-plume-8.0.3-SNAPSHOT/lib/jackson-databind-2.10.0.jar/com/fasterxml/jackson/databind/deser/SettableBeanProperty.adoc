@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/SettableBeanProperty.class
+
+ - link:SettableBeanProperty-asmified.java[Asmified]
+
+== References
+

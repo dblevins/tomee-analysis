@@ -1,0 +1,12 @@
+= javax/faces/component/html/_HtmlGraphicImage.class
+
+ - link:_HtmlGraphicImage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIGraphic - 2
+ - javax.faces.component.html._UniversalProperties - 1
+ - javax.faces.component.html._RoleProperty - 1
+ - javax.faces.component.html._EventProperties - 1
+ - javax.faces.component.html._AltProperty - 1
+ - javax.faces.component.html._StyleProperties - 1

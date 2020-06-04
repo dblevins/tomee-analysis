@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/AbstractTagLibrary$HandlerFactory.class
+
+ - link:AbstractTagLibrary$HandlerFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 7
+ - javax.faces.view.facelets.TagHandler - 4
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.el.ELException - 3

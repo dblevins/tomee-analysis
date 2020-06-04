@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/JPQL$JJCalls.class
+
+ - link:JPQL$JJCalls-asmified.java[Asmified]
+
+== References
+

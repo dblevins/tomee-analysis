@@ -1,0 +1,6 @@
+= org/apache/openejb/config/typed/util/ProviderGenerator$Template.class
+
+ - link:ProviderGenerator$Template-asmified.java[Asmified]
+
+== References
+

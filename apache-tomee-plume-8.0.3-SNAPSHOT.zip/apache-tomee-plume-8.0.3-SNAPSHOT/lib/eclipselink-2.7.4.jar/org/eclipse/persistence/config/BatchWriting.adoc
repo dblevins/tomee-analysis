@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/BatchWriting.class
+
+ - link:BatchWriting-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/pool/impl/MetadataViewKeyImpl.class
+
+ - link:MetadataViewKeyImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/CachedResource$CachedResourceURLStreamHandler.class
+
+ - link:CachedResource$CachedResourceURLStreamHandler-asmified.java[Asmified]
+
+== References
+

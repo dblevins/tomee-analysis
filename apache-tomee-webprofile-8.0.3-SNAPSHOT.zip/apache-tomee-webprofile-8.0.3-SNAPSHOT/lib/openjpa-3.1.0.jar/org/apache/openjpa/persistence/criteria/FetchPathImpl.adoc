@@ -1,0 +1,14 @@
+= org/apache/openjpa/persistence/criteria/FetchPathImpl.class
+
+ - link:FetchPathImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.JoinType - 22
+ - javax.persistence.criteria.Fetch - 18
+ - javax.persistence.criteria.FetchParent - 6
+ - javax.persistence.metamodel.SingularAttribute - 2
+ - javax.persistence.metamodel.Attribute - 2
+ - javax.persistence.metamodel.ManagedType - 2
+ - javax.persistence.metamodel.PluralAttribute - 2
+ - javax.persistence.metamodel.Type - 1

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/SimpleSet.class
+
+ - link:SimpleSet-asmified.java[Asmified]
+
+== References
+

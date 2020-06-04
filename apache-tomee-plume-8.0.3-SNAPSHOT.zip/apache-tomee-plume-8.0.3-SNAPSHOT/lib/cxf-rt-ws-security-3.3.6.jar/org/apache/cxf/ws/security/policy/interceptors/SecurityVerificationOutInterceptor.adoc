@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/policy/interceptors/SecurityVerificationOutInterceptor.class
+
+ - link:SecurityVerificationOutInterceptor-asmified.java[Asmified]
+
+== References
+

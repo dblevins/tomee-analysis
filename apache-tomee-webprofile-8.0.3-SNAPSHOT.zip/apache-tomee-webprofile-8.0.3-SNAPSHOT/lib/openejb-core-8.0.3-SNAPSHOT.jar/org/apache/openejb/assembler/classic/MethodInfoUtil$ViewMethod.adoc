@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MethodInfoUtil$ViewMethod.class
+
+ - link:MethodInfoUtil$ViewMethod-asmified.java[Asmified]
+
+== References
+

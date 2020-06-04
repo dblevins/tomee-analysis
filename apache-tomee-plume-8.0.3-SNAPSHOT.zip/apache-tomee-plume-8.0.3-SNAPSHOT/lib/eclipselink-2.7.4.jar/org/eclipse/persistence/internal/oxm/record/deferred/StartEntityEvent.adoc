@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/deferred/StartEntityEvent.class
+
+ - link:StartEntityEvent-asmified.java[Asmified]
+
+== References
+

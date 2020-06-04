@@ -1,0 +1,6 @@
+= org/bouncycastle/util/Shorts.class
+
+ - link:Shorts-asmified.java[Asmified]
+
+== References
+

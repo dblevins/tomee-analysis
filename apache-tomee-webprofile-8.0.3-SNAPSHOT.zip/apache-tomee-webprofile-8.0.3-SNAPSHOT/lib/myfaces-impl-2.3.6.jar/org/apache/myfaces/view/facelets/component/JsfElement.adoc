@@ -1,0 +1,11 @@
+= org/apache/myfaces/view/facelets/component/JsfElement.class
+
+ - link:JsfElement-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 72
+ - javax.faces.component.UIComponent - 17
+ - javax.faces.component.UIPanel - 3
+ - javax.faces.component.behavior.ClientBehavior - 2
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

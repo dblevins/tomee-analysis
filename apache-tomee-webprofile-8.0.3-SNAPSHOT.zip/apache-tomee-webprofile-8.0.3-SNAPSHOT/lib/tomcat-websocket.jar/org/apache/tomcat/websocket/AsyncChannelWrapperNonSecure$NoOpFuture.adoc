@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/AsyncChannelWrapperNonSecure$NoOpFuture.class
+
+ - link:AsyncChannelWrapperNonSecure$NoOpFuture-asmified.java[Asmified]
+
+== References
+

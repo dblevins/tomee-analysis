@@ -1,0 +1,10 @@
+= javax/ejb/EJBContext.class
+
+ - link:EJBContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.TimerService - 1
+ - javax.ejb.EJBLocalHome - 1
+ - javax.transaction.UserTransaction - 1

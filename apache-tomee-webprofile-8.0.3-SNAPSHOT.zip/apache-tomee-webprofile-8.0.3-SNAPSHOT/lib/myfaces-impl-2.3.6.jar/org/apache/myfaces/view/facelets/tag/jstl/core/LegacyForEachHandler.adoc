@@ -1,0 +1,21 @@
+= org/apache/myfaces/view/facelets/tag/jstl/core/LegacyForEachHandler.class
+
+ - link:LegacyForEachHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 52
+ - javax.el.ValueExpression - 42
+ - javax.faces.view.facelets.FaceletContext - 33
+ - javax.faces.component.UIComponent - 12
+ - javax.faces.view.facelets.TagAttributeException - 4
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.FacesException - 1
+ - javax.el.ELException - 1
+ - javax.faces.view.facelets.FaceletException - 1
+ - javax.el.ELContext - 1

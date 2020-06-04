@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/HashedMap.class
+
+ - link:HashedMap-asmified.java[Asmified]
+
+== References
+

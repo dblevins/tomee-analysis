@@ -1,0 +1,6 @@
+= org/apache/openjpa/datacache/PartitionedDataCache.class
+
+ - link:PartitionedDataCache-asmified.java[Asmified]
+
+== References
+

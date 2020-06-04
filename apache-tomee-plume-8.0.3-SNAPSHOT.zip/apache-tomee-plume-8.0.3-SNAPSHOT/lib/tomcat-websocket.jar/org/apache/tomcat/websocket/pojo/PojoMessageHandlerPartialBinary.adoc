@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialBinary.class
+
+ - link:PojoMessageHandlerPartialBinary-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 2

@@ -1,0 +1,6 @@
+= org/hsqldb/server/ServerConfiguration.class
+
+ - link:ServerConfiguration-asmified.java[Asmified]
+
+== References
+

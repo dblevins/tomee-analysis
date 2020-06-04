@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/BaseExpression.class
+
+ - link:BaseExpression-asmified.java[Asmified]
+
+== References
+

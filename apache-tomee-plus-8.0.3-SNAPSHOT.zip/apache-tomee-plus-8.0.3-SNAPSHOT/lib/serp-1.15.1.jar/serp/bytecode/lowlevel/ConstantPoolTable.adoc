@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/ConstantPoolTable.class
+
+ - link:ConstantPoolTable-asmified.java[Asmified]
+
+== References
+

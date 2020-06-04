@@ -1,0 +1,10 @@
+= org/apache/openejb/core/webservices/JaxWsUtils.class
+
+ - link:JaxWsUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.WebService - 38
+ - javax.xml.ws.WebServiceProvider - 18
+ - javax.xml.ws.WebServiceClient - 9
+ - javax.xml.ws.BindingType - 4

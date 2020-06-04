@@ -1,0 +1,8 @@
+= org/apache/activemq/command/ActiveMQTempQueue.class
+
+ - link:ActiveMQTempQueue-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1
+ - javax.jms.TemporaryQueue - 1

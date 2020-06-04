@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/LoggingFeature$Portable.class
+
+ - link:LoggingFeature$Portable-asmified.java[Asmified]
+
+== References
+

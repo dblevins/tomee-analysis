@@ -1,0 +1,37 @@
+= org/apache/openejb/resource/activemq/jms2/JMS2.class
+
+ - link:JMS2-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 23
+ - javax.jms.MapMessage - 4
+ - javax.jms.ObjectMessage - 4
+ - javax.jms.TextMessage - 4
+ - javax.jms.StreamMessage - 4
+ - javax.jms.BytesMessage - 4
+ - javax.jms.JMSRuntimeException - 3
+ - javax.jms.MessageFormatRuntimeException - 2
+ - javax.jms.MessageNotWriteableRuntimeException - 2
+ - javax.jms.InvalidSelectorRuntimeException - 2
+ - javax.jms.IllegalStateRuntimeException - 2
+ - javax.jms.TransactionInProgressRuntimeException - 2
+ - javax.jms.InvalidDestinationRuntimeException - 2
+ - javax.jms.Message - 2
+ - javax.jms.InvalidClientIDRuntimeException - 2
+ - javax.jms.ResourceAllocationRuntimeException - 2
+ - javax.jms.TransactionRolledBackRuntimeException - 2
+ - javax.transaction.TransactionManager - 2
+ - javax.jms.JMSSecurityRuntimeException - 2
+ - javax.jms.TransactionInProgressException - 1
+ - javax.jms.MessageNotWriteableException - 1
+ - javax.jms.InvalidDestinationException - 1
+ - javax.transaction.Transaction - 1
+ - javax.jms.ResourceAllocationException - 1
+ - javax.jms.IllegalStateException - 1
+ - javax.jms.InvalidClientIDException - 1
+ - javax.jms.InvalidSelectorException - 1
+ - javax.transaction.SystemException - 1
+ - javax.jms.MessageFormatException - 1
+ - javax.jms.JMSSecurityException - 1
+ - javax.jms.TransactionRolledBackException - 1

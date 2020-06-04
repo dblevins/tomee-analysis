@@ -1,0 +1,11 @@
+= org/eclipse/persistence/internal/xr/XRServiceFactory.class
+
+ - link:XRServiceFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 5
+ - javax.xml.bind.JAXBElement - 5
+ - javax.xml.bind.JAXBException - 5
+ - javax.xml.bind.JAXBContext - 5
+ - javax.persistence.spi.PersistenceUnitInfo - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/FieldNode.class
+
+ - link:FieldNode-asmified.java[Asmified]
+
+== References
+

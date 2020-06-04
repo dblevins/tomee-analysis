@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/events/ProcessManagedBeanImpl.class
+
+ - link:ProcessManagedBeanImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 5
+ - javax.enterprise.inject.spi.Annotated - 1
+ - javax.enterprise.inject.spi.ProcessManagedBean - 1
+ - javax.enterprise.inject.spi.Bean - 1

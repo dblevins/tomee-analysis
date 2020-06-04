@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonInclude$Include.class
+
+ - link:JsonInclude$Include-asmified.java[Asmified]
+
+== References
+

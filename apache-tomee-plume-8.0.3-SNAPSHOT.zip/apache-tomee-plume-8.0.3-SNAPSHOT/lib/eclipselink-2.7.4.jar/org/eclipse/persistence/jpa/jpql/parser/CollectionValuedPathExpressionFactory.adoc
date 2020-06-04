@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/CollectionValuedPathExpressionFactory.class
+
+ - link:CollectionValuedPathExpressionFactory-asmified.java[Asmified]
+
+== References
+

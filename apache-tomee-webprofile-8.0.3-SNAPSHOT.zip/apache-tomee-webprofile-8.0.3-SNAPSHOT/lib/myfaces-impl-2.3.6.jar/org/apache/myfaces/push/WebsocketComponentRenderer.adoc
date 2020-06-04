@@ -1,0 +1,24 @@
+= org/apache/myfaces/push/WebsocketComponentRenderer.class
+
+ - link:WebsocketComponentRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 41
+ - javax.faces.component.UIWebsocket - 31
+ - javax.faces.context.ResponseWriter - 24
+ - javax.faces.component.UIComponent - 15
+ - javax.enterprise.inject.spi.BeanManager - 13
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.component.UIViewRoot - 6
+ - javax.faces.application.Application - 4
+ - javax.faces.context.PartialViewContext - 4
+ - javax.faces.render.Renderer - 3
+ - javax.faces.FacesWrapper - 3
+ - javax.faces.component.behavior.ClientBehaviorContext - 3
+ - javax.faces.event.PostAddToViewEvent - 2
+ - javax.faces.component.behavior.ClientBehavior - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.event.ComponentSystemEvent - 2
+ - javax.faces.event.ListenerFor - 1
+ - javax.faces.event.ComponentSystemEventListener - 1

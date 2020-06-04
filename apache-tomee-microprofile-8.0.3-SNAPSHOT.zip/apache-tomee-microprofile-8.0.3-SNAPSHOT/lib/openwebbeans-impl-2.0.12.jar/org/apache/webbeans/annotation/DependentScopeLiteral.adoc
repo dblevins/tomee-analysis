@@ -1,0 +1,7 @@
+= org/apache/webbeans/annotation/DependentScopeLiteral.class
+
+ - link:DependentScopeLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.Dependent - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/JuliLogStream.class
+
+ - link:JuliLogStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/StuckThreadDetectionValve$CompletedStuckThread.class
+
+ - link:StuckThreadDetectionValve$CompletedStuckThread-asmified.java[Asmified]
+
+== References
+

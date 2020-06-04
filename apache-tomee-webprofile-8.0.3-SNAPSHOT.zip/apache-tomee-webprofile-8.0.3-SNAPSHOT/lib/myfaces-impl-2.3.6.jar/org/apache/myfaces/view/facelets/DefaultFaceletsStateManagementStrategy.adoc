@@ -1,0 +1,33 @@
+= org/apache/myfaces/view/facelets/DefaultFaceletsStateManagementStrategy.class
+
+ - link:DefaultFaceletsStateManagementStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 134
+ - javax.faces.component.UIViewRoot - 118
+ - javax.faces.component.UIComponent - 75
+ - javax.faces.render.ResponseStateManager - 15
+ - javax.faces.view.ViewDeclarationLanguage - 14
+ - javax.faces.component.visit.VisitContextFactory - 11
+ - javax.faces.render.RenderKitFactory - 9
+ - javax.faces.view.ViewMetadata - 8
+ - javax.faces.view.ViewDeclarationLanguageFactory - 5
+ - javax.faces.component.visit.VisitContext - 4
+ - javax.faces.context.ExternalContext - 4
+ - javax.faces.component.UIComponentBase - 4
+ - javax.faces.FactoryFinder - 3
+ - javax.faces.event.SystemEventListener - 3
+ - javax.faces.component.ContextCallback - 3
+ - javax.el.ValueExpression - 3
+ - javax.faces.view.StateManagementStrategy - 2
+ - javax.faces.component.visit.VisitCallback - 2
+ - javax.faces.render.RenderKit - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.faces.component.TransientStateHelper - 2
+ - javax.faces.event.PostAddToViewEvent - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.event.PreRemoveFromViewEvent - 1

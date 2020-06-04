@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/ObligationsType.class
+
+ - link:ObligationsType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/springmvc/SpringViewResolverProvider.class
+
+ - link:SpringViewResolverProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 4
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.MediaType - 2
+ - javax.servlet.http.HttpServletResponse - 2
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.WebApplicationException - 1

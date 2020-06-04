@@ -1,0 +1,20 @@
+= org/apache/openejb/persistence/QueryLogEntityManager.class
+
+ - link:QueryLogEntityManager-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 106
+ - javax.persistence.Query - 14
+ - javax.persistence.LockModeType - 14
+ - javax.persistence.StoredProcedureQuery - 8
+ - javax.persistence.EntityGraph - 7
+ - javax.persistence.TypedQuery - 7
+ - javax.persistence.FlushModeType - 4
+ - javax.persistence.criteria.CriteriaQuery - 2
+ - javax.persistence.criteria.CriteriaUpdate - 2
+ - javax.persistence.EntityManagerFactory - 2
+ - javax.persistence.EntityTransaction - 2
+ - javax.persistence.criteria.CriteriaBuilder - 2
+ - javax.persistence.criteria.CriteriaDelete - 2
+ - javax.persistence.metamodel.Metamodel - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/ConfUtils.class
+
+ - link:ConfUtils-asmified.java[Asmified]
+
+== References
+

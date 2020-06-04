@@ -1,0 +1,8 @@
+= org/apache/webbeans/intercept/InterceptorResolutionService$BusinessMethodInterceptorInfo.class
+
+ - link:InterceptorResolutionService$BusinessMethodInterceptorInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Interceptor - 18
+ - javax.enterprise.inject.spi.Decorator - 3

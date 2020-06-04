@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/application/InvalidViewIdException.class
+
+ - link:InvalidViewIdException-asmified.java[Asmified]
+
+== References
+

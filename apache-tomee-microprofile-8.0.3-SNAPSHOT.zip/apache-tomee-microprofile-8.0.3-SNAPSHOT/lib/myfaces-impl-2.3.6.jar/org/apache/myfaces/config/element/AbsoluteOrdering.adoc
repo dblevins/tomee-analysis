@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/AbsoluteOrdering.class
+
+ - link:AbsoluteOrdering-asmified.java[Asmified]
+
+== References
+

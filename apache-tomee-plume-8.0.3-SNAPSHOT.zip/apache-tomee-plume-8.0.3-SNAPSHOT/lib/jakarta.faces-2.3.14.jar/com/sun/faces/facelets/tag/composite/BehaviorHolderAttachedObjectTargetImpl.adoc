@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/composite/BehaviorHolderAttachedObjectTargetImpl.class
+
+ - link:BehaviorHolderAttachedObjectTargetImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.view.BehaviorHolderAttachedObjectTarget - 1

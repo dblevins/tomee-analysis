@@ -1,0 +1,6 @@
+= org/apache/openejb/client/JNDIContext$LazyBinding.class
+
+ - link:JNDIContext$LazyBinding-asmified.java[Asmified]
+
+== References
+

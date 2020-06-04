@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/Documentation.class
+
+ - link:Documentation-asmified.java[Asmified]
+
+== References
+

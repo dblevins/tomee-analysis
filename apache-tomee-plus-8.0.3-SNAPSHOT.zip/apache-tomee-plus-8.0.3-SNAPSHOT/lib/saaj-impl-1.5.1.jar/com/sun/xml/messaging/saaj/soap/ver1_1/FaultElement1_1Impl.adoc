@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/ver1_1/FaultElement1_1Impl.class
+
+ - link:FaultElement1_1Impl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPElement - 3
+ - javax.xml.soap.SOAPException - 1

@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/EntityReferenceEventImpl.class
+
+ - link:EntityReferenceEventImpl-asmified.java[Asmified]
+
+== References
+

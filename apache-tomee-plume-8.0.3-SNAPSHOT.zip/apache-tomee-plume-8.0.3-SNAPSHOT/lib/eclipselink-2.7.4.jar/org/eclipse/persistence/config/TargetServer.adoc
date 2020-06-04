@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/TargetServer.class
+
+ - link:TargetServer-asmified.java[Asmified]
+
+== References
+

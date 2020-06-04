@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/MetadataDynamicClassWriter.class
+
+ - link:MetadataDynamicClassWriter-asmified.java[Asmified]
+
+== References
+

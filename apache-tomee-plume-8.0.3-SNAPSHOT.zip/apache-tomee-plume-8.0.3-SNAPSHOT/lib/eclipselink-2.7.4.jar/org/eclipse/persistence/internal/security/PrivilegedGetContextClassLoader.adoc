@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedGetContextClassLoader.class
+
+ - link:PrivilegedGetContextClassLoader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IDependent.class
+
+ - link:IDependent-asmified.java[Asmified]
+
+== References
+

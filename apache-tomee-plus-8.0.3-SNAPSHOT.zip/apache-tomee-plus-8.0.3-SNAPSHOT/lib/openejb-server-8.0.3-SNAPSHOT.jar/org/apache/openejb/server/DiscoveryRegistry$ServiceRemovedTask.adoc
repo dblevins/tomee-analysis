@@ -1,0 +1,6 @@
+= org/apache/openejb/server/DiscoveryRegistry$ServiceRemovedTask.class
+
+ - link:DiscoveryRegistry$ServiceRemovedTask-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/DBasePlatform.class
+
+ - link:DBasePlatform-asmified.java[Asmified]
+
+== References
+

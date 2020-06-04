@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/descriptor/MetadataReader$ForConstructor.class
+
+ - link:MetadataReader$ForConstructor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ParameterNameProvider - 4

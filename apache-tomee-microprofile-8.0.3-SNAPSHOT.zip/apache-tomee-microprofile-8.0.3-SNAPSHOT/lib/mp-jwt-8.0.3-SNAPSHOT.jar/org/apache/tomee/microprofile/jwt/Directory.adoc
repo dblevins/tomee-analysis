@@ -1,0 +1,8 @@
+= org/apache/tomee/microprofile/jwt/Directory.class
+
+ - link:Directory-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1

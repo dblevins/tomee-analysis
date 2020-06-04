@@ -1,0 +1,6 @@
+= org/apache/webbeans/component/InterceptedMarker.class
+
+ - link:InterceptedMarker-asmified.java[Asmified]
+
+== References
+

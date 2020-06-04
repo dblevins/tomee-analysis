@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DelegatingResultList$DelegatingListIterator.class
+
+ - link:DelegatingResultList$DelegatingListIterator-asmified.java[Asmified]
+
+== References
+

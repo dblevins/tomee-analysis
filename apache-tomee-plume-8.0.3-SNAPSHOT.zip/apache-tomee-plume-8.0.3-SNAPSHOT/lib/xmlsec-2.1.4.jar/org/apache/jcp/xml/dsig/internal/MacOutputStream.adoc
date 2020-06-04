@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/MacOutputStream.class
+
+ - link:MacOutputStream-asmified.java[Asmified]
+
+== References
+

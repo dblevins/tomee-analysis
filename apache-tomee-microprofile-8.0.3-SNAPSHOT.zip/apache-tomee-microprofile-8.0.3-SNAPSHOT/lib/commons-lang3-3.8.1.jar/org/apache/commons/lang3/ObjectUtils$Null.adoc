@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/ObjectUtils$Null.class
+
+ - link:ObjectUtils$Null-asmified.java[Asmified]
+
+== References
+

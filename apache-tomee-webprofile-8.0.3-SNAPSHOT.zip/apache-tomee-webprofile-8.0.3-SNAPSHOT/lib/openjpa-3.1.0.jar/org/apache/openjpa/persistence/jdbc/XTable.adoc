@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/XTable.class
+
+ - link:XTable-asmified.java[Asmified]
+
+== References
+

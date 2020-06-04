@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/ResolveArtifact.class
+
+ - link:ResolveArtifact-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.annotation.Nullable - 4

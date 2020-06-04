@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/DataWriter.class
+
+ - link:DataWriter-asmified.java[Asmified]
+
+== References
+

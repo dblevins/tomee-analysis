@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/IntegerLiteralNode.class
+
+ - link:IntegerLiteralNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/JJTJPQLState.class
+
+ - link:JJTJPQLState-asmified.java[Asmified]
+
+== References
+

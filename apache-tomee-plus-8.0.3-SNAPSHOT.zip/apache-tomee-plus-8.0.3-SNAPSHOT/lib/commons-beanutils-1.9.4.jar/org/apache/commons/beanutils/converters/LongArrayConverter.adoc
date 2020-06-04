@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/LongArrayConverter.class
+
+ - link:LongArrayConverter-asmified.java[Asmified]
+
+== References
+

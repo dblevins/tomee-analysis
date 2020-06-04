@@ -1,0 +1,6 @@
+= org/apache/commons/collections/list/UnmodifiableList.class
+
+ - link:UnmodifiableList-asmified.java[Asmified]
+
+== References
+

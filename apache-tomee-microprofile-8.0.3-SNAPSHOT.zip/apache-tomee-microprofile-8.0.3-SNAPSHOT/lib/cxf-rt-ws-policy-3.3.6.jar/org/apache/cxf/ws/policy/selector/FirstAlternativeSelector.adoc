@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/selector/FirstAlternativeSelector.class
+
+ - link:FirstAlternativeSelector-asmified.java[Asmified]
+
+== References
+

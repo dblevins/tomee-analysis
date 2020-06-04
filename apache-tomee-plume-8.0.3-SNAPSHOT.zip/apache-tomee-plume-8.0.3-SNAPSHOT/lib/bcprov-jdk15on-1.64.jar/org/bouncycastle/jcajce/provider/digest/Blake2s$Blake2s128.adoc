@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/digest/Blake2s$Blake2s128.class
+
+ - link:Blake2s$Blake2s128-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,15 @@
+= org/apache/cxf/jaxrs/provider/BinaryDataProvider.class
+
+ - link:BinaryDataProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 10
+ - javax.ws.rs.core.MediaType - 9
+ - javax.ws.rs.core.StreamingOutput - 6
+ - javax.ws.rs.core.HttpHeaders - 3
+ - javax.ws.rs.core.Response - 1
+ - javax.servlet.WriteListener - 1
+ - javax.ws.rs.WebApplicationException - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

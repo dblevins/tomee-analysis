@@ -1,0 +1,10 @@
+= javax/enterprise/inject/spi/CDI.class
+
+ - link:CDI-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.CDIProvider - 15
+ - javax.enterprise.inject.spi.CDI - 3
+ - javax.enterprise.inject.spi.BeanManager - 1
+ - javax.enterprise.inject.Instance - 1

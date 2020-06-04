@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/nntp/NNTPSSLStore.class
+
+ - link:NNTPSSLStore-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.URLName - 2
+ - javax.mail.Session - 2

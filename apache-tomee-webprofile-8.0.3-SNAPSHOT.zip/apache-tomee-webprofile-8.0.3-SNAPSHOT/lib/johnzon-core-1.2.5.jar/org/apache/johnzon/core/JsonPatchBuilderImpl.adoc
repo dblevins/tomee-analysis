@@ -1,0 +1,13 @@
+= org/apache/johnzon/core/JsonPatchBuilderImpl.class
+
+ - link:JsonPatchBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue - 38
+ - javax.json.JsonPatchBuilder - 32
+ - javax.json.spi.JsonProvider - 21
+ - javax.json.JsonPatch$Operation - 15
+ - javax.json.JsonObject - 5
+ - javax.json.JsonArray - 4
+ - javax.json.JsonPatch - 1

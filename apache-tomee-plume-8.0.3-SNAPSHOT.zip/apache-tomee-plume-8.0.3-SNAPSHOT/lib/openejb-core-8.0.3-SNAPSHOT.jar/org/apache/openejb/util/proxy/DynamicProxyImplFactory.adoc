@@ -1,0 +1,8 @@
+= org/apache/openejb/util/proxy/DynamicProxyImplFactory.class
+
+ - link:DynamicProxyImplFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 4
+ - javax.persistence.PersistenceContext - 1

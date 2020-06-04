@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/MixedLockManager.class
+
+ - link:MixedLockManager-asmified.java[Asmified]
+
+== References
+

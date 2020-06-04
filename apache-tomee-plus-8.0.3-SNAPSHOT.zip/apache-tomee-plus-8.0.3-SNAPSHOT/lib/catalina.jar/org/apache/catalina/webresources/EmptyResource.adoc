@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/EmptyResource.class
+
+ - link:EmptyResource-asmified.java[Asmified]
+
+== References
+

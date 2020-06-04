@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/DSAKeyValueMarshaller.class
+
+ - link:DSAKeyValueMarshaller-asmified.java[Asmified]
+
+== References
+

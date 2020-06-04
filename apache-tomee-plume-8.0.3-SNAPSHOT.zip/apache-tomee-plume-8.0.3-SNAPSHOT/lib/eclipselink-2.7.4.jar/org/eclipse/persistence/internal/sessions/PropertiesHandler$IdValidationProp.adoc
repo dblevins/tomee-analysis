@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/PropertiesHandler$IdValidationProp.class
+
+ - link:PropertiesHandler$IdValidationProp-asmified.java[Asmified]
+
+== References
+

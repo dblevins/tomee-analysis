@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ApplicationClient$JAXB.class
+
+ - link:ApplicationClient$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 22

@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/RequestKET.class
+
+ - link:RequestKET-asmified.java[Asmified]
+
+== References
+

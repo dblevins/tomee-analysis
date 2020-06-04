@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/dynamic/TypeClassInitializer$1.class
+
+ - link:TypeClassInitializer$1-asmified.java[Asmified]
+
+== References
+

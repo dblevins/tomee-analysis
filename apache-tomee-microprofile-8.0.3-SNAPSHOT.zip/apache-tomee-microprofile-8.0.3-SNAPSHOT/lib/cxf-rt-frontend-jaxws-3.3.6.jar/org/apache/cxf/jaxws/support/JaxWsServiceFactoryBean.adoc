@@ -1,0 +1,25 @@
+= org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.class
+
+ - link:JaxWsServiceFactoryBean-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.FaultAction - 18
+ - javax.xml.ws.soap.Addressing - 15
+ - javax.xml.ws.Action - 13
+ - javax.xml.ws.soap.MTOM - 10
+ - javax.xml.ws.soap.MTOMFeature - 9
+ - javax.jws.WebMethod - 8
+ - javax.xml.bind.annotation.XmlSeeAlso - 6
+ - javax.xml.ws.RespectBinding - 6
+ - javax.xml.ws.BindingType - 5
+ - javax.xml.ws.WebFault - 5
+ - javax.xml.ws.WebServiceFeature - 5
+ - javax.xml.bind.annotation.XmlNsForm - 3
+ - javax.xml.bind.annotation.XmlSchema - 3
+ - javax.xml.ws.soap.AddressingFeature$Responses - 2
+ - javax.xml.ws.soap.AddressingFeature - 2
+ - javax.xml.ws.Provider - 2
+ - javax.xml.ws.RespectBindingFeature - 2
+ - javax.xml.ws.Service - 1
+ - javax.xml.ws.AsyncHandler - 1

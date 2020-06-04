@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/StringUtil.class
+
+ - link:StringUtil-asmified.java[Asmified]
+
+== References
+

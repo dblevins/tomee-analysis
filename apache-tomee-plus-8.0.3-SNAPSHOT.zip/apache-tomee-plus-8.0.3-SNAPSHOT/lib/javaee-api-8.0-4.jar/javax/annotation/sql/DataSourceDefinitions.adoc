@@ -1,0 +1,7 @@
+= javax/annotation/sql/DataSourceDefinitions.class
+
+ - link:DataSourceDefinitions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.sql.DataSourceDefinition - 1

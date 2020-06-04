@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/ExternalAnnotationProvider$DispatchingAnnotationWalker.class
+
+ - link:ExternalAnnotationProvider$DispatchingAnnotationWalker-asmified.java[Asmified]
+
+== References
+

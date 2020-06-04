@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AudienceRestrictionConditionBuilder.class
+
+ - link:AudienceRestrictionConditionBuilder-asmified.java[Asmified]
+
+== References
+

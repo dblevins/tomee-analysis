@@ -1,0 +1,7 @@
+= org/apache/openejb/core/webservices/NoAddressingSupport.class
+
+ - link:NoAddressingSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.EndpointReference - 2

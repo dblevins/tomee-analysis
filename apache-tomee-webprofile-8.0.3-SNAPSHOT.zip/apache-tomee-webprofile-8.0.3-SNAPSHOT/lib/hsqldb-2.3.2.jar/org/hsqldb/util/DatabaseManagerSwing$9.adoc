@@ -1,0 +1,6 @@
+= org/hsqldb/util/DatabaseManagerSwing$9.class
+
+ - link:DatabaseManagerSwing$9-asmified.java[Asmified]
+
+== References
+

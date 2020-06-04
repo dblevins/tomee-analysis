@@ -1,0 +1,10 @@
+= javax/el/ValueExpression.class
+
+ - link:ValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 7
+ - javax.el.ValueExpression - 2
+ - javax.el.Expression - 2
+ - javax.el.ValueReference - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/javaee/api/activator/org/apache/openejb/javaee/api/locator/ProviderLocator.class
+
+ - link:ProviderLocator-asmified.java[Asmified]
+
+== References
+

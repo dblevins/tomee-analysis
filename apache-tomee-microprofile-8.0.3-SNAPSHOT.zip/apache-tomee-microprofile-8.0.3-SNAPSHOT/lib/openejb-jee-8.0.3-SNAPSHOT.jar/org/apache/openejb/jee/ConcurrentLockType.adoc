@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/ConcurrentLockType.class
+
+ - link:ConcurrentLockType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlEnum - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

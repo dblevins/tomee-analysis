@@ -1,0 +1,6 @@
+= com/sun/istack/localization/Localizer.class
+
+ - link:Localizer-asmified.java[Asmified]
+
+== References
+

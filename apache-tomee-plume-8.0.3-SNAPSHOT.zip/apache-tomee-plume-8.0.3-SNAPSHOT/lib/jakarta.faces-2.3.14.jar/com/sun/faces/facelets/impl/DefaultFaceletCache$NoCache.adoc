@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/impl/DefaultFaceletCache$NoCache.class
+
+ - link:DefaultFaceletCache$NoCache-asmified.java[Asmified]
+
+== References
+

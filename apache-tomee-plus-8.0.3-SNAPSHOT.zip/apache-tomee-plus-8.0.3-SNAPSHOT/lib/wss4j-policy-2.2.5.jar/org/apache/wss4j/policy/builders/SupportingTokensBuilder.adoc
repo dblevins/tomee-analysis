@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/builders/SupportingTokensBuilder.class
+
+ - link:SupportingTokensBuilder-asmified.java[Asmified]
+
+== References
+

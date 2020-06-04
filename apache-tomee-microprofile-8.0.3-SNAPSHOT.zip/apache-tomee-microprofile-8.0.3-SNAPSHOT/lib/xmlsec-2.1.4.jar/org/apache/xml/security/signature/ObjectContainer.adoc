@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/ObjectContainer.class
+
+ - link:ObjectContainer-asmified.java[Asmified]
+
+== References
+

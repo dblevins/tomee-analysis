@@ -1,0 +1,9 @@
+= com/sun/faces/component/behavior/AjaxBehaviors.class
+
+ - link:AjaxBehaviors-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.component.behavior.AjaxBehavior - 2
+ - javax.faces.component.behavior.ClientBehaviorHolder - 2

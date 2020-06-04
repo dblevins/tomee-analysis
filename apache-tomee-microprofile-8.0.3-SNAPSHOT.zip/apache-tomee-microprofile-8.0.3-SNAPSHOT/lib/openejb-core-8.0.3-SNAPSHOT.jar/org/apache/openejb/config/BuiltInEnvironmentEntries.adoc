@@ -1,0 +1,15 @@
+= org/apache/openejb/config/BuiltInEnvironmentEntries.class
+
+ - link:BuiltInEnvironmentEntries-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 1
+ - javax.enterprise.concurrent.ManagedThreadFactory - 1
+ - javax.enterprise.concurrent.ManagedExecutorService - 1
+ - javax.validation.Validator - 1
+ - javax.validation.ValidatorFactory - 1
+ - javax.transaction.TransactionManager - 1
+ - javax.enterprise.concurrent.ContextService - 1
+ - javax.enterprise.concurrent.ManagedScheduledExecutorService - 1
+ - javax.enterprise.inject.spi.BeanManager - 1

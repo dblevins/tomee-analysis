@@ -1,0 +1,6 @@
+= org/metatype/sxc/util/Base64.class
+
+ - link:Base64-asmified.java[Asmified]
+
+== References
+

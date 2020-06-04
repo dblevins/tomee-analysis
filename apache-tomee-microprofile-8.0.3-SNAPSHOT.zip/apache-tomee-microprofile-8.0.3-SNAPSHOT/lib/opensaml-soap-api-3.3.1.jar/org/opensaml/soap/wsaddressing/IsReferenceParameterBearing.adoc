@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsaddressing/IsReferenceParameterBearing.class
+
+ - link:IsReferenceParameterBearing-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/config/XMLObjectProviderRegistry.class
+
+ - link:XMLObjectProviderRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 1

@@ -1,0 +1,9 @@
+= javax/jms/MessageConsumer.class
+
+ - link:MessageConsumer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 7
+ - javax.jms.Message - 3
+ - javax.jms.MessageListener - 2

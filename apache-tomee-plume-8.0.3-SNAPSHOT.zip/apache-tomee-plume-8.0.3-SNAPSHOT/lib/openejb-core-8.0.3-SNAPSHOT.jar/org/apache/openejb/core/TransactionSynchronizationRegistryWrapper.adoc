@@ -1,0 +1,8 @@
+= org/apache/openejb/core/TransactionSynchronizationRegistryWrapper.class
+
+ - link:TransactionSynchronizationRegistryWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 24
+ - javax.transaction.Synchronization - 2

@@ -1,0 +1,6 @@
+= org/apache/geronimo/config/DefaultConfigBuilder$PrioritisedConverter.class
+
+ - link:DefaultConfigBuilder$PrioritisedConverter-asmified.java[Asmified]
+
+== References
+

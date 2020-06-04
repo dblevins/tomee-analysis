@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/asn1/PQCObjectIdentifiers.class
+
+ - link:PQCObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

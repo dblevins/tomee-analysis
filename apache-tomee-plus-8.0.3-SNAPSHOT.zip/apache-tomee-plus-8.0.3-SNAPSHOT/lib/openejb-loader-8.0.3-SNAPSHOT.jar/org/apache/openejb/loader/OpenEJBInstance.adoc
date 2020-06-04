@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/OpenEJBInstance.class
+
+ - link:OpenEJBInstance-asmified.java[Asmified]
+
+== References
+

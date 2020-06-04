@@ -1,0 +1,6 @@
+= org/apache/openejb/server/httpd/OpenEJBHttpServer$LoggerOutputStream.class
+
+ - link:OpenEJBHttpServer$LoggerOutputStream-asmified.java[Asmified]
+
+== References
+

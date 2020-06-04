@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/TypeTableDefinition.class
+
+ - link:TypeTableDefinition-asmified.java[Asmified]
+
+== References
+

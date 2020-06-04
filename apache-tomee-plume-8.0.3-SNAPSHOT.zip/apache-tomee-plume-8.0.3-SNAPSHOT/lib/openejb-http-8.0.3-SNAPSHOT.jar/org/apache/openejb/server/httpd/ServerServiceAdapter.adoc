@@ -1,0 +1,8 @@
+= org/apache/openejb/server/httpd/ServerServiceAdapter.class
+
+ - link:ServerServiceAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 1
+ - javax.servlet.ServletInputStream - 1

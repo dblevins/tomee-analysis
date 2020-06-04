@@ -1,0 +1,48 @@
+= javax/faces/component/UIData.class
+
+ - link:UIData-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIData - 265
+ - javax.faces.component.UIComponent - 259
+ - javax.faces.context.FacesContext - 249
+ - javax.faces.component.StateHelper - 28
+ - javax.faces.model.DataModel - 28
+ - javax.faces.component.UIComponentBase - 27
+ - javax.faces.component.visit.VisitContext - 26
+ - javax.faces.component.EditableValueHolder - 16
+ - javax.faces.component.ContextCallback - 16
+ - javax.faces.component.UIData$PropertyKeys - 14
+ - javax.faces.event.FacesEvent - 14
+ - javax.faces.component.UIData$EditableValueHolderState - 12
+ - javax.faces.context.ExternalContext - 12
+ - javax.faces.component.visit.VisitResult - 10
+ - javax.faces.component.visit.VisitCallback - 10
+ - javax.faces.component.UIData$FacesEventWrapper - 7
+ - javax.faces.application.Application - 6
+ - javax.faces.event.PhaseId - 6
+ - javax.faces.component.UIColumn - 5
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.FacesException - 5
+ - javax.faces.model.IterableDataModel - 4
+ - javax.servlet.jsp.jstl.sql.Result - 3
+ - javax.faces.application.FacesMessage$Severity - 3
+ - javax.faces.component._ComponentUtils - 2
+ - javax.faces.model.ListDataModel - 2
+ - javax.faces.model.ResultDataModel - 2
+ - javax.faces.application.FacesMessage - 2
+ - javax.faces.model.ScalarDataModel - 2
+ - javax.faces.model.CollectionDataModel - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.component.UIData$1 - 2
+ - javax.faces.event.PostValidateEvent - 2
+ - javax.faces.model.ResultSetDataModel - 2
+ - javax.el.ValueExpression - 2
+ - javax.faces.model.ArrayDataModel - 2
+ - javax.faces.event.PreValidateEvent - 1
+ - javax.faces.component._ClassUtils - 1
+ - javax.faces.component.UniqueIdVendor - 1
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.component.NamingContainer - 1
+ - javax.faces.event.AbortProcessingException - 1

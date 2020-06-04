@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/json/DupDetector.class
+
+ - link:DupDetector-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ErrorPage$JAXB.class
+
+ - link:ErrorPage$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ManagedBeanInfo.class
+
+ - link:ManagedBeanInfo-asmified.java[Asmified]
+
+== References
+

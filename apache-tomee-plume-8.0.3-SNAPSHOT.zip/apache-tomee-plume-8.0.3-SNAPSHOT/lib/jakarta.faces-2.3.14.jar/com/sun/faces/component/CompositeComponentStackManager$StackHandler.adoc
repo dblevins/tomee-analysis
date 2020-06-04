@@ -1,0 +1,8 @@
+= com/sun/faces/component/CompositeComponentStackManager$StackHandler.class
+
+ - link:CompositeComponentStackManager$StackHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.context.FacesContext - 1

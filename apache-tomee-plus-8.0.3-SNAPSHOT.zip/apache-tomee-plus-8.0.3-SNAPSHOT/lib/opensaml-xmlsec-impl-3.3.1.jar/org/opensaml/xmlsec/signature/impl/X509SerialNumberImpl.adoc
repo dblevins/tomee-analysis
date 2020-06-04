@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/X509SerialNumberImpl.class
+
+ - link:X509SerialNumberImpl-asmified.java[Asmified]
+
+== References
+

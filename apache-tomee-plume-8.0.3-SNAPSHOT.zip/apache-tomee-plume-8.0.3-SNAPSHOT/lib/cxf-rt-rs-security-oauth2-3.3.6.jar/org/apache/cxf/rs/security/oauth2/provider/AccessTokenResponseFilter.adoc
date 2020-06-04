@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/provider/AccessTokenResponseFilter.class
+
+ - link:AccessTokenResponseFilter-asmified.java[Asmified]
+
+== References
+

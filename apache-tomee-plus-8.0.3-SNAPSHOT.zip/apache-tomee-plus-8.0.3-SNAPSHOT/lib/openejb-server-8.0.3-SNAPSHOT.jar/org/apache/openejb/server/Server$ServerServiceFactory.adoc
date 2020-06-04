@@ -1,0 +1,6 @@
+= org/apache/openejb/server/Server$ServerServiceFactory.class
+
+ - link:Server$ServerServiceFactory-asmified.java[Asmified]
+
+== References
+

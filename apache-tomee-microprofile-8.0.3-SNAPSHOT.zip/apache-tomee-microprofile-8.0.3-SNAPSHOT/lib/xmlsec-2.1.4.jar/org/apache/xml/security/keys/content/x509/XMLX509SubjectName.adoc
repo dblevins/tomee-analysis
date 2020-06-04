@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/content/x509/XMLX509SubjectName.class
+
+ - link:XMLX509SubjectName-asmified.java[Asmified]
+
+== References
+

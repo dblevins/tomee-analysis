@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/XMLContainerMapping.class
+
+ - link:XMLContainerMapping-asmified.java[Asmified]
+
+== References
+

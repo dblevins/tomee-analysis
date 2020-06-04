@@ -1,0 +1,10 @@
+= javax/management/j2ee/statistics/JDBCConnectionPoolStats.class
+
+ - link:JDBCConnectionPoolStats-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.statistics.CountStatistic - 2
+ - javax.management.j2ee.statistics.BoundedRangeStatistic - 2
+ - javax.management.j2ee.statistics.RangeStatistic - 1
+ - javax.management.j2ee.statistics.JDBCConnectionStats - 1

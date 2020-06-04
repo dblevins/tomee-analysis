@@ -1,0 +1,8 @@
+= javax/faces/view/facelets/FaceletHandler.class
+
+ - link:FaceletHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 1
+ - javax.faces.component.UIComponent - 1

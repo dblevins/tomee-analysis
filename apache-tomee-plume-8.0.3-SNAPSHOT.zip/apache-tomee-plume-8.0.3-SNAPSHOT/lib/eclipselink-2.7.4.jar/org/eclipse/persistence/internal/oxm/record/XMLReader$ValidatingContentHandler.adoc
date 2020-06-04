@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/record/XMLReader$ValidatingContentHandler.class
+
+ - link:XMLReader$ValidatingContentHandler-asmified.java[Asmified]
+
+== References
+

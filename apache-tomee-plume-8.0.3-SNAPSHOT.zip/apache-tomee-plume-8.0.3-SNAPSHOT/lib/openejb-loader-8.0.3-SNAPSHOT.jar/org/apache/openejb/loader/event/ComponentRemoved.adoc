@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/event/ComponentRemoved.class
+
+ - link:ComponentRemoved-asmified.java[Asmified]
+
+== References
+

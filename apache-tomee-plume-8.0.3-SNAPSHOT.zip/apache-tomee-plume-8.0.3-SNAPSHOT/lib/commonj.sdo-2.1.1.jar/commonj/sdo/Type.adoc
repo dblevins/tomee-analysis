@@ -1,0 +1,6 @@
+= commonj/sdo/Type.class
+
+ - link:Type-asmified.java[Asmified]
+
+== References
+

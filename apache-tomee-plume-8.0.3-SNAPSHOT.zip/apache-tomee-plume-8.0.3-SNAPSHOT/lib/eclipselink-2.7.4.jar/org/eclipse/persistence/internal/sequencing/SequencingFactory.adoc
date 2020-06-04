@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sequencing/SequencingFactory.class
+
+ - link:SequencingFactory-asmified.java[Asmified]
+
+== References
+

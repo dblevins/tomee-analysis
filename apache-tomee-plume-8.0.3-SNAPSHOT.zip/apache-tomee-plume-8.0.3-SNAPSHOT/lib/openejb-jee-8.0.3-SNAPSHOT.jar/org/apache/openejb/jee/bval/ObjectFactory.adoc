@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/bval/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 12
+ - javax.xml.bind.annotation.XmlElementDecl - 4
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 1
+ - javax.xml.bind.annotation.XmlRegistry - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1

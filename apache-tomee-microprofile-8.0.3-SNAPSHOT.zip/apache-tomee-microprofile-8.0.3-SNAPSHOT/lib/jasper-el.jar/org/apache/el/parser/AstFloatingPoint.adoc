@@ -1,0 +1,7 @@
+= org/apache/el/parser/AstFloatingPoint.class
+
+ - link:AstFloatingPoint-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELException - 2

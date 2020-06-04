@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/format/MatchStrength.class
+
+ - link:MatchStrength-asmified.java[Asmified]
+
+== References
+

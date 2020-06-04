@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/ParameterExpressionImpl.class
+
+ - link:ParameterExpressionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.ParameterExpression - 1

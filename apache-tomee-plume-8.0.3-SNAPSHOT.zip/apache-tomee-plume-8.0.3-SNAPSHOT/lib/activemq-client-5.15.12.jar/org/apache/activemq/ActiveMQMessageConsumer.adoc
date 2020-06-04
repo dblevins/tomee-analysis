@@ -1,0 +1,15 @@
+= org/apache/activemq/ActiveMQMessageConsumer.class
+
+ - link:ActiveMQMessageConsumer-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 41
+ - javax.jms.MessageListener - 19
+ - javax.jms.InvalidDestinationException - 8
+ - javax.jms.Message - 8
+ - javax.jms.IllegalStateException - 5
+ - javax.jms.MessageConsumer - 2
+ - javax.jms.TransactionRolledBackException - 2
+ - javax.jms.Session - 1
+ - javax.jms.Destination - 1

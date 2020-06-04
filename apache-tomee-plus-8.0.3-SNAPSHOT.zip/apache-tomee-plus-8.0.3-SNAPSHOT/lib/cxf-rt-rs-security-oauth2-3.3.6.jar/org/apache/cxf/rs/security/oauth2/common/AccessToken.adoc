@@ -1,0 +1,12 @@
+= org/apache/cxf/rs/security/oauth2/common/AccessToken.class
+
+ - link:AccessToken-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.MapKeyColumn - 1
+ - javax.persistence.Transient - 1
+ - javax.persistence.MappedSuperclass - 1
+ - javax.persistence.FetchType - 1
+ - javax.persistence.ElementCollection - 1
+ - javax.persistence.Id - 1

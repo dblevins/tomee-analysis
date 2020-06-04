@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ModNode.class
+
+ - link:ModNode-asmified.java[Asmified]
+
+== References
+

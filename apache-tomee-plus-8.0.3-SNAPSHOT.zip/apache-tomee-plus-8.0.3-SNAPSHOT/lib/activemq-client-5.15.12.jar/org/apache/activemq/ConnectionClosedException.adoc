@@ -1,0 +1,7 @@
+= org/apache/activemq/ConnectionClosedException.class
+
+ - link:ConnectionClosedException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.IllegalStateException - 2

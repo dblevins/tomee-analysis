@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/FiredTriggerRecord.class
+
+ - link:FiredTriggerRecord-asmified.java[Asmified]
+
+== References
+

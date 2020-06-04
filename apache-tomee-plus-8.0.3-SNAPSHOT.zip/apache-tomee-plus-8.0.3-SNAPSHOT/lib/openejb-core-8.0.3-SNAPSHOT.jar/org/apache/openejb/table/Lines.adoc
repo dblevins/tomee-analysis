@@ -1,0 +1,6 @@
+= org/apache/openejb/table/Lines.class
+
+ - link:Lines-asmified.java[Asmified]
+
+== References
+

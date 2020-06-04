@@ -1,0 +1,6 @@
+= com/sun/faces/config/Verifier.class
+
+ - link:Verifier-asmified.java[Asmified]
+
+== References
+

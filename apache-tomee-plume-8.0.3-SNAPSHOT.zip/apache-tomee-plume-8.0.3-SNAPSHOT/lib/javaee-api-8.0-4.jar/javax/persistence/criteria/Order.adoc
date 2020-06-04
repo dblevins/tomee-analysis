@@ -1,0 +1,8 @@
+= javax/persistence/criteria/Order.class
+
+ - link:Order-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Order - 1
+ - javax.persistence.criteria.Expression - 1

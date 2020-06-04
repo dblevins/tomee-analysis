@@ -1,0 +1,6 @@
+= org/apache/cxf/management/annotation/ManagedOperationParameter.class
+
+ - link:ManagedOperationParameter-asmified.java[Asmified]
+
+== References
+

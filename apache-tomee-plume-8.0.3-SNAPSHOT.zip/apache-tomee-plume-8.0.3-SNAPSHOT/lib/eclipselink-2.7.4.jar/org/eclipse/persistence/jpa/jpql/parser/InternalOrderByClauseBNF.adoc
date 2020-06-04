@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/InternalOrderByClauseBNF.class
+
+ - link:InternalOrderByClauseBNF-asmified.java[Asmified]
+
+== References
+

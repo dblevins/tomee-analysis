@@ -1,0 +1,6 @@
+= org/hsqldb/lib/OrderedLongHashSet.class
+
+ - link:OrderedLongHashSet-asmified.java[Asmified]
+
+== References
+

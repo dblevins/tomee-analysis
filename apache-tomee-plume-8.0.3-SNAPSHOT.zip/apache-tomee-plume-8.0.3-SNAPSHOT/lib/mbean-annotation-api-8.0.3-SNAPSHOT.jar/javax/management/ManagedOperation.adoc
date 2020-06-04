@@ -1,0 +1,6 @@
+= javax/management/ManagedOperation.class
+
+ - link:ManagedOperation-asmified.java[Asmified]
+
+== References
+

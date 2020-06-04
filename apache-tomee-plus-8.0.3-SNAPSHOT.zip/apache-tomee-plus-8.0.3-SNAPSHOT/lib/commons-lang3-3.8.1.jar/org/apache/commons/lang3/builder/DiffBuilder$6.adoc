@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/builder/DiffBuilder$6.class
+
+ - link:DiffBuilder$6-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/opensaml/core/xml/util/IndexedXMLObjectChildrenList.class
+
+ - link:IndexedXMLObjectChildrenList-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 12
+ - javax.annotation.Nullable - 11
+ - javax.annotation.concurrent.NotThreadSafe - 1

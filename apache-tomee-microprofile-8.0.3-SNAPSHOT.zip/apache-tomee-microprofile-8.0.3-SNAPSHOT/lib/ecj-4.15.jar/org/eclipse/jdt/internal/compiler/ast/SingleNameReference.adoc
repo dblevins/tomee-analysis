@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/SingleNameReference.class
+
+ - link:SingleNameReference-asmified.java[Asmified]
+
+== References
+

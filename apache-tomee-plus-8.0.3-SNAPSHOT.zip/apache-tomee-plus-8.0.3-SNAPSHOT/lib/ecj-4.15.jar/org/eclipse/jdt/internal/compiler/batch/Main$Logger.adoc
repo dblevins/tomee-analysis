@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/Main$Logger.class
+
+ - link:Main$Logger-asmified.java[Asmified]
+
+== References
+

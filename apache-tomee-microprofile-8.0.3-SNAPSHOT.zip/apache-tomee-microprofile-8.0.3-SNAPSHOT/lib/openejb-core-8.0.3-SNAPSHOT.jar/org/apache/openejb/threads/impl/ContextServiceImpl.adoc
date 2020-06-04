@@ -1,0 +1,7 @@
+= org/apache/openejb/threads/impl/ContextServiceImpl.class
+
+ - link:ContextServiceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ContextService - 1

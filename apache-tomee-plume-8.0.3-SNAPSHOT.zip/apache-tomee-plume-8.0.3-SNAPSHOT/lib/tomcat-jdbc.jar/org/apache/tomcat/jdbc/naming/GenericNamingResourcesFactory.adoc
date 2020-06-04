@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/naming/GenericNamingResourcesFactory.class
+
+ - link:GenericNamingResourcesFactory-asmified.java[Asmified]
+
+== References
+

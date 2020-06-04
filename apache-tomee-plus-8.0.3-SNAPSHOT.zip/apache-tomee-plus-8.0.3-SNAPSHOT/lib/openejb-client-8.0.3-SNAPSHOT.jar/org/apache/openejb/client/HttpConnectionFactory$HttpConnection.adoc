@@ -1,0 +1,7 @@
+= org/apache/openejb/client/HttpConnectionFactory$HttpConnection.class
+
+ - link:HttpConnectionFactory$HttpConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.DatatypeConverter - 1

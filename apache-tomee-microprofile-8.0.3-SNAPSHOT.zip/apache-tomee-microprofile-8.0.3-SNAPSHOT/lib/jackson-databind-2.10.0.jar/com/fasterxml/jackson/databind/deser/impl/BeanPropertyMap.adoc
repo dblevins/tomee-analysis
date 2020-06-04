@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.class
+
+ - link:BeanPropertyMap-asmified.java[Asmified]
+
+== References
+

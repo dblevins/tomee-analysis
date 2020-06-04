@@ -1,0 +1,7 @@
+= org/opensaml/core/config/provider/ClasspathConfigurationPropertiesSource.class
+
+ - link:ClasspathConfigurationPropertiesSource-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

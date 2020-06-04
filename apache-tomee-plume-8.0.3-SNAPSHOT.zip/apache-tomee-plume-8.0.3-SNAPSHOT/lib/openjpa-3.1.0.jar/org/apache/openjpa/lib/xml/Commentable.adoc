@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/xml/Commentable.class
+
+ - link:Commentable-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/client/AbstractClient$AbstractClientAsyncResponseInterceptor.class
+
+ - link:AbstractClient$AbstractClientAsyncResponseInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 6
+ - javax.ws.rs.ProcessingException - 3
+ - javax.ws.rs.WebApplicationException - 1

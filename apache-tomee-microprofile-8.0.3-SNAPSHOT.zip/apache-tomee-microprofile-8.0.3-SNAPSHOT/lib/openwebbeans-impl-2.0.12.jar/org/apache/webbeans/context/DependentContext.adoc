@@ -1,0 +1,9 @@
+= org/apache/webbeans/context/DependentContext.class
+
+ - link:DependentContext-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 3
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.context.Dependent - 1

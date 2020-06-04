@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaPatternFacet.class
+
+ - link:XmlSchemaPatternFacet-asmified.java[Asmified]
+
+== References
+

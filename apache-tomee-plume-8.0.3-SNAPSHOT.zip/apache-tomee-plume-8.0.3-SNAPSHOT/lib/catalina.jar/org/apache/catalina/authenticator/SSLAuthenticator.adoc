@@ -1,0 +1,7 @@
+= org/apache/catalina/authenticator/SSLAuthenticator.class
+
+ - link:SSLAuthenticator-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 5

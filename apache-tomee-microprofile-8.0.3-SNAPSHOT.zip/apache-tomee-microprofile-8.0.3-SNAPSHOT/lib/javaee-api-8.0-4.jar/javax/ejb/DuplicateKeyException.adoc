@@ -1,0 +1,7 @@
+= javax/ejb/DuplicateKeyException.class
+
+ - link:DuplicateKeyException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.CreateException - 3

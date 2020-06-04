@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/auxiliary/AbstractAuxiliaryCache.class
+
+ - link:AbstractAuxiliaryCache-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/DeferrableChangeRecord.class
+
+ - link:DeferrableChangeRecord-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/DelayedHashSetProxy.class
+
+ - link:DelayedHashSetProxy-asmified.java[Asmified]
+
+== References
+

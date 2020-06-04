@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/IsNullExpression.class
+
+ - link:IsNullExpression-asmified.java[Asmified]
+
+== References
+

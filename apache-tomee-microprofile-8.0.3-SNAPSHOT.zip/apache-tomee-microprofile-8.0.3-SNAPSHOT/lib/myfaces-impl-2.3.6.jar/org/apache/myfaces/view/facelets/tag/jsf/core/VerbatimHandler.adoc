@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/VerbatimHandler.class
+
+ - link:VerbatimHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.view.facelets.TextHandler - 3
+ - javax.faces.view.facelets.FaceletContext - 3
+ - javax.faces.view.facelets.ComponentConfig - 2
+ - javax.faces.view.facelets.ComponentHandler - 2
+ - javax.faces.view.facelets.FaceletHandler - 2

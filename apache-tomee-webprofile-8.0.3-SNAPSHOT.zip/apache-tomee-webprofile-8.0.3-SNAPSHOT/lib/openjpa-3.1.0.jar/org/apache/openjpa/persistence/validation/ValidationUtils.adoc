@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/validation/ValidationUtils.class
+
+ - link:ValidationUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ValidationMode - 2

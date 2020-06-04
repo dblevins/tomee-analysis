@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/UnitOfWorkChangeSet.class
+
+ - link:UnitOfWorkChangeSet-asmified.java[Asmified]
+
+== References
+

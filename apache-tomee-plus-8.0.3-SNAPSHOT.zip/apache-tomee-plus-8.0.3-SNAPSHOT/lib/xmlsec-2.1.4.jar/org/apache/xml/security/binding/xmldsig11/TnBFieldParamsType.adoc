@@ -1,0 +1,11 @@
+= org/apache/xml/security/binding/xmldsig11/TnBFieldParamsType.class
+
+ - link:TnBFieldParamsType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlSchemaType - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

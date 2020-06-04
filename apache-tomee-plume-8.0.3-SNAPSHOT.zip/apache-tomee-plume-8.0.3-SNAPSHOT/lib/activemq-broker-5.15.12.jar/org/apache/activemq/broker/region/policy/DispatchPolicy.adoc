@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/region/policy/DispatchPolicy.class
+
+ - link:DispatchPolicy-asmified.java[Asmified]
+
+== References
+

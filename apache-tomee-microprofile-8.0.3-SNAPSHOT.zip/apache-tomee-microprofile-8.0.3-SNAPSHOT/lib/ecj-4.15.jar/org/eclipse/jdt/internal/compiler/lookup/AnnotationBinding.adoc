@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/AnnotationBinding.class
+
+ - link:AnnotationBinding-asmified.java[Asmified]
+
+== References
+

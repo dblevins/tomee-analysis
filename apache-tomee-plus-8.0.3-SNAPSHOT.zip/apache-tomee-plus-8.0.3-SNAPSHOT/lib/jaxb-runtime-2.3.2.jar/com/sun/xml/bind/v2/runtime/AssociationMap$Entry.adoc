@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/AssociationMap$Entry.class
+
+ - link:AssociationMap$Entry-asmified.java[Asmified]
+
+== References
+

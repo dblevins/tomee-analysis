@@ -1,0 +1,6 @@
+= org/apache/openejb/config/event/BeforeDeploymentEvent.class
+
+ - link:BeforeDeploymentEvent-asmified.java[Asmified]
+
+== References
+

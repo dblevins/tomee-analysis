@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/weblogic/WebLogicRuntimeServices.class
+
+ - link:WebLogicRuntimeServices-asmified.java[Asmified]
+
+== References
+

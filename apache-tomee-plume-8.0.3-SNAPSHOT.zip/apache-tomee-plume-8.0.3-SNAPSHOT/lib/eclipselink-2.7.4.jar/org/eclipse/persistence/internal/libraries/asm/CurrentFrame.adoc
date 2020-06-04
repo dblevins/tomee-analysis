@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/CurrentFrame.class
+
+ - link:CurrentFrame-asmified.java[Asmified]
+
+== References
+

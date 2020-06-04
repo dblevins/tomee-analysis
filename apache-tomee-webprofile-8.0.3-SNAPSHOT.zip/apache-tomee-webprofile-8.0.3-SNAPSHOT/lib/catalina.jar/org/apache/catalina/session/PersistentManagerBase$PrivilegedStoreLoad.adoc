@@ -1,0 +1,6 @@
+= org/apache/catalina/session/PersistentManagerBase$PrivilegedStoreLoad.class
+
+ - link:PersistentManagerBase$PrivilegedStoreLoad-asmified.java[Asmified]
+
+== References
+

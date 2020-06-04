@@ -1,0 +1,10 @@
+= org/apache/openejb/assembler/classic/LazyValidator.class
+
+ - link:LazyValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 12
+ - javax.validation.Validator - 9
+ - javax.validation.ValidatorContext - 2
+ - javax.validation.Validation - 1

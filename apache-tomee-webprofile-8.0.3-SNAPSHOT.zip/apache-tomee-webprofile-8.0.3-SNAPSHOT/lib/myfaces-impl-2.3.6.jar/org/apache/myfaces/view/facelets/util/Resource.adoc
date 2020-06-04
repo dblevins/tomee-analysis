@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/util/Resource.class
+
+ - link:Resource-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 10
+ - javax.servlet.ServletContext - 4
+ - javax.faces.context.FacesContext - 2

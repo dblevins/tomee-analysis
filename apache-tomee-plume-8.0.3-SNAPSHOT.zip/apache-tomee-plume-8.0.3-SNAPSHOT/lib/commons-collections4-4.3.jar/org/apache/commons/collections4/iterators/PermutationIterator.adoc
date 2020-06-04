@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/PermutationIterator.class
+
+ - link:PermutationIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/AggregateCollectionMapping.class
+
+ - link:AggregateCollectionMapping-asmified.java[Asmified]
+
+== References
+

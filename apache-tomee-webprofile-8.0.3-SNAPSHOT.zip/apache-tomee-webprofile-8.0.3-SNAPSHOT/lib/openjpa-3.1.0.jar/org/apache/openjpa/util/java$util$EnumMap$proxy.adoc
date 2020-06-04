@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/java$util$EnumMap$proxy.class
+
+ - link:java$util$EnumMap$proxy-asmified.java[Asmified]
+
+== References
+

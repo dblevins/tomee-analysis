@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/LogBufferManager$WriteStatsMBean.class
+
+ - link:LogBufferManager$WriteStatsMBean-asmified.java[Asmified]
+
+== References
+

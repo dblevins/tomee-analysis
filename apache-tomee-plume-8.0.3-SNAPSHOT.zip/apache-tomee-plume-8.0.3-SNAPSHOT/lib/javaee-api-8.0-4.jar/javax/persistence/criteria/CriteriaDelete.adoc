@@ -1,0 +1,12 @@
+= javax/persistence/criteria/CriteriaDelete.class
+
+ - link:CriteriaDelete-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Root - 3
+ - javax.persistence.criteria.CriteriaDelete - 2
+ - javax.persistence.metamodel.EntityType - 1
+ - javax.persistence.criteria.Predicate - 1
+ - javax.persistence.criteria.CommonAbstractCriteria - 1
+ - javax.persistence.criteria.Expression - 1

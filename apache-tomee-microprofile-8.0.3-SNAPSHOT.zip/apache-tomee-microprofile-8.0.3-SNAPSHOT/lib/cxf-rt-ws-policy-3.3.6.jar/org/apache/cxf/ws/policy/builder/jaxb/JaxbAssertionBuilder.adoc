@@ -1,0 +1,11 @@
+= org/apache/cxf/ws/policy/builder/jaxb/JaxbAssertionBuilder.class
+
+ - link:JaxbAssertionBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 9
+ - javax.xml.bind.JAXBException - 8
+ - javax.xml.bind.JAXBContext - 8
+ - javax.xml.bind.JAXBElement - 3
+ - javax.xml.bind.ValidationEventHandler - 1

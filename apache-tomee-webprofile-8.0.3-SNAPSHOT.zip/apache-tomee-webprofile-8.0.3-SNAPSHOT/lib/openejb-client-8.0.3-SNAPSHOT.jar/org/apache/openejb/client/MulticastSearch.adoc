@@ -1,0 +1,6 @@
+= org/apache/openejb/client/MulticastSearch.class
+
+ - link:MulticastSearch-asmified.java[Asmified]
+
+== References
+

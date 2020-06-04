@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/Link.class
+
+ - link:Link-asmified.java[Asmified]
+
+== References
+

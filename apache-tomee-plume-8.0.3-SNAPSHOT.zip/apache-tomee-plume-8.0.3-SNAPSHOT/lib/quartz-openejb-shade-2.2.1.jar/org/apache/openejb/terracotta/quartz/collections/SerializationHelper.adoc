@@ -1,0 +1,6 @@
+= org/apache/openejb/terracotta/quartz/collections/SerializationHelper.class
+
+ - link:SerializationHelper-asmified.java[Asmified]
+
+== References
+

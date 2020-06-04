@@ -1,0 +1,9 @@
+= org/apache/bval/el/ELFacade$BValVariableMapper.class
+
+ - link:ELFacade$BValVariableMapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 6
+ - javax.el.ExpressionFactory - 2
+ - javax.el.VariableMapper - 2

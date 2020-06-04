@@ -1,0 +1,7 @@
+= org/apache/activemq/plugin/StatisticsBroker.class
+
+ - link:StatisticsBroker-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

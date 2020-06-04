@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/config/Struct.class
+
+ - link:Struct-asmified.java[Asmified]
+
+== References
+

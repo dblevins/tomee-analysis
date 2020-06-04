@@ -1,0 +1,6 @@
+= org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter$Breakpoint.class
+
+ - link:XMLStreamReaderToXMLStreamWriter$Breakpoint-asmified.java[Asmified]
+
+== References
+

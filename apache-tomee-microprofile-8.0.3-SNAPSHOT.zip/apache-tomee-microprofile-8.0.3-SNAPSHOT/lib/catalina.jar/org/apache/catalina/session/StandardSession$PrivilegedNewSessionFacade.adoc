@@ -1,0 +1,7 @@
+= org/apache/catalina/session/StandardSession$PrivilegedNewSessionFacade.class
+
+ - link:StandardSession$PrivilegedNewSessionFacade-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 5

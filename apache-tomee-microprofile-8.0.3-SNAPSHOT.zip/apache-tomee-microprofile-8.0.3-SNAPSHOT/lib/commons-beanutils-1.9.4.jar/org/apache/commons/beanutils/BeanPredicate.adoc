@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/BeanPredicate.class
+
+ - link:BeanPredicate-asmified.java[Asmified]
+
+== References
+

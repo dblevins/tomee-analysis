@@ -1,0 +1,8 @@
+= org/apache/openejb/cdi/Proxys$ThreadLocalSessionFromRequestHandler.class
+
+ - link:Proxys$ThreadLocalSessionFromRequestHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 5
+ - javax.servlet.http.HttpServletRequest - 5

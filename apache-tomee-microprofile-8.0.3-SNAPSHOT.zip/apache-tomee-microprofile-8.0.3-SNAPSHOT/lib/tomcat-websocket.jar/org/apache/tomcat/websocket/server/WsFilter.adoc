@@ -1,0 +1,15 @@
+= org/apache/tomcat/websocket/server/WsFilter.class
+
+ - link:WsFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 8
+ - javax.servlet.ServletRequest - 7
+ - javax.servlet.ServletResponse - 7
+ - javax.servlet.FilterChain - 6
+ - javax.servlet.http.HttpServletResponse - 5
+ - javax.servlet.GenericFilter - 2
+ - javax.servlet.ServletException - 2
+ - javax.servlet.ServletContext - 2
+ - javax.websocket.server.ServerEndpointConfig - 2

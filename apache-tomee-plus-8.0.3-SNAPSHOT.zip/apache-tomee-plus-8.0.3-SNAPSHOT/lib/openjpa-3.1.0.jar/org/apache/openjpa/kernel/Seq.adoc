@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/Seq.class
+
+ - link:Seq-asmified.java[Asmified]
+
+== References
+

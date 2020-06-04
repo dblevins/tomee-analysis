@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/WebAppDeployer.class
+
+ - link:WebAppDeployer-asmified.java[Asmified]
+
+== References
+

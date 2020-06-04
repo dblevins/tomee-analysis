@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/WSS4JPolicyAsserter.class
+
+ - link:WSS4JPolicyAsserter-asmified.java[Asmified]
+
+== References
+

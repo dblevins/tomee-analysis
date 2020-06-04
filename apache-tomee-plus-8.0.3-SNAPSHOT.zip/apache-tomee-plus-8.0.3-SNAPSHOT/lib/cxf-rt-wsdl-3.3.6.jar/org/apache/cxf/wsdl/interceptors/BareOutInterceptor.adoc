@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/interceptors/BareOutInterceptor.class
+
+ - link:BareOutInterceptor-asmified.java[Asmified]
+
+== References
+

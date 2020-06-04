@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWriter$SingleView.class
+
+ - link:FilteredBeanPropertyWriter$SingleView-asmified.java[Asmified]
+
+== References
+

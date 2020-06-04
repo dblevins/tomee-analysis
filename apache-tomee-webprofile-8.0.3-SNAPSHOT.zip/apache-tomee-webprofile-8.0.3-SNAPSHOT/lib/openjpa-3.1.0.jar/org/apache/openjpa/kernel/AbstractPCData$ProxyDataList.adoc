@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AbstractPCData$ProxyDataList.class
+
+ - link:AbstractPCData$ProxyDataList-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/persistence/EnumType.class
+
+ - link:EnumType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EnumType - 21

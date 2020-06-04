@@ -1,0 +1,15 @@
+= com/sun/xml/bind/v2/model/impl/ClassInfoImpl$SecondaryAnnotation.class
+
+ - link:ClassInfoImpl$SecondaryAnnotation-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlMimeType - 1
+ - javax.xml.bind.annotation.XmlAttachmentRef - 1
+ - javax.xml.bind.annotation.XmlElementWrapper - 1
+ - javax.xml.bind.annotation.XmlIDREF - 1
+ - javax.xml.bind.annotation.XmlSchemaType - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.annotation.XmlID - 1
+ - javax.xml.bind.annotation.XmlList - 1
+ - javax.xml.bind.annotation.XmlInlineBinaryData - 1

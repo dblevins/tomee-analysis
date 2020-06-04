@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/collection/CollectionSupport.class
+
+ - link:CollectionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 20
+ - javax.annotation.Nullable - 8

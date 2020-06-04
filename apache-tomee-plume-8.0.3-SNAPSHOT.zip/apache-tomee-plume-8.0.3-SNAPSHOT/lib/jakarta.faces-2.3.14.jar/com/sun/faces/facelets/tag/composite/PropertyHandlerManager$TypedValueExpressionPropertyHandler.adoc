@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandlerManager$TypedValueExpressionPropertyHandler.class
+
+ - link:PropertyHandlerManager$TypedValueExpressionPropertyHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.el.ValueExpression - 1

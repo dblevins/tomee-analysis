@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/JDBCLockManager.class
+
+ - link:JDBCLockManager-asmified.java[Asmified]
+
+== References
+

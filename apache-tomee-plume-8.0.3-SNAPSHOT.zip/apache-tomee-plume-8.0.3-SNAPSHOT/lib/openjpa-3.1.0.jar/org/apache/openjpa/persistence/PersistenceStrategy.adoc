@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/PersistenceStrategy.class
+
+ - link:PersistenceStrategy-asmified.java[Asmified]
+
+== References
+

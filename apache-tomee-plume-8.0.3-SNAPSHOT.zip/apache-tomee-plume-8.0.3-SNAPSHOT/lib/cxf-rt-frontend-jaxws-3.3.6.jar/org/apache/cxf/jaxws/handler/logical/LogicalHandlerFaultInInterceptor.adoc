@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultInInterceptor.class
+
+ - link:LogicalHandlerFaultInInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Binding - 4
+ - javax.xml.ws.handler.LogicalMessageContext - 2

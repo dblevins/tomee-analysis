@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/spring/NamespaceHandler$SpringServerFactoryBean.class
+
+ - link:NamespaceHandler$SpringServerFactoryBean-asmified.java[Asmified]
+
+== References
+

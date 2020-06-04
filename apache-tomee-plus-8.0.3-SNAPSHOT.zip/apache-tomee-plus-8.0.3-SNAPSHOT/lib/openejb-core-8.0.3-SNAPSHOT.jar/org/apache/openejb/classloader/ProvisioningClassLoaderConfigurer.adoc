@@ -1,0 +1,6 @@
+= org/apache/openejb/classloader/ProvisioningClassLoaderConfigurer.class
+
+ - link:ProvisioningClassLoaderConfigurer-asmified.java[Asmified]
+
+== References
+

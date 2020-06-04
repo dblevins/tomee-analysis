@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/ViewDefinition.class
+
+ - link:ViewDefinition-asmified.java[Asmified]
+
+== References
+

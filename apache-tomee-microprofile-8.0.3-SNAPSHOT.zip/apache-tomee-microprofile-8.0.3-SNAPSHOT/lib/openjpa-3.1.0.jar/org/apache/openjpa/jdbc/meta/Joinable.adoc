@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/Joinable.class
+
+ - link:Joinable-asmified.java[Asmified]
+
+== References
+

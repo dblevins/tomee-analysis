@@ -1,0 +1,15 @@
+= org/apache/openejb/jee/jba/Interceptor.class
+
+ - link:Interceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAttribute - 3
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 3
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 3
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlMixed - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

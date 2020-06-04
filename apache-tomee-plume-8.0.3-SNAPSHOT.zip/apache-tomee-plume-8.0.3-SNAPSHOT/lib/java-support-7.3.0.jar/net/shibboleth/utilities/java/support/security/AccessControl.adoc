@@ -1,0 +1,9 @@
+= net/shibboleth/utilities/java/support/security/AccessControl.class
+
+ - link:AccessControl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2
+ - javax.servlet.ServletRequest - 1
+ - javax.annotation.Nonnull - 1

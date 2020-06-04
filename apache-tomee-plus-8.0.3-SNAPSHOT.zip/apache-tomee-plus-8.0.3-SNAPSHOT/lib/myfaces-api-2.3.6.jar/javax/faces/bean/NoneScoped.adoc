@@ -1,0 +1,6 @@
+= javax/faces/bean/NoneScoped.class
+
+ - link:NoneScoped-asmified.java[Asmified]
+
+== References
+

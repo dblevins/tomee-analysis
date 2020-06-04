@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jpa/rs/PersistenceFactoryBase.class
+
+ - link:PersistenceFactoryBase-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 3
+ - javax.persistence.Persistence - 1
+ - javax.persistence.spi.PersistenceUnitInfo - 1

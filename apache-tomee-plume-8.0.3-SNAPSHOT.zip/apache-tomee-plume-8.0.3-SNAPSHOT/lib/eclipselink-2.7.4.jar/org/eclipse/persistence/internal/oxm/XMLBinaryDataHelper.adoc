@@ -1,0 +1,10 @@
+= org/eclipse/persistence/internal/oxm/XMLBinaryDataHelper.class
+
+ - link:XMLBinaryDataHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 55
+ - javax.mail.internet.MimeMultipart - 23
+ - javax.activation.DataSource - 7
+ - javax.mail.internet.ContentType - 4

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/HashtableOfType.class
+
+ - link:HashtableOfType-asmified.java[Asmified]
+
+== References
+

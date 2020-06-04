@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/AbstractDeserializer.class
+
+ - link:AbstractDeserializer-asmified.java[Asmified]
+
+== References
+

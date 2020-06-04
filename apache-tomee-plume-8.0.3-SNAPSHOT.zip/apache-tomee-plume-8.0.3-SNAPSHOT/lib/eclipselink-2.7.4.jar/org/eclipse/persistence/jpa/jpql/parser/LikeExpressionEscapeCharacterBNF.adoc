@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/LikeExpressionEscapeCharacterBNF.class
+
+ - link:LikeExpressionEscapeCharacterBNF-asmified.java[Asmified]
+
+== References
+

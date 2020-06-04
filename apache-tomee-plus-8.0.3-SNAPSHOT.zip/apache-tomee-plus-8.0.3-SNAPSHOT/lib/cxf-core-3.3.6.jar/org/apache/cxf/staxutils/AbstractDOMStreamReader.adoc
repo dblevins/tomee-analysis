@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/AbstractDOMStreamReader.class
+
+ - link:AbstractDOMStreamReader-asmified.java[Asmified]
+
+== References
+

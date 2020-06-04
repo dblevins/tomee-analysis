@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/JaxWsClientProxy$1.class
+
+ - link:JaxWsClientProxy$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.AsyncHandler - 2

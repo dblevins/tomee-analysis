@@ -1,0 +1,6 @@
+= org/apache/openejb/client/proxy/Jdk13ProxyFactory$MultipleClassLoadersClassLoader.class
+
+ - link:Jdk13ProxyFactory$MultipleClassLoadersClassLoader-asmified.java[Asmified]
+
+== References
+

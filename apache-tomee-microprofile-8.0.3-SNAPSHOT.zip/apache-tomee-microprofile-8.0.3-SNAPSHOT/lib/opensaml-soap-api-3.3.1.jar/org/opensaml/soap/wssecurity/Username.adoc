@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/Username.class
+
+ - link:Username-asmified.java[Asmified]
+
+== References
+

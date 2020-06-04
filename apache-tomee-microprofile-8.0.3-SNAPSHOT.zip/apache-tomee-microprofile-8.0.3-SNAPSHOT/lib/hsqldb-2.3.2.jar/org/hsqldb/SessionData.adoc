@@ -1,0 +1,6 @@
+= org/hsqldb/SessionData.class
+
+ - link:SessionData-asmified.java[Asmified]
+
+== References
+

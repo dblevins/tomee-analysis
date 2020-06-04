@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/mappings/TransientImpl.class
+
+ - link:TransientImpl-asmified.java[Asmified]
+
+== References
+

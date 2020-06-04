@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/config/XMLConfigurationException.class
+
+ - link:XMLConfigurationException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

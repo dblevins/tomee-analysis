@@ -1,0 +1,10 @@
+= org/apache/johnzon/jsonb/cdi/CDIs$Lazy.class
+
+ - link:CDIs$Lazy-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 6
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.context.spi.Contextual - 1

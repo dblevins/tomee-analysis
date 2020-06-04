@@ -1,0 +1,6 @@
+= org/apache/openejb/sxc/WebservicesXml.class
+
+ - link:WebservicesXml-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/cache/annotation/CacheResult.class
+
+ - link:CacheResult-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 7

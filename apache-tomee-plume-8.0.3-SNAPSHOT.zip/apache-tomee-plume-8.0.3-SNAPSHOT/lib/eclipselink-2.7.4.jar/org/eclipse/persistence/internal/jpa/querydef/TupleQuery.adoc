@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/querydef/TupleQuery.class
+
+ - link:TupleQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 2

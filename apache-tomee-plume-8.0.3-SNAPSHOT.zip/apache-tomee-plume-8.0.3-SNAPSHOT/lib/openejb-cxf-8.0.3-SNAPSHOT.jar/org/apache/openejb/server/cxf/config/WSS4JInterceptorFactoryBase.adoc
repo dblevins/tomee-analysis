@@ -1,0 +1,6 @@
+= org/apache/openejb/server/cxf/config/WSS4JInterceptorFactoryBase.class
+
+ - link:WSS4JInterceptorFactoryBase-asmified.java[Asmified]
+
+== References
+

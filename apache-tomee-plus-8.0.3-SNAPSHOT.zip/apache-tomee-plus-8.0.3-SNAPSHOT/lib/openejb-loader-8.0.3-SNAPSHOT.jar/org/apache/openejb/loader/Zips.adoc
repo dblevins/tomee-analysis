@@ -1,0 +1,6 @@
+= org/apache/openejb/loader/Zips.class
+
+ - link:Zips-asmified.java[Asmified]
+
+== References
+

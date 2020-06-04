@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/util/QNameMap$EntryIterator.class
+
+ - link:QNameMap$EntryIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/JaxBeanInfo.class
+
+ - link:JaxBeanInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 1
+ - javax.xml.bind.Marshaller - 1

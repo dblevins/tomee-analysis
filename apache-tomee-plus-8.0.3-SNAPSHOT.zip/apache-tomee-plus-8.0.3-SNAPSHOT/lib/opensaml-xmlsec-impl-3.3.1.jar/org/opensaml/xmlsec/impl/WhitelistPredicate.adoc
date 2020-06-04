@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/impl/WhitelistPredicate.class
+
+ - link:WhitelistPredicate-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 2

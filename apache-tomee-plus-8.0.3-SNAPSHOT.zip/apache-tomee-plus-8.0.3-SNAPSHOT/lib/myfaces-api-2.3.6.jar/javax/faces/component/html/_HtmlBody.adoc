@@ -1,0 +1,12 @@
+= javax/faces/component/html/_HtmlBody.class
+
+ - link:_HtmlBody-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIOutput - 6
+ - javax.faces.convert.Converter - 2
+ - javax.faces.component.html._UniversalProperties - 1
+ - javax.faces.component.html._RoleProperty - 1
+ - javax.faces.component.html._EventProperties - 1
+ - javax.faces.component.html._StyleProperties - 1

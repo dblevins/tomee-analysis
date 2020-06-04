@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/xml/ClasspathResolver.class
+
+ - link:ClasspathResolver-asmified.java[Asmified]
+
+== References
+

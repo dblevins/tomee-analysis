@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/MessagePart.class
+
+ - link:MessagePart-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.SendHandler - 12

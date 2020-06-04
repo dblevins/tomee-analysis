@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/SecurableObjectHolder.class
+
+ - link:SecurableObjectHolder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/JobDetailImpl.class
+
+ - link:JobDetailImpl-asmified.java[Asmified]
+
+== References
+

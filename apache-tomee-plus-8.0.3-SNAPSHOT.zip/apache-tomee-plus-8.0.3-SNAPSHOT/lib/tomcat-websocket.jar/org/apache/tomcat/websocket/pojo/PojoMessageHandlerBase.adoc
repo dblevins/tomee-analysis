@@ -1,0 +1,10 @@
+= org/apache/tomcat/websocket/pojo/PojoMessageHandlerBase.class
+
+ - link:PojoMessageHandlerBase-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 6
+ - javax.websocket.RemoteEndpoint$Basic - 6
+ - javax.websocket.MessageHandler - 3
+ - javax.websocket.EncodeException - 1

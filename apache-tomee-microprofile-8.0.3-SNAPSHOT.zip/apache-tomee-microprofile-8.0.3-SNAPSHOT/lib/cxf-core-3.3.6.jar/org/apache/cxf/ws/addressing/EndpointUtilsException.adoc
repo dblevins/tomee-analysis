@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/EndpointUtilsException.class
+
+ - link:EndpointUtilsException-asmified.java[Asmified]
+
+== References
+

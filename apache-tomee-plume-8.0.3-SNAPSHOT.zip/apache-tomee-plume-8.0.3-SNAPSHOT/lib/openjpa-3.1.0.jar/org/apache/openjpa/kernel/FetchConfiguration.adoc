@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/FetchConfiguration.class
+
+ - link:FetchConfiguration-asmified.java[Asmified]
+
+== References
+

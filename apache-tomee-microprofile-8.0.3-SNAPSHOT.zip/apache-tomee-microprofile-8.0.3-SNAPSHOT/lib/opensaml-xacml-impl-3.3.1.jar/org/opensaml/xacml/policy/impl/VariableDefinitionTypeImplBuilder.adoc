@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/VariableDefinitionTypeImplBuilder.class
+
+ - link:VariableDefinitionTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SelectImpl$1.class
+
+ - link:SelectImpl$1-asmified.java[Asmified]
+
+== References
+

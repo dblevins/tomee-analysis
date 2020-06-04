@@ -1,0 +1,7 @@
+= org/apache/geronimo/config/ConfigValueImpl.class
+
+ - link:ConfigValueImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Typed - 1

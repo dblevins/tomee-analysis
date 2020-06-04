@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/BaseInputSource.class
+
+ - link:BaseInputSource-asmified.java[Asmified]
+
+== References
+

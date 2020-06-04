@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/ContextualSerializer.class
+
+ - link:ContextualSerializer-asmified.java[Asmified]
+
+== References
+

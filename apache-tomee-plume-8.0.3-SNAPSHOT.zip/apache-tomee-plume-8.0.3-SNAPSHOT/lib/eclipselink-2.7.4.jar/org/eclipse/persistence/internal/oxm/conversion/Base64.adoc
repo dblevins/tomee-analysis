@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/conversion/Base64.class
+
+ - link:Base64-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/lib/HashMappedList.class
+
+ - link:HashMappedList-asmified.java[Asmified]
+
+== References
+

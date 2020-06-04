@@ -1,0 +1,7 @@
+= javax/batch/operations/JobExecutionNotMostRecentException.class
+
+ - link:JobExecutionNotMostRecentException-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.operations.BatchRuntimeException - 5

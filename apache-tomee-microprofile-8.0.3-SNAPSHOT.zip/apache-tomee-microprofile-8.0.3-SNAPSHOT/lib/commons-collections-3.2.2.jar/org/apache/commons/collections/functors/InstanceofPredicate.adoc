@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/InstanceofPredicate.class
+
+ - link:InstanceofPredicate-asmified.java[Asmified]
+
+== References
+

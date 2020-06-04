@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/output/Encoded.class
+
+ - link:Encoded-asmified.java[Asmified]
+
+== References
+

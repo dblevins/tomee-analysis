@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/wadl/Description.class
+
+ - link:Description-asmified.java[Asmified]
+
+== References
+

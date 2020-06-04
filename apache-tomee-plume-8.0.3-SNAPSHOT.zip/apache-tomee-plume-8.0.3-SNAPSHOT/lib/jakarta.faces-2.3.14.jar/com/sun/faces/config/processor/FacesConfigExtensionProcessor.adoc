@@ -1,0 +1,8 @@
+= com/sun/faces/config/processor/FacesConfigExtensionProcessor.class
+
+ - link:FacesConfigExtensionProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1
+ - javax.servlet.ServletContext - 1

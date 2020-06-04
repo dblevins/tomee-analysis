@@ -1,0 +1,10 @@
+= org/apache/webbeans/component/SelfInterceptorBean.class
+
+ - link:SelfInterceptorBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 3
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.context.spi.CreationalContext - 1
+ - javax.enterprise.inject.spi.InterceptionType - 1

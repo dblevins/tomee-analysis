@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/changesets/EISOrderedCollectionChangeRecord.class
+
+ - link:EISOrderedCollectionChangeRecord-asmified.java[Asmified]
+
+== References
+

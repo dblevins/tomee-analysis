@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/async/NonBlockingInputFeeder.class
+
+ - link:NonBlockingInputFeeder-asmified.java[Asmified]
+
+== References
+

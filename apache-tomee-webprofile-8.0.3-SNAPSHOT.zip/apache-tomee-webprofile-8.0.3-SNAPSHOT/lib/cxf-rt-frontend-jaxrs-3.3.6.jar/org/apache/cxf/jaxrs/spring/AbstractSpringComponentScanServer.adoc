@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/spring/AbstractSpringComponentScanServer.class
+
+ - link:AbstractSpringComponentScanServer-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 9
+ - javax.ws.rs.ext.Provider - 4
+ - javax.ws.rs.ApplicationPath - 4
+ - javax.ws.rs.Path - 2

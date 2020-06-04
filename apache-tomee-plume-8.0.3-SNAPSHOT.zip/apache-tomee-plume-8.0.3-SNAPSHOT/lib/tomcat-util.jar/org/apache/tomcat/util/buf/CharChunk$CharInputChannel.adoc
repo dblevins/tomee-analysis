@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/buf/CharChunk$CharInputChannel.class
+
+ - link:CharChunk$CharInputChannel-asmified.java[Asmified]
+
+== References
+

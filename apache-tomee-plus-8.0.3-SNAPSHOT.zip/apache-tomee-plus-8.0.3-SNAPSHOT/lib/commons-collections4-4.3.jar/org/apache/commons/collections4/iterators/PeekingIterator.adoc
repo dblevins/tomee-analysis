@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/PeekingIterator.class
+
+ - link:PeekingIterator-asmified.java[Asmified]
+
+== References
+

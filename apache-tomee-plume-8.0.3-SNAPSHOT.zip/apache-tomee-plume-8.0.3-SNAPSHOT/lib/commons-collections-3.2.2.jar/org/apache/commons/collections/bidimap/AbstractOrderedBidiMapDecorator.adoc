@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bidimap/AbstractOrderedBidiMapDecorator.class
+
+ - link:AbstractOrderedBidiMapDecorator-asmified.java[Asmified]
+
+== References
+

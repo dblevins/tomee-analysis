@@ -1,0 +1,7 @@
+= org/apache/bval/constraints/FutureOrPresentValidator.class
+
+ - link:FutureOrPresentValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.FutureOrPresent - 1

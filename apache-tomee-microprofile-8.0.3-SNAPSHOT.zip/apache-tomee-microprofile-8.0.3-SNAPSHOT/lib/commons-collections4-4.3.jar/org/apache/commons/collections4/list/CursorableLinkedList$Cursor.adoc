@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/list/CursorableLinkedList$Cursor.class
+
+ - link:CursorableLinkedList$Cursor-asmified.java[Asmified]
+
+== References
+

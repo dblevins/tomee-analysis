@@ -1,0 +1,8 @@
+= javax/mail/search/IntegerComparisonTerm.class
+
+ - link:IntegerComparisonTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.ComparisonTerm - 3
+ - javax.mail.search.IntegerComparisonTerm - 2

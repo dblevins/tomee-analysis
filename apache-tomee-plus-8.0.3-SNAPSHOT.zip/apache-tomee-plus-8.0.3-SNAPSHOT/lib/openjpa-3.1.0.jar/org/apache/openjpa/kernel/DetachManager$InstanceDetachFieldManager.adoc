@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DetachManager$InstanceDetachFieldManager.class
+
+ - link:DetachManager$InstanceDetachFieldManager-asmified.java[Asmified]
+
+== References
+

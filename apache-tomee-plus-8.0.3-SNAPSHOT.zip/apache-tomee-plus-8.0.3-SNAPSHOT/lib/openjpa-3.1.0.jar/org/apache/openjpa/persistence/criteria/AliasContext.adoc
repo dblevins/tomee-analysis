@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/criteria/AliasContext.class
+
+ - link:AliasContext-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Selection - 5
+ - javax.persistence.criteria.Root - 1

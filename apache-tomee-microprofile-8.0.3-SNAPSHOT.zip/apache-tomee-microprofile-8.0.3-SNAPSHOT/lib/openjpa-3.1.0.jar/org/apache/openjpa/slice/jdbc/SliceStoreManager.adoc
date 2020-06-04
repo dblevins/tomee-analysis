@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/SliceStoreManager.class
+
+ - link:SliceStoreManager-asmified.java[Asmified]
+
+== References
+

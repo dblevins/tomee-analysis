@@ -1,0 +1,6 @@
+= org/hsqldb/lib/MultiValueHashMap.class
+
+ - link:MultiValueHashMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/HierarchyBuilder$ElementDelegate.class
+
+ - link:HierarchyBuilder$ElementDelegate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/TypeReference$AnnotationCollector.class
+
+ - link:TypeReference$AnnotationCollector-asmified.java[Asmified]
+
+== References
+

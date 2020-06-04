@@ -1,0 +1,14 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/wss4j-ws-security-stax-2.2.5.jar
+
+ - link:org/apache/wss4j/stax/impl/processor/input/SAMLTokenInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/SAMLTokenInputHandler.class] - 11
+ - link:org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/SecurityContextTokenInputHandler.class] - 6
+ - link:org/apache/wss4j/stax/setup/WSSec.adoc[org/apache/wss4j/stax/setup/WSSec.class] - 4
+ - link:org/apache/wss4j/stax/validate/BinarySecurityTokenValidatorImpl.adoc[org/apache/wss4j/stax/validate/BinarySecurityTokenValidatorImpl.class] - 4
+ - link:org/apache/wss4j/stax/impl/processor/input/DerivedKeyTokenInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/DerivedKeyTokenInputHandler.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/SignatureConfirmationInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/SignatureConfirmationInputHandler.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/SecurityTokenReferenceInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/SecurityTokenReferenceInputHandler.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/BinarySecurityTokenInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/BinarySecurityTokenInputHandler.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/WSSEncryptedKeyInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/WSSEncryptedKeyInputHandler.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/DecryptInputProcessor.adoc[org/apache/wss4j/stax/impl/processor/input/DecryptInputProcessor.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/UsernameTokenInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/UsernameTokenInputHandler.class] - 2
+ - link:org/apache/wss4j/stax/impl/processor/input/TimestampInputHandler.adoc[org/apache/wss4j/stax/impl/processor/input/TimestampInputHandler.class] - 2

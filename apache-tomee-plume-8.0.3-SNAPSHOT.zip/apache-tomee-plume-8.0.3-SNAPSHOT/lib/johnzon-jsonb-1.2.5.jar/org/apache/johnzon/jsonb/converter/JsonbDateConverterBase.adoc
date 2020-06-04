@@ -1,0 +1,7 @@
+= org/apache/johnzon/jsonb/converter/JsonbDateConverterBase.class
+
+ - link:JsonbDateConverterBase-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbDateFormat - 5

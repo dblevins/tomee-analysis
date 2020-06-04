@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/jdbc/Columns.class
+
+ - link:Columns-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 1

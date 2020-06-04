@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/AnyCollectionMapping.class
+
+ - link:AnyCollectionMapping-asmified.java[Asmified]
+
+== References
+

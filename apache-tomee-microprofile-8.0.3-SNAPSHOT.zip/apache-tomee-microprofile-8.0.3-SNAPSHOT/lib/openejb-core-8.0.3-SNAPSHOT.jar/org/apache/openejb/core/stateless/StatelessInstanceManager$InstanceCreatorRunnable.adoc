@@ -1,0 +1,6 @@
+= org/apache/openejb/core/stateless/StatelessInstanceManager$InstanceCreatorRunnable.class
+
+ - link:StatelessInstanceManager$InstanceCreatorRunnable-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ejbd/BasicClusterableRequestHandler.class
+
+ - link:BasicClusterableRequestHandler-asmified.java[Asmified]
+
+== References
+

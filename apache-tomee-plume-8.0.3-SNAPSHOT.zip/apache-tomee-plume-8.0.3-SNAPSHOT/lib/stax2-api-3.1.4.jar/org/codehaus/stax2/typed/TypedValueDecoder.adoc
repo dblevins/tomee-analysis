@@ -1,0 +1,6 @@
+= org/codehaus/stax2/typed/TypedValueDecoder.class
+
+ - link:TypedValueDecoder-asmified.java[Asmified]
+
+== References
+

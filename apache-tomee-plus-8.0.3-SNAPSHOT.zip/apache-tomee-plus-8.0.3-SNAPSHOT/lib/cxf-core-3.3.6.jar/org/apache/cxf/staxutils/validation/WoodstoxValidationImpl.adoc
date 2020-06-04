@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/validation/WoodstoxValidationImpl.class
+
+ - link:WoodstoxValidationImpl-asmified.java[Asmified]
+
+== References
+

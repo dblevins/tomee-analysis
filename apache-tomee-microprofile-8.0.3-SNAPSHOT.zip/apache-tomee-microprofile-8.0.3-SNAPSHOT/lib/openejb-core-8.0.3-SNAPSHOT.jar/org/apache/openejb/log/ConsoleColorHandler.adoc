@@ -1,0 +1,6 @@
+= org/apache/openejb/log/ConsoleColorHandler.class
+
+ - link:ConsoleColorHandler-asmified.java[Asmified]
+
+== References
+

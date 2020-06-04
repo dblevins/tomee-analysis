@@ -1,0 +1,6 @@
+= com/ctc/wstx/exc/WstxParsingException.class
+
+ - link:WstxParsingException-asmified.java[Asmified]
+
+== References
+

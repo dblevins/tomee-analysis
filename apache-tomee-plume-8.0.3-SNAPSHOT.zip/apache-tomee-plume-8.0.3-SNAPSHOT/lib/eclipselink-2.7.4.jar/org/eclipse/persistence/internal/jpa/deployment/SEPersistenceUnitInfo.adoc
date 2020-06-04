@@ -1,0 +1,12 @@
+= org/eclipse/persistence/internal/jpa/deployment/SEPersistenceUnitInfo.class
+
+ - link:SEPersistenceUnitInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitTransactionType - 7
+ - javax.persistence.SharedCacheMode - 6
+ - javax.persistence.ValidationMode - 6
+ - javax.persistence.PersistenceException - 2
+ - javax.persistence.spi.ClassTransformer - 1
+ - javax.persistence.spi.PersistenceUnitInfo - 1

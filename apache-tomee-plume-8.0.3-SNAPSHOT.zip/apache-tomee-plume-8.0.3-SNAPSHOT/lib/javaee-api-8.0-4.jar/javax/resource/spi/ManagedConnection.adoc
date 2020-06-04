@@ -1,0 +1,11 @@
+= javax/resource/spi/ManagedConnection.class
+
+ - link:ManagedConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 9
+ - javax.resource.spi.ConnectionEventListener - 2
+ - javax.resource.spi.ManagedConnectionMetaData - 1
+ - javax.resource.spi.LocalTransaction - 1
+ - javax.resource.spi.ConnectionRequestInfo - 1

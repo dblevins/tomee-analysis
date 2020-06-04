@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/securityEvent/DefaultTokenSecurityEvent.class
+
+ - link:DefaultTokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

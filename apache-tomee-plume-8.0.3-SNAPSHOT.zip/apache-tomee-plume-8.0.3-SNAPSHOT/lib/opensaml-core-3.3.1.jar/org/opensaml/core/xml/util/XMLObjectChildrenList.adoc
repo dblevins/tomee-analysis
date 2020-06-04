@@ -1,0 +1,8 @@
+= org/opensaml/core/xml/util/XMLObjectChildrenList.class
+
+ - link:XMLObjectChildrenList-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 7

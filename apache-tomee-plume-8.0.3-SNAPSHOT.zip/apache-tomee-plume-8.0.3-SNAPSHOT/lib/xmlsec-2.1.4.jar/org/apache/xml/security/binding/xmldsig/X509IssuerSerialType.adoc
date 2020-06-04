@@ -1,0 +1,10 @@
+= org/apache/xml/security/binding/xmldsig/X509IssuerSerialType.class
+
+ - link:X509IssuerSerialType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 2
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

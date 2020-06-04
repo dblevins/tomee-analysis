@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/RedefinitionHelper$1.class
+
+ - link:RedefinitionHelper$1-asmified.java[Asmified]
+
+== References
+

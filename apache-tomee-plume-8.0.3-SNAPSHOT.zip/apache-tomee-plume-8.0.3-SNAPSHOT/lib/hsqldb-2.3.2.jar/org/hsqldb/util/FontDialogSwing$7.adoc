@@ -1,0 +1,6 @@
+= org/hsqldb/util/FontDialogSwing$7.class
+
+ - link:FontDialogSwing$7-asmified.java[Asmified]
+
+== References
+

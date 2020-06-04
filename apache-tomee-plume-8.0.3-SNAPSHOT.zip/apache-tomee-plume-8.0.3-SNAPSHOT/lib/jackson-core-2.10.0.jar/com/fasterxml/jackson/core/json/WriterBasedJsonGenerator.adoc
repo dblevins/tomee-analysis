@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.class
+
+ - link:WriterBasedJsonGenerator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/hsqldb/persist/BlockObjectStore.class
+
+ - link:BlockObjectStore-asmified.java[Asmified]
+
+== References
+

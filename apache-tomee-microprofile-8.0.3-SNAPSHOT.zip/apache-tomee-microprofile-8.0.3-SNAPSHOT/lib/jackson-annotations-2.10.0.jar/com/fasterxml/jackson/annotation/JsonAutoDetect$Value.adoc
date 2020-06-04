@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonAutoDetect$Value.class
+
+ - link:JsonAutoDetect$Value-asmified.java[Asmified]
+
+== References
+

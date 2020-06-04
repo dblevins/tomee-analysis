@@ -1,0 +1,11 @@
+= org/apache/webbeans/lifecycle/StandaloneLifeCycle.class
+
+ - link:StandaloneLifeCycle-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.RequestScoped - 2
+ - javax.enterprise.context.ConversationScoped - 2
+ - javax.enterprise.context.ApplicationScoped - 2
+ - javax.enterprise.context.SessionScoped - 2
+ - javax.inject.Singleton - 2

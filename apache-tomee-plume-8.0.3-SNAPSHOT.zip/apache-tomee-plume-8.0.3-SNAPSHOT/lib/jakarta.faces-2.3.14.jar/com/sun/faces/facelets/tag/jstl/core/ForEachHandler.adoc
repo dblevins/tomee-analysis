@@ -1,0 +1,16 @@
+= com/sun/faces/facelets/tag/jstl/core/ForEachHandler.class
+
+ - link:ForEachHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 53
+ - javax.faces.view.facelets.TagAttribute - 52
+ - javax.faces.view.facelets.FaceletContext - 33
+ - javax.el.VariableMapper - 17
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.view.facelets.TagAttributeException - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.view.facelets.TagConfig - 3
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.el.ELContext - 1

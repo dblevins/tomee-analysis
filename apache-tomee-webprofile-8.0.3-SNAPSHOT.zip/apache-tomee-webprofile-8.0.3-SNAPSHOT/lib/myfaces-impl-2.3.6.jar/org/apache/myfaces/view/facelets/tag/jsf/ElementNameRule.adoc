@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ElementNameRule.class
+
+ - link:ElementNameRule-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 4
+ - javax.faces.view.facelets.MetaRule - 2
+ - javax.faces.view.facelets.MetadataTarget - 2
+ - javax.faces.view.facelets.Metadata - 1

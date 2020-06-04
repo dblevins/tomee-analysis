@@ -1,0 +1,8 @@
+= com/sun/faces/application/view/FaceletViewHandlingStrategy$2.class
+
+ - link:FaceletViewHandlingStrategy$2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Resource - 5
+ - javax.faces.context.FacesContext - 3

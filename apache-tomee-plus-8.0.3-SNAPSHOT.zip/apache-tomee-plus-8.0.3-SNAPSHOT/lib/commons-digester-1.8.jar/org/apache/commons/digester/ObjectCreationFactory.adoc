@@ -1,0 +1,6 @@
+= org/apache/commons/digester/ObjectCreationFactory.class
+
+ - link:ObjectCreationFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,17 @@
+= org/apache/geronimo/microprofile/metrics/cdi/TimedInterceptor.class
+
+ - link:TimedInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 11
+ - javax.interceptor.InvocationContext - 8
+ - javax.enterprise.inject.spi.AnnotatedCallable - 8
+ - javax.inject.Inject - 4
+ - javax.enterprise.inject.spi.Bean - 3
+ - javax.enterprise.inject.spi.BeanManager - 3
+ - javax.interceptor.Interceptor - 1
+ - javax.annotation.Priority - 1
+ - javax.interceptor.AroundConstruct - 1
+ - javax.interceptor.AroundInvoke - 1
+ - javax.enterprise.inject.Intercepted - 1

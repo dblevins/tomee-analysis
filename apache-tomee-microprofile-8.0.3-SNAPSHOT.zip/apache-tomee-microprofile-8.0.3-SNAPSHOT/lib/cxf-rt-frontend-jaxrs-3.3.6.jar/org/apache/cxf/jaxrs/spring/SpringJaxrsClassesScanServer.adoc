@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/spring/SpringJaxrsClassesScanServer.class
+
+ - link:SpringJaxrsClassesScanServer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/DBDictionary.class
+
+ - link:DBDictionary-asmified.java[Asmified]
+
+== References
+

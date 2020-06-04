@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/transformers/ConstantTransformer.class
+
+ - link:ConstantTransformer-asmified.java[Asmified]
+
+== References
+

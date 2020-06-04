@@ -1,0 +1,6 @@
+= org/apache/openejb/client/ClientIdentityPrincipal.class
+
+ - link:ClientIdentityPrincipal-asmified.java[Asmified]
+
+== References
+

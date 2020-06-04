@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/AbstractPreparedQueryCacheInstrument.class
+
+ - link:AbstractPreparedQueryCacheInstrument-asmified.java[Asmified]
+
+== References
+

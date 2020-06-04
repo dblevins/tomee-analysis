@@ -1,0 +1,9 @@
+= javax/faces/view/facelets/MetaRuleset.class
+
+ - link:MetaRuleset-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.MetaRuleset - 5
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.MetaRule - 1

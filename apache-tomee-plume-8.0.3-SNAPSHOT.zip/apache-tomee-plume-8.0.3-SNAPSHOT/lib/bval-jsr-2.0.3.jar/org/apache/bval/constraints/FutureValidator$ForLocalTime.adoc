@@ -1,0 +1,6 @@
+= org/apache/bval/constraints/FutureValidator$ForLocalTime.class
+
+ - link:FutureValidator$ForLocalTime-asmified.java[Asmified]
+
+== References
+

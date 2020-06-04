@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/tag/jsf/PassThroughAttributeLibrary.class
+
+ - link:PassThroughAttributeLibrary-asmified.java[Asmified]
+
+== References
+

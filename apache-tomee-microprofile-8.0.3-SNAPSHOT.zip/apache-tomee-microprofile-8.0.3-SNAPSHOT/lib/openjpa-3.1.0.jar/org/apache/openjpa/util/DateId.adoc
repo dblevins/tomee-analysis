@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/DateId.class
+
+ - link:DateId-asmified.java[Asmified]
+
+== References
+

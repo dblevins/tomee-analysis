@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/AccessMode$Reader.class
+
+ - link:AccessMode$Reader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= javax/faces/event/WebsocketEvent.class
+
+ - link:WebsocketEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.CloseReason$CloseCode - 9
+ - javax.faces.event.WebsocketEvent - 2

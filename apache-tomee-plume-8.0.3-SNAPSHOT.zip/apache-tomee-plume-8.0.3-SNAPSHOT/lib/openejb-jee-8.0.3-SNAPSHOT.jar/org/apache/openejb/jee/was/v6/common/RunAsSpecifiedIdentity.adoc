@@ -1,0 +1,10 @@
+= org/apache/openejb/jee/was/v6/common/RunAsSpecifiedIdentity.class
+
+ - link:RunAsSpecifiedIdentity-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

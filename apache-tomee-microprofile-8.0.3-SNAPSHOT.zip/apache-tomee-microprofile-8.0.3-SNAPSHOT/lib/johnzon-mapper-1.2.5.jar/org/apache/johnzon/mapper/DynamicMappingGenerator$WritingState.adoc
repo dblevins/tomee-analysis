@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/DynamicMappingGenerator$WritingState.class
+
+ - link:DynamicMappingGenerator$WritingState-asmified.java[Asmified]
+
+== References
+

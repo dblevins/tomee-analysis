@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdrpi/impl/RegistrationPolicyUnmarshaller.class
+
+ - link:RegistrationPolicyUnmarshaller-asmified.java[Asmified]
+
+== References
+

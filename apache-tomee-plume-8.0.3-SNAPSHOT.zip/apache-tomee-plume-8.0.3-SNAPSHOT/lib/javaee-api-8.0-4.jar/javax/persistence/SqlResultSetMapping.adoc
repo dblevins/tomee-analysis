@@ -1,0 +1,10 @@
+= javax/persistence/SqlResultSetMapping.class
+
+ - link:SqlResultSetMapping-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ColumnResult - 1
+ - javax.persistence.EntityResult - 1
+ - javax.persistence.ConstructorResult - 1
+ - javax.persistence.SqlResultSetMappings - 1

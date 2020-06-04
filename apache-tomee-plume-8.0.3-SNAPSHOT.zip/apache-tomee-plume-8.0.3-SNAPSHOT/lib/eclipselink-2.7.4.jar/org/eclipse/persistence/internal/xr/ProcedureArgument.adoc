@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/ProcedureArgument.class
+
+ - link:ProcedureArgument-asmified.java[Asmified]
+
+== References
+

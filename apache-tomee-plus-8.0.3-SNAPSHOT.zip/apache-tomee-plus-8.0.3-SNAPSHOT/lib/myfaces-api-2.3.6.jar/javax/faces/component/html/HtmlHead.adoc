@@ -1,0 +1,14 @@
+= javax/faces/component/html/HtmlHead.class
+
+ - link:HtmlHead-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 12
+ - javax.faces.component.html.HtmlHead - 7
+ - javax.faces.component.html.HtmlHead$PropertyKeys - 6
+ - javax.faces.component.html._CommonPropertyConstants - 4
+ - javax.faces.component.UIOutput - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.el.ValueExpression - 2
+ - javax.faces.el.ValueBinding - 2

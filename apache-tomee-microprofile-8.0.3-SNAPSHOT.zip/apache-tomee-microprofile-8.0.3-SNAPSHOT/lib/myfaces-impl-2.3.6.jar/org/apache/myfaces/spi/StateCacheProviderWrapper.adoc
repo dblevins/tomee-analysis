@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/StateCacheProviderWrapper.class
+
+ - link:StateCacheProviderWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.FacesWrapper - 1

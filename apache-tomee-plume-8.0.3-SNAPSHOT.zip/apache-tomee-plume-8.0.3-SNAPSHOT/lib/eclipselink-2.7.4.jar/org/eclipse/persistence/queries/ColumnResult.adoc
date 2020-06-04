@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ColumnResult.class
+
+ - link:ColumnResult-asmified.java[Asmified]
+
+== References
+

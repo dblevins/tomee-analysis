@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/diagnose/DiagnoseParser$PrimaryRepairInfo.class
+
+ - link:DiagnoseParser$PrimaryRepairInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/activemq/ActiveMQMessageConsumer$7.class
+
+ - link:ActiveMQMessageConsumer$7-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

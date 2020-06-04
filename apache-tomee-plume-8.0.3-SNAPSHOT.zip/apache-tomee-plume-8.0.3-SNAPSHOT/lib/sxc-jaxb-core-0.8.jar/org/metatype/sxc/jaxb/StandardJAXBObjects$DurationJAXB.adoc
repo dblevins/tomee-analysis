@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$DurationJAXB.class
+
+ - link:StandardJAXBObjects$DurationJAXB-asmified.java[Asmified]
+
+== References
+

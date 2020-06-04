@@ -1,0 +1,9 @@
+= org/apache/activemq/ra/LocalAndXATransaction.class
+
+ - link:LocalAndXATransaction-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 21
+ - javax.resource.ResourceException - 17
+ - javax.resource.spi.LocalTransaction - 1

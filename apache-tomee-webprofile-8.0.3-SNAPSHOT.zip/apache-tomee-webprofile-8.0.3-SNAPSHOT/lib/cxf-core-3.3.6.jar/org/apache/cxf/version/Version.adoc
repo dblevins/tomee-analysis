@@ -1,0 +1,6 @@
+= org/apache/cxf/version/Version.class
+
+ - link:Version-asmified.java[Asmified]
+
+== References
+

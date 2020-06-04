@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/attachment/AbstractPolicyProvider.class
+
+ - link:AbstractPolicyProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/AbstractDoubleEncapsulatedExpression.class
+
+ - link:AbstractDoubleEncapsulatedExpression-asmified.java[Asmified]
+
+== References
+

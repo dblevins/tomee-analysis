@@ -1,0 +1,6 @@
+= org/apache/catalina/DistributedManager.class
+
+ - link:DistributedManager-asmified.java[Asmified]
+
+== References
+

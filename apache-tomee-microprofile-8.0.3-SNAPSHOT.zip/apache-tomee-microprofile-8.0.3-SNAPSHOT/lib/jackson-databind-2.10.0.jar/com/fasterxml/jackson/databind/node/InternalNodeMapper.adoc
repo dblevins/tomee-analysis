@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/InternalNodeMapper.class
+
+ - link:InternalNodeMapper-asmified.java[Asmified]
+
+== References
+

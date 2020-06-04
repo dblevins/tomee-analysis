@@ -1,0 +1,6 @@
+= org/apache/openejb/client/DataSourceMetaData.class
+
+ - link:DataSourceMetaData-asmified.java[Asmified]
+
+== References
+

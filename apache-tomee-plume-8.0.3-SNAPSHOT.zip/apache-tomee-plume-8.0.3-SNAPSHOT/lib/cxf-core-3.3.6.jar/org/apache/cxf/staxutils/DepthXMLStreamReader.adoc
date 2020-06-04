@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/DepthXMLStreamReader.class
+
+ - link:DepthXMLStreamReader-asmified.java[Asmified]
+
+== References
+

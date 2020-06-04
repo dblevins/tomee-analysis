@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/ComponentTagDeclarationImpl.class
+
+ - link:ComponentTagDeclarationImpl-asmified.java[Asmified]
+
+== References
+

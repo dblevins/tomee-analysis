@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/impl/health/cdi/CdiHealthChecksEndpoint.class
+
+ - link:CdiHealthChecksEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Inject - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.ws.rs.Path - 1
+ - javax.enterprise.context.ApplicationScoped - 1

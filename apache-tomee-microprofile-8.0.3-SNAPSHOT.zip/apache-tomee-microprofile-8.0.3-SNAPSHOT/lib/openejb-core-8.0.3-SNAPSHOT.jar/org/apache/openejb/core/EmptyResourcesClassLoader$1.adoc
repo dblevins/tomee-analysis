@@ -1,0 +1,6 @@
+= org/apache/openejb/core/EmptyResourcesClassLoader$1.class
+
+ - link:EmptyResourcesClassLoader$1-asmified.java[Asmified]
+
+== References
+

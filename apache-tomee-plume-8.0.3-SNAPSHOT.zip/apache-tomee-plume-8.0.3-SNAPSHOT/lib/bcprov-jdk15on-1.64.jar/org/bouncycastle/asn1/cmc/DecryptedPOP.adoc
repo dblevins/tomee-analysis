@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmc/DecryptedPOP.class
+
+ - link:DecryptedPOP-asmified.java[Asmified]
+
+== References
+

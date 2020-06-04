@@ -1,0 +1,7 @@
+= org/apache/openejb/assembler/classic/MethodConcurrencyBuilder.class
+
+ - link:MethodConcurrencyBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.LockType - 3

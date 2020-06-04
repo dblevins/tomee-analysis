@@ -1,0 +1,505 @@
+package asm.org.apache.tomcat.util.threads;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ThreadPoolExecutorDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/tomcat/util/threads/ThreadPoolExecutor", null, "java/util/concurrent/ThreadPoolExecutor", null);
+
+classWriter.visitInnerClass("org/apache/tomcat/util/threads/ThreadPoolExecutor$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
+
+classWriter.visitInnerClass("org/apache/tomcat/util/threads/ThreadPoolExecutor$RejectHandler", "org/apache/tomcat/util/threads/ThreadPoolExecutor", "RejectHandler", ACC_PRIVATE | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED | ACC_FINAL | ACC_STATIC, "sm", "Lorg/apache/tomcat/util/res/StringManager;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "threadRenewalDelay", "J", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/RejectedExecutionHandler;)V", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/RejectedExecutionHandler;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/RejectedExecutionHandler;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicInteger", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(new Long(1000L));
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "prestartAllCoreThreads", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(8, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicInteger", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(new Long(1000L));
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "prestartAllCoreThreads", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(9, 9);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/threads/ThreadPoolExecutor$RejectHandler");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor$RejectHandler", "<init>", "(Lorg/apache/tomcat/util/threads/ThreadPoolExecutor$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicInteger", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(new Long(1000L));
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "prestartAllCoreThreads", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(11, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;)V", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(LLOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/threads/ThreadPoolExecutor$RejectHandler");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor$RejectHandler", "<init>", "(Lorg/apache/tomcat/util/threads/ThreadPoolExecutor$1;)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "<init>", "(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/RejectedExecutionHandler;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicInteger", "<init>", "(I)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/atomic/AtomicLong");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/atomic/AtomicLong", "<init>", "(J)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitLdcInsn(new Long(1000L));
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "prestartAllCoreThreads", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(10, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getThreadRenewalDelay", "()J", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setThreadRenewalDelay", "(J)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "afterExecute", "(Ljava/lang/Runnable;Ljava/lang/Throwable;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicInteger", "decrementAndGet", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "stopCurrentThreadIfNeeded", "()V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "stopCurrentThreadIfNeeded", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "currentThreadShouldBeStopped", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "longValue", "()J", false);
+methodVisitor.visitVarInsn(LSTORE, 1);
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitInsn(LADD);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastTimeThreadKilledItself", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitVarInsn(LLOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+methodVisitor.visitInsn(LCONST_1);
+methodVisitor.visitInsn(LADD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "compareAndSet", "(JJ)Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitLdcInsn("threadPoolExecutor.threadStoppedToAvoidPotentialLeak");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Thread", "getName", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitTypeInsn(NEW, "org/apache/tomcat/util/threads/StopPooledThreadException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/tomcat/util/threads/StopPooledThreadException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PROTECTED, "currentThreadShouldBeStopped", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "threadRenewalDelay", "J");
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLT, label0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/tomcat/util/threads/TaskThread");
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Thread", "currentThread", "()Ljava/lang/Thread;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/threads/TaskThread");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/TaskThread", "getCreationTime", "()J", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "longValue", "()J", false);
+methodVisitor.visitInsn(LCMP);
+methodVisitor.visitJumpInsn(IFGE, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(4, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSubmittedCount", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicInteger", "get", "()I", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljava/lang/Runnable;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitFieldInsn(GETSTATIC, "java/util/concurrent/TimeUnit", "MILLISECONDS", "Ljava/util/concurrent/TimeUnit;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "execute", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "execute", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/util/concurrent/RejectedExecutionException");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "java/lang/InterruptedException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicInteger", "incrementAndGet", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "execute", "(Ljava/lang/Runnable;)V", false);
+methodVisitor.visitLabel(label1);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/util/concurrent/RejectedExecutionException"});
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "getQueue", "()Ljava/util/concurrent/BlockingQueue;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/tomcat/util/threads/TaskQueue");
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/ThreadPoolExecutor", "getQueue", "()Ljava/util/concurrent/BlockingQueue;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/threads/TaskQueue");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(LLOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/TaskQueue", "force", "(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicInteger", "decrementAndGet", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/RejectedExecutionException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitLdcInsn("threadPoolExecutor.queueFull");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/RejectedExecutionException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/concurrent/RejectedExecutionException", "org/apache/tomcat/util/threads/TaskQueue"}, 0, null);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/InterruptedException"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicInteger", "decrementAndGet", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/RejectedExecutionException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/RejectedExecutionException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitJumpInsn(GOTO, label6);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "submittedCount", "Ljava/util/concurrent/atomic/AtomicInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicInteger", "decrementAndGet", "()I", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "contextStopping", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "lastContextStoppedTime", "Ljava/util/concurrent/atomic/AtomicLong;");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "currentTimeMillis", "()J", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/atomic/AtomicLong", "set", "(J)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "getCorePoolSize", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "getQueue", "()Ljava/util/concurrent/BlockingQueue;", false);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/tomcat/util/threads/TaskQueue");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "getQueue", "()Ljava/util/concurrent/BlockingQueue;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/tomcat/util/threads/TaskQueue");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/tomcat/util/threads/TaskQueue"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/TaskQueue", "setForcedRemainingCapacity", "(Ljava/lang/Integer;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/tomcat/util/threads/TaskQueue"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "setCorePoolSize", "(I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/TaskQueue", "setForcedRemainingCapacity", "(Ljava/lang/Integer;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "setCorePoolSize", "(I)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn("org.apache.tomcat.util.threads.res");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/tomcat/util/res/StringManager", "getManager", "(Ljava/lang/String;)Lorg/apache/tomcat/util/res/StringManager;", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/tomcat/util/threads/ThreadPoolExecutor", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

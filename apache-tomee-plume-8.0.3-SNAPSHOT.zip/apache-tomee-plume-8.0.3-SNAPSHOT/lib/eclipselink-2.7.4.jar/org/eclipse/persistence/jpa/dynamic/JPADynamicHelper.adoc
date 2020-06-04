@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/dynamic/JPADynamicHelper.class
+
+ - link:JPADynamicHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 2
+ - javax.persistence.EntityManager - 2

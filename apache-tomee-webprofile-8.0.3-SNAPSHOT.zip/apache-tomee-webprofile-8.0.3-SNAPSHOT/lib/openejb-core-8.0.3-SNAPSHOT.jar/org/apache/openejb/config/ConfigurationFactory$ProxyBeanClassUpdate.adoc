@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ConfigurationFactory$ProxyBeanClassUpdate.class
+
+ - link:ConfigurationFactory$ProxyBeanClassUpdate-asmified.java[Asmified]
+
+== References
+

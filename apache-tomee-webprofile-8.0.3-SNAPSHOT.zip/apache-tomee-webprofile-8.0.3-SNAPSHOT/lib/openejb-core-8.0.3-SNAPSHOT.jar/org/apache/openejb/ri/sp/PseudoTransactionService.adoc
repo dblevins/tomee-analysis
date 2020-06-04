@@ -1,0 +1,13 @@
+= org/apache/openejb/ri/sp/PseudoTransactionService.class
+
+ - link:PseudoTransactionService-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.InvalidTransactionException - 7
+ - javax.transaction.Transaction - 6
+ - javax.transaction.NotSupportedException - 3
+ - javax.transaction.TransactionSynchronizationRegistry - 2
+ - javax.transaction.TransactionManager - 2
+ - javax.transaction.Synchronization - 2
+ - javax.transaction.RollbackException - 1

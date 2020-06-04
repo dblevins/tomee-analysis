@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ContainerUtils.class
+
+ - link:ContainerUtils-asmified.java[Asmified]
+
+== References
+

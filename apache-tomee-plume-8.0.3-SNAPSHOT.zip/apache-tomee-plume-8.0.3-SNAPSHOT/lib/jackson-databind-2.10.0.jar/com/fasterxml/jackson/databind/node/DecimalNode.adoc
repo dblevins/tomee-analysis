@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/DecimalNode.class
+
+ - link:DecimalNode-asmified.java[Asmified]
+
+== References
+

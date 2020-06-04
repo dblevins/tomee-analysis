@@ -1,0 +1,6 @@
+= org/apache/openejb/util/PojoSerialization$12.class
+
+ - link:PojoSerialization$12-asmified.java[Asmified]
+
+== References
+

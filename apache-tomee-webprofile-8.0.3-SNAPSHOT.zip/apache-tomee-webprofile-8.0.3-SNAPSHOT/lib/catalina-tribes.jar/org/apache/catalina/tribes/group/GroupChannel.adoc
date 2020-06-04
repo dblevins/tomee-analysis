@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/GroupChannel.class
+
+ - link:GroupChannel-asmified.java[Asmified]
+
+== References
+

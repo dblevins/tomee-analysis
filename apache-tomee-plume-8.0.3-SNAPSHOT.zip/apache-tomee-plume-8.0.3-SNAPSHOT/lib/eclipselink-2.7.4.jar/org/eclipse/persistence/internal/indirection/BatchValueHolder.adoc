@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/BatchValueHolder.class
+
+ - link:BatchValueHolder-asmified.java[Asmified]
+
+== References
+

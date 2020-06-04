@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/PortMapping$JAXB.class
+
+ - link:PortMapping$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

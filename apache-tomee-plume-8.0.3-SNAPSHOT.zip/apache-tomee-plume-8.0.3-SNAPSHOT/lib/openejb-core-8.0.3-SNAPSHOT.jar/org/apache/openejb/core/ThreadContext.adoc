@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ThreadContext.class
+
+ - link:ThreadContext-asmified.java[Asmified]
+
+== References
+

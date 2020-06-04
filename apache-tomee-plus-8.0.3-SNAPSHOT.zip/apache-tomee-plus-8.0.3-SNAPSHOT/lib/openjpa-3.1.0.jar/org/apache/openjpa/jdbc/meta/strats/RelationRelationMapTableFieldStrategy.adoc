@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/RelationRelationMapTableFieldStrategy.class
+
+ - link:RelationRelationMapTableFieldStrategy-asmified.java[Asmified]
+
+== References
+

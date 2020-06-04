@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/name/NameImpl$Body1_1Name.class
+
+ - link:NameImpl$Body1_1Name-asmified.java[Asmified]
+
+== References
+

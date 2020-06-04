@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/ConstantPool.class
+
+ - link:ConstantPool-asmified.java[Asmified]
+
+== References
+

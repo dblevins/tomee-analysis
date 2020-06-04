@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/DigestMD5.class
+
+ - link:DigestMD5-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

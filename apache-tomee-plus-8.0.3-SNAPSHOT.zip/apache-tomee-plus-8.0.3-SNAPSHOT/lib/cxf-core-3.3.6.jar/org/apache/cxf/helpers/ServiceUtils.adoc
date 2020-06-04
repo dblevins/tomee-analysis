@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/ServiceUtils.class
+
+ - link:ServiceUtils-asmified.java[Asmified]
+
+== References
+

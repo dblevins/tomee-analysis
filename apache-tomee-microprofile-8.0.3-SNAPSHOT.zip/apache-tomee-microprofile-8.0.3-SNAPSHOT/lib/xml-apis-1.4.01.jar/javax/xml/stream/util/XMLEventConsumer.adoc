@@ -1,0 +1,6 @@
+= javax/xml/stream/util/XMLEventConsumer.class
+
+ - link:XMLEventConsumer-asmified.java[Asmified]
+
+== References
+

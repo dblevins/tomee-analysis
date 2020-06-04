@@ -1,0 +1,7 @@
+= org/apache/activemq/blob/FTPBlobDownloadStrategy.class
+
+ - link:FTPBlobDownloadStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 4

@@ -1,0 +1,13 @@
+= org/apache/openejb/rest/ThreadLocalServletRequest.class
+
+ - link:ThreadLocalServletRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 79
+ - javax.servlet.AsyncContext - 6
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.RequestDispatcher - 2
+ - javax.servlet.ServletInputStream - 2
+ - javax.servlet.DispatcherType - 2
+ - javax.servlet.ServletContext - 2

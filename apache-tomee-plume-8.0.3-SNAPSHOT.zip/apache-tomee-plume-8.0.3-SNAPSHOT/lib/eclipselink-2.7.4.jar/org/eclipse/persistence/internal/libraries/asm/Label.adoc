@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/Label.class
+
+ - link:Label-asmified.java[Asmified]
+
+== References
+

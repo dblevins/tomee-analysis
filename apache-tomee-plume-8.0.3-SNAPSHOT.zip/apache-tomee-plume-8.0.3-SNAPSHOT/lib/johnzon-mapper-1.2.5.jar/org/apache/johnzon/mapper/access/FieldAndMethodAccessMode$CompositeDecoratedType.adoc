@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/FieldAndMethodAccessMode$CompositeDecoratedType.class
+
+ - link:FieldAndMethodAccessMode$CompositeDecoratedType-asmified.java[Asmified]
+
+== References
+

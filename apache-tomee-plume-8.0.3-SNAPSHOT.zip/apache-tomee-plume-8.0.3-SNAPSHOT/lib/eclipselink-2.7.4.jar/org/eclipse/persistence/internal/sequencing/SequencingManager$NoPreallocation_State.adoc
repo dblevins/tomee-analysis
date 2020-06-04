@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sequencing/SequencingManager$NoPreallocation_State.class
+
+ - link:SequencingManager$NoPreallocation_State-asmified.java[Asmified]
+
+== References
+

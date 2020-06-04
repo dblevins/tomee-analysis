@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DetachState.class
+
+ - link:DetachState-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/set/ListOrderedSet$1.class
+
+ - link:ListOrderedSet$1-asmified.java[Asmified]
+
+== References
+

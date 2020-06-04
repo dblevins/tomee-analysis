@@ -1,0 +1,19 @@
+= org/apache/cxf/jaxrs/impl/RuntimeDelegateImpl.class
+
+ - link:RuntimeDelegateImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 3
+ - javax.ws.rs.core.Variant$VariantListBuilder - 2
+ - javax.ws.rs.ext.RuntimeDelegate - 2
+ - javax.ws.rs.core.Response$ResponseBuilder - 2
+ - javax.ws.rs.core.UriBuilder - 2
+ - javax.ws.rs.core.Application - 2
+ - javax.ws.rs.core.MediaType - 1
+ - javax.ws.rs.core.Link$Builder - 1
+ - javax.ws.rs.core.NewCookie - 1
+ - javax.ws.rs.core.EntityTag - 1
+ - javax.ws.rs.core.CacheControl - 1
+ - javax.ws.rs.core.Link - 1
+ - javax.ws.rs.core.Cookie - 1

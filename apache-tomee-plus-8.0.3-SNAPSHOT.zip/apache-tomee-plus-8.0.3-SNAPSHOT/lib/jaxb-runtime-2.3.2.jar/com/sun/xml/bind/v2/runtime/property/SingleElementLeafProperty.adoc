@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/property/SingleElementLeafProperty.class
+
+ - link:SingleElementLeafProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4

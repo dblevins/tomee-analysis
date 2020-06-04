@@ -1,0 +1,11 @@
+= org/apache/openejb/jee/sun/WebserviceEndpoint.class
+
+ - link:WebserviceEndpoint-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElement - 9
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlElements - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

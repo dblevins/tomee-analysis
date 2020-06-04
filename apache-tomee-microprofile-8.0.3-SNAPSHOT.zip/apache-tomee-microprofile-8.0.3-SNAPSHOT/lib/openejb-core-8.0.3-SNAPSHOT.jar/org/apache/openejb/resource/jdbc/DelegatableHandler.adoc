@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/DelegatableHandler.class
+
+ - link:DelegatableHandler-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/persistence/QueryOperation.class
+
+ - link:QueryOperation-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Query - 2

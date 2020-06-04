@@ -1,0 +1,11 @@
+= javax/faces/component/html/HtmlMessage.class
+
+ - link:HtmlMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 60
+ - javax.faces.component.html.HtmlMessage - 39
+ - javax.faces.component.html.HtmlMessage$PropertyKeys - 30
+ - javax.faces.component.UIMessage - 2
+ - javax.el.ValueExpression - 1

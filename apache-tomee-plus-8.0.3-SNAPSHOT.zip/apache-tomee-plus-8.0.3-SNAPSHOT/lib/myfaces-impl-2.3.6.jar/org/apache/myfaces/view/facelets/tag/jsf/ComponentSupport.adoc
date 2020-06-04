@@ -1,0 +1,18 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ComponentSupport.class
+
+ - link:ComponentSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 218
+ - javax.faces.context.FacesContext - 27
+ - javax.faces.view.facelets.FaceletContext - 21
+ - javax.faces.component.UIViewRoot - 18
+ - javax.faces.view.facelets.TagAttributeException - 5
+ - javax.faces.component.NamingContainer - 5
+ - javax.faces.view.facelets.TagAttribute - 4
+ - javax.faces.component.UniqueIdVendor - 4
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.component.UIPanel - 1
+ - javax.faces.FacesException - 1

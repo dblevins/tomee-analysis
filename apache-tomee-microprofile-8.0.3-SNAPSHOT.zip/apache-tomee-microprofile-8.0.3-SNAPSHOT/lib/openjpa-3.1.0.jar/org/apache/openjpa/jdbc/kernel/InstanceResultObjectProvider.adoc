@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/InstanceResultObjectProvider.class
+
+ - link:InstanceResultObjectProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/ReferenceResolver$ReferenceKey.class
+
+ - link:ReferenceResolver$ReferenceKey-asmified.java[Asmified]
+
+== References
+

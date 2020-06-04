@@ -1,0 +1,6 @@
+= org/apache/openejb/config/WebappAggregatedArchive.class
+
+ - link:WebappAggregatedArchive-asmified.java[Asmified]
+
+== References
+

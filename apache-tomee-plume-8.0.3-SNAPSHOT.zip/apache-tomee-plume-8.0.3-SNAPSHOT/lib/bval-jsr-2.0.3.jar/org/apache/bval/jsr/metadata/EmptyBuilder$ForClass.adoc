@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/EmptyBuilder$ForClass.class
+
+ - link:EmptyBuilder$ForClass-asmified.java[Asmified]
+
+== References
+

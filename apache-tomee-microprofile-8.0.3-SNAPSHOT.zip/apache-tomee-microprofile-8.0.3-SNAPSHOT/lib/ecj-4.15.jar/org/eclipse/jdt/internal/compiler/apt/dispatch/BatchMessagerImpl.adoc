@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/dispatch/BatchMessagerImpl.class
+
+ - link:BatchMessagerImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/util/NodeImpl$CrossParameterNodeImpl.class
+
+ - link:NodeImpl$CrossParameterNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 2
+ - javax.validation.ElementKind - 2
+ - javax.validation.Path$CrossParameterNode - 1

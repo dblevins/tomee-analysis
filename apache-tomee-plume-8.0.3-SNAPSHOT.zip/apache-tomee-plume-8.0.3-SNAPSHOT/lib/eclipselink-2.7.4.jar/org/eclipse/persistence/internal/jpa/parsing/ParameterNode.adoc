@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ParameterNode.class
+
+ - link:ParameterNode-asmified.java[Asmified]
+
+== References
+

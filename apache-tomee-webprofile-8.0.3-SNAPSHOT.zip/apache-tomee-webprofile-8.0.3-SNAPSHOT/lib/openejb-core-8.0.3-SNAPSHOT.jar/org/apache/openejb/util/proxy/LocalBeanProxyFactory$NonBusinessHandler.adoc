@@ -1,0 +1,7 @@
+= org/apache/openejb/util/proxy/LocalBeanProxyFactory$NonBusinessHandler.class
+
+ - link:LocalBeanProxyFactory$NonBusinessHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 2

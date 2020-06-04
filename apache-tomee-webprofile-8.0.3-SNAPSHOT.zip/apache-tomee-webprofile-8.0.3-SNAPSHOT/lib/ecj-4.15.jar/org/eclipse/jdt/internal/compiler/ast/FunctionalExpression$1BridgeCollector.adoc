@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/FunctionalExpression$1BridgeCollector.class
+
+ - link:FunctionalExpression$1BridgeCollector-asmified.java[Asmified]
+
+== References
+

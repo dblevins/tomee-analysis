@@ -1,0 +1,14 @@
+= com/sun/faces/facelets/tag/jsf/core/ResetValuesHandler.class
+
+ - link:ResetValuesHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.component.ActionSource - 2
+ - javax.faces.view.facelets.FaceletContext - 2
+ - javax.faces.event.ActionListener - 1
+ - javax.faces.view.ActionSource2AttachedObjectHandler - 1
+ - javax.faces.component.UIComponent - 1

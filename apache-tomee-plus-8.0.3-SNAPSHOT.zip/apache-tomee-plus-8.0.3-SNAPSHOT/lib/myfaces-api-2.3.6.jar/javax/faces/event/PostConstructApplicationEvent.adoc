@@ -1,0 +1,10 @@
+= javax/faces/event/PostConstructApplicationEvent.class
+
+ - link:PostConstructApplicationEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 4
+ - javax.faces.event.SystemEvent - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.PostConstructApplicationEvent - 1

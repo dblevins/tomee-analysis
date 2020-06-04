@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/AttachmentOutInterceptor$AttachmentOutEndingInterceptor.class
+
+ - link:AttachmentOutInterceptor$AttachmentOutEndingInterceptor-asmified.java[Asmified]
+
+== References
+

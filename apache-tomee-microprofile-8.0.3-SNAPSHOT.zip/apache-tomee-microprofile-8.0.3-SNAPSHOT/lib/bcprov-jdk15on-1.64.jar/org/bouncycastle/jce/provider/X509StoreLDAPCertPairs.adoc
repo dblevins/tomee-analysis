@@ -1,0 +1,6 @@
+= org/bouncycastle/jce/provider/X509StoreLDAPCertPairs.class
+
+ - link:X509StoreLDAPCertPairs-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/common/CXFPermissions.class
+
+ - link:CXFPermissions-asmified.java[Asmified]
+
+== References
+

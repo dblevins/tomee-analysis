@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LobManager$UPDATE_USAGE.class
+
+ - link:LobManager$UPDATE_USAGE-asmified.java[Asmified]
+
+== References
+

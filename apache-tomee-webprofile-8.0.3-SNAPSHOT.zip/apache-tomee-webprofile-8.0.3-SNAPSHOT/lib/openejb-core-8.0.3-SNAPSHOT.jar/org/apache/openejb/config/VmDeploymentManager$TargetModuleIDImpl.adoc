@@ -1,0 +1,8 @@
+= org/apache/openejb/config/VmDeploymentManager$TargetModuleIDImpl.class
+
+ - link:VmDeploymentManager$TargetModuleIDImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.Target - 16
+ - javax.enterprise.deploy.spi.TargetModuleID - 9

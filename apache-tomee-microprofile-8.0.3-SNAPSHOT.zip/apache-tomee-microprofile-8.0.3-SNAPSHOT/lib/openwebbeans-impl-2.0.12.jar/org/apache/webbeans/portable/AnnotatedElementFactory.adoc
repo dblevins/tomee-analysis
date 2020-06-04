@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/AnnotatedElementFactory.class
+
+ - link:AnnotatedElementFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 36
+ - javax.enterprise.inject.spi.AnnotatedMethod - 17
+ - javax.enterprise.inject.spi.AnnotatedField - 2
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 2

@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/x9/X9ObjectIdentifiers.class
+
+ - link:X9ObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

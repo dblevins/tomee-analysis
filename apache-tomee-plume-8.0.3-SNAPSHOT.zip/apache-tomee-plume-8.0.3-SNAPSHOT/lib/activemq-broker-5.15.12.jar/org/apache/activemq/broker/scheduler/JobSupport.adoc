@@ -1,0 +1,6 @@
+= org/apache/activemq/broker/scheduler/JobSupport.class
+
+ - link:JobSupport-asmified.java[Asmified]
+
+== References
+

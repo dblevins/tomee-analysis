@@ -1,0 +1,16 @@
+= org/apache/geronimo/config/cdi/ConfigInjectionBean.class
+
+ - link:ConfigInjectionBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InjectionPoint - 10
+ - javax.enterprise.inject.spi.Annotated - 8
+ - javax.enterprise.inject.spi.BeanManager - 5
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.inject.spi.AnnotatedMember - 4
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Bean - 2
+ - javax.enterprise.inject.spi.PassivationCapable - 1
+ - javax.inject.Provider - 1
+ - javax.enterprise.context.Dependent - 1

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/javamodel/xjc/XJCJavaAnnotationImpl.class
+
+ - link:XJCJavaAnnotationImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnum - 1

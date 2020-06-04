@@ -1,0 +1,6 @@
+= org/apache/webbeans/xml/WebBeansErrorHandler.class
+
+ - link:WebBeansErrorHandler-asmified.java[Asmified]
+
+== References
+

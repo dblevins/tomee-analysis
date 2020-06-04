@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/securityEvent/X509TokenSecurityEvent.class
+
+ - link:X509TokenSecurityEvent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/storage/implementations/CertsInFilesystemDirectoryResolver$FilesystemIterator.class
+
+ - link:CertsInFilesystemDirectoryResolver$FilesystemIterator-asmified.java[Asmified]
+
+== References
+

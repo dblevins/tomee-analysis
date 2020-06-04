@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/input/XMLSignatureInputHandler.class
+
+ - link:XMLSignatureInputHandler-asmified.java[Asmified]
+
+== References
+

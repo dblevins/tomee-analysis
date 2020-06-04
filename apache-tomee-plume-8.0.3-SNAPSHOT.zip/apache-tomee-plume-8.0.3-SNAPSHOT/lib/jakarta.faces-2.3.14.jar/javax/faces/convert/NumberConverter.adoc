@@ -1,0 +1,17 @@
+= javax/faces/convert/NumberConverter.class
+
+ - link:NumberConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 28
+ - javax.faces.convert.NumberConverter - 28
+ - javax.faces.convert.ConverterException - 20
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.convert.MessageFactory - 12
+ - javax.faces.application.FacesMessage - 12
+ - javax.el.ValueExpression - 5
+ - javax.faces.component.UIViewRoot - 2
+ - javax.el.ELContext - 2
+ - javax.faces.convert.Converter - 1
+ - javax.faces.component.PartialStateHolder - 1

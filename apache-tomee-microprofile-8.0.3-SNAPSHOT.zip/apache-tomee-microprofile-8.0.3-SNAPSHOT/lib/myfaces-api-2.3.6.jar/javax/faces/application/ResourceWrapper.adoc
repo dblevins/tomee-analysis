@@ -1,0 +1,10 @@
+= javax/faces/application/ResourceWrapper.class
+
+ - link:ResourceWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Resource - 32
+ - javax.faces.application.ResourceWrapper - 12
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.FacesWrapper - 1

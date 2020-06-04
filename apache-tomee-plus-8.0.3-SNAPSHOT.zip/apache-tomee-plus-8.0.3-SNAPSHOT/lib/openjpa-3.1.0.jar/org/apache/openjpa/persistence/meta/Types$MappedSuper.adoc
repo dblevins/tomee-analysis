@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/meta/Types$MappedSuper.class
+
+ - link:Types$MappedSuper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type$PersistenceType - 2
+ - javax.persistence.metamodel.MappedSuperclassType - 1

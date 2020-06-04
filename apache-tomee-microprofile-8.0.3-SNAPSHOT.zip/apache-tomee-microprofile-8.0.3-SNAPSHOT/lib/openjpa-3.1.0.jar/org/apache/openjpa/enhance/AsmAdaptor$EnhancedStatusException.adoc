@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/AsmAdaptor$EnhancedStatusException.class
+
+ - link:AsmAdaptor$EnhancedStatusException-asmified.java[Asmified]
+
+== References
+

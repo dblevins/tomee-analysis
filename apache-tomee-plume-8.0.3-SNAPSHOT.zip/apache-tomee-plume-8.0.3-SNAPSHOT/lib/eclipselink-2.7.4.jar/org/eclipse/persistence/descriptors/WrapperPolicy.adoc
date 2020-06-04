@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/WrapperPolicy.class
+
+ - link:WrapperPolicy-asmified.java[Asmified]
+
+== References
+

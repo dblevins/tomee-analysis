@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/MetaDataFactory.class
+
+ - link:MetaDataFactory-asmified.java[Asmified]
+
+== References
+

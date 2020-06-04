@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/PrivateKeyResolver.class
+
+ - link:PrivateKeyResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/SAMLUtil.class
+
+ - link:SAMLUtil-asmified.java[Asmified]
+
+== References
+

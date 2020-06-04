@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/InferenceVariable$InferenceVarKey.class
+
+ - link:InferenceVariable$InferenceVarKey-asmified.java[Asmified]
+
+== References
+

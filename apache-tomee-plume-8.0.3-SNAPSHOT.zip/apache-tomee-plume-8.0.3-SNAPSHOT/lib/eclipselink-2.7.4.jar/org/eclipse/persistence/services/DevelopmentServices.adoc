@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/DevelopmentServices.class
+
+ - link:DevelopmentServices-asmified.java[Asmified]
+
+== References
+

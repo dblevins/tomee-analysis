@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/search/visitor/AbstractSearchConditionVisitor.class
+
+ - link:AbstractSearchConditionVisitor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverterProvider - 6

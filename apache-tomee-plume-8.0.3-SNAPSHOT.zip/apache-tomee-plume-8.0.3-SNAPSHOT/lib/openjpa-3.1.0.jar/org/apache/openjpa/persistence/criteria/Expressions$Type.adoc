@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Type.class
+
+ - link:Expressions$Type-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 1

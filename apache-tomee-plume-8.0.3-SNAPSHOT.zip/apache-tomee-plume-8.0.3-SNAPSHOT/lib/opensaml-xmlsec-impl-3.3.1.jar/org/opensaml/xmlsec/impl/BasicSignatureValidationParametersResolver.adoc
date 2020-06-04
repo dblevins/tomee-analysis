@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/impl/BasicSignatureValidationParametersResolver.class
+
+ - link:BasicSignatureValidationParametersResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 8
+ - javax.annotation.Nullable - 3

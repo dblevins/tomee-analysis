@@ -1,0 +1,11 @@
+= org/apache/openejb/cdi/ScopeHelper.class
+
+ - link:ScopeHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 2
+ - javax.enterprise.context.RequestScoped - 2
+ - javax.enterprise.context.ConversationScoped - 2
+ - javax.servlet.ServletContext - 2
+ - javax.enterprise.context.SessionScoped - 2

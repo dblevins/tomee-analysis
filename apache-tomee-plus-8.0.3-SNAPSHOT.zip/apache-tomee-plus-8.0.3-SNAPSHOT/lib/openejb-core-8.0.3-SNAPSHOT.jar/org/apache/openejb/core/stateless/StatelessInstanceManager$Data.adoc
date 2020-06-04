@@ -1,0 +1,7 @@
+= org/apache/openejb/core/stateless/StatelessInstanceManager$Data.class
+
+ - link:StatelessInstanceManager$Data-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.SessionContext - 4

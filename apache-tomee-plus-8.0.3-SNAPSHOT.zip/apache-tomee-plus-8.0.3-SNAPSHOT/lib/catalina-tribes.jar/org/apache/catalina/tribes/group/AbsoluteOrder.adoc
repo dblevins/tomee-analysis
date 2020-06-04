@@ -1,0 +1,6 @@
+= org/apache/catalina/tribes/group/AbsoluteOrder.class
+
+ - link:AbsoluteOrder-asmified.java[Asmified]
+
+== References
+

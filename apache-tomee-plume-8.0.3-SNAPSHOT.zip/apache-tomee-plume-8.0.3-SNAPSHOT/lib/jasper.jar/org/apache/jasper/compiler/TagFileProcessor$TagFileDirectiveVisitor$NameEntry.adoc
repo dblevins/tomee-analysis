@@ -1,0 +1,7 @@
+= org/apache/jasper/compiler/TagFileProcessor$TagFileDirectiveVisitor$NameEntry.class
+
+ - link:TagFileProcessor$TagFileDirectiveVisitor$NameEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagAttributeInfo - 5

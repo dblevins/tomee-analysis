@@ -1,0 +1,6 @@
+= org/apache/catalina/ha/ClusterMessageBase.class
+
+ - link:ClusterMessageBase-asmified.java[Asmified]
+
+== References
+

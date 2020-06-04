@@ -1,0 +1,12 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlJavaScriptUtils.class
+
+ - link:HtmlJavaScriptUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 32
+ - javax.faces.context.ResponseWriter - 24
+ - javax.faces.context.ExternalContext - 11
+ - javax.faces.context.PartialViewContext - 5
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component.UIViewRoot - 2

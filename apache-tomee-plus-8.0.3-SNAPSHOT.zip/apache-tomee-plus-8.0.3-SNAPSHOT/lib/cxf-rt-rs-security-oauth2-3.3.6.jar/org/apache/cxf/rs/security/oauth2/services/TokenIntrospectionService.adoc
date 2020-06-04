@@ -1,0 +1,16 @@
+= org/apache/cxf/rs/security/oauth2/services/TokenIntrospectionService.class
+
+ - link:TokenIntrospectionService-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.SecurityContext - 4
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.Response - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.Encoded - 1
+ - javax.ws.rs.POST - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.Path - 1

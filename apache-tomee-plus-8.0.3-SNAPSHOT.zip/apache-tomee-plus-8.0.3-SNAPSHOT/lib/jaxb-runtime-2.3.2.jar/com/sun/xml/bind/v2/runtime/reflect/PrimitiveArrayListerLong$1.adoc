@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/reflect/PrimitiveArrayListerLong$1.class
+
+ - link:PrimitiveArrayListerLong$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 1

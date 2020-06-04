@@ -1,0 +1,8 @@
+= org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$Cache.class
+
+ - link:IdGeneratorInterceptor$Cache-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Inject - 2
+ - javax.enterprise.context.ApplicationScoped - 1

@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxb/MarshallerEventHandler.class
+
+ - link:MarshallerEventHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.MarshalException - 1

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/OneTimeUseMarshaller.class
+
+ - link:OneTimeUseMarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/pojo/PojoMessageHandlerPartialText.class
+
+ - link:PojoMessageHandlerPartialText-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Session - 2

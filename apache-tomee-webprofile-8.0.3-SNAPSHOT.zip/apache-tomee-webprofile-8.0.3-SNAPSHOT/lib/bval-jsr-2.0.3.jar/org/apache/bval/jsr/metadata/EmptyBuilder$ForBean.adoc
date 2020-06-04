@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/EmptyBuilder$ForBean.class
+
+ - link:EmptyBuilder$ForBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/engine/WSSecurityEngine.class
+
+ - link:WSSecurityEngine-asmified.java[Asmified]
+
+== References
+

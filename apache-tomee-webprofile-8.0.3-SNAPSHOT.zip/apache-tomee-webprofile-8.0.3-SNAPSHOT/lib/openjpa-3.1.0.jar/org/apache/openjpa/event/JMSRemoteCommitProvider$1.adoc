@@ -1,0 +1,10 @@
+= org/apache/openjpa/event/JMSRemoteCommitProvider$1.class
+
+ - link:JMSRemoteCommitProvider$1-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.ObjectMessage - 4
+ - javax.jms.Message - 3
+ - javax.jms.JMSException - 2
+ - javax.jms.MessageListener - 1

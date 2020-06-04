@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/types/SDOWrapperType$IntegerWrapperImpl.class
+
+ - link:SDOWrapperType$IntegerWrapperImpl-asmified.java[Asmified]
+
+== References
+

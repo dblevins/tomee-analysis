@@ -1,0 +1,11 @@
+= javax/faces/CurrentThreadToServletContext.class
+
+ - link:CurrentThreadToServletContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FactoryFinderInstance - 31
+ - javax.faces.CurrentThreadToServletContext$FactoryFinderCacheKey - 21
+ - javax.faces.context.FacesContext - 14
+ - javax.faces.ServletContextFacesContextFactory - 8
+ - javax.faces.CurrentThreadToServletContext - 7

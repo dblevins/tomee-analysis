@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/ClosureTransformer.class
+
+ - link:ClosureTransformer-asmified.java[Asmified]
+
+== References
+

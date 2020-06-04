@@ -1,0 +1,6 @@
+= org/jose4j/jwx/Headers.class
+
+ - link:Headers-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JacksonStdImpl.class
+
+ - link:JacksonStdImpl-asmified.java[Asmified]
+
+== References
+

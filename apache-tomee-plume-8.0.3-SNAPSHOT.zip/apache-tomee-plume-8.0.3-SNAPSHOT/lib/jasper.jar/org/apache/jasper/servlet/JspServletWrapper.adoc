@@ -1,0 +1,17 @@
+= org/apache/jasper/servlet/JspServletWrapper.class
+
+ - link:JspServletWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 32
+ - javax.servlet.http.HttpServletResponse - 25
+ - javax.servlet.http.HttpServletRequest - 17
+ - javax.servlet.ServletConfig - 15
+ - javax.servlet.ServletException - 12
+ - javax.servlet.ServletContext - 10
+ - javax.servlet.jsp.tagext.TagInfo - 6
+ - javax.servlet.UnavailableException - 5
+ - javax.servlet.ServletRequest - 2
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.SingleThreadModel - 1

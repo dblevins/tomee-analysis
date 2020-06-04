@@ -1,0 +1,10 @@
+= org/apache/myfaces/application/ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator.class
+
+ - link:ResourceHandlerImpl$FilterInvalidSuffixViewResourceIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.view.ViewDeclarationLanguage - 3
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.application.Application - 2

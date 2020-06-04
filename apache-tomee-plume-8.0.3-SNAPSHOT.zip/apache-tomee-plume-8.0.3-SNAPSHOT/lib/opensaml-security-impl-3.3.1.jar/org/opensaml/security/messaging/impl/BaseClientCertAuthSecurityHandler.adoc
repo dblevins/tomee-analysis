@@ -1,0 +1,10 @@
+= org/opensaml/security/messaging/impl/BaseClientCertAuthSecurityHandler.class
+
+ - link:BaseClientCertAuthSecurityHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 25
+ - javax.annotation.Nullable - 15
+ - javax.servlet.http.HttpServletRequest - 8
+ - javax.servlet.ServletRequest - 1

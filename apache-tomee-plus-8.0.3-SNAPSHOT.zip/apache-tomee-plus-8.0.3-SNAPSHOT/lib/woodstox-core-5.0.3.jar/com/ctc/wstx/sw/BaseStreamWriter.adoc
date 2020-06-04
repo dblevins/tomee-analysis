@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/BaseStreamWriter.class
+
+ - link:BaseStreamWriter-asmified.java[Asmified]
+
+== References
+

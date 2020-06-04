@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/SumNode.class
+
+ - link:SumNode-asmified.java[Asmified]
+
+== References
+

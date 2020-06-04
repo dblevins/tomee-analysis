@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/server/ConnectionPolicy.class
+
+ - link:ConnectionPolicy-asmified.java[Asmified]
+
+== References
+

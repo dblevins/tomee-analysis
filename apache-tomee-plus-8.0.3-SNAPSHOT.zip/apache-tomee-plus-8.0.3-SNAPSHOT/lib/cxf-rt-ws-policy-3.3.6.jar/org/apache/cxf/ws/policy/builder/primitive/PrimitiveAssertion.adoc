@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/builder/primitive/PrimitiveAssertion.class
+
+ - link:PrimitiveAssertion-asmified.java[Asmified]
+
+== References
+

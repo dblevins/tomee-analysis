@@ -1,0 +1,6 @@
+= org/apache/tomee/jdbc/TomEEDataSourceCreator$ReadOnlyConnectionpool.class
+
+ - link:TomEEDataSourceCreator$ReadOnlyConnectionpool-asmified.java[Asmified]
+
+== References
+

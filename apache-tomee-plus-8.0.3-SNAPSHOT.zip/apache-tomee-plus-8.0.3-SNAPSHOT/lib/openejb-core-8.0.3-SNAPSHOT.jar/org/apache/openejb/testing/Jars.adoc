@@ -1,0 +1,6 @@
+= org/apache/openejb/testing/Jars.class
+
+ - link:Jars-asmified.java[Asmified]
+
+== References
+

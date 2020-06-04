@@ -1,0 +1,10 @@
+= javax/faces/application/NavigationHandlerWrapper.class
+
+ - link:NavigationHandlerWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.NavigationHandler - 14
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.application.NavigationHandlerWrapper - 3
+ - javax.faces.FacesWrapper - 1

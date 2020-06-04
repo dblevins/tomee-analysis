@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/metrics/common/jaxrs/MetricsEndpoints$Meta.class
+
+ - link:MetricsEndpoints$Meta-asmified.java[Asmified]
+
+== References
+

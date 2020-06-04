@@ -1,0 +1,6 @@
+= org/apache/webbeans/component/EnterpriseBeanMarker.class
+
+ - link:EnterpriseBeanMarker-asmified.java[Asmified]
+
+== References
+

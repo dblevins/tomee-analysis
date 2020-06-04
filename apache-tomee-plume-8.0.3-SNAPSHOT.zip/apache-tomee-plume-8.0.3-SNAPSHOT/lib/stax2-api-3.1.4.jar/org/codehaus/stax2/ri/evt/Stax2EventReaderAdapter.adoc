@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/evt/Stax2EventReaderAdapter.class
+
+ - link:Stax2EventReaderAdapter-asmified.java[Asmified]
+
+== References
+

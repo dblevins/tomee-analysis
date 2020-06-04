@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/WhitelistBlacklistParameters.class
+
+ - link:WhitelistBlacklistParameters-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 1

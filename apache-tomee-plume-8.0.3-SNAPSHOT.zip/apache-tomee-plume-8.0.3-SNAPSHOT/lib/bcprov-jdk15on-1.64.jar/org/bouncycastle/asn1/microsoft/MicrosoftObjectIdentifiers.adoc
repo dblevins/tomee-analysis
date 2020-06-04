@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/microsoft/MicrosoftObjectIdentifiers.class
+
+ - link:MicrosoftObjectIdentifiers-asmified.java[Asmified]
+
+== References
+

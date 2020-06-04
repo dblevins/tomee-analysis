@@ -1,0 +1,2 @@
+= apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/woodstox-core-5.0.3.jar
+

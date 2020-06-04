@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap12/SOAP12HeaderSerializer.class
+
+ - link:SOAP12HeaderSerializer-asmified.java[Asmified]
+
+== References
+

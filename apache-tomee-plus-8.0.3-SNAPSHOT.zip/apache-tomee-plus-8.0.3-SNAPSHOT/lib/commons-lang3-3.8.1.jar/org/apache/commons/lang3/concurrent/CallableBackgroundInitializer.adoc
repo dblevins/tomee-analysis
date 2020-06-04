@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.class
+
+ - link:CallableBackgroundInitializer-asmified.java[Asmified]
+
+== References
+

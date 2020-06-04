@@ -1,0 +1,6 @@
+= org/bouncycastle/util/Arrays$Iterator.class
+
+ - link:Arrays$Iterator-asmified.java[Asmified]
+
+== References
+

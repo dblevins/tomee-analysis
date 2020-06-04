@@ -1,0 +1,9 @@
+= com/sun/faces/mgbean/ManagedBeanBuilder$BakedListProperty.class
+
+ - link:ManagedBeanBuilder$BakedListProperty-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ExpressionFactory - 6
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.application.Application - 2

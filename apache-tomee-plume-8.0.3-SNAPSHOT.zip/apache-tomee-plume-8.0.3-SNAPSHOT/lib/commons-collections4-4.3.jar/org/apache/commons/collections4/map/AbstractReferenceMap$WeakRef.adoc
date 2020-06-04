@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/AbstractReferenceMap$WeakRef.class
+
+ - link:AbstractReferenceMap$WeakRef-asmified.java[Asmified]
+
+== References
+

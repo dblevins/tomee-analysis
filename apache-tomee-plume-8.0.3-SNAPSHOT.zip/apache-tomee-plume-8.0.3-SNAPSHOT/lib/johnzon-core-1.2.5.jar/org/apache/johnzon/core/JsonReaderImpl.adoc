@@ -1,0 +1,18 @@
+= org/apache/johnzon/core/JsonReaderImpl.class
+
+ - link:JsonReaderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonLocation - 28
+ - javax.json.stream.JsonParsingException - 28
+ - javax.json.JsonArrayBuilder - 24
+ - javax.json.JsonObjectBuilder - 24
+ - javax.json.stream.JsonParser$Event - 14
+ - javax.json.JsonValue - 11
+ - javax.json.JsonStructure - 8
+ - javax.json.stream.JsonParser - 5
+ - javax.json.JsonObject - 5
+ - javax.json.JsonArray - 5
+ - javax.json.JsonNumber - 2
+ - javax.json.JsonReader - 1

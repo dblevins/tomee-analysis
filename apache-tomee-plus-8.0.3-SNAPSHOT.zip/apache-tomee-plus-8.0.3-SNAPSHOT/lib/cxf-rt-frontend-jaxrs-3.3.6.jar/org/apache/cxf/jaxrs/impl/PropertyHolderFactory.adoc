@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/impl/PropertyHolderFactory.class
+
+ - link:PropertyHolderFactory-asmified.java[Asmified]
+
+== References
+

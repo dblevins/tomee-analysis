@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/EntityReferenceEvent.class
+
+ - link:EntityReferenceEvent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/faces/annotation/FlowMap.class
+
+ - link:FlowMap-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

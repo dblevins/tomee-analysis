@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/scan/ReferenceCountedJar.class
+
+ - link:ReferenceCountedJar-asmified.java[Asmified]
+
+== References
+

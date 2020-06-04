@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/batch/BasicModule$Service.class
+
+ - link:BasicModule$Service-asmified.java[Asmified]
+
+== References
+

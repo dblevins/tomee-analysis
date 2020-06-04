@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/EntitiesDescriptorBuilder.class
+
+ - link:EntitiesDescriptorBuilder-asmified.java[Asmified]
+
+== References
+

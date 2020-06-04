@@ -1,0 +1,8 @@
+= org/apache/jasper/tagplugins/jstl/Util$ImportResponseWrapper$1.class
+
+ - link:Util$ImportResponseWrapper$1-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 2
+ - javax.servlet.WriteListener - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/UsernameTokenPolicyValidator.class
+
+ - link:UsernameTokenPolicyValidator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataParser$MethodComparator.class
+
+ - link:AnnotationPersistenceMetaDataParser$MethodComparator-asmified.java[Asmified]
+
+== References
+

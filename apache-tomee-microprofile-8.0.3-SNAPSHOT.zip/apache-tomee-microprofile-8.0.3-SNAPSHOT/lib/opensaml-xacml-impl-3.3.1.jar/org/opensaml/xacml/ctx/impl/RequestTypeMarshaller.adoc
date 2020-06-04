@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/RequestTypeMarshaller.class
+
+ - link:RequestTypeMarshaller-asmified.java[Asmified]
+
+== References
+

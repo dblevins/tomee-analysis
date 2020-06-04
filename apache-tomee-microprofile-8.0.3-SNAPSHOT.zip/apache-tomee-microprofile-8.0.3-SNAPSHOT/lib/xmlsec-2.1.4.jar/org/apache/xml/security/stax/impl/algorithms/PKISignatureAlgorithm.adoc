@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/algorithms/PKISignatureAlgorithm.class
+
+ - link:PKISignatureAlgorithm-asmified.java[Asmified]
+
+== References
+

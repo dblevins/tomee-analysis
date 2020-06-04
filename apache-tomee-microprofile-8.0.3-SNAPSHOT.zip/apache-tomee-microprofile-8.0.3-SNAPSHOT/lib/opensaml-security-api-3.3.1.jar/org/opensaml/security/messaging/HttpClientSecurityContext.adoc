@@ -1,0 +1,7 @@
+= org/opensaml/security/messaging/HttpClientSecurityContext.class
+
+ - link:HttpClientSecurityContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

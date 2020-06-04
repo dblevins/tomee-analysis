@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/TableJDBCSeq$Status.class
+
+ - link:TableJDBCSeq$Status-asmified.java[Asmified]
+
+== References
+

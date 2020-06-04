@@ -1,0 +1,13 @@
+= org/apache/cxf/jaxrs/provider/CachingMessageBodyReader.class
+
+ - link:CachingMessageBodyReader-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.MessageBodyReader - 14
+ - javax.ws.rs.core.MediaType - 11
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.ext.Providers - 2
+ - javax.ws.rs.WebApplicationException - 2
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.ext.Provider - 1

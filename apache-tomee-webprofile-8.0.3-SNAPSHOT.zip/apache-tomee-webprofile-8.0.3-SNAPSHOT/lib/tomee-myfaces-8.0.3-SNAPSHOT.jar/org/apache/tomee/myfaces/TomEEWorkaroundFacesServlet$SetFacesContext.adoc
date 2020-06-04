@@ -1,0 +1,7 @@
+= org/apache/tomee/myfaces/TomEEWorkaroundFacesServlet$SetFacesContext.class
+
+ - link:TomEEWorkaroundFacesServlet$SetFacesContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 6

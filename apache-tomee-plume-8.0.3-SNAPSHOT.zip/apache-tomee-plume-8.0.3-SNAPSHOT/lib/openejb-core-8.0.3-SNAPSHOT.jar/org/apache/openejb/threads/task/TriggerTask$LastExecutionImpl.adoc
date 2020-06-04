@@ -1,0 +1,7 @@
+= org/apache/openejb/threads/task/TriggerTask$LastExecutionImpl.class
+
+ - link:TriggerTask$LastExecutionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.LastExecution - 1

@@ -1,0 +1,6 @@
+= org/opensaml/soap/util/SOAPVersion.class
+
+ - link:SOAPVersion-asmified.java[Asmified]
+
+== References
+

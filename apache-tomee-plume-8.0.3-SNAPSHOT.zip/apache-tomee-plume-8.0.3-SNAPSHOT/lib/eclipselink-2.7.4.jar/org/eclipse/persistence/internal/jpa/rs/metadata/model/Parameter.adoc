@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/rs/metadata/model/Parameter.class
+
+ - link:Parameter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlType - 1

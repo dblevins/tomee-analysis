@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/SQLModifyAllStatementForTempTable.class
+
+ - link:SQLModifyAllStatementForTempTable-asmified.java[Asmified]
+
+== References
+

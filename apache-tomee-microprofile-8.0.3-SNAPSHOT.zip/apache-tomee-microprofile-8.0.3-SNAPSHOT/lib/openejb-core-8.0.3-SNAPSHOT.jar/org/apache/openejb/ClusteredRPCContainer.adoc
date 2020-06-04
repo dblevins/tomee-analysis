@@ -1,0 +1,6 @@
+= org/apache/openejb/ClusteredRPCContainer.class
+
+ - link:ClusteredRPCContainer-asmified.java[Asmified]
+
+== References
+

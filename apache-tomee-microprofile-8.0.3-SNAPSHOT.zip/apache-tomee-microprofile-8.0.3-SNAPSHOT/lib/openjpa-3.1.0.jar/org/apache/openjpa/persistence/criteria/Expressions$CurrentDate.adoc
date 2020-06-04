@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$CurrentDate.class
+
+ - link:Expressions$CurrentDate-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Expression - 6
+ - javax.persistence.criteria.Selection - 2

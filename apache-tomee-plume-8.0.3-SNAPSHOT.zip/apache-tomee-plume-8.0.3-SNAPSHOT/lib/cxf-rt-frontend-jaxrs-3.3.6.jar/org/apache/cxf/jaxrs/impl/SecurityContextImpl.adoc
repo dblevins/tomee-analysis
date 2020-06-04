@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/impl/SecurityContextImpl.class
+
+ - link:SecurityContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.SecurityContext - 1

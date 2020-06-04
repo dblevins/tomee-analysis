@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/resolver/ResolverSupport.class
+
+ - link:ResolverSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 5
+ - javax.annotation.Nonnull - 2

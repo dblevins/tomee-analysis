@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/EmptyRecord.class
+
+ - link:EmptyRecord-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/CollectorPropertyResolver.class
+
+ - link:CollectorPropertyResolver-asmified.java[Asmified]
+
+== References
+

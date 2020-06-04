@@ -1,0 +1,9 @@
+= org/apache/catalina/filters/RestCsrfPreventionFilter$FetchRequest.class
+
+ - link:RestCsrfPreventionFilter$FetchRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 3
+ - javax.servlet.http.HttpSession - 2
+ - javax.servlet.http.HttpServletResponse - 1

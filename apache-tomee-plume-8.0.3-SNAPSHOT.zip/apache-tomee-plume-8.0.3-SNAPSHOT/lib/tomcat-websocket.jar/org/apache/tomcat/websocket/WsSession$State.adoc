@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/WsSession$State.class
+
+ - link:WsSession$State-asmified.java[Asmified]
+
+== References
+

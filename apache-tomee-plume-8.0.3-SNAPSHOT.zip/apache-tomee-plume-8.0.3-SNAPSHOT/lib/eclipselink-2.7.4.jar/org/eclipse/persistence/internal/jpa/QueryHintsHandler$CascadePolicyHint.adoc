@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$CascadePolicyHint.class
+
+ - link:QueryHintsHandler$CascadePolicyHint-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/EjbReference.class
+
+ - link:EjbReference-asmified.java[Asmified]
+
+== References
+

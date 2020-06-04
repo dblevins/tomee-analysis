@@ -1,0 +1,7 @@
+= org/apache/openejb/server/rest/OpenEJBRestServlet.class
+
+ - link:OpenEJBRestServlet-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServlet - 2

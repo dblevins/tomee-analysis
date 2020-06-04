@@ -1,0 +1,6 @@
+= org/hsqldb/rights/User.class
+
+ - link:User-asmified.java[Asmified]
+
+== References
+

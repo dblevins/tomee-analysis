@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdrpi/RegistrationInfo.class
+
+ - link:RegistrationInfo-asmified.java[Asmified]
+
+== References
+

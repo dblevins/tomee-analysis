@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/SimpleNode.class
+
+ - link:SimpleNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/resource/ResourceLoader.class
+
+ - link:ResourceLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ResourceVisitOption - 1
+ - javax.faces.context.FacesContext - 1

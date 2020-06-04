@@ -1,0 +1,6 @@
+= META-INF/versions/9/module-info.class
+
+ - link:module-info-asmified.java[Asmified]
+
+== References
+

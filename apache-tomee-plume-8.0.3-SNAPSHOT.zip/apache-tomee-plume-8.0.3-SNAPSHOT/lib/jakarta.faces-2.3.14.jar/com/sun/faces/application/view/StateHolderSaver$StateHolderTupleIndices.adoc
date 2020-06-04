@@ -1,0 +1,6 @@
+= com/sun/faces/application/view/StateHolderSaver$StateHolderTupleIndices.class
+
+ - link:StateHolderSaver$StateHolderTupleIndices-asmified.java[Asmified]
+
+== References
+

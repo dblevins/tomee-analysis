@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/EnumConstantSignature.class
+
+ - link:EnumConstantSignature-asmified.java[Asmified]
+
+== References
+

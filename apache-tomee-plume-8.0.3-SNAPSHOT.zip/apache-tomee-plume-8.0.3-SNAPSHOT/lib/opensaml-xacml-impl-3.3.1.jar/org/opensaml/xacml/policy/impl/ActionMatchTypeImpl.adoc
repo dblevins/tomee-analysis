@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/ActionMatchTypeImpl.class
+
+ - link:ActionMatchTypeImpl-asmified.java[Asmified]
+
+== References
+

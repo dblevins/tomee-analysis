@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/impl/FieldPropertySeed.class
+
+ - link:FieldPropertySeed-asmified.java[Asmified]
+
+== References
+

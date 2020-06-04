@@ -1,0 +1,7 @@
+= javax/ws/rs/ext/ParamConverterProvider.class
+
+ - link:ParamConverterProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.ParamConverter - 1

@@ -1,0 +1,11 @@
+= org/apache/cxf/attachment/AttachmentUtil$EnhancedMailcapCommandMap.class
+
+ - link:AttachmentUtil$EnhancedMailcapCommandMap-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.CommandInfo - 19
+ - javax.activation.CommandMap - 10
+ - javax.activation.DataContentHandler - 8
+ - javax.activation.MailcapCommandMap - 7
+ - javax.activation.DataSource - 2

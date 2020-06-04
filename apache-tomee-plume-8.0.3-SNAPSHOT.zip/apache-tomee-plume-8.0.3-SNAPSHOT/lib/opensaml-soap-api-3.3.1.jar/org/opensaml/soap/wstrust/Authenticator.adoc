@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Authenticator.class
+
+ - link:Authenticator-asmified.java[Asmified]
+
+== References
+

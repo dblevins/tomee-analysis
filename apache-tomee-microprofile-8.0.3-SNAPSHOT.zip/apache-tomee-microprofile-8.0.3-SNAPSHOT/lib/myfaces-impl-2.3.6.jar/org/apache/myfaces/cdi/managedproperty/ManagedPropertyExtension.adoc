@@ -1,0 +1,16 @@
+= org/apache/myfaces/cdi/managedproperty/ManagedPropertyExtension.class
+
+ - link:ManagedPropertyExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Annotated - 5
+ - javax.faces.annotation.ManagedProperty - 4
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 2
+ - javax.enterprise.inject.spi.ProcessManagedBean - 2
+ - javax.enterprise.event.Observes - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.AnnotatedField - 1
+ - javax.enterprise.inject.spi.Bean - 1

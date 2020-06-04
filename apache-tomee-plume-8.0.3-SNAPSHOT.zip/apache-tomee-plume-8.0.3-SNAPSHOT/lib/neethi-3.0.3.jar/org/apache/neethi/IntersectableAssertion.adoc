@@ -1,0 +1,6 @@
+= org/apache/neethi/IntersectableAssertion.class
+
+ - link:IntersectableAssertion-asmified.java[Asmified]
+
+== References
+

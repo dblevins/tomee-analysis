@@ -1,0 +1,8 @@
+= com/sun/faces/mgbean/ManagedBeanBuilder.class
+
+ - link:ManagedBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.UIComponent - 1

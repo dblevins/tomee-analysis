@@ -1,0 +1,10 @@
+= javax/faces/context/PartialViewContextFactory.class
+
+ - link:PartialViewContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.PartialViewContextFactory - 8
+ - javax.faces.context.FacesContext - 1
+ - javax.faces.context.PartialViewContext - 1
+ - javax.faces.FacesWrapper - 1

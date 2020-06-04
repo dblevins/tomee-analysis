@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/pool/ConnectionPool$PoolCleaner.class
+
+ - link:ConnectionPool$PoolCleaner-asmified.java[Asmified]
+
+== References
+

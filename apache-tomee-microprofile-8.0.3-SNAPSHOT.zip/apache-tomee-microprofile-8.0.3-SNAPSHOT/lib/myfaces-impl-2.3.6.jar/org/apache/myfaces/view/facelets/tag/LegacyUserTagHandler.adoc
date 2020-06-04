@@ -1,0 +1,20 @@
+= org/apache/myfaces/view/facelets/tag/LegacyUserTagHandler.class
+
+ - link:LegacyUserTagHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 13
+ - javax.faces.view.facelets.FaceletContext - 12
+ - javax.el.VariableMapper - 10
+ - javax.faces.component.UIComponent - 8
+ - javax.el.ValueExpression - 7
+ - javax.faces.view.facelets.TagConfig - 4
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.view.facelets.FaceletHandler - 4
+ - javax.faces.view.facelets.TagHandler - 2
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.FacesException - 2
+ - javax.el.ELException - 2
+ - javax.faces.view.facelets.FaceletException - 2
+ - javax.faces.view.facelets.TagAttributes - 2

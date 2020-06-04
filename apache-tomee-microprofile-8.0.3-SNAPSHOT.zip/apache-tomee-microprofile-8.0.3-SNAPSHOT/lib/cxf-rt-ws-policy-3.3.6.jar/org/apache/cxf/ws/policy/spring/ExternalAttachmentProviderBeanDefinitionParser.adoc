@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/spring/ExternalAttachmentProviderBeanDefinitionParser.class
+
+ - link:ExternalAttachmentProviderBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

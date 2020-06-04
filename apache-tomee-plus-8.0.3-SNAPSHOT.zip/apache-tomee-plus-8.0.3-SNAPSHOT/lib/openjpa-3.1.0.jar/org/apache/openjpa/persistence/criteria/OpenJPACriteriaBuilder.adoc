@@ -1,0 +1,13 @@
+= org/apache/openjpa/persistence/criteria/OpenJPACriteriaBuilder.class
+
+ - link:OpenJPACriteriaBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 4
+ - javax.persistence.criteria.From - 4
+ - javax.persistence.criteria.CriteriaQuery - 3
+ - javax.persistence.metamodel.Attribute - 2
+ - javax.persistence.criteria.CriteriaBuilder - 1
+ - javax.persistence.metamodel.Metamodel - 1
+ - javax.persistence.Tuple - 1

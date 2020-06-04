@@ -1,0 +1,9 @@
+= org/apache/webbeans/component/ProducerMethodBean.class
+
+ - link:ProducerMethodBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 2
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.inject.spi.ProducerFactory - 1

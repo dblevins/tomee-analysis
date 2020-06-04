@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/signers/ISOTrailers.class
+
+ - link:ISOTrailers-asmified.java[Asmified]
+
+== References
+

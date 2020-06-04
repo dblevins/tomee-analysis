@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/HermesParser.class
+
+ - link:HermesParser-asmified.java[Asmified]
+
+== References
+

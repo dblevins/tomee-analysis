@@ -1,0 +1,6 @@
+= org/apache/openejb/core/singleton/SingletonContext.class
+
+ - link:SingletonContext-asmified.java[Asmified]
+
+== References
+

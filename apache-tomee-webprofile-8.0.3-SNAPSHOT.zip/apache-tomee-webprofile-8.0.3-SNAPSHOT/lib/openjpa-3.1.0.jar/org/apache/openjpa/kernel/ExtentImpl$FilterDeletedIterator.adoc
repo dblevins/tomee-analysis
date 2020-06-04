@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/ExtentImpl$FilterDeletedIterator.class
+
+ - link:ExtentImpl$FilterDeletedIterator-asmified.java[Asmified]
+
+== References
+

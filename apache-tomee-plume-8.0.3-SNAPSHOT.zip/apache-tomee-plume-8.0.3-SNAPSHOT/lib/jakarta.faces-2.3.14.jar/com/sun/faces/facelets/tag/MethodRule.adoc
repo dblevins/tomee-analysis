@@ -1,0 +1,12 @@
+= com/sun/faces/facelets/tag/MethodRule.class
+
+ - link:MethodRule-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.MetadataTarget - 5
+ - javax.faces.view.facelets.TagAttribute - 3
+ - javax.faces.view.facelets.MetaRule - 2
+ - javax.faces.view.facelets.Metadata - 1
+ - javax.faces.el.MethodBinding - 1
+ - javax.el.MethodExpression - 1

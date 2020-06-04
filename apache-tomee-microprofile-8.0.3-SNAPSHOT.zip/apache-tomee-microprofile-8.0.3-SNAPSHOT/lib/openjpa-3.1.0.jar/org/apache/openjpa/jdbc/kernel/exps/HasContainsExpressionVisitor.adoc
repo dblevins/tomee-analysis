@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/HasContainsExpressionVisitor.class
+
+ - link:HasContainsExpressionVisitor-asmified.java[Asmified]
+
+== References
+

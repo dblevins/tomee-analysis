@@ -1,0 +1,15 @@
+= com/sun/faces/facelets/tag/composite/InsertFacetHandler.class
+
+ - link:InsertFacetHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 10
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.view.facelets.FaceletContext - 3
+ - javax.faces.view.Location - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.event.ComponentSystemEventListener - 1
+ - javax.faces.event.PostAddToViewEvent - 1

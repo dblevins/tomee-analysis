@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/ResolveUrlInputStream.class
+
+ - link:ResolveUrlInputStream-asmified.java[Asmified]
+
+== References
+

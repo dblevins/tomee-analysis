@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/tag/MethodRule$MethodExpressionMetadata.class
+
+ - link:MethodRule$MethodExpressionMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 9
+ - javax.faces.view.facelets.TagAttributeException - 4
+ - javax.faces.view.facelets.FaceletContext - 3
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.el.MethodExpression - 2

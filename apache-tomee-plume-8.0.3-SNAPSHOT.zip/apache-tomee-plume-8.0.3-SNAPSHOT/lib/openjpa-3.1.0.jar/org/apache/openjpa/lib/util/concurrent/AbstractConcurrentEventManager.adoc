@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/concurrent/AbstractConcurrentEventManager.class
+
+ - link:AbstractConcurrentEventManager-asmified.java[Asmified]
+
+== References
+

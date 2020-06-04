@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/BooleanId.class
+
+ - link:BooleanId-asmified.java[Asmified]
+
+== References
+

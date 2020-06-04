@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/GeneralCaseExpressionBNF.class
+
+ - link:GeneralCaseExpressionBNF-asmified.java[Asmified]
+
+== References
+

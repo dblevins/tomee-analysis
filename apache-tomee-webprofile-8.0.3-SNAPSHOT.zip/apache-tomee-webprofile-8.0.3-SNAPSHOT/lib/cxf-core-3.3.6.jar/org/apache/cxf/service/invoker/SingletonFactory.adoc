@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/SingletonFactory.class
+
+ - link:SingletonFactory-asmified.java[Asmified]
+
+== References
+

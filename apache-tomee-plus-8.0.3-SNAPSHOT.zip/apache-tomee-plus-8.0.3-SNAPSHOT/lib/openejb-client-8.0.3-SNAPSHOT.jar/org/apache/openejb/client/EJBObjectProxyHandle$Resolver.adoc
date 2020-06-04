@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EJBObjectProxyHandle$Resolver.class
+
+ - link:EJBObjectProxyHandle$Resolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/criterion/KeyInfoGenerationProfileCriterion.class
+
+ - link:KeyInfoGenerationProfileCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

@@ -1,0 +1,6 @@
+= org/apache/cxf/common/i18n/UncheckedException.class
+
+ - link:UncheckedException-asmified.java[Asmified]
+
+== References
+

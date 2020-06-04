@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap12/SOAP12OperationSerializer.class
+
+ - link:SOAP12OperationSerializer-asmified.java[Asmified]
+
+== References
+

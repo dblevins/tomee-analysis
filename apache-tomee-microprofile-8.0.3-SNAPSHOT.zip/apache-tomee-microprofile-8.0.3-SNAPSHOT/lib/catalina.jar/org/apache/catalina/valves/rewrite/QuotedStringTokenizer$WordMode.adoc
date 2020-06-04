@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/rewrite/QuotedStringTokenizer$WordMode.class
+
+ - link:QuotedStringTokenizer$WordMode-asmified.java[Asmified]
+
+== References
+

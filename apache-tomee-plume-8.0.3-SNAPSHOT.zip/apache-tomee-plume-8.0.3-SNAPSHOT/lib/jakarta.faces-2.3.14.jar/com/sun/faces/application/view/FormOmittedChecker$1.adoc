@@ -1,0 +1,11 @@
+= com/sun/faces/application/view/FormOmittedChecker$1.class
+
+ - link:FormOmittedChecker$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.component.visit.VisitResult - 4
+ - javax.faces.component.UIComponent - 4
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.visit.VisitContext - 1

@@ -1,0 +1,6 @@
+= org/hsqldb/persist/RAFileNIO.class
+
+ - link:RAFileNIO-asmified.java[Asmified]
+
+== References
+

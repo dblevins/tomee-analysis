@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/SimpleRegex.class
+
+ - link:SimpleRegex-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredInitializer.class
+
+ - link:RecoveredInitializer-asmified.java[Asmified]
+
+== References
+

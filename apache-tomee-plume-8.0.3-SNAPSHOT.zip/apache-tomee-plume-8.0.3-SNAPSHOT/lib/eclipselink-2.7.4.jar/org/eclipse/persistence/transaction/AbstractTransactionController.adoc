@@ -1,0 +1,6 @@
+= org/eclipse/persistence/transaction/AbstractTransactionController.class
+
+ - link:AbstractTransactionController-asmified.java[Asmified]
+
+== References
+

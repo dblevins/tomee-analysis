@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/introspector/FieldProperty.class
+
+ - link:FieldProperty-asmified.java[Asmified]
+
+== References
+

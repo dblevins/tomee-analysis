@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanPropertyWriter.class
+
+ - link:UnwrappingBeanPropertyWriter-asmified.java[Asmified]
+
+== References
+

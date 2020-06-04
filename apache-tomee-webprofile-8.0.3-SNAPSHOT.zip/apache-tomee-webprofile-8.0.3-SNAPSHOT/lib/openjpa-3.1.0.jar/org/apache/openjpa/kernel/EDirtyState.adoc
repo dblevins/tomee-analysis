@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/EDirtyState.class
+
+ - link:EDirtyState-asmified.java[Asmified]
+
+== References
+

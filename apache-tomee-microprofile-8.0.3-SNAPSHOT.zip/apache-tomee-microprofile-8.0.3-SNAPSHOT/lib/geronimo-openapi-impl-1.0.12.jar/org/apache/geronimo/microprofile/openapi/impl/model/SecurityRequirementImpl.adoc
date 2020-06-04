@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/SecurityRequirementImpl.class
+
+ - link:SecurityRequirementImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Vetoed - 1

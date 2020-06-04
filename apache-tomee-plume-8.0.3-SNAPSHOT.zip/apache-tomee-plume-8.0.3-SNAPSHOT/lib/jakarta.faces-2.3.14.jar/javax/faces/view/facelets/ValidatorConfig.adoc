@@ -1,0 +1,7 @@
+= javax/faces/view/facelets/ValidatorConfig.class
+
+ - link:ValidatorConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagConfig - 1

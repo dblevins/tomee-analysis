@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/WSSecurityConstants.class
+
+ - link:WSSecurityConstants-asmified.java[Asmified]
+
+== References
+

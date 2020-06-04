@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/client/StaticClientTokenContext.class
+
+ - link:StaticClientTokenContext-asmified.java[Asmified]
+
+== References
+

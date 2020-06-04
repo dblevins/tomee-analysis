@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/tag/DefaultTagDecorator$1.class
+
+ - link:DefaultTagDecorator$1-asmified.java[Asmified]
+
+== References
+

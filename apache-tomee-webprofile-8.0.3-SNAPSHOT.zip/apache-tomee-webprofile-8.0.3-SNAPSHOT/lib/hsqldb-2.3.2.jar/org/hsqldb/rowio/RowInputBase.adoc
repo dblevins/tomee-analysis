@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowInputBase.class
+
+ - link:RowInputBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/marshaller/CharacterEscapeHandler.class
+
+ - link:CharacterEscapeHandler-asmified.java[Asmified]
+
+== References
+

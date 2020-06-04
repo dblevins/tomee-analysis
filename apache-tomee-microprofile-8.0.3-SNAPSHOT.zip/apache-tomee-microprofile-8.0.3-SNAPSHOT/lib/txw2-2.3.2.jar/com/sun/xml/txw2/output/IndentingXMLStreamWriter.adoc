@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/IndentingXMLStreamWriter.class
+
+ - link:IndentingXMLStreamWriter-asmified.java[Asmified]
+
+== References
+

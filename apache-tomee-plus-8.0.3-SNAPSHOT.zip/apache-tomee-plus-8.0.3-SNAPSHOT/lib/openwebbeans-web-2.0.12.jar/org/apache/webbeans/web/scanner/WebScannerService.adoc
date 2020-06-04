@@ -1,0 +1,7 @@
+= org/apache/webbeans/web/scanner/WebScannerService.class
+
+ - link:WebScannerService-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 6

@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/impl/StatusDetailTypeImpl.class
+
+ - link:StatusDetailTypeImpl-asmified.java[Asmified]
+
+== References
+

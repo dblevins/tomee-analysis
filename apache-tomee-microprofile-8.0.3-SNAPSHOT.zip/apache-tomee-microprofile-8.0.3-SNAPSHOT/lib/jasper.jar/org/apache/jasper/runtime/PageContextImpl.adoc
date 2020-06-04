@@ -1,0 +1,31 @@
+= org/apache/jasper/runtime/PageContextImpl.class
+
+ - link:PageContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 61
+ - javax.servlet.http.HttpSession - 29
+ - javax.servlet.ServletContext - 26
+ - javax.servlet.jsp.JspWriter - 25
+ - javax.servlet.ServletResponse - 20
+ - javax.servlet.ServletConfig - 14
+ - javax.servlet.ServletException - 11
+ - javax.servlet.Servlet - 11
+ - javax.el.ELContext - 9
+ - javax.servlet.http.HttpServletRequest - 7
+ - javax.servlet.jsp.JspFactory - 6
+ - javax.el.ExpressionFactory - 5
+ - javax.servlet.jsp.PageContext - 5
+ - javax.el.ImportHandler - 4
+ - javax.servlet.jsp.JspException - 3
+ - javax.el.ELException - 2
+ - javax.servlet.RequestDispatcher - 2
+ - javax.servlet.jsp.tagext.BodyContent - 2
+ - javax.el.ValueExpression - 2
+ - javax.servlet.jsp.JspApplicationContext - 2
+ - javax.servlet.jsp.el.VariableResolver - 1
+ - javax.el.FunctionMapper - 1
+ - javax.servlet.jsp.JspContext - 1
+ - javax.servlet.jsp.el.ELException - 1
+ - javax.servlet.jsp.el.ExpressionEvaluator - 1

@@ -1,0 +1,6 @@
+= org/apache/commons/collections/OrderedMapIterator.class
+
+ - link:OrderedMapIterator-asmified.java[Asmified]
+
+== References
+

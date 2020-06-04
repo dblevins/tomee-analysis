@@ -1,0 +1,6 @@
+= javax/xml/datatype/DatatypeConstants$1.class
+
+ - link:DatatypeConstants$1-asmified.java[Asmified]
+
+== References
+

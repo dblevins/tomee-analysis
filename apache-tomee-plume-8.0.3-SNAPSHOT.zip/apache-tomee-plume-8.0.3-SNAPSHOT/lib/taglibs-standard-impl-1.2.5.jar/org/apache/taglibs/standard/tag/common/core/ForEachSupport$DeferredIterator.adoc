@@ -1,0 +1,6 @@
+= org/apache/taglibs/standard/tag/common/core/ForEachSupport$DeferredIterator.class
+
+ - link:ForEachSupport$DeferredIterator-asmified.java[Asmified]
+
+== References
+

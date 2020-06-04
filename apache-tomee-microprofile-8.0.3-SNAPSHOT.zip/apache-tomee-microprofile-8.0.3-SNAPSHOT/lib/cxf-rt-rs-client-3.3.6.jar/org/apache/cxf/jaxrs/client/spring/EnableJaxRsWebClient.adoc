@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/spring/EnableJaxRsWebClient.class
+
+ - link:EnableJaxRsWebClient-asmified.java[Asmified]
+
+== References
+

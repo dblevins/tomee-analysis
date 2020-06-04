@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/JavadocQualifiedTypeReference.class
+
+ - link:JavadocQualifiedTypeReference-asmified.java[Asmified]
+
+== References
+

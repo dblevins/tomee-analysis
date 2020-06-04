@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdreqinit/impl/RequestInitiatorMarshaller.class
+
+ - link:RequestInitiatorMarshaller-asmified.java[Asmified]
+
+== References
+

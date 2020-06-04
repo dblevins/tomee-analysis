@@ -1,0 +1,14 @@
+= org/apache/myfaces/context/servlet/PartialViewContextImpl$PhaseAwareVisitCallback.class
+
+ - link:PartialViewContextImpl$PhaseAwareVisitCallback-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 17
+ - javax.faces.component.UIComponent - 14
+ - javax.faces.event.PhaseId - 13
+ - javax.faces.context.PartialResponseWriter - 7
+ - javax.faces.component.visit.VisitResult - 2
+ - javax.faces.context.ResponseWriter - 1
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.visit.VisitContext - 1

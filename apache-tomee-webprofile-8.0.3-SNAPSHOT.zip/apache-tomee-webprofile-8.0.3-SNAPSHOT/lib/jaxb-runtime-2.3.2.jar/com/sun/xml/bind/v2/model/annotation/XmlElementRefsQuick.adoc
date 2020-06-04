@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/model/annotation/XmlElementRefsQuick.class
+
+ - link:XmlElementRefsQuick-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElementRefs - 11
+ - javax.xml.bind.annotation.XmlElementRef - 2

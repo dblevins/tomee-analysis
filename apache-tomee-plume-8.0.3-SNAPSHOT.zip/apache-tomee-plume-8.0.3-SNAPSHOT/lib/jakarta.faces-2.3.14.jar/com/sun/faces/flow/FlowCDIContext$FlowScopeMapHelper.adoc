@@ -1,0 +1,11 @@
+= com/sun/faces/flow/FlowCDIContext$FlowScopeMapHelper.class
+
+ - link:FlowCDIContext$FlowScopeMapHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 14
+ - javax.faces.flow.Flow - 8
+ - javax.faces.context.ExternalContext - 6
+ - javax.faces.lifecycle.ClientWindow - 3
+ - javax.enterprise.context.spi.CreationalContext - 1

@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/service/factory/XercesSchemaValidationUtils.class
+
+ - link:XercesSchemaValidationUtils-asmified.java[Asmified]
+
+== References
+

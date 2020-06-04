@@ -1,0 +1,15 @@
+= com/sun/faces/facelets/tag/composite/InsertChildrenHandler.class
+
+ - link:InsertChildrenHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 7
+ - javax.faces.view.facelets.TagAttribute - 5
+ - javax.faces.view.facelets.Tag - 4
+ - javax.faces.view.facelets.FaceletContext - 3
+ - javax.faces.view.Location - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.event.ComponentSystemEventListener - 1
+ - javax.faces.event.PostAddToViewEvent - 1

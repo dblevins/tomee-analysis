@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter.class
+
+ - link:WadlGenerator$StringSchemaWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.UriInfo - 9
+ - javax.ws.rs.core.UriBuilder - 8

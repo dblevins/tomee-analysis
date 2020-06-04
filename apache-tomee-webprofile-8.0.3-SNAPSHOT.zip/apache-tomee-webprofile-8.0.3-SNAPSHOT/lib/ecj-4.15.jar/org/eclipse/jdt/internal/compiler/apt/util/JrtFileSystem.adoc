@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/util/JrtFileSystem.class
+
+ - link:JrtFileSystem-asmified.java[Asmified]
+
+== References
+

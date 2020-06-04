@@ -1,0 +1,6 @@
+= com/sun/faces/application/annotation/ValidatorConfigHandler$ValidatorInfo.class
+
+ - link:ValidatorConfigHandler$ValidatorInfo-asmified.java[Asmified]
+
+== References
+

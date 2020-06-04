@@ -1,0 +1,12 @@
+= org/apache/cxf/jaxrs/provider/PrimitiveTextProvider.class
+
+ - link:PrimitiveTextProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 13
+ - javax.ws.rs.core.MultivaluedMap - 3
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

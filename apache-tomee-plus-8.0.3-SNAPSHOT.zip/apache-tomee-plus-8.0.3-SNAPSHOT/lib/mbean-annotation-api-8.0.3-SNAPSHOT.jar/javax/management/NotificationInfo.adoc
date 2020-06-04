@@ -1,0 +1,6 @@
+= javax/management/NotificationInfo.class
+
+ - link:NotificationInfo-asmified.java[Asmified]
+
+== References
+

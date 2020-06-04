@@ -1,0 +1,6 @@
+= org/apache/xml/security/encryption/XMLCipher$Factory$ReferenceListImpl$KeyReference.class
+
+ - link:XMLCipher$Factory$ReferenceListImpl$KeyReference-asmified.java[Asmified]
+
+== References
+

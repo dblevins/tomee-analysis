@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Log4j2LogStreamFactory.class
+
+ - link:Log4j2LogStreamFactory-asmified.java[Asmified]
+
+== References
+

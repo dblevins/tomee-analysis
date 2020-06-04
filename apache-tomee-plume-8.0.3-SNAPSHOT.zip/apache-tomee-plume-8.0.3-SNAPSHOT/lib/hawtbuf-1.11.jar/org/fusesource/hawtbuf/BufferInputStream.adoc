@@ -1,0 +1,6 @@
+= org/fusesource/hawtbuf/BufferInputStream.class
+
+ - link:BufferInputStream-asmified.java[Asmified]
+
+== References
+

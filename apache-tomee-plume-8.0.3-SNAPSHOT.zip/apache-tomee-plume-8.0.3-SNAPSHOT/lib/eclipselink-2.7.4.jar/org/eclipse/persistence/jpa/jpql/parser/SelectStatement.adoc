@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/SelectStatement.class
+
+ - link:SelectStatement-asmified.java[Asmified]
+
+== References
+

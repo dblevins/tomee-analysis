@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/impl/DefaultViewScopeHandler.class
+
+ - link:DefaultViewScopeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 23
+ - javax.faces.context.ExternalContext - 22

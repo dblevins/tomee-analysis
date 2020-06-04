@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSeverityType.class
+
+ - link:XmlSeverityType-asmified.java[Asmified]
+
+== References
+

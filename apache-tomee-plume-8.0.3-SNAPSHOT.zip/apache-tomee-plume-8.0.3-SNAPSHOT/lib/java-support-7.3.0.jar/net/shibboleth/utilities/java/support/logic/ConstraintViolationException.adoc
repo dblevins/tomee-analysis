@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/logic/ConstraintViolationException.class
+
+ - link:ConstraintViolationException-asmified.java[Asmified]
+
+== References
+

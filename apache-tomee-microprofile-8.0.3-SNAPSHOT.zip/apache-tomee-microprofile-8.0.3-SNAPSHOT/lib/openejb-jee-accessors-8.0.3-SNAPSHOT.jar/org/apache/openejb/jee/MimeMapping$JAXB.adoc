@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/MimeMapping$JAXB.class
+
+ - link:MimeMapping$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

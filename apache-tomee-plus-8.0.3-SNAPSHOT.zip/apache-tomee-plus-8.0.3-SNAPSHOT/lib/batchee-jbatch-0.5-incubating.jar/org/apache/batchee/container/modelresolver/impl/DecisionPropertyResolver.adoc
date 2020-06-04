@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/DecisionPropertyResolver.class
+
+ - link:DecisionPropertyResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/config/BeanProperties.class
+
+ - link:BeanProperties-asmified.java[Asmified]
+
+== References
+

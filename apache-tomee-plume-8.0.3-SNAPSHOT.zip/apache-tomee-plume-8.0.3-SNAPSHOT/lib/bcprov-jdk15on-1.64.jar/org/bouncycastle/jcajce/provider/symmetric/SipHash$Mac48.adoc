@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/SipHash$Mac48.class
+
+ - link:SipHash$Mac48-asmified.java[Asmified]
+
+== References
+

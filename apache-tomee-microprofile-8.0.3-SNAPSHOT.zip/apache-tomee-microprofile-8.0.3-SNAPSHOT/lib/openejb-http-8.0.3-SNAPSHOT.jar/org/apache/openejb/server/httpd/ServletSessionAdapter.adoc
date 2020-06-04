@@ -1,0 +1,9 @@
+= org/apache/openejb/server/httpd/ServletSessionAdapter.class
+
+ - link:ServletSessionAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 37
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.http.HttpSessionContext - 2

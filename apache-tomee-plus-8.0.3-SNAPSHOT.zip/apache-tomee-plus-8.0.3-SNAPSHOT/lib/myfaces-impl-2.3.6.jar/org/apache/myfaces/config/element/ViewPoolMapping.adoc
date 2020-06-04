@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/ViewPoolMapping.class
+
+ - link:ViewPoolMapping-asmified.java[Asmified]
+
+== References
+

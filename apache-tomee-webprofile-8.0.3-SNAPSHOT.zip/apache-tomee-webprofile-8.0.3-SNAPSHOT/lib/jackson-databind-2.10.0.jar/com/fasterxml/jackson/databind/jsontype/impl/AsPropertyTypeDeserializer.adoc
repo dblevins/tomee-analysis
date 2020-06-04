@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeDeserializer.class
+
+ - link:AsPropertyTypeDeserializer-asmified.java[Asmified]
+
+== References
+

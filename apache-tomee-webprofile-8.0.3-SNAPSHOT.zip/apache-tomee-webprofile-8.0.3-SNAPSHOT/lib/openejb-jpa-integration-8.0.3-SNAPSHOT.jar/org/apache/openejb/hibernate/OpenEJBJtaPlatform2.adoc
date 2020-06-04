@@ -1,0 +1,8 @@
+= org/apache/openejb/hibernate/OpenEJBJtaPlatform2.class
+
+ - link:OpenEJBJtaPlatform2-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 2
+ - javax.transaction.TransactionManager - 2

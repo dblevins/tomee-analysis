@@ -1,0 +1,6 @@
+= org/hsqldb/lib/tar/TarGenerator$TarEntrySupplicant.class
+
+ - link:TarGenerator$TarEntrySupplicant-asmified.java[Asmified]
+
+== References
+

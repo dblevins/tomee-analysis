@@ -1,0 +1,14 @@
+= org/apache/johnzon/jaxrs/JsrProvider.class
+
+ - link:JsrProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonStructure - 5
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.core.MediaType - 4
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

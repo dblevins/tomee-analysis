@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/openapi/models/responses/APIResponse.class
+
+ - link:APIResponse-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/rewrite/Substitution$StaticElement.class
+
+ - link:Substitution$StaticElement-asmified.java[Asmified]
+
+== References
+

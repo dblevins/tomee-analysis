@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/BaseNamespaceHandler.class
+
+ - link:BaseNamespaceHandler-asmified.java[Asmified]
+
+== References
+

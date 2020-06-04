@@ -1,0 +1,7 @@
+= javax/persistence/SequenceGenerators.class
+
+ - link:SequenceGenerators-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.SequenceGenerator - 1

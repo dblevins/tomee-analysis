@@ -1,0 +1,6 @@
+= org/opensaml/soap/wspolicy/All.class
+
+ - link:All-asmified.java[Asmified]
+
+== References
+

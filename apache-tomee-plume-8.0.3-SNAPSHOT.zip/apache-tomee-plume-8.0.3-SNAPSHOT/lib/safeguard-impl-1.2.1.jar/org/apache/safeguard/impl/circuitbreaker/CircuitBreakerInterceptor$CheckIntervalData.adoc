@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/circuitbreaker/CircuitBreakerInterceptor$CheckIntervalData.class
+
+ - link:CircuitBreakerInterceptor$CheckIntervalData-asmified.java[Asmified]
+
+== References
+

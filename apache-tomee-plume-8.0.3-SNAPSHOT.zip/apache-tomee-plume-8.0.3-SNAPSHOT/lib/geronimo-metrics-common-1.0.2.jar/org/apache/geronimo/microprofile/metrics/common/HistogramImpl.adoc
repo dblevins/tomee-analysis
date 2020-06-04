@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/metrics/common/HistogramImpl.class
+
+ - link:HistogramImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbTransient - 1

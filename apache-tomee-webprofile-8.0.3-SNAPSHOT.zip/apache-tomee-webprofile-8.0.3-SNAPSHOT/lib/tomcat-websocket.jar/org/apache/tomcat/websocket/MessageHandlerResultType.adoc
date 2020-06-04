@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/MessageHandlerResultType.class
+
+ - link:MessageHandlerResultType-asmified.java[Asmified]
+
+== References
+

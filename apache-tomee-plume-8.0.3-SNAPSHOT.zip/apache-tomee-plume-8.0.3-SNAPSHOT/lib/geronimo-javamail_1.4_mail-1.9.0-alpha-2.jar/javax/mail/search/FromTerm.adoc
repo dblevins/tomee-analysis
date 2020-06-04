@@ -1,0 +1,11 @@
+= javax/mail/search/FromTerm.class
+
+ - link:FromTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Address - 4
+ - javax.mail.MessagingException - 3
+ - javax.mail.Message - 2
+ - javax.mail.search.AddressTerm - 2
+ - javax.mail.search.FromTerm - 1

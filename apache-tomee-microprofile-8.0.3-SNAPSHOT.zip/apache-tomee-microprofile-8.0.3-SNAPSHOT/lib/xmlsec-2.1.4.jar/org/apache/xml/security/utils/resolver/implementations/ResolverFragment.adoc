@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/resolver/implementations/ResolverFragment.class
+
+ - link:ResolverFragment-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= org/apache/jasper/servlet/JspCServletContext.class
+
+ - link:JspCServletContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.descriptor.JspConfigDescriptor - 5
+ - javax.servlet.Servlet - 5
+ - javax.servlet.SessionTrackingMode - 5
+ - javax.servlet.ServletRegistration$Dynamic - 4
+ - javax.servlet.ServletException - 4
+ - javax.servlet.ServletContext - 4
+ - javax.servlet.Filter - 3
+ - javax.servlet.FilterRegistration$Dynamic - 3
+ - javax.servlet.ServletRegistration - 2
+ - javax.servlet.RequestDispatcher - 2
+ - javax.servlet.FilterRegistration - 2
+ - javax.servlet.SessionCookieConfig - 1

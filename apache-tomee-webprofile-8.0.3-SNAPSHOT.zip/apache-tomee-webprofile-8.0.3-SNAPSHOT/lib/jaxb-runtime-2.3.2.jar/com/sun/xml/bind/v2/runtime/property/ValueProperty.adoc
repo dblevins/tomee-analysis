@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/ValueProperty.class
+
+ - link:ValueProperty-asmified.java[Asmified]
+
+== References
+

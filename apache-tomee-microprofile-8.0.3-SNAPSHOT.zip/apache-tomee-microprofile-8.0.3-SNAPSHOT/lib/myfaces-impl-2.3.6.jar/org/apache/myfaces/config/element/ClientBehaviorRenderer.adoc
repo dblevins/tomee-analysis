@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/ClientBehaviorRenderer.class
+
+ - link:ClientBehaviorRenderer-asmified.java[Asmified]
+
+== References
+

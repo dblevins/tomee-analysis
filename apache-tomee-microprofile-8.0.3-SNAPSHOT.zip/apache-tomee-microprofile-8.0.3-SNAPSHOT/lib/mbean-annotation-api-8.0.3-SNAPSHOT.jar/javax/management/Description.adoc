@@ -1,0 +1,6 @@
+= javax/management/Description.class
+
+ - link:Description-asmified.java[Asmified]
+
+== References
+

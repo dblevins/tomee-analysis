@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/ConfigOthersSlot.class
+
+ - link:ConfigOthersSlot-asmified.java[Asmified]
+
+== References
+

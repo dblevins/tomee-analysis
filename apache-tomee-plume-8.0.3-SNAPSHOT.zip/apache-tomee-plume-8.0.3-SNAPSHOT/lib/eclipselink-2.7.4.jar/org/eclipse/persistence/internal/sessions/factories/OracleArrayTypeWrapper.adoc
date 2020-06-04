@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/OracleArrayTypeWrapper.class
+
+ - link:OracleArrayTypeWrapper-asmified.java[Asmified]
+
+== References
+

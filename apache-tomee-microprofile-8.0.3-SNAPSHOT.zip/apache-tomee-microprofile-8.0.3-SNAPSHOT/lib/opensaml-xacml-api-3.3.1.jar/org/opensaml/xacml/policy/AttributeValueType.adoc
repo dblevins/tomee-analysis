@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/AttributeValueType.class
+
+ - link:AttributeValueType-asmified.java[Asmified]
+
+== References
+

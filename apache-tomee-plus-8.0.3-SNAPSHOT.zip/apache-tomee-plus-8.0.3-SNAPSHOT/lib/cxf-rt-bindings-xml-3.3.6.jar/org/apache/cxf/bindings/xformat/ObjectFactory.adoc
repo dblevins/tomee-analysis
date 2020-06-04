@@ -1,0 +1,9 @@
+= org/apache/cxf/bindings/xformat/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 6
+ - javax.xml.bind.annotation.XmlElementDecl - 2
+ - javax.xml.bind.annotation.XmlRegistry - 1

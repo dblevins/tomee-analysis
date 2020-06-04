@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/WebappBeanManager$IteratorSet.class
+
+ - link:WebappBeanManager$IteratorSet-asmified.java[Asmified]
+
+== References
+

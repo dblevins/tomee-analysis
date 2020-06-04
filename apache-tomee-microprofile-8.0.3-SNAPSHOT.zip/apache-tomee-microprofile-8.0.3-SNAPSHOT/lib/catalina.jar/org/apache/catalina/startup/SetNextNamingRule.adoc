@@ -1,0 +1,6 @@
+= org/apache/catalina/startup/SetNextNamingRule.class
+
+ - link:SetNextNamingRule-asmified.java[Asmified]
+
+== References
+

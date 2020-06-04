@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedSQLStoreQuery$UpdateExecutor.class
+
+ - link:DistributedSQLStoreQuery$UpdateExecutor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/webbeans/config/WebBeansContext.class
+
+ - link:WebBeansContext-asmified.java[Asmified]
+
+== References
+

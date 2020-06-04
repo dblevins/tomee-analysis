@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/DefaultedMap.class
+
+ - link:DefaultedMap-asmified.java[Asmified]
+
+== References
+

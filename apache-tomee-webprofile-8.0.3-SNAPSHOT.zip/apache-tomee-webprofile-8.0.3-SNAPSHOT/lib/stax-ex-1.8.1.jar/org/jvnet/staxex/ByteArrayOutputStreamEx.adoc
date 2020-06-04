@@ -1,0 +1,6 @@
+= org/jvnet/staxex/ByteArrayOutputStreamEx.class
+
+ - link:ByteArrayOutputStreamEx-asmified.java[Asmified]
+
+== References
+

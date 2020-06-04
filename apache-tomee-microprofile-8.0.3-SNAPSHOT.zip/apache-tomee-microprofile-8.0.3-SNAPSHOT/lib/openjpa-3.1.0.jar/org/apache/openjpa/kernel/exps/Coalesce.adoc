@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Coalesce.class
+
+ - link:Coalesce-asmified.java[Asmified]
+
+== References
+

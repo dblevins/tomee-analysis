@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/xml/PersistenceUnitMetadataImpl.class
+
+ - link:PersistenceUnitMetadataImpl-asmified.java[Asmified]
+
+== References
+

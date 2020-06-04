@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/jmx/ManagedTempQueueRegion.class
+
+ - link:ManagedTempQueueRegion-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

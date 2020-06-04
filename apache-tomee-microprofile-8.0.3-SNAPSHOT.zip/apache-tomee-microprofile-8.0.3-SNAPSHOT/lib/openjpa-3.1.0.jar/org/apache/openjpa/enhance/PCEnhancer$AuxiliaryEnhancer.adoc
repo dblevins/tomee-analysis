@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/PCEnhancer$AuxiliaryEnhancer.class
+
+ - link:PCEnhancer$AuxiliaryEnhancer-asmified.java[Asmified]
+
+== References
+

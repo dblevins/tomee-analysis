@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/tree/InvokeDynamicInsnNode.class
+
+ - link:InvokeDynamicInsnNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/codec/language/MatchRatingApproachEncoder.class
+
+ - link:MatchRatingApproachEncoder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/naming/factory/DataSourceLinkFactory.class
+
+ - link:DataSourceLinkFactory-asmified.java[Asmified]
+
+== References
+

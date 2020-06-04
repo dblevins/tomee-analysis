@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.class
+
+ - link:BuilderBasedDeserializer-asmified.java[Asmified]
+
+== References
+

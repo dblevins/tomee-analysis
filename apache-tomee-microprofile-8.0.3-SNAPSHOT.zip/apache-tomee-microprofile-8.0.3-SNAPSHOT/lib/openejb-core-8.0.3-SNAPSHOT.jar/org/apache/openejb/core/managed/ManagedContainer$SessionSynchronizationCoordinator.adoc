@@ -1,0 +1,7 @@
+= org/apache/openejb/core/managed/ManagedContainer$SessionSynchronizationCoordinator.class
+
+ - link:ManagedContainer$SessionSynchronizationCoordinator-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 1

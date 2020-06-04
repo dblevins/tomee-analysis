@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/ClassForInheritanceNode.class
+
+ - link:ClassForInheritanceNode-asmified.java[Asmified]
+
+== References
+

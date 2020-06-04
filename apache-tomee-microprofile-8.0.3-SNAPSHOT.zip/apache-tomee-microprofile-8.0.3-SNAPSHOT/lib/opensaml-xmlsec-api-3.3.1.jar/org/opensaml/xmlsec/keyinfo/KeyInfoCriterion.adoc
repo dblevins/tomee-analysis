@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/keyinfo/KeyInfoCriterion.class
+
+ - link:KeyInfoCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 3

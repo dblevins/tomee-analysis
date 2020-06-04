@@ -1,0 +1,6 @@
+= org/apache/openejb/client/StatelessEJBObjectHandler.class
+
+ - link:StatelessEJBObjectHandler-asmified.java[Asmified]
+
+== References
+

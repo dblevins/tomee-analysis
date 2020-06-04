@@ -1,0 +1,6 @@
+= com/ctc/wstx/ent/ExtEntity.class
+
+ - link:ExtEntity-asmified.java[Asmified]
+
+== References
+

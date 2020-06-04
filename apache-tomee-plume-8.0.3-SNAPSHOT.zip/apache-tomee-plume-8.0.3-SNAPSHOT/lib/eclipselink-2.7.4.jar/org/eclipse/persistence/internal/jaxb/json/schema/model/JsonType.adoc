@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jaxb/json/schema/model/JsonType.class
+
+ - link:JsonType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 8
+ - javax.xml.bind.annotation.XmlEnum - 1

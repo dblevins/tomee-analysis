@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EjbObjectInputStream$BlacklistClassResolver.class
+
+ - link:EjbObjectInputStream$BlacklistClassResolver-asmified.java[Asmified]
+
+== References
+

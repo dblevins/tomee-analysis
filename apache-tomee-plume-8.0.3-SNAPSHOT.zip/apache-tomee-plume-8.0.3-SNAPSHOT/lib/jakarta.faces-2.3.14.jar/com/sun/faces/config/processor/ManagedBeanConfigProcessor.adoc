@@ -1,0 +1,9 @@
+= com/sun/faces/config/processor/ManagedBeanConfigProcessor.class
+
+ - link:ManagedBeanConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.servlet.ServletContext - 4
+ - javax.faces.bean.ManagedBean - 1

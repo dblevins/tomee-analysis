@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/Index.class
+
+ - link:Index-asmified.java[Asmified]
+
+== References
+

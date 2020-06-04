@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/partitioning/HashPartitioningPolicy.class
+
+ - link:HashPartitioningPolicy-asmified.java[Asmified]
+
+== References
+

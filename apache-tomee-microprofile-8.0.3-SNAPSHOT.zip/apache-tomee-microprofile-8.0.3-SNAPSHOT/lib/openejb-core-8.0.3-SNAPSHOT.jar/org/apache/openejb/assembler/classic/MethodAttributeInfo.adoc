@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/MethodAttributeInfo.class
+
+ - link:MethodAttributeInfo-asmified.java[Asmified]
+
+== References
+

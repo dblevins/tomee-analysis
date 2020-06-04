@@ -1,0 +1,6 @@
+= com/sun/faces/application/annotation/DelegatedEJBScanner.class
+
+ - link:DelegatedEJBScanner-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxws/interceptors/SwAOutInterceptor.class
+
+ - link:SwAOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 15
+ - javax.activation.DataSource - 11
+ - javax.xml.bind.JAXBContext - 4

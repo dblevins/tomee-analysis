@@ -1,0 +1,6 @@
+= org/apache/batchee/container/modelresolver/impl/PartitionReducerPropertyResolver.class
+
+ - link:PartitionReducerPropertyResolver-asmified.java[Asmified]
+
+== References
+

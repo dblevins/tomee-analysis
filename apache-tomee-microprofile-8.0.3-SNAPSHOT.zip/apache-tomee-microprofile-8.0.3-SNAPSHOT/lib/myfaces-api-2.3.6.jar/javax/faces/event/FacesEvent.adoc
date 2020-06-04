@@ -1,0 +1,11 @@
+= javax/faces/event/FacesEvent.class
+
+ - link:FacesEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIComponent - 8
+ - javax.faces.event.PhaseId - 7
+ - javax.faces.event.FacesEvent - 5
+ - javax.faces.event.FacesListener - 2

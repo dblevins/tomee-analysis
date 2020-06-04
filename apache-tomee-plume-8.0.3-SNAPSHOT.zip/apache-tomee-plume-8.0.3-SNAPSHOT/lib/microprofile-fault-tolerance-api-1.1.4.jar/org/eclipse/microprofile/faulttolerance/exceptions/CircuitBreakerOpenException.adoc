@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/faulttolerance/exceptions/CircuitBreakerOpenException.class
+
+ - link:CircuitBreakerOpenException-asmified.java[Asmified]
+
+== References
+

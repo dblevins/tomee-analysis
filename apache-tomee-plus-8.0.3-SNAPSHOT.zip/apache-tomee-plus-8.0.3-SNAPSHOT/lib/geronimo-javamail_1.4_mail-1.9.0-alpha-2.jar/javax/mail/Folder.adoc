@@ -1,0 +1,26 @@
+= javax/mail/Folder.class
+
+ - link:Folder-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Folder - 42
+ - javax.mail.Message - 38
+ - javax.mail.MessagingException - 35
+ - javax.mail.EventQueue - 12
+ - javax.mail.Flags - 9
+ - javax.mail.URLName - 8
+ - javax.mail.Flags$Flag - 8
+ - javax.mail.event.MailEvent - 8
+ - javax.mail.Store - 8
+ - javax.mail.search.SearchTerm - 4
+ - javax.mail.event.MessageCountEvent - 4
+ - javax.mail.event.FolderEvent - 4
+ - javax.mail.event.MessageCountListener - 2
+ - javax.mail.MethodNotSupportedException - 2
+ - javax.mail.event.FolderListener - 2
+ - javax.mail.event.MessageChangedListener - 2
+ - javax.mail.event.ConnectionEvent - 2
+ - javax.mail.event.ConnectionListener - 2
+ - javax.mail.event.MessageChangedEvent - 2
+ - javax.mail.FetchProfile - 1

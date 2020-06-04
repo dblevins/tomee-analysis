@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/jcache/NoWriter.class
+
+ - link:NoWriter-asmified.java[Asmified]
+
+== References
+

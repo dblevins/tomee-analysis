@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/JAXBElementRootConverter.class
+
+ - link:JAXBElementRootConverter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 15

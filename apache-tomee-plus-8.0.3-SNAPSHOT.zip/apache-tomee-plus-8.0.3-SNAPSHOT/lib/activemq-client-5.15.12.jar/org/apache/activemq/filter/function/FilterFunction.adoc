@@ -1,0 +1,7 @@
+= org/apache/activemq/filter/function/FilterFunction.class
+
+ - link:FilterFunction-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 1

@@ -1,0 +1,6 @@
+= com/sun/faces/spi/SerializationProviderFactory$1.class
+
+ - link:SerializationProviderFactory$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/XmlEnumValue.class
+
+ - link:XmlEnumValue-asmified.java[Asmified]
+
+== References
+

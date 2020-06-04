@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/MetadataBuilders.class
+
+ - link:MetadataBuilders-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 2

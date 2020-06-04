@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/queries/StoredProcedureParameterImpl.class
+
+ - link:StoredProcedureParameterImpl-asmified.java[Asmified]
+
+== References
+

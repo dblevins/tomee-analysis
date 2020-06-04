@@ -1,0 +1,6 @@
+= org/apache/xbean/recipe/Option.class
+
+ - link:Option-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/tls/ServerOnlyTlsAuthentication.class
+
+ - link:ServerOnlyTlsAuthentication-asmified.java[Asmified]
+
+== References
+

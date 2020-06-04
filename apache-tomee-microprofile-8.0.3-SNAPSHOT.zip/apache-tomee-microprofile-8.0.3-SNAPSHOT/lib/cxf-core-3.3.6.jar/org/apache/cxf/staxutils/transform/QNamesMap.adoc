@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/transform/QNamesMap.class
+
+ - link:QNamesMap-asmified.java[Asmified]
+
+== References
+

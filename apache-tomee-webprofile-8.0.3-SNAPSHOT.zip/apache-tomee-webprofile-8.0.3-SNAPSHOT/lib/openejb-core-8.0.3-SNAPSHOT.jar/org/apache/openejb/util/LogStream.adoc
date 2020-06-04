@@ -1,0 +1,6 @@
+= org/apache/openejb/util/LogStream.class
+
+ - link:LogStream-asmified.java[Asmified]
+
+== References
+

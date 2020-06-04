@@ -1,0 +1,6 @@
+= org/apache/catalina/connector/Request$SpecialAttributeAdapter.class
+
+ - link:Request$SpecialAttributeAdapter-asmified.java[Asmified]
+
+== References
+

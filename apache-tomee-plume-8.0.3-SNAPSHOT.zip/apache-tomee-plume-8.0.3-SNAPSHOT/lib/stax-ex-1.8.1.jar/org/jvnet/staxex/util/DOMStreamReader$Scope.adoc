@@ -1,0 +1,6 @@
+= org/jvnet/staxex/util/DOMStreamReader$Scope.class
+
+ - link:DOMStreamReader$Scope-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/myfaces/push/EndpointImpl$2.class
+
+ - link:EndpointImpl$2-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.event.WebsocketEvent$Closed - 1

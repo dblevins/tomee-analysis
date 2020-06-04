@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/PolicySetTypeImplBuilder.class
+
+ - link:PolicySetTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

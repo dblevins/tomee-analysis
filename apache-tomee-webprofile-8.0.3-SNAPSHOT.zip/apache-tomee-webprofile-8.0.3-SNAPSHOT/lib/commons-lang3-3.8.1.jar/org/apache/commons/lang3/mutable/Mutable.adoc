@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/mutable/Mutable.class
+
+ - link:Mutable-asmified.java[Asmified]
+
+== References
+

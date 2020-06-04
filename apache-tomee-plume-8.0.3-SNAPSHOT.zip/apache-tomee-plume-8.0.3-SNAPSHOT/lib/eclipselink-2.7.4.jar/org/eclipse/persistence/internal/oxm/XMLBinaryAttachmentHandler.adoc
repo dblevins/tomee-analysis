@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/oxm/XMLBinaryAttachmentHandler.class
+
+ - link:XMLBinaryAttachmentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/multiset/UnmodifiableMultiSet.class
+
+ - link:UnmodifiableMultiSet-asmified.java[Asmified]
+
+== References
+

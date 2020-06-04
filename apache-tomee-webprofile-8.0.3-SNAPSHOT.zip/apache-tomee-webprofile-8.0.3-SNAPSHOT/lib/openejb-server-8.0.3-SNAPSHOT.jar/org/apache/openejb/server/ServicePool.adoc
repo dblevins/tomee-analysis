@@ -1,0 +1,6 @@
+= org/apache/openejb/server/ServicePool.class
+
+ - link:ServicePool-asmified.java[Asmified]
+
+== References
+

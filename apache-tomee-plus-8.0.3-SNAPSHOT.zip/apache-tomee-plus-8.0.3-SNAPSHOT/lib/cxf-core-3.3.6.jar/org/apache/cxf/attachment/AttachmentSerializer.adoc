@@ -1,0 +1,8 @@
+= org/apache/cxf/attachment/AttachmentSerializer.class
+
+ - link:AttachmentSerializer-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 9
+ - javax.activation.CommandMap - 2

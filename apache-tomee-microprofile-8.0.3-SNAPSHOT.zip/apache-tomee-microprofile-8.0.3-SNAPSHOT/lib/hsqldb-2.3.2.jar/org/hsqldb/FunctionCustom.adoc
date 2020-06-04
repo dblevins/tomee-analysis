@@ -1,0 +1,6 @@
+= org/hsqldb/FunctionCustom.class
+
+ - link:FunctionCustom-asmified.java[Asmified]
+
+== References
+

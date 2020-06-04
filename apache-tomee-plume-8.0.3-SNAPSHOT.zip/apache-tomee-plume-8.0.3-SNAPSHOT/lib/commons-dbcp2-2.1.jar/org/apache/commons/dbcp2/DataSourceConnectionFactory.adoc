@@ -1,0 +1,6 @@
+= org/apache/commons/dbcp2/DataSourceConnectionFactory.class
+
+ - link:DataSourceConnectionFactory-asmified.java[Asmified]
+
+== References
+

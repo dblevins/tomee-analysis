@@ -1,0 +1,6 @@
+= org/apache/commons/digester/xmlrules/DigesterLoader.class
+
+ - link:DigesterLoader-asmified.java[Asmified]
+
+== References
+

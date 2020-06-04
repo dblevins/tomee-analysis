@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/StartElementEvent.class
+
+ - link:StartElementEvent-asmified.java[Asmified]
+
+== References
+

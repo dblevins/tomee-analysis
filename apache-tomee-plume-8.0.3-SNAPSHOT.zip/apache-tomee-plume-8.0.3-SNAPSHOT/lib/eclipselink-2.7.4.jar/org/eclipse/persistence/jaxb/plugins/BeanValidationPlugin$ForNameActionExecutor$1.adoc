@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/plugins/BeanValidationPlugin$ForNameActionExecutor$1.class
+
+ - link:BeanValidationPlugin$ForNameActionExecutor$1-asmified.java[Asmified]
+
+== References
+

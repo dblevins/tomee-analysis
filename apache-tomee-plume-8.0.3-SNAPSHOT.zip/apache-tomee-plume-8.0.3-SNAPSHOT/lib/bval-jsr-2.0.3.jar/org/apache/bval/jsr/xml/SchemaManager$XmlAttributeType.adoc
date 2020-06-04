@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/xml/SchemaManager$XmlAttributeType.class
+
+ - link:SchemaManager$XmlAttributeType-asmified.java[Asmified]
+
+== References
+

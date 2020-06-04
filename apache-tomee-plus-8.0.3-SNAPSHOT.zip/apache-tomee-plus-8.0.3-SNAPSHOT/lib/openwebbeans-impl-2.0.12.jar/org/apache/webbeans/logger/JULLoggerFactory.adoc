@@ -1,0 +1,6 @@
+= org/apache/webbeans/logger/JULLoggerFactory.class
+
+ - link:JULLoggerFactory-asmified.java[Asmified]
+
+== References
+

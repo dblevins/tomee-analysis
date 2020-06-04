@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/XMLSecurityProperties.class
+
+ - link:XMLSecurityProperties-asmified.java[Asmified]
+
+== References
+

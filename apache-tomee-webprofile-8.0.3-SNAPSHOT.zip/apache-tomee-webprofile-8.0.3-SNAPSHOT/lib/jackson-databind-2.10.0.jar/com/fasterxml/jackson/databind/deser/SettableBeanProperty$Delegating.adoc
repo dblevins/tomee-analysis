@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/SettableBeanProperty$Delegating.class
+
+ - link:SettableBeanProperty$Delegating-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/PortRefInfo.class
+
+ - link:PortRefInfo-asmified.java[Asmified]
+
+== References
+

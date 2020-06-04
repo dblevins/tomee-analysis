@@ -1,0 +1,20 @@
+= org/apache/activemq/ra/InboundConnectionProxy.class
+
+ - link:InboundConnectionProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 26
+ - javax.jms.ServerSessionPool - 4
+ - javax.jms.ConnectionConsumer - 4
+ - javax.jms.Topic - 2
+ - javax.jms.ExceptionListener - 2
+ - javax.jms.Connection - 1
+ - javax.jms.TopicConnection - 1
+ - javax.jms.QueueSession - 1
+ - javax.jms.QueueConnection - 1
+ - javax.jms.ConnectionMetaData - 1
+ - javax.jms.Queue - 1
+ - javax.jms.Session - 1
+ - javax.jms.Destination - 1
+ - javax.jms.TopicSession - 1

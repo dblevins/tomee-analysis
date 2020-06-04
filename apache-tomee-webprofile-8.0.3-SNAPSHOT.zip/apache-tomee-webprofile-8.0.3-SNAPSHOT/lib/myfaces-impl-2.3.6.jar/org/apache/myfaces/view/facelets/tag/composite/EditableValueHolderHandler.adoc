@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/tag/composite/EditableValueHolderHandler.class
+
+ - link:EditableValueHolderHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 6
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.el.ValueExpression - 4
+ - javax.faces.view.EditableValueHolderAttachedObjectTarget - 3
+ - javax.faces.view.facelets.TagConfig - 2
+ - javax.faces.view.AttachedObjectTarget - 1

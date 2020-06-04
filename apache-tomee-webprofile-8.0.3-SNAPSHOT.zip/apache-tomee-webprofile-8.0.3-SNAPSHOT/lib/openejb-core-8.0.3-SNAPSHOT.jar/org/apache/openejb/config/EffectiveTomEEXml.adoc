@@ -1,0 +1,8 @@
+= org/apache/openejb/config/EffectiveTomEEXml.class
+
+ - link:EffectiveTomEEXml-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 3
+ - javax.xml.bind.JAXBContext - 2

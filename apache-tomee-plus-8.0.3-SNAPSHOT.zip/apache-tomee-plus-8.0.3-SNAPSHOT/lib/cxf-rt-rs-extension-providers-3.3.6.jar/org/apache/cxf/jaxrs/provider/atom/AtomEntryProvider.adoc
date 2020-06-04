@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/provider/atom/AtomEntryProvider.class
+
+ - link:AtomEntryProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.ext.Provider - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.ws.rs.Produces - 1

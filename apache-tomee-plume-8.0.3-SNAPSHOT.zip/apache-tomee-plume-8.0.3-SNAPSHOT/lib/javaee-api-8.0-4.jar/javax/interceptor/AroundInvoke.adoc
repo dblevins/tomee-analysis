@@ -1,0 +1,6 @@
+= javax/interceptor/AroundInvoke.class
+
+ - link:AroundInvoke-asmified.java[Asmified]
+
+== References
+

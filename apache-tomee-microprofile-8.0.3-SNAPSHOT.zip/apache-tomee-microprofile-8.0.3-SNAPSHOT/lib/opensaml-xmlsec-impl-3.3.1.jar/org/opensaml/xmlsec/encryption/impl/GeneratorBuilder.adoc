@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/GeneratorBuilder.class
+
+ - link:GeneratorBuilder-asmified.java[Asmified]
+
+== References
+

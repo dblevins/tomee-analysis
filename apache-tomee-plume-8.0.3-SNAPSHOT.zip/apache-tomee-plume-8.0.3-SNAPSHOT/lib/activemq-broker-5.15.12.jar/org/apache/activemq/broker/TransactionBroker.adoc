@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/TransactionBroker.class
+
+ - link:TransactionBroker-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 5

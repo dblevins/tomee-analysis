@@ -1,0 +1,6 @@
+= com/sun/faces/application/view/ViewScopeContextObject.class
+
+ - link:ViewScopeContextObject-asmified.java[Asmified]
+
+== References
+

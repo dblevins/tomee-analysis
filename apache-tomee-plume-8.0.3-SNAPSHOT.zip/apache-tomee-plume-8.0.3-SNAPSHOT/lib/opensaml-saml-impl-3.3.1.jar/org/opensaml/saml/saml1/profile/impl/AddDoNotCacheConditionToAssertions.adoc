@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml1/profile/impl/AddDoNotCacheConditionToAssertions.class
+
+ - link:AddDoNotCacheConditionToAssertions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 1

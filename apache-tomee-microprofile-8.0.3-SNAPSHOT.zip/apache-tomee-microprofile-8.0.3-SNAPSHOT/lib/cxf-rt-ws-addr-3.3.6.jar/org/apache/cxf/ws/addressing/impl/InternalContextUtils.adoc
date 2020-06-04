@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/addressing/impl/InternalContextUtils.class
+
+ - link:InternalContextUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.WebFault - 7

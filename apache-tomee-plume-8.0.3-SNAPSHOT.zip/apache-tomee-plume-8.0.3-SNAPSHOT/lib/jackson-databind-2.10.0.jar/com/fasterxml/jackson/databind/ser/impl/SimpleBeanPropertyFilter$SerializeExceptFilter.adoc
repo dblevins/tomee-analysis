@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter$SerializeExceptFilter.class
+
+ - link:SimpleBeanPropertyFilter$SerializeExceptFilter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,12 @@
+= com/sun/faces/el/ManagedBeanELResolver.class
+
+ - link:ManagedBeanELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 22
+ - javax.faces.context.FacesContext - 16
+ - javax.faces.context.ExternalContext - 8
+ - javax.el.PropertyNotFoundException - 8
+ - javax.el.ELException - 4
+ - javax.el.ELResolver - 2

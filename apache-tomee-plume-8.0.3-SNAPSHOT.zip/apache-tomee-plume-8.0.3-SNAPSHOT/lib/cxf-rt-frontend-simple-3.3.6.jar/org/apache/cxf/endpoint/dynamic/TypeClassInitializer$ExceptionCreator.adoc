@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/dynamic/TypeClassInitializer$ExceptionCreator.class
+
+ - link:TypeClassInitializer$ExceptionCreator-asmified.java[Asmified]
+
+== References
+

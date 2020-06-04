@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SchemaResolverWrapper.class
+
+ - link:SchemaResolverWrapper-asmified.java[Asmified]
+
+== References
+

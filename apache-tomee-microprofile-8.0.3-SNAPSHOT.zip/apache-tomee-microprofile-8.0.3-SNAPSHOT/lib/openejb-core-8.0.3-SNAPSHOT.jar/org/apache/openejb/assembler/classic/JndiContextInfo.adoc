@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/JndiContextInfo.class
+
+ - link:JndiContextInfo-asmified.java[Asmified]
+
+== References
+

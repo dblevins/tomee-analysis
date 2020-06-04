@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/tables/RelationalTableMetadata.class
+
+ - link:RelationalTableMetadata-asmified.java[Asmified]
+
+== References
+

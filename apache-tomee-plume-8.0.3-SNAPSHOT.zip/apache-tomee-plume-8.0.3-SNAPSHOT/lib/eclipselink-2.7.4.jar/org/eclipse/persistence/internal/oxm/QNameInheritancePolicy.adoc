@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/QNameInheritancePolicy.class
+
+ - link:QNameInheritancePolicy-asmified.java[Asmified]
+
+== References
+

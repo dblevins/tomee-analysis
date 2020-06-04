@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/X509Certificate.class
+
+ - link:X509Certificate-asmified.java[Asmified]
+
+== References
+

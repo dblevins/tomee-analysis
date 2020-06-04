@@ -1,0 +1,2 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/cryptacular-1.2.4.jar
+

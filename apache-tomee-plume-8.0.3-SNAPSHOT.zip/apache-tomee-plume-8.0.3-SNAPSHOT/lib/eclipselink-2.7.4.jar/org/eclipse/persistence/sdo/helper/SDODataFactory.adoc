@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDODataFactory.class
+
+ - link:SDODataFactory-asmified.java[Asmified]
+
+== References
+

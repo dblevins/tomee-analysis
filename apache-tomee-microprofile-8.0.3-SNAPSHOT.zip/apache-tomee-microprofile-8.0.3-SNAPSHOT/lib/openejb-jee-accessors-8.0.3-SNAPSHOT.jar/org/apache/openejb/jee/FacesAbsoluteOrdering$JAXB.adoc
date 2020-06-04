@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/FacesAbsoluteOrdering$JAXB.class
+
+ - link:FacesAbsoluteOrdering$JAXB-asmified.java[Asmified]
+
+== References
+

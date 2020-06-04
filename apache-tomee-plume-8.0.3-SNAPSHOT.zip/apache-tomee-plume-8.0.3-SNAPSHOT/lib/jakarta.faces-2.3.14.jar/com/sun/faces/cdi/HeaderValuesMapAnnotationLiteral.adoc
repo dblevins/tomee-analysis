@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/HeaderValuesMapAnnotationLiteral.class
+
+ - link:HeaderValuesMapAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.annotation.HeaderValuesMap - 2

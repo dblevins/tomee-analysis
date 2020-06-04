@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/ObligationsTypeImplBuilder.class
+
+ - link:ObligationsTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

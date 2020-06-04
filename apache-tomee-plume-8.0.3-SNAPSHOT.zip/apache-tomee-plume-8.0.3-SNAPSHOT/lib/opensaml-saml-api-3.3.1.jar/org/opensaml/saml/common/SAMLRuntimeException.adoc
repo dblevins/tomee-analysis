@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/SAMLRuntimeException.class
+
+ - link:SAMLRuntimeException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

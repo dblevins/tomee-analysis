@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/signature/support/SignatureTrustEngine.class
+
+ - link:SignatureTrustEngine-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 3

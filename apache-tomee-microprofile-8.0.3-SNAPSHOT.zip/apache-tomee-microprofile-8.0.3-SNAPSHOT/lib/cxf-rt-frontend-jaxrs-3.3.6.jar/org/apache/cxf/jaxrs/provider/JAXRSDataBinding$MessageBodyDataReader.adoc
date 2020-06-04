@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/provider/JAXRSDataBinding$MessageBodyDataReader.class
+
+ - link:JAXRSDataBinding$MessageBodyDataReader-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.core.MediaType - 2
+ - javax.ws.rs.ext.MessageBodyReader - 2
+ - javax.ws.rs.WebApplicationException - 1

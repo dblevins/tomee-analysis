@@ -1,0 +1,6 @@
+= javax/cache/integration/CacheWriter.class
+
+ - link:CacheWriter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/AbstractResult.class
+
+ - link:AbstractResult-asmified.java[Asmified]
+
+== References
+

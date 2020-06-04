@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/util/ArchiveFileObject.class
+
+ - link:ArchiveFileObject-asmified.java[Asmified]
+
+== References
+

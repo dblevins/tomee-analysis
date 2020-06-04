@@ -1,0 +1,8 @@
+= org/eclipse/persistence/mappings/converters/ConverterClass.class
+
+ - link:ConverterClass-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.AttributeConverter - 12
+ - javax.persistence.PersistenceException - 4

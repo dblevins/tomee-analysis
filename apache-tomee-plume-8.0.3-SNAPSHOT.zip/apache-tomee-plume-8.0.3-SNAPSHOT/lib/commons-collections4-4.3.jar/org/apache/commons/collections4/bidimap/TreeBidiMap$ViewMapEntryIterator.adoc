@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/bidimap/TreeBidiMap$ViewMapEntryIterator.class
+
+ - link:TreeBidiMap$ViewMapEntryIterator-asmified.java[Asmified]
+
+== References
+

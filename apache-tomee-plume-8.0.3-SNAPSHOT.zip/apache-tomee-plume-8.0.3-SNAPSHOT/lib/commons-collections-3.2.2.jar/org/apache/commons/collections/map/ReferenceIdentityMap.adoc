@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/ReferenceIdentityMap.class
+
+ - link:ReferenceIdentityMap-asmified.java[Asmified]
+
+== References
+

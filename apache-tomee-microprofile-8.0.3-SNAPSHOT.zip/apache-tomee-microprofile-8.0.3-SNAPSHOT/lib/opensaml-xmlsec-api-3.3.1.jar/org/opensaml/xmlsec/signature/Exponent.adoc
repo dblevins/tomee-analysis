@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/Exponent.class
+
+ - link:Exponent-asmified.java[Asmified]
+
+== References
+

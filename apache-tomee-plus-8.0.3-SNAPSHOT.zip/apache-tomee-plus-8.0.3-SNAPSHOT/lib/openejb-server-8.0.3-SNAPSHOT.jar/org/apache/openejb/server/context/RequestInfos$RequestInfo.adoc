@@ -1,0 +1,6 @@
+= org/apache/openejb/server/context/RequestInfos$RequestInfo.class
+
+ - link:RequestInfos$RequestInfo-asmified.java[Asmified]
+
+== References
+

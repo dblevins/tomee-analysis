@@ -1,0 +1,6 @@
+= org/apache/webbeans/conversation/DefaultConversationService.class
+
+ - link:DefaultConversationService-asmified.java[Asmified]
+
+== References
+

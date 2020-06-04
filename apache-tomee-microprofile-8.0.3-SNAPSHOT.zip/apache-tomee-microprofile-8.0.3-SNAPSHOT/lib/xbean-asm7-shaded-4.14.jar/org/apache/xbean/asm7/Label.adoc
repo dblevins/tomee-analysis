@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/Label.class
+
+ - link:Label-asmified.java[Asmified]
+
+== References
+

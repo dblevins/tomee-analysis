@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/AlgorithmDescriptor.class
+
+ - link:AlgorithmDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

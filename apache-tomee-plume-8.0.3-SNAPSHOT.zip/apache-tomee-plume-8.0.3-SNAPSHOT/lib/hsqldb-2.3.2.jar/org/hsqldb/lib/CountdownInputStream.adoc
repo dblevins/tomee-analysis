@@ -1,0 +1,6 @@
+= org/hsqldb/lib/CountdownInputStream.class
+
+ - link:CountdownInputStream-asmified.java[Asmified]
+
+== References
+

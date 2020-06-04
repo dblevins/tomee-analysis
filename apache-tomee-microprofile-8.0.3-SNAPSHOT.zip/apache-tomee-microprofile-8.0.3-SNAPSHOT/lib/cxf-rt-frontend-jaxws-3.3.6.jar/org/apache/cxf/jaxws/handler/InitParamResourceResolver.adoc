@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxws/handler/InitParamResourceResolver.class
+
+ - link:InitParamResourceResolver-asmified.java[Asmified]
+
+== References
+

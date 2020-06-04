@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredStatement.class
+
+ - link:RecoveredStatement-asmified.java[Asmified]
+
+== References
+

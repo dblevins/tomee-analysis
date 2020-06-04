@@ -1,0 +1,6 @@
+= javax/faces/component/_ValueBindingToValueExpression$Invoker.class
+
+ - link:_ValueBindingToValueExpression$Invoker-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/PrimitiveFieldStrategy.class
+
+ - link:PrimitiveFieldStrategy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/svn/SVNUtils.class
+
+ - link:SVNUtils-asmified.java[Asmified]
+
+== References
+

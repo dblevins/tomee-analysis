@@ -1,0 +1,6 @@
+= org/jose4j/jwx/HeaderParameterNames.class
+
+ - link:HeaderParameterNames-asmified.java[Asmified]
+
+== References
+

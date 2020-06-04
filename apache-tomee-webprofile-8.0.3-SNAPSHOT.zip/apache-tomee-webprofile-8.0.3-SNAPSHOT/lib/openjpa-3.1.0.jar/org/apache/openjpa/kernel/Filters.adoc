@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/Filters.class
+
+ - link:Filters-asmified.java[Asmified]
+
+== References
+

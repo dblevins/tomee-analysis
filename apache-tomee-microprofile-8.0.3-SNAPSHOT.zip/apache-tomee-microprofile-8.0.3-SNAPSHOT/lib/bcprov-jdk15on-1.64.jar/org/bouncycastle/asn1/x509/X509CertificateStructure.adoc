@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/x509/X509CertificateStructure.class
+
+ - link:X509CertificateStructure-asmified.java[Asmified]
+
+== References
+

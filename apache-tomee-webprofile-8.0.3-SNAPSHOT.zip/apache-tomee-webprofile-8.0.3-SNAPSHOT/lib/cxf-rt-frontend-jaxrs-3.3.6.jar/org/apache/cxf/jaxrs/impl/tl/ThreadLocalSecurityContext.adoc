@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/impl/tl/ThreadLocalSecurityContext.class
+
+ - link:ThreadLocalSecurityContext-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.SecurityContext - 10

@@ -1,0 +1,6 @@
+= org/apache/safeguard/impl/interceptor/IdGeneratorInterceptor$1.class
+
+ - link:IdGeneratorInterceptor$1-asmified.java[Asmified]
+
+== References
+

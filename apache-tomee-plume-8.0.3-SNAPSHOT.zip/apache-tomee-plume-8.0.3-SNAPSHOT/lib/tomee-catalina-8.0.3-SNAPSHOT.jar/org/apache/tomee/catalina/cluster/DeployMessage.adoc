@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/cluster/DeployMessage.class
+
+ - link:DeployMessage-asmified.java[Asmified]
+
+== References
+

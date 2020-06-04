@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/TldAttribute$JAXB.class
+
+ - link:TldAttribute$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 35

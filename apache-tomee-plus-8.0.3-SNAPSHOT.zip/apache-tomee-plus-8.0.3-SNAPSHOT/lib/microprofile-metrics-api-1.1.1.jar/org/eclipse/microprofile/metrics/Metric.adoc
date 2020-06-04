@@ -1,0 +1,6 @@
+= org/eclipse/microprofile/metrics/Metric.class
+
+ - link:Metric-asmified.java[Asmified]
+
+== References
+

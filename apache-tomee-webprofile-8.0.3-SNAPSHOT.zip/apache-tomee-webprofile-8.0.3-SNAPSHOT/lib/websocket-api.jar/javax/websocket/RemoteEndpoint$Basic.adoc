@@ -1,0 +1,8 @@
+= javax/websocket/RemoteEndpoint$Basic.class
+
+ - link:RemoteEndpoint$Basic-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.RemoteEndpoint - 1
+ - javax.websocket.EncodeException - 1

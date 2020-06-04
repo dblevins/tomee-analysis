@@ -1,0 +1,6 @@
+= org/apache/naming/factory/TransactionFactory.class
+
+ - link:TransactionFactory-asmified.java[Asmified]
+
+== References
+

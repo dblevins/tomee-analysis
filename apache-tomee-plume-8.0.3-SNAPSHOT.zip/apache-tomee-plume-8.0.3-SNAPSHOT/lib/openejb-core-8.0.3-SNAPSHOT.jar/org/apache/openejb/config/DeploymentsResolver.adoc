@@ -1,0 +1,6 @@
+= org/apache/openejb/config/DeploymentsResolver.class
+
+ - link:DeploymentsResolver-asmified.java[Asmified]
+
+== References
+

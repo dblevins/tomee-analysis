@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/FileCodeWriter.class
+
+ - link:FileCodeWriter-asmified.java[Asmified]
+
+== References
+

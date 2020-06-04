@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/signers/Ed25519Signer.class
+
+ - link:Ed25519Signer-asmified.java[Asmified]
+
+== References
+

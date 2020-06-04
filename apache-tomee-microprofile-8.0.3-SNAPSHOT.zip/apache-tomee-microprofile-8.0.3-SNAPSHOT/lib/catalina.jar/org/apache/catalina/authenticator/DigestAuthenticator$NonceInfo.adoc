@@ -1,0 +1,6 @@
+= org/apache/catalina/authenticator/DigestAuthenticator$NonceInfo.class
+
+ - link:DigestAuthenticator$NonceInfo-asmified.java[Asmified]
+
+== References
+

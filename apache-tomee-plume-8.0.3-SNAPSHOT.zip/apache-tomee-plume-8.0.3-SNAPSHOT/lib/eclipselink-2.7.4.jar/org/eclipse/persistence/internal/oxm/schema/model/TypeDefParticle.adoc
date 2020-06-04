@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/TypeDefParticle.class
+
+ - link:TypeDefParticle-asmified.java[Asmified]
+
+== References
+

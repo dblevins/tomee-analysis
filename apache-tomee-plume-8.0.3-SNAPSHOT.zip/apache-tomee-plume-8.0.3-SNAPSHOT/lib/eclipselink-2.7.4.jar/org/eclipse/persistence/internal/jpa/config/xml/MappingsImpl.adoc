@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/xml/MappingsImpl.class
+
+ - link:MappingsImpl-asmified.java[Asmified]
+
+== References
+

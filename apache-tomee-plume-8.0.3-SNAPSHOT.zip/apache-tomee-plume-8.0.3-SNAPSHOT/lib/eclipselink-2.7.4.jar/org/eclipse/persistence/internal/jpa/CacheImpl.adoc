@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/CacheImpl.class
+
+ - link:CacheImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PersistenceException - 2
+ - javax.persistence.Cache - 1

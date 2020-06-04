@@ -1,0 +1,7 @@
+= org/apache/johnzon/jsonb/factory/CdiJohnzonAdapterFactory$CdiInstance.class
+
+ - link:CdiJohnzonAdapterFactory$CdiInstance-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 7

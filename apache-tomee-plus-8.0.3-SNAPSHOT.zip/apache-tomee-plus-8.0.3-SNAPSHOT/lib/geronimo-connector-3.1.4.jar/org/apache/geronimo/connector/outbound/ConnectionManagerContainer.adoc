@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/outbound/ConnectionManagerContainer.class
+
+ - link:ConnectionManagerContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 1

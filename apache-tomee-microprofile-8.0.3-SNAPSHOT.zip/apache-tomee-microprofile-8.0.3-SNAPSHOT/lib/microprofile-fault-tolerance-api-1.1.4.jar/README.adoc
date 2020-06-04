@@ -1,0 +1,8 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/microprofile-fault-tolerance-api-1.1.4.jar
+
+ - link:org/eclipse/microprofile/faulttolerance/Retry.adoc[org/eclipse/microprofile/faulttolerance/Retry.class] - 10
+ - link:org/eclipse/microprofile/faulttolerance/CircuitBreaker.adoc[org/eclipse/microprofile/faulttolerance/CircuitBreaker.class] - 7
+ - link:org/eclipse/microprofile/faulttolerance/Fallback.adoc[org/eclipse/microprofile/faulttolerance/Fallback.class] - 3
+ - link:org/eclipse/microprofile/faulttolerance/Bulkhead.adoc[org/eclipse/microprofile/faulttolerance/Bulkhead.class] - 3
+ - link:org/eclipse/microprofile/faulttolerance/Timeout.adoc[org/eclipse/microprofile/faulttolerance/Timeout.class] - 3
+ - link:org/eclipse/microprofile/faulttolerance/Asynchronous.adoc[org/eclipse/microprofile/faulttolerance/Asynchronous.class] - 1

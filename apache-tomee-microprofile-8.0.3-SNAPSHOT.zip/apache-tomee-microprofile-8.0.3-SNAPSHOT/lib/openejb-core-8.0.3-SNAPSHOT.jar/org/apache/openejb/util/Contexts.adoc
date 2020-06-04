@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Contexts.class
+
+ - link:Contexts-asmified.java[Asmified]
+
+== References
+

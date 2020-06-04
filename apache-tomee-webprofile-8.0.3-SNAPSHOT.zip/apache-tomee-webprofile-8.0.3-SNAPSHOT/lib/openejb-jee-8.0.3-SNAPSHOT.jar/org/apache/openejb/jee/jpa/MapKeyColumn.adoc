@@ -1,0 +1,10 @@
+= org/apache/openejb/jee/jpa/MapKeyColumn.class
+
+ - link:MapKeyColumn-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlAttribute - 10
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

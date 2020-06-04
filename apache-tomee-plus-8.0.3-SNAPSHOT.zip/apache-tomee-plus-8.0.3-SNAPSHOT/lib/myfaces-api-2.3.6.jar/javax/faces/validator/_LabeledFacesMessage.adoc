@@ -1,0 +1,13 @@
+= javax/faces/validator/_LabeledFacesMessage.class
+
+ - link:_LabeledFacesMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 10
+ - javax.el.ELContext - 8
+ - javax.faces.application.FacesMessage - 7
+ - javax.faces.application.Application - 4
+ - javax.el.ExpressionFactory - 4
+ - javax.el.ValueExpression - 4
+ - javax.faces.application.FacesMessage$Severity - 2

@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/AbstractPatternValidator.class
+
+ - link:AbstractPatternValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Pattern$Flag - 4
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 2

@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/RetrievalMethodMarshaller.class
+
+ - link:RetrievalMethodMarshaller-asmified.java[Asmified]
+
+== References
+

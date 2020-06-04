@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/PersistenceUnitLoadingException.class
+
+ - link:PersistenceUnitLoadingException-asmified.java[Asmified]
+
+== References
+

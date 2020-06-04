@@ -1,0 +1,25 @@
+= com/sun/faces/application/view/JspViewHandlingStrategy.class
+
+ - link:JspViewHandlingStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 40
+ - javax.faces.context.ExternalContext - 26
+ - javax.faces.component.UIViewRoot - 23
+ - javax.faces.context.ResponseWriter - 12
+ - javax.faces.render.RenderKitFactory - 5
+ - javax.faces.render.RenderKit - 5
+ - javax.faces.context.Flash - 4
+ - javax.faces.FacesException - 4
+ - javax.servlet.ServletRequest - 3
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.faces.application.Resource - 3
+ - javax.faces.application.ViewVisitOption - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.view.StateManagementStrategy - 1
+ - javax.faces.FactoryFinder - 1
+ - javax.servlet.jsp.jstl.core.Config - 1
+ - javax.faces.event.PostAddToViewEvent - 1
+ - javax.faces.view.ViewMetadata - 1

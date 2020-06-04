@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/ClassKey.class
+
+ - link:ClassKey-asmified.java[Asmified]
+
+== References
+

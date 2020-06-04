@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/tag/jsf/core/LoadBundleHandler$ResourceBundleMap.class
+
+ - link:LoadBundleHandler$ResourceBundleMap-asmified.java[Asmified]
+
+== References
+

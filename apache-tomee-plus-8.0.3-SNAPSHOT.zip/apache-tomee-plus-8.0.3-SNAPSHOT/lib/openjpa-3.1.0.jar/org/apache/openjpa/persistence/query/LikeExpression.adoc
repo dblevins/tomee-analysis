@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/LikeExpression.class
+
+ - link:LikeExpression-asmified.java[Asmified]
+
+== References
+

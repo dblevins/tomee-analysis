@@ -1,0 +1,7 @@
+= javax/resource/spi/TransactionSupport.class
+
+ - link:TransactionSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.TransactionSupport$TransactionSupportLevel - 1

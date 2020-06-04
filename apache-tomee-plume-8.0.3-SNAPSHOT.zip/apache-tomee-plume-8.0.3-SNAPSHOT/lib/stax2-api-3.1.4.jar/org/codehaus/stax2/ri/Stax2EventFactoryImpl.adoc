@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2EventFactoryImpl.class
+
+ - link:Stax2EventFactoryImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/abstractstore/AbstractStoreBrokerFactory.class
+
+ - link:AbstractStoreBrokerFactory-asmified.java[Asmified]
+
+== References
+

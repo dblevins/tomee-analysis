@@ -1,0 +1,7 @@
+= org/apache/openejb/core/interceptor/JaxWsInvocationContext.class
+
+ - link:JaxWsInvocationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.handler.MessageContext - 4

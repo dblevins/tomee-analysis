@@ -1,0 +1,10 @@
+= org/apache/openejb/jee/package-info.class
+
+ - link:package-info-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlNsForm - 1
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 1
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
+ - javax.xml.bind.annotation.XmlSchema - 1

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/SimpleObjectIdResolver.class
+
+ - link:SimpleObjectIdResolver-asmified.java[Asmified]
+
+== References
+

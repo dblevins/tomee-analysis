@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/saml/bean/AudienceRestrictionBean.class
+
+ - link:AudienceRestrictionBean-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= com/sun/faces/renderkit/html_basic/CommandLinkRenderer.class
+
+ - link:CommandLinkRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 40
+ - javax.faces.context.FacesContext - 25
+ - javax.faces.context.ResponseWriter - 14
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.component.UICommand - 2
+ - javax.faces.event.ActionEvent - 2
+ - javax.faces.event.FacesEvent - 1
+ - javax.faces.component.behavior.ClientBehavior - 1

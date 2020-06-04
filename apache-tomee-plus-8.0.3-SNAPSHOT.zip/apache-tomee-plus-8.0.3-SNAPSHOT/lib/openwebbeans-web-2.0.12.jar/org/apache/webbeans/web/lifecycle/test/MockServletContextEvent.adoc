@@ -1,0 +1,8 @@
+= org/apache/webbeans/web/lifecycle/test/MockServletContextEvent.class
+
+ - link:MockServletContextEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContextEvent - 2
+ - javax.servlet.ServletContext - 1

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/compiler/ElementDeclaration.class
+
+ - link:ElementDeclaration-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlElementDecl$GLOBAL - 1

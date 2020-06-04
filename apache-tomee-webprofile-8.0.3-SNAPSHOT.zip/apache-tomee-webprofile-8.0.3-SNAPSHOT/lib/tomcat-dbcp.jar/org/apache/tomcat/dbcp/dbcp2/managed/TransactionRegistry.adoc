@@ -1,0 +1,10 @@
+= org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry.class
+
+ - link:TransactionRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 7
+ - javax.transaction.TransactionSynchronizationRegistry - 6
+ - javax.transaction.Transaction - 5
+ - javax.transaction.SystemException - 2

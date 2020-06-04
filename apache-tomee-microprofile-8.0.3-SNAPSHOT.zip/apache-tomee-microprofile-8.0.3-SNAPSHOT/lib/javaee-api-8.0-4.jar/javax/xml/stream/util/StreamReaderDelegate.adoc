@@ -1,0 +1,6 @@
+= javax/xml/stream/util/StreamReaderDelegate.class
+
+ - link:StreamReaderDelegate-asmified.java[Asmified]
+
+== References
+

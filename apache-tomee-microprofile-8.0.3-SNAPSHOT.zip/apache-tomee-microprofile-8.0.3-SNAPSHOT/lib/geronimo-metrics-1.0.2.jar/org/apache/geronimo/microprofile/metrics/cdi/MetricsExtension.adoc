@@ -1,0 +1,36 @@
+= org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension.class
+
+ - link:MetricsExtension-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedCallable - 51
+ - javax.enterprise.inject.spi.AnnotatedType - 44
+ - javax.enterprise.inject.spi.BeanManager - 35
+ - javax.enterprise.inject.spi.Bean - 18
+ - javax.enterprise.inject.spi.AfterBeanDiscovery - 15
+ - javax.enterprise.inject.spi.InjectionPoint - 14
+ - javax.enterprise.inject.spi.configurator.BeanConfigurator - 13
+ - javax.enterprise.inject.spi.Annotated - 11
+ - javax.enterprise.context.spi.CreationalContext - 9
+ - javax.enterprise.event.Observes - 9
+ - javax.enterprise.inject.spi.configurator.AnnotatedMethodConfigurator - 9
+ - javax.enterprise.inject.spi.ProcessInjectionPoint - 7
+ - javax.enterprise.inject.spi.configurator.InjectionPointConfigurator - 6
+ - javax.enterprise.inject.spi.ProcessProducerField - 5
+ - javax.enterprise.inject.spi.ProcessProducerMethod - 5
+ - javax.enterprise.inject.spi.ProcessAnnotatedType - 4
+ - javax.enterprise.inject.spi.AnnotatedMethod - 4
+ - javax.enterprise.inject.spi.BeforeBeanDiscovery - 3
+ - javax.enterprise.inject.spi.AnnotatedField - 2
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 2
+ - javax.enterprise.inject.Default$Literal - 2
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 1
+ - javax.enterprise.util.Nonbinding - 1
+ - javax.enterprise.inject.Default - 1
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.WithAnnotations - 1
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.enterprise.context.Dependent - 1
+ - javax.enterprise.inject.Any$Literal - 1
+ - javax.enterprise.inject.spi.BeforeShutdown - 1

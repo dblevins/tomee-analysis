@@ -1,0 +1,8 @@
+= org/apache/myfaces/cdi/util/DefaultLiteral.class
+
+ - link:DefaultLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

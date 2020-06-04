@@ -1,0 +1,6 @@
+= org/apache/openejb/config/sys/StackHandler$Content.class
+
+ - link:StackHandler$Content-asmified.java[Asmified]
+
+== References
+

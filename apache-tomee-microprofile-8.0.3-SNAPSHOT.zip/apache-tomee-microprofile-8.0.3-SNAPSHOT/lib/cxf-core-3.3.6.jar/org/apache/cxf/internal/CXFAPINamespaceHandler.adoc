@@ -1,0 +1,6 @@
+= org/apache/cxf/internal/CXFAPINamespaceHandler.class
+
+ - link:CXFAPINamespaceHandler-asmified.java[Asmified]
+
+== References
+

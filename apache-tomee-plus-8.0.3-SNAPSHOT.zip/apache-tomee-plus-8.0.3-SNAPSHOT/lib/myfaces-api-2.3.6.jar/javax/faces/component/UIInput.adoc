@@ -1,0 +1,50 @@
+= javax/faces/component/UIInput.class
+
+ - link:UIInput-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIInput - 161
+ - javax.faces.context.FacesContext - 148
+ - javax.faces.component.StateHelper - 48
+ - javax.faces.component._DeltaList - 46
+ - javax.faces.component.UIInput$PropertyKeys - 26
+ - javax.faces.context.ExternalContext - 22
+ - javax.faces.validator.Validator - 21
+ - javax.faces.component.UIComponent - 20
+ - javax.faces.component.UIOutput - 16
+ - javax.faces.application.Application - 14
+ - javax.faces.application.FacesMessage - 11
+ - javax.faces.el.MethodBinding - 10
+ - javax.faces.convert.ConverterException - 7
+ - javax.faces.event.ValueChangeListener - 6
+ - javax.faces.application.FacesMessage$Severity - 6
+ - javax.faces.component._MessageUtils - 6
+ - javax.faces.component._AttachedDeltaWrapper - 5
+ - javax.faces.el.EvaluationException - 4
+ - javax.faces.application.ProjectStage - 4
+ - javax.faces.event.PostValidateEvent - 4
+ - javax.faces.event.FacesEvent - 4
+ - javax.faces.event.FacesListener - 3
+ - javax.faces.event.ValueChangeEvent - 3
+ - javax.faces.render.Renderer - 3
+ - javax.faces.event.AbortProcessingException - 3
+ - javax.faces.component.PartialStateHolder - 3
+ - javax.faces.component.UIViewRoot - 3
+ - javax.el.ValueExpression - 3
+ - javax.faces.component._DeltaStateHelper - 3
+ - javax.faces.event.PhaseId - 3
+ - javax.faces.event.PreValidateEvent - 2
+ - javax.faces.event.ExceptionQueuedEventContext - 2
+ - javax.faces.component._ExternalSpecifications - 2
+ - javax.faces.convert.Converter - 2
+ - javax.faces.component.UpdateModelException - 2
+ - javax.el.ELContext - 2
+ - javax.faces.component._ComponentUtils - 1
+ - javax.faces.component.EditableValueHolder - 1
+ - javax.faces.component._BeanValidationUtils - 1
+ - javax.faces.component.StateHolder - 1
+ - javax.faces.component._SharedRendererUtils - 1
+ - javax.faces.event.ExceptionQueuedEvent - 1
+ - javax.faces.webapp.FacesServlet - 1
+ - javax.faces.component.UIOutput$PropertyKeys - 1

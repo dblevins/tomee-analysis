@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/tool/Archive.class
+
+ - link:Archive-asmified.java[Asmified]
+
+== References
+

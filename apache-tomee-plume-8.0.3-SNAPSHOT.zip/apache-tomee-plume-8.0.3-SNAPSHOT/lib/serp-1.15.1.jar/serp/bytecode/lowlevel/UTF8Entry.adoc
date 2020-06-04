@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/UTF8Entry.class
+
+ - link:UTF8Entry-asmified.java[Asmified]
+
+== References
+

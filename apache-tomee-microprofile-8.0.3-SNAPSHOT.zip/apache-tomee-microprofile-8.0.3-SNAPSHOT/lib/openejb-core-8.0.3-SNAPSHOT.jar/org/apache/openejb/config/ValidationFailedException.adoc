@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ValidationFailedException.class
+
+ - link:ValidationFailedException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/taglibs/standard/tag/common/xml/IfTag.class
+
+ - link:IfTag-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.jstl.core.ConditionalTagSupport - 3
+ - javax.servlet.jsp.JspTagException - 3
+ - javax.servlet.jsp.PageContext - 2
+ - javax.servlet.jsp.tagext.Tag - 1

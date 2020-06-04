@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/BatchMetadataResolver.class
+
+ - link:BatchMetadataResolver-asmified.java[Asmified]
+
+== References
+

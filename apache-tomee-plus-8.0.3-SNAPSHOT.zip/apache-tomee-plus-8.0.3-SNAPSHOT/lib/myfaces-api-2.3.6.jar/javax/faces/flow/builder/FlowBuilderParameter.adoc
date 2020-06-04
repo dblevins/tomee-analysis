@@ -1,0 +1,7 @@
+= javax/faces/flow/builder/FlowBuilderParameter.class
+
+ - link:FlowBuilderParameter-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

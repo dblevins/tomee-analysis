@@ -1,0 +1,7 @@
+= org/apache/catalina/core/ApplicationHttpRequest$AttributeNamesEnumerator.class
+
+ - link:ApplicationHttpRequest$AttributeNamesEnumerator-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 2

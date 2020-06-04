@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/ContainerIndirectionPolicy.class
+
+ - link:ContainerIndirectionPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/compiler/NamespaceManager.class
+
+ - link:NamespaceManager-asmified.java[Asmified]
+
+== References
+

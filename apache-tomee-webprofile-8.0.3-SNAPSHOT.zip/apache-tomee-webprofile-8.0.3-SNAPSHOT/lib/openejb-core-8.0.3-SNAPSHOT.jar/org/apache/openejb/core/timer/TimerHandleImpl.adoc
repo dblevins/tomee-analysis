@@ -1,0 +1,9 @@
+= org/apache/openejb/core/timer/TimerHandleImpl.class
+
+ - link:TimerHandleImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.NoSuchObjectLocalException - 8
+ - javax.ejb.Timer - 3
+ - javax.ejb.TimerHandle - 1

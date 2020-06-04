@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/StAXConnector$TagNameImpl.class
+
+ - link:StAXConnector$TagNameImpl-asmified.java[Asmified]
+
+== References
+

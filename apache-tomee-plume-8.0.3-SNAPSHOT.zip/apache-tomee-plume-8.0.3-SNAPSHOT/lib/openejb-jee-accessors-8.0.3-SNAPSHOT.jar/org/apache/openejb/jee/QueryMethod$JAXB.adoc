@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/QueryMethod$JAXB.class
+
+ - link:QueryMethod$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 11

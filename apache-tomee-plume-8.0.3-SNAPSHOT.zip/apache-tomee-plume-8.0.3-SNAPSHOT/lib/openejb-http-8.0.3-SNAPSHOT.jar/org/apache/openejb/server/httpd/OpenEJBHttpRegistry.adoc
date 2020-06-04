@@ -1,0 +1,6 @@
+= org/apache/openejb/server/httpd/OpenEJBHttpRegistry.class
+
+ - link:OpenEJBHttpRegistry-asmified.java[Asmified]
+
+== References
+

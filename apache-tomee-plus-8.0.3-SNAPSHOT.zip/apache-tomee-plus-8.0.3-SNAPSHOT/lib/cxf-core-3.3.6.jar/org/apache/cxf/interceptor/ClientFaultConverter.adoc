@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/ClientFaultConverter.class
+
+ - link:ClientFaultConverter-asmified.java[Asmified]
+
+== References
+

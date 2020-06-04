@@ -1,0 +1,6 @@
+= org/bouncycastle/math/ec/ScaleXNegateYPointMap.class
+
+ - link:ScaleXNegateYPointMap-asmified.java[Asmified]
+
+== References
+

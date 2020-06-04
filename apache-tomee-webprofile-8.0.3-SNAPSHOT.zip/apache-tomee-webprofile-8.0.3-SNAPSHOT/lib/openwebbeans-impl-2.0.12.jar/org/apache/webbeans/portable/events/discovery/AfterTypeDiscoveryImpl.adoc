@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/events/discovery/AfterTypeDiscoveryImpl.class
+
+ - link:AfterTypeDiscoveryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 6
+ - javax.enterprise.inject.spi.AnnotatedType - 6
+ - javax.enterprise.inject.spi.AfterTypeDiscovery - 1
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

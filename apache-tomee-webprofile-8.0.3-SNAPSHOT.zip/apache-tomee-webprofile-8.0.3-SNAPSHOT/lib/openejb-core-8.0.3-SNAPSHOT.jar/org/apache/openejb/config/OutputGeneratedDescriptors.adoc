@@ -1,0 +1,9 @@
+= org/apache/openejb/config/OutputGeneratedDescriptors.class
+
+ - link:OutputGeneratedDescriptors-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 12
+ - javax.xml.bind.Marshaller - 2
+ - javax.xml.bind.JAXBContext - 2

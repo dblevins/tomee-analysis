@@ -1,0 +1,7 @@
+= org/apache/webbeans/container/BeanCacheKey$LazyAnnotatedTypes.class
+
+ - link:BeanCacheKey$LazyAnnotatedTypes-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 14

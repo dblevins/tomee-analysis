@@ -1,0 +1,8 @@
+= org/apache/myfaces/config/element/ManagedBean.class
+
+ - link:ManagedBean-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 1
+ - javax.el.ValueExpression - 1

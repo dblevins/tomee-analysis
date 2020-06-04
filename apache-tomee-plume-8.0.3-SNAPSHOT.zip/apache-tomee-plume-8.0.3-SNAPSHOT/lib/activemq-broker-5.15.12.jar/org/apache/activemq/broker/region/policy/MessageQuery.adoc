@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/policy/MessageQuery.class
+
+ - link:MessageQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageListener - 1

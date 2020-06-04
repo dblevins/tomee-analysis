@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/opt/MethodAccessor_Double.class
+
+ - link:MethodAccessor_Double-asmified.java[Asmified]
+
+== References
+

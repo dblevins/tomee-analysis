@@ -1,0 +1,20 @@
+= org/apache/myfaces/shared/context/flash/FlashImpl.class
+
+ - link:FlashImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 120
+ - javax.faces.context.ExternalContext - 84
+ - javax.faces.lifecycle.ClientWindow - 17
+ - javax.servlet.http.Cookie - 17
+ - javax.faces.application.Application - 16
+ - javax.servlet.http.HttpServletResponse - 11
+ - javax.faces.event.PhaseId - 9
+ - javax.faces.context.Flash - 8
+ - javax.faces.application.StateManager - 8
+ - javax.faces.application.FacesMessage - 5
+ - javax.faces.event.PreRemoveFlashValueEvent - 1
+ - javax.faces.event.PostKeepFlashValueEvent - 1
+ - javax.faces.event.PreClearFlashEvent - 1
+ - javax.faces.event.PostPutFlashValueEvent - 1

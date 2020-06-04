@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/MinNode.class
+
+ - link:MinNode-asmified.java[Asmified]
+
+== References
+

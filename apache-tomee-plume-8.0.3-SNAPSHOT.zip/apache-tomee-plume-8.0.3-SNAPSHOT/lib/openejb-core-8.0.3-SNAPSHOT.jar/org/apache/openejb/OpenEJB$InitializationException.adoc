@@ -1,0 +1,6 @@
+= org/apache/openejb/OpenEJB$InitializationException.class
+
+ - link:OpenEJB$InitializationException-asmified.java[Asmified]
+
+== References
+

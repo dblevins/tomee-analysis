@@ -1,0 +1,9 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/geronimo-metrics-1.0.2.jar
+
+ - link:org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension.adoc[org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension.class] - 277
+ - link:org/apache/geronimo/microprofile/metrics/cdi/CountedInterceptor.adoc[org/apache/geronimo/microprofile/metrics/cdi/CountedInterceptor.class] - 47
+ - link:org/apache/geronimo/microprofile/metrics/cdi/TimedInterceptor.adoc[org/apache/geronimo/microprofile/metrics/cdi/TimedInterceptor.class] - 42
+ - link:org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor.adoc[org/apache/geronimo/microprofile/metrics/cdi/MeteredInterceptor.class] - 39
+ - link:org/apache/geronimo/microprofile/metrics/jaxrs/CdiMetricsEndpoints.adoc[org/apache/geronimo/microprofile/metrics/jaxrs/CdiMetricsEndpoints.class] - 6
+ - link:org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$MetricImpl.adoc[org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$MetricImpl.class] - 2
+ - link:org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$RegistryTypeImpl.adoc[org/apache/geronimo/microprofile/metrics/cdi/MetricsExtension$RegistryTypeImpl.class] - 2

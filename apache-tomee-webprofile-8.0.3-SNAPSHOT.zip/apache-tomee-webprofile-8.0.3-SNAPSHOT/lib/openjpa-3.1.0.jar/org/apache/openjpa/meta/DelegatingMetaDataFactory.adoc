@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/DelegatingMetaDataFactory.class
+
+ - link:DelegatingMetaDataFactory-asmified.java[Asmified]
+
+== References
+

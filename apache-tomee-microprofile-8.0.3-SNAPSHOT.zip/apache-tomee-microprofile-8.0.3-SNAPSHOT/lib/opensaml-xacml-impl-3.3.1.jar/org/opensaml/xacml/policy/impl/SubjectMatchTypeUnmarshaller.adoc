@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/SubjectMatchTypeUnmarshaller.class
+
+ - link:SubjectMatchTypeUnmarshaller-asmified.java[Asmified]
+
+== References
+

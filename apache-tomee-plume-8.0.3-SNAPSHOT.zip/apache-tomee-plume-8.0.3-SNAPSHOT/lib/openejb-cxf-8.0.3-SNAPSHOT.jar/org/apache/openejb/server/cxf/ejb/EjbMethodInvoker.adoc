@@ -1,0 +1,11 @@
+= org/apache/openejb/server/cxf/ejb/EjbMethodInvoker.class
+
+ - link:EjbMethodInvoker-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 8
+ - javax.xml.ws.handler.MessageContext - 3
+ - javax.xml.ws.handler.MessageContext$Scope - 2
+ - javax.xml.ws.WebFault - 1
+ - javax.ejb.ApplicationException - 1

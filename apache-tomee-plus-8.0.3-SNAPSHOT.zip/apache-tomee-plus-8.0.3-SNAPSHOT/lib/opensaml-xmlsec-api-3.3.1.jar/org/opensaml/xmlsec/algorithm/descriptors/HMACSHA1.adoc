@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/algorithm/descriptors/HMACSHA1.class
+
+ - link:HMACSHA1-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

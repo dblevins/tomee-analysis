@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/jsf/IterationIdManager.class
+
+ - link:IterationIdManager-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletContext - 15

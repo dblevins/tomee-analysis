@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/meta/AbstractManagedType$EntryTypeFilter.class
+
+ - link:AbstractManagedType$EntryTypeFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.MapAttribute - 5
+ - javax.persistence.metamodel.Type - 4
+ - javax.persistence.metamodel.Attribute - 4

@@ -1,0 +1,6 @@
+= org/apache/commons/digester/ObjectParamRule.class
+
+ - link:ObjectParamRule-asmified.java[Asmified]
+
+== References
+

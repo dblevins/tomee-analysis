@@ -1,0 +1,12 @@
+= com/sun/faces/application/applicationimpl/Stage.class
+
+ - link:Stage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.ProjectStage - 14
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.Application - 2
+ - javax.faces.event.SystemEventListener - 1
+ - javax.faces.event.PostAddToViewEvent - 1

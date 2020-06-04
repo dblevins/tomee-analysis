@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/DynamicMBeanWrapper$CacheInfo.class
+
+ - link:DynamicMBeanWrapper$CacheInfo-asmified.java[Asmified]
+
+== References
+

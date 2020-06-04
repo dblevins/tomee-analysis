@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/AttributeImpl.class
+
+ - link:AttributeImpl-asmified.java[Asmified]
+
+== References
+

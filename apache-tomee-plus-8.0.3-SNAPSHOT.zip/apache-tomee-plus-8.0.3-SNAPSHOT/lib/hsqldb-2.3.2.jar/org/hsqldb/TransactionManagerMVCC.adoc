@@ -1,0 +1,6 @@
+= org/hsqldb/TransactionManagerMVCC.class
+
+ - link:TransactionManagerMVCC-asmified.java[Asmified]
+
+== References
+

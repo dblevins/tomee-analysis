@@ -1,0 +1,6 @@
+= javax/batch/api/partition/PartitionCollector.class
+
+ - link:PartitionCollector-asmified.java[Asmified]
+
+== References
+

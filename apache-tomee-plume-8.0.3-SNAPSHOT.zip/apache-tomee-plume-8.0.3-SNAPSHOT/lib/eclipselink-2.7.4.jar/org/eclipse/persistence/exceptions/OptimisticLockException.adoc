@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/OptimisticLockException.class
+
+ - link:OptimisticLockException-asmified.java[Asmified]
+
+== References
+

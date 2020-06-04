@@ -1,0 +1,10 @@
+= org/apache/myfaces/context/RequestViewContext$RefreshViewContext.class
+
+ - link:RequestViewContext$RefreshViewContext-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.visit.VisitResult - 2
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.visit.VisitContext - 1

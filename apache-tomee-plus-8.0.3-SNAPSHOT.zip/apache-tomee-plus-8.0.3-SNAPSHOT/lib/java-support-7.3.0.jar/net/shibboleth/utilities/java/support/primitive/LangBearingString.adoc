@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/primitive/LangBearingString.class
+
+ - link:LangBearingString-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6

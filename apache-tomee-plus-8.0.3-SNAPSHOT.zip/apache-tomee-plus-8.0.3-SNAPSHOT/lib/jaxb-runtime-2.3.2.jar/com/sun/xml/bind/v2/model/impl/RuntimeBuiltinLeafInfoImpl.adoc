@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/model/impl/RuntimeBuiltinLeafInfoImpl.class
+
+ - link:RuntimeBuiltinLeafInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.MarshalException - 4
+ - javax.activation.DataHandler - 1

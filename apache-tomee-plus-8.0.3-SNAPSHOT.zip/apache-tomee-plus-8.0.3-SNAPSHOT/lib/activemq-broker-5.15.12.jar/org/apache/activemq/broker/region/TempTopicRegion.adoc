@@ -1,0 +1,7 @@
+= org/apache/activemq/broker/region/TempTopicRegion.class
+
+ - link:TempTopicRegion-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 6

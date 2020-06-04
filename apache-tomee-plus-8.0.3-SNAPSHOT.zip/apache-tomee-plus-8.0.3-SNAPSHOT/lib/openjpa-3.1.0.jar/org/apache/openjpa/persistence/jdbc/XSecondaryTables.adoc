@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/XSecondaryTables.class
+
+ - link:XSecondaryTables-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/apache/catalina/connector/Response.class
+
+ - link:Response-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie - 11
+ - javax.servlet.http.HttpServletResponse - 10
+ - javax.servlet.http.HttpServletRequest - 4
+ - javax.servlet.http.HttpServletResponseWrapper - 3
+ - javax.servlet.ServletResponse - 2
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.ServletOutputStream - 1
+ - javax.servlet.SessionTrackingMode - 1

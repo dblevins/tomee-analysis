@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/property/AttributeProperty.class
+
+ - link:AttributeProperty-asmified.java[Asmified]
+
+== References
+

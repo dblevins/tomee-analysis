@@ -1,0 +1,6 @@
+= org/apache/neethi/PolicyContainingAssertion.class
+
+ - link:PolicyContainingAssertion-asmified.java[Asmified]
+
+== References
+

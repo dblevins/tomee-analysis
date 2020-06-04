@@ -1,0 +1,6 @@
+= org/opensaml/saml/common/SAMLObject.class
+
+ - link:SAMLObject-asmified.java[Asmified]
+
+== References
+

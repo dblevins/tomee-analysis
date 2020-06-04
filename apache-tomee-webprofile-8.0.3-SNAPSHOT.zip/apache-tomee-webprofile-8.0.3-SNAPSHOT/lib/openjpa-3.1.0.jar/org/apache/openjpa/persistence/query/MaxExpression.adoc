@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/MaxExpression.class
+
+ - link:MaxExpression-asmified.java[Asmified]
+
+== References
+

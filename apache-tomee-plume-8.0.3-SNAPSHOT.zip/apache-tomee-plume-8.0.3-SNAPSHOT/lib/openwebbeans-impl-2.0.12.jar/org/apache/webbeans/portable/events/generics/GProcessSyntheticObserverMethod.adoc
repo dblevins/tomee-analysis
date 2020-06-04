@@ -1,0 +1,10 @@
+= org/apache/webbeans/portable/events/generics/GProcessSyntheticObserverMethod.class
+
+ - link:GProcessSyntheticObserverMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 5
+ - javax.enterprise.inject.spi.ObserverMethod - 2
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.enterprise.inject.spi.ProcessSyntheticObserverMethod - 1

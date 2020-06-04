@@ -1,0 +1,9 @@
+= javax/faces/FactoryFinder.class
+
+ - link:FactoryFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.CurrentThreadToServletContext - 18
+ - javax.faces.FactoryFinderInstance - 8
+ - javax.faces.FacesException - 2

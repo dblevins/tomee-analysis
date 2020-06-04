@@ -1,0 +1,9 @@
+= org/apache/cxf/configuration/blueprint/AbstractBPBeanDefinitionParser$JAXBBeanFactory.class
+
+ - link:AbstractBPBeanDefinitionParser$JAXBBeanFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 5
+ - javax.xml.bind.JAXBContext - 5
+ - javax.xml.bind.JAXBException - 3

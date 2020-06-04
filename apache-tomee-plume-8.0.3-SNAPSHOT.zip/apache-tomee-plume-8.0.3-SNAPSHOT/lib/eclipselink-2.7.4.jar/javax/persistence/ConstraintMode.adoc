@@ -1,0 +1,7 @@
+= javax/persistence/ConstraintMode.class
+
+ - link:ConstraintMode-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ConstraintMode - 25

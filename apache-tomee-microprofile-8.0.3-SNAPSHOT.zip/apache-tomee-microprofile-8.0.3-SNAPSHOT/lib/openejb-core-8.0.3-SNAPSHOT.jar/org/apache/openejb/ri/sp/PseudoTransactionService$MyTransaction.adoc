@@ -1,0 +1,9 @@
+= org/apache/openejb/ri/sp/PseudoTransactionService$MyTransaction.class
+
+ - link:PseudoTransactionService$MyTransaction-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 8
+ - javax.transaction.RollbackException - 7
+ - javax.transaction.Transaction - 1

@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/ChoiceModel.class
+
+ - link:ChoiceModel-asmified.java[Asmified]
+
+== References
+

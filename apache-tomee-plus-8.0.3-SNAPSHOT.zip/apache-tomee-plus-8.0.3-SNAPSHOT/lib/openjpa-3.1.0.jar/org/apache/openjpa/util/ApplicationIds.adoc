@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/ApplicationIds.class
+
+ - link:ApplicationIds-asmified.java[Asmified]
+
+== References
+

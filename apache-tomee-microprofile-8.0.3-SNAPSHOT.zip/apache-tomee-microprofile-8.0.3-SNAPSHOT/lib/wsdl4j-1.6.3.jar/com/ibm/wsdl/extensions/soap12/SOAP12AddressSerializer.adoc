@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap12/SOAP12AddressSerializer.class
+
+ - link:SOAP12AddressSerializer-asmified.java[Asmified]
+
+== References
+

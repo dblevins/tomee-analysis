@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/PageDataImpl$FirstPassVisitor.class
+
+ - link:PageDataImpl$FirstPassVisitor-asmified.java[Asmified]
+
+== References
+

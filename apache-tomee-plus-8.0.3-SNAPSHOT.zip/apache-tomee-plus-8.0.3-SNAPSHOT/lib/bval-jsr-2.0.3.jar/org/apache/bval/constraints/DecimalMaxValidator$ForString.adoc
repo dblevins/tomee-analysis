@@ -1,0 +1,8 @@
+= org/apache/bval/constraints/DecimalMaxValidator$ForString.class
+
+ - link:DecimalMaxValidator$ForString-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.constraints.DecimalMax - 2

@@ -1,0 +1,12 @@
+= org/apache/myfaces/view/facelets/el/LocationValueExpression.class
+
+ - link:LocationValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 40
+ - javax.faces.context.FacesContext - 30
+ - javax.faces.view.Location - 27
+ - javax.el.ELContext - 20
+ - javax.el.ValueReference - 2
+ - javax.faces.FacesWrapper - 1

@@ -1,0 +1,8 @@
+= org/apache/bval/jsr/BootstrapConfigurationImpl.class
+
+ - link:BootstrapConfigurationImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.executable.ExecutableType - 5
+ - javax.validation.BootstrapConfiguration - 1

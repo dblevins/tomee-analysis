@@ -1,0 +1,6 @@
+= javax/ws/rs/Encoded.class
+
+ - link:Encoded-asmified.java[Asmified]
+
+== References
+

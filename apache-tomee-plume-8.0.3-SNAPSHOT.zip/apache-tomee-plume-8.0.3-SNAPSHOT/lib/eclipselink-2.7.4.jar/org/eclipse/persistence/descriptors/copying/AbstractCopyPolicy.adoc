@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/copying/AbstractCopyPolicy.class
+
+ - link:AbstractCopyPolicy-asmified.java[Asmified]
+
+== References
+

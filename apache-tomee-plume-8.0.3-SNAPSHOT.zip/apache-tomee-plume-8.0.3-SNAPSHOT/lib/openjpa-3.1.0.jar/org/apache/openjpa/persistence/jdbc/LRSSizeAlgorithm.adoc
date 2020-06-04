@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/LRSSizeAlgorithm.class
+
+ - link:LRSSizeAlgorithm-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/xml/stream/XMLOutputFactory.class
+
+ - link:XMLOutputFactory-asmified.java[Asmified]
+
+== References
+

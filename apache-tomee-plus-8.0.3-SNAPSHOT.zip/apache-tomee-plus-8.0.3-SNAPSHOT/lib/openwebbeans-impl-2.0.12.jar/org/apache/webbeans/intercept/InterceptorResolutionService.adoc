@@ -1,0 +1,25 @@
+= org/apache/webbeans/intercept/InterceptorResolutionService.class
+
+ - link:InterceptorResolutionService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 52
+ - javax.enterprise.inject.spi.AnnotatedMethod - 29
+ - javax.enterprise.inject.spi.InterceptionType - 27
+ - javax.enterprise.inject.spi.Interceptor - 25
+ - javax.enterprise.inject.spi.AnnotatedCallable - 21
+ - javax.enterprise.inject.spi.Decorator - 16
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 16
+ - javax.enterprise.context.spi.Contextual - 8
+ - javax.enterprise.context.spi.CreationalContext - 6
+ - javax.enterprise.inject.spi.Annotated - 4
+ - javax.interceptor.Interceptors - 4
+ - javax.enterprise.inject.UnproxyableResolutionException - 2
+ - javax.enterprise.inject.spi.AnnotatedParameter - 2
+ - javax.interceptor.ExcludeClassInterceptors - 2
+ - javax.interceptor.InvocationContext - 1
+ - javax.inject.Inject - 1
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1
+ - javax.interceptor.AroundInvoke - 1

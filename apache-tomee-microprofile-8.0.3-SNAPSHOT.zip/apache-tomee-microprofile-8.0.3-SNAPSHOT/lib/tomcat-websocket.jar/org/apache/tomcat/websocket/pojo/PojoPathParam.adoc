@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/pojo/PojoPathParam.class
+
+ - link:PojoPathParam-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.DeploymentException - 4

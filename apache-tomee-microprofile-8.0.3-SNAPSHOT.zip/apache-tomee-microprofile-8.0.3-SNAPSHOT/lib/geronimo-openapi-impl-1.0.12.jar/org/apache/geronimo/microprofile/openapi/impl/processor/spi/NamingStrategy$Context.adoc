@@ -1,0 +1,6 @@
+= org/apache/geronimo/microprofile/openapi/impl/processor/spi/NamingStrategy$Context.class
+
+ - link:NamingStrategy$Context-asmified.java[Asmified]
+
+== References
+

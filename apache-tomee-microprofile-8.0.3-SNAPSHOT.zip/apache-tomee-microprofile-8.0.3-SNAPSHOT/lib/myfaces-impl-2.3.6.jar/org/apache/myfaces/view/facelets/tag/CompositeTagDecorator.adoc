@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/tag/CompositeTagDecorator.class
+
+ - link:CompositeTagDecorator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagDecorator - 7
+ - javax.faces.view.facelets.Tag - 5

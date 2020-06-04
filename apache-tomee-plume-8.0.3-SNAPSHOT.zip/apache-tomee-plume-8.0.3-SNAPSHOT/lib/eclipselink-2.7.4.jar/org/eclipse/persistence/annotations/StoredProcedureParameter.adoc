@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/StoredProcedureParameter.class
+
+ - link:StoredProcedureParameter-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ParameterMode - 2

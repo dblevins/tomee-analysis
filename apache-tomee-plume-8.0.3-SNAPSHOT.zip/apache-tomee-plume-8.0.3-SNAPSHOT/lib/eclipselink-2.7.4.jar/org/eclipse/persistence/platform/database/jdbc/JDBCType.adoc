@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/jdbc/JDBCType.class
+
+ - link:JDBCType-asmified.java[Asmified]
+
+== References
+

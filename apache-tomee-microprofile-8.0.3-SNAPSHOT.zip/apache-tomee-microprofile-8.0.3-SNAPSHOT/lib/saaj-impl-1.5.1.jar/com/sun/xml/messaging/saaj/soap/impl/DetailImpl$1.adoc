@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/impl/DetailImpl$1.class
+
+ - link:DetailImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPElement - 17
+ - javax.xml.soap.DetailEntry - 5

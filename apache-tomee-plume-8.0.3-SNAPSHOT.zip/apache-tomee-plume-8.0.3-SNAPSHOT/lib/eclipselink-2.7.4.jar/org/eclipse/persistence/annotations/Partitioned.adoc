@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Partitioned.class
+
+ - link:Partitioned-asmified.java[Asmified]
+
+== References
+

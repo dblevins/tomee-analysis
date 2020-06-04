@@ -1,0 +1,6 @@
+= org/apache/commons/digester/xmlrules/DigesterRuleParser$CallMethodRuleFactory.class
+
+ - link:DigesterRuleParser$CallMethodRuleFactory-asmified.java[Asmified]
+
+== References
+

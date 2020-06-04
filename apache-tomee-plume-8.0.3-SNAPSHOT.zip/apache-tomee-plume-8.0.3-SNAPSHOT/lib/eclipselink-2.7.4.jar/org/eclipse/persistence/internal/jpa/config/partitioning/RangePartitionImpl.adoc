@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/partitioning/RangePartitionImpl.class
+
+ - link:RangePartitionImpl-asmified.java[Asmified]
+
+== References
+

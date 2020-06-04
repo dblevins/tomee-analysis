@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/MultipartConfig$JAXB.class
+
+ - link:MultipartConfig$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 6

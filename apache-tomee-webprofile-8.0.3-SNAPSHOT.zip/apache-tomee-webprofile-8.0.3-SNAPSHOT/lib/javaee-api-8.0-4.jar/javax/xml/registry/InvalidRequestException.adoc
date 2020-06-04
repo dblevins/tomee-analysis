@@ -1,0 +1,7 @@
+= javax/xml/registry/InvalidRequestException.class
+
+ - link:InvalidRequestException-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 5

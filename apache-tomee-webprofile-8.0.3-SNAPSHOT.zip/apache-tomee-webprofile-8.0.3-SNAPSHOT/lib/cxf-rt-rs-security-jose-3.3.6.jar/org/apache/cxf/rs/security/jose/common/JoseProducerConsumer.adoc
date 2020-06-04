@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/jose/common/JoseProducerConsumer.class
+
+ - link:JoseProducerConsumer-asmified.java[Asmified]
+
+== References
+

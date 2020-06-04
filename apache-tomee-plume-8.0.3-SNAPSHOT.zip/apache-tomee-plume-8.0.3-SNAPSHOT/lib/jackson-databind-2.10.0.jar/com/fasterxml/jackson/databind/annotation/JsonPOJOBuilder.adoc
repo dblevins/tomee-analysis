@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder.class
+
+ - link:JsonPOJOBuilder-asmified.java[Asmified]
+
+== References
+

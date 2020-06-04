@@ -1,0 +1,7 @@
+= org/apache/webbeans/annotation/RequestedScopeLiteral.class
+
+ - link:RequestedScopeLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.RequestScoped - 2

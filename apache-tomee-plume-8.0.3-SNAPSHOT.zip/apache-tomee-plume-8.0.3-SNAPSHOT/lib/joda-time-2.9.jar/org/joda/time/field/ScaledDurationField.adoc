@@ -1,0 +1,6 @@
+= org/joda/time/field/ScaledDurationField.class
+
+ - link:ScaledDurationField-asmified.java[Asmified]
+
+== References
+

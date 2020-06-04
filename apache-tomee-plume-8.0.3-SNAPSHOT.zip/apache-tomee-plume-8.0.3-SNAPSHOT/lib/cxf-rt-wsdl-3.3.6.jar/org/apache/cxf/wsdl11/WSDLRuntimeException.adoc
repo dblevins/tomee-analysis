@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl11/WSDLRuntimeException.class
+
+ - link:WSDLRuntimeException-asmified.java[Asmified]
+
+== References
+

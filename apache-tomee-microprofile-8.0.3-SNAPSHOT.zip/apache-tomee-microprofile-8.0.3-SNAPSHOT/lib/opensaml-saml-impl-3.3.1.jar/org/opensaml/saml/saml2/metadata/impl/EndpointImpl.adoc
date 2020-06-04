@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/EndpointImpl.class
+
+ - link:EndpointImpl-asmified.java[Asmified]
+
+== References
+

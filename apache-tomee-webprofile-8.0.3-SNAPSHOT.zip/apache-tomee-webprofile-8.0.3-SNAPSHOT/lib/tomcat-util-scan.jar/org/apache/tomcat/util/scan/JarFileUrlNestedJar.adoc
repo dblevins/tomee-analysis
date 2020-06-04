@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/scan/JarFileUrlNestedJar.class
+
+ - link:JarFileUrlNestedJar-asmified.java[Asmified]
+
+== References
+

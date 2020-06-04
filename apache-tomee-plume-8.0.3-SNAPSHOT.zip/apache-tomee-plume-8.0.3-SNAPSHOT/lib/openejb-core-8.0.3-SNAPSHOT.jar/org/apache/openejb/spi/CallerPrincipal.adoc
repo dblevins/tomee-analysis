@@ -1,0 +1,6 @@
+= org/apache/openejb/spi/CallerPrincipal.class
+
+ - link:CallerPrincipal-asmified.java[Asmified]
+
+== References
+

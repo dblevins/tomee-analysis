@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ConfigurationFactory$Chain.class
+
+ - link:ConfigurationFactory$Chain-asmified.java[Asmified]
+
+== References
+

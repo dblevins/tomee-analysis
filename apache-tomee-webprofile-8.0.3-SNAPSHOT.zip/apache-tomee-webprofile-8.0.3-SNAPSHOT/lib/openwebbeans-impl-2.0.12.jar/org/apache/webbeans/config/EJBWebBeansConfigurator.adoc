@@ -1,0 +1,9 @@
+= org/apache/webbeans/config/EJBWebBeansConfigurator.class
+
+ - link:EJBWebBeansConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Bean - 2

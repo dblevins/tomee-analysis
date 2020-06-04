@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/CacheUsage.class
+
+ - link:CacheUsage-asmified.java[Asmified]
+
+== References
+

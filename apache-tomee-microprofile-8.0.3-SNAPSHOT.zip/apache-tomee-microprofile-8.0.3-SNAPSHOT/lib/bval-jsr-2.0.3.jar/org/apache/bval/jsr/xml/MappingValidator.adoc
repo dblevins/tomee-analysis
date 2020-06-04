@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/xml/MappingValidator.class
+
+ - link:MappingValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 25

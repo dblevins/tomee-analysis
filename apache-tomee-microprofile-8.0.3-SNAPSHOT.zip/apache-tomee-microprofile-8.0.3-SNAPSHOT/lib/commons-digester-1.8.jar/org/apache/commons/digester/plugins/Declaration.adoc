@@ -1,0 +1,6 @@
+= org/apache/commons/digester/plugins/Declaration.class
+
+ - link:Declaration-asmified.java[Asmified]
+
+== References
+

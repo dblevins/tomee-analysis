@@ -1,0 +1,10 @@
+= com/sun/faces/facelets/tag/jsf/RenderPropertyRule.class
+
+ - link:RenderPropertyRule-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 4
+ - javax.faces.view.facelets.MetaRule - 2
+ - javax.faces.view.facelets.Metadata - 1
+ - javax.faces.view.facelets.MetadataTarget - 1

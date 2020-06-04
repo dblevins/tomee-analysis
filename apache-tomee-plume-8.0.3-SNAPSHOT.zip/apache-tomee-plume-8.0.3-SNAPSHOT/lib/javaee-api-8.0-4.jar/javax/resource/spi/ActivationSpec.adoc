@@ -1,0 +1,8 @@
+= javax/resource/spi/ActivationSpec.class
+
+ - link:ActivationSpec-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.InvalidPropertyException - 1
+ - javax.resource.spi.ResourceAdapterAssociation - 1

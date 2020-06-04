@@ -1,0 +1,6 @@
+= org/jose4j/jwk/KeyOperations.class
+
+ - link:KeyOperations-asmified.java[Asmified]
+
+== References
+

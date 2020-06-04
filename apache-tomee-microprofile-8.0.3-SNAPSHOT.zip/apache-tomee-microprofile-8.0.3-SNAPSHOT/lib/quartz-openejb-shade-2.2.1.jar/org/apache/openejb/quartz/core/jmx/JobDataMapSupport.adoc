@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/jmx/JobDataMapSupport.class
+
+ - link:JobDataMapSupport-asmified.java[Asmified]
+
+== References
+

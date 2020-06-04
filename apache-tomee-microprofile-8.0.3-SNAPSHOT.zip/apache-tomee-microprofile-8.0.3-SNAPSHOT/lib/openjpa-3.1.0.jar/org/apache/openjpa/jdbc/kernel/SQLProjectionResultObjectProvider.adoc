@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/SQLProjectionResultObjectProvider.class
+
+ - link:SQLProjectionResultObjectProvider-asmified.java[Asmified]
+
+== References
+

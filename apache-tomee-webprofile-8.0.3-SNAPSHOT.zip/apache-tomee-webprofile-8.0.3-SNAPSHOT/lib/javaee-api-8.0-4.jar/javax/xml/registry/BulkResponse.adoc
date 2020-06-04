@@ -1,0 +1,8 @@
+= javax/xml/registry/BulkResponse.class
+
+ - link:BulkResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 3
+ - javax.xml.registry.JAXRResponse - 1

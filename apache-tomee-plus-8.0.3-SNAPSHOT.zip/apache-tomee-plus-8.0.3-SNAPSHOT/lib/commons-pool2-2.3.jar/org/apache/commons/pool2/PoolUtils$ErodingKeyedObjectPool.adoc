@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/PoolUtils$ErodingKeyedObjectPool.class
+
+ - link:PoolUtils$ErodingKeyedObjectPool-asmified.java[Asmified]
+
+== References
+

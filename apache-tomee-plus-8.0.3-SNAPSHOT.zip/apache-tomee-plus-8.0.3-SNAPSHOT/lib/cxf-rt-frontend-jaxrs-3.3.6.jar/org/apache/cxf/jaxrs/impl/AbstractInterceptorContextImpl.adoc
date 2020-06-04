@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/impl/AbstractInterceptorContextImpl.class
+
+ - link:AbstractInterceptorContextImpl-asmified.java[Asmified]
+
+== References
+

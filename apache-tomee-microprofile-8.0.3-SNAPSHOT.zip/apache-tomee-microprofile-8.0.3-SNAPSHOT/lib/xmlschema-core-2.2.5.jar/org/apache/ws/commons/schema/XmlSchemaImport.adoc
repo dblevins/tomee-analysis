@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaImport.class
+
+ - link:XmlSchemaImport-asmified.java[Asmified]
+
+== References
+

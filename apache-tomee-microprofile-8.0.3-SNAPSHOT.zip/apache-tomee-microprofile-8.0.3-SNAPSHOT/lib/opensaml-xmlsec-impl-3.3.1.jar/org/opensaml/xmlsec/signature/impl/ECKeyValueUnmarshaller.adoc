@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/ECKeyValueUnmarshaller.class
+
+ - link:ECKeyValueUnmarshaller-asmified.java[Asmified]
+
+== References
+

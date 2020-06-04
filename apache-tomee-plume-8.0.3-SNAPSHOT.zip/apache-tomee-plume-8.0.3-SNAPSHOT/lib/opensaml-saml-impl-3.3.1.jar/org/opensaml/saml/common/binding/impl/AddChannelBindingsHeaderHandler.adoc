@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/impl/AddChannelBindingsHeaderHandler.class
+
+ - link:AddChannelBindingsHeaderHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 1

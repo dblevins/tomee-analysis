@@ -1,0 +1,7 @@
+= org/apache/openejb/assembler/classic/EntityManagerFactoryCallable$BmHandler.class
+
+ - link:EntityManagerFactoryCallable$BmHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 5

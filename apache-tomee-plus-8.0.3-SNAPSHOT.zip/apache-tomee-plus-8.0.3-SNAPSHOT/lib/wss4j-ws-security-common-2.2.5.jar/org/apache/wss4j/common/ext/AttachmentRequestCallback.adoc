@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/ext/AttachmentRequestCallback.class
+
+ - link:AttachmentRequestCallback-asmified.java[Asmified]
+
+== References
+

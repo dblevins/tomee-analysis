@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaComplexContentExtension.class
+
+ - link:XmlSchemaComplexContentExtension-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/ws/rs/sse/SseEventSink.class
+
+ - link:SseEventSink-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.sse.OutboundSseEvent - 1

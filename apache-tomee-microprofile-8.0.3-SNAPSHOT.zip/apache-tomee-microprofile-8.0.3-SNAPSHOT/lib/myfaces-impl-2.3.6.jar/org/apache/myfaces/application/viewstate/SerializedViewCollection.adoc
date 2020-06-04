@@ -1,0 +1,8 @@
+= org/apache/myfaces/application/viewstate/SerializedViewCollection.class
+
+ - link:SerializedViewCollection-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.context.ExternalContext - 4

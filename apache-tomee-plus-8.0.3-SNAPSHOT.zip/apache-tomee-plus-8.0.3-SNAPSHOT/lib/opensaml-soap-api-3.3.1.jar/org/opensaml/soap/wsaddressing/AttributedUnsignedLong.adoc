@@ -1,0 +1,6 @@
+= org/opensaml/soap/wsaddressing/AttributedUnsignedLong.class
+
+ - link:AttributedUnsignedLong-asmified.java[Asmified]
+
+== References
+

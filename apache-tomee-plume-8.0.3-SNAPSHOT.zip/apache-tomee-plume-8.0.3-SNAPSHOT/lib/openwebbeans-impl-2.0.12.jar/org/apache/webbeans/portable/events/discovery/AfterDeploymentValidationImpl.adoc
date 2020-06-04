@@ -1,0 +1,7 @@
+= org/apache/webbeans/portable/events/discovery/AfterDeploymentValidationImpl.class
+
+ - link:AfterDeploymentValidationImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AfterDeploymentValidation - 1

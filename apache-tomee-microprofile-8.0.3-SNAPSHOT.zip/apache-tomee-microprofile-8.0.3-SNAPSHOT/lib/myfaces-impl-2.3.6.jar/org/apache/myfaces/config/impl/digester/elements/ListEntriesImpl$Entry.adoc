@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/ListEntriesImpl$Entry.class
+
+ - link:ListEntriesImpl$Entry-asmified.java[Asmified]
+
+== References
+

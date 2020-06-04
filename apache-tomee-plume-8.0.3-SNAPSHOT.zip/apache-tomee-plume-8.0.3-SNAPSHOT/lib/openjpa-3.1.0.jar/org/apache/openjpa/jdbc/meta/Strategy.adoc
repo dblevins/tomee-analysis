@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/Strategy.class
+
+ - link:Strategy-asmified.java[Asmified]
+
+== References
+

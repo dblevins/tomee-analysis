@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/resolvers/ResolverAttachment.class
+
+ - link:ResolverAttachment-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,14 @@
+= org/eclipse/persistence/internal/jpa/EJBQueryImpl.class
+
+ - link:EJBQueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.TypedQuery - 31
+ - javax.persistence.TemporalType - 24
+ - javax.persistence.Parameter - 19
+ - javax.persistence.Query - 14
+ - javax.persistence.PersistenceException - 11
+ - javax.persistence.FlushModeType - 8
+ - javax.persistence.LockModeType - 8
+ - javax.persistence.LockTimeoutException - 5

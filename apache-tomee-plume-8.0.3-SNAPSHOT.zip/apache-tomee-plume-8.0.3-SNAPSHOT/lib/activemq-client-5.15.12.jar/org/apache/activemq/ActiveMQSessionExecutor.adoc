@@ -1,0 +1,7 @@
+= org/apache/activemq/ActiveMQSessionExecutor.class
+
+ - link:ActiveMQSessionExecutor-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2

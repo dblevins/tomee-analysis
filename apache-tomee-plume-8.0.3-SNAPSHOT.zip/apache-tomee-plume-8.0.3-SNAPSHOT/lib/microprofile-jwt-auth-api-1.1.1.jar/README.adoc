@@ -1,0 +1,5 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/microprofile-jwt-auth-api-1.1.1.jar
+
+ - link:org/eclipse/microprofile/jwt/ClaimLiteral.adoc[org/eclipse/microprofile/jwt/ClaimLiteral.class] - 4
+ - link:org/eclipse/microprofile/jwt/Claims.adoc[org/eclipse/microprofile/jwt/Claims.class] - 3
+ - link:org/eclipse/microprofile/jwt/Claim.adoc[org/eclipse/microprofile/jwt/Claim.class] - 3

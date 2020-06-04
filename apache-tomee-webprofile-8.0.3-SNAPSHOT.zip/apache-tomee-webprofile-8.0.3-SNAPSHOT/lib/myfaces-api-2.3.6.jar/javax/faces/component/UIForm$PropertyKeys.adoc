@@ -1,0 +1,7 @@
+= javax/faces/component/UIForm$PropertyKeys.class
+
+ - link:UIForm$PropertyKeys-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIForm$PropertyKeys - 26

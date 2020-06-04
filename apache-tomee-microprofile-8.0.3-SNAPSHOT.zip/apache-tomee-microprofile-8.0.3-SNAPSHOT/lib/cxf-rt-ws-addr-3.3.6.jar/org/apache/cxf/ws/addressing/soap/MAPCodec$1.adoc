@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/addressing/soap/MAPCodec$1.class
+
+ - link:MAPCodec$1-asmified.java[Asmified]
+
+== References
+

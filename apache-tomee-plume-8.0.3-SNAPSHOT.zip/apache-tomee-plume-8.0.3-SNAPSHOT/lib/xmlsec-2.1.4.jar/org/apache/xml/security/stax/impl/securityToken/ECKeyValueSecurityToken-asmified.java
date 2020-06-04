@@ -1,0 +1,251 @@
+package asm.org.apache.xml.security.stax.impl.securityToken;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ECKeyValueSecurityTokenDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken", null, "org/apache/xml/security/stax/impl/securityToken/AbstractInboundSecurityToken", null);
+
+classWriter.visitInnerClass("org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "org/apache/xml/security/algorithms/implementations/ECDSAUtils", "ECCurveDefinition", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/xml/security/stax/securityToken/SecurityTokenConstants$TokenType", "org/apache/xml/security/stax/securityToken/SecurityTokenConstants", "TokenType", ACC_PUBLIC | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/xml/security/stax/securityToken/SecurityTokenConstants$KeyIdentifier", "org/apache/xml/security/stax/securityToken/SecurityTokenConstants", "KeyIdentifier", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "ecKeyValueType", "Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;Lorg/apache/xml/security/stax/ext/InboundSecurityContext;)V", null, new String[] { "org/apache/xml/security/exceptions/XMLSecurityException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xml/security/stax/impl/util/IDGenerator", "generateID", "(Ljava/lang/String;)Ljava/lang/String;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/stax/securityToken/SecurityTokenConstants", "KeyIdentifier_KeyValue", "Lorg/apache/xml/security/stax/securityToken/SecurityTokenConstants$KeyIdentifier;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/stax/impl/securityToken/AbstractInboundSecurityToken", "<init>", "(Lorg/apache/xml/security/stax/ext/InboundSecurityContext;Ljava/lang/String;Lorg/apache/xml/security/stax/securityToken/SecurityTokenConstants$KeyIdentifier;Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/binding/xmldsig11/ECKeyValueType", "getECParameters", "()Lorg/apache/xml/security/binding/xmldsig11/ECParametersType;", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xml/security/exceptions/XMLSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("stax.ecParametersNotSupported");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/exceptions/XMLSecurityException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken", "org/apache/xml/security/binding/xmldsig11/ECKeyValueType", "org/apache/xml/security/stax/ext/InboundSecurityContext"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/binding/xmldsig11/ECKeyValueType", "getNamedCurve", "()Lorg/apache/xml/security/binding/xmldsig11/NamedCurveType;", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xml/security/exceptions/XMLSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("stax.namedCurveMissing");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/exceptions/XMLSecurityException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken", "ecKeyValueType", "Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "buildPublicKey", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;)Ljava/security/PublicKey;", null, new String[] { "java/security/spec/InvalidKeySpecException", "java/security/NoSuchAlgorithmException", "org/apache/xml/security/exceptions/XMLSecurityException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/binding/xmldsig11/ECKeyValueType", "getNamedCurve", "()Lorg/apache/xml/security/binding/xmldsig11/NamedCurveType;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/binding/xmldsig11/NamedCurveType", "getURI", "()Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitLdcInsn("urn:oid:");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "startsWith", "(Ljava/lang/String;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/String", "substring", "(I)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"java/lang/String"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xml/security/algorithms/implementations/ECDSAUtils", "getECCurveDefinition", "(Ljava/lang/String;)Lorg/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition;", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xml/security/exceptions/XMLSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("stax.unsupportedKeyValue");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/exceptions/XMLSecurityException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition"}, 0, null);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/EllipticCurve");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/ECFieldFp");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getField", "()Ljava/lang/String;", false);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/ECFieldFp", "<init>", "(Ljava/math/BigInteger;)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getA", "()Ljava/lang/String;", false);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getB", "()Ljava/lang/String;", false);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/EllipticCurve", "<init>", "(Ljava/security/spec/ECField;Ljava/math/BigInteger;Ljava/math/BigInteger;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/binding/xmldsig11/ECKeyValueType", "getPublicKey", "()[B", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/xml/security/algorithms/implementations/ECDSAUtils", "decodePoint", "([BLjava/security/spec/EllipticCurve;)Ljava/security/spec/ECPoint;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/ECPublicKeySpec");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/ECPoint");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/spec/ECPoint", "getAffineX", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/spec/ECPoint", "getAffineY", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/ECPoint", "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/ECParameterSpec");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitTypeInsn(NEW, "java/security/spec/ECPoint");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getX", "()Ljava/lang/String;", false);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getY", "()Ljava/lang/String;", false);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/ECPoint", "<init>", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)V", false);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getN", "()Ljava/lang/String;", false);
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/algorithms/implementations/ECDSAUtils$ECCurveDefinition", "getH", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/ECParameterSpec", "<init>", "(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/security/spec/ECPublicKeySpec", "<init>", "(Ljava/security/spec/ECPoint;Ljava/security/spec/ECParameterSpec;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLdcInsn("EC");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/security/KeyFactory", "getInstance", "(Ljava/lang/String;)Ljava/security/KeyFactory;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/security/KeyFactory", "generatePublic", "(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(13, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPublicKey", "()Ljava/security/PublicKey;", null, new String[] { "org/apache/xml/security/exceptions/XMLSecurityException" });
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/security/spec/InvalidKeySpecException");
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/security/NoSuchAlgorithmException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/stax/impl/securityToken/AbstractInboundSecurityToken", "getPublicKey", "()Ljava/security/PublicKey;", false);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken", "ecKeyValueType", "Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken", "buildPublicKey", "(Lorg/apache/xml/security/binding/xmldsig11/ECKeyValueType;)Ljava/security/PublicKey;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/xml/security/stax/impl/securityToken/ECKeyValueSecurityToken", "setPublicKey", "(Ljava/security/PublicKey;)V", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/security/spec/InvalidKeySpecException"});
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xml/security/exceptions/XMLSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/exceptions/XMLSecurityException", "<init>", "(Ljava/lang/Exception;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/security/NoSuchAlgorithmException"});
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/xml/security/exceptions/XMLSecurityException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/exceptions/XMLSecurityException", "<init>", "(Ljava/lang/Exception;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/xml/security/stax/impl/securityToken/AbstractInboundSecurityToken", "getPublicKey", "()Ljava/security/PublicKey;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isAsymmetric", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTokenType", "()Lorg/apache/xml/security/stax/securityToken/SecurityTokenConstants$TokenType;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/xml/security/stax/securityToken/SecurityTokenConstants", "KeyValueToken", "Lorg/apache/xml/security/stax/securityToken/SecurityTokenConstants$TokenType;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

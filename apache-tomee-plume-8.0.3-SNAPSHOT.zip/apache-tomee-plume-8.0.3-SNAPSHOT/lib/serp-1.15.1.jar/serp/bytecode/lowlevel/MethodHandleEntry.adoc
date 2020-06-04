@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/MethodHandleEntry.class
+
+ - link:MethodHandleEntry-asmified.java[Asmified]
+
+== References
+

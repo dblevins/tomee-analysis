@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/meta/XMLVersionParser.class
+
+ - link:XMLVersionParser-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/joda/time/format/PeriodFormatterBuilder$PluralAffix.class
+
+ - link:PeriodFormatterBuilder$PluralAffix-asmified.java[Asmified]
+
+== References
+

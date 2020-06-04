@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/ElementIdMap.class
+
+ - link:ElementIdMap-asmified.java[Asmified]
+
+== References
+

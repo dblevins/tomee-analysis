@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/MinusNode.class
+
+ - link:MinusNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/application/resource/ResourcePathsIterator.class
+
+ - link:ResourcePathsIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 5

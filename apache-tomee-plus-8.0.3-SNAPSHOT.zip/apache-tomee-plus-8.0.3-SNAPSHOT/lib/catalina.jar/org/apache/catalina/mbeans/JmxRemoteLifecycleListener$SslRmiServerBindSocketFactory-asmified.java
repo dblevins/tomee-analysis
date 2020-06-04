@@ -1,0 +1,238 @@
+package asm.org.apache.catalina.mbeans;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class JmxRemoteLifecycleListener$SslRmiServerBindSocketFactoryDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", null, "javax/rmi/ssl/SslRMIServerSocketFactory", null);
+
+classWriter.visitInnerClass("org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "org/apache/catalina/mbeans/JmxRemoteLifecycleListener", "SslRmiServerBindSocketFactory", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "bindAddress", "Ljava/net/InetAddress;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "sslContext", "Ljavax/net/ssl/SSLContext;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/net/UnknownHostException");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/rmi/ssl/SslRMIServerSocketFactory", "<init>", "(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "sslContext", "Ljavax/net/ssl/SSLContext;");
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/net/InetAddress", "getByName", "(Ljava/lang/String;)Ljava/net/InetAddress;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label1);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 7, new Object[] {"org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "javax/net/ssl/SSLContext", "[Ljava/lang/String;", "[Ljava/lang/String;", Opcodes.INTEGER, "java/lang/String", "java/net/InetAddress"}, 1, new Object[] {"java/net/UnknownHostException"});
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener", "access$000", "()Lorg/apache/juli/logging/Log;", false);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener", "sm", "Lorg/apache/tomcat/util/res/StringManager;");
+methodVisitor.visitLdcInsn("jmxRemoteLifecycleListener.invalidRmiBindAddress");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/tomcat/util/res/StringManager", "getString", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", false);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/juli/logging/Log", "error", "(Ljava/lang/Object;Ljava/lang/Throwable;)V", true);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 8);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "createServerSocket", "(I)Ljava/net/ServerSocket;", null, new String[] { "java/io/IOException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "sslContext", "Ljavax/net/ssl/SSLContext;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "javax/net/ssl/SSLServerSocketFactory", "getDefault", "()Ljavax/net/ServerSocketFactory;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/net/ssl/SSLServerSocketFactory");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "sslContext", "Ljavax/net/ssl/SSLContext;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/net/ssl/SSLContext", "getServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"javax/net/ssl/SSLServerSocketFactory"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/net/ssl/SSLServerSocketFactory", "createServerSocket", "(IILjava/net/InetAddress;)Ljava/net/ServerSocket;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "javax/net/ssl/SSLServerSocket");
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "getEnabledCipherSuites", "()[Ljava/lang/String;", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "getEnabledCipherSuites", "()[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/net/ssl/SSLServerSocket", "setEnabledCipherSuites", "([Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"javax/net/ssl/SSLServerSocketFactory", "javax/net/ssl/SSLServerSocket"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "getEnabledProtocols", "()[Ljava/lang/String;", false);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "getEnabledProtocols", "()[Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/net/ssl/SSLServerSocket", "setEnabledProtocols", "([Ljava/lang/String;)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "getNeedClientAuth", "()Z", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "javax/net/ssl/SSLServerSocket", "setNeedClientAuth", "(Z)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hashCode", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitIntInsn(BIPUSH, 31);
+methodVisitor.visitVarInsn(ISTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/rmi/ssl/SslRMIServerSocketFactory", "hashCode", "()I", false);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitIntInsn(BIPUSH, 31);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitInsn(ICONST_0);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", Opcodes.INTEGER, Opcodes.INTEGER}, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/InetAddress", "hashCode", "()I", false);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", Opcodes.INTEGER, Opcodes.INTEGER}, 2, new Object[] {Opcodes.INTEGER, Opcodes.INTEGER});
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 2);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equals", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "javax/rmi/ssl/SslRMIServerSocketFactory", "equals", "(Ljava/lang/Object;)Z", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPEQ, label2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory");
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/catalina/mbeans/JmxRemoteLifecycleListener$SslRmiServerBindSocketFactory", "bindAddress", "Ljava/net/InetAddress;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/net/InetAddress", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitJumpInsn(IFNE, label4);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

@@ -1,0 +1,9 @@
+= org/apache/cxf/ws/addressing/soap/VersionTransformer.class
+
+ - link:VersionTransformer-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Unmarshaller - 8
+ - javax.xml.bind.JAXBContext - 8
+ - javax.xml.bind.JAXBException - 2

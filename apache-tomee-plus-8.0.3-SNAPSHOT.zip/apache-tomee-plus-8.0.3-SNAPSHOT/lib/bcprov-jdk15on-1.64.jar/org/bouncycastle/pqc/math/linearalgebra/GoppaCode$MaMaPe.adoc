@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/math/linearalgebra/GoppaCode$MaMaPe.class
+
+ - link:GoppaCode$MaMaPe-asmified.java[Asmified]
+
+== References
+

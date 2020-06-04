@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/IsolatedHashMap.class
+
+ - link:IsolatedHashMap-asmified.java[Asmified]
+
+== References
+

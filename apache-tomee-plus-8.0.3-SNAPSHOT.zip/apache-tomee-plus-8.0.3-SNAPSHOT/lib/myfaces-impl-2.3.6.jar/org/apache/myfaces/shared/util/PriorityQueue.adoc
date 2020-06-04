@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/util/PriorityQueue.class
+
+ - link:PriorityQueue-asmified.java[Asmified]
+
+== References
+

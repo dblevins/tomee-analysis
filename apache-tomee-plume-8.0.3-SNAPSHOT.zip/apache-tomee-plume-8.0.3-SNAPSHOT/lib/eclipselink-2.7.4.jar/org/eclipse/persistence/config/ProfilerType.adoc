@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ProfilerType.class
+
+ - link:ProfilerType-asmified.java[Asmified]
+
+== References
+

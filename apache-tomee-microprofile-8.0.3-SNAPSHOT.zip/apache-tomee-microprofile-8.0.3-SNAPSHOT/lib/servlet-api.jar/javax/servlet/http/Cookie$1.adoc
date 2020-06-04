@@ -1,0 +1,7 @@
+= javax/servlet/http/Cookie$1.class
+
+ - link:Cookie$1-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.Cookie$1 - 1

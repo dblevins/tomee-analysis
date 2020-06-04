@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/RemoteJndiContextsInfo.class
+
+ - link:RemoteJndiContextsInfo-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SQLBuffer.class
+
+ - link:SQLBuffer-asmified.java[Asmified]
+
+== References
+

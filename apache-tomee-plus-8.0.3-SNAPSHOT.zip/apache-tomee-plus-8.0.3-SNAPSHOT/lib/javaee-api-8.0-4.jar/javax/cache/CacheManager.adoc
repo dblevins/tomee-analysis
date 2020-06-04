@@ -1,0 +1,6 @@
+= javax/cache/CacheManager.class
+
+ - link:CacheManager-asmified.java[Asmified]
+
+== References
+

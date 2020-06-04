@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/ObjectVarrayDefinition.class
+
+ - link:ObjectVarrayDefinition-asmified.java[Asmified]
+
+== References
+

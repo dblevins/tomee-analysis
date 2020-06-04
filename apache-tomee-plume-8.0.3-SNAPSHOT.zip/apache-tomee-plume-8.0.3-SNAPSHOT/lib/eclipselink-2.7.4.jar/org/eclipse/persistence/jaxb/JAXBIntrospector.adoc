@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jaxb/JAXBIntrospector.class
+
+ - link:JAXBIntrospector-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4
+ - javax.xml.bind.JAXBIntrospector - 2

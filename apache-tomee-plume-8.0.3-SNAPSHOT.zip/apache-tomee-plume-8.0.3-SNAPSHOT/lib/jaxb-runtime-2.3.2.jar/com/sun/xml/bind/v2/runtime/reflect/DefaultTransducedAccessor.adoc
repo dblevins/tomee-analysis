@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/DefaultTransducedAccessor.class
+
+ - link:DefaultTransducedAccessor-asmified.java[Asmified]
+
+== References
+

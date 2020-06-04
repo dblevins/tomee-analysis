@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/DirtyListener.class
+
+ - link:DirtyListener-asmified.java[Asmified]
+
+== References
+

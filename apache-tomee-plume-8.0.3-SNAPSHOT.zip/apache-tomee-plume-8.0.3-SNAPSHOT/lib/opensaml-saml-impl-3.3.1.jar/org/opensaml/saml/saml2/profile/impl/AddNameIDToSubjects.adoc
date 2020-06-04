@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/AddNameIDToSubjects.class
+
+ - link:AddNameIDToSubjects-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 22
+ - javax.annotation.Nullable - 10

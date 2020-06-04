@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/sax/SAXDocumentSerializer.class
+
+ - link:SAXDocumentSerializer-asmified.java[Asmified]
+
+== References
+

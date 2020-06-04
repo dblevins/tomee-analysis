@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/codegen/HierarchyNode.class
+
+ - link:HierarchyNode-asmified.java[Asmified]
+
+== References
+

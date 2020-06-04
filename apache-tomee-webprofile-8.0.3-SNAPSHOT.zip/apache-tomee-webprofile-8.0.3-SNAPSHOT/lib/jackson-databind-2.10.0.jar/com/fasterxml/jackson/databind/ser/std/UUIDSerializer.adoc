@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/UUIDSerializer.class
+
+ - link:UUIDSerializer-asmified.java[Asmified]
+
+== References
+

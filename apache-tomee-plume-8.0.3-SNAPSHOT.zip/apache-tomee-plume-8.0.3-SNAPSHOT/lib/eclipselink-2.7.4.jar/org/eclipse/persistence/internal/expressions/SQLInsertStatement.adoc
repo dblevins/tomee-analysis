@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/SQLInsertStatement.class
+
+ - link:SQLInsertStatement-asmified.java[Asmified]
+
+== References
+

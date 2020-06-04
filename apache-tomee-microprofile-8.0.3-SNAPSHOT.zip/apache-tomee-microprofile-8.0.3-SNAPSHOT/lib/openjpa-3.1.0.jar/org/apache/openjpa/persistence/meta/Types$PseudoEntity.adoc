@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/meta/Types$PseudoEntity.class
+
+ - link:Types$PseudoEntity-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type$PersistenceType - 2

@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/converters/CharacterArrayConverter.class
+
+ - link:CharacterArrayConverter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/coyote/http2/Http2AsyncUpgradeHandler$AsyncPingManager.class
+
+ - link:Http2AsyncUpgradeHandler$AsyncPingManager-asmified.java[Asmified]
+
+== References
+

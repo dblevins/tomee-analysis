@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/oxm/ByteArrayDataSource.class
+
+ - link:ByteArrayDataSource-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 1

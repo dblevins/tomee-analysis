@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/JsonGenerationException.class
+
+ - link:JsonGenerationException-asmified.java[Asmified]
+
+== References
+

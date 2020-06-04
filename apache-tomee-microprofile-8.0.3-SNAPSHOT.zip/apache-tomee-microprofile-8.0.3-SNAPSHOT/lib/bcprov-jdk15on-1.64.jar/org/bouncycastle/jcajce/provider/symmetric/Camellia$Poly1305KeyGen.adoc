@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/Camellia$Poly1305KeyGen.class
+
+ - link:Camellia$Poly1305KeyGen-asmified.java[Asmified]
+
+== References
+

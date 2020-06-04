@@ -1,0 +1,8 @@
+= org/apache/batchee/container/impl/controller/DecisionController.class
+
+ - link:DecisionController-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.StepExecution - 8
+ - javax.batch.api.Decider - 3

@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap12/SOAP12HeaderFaultImpl.class
+
+ - link:SOAP12HeaderFaultImpl-asmified.java[Asmified]
+
+== References
+

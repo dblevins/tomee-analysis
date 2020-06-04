@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/XMLLoginConfig.class
+
+ - link:XMLLoginConfig-asmified.java[Asmified]
+
+== References
+

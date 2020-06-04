@@ -1,0 +1,6 @@
+= org/apache/openejb/util/classloader/URLClassLoaderFirst.class
+
+ - link:URLClassLoaderFirst-asmified.java[Asmified]
+
+== References
+

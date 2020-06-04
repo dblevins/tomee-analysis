@@ -1,0 +1,9 @@
+= org/apache/webbeans/ejb/plugin/OpenWebBeansEjbLCAPluginImpl.class
+
+ - link:OpenWebBeansEjbLCAPluginImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.AroundTimeout - 1
+ - javax.ejb.PrePassivate - 1
+ - javax.ejb.PostActivate - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/PrimaryRow.class
+
+ - link:PrimaryRow-asmified.java[Asmified]
+
+== References
+

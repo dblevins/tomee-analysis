@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/ClassMetaData.class
+
+ - link:ClassMetaData-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/DataStorage.class
+
+ - link:DataStorage-asmified.java[Asmified]
+
+== References
+

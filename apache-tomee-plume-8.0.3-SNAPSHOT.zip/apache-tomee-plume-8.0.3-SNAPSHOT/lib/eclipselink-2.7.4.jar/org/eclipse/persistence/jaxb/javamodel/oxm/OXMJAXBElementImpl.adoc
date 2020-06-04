@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/javamodel/oxm/OXMJAXBElementImpl.class
+
+ - link:OXMJAXBElementImpl-asmified.java[Asmified]
+
+== References
+

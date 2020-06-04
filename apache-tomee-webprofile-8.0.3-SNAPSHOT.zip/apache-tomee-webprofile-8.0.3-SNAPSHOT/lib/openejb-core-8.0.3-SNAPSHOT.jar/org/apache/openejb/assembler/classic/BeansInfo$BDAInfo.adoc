@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/BeansInfo$BDAInfo.class
+
+ - link:BeansInfo$BDAInfo-asmified.java[Asmified]
+
+== References
+

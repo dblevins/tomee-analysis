@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/el/ELText$LiteralValueExpression.class
+
+ - link:ELText$LiteralValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 4
+ - javax.el.ValueExpression - 2

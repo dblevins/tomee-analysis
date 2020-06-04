@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/EncryptedKeyResolver.class
+
+ - link:EncryptedKeyResolver-asmified.java[Asmified]
+
+== References
+

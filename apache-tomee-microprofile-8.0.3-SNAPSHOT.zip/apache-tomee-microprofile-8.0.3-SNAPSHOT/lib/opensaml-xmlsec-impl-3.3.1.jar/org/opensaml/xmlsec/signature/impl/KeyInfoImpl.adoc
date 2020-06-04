@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/KeyInfoImpl.class
+
+ - link:KeyInfoImpl-asmified.java[Asmified]
+
+== References
+

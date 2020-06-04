@@ -1,0 +1,15 @@
+= org/apache/catalina/filters/CsrfPreventionFilter.class
+
+ - link:CsrfPreventionFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletResponse - 24
+ - javax.servlet.http.HttpServletRequest - 23
+ - javax.servlet.http.HttpSession - 18
+ - javax.servlet.http.HttpServletResponse - 17
+ - javax.servlet.ServletRequest - 14
+ - javax.servlet.FilterChain - 13
+ - javax.servlet.FilterConfig - 3
+ - javax.servlet.ServletException - 2
+ - javax.servlet.ServletContext - 2

@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/crypto/BouncyCastleUtils.class
+
+ - link:BouncyCastleUtils-asmified.java[Asmified]
+
+== References
+

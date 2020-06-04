@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/Terminate.class
+
+ - link:Terminate-asmified.java[Asmified]
+
+== References
+

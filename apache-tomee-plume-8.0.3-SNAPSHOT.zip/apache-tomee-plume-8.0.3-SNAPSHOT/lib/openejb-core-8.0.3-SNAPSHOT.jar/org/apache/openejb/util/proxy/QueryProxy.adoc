@@ -1,0 +1,20 @@
+= org/apache/openejb/util/proxy/QueryProxy.class
+
+ - link:QueryProxy-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 32
+ - javax.persistence.Query - 20
+ - javax.persistence.metamodel.EntityType - 13
+ - javax.persistence.criteria.CriteriaQuery - 12
+ - javax.persistence.metamodel.SingularAttribute - 11
+ - javax.persistence.criteria.CriteriaBuilder - 10
+ - javax.persistence.criteria.Predicate - 9
+ - javax.persistence.criteria.Root - 7
+ - javax.persistence.TypedQuery - 6
+ - javax.persistence.criteria.Expression - 5
+ - javax.persistence.criteria.Path - 5
+ - javax.persistence.metamodel.Metamodel - 4
+ - javax.persistence.metamodel.Type - 2
+ - javax.persistence.criteria.Selection - 1

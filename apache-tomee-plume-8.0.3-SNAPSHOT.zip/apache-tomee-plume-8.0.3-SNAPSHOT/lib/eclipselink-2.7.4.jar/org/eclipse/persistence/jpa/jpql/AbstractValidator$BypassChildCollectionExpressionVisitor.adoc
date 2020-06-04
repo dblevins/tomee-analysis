@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractValidator$BypassChildCollectionExpressionVisitor.class
+
+ - link:AbstractValidator$BypassChildCollectionExpressionVisitor-asmified.java[Asmified]
+
+== References
+

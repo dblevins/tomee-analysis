@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/SAML2NameIDGenerator.class
+
+ - link:SAML2NameIDGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 1

@@ -1,0 +1,22 @@
+= org/apache/cxf/jaxws/support/JaxWsServiceConfiguration.class
+
+ - link:JaxWsServiceConfiguration-asmified.java[Asmified]
+
+== References
+
+ - javax.jws.WebParam - 34
+ - javax.jws.soap.SOAPBinding - 30
+ - javax.jws.WebMethod - 27
+ - javax.xml.ws.RequestWrapper - 20
+ - javax.xml.ws.ResponseWrapper - 20
+ - javax.jws.WebResult - 20
+ - javax.jws.soap.SOAPBinding$Style - 20
+ - javax.jws.WebParam$Mode - 17
+ - javax.jws.soap.SOAPBinding$ParameterStyle - 12
+ - javax.xml.ws.WebFault - 9
+ - javax.xml.ws.Action - 3
+ - javax.xml.ws.Holder - 3
+ - javax.xml.bind.annotation.XmlElement - 3
+ - javax.jws.WebService - 1
+ - javax.xml.ws.Response - 1
+ - javax.jws.Oneway - 1

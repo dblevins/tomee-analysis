@@ -1,0 +1,6 @@
+= org/apache/catalina/WebResourceRoot$ResourceSetType.class
+
+ - link:WebResourceRoot$ResourceSetType-asmified.java[Asmified]
+
+== References
+

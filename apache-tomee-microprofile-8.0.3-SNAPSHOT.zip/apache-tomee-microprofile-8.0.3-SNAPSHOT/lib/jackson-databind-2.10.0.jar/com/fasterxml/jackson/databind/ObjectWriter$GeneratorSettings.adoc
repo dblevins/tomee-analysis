@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ObjectWriter$GeneratorSettings.class
+
+ - link:ObjectWriter$GeneratorSettings-asmified.java[Asmified]
+
+== References
+

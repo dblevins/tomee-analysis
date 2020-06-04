@@ -1,0 +1,6 @@
+= com/sun/istack/FinalArrayList.class
+
+ - link:FinalArrayList-asmified.java[Asmified]
+
+== References
+

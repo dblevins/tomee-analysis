@@ -1,0 +1,6 @@
+= org/apache/geronimo/mail/james/mime4j/util/EmptyByteSequence.class
+
+ - link:EmptyByteSequence-asmified.java[Asmified]
+
+== References
+

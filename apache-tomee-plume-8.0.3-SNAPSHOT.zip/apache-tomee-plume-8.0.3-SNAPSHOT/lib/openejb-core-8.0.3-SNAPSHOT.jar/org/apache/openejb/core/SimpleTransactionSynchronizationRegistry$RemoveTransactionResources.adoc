@@ -1,0 +1,8 @@
+= org/apache/openejb/core/SimpleTransactionSynchronizationRegistry$RemoveTransactionResources.class
+
+ - link:SimpleTransactionSynchronizationRegistry$RemoveTransactionResources-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 4
+ - javax.transaction.Synchronization - 1

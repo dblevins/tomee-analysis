@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/processor/output/AbstractEncryptEndingOutputProcessor.class
+
+ - link:AbstractEncryptEndingOutputProcessor-asmified.java[Asmified]
+
+== References
+

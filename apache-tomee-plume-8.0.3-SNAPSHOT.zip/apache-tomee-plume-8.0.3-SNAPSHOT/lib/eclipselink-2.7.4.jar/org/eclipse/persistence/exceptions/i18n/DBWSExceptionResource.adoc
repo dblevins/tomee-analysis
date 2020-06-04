@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/i18n/DBWSExceptionResource.class
+
+ - link:DBWSExceptionResource-asmified.java[Asmified]
+
+== References
+

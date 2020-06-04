@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/ext/WSSecurityException$ErrorCode.class
+
+ - link:WSSecurityException$ErrorCode-asmified.java[Asmified]
+
+== References
+

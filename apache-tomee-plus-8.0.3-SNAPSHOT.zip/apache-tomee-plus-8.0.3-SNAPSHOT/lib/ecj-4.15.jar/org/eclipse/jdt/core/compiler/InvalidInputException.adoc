@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/compiler/InvalidInputException.class
+
+ - link:InvalidInputException-asmified.java[Asmified]
+
+== References
+

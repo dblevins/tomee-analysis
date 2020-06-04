@@ -1,0 +1,6 @@
+= org/apache/cxf/management/annotation/ManagedAttribute.class
+
+ - link:ManagedAttribute-asmified.java[Asmified]
+
+== References
+

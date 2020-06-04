@@ -1,0 +1,6 @@
+= org/hsqldb/rowio/RowInputBinaryDecode.class
+
+ - link:RowInputBinaryDecode-asmified.java[Asmified]
+
+== References
+

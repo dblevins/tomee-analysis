@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/managed/local/Key.class
+
+ - link:Key-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/esf/SignaturePolicyId.class
+
+ - link:SignaturePolicyId-asmified.java[Asmified]
+
+== References
+

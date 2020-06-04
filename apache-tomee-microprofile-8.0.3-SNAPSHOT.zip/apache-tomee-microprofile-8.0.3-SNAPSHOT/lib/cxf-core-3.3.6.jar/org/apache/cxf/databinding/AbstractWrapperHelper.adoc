@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/AbstractWrapperHelper.class
+
+ - link:AbstractWrapperHelper-asmified.java[Asmified]
+
+== References
+

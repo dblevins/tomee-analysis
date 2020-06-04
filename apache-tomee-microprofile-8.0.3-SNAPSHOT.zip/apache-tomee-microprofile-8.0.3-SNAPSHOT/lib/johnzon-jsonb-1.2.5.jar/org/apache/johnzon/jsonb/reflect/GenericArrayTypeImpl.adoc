@@ -1,0 +1,6 @@
+= org/apache/johnzon/jsonb/reflect/GenericArrayTypeImpl.class
+
+ - link:GenericArrayTypeImpl-asmified.java[Asmified]
+
+== References
+

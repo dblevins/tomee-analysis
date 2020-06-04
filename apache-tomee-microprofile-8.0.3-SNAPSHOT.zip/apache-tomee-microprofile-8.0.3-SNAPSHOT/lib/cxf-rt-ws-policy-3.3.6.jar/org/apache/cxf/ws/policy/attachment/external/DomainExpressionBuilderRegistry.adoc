@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/policy/attachment/external/DomainExpressionBuilderRegistry.class
+
+ - link:DomainExpressionBuilderRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

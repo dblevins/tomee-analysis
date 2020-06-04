@@ -1,0 +1,18 @@
+= javax/faces/event/MethodExpressionValueChangeListener.class
+
+ - link:MethodExpressionValueChangeListener-asmified.java[Asmified]
+
+== References
+
+ - javax.el.MethodExpression - 26
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.event.MethodExpressionValueChangeListener - 8
+ - javax.el.ELContext - 8
+ - javax.faces.event.AbortProcessingException - 4
+ - javax.el.ELException - 4
+ - javax.faces.application.Application - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.el.MethodNotFoundException - 2
+ - javax.faces.event.ValueChangeEvent - 1
+ - javax.faces.component.StateHolder - 1
+ - javax.faces.event.ValueChangeListener - 1

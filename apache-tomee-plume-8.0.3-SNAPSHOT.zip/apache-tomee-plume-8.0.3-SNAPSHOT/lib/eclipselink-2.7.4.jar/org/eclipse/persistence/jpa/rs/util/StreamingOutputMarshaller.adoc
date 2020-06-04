@@ -1,0 +1,14 @@
+= org/eclipse/persistence/jpa/rs/util/StreamingOutputMarshaller.class
+
+ - link:StreamingOutputMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 57
+ - javax.xml.bind.Marshaller - 5
+ - javax.ws.rs.core.HttpHeaders - 3
+ - javax.ws.rs.WebApplicationException - 3
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 1
+ - javax.ws.rs.core.StreamingOutput - 1
+ - javax.xml.bind.Marshaller$Listener - 1
+ - javax.xml.bind.JAXBException - 1

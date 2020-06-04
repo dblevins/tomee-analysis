@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/extension/SDOUtil.class
+
+ - link:SDOUtil-asmified.java[Asmified]
+
+== References
+

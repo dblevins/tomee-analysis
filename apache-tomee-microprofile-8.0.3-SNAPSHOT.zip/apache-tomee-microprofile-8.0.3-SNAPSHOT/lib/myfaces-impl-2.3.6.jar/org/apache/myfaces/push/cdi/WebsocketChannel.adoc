@@ -1,0 +1,6 @@
+= org/apache/myfaces/push/cdi/WebsocketChannel.class
+
+ - link:WebsocketChannel-asmified.java[Asmified]
+
+== References
+

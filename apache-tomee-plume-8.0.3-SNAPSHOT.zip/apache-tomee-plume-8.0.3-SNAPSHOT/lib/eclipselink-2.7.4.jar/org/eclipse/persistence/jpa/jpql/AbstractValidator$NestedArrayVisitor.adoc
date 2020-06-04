@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractValidator$NestedArrayVisitor.class
+
+ - link:AbstractValidator$NestedArrayVisitor-asmified.java[Asmified]
+
+== References
+

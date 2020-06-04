@@ -1,0 +1,6 @@
+= org/joda/time/format/PeriodFormatterBuilder$Literal.class
+
+ - link:PeriodFormatterBuilder$Literal-asmified.java[Asmified]
+
+== References
+

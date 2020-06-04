@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/impl/securityToken/SecureConversationSecurityTokenImpl.class
+
+ - link:SecureConversationSecurityTokenImpl-asmified.java[Asmified]
+
+== References
+

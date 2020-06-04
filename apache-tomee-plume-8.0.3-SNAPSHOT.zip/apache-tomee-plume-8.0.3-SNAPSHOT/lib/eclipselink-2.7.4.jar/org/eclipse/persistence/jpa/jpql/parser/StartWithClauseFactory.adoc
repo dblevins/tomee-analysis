@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/StartWithClauseFactory.class
+
+ - link:StartWithClauseFactory-asmified.java[Asmified]
+
+== References
+

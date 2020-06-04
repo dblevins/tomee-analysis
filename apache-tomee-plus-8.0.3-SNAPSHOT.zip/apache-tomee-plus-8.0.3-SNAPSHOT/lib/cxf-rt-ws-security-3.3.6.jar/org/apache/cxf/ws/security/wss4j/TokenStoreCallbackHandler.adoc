@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/TokenStoreCallbackHandler.class
+
+ - link:TokenStoreCallbackHandler-asmified.java[Asmified]
+
+== References
+

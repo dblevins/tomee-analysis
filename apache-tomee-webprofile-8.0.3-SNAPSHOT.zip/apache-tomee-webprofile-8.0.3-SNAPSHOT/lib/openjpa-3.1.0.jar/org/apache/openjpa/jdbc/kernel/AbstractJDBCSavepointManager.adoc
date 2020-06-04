@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/AbstractJDBCSavepointManager.class
+
+ - link:AbstractJDBCSavepointManager-asmified.java[Asmified]
+
+== References
+

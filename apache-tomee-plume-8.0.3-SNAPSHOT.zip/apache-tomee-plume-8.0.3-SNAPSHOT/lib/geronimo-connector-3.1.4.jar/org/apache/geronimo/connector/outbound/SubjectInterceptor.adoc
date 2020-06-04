@@ -1,0 +1,11 @@
+= org/apache/geronimo/connector/outbound/SubjectInterceptor.class
+
+ - link:SubjectInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 5
+ - javax.resource.spi.ApplicationServerInternalException - 2
+ - javax.resource.spi.ConnectionRequestInfo - 2
+ - javax.resource.spi.ManagedConnectionFactory - 2
+ - javax.resource.spi.ManagedConnection - 1

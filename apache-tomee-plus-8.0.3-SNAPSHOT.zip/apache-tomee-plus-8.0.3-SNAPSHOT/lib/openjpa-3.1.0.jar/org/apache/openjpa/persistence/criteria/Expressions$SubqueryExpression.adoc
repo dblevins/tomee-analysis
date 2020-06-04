@@ -1,0 +1,10 @@
+= org/apache/openjpa/persistence/criteria/Expressions$SubqueryExpression.class
+
+ - link:Expressions$SubqueryExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Expression - 8
+ - javax.persistence.criteria.Selection - 2
+ - javax.persistence.criteria.Subquery - 2

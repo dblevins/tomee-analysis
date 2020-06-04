@@ -1,0 +1,7 @@
+= org/apache/webbeans/portable/events/generics/GProcessAnnotatedType.class
+
+ - link:GProcessAnnotatedType-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 8

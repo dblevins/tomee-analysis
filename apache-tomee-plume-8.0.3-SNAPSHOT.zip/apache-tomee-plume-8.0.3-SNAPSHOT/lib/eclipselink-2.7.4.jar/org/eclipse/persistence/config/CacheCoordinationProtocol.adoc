@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/CacheCoordinationProtocol.class
+
+ - link:CacheCoordinationProtocol-asmified.java[Asmified]
+
+== References
+

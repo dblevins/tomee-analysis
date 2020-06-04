@@ -1,0 +1,7 @@
+= javax/mail/event/MessageCountListener.class
+
+ - link:MessageCountListener-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.event.MessageCountEvent - 2

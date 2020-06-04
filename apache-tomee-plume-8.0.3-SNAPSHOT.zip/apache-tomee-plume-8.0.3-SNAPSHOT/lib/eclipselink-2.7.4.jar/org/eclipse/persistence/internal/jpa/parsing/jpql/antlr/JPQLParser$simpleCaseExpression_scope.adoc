@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$simpleCaseExpression_scope.class
+
+ - link:JPQLParser$simpleCaseExpression_scope-asmified.java[Asmified]
+
+== References
+

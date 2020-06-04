@@ -1,0 +1,39 @@
+= org/apache/myfaces/application/NavigationHandlerImpl.class
+
+ - link:NavigationHandlerImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 183
+ - javax.faces.flow.Flow - 141
+ - javax.faces.application.NavigationCase - 135
+ - javax.faces.flow.FlowHandler - 46
+ - javax.faces.component.UIViewRoot - 45
+ - javax.faces.flow.FlowCallNode - 27
+ - javax.faces.flow.FlowNode - 22
+ - javax.faces.flow.MethodCallNode - 21
+ - javax.faces.context.ExternalContext - 20
+ - javax.faces.application.ViewHandler - 19
+ - javax.faces.application.Application - 14
+ - javax.faces.context.PartialViewContext - 13
+ - javax.el.MethodExpression - 11
+ - javax.el.ELContext - 10
+ - javax.faces.flow.ReturnNode - 8
+ - javax.faces.flow.Parameter - 7
+ - javax.faces.flow.SwitchNode - 6
+ - javax.el.ValueExpression - 5
+ - javax.faces.application.FacesMessage - 4
+ - javax.faces.context.Flash - 4
+ - javax.faces.application.ProjectStage - 4
+ - javax.faces.FacesException - 4
+ - javax.faces.flow.ViewNode - 3
+ - javax.faces.flow.SwitchCase - 3
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.component.visit.VisitHint - 2
+ - javax.faces.view.ViewMetadata - 2
+ - javax.faces.application.ConfigurableNavigationHandler - 2
+ - javax.faces.application.FacesMessage$Severity - 2
+ - javax.faces.view.ViewDeclarationLanguage - 2
+ - javax.faces.component.UIViewAction - 1
+ - javax.faces.component.visit.VisitCallback - 1

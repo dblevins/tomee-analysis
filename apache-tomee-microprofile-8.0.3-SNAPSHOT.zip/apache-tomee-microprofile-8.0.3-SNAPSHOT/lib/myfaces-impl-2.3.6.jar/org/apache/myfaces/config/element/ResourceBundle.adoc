@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/ResourceBundle.class
+
+ - link:ResourceBundle-asmified.java[Asmified]
+
+== References
+

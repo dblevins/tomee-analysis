@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/SecurityServiceInfo.class
+
+ - link:SecurityServiceInfo-asmified.java[Asmified]
+
+== References
+

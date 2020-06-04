@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/codec/binary/Base64.class
+
+ - link:Base64-asmified.java[Asmified]
+
+== References
+

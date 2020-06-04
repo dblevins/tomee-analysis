@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Stack.class
+
+ - link:Stack-asmified.java[Asmified]
+
+== References
+

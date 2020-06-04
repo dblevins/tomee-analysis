@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/PrimitiveArrayListerByte.class
+
+ - link:PrimitiveArrayListerByte-asmified.java[Asmified]
+
+== References
+

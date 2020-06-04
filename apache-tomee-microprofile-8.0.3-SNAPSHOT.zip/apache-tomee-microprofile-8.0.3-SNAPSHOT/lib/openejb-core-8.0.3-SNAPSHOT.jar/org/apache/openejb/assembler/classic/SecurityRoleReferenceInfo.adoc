@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/SecurityRoleReferenceInfo.class
+
+ - link:SecurityRoleReferenceInfo-asmified.java[Asmified]
+
+== References
+

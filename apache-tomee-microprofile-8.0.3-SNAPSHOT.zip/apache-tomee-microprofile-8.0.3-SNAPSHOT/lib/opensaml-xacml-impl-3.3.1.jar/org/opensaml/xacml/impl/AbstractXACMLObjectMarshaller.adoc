@@ -1,0 +1,6 @@
+= org/opensaml/xacml/impl/AbstractXACMLObjectMarshaller.class
+
+ - link:AbstractXACMLObjectMarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/SchemaPerMultitenantPolicy.class
+
+ - link:SchemaPerMultitenantPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= javax/json/bind/config/PropertyNamingStrategy.class
+
+ - link:PropertyNamingStrategy-asmified.java[Asmified]
+
+== References
+

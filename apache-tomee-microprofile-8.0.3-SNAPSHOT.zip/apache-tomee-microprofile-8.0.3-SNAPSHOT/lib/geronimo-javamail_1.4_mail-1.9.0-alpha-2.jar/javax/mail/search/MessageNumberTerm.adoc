@@ -1,0 +1,9 @@
+= javax/mail/search/MessageNumberTerm.class
+
+ - link:MessageNumberTerm-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.search.IntegerComparisonTerm - 3
+ - javax.mail.Message - 2
+ - javax.mail.search.MessageNumberTerm - 2

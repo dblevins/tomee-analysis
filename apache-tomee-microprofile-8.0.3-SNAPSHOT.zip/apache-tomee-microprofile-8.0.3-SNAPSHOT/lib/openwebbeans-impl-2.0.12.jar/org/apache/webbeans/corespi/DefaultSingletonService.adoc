@@ -1,0 +1,6 @@
+= org/apache/webbeans/corespi/DefaultSingletonService.class
+
+ - link:DefaultSingletonService-asmified.java[Asmified]
+
+== References
+

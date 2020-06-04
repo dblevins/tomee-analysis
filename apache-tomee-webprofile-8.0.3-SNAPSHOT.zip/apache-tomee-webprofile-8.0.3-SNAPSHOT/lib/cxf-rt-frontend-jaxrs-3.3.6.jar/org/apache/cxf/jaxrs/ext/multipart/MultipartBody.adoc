@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/ext/multipart/MultipartBody.class
+
+ - link:MultipartBody-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 16

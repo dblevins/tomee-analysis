@@ -1,0 +1,8 @@
+= org/apache/openjpa/persistence/meta/AnnotationProcessor6.class
+
+ - link:AnnotationProcessor6-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Generated - 1
+ - javax.persistence.metamodel.StaticMetamodel - 1

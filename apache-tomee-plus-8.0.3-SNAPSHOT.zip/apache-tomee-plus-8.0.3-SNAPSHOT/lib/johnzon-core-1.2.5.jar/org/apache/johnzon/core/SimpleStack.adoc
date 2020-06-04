@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/SimpleStack.class
+
+ - link:SimpleStack-asmified.java[Asmified]
+
+== References
+

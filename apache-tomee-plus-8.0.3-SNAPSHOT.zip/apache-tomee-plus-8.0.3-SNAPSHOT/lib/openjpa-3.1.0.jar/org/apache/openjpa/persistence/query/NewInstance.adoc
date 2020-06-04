@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/NewInstance.class
+
+ - link:NewInstance-asmified.java[Asmified]
+
+== References
+

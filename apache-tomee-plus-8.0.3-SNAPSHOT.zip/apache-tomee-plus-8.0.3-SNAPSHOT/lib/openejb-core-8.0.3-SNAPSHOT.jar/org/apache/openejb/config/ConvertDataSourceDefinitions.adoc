@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ConvertDataSourceDefinitions.class
+
+ - link:ConvertDataSourceDefinitions-asmified.java[Asmified]
+
+== References
+

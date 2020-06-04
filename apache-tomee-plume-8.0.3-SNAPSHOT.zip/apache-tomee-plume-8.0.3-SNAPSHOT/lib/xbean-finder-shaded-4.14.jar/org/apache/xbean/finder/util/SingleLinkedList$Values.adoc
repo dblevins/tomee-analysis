@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/util/SingleLinkedList$Values.class
+
+ - link:SingleLinkedList$Values-asmified.java[Asmified]
+
+== References
+

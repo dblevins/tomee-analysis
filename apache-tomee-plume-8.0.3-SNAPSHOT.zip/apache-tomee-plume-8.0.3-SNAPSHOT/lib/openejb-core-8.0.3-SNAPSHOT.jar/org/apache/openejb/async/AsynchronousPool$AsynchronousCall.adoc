@@ -1,0 +1,6 @@
+= org/apache/openejb/async/AsynchronousPool$AsynchronousCall.class
+
+ - link:AsynchronousPool$AsynchronousCall-asmified.java[Asmified]
+
+== References
+

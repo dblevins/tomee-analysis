@@ -1,0 +1,8 @@
+= org/apache/myfaces/spi/impl/NoInjectionAnnotationInjectionProvider.class
+
+ - link:NoInjectionAnnotationInjectionProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.PreDestroy - 1
+ - javax.annotation.PostConstruct - 1

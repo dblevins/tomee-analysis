@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/ConfigFilesXmlValidationUtils$LSInputImpl.class
+
+ - link:ConfigFilesXmlValidationUtils$LSInputImpl-asmified.java[Asmified]
+
+== References
+

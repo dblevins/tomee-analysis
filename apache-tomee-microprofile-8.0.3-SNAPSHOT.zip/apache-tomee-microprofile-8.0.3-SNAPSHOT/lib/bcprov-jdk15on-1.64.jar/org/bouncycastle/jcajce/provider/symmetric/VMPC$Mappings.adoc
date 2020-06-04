@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/symmetric/VMPC$Mappings.class
+
+ - link:VMPC$Mappings-asmified.java[Asmified]
+
+== References
+

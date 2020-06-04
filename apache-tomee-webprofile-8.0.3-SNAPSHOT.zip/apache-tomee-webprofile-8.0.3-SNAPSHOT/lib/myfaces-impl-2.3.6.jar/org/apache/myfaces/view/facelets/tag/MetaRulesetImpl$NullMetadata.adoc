@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/tag/MetaRulesetImpl$NullMetadata.class
+
+ - link:MetaRulesetImpl$NullMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.FaceletContext - 1

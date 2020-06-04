@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/executor/JNDIThreadPoolService.class
+
+ - link:JNDIThreadPoolService-asmified.java[Asmified]
+
+== References
+

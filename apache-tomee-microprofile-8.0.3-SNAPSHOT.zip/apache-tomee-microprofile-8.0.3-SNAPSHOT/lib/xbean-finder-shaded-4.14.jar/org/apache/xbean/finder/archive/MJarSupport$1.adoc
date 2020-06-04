@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/archive/MJarSupport$1.class
+
+ - link:MJarSupport$1-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= commonj/sdo/impl/ExternalizableDelegator$Resolvable.class
+
+ - link:ExternalizableDelegator$Resolvable-asmified.java[Asmified]
+
+== References
+

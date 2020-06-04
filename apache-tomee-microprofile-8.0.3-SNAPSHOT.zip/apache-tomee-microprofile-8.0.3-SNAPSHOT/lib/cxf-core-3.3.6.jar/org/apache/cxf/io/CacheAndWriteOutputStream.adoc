@@ -1,0 +1,6 @@
+= org/apache/cxf/io/CacheAndWriteOutputStream.class
+
+ - link:CacheAndWriteOutputStream-asmified.java[Asmified]
+
+== References
+

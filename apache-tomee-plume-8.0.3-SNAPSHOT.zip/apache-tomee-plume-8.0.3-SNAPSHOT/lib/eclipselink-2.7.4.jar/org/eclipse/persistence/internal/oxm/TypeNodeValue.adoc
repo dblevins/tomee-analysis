@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/TypeNodeValue.class
+
+ - link:TypeNodeValue-asmified.java[Asmified]
+
+== References
+

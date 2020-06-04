@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/model/ComplexContent.class
+
+ - link:ComplexContent-asmified.java[Asmified]
+
+== References
+

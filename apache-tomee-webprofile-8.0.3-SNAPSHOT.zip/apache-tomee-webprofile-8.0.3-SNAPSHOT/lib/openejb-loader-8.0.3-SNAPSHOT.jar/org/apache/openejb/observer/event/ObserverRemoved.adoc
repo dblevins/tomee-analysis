@@ -1,0 +1,6 @@
+= org/apache/openejb/observer/event/ObserverRemoved.class
+
+ - link:ObserverRemoved-asmified.java[Asmified]
+
+== References
+

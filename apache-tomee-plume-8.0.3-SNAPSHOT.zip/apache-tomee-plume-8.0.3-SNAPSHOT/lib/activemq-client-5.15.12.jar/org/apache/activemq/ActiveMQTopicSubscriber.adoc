@@ -1,0 +1,10 @@
+= org/apache/activemq/ActiveMQTopicSubscriber.class
+
+ - link:ActiveMQTopicSubscriber-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 3
+ - javax.jms.Topic - 2
+ - javax.jms.MessageListener - 1
+ - javax.jms.TopicSubscriber - 1

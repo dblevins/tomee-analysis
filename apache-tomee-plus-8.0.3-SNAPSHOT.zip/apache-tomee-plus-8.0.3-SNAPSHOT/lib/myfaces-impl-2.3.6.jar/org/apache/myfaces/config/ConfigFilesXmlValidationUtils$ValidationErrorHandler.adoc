@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/ConfigFilesXmlValidationUtils$ValidationErrorHandler.class
+
+ - link:ConfigFilesXmlValidationUtils$ValidationErrorHandler-asmified.java[Asmified]
+
+== References
+

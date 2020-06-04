@@ -1,0 +1,9 @@
+= org/apache/activemq/broker/region/Queue.class
+
+ - link:Queue-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 5
+ - javax.jms.ResourceAllocationException - 3
+ - javax.jms.InvalidSelectorException - 1

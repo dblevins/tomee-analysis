@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/NonePredicate.class
+
+ - link:NonePredicate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/FetchDirection.class
+
+ - link:FetchDirection-asmified.java[Asmified]
+
+== References
+

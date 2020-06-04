@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/format/DataFormatMatcher.class
+
+ - link:DataFormatMatcher-asmified.java[Asmified]
+
+== References
+

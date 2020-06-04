@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/Notation.class
+
+ - link:Notation-asmified.java[Asmified]
+
+== References
+

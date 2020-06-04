@@ -1,0 +1,7 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore$SemaphoreSynchronization.class
+
+ - link:JTANonClusteredSemaphore$SemaphoreSynchronization-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Synchronization - 1

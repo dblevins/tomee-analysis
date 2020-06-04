@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/XMLSecurityStreamWriter$NSContext.class
+
+ - link:XMLSecurityStreamWriter$NSContext-asmified.java[Asmified]
+
+== References
+

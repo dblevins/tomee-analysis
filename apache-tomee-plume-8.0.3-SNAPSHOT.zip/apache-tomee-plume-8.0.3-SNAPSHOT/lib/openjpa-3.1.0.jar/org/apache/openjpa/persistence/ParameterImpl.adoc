@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/ParameterImpl.class
+
+ - link:ParameterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Parameter - 6

@@ -1,0 +1,6 @@
+= org/apache/catalina/filters/FailedRequestFilter$1.class
+
+ - link:FailedRequestFilter$1-asmified.java[Asmified]
+
+== References
+

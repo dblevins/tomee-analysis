@@ -1,0 +1,7 @@
+= org/apache/webbeans/container/BeanCacheKey.class
+
+ - link:BeanCacheKey-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 18

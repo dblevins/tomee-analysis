@@ -1,0 +1,35 @@
+= org/apache/openjpa/persistence/criteria/CriteriaBuilderImpl.class
+
+ - link:CriteriaBuilderImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 401
+ - javax.persistence.criteria.Predicate - 102
+ - javax.persistence.criteria.From - 12
+ - javax.persistence.metamodel.Attribute - 8
+ - javax.persistence.criteria.Subquery - 8
+ - javax.persistence.criteria.Selection - 6
+ - javax.persistence.metamodel.ManagedType - 6
+ - javax.persistence.criteria.CriteriaBuilder$Trimspec - 6
+ - javax.persistence.criteria.Root - 4
+ - javax.persistence.criteria.Path - 3
+ - javax.persistence.Tuple - 3
+ - javax.persistence.criteria.CompoundSelection - 3
+ - javax.persistence.criteria.CriteriaQuery - 3
+ - javax.persistence.criteria.Join - 2
+ - javax.persistence.criteria.CollectionJoin - 2
+ - javax.persistence.criteria.SetJoin - 2
+ - javax.persistence.criteria.Predicate$BooleanOperator - 2
+ - javax.persistence.criteria.MapJoin - 2
+ - javax.persistence.criteria.ParameterExpression - 2
+ - javax.persistence.criteria.ListJoin - 2
+ - javax.persistence.criteria.Order - 2
+ - javax.persistence.criteria.CriteriaBuilder$In - 1
+ - javax.persistence.criteria.CriteriaBuilder$Coalesce - 1
+ - javax.persistence.criteria.CriteriaBuilder$Case - 1
+ - javax.persistence.criteria.CriteriaUpdate - 1
+ - javax.persistence.criteria.CriteriaBuilder - 1
+ - javax.persistence.criteria.CriteriaDelete - 1
+ - javax.persistence.metamodel.Metamodel - 1
+ - javax.persistence.criteria.CriteriaBuilder$SimpleCase - 1

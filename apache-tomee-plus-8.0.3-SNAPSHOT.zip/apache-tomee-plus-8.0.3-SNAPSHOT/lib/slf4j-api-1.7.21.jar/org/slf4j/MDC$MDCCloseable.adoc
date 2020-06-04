@@ -1,0 +1,6 @@
+= org/slf4j/MDC$MDCCloseable.class
+
+ - link:MDC$MDCCloseable-asmified.java[Asmified]
+
+== References
+

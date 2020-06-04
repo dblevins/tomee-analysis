@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/util/HashSetOfInt.class
+
+ - link:HashSetOfInt-asmified.java[Asmified]
+
+== References
+

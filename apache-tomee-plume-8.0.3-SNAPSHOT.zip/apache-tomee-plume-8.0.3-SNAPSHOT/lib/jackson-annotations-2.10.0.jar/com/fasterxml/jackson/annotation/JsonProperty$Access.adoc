@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonProperty$Access.class
+
+ - link:JsonProperty$Access-asmified.java[Asmified]
+
+== References
+

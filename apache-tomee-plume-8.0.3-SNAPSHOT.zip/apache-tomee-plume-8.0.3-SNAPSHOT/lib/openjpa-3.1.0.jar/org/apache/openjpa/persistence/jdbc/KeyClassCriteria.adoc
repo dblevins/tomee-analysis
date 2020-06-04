@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/KeyClassCriteria.class
+
+ - link:KeyClassCriteria-asmified.java[Asmified]
+
+== References
+

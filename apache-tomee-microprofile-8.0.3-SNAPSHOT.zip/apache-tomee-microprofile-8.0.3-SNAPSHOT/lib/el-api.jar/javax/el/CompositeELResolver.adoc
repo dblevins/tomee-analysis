@@ -1,0 +1,9 @@
+= javax/el/CompositeELResolver.class
+
+ - link:CompositeELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 30
+ - javax.el.ELContext - 29
+ - javax.el.CompositeELResolver$FeatureIterator - 2

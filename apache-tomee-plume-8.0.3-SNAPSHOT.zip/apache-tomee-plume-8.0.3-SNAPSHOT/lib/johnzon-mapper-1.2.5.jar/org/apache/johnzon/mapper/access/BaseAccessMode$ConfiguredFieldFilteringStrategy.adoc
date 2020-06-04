@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/BaseAccessMode$ConfiguredFieldFilteringStrategy.class
+
+ - link:BaseAccessMode$ConfiguredFieldFilteringStrategy-asmified.java[Asmified]
+
+== References
+

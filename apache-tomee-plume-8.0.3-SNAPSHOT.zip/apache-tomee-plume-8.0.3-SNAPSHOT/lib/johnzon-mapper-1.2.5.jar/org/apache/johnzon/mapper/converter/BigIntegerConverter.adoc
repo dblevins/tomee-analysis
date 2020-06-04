@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/BigIntegerConverter.class
+
+ - link:BigIntegerConverter-asmified.java[Asmified]
+
+== References
+

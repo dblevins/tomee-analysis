@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/XEmbeddedMapping.class
+
+ - link:XEmbeddedMapping-asmified.java[Asmified]
+
+== References
+

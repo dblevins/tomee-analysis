@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/DetachOptions$All.class
+
+ - link:DetachOptions$All-asmified.java[Asmified]
+
+== References
+

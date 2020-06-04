@@ -1,0 +1,8 @@
+= org/apache/webbeans/spi/ContextsService.class
+
+ - link:ContextsService-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Context - 2
+ - javax.enterprise.context.ContextException - 1

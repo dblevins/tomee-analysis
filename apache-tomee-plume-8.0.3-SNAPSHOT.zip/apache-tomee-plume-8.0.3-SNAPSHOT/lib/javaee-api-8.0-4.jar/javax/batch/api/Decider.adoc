@@ -1,0 +1,7 @@
+= javax/batch/api/Decider.class
+
+ - link:Decider-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.runtime.StepExecution - 1

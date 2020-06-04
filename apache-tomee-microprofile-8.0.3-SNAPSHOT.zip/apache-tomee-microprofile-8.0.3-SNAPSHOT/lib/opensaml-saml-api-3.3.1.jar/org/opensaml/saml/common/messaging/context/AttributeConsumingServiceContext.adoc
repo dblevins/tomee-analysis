@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/messaging/context/AttributeConsumingServiceContext.class
+
+ - link:AttributeConsumingServiceContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 3
+ - javax.annotation.Nonnull - 1

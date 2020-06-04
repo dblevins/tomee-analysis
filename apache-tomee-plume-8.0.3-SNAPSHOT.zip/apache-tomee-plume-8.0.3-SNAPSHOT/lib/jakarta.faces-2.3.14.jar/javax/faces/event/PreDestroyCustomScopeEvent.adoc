@@ -1,0 +1,10 @@
+= javax/faces/event/PreDestroyCustomScopeEvent.class
+
+ - link:PreDestroyCustomScopeEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.event.ScopeContext - 4
+ - javax.faces.event.SystemEvent - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.event.PreDestroyCustomScopeEvent - 1

@@ -1,0 +1,7 @@
+= org/apache/catalina/ha/ClusterSession.class
+
+ - link:ClusterSession-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 1

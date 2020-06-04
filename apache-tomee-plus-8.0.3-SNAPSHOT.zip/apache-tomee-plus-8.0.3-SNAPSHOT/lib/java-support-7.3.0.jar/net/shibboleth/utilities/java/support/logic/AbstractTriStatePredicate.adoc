@@ -1,0 +1,6 @@
+= net/shibboleth/utilities/java/support/logic/AbstractTriStatePredicate.class
+
+ - link:AbstractTriStatePredicate-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/myfaces/el/unified/resolver/implicitobject/ViewScopeImplicitObject.class
+
+ - link:ViewScopeImplicitObject-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ELContext - 2

@@ -1,0 +1,7 @@
+= javax/faces/event/WebsocketEvent$Closed.class
+
+ - link:WebsocketEvent$Closed-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Qualifier - 1

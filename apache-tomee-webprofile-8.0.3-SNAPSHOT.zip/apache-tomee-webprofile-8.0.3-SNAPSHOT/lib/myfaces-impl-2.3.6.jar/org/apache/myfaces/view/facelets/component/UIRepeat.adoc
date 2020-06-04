@@ -1,0 +1,34 @@
+= org/apache/myfaces/view/facelets/component/UIRepeat.class
+
+ - link:UIRepeat-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 134
+ - javax.faces.component.UIComponent - 130
+ - javax.faces.component.StateHelper - 32
+ - javax.faces.FacesException - 30
+ - javax.faces.model.DataModel - 28
+ - javax.faces.event.PhaseId - 21
+ - javax.faces.component.visit.VisitContext - 18
+ - javax.faces.component.UIComponentBase - 18
+ - javax.faces.component.EditableValueHolder - 16
+ - javax.faces.context.ExternalContext - 16
+ - javax.faces.component.ContextCallback - 14
+ - javax.faces.event.FacesEvent - 14
+ - javax.faces.component.visit.VisitCallback - 7
+ - javax.faces.render.Renderer - 7
+ - javax.faces.component.visit.VisitResult - 5
+ - javax.faces.component.UIViewRoot - 5
+ - javax.faces.model.ListDataModel - 4
+ - javax.faces.model.IterableDataModel - 4
+ - javax.faces.application.FacesMessage$Severity - 3
+ - javax.faces.application.FacesMessage - 2
+ - javax.faces.model.ScalarDataModel - 2
+ - javax.faces.model.CollectionDataModel - 2
+ - javax.el.ValueExpression - 2
+ - javax.faces.model.ResultSetDataModel - 2
+ - javax.faces.model.ArrayDataModel - 2
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.component.NamingContainer - 1
+ - javax.faces.event.AbortProcessingException - 1

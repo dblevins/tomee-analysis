@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/JAXBUnmarshaller$PrimitiveArrayContentHandler.class
+
+ - link:JAXBUnmarshaller$PrimitiveArrayContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 7

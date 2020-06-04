@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/SubjectConfirmationImpl.class
+
+ - link:SubjectConfirmationImpl-asmified.java[Asmified]
+
+== References
+

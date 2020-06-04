@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/ObligationTypeMarshaller.class
+
+ - link:ObligationTypeMarshaller-asmified.java[Asmified]
+
+== References
+

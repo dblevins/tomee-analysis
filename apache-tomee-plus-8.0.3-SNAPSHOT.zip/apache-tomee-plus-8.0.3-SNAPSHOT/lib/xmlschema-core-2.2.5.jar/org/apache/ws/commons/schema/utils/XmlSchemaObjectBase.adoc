@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/XmlSchemaObjectBase.class
+
+ - link:XmlSchemaObjectBase-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/ValidateTarget.class
+
+ - link:ValidateTarget-asmified.java[Asmified]
+
+== References
+

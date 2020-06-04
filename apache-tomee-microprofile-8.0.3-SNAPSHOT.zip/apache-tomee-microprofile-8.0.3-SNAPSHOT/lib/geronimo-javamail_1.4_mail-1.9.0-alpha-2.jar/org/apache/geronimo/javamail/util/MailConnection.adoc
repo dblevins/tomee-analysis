@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/util/MailConnection.class
+
+ - link:MailConnection-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.MessagingException - 13
+ - javax.mail.Session - 9

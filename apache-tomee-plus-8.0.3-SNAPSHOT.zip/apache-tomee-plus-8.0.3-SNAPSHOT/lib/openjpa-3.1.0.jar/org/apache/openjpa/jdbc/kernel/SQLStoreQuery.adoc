@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/SQLStoreQuery.class
+
+ - link:SQLStoreQuery-asmified.java[Asmified]
+
+== References
+

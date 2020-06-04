@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/CacheId.class
+
+ - link:CacheId-asmified.java[Asmified]
+
+== References
+

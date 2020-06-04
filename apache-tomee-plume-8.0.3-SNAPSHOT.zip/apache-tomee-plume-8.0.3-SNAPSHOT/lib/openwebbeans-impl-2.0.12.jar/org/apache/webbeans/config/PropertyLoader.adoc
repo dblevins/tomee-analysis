@@ -1,0 +1,6 @@
+= org/apache/webbeans/config/PropertyLoader.class
+
+ - link:PropertyLoader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/cryptacular/adapter/AbstractWrappedKey.class
+
+ - link:AbstractWrappedKey-asmified.java[Asmified]
+
+== References
+

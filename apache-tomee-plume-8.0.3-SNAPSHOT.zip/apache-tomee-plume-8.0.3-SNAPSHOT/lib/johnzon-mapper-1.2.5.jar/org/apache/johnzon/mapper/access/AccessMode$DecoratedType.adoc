@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/access/AccessMode$DecoratedType.class
+
+ - link:AccessMode$DecoratedType-asmified.java[Asmified]
+
+== References
+

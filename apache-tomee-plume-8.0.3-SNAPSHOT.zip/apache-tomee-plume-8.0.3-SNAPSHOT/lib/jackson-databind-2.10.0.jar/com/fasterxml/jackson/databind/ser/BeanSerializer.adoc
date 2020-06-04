@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/BeanSerializer.class
+
+ - link:BeanSerializer-asmified.java[Asmified]
+
+== References
+

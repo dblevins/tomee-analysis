@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/ComplexTypeHost.class
+
+ - link:ComplexTypeHost-asmified.java[Asmified]
+
+== References
+

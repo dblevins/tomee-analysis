@@ -1,0 +1,8 @@
+= org/apache/webbeans/corespi/scanner/AbstractMetaDataDiscovery.class
+
+ - link:AbstractMetaDataDiscovery-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.Interceptor - 1
+ - javax.decorator.Decorator - 1

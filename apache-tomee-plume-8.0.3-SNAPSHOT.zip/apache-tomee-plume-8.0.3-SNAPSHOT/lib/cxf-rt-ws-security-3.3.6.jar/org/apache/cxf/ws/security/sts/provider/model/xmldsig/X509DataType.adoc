@@ -1,0 +1,13 @@
+= org/apache/cxf/ws/security/sts/provider/model/xmldsig/X509DataType.class
+
+ - link:X509DataType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 5
+ - javax.xml.bind.annotation.XmlElementRef - 5
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlElementRefs - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

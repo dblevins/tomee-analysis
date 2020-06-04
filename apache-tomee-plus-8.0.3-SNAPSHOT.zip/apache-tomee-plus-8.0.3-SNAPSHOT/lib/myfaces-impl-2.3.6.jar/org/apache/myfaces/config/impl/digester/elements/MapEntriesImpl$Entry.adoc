@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/impl/digester/elements/MapEntriesImpl$Entry.class
+
+ - link:MapEntriesImpl$Entry-asmified.java[Asmified]
+
+== References
+

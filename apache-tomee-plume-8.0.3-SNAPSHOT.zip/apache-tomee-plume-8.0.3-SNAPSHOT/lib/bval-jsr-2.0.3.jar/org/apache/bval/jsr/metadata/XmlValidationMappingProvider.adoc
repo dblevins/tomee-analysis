@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/XmlValidationMappingProvider.class
+
+ - link:XmlValidationMappingProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidator - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/TypeExpressionFactory.class
+
+ - link:TypeExpressionFactory-asmified.java[Asmified]
+
+== References
+

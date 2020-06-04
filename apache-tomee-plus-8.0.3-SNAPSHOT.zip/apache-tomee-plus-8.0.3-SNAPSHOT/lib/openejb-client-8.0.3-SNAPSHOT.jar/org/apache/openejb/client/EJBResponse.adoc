@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EJBResponse.class
+
+ - link:EJBResponse-asmified.java[Asmified]
+
+== References
+

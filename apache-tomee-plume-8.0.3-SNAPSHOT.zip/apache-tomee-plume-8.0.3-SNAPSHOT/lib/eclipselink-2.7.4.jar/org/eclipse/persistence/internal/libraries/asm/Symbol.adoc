@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/Symbol.class
+
+ - link:Symbol-asmified.java[Asmified]
+
+== References
+

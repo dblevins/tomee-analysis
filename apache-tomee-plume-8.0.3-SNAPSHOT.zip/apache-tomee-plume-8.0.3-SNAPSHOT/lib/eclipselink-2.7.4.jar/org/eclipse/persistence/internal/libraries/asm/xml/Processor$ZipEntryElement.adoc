@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/libraries/asm/xml/Processor$ZipEntryElement.class
+
+ - link:Processor$ZipEntryElement-asmified.java[Asmified]
+
+== References
+

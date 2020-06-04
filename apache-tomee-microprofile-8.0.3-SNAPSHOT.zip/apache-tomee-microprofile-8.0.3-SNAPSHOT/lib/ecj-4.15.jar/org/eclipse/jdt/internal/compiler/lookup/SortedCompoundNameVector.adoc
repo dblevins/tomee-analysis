@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/SortedCompoundNameVector.class
+
+ - link:SortedCompoundNameVector-asmified.java[Asmified]
+
+== References
+

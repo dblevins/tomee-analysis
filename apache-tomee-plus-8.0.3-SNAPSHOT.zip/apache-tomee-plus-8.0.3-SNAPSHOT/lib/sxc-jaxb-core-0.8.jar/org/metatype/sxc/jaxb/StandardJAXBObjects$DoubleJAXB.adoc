@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$DoubleJAXB.class
+
+ - link:StandardJAXBObjects$DoubleJAXB-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/conf/DoubleValue.class
+
+ - link:DoubleValue-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/dbws/DBWSModelProject.class
+
+ - link:DBWSModelProject-asmified.java[Asmified]
+
+== References
+

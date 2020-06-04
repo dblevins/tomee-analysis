@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/validation/ValidationUtils.class
+
+ - link:ValidationUtils-asmified.java[Asmified]
+
+== References
+

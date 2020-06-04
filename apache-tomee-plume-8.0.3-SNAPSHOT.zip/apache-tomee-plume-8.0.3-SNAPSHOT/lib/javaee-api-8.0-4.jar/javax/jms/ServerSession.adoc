@@ -1,0 +1,8 @@
+= javax/jms/ServerSession.class
+
+ - link:ServerSession-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.Session - 1

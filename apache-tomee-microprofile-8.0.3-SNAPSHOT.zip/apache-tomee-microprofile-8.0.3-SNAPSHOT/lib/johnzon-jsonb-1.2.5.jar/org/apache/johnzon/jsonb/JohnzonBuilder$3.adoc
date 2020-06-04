@@ -1,0 +1,8 @@
+= org/apache/johnzon/jsonb/JohnzonBuilder$3.class
+
+ - link:JohnzonBuilder$3-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonBuilderFactory - 4
+ - javax.json.spi.JsonProvider - 2

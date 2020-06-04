@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/trust/delegation/WSSUsernameCallbackHandler.class
+
+ - link:WSSUsernameCallbackHandler-asmified.java[Asmified]
+
+== References
+

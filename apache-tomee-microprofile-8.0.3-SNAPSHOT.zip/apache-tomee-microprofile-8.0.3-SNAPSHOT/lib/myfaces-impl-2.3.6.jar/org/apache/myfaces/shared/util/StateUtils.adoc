@@ -1,0 +1,10 @@
+= org/apache/myfaces/shared/util/StateUtils.class
+
+ - link:StateUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 84
+ - javax.servlet.ServletContext - 23
+ - javax.faces.FacesException - 20
+ - javax.faces.application.ViewExpiredException - 2

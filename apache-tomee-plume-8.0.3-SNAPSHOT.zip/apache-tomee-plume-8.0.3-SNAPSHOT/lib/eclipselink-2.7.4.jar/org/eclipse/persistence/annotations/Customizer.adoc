@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/Customizer.class
+
+ - link:Customizer-asmified.java[Asmified]
+
+== References
+

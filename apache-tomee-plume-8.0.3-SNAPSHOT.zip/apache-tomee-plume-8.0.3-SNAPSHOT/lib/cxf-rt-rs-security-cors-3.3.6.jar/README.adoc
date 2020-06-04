@@ -1,0 +1,4 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/cxf-rt-rs-security-cors-3.3.6.jar
+
+ - link:org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.adoc[org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.class] - 58
+ - link:org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter$CorsInInterceptor.adoc[org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter$CorsInInterceptor.class] - 1

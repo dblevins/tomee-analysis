@@ -1,0 +1,8 @@
+= org/apache/openejb/persistence/JtaEntityManagerRegistry$CloseEntityManager.class
+
+ - link:JtaEntityManagerRegistry$CloseEntityManager-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManager - 6
+ - javax.transaction.Synchronization - 1

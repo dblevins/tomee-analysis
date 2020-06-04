@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/PCSubclassValidator.class
+
+ - link:PCSubclassValidator-asmified.java[Asmified]
+
+== References
+

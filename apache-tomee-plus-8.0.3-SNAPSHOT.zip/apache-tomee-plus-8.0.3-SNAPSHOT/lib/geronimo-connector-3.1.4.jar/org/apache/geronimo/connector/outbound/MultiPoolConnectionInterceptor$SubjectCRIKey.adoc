@@ -1,0 +1,7 @@
+= org/apache/geronimo/connector/outbound/MultiPoolConnectionInterceptor$SubjectCRIKey.class
+
+ - link:MultiPoolConnectionInterceptor$SubjectCRIKey-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ConnectionRequestInfo - 13

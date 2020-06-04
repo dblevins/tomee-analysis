@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/util/InternCache.class
+
+ - link:InternCache-asmified.java[Asmified]
+
+== References
+

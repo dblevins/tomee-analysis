@@ -1,0 +1,10 @@
+= javax/ws/rs/sse/Sse.class
+
+ - link:Sse-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.sse.OutboundSseEvent$Builder - 11
+ - javax.ws.rs.sse.OutboundSseEvent - 4
+ - javax.ws.rs.sse.Sse - 2
+ - javax.ws.rs.sse.SseBroadcaster - 1

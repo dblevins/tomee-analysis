@@ -1,0 +1,8 @@
+= com/sun/faces/facelets/tag/composite/PropertyHandler.class
+
+ - link:PropertyHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 1
+ - javax.faces.view.facelets.FaceletContext - 1

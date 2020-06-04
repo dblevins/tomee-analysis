@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2WriterImpl.class
+
+ - link:Stax2WriterImpl-asmified.java[Asmified]
+
+== References
+

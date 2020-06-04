@@ -1,0 +1,7 @@
+= org/eclipse/microprofile/jwt/ClaimLiteral.class
+
+ - link:ClaimLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 4

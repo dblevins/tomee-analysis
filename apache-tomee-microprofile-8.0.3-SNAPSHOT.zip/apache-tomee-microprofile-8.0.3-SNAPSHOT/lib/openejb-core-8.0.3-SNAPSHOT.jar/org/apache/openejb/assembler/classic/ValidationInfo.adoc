@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ValidationInfo.class
+
+ - link:ValidationInfo-asmified.java[Asmified]
+
+== References
+

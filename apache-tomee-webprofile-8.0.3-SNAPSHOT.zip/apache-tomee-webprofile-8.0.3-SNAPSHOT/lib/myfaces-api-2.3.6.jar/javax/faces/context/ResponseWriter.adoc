@@ -1,0 +1,8 @@
+= javax/faces/context/ResponseWriter.class
+
+ - link:ResponseWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 6
+ - javax.faces.component.UIComponent - 2

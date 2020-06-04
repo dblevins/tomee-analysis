@@ -1,0 +1,7 @@
+= org/apache/tomcat/util/descriptor/DigesterFactory.class
+
+ - link:DigesterFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 2

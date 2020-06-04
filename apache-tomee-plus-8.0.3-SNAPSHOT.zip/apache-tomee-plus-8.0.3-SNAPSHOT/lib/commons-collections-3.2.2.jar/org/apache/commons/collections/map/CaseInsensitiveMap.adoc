@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/CaseInsensitiveMap.class
+
+ - link:CaseInsensitiveMap-asmified.java[Asmified]
+
+== References
+

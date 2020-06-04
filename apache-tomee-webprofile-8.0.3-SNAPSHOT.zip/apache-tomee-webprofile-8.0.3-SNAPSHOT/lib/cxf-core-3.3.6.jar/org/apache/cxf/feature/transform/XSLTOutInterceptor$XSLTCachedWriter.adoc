@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/transform/XSLTOutInterceptor$XSLTCachedWriter.class
+
+ - link:XSLTOutInterceptor$XSLTCachedWriter-asmified.java[Asmified]
+
+== References
+

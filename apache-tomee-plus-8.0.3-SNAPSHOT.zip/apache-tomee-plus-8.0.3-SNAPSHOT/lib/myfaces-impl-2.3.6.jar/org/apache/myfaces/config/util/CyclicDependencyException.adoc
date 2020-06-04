@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/util/CyclicDependencyException.class
+
+ - link:CyclicDependencyException-asmified.java[Asmified]
+
+== References
+

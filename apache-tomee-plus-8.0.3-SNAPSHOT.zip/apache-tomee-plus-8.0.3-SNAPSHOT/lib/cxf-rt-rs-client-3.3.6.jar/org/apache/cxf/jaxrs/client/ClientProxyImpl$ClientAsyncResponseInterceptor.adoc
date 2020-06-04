@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/client/ClientProxyImpl$ClientAsyncResponseInterceptor.class
+
+ - link:ClientProxyImpl$ClientAsyncResponseInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Response - 4

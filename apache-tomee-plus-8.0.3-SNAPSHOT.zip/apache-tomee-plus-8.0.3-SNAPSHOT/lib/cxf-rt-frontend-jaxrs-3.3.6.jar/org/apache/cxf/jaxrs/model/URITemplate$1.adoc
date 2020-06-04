@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/URITemplate$1.class
+
+ - link:URITemplate$1-asmified.java[Asmified]
+
+== References
+

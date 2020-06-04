@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/SybaseDictionary$SybaseConnection.class
+
+ - link:SybaseDictionary$SybaseConnection-asmified.java[Asmified]
+
+== References
+

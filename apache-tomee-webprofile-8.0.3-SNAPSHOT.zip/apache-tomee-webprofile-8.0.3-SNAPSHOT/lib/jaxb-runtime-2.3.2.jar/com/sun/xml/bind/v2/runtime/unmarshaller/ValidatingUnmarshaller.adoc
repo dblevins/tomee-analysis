@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/ValidatingUnmarshaller.class
+
+ - link:ValidatingUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/jasper/compiler/TagFileProcessor.class
+
+ - link:TagFileProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagInfo - 23
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 5
+ - javax.servlet.ServletContext - 4

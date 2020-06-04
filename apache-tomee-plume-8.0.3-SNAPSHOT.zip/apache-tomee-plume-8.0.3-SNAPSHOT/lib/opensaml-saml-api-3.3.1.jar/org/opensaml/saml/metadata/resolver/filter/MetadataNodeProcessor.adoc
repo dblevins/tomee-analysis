@@ -1,0 +1,6 @@
+= org/opensaml/saml/metadata/resolver/filter/MetadataNodeProcessor.class
+
+ - link:MetadataNodeProcessor-asmified.java[Asmified]
+
+== References
+

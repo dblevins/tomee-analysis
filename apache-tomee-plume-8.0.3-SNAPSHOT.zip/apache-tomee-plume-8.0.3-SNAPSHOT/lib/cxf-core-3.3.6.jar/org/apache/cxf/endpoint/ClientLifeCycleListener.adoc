@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/ClientLifeCycleListener.class
+
+ - link:ClientLifeCycleListener-asmified.java[Asmified]
+
+== References
+

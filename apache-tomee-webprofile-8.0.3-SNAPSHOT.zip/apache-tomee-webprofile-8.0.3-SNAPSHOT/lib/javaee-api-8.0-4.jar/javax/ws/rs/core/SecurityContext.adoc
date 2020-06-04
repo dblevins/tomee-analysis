@@ -1,0 +1,6 @@
+= javax/ws/rs/core/SecurityContext.class
+
+ - link:SecurityContext-asmified.java[Asmified]
+
+== References
+

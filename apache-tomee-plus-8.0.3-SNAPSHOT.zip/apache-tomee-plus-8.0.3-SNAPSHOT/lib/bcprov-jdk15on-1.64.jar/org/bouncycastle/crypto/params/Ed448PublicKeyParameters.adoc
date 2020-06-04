@@ -1,0 +1,6 @@
+= org/bouncycastle/crypto/params/Ed448PublicKeyParameters.class
+
+ - link:Ed448PublicKeyParameters-asmified.java[Asmified]
+
+== References
+

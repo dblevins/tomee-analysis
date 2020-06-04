@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/DecisionType.class
+
+ - link:DecisionType-asmified.java[Asmified]
+
+== References
+

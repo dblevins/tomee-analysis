@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/algorithm/AlgorithmRegistry.class
+
+ - link:AlgorithmRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6
+ - javax.annotation.Nullable - 5

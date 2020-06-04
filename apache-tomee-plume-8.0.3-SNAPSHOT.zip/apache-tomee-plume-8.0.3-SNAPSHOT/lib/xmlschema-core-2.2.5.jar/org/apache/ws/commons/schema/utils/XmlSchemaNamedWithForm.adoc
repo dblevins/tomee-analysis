@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/XmlSchemaNamedWithForm.class
+
+ - link:XmlSchemaNamedWithForm-asmified.java[Asmified]
+
+== References
+

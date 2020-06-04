@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/AttributeNode.class
+
+ - link:AttributeNode-asmified.java[Asmified]
+
+== References
+

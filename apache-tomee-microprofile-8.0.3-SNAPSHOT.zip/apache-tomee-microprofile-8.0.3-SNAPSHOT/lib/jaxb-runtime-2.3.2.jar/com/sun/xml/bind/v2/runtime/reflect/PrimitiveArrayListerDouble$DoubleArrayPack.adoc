@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/PrimitiveArrayListerDouble$DoubleArrayPack.class
+
+ - link:PrimitiveArrayListerDouble$DoubleArrayPack-asmified.java[Asmified]
+
+== References
+

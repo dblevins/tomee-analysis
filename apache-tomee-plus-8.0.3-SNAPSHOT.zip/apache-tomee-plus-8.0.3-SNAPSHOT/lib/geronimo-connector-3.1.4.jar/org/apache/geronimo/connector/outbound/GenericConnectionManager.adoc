@@ -1,0 +1,8 @@
+= org/apache/geronimo/connector/outbound/GenericConnectionManager.class
+
+ - link:GenericConnectionManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ManagedConnectionFactory - 3
+ - javax.transaction.TransactionManager - 1

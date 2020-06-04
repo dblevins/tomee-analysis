@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Computable.class
+
+ - link:Computable-asmified.java[Asmified]
+
+== References
+

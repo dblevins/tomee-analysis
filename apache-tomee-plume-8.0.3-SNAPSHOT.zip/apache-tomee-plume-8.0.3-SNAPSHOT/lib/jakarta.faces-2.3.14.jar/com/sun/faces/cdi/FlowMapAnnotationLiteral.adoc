@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/FlowMapAnnotationLiteral.class
+
+ - link:FlowMapAnnotationLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.annotation.FlowMap - 2
+ - javax.enterprise.util.AnnotationLiteral - 2

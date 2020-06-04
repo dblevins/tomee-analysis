@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/DelegatingCallbackHandler.class
+
+ - link:DelegatingCallbackHandler-asmified.java[Asmified]
+
+== References
+

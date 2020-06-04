@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/ChainingMetadataResolver.class
+
+ - link:ChainingMetadataResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 8
+ - javax.annotation.Nonnull - 6

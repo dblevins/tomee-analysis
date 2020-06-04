@@ -1,0 +1,8 @@
+= javax/mail/BodyPart.class
+
+ - link:BodyPart-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Multipart - 5
+ - javax.mail.Part - 1

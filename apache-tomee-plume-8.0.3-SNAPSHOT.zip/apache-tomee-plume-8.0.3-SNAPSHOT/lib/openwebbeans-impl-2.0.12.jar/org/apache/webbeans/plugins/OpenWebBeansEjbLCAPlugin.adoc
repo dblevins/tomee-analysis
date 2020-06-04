@@ -1,0 +1,6 @@
+= org/apache/webbeans/plugins/OpenWebBeansEjbLCAPlugin.class
+
+ - link:OpenWebBeansEjbLCAPlugin-asmified.java[Asmified]
+
+== References
+

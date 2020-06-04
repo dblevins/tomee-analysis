@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/keyresolver/implementations/KeyInfoReferenceResolver.class
+
+ - link:KeyInfoReferenceResolver-asmified.java[Asmified]
+
+== References
+

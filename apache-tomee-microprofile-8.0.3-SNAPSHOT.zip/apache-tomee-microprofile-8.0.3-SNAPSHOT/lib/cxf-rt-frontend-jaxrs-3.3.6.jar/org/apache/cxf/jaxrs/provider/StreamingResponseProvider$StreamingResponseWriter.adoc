@@ -1,0 +1,11 @@
+= org/apache/cxf/jaxrs/provider/StreamingResponseProvider$StreamingResponseWriter.class
+
+ - link:StreamingResponseProvider$StreamingResponseWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 7
+ - javax.ws.rs.ext.MessageBodyWriter - 7
+ - javax.ws.rs.core.MultivaluedMap - 5
+ - javax.ws.rs.ext.Providers - 2
+ - javax.ws.rs.InternalServerErrorException - 2

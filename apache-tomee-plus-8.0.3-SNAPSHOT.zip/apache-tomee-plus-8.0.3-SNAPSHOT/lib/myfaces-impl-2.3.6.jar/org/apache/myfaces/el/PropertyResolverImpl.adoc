@@ -1,0 +1,16 @@
+= org/apache/myfaces/el/PropertyResolverImpl.class
+
+ - link:PropertyResolverImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.PropertyNotFoundException - 25
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.el.EvaluationException - 7
+ - javax.faces.application.Application - 4
+ - javax.el.ELContext - 4
+ - javax.el.ELResolver - 4
+ - javax.el.ELException - 3
+ - javax.el.PropertyNotFoundException - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.el.PropertyResolver - 2

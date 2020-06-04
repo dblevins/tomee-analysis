@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/ChainInitiationObserver.class
+
+ - link:ChainInitiationObserver-asmified.java[Asmified]
+
+== References
+

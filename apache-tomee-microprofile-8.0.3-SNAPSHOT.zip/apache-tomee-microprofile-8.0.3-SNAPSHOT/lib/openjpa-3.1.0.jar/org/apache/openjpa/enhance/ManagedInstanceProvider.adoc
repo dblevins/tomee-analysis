@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/ManagedInstanceProvider.class
+
+ - link:ManagedInstanceProvider-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/signature/Manifest.class
+
+ - link:Manifest-asmified.java[Asmified]
+
+== References
+

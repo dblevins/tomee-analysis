@@ -1,0 +1,6 @@
+= org/apache/batchee/container/exception/PersistenceException.class
+
+ - link:PersistenceException-asmified.java[Asmified]
+
+== References
+

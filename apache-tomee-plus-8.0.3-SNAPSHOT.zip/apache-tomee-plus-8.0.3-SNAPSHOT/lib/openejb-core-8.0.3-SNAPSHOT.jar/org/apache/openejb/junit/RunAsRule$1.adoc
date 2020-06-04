@@ -1,0 +1,7 @@
+= org/apache/openejb/junit/RunAsRule$1.class
+
+ - link:RunAsRule$1-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.security.RunAs - 5

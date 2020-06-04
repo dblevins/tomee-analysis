@@ -1,0 +1,6 @@
+= org/apache/catalina/ssi/SSIExternalResolver.class
+
+ - link:SSIExternalResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= javax/validation/constraints/Pattern$Flag.class
+
+ - link:Pattern$Flag-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.constraints.Pattern$Flag - 46

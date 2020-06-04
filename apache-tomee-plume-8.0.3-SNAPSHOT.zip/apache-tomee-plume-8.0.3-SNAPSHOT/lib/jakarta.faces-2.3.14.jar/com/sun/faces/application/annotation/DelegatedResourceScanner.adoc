@@ -1,0 +1,6 @@
+= com/sun/faces/application/annotation/DelegatedResourceScanner.class
+
+ - link:DelegatedResourceScanner-asmified.java[Asmified]
+
+== References
+

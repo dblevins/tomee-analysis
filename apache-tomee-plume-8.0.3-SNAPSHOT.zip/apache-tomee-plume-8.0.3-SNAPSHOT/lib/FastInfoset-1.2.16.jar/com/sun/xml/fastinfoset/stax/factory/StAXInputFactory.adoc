@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/factory/StAXInputFactory.class
+
+ - link:StAXInputFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/application/annotation/AnnotationManager$ProcessingTarget.class
+
+ - link:AnnotationManager$ProcessingTarget-asmified.java[Asmified]
+
+== References
+

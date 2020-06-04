@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/QuartzSchedulerResources.class
+
+ - link:QuartzSchedulerResources-asmified.java[Asmified]
+
+== References
+

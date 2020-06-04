@@ -1,0 +1,10 @@
+= javax/persistence/metamodel/IdentifiableType.class
+
+ - link:IdentifiableType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.SingularAttribute - 5
+ - javax.persistence.metamodel.Type - 1
+ - javax.persistence.metamodel.ManagedType - 1
+ - javax.persistence.metamodel.IdentifiableType - 1

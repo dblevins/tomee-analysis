@@ -1,0 +1,28 @@
+= org/eclipse/persistence/jaxb/rs/MOXyJsonProvider.class
+
+ - link:MOXyJsonProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 59
+ - javax.xml.bind.JAXBContext - 32
+ - javax.xml.bind.Unmarshaller - 23
+ - javax.xml.bind.JAXBElement - 23
+ - javax.ws.rs.core.MultivaluedMap - 23
+ - javax.xml.bind.Marshaller - 17
+ - javax.xml.bind.JAXBException - 12
+ - javax.ws.rs.WebApplicationException - 8
+ - javax.xml.bind.UnmarshalException - 5
+ - javax.ws.rs.ext.Providers - 4
+ - javax.ws.rs.ext.ContextResolver - 3
+ - javax.ws.rs.core.Response - 3
+ - javax.ws.rs.core.Response$ResponseBuilder - 2
+ - javax.ws.rs.core.Response$Status - 2
+ - javax.activation.DataSource - 2
+ - javax.ws.rs.core.Context - 1
+ - javax.ws.rs.Produces - 1
+ - javax.ws.rs.core.StreamingOutput - 1
+ - javax.ws.rs.ext.MessageBodyWriter - 1
+ - javax.ws.rs.Consumes - 1
+ - javax.xml.bind.JAXBIntrospector - 1
+ - javax.ws.rs.ext.MessageBodyReader - 1

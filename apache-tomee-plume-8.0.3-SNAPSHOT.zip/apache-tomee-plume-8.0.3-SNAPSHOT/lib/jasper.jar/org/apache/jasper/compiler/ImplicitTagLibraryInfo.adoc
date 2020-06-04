@@ -1,0 +1,11 @@
+= org/apache/jasper/compiler/ImplicitTagLibraryInfo.class
+
+ - link:ImplicitTagLibraryInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.TagFileInfo - 10
+ - javax.servlet.jsp.tagext.TagLibraryInfo - 7
+ - javax.servlet.ServletContext - 7
+ - javax.servlet.jsp.tagext.TagInfo - 3
+ - javax.servlet.jsp.tagext.FunctionInfo - 2

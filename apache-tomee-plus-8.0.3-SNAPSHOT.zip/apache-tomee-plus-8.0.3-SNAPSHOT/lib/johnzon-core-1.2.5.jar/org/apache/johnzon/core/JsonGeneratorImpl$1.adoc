@@ -1,0 +1,7 @@
+= org/apache/johnzon/core/JsonGeneratorImpl$1.class
+
+ - link:JsonGeneratorImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonValue$ValueType - 16

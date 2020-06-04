@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/TransportManager.class
+
+ - link:TransportManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/activemq/command/Message.class
+
+ - link:Message-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 3

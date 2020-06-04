@@ -1,0 +1,7 @@
+= org/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData.class
+
+ - link:OAuthAuthorizationData-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlRootElement - 1

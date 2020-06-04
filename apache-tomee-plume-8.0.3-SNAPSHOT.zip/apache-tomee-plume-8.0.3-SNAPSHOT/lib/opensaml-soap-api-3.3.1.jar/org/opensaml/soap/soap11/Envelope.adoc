@@ -1,0 +1,7 @@
+= org/opensaml/soap/soap11/Envelope.class
+
+ - link:Envelope-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

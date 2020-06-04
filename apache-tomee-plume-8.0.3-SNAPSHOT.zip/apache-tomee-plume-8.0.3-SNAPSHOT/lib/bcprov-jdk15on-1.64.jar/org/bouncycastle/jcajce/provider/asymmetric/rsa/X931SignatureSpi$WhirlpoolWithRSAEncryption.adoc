@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/rsa/X931SignatureSpi$WhirlpoolWithRSAEncryption.class
+
+ - link:X931SignatureSpi$WhirlpoolWithRSAEncryption-asmified.java[Asmified]
+
+== References
+

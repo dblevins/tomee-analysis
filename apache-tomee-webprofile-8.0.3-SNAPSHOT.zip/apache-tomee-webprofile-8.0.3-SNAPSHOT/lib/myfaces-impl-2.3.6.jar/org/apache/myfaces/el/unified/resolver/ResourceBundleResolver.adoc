@@ -1,0 +1,14 @@
+= org/apache/myfaces/el/unified/resolver/ResourceBundleResolver.class
+
+ - link:ResourceBundleResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 20
+ - javax.el.PropertyNotFoundException - 12
+ - javax.faces.context.FacesContext - 10
+ - javax.el.ELException - 4
+ - javax.el.PropertyNotWritableException - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.Application - 2
+ - javax.el.ELResolver - 2

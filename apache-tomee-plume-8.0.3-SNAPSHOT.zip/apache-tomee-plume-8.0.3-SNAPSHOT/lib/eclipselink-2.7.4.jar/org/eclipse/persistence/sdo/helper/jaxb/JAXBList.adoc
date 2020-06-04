@@ -1,0 +1,7 @@
+= org/eclipse/persistence/sdo/helper/jaxb/JAXBList.class
+
+ - link:JAXBList-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/LinkedListStack.class
+
+ - link:LinkedListStack-asmified.java[Asmified]
+
+== References
+

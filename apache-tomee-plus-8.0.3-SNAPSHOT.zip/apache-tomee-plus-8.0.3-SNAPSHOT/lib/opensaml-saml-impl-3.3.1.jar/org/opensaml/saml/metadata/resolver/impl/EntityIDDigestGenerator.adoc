@@ -1,0 +1,8 @@
+= org/opensaml/saml/metadata/resolver/impl/EntityIDDigestGenerator.class
+
+ - link:EntityIDDigestGenerator-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 7
+ - javax.annotation.Nonnull - 1

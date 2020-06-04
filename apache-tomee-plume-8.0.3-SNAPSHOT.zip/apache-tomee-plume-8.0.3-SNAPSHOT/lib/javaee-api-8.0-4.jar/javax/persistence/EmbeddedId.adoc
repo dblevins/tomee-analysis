@@ -1,0 +1,6 @@
+= javax/persistence/EmbeddedId.class
+
+ - link:EmbeddedId-asmified.java[Asmified]
+
+== References
+

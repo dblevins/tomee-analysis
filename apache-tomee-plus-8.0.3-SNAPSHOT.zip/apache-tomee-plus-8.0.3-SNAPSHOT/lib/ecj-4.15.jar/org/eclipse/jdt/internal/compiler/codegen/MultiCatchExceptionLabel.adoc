@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/MultiCatchExceptionLabel.class
+
+ - link:MultiCatchExceptionLabel-asmified.java[Asmified]
+
+== References
+

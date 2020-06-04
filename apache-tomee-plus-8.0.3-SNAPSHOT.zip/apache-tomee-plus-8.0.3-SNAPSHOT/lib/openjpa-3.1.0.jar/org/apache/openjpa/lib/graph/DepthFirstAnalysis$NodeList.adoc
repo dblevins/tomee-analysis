@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/graph/DepthFirstAnalysis$NodeList.class
+
+ - link:DepthFirstAnalysis$NodeList-asmified.java[Asmified]
+
+== References
+

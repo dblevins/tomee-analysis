@@ -1,0 +1,6 @@
+= org/apache/cxf/databinding/source/NodeDataReader.class
+
+ - link:NodeDataReader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= org/apache/openejb/rest/ThreadLocalServletContext.class
+
+ - link:ThreadLocalServletContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletContext - 123
+ - javax.servlet.ServletRegistration$Dynamic - 8
+ - javax.servlet.Servlet - 8
+ - javax.servlet.FilterRegistration$Dynamic - 6
+ - javax.servlet.Filter - 5
+ - javax.servlet.ServletException - 4
+ - javax.servlet.RequestDispatcher - 4
+ - javax.servlet.ServletRegistration - 3
+ - javax.servlet.FilterRegistration - 3
+ - javax.servlet.SessionTrackingMode - 3
+ - javax.servlet.descriptor.JspConfigDescriptor - 2
+ - javax.servlet.SessionCookieConfig - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/oejb3/JaxbOpenejbJar3$NamespaceFilter.class
+
+ - link:JaxbOpenejbJar3$NamespaceFilter-asmified.java[Asmified]
+
+== References
+

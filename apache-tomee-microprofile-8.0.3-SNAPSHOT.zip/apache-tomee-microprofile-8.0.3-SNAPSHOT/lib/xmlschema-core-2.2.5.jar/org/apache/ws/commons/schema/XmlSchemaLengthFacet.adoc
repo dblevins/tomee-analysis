@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaLengthFacet.class
+
+ - link:XmlSchemaLengthFacet-asmified.java[Asmified]
+
+== References
+

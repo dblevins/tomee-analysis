@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/querydef/FunctionExpressionImpl.class
+
+ - link:FunctionExpressionImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Metamodel - 5
+ - javax.persistence.criteria.Expression - 3

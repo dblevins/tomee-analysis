@@ -1,0 +1,6 @@
+= org/apache/cxf/rs/security/oauth2/provider/ClientRegistrationProvider.class
+
+ - link:ClientRegistrationProvider-asmified.java[Asmified]
+
+== References
+

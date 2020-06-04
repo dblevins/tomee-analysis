@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/reflect/AdaptedLister.class
+
+ - link:AdaptedLister-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 8

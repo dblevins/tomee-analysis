@@ -1,0 +1,6 @@
+= org/apache/cxf/annotations/Policy.class
+
+ - link:Policy-asmified.java[Asmified]
+
+== References
+

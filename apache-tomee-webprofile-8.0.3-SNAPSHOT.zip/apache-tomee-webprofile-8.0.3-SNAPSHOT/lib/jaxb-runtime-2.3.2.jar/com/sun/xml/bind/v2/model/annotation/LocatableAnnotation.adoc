@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/annotation/LocatableAnnotation.class
+
+ - link:LocatableAnnotation-asmified.java[Asmified]
+
+== References
+

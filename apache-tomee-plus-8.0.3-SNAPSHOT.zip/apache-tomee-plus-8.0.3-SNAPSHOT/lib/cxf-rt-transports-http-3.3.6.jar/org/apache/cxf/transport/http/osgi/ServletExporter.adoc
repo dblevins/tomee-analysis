@@ -1,0 +1,7 @@
+= org/apache/cxf/transport/http/osgi/ServletExporter.class
+
+ - link:ServletExporter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.Servlet - 5

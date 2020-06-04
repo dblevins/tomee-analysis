@@ -1,0 +1,8 @@
+= com/sun/faces/util/ComponentStruct.class
+
+ - link:ComponentStruct-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2
+ - javax.faces.component.StateHolder - 1

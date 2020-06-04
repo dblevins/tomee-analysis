@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/utils/counter/CounterConfig.class
+
+ - link:CounterConfig-asmified.java[Asmified]
+
+== References
+

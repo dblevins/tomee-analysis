@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/mappings/FragmentMapping.class
+
+ - link:FragmentMapping-asmified.java[Asmified]
+
+== References
+

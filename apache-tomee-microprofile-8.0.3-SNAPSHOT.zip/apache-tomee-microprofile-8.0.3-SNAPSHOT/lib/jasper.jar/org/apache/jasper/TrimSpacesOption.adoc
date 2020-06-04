@@ -1,0 +1,6 @@
+= org/apache/jasper/TrimSpacesOption.class
+
+ - link:TrimSpacesOption-asmified.java[Asmified]
+
+== References
+

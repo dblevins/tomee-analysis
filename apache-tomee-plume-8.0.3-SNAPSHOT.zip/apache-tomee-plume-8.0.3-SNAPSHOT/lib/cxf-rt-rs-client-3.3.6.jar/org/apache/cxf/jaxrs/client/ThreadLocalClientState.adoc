@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/client/ThreadLocalClientState.class
+
+ - link:ThreadLocalClientState-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 16
+ - javax.ws.rs.core.Response - 4
+ - javax.ws.rs.core.UriBuilder - 4

@@ -1,0 +1,6 @@
+= org/apache/activemq/jndi/ReadOnlyContext$1.class
+
+ - link:ReadOnlyContext$1-asmified.java[Asmified]
+
+== References
+

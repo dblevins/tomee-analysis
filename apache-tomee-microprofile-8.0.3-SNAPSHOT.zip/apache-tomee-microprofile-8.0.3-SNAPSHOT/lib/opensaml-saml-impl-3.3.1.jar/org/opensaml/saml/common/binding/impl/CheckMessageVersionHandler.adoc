@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/impl/CheckMessageVersionHandler.class
+
+ - link:CheckMessageVersionHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2

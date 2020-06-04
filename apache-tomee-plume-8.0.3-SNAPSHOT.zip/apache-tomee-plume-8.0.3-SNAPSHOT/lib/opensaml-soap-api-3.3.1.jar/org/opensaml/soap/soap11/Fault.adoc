@@ -1,0 +1,7 @@
+= org/opensaml/soap/soap11/Fault.class
+
+ - link:Fault-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 8

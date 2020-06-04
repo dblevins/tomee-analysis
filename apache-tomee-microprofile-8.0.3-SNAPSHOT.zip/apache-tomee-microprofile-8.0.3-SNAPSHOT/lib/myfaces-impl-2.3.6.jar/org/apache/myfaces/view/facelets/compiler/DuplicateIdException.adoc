@@ -1,0 +1,8 @@
+= org/apache/myfaces/view/facelets/compiler/DuplicateIdException.class
+
+ - link:DuplicateIdException-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.FacesException - 2

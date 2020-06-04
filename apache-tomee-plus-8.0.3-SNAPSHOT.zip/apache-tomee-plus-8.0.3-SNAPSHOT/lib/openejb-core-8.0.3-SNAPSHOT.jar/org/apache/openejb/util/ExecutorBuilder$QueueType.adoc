@@ -1,0 +1,6 @@
+= org/apache/openejb/util/ExecutorBuilder$QueueType.class
+
+ - link:ExecutorBuilder$QueueType-asmified.java[Asmified]
+
+== References
+

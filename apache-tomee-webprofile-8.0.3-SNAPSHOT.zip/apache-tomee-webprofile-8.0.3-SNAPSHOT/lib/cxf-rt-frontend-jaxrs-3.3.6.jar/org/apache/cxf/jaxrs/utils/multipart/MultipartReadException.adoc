@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/utils/multipart/MultipartReadException.class
+
+ - link:MultipartReadException-asmified.java[Asmified]
+
+== References
+

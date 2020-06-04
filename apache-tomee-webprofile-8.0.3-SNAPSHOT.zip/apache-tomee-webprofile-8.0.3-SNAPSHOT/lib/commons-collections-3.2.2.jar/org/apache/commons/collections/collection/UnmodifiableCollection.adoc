@@ -1,0 +1,6 @@
+= org/apache/commons/collections/collection/UnmodifiableCollection.class
+
+ - link:UnmodifiableCollection-asmified.java[Asmified]
+
+== References
+

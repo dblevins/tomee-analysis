@@ -1,0 +1,10 @@
+= org/apache/myfaces/view/facelets/compiler/LiteralXMLInstruction.class
+
+ - link:LiteralXMLInstruction-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 3
+ - javax.faces.context.FacesContext - 2
+ - javax.el.ExpressionFactory - 1
+ - javax.el.ELContext - 1

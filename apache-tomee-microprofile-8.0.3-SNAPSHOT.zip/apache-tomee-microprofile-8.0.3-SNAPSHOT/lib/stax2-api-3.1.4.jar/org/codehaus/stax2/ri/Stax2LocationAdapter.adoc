@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2LocationAdapter.class
+
+ - link:Stax2LocationAdapter-asmified.java[Asmified]
+
+== References
+

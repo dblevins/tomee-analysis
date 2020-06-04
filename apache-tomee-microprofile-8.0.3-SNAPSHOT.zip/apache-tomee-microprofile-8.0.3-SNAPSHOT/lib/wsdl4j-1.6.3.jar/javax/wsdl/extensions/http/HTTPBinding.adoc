@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/http/HTTPBinding.class
+
+ - link:HTTPBinding-asmified.java[Asmified]
+
+== References
+

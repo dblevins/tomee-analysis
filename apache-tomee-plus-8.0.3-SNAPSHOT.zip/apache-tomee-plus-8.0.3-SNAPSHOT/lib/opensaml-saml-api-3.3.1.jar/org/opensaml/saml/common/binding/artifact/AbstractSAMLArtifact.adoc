@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/binding/artifact/AbstractSAMLArtifact.class
+
+ - link:AbstractSAMLArtifact-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7

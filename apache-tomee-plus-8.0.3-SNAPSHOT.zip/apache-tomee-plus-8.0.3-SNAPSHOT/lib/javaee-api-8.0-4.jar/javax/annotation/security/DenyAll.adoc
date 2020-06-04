@@ -1,0 +1,6 @@
+= javax/annotation/security/DenyAll.class
+
+ - link:DenyAll-asmified.java[Asmified]
+
+== References
+

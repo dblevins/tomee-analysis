@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonView.class
+
+ - link:JsonView-asmified.java[Asmified]
+
+== References
+

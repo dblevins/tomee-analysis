@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/jdk8/IndirectList.class
+
+ - link:IndirectList-asmified.java[Asmified]
+
+== References
+

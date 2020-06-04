@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/pop3/POP3SSLStore.class
+
+ - link:POP3SSLStore-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.URLName - 2
+ - javax.mail.Session - 2

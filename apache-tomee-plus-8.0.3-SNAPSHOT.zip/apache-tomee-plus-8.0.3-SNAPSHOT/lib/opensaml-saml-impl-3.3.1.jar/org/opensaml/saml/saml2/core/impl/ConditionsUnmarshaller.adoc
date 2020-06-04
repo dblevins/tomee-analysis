@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/ConditionsUnmarshaller.class
+
+ - link:ConditionsUnmarshaller-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/utils/WeakObjectPool.class
+
+ - link:WeakObjectPool-asmified.java[Asmified]
+
+== References
+

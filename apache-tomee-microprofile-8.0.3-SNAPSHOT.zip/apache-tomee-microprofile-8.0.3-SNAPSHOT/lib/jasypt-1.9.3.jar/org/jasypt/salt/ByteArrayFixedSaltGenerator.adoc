@@ -1,0 +1,6 @@
+= org/jasypt/salt/ByteArrayFixedSaltGenerator.class
+
+ - link:ByteArrayFixedSaltGenerator-asmified.java[Asmified]
+
+== References
+

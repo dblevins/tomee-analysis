@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/QueryInfo.class
+
+ - link:QueryInfo-asmified.java[Asmified]
+
+== References
+

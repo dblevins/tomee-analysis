@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/rsa/ISOSignatureSpi$SHA384WithRSAEncryption.class
+
+ - link:ISOSignatureSpi$SHA384WithRSAEncryption-asmified.java[Asmified]
+
+== References
+

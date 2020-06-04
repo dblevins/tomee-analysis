@@ -1,0 +1,9 @@
+= org/apache/activemq/broker/region/policy/QueryBasedSubscriptionRecoveryPolicy.class
+
+ - link:QueryBasedSubscriptionRecoveryPolicy-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 3
+ - javax.jms.MessageListener - 1
+ - javax.jms.JMSException - 1

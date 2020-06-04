@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/compiler/facets/DecimalMinFacet.class
+
+ - link:DecimalMinFacet-asmified.java[Asmified]
+
+== References
+

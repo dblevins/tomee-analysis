@@ -1,0 +1,7 @@
+= org/apache/activemq/command/ActiveMQMessage$6.class
+
+ - link:ActiveMQMessage$6-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.MessageFormatException - 3

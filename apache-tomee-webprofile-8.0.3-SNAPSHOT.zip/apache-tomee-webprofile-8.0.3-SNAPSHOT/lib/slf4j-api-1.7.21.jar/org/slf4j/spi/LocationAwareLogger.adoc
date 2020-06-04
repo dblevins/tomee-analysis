@@ -1,0 +1,6 @@
+= org/slf4j/spi/LocationAwareLogger.class
+
+ - link:LocationAwareLogger-asmified.java[Asmified]
+
+== References
+

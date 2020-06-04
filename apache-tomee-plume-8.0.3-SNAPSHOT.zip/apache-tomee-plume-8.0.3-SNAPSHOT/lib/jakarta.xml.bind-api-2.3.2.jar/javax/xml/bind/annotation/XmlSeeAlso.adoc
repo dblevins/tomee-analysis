@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/XmlSeeAlso.class
+
+ - link:XmlSeeAlso-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,34 @@
+= javax/xml/registry/LifeCycleManager.class
+
+ - link:LifeCycleManager-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 44
+ - javax.xml.registry.infomodel.InternationalString - 12
+ - javax.xml.registry.infomodel.ClassificationScheme - 7
+ - javax.xml.registry.BulkResponse - 5
+ - javax.xml.registry.infomodel.Concept - 5
+ - javax.xml.registry.InvalidRequestException - 5
+ - javax.xml.registry.infomodel.Classification - 3
+ - javax.xml.registry.infomodel.RegistryObject - 3
+ - javax.xml.registry.infomodel.ExternalLink - 2
+ - javax.xml.registry.infomodel.EmailAddress - 2
+ - javax.xml.registry.infomodel.RegistryPackage - 2
+ - javax.xml.registry.infomodel.LocalizedString - 2
+ - javax.xml.registry.infomodel.PersonName - 2
+ - javax.xml.registry.infomodel.Organization - 2
+ - javax.xml.registry.infomodel.Slot - 2
+ - javax.xml.registry.infomodel.ExternalIdentifier - 2
+ - javax.xml.registry.infomodel.Service - 2
+ - javax.xml.registry.infomodel.ExtrinsicObject - 1
+ - javax.xml.registry.infomodel.User - 1
+ - javax.activation.DataHandler - 1
+ - javax.xml.registry.infomodel.Key - 1
+ - javax.xml.registry.infomodel.TelephoneNumber - 1
+ - javax.xml.registry.infomodel.ServiceBinding - 1
+ - javax.xml.registry.RegistryService - 1
+ - javax.xml.registry.UnsupportedCapabilityException - 1
+ - javax.xml.registry.infomodel.SpecificationLink - 1
+ - javax.xml.registry.infomodel.PostalAddress - 1
+ - javax.xml.registry.infomodel.Association - 1

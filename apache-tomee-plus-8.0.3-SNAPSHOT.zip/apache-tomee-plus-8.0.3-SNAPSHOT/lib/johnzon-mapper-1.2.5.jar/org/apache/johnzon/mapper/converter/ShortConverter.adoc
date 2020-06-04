@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/converter/ShortConverter.class
+
+ - link:ShortConverter-asmified.java[Asmified]
+
+== References
+

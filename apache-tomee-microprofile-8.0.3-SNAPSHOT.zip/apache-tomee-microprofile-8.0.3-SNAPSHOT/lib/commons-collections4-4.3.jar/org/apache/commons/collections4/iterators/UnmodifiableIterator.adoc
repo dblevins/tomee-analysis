@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/iterators/UnmodifiableIterator.class
+
+ - link:UnmodifiableIterator-asmified.java[Asmified]
+
+== References
+

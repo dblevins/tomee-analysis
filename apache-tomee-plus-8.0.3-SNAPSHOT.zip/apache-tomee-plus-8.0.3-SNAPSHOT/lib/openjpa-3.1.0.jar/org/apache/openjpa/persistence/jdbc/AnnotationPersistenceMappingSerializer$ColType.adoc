@@ -1,0 +1,12 @@
+= org/apache/openjpa/persistence/jdbc/AnnotationPersistenceMappingSerializer$ColType.class
+
+ - link:AnnotationPersistenceMappingSerializer$ColType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 1
+ - javax.persistence.DiscriminatorColumn - 1
+ - javax.persistence.JoinColumn - 1
+ - javax.persistence.JoinColumns - 1
+ - javax.persistence.PrimaryKeyJoinColumns - 1
+ - javax.persistence.PrimaryKeyJoinColumn - 1

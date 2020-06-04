@@ -1,0 +1,6 @@
+= org/apache/openejb/config/DebuggableVmHackery.class
+
+ - link:DebuggableVmHackery-asmified.java[Asmified]
+
+== References
+

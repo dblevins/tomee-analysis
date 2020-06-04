@@ -1,0 +1,6 @@
+= com/sun/faces/spi/FacesConfigResourceProvider.class
+
+ - link:FacesConfigResourceProvider-asmified.java[Asmified]
+
+== References
+

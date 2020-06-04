@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.class
+
+ - link:SoapActionInInterceptor-asmified.java[Asmified]
+
+== References
+

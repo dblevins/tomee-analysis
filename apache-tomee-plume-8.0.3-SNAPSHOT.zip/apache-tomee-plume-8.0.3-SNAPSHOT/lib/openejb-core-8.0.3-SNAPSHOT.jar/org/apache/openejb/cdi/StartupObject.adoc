@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/StartupObject.class
+
+ - link:StartupObject-asmified.java[Asmified]
+
+== References
+

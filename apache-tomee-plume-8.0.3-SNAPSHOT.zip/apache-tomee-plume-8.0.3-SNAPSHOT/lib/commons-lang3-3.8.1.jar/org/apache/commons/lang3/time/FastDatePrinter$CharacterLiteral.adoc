@@ -1,0 +1,6 @@
+= org/apache/commons/lang3/time/FastDatePrinter$CharacterLiteral.class
+
+ - link:FastDatePrinter$CharacterLiteral-asmified.java[Asmified]
+
+== References
+

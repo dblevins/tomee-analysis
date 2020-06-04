@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder.class
+
+ - link:StdTypeResolverBuilder-asmified.java[Asmified]
+
+== References
+

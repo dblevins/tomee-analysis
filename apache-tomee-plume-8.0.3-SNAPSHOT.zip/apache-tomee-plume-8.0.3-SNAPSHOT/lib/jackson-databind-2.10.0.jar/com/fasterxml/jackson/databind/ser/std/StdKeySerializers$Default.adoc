@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/StdKeySerializers$Default.class
+
+ - link:StdKeySerializers$Default-asmified.java[Asmified]
+
+== References
+

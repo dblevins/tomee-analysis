@@ -1,0 +1,6 @@
+= org/apache/xml/resolver/helpers/FileURL.class
+
+ - link:FileURL-asmified.java[Asmified]
+
+== References
+

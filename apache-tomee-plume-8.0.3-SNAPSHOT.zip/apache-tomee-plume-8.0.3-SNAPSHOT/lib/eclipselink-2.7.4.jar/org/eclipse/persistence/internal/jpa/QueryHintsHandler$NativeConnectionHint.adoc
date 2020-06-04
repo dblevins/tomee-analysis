@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$NativeConnectionHint.class
+
+ - link:QueryHintsHandler$NativeConnectionHint-asmified.java[Asmified]
+
+== References
+

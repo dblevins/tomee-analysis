@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/impl/ContainerResponseContextImpl.class
+
+ - link:ContainerResponseContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 2
+ - javax.ws.rs.container.ContainerResponseContext - 1

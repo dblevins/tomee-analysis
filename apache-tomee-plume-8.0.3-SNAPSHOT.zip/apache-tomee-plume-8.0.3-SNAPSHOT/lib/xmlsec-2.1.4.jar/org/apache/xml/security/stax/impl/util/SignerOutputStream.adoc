@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/impl/util/SignerOutputStream.class
+
+ - link:SignerOutputStream-asmified.java[Asmified]
+
+== References
+

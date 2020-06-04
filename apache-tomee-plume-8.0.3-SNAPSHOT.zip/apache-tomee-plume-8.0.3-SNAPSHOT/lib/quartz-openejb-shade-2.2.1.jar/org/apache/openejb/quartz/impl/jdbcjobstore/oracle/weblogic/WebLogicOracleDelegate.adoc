@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/oracle/weblogic/WebLogicOracleDelegate.class
+
+ - link:WebLogicOracleDelegate-asmified.java[Asmified]
+
+== References
+

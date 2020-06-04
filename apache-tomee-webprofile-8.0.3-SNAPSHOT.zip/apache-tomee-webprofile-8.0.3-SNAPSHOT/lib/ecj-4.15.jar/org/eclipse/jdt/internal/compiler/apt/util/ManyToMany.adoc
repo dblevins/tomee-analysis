@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/util/ManyToMany.class
+
+ - link:ManyToMany-asmified.java[Asmified]
+
+== References
+

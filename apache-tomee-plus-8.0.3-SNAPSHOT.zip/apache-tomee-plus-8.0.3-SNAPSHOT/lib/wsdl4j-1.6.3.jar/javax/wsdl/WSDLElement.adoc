@@ -1,0 +1,6 @@
+= javax/wsdl/WSDLElement.class
+
+ - link:WSDLElement-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/XDOMUtil.class
+
+ - link:XDOMUtil-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= com/sun/faces/context/RequestParameterMap.class
+
+ - link:RequestParameterMap-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 16
+ - javax.faces.context.FacesContext - 4

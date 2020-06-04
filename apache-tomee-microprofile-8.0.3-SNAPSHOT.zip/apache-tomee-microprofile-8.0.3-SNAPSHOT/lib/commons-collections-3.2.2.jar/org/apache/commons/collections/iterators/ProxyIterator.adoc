@@ -1,0 +1,6 @@
+= org/apache/commons/collections/iterators/ProxyIterator.class
+
+ - link:ProxyIterator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/catalina/core/ApplicationFilterChain$1.class
+
+ - link:ApplicationFilterChain$1-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 5
+ - javax.servlet.ServletResponse - 5
+ - javax.servlet.ServletException - 1

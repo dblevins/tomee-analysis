@@ -1,0 +1,6 @@
+= org/apache/naming/java/javaURLContextFactory.class
+
+ - link:javaURLContextFactory-asmified.java[Asmified]
+
+== References
+

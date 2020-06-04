@@ -1,0 +1,6 @@
+= javax/faces/component/html/_ChangeProperty.class
+
+ - link:_ChangeProperty-asmified.java[Asmified]
+
+== References
+

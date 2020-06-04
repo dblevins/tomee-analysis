@@ -1,0 +1,6 @@
+= org/apache/commons/collections/ReferenceMap$KeyIterator.class
+
+ - link:ReferenceMap$KeyIterator-asmified.java[Asmified]
+
+== References
+

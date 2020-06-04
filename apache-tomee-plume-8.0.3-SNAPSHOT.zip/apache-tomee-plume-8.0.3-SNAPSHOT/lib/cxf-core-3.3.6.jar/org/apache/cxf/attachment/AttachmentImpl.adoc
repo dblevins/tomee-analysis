@@ -1,0 +1,8 @@
+= org/apache/cxf/attachment/AttachmentImpl.class
+
+ - link:AttachmentImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 11
+ - javax.activation.CommandMap - 4

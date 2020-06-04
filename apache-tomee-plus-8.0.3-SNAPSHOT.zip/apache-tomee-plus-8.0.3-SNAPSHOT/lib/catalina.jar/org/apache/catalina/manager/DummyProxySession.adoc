@@ -1,0 +1,7 @@
+= org/apache/catalina/manager/DummyProxySession.class
+
+ - link:DummyProxySession-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 1

@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/util/PathNavigation.class
+
+ - link:PathNavigation-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidationException - 3

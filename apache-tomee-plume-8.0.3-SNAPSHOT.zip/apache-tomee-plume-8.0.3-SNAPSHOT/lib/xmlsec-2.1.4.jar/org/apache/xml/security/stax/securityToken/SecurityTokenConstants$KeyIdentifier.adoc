@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/securityToken/SecurityTokenConstants$KeyIdentifier.class
+
+ - link:SecurityTokenConstants$KeyIdentifier-asmified.java[Asmified]
+
+== References
+

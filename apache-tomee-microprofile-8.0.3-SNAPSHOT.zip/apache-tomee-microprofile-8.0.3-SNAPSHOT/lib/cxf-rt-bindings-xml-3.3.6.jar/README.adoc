@@ -1,0 +1,7 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/cxf-rt-bindings-xml-3.3.6.jar
+
+ - link:org/apache/cxf/bindings/xformat/ObjectFactory.adoc[org/apache/cxf/bindings/xformat/ObjectFactory.class] - 9
+ - link:org/apache/cxf/bindings/xformat/XMLBindingMessageFormat.adoc[org/apache/cxf/bindings/xformat/XMLBindingMessageFormat.class] - 5
+ - link:org/apache/cxf/bindings/xformat/XMLFormatBinding.adoc[org/apache/cxf/bindings/xformat/XMLFormatBinding.class] - 4
+ - link:org/apache/cxf/binding/xml/wsdl11/XMLWSDLExtensionLoader.adoc[org/apache/cxf/binding/xml/wsdl11/XMLWSDLExtensionLoader.class] - 2
+ - link:org/apache/cxf/bindings/xformat/package-info.adoc[org/apache/cxf/bindings/xformat/package-info.class] - 1

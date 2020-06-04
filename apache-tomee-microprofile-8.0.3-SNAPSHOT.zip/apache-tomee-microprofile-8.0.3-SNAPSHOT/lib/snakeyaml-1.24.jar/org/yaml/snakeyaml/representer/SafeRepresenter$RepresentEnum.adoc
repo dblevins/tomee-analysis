@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/representer/SafeRepresenter$RepresentEnum.class
+
+ - link:SafeRepresenter$RepresentEnum-asmified.java[Asmified]
+
+== References
+

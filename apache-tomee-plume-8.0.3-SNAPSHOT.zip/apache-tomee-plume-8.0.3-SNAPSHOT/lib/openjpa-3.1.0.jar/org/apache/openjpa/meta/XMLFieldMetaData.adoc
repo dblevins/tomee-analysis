@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/XMLFieldMetaData.class
+
+ - link:XMLFieldMetaData-asmified.java[Asmified]
+
+== References
+

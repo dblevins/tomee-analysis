@@ -1,0 +1,9 @@
+= javax/persistence/NamedQuery.class
+
+ - link:NamedQuery-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.LockModeType - 2
+ - javax.persistence.QueryHint - 1
+ - javax.persistence.NamedQueries - 1

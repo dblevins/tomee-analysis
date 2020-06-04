@@ -1,0 +1,8 @@
+= org/apache/jasper/runtime/BodyContentImpl.class
+
+ - link:BodyContentImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.BodyContent - 2
+ - javax.servlet.jsp.JspWriter - 2

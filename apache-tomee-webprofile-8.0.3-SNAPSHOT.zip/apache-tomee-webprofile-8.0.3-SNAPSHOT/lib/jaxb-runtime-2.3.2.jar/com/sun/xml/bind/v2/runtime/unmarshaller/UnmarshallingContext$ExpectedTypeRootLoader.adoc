@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$ExpectedTypeRootLoader.class
+
+ - link:UnmarshallingContext$ExpectedTypeRootLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 4

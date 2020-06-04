@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/JDBCStoreQuery$ThreadLocalContext.class
+
+ - link:JDBCStoreQuery$ThreadLocalContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/JDBCStringContains.class
+
+ - link:JDBCStringContains-asmified.java[Asmified]
+
+== References
+

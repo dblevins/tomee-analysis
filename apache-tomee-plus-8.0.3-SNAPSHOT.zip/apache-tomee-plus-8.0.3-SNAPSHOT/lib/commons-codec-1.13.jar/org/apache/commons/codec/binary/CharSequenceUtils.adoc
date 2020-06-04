@@ -1,0 +1,6 @@
+= org/apache/commons/codec/binary/CharSequenceUtils.class
+
+ - link:CharSequenceUtils-asmified.java[Asmified]
+
+== References
+

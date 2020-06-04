@@ -1,0 +1,6 @@
+= org/apache/cxf/endpoint/dynamic/DynamicClientFactory$LocationFilterReader.class
+
+ - link:DynamicClientFactory$LocationFilterReader-asmified.java[Asmified]
+
+== References
+

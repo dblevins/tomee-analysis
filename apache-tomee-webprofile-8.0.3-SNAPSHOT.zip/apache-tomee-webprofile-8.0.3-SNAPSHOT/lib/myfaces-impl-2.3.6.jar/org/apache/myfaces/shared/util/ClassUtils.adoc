@@ -1,0 +1,10 @@
+= org/apache/myfaces/shared/util/ClassUtils.class
+
+ - link:ClassUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 35
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.application.Application - 2
+ - javax.el.ExpressionFactory - 2

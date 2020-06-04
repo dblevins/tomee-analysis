@@ -1,0 +1,12 @@
+= org/apache/myfaces/flow/NavigationCaseImpl.class
+
+ - link:NavigationCaseImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 45
+ - javax.faces.context.FacesContext - 12
+ - javax.el.ELContext - 8
+ - javax.faces.application.Application - 4
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.application.NavigationCase - 4

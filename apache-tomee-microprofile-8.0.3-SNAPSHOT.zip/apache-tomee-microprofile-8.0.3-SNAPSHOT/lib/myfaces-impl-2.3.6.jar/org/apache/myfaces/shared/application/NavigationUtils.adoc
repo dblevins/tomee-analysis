@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/application/NavigationUtils.class
+
+ - link:NavigationUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.application.Application - 2

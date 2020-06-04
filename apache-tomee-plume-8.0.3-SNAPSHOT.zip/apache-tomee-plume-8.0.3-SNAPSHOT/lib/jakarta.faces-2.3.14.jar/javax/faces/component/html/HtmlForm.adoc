@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlForm.class
+
+ - link:HtmlForm-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 88
+ - javax.faces.component.html.HtmlForm - 68
+ - javax.faces.component.html.HtmlForm$PropertyKeys - 44
+ - javax.faces.component.UIForm - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

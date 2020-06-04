@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContextFactory.class
+
+ - link:DynamicJAXBContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 20

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/ElementStrategy.class
+
+ - link:ElementStrategy-asmified.java[Asmified]
+
+== References
+

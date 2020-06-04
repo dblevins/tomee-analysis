@@ -1,0 +1,8 @@
+= org/apache/cxf/transport/http/HttpAuthenticationFaultHandler.class
+
+ - link:HttpAuthenticationFaultHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 7
+ - javax.servlet.ServletOutputStream - 4

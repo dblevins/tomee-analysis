@@ -1,0 +1,7 @@
+= javax/xml/rpc/Call.class
+
+ - link:Call-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.ParameterMode - 2

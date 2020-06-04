@@ -1,0 +1,8 @@
+= org/apache/webbeans/spi/ValidatorService.class
+
+ - link:ValidatorService-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Validator - 1
+ - javax.validation.ValidatorFactory - 1

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/AdditionalCriteria.class
+
+ - link:AdditionalCriteria-asmified.java[Asmified]
+
+== References
+

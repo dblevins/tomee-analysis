@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOHelperContext$ReflectionHelperContextResolver.class
+
+ - link:SDOHelperContext$ReflectionHelperContextResolver-asmified.java[Asmified]
+
+== References
+

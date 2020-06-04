@@ -1,0 +1,7 @@
+= org/opensaml/soap/client/SOAPClientContext.class
+
+ - link:SOAPClientContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 2

@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/util/CollisionCheckStack.class
+
+ - link:CollisionCheckStack-asmified.java[Asmified]
+
+== References
+

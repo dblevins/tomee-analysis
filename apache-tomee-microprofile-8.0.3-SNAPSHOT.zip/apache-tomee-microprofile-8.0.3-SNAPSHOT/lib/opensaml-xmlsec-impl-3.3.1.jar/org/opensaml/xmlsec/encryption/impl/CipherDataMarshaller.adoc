@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/encryption/impl/CipherDataMarshaller.class
+
+ - link:CipherDataMarshaller-asmified.java[Asmified]
+
+== References
+

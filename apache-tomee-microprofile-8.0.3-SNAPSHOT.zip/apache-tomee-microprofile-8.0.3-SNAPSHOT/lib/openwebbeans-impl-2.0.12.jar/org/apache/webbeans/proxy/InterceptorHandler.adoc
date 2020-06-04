@@ -1,0 +1,6 @@
+= org/apache/webbeans/proxy/InterceptorHandler.class
+
+ - link:InterceptorHandler-asmified.java[Asmified]
+
+== References
+

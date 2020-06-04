@@ -1,0 +1,8 @@
+= org/eclipse/microprofile/metrics/annotation/Gauge.class
+
+ - link:Gauge-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.Nonbinding - 6
+ - javax.interceptor.InterceptorBinding - 1

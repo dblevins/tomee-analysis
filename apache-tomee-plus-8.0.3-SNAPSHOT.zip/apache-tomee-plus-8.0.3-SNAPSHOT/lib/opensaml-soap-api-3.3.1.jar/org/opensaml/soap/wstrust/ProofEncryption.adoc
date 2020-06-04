@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/ProofEncryption.class
+
+ - link:ProofEncryption-asmified.java[Asmified]
+
+== References
+

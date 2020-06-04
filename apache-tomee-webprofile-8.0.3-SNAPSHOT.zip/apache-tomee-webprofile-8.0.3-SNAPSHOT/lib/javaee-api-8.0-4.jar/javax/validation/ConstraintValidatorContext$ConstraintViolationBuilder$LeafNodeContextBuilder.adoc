@@ -1,0 +1,8 @@
+= javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeContextBuilder.class
+
+ - link:ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeContextBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderDefinedContext - 2
+ - javax.validation.ConstraintValidatorContext - 1

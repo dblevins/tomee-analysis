@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml1/core/Attribute.class
+
+ - link:Attribute-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5

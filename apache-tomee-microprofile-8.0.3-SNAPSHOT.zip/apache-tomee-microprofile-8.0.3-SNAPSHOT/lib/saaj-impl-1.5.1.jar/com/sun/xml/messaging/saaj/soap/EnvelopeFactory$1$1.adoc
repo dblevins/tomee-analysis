@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/soap/EnvelopeFactory$1$1.class
+
+ - link:EnvelopeFactory$1$1-asmified.java[Asmified]
+
+== References
+

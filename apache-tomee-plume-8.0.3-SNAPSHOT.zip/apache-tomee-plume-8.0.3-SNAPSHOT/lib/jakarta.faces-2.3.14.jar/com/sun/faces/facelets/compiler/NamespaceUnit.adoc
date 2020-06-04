@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/compiler/NamespaceUnit.class
+
+ - link:NamespaceUnit-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletHandler - 3

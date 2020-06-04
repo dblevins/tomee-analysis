@@ -1,0 +1,13 @@
+= com/sun/faces/facelets/impl/DefaultFacelet.class
+
+ - link:DefaultFacelet-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 36
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.view.facelets.FaceletHandler - 9
+ - javax.el.ExpressionFactory - 7
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.faces.view.facelets.Facelet - 3
+ - javax.faces.application.ProjectStage - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/ObjectGraph.class
+
+ - link:ObjectGraph-asmified.java[Asmified]
+
+== References
+

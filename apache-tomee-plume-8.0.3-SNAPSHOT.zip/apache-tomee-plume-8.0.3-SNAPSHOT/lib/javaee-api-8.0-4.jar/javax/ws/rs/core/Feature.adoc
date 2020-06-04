@@ -1,0 +1,7 @@
+= javax/ws/rs/core/Feature.class
+
+ - link:Feature-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.FeatureContext - 1

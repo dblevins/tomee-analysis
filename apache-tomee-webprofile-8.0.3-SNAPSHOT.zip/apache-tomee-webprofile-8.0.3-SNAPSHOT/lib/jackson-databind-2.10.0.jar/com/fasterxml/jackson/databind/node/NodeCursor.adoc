@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/NodeCursor.class
+
+ - link:NodeCursor-asmified.java[Asmified]
+
+== References
+

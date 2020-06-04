@@ -1,0 +1,6 @@
+= org/apache/openejb/client/EntityEJBObjectHandler.class
+
+ - link:EntityEJBObjectHandler-asmified.java[Asmified]
+
+== References
+

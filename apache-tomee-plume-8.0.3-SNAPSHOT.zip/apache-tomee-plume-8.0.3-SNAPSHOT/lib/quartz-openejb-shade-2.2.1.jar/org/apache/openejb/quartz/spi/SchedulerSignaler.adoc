@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/spi/SchedulerSignaler.class
+
+ - link:SchedulerSignaler-asmified.java[Asmified]
+
+== References
+

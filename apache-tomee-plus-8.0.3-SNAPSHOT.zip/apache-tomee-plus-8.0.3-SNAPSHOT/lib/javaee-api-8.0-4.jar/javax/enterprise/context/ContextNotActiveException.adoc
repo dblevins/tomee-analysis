@@ -1,0 +1,7 @@
+= javax/enterprise/context/ContextNotActiveException.class
+
+ - link:ContextNotActiveException-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.ContextException - 5

@@ -1,0 +1,10 @@
+= javax/faces/application/NavigationCaseWrapper.class
+
+ - link:NavigationCaseWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.NavigationCase - 43
+ - javax.faces.application.NavigationCaseWrapper - 19
+ - javax.faces.context.FacesContext - 12
+ - javax.faces.FacesWrapper - 1

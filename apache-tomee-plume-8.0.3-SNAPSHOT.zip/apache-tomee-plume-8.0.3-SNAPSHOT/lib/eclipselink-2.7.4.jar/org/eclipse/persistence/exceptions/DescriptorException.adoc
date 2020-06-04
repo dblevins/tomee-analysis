@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/DescriptorException.class
+
+ - link:DescriptorException-asmified.java[Asmified]
+
+== References
+

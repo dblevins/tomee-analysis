@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/UniquePredicate.class
+
+ - link:UniquePredicate-asmified.java[Asmified]
+
+== References
+

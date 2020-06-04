@@ -1,0 +1,6 @@
+= org/apache/openejb/util/Pool$Entry.class
+
+ - link:Pool$Entry-asmified.java[Asmified]
+
+== References
+

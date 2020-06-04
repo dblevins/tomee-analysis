@@ -1,0 +1,8 @@
+= javax/mail/Flags.class
+
+ - link:Flags-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Flags$Flag - 63
+ - javax.mail.Flags - 9

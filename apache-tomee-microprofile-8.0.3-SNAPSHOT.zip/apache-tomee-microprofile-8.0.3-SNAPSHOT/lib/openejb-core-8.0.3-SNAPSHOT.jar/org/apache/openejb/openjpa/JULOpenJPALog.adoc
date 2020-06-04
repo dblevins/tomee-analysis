@@ -1,0 +1,6 @@
+= org/apache/openejb/openjpa/JULOpenJPALog.class
+
+ - link:JULOpenJPALog-asmified.java[Asmified]
+
+== References
+

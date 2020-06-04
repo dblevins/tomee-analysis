@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/AbstractAccessLogValve$LogicalUserNameElement.class
+
+ - link:AbstractAccessLogValve$LogicalUserNameElement-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/criteria/ComparisonStyle$StringComparisonMode.class
+
+ - link:ComparisonStyle$StringComparisonMode-asmified.java[Asmified]
+
+== References
+

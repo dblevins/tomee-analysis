@@ -1,0 +1,18 @@
+= org/apache/webbeans/component/creation/ProducerMethodBeansBuilder.class
+
+ - link:ProducerMethodBeansBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMethod - 22
+ - javax.enterprise.inject.spi.AnnotatedType - 7
+ - javax.enterprise.inject.spi.BeanAttributes - 3
+ - javax.enterprise.inject.UnproxyableResolutionException - 3
+ - javax.enterprise.inject.Disposes - 1
+ - javax.inject.Inject - 1
+ - javax.enterprise.inject.Specializes - 1
+ - javax.enterprise.inject.spi.Annotated - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.enterprise.event.Observes - 1
+ - javax.enterprise.inject.spi.Bean - 1
+ - javax.enterprise.event.ObservesAsync - 1

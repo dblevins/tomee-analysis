@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/FaceletViewDeclarationLanguageStrategy.class
+
+ - link:FaceletViewDeclarationLanguageStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 8
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.view.ViewDeclarationLanguage - 4

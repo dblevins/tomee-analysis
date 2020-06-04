@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/StAXManager.class
+
+ - link:StAXManager-asmified.java[Asmified]
+
+== References
+

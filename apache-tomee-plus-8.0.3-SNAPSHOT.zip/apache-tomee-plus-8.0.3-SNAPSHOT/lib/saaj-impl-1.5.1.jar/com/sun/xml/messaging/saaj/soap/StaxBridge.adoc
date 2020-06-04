@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/StaxBridge.class
+
+ - link:StaxBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 1
+ - javax.xml.soap.SOAPMessage - 1

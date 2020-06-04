@@ -1,0 +1,6 @@
+= com/ctc/wstx/sw/TypedStreamWriter.class
+
+ - link:TypedStreamWriter-asmified.java[Asmified]
+
+== References
+

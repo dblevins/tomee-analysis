@@ -1,0 +1,6 @@
+= org/apache/cxf/resource/ExtendedURIResolver.class
+
+ - link:ExtendedURIResolver-asmified.java[Asmified]
+
+== References
+

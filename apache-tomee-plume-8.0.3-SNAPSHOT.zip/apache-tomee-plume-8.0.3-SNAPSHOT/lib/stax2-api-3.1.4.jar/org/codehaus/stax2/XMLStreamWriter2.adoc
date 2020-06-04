@@ -1,0 +1,6 @@
+= org/codehaus/stax2/XMLStreamWriter2.class
+
+ - link:XMLStreamWriter2-asmified.java[Asmified]
+
+== References
+

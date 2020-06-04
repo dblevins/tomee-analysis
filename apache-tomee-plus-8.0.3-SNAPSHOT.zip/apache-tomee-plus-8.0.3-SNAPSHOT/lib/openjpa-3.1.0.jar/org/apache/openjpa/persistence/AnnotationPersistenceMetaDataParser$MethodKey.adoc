@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataParser$MethodKey.class
+
+ - link:AnnotationPersistenceMetaDataParser$MethodKey-asmified.java[Asmified]
+
+== References
+

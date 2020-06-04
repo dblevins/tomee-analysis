@@ -1,0 +1,10 @@
+= javax/faces/model/ArrayDataModel.class
+
+ - link:ArrayDataModel-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.model.ArrayDataModel - 10
+ - javax.faces.model.DataModelEvent - 5
+ - javax.faces.model.DataModel - 4
+ - javax.faces.model.DataModelListener - 4

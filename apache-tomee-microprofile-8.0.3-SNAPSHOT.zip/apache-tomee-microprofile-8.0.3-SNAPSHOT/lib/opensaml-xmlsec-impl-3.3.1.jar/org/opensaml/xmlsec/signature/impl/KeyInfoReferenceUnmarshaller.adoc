@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/KeyInfoReferenceUnmarshaller.class
+
+ - link:KeyInfoReferenceUnmarshaller-asmified.java[Asmified]
+
+== References
+

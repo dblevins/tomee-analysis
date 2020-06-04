@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/sts/provider/operation/ValidateOperation.class
+
+ - link:ValidateOperation-asmified.java[Asmified]
+
+== References
+

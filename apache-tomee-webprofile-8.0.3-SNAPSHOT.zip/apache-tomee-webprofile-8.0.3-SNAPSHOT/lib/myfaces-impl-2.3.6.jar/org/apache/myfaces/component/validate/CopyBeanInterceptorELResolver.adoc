@@ -1,0 +1,8 @@
+= org/apache/myfaces/component/validate/CopyBeanInterceptorELResolver.class
+
+ - link:CopyBeanInterceptorELResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 17
+ - javax.el.ELContext - 12

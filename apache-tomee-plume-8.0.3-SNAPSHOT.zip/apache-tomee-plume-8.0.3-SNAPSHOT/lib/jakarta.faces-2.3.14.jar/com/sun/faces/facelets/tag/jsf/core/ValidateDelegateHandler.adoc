@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/tag/jsf/core/ValidateDelegateHandler.class
+
+ - link:ValidateDelegateHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 6
+ - javax.faces.view.facelets.MetaRuleset - 4
+ - javax.faces.view.facelets.ValidatorHandler - 3
+ - javax.faces.view.facelets.ValidatorConfig - 2
+ - javax.faces.view.facelets.FaceletContext - 2

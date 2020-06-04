@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/AbstractSQLServerDictionary.class
+
+ - link:AbstractSQLServerDictionary-asmified.java[Asmified]
+
+== References
+

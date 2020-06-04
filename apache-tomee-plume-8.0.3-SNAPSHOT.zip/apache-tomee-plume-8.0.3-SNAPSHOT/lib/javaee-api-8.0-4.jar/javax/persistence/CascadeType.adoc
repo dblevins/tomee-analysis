@@ -1,0 +1,7 @@
+= javax/persistence/CascadeType.class
+
+ - link:CascadeType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.CascadeType - 41

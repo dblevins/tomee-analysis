@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/rs/features/FeatureSet.class
+
+ - link:FeatureSet-asmified.java[Asmified]
+
+== References
+

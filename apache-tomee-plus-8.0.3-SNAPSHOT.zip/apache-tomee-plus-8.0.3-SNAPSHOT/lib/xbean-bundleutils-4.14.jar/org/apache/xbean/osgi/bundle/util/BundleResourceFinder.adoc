@@ -1,0 +1,6 @@
+= org/apache/xbean/osgi/bundle/util/BundleResourceFinder.class
+
+ - link:BundleResourceFinder-asmified.java[Asmified]
+
+== References
+

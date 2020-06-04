@@ -1,0 +1,6 @@
+= org/apache/openejb/server/auth/NetmaskIPv6AddressPermission.class
+
+ - link:NetmaskIPv6AddressPermission-asmified.java[Asmified]
+
+== References
+

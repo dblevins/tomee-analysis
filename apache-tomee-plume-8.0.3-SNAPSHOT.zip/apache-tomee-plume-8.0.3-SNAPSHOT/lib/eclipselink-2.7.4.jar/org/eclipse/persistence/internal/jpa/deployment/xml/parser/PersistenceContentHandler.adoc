@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/deployment/xml/parser/PersistenceContentHandler.class
+
+ - link:PersistenceContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.spi.PersistenceUnitTransactionType - 3

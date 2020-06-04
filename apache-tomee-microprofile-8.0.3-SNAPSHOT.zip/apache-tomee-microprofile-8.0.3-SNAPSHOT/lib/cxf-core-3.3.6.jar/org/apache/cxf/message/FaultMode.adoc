@@ -1,0 +1,6 @@
+= org/apache/cxf/message/FaultMode.class
+
+ - link:FaultMode-asmified.java[Asmified]
+
+== References
+

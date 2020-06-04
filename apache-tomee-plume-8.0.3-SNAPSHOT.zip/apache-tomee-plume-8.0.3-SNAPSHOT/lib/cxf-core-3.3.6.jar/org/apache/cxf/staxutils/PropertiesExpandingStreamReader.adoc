@@ -1,0 +1,6 @@
+= org/apache/cxf/staxutils/PropertiesExpandingStreamReader.class
+
+ - link:PropertiesExpandingStreamReader-asmified.java[Asmified]
+
+== References
+

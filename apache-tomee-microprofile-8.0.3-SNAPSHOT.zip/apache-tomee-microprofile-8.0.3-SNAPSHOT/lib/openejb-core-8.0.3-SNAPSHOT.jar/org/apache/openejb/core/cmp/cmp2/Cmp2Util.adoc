@@ -1,0 +1,9 @@
+= org/apache/openejb/core/cmp/cmp2/Cmp2Util.class
+
+ - link:Cmp2Util-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 8
+ - javax.ejb.EJBLocalObject - 3
+ - javax.ejb.EJBObject - 1

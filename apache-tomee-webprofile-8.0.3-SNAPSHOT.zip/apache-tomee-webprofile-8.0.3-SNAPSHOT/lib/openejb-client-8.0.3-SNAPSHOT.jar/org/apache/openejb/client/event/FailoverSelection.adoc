@@ -1,0 +1,6 @@
+= org/apache/openejb/client/event/FailoverSelection.class
+
+ - link:FailoverSelection-asmified.java[Asmified]
+
+== References
+

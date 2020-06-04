@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/Localizer.class
+
+ - link:Localizer-asmified.java[Asmified]
+
+== References
+

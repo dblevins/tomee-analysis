@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/episode/Klass.class
+
+ - link:Klass-asmified.java[Asmified]
+
+== References
+

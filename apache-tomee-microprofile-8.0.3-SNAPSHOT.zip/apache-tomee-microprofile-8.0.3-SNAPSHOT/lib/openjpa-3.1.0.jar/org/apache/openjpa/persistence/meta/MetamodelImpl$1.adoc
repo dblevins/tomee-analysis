@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/meta/MetamodelImpl$1.class
+
+ - link:MetamodelImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type$PersistenceType - 8

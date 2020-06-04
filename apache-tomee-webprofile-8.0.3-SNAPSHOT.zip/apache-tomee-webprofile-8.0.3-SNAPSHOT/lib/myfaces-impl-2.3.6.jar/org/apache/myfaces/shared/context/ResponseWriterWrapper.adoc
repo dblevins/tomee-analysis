@@ -1,0 +1,8 @@
+= org/apache/myfaces/shared/context/ResponseWriterWrapper.class
+
+ - link:ResponseWriterWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ResponseWriter - 42
+ - javax.faces.component.UIComponent - 2

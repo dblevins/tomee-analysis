@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/ProxyFactory.class
+
+ - link:ProxyFactory-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$BigDecimalJAXB.class
+
+ - link:StandardJAXBObjects$BigDecimalJAXB-asmified.java[Asmified]
+
+== References
+

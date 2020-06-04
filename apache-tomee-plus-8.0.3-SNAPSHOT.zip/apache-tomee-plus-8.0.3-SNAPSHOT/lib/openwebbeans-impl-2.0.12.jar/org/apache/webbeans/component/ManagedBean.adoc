@@ -1,0 +1,11 @@
+= org/apache/webbeans/component/ManagedBean.class
+
+ - link:ManagedBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.Contextual - 8
+ - javax.enterprise.inject.spi.Bean - 7
+ - javax.enterprise.context.spi.CreationalContext - 4
+ - javax.enterprise.inject.spi.BeanAttributes - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 2

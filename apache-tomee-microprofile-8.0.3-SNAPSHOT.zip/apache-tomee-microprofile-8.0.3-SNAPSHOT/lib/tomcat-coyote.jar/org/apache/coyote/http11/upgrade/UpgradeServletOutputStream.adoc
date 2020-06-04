@@ -1,0 +1,8 @@
+= org/apache/coyote/http11/upgrade/UpgradeServletOutputStream.class
+
+ - link:UpgradeServletOutputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.WriteListener - 15
+ - javax.servlet.ServletOutputStream - 2

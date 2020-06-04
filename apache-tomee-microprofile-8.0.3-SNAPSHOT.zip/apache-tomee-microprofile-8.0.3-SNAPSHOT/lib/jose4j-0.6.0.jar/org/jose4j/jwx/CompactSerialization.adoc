@@ -1,0 +1,6 @@
+= org/jose4j/jwx/CompactSerialization.class
+
+ - link:CompactSerialization-asmified.java[Asmified]
+
+== References
+

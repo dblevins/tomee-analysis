@@ -1,0 +1,20 @@
+= org/apache/openjpa/persistence/criteria/SubqueryImpl.class
+
+ - link:SubqueryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.AbstractQuery - 20
+ - javax.persistence.criteria.Join - 19
+ - javax.persistence.criteria.Expression - 18
+ - javax.persistence.criteria.Subquery - 17
+ - javax.persistence.criteria.Root - 11
+ - javax.persistence.criteria.Predicate - 10
+ - javax.persistence.criteria.CriteriaQuery - 8
+ - javax.persistence.criteria.Selection - 4
+ - javax.persistence.metamodel.EntityType - 4
+ - javax.persistence.criteria.ListJoin - 3
+ - javax.persistence.criteria.CollectionJoin - 3
+ - javax.persistence.criteria.SetJoin - 3
+ - javax.persistence.criteria.MapJoin - 3
+ - javax.persistence.criteria.CommonAbstractCriteria - 1

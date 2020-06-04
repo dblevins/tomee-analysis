@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/policyvalidators/IssuedTokenPolicyValidator.class
+
+ - link:IssuedTokenPolicyValidator-asmified.java[Asmified]
+
+== References
+

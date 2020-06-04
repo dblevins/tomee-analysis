@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/schema/SchemaModelGenerator.class
+
+ - link:SchemaModelGenerator-asmified.java[Asmified]
+
+== References
+

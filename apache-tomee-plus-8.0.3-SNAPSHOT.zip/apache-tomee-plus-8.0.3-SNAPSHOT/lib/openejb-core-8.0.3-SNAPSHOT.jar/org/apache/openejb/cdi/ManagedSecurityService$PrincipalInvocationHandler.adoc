@@ -1,0 +1,6 @@
+= org/apache/openejb/cdi/ManagedSecurityService$PrincipalInvocationHandler.class
+
+ - link:ManagedSecurityService$PrincipalInvocationHandler-asmified.java[Asmified]
+
+== References
+

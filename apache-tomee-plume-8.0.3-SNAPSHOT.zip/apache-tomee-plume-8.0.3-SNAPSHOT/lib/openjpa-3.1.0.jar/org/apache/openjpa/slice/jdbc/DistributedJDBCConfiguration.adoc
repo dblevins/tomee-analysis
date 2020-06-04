@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/DistributedJDBCConfiguration.class
+
+ - link:DistributedJDBCConfiguration-asmified.java[Asmified]
+
+== References
+

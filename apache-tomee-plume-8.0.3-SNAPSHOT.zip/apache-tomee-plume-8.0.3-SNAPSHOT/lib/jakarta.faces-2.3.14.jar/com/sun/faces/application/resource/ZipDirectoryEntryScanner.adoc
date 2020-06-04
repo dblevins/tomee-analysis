@@ -1,0 +1,8 @@
+= com/sun/faces/application/resource/ZipDirectoryEntryScanner.class
+
+ - link:ZipDirectoryEntryScanner-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 7
+ - javax.faces.context.FacesContext - 3

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/history/AsOfSCNClause.class
+
+ - link:AsOfSCNClause-asmified.java[Asmified]
+
+== References
+

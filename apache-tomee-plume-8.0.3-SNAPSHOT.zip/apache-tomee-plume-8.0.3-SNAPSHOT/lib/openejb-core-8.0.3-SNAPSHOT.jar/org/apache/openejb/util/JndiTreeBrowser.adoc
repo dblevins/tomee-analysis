@@ -1,0 +1,6 @@
+= org/apache/openejb/util/JndiTreeBrowser.class
+
+ - link:JndiTreeBrowser-asmified.java[Asmified]
+
+== References
+

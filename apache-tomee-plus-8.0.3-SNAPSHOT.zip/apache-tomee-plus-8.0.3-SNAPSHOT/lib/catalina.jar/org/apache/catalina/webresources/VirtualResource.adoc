@@ -1,0 +1,6 @@
+= org/apache/catalina/webresources/VirtualResource.class
+
+ - link:VirtualResource-asmified.java[Asmified]
+
+== References
+

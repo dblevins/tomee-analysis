@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/XmlVisitor$TextPredictor.class
+
+ - link:XmlVisitor$TextPredictor-asmified.java[Asmified]
+
+== References
+

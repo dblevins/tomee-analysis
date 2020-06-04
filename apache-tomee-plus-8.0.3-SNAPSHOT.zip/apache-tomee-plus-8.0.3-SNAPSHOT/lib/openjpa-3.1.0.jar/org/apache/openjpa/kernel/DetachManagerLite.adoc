@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/DetachManagerLite.class
+
+ - link:DetachManagerLite-asmified.java[Asmified]
+
+== References
+

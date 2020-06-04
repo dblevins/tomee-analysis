@@ -1,0 +1,6 @@
+= org/apache/catalina/authenticator/SpnegoAuthenticator$AcceptAction.class
+
+ - link:SpnegoAuthenticator$AcceptAction-asmified.java[Asmified]
+
+== References
+

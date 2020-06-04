@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/BoundSet$1.class
+
+ - link:BoundSet$1-asmified.java[Asmified]
+
+== References
+

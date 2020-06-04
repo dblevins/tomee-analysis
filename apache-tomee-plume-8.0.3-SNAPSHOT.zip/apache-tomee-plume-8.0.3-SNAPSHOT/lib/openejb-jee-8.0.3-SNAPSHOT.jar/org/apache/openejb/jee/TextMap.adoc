@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/TextMap.class
+
+ - link:TextMap-asmified.java[Asmified]
+
+== References
+

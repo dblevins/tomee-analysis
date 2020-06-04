@@ -1,0 +1,8 @@
+= org/apache/webbeans/component/InterceptorMetadataBean$1.class
+
+ - link:InterceptorMetadataBean$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.TypeLiteral - 2
+ - javax.enterprise.inject.spi.Interceptor - 1

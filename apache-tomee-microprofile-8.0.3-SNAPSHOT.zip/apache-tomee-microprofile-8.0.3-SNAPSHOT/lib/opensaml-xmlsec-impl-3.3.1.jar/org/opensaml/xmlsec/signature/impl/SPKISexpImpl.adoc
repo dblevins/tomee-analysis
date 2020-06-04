@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/SPKISexpImpl.class
+
+ - link:SPKISexpImpl-asmified.java[Asmified]
+
+== References
+

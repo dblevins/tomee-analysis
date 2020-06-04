@@ -1,0 +1,6 @@
+= org/eclipse/persistence/tools/schemaframework/DatabaseObjectDefinition.class
+
+ - link:DatabaseObjectDefinition-asmified.java[Asmified]
+
+== References
+

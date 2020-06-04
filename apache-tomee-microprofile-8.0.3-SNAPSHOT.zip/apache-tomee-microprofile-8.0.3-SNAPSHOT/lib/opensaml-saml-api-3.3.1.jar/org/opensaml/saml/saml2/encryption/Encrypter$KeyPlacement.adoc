@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/encryption/Encrypter$KeyPlacement.class
+
+ - link:Encrypter$KeyPlacement-asmified.java[Asmified]
+
+== References
+

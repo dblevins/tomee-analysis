@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/FieldInfo.class
+
+ - link:FieldInfo-asmified.java[Asmified]
+
+== References
+

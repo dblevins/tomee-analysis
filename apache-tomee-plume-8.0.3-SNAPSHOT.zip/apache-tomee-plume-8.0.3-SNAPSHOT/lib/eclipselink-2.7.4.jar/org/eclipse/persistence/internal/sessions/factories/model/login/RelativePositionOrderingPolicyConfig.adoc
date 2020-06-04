@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/model/login/RelativePositionOrderingPolicyConfig.class
+
+ - link:RelativePositionOrderingPolicyConfig-asmified.java[Asmified]
+
+== References
+

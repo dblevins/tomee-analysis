@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/BaseNotificationBroadcasterEntry.class
+
+ - link:BaseNotificationBroadcasterEntry-asmified.java[Asmified]
+
+== References
+

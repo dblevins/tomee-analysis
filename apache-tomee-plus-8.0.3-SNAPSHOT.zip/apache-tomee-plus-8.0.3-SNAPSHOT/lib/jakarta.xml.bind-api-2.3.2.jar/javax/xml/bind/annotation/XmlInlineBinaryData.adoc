@@ -1,0 +1,6 @@
+= javax/xml/bind/annotation/XmlInlineBinaryData.class
+
+ - link:XmlInlineBinaryData-asmified.java[Asmified]
+
+== References
+

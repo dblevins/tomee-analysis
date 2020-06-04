@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$BooleanJAXB.class
+
+ - link:StandardJAXBObjects$BooleanJAXB-asmified.java[Asmified]
+
+== References
+

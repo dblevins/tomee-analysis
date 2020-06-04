@@ -1,0 +1,6 @@
+= org/opensaml/xacml/ctx/provider/ObligationService$1.class
+
+ - link:ObligationService$1-asmified.java[Asmified]
+
+== References
+

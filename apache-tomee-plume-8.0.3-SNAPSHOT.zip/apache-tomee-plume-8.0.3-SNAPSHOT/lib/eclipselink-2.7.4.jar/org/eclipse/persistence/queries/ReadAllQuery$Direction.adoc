@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/ReadAllQuery$Direction.class
+
+ - link:ReadAllQuery$Direction-asmified.java[Asmified]
+
+== References
+

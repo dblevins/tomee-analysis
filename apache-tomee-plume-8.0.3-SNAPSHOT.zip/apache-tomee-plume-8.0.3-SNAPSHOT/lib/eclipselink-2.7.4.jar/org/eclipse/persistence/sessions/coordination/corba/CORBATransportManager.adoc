@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/coordination/corba/CORBATransportManager.class
+
+ - link:CORBATransportManager-asmified.java[Asmified]
+
+== References
+

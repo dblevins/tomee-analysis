@@ -1,0 +1,10 @@
+= org/eclipse/persistence/internal/jpa/querydef/PredicateImpl.class
+
+ - link:PredicateImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Predicate$BooleanOperator - 15
+ - javax.persistence.metamodel.Metamodel - 8
+ - javax.persistence.criteria.Predicate - 2
+ - javax.persistence.criteria.Expression - 2

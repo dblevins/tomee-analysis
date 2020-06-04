@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/LockScopes.class
+
+ - link:LockScopes-asmified.java[Asmified]
+
+== References
+

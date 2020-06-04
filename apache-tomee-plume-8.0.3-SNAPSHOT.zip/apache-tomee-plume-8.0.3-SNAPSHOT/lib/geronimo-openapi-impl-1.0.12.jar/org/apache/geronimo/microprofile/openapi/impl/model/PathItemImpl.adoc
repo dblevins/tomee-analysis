@@ -1,0 +1,10 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/PathItemImpl.class
+
+ - link:PathItemImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbProperty - 18
+ - javax.json.bind.annotation.JsonbTypeSerializer - 8
+ - javax.json.bind.annotation.JsonbTransient - 2
+ - javax.enterprise.inject.Vetoed - 1

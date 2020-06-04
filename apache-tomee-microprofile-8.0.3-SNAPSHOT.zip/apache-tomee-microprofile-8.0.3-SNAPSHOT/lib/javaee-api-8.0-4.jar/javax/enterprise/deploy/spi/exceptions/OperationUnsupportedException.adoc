@@ -1,0 +1,6 @@
+= javax/enterprise/deploy/spi/exceptions/OperationUnsupportedException.class
+
+ - link:OperationUnsupportedException-asmified.java[Asmified]
+
+== References
+

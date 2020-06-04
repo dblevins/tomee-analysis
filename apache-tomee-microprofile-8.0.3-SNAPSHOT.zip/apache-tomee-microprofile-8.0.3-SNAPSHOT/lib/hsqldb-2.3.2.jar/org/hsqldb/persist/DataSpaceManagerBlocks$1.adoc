@@ -1,0 +1,6 @@
+= org/hsqldb/persist/DataSpaceManagerBlocks$1.class
+
+ - link:DataSpaceManagerBlocks$1-asmified.java[Asmified]
+
+== References
+

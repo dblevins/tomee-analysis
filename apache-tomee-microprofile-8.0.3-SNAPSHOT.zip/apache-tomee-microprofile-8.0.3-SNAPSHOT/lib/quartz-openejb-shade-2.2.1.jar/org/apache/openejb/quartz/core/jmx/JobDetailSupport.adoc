@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/jmx/JobDetailSupport.class
+
+ - link:JobDetailSupport-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cms/RecipientIdentifier.class
+
+ - link:RecipientIdentifier-asmified.java[Asmified]
+
+== References
+

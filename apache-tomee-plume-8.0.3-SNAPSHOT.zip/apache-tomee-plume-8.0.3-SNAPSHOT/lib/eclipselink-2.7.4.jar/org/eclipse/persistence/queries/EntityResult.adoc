@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/EntityResult.class
+
+ - link:EntityResult-asmified.java[Asmified]
+
+== References
+

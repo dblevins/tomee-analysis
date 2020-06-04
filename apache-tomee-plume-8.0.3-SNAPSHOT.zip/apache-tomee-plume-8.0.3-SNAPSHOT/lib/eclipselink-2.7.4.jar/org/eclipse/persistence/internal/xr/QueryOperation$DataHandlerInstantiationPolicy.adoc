@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/xr/QueryOperation$DataHandlerInstantiationPolicy.class
+
+ - link:QueryOperation$DataHandlerInstantiationPolicy-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

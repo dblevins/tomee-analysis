@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/LocateNode.class
+
+ - link:LocateNode-asmified.java[Asmified]
+
+== References
+

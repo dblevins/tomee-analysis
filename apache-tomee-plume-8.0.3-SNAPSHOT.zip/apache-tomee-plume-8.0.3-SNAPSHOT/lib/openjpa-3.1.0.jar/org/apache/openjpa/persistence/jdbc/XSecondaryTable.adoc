@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/jdbc/XSecondaryTable.class
+
+ - link:XSecondaryTable-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.PrimaryKeyJoinColumn - 1

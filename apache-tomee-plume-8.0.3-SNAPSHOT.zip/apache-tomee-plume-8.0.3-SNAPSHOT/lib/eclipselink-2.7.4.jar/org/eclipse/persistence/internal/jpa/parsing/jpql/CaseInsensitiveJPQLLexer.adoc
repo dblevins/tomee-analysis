@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/CaseInsensitiveJPQLLexer.class
+
+ - link:CaseInsensitiveJPQLLexer-asmified.java[Asmified]
+
+== References
+

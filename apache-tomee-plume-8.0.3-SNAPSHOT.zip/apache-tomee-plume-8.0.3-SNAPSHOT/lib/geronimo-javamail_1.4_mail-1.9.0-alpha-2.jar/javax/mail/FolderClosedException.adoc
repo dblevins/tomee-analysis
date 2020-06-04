@@ -1,0 +1,9 @@
+= javax/mail/FolderClosedException.class
+
+ - link:FolderClosedException-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Folder - 8
+ - javax.mail.MessagingException - 2
+ - javax.mail.FolderClosedException - 1

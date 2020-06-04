@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/XmlBuilder$NonRootLevel.class
+
+ - link:XmlBuilder$NonRootLevel-asmified.java[Asmified]
+
+== References
+

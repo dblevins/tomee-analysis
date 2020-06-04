@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/TimeUnitAdapter.class
+
+ - link:TimeUnitAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

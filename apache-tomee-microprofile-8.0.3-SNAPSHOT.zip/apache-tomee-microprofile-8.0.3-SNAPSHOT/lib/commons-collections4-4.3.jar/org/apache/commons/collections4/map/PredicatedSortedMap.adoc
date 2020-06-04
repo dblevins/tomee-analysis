@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/PredicatedSortedMap.class
+
+ - link:PredicatedSortedMap-asmified.java[Asmified]
+
+== References
+

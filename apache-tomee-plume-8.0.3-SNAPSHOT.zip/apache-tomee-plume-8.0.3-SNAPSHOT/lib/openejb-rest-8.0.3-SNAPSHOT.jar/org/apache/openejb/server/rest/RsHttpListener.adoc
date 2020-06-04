@@ -1,0 +1,7 @@
+= org/apache/openejb/server/rest/RsHttpListener.class
+
+ - link:RsHttpListener-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 3

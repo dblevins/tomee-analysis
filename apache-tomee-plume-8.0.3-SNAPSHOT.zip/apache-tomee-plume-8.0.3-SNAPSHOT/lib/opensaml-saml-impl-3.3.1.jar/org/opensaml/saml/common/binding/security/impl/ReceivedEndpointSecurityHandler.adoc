@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/binding/security/impl/ReceivedEndpointSecurityHandler.class
+
+ - link:ReceivedEndpointSecurityHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.servlet.http.HttpServletRequest - 9

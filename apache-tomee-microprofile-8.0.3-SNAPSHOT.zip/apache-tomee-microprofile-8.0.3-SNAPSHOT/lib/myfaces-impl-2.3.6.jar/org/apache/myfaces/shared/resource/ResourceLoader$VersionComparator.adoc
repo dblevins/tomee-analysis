@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/resource/ResourceLoader$VersionComparator.class
+
+ - link:ResourceLoader$VersionComparator-asmified.java[Asmified]
+
+== References
+

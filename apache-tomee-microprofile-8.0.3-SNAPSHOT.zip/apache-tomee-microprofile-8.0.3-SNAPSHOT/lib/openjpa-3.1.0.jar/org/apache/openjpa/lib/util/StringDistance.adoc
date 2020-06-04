@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/util/StringDistance.class
+
+ - link:StringDistance-asmified.java[Asmified]
+
+== References
+

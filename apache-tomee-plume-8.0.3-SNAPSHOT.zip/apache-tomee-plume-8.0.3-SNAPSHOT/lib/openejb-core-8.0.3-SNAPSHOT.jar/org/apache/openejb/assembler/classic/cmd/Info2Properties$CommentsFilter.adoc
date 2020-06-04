@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/cmd/Info2Properties$CommentsFilter.class
+
+ - link:Info2Properties$CommentsFilter-asmified.java[Asmified]
+
+== References
+

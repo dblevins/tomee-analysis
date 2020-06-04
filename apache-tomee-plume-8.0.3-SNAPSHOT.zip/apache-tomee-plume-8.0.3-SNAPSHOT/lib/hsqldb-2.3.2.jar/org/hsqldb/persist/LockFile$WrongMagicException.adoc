@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LockFile$WrongMagicException.class
+
+ - link:LockFile$WrongMagicException-asmified.java[Asmified]
+
+== References
+

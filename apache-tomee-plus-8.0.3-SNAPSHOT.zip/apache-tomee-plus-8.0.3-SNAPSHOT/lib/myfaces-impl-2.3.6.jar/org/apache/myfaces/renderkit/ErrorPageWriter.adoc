@@ -1,0 +1,26 @@
+= org/apache/myfaces/renderkit/ErrorPageWriter.class
+
+ - link:ErrorPageWriter-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 94
+ - javax.faces.component.UIComponent - 79
+ - javax.faces.context.ExternalContext - 44
+ - javax.faces.component.UIViewRoot - 30
+ - javax.faces.FacesException - 12
+ - javax.faces.context.PartialResponseWriter - 11
+ - javax.servlet.http.HttpServletResponse - 11
+ - javax.el.ValueExpression - 9
+ - javax.faces.view.Location - 7
+ - javax.faces.component.UIColumn - 4
+ - javax.faces.context.ResponseWriter - 4
+ - javax.el.Expression - 3
+ - javax.faces.component.visit.VisitContext - 3
+ - javax.faces.el.ValueBinding - 3
+ - javax.faces.el.MethodBinding - 3
+ - javax.faces.context.Flash - 2
+ - javax.faces.context.PartialViewContext - 2
+ - javax.faces.component.visit.VisitCallback - 1
+ - javax.faces.component.visit.VisitHint - 1
+ - javax.faces.event.PhaseId - 1

@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/InterceptionFactory.class
+
+ - link:InterceptionFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.InterceptionFactory - 1
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 1

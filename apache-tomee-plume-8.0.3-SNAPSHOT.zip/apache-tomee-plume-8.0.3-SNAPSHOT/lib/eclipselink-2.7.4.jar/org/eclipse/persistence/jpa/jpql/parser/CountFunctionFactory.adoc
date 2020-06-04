@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/CountFunctionFactory.class
+
+ - link:CountFunctionFactory-asmified.java[Asmified]
+
+== References
+

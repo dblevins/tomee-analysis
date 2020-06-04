@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/transformers/AttributeTransformer.class
+
+ - link:AttributeTransformer-asmified.java[Asmified]
+
+== References
+

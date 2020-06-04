@@ -1,0 +1,7 @@
+= javax/mail/internet/AddressParser$AddressToken.class
+
+ - link:AddressParser$AddressToken-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.AddressParser - 5

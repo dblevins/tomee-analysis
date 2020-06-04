@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/ElementBeanInfoImpl.class
+
+ - link:ElementBeanInfoImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 41
+ - javax.xml.bind.JAXBElement$GlobalScope - 1

@@ -1,0 +1,11 @@
+= org/apache/webbeans/deployment/StereoTypeModel.class
+
+ - link:StereoTypeModel-asmified.java[Asmified]
+
+== References
+
+ - javax.inject.Scope - 2
+ - javax.enterprise.context.NormalScope - 2
+ - javax.enterprise.inject.Default - 1
+ - javax.enterprise.inject.Typed - 1
+ - javax.inject.Named - 1

@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/ResultFactory.class
+
+ - link:ResultFactory-asmified.java[Asmified]
+
+== References
+

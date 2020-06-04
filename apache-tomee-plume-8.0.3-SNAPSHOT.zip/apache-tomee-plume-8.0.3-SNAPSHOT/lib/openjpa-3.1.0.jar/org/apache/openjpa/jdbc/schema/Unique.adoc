@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/schema/Unique.class
+
+ - link:Unique-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaContentProcessing.class
+
+ - link:XmlSchemaContentProcessing-asmified.java[Asmified]
+
+== References
+

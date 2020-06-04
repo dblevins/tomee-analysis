@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/JndiConsumer.class
+
+ - link:JndiConsumer-asmified.java[Asmified]
+
+== References
+

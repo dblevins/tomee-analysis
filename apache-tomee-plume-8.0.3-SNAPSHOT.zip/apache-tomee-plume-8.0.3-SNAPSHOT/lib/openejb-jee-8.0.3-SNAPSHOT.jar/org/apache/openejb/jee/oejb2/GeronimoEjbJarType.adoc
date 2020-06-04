@@ -1,0 +1,14 @@
+= org/apache/openejb/jee/oejb2/GeronimoEjbJarType.class
+
+ - link:GeronimoEjbJarType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 18
+ - javax.xml.bind.annotation.XmlElement - 11
+ - javax.xml.bind.annotation.XmlElementRef - 5
+ - javax.xml.bind.annotation.XmlAccessorType - 1
+ - javax.xml.bind.annotation.XmlType - 1
+ - javax.xml.bind.annotation.XmlAnyElement - 1
+ - javax.xml.bind.annotation.XmlRootElement - 1
+ - javax.xml.bind.annotation.XmlAccessType - 1

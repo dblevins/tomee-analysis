@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/jpql/JPQL$LookaheadSuccess.class
+
+ - link:JPQL$LookaheadSuccess-asmified.java[Asmified]
+
+== References
+

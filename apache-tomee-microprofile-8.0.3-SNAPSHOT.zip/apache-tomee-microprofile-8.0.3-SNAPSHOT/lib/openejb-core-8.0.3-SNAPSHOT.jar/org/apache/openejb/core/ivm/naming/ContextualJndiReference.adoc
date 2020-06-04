@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/ContextualJndiReference.class
+
+ - link:ContextualJndiReference-asmified.java[Asmified]
+
+== References
+

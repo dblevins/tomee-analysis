@@ -1,0 +1,9 @@
+= org/apache/safeguard/impl/retry/BaseRetryInterceptor.class
+
+ - link:BaseRetryInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 13
+ - javax.inject.Inject - 1
+ - javax.interceptor.AroundInvoke - 1

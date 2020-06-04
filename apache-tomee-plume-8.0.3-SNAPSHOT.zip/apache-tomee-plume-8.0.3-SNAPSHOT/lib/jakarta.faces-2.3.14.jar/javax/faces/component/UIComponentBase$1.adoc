@@ -1,0 +1,8 @@
+= javax/faces/component/UIComponentBase$1.class
+
+ - link:UIComponentBase$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 3
+ - javax.faces.component.UIComponentBase$1 - 1

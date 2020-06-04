@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/ProcessSyntheticBean.class
+
+ - link:ProcessSyntheticBean-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Extension - 1
+ - javax.enterprise.inject.spi.ProcessBean - 1

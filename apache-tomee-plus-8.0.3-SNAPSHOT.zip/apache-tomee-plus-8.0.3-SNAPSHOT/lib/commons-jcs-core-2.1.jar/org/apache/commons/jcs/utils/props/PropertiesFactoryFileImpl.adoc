@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/utils/props/PropertiesFactoryFileImpl.class
+
+ - link:PropertiesFactoryFileImpl-asmified.java[Asmified]
+
+== References
+

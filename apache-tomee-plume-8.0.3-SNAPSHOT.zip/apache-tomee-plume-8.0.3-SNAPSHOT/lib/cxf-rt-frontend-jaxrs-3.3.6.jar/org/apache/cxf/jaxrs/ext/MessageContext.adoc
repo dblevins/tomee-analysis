@@ -1,0 +1,15 @@
+= org/apache/cxf/jaxrs/ext/MessageContext.class
+
+ - link:MessageContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 1
+ - javax.servlet.ServletConfig - 1
+ - javax.ws.rs.ext.Providers - 1
+ - javax.ws.rs.core.HttpHeaders - 1
+ - javax.servlet.http.HttpServletResponse - 1
+ - javax.ws.rs.core.SecurityContext - 1
+ - javax.servlet.ServletContext - 1
+ - javax.ws.rs.core.Request - 1
+ - javax.ws.rs.core.UriInfo - 1

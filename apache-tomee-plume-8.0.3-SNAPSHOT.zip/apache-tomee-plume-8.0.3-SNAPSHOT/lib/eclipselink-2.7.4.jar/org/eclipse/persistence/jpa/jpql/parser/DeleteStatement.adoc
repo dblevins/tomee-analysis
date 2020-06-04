@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/DeleteStatement.class
+
+ - link:DeleteStatement-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/faces/util/copier/CopyCtorCopier.class
+
+ - link:CopyCtorCopier-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxrs/provider/FormValidator.class
+
+ - link:FormValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 1

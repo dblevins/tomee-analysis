@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/env/IModuleAwareNameEnvironment$LookupStrategy$3.class
+
+ - link:IModuleAwareNameEnvironment$LookupStrategy$3-asmified.java[Asmified]
+
+== References
+

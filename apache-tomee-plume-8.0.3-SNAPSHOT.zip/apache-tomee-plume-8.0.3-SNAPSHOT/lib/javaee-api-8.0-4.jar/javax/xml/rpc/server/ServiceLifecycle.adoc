@@ -1,0 +1,7 @@
+= javax/xml/rpc/server/ServiceLifecycle.class
+
+ - link:ServiceLifecycle-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.rpc.ServiceException - 1

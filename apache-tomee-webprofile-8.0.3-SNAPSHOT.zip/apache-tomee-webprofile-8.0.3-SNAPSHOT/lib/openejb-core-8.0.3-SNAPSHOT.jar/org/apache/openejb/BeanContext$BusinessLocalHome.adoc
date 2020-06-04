@@ -1,0 +1,7 @@
+= org/apache/openejb/BeanContext$BusinessLocalHome.class
+
+ - link:BeanContext$BusinessLocalHome-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBLocalHome - 1

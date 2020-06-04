@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/Connector.class
+
+ - link:Connector-asmified.java[Asmified]
+
+== References
+

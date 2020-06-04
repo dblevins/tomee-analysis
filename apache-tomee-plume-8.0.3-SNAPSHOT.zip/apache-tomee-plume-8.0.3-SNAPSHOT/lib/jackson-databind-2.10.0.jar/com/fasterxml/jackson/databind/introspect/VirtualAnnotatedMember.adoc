@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/VirtualAnnotatedMember.class
+
+ - link:VirtualAnnotatedMember-asmified.java[Asmified]
+
+== References
+

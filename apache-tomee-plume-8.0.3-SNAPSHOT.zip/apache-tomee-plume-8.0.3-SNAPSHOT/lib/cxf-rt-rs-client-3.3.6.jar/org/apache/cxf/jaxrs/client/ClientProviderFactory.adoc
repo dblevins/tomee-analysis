@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/client/ClientProviderFactory.class
+
+ - link:ClientProviderFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.RxInvokerProvider - 7
+ - javax.ws.rs.client.ClientResponseFilter - 4
+ - javax.ws.rs.client.ClientRequestFilter - 4
+ - javax.ws.rs.core.Configuration - 3

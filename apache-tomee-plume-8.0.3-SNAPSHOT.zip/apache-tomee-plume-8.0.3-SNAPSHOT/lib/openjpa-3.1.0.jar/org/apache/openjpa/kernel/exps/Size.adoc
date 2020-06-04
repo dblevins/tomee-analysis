@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/exps/Size.class
+
+ - link:Size-asmified.java[Asmified]
+
+== References
+

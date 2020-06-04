@@ -1,0 +1,6 @@
+= org/eclipse/persistence/exceptions/i18n/StaticWeaveExceptionResource.class
+
+ - link:StaticWeaveExceptionResource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/AbstractEclipseLinkSemanticValidator$TableExpressionVisitor.class
+
+ - link:AbstractEclipseLinkSemanticValidator$TableExpressionVisitor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/joda/time/format/DateTimeFormatterBuilder$FixedNumber.class
+
+ - link:DateTimeFormatterBuilder$FixedNumber-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/TypeReceiver.class
+
+ - link:TypeReceiver-asmified.java[Asmified]
+
+== References
+

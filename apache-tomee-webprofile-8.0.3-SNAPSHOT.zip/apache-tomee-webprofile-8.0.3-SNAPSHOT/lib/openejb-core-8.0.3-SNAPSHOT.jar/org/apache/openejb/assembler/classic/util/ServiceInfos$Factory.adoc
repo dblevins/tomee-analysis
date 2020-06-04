@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/util/ServiceInfos$Factory.class
+
+ - link:ServiceInfos$Factory-asmified.java[Asmified]
+
+== References
+

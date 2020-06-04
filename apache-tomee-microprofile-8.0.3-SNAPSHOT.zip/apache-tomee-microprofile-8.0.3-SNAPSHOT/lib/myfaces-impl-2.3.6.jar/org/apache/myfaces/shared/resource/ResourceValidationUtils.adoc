@@ -1,0 +1,6 @@
+= org/apache/myfaces/shared/resource/ResourceValidationUtils.class
+
+ - link:ResourceValidationUtils-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/securityToken/SecurityTokenFactory.class
+
+ - link:SecurityTokenFactory-asmified.java[Asmified]
+
+== References
+

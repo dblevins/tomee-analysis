@@ -1,0 +1,6 @@
+= org/apache/xml/security/keys/storage/implementations/SingleCertificateResolver$InternalIterator.class
+
+ - link:SingleCertificateResolver$InternalIterator-asmified.java[Asmified]
+
+== References
+

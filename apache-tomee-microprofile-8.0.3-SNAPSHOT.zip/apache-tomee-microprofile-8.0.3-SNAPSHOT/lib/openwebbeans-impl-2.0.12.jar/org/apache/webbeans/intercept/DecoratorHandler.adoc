@@ -1,0 +1,11 @@
+= org/apache/webbeans/intercept/DecoratorHandler.class
+
+ - link:DecoratorHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Decorator - 13
+ - javax.enterprise.inject.spi.BeanManager - 7
+ - javax.enterprise.inject.spi.Bean - 6
+ - javax.enterprise.context.spi.Contextual - 1
+ - javax.enterprise.inject.spi.Producer - 1

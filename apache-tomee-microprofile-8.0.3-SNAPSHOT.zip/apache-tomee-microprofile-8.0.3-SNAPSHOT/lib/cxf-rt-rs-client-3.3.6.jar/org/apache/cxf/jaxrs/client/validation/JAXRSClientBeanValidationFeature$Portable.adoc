@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/client/validation/JAXRSClientBeanValidationFeature$Portable.class
+
+ - link:JAXRSClientBeanValidationFeature$Portable-asmified.java[Asmified]
+
+== References
+

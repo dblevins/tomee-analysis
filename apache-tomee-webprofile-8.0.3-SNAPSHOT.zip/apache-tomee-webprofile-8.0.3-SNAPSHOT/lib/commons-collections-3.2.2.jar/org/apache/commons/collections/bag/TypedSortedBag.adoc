@@ -1,0 +1,6 @@
+= org/apache/commons/collections/bag/TypedSortedBag.class
+
+ - link:TypedSortedBag-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/oracle/OracleJDBC_10_1_0_2ProxyConnectionCustomizer.class
+
+ - link:OracleJDBC_10_1_0_2ProxyConnectionCustomizer-asmified.java[Asmified]
+
+== References
+

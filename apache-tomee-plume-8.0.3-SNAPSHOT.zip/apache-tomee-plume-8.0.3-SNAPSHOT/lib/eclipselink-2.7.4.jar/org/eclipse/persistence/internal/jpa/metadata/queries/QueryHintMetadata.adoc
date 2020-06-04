@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/queries/QueryHintMetadata.class
+
+ - link:QueryHintMetadata-asmified.java[Asmified]
+
+== References
+

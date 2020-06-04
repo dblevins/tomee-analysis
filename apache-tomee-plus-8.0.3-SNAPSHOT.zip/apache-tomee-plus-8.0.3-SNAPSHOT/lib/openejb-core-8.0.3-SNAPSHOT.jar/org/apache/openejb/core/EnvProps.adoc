@@ -1,0 +1,6 @@
+= org/apache/openejb/core/EnvProps.class
+
+ - link:EnvProps-asmified.java[Asmified]
+
+== References
+

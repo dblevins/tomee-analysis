@@ -1,0 +1,6 @@
+= org/apache/cxf/feature/transform/XSLTFeature.class
+
+ - link:XSLTFeature-asmified.java[Asmified]
+
+== References
+

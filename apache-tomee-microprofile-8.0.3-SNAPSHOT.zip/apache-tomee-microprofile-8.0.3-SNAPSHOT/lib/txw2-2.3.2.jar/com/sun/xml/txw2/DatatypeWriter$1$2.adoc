@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/DatatypeWriter$1$2.class
+
+ - link:DatatypeWriter$1$2-asmified.java[Asmified]
+
+== References
+

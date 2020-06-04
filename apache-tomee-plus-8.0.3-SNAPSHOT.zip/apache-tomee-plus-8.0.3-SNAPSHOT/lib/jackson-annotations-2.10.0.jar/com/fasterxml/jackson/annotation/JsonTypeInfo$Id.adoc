@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JsonTypeInfo$Id.class
+
+ - link:JsonTypeInfo$Id-asmified.java[Asmified]
+
+== References
+

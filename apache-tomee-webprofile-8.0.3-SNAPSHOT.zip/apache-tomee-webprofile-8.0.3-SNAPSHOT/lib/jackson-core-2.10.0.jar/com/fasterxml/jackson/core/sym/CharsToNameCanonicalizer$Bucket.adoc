@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer$Bucket.class
+
+ - link:CharsToNameCanonicalizer$Bucket-asmified.java[Asmified]
+
+== References
+

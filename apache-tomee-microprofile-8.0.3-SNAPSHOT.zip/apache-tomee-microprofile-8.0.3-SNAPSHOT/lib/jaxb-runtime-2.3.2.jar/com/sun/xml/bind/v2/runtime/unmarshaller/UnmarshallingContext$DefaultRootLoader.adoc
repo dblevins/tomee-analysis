@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/UnmarshallingContext$DefaultRootLoader.class
+
+ - link:UnmarshallingContext$DefaultRootLoader-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 6

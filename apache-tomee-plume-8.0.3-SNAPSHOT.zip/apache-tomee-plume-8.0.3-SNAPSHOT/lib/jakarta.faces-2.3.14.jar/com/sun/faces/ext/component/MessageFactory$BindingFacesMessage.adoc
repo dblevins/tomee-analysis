@@ -1,0 +1,11 @@
+= com/sun/faces/ext/component/MessageFactory$BindingFacesMessage.class
+
+ - link:MessageFactory$BindingFacesMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 7
+ - javax.faces.application.FacesMessage - 4
+ - javax.el.ValueExpression - 3
+ - javax.faces.el.ValueBinding - 3
+ - javax.el.ELContext - 2

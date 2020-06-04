@@ -1,0 +1,6 @@
+= org/apache/catalina/util/LifecycleMBeanBase.class
+
+ - link:LifecycleMBeanBase-asmified.java[Asmified]
+
+== References
+

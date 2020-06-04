@@ -1,0 +1,6 @@
+= com/ctc/wstx/io/ReaderBootstrapper.class
+
+ - link:ReaderBootstrapper-asmified.java[Asmified]
+
+== References
+

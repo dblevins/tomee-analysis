@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/DTDNmTokensAttr.class
+
+ - link:DTDNmTokensAttr-asmified.java[Asmified]
+
+== References
+

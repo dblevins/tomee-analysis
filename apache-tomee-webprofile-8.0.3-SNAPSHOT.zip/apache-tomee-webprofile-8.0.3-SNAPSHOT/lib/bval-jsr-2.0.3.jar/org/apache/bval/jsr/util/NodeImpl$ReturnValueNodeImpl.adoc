@@ -1,0 +1,9 @@
+= org/apache/bval/jsr/util/NodeImpl$ReturnValueNodeImpl.class
+
+ - link:NodeImpl$ReturnValueNodeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Path$Node - 2
+ - javax.validation.ElementKind - 2
+ - javax.validation.Path$ReturnValueNode - 1

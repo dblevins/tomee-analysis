@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/ValidationXMLReader$1ConstrainedClassesDetector.class
+
+ - link:ValidationXMLReader$1ConstrainedClassesDetector-asmified.java[Asmified]
+
+== References
+

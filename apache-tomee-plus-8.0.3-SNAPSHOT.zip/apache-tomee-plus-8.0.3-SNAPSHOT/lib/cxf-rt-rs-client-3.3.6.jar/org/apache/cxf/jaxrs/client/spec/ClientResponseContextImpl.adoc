@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/client/spec/ClientResponseContextImpl.class
+
+ - link:ClientResponseContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 4
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.client.ClientResponseContext - 1
+ - javax.ws.rs.WebApplicationException - 1

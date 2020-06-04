@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/DatabaseSession.class
+
+ - link:DatabaseSession-asmified.java[Asmified]
+
+== References
+

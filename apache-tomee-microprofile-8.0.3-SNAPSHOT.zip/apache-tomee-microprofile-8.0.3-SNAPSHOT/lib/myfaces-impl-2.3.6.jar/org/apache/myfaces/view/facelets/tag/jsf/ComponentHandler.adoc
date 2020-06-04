@@ -1,0 +1,26 @@
+= org/apache/myfaces/view/facelets/tag/jsf/ComponentHandler.class
+
+ - link:ComponentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 35
+ - javax.faces.view.facelets.FaceletContext - 22
+ - javax.faces.view.facelets.MetaRuleset - 18
+ - javax.faces.view.facelets.TagAttribute - 15
+ - javax.faces.view.facelets.Tag - 6
+ - javax.faces.view.facelets.MetaRule - 4
+ - javax.faces.application.Application - 4
+ - javax.faces.context.FacesContext - 4
+ - javax.el.ValueExpression - 3
+ - javax.faces.view.facelets.ComponentConfig - 3
+ - javax.faces.view.facelets.TagException - 2
+ - javax.faces.view.facelets.MetaTagHandler - 2
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.FacesException - 2
+ - javax.el.ELException - 2
+ - javax.faces.view.facelets.FaceletHandler - 2
+ - javax.faces.view.facelets.TagConfig - 1
+ - javax.faces.component.ValueHolder - 1
+ - javax.faces.component.EditableValueHolder - 1
+ - javax.faces.component.ActionSource - 1

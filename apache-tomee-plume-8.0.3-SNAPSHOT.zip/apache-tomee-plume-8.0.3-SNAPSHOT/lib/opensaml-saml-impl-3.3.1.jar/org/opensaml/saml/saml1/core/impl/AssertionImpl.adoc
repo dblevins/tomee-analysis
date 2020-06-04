@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/AssertionImpl.class
+
+ - link:AssertionImpl-asmified.java[Asmified]
+
+== References
+

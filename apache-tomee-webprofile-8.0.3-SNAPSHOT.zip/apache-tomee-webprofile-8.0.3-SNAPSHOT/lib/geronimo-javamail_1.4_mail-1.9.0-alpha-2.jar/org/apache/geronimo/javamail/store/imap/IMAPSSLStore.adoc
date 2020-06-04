@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/imap/IMAPSSLStore.class
+
+ - link:IMAPSSLStore-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.URLName - 2
+ - javax.mail.Session - 2

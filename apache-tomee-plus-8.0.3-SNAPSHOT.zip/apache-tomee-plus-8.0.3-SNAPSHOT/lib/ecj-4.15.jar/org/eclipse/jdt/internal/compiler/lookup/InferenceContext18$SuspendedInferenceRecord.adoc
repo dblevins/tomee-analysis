@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/InferenceContext18$SuspendedInferenceRecord.class
+
+ - link:InferenceContext18$SuspendedInferenceRecord-asmified.java[Asmified]
+
+== References
+

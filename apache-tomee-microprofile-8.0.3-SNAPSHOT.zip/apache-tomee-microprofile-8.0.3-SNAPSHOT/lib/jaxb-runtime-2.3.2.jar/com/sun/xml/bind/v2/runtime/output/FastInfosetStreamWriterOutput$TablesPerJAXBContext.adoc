@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/output/FastInfosetStreamWriterOutput$TablesPerJAXBContext.class
+
+ - link:FastInfosetStreamWriterOutput$TablesPerJAXBContext-asmified.java[Asmified]
+
+== References
+

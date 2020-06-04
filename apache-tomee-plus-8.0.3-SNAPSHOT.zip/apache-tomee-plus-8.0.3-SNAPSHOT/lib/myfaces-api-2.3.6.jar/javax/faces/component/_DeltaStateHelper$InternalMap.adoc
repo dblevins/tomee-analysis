@@ -1,0 +1,10 @@
+= javax/faces/component/_DeltaStateHelper$InternalMap.class
+
+ - link:_DeltaStateHelper$InternalMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 4
+ - javax.faces.component._DeltaStateHelper$InternalMap - 3
+ - javax.faces.component.StateHolder - 2
+ - javax.faces.component.UIComponentBase - 2

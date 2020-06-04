@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/CurrentTimeExpression$Now.class
+
+ - link:CurrentTimeExpression$Now-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/utils/FindbugsSuppressWarnings.class
+
+ - link:FindbugsSuppressWarnings-asmified.java[Asmified]
+
+== References
+

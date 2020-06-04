@@ -1,0 +1,22 @@
+= org/apache/openejb/core/ivm/BaseEjbProxyHandler.class
+
+ - link:BaseEjbProxyHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionSynchronizationRegistry - 7
+ - javax.transaction.Transaction - 6
+ - javax.ejb.AccessLocalException - 6
+ - javax.ejb.EJBException - 6
+ - javax.transaction.TransactionManager - 6
+ - javax.ejb.NoSuchEJBException - 5
+ - javax.ejb.NoSuchObjectLocalException - 5
+ - javax.ejb.EJBTransactionRequiredException - 3
+ - javax.ejb.TransactionRolledbackLocalException - 3
+ - javax.ejb.EJBTransactionRolledbackException - 3
+ - javax.ejb.TransactionRequiredLocalException - 3
+ - javax.transaction.RollbackException - 3
+ - javax.transaction.SystemException - 2
+ - javax.transaction.TransactionRequiredException - 1
+ - javax.transaction.TransactionRolledbackException - 1
+ - javax.transaction.Synchronization - 1

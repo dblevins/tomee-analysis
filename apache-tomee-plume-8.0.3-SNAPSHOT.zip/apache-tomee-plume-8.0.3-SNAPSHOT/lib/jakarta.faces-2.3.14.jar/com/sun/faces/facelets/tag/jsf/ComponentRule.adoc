@@ -1,0 +1,11 @@
+= com/sun/faces/facelets/tag/jsf/ComponentRule.class
+
+ - link:ComponentRule-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagAttribute - 6
+ - javax.faces.view.facelets.MetadataTarget - 5
+ - javax.faces.view.facelets.MetaRule - 2
+ - javax.faces.view.facelets.Metadata - 1
+ - javax.faces.component.UIComponent - 1

@@ -1,0 +1,6 @@
+= org/jvnet/staxex/NamespaceContextEx.class
+
+ - link:NamespaceContextEx-asmified.java[Asmified]
+
+== References
+

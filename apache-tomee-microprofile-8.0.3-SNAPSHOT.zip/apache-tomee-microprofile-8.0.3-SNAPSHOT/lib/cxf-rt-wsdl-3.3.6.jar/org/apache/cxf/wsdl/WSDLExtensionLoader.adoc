@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl/WSDLExtensionLoader.class
+
+ - link:WSDLExtensionLoader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/ctc/wstx/evt/BaseStartElement.class
+
+ - link:BaseStartElement-asmified.java[Asmified]
+
+== References
+

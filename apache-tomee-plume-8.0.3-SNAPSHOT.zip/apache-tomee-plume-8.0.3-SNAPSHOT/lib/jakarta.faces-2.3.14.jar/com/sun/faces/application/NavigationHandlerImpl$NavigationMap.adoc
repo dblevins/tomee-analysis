@@ -1,0 +1,7 @@
+= com/sun/faces/application/NavigationHandlerImpl$NavigationMap.class
+
+ - link:NavigationHandlerImpl$NavigationMap-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.NavigationCase - 7

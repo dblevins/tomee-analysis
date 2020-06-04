@@ -1,0 +1,6 @@
+= org/apache/commons/collections/functors/AnyPredicate.class
+
+ - link:AnyPredicate-asmified.java[Asmified]
+
+== References
+

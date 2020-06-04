@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/compiler/TagLibraryConfig.class
+
+ - link:TagLibraryConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.FacesException - 6
+ - javax.faces.view.facelets.TagHandler - 5
+ - javax.faces.context.FacesContext - 4

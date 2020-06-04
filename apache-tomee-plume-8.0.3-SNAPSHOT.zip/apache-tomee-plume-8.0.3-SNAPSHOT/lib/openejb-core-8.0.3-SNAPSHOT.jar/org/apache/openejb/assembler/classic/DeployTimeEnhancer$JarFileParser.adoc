@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/DeployTimeEnhancer$JarFileParser.class
+
+ - link:DeployTimeEnhancer$JarFileParser-asmified.java[Asmified]
+
+== References
+

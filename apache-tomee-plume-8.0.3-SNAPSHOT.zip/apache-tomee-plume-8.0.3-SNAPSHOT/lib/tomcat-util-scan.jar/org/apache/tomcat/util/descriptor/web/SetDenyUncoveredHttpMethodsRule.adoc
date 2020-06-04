@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/descriptor/web/SetDenyUncoveredHttpMethodsRule.class
+
+ - link:SetDenyUncoveredHttpMethodsRule-asmified.java[Asmified]
+
+== References
+

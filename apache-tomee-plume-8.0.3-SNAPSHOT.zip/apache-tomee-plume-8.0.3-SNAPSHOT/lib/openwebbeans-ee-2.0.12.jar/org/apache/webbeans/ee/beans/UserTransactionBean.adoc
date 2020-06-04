@@ -1,0 +1,10 @@
+= org/apache/webbeans/ee/beans/UserTransactionBean.class
+
+ - link:UserTransactionBean-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 3
+ - javax.inject.Provider - 1
+ - javax.enterprise.inject.spi.ProducerFactory - 1
+ - javax.enterprise.inject.spi.Producer - 1

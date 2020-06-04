@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/xml/XMLParserException.class
+
+ - link:XMLParserException-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/jaxb/dynamic/DynamicJAXBContext.class
+
+ - link:DynamicJAXBContext-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 4

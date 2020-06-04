@@ -1,0 +1,11 @@
+= javax/persistence/CollectionTable.class
+
+ - link:CollectionTable-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.ForeignKey - 2
+ - javax.persistence.ConstraintMode - 1
+ - javax.persistence.Index - 1
+ - javax.persistence.UniqueConstraint - 1
+ - javax.persistence.JoinColumn - 1

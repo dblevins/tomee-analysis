@@ -1,0 +1,9 @@
+= org/apache/openjpa/lib/util/J2DoPrivHelper.class
+
+ - link:J2DoPrivHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Validator - 2
+ - javax.validation.ValidatorFactory - 1
+ - javax.validation.ConstraintViolation - 1

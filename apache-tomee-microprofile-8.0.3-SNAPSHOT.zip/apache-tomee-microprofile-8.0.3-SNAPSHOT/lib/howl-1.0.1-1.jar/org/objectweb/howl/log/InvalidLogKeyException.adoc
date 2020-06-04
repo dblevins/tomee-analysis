@@ -1,0 +1,6 @@
+= org/objectweb/howl/log/InvalidLogKeyException.class
+
+ - link:InvalidLogKeyException-asmified.java[Asmified]
+
+== References
+

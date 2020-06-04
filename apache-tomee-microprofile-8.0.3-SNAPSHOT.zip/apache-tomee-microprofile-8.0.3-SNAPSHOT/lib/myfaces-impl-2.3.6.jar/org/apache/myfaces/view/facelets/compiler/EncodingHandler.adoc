@@ -1,0 +1,13 @@
+= org/apache/myfaces/view/facelets/compiler/EncodingHandler.class
+
+ - link:EncodingHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.view.facelets.FaceletHandler - 6
+ - javax.faces.view.facelets.FaceletContext - 5
+ - javax.faces.component.UIComponent - 2
+ - javax.faces.FacesException - 1
+ - javax.el.ELException - 1
+ - javax.faces.view.facelets.FaceletException - 1

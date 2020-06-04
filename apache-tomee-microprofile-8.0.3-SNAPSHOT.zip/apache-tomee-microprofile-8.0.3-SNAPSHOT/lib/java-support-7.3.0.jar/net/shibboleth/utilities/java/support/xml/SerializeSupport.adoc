@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/xml/SerializeSupport.class
+
+ - link:SerializeSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 14
+ - javax.annotation.Nullable - 3

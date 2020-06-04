@@ -1,0 +1,6 @@
+= org/apache/xbean/finder/filter/IncludeExcludeFilter.class
+
+ - link:IncludeExcludeFilter-asmified.java[Asmified]
+
+== References
+

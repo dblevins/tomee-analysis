@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws/JAXWSProviderMethodDispatcher.class
+
+ - link:JAXWSProviderMethodDispatcher-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.Provider - 1

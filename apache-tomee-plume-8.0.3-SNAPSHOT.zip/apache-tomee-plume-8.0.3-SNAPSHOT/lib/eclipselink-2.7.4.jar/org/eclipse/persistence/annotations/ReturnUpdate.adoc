@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/ReturnUpdate.class
+
+ - link:ReturnUpdate-asmified.java[Asmified]
+
+== References
+

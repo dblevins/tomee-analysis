@@ -1,0 +1,10 @@
+= com/sun/faces/config/processor/FaceletTaglibConfigProcessor.class
+
+ - link:FaceletTaglibConfigProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 40
+ - javax.servlet.ServletContext - 39
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.FacesException - 2

@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/modeler/NoDescriptorRegistry$1.class
+
+ - link:NoDescriptorRegistry$1-asmified.java[Asmified]
+
+== References
+

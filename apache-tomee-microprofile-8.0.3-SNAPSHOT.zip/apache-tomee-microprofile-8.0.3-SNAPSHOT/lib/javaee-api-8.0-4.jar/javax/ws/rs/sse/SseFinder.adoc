@@ -1,0 +1,8 @@
+= javax/ws/rs/sse/SseFinder.class
+
+ - link:SseFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.sse.SseFinder - 6
+ - javax.ws.rs.sse.SseEventSource$Builder - 3

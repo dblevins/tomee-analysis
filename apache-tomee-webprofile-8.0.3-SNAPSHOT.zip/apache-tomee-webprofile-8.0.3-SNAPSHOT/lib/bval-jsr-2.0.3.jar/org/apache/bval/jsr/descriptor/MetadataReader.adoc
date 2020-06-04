@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/descriptor/MetadataReader.class
+
+ - link:MetadataReader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/impl/jdbcjobstore/JobStoreSupport$MisfireHandler.class
+
+ - link:JobStoreSupport$MisfireHandler-asmified.java[Asmified]
+
+== References
+

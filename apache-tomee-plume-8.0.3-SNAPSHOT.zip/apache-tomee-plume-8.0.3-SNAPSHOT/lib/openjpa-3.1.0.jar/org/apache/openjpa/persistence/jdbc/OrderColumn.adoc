@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/OrderColumn.class
+
+ - link:OrderColumn-asmified.java[Asmified]
+
+== References
+

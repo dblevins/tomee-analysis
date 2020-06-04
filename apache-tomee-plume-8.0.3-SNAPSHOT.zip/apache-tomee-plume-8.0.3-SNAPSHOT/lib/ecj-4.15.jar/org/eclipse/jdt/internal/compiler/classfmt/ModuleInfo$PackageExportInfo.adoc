@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/classfmt/ModuleInfo$PackageExportInfo.class
+
+ - link:ModuleInfo$PackageExportInfo-asmified.java[Asmified]
+
+== References
+

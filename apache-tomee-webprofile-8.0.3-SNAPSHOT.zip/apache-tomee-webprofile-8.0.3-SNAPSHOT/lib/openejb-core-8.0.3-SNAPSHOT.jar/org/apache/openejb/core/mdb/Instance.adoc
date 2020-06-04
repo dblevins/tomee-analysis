@@ -1,0 +1,7 @@
+= org/apache/openejb/core/mdb/Instance.class
+
+ - link:Instance-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.context.spi.CreationalContext - 3

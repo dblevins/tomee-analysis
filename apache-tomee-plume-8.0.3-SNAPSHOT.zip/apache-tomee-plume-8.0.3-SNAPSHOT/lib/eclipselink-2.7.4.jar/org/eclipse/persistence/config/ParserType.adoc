@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ParserType.class
+
+ - link:ParserType-asmified.java[Asmified]
+
+== References
+

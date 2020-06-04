@@ -1,0 +1,8 @@
+= org/apache/openejb/jee/JAXBContextFactory.class
+
+ - link:JAXBContextFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBContext - 17
+ - javax.xml.bind.JAXBException - 5

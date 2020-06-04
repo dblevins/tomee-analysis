@@ -1,0 +1,15 @@
+= com/sun/faces/util/BeanValidation.class
+
+ - link:BeanValidation-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ValidatorFactory - 8
+ - javax.faces.context.FacesContext - 6
+ - javax.faces.context.ExternalContext - 4
+ - javax.validation.ValidatorContext - 4
+ - javax.validation.MessageInterpolator - 3
+ - javax.faces.FacesException - 2
+ - javax.validation.ValidationException - 2
+ - javax.validation.Validator - 2
+ - javax.validation.Validation - 1

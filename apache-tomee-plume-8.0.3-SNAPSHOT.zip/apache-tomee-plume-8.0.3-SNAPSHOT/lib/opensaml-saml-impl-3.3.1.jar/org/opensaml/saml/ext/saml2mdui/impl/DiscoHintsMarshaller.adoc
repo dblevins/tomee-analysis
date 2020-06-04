@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/DiscoHintsMarshaller.class
+
+ - link:DiscoHintsMarshaller-asmified.java[Asmified]
+
+== References
+

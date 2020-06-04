@@ -1,0 +1,6 @@
+= org/apache/webbeans/util/SecurityUtil$PrivilegedActionForClass.class
+
+ - link:SecurityUtil$PrivilegedActionForClass-asmified.java[Asmified]
+
+== References
+

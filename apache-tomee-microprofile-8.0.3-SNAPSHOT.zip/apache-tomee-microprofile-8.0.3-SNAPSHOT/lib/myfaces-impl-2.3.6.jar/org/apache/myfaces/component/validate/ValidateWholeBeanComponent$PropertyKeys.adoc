@@ -1,0 +1,6 @@
+= org/apache/myfaces/component/validate/ValidateWholeBeanComponent$PropertyKeys.class
+
+ - link:ValidateWholeBeanComponent$PropertyKeys-asmified.java[Asmified]
+
+== References
+

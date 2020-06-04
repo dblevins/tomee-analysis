@@ -1,0 +1,7 @@
+= javax/enterprise/event/ObservesAsync.class
+
+ - link:ObservesAsync-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.event.Reception - 2

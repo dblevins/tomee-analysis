@@ -1,0 +1,13 @@
+= org/apache/openejb/core/transaction/SimpleWorkManager.class
+
+ - link:SimpleWorkManager-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.Work - 17
+ - javax.resource.spi.work.WorkException - 17
+ - javax.resource.spi.work.WorkListener - 14
+ - javax.resource.spi.work.ExecutionContext - 12
+ - javax.resource.spi.work.WorkEvent - 6
+ - javax.resource.spi.work.WorkRejectedException - 3
+ - javax.resource.spi.work.WorkManager - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/JavaeeSchema.class
+
+ - link:JavaeeSchema-asmified.java[Asmified]
+
+== References
+

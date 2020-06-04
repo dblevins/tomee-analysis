@@ -1,0 +1,6 @@
+= org/eclipse/persistence/eis/EISObjectPersistenceXMLProject$2.class
+
+ - link:EISObjectPersistenceXMLProject$2-asmified.java[Asmified]
+
+== References
+

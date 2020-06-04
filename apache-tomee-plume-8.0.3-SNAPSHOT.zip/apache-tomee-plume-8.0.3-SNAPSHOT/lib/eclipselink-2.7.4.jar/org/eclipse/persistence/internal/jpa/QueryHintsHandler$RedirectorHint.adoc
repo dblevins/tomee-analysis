@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$RedirectorHint.class
+
+ - link:QueryHintsHandler$RedirectorHint-asmified.java[Asmified]
+
+== References
+

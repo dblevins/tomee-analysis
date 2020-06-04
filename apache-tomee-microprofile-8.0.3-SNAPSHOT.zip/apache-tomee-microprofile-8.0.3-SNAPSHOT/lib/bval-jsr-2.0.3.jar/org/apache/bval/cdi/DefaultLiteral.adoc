@@ -1,0 +1,7 @@
+= org/apache/bval/cdi/DefaultLiteral.class
+
+ - link:DefaultLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.Default - 3

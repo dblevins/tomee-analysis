@@ -1,0 +1,6 @@
+= org/apache/bval/util/ObjectUtils.class
+
+ - link:ObjectUtils-asmified.java[Asmified]
+
+== References
+

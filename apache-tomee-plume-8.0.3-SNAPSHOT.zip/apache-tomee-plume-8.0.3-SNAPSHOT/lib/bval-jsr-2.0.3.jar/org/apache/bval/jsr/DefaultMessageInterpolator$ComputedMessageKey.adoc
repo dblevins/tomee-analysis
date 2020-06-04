@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/DefaultMessageInterpolator$ComputedMessageKey.class
+
+ - link:DefaultMessageInterpolator$ComputedMessageKey-asmified.java[Asmified]
+
+== References
+

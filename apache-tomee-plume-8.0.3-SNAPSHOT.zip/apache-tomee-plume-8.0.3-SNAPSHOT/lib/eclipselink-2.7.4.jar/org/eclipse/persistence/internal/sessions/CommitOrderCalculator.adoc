@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/CommitOrderCalculator.class
+
+ - link:CommitOrderCalculator-asmified.java[Asmified]
+
+== References
+

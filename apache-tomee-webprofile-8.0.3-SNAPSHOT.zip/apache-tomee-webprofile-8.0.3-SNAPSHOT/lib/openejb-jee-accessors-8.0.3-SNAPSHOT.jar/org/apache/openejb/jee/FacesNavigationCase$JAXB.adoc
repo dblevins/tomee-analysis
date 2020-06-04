@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/FacesNavigationCase$JAXB.class
+
+ - link:FacesNavigationCase$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 23

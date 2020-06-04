@@ -1,0 +1,9 @@
+= org/apache/openejb/core/cmp/ProxyFactory.class
+
+ - link:ProxyFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EntityBean - 4
+ - javax.ejb.EJBHome - 1
+ - javax.ejb.EJBLocalHome - 1

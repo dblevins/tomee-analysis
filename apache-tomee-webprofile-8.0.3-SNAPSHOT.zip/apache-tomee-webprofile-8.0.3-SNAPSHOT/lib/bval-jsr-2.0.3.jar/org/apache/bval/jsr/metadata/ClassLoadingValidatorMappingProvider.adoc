@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/ClassLoadingValidatorMappingProvider.class
+
+ - link:ClassLoadingValidatorMappingProvider-asmified.java[Asmified]
+
+== References
+

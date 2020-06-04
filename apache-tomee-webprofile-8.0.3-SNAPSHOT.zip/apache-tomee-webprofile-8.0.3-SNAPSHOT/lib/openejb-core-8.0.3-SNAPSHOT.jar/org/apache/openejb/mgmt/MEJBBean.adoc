@@ -1,0 +1,12 @@
+= org/apache/openejb/mgmt/MEJBBean.class
+
+ - link:MEJBBean-asmified.java[Asmified]
+
+== References
+
+ - javax.management.j2ee.ListenerRegistration - 1
+ - javax.management.j2ee.ManagementHome - 1
+ - javax.ejb.Lock - 1
+ - javax.ejb.Singleton - 1
+ - javax.ejb.RemoteHome - 1
+ - javax.ejb.LockType - 1

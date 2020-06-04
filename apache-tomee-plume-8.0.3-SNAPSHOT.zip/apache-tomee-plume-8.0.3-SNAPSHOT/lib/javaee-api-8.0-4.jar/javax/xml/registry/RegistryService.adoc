@@ -1,0 +1,15 @@
+= javax/xml/registry/RegistryService.class
+
+ - link:RegistryService-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.registry.JAXRException - 7
+ - javax.xml.registry.BulkResponse - 1
+ - javax.xml.registry.BusinessLifeCycleManager - 1
+ - javax.xml.registry.infomodel.ClassificationScheme - 1
+ - javax.xml.registry.UnsupportedCapabilityException - 1
+ - javax.xml.registry.InvalidRequestException - 1
+ - javax.xml.registry.BusinessQueryManager - 1
+ - javax.xml.registry.CapabilityProfile - 1
+ - javax.xml.registry.DeclarativeQueryManager - 1

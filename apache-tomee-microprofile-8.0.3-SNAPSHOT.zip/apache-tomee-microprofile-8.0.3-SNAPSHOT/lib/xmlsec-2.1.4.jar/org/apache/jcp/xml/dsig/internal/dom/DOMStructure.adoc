@@ -1,0 +1,6 @@
+= org/apache/jcp/xml/dsig/internal/dom/DOMStructure.class
+
+ - link:DOMStructure-asmified.java[Asmified]
+
+== References
+

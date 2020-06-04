@@ -1,0 +1,6 @@
+= com/ctc/wstx/evt/WNotationDeclaration.class
+
+ - link:WNotationDeclaration-asmified.java[Asmified]
+
+== References
+

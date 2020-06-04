@@ -1,0 +1,11 @@
+= apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-cxf-8.0.3-SNAPSHOT.jar
+
+ - link:org/apache/openejb/server/cxf/pojo/PojoEndpoint.adoc[org/apache/openejb/server/cxf/pojo/PojoEndpoint.class] - 35
+ - link:org/apache/openejb/server/cxf/ejb/EjbMessageContext.adoc[org/apache/openejb/server/cxf/ejb/EjbMessageContext.class] - 22
+ - link:org/apache/openejb/server/cxf/ejb/EjbInterceptor.adoc[org/apache/openejb/server/cxf/ejb/EjbInterceptor.class] - 18
+ - link:org/apache/openejb/server/cxf/ejb/EjbMethodInvoker.adoc[org/apache/openejb/server/cxf/ejb/EjbMethodInvoker.class] - 15
+ - link:org/apache/openejb/server/cxf/CxfEndpoint.adoc[org/apache/openejb/server/cxf/CxfEndpoint.class] - 12
+ - link:org/apache/openejb/server/cxf/client/WebServiceInjectionConfigurator.adoc[org/apache/openejb/server/cxf/client/WebServiceInjectionConfigurator.class] - 6
+ - link:org/apache/openejb/server/cxf/CxfWsContainer.adoc[org/apache/openejb/server/cxf/CxfWsContainer.class] - 5
+ - link:org/apache/openejb/server/cxf/JaxWsImplementorInfoImpl.adoc[org/apache/openejb/server/cxf/JaxWsImplementorInfoImpl.class] - 4
+ - link:org/apache/openejb/server/cxf/ejb/EjbEndpoint.adoc[org/apache/openejb/server/cxf/ejb/EjbEndpoint.class] - 2

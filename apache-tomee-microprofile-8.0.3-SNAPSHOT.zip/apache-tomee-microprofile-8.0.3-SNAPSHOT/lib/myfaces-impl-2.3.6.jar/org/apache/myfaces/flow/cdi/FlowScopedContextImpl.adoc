@@ -1,0 +1,20 @@
+= org/apache/myfaces/flow/cdi/FlowScopedContextImpl.class
+
+ - link:FlowScopedContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 50
+ - javax.enterprise.context.spi.Contextual - 21
+ - javax.faces.flow.FlowHandler - 18
+ - javax.enterprise.context.spi.CreationalContext - 12
+ - javax.enterprise.inject.spi.BeanManager - 10
+ - javax.faces.flow.Flow - 9
+ - javax.faces.application.Application - 6
+ - javax.faces.context.ExternalContext - 4
+ - javax.enterprise.context.ContextNotActiveException - 4
+ - javax.enterprise.inject.spi.Bean - 4
+ - javax.enterprise.inject.spi.PassivationCapable - 2
+ - javax.enterprise.context.spi.Context - 1
+ - javax.enterprise.inject.Typed - 1
+ - javax.faces.flow.FlowScoped - 1

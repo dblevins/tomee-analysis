@@ -1,0 +1,15 @@
+= org/apache/jasper/runtime/JspContextWrapper$ELContextWrapper.class
+
+ - link:JspContextWrapper$ELContextWrapper-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 49
+ - javax.el.ImportHandler - 11
+ - javax.servlet.jsp.tagext.JspTag - 8
+ - javax.servlet.jsp.PageContext - 6
+ - javax.el.EvaluationListener - 3
+ - javax.el.FunctionMapper - 2
+ - javax.el.ELResolver - 2
+ - javax.el.VariableMapper - 2
+ - javax.servlet.jsp.JspContext - 1

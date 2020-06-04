@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/TransportURIResolver.class
+
+ - link:TransportURIResolver-asmified.java[Asmified]
+
+== References
+

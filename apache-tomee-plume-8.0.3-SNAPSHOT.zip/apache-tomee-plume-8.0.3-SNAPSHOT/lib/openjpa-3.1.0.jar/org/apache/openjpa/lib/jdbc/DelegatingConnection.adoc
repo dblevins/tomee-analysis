@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/DelegatingConnection.class
+
+ - link:DelegatingConnection-asmified.java[Asmified]
+
+== References
+

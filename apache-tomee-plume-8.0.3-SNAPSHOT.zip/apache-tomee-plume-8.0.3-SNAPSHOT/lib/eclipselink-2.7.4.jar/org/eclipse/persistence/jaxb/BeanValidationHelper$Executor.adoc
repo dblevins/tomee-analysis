@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/BeanValidationHelper$Executor.class
+
+ - link:BeanValidationHelper$Executor-asmified.java[Asmified]
+
+== References
+

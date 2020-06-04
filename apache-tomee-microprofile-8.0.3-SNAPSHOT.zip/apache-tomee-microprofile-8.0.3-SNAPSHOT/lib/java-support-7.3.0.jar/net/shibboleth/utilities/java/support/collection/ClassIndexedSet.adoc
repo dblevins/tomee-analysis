@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/collection/ClassIndexedSet.class
+
+ - link:ClassIndexedSet-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 5
+ - javax.annotation.Nullable - 4

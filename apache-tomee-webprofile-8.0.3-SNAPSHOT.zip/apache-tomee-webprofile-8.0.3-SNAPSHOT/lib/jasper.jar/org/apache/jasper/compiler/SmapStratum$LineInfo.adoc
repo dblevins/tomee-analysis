@@ -1,0 +1,6 @@
+= org/apache/jasper/compiler/SmapStratum$LineInfo.class
+
+ - link:SmapStratum$LineInfo-asmified.java[Asmified]
+
+== References
+

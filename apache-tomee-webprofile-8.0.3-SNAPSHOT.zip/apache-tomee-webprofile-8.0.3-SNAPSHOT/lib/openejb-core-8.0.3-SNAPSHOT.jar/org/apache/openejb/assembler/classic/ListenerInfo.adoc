@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/ListenerInfo.class
+
+ - link:ListenerInfo-asmified.java[Asmified]
+
+== References
+

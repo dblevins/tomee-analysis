@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/dataformat/yaml/UTF8Writer.class
+
+ - link:UTF8Writer-asmified.java[Asmified]
+
+== References
+

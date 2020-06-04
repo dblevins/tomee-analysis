@@ -1,0 +1,8 @@
+= org/eclipse/persistence/internal/jpa/metamodel/ListAttributeImpl.class
+
+ - link:ListAttributeImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.PluralAttribute$CollectionType - 2
+ - javax.persistence.metamodel.ListAttribute - 1

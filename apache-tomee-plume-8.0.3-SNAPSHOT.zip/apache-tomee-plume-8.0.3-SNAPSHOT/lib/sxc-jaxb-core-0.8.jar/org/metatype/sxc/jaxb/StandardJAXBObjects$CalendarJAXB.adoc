@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$CalendarJAXB.class
+
+ - link:StandardJAXBObjects$CalendarJAXB-asmified.java[Asmified]
+
+== References
+

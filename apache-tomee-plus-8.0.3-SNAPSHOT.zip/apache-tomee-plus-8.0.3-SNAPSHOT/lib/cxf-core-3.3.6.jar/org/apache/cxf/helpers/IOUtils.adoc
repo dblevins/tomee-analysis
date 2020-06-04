@@ -1,0 +1,6 @@
+= org/apache/cxf/helpers/IOUtils.class
+
+ - link:IOUtils-asmified.java[Asmified]
+
+== References
+

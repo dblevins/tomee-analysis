@@ -1,0 +1,8 @@
+= org/apache/openjpa/ee/WASManagedRuntime.class
+
+ - link:WASManagedRuntime-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 3
+ - javax.transaction.Transaction - 2

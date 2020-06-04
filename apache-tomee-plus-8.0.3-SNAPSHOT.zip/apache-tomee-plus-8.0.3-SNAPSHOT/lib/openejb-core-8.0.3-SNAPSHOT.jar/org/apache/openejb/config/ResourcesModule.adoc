@@ -1,0 +1,6 @@
+= org/apache/openejb/config/ResourcesModule.class
+
+ - link:ResourcesModule-asmified.java[Asmified]
+
+== References
+

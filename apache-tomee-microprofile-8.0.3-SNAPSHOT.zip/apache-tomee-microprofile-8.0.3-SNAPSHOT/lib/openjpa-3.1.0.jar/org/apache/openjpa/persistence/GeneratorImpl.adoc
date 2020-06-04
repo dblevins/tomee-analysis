@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/GeneratorImpl.class
+
+ - link:GeneratorImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= org/apache/openjpa/persistence/PersistenceMetaDataFactory.class
+
+ - link:PersistenceMetaDataFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.NamedNativeQuery - 10
+ - javax.persistence.NamedQuery - 10
+ - javax.persistence.SqlResultSetMapping - 10
+ - javax.persistence.NamedStoredProcedureQuery - 10
+ - javax.persistence.metamodel.StaticMetamodel - 4
+ - javax.persistence.NamedNativeQueries - 4
+ - javax.persistence.SqlResultSetMappings - 4
+ - javax.persistence.NamedStoredProcedureQueries - 4
+ - javax.persistence.NamedQueries - 4
+ - javax.persistence.Entity - 1
+ - javax.persistence.MappedSuperclass - 1
+ - javax.persistence.Embeddable - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/AbstractUpdateManager.class
+
+ - link:AbstractUpdateManager-asmified.java[Asmified]
+
+== References
+

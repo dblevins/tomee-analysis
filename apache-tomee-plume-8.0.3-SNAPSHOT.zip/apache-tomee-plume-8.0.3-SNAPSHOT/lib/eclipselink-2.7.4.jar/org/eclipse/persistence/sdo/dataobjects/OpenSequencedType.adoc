@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/dataobjects/OpenSequencedType.class
+
+ - link:OpenSequencedType-asmified.java[Asmified]
+
+== References
+

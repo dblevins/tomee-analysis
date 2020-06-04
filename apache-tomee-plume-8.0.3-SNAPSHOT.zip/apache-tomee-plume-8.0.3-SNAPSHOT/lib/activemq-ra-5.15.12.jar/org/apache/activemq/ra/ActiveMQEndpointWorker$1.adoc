@@ -1,0 +1,13 @@
+= org/apache/activemq/ra/ActiveMQEndpointWorker$1.class
+
+ - link:ActiveMQEndpointWorker$1-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 8
+ - javax.jms.ConnectionConsumer - 2
+ - javax.jms.Topic - 2
+ - javax.jms.ServerSessionPool - 2
+ - javax.resource.spi.work.Work - 1
+ - javax.jms.Destination - 1
+ - javax.jms.ExceptionListener - 1

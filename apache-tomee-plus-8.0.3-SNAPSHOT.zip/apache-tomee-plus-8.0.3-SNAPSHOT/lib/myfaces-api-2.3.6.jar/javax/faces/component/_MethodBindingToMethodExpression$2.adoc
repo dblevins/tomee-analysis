@@ -1,0 +1,10 @@
+= javax/faces/component/_MethodBindingToMethodExpression$2.class
+
+ - link:_MethodBindingToMethodExpression$2-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component._MethodBindingToMethodExpression - 6
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.el.MethodBinding - 2
+ - javax.faces.component._MethodBindingToMethodExpression$Invoker - 1

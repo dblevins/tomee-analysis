@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/std/NumberDeserializers$1.class
+
+ - link:NumberDeserializers$1-asmified.java[Asmified]
+
+== References
+

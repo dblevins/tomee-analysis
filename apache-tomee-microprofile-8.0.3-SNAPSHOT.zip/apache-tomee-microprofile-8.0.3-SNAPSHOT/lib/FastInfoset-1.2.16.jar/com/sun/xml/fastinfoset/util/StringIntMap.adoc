@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/util/StringIntMap.class
+
+ - link:StringIntMap-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/geronimo/microprofile/metrics/common/MeterImpl.class
+
+ - link:MeterImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbProperty - 3

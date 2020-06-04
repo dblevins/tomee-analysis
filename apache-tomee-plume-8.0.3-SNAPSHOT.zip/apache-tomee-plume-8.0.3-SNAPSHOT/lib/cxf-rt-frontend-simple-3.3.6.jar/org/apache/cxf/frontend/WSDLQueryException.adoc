@@ -1,0 +1,6 @@
+= org/apache/cxf/frontend/WSDLQueryException.class
+
+ - link:WSDLQueryException-asmified.java[Asmified]
+
+== References
+

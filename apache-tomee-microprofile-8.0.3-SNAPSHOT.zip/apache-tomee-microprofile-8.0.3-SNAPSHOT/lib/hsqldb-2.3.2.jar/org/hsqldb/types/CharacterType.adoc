@@ -1,0 +1,6 @@
+= org/hsqldb/types/CharacterType.class
+
+ - link:CharacterType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/sun/xml/messaging/saaj/util/LogDomainConstants.class
+
+ - link:LogDomainConstants-asmified.java[Asmified]
+
+== References
+

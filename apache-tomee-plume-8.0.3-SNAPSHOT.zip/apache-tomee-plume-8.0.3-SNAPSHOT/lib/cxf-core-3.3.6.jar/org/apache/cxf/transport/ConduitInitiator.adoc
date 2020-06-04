@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/ConduitInitiator.class
+
+ - link:ConduitInitiator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/catalina/servlets/DefaultServlet$CompressionFormat.class
+
+ - link:DefaultServlet$CompressionFormat-asmified.java[Asmified]
+
+== References
+

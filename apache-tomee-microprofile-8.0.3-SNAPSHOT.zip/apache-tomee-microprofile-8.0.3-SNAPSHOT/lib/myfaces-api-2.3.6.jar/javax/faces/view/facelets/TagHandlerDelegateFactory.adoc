@@ -1,0 +1,13 @@
+= javax/faces/view/facelets/TagHandlerDelegateFactory.class
+
+ - link:TagHandlerDelegateFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.TagHandlerDelegateFactory - 8
+ - javax.faces.view.facelets.TagHandlerDelegate - 4
+ - javax.faces.view.facelets.BehaviorHandler - 1
+ - javax.faces.view.facelets.ValidatorHandler - 1
+ - javax.faces.view.facelets.ConverterHandler - 1
+ - javax.faces.view.facelets.ComponentHandler - 1
+ - javax.faces.FacesWrapper - 1

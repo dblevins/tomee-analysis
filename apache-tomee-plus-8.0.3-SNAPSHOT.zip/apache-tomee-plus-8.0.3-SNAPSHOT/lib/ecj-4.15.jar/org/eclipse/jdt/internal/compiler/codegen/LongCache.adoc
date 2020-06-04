@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/codegen/LongCache.class
+
+ - link:LongCache-asmified.java[Asmified]
+
+== References
+

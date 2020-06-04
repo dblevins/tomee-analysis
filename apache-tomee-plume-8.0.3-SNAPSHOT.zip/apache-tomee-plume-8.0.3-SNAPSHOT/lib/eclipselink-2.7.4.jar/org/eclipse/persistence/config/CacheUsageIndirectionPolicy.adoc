@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/CacheUsageIndirectionPolicy.class
+
+ - link:CacheUsageIndirectionPolicy-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPEnvelope.class
+
+ - link:IMAPEnvelope-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.InternetAddress - 18
+ - javax.mail.MessagingException - 1

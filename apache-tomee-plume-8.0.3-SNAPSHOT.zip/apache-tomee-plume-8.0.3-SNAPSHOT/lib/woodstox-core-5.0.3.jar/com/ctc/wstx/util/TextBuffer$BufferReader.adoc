@@ -1,0 +1,6 @@
+= com/ctc/wstx/util/TextBuffer$BufferReader.class
+
+ - link:TextBuffer$BufferReader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/Assertor.class
+
+ - link:Assertor-asmified.java[Asmified]
+
+== References
+

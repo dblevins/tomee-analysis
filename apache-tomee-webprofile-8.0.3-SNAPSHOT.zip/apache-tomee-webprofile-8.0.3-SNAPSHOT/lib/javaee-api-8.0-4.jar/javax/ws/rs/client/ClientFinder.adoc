@@ -1,0 +1,8 @@
+= javax/ws/rs/client/ClientFinder.class
+
+ - link:ClientFinder-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.ClientFinder - 6
+ - javax.ws.rs.client.ClientBuilder - 3

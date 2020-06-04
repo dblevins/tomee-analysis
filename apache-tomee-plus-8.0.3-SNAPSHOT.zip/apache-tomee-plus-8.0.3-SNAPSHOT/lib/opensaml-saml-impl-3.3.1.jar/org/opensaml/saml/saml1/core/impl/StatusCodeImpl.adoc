@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml1/core/impl/StatusCodeImpl.class
+
+ - link:StatusCodeImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/joda/time/base/AbstractDuration.class
+
+ - link:AbstractDuration-asmified.java[Asmified]
+
+== References
+

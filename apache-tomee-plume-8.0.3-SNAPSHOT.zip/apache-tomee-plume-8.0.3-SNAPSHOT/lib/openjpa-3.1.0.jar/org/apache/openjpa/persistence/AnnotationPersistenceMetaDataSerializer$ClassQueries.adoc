@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/AnnotationPersistenceMetaDataSerializer$ClassQueries.class
+
+ - link:AnnotationPersistenceMetaDataSerializer$ClassQueries-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPFetchBodyPart.class
+
+ - link:IMAPFetchBodyPart-asmified.java[Asmified]
+
+== References
+

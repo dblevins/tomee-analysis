@@ -1,0 +1,12 @@
+= org/eclipse/persistence/eis/interactions/EISInteraction.class
+
+ - link:EISInteraction-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.Record - 11
+ - javax.resource.cci.MappedRecord - 9
+ - javax.resource.cci.IndexedRecord - 9
+ - javax.resource.cci.InteractionSpec - 6
+ - javax.resource.ResourceException - 3
+ - javax.resource.cci.RecordFactory - 2

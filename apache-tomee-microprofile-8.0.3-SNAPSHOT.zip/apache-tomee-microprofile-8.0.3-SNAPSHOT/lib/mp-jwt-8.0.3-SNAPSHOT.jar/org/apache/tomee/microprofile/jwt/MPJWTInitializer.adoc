@@ -1,0 +1,12 @@
+= org/apache/tomee/microprofile/jwt/MPJWTInitializer.class
+
+ - link:MPJWTInitializer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.FilterRegistration$Dynamic - 3
+ - javax.servlet.ServletContext - 2
+ - javax.servlet.ServletContainerInitializer - 1
+ - javax.servlet.ServletException - 1
+ - javax.servlet.annotation.HandlesTypes - 1
+ - javax.ws.rs.core.Application - 1

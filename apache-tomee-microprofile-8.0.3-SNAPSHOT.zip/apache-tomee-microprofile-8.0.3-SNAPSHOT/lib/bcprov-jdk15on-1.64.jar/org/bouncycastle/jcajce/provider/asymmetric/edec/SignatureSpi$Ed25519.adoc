@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/edec/SignatureSpi$Ed25519.class
+
+ - link:SignatureSpi$Ed25519-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/activemq/network/jms/JmsConnector.class
+
+ - link:JmsConnector-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Connection - 16
+ - javax.jms.Destination - 4

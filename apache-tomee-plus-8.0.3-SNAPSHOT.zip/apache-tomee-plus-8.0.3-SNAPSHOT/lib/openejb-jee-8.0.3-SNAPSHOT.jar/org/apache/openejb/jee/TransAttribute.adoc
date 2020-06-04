@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/TransAttribute.class
+
+ - link:TransAttribute-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 6

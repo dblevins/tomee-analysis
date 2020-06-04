@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/internal/Streams$4.class
+
+ - link:Streams$4-asmified.java[Asmified]
+
+== References
+

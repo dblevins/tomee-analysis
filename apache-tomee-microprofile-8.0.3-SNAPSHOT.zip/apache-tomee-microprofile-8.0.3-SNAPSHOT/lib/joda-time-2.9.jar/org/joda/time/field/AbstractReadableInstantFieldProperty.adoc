@@ -1,0 +1,6 @@
+= org/joda/time/field/AbstractReadableInstantFieldProperty.class
+
+ - link:AbstractReadableInstantFieldProperty-asmified.java[Asmified]
+
+== References
+

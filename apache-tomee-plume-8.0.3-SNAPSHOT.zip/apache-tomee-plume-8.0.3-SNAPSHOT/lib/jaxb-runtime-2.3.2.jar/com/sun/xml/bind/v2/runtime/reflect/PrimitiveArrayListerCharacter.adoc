@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/reflect/PrimitiveArrayListerCharacter.class
+
+ - link:PrimitiveArrayListerCharacter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openejb/core/mdb/PoolEndpointHandler.class
+
+ - link:PoolEndpointHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ApplicationServerInternalException - 8
+ - javax.resource.spi.UnavailableException - 3

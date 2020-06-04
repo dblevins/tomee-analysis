@@ -1,0 +1,6 @@
+= org/yaml/snakeyaml/util/PlatformFeatureDetector.class
+
+ - link:PlatformFeatureDetector-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/EntityManagerImpl$PropertyProcessor.class
+
+ - link:EntityManagerImpl$PropertyProcessor-asmified.java[Asmified]
+
+== References
+

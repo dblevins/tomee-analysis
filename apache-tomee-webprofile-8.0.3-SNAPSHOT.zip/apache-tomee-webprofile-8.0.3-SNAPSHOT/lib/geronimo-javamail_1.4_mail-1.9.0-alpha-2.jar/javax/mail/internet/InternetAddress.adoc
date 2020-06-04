@@ -1,0 +1,13 @@
+= javax/mail/internet/InternetAddress.class
+
+ - link:InternetAddress-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.internet.InternetAddress - 34
+ - javax.mail.internet.AddressParser - 15
+ - javax.mail.Address - 11
+ - javax.mail.internet.AddressException - 10
+ - javax.mail.internet.MimeUtility - 4
+ - javax.mail.Session - 4
+ - javax.mail.internet.ParseException - 1

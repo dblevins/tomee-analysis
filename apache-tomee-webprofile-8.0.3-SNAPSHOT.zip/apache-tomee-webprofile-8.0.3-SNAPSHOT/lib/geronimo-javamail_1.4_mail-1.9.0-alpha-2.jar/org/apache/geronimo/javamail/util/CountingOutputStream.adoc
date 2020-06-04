@@ -1,0 +1,6 @@
+= org/apache/geronimo/javamail/util/CountingOutputStream.class
+
+ - link:CountingOutputStream-asmified.java[Asmified]
+
+== References
+

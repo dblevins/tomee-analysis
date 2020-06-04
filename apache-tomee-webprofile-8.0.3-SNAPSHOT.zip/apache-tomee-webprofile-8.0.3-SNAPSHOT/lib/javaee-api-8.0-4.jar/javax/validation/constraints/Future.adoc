@@ -1,0 +1,9 @@
+= javax/validation/constraints/Future.class
+
+ - link:Future-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.Payload - 1
+ - javax.validation.Constraint - 1
+ - javax.validation.constraints.Future$List - 1

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/proxy/ProxyGenerationException.class
+
+ - link:ProxyGenerationException-asmified.java[Asmified]
+
+== References
+

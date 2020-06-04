@@ -1,0 +1,8 @@
+= org/apache/tomcat/websocket/WsRemoteEndpointAsync.class
+
+ - link:WsRemoteEndpointAsync-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.SendHandler - 6
+ - javax.websocket.RemoteEndpoint$Async - 1

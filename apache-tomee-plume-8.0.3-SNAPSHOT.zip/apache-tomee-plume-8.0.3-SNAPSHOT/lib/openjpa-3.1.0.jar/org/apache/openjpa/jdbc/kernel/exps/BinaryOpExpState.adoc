@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/BinaryOpExpState.class
+
+ - link:BinaryOpExpState-asmified.java[Asmified]
+
+== References
+

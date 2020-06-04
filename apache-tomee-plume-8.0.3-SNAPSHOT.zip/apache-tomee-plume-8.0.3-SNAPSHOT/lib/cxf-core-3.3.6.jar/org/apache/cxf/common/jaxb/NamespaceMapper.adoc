@@ -1,0 +1,6 @@
+= org/apache/cxf/common/jaxb/NamespaceMapper.class
+
+ - link:NamespaceMapper-asmified.java[Asmified]
+
+== References
+

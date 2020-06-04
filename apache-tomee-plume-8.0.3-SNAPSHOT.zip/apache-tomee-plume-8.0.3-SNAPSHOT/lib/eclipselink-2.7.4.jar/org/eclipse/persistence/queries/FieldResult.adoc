@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/FieldResult.class
+
+ - link:FieldResult-asmified.java[Asmified]
+
+== References
+

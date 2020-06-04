@@ -1,0 +1,7 @@
+= org/apache/cxf/jaxws22/JAXWS22Invoker.class
+
+ - link:JAXWS22Invoker-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.ws.spi.Invoker - 2

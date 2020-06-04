@@ -1,0 +1,8 @@
+= org/eclipse/persistence/annotations/BasicMap.class
+
+ - link:BasicMap-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 4
+ - javax.persistence.FetchType - 2

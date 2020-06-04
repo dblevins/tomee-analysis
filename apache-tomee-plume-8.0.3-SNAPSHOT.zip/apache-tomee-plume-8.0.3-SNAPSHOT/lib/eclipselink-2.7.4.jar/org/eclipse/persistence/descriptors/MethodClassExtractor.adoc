@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/MethodClassExtractor.class
+
+ - link:MethodClassExtractor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/model/SubresourceKey.class
+
+ - link:SubresourceKey-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/openejb/server/httpd/WebBeansListenerHelper.class
+
+ - link:WebBeansListenerHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequestListener - 4
+ - javax.enterprise.context.spi.Context - 4
+ - javax.enterprise.context.RequestScoped - 2
+ - javax.servlet.ServletRequestEvent - 2

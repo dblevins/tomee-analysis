@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/Serializers$Base.class
+
+ - link:Serializers$Base-asmified.java[Asmified]
+
+== References
+

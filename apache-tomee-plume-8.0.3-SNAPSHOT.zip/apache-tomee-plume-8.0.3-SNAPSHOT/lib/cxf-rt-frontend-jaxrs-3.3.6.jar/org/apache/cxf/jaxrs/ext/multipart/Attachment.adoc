@@ -1,0 +1,14 @@
+= org/apache/cxf/jaxrs/ext/multipart/Attachment.class
+
+ - link:Attachment-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MultivaluedMap - 50
+ - javax.activation.DataHandler - 29
+ - javax.ws.rs.core.MediaType - 8
+ - javax.ws.rs.ext.Providers - 8
+ - javax.activation.DataSource - 4
+ - javax.ws.rs.ext.MessageBodyReader - 3
+ - javax.ws.rs.core.Response - 1
+ - javax.ws.rs.WebApplicationException - 1

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$CacheStoreModeLegacyHint.class
+
+ - link:QueryHintsHandler$CacheStoreModeLegacyHint-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.CacheStoreMode - 2

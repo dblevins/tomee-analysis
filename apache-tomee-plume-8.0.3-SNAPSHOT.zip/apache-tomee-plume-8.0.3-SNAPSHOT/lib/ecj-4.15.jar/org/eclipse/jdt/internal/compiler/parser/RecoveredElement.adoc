@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/parser/RecoveredElement.class
+
+ - link:RecoveredElement-asmified.java[Asmified]
+
+== References
+

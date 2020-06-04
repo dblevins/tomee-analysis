@@ -1,0 +1,6 @@
+= javax/wsdl/Fault.class
+
+ - link:Fault-asmified.java[Asmified]
+
+== References
+

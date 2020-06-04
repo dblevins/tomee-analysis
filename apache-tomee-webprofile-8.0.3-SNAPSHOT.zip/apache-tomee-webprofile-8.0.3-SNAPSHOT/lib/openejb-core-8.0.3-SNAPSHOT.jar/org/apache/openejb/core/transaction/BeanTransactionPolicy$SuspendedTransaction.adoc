@@ -1,0 +1,6 @@
+= org/apache/openejb/core/transaction/BeanTransactionPolicy$SuspendedTransaction.class
+
+ - link:BeanTransactionPolicy$SuspendedTransaction-asmified.java[Asmified]
+
+== References
+

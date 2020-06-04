@@ -1,0 +1,7 @@
+= javax/faces/flow/builder/NodeBuilder.class
+
+ - link:NodeBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.flow.builder.NodeBuilder - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/conf/SeqValue.class
+
+ - link:SeqValue-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/AuditManager$AuditCallback.class
+
+ - link:AuditManager$AuditCallback-asmified.java[Asmified]
+
+== References
+

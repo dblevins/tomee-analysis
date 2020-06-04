@@ -1,0 +1,6 @@
+= org/w3c/dom/html/HTMLImageElement.class
+
+ - link:HTMLImageElement-asmified.java[Asmified]
+
+== References
+

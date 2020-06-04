@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/x9/X9ECParametersHolder.class
+
+ - link:X9ECParametersHolder-asmified.java[Asmified]
+
+== References
+

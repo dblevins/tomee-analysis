@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Like.class
+
+ - link:Expressions$Like-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 36
+ - javax.persistence.criteria.Predicate - 12
+ - javax.persistence.criteria.Selection - 2

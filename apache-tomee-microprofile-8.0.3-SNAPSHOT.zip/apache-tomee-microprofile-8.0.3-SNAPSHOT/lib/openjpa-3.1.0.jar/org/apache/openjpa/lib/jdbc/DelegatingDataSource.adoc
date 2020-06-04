@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/DelegatingDataSource.class
+
+ - link:DelegatingDataSource-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/tree/ClassNode.class
+
+ - link:ClassNode-asmified.java[Asmified]
+
+== References
+

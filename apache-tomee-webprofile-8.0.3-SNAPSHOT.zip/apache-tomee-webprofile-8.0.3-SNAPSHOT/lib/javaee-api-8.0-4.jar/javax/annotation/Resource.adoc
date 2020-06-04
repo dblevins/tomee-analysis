@@ -1,0 +1,8 @@
+= javax/annotation/Resource.class
+
+ - link:Resource-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource$AuthenticationType - 2
+ - javax.annotation.Resources - 1

@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/util/XMLObjectSource.class
+
+ - link:XMLObjectSource-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

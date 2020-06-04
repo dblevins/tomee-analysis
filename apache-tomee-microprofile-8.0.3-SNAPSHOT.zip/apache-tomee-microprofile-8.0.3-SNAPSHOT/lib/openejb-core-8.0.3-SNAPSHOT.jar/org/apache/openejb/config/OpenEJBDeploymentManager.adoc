@@ -1,0 +1,19 @@
+= org/apache/openejb/config/OpenEJBDeploymentManager.class
+
+ - link:OpenEJBDeploymentManager-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.deploy.spi.Target - 35
+ - javax.enterprise.deploy.spi.TargetModuleID - 23
+ - javax.enterprise.deploy.shared.CommandType - 20
+ - javax.enterprise.deploy.shared.DConfigBeanVersionType - 19
+ - javax.enterprise.deploy.shared.ModuleType - 10
+ - javax.enterprise.deploy.spi.status.ProgressObject - 7
+ - javax.enterprise.deploy.spi.exceptions.DeploymentManagerCreationException - 4
+ - javax.enterprise.deploy.spi.exceptions.DConfigBeanVersionUnsupportedException - 3
+ - javax.enterprise.deploy.spi.exceptions.InvalidModuleException - 3
+ - javax.enterprise.deploy.spi.exceptions.TargetException - 3
+ - javax.enterprise.deploy.model.DeployableObject - 2
+ - javax.enterprise.deploy.spi.DeploymentManager - 1
+ - javax.enterprise.deploy.spi.DeploymentConfiguration - 1

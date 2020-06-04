@@ -1,0 +1,21 @@
+= com/sun/faces/application/applicationimpl/ExpressionLanguage.class
+
+ - link:ExpressionLanguage-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 16
+ - javax.el.ELContextListener - 10
+ - javax.el.CompositeELResolver - 10
+ - javax.el.ExpressionFactory - 8
+ - javax.el.ELContext - 8
+ - javax.faces.el.ReferenceSyntaxException - 7
+ - javax.el.ELException - 6
+ - javax.faces.el.PropertyResolver - 5
+ - javax.faces.el.VariableResolver - 5
+ - javax.el.ELResolver - 5
+ - javax.el.ValueExpression - 5
+ - javax.el.MethodExpression - 3
+ - javax.enterprise.inject.spi.BeanManager - 2
+ - javax.faces.el.ValueBinding - 1
+ - javax.faces.el.MethodBinding - 1

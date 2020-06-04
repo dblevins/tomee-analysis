@@ -1,0 +1,6 @@
+= org/apache/openejb/assembler/classic/Assembler$DeploymentListenerObserver.class
+
+ - link:Assembler$DeploymentListenerObserver-asmified.java[Asmified]
+
+== References
+

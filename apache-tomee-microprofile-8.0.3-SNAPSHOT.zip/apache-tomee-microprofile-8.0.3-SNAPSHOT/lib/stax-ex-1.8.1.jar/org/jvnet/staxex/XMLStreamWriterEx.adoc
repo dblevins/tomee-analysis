@@ -1,0 +1,7 @@
+= org/jvnet/staxex/XMLStreamWriterEx.class
+
+ - link:XMLStreamWriterEx-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 1

@@ -1,0 +1,10 @@
+= com/sun/faces/el/ELContextImpl.class
+
+ - link:ELContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.el.FunctionMapper - 6
+ - javax.el.ELResolver - 5
+ - javax.el.VariableMapper - 5
+ - javax.el.ELContext - 2

@@ -1,0 +1,7 @@
+= org/apache/openejb/resource/thread/ManagedScheduledExecutorServiceImplFactory.class
+
+ - link:ManagedScheduledExecutorServiceImplFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.concurrent.ManagedThreadFactory - 2

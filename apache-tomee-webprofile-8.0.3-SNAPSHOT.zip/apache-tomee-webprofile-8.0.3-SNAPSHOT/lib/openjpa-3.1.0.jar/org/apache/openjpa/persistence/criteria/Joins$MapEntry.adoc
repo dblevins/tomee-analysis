@@ -1,0 +1,9 @@
+= org/apache/openjpa/persistence/criteria/Joins$MapEntry.class
+
+ - link:Joins$MapEntry-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.MapAttribute - 2
+ - javax.persistence.criteria.Selection - 2
+ - javax.persistence.metamodel.Attribute - 1

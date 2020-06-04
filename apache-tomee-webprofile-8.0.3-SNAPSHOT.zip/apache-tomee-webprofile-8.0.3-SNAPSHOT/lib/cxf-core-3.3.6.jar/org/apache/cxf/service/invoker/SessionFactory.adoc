@@ -1,0 +1,6 @@
+= org/apache/cxf/service/invoker/SessionFactory.class
+
+ - link:SessionFactory-asmified.java[Asmified]
+
+== References
+

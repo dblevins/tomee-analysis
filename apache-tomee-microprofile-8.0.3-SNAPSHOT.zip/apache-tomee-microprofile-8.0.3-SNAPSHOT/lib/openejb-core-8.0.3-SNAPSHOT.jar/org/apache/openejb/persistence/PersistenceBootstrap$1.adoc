@@ -1,0 +1,6 @@
+= org/apache/openejb/persistence/PersistenceBootstrap$1.class
+
+ - link:PersistenceBootstrap$1-asmified.java[Asmified]
+
+== References
+

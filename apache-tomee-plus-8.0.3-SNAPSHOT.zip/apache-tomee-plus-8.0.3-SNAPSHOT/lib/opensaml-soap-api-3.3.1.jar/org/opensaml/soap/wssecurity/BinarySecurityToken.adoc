@@ -1,0 +1,6 @@
+= org/opensaml/soap/wssecurity/BinarySecurityToken.class
+
+ - link:BinarySecurityToken-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/SerializationConfig.class
+
+ - link:SerializationConfig-asmified.java[Asmified]
+
+== References
+

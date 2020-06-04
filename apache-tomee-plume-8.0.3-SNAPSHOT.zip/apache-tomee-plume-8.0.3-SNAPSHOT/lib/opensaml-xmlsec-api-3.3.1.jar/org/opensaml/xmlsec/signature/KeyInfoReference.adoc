@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/signature/KeyInfoReference.class
+
+ - link:KeyInfoReference-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

@@ -1,0 +1,6 @@
+= org/jasypt/util/numeric/BasicIntegerNumberEncryptor.class
+
+ - link:BasicIntegerNumberEncryptor-asmified.java[Asmified]
+
+== References
+

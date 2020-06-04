@@ -1,0 +1,7 @@
+= org/opensaml/saml/metadata/resolver/filter/impl/EntitiesDescriptorNameProcessor.class
+
+ - link:EntitiesDescriptorNameProcessor-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 1

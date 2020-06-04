@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/AssertionInfoMap.class
+
+ - link:AssertionInfoMap-asmified.java[Asmified]
+
+== References
+

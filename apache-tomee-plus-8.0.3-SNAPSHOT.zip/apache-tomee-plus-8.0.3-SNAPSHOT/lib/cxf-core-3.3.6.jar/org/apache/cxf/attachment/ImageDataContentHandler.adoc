@@ -1,0 +1,9 @@
+= org/apache/cxf/attachment/ImageDataContentHandler.class
+
+ - link:ImageDataContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 4
+ - javax.activation.ActivationDataFlavor - 2
+ - javax.activation.DataContentHandler - 1

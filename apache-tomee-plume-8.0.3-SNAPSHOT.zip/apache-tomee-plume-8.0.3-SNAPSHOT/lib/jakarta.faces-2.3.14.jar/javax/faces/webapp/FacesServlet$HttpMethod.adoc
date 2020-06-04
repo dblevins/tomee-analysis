@@ -1,0 +1,7 @@
+= javax/faces/webapp/FacesServlet$HttpMethod.class
+
+ - link:FacesServlet$HttpMethod-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.webapp.FacesServlet$HttpMethod - 51

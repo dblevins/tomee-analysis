@@ -1,0 +1,8 @@
+= org/apache/geronimo/javamail/store/imap/connection/IMAPFlagsResponse.class
+
+ - link:IMAPFlagsResponse-asmified.java[Asmified]
+
+== References
+
+ - javax.mail.Flags - 8
+ - javax.mail.MessagingException - 1

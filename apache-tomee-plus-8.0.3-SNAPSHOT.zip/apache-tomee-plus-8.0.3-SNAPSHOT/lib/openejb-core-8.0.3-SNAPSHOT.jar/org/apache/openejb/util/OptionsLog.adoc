@@ -1,0 +1,6 @@
+= org/apache/openejb/util/OptionsLog.class
+
+ - link:OptionsLog-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/OpenJPAId.class
+
+ - link:OpenJPAId-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/apt/model/TypesImpl$4.class
+
+ - link:TypesImpl$4-asmified.java[Asmified]
+
+== References
+

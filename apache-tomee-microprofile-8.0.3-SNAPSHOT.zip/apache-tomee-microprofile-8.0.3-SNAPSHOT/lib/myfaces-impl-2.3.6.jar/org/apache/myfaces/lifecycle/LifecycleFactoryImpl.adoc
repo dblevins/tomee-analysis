@@ -1,0 +1,9 @@
+= org/apache/myfaces/lifecycle/LifecycleFactoryImpl.class
+
+ - link:LifecycleFactoryImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.lifecycle.Lifecycle - 7
+ - javax.faces.lifecycle.LifecycleFactory - 2
+ - javax.faces.FacesException - 1

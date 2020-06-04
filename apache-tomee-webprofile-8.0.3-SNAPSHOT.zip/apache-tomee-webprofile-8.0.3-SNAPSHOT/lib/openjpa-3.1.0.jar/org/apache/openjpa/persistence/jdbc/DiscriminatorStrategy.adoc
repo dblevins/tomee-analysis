@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/DiscriminatorStrategy.class
+
+ - link:DiscriminatorStrategy-asmified.java[Asmified]
+
+== References
+

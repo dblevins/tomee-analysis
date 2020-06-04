@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/ObjectPersistenceRuntimeXMLProject_11_1_1$StoredProcedureOutCursorArgument.class
+
+ - link:ObjectPersistenceRuntimeXMLProject_11_1_1$StoredProcedureOutCursorArgument-asmified.java[Asmified]
+
+== References
+

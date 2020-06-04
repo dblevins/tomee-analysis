@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/security/AbstractUsernameTokenInInterceptor.class
+
+ - link:AbstractUsernameTokenInInterceptor-asmified.java[Asmified]
+
+== References
+

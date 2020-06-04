@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/coordination/corba/sun/CommandDataHolder.class
+
+ - link:CommandDataHolder-asmified.java[Asmified]
+
+== References
+

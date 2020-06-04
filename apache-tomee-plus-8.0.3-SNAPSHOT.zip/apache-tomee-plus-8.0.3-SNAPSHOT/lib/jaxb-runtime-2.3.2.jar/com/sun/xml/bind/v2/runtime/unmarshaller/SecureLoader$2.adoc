@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/runtime/unmarshaller/SecureLoader$2.class
+
+ - link:SecureLoader$2-asmified.java[Asmified]
+
+== References
+

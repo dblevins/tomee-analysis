@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/LogicalUnion$ResultComparator.class
+
+ - link:LogicalUnion$ResultComparator-asmified.java[Asmified]
+
+== References
+

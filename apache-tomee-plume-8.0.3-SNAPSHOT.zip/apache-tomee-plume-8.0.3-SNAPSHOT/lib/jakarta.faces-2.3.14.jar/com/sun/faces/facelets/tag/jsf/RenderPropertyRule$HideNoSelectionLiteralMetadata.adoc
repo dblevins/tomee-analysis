@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/tag/jsf/RenderPropertyRule$HideNoSelectionLiteralMetadata.class
+
+ - link:RenderPropertyRule$HideNoSelectionLiteralMetadata-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIInput - 2
+ - javax.faces.view.facelets.Metadata - 2
+ - javax.faces.view.facelets.FaceletContext - 1

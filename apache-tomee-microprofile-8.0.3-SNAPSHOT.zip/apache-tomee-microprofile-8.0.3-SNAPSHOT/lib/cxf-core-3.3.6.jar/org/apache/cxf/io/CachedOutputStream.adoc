@@ -1,0 +1,6 @@
+= org/apache/cxf/io/CachedOutputStream.class
+
+ - link:CachedOutputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jpa/metamodel/proxy/SetAttributeProxyImpl.class
+
+ - link:SetAttributeProxyImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.SetAttribute - 1

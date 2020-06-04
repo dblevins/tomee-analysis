@@ -1,0 +1,8 @@
+= org/apache/geronimo/microprofile/openapi/impl/model/ReferenceImpl.class
+
+ - link:ReferenceImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.bind.annotation.JsonbProperty - 2
+ - javax.enterprise.inject.Vetoed - 1

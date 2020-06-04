@@ -1,0 +1,14 @@
+= javax/enterprise/inject/spi/configurator/AnnotatedTypeConfigurator.class
+
+ - link:AnnotatedTypeConfigurator-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 12
+ - javax.enterprise.inject.spi.configurator.AnnotatedFieldConfigurator - 6
+ - javax.enterprise.inject.spi.configurator.AnnotatedConstructorConfigurator - 6
+ - javax.enterprise.inject.spi.configurator.AnnotatedMethodConfigurator - 6
+ - javax.enterprise.inject.spi.AnnotatedField - 2
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 2
+ - javax.enterprise.inject.spi.AnnotatedType - 1

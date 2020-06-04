@@ -1,0 +1,6 @@
+= org/cryptacular/io/ClassPathResource.class
+
+ - link:ClassPathResource-asmified.java[Asmified]
+
+== References
+

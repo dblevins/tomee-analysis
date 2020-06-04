@@ -1,0 +1,8 @@
+= org/apache/activemq/command/ActiveMQObjectMessage.class
+
+ - link:ActiveMQObjectMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 8
+ - javax.jms.ObjectMessage - 1

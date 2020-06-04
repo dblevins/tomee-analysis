@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/PersistenceProductDerivation$PUNameCollision.class
+
+ - link:PersistenceProductDerivation$PUNameCollision-asmified.java[Asmified]
+
+== References
+

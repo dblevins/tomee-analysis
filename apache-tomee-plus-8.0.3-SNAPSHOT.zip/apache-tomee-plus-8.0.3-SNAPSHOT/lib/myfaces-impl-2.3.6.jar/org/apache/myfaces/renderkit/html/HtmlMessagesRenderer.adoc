@@ -1,0 +1,11 @@
+= org/apache/myfaces/renderkit/html/HtmlMessagesRenderer.class
+
+ - link:HtmlMessagesRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 9
+ - javax.faces.component.UIComponent - 5
+ - javax.faces.application.FacesMessage - 4
+ - javax.faces.component.behavior.ClientBehaviorHolder - 3
+ - javax.faces.context.ResponseWriter - 2

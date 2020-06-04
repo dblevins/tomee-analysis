@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/Attribute$PersistentAttributeType.class
+
+ - link:Attribute$PersistentAttributeType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Attribute$PersistentAttributeType - 46

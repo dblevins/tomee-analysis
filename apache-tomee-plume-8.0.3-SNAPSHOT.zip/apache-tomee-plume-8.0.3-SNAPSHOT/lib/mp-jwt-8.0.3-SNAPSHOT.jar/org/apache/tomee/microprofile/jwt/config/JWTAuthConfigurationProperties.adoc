@@ -1,0 +1,11 @@
+= org/apache/tomee/microprofile/jwt/config/JWTAuthConfigurationProperties.class
+
+ - link:JWTAuthConfigurationProperties-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.DeploymentException - 2
+ - javax.enterprise.context.ApplicationScoped - 2
+ - javax.enterprise.event.Observes - 1
+ - javax.servlet.ServletContext - 1
+ - javax.enterprise.context.Initialized - 1

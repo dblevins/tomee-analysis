@@ -1,0 +1,8 @@
+= org/opensaml/saml/saml2/profile/impl/AddProxyRestrictionToAssertions.class
+
+ - link:AddProxyRestrictionToAssertions-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 11
+ - javax.annotation.Nullable - 4

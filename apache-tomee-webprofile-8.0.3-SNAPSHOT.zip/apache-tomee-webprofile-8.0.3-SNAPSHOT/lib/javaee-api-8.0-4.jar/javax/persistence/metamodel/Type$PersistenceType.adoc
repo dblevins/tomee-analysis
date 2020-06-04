@@ -1,0 +1,7 @@
+= javax/persistence/metamodel/Type$PersistenceType.class
+
+ - link:Type$PersistenceType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.Type$PersistenceType - 31

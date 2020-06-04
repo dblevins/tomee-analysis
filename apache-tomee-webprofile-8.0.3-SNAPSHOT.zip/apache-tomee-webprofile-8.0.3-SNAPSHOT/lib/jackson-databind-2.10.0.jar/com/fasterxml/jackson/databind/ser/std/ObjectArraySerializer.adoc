@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ser/std/ObjectArraySerializer.class
+
+ - link:ObjectArraySerializer-asmified.java[Asmified]
+
+== References
+

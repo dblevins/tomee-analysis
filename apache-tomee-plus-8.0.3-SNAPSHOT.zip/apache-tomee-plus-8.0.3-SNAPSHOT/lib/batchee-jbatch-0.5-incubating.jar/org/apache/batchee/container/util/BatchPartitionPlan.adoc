@@ -1,0 +1,7 @@
+= org/apache/batchee/container/util/BatchPartitionPlan.class
+
+ - link:BatchPartitionPlan-asmified.java[Asmified]
+
+== References
+
+ - javax.batch.api.partition.PartitionPlan - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/StringFieldStrategy.class
+
+ - link:StringFieldStrategy-asmified.java[Asmified]
+
+== References
+

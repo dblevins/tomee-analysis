@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/scan/NonClosingJarInputStream.class
+
+ - link:NonClosingJarInputStream-asmified.java[Asmified]
+
+== References
+

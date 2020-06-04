@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/security/wss4j/StaxCryptoCoverageChecker.class
+
+ - link:StaxCryptoCoverageChecker-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/security/claims/authorization/ClaimMode.class
+
+ - link:ClaimMode-asmified.java[Asmified]
+
+== References
+

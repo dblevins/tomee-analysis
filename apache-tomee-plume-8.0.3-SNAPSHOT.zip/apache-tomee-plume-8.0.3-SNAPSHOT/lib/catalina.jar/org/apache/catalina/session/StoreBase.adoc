@@ -1,0 +1,6 @@
+= org/apache/catalina/session/StoreBase.class
+
+ - link:StoreBase-asmified.java[Asmified]
+
+== References
+

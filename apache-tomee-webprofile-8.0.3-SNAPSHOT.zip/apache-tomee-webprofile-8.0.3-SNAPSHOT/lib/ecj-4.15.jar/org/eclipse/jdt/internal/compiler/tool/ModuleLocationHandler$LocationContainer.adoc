@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/tool/ModuleLocationHandler$LocationContainer.class
+
+ - link:ModuleLocationHandler$LocationContainer-asmified.java[Asmified]
+
+== References
+

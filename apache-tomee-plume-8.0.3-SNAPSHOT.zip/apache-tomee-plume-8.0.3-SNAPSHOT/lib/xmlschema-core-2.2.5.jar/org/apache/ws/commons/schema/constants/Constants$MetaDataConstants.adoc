@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/constants/Constants$MetaDataConstants.class
+
+ - link:Constants$MetaDataConstants-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,9 @@
+= org/apache/commons/dbcp2/managed/TransactionRegistry.class
+
+ - link:TransactionRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 6
+ - javax.transaction.TransactionManager - 5
+ - javax.transaction.SystemException - 3

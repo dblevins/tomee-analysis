@@ -1,0 +1,6 @@
+= org/eclipse/persistence/services/websphere/WebSphereRuntimeServices.class
+
+ - link:WebSphereRuntimeServices-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/joda/time/format/DateTimePrinterInternalPrinter.class
+
+ - link:DateTimePrinterInternalPrinter-asmified.java[Asmified]
+
+== References
+

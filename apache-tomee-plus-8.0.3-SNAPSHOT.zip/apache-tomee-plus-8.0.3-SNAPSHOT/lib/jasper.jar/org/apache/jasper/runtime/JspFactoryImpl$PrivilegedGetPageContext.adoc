@@ -1,0 +1,10 @@
+= org/apache/jasper/runtime/JspFactoryImpl$PrivilegedGetPageContext.class
+
+ - link:JspFactoryImpl$PrivilegedGetPageContext-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 5
+ - javax.servlet.ServletResponse - 5
+ - javax.servlet.Servlet - 5
+ - javax.servlet.jsp.PageContext - 4

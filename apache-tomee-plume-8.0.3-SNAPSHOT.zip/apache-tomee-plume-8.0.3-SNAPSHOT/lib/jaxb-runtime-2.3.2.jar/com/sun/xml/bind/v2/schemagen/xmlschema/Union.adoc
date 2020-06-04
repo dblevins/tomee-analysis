@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/Union.class
+
+ - link:Union-asmified.java[Asmified]
+
+== References
+

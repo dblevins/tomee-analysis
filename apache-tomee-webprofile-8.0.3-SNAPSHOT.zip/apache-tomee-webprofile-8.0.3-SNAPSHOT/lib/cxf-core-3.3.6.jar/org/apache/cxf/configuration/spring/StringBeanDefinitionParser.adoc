@@ -1,0 +1,6 @@
+= org/apache/cxf/configuration/spring/StringBeanDefinitionParser.class
+
+ - link:StringBeanDefinitionParser-asmified.java[Asmified]
+
+== References
+

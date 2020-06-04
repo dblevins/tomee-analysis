@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/util/DirectedAcyclicGraphVerifier.class
+
+ - link:DirectedAcyclicGraphVerifier-asmified.java[Asmified]
+
+== References
+

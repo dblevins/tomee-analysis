@@ -1,0 +1,11 @@
+= org/apache/openejb/core/SimpleTransactionSynchronizationRegistry.class
+
+ - link:SimpleTransactionSynchronizationRegistry-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.Transaction - 23
+ - javax.transaction.TransactionManager - 9
+ - javax.transaction.SystemException - 6
+ - javax.transaction.Synchronization - 4
+ - javax.transaction.TransactionSynchronizationRegistry - 1

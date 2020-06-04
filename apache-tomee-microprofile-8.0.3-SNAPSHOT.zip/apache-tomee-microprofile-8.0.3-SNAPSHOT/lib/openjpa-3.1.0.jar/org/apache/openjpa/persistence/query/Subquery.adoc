@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/Subquery.class
+
+ - link:Subquery-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/wsdl11/SOAPBindingUtil.class
+
+ - link:SOAPBindingUtil-asmified.java[Asmified]
+
+== References
+

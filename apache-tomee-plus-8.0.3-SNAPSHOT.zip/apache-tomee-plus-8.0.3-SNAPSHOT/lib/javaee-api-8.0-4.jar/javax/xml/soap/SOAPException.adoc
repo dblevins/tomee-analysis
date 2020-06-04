@@ -1,0 +1,7 @@
+= javax/xml/soap/SOAPException.class
+
+ - link:SOAPException-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 2

@@ -1,0 +1,7 @@
+= org/apache/activemq/network/jms/SimpleJmsQueueConnector$4.class
+
+ - link:SimpleJmsQueueConnector$4-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Destination - 2

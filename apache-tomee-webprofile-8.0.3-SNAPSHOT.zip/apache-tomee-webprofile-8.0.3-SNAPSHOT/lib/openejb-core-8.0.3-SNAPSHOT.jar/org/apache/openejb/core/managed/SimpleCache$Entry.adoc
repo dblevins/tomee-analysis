@@ -1,0 +1,6 @@
+= org/apache/openejb/core/managed/SimpleCache$Entry.class
+
+ - link:SimpleCache$Entry-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$FlushHint.class
+
+ - link:QueryHintsHandler$FlushHint-asmified.java[Asmified]
+
+== References
+

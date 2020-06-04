@@ -1,0 +1,6 @@
+= com/ctc/wstx/stax/WstxEventFactory.class
+
+ - link:WstxEventFactory-asmified.java[Asmified]
+
+== References
+

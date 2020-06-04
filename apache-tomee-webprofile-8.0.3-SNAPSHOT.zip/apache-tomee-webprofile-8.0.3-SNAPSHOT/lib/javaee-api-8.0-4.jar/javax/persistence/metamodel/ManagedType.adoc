@@ -1,0 +1,14 @@
+= javax/persistence/metamodel/ManagedType.class
+
+ - link:ManagedType-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.metamodel.SingularAttribute - 6
+ - javax.persistence.metamodel.MapAttribute - 4
+ - javax.persistence.metamodel.ListAttribute - 4
+ - javax.persistence.metamodel.Attribute - 4
+ - javax.persistence.metamodel.SetAttribute - 4
+ - javax.persistence.metamodel.CollectionAttribute - 4
+ - javax.persistence.metamodel.PluralAttribute - 2
+ - javax.persistence.metamodel.Type - 1

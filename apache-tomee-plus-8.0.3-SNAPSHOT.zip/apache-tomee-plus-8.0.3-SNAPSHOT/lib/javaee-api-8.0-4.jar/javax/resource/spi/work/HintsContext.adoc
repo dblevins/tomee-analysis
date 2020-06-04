@@ -1,0 +1,7 @@
+= javax/resource/spi/work/HintsContext.class
+
+ - link:HintsContext-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.work.WorkContext - 1

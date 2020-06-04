@@ -1,0 +1,6 @@
+= org/apache/openejb/config/OpenEjb2Conversion$EntityData.class
+
+ - link:OpenEjb2Conversion$EntityData-asmified.java[Asmified]
+
+== References
+

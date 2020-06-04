@@ -1,0 +1,7 @@
+= org/apache/cxf/attachment/AttachmentUtil$DHMap$1.class
+
+ - link:AttachmentUtil$DHMap$1-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 2

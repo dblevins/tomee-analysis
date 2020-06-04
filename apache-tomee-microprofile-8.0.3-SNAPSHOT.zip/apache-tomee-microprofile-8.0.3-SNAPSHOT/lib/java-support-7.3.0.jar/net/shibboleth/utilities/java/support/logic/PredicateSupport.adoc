@@ -1,0 +1,7 @@
+= net/shibboleth/utilities/java/support/logic/PredicateSupport.class
+
+ - link:PredicateSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 6

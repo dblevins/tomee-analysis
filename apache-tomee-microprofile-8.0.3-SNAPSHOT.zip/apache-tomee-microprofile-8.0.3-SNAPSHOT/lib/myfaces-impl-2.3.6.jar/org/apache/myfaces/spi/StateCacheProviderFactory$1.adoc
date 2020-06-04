@@ -1,0 +1,7 @@
+= org/apache/myfaces/spi/StateCacheProviderFactory$1.class
+
+ - link:StateCacheProviderFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 5

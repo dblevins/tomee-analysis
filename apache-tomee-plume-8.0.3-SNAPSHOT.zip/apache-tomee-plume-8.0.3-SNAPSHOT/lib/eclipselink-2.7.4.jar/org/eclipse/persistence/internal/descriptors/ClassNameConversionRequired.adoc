@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/descriptors/ClassNameConversionRequired.class
+
+ - link:ClassNameConversionRequired-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/DynamicStorage.class
+
+ - link:DynamicStorage-asmified.java[Asmified]
+
+== References
+

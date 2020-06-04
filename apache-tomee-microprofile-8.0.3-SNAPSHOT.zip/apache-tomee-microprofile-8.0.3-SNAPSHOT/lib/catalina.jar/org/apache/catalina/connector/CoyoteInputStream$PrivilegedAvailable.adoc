@@ -1,0 +1,6 @@
+= org/apache/catalina/connector/CoyoteInputStream$PrivilegedAvailable.class
+
+ - link:CoyoteInputStream$PrivilegedAvailable-asmified.java[Asmified]
+
+== References
+

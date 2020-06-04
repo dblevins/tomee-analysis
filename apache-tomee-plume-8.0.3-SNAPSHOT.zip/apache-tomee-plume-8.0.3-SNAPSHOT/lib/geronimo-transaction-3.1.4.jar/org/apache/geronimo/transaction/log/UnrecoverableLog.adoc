@@ -1,0 +1,6 @@
+= org/apache/geronimo/transaction/log/UnrecoverableLog.class
+
+ - link:UnrecoverableLog-asmified.java[Asmified]
+
+== References
+

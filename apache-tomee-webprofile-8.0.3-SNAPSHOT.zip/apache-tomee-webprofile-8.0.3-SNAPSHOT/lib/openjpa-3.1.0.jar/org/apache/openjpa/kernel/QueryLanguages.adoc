@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryLanguages.class
+
+ - link:QueryLanguages-asmified.java[Asmified]
+
+== References
+

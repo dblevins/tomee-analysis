@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/Dom2SaxAdapter.class
+
+ - link:Dom2SaxAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openejb/core/mdb/EndpointHandler.class
+
+ - link:EndpointHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.UnavailableException - 5
+ - javax.resource.spi.ApplicationServerInternalException - 4

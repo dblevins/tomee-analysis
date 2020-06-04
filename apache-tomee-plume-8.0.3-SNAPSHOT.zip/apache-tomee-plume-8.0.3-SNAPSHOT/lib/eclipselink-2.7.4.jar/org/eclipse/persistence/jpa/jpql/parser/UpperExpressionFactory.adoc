@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jpa/jpql/parser/UpperExpressionFactory.class
+
+ - link:UpperExpressionFactory-asmified.java[Asmified]
+
+== References
+

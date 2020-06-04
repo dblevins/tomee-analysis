@@ -1,0 +1,7 @@
+= org/apache/webbeans/spi/ContainerLifecycle.class
+
+ - link:ContainerLifecycle-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.BeanManager - 1

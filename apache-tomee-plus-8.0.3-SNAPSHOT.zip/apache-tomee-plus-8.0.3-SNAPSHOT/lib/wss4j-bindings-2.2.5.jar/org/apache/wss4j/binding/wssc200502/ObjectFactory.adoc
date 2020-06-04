@@ -1,0 +1,9 @@
+= org/apache/wss4j/binding/wssc200502/ObjectFactory.class
+
+ - link:ObjectFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 21
+ - javax.xml.bind.annotation.XmlElementDecl - 7
+ - javax.xml.bind.annotation.XmlRegistry - 1

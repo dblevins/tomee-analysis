@@ -1,0 +1,11 @@
+= org/apache/tomee/microprofile/jwt/cdi/MPJWTProducer.class
+
+ - link:MPJWTProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 5
+ - javax.inject.Inject - 1
+ - javax.enterprise.inject.Produces - 1
+ - javax.enterprise.context.RequestScoped - 1
+ - javax.enterprise.context.ApplicationScoped - 1

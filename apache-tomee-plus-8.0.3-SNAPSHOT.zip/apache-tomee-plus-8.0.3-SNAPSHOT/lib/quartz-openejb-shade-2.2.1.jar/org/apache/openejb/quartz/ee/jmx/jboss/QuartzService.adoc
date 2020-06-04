@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/ee/jmx/jboss/QuartzService.class
+
+ - link:QuartzService-asmified.java[Asmified]
+
+== References
+

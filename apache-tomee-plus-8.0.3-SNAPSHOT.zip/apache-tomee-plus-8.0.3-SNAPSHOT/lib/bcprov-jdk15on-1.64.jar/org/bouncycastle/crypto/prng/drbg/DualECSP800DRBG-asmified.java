@@ -1,0 +1,891 @@
+package asm.org.bouncycastle.crypto.prng.drbg;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DualECSP800DRBGDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_PUBLIC | ACC_SUPER, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", null, "java/lang/Object", new String[] { "org/bouncycastle/crypto/prng/drbg/SP80090DRBG" });
+
+classWriter.visitInnerClass("org/bouncycastle/math/ec/ECCurve$Fp", "org/bouncycastle/math/ec/ECCurve", "Fp", ACC_PUBLIC | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p256_Px", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p256_Py", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p256_Qx", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p256_Qy", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p384_Px", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p384_Py", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p384_Qx", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p384_Qy", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p521_Px", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p521_Py", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p521_Qx", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "p521_Qy", "Ljava/math/BigInteger;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "nistPoints", "[Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "RESEED_MAX", "J", null, new Long(2147483648L));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MAX_ADDITIONAL_INPUT", "I", null, new Integer(4096));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MAX_ENTROPY_LENGTH", "I", null, new Integer(4096));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "MAX_PERSONALIZATION_STRING", "I", null, new Integer(4096));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_digest", "Lorg/bouncycastle/crypto/Digest;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_reseedCounter", "J", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_entropySource", "Lorg/bouncycastle/crypto/prng/EntropySource;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_securityStrength", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_seedlen", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_outlen", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_curve", "Lorg/bouncycastle/math/ec/ECCurve$Fp;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_P", "Lorg/bouncycastle/math/ec/ECPoint;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_Q", "Lorg/bouncycastle/math/ec/ECPoint;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_s", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_sLength", "I", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_fixedPointMultiplier", "Lorg/bouncycastle/math/ec/ECMultiplier;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/bouncycastle/crypto/Digest;ILorg/bouncycastle/crypto/prng/EntropySource;[B[B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "nistPoints", "[Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "<init>", "([Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;Lorg/bouncycastle/crypto/Digest;ILorg/bouncycastle/crypto/prng/EntropySource;[B[B)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(7, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "([Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;Lorg/bouncycastle/crypto/Digest;ILorg/bouncycastle/crypto/prng/EntropySource;[B[B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/math/ec/FixedPointCombMultiplier");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/math/ec/FixedPointCombMultiplier", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_fixedPointMultiplier", "Lorg/bouncycastle/math/ec/ECMultiplier;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_entropySource", "Lorg/bouncycastle/crypto/prng/EntropySource;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_securityStrength", "I");
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitIntInsn(SIPUSH, 512);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "isTooLarge", "([BI)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Personalization string too large");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/prng/EntropySource", "entropySize", "()I", true);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label1);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/prng/EntropySource", "entropySize", "()I", true);
+methodVisitor.visitIntInsn(SIPUSH, 4096);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
+methodVisitor.visitLdcInsn("EntropySource must provide between ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" and ");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitIntInsn(SIPUSH, 4096);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn(" bits");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getEntropy", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/util/Arrays", "concatenate", "([B[B[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 9);
+Label label3 = new Label();
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label4);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "getSecurityStrength", "()I", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGT, label5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "getMaxSecurityStrength", "(Lorg/bouncycastle/crypto/Digest;)I", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "getSecurityStrength", "()I", false);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label6);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Requested security strength is not supported by digest");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "getSeedLen", "()I", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_seedlen", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "getMaxOutlen", "()I", false);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IDIV);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "getP", "()Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_P", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "getQ", "()Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_Q", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitIincInsn(9, 1);
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_P", "Lorg/bouncycastle/math/ec/ECPoint;");
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label7);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("security strength cannot be greater than 256 bits");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_seedlen", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "hash_df", "(Lorg/bouncycastle/crypto/Digest;[BI)[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_sLength", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBlockSize", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generate", "([B[BZ)I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IMUL);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitInsn(IDIV);
+methodVisitor.visitVarInsn(ISTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitIntInsn(SIPUSH, 512);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "isTooLarge", "([BI)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Additional input too large");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(I2L);
+methodVisitor.visitInsn(LADD);
+methodVisitor.visitLdcInsn(new Long(2147483648L));
+methodVisitor.visitInsn(LCMP);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label1);
+methodVisitor.visitInsn(ICONST_M1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "reseed", "([B)V", false);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_seedlen", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "hash_df", "(Lorg/bouncycastle/crypto/Digest;[BI)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "xor", "([B[B)[B", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(I[B)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(I[B)V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/util/Arrays", "fill", "([BB)V", false);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 8);
+Label label5 = new Label();
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ILOAD, 5);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_P", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getScalarMultipleXCoord", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Ljava/math/BigInteger;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_Q", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getScalarMultipleXCoord", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/math/BigInteger", "toByteArray", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label7);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label8);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitInsn(LCONST_1);
+methodVisitor.visitInsn(LADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_P", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getScalarMultipleXCoord", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Ljava/math/BigInteger;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_Q", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getScalarMultipleXCoord", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/math/BigInteger", "toByteArray", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label10);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label11);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_outlen", "I");
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 9);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitInsn(LCONST_1);
+methodVisitor.visitInsn(LADD);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_sLength", "I");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_P", "Lorg/bouncycastle/math/ec/ECPoint;");
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getScalarMultipleXCoord", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Ljava/math/BigInteger;", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/util/BigIntegers", "asUnsignedByteArray", "(ILjava/math/BigInteger;)[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(6, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "reseed", "([B)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitIntInsn(SIPUSH, 512);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "isTooLarge", "([BI)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalArgumentException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Additional input string too large");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalArgumentException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "getEntropy", "()[B", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_seedlen", "I");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "pad8", "([BI)[B", false);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/util/Arrays", "concatenate", "([B[B[B)[B", false);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_digest", "Lorg/bouncycastle/crypto/Digest;");
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_seedlen", "I");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/crypto/prng/drbg/Utils", "hash_df", "(Lorg/bouncycastle/crypto/Digest;[BI)[B", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_s", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(LCONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_reseedCounter", "J");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getEntropy", "()[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_entropySource", "Lorg/bouncycastle/crypto/prng/EntropySource;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/crypto/prng/EntropySource", "getEntropy", "()[B", true);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_securityStrength", "I");
+methodVisitor.visitIntInsn(BIPUSH, 7);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IDIV);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label0);
+methodVisitor.visitTypeInsn(NEW, "java/lang/IllegalStateException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("Insufficient entropy provided by entropy source");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/IllegalStateException", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "xor", "([B[B)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 2);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitInsn(IXOR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitIincInsn(4, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "pad8", "([BI)[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IREM);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitInsn(IREM);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 5);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 5);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFLT, label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(BALOAD);
+methodVisitor.visitIntInsn(SIPUSH, 255);
+methodVisitor.visitInsn(IAND);
+methodVisitor.visitVarInsn(ISTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ISHL);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitIntInsn(BIPUSH, 8);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitInsn(ISHR);
+methodVisitor.visitInsn(IOR);
+methodVisitor.visitInsn(I2B);
+methodVisitor.visitInsn(BASTORE);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitVarInsn(ISTORE, 4);
+methodVisitor.visitIincInsn(5, -1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PRIVATE, "getScalarMultipleXCoord", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Ljava/math/BigInteger;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "_fixedPointMultiplier", "Lorg/bouncycastle/math/ec/ECMultiplier;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/bouncycastle/math/ec/ECMultiplier", "multiply", "(Lorg/bouncycastle/math/ec/ECPoint;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", true);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECPoint", "normalize", "()Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECPoint", "getAffineXCoord", "()Lorg/bouncycastle/math/ec/ECFieldElement;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECFieldElement", "toBigInteger", "()Ljava/math/BigInteger;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Px", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Py", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("c97445f45cdef9f0d3e05e1e585fc297235b82b5be8ff3efca67c59852018192");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Qx", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("b28ef557ba31dfcbdd21ac46e2a91e3c304f44cb87058ada2cb815151e610046");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Qy", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("aa87ca22be8b05378eb1c71ef320ad746e1d3b628ba79b9859f741e082542a385502f25dbf55296c3a545e3872760ab7");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Px", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("3617de4a96262c6f5d9e98bf9292dc29f8f41dbd289a147ce9da3113b5f0b8c00a60b1ce1d7e819d7a431d7c90ea0e5f");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Py", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("8e722de3125bddb05580164bfe20b8b432216a62926c57502ceede31c47816edd1e89769124179d0b695106428815065");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Qx", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("023b1660dd701d0839fd45eec36f9ee7b32e13b315dc02610aa1b636e346df671f790f84c5e09b05674dbb7e45c803dd");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Qy", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("c6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Px", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("11839296a789a3bc0045c8a5fb42c7d1bd998f54449579b446817afbd17273e662c97ee72995ef42640c550b9013fad0761353c7086a272c24088be94769fd16650");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Py", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("1b9fa3e518d683c6b65763694ac8efbaec6fab44f2276171a42726507dd08add4c3b3f4c1ebc5b1222ddba077f722943b24c3edfa0f85fe24d0c8c01591f0be6f63");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Qx", "Ljava/math/BigInteger;");
+methodVisitor.visitTypeInsn(NEW, "java/math/BigInteger");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("1f3bdba585295d9a1110d1df1f9430ef8442c5018976ff3437ef91b81dc0b8132c8d5c39c32d0e004a3092b7d327c0e7a4d26d2c7b69b58f9066652911e457779de");
+methodVisitor.visitIntInsn(BIPUSH, 16);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/math/BigInteger", "<init>", "(Ljava/lang/String;I)V", false);
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Qy", "Ljava/math/BigInteger;");
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitTypeInsn(ANEWARRAY, "org/bouncycastle/crypto/prng/drbg/DualECPoints");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "nistPoints", "[Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;");
+methodVisitor.visitLdcInsn("P-256");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/asn1/nist/NISTNamedCurves", "getByName", "(Ljava/lang/String;)Lorg/bouncycastle/asn1/x9/X9ECParameters;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/asn1/x9/X9ECParameters", "getCurve", "()Lorg/bouncycastle/math/ec/ECCurve;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/math/ec/ECCurve$Fp");
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "nistPoints", "[Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/prng/drbg/DualECPoints");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(SIPUSH, 128);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Px", "Ljava/math/BigInteger;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Py", "Ljava/math/BigInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECCurve$Fp", "createPoint", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Qx", "Ljava/math/BigInteger;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p256_Qy", "Ljava/math/BigInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECCurve$Fp", "createPoint", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "<init>", "(ILorg/bouncycastle/math/ec/ECPoint;Lorg/bouncycastle/math/ec/ECPoint;I)V", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitLdcInsn("P-384");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/asn1/nist/NISTNamedCurves", "getByName", "(Ljava/lang/String;)Lorg/bouncycastle/asn1/x9/X9ECParameters;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/asn1/x9/X9ECParameters", "getCurve", "()Lorg/bouncycastle/math/ec/ECCurve;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/math/ec/ECCurve$Fp");
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "nistPoints", "[Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;");
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/prng/drbg/DualECPoints");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(SIPUSH, 192);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Px", "Ljava/math/BigInteger;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Py", "Ljava/math/BigInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECCurve$Fp", "createPoint", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Qx", "Ljava/math/BigInteger;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p384_Qy", "Ljava/math/BigInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECCurve$Fp", "createPoint", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "<init>", "(ILorg/bouncycastle/math/ec/ECPoint;Lorg/bouncycastle/math/ec/ECPoint;I)V", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitLdcInsn("P-521");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/bouncycastle/asn1/nist/NISTNamedCurves", "getByName", "(Ljava/lang/String;)Lorg/bouncycastle/asn1/x9/X9ECParameters;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/asn1/x9/X9ECParameters", "getCurve", "()Lorg/bouncycastle/math/ec/ECCurve;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/math/ec/ECCurve$Fp");
+methodVisitor.visitVarInsn(ASTORE, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "nistPoints", "[Lorg/bouncycastle/crypto/prng/drbg/DualECPoints;");
+methodVisitor.visitInsn(ICONST_2);
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/prng/drbg/DualECPoints");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitIntInsn(SIPUSH, 256);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Px", "Ljava/math/BigInteger;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Py", "Ljava/math/BigInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECCurve$Fp", "createPoint", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Qx", "Ljava/math/BigInteger;");
+methodVisitor.visitFieldInsn(GETSTATIC, "org/bouncycastle/crypto/prng/drbg/DualECSP800DRBG", "p521_Qy", "Ljava/math/BigInteger;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/math/ec/ECCurve$Fp", "createPoint", "(Ljava/math/BigInteger;Ljava/math/BigInteger;)Lorg/bouncycastle/math/ec/ECPoint;", false);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/prng/drbg/DualECPoints", "<init>", "(ILorg/bouncycastle/math/ec/ECPoint;Lorg/bouncycastle/math/ec/ECPoint;I)V", false);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(9, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

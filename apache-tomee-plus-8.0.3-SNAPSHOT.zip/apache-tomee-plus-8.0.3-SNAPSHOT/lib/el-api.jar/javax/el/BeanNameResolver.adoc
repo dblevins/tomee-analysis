@@ -1,0 +1,7 @@
+= javax/el/BeanNameResolver.class
+
+ - link:BeanNameResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.PropertyNotWritableException - 3

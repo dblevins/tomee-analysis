@@ -1,0 +1,6 @@
+= javax/wsdl/extensions/http/HTTPUrlEncoded.class
+
+ - link:HTTPUrlEncoded-asmified.java[Asmified]
+
+== References
+

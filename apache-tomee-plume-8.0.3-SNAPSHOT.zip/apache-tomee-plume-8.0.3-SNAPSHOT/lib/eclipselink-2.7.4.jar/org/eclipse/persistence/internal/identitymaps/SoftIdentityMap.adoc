@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/identitymaps/SoftIdentityMap.class
+
+ - link:SoftIdentityMap-asmified.java[Asmified]
+
+== References
+

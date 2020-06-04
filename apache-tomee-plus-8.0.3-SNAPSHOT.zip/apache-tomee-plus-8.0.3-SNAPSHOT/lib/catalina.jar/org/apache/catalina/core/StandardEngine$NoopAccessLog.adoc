@@ -1,0 +1,6 @@
+= org/apache/catalina/core/StandardEngine$NoopAccessLog.class
+
+ - link:StandardEngine$NoopAccessLog-asmified.java[Asmified]
+
+== References
+

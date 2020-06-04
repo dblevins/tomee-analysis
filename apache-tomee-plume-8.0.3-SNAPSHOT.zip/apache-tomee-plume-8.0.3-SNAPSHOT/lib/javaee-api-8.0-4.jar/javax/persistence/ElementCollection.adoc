@@ -1,0 +1,7 @@
+= javax/persistence/ElementCollection.class
+
+ - link:ElementCollection-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.FetchType - 2

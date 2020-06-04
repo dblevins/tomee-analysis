@@ -1,0 +1,6 @@
+= com/sun/faces/application/ApplicationInstanceFactoryMetadataMap$METADATA.class
+
+ - link:ApplicationInstanceFactoryMetadataMap$METADATA-asmified.java[Asmified]
+
+== References
+

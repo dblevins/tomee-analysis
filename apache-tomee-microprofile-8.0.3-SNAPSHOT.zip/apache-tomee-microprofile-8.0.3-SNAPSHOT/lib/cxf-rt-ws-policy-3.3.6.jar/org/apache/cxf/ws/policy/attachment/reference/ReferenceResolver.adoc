@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/attachment/reference/ReferenceResolver.class
+
+ - link:ReferenceResolver-asmified.java[Asmified]
+
+== References
+

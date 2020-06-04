@@ -1,0 +1,6 @@
+= org/apache/johnzon/mapper/JohnzonVirtualObject.class
+
+ - link:JohnzonVirtualObject-asmified.java[Asmified]
+
+== References
+

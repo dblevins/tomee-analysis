@@ -1,0 +1,6 @@
+= org/opensaml/xacml/profile/saml/impl/XACMLAuthzDecisionStatementTypeImplBuilder.class
+
+ - link:XACMLAuthzDecisionStatementTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

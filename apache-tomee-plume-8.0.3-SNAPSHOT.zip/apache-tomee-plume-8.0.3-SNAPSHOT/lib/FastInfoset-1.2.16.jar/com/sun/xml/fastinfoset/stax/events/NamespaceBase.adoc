@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/stax/events/NamespaceBase.class
+
+ - link:NamespaceBase-asmified.java[Asmified]
+
+== References
+

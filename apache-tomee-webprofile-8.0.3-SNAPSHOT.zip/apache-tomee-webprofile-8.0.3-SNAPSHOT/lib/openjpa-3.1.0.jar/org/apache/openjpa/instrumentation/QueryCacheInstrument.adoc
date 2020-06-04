@@ -1,0 +1,6 @@
+= org/apache/openjpa/instrumentation/QueryCacheInstrument.class
+
+ - link:QueryCacheInstrument-asmified.java[Asmified]
+
+== References
+

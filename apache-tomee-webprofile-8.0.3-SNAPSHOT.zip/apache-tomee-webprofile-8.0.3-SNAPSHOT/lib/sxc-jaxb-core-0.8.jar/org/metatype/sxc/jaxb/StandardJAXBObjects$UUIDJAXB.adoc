@@ -1,0 +1,6 @@
+= org/metatype/sxc/jaxb/StandardJAXBObjects$UUIDJAXB.class
+
+ - link:StandardJAXBObjects$UUIDJAXB-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/edec/KeyPairGeneratorSpi$X448.class
+
+ - link:KeyPairGeneratorSpi$X448-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openejb/config/OpenEjb2Conversion.class
+
+ - link:OpenEjb2Conversion-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 5

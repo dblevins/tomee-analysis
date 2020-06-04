@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/LoggerType.class
+
+ - link:LoggerType-asmified.java[Asmified]
+
+== References
+

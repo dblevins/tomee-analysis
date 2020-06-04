@@ -1,0 +1,6 @@
+= org/apache/cxf/microprofile/client/cdi/Instance.class
+
+ - link:Instance-asmified.java[Asmified]
+
+== References
+

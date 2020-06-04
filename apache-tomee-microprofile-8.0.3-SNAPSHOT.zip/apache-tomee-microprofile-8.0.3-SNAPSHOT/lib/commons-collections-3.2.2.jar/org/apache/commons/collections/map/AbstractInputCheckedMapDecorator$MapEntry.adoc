@@ -1,0 +1,6 @@
+= org/apache/commons/collections/map/AbstractInputCheckedMapDecorator$MapEntry.class
+
+ - link:AbstractInputCheckedMapDecorator$MapEntry-asmified.java[Asmified]
+
+== References
+

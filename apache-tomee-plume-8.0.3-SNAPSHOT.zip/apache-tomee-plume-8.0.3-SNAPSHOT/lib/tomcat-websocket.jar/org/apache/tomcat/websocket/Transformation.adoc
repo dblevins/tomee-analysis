@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/Transformation.class
+
+ - link:Transformation-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Extension - 1

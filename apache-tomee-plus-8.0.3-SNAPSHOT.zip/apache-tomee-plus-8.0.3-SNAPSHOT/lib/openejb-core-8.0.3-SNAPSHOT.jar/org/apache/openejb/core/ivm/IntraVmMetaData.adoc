@@ -1,0 +1,8 @@
+= org/apache/openejb/core/ivm/IntraVmMetaData.class
+
+ - link:IntraVmMetaData-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBHome - 6
+ - javax.ejb.EJBMetaData - 2

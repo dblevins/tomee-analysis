@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaMaxInclusiveFacet.class
+
+ - link:XmlSchemaMaxInclusiveFacet-asmified.java[Asmified]
+
+== References
+

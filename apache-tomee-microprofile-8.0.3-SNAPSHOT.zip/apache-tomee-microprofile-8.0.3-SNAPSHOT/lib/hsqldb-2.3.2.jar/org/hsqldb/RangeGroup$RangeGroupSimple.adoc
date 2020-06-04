@@ -1,0 +1,6 @@
+= org/hsqldb/RangeGroup$RangeGroupSimple.class
+
+ - link:RangeGroup$RangeGroupSimple-asmified.java[Asmified]
+
+== References
+

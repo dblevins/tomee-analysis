@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/AttributeNodeImpl.class
+
+ - link:AttributeNodeImpl-asmified.java[Asmified]
+
+== References
+

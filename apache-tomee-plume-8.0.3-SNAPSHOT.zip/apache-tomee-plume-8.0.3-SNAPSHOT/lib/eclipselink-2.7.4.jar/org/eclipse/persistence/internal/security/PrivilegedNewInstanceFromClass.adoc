@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/security/PrivilegedNewInstanceFromClass.class
+
+ - link:PrivilegedNewInstanceFromClass-asmified.java[Asmified]
+
+== References
+

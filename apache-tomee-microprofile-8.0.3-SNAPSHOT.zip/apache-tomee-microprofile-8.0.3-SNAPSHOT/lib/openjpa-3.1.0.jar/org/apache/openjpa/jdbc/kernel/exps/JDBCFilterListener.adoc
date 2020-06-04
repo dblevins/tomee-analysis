@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/exps/JDBCFilterListener.class
+
+ - link:JDBCFilterListener-asmified.java[Asmified]
+
+== References
+

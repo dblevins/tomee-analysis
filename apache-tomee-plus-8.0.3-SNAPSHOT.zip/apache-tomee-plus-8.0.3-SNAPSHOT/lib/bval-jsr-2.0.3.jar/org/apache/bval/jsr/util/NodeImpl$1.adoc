@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/util/NodeImpl$1.class
+
+ - link:NodeImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ElementKind - 14

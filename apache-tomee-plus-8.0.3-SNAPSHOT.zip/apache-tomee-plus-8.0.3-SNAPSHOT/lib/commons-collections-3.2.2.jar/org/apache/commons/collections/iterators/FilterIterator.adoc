@@ -1,0 +1,6 @@
+= org/apache/commons/collections/iterators/FilterIterator.class
+
+ - link:FilterIterator-asmified.java[Asmified]
+
+== References
+

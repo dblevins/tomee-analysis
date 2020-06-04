@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/TransactionType.class
+
+ - link:TransactionType-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlEnumValue - 2

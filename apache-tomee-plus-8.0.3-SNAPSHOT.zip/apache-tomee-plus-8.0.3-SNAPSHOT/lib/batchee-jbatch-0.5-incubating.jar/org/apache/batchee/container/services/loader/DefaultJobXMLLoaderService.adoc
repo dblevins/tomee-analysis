@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/loader/DefaultJobXMLLoaderService.class
+
+ - link:DefaultJobXMLLoaderService-asmified.java[Asmified]
+
+== References
+

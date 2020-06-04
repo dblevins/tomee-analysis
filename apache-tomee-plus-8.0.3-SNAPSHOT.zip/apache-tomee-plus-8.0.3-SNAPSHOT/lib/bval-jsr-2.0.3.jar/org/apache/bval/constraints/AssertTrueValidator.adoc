@@ -1,0 +1,9 @@
+= org/apache/bval/constraints/AssertTrueValidator.class
+
+ - link:AssertTrueValidator-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ConstraintValidatorContext - 3
+ - javax.validation.ConstraintValidator - 1
+ - javax.validation.constraints.AssertTrue - 1

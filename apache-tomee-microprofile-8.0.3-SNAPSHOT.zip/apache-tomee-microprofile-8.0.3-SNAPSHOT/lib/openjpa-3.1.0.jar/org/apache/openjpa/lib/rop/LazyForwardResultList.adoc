@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/rop/LazyForwardResultList.class
+
+ - link:LazyForwardResultList-asmified.java[Asmified]
+
+== References
+

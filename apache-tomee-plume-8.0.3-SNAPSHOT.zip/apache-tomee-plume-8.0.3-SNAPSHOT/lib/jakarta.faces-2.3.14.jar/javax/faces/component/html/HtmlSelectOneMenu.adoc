@@ -1,0 +1,12 @@
+= javax/faces/component/html/HtmlSelectOneMenu.class
+
+ - link:HtmlSelectOneMenu-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.StateHelper - 104
+ - javax.faces.component.html.HtmlSelectOneMenu - 75
+ - javax.faces.component.html.HtmlSelectOneMenu$PropertyKeys - 52
+ - javax.faces.component.UISelectOne - 2
+ - javax.el.ValueExpression - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

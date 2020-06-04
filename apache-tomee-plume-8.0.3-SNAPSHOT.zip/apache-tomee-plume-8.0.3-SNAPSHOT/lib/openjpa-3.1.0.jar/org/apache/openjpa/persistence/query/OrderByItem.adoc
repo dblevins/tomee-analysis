@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/OrderByItem.class
+
+ - link:OrderByItem-asmified.java[Asmified]
+
+== References
+

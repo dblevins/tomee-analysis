@@ -1,0 +1,6 @@
+= org/apache/catalina/valves/AbstractAccessLogValve$SessionIdElement.class
+
+ - link:AbstractAccessLogValve$SessionIdElement-asmified.java[Asmified]
+
+== References
+

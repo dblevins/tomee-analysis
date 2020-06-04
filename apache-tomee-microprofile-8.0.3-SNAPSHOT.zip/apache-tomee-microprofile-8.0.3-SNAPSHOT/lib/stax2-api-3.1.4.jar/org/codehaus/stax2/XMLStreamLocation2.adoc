@@ -1,0 +1,6 @@
+= org/codehaus/stax2/XMLStreamLocation2.class
+
+ - link:XMLStreamLocation2-asmified.java[Asmified]
+
+== References
+

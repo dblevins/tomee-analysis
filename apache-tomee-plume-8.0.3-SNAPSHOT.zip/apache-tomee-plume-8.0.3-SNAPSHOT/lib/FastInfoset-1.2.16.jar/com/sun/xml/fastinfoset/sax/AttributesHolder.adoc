@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/sax/AttributesHolder.class
+
+ - link:AttributesHolder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/utils/NamespaceContextOwner.class
+
+ - link:NamespaceContextOwner-asmified.java[Asmified]
+
+== References
+

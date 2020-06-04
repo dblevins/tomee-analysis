@@ -1,0 +1,7 @@
+= javax/ws/rs/ConstrainedTo.class
+
+ - link:ConstrainedTo-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.RuntimeType - 1

@@ -1,0 +1,10 @@
+= com/sun/xml/bind/v2/model/impl/RuntimeBuiltinLeafInfoImpl$12.class
+
+ - link:RuntimeBuiltinLeafInfoImpl$12-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.MimeType - 6
+ - javax.activation.MimeTypeParseException - 5
+ - javax.activation.DataSource - 5
+ - javax.activation.DataHandler - 5

@@ -1,0 +1,7 @@
+= javax/security/auth/message/config/AuthConfig.class
+
+ - link:AuthConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.MessageInfo - 1

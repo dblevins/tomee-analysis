@@ -1,0 +1,7 @@
+= org/jvnet/staxex/BinaryText.class
+
+ - link:BinaryText-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataHandler - 1

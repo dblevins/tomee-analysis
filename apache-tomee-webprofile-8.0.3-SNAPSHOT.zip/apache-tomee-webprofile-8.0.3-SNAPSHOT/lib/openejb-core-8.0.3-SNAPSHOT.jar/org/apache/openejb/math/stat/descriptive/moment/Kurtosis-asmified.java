@@ -1,0 +1,406 @@
+package asm.org.apache.openejb.math.stat.descriptive.moment;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class KurtosisDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", null, "org/apache/openejb/math/stat/descriptive/AbstractStorelessUnivariateStatistic", new String[] { "java/io/Serializable" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "serialVersionUID", "J", null, new Long(1234465764798260919L));
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PROTECTED, "incMoment", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/math/stat/descriptive/AbstractStorelessUnivariateStatistic", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "incMoment", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/math/stat/descriptive/AbstractStorelessUnivariateStatistic", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "incMoment", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/math/stat/descriptive/AbstractStorelessUnivariateStatistic", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "copy", "(Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "increment", "(D)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "incMoment", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitVarInsn(DLOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "increment", "(D)V", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitLdcInsn("statistics constructed from external moments cannot be incremented");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/math/MathRuntimeException", "createIllegalStateException", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalStateException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResult", "()D", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(new Double("NaN"));
+methodVisitor.visitVarInsn(DSTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "getN", "()J", false);
+methodVisitor.visitLdcInsn(new Long(3L));
+methodVisitor.visitInsn(LCMP);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "m2", "D");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "n", "J");
+methodVisitor.visitInsn(LCONST_1);
+methodVisitor.visitInsn(LSUB);
+methodVisitor.visitInsn(L2D);
+methodVisitor.visitInsn(DDIV);
+methodVisitor.visitVarInsn(DSTORE, 3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "n", "J");
+methodVisitor.visitLdcInsn(new Long(3L));
+methodVisitor.visitInsn(LCMP);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFLE, label1);
+methodVisitor.visitVarInsn(DLOAD, 3);
+methodVisitor.visitLdcInsn(new Double("1.0E-19"));
+methodVisitor.visitInsn(DCMPG);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFGE, label2);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.DOUBLE, Opcodes.DOUBLE}, 0, null);
+methodVisitor.visitInsn(DCONST_0);
+methodVisitor.visitVarInsn(DSTORE, 1);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "n", "J");
+methodVisitor.visitInsn(L2D);
+methodVisitor.visitVarInsn(DSTORE, 5);
+methodVisitor.visitVarInsn(DLOAD, 5);
+methodVisitor.visitVarInsn(DLOAD, 5);
+methodVisitor.visitInsn(DCONST_1);
+methodVisitor.visitInsn(DADD);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "m4", "D");
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitLdcInsn(new Double("3.0"));
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "m2", "D");
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "m2", "D");
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 5);
+methodVisitor.visitInsn(DCONST_1);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitVarInsn(DLOAD, 5);
+methodVisitor.visitInsn(DCONST_1);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitVarInsn(DLOAD, 5);
+methodVisitor.visitLdcInsn(new Double("2.0"));
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 5);
+methodVisitor.visitLdcInsn(new Double("3.0"));
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 3);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 3);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitInsn(DDIV);
+methodVisitor.visitVarInsn(DSTORE, 1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(DLOAD, 1);
+methodVisitor.visitInsn(DRETURN);
+methodVisitor.visitMaxs(8, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "clear", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "incMoment", "Z");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "clear", "()V", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitLdcInsn("statistics constructed from external moments cannot be cleared");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "java/lang/Object");
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/math/MathRuntimeException", "createIllegalStateException", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalStateException;", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getN", "()J", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "getN", "()J", false);
+methodVisitor.visitInsn(LRETURN);
+methodVisitor.visitMaxs(2, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "evaluate", "([DII)D", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitLdcInsn(new Double("NaN"));
+methodVisitor.visitVarInsn(DSTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "test", "([DII)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(ICONST_3);
+methodVisitor.visitJumpInsn(IF_ICMPLE, label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/math/stat/descriptive/moment/Variance");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/math/stat/descriptive/moment/Variance", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/Variance", "incrementAll", "([DII)V", false);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Variance", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/SecondMoment;");
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/SecondMoment", "m1", "D");
+methodVisitor.visitVarInsn(DSTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/Variance", "getResult", "()D", false);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "sqrt", "(D)D", false);
+methodVisitor.visitVarInsn(DSTORE, 9);
+methodVisitor.visitInsn(DCONST_0);
+methodVisitor.visitVarInsn(DSTORE, 11);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ISTORE, 13);
+Label label1 = new Label();
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_FULL, 10, new Object[] {"org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "[D", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.DOUBLE, "org/apache/openejb/math/stat/descriptive/moment/Variance", Opcodes.DOUBLE, Opcodes.DOUBLE, Opcodes.DOUBLE, Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ILOAD, 13);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(IADD);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label2);
+methodVisitor.visitVarInsn(DLOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 13);
+methodVisitor.visitInsn(DALOAD);
+methodVisitor.visitVarInsn(DLOAD, 7);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitLdcInsn(new Double("4.0"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "pow", "(DD)D", false);
+methodVisitor.visitInsn(DADD);
+methodVisitor.visitVarInsn(DSTORE, 11);
+methodVisitor.visitIincInsn(13, 1);
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_CHOP,1, null, 0, null);
+methodVisitor.visitVarInsn(DLOAD, 11);
+methodVisitor.visitVarInsn(DLOAD, 9);
+methodVisitor.visitLdcInsn(new Double("4.0"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "pow", "(DD)D", false);
+methodVisitor.visitInsn(DDIV);
+methodVisitor.visitVarInsn(DSTORE, 11);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitInsn(I2D);
+methodVisitor.visitVarInsn(DSTORE, 13);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitInsn(DCONST_1);
+methodVisitor.visitInsn(DADD);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitInsn(DCONST_1);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitLdcInsn(new Double("2.0"));
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitLdcInsn(new Double("3.0"));
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitInsn(DDIV);
+methodVisitor.visitVarInsn(DSTORE, 15);
+methodVisitor.visitLdcInsn(new Double("3.0"));
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitInsn(DCONST_1);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitLdcInsn(new Double("2.0"));
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "pow", "(DD)D", false);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitLdcInsn(new Double("2.0"));
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitVarInsn(DLOAD, 13);
+methodVisitor.visitLdcInsn(new Double("3.0"));
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitInsn(DDIV);
+methodVisitor.visitVarInsn(DSTORE, 17);
+methodVisitor.visitVarInsn(DLOAD, 15);
+methodVisitor.visitVarInsn(DLOAD, 11);
+methodVisitor.visitInsn(DMUL);
+methodVisitor.visitVarInsn(DLOAD, 17);
+methodVisitor.visitInsn(DSUB);
+methodVisitor.visitVarInsn(DSTORE, 4);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "[D", Opcodes.INTEGER, Opcodes.INTEGER, Opcodes.DOUBLE}, 0, new Object[] {});
+methodVisitor.visitVarInsn(DLOAD, 4);
+methodVisitor.visitInsn(DRETURN);
+methodVisitor.visitMaxs(8, 19);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "copy", "()Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "copy", "(Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_STATIC, "copy", "(Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/FourthMoment", "copy", "()Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "moment", "Lorg/apache/openejb/math/stat/descriptive/moment/FourthMoment;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "incMoment", "Z");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "incMoment", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "copy", "()Lorg/apache/openejb/math/stat/descriptive/StorelessUnivariateStatistic;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "copy", "()Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC | ACC_BRIDGE | ACC_SYNTHETIC, "copy", "()Lorg/apache/openejb/math/stat/descriptive/UnivariateStatistic;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openejb/math/stat/descriptive/moment/Kurtosis", "copy", "()Lorg/apache/openejb/math/stat/descriptive/moment/Kurtosis;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

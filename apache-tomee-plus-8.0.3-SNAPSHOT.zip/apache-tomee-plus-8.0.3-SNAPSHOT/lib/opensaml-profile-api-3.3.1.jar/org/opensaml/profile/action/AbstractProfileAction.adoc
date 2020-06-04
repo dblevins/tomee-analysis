@@ -1,0 +1,10 @@
+= org/opensaml/profile/action/AbstractProfileAction.class
+
+ - link:AbstractProfileAction-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 7
+ - javax.annotation.Nullable - 7
+ - javax.servlet.http.HttpServletRequest - 5
+ - javax.servlet.http.HttpServletResponse - 5

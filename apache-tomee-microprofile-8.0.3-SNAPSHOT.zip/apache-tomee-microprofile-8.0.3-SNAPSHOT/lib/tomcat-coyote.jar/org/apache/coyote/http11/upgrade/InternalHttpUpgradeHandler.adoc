@@ -1,0 +1,7 @@
+= org/apache/coyote/http11/upgrade/InternalHttpUpgradeHandler.class
+
+ - link:InternalHttpUpgradeHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpUpgradeHandler - 1

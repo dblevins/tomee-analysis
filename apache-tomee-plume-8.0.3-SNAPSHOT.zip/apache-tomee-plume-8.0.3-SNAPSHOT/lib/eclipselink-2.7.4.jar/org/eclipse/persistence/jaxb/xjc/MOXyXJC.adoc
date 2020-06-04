@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/xjc/MOXyXJC.class
+
+ - link:MOXyXJC-asmified.java[Asmified]
+
+== References
+

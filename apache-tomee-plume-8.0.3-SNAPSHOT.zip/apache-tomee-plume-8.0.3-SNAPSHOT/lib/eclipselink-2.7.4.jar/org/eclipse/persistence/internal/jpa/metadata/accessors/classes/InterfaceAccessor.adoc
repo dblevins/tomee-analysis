@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/metadata/accessors/classes/InterfaceAccessor.class
+
+ - link:InterfaceAccessor-asmified.java[Asmified]
+
+== References
+

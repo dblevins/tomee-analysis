@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/impl/MethodProperty.class
+
+ - link:MethodProperty-asmified.java[Asmified]
+
+== References
+

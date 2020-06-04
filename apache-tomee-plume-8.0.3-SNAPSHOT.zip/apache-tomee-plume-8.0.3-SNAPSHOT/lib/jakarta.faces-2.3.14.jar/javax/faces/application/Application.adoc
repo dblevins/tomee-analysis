@@ -1,0 +1,35 @@
+= javax/faces/application/Application.class
+
+ - link:Application-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.application.Application - 97
+ - javax.faces.context.FacesContext - 17
+ - javax.faces.component.UIComponent - 10
+ - javax.faces.event.SystemEventListener - 8
+ - javax.el.ELContextListener - 6
+ - javax.faces.event.SystemEvent - 6
+ - javax.faces.FacesException - 5
+ - javax.faces.component.search.SearchExpressionHandler - 4
+ - javax.faces.component.search.SearchKeywordResolver - 4
+ - javax.faces.flow.FlowHandler - 4
+ - javax.faces.application.ResourceHandler - 4
+ - javax.el.ELResolver - 4
+ - javax.el.ValueExpression - 4
+ - javax.faces.application.ProjectStage - 3
+ - javax.el.ExpressionFactory - 2
+ - javax.faces.event.ActionListener - 2
+ - javax.faces.application.StateManager - 2
+ - javax.faces.application.NavigationHandler - 2
+ - javax.faces.application.Resource - 2
+ - javax.faces.application.ViewHandler - 2
+ - javax.faces.el.ReferenceSyntaxException - 2
+ - javax.faces.component.behavior.Behavior - 2
+ - javax.faces.el.PropertyResolver - 2
+ - javax.faces.el.VariableResolver - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.convert.Converter - 2
+ - javax.el.ELException - 1
+ - javax.faces.el.MethodBinding - 1
+ - javax.faces.validator.Validator - 1

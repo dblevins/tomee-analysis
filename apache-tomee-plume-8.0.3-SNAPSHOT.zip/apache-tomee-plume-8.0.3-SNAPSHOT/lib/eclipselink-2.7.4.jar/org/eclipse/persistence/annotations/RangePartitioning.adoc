@@ -1,0 +1,7 @@
+= org/eclipse/persistence/annotations/RangePartitioning.class
+
+ - link:RangePartitioning-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.Column - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/MappingTool$ImportExport.class
+
+ - link:MappingTool$ImportExport-asmified.java[Asmified]
+
+== References
+

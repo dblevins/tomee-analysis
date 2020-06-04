@@ -1,0 +1,6 @@
+= serp/bytecode/LocalVariableTypeTable.class
+
+ - link:LocalVariableTypeTable-asmified.java[Asmified]
+
+== References
+

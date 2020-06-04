@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/NOPTransformer.class
+
+ - link:NOPTransformer-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/oxm/documentpreservation/XMLBinderPolicy.class
+
+ - link:XMLBinderPolicy-asmified.java[Asmified]
+
+== References
+

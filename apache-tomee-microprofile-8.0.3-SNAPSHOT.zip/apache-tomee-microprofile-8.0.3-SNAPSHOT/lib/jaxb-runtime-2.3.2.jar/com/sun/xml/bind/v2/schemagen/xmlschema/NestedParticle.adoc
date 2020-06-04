@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/NestedParticle.class
+
+ - link:NestedParticle-asmified.java[Asmified]
+
+== References
+

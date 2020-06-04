@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/node/ValueNode.class
+
+ - link:ValueNode-asmified.java[Asmified]
+
+== References
+

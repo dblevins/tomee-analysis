@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/Base64Utility.class
+
+ - link:Base64Utility-asmified.java[Asmified]
+
+== References
+

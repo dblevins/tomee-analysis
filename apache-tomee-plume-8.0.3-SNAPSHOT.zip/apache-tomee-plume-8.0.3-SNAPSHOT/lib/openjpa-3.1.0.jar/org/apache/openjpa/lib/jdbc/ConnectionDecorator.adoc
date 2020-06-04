@@ -1,0 +1,6 @@
+= org/apache/openjpa/lib/jdbc/ConnectionDecorator.class
+
+ - link:ConnectionDecorator-asmified.java[Asmified]
+
+== References
+

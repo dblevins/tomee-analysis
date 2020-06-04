@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/assertion/ValidationContext.class
+
+ - link:ValidationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.concurrent.NotThreadSafe - 1

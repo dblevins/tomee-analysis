@@ -1,0 +1,6 @@
+= org/hsqldb/persist/LockFile$WrongLengthException.class
+
+ - link:LockFile$WrongLengthException-asmified.java[Asmified]
+
+== References
+

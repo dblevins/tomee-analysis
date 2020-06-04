@@ -1,0 +1,6 @@
+= org/apache/openejb/monitoring/ObjectNameBuilder.class
+
+ - link:ObjectNameBuilder-asmified.java[Asmified]
+
+== References
+

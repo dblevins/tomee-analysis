@@ -1,0 +1,6 @@
+= org/bouncycastle/x509/X509V2AttributeCertificate.class
+
+ - link:X509V2AttributeCertificate-asmified.java[Asmified]
+
+== References
+

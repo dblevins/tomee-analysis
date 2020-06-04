@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDOHelperContext.class
+
+ - link:SDOHelperContext-asmified.java[Asmified]
+
+== References
+

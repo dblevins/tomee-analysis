@@ -1,0 +1,6 @@
+= org/apache/commons/jcs/engine/AbstractCacheEventQueue$RemoveEvent.class
+
+ - link:AbstractCacheEventQueue$RemoveEvent-asmified.java[Asmified]
+
+== References
+

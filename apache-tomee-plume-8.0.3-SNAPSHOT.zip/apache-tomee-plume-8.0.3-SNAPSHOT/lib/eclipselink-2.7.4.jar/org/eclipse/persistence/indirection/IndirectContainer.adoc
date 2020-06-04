@@ -1,0 +1,6 @@
+= org/eclipse/persistence/indirection/IndirectContainer.class
+
+ - link:IndirectContainer-asmified.java[Asmified]
+
+== References
+

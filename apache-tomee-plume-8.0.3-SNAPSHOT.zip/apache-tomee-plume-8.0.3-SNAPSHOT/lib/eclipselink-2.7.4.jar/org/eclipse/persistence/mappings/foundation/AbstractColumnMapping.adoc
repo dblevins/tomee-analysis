@@ -1,0 +1,6 @@
+= org/eclipse/persistence/mappings/foundation/AbstractColumnMapping.class
+
+ - link:AbstractColumnMapping-asmified.java[Asmified]
+
+== References
+

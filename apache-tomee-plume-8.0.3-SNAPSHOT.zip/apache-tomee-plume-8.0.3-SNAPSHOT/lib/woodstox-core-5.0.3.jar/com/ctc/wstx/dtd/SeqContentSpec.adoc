@@ -1,0 +1,6 @@
+= com/ctc/wstx/dtd/SeqContentSpec.class
+
+ - link:SeqContentSpec-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/policy/model/SamlToken$SamlTokenType.class
+
+ - link:SamlToken$SamlTokenType-asmified.java[Asmified]
+
+== References
+

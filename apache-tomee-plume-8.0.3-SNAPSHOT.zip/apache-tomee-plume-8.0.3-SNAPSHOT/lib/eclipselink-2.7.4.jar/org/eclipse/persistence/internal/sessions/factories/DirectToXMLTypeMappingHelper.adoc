@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/DirectToXMLTypeMappingHelper.class
+
+ - link:DirectToXMLTypeMappingHelper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= com/sun/faces/facelets/tag/DefaultTagDecorator$Mapper$1.class
+
+ - link:DefaultTagDecorator$Mapper$1-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.Tag - 4

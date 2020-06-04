@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/sql/JoinSyntaxes.class
+
+ - link:JoinSyntaxes-asmified.java[Asmified]
+
+== References
+

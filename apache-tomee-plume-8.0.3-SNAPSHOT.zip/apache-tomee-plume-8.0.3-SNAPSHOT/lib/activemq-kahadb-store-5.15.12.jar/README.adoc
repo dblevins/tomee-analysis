@@ -1,0 +1,3 @@
+= apache-tomee-plume-8.0.3-SNAPSHOT/lib/activemq-kahadb-store-5.15.12.jar
+
+ - link:org/apache/activemq/store/kahadb/scheduler/JobSchedulerImpl.adoc[org/apache/activemq/store/kahadb/scheduler/JobSchedulerImpl.class] - 4

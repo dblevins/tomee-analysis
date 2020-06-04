@@ -1,0 +1,274 @@
+package asm.org.bouncycastle.crypto.tls;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DTLSReassemblerDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_5, ACC_SUPER, "org/bouncycastle/crypto/tls/DTLSReassembler", null, "java/lang/Object", null);
+
+classWriter.visitInnerClass("org/bouncycastle/crypto/tls/DTLSReassembler$Range", "org/bouncycastle/crypto/tls/DTLSReassembler", "Range", ACC_PRIVATE | ACC_STATIC);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "msg_type", "S", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "body", "[B", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "missing", "Ljava/util/Vector;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(SI)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/Vector");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/Vector", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "msg_type", "S");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitIntInsn(NEWARRAY, T_BYTE);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "body", "[B");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/tls/DTLSReassembler$Range");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "<init>", "(II)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "getMsgType", "()S", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "msg_type", "S");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "getBodyIfComplete", "()[B", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "isEmpty", "()Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "body", "[B");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "contributeFragment", "(SI[BIII)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitVarInsn(ILOAD, 6);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ISTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "msg_type", "S");
+methodVisitor.visitVarInsn(ILOAD, 1);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "body", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitJumpInsn(IF_ICMPNE, label0);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitVarInsn(ILOAD, 2);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ILOAD, 6);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label2);
+methodVisitor.visitVarInsn(ILOAD, 5);
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "isEmpty", "()Z", false);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "firstElement", "()Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/tls/DTLSReassembler$Range");
+methodVisitor.visitVarInsn(ASTORE, 8);
+methodVisitor.visitVarInsn(ALOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getEnd", "()I", false);
+methodVisitor.visitJumpInsn(IFNE, label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "removeElementAt", "(I)V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 8);
+Label label4 = new Label();
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "size", "()I", false);
+Label label5 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "elementAt", "(I)Ljava/lang/Object;", false);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/bouncycastle/crypto/tls/DTLSReassembler$Range");
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getStart", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 7);
+Label label6 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLT, label6);
+methodVisitor.visitJumpInsn(GOTO, label5);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getEnd", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 5);
+Label label7 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPLE, label7);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getStart", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "max", "(II)I", false);
+methodVisitor.visitVarInsn(ISTORE, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getEnd", "()I", false);
+methodVisitor.visitVarInsn(ILOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/Math", "min", "(II)I", false);
+methodVisitor.visitVarInsn(ISTORE, 11);
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ISTORE, 12);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitInsn(IADD);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitInsn(ISUB);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "body", "[B");
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitVarInsn(ILOAD, 12);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "java/lang/System", "arraycopy", "(Ljava/lang/Object;ILjava/lang/Object;II)V", false);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getStart", "()I", false);
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label8);
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getEnd", "()I", false);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPNE, label9);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitIincInsn(8, -1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "removeElementAt", "(I)V", false);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "setStart", "(I)V", false);
+methodVisitor.visitJumpInsn(GOTO, label7);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getEnd", "()I", false);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPEQ, label10);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/tls/DTLSReassembler$Range");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ILOAD, 11);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "getEnd", "()I", false);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "<init>", "(II)V", false);
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "insertElementAt", "(Ljava/lang/Object;I)V", false);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitVarInsn(ILOAD, 10);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "setEnd", "(I)V", false);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label4);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 13);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "reset", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "removeAllElements", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "missing", "Ljava/util/Vector;");
+methodVisitor.visitTypeInsn(NEW, "org/bouncycastle/crypto/tls/DTLSReassembler$Range");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/bouncycastle/crypto/tls/DTLSReassembler", "body", "[B");
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/bouncycastle/crypto/tls/DTLSReassembler$Range", "<init>", "(II)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/Vector", "addElement", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(5, 1);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

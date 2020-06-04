@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.class
+
+ - link:ByteSourceJsonBootstrapper-asmified.java[Asmified]
+
+== References
+

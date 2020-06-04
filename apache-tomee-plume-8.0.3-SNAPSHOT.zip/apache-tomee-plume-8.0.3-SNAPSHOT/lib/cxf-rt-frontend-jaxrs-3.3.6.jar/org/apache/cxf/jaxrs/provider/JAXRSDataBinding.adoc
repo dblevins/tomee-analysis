@@ -1,0 +1,9 @@
+= org/apache/cxf/jaxrs/provider/JAXRSDataBinding.class
+
+ - link:JAXRSDataBinding-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.ext.MessageBodyReader - 7
+ - javax.ws.rs.core.MultivaluedMap - 6
+ - javax.ws.rs.ext.MessageBodyWriter - 6

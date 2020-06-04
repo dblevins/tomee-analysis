@@ -1,0 +1,8 @@
+= javax/enterprise/inject/spi/CDIProvider.class
+
+ - link:CDIProvider-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.CDI - 1
+ - javax.enterprise.inject.spi.Prioritized - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/GreaterEqualExpression.class
+
+ - link:GreaterEqualExpression-asmified.java[Asmified]
+
+== References
+

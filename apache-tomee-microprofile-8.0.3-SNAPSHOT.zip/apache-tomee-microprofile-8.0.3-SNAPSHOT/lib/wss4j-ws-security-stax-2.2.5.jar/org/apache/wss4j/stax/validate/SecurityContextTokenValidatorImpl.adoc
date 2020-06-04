@@ -1,0 +1,6 @@
+= org/apache/wss4j/stax/validate/SecurityContextTokenValidatorImpl.class
+
+ - link:SecurityContextTokenValidatorImpl-asmified.java[Asmified]
+
+== References
+

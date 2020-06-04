@@ -1,0 +1,6 @@
+= org/apache/commons/codec/binary/BaseNCodecInputStream.class
+
+ - link:BaseNCodecInputStream-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/transform/AttachmentContentSignatureTransform$1.class
+
+ - link:AttachmentContentSignatureTransform$1-asmified.java[Asmified]
+
+== References
+

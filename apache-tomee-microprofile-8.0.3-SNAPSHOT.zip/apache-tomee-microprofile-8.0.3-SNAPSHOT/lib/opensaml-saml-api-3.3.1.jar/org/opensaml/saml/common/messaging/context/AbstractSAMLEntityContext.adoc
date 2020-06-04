@@ -1,0 +1,7 @@
+= org/opensaml/saml/common/messaging/context/AbstractSAMLEntityContext.class
+
+ - link:AbstractSAMLEntityContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 6

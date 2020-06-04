@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/bcel/classfile/Annotations.class
+
+ - link:Annotations-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,11 @@
+= javax/xml/soap/SAAJMetaFactory.class
+
+ - link:SAAJMetaFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SAAJMetaFactory - 8
+ - javax.xml.soap.SOAPException - 5
+ - javax.xml.soap.MessageFactory - 1
+ - javax.xml.soap.SOAPFactory - 1
+ - javax.xml.soap.FactoryFinder - 1

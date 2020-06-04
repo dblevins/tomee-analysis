@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdui/impl/IPHintUnmarshaller.class
+
+ - link:IPHintUnmarshaller-asmified.java[Asmified]
+
+== References
+

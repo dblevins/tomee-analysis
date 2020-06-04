@@ -1,0 +1,6 @@
+= org/apache/openejb/config/UnsupportedModuleTypeException.class
+
+ - link:UnsupportedModuleTypeException-asmified.java[Asmified]
+
+== References
+

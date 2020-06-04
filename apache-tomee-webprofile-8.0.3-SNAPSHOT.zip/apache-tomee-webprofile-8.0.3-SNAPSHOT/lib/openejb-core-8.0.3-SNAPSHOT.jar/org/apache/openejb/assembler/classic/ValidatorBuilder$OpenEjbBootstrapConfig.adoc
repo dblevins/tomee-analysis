@@ -1,0 +1,8 @@
+= org/apache/openejb/assembler/classic/ValidatorBuilder$OpenEjbBootstrapConfig.class
+
+ - link:ValidatorBuilder$OpenEjbBootstrapConfig-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.executable.ExecutableType - 3
+ - javax.validation.BootstrapConfiguration - 1

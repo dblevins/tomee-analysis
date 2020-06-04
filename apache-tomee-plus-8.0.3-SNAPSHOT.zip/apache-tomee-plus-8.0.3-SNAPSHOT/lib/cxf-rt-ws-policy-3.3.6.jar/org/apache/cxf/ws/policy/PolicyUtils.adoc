@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/PolicyUtils.class
+
+ - link:PolicyUtils-asmified.java[Asmified]
+
+== References
+

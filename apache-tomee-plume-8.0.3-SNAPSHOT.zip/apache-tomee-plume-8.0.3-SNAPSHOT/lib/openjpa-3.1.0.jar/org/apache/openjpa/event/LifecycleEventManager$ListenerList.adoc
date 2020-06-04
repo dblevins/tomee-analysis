@@ -1,0 +1,6 @@
+= org/apache/openjpa/event/LifecycleEventManager$ListenerList.class
+
+ - link:LifecycleEventManager$ListenerList-asmified.java[Asmified]
+
+== References
+

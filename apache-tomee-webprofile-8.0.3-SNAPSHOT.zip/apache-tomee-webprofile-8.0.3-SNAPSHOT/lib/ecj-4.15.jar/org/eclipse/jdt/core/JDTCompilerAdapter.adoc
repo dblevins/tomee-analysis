@@ -1,0 +1,6 @@
+= org/eclipse/jdt/core/JDTCompilerAdapter.class
+
+ - link:JDTCompilerAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,20 @@
+= org/apache/johnzon/jsonb/serializer/JohnzonDeserializationContext.class
+
+ - link:JohnzonDeserializationContext-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonParser - 37
+ - javax.json.JsonObjectBuilder - 29
+ - javax.json.JsonArrayBuilder - 26
+ - javax.json.spi.JsonProvider - 19
+ - javax.json.JsonBuilderFactory - 17
+ - javax.json.JsonValue - 14
+ - javax.json.stream.JsonLocation - 12
+ - javax.json.stream.JsonParsingException - 12
+ - javax.json.stream.JsonParser$Event - 11
+ - javax.json.JsonNumber - 5
+ - javax.json.JsonObject - 3
+ - javax.json.JsonString - 3
+ - javax.json.JsonArray - 2
+ - javax.json.bind.serializer.DeserializationContext - 1

@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/util/JSONWrappedObject.class
+
+ - link:JSONWrappedObject-asmified.java[Asmified]
+
+== References
+

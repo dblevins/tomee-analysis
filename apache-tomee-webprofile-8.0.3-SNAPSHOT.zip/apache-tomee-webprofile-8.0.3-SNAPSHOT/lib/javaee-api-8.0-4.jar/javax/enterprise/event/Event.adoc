@@ -1,0 +1,9 @@
+= javax/enterprise/event/Event.class
+
+ - link:Event-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.event.Event - 3
+ - javax.enterprise.event.NotificationOptions - 1
+ - javax.enterprise.util.TypeLiteral - 1

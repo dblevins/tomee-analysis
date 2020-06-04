@@ -1,0 +1,8 @@
+= com/sun/xml/messaging/saaj/soap/Envelope.class
+
+ - link:Envelope-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.soap.SOAPException - 2
+ - javax.xml.soap.SOAPEnvelope - 1

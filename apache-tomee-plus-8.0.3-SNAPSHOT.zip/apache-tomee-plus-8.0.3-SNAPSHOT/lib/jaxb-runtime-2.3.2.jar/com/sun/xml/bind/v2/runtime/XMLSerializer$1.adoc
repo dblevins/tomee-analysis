@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/runtime/XMLSerializer$1.class
+
+ - link:XMLSerializer$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 1

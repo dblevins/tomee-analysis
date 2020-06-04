@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/BooleanConstant.class
+
+ - link:BooleanConstant-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/CompilationUnitDeclaration.class
+
+ - link:CompilationUnitDeclaration-asmified.java[Asmified]
+
+== References
+

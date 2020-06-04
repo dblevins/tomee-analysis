@@ -1,0 +1,9 @@
+= javax/security/jacc/WebResourcePermission$WebResourcePermissionCollection.class
+
+ - link:WebResourcePermission$WebResourcePermissionCollection-asmified.java[Asmified]
+
+== References
+
+ - javax.security.jacc.WebResourcePermission - 6
+ - javax.security.jacc.WebResourcePermission$WebResourcePermissionCollection - 2
+ - javax.security.jacc.WebResourcePermission$1 - 1

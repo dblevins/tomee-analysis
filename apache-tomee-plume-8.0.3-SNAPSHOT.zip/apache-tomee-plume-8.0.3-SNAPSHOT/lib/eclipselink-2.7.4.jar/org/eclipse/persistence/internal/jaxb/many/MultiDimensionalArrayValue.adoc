@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/many/MultiDimensionalArrayValue.class
+
+ - link:MultiDimensionalArrayValue-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.XmlTransient - 1

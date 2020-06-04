@@ -1,0 +1,660 @@
+package asm.org.apache.openjpa.kernel;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class ExtentImplDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/kernel/ExtentImpl", "<T:Ljava/lang/Object;>Ljava/lang/Object;Lorg/apache/openjpa/kernel/Extent<TT;>;", "java/lang/Object", new String[] { "org/apache/openjpa/kernel/Extent" });
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/ExtentImpl$1", null, null, ACC_STATIC | ACC_SYNTHETIC);
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/ExtentImpl$FilterNewIterator", "org/apache/openjpa/kernel/ExtentImpl", "FilterNewIterator", ACC_PRIVATE);
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/ExtentImpl$FilterDeletedIterator", "org/apache/openjpa/kernel/ExtentImpl", "FilterDeletedIterator", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain", "org/apache/openjpa/kernel/ExtentImpl", "CloseableIteratorChain", ACC_PRIVATE | ACC_STATIC);
+
+classWriter.visitInnerClass("org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "org/apache/openjpa/kernel/ExtentImpl", "CloseableIterator", ACC_PRIVATE | ACC_STATIC | ACC_ABSTRACT | ACC_INTERFACE);
+
+classWriter.visitInnerClass("org/apache/commons/collections4/map/AbstractReferenceMap$ReferenceStrength", "org/apache/commons/collections4/map/AbstractReferenceMap", "ReferenceStrength", ACC_PUBLIC | ACC_FINAL | ACC_STATIC | ACC_ENUM);
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL | ACC_STATIC, "EMPTY_METAS", "[Lorg/apache/openjpa/meta/ClassMetaData;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_broker", "Lorg/apache/openjpa/kernel/Broker;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_type", "Ljava/lang/Class;", "Ljava/lang/Class<TT;>;", null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_subs", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_fc", "Lorg/apache/openjpa/kernel/FetchConfiguration;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_lock", "Ljava/util/concurrent/locks/ReentrantLock;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_ignore", "Z", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE, "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(0, "<init>", "(Lorg/apache/openjpa/kernel/Broker;Ljava/lang/Class;ZLorg/apache/openjpa/kernel/FetchConfiguration;)V", "(Lorg/apache/openjpa/kernel/Broker;Ljava/lang/Class<TT;>;ZLorg/apache/openjpa/kernel/FetchConfiguration;)V", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_ignore", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_type", "Ljava/lang/Class;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 3);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+methodVisitor.visitVarInsn(ALOAD, 4);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_fc", "Lorg/apache/openjpa/kernel/FetchConfiguration;");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_FULL, 5, new Object[] {"org/apache/openjpa/kernel/ExtentImpl", "org/apache/openjpa/kernel/Broker", "java/lang/Class", Opcodes.INTEGER, "org/apache/openjpa/kernel/FetchConfiguration"}, 0, new Object[] {});
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getFetchConfiguration", "()Lorg/apache/openjpa/kernel/FetchConfiguration;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/FetchConfiguration", "clone", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/kernel/FetchConfiguration");
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_fc", "Lorg/apache/openjpa/kernel/FetchConfiguration;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getIgnoreChanges", "()Z", true);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_ignore", "Z");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getMultithreaded", "()Z", true);
+Label label2 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "java/util/concurrent/locks/ReentrantLock");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/concurrent/locks/ReentrantLock", "<init>", "()V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+Label label3 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label3);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFetchConfiguration", "()Lorg/apache/openjpa/kernel/FetchConfiguration;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_fc", "Lorg/apache/openjpa/kernel/FetchConfiguration;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIgnoreChanges", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_ignore", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "setIgnoreChanges", "(Z)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "assertOpen", "()V", true);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_ignore", "Z");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "list", "()Ljava/util/List;", "()Ljava/util/List<TT;>;", null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, null);
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label2, label3, label2, null);
+methodVisitor.visitTypeInsn(NEW, "java/util/ArrayList");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/util/ArrayList", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"java/util/List", "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label4 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label4);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/List", "add", "(Ljava/lang/Object;)Z", true);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitJumpInsn(GOTO, label0);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/ImplHelper", "close", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESTATIC, "org/apache/openjpa/util/ImplHelper", "close", "(Ljava/lang/Object;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitMaxs(2, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "iterator", "()Ljava/util/Iterator;", "()Ljava/util/Iterator<TT;>;", null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "org/apache/openjpa/util/OpenJPAException");
+Label label3 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label3, "java/lang/RuntimeException");
+Label label4 = new Label();
+Label label5 = new Label();
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label4, label5, label6, null);
+Label label7 = new Label();
+methodVisitor.visitTryCatchBlock(label6, label7, label6, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "assertNontransactionalRead", "()V", true);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain", "<init>", "(Lorg/apache/openjpa/kernel/ExtentImpl$1;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_ignore", "Z");
+Label label8 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "isActive", "()Z", true);
+methodVisitor.visitJumpInsn(IFEQ, label8);
+methodVisitor.visitInsn(ICONST_1);
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label9);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain"}, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {Opcodes.INTEGER});
+methodVisitor.visitVarInsn(ISTORE, 3);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label10 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label10);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/kernel/ExtentImpl$FilterNewIterator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/kernel/ExtentImpl$FilterNewIterator", "<init>", "(Lorg/apache/openjpa/kernel/ExtentImpl;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain", "addIterator", "(Ljava/util/Iterator;)V", false);
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getConfiguration", "()Lorg/apache/openjpa/conf/OpenJPAConfiguration;", true);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/conf/OpenJPAConfiguration", "getMetaDataRepositoryInstance", "()Lorg/apache/openjpa/meta/MetaDataRepository;", true);
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_type", "Ljava/lang/Class;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/MetaDataRepository", "getMetaData", "(Ljava/lang/Class;Ljava/lang/ClassLoader;Z)Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitVarInsn(ASTORE, 5);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label11);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label12);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "isManagedInterface", "()Z", false);
+methodVisitor.visitJumpInsn(IFNE, label11);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {"org/apache/openjpa/meta/MetaDataRepository", "org/apache/openjpa/meta/ClassMetaData"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "isMapped", "()Z", false);
+Label label13 = new Label();
+methodVisitor.visitJumpInsn(IFNE, label13);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+methodVisitor.visitJumpInsn(IFEQ, label11);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "getMappedPCSubclassMetaDatas", "()[Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitInsn(ARRAYLENGTH);
+methodVisitor.visitJumpInsn(IFLE, label11);
+methodVisitor.visitLabel(label13);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitTypeInsn(ANEWARRAY, "org/apache/openjpa/meta/ClassMetaData");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitInsn(AASTORE);
+methodVisitor.visitVarInsn(ASTORE, 6);
+Label label14 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label14);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+Label label15 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label15);
+methodVisitor.visitVarInsn(ALOAD, 5);
+Label label16 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label16);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/ClassMetaData", "isManagedInterface", "()Z", false);
+methodVisitor.visitJumpInsn(IFEQ, label15);
+methodVisitor.visitLabel(label16);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_type", "Ljava/lang/Class;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getClassLoader", "()Ljava/lang/ClassLoader;", true);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/meta/MetaDataRepository", "getImplementorMetaDatas", "(Ljava/lang/Class;Ljava/lang/ClassLoader;Z)[Lorg/apache/openjpa/meta/ClassMetaData;", false);
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitJumpInsn(GOTO, label14);
+methodVisitor.visitLabel(label15);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/openjpa/kernel/ExtentImpl", "EMPTY_METAS", "[Lorg/apache/openjpa/meta/ClassMetaData;");
+methodVisitor.visitVarInsn(ASTORE, 6);
+methodVisitor.visitLabel(label14);
+methodVisitor.visitFrame(Opcodes.F_APPEND,1, new Object[] {"[Lorg/apache/openjpa/meta/ClassMetaData;"}, 0, null);
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitVarInsn(ISTORE, 8);
+Label label17 = new Label();
+methodVisitor.visitLabel(label17);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, Opcodes.INTEGER}, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitInsn(ARRAYLENGTH);
+Label label18 = new Label();
+methodVisitor.visitJumpInsn(IF_ICMPGE, label18);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/Broker", "getStoreManager", "()Lorg/apache/openjpa/kernel/DelegatingStoreManager;", true);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitVarInsn(ILOAD, 8);
+methodVisitor.visitInsn(AALOAD);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_fc", "Lorg/apache/openjpa/kernel/FetchConfiguration;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/DelegatingStoreManager", "executeExtent", "(Lorg/apache/openjpa/meta/ClassMetaData;ZLorg/apache/openjpa/kernel/FetchConfiguration;)Lorg/apache/openjpa/lib/rop/ResultObjectProvider;", false);
+methodVisitor.visitVarInsn(ASTORE, 7);
+methodVisitor.visitVarInsn(ALOAD, 7);
+Label label19 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label19);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/lib/rop/ResultObjectProviderIterator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 7);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/lib/rop/ResultObjectProviderIterator", "<init>", "(Lorg/apache/openjpa/lib/rop/ResultObjectProvider;)V", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain", "addIterator", "(Ljava/util/Iterator;)V", false);
+methodVisitor.visitLabel(label19);
+methodVisitor.visitFrame(Opcodes.F_FULL, 9, new Object[] {"org/apache/openjpa/kernel/ExtentImpl", "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "org/apache/openjpa/kernel/ExtentImpl$CloseableIteratorChain", Opcodes.INTEGER, "org/apache/openjpa/meta/MetaDataRepository", "org/apache/openjpa/meta/ClassMetaData", "[Lorg/apache/openjpa/meta/ClassMetaData;", "org/apache/openjpa/lib/rop/ResultObjectProvider", Opcodes.INTEGER}, 0, new Object[] {});
+methodVisitor.visitIincInsn(8, 1);
+methodVisitor.visitJumpInsn(GOTO, label17);
+methodVisitor.visitLabel(label18);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ILOAD, 3);
+Label label20 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label20);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/kernel/ExtentImpl$FilterDeletedIterator");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/kernel/ExtentImpl$FilterDeletedIterator", "<init>", "(Ljava/util/Iterator;)V", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+Label label21 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label21);
+methodVisitor.visitLabel(label20);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label21);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "setRemoveOnClose", "(Lorg/apache/openjpa/kernel/ExtentImpl;)V", true);
+methodVisitor.visitLabel(label1);
+Label label22 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label22);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 2, new Object[] {"org/apache/openjpa/kernel/ExtentImpl", "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator"}, 1, new Object[] {"org/apache/openjpa/util/OpenJPAException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/RuntimeException"});
+methodVisitor.visitVarInsn(ASTORE, 2);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/GeneralException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/util/GeneralException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label22);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "lock", "()V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+Label label23 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label23);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/lib/util/ReferenceHashSet");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitFieldInsn(GETSTATIC, "org/apache/commons/collections4/map/AbstractReferenceMap$ReferenceStrength", "WEAK", "Lorg/apache/commons/collections4/map/AbstractReferenceMap$ReferenceStrength;");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/lib/util/ReferenceHashSet", "<init>", "(Lorg/apache/commons/collections4/map/AbstractReferenceMap$ReferenceStrength;)V", false);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+methodVisitor.visitLabel(label23);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/util/ReferenceHashSet", "add", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "unlock", "()V", false);
+Label label24 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label24);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 9);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "unlock", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 9);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label24);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 10);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBroker", "()Lorg/apache/openjpa/kernel/Broker;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getElementType", "()Ljava/lang/Class;", "()Ljava/lang/Class<TT;>;", null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_type", "Ljava/lang/Class;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hasSubclasses", "()Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "closeAll", "()V", null, null);
+methodVisitor.visitCode();
+Label label0 = new Label();
+Label label1 = new Label();
+Label label2 = new Label();
+methodVisitor.visitTryCatchBlock(label0, label1, label2, "java/lang/Exception");
+Label label3 = new Label();
+Label label4 = new Label();
+Label label5 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label5, "org/apache/openjpa/util/OpenJPAException");
+Label label6 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label6, "java/lang/RuntimeException");
+Label label7 = new Label();
+methodVisitor.visitTryCatchBlock(label3, label4, label7, null);
+Label label8 = new Label();
+methodVisitor.visitTryCatchBlock(label5, label8, label7, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+Label label9 = new Label();
+methodVisitor.visitJumpInsn(IFNONNULL, label9);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitLabel(label9);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "lock", "()V", false);
+methodVisitor.visitLabel(label3);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/util/ReferenceHashSet", "iterator", "()Ljava/util/Iterator;", false);
+methodVisitor.visitVarInsn(ASTORE, 2);
+Label label10 = new Label();
+methodVisitor.visitLabel(label10);
+methodVisitor.visitFrame(Opcodes.F_APPEND,2, new Object[] {Opcodes.TOP, "java/util/Iterator"}, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "hasNext", "()Z", true);
+Label label11 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label11);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/util/Iterator", "next", "()Ljava/lang/Object;", true);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator");
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "setRemoveOnClose", "(Lorg/apache/openjpa/kernel/ExtentImpl;)V", true);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "close", "()V", true);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label2);
+methodVisitor.visitFrame(Opcodes.F_FULL, 3, new Object[] {"org/apache/openjpa/kernel/ExtentImpl", "org/apache/openjpa/kernel/ExtentImpl$CloseableIterator", "java/util/Iterator"}, 1, new Object[] {"java/lang/Exception"});
+methodVisitor.visitVarInsn(ASTORE, 3);
+methodVisitor.visitJumpInsn(GOTO, label10);
+methodVisitor.visitLabel(label11);
+methodVisitor.visitFrame(Opcodes.F_CHOP,2, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/util/ReferenceHashSet", "clear", "()V", false);
+methodVisitor.visitLabel(label4);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "unlock", "()V", false);
+Label label12 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label12);
+methodVisitor.visitLabel(label5);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"org/apache/openjpa/util/OpenJPAException"});
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label6);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/RuntimeException"});
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitTypeInsn(NEW, "org/apache/openjpa/util/GeneralException");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "org/apache/openjpa/util/GeneralException", "<init>", "(Ljava/lang/Throwable;)V", false);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label7);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/lang/Throwable"});
+methodVisitor.visitVarInsn(ASTORE, 4);
+methodVisitor.visitLabel(label8);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/kernel/ExtentImpl", "unlock", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitInsn(ATHROW);
+methodVisitor.visitLabel(label12);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(3, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "lock", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/locks/ReentrantLock", "lock", "()V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unlock", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFNULL, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_lock", "Ljava/util/concurrent/locks/ReentrantLock;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/util/concurrent/locks/ReentrantLock", "unlock", "()V", false);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$100", "(Lorg/apache/openjpa/kernel/ExtentImpl;)Lorg/apache/openjpa/lib/util/ReferenceHashSet;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_openItrs", "Lorg/apache/openjpa/lib/util/ReferenceHashSet;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$200", "(Lorg/apache/openjpa/kernel/ExtentImpl;)Lorg/apache/openjpa/kernel/Broker;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_broker", "Lorg/apache/openjpa/kernel/Broker;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$300", "(Lorg/apache/openjpa/kernel/ExtentImpl;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_subs", "Z");
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC | ACC_SYNTHETIC, "access$400", "(Lorg/apache/openjpa/kernel/ExtentImpl;)Ljava/lang/Class;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/kernel/ExtentImpl", "_type", "Ljava/lang/Class;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_STATIC, "<clinit>", "()V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitInsn(ICONST_0);
+methodVisitor.visitTypeInsn(ANEWARRAY, "org/apache/openjpa/meta/ClassMetaData");
+methodVisitor.visitFieldInsn(PUTSTATIC, "org/apache/openjpa/kernel/ExtentImpl", "EMPTY_METAS", "[Lorg/apache/openjpa/meta/ClassMetaData;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(1, 0);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}

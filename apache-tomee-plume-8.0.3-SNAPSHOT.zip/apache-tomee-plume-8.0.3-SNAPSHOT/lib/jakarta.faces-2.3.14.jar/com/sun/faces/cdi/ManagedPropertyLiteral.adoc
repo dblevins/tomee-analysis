@@ -1,0 +1,8 @@
+= com/sun/faces/cdi/ManagedPropertyLiteral.class
+
+ - link:ManagedPropertyLiteral-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.annotation.ManagedProperty - 2

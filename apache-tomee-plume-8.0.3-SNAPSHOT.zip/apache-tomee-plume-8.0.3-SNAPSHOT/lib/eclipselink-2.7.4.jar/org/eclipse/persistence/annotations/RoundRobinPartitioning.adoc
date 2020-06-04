@@ -1,0 +1,6 @@
+= org/eclipse/persistence/annotations/RoundRobinPartitioning.class
+
+ - link:RoundRobinPartitioning-asmified.java[Asmified]
+
+== References
+

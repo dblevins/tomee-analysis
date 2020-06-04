@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sessions/server/ConnectionPool.class
+
+ - link:ConnectionPool-asmified.java[Asmified]
+
+== References
+

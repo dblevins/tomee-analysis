@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/UnaryMinus.class
+
+ - link:UnaryMinus-asmified.java[Asmified]
+
+== References
+

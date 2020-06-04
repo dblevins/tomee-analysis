@@ -1,0 +1,8 @@
+= org/apache/openejb/hibernate/TransactionManagerLookup.class
+
+ - link:TransactionManagerLookup-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.TransactionManager - 2
+ - javax.transaction.Transaction - 1

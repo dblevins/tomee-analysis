@@ -1,0 +1,6 @@
+= org/jvnet/staxex/Base64EncoderStream.class
+
+ - link:Base64EncoderStream-asmified.java[Asmified]
+
+== References
+

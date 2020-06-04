@@ -1,0 +1,9 @@
+= org/apache/tomcat/websocket/server/WsHandshakeRequest.class
+
+ - link:WsHandshakeRequest-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 23
+ - javax.servlet.http.HttpSession - 1
+ - javax.websocket.server.HandshakeRequest - 1

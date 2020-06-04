@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/impl/StaticEncryptionParametersResolver.class
+
+ - link:StaticEncryptionParametersResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

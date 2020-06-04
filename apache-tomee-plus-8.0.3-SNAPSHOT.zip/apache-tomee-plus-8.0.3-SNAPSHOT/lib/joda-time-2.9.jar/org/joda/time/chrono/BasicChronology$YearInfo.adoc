@@ -1,0 +1,6 @@
+= org/joda/time/chrono/BasicChronology$YearInfo.class
+
+ - link:BasicChronology$YearInfo-asmified.java[Asmified]
+
+== References
+

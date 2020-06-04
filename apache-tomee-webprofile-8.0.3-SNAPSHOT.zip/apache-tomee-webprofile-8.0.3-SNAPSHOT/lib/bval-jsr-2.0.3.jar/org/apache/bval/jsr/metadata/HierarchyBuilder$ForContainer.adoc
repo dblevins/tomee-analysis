@@ -1,0 +1,7 @@
+= org/apache/bval/jsr/metadata/HierarchyBuilder$ForContainer.class
+
+ - link:HierarchyBuilder$ForContainer-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.ElementKind - 3

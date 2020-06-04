@@ -1,0 +1,14 @@
+= org/apache/myfaces/el/unified/resolver/ScopedAttributeResolver.class
+
+ - link:ScopedAttributeResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 19
+ - javax.faces.context.FacesContext - 15
+ - javax.faces.context.ExternalContext - 14
+ - javax.el.PropertyNotFoundException - 10
+ - javax.faces.component.UIViewRoot - 4
+ - javax.el.ELException - 4
+ - javax.el.ELResolver - 2
+ - javax.el.PropertyNotWritableException - 1

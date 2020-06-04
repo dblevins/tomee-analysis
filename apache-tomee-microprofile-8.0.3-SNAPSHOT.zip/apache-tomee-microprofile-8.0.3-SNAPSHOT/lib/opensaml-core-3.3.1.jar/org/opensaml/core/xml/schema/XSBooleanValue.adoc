@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/schema/XSBooleanValue.class
+
+ - link:XSBooleanValue-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

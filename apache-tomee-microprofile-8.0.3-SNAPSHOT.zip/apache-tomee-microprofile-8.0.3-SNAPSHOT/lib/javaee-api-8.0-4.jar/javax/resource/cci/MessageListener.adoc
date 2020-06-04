@@ -1,0 +1,8 @@
+= javax/resource/cci/MessageListener.class
+
+ - link:MessageListener-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.cci.Record - 2
+ - javax.resource.ResourceException - 1

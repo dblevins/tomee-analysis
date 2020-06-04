@@ -1,0 +1,6 @@
+= org/opensaml/xmlsec/signature/impl/SignatureUnmarshaller.class
+
+ - link:SignatureUnmarshaller-asmified.java[Asmified]
+
+== References
+

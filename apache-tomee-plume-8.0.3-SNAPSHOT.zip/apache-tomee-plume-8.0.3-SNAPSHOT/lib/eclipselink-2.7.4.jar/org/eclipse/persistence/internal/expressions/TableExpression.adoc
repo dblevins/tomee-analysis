@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/expressions/TableExpression.class
+
+ - link:TableExpression-asmified.java[Asmified]
+
+== References
+

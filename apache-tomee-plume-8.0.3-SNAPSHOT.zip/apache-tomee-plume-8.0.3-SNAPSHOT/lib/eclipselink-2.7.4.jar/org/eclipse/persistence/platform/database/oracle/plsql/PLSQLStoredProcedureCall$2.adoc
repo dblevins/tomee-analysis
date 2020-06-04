@@ -1,0 +1,6 @@
+= org/eclipse/persistence/platform/database/oracle/plsql/PLSQLStoredProcedureCall$2.class
+
+ - link:PLSQLStoredProcedureCall$2-asmified.java[Asmified]
+
+== References
+

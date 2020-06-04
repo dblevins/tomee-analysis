@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$ReturnNameValuePairsHint.class
+
+ - link:QueryHintsHandler$ReturnNameValuePairsHint-asmified.java[Asmified]
+
+== References
+

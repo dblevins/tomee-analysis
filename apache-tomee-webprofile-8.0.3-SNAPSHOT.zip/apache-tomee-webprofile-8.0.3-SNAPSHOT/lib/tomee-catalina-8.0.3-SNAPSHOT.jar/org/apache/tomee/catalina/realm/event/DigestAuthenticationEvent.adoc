@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/realm/event/DigestAuthenticationEvent.class
+
+ - link:DigestAuthenticationEvent-asmified.java[Asmified]
+
+== References
+

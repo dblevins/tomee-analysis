@@ -1,0 +1,6 @@
+= org/opensaml/saml/ext/saml2mdrpi/impl/PublicationImpl.class
+
+ - link:PublicationImpl-asmified.java[Asmified]
+
+== References
+

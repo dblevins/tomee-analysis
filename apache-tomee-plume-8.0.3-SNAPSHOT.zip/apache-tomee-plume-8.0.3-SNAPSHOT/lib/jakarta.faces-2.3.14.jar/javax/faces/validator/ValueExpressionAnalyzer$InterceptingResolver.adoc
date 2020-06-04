@@ -1,0 +1,9 @@
+= javax/faces/validator/ValueExpressionAnalyzer$InterceptingResolver.class
+
+ - link:ValueExpressionAnalyzer$InterceptingResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELResolver - 15
+ - javax.el.ELContext - 12
+ - javax.faces.validator.ValueReference - 6

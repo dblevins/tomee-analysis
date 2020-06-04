@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/config/converters/ConvertImpl.class
+
+ - link:ConvertImpl-asmified.java[Asmified]
+
+== References
+

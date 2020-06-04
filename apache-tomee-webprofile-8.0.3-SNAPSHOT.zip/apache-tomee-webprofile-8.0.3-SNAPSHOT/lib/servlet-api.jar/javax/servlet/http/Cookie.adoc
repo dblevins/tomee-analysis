@@ -1,0 +1,12 @@
+= javax/servlet/http/Cookie.class
+
+ - link:Cookie-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.CookieNameValidator - 5
+ - javax.servlet.http.RFC2109Validator - 2
+ - javax.servlet.http.Cookie$3 - 2
+ - javax.servlet.http.Cookie$2 - 2
+ - javax.servlet.http.RFC6265Validator - 2
+ - javax.servlet.http.Cookie$1 - 2

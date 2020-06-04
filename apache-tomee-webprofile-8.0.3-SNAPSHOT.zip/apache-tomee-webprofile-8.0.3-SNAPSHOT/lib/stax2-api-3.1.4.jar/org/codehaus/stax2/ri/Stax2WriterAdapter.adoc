@@ -1,0 +1,6 @@
+= org/codehaus/stax2/ri/Stax2WriterAdapter.class
+
+ - link:Stax2WriterAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,34 @@
+= org/apache/openejb/resource/activemq/jms2/JMSContextImpl.class
+
+ - link:JMSContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 122
+ - javax.jms.Session - 71
+ - javax.jms.JMSRuntimeException - 48
+ - javax.jms.Connection - 31
+ - javax.jms.Message - 25
+ - javax.jms.MessageConsumer - 16
+ - javax.jms.Topic - 14
+ - javax.jms.JMSConsumer - 9
+ - javax.jms.ConnectionFactory - 9
+ - javax.jms.MessageProducer - 8
+ - javax.jms.Destination - 7
+ - javax.jms.ObjectMessage - 6
+ - javax.jms.TextMessage - 6
+ - javax.jms.Queue - 6
+ - javax.jms.QueueBrowser - 4
+ - javax.jms.ExceptionListener - 4
+ - javax.jms.IllegalStateRuntimeException - 4
+ - javax.jms.XAConnection - 3
+ - javax.jms.MapMessage - 3
+ - javax.jms.JMSContext - 3
+ - javax.jms.StreamMessage - 3
+ - javax.jms.BytesMessage - 3
+ - javax.jms.ConnectionMetaData - 2
+ - javax.jms.TopicSubscriber - 2
+ - javax.jms.TemporaryTopic - 2
+ - javax.jms.TemporaryQueue - 2
+ - javax.jms.XASession - 1
+ - javax.jms.JMSProducer - 1

@@ -1,0 +1,6 @@
+= org/hsqldb/persist/PersistentStoreCollectionSession.class
+
+ - link:PersistentStoreCollectionSession-asmified.java[Asmified]
+
+== References
+

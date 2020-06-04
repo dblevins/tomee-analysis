@@ -1,0 +1,7 @@
+= org/apache/openejb/jee/ServiceImplBean$JAXB.class
+
+ - link:ServiceImplBean$JAXB-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 17

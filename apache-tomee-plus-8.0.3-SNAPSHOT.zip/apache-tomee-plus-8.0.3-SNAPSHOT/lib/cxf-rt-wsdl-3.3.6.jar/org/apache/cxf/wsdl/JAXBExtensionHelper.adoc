@@ -1,0 +1,14 @@
+= org/apache/cxf/wsdl/JAXBExtensionHelper.class
+
+ - link:JAXBExtensionHelper-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.Marshaller - 12
+ - javax.xml.bind.JAXBContext - 12
+ - javax.xml.bind.Unmarshaller - 11
+ - javax.xml.bind.JAXBException - 11
+ - javax.xml.bind.annotation.XmlElementDecl - 8
+ - javax.xml.bind.annotation.XmlRootElement - 5
+ - javax.xml.bind.JAXBElement - 4
+ - javax.xml.bind.annotation.XmlSchema - 4

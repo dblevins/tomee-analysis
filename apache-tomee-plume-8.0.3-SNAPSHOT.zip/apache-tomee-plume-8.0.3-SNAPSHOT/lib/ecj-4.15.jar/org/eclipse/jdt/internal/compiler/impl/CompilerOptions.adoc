@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/CompilerOptions.class
+
+ - link:CompilerOptions-asmified.java[Asmified]
+
+== References
+

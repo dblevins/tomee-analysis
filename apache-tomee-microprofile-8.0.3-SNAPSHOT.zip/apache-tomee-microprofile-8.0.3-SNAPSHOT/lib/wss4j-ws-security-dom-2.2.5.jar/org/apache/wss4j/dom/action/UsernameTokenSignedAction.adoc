@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/action/UsernameTokenSignedAction.class
+
+ - link:UsernameTokenSignedAction-asmified.java[Asmified]
+
+== References
+

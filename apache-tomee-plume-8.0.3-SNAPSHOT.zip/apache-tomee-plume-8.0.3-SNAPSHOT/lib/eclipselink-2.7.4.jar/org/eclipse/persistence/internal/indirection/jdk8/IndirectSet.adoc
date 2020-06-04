@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/indirection/jdk8/IndirectSet.class
+
+ - link:IndirectSet-asmified.java[Asmified]
+
+== References
+

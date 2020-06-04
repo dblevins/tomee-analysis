@@ -1,0 +1,8 @@
+= com/sun/faces/push/WebsocketSessionManager$1.class
+
+ - link:WebsocketSessionManager$1-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.AnnotationLiteral - 2
+ - javax.faces.event.WebsocketEvent$Opened - 1

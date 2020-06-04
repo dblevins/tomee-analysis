@@ -1,0 +1,6 @@
+= org/eclipse/persistence/oxm/mappings/converters/XMLListConverter.class
+
+ - link:XMLListConverter-asmified.java[Asmified]
+
+== References
+

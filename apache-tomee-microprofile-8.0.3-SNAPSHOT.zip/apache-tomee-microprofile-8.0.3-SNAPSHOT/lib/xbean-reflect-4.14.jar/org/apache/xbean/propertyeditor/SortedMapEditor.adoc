@@ -1,0 +1,6 @@
+= org/apache/xbean/propertyeditor/SortedMapEditor.class
+
+ - link:SortedMapEditor-asmified.java[Asmified]
+
+== References
+

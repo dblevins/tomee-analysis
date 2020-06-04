@@ -1,0 +1,6 @@
+= org/bouncycastle/jcajce/provider/asymmetric/ec/AlgorithmParametersSpi.class
+
+ - link:AlgorithmParametersSpi-asmified.java[Asmified]
+
+== References
+

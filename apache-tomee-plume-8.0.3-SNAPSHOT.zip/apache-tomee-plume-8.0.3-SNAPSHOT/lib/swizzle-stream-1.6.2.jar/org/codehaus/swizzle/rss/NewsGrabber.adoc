@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/rss/NewsGrabber.class
+
+ - link:NewsGrabber-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,18 @@
+= org/apache/webbeans/configurator/ObserverMethodConfiguratorImpl.class
+
+ - link:ObserverMethodConfiguratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.configurator.ObserverMethodConfigurator - 19
+ - javax.enterprise.event.Reception - 18
+ - javax.enterprise.event.TransactionPhase - 18
+ - javax.enterprise.inject.spi.ObserverMethod - 16
+ - javax.enterprise.inject.spi.Extension - 13
+ - javax.enterprise.event.Observes - 10
+ - javax.enterprise.event.ObservesAsync - 8
+ - javax.enterprise.inject.spi.configurator.ObserverMethodConfigurator$EventConsumer - 7
+ - javax.annotation.Priority - 6
+ - javax.enterprise.inject.spi.AnnotatedParameter - 6
+ - javax.enterprise.inject.spi.AnnotatedMethod - 4
+ - javax.enterprise.inject.spi.AnnotatedType - 2

@@ -1,0 +1,7 @@
+= org/apache/safeguard/impl/cache/Key.class
+
+ - link:Key-asmified.java[Asmified]
+
+== References
+
+ - javax.interceptor.InvocationContext - 7

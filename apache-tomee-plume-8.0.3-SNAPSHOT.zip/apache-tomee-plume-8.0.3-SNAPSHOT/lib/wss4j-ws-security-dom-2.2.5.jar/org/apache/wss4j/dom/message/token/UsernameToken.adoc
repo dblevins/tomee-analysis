@@ -1,0 +1,6 @@
+= org/apache/wss4j/dom/message/token/UsernameToken.class
+
+ - link:UsernameToken-asmified.java[Asmified]
+
+== References
+

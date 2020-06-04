@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/TerminateMarshaller.class
+
+ - link:TerminateMarshaller-asmified.java[Asmified]
+
+== References
+

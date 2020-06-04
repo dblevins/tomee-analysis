@@ -1,0 +1,8 @@
+= org/apache/myfaces/el/unified/resolver/implicitobject/ApplicationImplicitObject.class
+
+ - link:ApplicationImplicitObject-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.ExternalContext - 2
+ - javax.el.ELContext - 2

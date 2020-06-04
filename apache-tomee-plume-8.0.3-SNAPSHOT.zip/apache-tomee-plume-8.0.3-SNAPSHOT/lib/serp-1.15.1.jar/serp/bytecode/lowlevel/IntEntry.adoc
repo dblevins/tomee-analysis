@@ -1,0 +1,6 @@
+= serp/bytecode/lowlevel/IntEntry.class
+
+ - link:IntEntry-asmified.java[Asmified]
+
+== References
+

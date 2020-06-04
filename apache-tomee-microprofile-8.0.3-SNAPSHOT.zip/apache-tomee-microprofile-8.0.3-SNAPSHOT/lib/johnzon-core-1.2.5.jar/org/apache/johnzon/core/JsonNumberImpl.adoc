@@ -1,0 +1,8 @@
+= org/apache/johnzon/core/JsonNumberImpl.class
+
+ - link:JsonNumberImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.JsonNumber - 5
+ - javax.json.JsonValue$ValueType - 2

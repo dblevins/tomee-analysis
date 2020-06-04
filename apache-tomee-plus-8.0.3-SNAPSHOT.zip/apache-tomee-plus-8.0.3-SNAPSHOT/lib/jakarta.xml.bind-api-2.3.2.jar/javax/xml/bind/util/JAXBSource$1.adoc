@@ -1,0 +1,10 @@
+= javax/xml/bind/util/JAXBSource$1.class
+
+ - link:JAXBSource$1-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.util.JAXBSource - 9
+ - javax.xml.bind.JAXBException - 4
+ - javax.xml.bind.Marshaller - 2
+ - javax.xml.bind.util.JAXBSource$1 - 2

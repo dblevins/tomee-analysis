@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/nav/Navigator.class
+
+ - link:Navigator-asmified.java[Asmified]
+
+== References
+

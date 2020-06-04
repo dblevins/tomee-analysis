@@ -1,0 +1,6 @@
+= org/apache/openejb/util/AnnotationFinder$Visitor.class
+
+ - link:AnnotationFinder$Visitor-asmified.java[Asmified]
+
+== References
+

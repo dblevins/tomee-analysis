@@ -1,0 +1,8 @@
+= org/apache/openejb/sxc/Sxc.class
+
+ - link:Sxc-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 8
+ - javax.xml.bind.MarshalException - 6

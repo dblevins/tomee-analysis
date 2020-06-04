@@ -1,0 +1,8 @@
+= javax/servlet/http/HttpSessionBindingEvent.class
+
+ - link:HttpSessionBindingEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpSession - 6
+ - javax.servlet.http.HttpSessionEvent - 4

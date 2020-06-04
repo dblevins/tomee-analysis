@@ -1,0 +1,8 @@
+= javax/jms/IllegalStateException.class
+
+ - link:IllegalStateException-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.IllegalStateException - 1

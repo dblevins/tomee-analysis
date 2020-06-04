@@ -1,0 +1,6 @@
+= org/codehaus/stax2/io/EscapingWriterFactory.class
+
+ - link:EscapingWriterFactory-asmified.java[Asmified]
+
+== References
+

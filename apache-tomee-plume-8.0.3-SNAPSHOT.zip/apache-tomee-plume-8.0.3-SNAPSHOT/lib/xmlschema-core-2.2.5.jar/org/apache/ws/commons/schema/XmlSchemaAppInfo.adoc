@@ -1,0 +1,6 @@
+= org/apache/ws/commons/schema/XmlSchemaAppInfo.class
+
+ - link:XmlSchemaAppInfo-asmified.java[Asmified]
+
+== References
+

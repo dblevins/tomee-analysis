@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/map/AbstractReferenceMap$ReferenceStrength.class
+
+ - link:AbstractReferenceMap$ReferenceStrength-asmified.java[Asmified]
+
+== References
+

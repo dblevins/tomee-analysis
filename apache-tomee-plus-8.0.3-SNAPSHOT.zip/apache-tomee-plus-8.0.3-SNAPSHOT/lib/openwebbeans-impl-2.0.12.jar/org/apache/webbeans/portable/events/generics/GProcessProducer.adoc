@@ -1,0 +1,9 @@
+= org/apache/webbeans/portable/events/generics/GProcessProducer.class
+
+ - link:GProcessProducer-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedMember - 6
+ - javax.enterprise.inject.spi.AnnotatedType - 2
+ - javax.enterprise.inject.spi.Producer - 2

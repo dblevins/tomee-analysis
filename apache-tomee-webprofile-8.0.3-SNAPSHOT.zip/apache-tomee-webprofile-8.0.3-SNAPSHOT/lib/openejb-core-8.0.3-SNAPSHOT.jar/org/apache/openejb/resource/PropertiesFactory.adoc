@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/PropertiesFactory.class
+
+ - link:PropertiesFactory-asmified.java[Asmified]
+
+== References
+

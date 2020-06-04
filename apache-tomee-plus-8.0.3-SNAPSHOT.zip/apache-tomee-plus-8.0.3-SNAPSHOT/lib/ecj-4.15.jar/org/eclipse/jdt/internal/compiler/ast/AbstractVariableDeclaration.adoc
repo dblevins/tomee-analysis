@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/AbstractVariableDeclaration.class
+
+ - link:AbstractVariableDeclaration-asmified.java[Asmified]
+
+== References
+

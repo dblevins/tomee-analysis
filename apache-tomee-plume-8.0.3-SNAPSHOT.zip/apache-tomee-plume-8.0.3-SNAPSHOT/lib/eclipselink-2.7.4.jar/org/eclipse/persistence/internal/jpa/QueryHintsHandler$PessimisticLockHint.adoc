@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/QueryHintsHandler$PessimisticLockHint.class
+
+ - link:QueryHintsHandler$PessimisticLockHint-asmified.java[Asmified]
+
+== References
+

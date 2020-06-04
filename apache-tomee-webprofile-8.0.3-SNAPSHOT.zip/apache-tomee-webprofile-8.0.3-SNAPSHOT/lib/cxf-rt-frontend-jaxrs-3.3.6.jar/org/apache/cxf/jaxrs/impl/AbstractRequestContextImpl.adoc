@@ -1,0 +1,10 @@
+= org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.class
+
+ - link:AbstractRequestContextImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.HttpHeaders - 22
+ - javax.ws.rs.core.Response - 4
+ - javax.ws.rs.core.MediaType - 3
+ - javax.ws.rs.core.Cookie - 1

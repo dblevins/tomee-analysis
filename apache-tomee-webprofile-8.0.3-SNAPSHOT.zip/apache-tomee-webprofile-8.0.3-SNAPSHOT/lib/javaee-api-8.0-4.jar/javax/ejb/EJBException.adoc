@@ -1,0 +1,7 @@
+= javax/ejb/EJBException.class
+
+ - link:EJBException-asmified.java[Asmified]
+
+== References
+
+ - javax.ejb.EJBException - 1

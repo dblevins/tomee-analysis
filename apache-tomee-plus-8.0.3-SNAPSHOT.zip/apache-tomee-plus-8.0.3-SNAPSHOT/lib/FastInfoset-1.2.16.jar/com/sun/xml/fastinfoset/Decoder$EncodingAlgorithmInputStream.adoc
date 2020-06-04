@@ -1,0 +1,6 @@
+= com/sun/xml/fastinfoset/Decoder$EncodingAlgorithmInputStream.class
+
+ - link:Decoder$EncodingAlgorithmInputStream-asmified.java[Asmified]
+
+== References
+

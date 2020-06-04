@@ -1,0 +1,7 @@
+= org/apache/openejb/persistence/EntityManagerTxKey.class
+
+ - link:EntityManagerTxKey-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.EntityManagerFactory - 7

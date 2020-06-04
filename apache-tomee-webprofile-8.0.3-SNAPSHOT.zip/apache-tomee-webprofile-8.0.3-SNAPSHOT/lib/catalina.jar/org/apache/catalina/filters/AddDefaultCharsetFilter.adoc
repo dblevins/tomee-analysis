@@ -1,0 +1,12 @@
+= org/apache/catalina/filters/AddDefaultCharsetFilter.class
+
+ - link:AddDefaultCharsetFilter-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.FilterChain - 3
+ - javax.servlet.ServletRequest - 3
+ - javax.servlet.ServletResponse - 3
+ - javax.servlet.http.HttpServletResponse - 3
+ - javax.servlet.ServletException - 2
+ - javax.servlet.FilterConfig - 2

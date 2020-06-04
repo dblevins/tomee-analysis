@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/xr/BatchQueryOperation.class
+
+ - link:BatchQueryOperation-asmified.java[Asmified]
+
+== References
+

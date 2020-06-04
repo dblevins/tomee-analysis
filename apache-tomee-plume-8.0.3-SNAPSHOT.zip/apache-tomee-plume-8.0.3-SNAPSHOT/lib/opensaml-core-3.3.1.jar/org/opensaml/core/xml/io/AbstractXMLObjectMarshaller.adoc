@@ -1,0 +1,7 @@
+= org/opensaml/core/xml/io/AbstractXMLObjectMarshaller.class
+
+ - link:AbstractXMLObjectMarshaller-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 30

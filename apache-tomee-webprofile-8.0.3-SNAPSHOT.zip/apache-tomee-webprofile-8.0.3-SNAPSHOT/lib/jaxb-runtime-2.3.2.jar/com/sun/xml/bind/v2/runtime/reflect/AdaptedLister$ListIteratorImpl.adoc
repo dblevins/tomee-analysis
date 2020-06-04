@@ -1,0 +1,8 @@
+= com/sun/xml/bind/v2/runtime/reflect/AdaptedLister$ListIteratorImpl.class
+
+ - link:AdaptedLister$ListIteratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2
+ - javax.xml.bind.JAXBException - 1

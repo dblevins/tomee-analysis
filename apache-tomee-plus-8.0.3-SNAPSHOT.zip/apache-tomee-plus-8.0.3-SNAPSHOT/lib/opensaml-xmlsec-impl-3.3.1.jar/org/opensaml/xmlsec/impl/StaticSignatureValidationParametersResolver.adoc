@@ -1,0 +1,7 @@
+= org/opensaml/xmlsec/impl/StaticSignatureValidationParametersResolver.class
+
+ - link:StaticSignatureValidationParametersResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 4

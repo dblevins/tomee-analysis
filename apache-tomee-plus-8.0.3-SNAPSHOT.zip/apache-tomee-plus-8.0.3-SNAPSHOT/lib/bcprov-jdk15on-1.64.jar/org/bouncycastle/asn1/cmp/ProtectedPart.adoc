@@ -1,0 +1,6 @@
+= org/bouncycastle/asn1/cmp/ProtectedPart.class
+
+ - link:ProtectedPart-asmified.java[Asmified]
+
+== References
+

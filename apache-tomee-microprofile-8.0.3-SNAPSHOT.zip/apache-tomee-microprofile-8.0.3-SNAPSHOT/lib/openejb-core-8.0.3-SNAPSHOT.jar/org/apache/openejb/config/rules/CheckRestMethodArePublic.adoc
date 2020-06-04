@@ -1,0 +1,8 @@
+= org/apache/openejb/config/rules/CheckRestMethodArePublic.class
+
+ - link:CheckRestMethodArePublic-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Application - 3
+ - javax.ws.rs.Path - 1

@@ -1,0 +1,11 @@
+= org/apache/myfaces/shared/application/FacesServletMappingUtils.class
+
+ - link:FacesServletMappingUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 35
+ - javax.servlet.ServletContext - 22
+ - javax.faces.context.ExternalContext - 21
+ - javax.servlet.ServletRegistration - 3
+ - javax.faces.webapp.FacesServlet - 2

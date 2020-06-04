@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/JaxbClassLoader.class
+
+ - link:JaxbClassLoader-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/provider/ProviderFactory$ClassComparator.class
+
+ - link:ProviderFactory$ClassComparator-asmified.java[Asmified]
+
+== References
+

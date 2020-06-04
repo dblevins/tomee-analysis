@@ -1,0 +1,7 @@
+= javax/resource/spi/ResourceAllocationException.class
+
+ - link:ResourceAllocationException-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.ResourceException - 6

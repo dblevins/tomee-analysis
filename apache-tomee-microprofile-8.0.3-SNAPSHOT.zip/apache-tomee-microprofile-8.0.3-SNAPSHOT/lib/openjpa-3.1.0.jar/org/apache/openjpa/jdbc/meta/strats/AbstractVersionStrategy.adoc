@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/AbstractVersionStrategy.class
+
+ - link:AbstractVersionStrategy-asmified.java[Asmified]
+
+== References
+

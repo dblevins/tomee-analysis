@@ -1,0 +1,6 @@
+= org/apache/xml/security/stax/ext/ResourceResolverLookup.class
+
+ - link:ResourceResolverLookup-asmified.java[Asmified]
+
+== References
+

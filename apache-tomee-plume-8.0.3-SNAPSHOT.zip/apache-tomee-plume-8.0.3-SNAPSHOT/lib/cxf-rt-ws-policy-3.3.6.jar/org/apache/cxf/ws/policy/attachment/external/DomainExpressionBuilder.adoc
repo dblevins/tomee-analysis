@@ -1,0 +1,6 @@
+= org/apache/cxf/ws/policy/attachment/external/DomainExpressionBuilder.class
+
+ - link:DomainExpressionBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/quartz/core/jmx/QuartzSchedulerMBean.class
+
+ - link:QuartzSchedulerMBean-asmified.java[Asmified]
+
+== References
+

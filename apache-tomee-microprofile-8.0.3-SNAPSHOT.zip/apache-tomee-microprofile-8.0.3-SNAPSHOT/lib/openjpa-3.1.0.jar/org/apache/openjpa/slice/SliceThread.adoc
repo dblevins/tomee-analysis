@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/SliceThread.class
+
+ - link:SliceThread-asmified.java[Asmified]
+
+== References
+

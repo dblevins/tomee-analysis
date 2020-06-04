@@ -1,0 +1,6 @@
+= org/apache/myfaces/view/facelets/ViewPoolProcessor$ClearPartialTreeContext.class
+
+ - link:ViewPoolProcessor$ClearPartialTreeContext-asmified.java[Asmified]
+
+== References
+

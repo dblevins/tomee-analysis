@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/MemberKey.class
+
+ - link:MemberKey-asmified.java[Asmified]
+
+== References
+

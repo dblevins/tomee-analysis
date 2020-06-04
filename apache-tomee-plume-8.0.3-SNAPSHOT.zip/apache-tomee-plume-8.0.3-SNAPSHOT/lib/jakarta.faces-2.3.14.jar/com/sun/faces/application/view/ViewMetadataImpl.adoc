@@ -1,0 +1,16 @@
+= com/sun/faces/application/view/ViewMetadataImpl.class
+
+ - link:ViewMetadataImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIViewRoot - 29
+ - javax.faces.context.FacesContext - 29
+ - javax.faces.context.ExternalContext - 6
+ - javax.faces.component.UIImportConstants - 4
+ - javax.faces.application.ViewHandler - 3
+ - javax.faces.application.Application - 2
+ - javax.faces.FacesException - 2
+ - javax.faces.view.ViewMetadata - 2
+ - javax.faces.view.facelets.Facelet - 2
+ - javax.faces.component.UIComponent - 1

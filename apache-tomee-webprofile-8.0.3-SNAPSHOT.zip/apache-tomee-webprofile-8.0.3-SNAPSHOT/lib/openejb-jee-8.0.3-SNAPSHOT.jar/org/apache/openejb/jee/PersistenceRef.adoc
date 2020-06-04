@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/PersistenceRef.class
+
+ - link:PersistenceRef-asmified.java[Asmified]
+
+== References
+

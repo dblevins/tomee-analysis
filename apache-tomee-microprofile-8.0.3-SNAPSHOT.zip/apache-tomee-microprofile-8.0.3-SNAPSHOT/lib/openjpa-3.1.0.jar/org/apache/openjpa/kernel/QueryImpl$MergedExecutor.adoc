@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/QueryImpl$MergedExecutor.class
+
+ - link:QueryImpl$MergedExecutor-asmified.java[Asmified]
+
+== References
+

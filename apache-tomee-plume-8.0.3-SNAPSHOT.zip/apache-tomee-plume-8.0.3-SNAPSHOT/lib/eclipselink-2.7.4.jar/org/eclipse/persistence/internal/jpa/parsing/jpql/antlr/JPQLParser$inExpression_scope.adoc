@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/jpql/antlr/JPQLParser$inExpression_scope.class
+
+ - link:JPQLParser$inExpression_scope-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/tomcat/websocket/WsExtensionParameter.class
+
+ - link:WsExtensionParameter-asmified.java[Asmified]
+
+== References
+
+ - javax.websocket.Extension$Parameter - 1

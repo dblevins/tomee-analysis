@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/xml/ValidationParser$parseXmlConfig$$Ljava_lang_String$_ACTION.class
+
+ - link:ValidationParser$parseXmlConfig$$Ljava_lang_String$_ACTION-asmified.java[Asmified]
+
+== References
+

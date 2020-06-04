@@ -1,0 +1,6 @@
+= com/sun/xml/txw2/output/XMLWriter.class
+
+ - link:XMLWriter-asmified.java[Asmified]
+
+== References
+

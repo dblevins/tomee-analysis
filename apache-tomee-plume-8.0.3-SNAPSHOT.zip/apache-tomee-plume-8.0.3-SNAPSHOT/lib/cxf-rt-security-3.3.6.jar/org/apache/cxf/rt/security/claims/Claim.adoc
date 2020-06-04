@@ -1,0 +1,6 @@
+= org/apache/cxf/rt/security/claims/Claim.class
+
+ - link:Claim-asmified.java[Asmified]
+
+== References
+

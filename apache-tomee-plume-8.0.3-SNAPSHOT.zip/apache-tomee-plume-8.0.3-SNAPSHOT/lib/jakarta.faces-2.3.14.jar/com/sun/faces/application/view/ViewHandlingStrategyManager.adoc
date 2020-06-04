@@ -1,0 +1,6 @@
+= com/sun/faces/application/view/ViewHandlingStrategyManager.class
+
+ - link:ViewHandlingStrategyManager-asmified.java[Asmified]
+
+== References
+

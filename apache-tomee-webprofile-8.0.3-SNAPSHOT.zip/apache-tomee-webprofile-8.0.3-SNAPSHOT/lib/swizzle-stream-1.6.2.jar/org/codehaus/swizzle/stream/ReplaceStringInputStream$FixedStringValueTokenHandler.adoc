@@ -1,0 +1,6 @@
+= org/codehaus/swizzle/stream/ReplaceStringInputStream$FixedStringValueTokenHandler.class
+
+ - link:ReplaceStringInputStream$FixedStringValueTokenHandler-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/locator/SingletonLocator.class
+
+ - link:SingletonLocator-asmified.java[Asmified]
+
+== References
+

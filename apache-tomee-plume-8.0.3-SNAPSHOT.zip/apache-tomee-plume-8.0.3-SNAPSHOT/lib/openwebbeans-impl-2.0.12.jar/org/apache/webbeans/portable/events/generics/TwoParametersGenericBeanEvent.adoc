@@ -1,0 +1,6 @@
+= org/apache/webbeans/portable/events/generics/TwoParametersGenericBeanEvent.class
+
+ - link:TwoParametersGenericBeanEvent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/strats/LobFieldStrategy.class
+
+ - link:LobFieldStrategy-asmified.java[Asmified]
+
+== References
+

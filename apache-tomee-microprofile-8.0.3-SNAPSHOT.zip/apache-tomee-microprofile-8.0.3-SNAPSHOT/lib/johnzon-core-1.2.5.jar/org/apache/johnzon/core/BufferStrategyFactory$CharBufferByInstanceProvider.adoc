@@ -1,0 +1,6 @@
+= org/apache/johnzon/core/BufferStrategyFactory$CharBufferByInstanceProvider.class
+
+ - link:BufferStrategyFactory$CharBufferByInstanceProvider-asmified.java[Asmified]
+
+== References
+

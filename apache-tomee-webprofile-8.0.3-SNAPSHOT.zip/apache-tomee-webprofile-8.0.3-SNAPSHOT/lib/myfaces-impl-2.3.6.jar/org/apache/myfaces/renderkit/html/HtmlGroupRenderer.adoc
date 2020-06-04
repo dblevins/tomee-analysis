@@ -1,0 +1,7 @@
+= org/apache/myfaces/renderkit/html/HtmlGroupRenderer.class
+
+ - link:HtmlGroupRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/sessions/factories/ComplexPLSQLTypeWrapper.class
+
+ - link:ComplexPLSQLTypeWrapper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/eclipse/persistence/internal/jaxb/JAXBSchemaOutputResolver.class
+
+ - link:JAXBSchemaOutputResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.SchemaOutputResolver - 5

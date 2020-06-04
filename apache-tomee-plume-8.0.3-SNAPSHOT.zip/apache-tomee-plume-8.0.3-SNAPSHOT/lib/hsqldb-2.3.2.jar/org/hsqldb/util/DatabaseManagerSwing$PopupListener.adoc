@@ -1,0 +1,6 @@
+= org/hsqldb/util/DatabaseManagerSwing$PopupListener.class
+
+ - link:DatabaseManagerSwing$PopupListener-asmified.java[Asmified]
+
+== References
+

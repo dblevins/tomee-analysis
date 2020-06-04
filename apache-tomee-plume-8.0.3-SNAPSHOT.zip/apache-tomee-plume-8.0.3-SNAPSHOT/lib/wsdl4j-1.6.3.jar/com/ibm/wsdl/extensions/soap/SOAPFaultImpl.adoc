@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/soap/SOAPFaultImpl.class
+
+ - link:SOAPFaultImpl-asmified.java[Asmified]
+
+== References
+

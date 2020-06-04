@@ -1,0 +1,11 @@
+= org/apache/openejb/config/MergeWebappJndiContext.class
+
+ - link:MergeWebappJndiContext-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 2
+ - javax.ejb.EntityContext - 1
+ - javax.ejb.SessionContext - 1
+ - javax.ejb.EJBContext - 1
+ - javax.ejb.MessageDrivenContext - 1

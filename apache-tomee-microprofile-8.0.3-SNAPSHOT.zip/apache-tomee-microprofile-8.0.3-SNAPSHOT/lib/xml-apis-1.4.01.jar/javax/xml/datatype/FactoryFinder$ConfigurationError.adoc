@@ -1,0 +1,6 @@
+= javax/xml/datatype/FactoryFinder$ConfigurationError.class
+
+ - link:FactoryFinder$ConfigurationError-asmified.java[Asmified]
+
+== References
+

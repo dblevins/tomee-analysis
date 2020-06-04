@@ -1,0 +1,7 @@
+= org/opensaml/saml/criterion/BindingLocationCriterion.class
+
+ - link:BindingLocationCriterion-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3

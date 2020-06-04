@@ -1,0 +1,6 @@
+= org/apache/cxf/service/model/Extensible.class
+
+ - link:Extensible-asmified.java[Asmified]
+
+== References
+

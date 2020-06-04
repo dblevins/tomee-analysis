@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/lookup/ParameterizedMethodBinding$2.class
+
+ - link:ParameterizedMethodBinding$2-asmified.java[Asmified]
+
+== References
+

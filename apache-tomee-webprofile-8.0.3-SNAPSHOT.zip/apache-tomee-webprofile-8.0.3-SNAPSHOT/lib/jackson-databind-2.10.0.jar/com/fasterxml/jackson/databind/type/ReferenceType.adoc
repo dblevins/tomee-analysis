@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/type/ReferenceType.class
+
+ - link:ReferenceType-asmified.java[Asmified]
+
+== References
+

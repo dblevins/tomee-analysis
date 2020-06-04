@@ -1,0 +1,6 @@
+= org/apache/openjpa/meta/XMLMetaData.class
+
+ - link:XMLMetaData-asmified.java[Asmified]
+
+== References
+

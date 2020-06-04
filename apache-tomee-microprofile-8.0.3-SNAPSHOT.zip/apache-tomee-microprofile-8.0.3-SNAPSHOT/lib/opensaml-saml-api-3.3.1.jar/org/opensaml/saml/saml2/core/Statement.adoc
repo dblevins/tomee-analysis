@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/Statement.class
+
+ - link:Statement-asmified.java[Asmified]
+
+== References
+

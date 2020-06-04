@@ -1,0 +1,6 @@
+= com/sun/faces/application/resource/LibraryInfo.class
+
+ - link:LibraryInfo-asmified.java[Asmified]
+
+== References
+

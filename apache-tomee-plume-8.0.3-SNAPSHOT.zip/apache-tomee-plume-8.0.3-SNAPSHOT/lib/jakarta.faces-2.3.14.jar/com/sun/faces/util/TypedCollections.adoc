@@ -1,0 +1,6 @@
+= com/sun/faces/util/TypedCollections.class
+
+ - link:TypedCollections-asmified.java[Asmified]
+
+== References
+

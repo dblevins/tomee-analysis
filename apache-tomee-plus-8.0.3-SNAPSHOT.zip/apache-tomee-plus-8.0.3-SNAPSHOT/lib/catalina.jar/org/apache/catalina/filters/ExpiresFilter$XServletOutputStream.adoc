@@ -1,0 +1,9 @@
+= org/apache/catalina/filters/ExpiresFilter$XServletOutputStream.class
+
+ - link:ExpiresFilter$XServletOutputStream-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletOutputStream - 45
+ - javax.servlet.http.HttpServletRequest - 5
+ - javax.servlet.WriteListener - 1

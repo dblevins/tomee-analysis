@@ -1,0 +1,8 @@
+= javax/security/enterprise/authentication/mechanism/http/CustomFormAuthenticationMechanismDefinition.class
+
+ - link:CustomFormAuthenticationMechanismDefinition-asmified.java[Asmified]
+
+== References
+
+ - javax.security.enterprise.authentication.mechanism.http.LoginToContinue - 1
+ - javax.enterprise.util.Nonbinding - 1

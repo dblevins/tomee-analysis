@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/SystemComponentReference.class
+
+ - link:SystemComponentReference-asmified.java[Asmified]
+
+== References
+

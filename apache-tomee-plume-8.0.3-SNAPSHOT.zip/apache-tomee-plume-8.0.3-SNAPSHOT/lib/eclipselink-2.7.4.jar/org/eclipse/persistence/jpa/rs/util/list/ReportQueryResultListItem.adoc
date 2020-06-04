@@ -1,0 +1,8 @@
+= org/eclipse/persistence/jpa/rs/util/list/ReportQueryResultListItem.class
+
+ - link:ReportQueryResultListItem-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 3
+ - javax.xml.bind.annotation.XmlAnyElement - 1

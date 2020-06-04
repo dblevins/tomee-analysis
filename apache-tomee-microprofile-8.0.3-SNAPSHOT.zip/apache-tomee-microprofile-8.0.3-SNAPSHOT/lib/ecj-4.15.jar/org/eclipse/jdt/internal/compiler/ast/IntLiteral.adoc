@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/ast/IntLiteral.class
+
+ - link:IntLiteral-asmified.java[Asmified]
+
+== References
+

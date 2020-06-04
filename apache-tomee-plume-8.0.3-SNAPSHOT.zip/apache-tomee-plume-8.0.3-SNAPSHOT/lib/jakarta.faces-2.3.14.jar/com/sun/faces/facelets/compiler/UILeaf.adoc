@@ -1,0 +1,16 @@
+= com/sun/faces/facelets/compiler/UILeaf.class
+
+ - link:UILeaf-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 13
+ - javax.faces.component.UIComponent - 11
+ - javax.faces.component.UIComponentBase - 4
+ - javax.faces.event.FacesListener - 3
+ - javax.el.ValueExpression - 2
+ - javax.faces.event.FacesEvent - 2
+ - javax.faces.el.ValueBinding - 2
+ - javax.faces.render.Renderer - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.component.search.UntargetableComponent - 1

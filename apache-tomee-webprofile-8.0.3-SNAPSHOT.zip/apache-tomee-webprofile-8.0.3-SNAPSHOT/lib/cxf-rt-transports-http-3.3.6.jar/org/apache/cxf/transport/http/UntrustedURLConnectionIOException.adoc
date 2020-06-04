@@ -1,0 +1,6 @@
+= org/apache/cxf/transport/http/UntrustedURLConnectionIOException.class
+
+ - link:UntrustedURLConnectionIOException-asmified.java[Asmified]
+
+== References
+

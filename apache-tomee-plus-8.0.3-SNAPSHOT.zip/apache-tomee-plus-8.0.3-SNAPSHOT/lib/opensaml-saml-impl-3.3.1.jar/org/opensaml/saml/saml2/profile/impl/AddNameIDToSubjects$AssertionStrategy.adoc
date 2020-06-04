@@ -1,0 +1,7 @@
+= org/opensaml/saml/saml2/profile/impl/AddNameIDToSubjects$AssertionStrategy.class
+
+ - link:AddNameIDToSubjects$AssertionStrategy-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nullable - 4

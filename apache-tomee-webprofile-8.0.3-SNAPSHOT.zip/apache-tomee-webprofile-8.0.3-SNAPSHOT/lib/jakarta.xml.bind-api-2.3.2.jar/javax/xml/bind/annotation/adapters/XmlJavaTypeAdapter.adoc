@@ -1,0 +1,8 @@
+= javax/xml/bind/annotation/adapters/XmlJavaTypeAdapter.class
+
+ - link:XmlJavaTypeAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter$DEFAULT - 1
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 1

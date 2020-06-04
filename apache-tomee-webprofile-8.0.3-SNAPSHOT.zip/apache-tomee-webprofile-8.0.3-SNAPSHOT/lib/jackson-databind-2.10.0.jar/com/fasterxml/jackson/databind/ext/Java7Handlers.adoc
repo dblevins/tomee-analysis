@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/ext/Java7Handlers.class
+
+ - link:Java7Handlers-asmified.java[Asmified]
+
+== References
+

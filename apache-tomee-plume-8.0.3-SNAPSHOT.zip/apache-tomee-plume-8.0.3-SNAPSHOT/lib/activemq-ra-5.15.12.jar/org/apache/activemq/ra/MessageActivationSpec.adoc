@@ -1,0 +1,8 @@
+= org/apache/activemq/ra/MessageActivationSpec.class
+
+ - link:MessageActivationSpec-asmified.java[Asmified]
+
+== References
+
+ - javax.resource.spi.ResourceAdapter - 1
+ - javax.resource.spi.ActivationSpec - 1

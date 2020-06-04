@@ -1,0 +1,13 @@
+= org/apache/activemq/network/jms/DestinationBridge.class
+
+ - link:DestinationBridge-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.Message - 19
+ - javax.jms.Connection - 10
+ - javax.jms.Destination - 10
+ - javax.jms.MessageConsumer - 7
+ - javax.jms.JMSException - 3
+ - javax.jms.MessageProducer - 2
+ - javax.jms.MessageListener - 1

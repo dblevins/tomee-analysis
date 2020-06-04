@@ -1,0 +1,6 @@
+= com/sun/faces/facelets/tag/jstl/core/MappedValueExpression$Entry.class
+
+ - link:MappedValueExpression$Entry-asmified.java[Asmified]
+
+== References
+

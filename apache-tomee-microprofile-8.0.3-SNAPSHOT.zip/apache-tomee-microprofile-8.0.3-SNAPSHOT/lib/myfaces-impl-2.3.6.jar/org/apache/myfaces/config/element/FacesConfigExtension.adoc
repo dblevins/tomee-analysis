@@ -1,0 +1,6 @@
+= org/apache/myfaces/config/element/FacesConfigExtension.class
+
+ - link:FacesConfigExtension-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/openejb/util/ObjectRecipeHelper.class
+
+ - link:ObjectRecipeHelper-asmified.java[Asmified]
+
+== References
+

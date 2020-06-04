@@ -1,0 +1,9 @@
+= com/sun/faces/facelets/impl/DefaultFaceletCache.class
+
+ - link:DefaultFaceletCache-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 4
+ - javax.faces.FacesException - 2
+ - javax.faces.view.facelets.FaceletCache - 2

@@ -1,0 +1,6 @@
+= org/apache/openejb/InjectionProcessor.class
+
+ - link:InjectionProcessor-asmified.java[Asmified]
+
+== References
+

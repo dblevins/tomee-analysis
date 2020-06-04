@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/annotation/JacksonAnnotationValue.class
+
+ - link:JacksonAnnotationValue-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,10 @@
+= org/apache/myfaces/taglib/html/HtmlFormTag.class
+
+ - link:HtmlFormTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 161
+ - javax.faces.component.html.HtmlForm - 26
+ - javax.faces.webapp.UIComponentELTag - 4
+ - javax.faces.component.UIComponent - 2

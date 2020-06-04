@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/SDODataHelper.class
+
+ - link:SDODataHelper-asmified.java[Asmified]
+
+== References
+

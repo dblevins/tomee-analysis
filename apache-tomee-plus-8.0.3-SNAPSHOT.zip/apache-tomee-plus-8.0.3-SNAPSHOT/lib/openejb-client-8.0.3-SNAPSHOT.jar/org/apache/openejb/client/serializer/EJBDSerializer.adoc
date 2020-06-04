@@ -1,0 +1,6 @@
+= org/apache/openejb/client/serializer/EJBDSerializer.class
+
+ - link:EJBDSerializer-asmified.java[Asmified]
+
+== References
+

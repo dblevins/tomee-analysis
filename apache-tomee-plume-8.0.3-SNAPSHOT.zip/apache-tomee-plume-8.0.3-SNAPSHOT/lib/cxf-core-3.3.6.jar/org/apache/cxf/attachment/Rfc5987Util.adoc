@@ -1,0 +1,6 @@
+= org/apache/cxf/attachment/Rfc5987Util.class
+
+ - link:Rfc5987Util-asmified.java[Asmified]
+
+== References
+

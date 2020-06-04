@@ -1,0 +1,6 @@
+= org/apache/catalina/mbeans/RoleMBean.class
+
+ - link:RoleMBean-asmified.java[Asmified]
+
+== References
+

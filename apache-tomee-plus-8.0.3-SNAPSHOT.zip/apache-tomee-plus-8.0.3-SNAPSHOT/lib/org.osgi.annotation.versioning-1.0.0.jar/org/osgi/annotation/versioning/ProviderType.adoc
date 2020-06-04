@@ -1,0 +1,6 @@
+= org/osgi/annotation/versioning/ProviderType.class
+
+ - link:ProviderType-asmified.java[Asmified]
+
+== References
+

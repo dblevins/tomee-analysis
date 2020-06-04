@@ -1,0 +1,7 @@
+= org/apache/jasper/runtime/JspFactoryImpl$1.class
+
+ - link:JspFactoryImpl$1-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.JspEngineInfo - 2

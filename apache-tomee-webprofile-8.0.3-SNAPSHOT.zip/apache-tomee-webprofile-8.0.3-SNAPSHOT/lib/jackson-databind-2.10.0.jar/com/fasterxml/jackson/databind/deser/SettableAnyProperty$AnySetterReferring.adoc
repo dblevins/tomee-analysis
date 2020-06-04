@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/deser/SettableAnyProperty$AnySetterReferring.class
+
+ - link:SettableAnyProperty$AnySetterReferring-asmified.java[Asmified]
+
+== References
+

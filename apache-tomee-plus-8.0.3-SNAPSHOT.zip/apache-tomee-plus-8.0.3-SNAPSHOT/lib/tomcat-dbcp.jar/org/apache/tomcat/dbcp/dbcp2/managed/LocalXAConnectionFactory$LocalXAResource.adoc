@@ -1,0 +1,6 @@
+= org/apache/tomcat/dbcp/dbcp2/managed/LocalXAConnectionFactory$LocalXAResource.class
+
+ - link:LocalXAConnectionFactory$LocalXAResource-asmified.java[Asmified]
+
+== References
+

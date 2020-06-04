@@ -1,0 +1,8 @@
+= org/opensaml/xmlsec/encryption/support/InlineEncryptedKeyResolver.class
+
+ - link:InlineEncryptedKeyResolver-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 2

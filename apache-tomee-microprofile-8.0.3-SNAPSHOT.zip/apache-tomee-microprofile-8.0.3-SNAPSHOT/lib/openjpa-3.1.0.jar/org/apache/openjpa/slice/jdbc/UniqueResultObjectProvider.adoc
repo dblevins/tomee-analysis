@@ -1,0 +1,6 @@
+= org/apache/openjpa/slice/jdbc/UniqueResultObjectProvider.class
+
+ - link:UniqueResultObjectProvider-asmified.java[Asmified]
+
+== References
+

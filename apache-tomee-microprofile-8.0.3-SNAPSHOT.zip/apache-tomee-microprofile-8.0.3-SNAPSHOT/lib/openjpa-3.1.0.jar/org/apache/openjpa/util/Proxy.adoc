@@ -1,0 +1,6 @@
+= org/apache/openjpa/util/Proxy.class
+
+ - link:Proxy-asmified.java[Asmified]
+
+== References
+

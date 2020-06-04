@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/parsing/NodeFactory$TrimSpecification.class
+
+ - link:NodeFactory$TrimSpecification-asmified.java[Asmified]
+
+== References
+

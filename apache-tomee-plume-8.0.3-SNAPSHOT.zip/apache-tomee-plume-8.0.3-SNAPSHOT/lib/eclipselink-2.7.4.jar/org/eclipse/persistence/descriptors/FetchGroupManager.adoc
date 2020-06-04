@@ -1,0 +1,6 @@
+= org/eclipse/persistence/descriptors/FetchGroupManager.class
+
+ - link:FetchGroupManager-asmified.java[Asmified]
+
+== References
+

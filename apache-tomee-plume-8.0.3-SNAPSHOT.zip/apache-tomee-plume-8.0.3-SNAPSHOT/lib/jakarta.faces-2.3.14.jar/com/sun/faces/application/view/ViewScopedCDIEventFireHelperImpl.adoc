@@ -1,0 +1,12 @@
+= com/sun/faces/application/view/ViewScopedCDIEventFireHelperImpl.class
+
+ - link:ViewScopedCDIEventFireHelperImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.event.Event - 6
+ - javax.faces.component.UIViewRoot - 4
+ - javax.inject.Inject - 2
+ - javax.faces.view.ViewScoped - 2
+ - javax.enterprise.context.Destroyed - 1
+ - javax.enterprise.context.Initialized - 1

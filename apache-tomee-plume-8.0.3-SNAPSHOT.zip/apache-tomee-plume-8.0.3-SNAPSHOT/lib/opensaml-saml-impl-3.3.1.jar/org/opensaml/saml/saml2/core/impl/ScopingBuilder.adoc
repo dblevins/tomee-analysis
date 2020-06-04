@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/core/impl/ScopingBuilder.class
+
+ - link:ScopingBuilder-asmified.java[Asmified]
+
+== References
+

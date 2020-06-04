@@ -1,0 +1,6 @@
+= org/apache/tomee/catalina/LazyStopLoader.class
+
+ - link:LazyStopLoader-asmified.java[Asmified]
+
+== References
+

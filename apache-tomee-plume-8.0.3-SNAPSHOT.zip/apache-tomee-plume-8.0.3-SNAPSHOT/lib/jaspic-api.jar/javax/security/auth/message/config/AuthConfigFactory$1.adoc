@@ -1,0 +1,8 @@
+= javax/security/auth/message/config/AuthConfigFactory$1.class
+
+ - link:AuthConfigFactory$1-asmified.java[Asmified]
+
+== References
+
+ - javax.security.auth.message.config.AuthConfigFactory - 4
+ - javax.security.auth.message.config.AuthConfigFactory$1 - 1

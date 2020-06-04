@@ -1,0 +1,6 @@
+= javax/validation/ClockProvider.class
+
+ - link:ClockProvider-asmified.java[Asmified]
+
+== References
+

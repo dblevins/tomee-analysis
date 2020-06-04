@@ -1,0 +1,9 @@
+= com/sun/xml/messaging/saaj/soap/XmlDataContentHandler.class
+
+ - link:XmlDataContentHandler-asmified.java[Asmified]
+
+== References
+
+ - javax.activation.DataSource - 7
+ - javax.activation.ActivationDataFlavor - 4
+ - javax.activation.DataContentHandler - 1

@@ -1,0 +1,10 @@
+= org/apache/jasper/runtime/TagHandlerPool.class
+
+ - link:TagHandlerPool-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.jsp.tagext.Tag - 14
+ - javax.servlet.ServletConfig - 12
+ - javax.servlet.jsp.JspException - 3
+ - javax.servlet.ServletContext - 3

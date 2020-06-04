@@ -1,0 +1,6 @@
+= org/eclipse/persistence/jaxb/JAXBMarshaller$CharacterEscapeHandlerWrapper.class
+
+ - link:JAXBMarshaller$CharacterEscapeHandlerWrapper-asmified.java[Asmified]
+
+== References
+

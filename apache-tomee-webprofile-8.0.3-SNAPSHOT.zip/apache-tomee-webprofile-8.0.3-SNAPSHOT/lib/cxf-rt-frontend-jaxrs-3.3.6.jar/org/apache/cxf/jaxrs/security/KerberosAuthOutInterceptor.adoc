@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/security/KerberosAuthOutInterceptor.class
+
+ - link:KerberosAuthOutInterceptor-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/cxf/interceptor/LoggingOutInterceptor.class
+
+ - link:LoggingOutInterceptor-asmified.java[Asmified]
+
+== References
+

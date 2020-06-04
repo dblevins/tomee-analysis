@@ -1,0 +1,22 @@
+= org/apache/myfaces/shared/renderkit/html/HtmlInputFileRendererBase.class
+
+ - link:HtmlInputFileRendererBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 51
+ - javax.faces.context.FacesContext - 41
+ - javax.faces.context.ResponseWriter - 33
+ - javax.faces.component.html.HtmlInputText - 6
+ - javax.faces.component.html.HtmlForm - 4
+ - javax.faces.FacesException - 4
+ - javax.faces.context.PartialViewContext - 4
+ - javax.faces.component.behavior.ClientBehaviorHolder - 4
+ - javax.servlet.ServletException - 3
+ - javax.servlet.http.Part - 3
+ - javax.faces.application.FacesMessage - 3
+ - javax.faces.context.ExternalContext - 2
+ - javax.faces.application.ProjectStage - 2
+ - javax.servlet.http.HttpServletRequest - 2
+ - javax.faces.component.UIInput - 2
+ - javax.faces.convert.ConverterException - 1

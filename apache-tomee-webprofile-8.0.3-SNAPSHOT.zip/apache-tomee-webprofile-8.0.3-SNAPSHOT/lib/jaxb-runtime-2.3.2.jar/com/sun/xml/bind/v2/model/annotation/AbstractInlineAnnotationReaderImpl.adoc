@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/model/annotation/AbstractInlineAnnotationReaderImpl.class
+
+ - link:AbstractInlineAnnotationReaderImpl-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/apache/commons/beanutils/JDBCDynaClass.class
+
+ - link:JDBCDynaClass-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,7 @@
+= org/apache/openjpa/persistence/criteria/Expressions$Upper.class
+
+ - link:Expressions$Upper-asmified.java[Asmified]
+
+== References
+
+ - javax.persistence.criteria.Expression - 2

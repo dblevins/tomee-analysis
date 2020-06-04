@@ -1,0 +1,9 @@
+= org/eclipse/persistence/jaxb/JAXBContext$JAXBContextState.class
+
+ - link:JAXBContext$JAXBContextState-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBException - 4
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2
+ - javax.xml.bind.PropertyException - 2

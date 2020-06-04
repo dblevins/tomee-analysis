@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/kernel/GenericResultObjectProvider.class
+
+ - link:GenericResultObjectProvider-asmified.java[Asmified]
+
+== References
+

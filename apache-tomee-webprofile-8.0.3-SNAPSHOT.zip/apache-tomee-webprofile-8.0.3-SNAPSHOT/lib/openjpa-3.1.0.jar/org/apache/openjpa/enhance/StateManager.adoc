@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/StateManager.class
+
+ - link:StateManager-asmified.java[Asmified]
+
+== References
+

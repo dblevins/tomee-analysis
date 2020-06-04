@@ -1,0 +1,6 @@
+= org/eclipse/persistence/config/ResultSetConcurrency.class
+
+ - link:ResultSetConcurrency-asmified.java[Asmified]
+
+== References
+

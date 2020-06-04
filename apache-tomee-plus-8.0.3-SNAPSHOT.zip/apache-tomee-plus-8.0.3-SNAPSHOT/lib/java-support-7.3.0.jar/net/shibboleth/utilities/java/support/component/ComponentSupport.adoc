@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/component/ComponentSupport.class
+
+ - link:ComponentSupport-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 3
+ - javax.annotation.Nullable - 2

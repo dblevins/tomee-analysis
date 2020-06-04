@@ -1,0 +1,6 @@
+= javax/enterprise/inject/spi/PassivationCapable.class
+
+ - link:PassivationCapable-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/opensaml/saml/saml2/metadata/impl/AffiliationDescriptorBuilder.class
+
+ - link:AffiliationDescriptorBuilder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= org/eclipse/jdt/internal/compiler/impl/ShortConstant.class
+
+ - link:ShortConstant-asmified.java[Asmified]
+
+== References
+

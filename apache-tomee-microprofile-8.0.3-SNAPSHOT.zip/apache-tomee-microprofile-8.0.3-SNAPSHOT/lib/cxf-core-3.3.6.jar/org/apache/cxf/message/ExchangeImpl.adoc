@@ -1,0 +1,6 @@
+= org/apache/cxf/message/ExchangeImpl.class
+
+ - link:ExchangeImpl-asmified.java[Asmified]
+
+== References
+

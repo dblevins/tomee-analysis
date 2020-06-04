@@ -1,0 +1,6 @@
+= org/apache/openjpa/kernel/MixedLockLevels.class
+
+ - link:MixedLockLevels-asmified.java[Asmified]
+
+== References
+

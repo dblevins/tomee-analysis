@@ -1,0 +1,6 @@
+= org/apache/openejb/rest/AbstractRestThreadLocalProxy.class
+
+ - link:AbstractRestThreadLocalProxy-asmified.java[Asmified]
+
+== References
+

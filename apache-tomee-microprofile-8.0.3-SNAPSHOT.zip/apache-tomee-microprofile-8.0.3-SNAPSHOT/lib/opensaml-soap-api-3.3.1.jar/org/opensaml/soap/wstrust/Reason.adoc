@@ -1,0 +1,6 @@
+= org/opensaml/soap/wstrust/Reason.class
+
+ - link:Reason-asmified.java[Asmified]
+
+== References
+

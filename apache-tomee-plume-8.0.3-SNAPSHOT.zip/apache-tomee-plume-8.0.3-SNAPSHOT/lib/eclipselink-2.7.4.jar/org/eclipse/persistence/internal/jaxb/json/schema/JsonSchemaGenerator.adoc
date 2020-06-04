@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jaxb/json/schema/JsonSchemaGenerator.class
+
+ - link:JsonSchemaGenerator-asmified.java[Asmified]
+
+== References
+

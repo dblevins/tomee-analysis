@@ -1,0 +1,8 @@
+= com/sun/faces/util/copier/CopierUtils.class
+
+ - link:CopierUtils-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 5
+ - javax.faces.application.Application - 2

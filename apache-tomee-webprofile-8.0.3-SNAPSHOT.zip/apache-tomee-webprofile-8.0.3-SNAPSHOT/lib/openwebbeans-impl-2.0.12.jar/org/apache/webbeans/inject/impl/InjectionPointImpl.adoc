@@ -1,0 +1,17 @@
+= org/apache/webbeans/inject/impl/InjectionPointImpl.class
+
+ - link:InjectionPointImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.Bean - 31
+ - javax.enterprise.inject.spi.Annotated - 22
+ - javax.enterprise.inject.spi.AnnotatedField - 11
+ - javax.enterprise.inject.spi.AnnotatedParameter - 8
+ - javax.enterprise.inject.spi.AnnotatedType - 8
+ - javax.enterprise.inject.spi.AnnotatedMember - 3
+ - javax.enterprise.inject.spi.InjectionPoint - 3
+ - javax.decorator.Delegate - 2
+ - javax.enterprise.inject.spi.AnnotatedCallable - 2
+ - javax.enterprise.inject.spi.AnnotatedMethod - 2
+ - javax.enterprise.inject.spi.AnnotatedConstructor - 2

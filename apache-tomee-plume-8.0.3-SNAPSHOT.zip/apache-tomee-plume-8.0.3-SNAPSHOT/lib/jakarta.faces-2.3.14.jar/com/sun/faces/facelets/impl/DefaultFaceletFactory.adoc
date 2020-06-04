@@ -1,0 +1,19 @@
+= com/sun/faces/facelets/impl/DefaultFaceletFactory.class
+
+ - link:DefaultFaceletFactory-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.view.facelets.FaceletCache - 30
+ - javax.faces.context.FacesContext - 22
+ - javax.faces.view.facelets.ResourceResolver - 15
+ - javax.faces.component.UIComponent - 13
+ - javax.faces.view.facelets.Facelet - 10
+ - javax.faces.context.ExternalContext - 7
+ - javax.faces.application.Application - 7
+ - javax.el.ExpressionFactory - 4
+ - javax.faces.component.UIViewRoot - 4
+ - javax.faces.view.facelets.FaceletHandler - 4
+ - javax.faces.view.facelets.FaceletCacheFactory - 2
+ - javax.faces.view.facelets.FaceletCache$MemberFactory - 2
+ - javax.faces.FactoryFinder - 1

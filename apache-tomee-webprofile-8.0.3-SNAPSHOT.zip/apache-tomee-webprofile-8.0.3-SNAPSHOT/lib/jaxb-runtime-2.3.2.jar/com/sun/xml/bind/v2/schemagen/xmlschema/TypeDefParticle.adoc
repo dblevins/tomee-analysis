@@ -1,0 +1,6 @@
+= com/sun/xml/bind/v2/schemagen/xmlschema/TypeDefParticle.class
+
+ - link:TypeDefParticle-asmified.java[Asmified]
+
+== References
+

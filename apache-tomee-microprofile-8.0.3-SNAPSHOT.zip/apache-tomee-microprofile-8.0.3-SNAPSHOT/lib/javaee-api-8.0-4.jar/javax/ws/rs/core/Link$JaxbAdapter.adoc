@@ -1,0 +1,11 @@
+= javax/ws/rs/core/Link$JaxbAdapter.class
+
+ - link:Link$JaxbAdapter-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.Link$JaxbLink - 12
+ - javax.ws.rs.core.Link - 10
+ - javax.ws.rs.core.Link$Builder - 5
+ - javax.ws.rs.core.Link$JaxbAdapter - 2
+ - javax.xml.bind.annotation.adapters.XmlAdapter - 2

@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/jpa/jpql/ConstructorQueryMappings.class
+
+ - link:ConstructorQueryMappings-asmified.java[Asmified]
+
+== References
+

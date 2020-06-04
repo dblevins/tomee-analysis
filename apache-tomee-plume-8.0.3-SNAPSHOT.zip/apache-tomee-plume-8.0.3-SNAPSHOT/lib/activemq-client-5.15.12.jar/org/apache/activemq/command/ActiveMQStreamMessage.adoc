@@ -1,0 +1,11 @@
+= org/apache/activemq/command/ActiveMQStreamMessage.class
+
+ - link:ActiveMQStreamMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 52
+ - javax.jms.MessageFormatException - 37
+ - javax.jms.MessageEOFException - 35
+ - javax.jms.MessageNotReadableException - 4
+ - javax.jms.StreamMessage - 1

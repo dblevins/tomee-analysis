@@ -1,0 +1,6 @@
+= org/joda/time/base/BasePartial.class
+
+ - link:BasePartial-asmified.java[Asmified]
+
+== References
+

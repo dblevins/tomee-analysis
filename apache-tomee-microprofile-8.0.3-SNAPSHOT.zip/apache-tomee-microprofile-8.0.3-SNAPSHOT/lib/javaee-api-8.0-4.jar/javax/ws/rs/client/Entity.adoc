@@ -1,0 +1,11 @@
+= javax/ws/rs/client/Entity.class
+
+ - link:Entity-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.client.Entity - 48
+ - javax.ws.rs.core.Variant - 34
+ - javax.ws.rs.core.MediaType - 27
+ - javax.ws.rs.core.Form - 5
+ - javax.ws.rs.core.MultivaluedMap - 2

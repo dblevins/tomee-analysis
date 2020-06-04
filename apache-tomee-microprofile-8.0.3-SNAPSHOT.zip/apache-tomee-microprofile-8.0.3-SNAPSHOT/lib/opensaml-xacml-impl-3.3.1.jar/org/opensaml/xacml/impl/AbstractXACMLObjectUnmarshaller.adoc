@@ -1,0 +1,6 @@
+= org/opensaml/xacml/impl/AbstractXACMLObjectUnmarshaller.class
+
+ - link:AbstractXACMLObjectUnmarshaller-asmified.java[Asmified]
+
+== References
+

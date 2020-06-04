@@ -1,0 +1,7 @@
+= org/apache/openejb/ri/sp/PseudoSecurityService.class
+
+ - link:PseudoSecurityService-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletRequest - 1

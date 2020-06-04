@@ -1,0 +1,6 @@
+= org/eclipse/persistence/dynamic/DynamicType.class
+
+ - link:DynamicType-asmified.java[Asmified]
+
+== References
+

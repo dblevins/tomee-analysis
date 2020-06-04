@@ -1,0 +1,51 @@
+= javax/faces/component/UIComponentBase.class
+
+ - link:UIComponentBase-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 188
+ - javax.faces.component.UIComponent - 155
+ - javax.faces.component.UIComponentBase - 152
+ - javax.faces.component.UIComponentBase$BehaviorsMap - 41
+ - javax.faces.component.StateHolderSaver - 36
+ - javax.faces.component.AttachedObjectListHolder - 34
+ - javax.faces.event.FacesListener - 22
+ - javax.faces.render.Renderer - 19
+ - javax.faces.application.Application - 18
+ - javax.faces.component.StateHolder - 15
+ - javax.faces.component.PartialStateHolder - 15
+ - javax.faces.component.StateHelper - 14
+ - javax.faces.component.behavior.ClientBehavior - 12
+ - javax.el.ValueExpression - 7
+ - javax.faces.component.UIComponentBase$1 - 6
+ - javax.faces.component.UIComponent$PropertyKeys - 6
+ - javax.faces.component.ComponentStateHelper - 6
+ - javax.faces.component.UIComponentBase$AttributesMap - 6
+ - javax.faces.component.NamingContainer - 5
+ - javax.faces.event.SystemEvent - 5
+ - javax.faces.context.ExternalContext - 5
+ - javax.faces.el.ValueBinding - 5
+ - javax.faces.event.FacesEvent - 5
+ - javax.faces.component.UIComponent$ComponentSystemEventListenerAdapter - 4
+ - javax.faces.event.ComponentSystemEventListener - 4
+ - javax.faces.event.BehaviorEvent - 4
+ - javax.faces.event.SystemEventListener - 4
+ - javax.faces.component.UniqueIdVendor - 3
+ - javax.faces.FacesException - 3
+ - javax.faces.component.UIComponentBase$FacetsMap - 2
+ - javax.faces.render.RenderKit - 2
+ - javax.faces.component.behavior.Behavior - 2
+ - javax.faces.component.UINamingContainer - 2
+ - javax.faces.component.UIComponentBase$FacetsAndChildrenIterator - 2
+ - javax.faces.component.UIViewRoot - 2
+ - javax.faces.component.ContextCallback - 2
+ - javax.faces.component.UIComponentBase$ChildrenList - 2
+ - javax.faces.component.UIComponentBase$PassThroughAttributesMap - 2
+ - javax.faces.event.PreValidateEvent - 1
+ - javax.faces.event.PreRenderComponentEvent - 1
+ - javax.faces.event.AbortProcessingException - 1
+ - javax.faces.event.PreRemoveFromViewEvent - 1
+ - javax.faces.event.PostAddToViewEvent - 1
+ - javax.faces.event.PostValidateEvent - 1
+ - javax.faces.component.behavior.ClientBehaviorHolder - 1

@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/query/SquareRootExpression.class
+
+ - link:SquareRootExpression-asmified.java[Asmified]
+
+== References
+

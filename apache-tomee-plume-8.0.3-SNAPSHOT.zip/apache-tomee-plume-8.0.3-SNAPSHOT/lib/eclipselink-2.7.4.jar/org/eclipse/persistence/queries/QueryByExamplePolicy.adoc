@@ -1,0 +1,6 @@
+= org/eclipse/persistence/queries/QueryByExamplePolicy.class
+
+ - link:QueryByExamplePolicy-asmified.java[Asmified]
+
+== References
+

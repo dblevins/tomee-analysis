@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/InstanceClassConverter.class
+
+ - link:InstanceClassConverter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/apache/openejb/quartz/ee/jta/JTAJobRunShell.class
+
+ - link:JTAJobRunShell-asmified.java[Asmified]
+
+== References
+
+ - javax.transaction.UserTransaction - 18
+ - javax.transaction.SystemException - 2

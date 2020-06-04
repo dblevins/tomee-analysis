@@ -1,0 +1,8 @@
+= org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor.class
+
+ - link:AbstractJsonpOutInterceptor-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.http.HttpServletResponse - 2
+ - javax.servlet.ServletOutputStream - 1

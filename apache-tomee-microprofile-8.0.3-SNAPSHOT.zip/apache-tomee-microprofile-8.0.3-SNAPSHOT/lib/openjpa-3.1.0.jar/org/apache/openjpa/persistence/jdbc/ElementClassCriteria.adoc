@@ -1,0 +1,6 @@
+= org/apache/openjpa/persistence/jdbc/ElementClassCriteria.class
+
+ - link:ElementClassCriteria-asmified.java[Asmified]
+
+== References
+

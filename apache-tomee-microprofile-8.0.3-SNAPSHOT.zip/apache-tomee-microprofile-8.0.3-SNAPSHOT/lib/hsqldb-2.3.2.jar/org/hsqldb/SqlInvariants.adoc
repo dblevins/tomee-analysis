@@ -1,0 +1,6 @@
+= org/hsqldb/SqlInvariants.class
+
+ - link:SqlInvariants-asmified.java[Asmified]
+
+== References
+

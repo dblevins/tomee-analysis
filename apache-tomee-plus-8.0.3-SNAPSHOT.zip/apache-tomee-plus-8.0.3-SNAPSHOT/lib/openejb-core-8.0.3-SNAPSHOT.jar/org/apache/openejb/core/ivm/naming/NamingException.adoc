@@ -1,0 +1,6 @@
+= org/apache/openejb/core/ivm/naming/NamingException.class
+
+ - link:NamingException-asmified.java[Asmified]
+
+== References
+

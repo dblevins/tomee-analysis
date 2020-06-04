@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/InstantiateTransformer.class
+
+ - link:InstantiateTransformer-asmified.java[Asmified]
+
+== References
+

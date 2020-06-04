@@ -1,0 +1,6 @@
+= org/opensaml/xacml/policy/impl/SubjectTypeImplBuilder.class
+
+ - link:SubjectTypeImplBuilder-asmified.java[Asmified]
+
+== References
+

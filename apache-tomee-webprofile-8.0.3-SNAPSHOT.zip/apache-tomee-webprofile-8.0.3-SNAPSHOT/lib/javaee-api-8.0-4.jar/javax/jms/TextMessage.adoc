@@ -1,0 +1,8 @@
+= javax/jms/TextMessage.class
+
+ - link:TextMessage-asmified.java[Asmified]
+
+== References
+
+ - javax.jms.JMSException - 2
+ - javax.jms.Message - 1

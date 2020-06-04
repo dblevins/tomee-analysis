@@ -1,0 +1,6 @@
+= org/apache/tomcat/jdbc/pool/FairBlockingQueue$FairIterator.class
+
+ - link:FairBlockingQueue$FairIterator-asmified.java[Asmified]
+
+== References
+

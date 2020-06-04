@@ -1,0 +1,6 @@
+= org/apache/commons/pool2/PooledObjectState.class
+
+ - link:PooledObjectState-asmified.java[Asmified]
+
+== References
+

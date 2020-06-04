@@ -1,0 +1,8 @@
+= javax/ws/rs/core/MediaType$2.class
+
+ - link:MediaType$2-asmified.java[Asmified]
+
+== References
+
+ - javax.ws.rs.core.MediaType - 3
+ - javax.ws.rs.core.MediaType$2 - 1

@@ -1,0 +1,14 @@
+= com/sun/faces/taglib/jsf_core/ValidateLongRangeTag.class
+
+ - link:ValidateLongRangeTag-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ValueExpression - 29
+ - javax.faces.context.FacesContext - 9
+ - javax.el.ELContext - 6
+ - javax.faces.validator.LongRangeValidator - 4
+ - javax.faces.application.Application - 2
+ - javax.el.ExpressionFactory - 2
+ - javax.servlet.jsp.JspException - 2
+ - javax.faces.validator.Validator - 2

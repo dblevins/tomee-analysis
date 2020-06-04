@@ -1,0 +1,8 @@
+= javax/faces/component/ActionSource.class
+
+ - link:ActionSource-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.el.MethodBinding - 4
+ - javax.faces.event.ActionListener - 3

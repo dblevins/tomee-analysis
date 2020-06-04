@@ -1,0 +1,8 @@
+= org/apache/johnzon/mapper/MappingGeneratorImpl.class
+
+ - link:MappingGeneratorImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.json.stream.JsonGenerator - 275
+ - javax.json.JsonValue - 22

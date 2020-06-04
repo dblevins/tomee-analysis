@@ -1,0 +1,6 @@
+= org/apache/cxf/binding/soap/blueprint/SoapVersionTypeConverter.class
+
+ - link:SoapVersionTypeConverter-asmified.java[Asmified]
+
+== References
+

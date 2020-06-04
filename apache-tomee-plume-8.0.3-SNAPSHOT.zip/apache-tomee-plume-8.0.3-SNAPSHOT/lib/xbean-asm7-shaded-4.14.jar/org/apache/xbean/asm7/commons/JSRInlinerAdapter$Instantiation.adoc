@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/commons/JSRInlinerAdapter$Instantiation.class
+
+ - link:JSRInlinerAdapter$Instantiation-asmified.java[Asmified]
+
+== References
+

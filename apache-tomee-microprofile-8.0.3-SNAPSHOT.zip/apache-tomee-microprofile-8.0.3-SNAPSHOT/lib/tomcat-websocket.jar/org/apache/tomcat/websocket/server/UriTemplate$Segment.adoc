@@ -1,0 +1,6 @@
+= org/apache/tomcat/websocket/server/UriTemplate$Segment.class
+
+ - link:UriTemplate$Segment-asmified.java[Asmified]
+
+== References
+

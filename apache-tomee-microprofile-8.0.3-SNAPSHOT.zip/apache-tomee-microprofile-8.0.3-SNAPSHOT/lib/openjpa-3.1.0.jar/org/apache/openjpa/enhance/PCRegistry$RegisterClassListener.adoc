@@ -1,0 +1,6 @@
+= org/apache/openjpa/enhance/PCRegistry$RegisterClassListener.class
+
+ - link:PCRegistry$RegisterClassListener-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,8 @@
+= org/opensaml/saml/common/messaging/context/ECPContext.class
+
+ - link:ECPContext-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 2
+ - javax.annotation.Nullable - 2

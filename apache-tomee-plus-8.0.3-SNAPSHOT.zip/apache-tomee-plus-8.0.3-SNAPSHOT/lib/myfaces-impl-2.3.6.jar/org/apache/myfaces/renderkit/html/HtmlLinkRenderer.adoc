@@ -1,0 +1,7 @@
+= org/apache/myfaces/renderkit/html/HtmlLinkRenderer.class
+
+ - link:HtmlLinkRenderer-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.context.FacesContext - 2

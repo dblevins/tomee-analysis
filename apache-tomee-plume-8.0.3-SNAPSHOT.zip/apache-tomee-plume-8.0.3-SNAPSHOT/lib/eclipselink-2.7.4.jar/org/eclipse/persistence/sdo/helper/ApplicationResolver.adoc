@@ -1,0 +1,6 @@
+= org/eclipse/persistence/sdo/helper/ApplicationResolver.class
+
+ - link:ApplicationResolver-asmified.java[Asmified]
+
+== References
+

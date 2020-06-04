@@ -1,0 +1,6 @@
+= org/joda/time/field/StrictDateTimeField.class
+
+ - link:StrictDateTimeField-asmified.java[Asmified]
+
+== References
+

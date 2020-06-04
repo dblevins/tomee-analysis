@@ -1,0 +1,8 @@
+= org/apache/webbeans/component/EventBean$2.class
+
+ - link:EventBean$2-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.util.TypeLiteral - 2
+ - javax.enterprise.event.Event - 1

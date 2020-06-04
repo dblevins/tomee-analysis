@@ -1,0 +1,6 @@
+= org/apache/bval/jsr/metadata/CompositeBuilder$Delegator.class
+
+ - link:CompositeBuilder$Delegator-asmified.java[Asmified]
+
+== References
+

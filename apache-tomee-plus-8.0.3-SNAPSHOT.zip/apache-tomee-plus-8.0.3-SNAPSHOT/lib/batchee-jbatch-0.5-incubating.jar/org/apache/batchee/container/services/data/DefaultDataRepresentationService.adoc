@@ -1,0 +1,6 @@
+= org/apache/batchee/container/services/data/DefaultDataRepresentationService.class
+
+ - link:DefaultDataRepresentationService-asmified.java[Asmified]
+
+== References
+

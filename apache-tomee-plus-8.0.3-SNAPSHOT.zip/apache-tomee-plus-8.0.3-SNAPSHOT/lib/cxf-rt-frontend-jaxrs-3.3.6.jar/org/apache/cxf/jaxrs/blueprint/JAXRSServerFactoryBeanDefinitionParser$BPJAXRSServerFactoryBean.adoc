@@ -1,0 +1,6 @@
+= org/apache/cxf/jaxrs/blueprint/JAXRSServerFactoryBeanDefinitionParser$BPJAXRSServerFactoryBean.class
+
+ - link:JAXRSServerFactoryBeanDefinitionParser$BPJAXRSServerFactoryBean-asmified.java[Asmified]
+
+== References
+

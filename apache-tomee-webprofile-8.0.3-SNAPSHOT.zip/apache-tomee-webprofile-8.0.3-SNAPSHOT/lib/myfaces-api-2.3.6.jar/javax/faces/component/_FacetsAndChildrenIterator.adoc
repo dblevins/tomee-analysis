@@ -1,0 +1,8 @@
+= javax/faces/component/_FacetsAndChildrenIterator.class
+
+ - link:_FacetsAndChildrenIterator-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.UIComponent - 9
+ - javax.faces.component._FacetsAndChildrenIterator - 8

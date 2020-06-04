@@ -1,0 +1,8 @@
+= net/shibboleth/utilities/java/support/scripting/EvaluableScript.class
+
+ - link:EvaluableScript-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Nonnull - 9
+ - javax.annotation.Nullable - 2

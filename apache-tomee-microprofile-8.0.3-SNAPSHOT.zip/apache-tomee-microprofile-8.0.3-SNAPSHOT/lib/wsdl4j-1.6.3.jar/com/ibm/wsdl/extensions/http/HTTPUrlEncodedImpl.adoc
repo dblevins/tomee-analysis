@@ -1,0 +1,6 @@
+= com/ibm/wsdl/extensions/http/HTTPUrlEncodedImpl.class
+
+ - link:HTTPUrlEncodedImpl-asmified.java[Asmified]
+
+== References
+

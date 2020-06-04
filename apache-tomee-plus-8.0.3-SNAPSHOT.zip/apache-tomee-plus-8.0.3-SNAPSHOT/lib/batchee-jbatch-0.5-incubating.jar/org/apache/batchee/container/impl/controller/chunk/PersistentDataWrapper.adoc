@@ -1,0 +1,6 @@
+= org/apache/batchee/container/impl/controller/chunk/PersistentDataWrapper.class
+
+ - link:PersistentDataWrapper-asmified.java[Asmified]
+
+== References
+

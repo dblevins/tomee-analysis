@@ -1,0 +1,6 @@
+= com/sun/xml/bind/annotation/XmlIsSet.class
+
+ - link:XmlIsSet-asmified.java[Asmified]
+
+== References
+

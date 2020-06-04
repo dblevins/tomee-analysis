@@ -1,0 +1,6 @@
+= org/hsqldb/types/BlobType.class
+
+ - link:BlobType-asmified.java[Asmified]
+
+== References
+

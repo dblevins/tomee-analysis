@@ -1,0 +1,6 @@
+= org/apache/openejb/jee/TransportGuarantee$JAXB.class
+
+ - link:TransportGuarantee$JAXB-asmified.java[Asmified]
+
+== References
+

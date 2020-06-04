@@ -1,0 +1,6 @@
+= org/apache/wss4j/common/kerberos/KerberosTokenDecoder.class
+
+ - link:KerberosTokenDecoder-asmified.java[Asmified]
+
+== References
+

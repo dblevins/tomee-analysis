@@ -1,0 +1,7 @@
+= javax/validation/metadata/ContainerDescriptor.class
+
+ - link:ContainerDescriptor-asmified.java[Asmified]
+
+== References
+
+ - javax.validation.metadata.ContainerElementTypeDescriptor - 1

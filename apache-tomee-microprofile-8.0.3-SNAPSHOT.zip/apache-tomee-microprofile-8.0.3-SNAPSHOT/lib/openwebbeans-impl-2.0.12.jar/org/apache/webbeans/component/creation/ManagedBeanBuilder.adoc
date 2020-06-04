@@ -1,0 +1,10 @@
+= org/apache/webbeans/component/creation/ManagedBeanBuilder.class
+
+ - link:ManagedBeanBuilder-asmified.java[Asmified]
+
+== References
+
+ - javax.enterprise.inject.spi.AnnotatedType - 17
+ - javax.enterprise.inject.spi.BeanAttributes - 11
+ - javax.enterprise.inject.UnproxyableResolutionException - 3
+ - javax.enterprise.inject.spi.Bean - 1

@@ -1,0 +1,6 @@
+= org/bouncycastle/pqc/crypto/StateAwareMessageSigner.class
+
+ - link:StateAwareMessageSigner-asmified.java[Asmified]
+
+== References
+

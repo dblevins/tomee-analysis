@@ -1,0 +1,6 @@
+= org/apache/catalina/StoreManager.class
+
+ - link:StoreManager-asmified.java[Asmified]
+
+== References
+

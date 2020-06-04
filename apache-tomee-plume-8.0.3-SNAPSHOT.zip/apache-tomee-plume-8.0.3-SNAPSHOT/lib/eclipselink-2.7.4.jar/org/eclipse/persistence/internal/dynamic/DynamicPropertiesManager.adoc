@@ -1,0 +1,6 @@
+= org/eclipse/persistence/internal/dynamic/DynamicPropertiesManager.class
+
+ - link:DynamicPropertiesManager-asmified.java[Asmified]
+
+== References
+

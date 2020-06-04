@@ -1,0 +1,6 @@
+= org/apache/xbean/asm7/tree/FrameNode.class
+
+ - link:FrameNode-asmified.java[Asmified]
+
+== References
+

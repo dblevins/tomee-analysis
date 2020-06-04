@@ -1,0 +1,7 @@
+= com/sun/xml/bind/v2/model/runtime/RuntimeElementInfo.class
+
+ - link:RuntimeElementInfo-asmified.java[Asmified]
+
+== References
+
+ - javax.xml.bind.JAXBElement - 1

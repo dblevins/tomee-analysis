@@ -1,0 +1,6 @@
+= org/apache/xbean/naming/context/NestedContextFactory.class
+
+ - link:NestedContextFactory-asmified.java[Asmified]
+
+== References
+

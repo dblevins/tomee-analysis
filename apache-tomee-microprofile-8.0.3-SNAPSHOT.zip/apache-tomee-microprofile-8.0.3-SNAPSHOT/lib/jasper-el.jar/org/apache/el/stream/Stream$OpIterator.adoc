@@ -1,0 +1,6 @@
+= org/apache/el/stream/Stream$OpIterator.class
+
+ - link:Stream$OpIterator-asmified.java[Asmified]
+
+== References
+

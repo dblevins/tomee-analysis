@@ -1,0 +1,9 @@
+= org/apache/webbeans/web/context/WebConversationService.class
+
+ - link:WebConversationService-asmified.java[Asmified]
+
+== References
+
+ - javax.servlet.ServletRequest - 7
+ - javax.servlet.http.HttpSession - 5
+ - javax.servlet.http.HttpServletRequest - 4

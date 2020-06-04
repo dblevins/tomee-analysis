@@ -1,0 +1,6 @@
+= com/fasterxml/jackson/databind/introspect/CollectorBase.class
+
+ - link:CollectorBase-asmified.java[Asmified]
+
+== References
+

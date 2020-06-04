@@ -1,0 +1,9 @@
+= org/apache/myfaces/view/facelets/tag/jstl/core/IndexedValueExpression.class
+
+ - link:IndexedValueExpression-asmified.java[Asmified]
+
+== References
+
+ - javax.el.ELContext - 20
+ - javax.el.ValueExpression - 19
+ - javax.el.ELResolver - 8

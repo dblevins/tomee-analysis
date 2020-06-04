@@ -1,0 +1,6 @@
+= org/apache/cxf/common/util/ReflectionInvokationHandler$Optional.class
+
+ - link:ReflectionInvokationHandler$Optional-asmified.java[Asmified]
+
+== References
+

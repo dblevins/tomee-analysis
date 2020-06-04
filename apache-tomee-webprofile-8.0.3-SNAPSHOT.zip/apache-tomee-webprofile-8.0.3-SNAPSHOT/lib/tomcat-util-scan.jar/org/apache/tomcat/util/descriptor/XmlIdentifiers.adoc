@@ -1,0 +1,6 @@
+= org/apache/tomcat/util/descriptor/XmlIdentifiers.class
+
+ - link:XmlIdentifiers-asmified.java[Asmified]
+
+== References
+

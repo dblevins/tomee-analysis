@@ -1,0 +1,6 @@
+= org/apache/openjpa/jdbc/meta/RefreshStrategyInstaller.class
+
+ - link:RefreshStrategyInstaller-asmified.java[Asmified]
+
+== References
+

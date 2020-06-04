@@ -1,0 +1,6 @@
+= org/apache/cxf/common/logging/LogUtils.class
+
+ - link:LogUtils-asmified.java[Asmified]
+
+== References
+

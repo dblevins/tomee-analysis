@@ -1,0 +1,6 @@
+= org/apache/openejb/resource/jdbc/logging/LoggingSqlStatement.class
+
+ - link:LoggingSqlStatement-asmified.java[Asmified]
+
+== References
+

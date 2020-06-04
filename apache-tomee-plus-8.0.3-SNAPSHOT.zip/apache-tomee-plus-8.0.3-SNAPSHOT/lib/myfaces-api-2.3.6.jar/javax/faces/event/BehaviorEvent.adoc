@@ -1,0 +1,11 @@
+= javax/faces/event/BehaviorEvent.class
+
+ - link:BehaviorEvent-asmified.java[Asmified]
+
+== References
+
+ - javax.faces.component.behavior.Behavior - 9
+ - javax.faces.component.UIComponent - 6
+ - javax.faces.context.FacesContext - 3
+ - javax.faces.event.FacesEvent - 3
+ - javax.faces.event.BehaviorEvent - 2

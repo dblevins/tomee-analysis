@@ -1,0 +1,7 @@
+= org/apache/cxf/ws/policy/PolicyEngineImpl.class
+
+ - link:PolicyEngineImpl-asmified.java[Asmified]
+
+== References
+
+ - javax.annotation.Resource - 1

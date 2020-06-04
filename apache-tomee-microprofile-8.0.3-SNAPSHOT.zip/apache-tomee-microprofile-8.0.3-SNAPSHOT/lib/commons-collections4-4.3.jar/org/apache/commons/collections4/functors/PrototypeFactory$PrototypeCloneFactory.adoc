@@ -1,0 +1,6 @@
+= org/apache/commons/collections4/functors/PrototypeFactory$PrototypeCloneFactory.class
+
+ - link:PrototypeFactory$PrototypeCloneFactory-asmified.java[Asmified]
+
+== References
+

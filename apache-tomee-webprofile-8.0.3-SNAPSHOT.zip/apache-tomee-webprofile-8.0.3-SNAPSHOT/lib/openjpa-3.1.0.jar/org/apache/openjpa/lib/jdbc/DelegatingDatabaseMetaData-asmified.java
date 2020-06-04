@@ -1,0 +1,2015 @@
+package asm.org.apache.openjpa.lib.jdbc;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.ConstantDynamic;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.Handle;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.RecordComponentVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.TypePath;
+public class DelegatingDatabaseMetaDataDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter classWriter = new ClassWriter(0);
+FieldVisitor fieldVisitor;
+RecordComponentVisitor recordComponentVisitor;
+MethodVisitor methodVisitor;
+AnnotationVisitor annotationVisitor0;
+
+classWriter.visit(V1_8, ACC_PUBLIC | ACC_SUPER, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", null, "java/lang/Object", new String[] { "java/sql/DatabaseMetaData" });
+
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_metaData", "Ljava/sql/DatabaseMetaData;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+fieldVisitor = classWriter.visitField(ACC_PRIVATE | ACC_FINAL, "_conn", "Ljava/sql/Connection;", null, null);
+fieldVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "<init>", "(Ljava/sql/DatabaseMetaData;Ljava/sql/Connection;)V", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_conn", "Ljava/sql/Connection;");
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitFieldInsn(PUTFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitInsn(RETURN);
+methodVisitor.visitMaxs(2, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getInnermostDelegate", "()Ljava/sql/DatabaseMetaData;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData");
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "getInnermostDelegate", "()Ljava/sql/DatabaseMetaData;", false);
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(GOTO, label1);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME1, 0, null, 1, new Object[] {"java/sql/DatabaseMetaData"});
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "hashCode", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "getInnermostDelegate", "()Ljava/sql/DatabaseMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "equals", "(Ljava/lang/Object;)Z", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IF_ACMPNE, label0);
+methodVisitor.visitInsn(ICONST_1);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(INSTANCEOF, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData");
+Label label1 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitTypeInsn(CHECKCAST, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "getInnermostDelegate", "()Ljava/sql/DatabaseMetaData;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitLabel(label1);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "getInnermostDelegate", "()Ljava/sql/DatabaseMetaData;", false);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "equals", "(Ljava/lang/Object;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "toString", "()Ljava/lang/String;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitTypeInsn(NEW, "java/lang/StringBuilder");
+methodVisitor.visitInsn(DUP);
+methodVisitor.visitLdcInsn("metadata ");
+methodVisitor.visitMethodInsn(INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "(Ljava/lang/String;)V", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "hashCode", "()I", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(I)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ASTORE, 1);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitLdcInsn("[");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitLdcInsn("]");
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "append", "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
+methodVisitor.visitInsn(POP);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/StringBuilder", "toString", "()Ljava/lang/String;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "allProceduresAreCallable", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "allProceduresAreCallable", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "allTablesAreSelectable", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "allTablesAreSelectable", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "dataDefinitionCausesTransactionCommit", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "dataDefinitionCausesTransactionCommit", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "dataDefinitionIgnoredInTransactions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "dataDefinitionIgnoredInTransactions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "deletesAreDetected", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "deletesAreDetected", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "doesMaxRowSizeIncludeBlobs", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "doesMaxRowSizeIncludeBlobs", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getBestRowIdentifier", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getBestRowIdentifier", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCatalogs", "()Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getCatalogs", "()Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCatalogSeparator", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getCatalogSeparator", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCatalogTerm", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getCatalogTerm", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getColumnPrivileges", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getColumnPrivileges", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getConnection", "()Ljava/sql/Connection;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_conn", "Ljava/sql/Connection;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getCrossReference", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitVarInsn(ALOAD, 5);
+methodVisitor.visitVarInsn(ALOAD, 6);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getCrossReference", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(7, 7);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDatabaseProductName", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDatabaseProductName", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDatabaseProductVersion", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDatabaseProductVersion", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDefaultTransactionIsolation", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDefaultTransactionIsolation", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDriverMajorVersion", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDriverMajorVersion", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDriverMinorVersion", "()I", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDriverMinorVersion", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDriverName", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDriverName", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDriverVersion", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDriverVersion", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExportedKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getExportedKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getExtraNameCharacters", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getExtraNameCharacters", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIdentifierQuoteString", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getIdentifierQuoteString", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getImportedKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getImportedKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getIndexInfo", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ILOAD, 4);
+methodVisitor.visitVarInsn(ILOAD, 5);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getIndexInfo", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(6, 6);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxBinaryLiteralLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxBinaryLiteralLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxCatalogNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxCatalogNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxCharLiteralLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxCharLiteralLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxColumnNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxColumnNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxColumnsInGroupBy", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxColumnsInGroupBy", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxColumnsInIndex", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxColumnsInIndex", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxColumnsInOrderBy", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxColumnsInOrderBy", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxColumnsInSelect", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxColumnsInSelect", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxColumnsInTable", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxColumnsInTable", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxConnections", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxConnections", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxCursorNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxCursorNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxIndexLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxIndexLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxProcedureNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxProcedureNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxRowSize", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxRowSize", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxSchemaNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxSchemaNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxStatementLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxStatementLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxStatements", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxStatements", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxTableNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxTableNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxTablesInSelect", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxTablesInSelect", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getMaxUserNameLength", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getMaxUserNameLength", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getNumericFunctions", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getNumericFunctions", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPrimaryKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getPrimaryKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProcedureColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getProcedureColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProcedures", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getProcedures", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getProcedureTerm", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getProcedureTerm", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchemas", "()Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSchemas", "()Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchemaTerm", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSchemaTerm", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSearchStringEscape", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSearchStringEscape", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSQLKeywords", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSQLKeywords", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getStringFunctions", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getStringFunctions", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSystemFunctions", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSystemFunctions", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTablePrivileges", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getTablePrivileges", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTables", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getTables", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTableTypes", "()Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getTableTypes", "()Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTimeDateFunctions", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getTimeDateFunctions", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getTypeInfo", "()Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getTypeInfo", "()Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUDTs", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[I)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getUDTs", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[I)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getURL", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getURL", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getUserName", "()Ljava/lang/String;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getUserName", "()Ljava/lang/String;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getVersionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getVersionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "insertsAreDetected", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "insertsAreDetected", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isCatalogAtStart", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "isCatalogAtStart", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isReadOnly", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "isReadOnly", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nullPlusNonNullIsNull", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "nullPlusNonNullIsNull", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nullsAreSortedAtEnd", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "nullsAreSortedAtEnd", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nullsAreSortedAtStart", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "nullsAreSortedAtStart", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nullsAreSortedHigh", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "nullsAreSortedHigh", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "nullsAreSortedLow", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "nullsAreSortedLow", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "othersDeletesAreVisible", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "othersDeletesAreVisible", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "othersInsertsAreVisible", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "othersInsertsAreVisible", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "othersUpdatesAreVisible", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "othersUpdatesAreVisible", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ownDeletesAreVisible", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "ownDeletesAreVisible", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ownInsertsAreVisible", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "ownInsertsAreVisible", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "ownUpdatesAreVisible", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "ownUpdatesAreVisible", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "storesLowerCaseIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "storesLowerCaseIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "storesLowerCaseQuotedIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "storesLowerCaseQuotedIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "storesMixedCaseIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "storesMixedCaseIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "storesMixedCaseQuotedIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "storesMixedCaseQuotedIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "storesUpperCaseIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "storesUpperCaseIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "storesUpperCaseQuotedIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "storesUpperCaseQuotedIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsAlterTableWithAddColumn", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsAlterTableWithAddColumn", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsAlterTableWithDropColumn", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsAlterTableWithDropColumn", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsANSI92EntryLevelSQL", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsANSI92EntryLevelSQL", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsANSI92FullSQL", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsANSI92FullSQL", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsANSI92IntermediateSQL", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsANSI92IntermediateSQL", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsBatchUpdates", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsBatchUpdates", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCatalogsInDataManipulation", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCatalogsInDataManipulation", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCatalogsInIndexDefinitions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCatalogsInIndexDefinitions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCatalogsInPrivilegeDefinitions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCatalogsInPrivilegeDefinitions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCatalogsInProcedureCalls", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCatalogsInProcedureCalls", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCatalogsInTableDefinitions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCatalogsInTableDefinitions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsColumnAliasing", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsColumnAliasing", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsConvert", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsConvert", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsConvert", "(II)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsConvert", "(II)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCoreSQLGrammar", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCoreSQLGrammar", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsCorrelatedSubqueries", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsCorrelatedSubqueries", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsDataDefinitionAndDataManipulationTransactions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsDataDefinitionAndDataManipulationTransactions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsDataManipulationTransactionsOnly", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsDataManipulationTransactionsOnly", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsDifferentTableCorrelationNames", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsDifferentTableCorrelationNames", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsExpressionsInOrderBy", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsExpressionsInOrderBy", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsExtendedSQLGrammar", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsExtendedSQLGrammar", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsFullOuterJoins", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsFullOuterJoins", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsGroupBy", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsGroupBy", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsGroupByBeyondSelect", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsGroupByBeyondSelect", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsGroupByUnrelated", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsGroupByUnrelated", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsIntegrityEnhancementFacility", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsIntegrityEnhancementFacility", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsLikeEscapeClause", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsLikeEscapeClause", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsLimitedOuterJoins", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsLimitedOuterJoins", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsMinimumSQLGrammar", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsMinimumSQLGrammar", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsMixedCaseIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsMixedCaseIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsMixedCaseQuotedIdentifiers", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsMixedCaseQuotedIdentifiers", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsMultipleResultSets", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsMultipleResultSets", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsMultipleTransactions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsMultipleTransactions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsNonNullableColumns", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsNonNullableColumns", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsOpenCursorsAcrossCommit", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsOpenCursorsAcrossCommit", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsOpenCursorsAcrossRollback", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsOpenCursorsAcrossRollback", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsOpenStatementsAcrossCommit", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsOpenStatementsAcrossCommit", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsOpenStatementsAcrossRollback", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsOpenStatementsAcrossRollback", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsOrderByUnrelated", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsOrderByUnrelated", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsOuterJoins", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsOuterJoins", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsPositionedDelete", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsPositionedDelete", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsPositionedUpdate", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsPositionedUpdate", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsResultSetConcurrency", "(II)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitVarInsn(ILOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsResultSetConcurrency", "(II)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsResultSetType", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsResultSetType", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSchemasInDataManipulation", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSchemasInDataManipulation", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSchemasInIndexDefinitions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSchemasInIndexDefinitions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSchemasInPrivilegeDefinitions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSchemasInPrivilegeDefinitions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSchemasInProcedureCalls", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSchemasInProcedureCalls", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSchemasInTableDefinitions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSchemasInTableDefinitions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSelectForUpdate", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSelectForUpdate", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsStoredProcedures", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsStoredProcedures", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSubqueriesInComparisons", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSubqueriesInComparisons", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSubqueriesInExists", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSubqueriesInExists", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSubqueriesInIns", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSubqueriesInIns", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSubqueriesInQuantifieds", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSubqueriesInQuantifieds", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsTableCorrelationNames", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsTableCorrelationNames", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsTransactionIsolationLevel", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsTransactionIsolationLevel", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsTransactions", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsTransactions", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsUnion", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsUnion", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsUnionAll", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsUnionAll", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "updatesAreDetected", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "updatesAreDetected", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "usesLocalFilePerTable", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "usesLocalFilePerTable", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "usesLocalFiles", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "usesLocalFiles", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsSavepoints", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsSavepoints", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsNamedParameters", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsNamedParameters", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsMultipleOpenResults", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsMultipleOpenResults", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsGetGeneratedKeys", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsGetGeneratedKeys", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSuperTypes", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSuperTypes", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSuperTables", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSuperTables", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getAttributes", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getAttributes", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsResultSetHoldability", "(I)Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ILOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsResultSetHoldability", "(I)Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getResultSetHoldability", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getResultSetHoldability", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDatabaseMajorVersion", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDatabaseMajorVersion", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDatabaseMinorVersion", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getDatabaseMinorVersion", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJDBCMajorVersion", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getJDBCMajorVersion", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getJDBCMinorVersion", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getJDBCMinorVersion", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSQLStateType", "()I", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSQLStateType", "()I", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "locatorsUpdateCopy", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "locatorsUpdateCopy", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsStatementPooling", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsStatementPooling", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getDelegate", "()Ljava/sql/DatabaseMetaData;", null, null);
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "isWrapperFor", "(Ljava/lang/Class;)Z", "(Ljava/lang/Class<*>;)Z", new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "getDelegate", "()Ljava/sql/DatabaseMetaData;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;", false);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "isAssignableFrom", "(Ljava/lang/Class;)Z", false);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "unwrap", "(Ljava/lang/Class;)Ljava/lang/Object;", "<T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;", new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "isWrapperFor", "(Ljava/lang/Class;)Z", false);
+Label label0 = new Label();
+methodVisitor.visitJumpInsn(IFEQ, label0);
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitMethodInsn(INVOKEVIRTUAL, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "getDelegate", "()Ljava/sql/DatabaseMetaData;", false);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitLabel(label0);
+methodVisitor.visitFrame(Opcodes.F_SAME, 0, null, 0, null);
+methodVisitor.visitInsn(ACONST_NULL);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(2, 2);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "autoCommitFailureClosesAllResultSets", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "autoCommitFailureClosesAllResultSets", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getClientInfoProperties", "()Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getClientInfoProperties", "()Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getFunctionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getFunctions", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getFunctions", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(4, 4);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getRowIdLifetime", "()Ljava/sql/RowIdLifetime;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getRowIdLifetime", "()Ljava/sql/RowIdLifetime;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getSchemas", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getSchemas", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(3, 3);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "supportsStoredFunctionsUsingCallSyntax", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "supportsStoredFunctionsUsingCallSyntax", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "generatedKeyAlwaysReturned", "()Z", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "generatedKeyAlwaysReturned", "()Z", true);
+methodVisitor.visitInsn(IRETURN);
+methodVisitor.visitMaxs(1, 1);
+methodVisitor.visitEnd();
+}
+{
+methodVisitor = classWriter.visitMethod(ACC_PUBLIC, "getPseudoColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", null, new String[] { "java/sql/SQLException" });
+methodVisitor.visitCode();
+methodVisitor.visitVarInsn(ALOAD, 0);
+methodVisitor.visitFieldInsn(GETFIELD, "org/apache/openjpa/lib/jdbc/DelegatingDatabaseMetaData", "_metaData", "Ljava/sql/DatabaseMetaData;");
+methodVisitor.visitVarInsn(ALOAD, 1);
+methodVisitor.visitVarInsn(ALOAD, 2);
+methodVisitor.visitVarInsn(ALOAD, 3);
+methodVisitor.visitVarInsn(ALOAD, 4);
+methodVisitor.visitMethodInsn(INVOKEINTERFACE, "java/sql/DatabaseMetaData", "getPseudoColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", true);
+methodVisitor.visitInsn(ARETURN);
+methodVisitor.visitMaxs(5, 5);
+methodVisitor.visitEnd();
+}
+classWriter.visitEnd();
+
+return classWriter.toByteArray();
+}
+}
