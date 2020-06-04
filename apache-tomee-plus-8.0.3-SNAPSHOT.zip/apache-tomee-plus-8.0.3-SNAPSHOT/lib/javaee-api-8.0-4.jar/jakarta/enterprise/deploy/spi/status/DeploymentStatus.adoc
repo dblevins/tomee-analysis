@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/status/DeploymentStatus.class
+
+ - link:DeploymentStatus-asmified.java[Asmified]
+
+== References
+

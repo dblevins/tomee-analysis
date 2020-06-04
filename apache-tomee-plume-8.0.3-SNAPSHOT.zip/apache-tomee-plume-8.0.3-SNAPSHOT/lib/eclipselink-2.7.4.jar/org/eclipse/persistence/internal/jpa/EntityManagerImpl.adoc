@@ -4,25 +4,3 @@
 
 == References
 
- - javax.persistence.LockModeType - 53
- - javax.persistence.Query - 17
- - javax.persistence.SynchronizationType - 15
- - javax.persistence.LockTimeoutException - 12
- - javax.persistence.FlushModeType - 9
- - javax.persistence.PersistenceException - 8
- - javax.persistence.EntityNotFoundException - 8
- - javax.persistence.TypedQuery - 5
- - javax.persistence.EntityGraph - 4
- - javax.persistence.StoredProcedureQuery - 4
- - javax.persistence.OptimisticLockException - 4
- - javax.persistence.EntityExistsException - 2
- - javax.persistence.PessimisticLockException - 2
- - javax.persistence.TransactionRequiredException - 2
- - javax.persistence.EntityTransaction - 2
- - javax.persistence.criteria.CriteriaBuilder - 2
- - javax.persistence.metamodel.Metamodel - 2
- - javax.persistence.criteria.CriteriaQuery - 1
- - javax.persistence.EntityManager - 1
- - javax.persistence.criteria.CriteriaUpdate - 1
- - javax.persistence.EntityManagerFactory - 1
- - javax.persistence.criteria.CriteriaDelete - 1

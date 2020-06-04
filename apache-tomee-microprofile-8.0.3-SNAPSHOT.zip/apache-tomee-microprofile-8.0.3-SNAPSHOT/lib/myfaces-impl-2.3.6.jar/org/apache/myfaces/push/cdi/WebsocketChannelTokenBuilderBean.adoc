@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 11
- - javax.faces.context.ExternalContext - 2
- - javax.annotation.PostConstruct - 1
- - javax.enterprise.context.ApplicationScoped - 1

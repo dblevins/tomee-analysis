@@ -4,12 +4,3 @@
 
 == References
 
- - javax.batch.operations.JobOperator - 29
- - javax.batch.runtime.StepExecution - 23
- - javax.batch.runtime.JobExecution - 20
- - javax.batch.runtime.Metric - 20
- - javax.batch.runtime.Metric$MetricType - 19
- - javax.batch.runtime.JobInstance - 8
- - javax.batch.runtime.BatchStatus - 4
- - javax.batch.operations.NoSuchJobException - 2
- - javax.batch.runtime.BatchRuntime - 1

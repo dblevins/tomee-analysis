@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.ValidatorFactory - 6
- - javax.resource.spi.ResourceAdapterAssociation - 3
- - javax.validation.ConstraintViolationException - 2
- - javax.validation.Validator - 2

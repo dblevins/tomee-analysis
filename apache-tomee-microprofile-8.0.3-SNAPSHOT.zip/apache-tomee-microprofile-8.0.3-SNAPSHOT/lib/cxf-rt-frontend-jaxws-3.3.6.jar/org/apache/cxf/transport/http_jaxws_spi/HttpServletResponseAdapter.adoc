@@ -4,7 +4,3 @@
 
 == References
 
- - javax.xml.ws.spi.http.HttpExchange - 29
- - javax.servlet.ServletOutputStream - 1
- - javax.servlet.http.HttpServletResponse - 1
- - javax.servlet.http.Cookie - 1

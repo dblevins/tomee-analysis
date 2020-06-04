@@ -4,9 +4,3 @@
 
 == References
 
- - javax.validation.valueextraction.ValueExtractor - 42
- - javax.validation.metadata.ValidateUnwrappedValue - 7
- - javax.validation.ConstraintDeclarationException - 5
- - javax.validation.valueextraction.ValueExtractorDeclarationException - 2
- - javax.validation.valueextraction.ValueExtractorDefinitionException - 2
- - javax.validation.valueextraction.UnwrapByDefault - 1

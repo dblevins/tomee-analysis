@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/shared/StateType.class
+
+ - link:StateType-asmified.java[Asmified]
+
+== References
+

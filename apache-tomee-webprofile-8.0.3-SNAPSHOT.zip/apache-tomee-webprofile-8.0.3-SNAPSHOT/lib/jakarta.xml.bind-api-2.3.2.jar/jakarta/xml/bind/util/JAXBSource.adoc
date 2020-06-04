@@ -1,0 +1,6 @@
+= jakarta/xml/bind/util/JAXBSource.class
+
+ - link:JAXBSource-asmified.java[Asmified]
+
+== References
+

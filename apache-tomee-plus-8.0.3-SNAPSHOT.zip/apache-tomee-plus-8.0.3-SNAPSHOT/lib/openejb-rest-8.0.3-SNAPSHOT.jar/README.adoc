@@ -1,7 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/openejb-rest-8.0.3-SNAPSHOT.jar
 
- - link:org/apache/openejb/server/rest/RESTService.adoc[org/apache/openejb/server/rest/RESTService.class] - 111
- - link:org/apache/openejb/server/rest/RsServlet.adoc[org/apache/openejb/server/rest/RsServlet.class] - 27
- - link:org/apache/openejb/server/rest/InternalApplication.adoc[org/apache/openejb/server/rest/InternalApplication.class] - 13
- - link:org/apache/openejb/server/rest/RsHttpListener.adoc[org/apache/openejb/server/rest/RsHttpListener.class] - 3
- - link:org/apache/openejb/server/rest/OpenEJBRestServlet.adoc[org/apache/openejb/server/rest/OpenEJBRestServlet.class] - 2

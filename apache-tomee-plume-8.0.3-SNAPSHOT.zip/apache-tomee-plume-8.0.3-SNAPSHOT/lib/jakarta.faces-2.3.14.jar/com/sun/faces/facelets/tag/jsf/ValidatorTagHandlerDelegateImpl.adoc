@@ -4,23 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.ValidatorHandler - 40
- - javax.faces.view.facelets.FaceletContext - 25
- - javax.faces.component.UIComponent - 14
- - javax.faces.context.FacesContext - 14
- - javax.faces.view.facelets.Tag - 12
- - javax.faces.validator.Validator - 11
- - javax.faces.view.facelets.TagException - 8
- - javax.faces.view.facelets.TagAttribute - 8
- - javax.faces.view.facelets.MetaRuleset - 7
- - javax.el.ValueExpression - 7
- - javax.faces.view.facelets.ValidatorConfig - 6
- - javax.faces.component.EditableValueHolder - 6
- - javax.faces.view.facelets.FaceletHandler - 4
- - javax.el.ELContext - 3
- - javax.faces.application.Application - 2
- - javax.faces.view.facelets.TagHandlerDelegate - 2
- - javax.faces.view.facelets.CompositeFaceletHandler - 1
- - javax.faces.view.facelets.TagHandler - 1
- - javax.faces.view.facelets.ComponentHandler - 1
- - javax.faces.view.AttachedObjectHandler - 1

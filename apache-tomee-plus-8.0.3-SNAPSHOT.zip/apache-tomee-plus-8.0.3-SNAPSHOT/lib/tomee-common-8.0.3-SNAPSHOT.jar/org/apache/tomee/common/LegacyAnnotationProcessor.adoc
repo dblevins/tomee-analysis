@@ -4,10 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceRef - 8
- - javax.annotation.Resource - 8
- - javax.persistence.PersistenceContext - 8
- - javax.persistence.PersistenceUnit - 8
- - javax.ejb.EJB - 8
- - javax.annotation.PreDestroy - 1
- - javax.annotation.PostConstruct - 1

@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/BeanManager.class
+
+ - link:BeanManager-asmified.java[Asmified]
+
+== References
+

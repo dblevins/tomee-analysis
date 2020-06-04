@@ -1,3 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/tomee-webservices-8.0.3-SNAPSHOT.jar
 
- - link:org/apache/tomee/webservices/TomcatWsRegistry.adoc[org/apache/tomee/webservices/TomcatWsRegistry.class] - 9

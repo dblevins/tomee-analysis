@@ -1,0 +1,6 @@
+= jakarta/resource/spi/ConnectionRequestInfo.class
+
+ - link:ConnectionRequestInfo-asmified.java[Asmified]
+
+== References
+

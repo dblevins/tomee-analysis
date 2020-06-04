@@ -1,0 +1,6 @@
+= jakarta/xml/bind/ContextFinder$1.class
+
+ - link:ContextFinder$1-asmified.java[Asmified]
+
+== References
+

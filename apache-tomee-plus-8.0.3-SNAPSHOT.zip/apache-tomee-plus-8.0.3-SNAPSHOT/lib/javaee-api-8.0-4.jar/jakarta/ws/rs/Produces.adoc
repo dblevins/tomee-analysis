@@ -1,0 +1,6 @@
+= jakarta/ws/rs/Produces.class
+
+ - link:Produces-asmified.java[Asmified]
+
+== References
+

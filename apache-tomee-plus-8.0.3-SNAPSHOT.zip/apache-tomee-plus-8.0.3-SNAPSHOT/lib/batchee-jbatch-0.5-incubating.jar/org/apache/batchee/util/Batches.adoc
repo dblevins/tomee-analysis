@@ -4,7 +4,3 @@
 
 == References
 
- - javax.batch.runtime.BatchStatus - 20
- - javax.batch.operations.JobOperator - 14
- - javax.batch.runtime.JobExecution - 2
- - javax.batch.runtime.BatchRuntime - 2

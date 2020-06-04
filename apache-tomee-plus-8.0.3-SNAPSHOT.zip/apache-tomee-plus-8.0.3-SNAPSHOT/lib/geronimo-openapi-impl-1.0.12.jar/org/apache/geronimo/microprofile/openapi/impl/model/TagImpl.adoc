@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.Vetoed - 1
- - javax.json.bind.annotation.JsonbTransient - 1

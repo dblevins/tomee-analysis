@@ -1,0 +1,6 @@
+= jakarta/faces/validator/RequiredValidator.class
+
+ - link:RequiredValidator-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.XmlAdapter - 3
- - javax.persistence.EntityManagerFactory - 2

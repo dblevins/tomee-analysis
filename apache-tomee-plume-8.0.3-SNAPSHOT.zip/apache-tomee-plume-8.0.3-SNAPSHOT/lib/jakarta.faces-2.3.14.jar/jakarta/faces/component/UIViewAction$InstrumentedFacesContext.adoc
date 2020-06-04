@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIViewAction$InstrumentedFacesContext.class
+
+ - link:UIViewAction$InstrumentedFacesContext-asmified.java[Asmified]
+
+== References
+

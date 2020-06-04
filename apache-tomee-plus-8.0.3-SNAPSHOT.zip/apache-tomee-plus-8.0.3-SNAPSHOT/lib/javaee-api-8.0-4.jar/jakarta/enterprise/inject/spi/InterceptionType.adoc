@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/InterceptionType.class
+
+ - link:InterceptionType-asmified.java[Asmified]
+
+== References
+

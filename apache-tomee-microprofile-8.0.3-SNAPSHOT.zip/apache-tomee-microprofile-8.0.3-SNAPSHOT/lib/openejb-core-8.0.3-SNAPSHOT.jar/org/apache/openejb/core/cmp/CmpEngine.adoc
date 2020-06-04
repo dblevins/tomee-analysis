@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ejb.FinderException - 3
- - javax.ejb.EntityBean - 1
- - javax.ejb.CreateException - 1

@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.ExceptionHandler - 8
- - javax.faces.context.ExceptionHandlerWrapper - 2
- - javax.faces.event.ExceptionQueuedEvent - 2
- - javax.faces.event.ExceptionQueuedEventContext - 2
- - javax.faces.FacesException - 1
- - javax.enterprise.context.NonexistentConversationException - 1

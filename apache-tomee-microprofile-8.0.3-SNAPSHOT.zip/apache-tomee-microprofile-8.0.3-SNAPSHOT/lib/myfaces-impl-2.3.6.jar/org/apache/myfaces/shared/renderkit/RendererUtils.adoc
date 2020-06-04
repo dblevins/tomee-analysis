@@ -4,37 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 151
- - javax.faces.context.FacesContext - 112
- - javax.faces.component.html.HtmlInputText - 72
- - javax.faces.convert.Converter - 40
- - javax.faces.component.EditableValueHolder - 19
- - javax.faces.component.UISelectMany - 19
- - javax.faces.FacesException - 12
- - javax.faces.component.ValueHolder - 11
- - javax.faces.application.Application - 10
- - javax.faces.convert.ConverterException - 9
- - javax.faces.context.ExternalContext - 8
- - javax.faces.model.SelectItem - 7
- - javax.faces.application.ResourceHandler - 6
- - javax.el.ValueExpression - 6
- - javax.el.ELContext - 6
- - javax.faces.el.PropertyNotFoundException - 5
- - javax.faces.render.RenderKitFactory - 5
- - javax.faces.component.UIOutput - 5
- - javax.faces.render.RenderKit - 5
- - javax.faces.application.Resource - 5
- - javax.faces.application.ProjectStage - 4
- - javax.faces.component.UISelectOne - 3
- - javax.faces.application.FacesMessage - 3
- - javax.faces.component.UIViewRoot - 3
- - javax.faces.component.UIInput - 3
- - javax.faces.render.ResponseStateManager - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.el.MethodBinding - 2
- - javax.faces.el.ValueBinding - 2
- - javax.faces.event.PhaseId - 2
- - javax.faces.application.FacesMessage$Severity - 2
- - javax.faces.component.UIForm - 1
- - javax.faces.component.NamingContainer - 1
- - javax.faces.FactoryFinder - 1

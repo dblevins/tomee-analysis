@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.Bean - 2
- - javax.enterprise.inject.spi.BeanManager - 2

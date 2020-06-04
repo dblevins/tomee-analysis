@@ -1,0 +1,6 @@
+= jakarta/resource/cci/ResourceWarning.class
+
+ - link:ResourceWarning-asmified.java[Asmified]
+
+== References
+

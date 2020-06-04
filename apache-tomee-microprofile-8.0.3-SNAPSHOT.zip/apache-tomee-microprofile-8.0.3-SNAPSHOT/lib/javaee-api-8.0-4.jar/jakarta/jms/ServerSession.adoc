@@ -1,0 +1,6 @@
+= jakarta/jms/ServerSession.class
+
+ - link:ServerSession-asmified.java[Asmified]
+
+== References
+

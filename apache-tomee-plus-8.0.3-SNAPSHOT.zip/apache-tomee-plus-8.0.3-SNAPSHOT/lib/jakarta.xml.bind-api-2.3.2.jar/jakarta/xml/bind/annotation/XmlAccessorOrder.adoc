@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlAccessorOrder.class
+
+ - link:XmlAccessorOrder-asmified.java[Asmified]
+
+== References
+

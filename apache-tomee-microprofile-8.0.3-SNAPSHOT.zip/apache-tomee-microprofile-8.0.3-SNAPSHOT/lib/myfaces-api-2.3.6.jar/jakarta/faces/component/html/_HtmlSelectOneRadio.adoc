@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/_HtmlSelectOneRadio.class
+
+ - link:_HtmlSelectOneRadio-asmified.java[Asmified]
+
+== References
+

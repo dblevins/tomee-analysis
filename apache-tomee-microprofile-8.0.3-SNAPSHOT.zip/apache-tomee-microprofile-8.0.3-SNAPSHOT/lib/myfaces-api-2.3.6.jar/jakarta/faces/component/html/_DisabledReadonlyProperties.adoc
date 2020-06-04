@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/_DisabledReadonlyProperties.class
+
+ - link:_DisabledReadonlyProperties-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/jms/ObjectMessage.class
+
+ - link:ObjectMessage-asmified.java[Asmified]
+
+== References
+

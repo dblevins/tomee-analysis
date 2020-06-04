@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ContainerDescriptor - 1
- - javax.validation.metadata.CascadableDescriptor - 1
- - javax.validation.ConstraintViolation - 1

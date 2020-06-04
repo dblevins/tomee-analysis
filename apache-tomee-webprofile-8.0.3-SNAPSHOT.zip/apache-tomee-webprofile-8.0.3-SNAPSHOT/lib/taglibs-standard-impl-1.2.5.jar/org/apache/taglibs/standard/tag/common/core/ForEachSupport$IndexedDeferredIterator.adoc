@@ -4,5 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 7
- - javax.servlet.jsp.jstl.core.IndexedValueExpression - 2

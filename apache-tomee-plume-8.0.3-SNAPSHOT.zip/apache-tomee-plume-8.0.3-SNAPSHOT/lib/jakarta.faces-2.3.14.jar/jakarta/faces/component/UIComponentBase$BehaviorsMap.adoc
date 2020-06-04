@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$BehaviorsMap.class
+
+ - link:UIComponentBase$BehaviorsMap-asmified.java[Asmified]
+
+== References
+

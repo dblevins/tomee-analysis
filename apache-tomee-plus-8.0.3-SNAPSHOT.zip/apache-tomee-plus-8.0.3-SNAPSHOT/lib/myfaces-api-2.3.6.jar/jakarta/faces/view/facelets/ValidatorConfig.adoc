@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/ValidatorConfig.class
+
+ - link:ValidatorConfig-asmified.java[Asmified]
+
+== References
+

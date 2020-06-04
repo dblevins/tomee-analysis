@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPElement - 5
- - javax.xml.soap.SOAPEnvelope - 3

@@ -1,0 +1,6 @@
+= jakarta/ws/rs/sse/OutboundSseEvent.class
+
+ - link:OutboundSseEvent-asmified.java[Asmified]
+
+== References
+

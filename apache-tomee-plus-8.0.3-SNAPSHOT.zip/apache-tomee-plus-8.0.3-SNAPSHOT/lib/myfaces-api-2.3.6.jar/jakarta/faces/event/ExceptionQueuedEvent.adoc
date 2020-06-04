@@ -1,0 +1,6 @@
+= jakarta/faces/event/ExceptionQueuedEvent.class
+
+ - link:ExceptionQueuedEvent-asmified.java[Asmified]
+
+== References
+

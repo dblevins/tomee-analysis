@@ -1,0 +1,6 @@
+= jakarta/websocket/SessionException.class
+
+ - link:SessionException-asmified.java[Asmified]
+
+== References
+

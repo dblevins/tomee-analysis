@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.application.ResourceHandler - 6
- - javax.enterprise.context.spi.CreationalContext - 3
- - javax.faces.context.FacesContext - 3
- - javax.faces.application.Application - 2
- - javax.enterprise.context.RequestScoped - 1

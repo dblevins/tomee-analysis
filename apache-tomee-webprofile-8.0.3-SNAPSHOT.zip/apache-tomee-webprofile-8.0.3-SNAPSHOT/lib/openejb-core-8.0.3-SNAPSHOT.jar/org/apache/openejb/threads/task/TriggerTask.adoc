@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.concurrent.LastExecution - 3
- - javax.enterprise.concurrent.Trigger - 3

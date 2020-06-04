@@ -4,4 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 47

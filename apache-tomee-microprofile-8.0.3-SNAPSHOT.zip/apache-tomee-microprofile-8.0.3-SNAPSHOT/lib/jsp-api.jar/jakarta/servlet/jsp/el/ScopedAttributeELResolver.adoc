@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/el/ScopedAttributeELResolver.class
+
+ - link:ScopedAttributeELResolver-asmified.java[Asmified]
+
+== References
+

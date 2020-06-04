@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintTarget - 29
- - javax.validation.constraintvalidation.ValidationTarget - 5
- - javax.validation.ParameterNameProvider - 3
- - javax.validation.ConstraintDeclarationException - 2

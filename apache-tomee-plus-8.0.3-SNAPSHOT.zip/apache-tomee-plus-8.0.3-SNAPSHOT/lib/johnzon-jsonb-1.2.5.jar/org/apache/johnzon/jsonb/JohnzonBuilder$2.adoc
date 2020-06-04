@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonParserFactory - 4
- - javax.json.spi.JsonProvider - 2

@@ -1,0 +1,6 @@
+= jakarta/security/auth/message/AuthStatus.class
+
+ - link:AuthStatus-asmified.java[Asmified]
+
+== References
+

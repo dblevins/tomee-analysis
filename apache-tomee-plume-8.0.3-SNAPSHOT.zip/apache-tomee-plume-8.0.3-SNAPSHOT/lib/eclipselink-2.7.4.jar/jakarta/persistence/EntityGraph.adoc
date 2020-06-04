@@ -1,0 +1,6 @@
+= jakarta/persistence/EntityGraph.class
+
+ - link:EntityGraph-asmified.java[Asmified]
+
+== References
+

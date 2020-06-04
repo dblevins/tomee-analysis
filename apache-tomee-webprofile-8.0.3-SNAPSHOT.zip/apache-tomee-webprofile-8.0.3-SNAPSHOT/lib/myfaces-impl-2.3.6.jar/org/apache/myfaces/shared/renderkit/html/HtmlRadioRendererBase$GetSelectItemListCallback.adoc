@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.component.UISelectOne - 13
- - javax.faces.context.FacesContext - 6
- - javax.faces.component.visit.VisitResult - 5
- - javax.faces.convert.Converter - 5
- - javax.faces.model.SelectItem - 5
- - javax.faces.component.visit.VisitContext - 5
- - javax.faces.component.UIComponent - 4
- - javax.faces.FacesException - 2
- - javax.faces.component.visit.VisitCallback - 1

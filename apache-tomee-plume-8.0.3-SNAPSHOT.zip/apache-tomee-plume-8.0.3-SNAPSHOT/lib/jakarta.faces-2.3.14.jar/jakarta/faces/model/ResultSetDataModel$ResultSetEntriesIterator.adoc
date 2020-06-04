@@ -1,0 +1,6 @@
+= jakarta/faces/model/ResultSetDataModel$ResultSetEntriesIterator.class
+
+ - link:ResultSetDataModel$ResultSetEntriesIterator-asmified.java[Asmified]
+
+== References
+

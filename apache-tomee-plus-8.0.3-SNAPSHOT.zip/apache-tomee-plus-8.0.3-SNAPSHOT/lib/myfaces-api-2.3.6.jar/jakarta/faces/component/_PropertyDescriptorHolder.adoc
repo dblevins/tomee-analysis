@@ -1,0 +1,6 @@
+= jakarta/faces/component/_PropertyDescriptorHolder.class
+
+ - link:_PropertyDescriptorHolder-asmified.java[Asmified]
+
+== References
+

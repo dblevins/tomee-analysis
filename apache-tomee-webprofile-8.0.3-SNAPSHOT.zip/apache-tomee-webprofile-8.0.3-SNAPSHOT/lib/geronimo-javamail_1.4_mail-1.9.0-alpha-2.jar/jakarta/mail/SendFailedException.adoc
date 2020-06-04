@@ -1,0 +1,6 @@
+= jakarta/mail/SendFailedException.class
+
+ - link:SendFailedException-asmified.java[Asmified]
+
+== References
+

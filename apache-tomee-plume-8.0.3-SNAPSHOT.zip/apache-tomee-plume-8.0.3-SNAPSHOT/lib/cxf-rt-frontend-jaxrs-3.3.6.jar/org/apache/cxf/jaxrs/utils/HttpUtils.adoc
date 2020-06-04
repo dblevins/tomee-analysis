@@ -4,14 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 19
- - javax.ws.rs.core.MultivaluedMap - 16
- - javax.ws.rs.ext.RuntimeDelegate - 14
- - javax.ws.rs.core.MediaType - 9
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 8
- - javax.servlet.http.HttpServletResponse - 4
- - javax.ws.rs.core.PathSegment - 3
- - javax.ws.rs.core.Response$Status - 3
- - javax.ws.rs.core.UriBuilder - 2
- - javax.servlet.ServletConfig - 1
- - javax.servlet.ServletContext - 1

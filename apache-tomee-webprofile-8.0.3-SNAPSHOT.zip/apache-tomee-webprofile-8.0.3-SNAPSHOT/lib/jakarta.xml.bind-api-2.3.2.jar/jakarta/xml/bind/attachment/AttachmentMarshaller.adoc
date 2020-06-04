@@ -1,0 +1,6 @@
+= jakarta/xml/bind/attachment/AttachmentMarshaller.class
+
+ - link:AttachmentMarshaller-asmified.java[Asmified]
+
+== References
+

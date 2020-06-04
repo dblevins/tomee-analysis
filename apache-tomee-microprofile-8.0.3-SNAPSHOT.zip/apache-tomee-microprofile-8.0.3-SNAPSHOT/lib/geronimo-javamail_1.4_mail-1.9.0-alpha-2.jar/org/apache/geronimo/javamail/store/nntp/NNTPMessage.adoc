@@ -4,11 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 37
- - javax.mail.internet.InternetHeaders - 19
- - javax.mail.IllegalWriteException - 10
- - javax.mail.Flags - 9
- - javax.mail.Flags$Flag - 6
- - javax.mail.internet.MimeMessage - 5
- - javax.mail.Session - 3
- - javax.mail.Folder - 2

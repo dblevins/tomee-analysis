@@ -4,13 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 8
- - javax.websocket.server.ServerApplicationConfig - 7
- - javax.servlet.ServletException - 5
- - javax.websocket.Endpoint - 2
- - javax.websocket.DeploymentException - 2
- - javax.websocket.server.ServerEndpoint - 2
- - javax.websocket.server.ServerEndpointConfig - 2
- - javax.servlet.ServletContainerInitializer - 1
- - javax.websocket.ContainerProvider - 1
- - javax.servlet.annotation.HandlesTypes - 1

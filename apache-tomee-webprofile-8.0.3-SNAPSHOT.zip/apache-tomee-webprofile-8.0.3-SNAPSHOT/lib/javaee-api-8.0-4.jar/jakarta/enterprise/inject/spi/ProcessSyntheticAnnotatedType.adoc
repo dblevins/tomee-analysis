@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/ProcessSyntheticAnnotatedType.class
+
+ - link:ProcessSyntheticAnnotatedType-asmified.java[Asmified]
+
+== References
+

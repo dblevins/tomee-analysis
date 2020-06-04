@@ -4,4 +4,3 @@
 
 == References
 
- - javax.websocket.server.ServerEndpointConfig - 5

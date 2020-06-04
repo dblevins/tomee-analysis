@@ -1,0 +1,6 @@
+= jakarta/faces/component/WrapperEvent.class
+
+ - link:WrapperEvent-asmified.java[Asmified]
+
+== References
+

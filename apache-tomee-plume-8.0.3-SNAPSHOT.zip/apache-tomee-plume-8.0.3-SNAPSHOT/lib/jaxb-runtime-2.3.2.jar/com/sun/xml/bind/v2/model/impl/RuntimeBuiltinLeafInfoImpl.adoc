@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.MarshalException - 4
- - javax.activation.DataHandler - 1

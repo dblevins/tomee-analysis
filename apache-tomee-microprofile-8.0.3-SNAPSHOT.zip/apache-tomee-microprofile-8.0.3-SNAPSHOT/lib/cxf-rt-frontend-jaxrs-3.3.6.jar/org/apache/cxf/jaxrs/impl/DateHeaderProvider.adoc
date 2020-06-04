@@ -4,4 +4,3 @@
 
 == References
 
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.soap.MessageFactory - 14
- - javax.xml.soap.SOAPFactory - 14
- - javax.xml.soap.SOAPException - 9

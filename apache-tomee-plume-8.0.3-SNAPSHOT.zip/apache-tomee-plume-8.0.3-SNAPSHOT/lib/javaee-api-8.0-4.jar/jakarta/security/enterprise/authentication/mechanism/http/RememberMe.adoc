@@ -1,0 +1,6 @@
+= jakarta/security/enterprise/authentication/mechanism/http/RememberMe.class
+
+ - link:RememberMe-asmified.java[Asmified]
+
+== References
+

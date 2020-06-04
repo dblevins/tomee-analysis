@@ -4,4 +4,3 @@
 
 == References
 
- - javax.json.bind.config.PropertyNamingStrategy - 19

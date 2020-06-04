@@ -1,0 +1,6 @@
+= jakarta/json/bind/JsonbBuilder.class
+
+ - link:JsonbBuilder-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 12
- - javax.el.ValueExpression - 3
- - javax.el.PropertyNotWritableException - 2

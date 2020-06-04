@@ -4,17 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 22
- - javax.faces.component.UIViewRoot - 13
- - javax.faces.application.Application - 12
- - javax.faces.application.ApplicationFactory - 11
- - javax.faces.render.RenderKitFactory - 10
- - javax.faces.render.RenderKit - 9
- - javax.el.ELContext - 9
- - javax.faces.context.ExternalContext - 8
- - javax.faces.context.ExceptionHandler - 8
- - javax.el.ELContextEvent - 4
- - javax.el.ELContextListener - 3
- - javax.faces.FactoryFinder - 2
- - javax.el.ELResolver - 2
- - javax.faces.component.UINamingContainer - 1

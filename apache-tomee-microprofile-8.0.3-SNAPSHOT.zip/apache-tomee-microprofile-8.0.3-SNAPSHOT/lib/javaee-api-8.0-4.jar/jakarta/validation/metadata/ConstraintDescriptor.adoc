@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/ConstraintDescriptor.class
+
+ - link:ConstraintDescriptor-asmified.java[Asmified]
+
+== References
+

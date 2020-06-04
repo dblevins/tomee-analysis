@@ -4,11 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 73
- - javax.servlet.ServletContext - 37
- - javax.servlet.RequestDispatcher - 6
- - javax.servlet.http.HttpServletResponse - 5
- - javax.servlet.ServletException - 2
- - javax.servlet.ServletRequest - 1
- - javax.servlet.ServletResponse - 1
- - javax.servlet.ServletOutputStream - 1

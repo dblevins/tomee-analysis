@@ -4,14 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPMessage - 29
- - javax.xml.soap.SOAPPart - 22
- - javax.xml.soap.SOAPEnvelope - 14
- - javax.xml.soap.SOAPHeader - 10
- - javax.xml.soap.SOAPElement - 7
- - javax.xml.soap.AttachmentPart - 6
- - javax.xml.soap.SOAPException - 6
- - javax.activation.DataHandler - 6
- - javax.xml.soap.SOAPBody - 4
- - javax.xml.soap.MessageFactory - 2
- - javax.activation.DataSource - 2

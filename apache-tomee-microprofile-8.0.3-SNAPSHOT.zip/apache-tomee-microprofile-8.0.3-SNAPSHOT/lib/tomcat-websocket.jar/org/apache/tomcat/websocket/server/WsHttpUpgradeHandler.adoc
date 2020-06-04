@@ -4,14 +4,3 @@
 
 == References
 
- - javax.websocket.CloseReason - 20
- - javax.websocket.Endpoint - 10
- - javax.websocket.server.ServerEndpointConfig - 7
- - javax.servlet.http.WebConnection - 6
- - javax.websocket.CloseReason$CloseCodes - 5
- - javax.websocket.CloseReason$CloseCode - 5
- - javax.servlet.http.HttpSession - 2
- - javax.websocket.Session - 2
- - javax.websocket.EndpointConfig - 2
- - javax.websocket.Extension - 2
- - javax.websocket.DeploymentException - 2

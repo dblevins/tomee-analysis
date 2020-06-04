@@ -4,16 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.PageContext - 22
- - javax.servlet.jsp.JspException - 16
- - javax.servlet.jsp.JspTagException - 16
- - javax.servlet.ServletException - 5
- - javax.servlet.ServletContext - 5
- - javax.servlet.ServletRequest - 4
- - javax.servlet.jsp.tagext.BodyTagSupport - 3
- - javax.servlet.http.HttpServletResponse - 3
- - javax.servlet.http.HttpServletRequest - 3
- - javax.servlet.ServletResponse - 3
- - javax.servlet.RequestDispatcher - 2
- - javax.servlet.jsp.JspWriter - 2
- - javax.servlet.jsp.tagext.TryCatchFinally - 1

@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SOAPEnvelope.class
+
+ - link:SOAPEnvelope-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/soap12/SOAP12Body.class
+
+ - link:SOAP12Body-asmified.java[Asmified]
+
+== References
+

@@ -4,13 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlElementDecl - 23
- - javax.activation.MimeType - 5
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 4
- - javax.xml.bind.annotation.XmlSchema - 4
- - javax.xml.bind.annotation.XmlAttachmentRef - 2
- - javax.xml.bind.annotation.XmlIDREF - 1
- - javax.xml.bind.JAXBElement - 1
- - javax.xml.bind.annotation.XmlElementDecl$GLOBAL - 1
- - javax.xml.bind.annotation.XmlID - 1
- - javax.xml.bind.annotation.XmlInlineBinaryData - 1

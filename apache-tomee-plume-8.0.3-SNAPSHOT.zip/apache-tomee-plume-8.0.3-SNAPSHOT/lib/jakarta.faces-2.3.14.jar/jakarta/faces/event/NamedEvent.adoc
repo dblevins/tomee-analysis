@@ -1,0 +1,6 @@
+= jakarta/faces/event/NamedEvent.class
+
+ - link:NamedEvent-asmified.java[Asmified]
+
+== References
+

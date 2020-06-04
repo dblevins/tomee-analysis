@@ -1,0 +1,6 @@
+= jakarta/faces/annotation/ViewMap.class
+
+ - link:ViewMap-asmified.java[Asmified]
+
+== References
+

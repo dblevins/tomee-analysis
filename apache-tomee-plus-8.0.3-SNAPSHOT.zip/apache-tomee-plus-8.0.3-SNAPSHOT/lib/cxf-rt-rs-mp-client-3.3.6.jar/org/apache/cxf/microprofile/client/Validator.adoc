@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.Path - 22
- - javax.ws.rs.PathParam - 3
- - javax.ws.rs.HttpMethod - 3

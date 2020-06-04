@@ -4,4 +4,3 @@
 
 == References
 
- - javax.validation.valueextraction.ValueExtractor - 8

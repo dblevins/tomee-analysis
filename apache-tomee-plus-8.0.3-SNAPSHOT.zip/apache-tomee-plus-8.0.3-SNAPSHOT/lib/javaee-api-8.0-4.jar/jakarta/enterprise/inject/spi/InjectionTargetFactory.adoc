@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/InjectionTargetFactory.class
+
+ - link:InjectionTargetFactory-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.context.RequestScoped - 3
- - javax.enterprise.context.spi.Context - 2
- - javax.enterprise.context.ContextNotActiveException - 1
- - javax.enterprise.context.control.RequestContextController - 1

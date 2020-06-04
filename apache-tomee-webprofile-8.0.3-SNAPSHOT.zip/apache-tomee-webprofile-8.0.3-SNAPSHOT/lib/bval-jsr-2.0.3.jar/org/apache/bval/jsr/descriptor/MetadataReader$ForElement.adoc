@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.metadata.Scope - 7
- - javax.validation.groups.Default - 1

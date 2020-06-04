@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Selection - 7

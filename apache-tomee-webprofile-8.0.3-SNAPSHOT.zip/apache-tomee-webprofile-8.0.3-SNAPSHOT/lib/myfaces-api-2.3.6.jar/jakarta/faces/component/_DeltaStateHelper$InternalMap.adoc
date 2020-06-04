@@ -1,0 +1,6 @@
+= jakarta/faces/component/_DeltaStateHelper$InternalMap.class
+
+ - link:_DeltaStateHelper$InternalMap-asmified.java[Asmified]
+
+== References
+

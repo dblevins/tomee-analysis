@@ -1,0 +1,6 @@
+= jakarta/websocket/Decoder$BinaryStream.class
+
+ - link:Decoder$BinaryStream-asmified.java[Asmified]
+
+== References
+

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 7
- - javax.el.FunctionMapper - 4
- - javax.el.ELResolver - 4
- - javax.el.VariableMapper - 4
- - javax.el.ELContext - 2

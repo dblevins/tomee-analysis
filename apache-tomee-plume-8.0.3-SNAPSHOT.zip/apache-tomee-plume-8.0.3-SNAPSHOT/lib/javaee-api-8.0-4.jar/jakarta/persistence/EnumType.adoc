@@ -1,0 +1,6 @@
+= jakarta/persistence/EnumType.class
+
+ - link:EnumType-asmified.java[Asmified]
+
+== References
+

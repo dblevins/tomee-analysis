@@ -4,9 +4,3 @@
 
 == References
 
- - javax.transaction.SystemException - 11
- - javax.transaction.Synchronization - 5
- - javax.transaction.RollbackException - 3
- - javax.transaction.Transaction - 1
- - javax.transaction.HeuristicRollbackException - 1
- - javax.transaction.HeuristicMixedException - 1

@@ -4,9 +4,3 @@
 
 == References
 
- - javax.jms.Message - 50
- - javax.jms.JMSException - 32
- - javax.jms.MessageConsumer - 23
- - javax.jms.JMSRuntimeException - 12
- - javax.jms.MessageListener - 5
- - javax.jms.JMSConsumer - 1

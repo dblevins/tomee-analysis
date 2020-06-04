@@ -1,6 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/cxf-rt-rs-service-description-3.3.6.jar
 
- - link:org/apache/cxf/jaxrs/model/wadl/WadlGenerator.adoc[org/apache/cxf/jaxrs/model/wadl/WadlGenerator.class] - 292
- - link:org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter.adoc[org/apache/cxf/jaxrs/model/wadl/WadlGenerator$StringSchemaWriter.class] - 17
- - link:org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter.adoc[org/apache/cxf/jaxrs/model/wadl/WadlGenerator$ExternalSchemaWriter.class] - 9
- - link:org/apache/cxf/jaxrs/model/wadl/WadlGenerator$JaxbContextQNameResolver.adoc[org/apache/cxf/jaxrs/model/wadl/WadlGenerator$JaxbContextQNameResolver.class] - 5

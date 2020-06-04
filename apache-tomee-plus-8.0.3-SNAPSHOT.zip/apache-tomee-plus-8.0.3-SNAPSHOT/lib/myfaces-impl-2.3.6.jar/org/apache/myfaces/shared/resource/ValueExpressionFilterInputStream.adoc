@@ -4,13 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 26
- - javax.el.ELContext - 14
- - javax.el.ELException - 9
- - javax.faces.event.ExceptionQueuedEventContext - 9
- - javax.faces.application.Resource - 5
- - javax.faces.application.Application - 4
- - javax.el.ValueExpression - 3
- - javax.el.ExpressionFactory - 2
- - javax.faces.event.ExceptionQueuedEvent - 1
- - javax.faces.component.UIComponent - 1

@@ -1,0 +1,6 @@
+= jakarta/validation/BootstrapConfiguration.class
+
+ - link:BootstrapConfiguration-asmified.java[Asmified]
+
+== References
+

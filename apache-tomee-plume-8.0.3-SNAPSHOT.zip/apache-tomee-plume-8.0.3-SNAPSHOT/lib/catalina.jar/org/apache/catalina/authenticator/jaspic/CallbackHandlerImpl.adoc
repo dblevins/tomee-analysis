@@ -4,5 +4,3 @@
 
 == References
 
- - javax.security.auth.message.callback.CallerPrincipalCallback - 5
- - javax.security.auth.message.callback.GroupPrincipalCallback - 3

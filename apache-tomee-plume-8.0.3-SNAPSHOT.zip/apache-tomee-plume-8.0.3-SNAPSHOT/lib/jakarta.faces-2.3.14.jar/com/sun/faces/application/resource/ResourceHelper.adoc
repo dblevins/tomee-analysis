@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 37
- - javax.faces.context.ExternalContext - 10
- - javax.servlet.http.HttpServletResponse - 3

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ValidatorFactory - 5
- - javax.inject.Provider - 1

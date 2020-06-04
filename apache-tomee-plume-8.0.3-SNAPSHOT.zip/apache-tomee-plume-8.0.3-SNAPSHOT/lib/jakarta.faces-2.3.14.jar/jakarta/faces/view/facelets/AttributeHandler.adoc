@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/AttributeHandler.class
+
+ - link:AttributeHandler-asmified.java[Asmified]
+
+== References
+

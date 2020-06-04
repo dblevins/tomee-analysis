@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/AmbiguousResolutionException.class
+
+ - link:AmbiguousResolutionException-asmified.java[Asmified]
+
+== References
+

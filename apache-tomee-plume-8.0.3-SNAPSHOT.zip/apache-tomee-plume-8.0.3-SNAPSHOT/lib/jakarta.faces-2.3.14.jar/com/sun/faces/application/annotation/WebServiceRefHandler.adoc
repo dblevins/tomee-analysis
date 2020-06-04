@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceRef - 18
- - javax.faces.context.FacesContext - 10

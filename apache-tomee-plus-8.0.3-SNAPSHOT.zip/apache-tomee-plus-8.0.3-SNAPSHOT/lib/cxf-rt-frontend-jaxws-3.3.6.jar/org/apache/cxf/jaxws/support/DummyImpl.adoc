@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jws.soap.SOAPBinding - 1
- - javax.jws.soap.SOAPBinding$ParameterStyle - 1

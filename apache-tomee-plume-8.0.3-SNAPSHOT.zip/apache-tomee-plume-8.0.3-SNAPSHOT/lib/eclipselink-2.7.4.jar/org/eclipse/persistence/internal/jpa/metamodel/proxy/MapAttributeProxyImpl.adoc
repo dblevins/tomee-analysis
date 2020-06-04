@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.Type - 2
- - javax.persistence.metamodel.Attribute - 2
- - javax.persistence.metamodel.MapAttribute - 1

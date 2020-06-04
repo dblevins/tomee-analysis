@@ -4,21 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 32
- - javax.faces.component.UIComponent - 26
- - javax.faces.application.Resource - 12
- - javax.faces.context.ResponseWriter - 11
- - javax.faces.application.Application - 6
- - javax.faces.event.ComponentSystemEvent - 5
- - javax.faces.view.Location - 4
- - javax.faces.application.ResourceHandler - 4
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.render.Renderer - 3
- - javax.faces.application.ProjectStage - 3
- - javax.faces.application.FacesMessage - 3
- - javax.faces.context.ExternalContext - 2
- - javax.faces.event.PostAddToViewEvent - 2
- - javax.faces.FacesException - 2
- - javax.faces.event.ListenerFor - 1
- - javax.faces.event.PreRenderViewEvent - 1
- - javax.faces.event.ComponentSystemEventListener - 1

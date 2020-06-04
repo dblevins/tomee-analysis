@@ -4,10 +4,3 @@
 
 == References
 
- - javax.batch.operations.JobRestartException - 4
- - javax.batch.operations.NoSuchJobExecutionException - 3
- - javax.batch.operations.JobExecutionNotMostRecentException - 2
- - javax.batch.operations.JobStartException - 2
- - javax.batch.operations.JobExecutionAlreadyCompleteException - 2
- - javax.batch.runtime.JobInstance - 1
- - javax.batch.operations.JobExecutionNotRunningException - 1

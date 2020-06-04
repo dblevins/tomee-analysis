@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintViolation - 4
- - javax.validation.Validator - 1

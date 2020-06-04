@@ -1,0 +1,6 @@
+= jakarta/ejb/TimedObject.class
+
+ - link:TimedObject-asmified.java[Asmified]
+
+== References
+

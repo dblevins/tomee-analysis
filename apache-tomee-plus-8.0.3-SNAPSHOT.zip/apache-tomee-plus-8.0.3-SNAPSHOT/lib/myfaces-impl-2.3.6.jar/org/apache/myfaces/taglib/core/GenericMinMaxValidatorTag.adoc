@@ -4,8 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 18
- - javax.servlet.jsp.JspException - 5
- - javax.el.ELContext - 4
- - javax.faces.context.FacesContext - 3
- - javax.faces.validator.Validator - 2

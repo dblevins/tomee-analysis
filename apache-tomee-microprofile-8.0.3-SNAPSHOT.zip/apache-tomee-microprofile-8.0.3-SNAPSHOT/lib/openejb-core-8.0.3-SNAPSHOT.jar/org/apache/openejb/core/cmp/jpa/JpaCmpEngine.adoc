@@ -4,12 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManager - 39
- - javax.persistence.Query - 23
- - javax.ejb.EntityBean - 13
- - javax.ejb.FinderException - 9
- - javax.ejb.EJBException - 6
- - javax.ejb.EJBObject - 6
- - javax.ejb.EJBLocalObject - 6
- - javax.persistence.Parameter - 1
- - javax.ejb.CreateException - 1

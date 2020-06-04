@@ -4,27 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.Metamodel - 126
- - javax.persistence.criteria.JoinType - 112
- - javax.persistence.metamodel.PluralAttribute - 108
- - javax.persistence.metamodel.Bindable - 60
- - javax.persistence.metamodel.ManagedType - 59
- - javax.persistence.metamodel.PluralAttribute$CollectionType - 54
- - javax.persistence.criteria.Path - 44
- - javax.persistence.metamodel.Type$PersistenceType - 30
- - javax.persistence.metamodel.SingularAttribute - 26
- - javax.persistence.metamodel.Attribute - 21
- - javax.persistence.metamodel.Type - 20
- - javax.persistence.criteria.Join - 16
- - javax.persistence.criteria.Fetch - 15
- - javax.persistence.metamodel.MapAttribute - 11
- - javax.persistence.criteria.ListJoin - 9
- - javax.persistence.metamodel.SetAttribute - 9
- - javax.persistence.metamodel.CollectionAttribute - 9
- - javax.persistence.criteria.CollectionJoin - 9
- - javax.persistence.criteria.SetJoin - 9
- - javax.persistence.metamodel.ListAttribute - 9
- - javax.persistence.criteria.MapJoin - 9
- - javax.persistence.metamodel.Attribute$PersistentAttributeType - 3
- - javax.persistence.criteria.Expression - 3
- - javax.persistence.criteria.From - 2

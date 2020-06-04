@@ -4,4 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.jstl.sql.Result - 1

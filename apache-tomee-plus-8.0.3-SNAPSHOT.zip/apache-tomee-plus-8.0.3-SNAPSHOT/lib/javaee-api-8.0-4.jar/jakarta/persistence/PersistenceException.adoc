@@ -1,0 +1,6 @@
+= jakarta/persistence/PersistenceException.class
+
+ - link:PersistenceException-asmified.java[Asmified]
+
+== References
+

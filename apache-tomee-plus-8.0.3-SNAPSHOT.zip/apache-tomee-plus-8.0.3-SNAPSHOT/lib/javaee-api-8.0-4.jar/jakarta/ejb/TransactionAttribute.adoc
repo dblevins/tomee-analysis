@@ -1,0 +1,6 @@
+= jakarta/ejb/TransactionAttribute.class
+
+ - link:TransactionAttribute-asmified.java[Asmified]
+
+== References
+

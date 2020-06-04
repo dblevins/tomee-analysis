@@ -4,28 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 70
- - javax.jms.Destination - 21
- - javax.jms.Message - 16
- - javax.jms.MessageListener - 15
- - javax.jms.IllegalStateException - 14
- - javax.jms.MessageConsumer - 12
- - javax.jms.Topic - 9
- - javax.jms.TopicSubscriber - 8
- - javax.jms.Queue - 8
- - javax.jms.InvalidDestinationException - 4
- - javax.jms.QueueReceiver - 4
- - javax.jms.QueueBrowser - 3
- - javax.jms.ObjectMessage - 2
- - javax.jms.TopicPublisher - 2
- - javax.jms.MessageProducer - 2
- - javax.jms.TextMessage - 2
- - javax.jms.TemporaryTopic - 2
- - javax.jms.TemporaryQueue - 2
- - javax.jms.QueueSender - 2
- - javax.jms.MapMessage - 1
- - javax.jms.Session - 1
- - javax.jms.TopicSession - 1
- - javax.jms.QueueSession - 1
- - javax.jms.StreamMessage - 1
- - javax.jms.BytesMessage - 1

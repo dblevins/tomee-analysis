@@ -4,5 +4,3 @@
 
 == References
 
- - javax.security.jacc.PolicyContextException - 14
- - javax.security.jacc.PolicyConfiguration - 2

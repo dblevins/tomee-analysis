@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/CriteriaBuilder$Coalesce.class
+
+ - link:CriteriaBuilder$Coalesce-asmified.java[Asmified]
+
+== References
+

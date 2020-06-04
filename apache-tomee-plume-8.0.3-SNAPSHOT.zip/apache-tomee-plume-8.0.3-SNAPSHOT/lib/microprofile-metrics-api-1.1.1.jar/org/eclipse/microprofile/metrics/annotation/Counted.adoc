@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.util.Nonbinding - 8
- - javax.interceptor.InterceptorBinding - 1

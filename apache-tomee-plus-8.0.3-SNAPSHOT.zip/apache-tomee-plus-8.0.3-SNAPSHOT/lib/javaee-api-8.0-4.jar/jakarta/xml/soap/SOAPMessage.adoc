@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SOAPMessage.class
+
+ - link:SOAPMessage-asmified.java[Asmified]
+
+== References
+

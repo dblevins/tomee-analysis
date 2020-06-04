@@ -1,0 +1,6 @@
+= jakarta/resource/spi/ResourceAllocationException.class
+
+ - link:ResourceAllocationException-asmified.java[Asmified]
+
+== References
+

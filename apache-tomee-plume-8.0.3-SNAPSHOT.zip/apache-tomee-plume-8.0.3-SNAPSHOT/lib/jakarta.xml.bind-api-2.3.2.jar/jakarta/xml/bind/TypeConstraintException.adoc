@@ -1,0 +1,6 @@
+= jakarta/xml/bind/TypeConstraintException.class
+
+ - link:TypeConstraintException-asmified.java[Asmified]
+
+== References
+

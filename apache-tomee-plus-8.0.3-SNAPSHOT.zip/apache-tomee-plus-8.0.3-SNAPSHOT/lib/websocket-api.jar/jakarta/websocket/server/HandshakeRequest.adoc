@@ -1,0 +1,6 @@
+= jakarta/websocket/server/HandshakeRequest.class
+
+ - link:HandshakeRequest-asmified.java[Asmified]
+
+== References
+

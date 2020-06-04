@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/Client.class
+
+ - link:Client-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPMessage - 4
- - javax.xml.soap.SOAPPart - 1

@@ -4,15 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 53
- - javax.el.ELContext - 21
- - javax.faces.FacesException - 17
- - javax.faces.application.Application - 16
- - javax.faces.context.ExternalContext - 14
- - javax.el.ExpressionFactory - 13
- - javax.el.ValueExpression - 10
- - javax.el.ELResolver - 7
- - javax.faces.component.UIViewRoot - 5
- - javax.faces.application.ProjectStage - 4
- - javax.el.ELException - 2
- - javax.faces.el.ValueBinding - 2

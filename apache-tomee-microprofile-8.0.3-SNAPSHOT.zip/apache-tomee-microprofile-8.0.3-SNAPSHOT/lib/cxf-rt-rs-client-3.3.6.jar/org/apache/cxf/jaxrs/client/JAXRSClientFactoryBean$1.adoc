@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ws.rs.ext.ParamConverter - 1
- - javax.ws.rs.HeaderParam - 1
- - javax.ws.rs.ext.ParamConverterProvider - 1
- - javax.ws.rs.CookieParam - 1

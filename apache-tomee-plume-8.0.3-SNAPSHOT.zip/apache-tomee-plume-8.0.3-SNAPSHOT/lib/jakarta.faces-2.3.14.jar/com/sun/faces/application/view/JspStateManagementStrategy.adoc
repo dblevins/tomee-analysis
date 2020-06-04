@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 31
- - javax.faces.context.FacesContext - 21
- - javax.faces.component.UIViewRoot - 14
- - javax.faces.FacesException - 4
- - javax.faces.render.ResponseStateManager - 3
- - javax.faces.view.StateManagementStrategy - 2
- - javax.faces.application.ProjectStage - 2

@@ -1,0 +1,6 @@
+= jakarta/faces/validator/MessageFactory$BindingFacesMessage.class
+
+ - link:MessageFactory$BindingFacesMessage-asmified.java[Asmified]
+
+== References
+

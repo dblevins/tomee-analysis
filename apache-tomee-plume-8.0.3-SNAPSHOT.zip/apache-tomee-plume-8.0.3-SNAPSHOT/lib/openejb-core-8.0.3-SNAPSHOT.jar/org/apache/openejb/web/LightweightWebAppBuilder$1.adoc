@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContextEvent - 5
- - javax.servlet.ServletContextListener - 2

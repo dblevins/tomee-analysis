@@ -1,0 +1,6 @@
+= jakarta/batch/api/chunk/CheckpointAlgorithm.class
+
+ - link:CheckpointAlgorithm-asmified.java[Asmified]
+
+== References
+

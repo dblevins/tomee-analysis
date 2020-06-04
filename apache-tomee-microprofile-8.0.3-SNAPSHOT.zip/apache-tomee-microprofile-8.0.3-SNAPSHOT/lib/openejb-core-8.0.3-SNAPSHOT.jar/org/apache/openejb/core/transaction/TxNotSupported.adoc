@@ -4,5 +4,3 @@
 
 == References
 
- - javax.transaction.Transaction - 7
- - javax.transaction.TransactionManager - 2

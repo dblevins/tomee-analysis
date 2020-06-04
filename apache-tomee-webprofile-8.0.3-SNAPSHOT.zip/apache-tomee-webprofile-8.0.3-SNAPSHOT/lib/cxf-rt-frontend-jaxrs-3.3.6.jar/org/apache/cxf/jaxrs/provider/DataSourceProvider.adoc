@@ -4,13 +4,3 @@
 
 == References
 
- - javax.activation.DataSource - 13
- - javax.ws.rs.core.MediaType - 12
- - javax.ws.rs.core.MultivaluedMap - 7
- - javax.activation.DataHandler - 6
- - javax.activation.FileDataSource - 3
- - javax.ws.rs.core.Response - 1
- - javax.ws.rs.ext.Provider - 1
- - javax.ws.rs.WebApplicationException - 1
- - javax.ws.rs.ext.MessageBodyWriter - 1
- - javax.ws.rs.ext.MessageBodyReader - 1

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.SessionBeanType - 9
- - javax.enterprise.inject.spi.AnnotatedType - 4
- - javax.enterprise.inject.spi.BeanAttributes - 3
- - javax.enterprise.inject.spi.InjectionTargetFactory - 1

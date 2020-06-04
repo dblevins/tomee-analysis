@@ -1,0 +1,6 @@
+= jakarta/faces/webapp/AttributeTag.class
+
+ - link:AttributeTag-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManager - 8
- - javax.persistence.TypedQuery - 4

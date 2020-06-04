@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/CollectionAttribute.class
+
+ - link:CollectionAttribute-asmified.java[Asmified]
+
+== References
+

@@ -4,21 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 29
- - javax.servlet.ServletContextEvent - 26
- - javax.servlet.ServletRequestEvent - 13
- - javax.servlet.ServletContextListener - 12
- - javax.servlet.ServletRequest - 11
- - javax.servlet.ServletRequestListener - 10
- - javax.servlet.ServletRegistration$Dynamic - 7
- - javax.servlet.descriptor.JspConfigDescriptor - 7
- - javax.servlet.ServletSecurityElement - 7
- - javax.servlet.ServletException - 5
- - javax.servlet.ServletContainerInitializer - 4
- - javax.servlet.Servlet - 3
- - javax.servlet.FilterConfig - 2
- - javax.servlet.http.HttpSessionListener - 1
- - javax.servlet.http.HttpSessionIdListener - 1
- - javax.servlet.ServletRequestAttributeListener - 1
- - javax.servlet.http.HttpSessionAttributeListener - 1
- - javax.servlet.ServletContextAttributeListener - 1

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ElementDescriptor - 8
- - javax.validation.metadata.ConstraintDescriptor - 1
- - javax.validation.metadata.ElementDescriptor$ConstraintFinder - 1

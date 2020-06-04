@@ -1,0 +1,6 @@
+= jakarta/faces/component/_MethodBindingToActionListener.class
+
+ - link:_MethodBindingToActionListener-asmified.java[Asmified]
+
+== References
+

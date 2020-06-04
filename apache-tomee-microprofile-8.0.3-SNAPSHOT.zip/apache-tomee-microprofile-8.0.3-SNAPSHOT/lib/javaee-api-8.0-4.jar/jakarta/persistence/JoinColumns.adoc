@@ -1,0 +1,6 @@
+= jakarta/persistence/JoinColumns.class
+
+ - link:JoinColumns-asmified.java[Asmified]
+
+== References
+

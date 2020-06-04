@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.validator.LongRangeValidator - 4
- - javax.faces.validator.Validator - 2
- - javax.servlet.jsp.JspException - 1

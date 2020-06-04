@@ -1,0 +1,6 @@
+= jakarta/faces/context/ExternalContextWrapper.class
+
+ - link:ExternalContextWrapper-asmified.java[Asmified]
+
+== References
+

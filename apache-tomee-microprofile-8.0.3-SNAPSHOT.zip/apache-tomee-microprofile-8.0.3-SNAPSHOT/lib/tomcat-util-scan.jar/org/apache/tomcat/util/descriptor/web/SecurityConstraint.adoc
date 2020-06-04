@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.HttpConstraintElement - 9
- - javax.servlet.annotation.ServletSecurity$TransportGuarantee - 4
- - javax.servlet.ServletSecurityElement - 3
- - javax.servlet.annotation.ServletSecurity$EmptyRoleSemantic - 2
- - javax.servlet.HttpMethodConstraintElement - 2

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 23
- - javax.servlet.http.HttpSession - 1
- - javax.websocket.server.HandshakeRequest - 1

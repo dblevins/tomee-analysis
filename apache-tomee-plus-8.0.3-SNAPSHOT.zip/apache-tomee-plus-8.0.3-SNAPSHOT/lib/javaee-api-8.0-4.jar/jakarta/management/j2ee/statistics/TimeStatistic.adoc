@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/TimeStatistic.class
+
+ - link:TimeStatistic-asmified.java[Asmified]
+
+== References
+

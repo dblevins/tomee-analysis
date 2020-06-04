@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 11
- - javax.el.ValueExpression - 10
- - javax.faces.component.UIComponent - 9
- - javax.el.ELContext - 4
- - javax.faces.el.CompositeComponentExpressionHolder - 1
- - javax.el.MethodExpression - 1

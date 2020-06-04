@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SAAJResult.class
+
+ - link:SAAJResult-asmified.java[Asmified]
+
+== References
+

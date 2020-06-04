@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/ParameterDescriptor.class
+
+ - link:ParameterDescriptor-asmified.java[Asmified]
+
+== References
+

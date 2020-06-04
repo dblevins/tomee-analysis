@@ -1,0 +1,6 @@
+= jakarta/enterprise/event/Reception.class
+
+ - link:Reception-asmified.java[Asmified]
+
+== References
+

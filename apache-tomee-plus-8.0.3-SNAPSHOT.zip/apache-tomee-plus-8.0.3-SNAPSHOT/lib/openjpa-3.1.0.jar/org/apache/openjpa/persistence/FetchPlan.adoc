@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.LockModeType - 4
- - javax.persistence.PessimisticLockScope - 2

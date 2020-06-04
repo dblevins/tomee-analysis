@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/WorkContextErrorCodes.class
+
+ - link:WorkContextErrorCodes-asmified.java[Asmified]
+
+== References
+

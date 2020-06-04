@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.soap.Name - 2
- - javax.xml.soap.DetailEntry - 2

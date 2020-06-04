@@ -1,0 +1,6 @@
+= jakarta/faces/component/search/SearchKeywordResolver.class
+
+ - link:SearchKeywordResolver-asmified.java[Asmified]
+
+== References
+

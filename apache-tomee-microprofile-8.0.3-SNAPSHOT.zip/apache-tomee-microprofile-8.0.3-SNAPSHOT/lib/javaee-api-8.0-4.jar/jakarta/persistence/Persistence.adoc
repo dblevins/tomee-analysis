@@ -1,0 +1,6 @@
+= jakarta/persistence/Persistence.class
+
+ - link:Persistence-asmified.java[Asmified]
+
+== References
+

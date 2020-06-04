@@ -4,18 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedMethod - 36
- - javax.enterprise.inject.spi.AnnotatedType - 18
- - javax.enterprise.inject.spi.AnnotatedParameter - 11
- - javax.enterprise.inject.spi.AnnotatedMember - 9
- - javax.enterprise.inject.spi.Bean - 6
- - javax.enterprise.inject.Default - 2
- - javax.enterprise.inject.Disposes - 2
- - javax.enterprise.inject.spi.InjectionPoint - 2
- - javax.enterprise.inject.Produces - 1
- - javax.enterprise.event.ObservesAsync - 1
- - javax.inject.Inject - 1
- - javax.enterprise.event.Observes - 1
- - javax.inject.Named - 1
- - javax.enterprise.inject.spi.AnnotatedCallable - 1
- - javax.enterprise.inject.spi.ProducerFactory - 1

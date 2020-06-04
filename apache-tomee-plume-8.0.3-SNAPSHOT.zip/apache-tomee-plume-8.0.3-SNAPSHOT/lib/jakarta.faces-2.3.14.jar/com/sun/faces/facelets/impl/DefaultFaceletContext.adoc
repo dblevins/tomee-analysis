@@ -4,15 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 20
- - javax.el.VariableMapper - 19
- - javax.faces.context.FacesContext - 13
- - javax.el.FunctionMapper - 9
- - javax.faces.component.UIComponent - 8
- - javax.el.ValueExpression - 7
- - javax.el.ExpressionFactory - 4
- - javax.faces.FacesException - 2
- - javax.el.ELException - 2
- - javax.el.ELResolver - 2
- - javax.faces.view.facelets.Facelet - 1
- - javax.faces.view.facelets.FaceletContext - 1

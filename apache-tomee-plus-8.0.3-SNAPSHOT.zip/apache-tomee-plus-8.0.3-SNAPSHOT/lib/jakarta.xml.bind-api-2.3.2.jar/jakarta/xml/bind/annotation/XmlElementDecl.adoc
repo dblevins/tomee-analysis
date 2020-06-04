@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlElementDecl.class
+
+ - link:XmlElementDecl-asmified.java[Asmified]
+
+== References
+

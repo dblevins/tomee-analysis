@@ -1,0 +1,6 @@
+= jakarta/jms/QueueReceiver.class
+
+ - link:QueueReceiver-asmified.java[Asmified]
+
+== References
+

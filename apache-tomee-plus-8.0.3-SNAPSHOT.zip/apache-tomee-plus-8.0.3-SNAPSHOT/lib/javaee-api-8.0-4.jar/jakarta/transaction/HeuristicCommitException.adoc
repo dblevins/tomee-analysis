@@ -1,0 +1,6 @@
+= jakarta/transaction/HeuristicCommitException.class
+
+ - link:HeuristicCommitException-asmified.java[Asmified]
+
+== References
+

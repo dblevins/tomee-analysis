@@ -1,0 +1,6 @@
+= jakarta/ws/rs/sse/Sse.class
+
+ - link:Sse-asmified.java[Asmified]
+
+== References
+

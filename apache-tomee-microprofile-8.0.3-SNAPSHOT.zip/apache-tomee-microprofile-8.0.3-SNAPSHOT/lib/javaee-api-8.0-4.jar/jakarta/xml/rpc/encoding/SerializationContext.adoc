@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/encoding/SerializationContext.class
+
+ - link:SerializationContext-asmified.java[Asmified]
+
+== References
+

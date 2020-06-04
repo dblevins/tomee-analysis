@@ -4,5 +4,3 @@
 
 == References
 
- - javax.resource.spi.ConnectionRequestInfo - 4
- - javax.resource.ResourceException - 3

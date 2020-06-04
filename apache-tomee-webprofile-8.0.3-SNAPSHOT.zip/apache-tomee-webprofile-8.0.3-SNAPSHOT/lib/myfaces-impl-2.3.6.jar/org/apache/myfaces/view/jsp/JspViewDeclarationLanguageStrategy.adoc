@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.ExternalContext - 4
- - javax.faces.context.FacesContext - 4
- - javax.faces.view.ViewDeclarationLanguage - 4

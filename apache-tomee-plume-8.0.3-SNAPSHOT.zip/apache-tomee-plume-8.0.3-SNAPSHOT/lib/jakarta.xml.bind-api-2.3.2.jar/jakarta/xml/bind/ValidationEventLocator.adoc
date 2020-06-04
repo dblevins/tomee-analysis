@@ -1,0 +1,6 @@
+= jakarta/xml/bind/ValidationEventLocator.class
+
+ - link:ValidationEventLocator-asmified.java[Asmified]
+
+== References
+

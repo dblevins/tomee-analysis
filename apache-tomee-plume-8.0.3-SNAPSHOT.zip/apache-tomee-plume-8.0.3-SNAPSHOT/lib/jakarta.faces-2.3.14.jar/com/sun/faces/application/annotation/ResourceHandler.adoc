@@ -4,5 +4,3 @@
 
 == References
 
- - javax.annotation.Resource - 18
- - javax.faces.context.FacesContext - 10

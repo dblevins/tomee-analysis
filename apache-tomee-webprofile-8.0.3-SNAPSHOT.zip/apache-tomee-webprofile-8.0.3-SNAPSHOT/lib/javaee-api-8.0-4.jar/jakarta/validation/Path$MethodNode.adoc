@@ -1,0 +1,6 @@
+= jakarta/validation/Path$MethodNode.class
+
+ - link:Path$MethodNode-asmified.java[Asmified]
+
+== References
+

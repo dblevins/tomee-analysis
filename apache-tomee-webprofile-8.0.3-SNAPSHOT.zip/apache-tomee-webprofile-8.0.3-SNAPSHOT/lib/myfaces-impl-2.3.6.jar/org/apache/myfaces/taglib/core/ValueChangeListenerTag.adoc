@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 12
- - javax.faces.event.ValueChangeListener - 7
- - javax.faces.component.EditableValueHolder - 6

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 4
- - javax.inject.Provider - 1
- - javax.enterprise.inject.spi.ProducerFactory - 1
- - javax.enterprise.inject.spi.Producer - 1

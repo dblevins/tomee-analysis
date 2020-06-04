@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 8
- - javax.faces.FactoryFinder - 4
- - javax.faces.context.FacesContext - 1

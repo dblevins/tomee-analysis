@@ -4,6 +4,3 @@
 
 == References
 
- - javax.interceptor.InvocationContext - 9
- - javax.inject.Inject - 4
- - javax.enterprise.context.ApplicationScoped - 1

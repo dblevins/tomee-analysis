@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/status/ClientConfiguration.class
+
+ - link:ClientConfiguration-asmified.java[Asmified]
+
+== References
+

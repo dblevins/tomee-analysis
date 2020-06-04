@@ -1,0 +1,6 @@
+= jakarta/validation/groups/ConvertGroup$List.class
+
+ - link:ConvertGroup$List-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 17
- - javax.servlet.descriptor.JspConfigDescriptor - 4
- - javax.servlet.descriptor.TaglibDescriptor - 4

@@ -1,0 +1,6 @@
+= jakarta/xml/ws/WebServiceFeature.class
+
+ - link:WebServiceFeature-asmified.java[Asmified]
+
+== References
+

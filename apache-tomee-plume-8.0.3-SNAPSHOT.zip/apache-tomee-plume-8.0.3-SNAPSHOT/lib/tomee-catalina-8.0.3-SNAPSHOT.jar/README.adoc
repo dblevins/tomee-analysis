@@ -1,26 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/tomee-catalina-8.0.3-SNAPSHOT.jar
 
- - link:org/apache/tomee/jasper/TomEETldScanner.adoc[org/apache/tomee/jasper/TomEETldScanner.class] - 2730
- - link:org/apache/tomee/catalina/TomcatWebAppBuilder.adoc[org/apache/tomee/catalina/TomcatWebAppBuilder.class] - 63
- - link:org/apache/tomee/catalina/TomcatJndiBuilder.adoc[org/apache/tomee/catalina/TomcatJndiBuilder.class] - 23
- - link:org/apache/tomee/catalina/realm/CdiEventRealm.adoc[org/apache/tomee/catalina/realm/CdiEventRealm.class] - 18
- - link:org/apache/catalina/startup/OpenEJBContextConfig.adoc[org/apache/catalina/startup/OpenEJBContextConfig.class] - 18
- - link:org/apache/tomee/catalina/realm/LazyRealm.adoc[org/apache/tomee/catalina/realm/LazyRealm.class] - 16
- - link:org/apache/tomee/catalina/realm/LowTypedRealm.adoc[org/apache/tomee/catalina/realm/LowTypedRealm.class] - 12
- - link:org/apache/tomee/catalina/OpenEJBSecurityListener.adoc[org/apache/tomee/catalina/OpenEJBSecurityListener.class] - 9
- - link:org/apache/tomee/catalina/routing/RouterValve.adoc[org/apache/tomee/catalina/routing/RouterValve.class] - 7
- - link:org/apache/tomee/catalina/cdi/ServletContextHandler.adoc[org/apache/tomee/catalina/cdi/ServletContextHandler.class] - 7
- - link:org/apache/tomee/catalina/event/AfterApplicationCreated.adoc[org/apache/tomee/catalina/event/AfterApplicationCreated.class] - 5
- - link:org/apache/tomee/catalina/JavaeeInstanceManager.adoc[org/apache/tomee/catalina/JavaeeInstanceManager.class] - 5
- - link:org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent.adoc[org/apache/tomee/catalina/realm/event/FindSecurityConstraintsEvent.class] - 5
- - link:org/apache/tomee/catalina/realm/LazyRealm$1.adoc[org/apache/tomee/catalina/realm/LazyRealm$1.class] - 3
- - link:org/apache/tomee/catalina/TomEEWebappClassLoader.adoc[org/apache/tomee/catalina/TomEEWebappClassLoader.class] - 2
- - link:org/apache/tomee/catalina/TomcatSecurityService.adoc[org/apache/tomee/catalina/TomcatSecurityService.class] - 2
- - link:org/apache/tomee/jasper/TomEEJasperInitializer.adoc[org/apache/tomee/jasper/TomEEJasperInitializer.class] - 2
- - link:org/apache/tomee/catalina/OpenEJBValve.adoc[org/apache/tomee/catalina/OpenEJBValve.class] - 2
- - link:org/apache/tomee/catalina/WebSockets.adoc[org/apache/tomee/catalina/WebSockets.class] - 1
- - link:org/apache/tomee/catalina/valve/LazyValve.adoc[org/apache/tomee/catalina/valve/LazyValve.class] - 1
- - link:org/apache/tomee/catalina/cdi/WebBeansThreadBindingListener.adoc[org/apache/tomee/catalina/cdi/WebBeansThreadBindingListener.class] - 1
- - link:org/apache/tomee/catalina/scan/EmptyScanner.adoc[org/apache/tomee/catalina/scan/EmptyScanner.class] - 1
- - link:org/apache/tomee/catalina/OpenEJBSecurityListener$RequestCapturer.adoc[org/apache/tomee/catalina/OpenEJBSecurityListener$RequestCapturer.class] - 1
- - link:org/apache/tomee/catalina/routing/SimpleRouter.adoc[org/apache/tomee/catalina/routing/SimpleRouter.class] - 1

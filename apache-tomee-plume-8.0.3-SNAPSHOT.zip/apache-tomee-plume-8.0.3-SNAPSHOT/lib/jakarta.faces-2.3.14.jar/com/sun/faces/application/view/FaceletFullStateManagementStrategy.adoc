@@ -4,16 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 91
- - javax.faces.context.FacesContext - 75
- - javax.faces.component.UIViewRoot - 27
- - javax.faces.component.visit.VisitContext - 10
- - javax.faces.render.ResponseStateManager - 4
- - javax.faces.application.ProjectStage - 4
- - javax.faces.FacesException - 4
- - javax.faces.component.visit.VisitCallback - 3
- - javax.faces.component.visit.VisitHint - 3
- - javax.faces.view.StateManagementStrategy - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.application.Application - 2
- - javax.faces.view.ViewDeclarationLanguage - 2

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 9
- - javax.faces.lifecycle.ClientWindowFactory - 5
- - javax.faces.context.ExternalContext - 4
- - javax.faces.application.Application - 3
- - javax.faces.lifecycle.ClientWindow - 1
- - javax.faces.event.SystemEventListener - 1
- - javax.faces.event.PostConstructApplicationEvent - 1

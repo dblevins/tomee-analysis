@@ -1,0 +1,6 @@
+= jakarta/resource/spi/IllegalStateException.class
+
+ - link:IllegalStateException-asmified.java[Asmified]
+
+== References
+

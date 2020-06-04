@@ -4,8 +4,3 @@
 
 == References
 
- - javax.security.jacc.WebRoleRefPermission - 1
- - javax.security.jacc.WebUserDataPermission - 1
- - javax.security.jacc.EJBRoleRefPermission - 1
- - javax.security.jacc.EJBMethodPermission - 1
- - javax.security.jacc.WebResourcePermission - 1

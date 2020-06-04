@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 14
- - javax.faces.component.NamingContainer - 1

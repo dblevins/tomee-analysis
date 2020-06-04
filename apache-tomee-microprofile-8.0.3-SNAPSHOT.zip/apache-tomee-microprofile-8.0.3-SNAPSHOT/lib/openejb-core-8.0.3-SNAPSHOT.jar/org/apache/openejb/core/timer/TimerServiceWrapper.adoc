@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ejb.TimerService - 25
- - javax.ejb.Timer - 22
- - javax.ejb.EJBException - 12
- - javax.ejb.TimerConfig - 10
- - javax.ejb.ScheduleExpression - 4

@@ -1,0 +1,6 @@
+= jakarta/persistence/MapKeyClass.class
+
+ - link:MapKeyClass-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/faces/component/_BeanValidationUtils.class
+
+ - link:_BeanValidationUtils-asmified.java[Asmified]
+
+== References
+

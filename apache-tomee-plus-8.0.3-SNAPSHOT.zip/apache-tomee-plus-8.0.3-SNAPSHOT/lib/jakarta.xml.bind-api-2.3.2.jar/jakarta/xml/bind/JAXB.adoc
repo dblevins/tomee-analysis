@@ -1,0 +1,6 @@
+= jakarta/xml/bind/JAXB.class
+
+ - link:JAXB-asmified.java[Asmified]
+
+== References
+

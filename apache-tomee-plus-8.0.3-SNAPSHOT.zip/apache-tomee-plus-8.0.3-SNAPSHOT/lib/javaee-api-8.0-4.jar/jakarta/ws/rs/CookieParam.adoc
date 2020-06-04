@@ -1,0 +1,6 @@
+= jakarta/ws/rs/CookieParam.class
+
+ - link:CookieParam-asmified.java[Asmified]
+
+== References
+

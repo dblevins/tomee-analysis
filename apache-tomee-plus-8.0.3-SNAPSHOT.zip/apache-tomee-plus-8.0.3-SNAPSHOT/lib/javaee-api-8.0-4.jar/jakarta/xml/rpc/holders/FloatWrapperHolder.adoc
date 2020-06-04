@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/FloatWrapperHolder.class
+
+ - link:FloatWrapperHolder-asmified.java[Asmified]
+
+== References
+

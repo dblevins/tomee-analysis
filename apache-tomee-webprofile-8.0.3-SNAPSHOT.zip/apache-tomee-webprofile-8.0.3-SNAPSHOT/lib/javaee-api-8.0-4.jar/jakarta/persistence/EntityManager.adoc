@@ -1,0 +1,6 @@
+= jakarta/persistence/EntityManager.class
+
+ - link:EntityManager-asmified.java[Asmified]
+
+== References
+

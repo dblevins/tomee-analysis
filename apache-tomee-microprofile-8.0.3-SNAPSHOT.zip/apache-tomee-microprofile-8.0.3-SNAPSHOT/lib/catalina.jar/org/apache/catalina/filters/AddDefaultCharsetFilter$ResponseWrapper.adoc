@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletResponseWrapper - 8
- - javax.servlet.http.HttpServletResponse - 2

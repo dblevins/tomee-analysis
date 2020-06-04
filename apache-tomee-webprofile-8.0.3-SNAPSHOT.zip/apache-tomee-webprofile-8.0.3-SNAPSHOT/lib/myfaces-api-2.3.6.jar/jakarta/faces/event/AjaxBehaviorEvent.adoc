@@ -1,0 +1,6 @@
+= jakarta/faces/event/AjaxBehaviorEvent.class
+
+ - link:AjaxBehaviorEvent-asmified.java[Asmified]
+
+== References
+

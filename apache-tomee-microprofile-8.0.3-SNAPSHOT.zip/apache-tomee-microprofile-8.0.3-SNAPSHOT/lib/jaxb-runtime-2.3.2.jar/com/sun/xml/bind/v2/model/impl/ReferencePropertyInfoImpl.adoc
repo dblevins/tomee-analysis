@@ -4,11 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlElementRef - 68
- - javax.xml.bind.annotation.XmlElementRefs - 21
- - javax.xml.bind.annotation.XmlAnyElement - 5
- - javax.xml.bind.JAXBElement - 4
- - javax.xml.bind.annotation.XmlSchema - 4
- - javax.xml.bind.annotation.XmlNsForm - 2
- - javax.xml.bind.annotation.XmlElementRef$DEFAULT - 2
- - javax.xml.bind.annotation.XmlMixed - 1

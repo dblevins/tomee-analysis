@@ -4,5 +4,3 @@
 
 == References
 
- - javax.activation.DataHandler - 7
- - javax.activation.DataSource - 1

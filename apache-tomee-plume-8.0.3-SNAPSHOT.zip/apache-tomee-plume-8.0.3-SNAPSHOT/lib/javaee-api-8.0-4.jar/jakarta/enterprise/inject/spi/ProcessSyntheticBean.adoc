@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/ProcessSyntheticBean.class
+
+ - link:ProcessSyntheticBean-asmified.java[Asmified]
+
+== References
+

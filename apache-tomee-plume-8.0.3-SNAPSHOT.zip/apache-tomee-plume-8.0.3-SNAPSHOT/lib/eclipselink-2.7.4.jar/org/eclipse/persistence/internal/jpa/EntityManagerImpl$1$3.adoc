@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.FlushModeType - 3

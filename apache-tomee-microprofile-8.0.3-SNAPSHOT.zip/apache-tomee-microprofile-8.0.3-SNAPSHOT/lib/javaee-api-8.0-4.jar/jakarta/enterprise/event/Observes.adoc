@@ -1,0 +1,6 @@
+= jakarta/enterprise/event/Observes.class
+
+ - link:Observes-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/mail/event/MessageCountAdapter.class
+
+ - link:MessageCountAdapter-asmified.java[Asmified]
+
+== References
+

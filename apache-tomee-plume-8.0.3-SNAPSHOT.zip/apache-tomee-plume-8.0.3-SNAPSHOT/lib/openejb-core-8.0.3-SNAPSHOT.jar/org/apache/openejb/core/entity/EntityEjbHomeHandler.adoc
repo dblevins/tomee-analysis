@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ejb.RemoveException - 4
- - javax.ejb.EJBObject - 2
- - javax.ejb.EJBLocalObject - 2

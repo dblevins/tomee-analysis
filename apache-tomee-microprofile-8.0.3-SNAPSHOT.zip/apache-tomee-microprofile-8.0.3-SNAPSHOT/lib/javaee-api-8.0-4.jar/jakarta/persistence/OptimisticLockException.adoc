@@ -1,0 +1,6 @@
+= jakarta/persistence/OptimisticLockException.class
+
+ - link:OptimisticLockException-asmified.java[Asmified]
+
+== References
+

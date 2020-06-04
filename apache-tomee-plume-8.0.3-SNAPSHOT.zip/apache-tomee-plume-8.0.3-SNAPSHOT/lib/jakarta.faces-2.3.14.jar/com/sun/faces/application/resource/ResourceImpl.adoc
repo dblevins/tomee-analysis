@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 46
- - javax.faces.context.ExternalContext - 18
- - javax.faces.application.ProjectStage - 10
- - javax.faces.application.Resource - 6
- - javax.faces.application.Application - 6
- - javax.servlet.http.HttpServletRequest - 3
- - javax.faces.application.ViewHandler - 2
- - javax.faces.application.ResourceHandler - 2

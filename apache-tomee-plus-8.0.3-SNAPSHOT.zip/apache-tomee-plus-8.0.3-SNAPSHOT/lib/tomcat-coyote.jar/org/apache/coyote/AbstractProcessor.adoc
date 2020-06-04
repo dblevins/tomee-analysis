@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.WriteListener - 2
- - javax.servlet.ReadListener - 2

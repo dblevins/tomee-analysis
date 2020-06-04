@@ -4,20 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 109
- - javax.faces.context.FacesContext - 30
- - javax.faces.component.behavior.ClientBehaviorHolder - 7
- - javax.faces.FacesException - 5
- - javax.faces.event.FacesListener - 4
- - javax.faces.el.ValueBinding - 4
- - javax.faces.event.ComponentSystemEventListener - 4
- - javax.el.ValueExpression - 4
- - javax.faces.event.FacesEvent - 4
- - javax.faces.component.behavior.ClientBehavior - 3
- - javax.faces.component.visit.VisitCallback - 2
- - javax.faces.event.AbortProcessingException - 2
- - javax.faces.component.visit.VisitContext - 2
- - javax.faces.component.ContextCallback - 2
- - javax.faces.event.ComponentSystemEvent - 2
- - javax.faces.event.SystemEvent - 2
- - javax.faces.render.Renderer - 1

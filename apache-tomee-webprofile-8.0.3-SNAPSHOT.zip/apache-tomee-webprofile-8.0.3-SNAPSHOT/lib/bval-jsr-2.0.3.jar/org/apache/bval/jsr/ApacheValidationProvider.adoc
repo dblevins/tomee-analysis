@@ -4,9 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 9
- - javax.validation.spi.BootstrapState - 6
- - javax.validation.spi.ConfigurationState - 6
- - javax.validation.Configuration - 3
- - javax.validation.ValidatorFactory - 3
- - javax.validation.spi.ValidationProvider - 3

@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/TelephoneNumber.class
+
+ - link:TelephoneNumber-asmified.java[Asmified]
+
+== References
+

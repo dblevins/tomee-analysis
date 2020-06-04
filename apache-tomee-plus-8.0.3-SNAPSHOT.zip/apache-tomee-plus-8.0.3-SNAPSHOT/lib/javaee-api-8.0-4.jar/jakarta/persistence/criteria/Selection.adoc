@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Selection.class
+
+ - link:Selection-asmified.java[Asmified]
+
+== References
+

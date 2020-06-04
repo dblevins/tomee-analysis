@@ -4,4 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 9

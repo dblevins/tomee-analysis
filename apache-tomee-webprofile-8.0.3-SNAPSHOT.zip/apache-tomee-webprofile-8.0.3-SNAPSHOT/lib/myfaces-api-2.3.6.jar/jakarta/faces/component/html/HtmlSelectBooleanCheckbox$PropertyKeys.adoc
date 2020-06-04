@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlSelectBooleanCheckbox$PropertyKeys.class
+
+ - link:HtmlSelectBooleanCheckbox$PropertyKeys-asmified.java[Asmified]
+
+== References
+

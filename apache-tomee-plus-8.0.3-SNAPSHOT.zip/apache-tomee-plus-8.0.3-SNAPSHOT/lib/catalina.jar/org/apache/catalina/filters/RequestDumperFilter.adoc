@@ -4,11 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 24
- - javax.servlet.ServletRequest - 18
- - javax.servlet.http.HttpServletResponse - 13
- - javax.servlet.http.Cookie - 11
- - javax.servlet.FilterChain - 9
- - javax.servlet.ServletResponse - 9
- - javax.servlet.GenericFilter - 2
- - javax.servlet.ServletException - 1

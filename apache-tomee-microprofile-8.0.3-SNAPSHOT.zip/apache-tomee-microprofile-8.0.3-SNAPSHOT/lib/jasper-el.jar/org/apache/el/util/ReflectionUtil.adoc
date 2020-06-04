@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.MethodNotFoundException - 7
- - javax.el.ELException - 2
- - javax.el.ELContext - 1

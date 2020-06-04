@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.Servlet - 9
- - javax.jws.WebService - 4
- - javax.servlet.ServletException - 3
- - javax.servlet.ServletConfig - 2

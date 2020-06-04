@@ -4,18 +4,3 @@
 
 == References
 
- - javax.batch.api.partition.PartitionPlan - 47
- - javax.batch.runtime.BatchStatus - 22
- - javax.batch.api.partition.PartitionReducer - 21
- - javax.batch.api.partition.PartitionAnalyzer - 10
- - javax.batch.api.listener.StepListener - 8
- - javax.batch.api.partition.PartitionMapper - 4
- - javax.batch.runtime.Metric - 4
- - javax.batch.api.partition.PartitionReducer$PartitionStatus - 4
- - javax.batch.operations.JobRestartException - 3
- - javax.batch.operations.JobStartException - 2
- - javax.batch.runtime.Metric$MetricType - 2
- - javax.batch.operations.JobExecutionNotMostRecentException - 2
- - javax.batch.runtime.StepExecution - 2
- - javax.batch.operations.JobExecutionAlreadyCompleteException - 2
- - javax.batch.runtime.context.JobContext - 1

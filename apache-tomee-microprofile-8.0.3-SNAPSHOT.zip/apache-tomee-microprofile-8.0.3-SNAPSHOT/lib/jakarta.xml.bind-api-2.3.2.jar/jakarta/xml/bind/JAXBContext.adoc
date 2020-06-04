@@ -1,0 +1,6 @@
+= jakarta/xml/bind/JAXBContext.class
+
+ - link:JAXBContext-asmified.java[Asmified]
+
+== References
+

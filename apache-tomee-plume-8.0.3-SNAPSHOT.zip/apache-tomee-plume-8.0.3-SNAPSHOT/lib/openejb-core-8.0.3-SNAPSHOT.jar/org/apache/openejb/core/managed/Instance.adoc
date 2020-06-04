@@ -4,6 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 6
- - javax.transaction.Transaction - 5
- - javax.persistence.EntityManagerFactory - 5

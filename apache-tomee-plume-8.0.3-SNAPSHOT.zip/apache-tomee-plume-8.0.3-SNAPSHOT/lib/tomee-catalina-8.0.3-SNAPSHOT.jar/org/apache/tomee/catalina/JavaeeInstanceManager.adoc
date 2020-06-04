@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 3
- - javax.annotation.PreDestroy - 1
- - javax.annotation.PostConstruct - 1

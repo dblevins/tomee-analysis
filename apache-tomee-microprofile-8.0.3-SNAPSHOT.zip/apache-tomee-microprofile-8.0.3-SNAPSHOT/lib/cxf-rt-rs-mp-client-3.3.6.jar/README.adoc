@@ -1,22 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/cxf-rt-rs-mp-client-3.3.6.jar
 
- - link:org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl.adoc[org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl.class] - 58
- - link:org/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapperImpl.adoc[org/apache/cxf/microprofile/client/cdi/CDIInterceptorWrapperImpl.class] - 55
- - link:org/apache/cxf/microprofile/client/cdi/CDIUtils.adoc[org/apache/cxf/microprofile/client/cdi/CDIUtils.class] - 32
- - link:org/apache/cxf/microprofile/client/CxfTypeSafeClientBuilder.adoc[org/apache/cxf/microprofile/client/CxfTypeSafeClientBuilder.class] - 30
- - link:org/apache/cxf/microprofile/client/Validator.adoc[org/apache/cxf/microprofile/client/Validator.class] - 28
- - link:org/apache/cxf/microprofile/client/MicroProfileClientConfigurableImpl.adoc[org/apache/cxf/microprofile/client/MicroProfileClientConfigurableImpl.class] - 25
- - link:org/apache/cxf/microprofile/client/cdi/RestClientExtension.adoc[org/apache/cxf/microprofile/client/cdi/RestClientExtension.class] - 22
- - link:org/apache/cxf/microprofile/client/cdi/RestClientBean.adoc[org/apache/cxf/microprofile/client/cdi/RestClientBean.class] - 19
- - link:org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean.adoc[org/apache/cxf/microprofile/client/MicroProfileClientFactoryBean.class] - 15
- - link:org/apache/cxf/microprofile/client/cdi/InterceptorInvoker.adoc[org/apache/cxf/microprofile/client/cdi/InterceptorInvoker.class] - 9
- - link:org/apache/cxf/microprofile/client/DefaultResponseExceptionMapper.adoc[org/apache/cxf/microprofile/client/DefaultResponseExceptionMapper.class] - 6
- - link:org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral.adoc[org/apache/cxf/microprofile/client/cdi/RestClientBean$DefaultLiteral.class] - 4
- - link:org/apache/cxf/microprofile/client/MPRestClientCallback.adoc[org/apache/cxf/microprofile/client/MPRestClientCallback.class] - 3
- - link:org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory.adoc[org/apache/cxf/microprofile/client/MicroProfileClientProviderFactory.class] - 3
- - link:org/apache/cxf/microprofile/client/ContractComparator.adoc[org/apache/cxf/microprofile/client/ContractComparator.class] - 2
- - link:org/apache/cxf/microprofile/client/MicroProfileServiceFactoryBean.adoc[org/apache/cxf/microprofile/client/MicroProfileServiceFactoryBean.class] - 2
- - link:org/apache/cxf/microprofile/client/cdi/CDIFacade.adoc[org/apache/cxf/microprofile/client/cdi/CDIFacade.class] - 2
- - link:org/apache/cxf/microprofile/client/cdi/MPRestClientInvocationContextImpl.adoc[org/apache/cxf/microprofile/client/cdi/MPRestClientInvocationContextImpl.class] - 2
- - link:org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$1.adoc[org/apache/cxf/microprofile/client/proxy/MicroProfileClientProxyImpl$1.class] - 1
- - link:org/apache/cxf/microprofile/client/spi/CxfRestClientBuilderResolver.adoc[org/apache/cxf/microprofile/client/spi/CxfRestClientBuilderResolver.class] - 1

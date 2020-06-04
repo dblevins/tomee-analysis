@@ -1,0 +1,6 @@
+= jakarta/faces/application/FacesMessage$Severity.class
+
+ - link:FacesMessage$Severity-asmified.java[Asmified]
+
+== References
+

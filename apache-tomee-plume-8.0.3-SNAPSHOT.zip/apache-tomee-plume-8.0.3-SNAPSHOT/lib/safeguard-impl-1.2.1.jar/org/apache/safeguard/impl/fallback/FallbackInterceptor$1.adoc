@@ -4,4 +4,3 @@
 
 == References
 
- - javax.interceptor.InvocationContext - 9

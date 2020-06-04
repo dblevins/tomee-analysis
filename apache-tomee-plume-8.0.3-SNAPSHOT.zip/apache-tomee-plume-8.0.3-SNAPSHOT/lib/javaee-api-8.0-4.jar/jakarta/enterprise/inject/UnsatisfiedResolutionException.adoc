@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/UnsatisfiedResolutionException.class
+
+ - link:UnsatisfiedResolutionException-asmified.java[Asmified]
+
+== References
+

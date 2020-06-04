@@ -4,6 +4,3 @@
 
 == References
 
- - javax.resource.spi.TransactionSupport$TransactionSupportLevel - 6
- - javax.resource.ResourceException - 2
- - javax.resource.spi.ConnectionRequestInfo - 2

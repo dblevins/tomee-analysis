@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/EmbeddableType.class
+
+ - link:EmbeddableType-asmified.java[Asmified]
+
+== References
+

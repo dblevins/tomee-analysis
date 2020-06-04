@@ -4,5 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 1
- - javax.el.ELResolver - 1

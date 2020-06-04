@@ -4,13 +4,3 @@
 
 == References
 
- - javax.persistence.StoredProcedureQuery - 31
- - javax.persistence.TemporalType - 24
- - javax.persistence.Parameter - 24
- - javax.persistence.PersistenceException - 22
- - javax.persistence.ParameterMode - 18
- - javax.persistence.Query - 14
- - javax.persistence.LockTimeoutException - 12
- - javax.persistence.FlushModeType - 8
- - javax.persistence.LockModeType - 6
- - javax.persistence.metamodel.Metamodel - 2

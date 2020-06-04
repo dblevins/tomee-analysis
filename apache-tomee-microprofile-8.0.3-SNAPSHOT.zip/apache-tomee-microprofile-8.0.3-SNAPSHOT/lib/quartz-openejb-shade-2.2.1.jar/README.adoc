@@ -1,12 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/quartz-openejb-shade-2.2.1.jar
 
- - link:org/apache/openejb/quartz/ee/servlet/QuartzInitializerServlet.adoc[org/apache/openejb/quartz/ee/servlet/QuartzInitializerServlet.class] - 33
- - link:org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext.adoc[org/apache/openejb/quartz/ee/jta/UserTransactionHelper$UserTransactionWithContext.class] - 27
- - link:org/apache/openejb/quartz/ee/servlet/QuartzInitializerListener.adoc[org/apache/openejb/quartz/ee/servlet/QuartzInitializerListener.class] - 24
- - link:org/apache/openejb/quartz/plugins/SchedulerPluginWithUserTransactionSupport.adoc[org/apache/openejb/quartz/plugins/SchedulerPluginWithUserTransactionSupport.class] - 24
- - link:org/apache/openejb/quartz/ee/jta/JTAJobRunShell.adoc[org/apache/openejb/quartz/ee/jta/JTAJobRunShell.class] - 20
- - link:org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore.adoc[org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore.class] - 16
- - link:org/apache/openejb/quartz/ee/jta/UserTransactionHelper.adoc[org/apache/openejb/quartz/ee/jta/UserTransactionHelper.class] - 2
- - link:org/apache/openejb/quartz/xml/XMLSchedulingDataProcessor.adoc[org/apache/openejb/quartz/xml/XMLSchedulingDataProcessor.class] - 2
- - link:org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore$SemaphoreSynchronization.adoc[org/apache/openejb/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore$SemaphoreSynchronization.class] - 1
- - link:org/apache/openejb/quartz/plugins/xml/XMLSchedulingDataProcessorPlugin.adoc[org/apache/openejb/quartz/plugins/xml/XMLSchedulingDataProcessorPlugin.class] - 1

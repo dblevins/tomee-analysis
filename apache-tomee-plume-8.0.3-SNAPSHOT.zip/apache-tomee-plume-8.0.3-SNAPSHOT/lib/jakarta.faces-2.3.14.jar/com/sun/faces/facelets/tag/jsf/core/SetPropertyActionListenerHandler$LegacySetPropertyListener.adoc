@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.el.ValueBinding - 10
- - javax.faces.context.FacesContext - 4
- - javax.faces.event.ActionEvent - 1
- - javax.faces.event.ActionListener - 1
- - javax.faces.event.AbortProcessingException - 1

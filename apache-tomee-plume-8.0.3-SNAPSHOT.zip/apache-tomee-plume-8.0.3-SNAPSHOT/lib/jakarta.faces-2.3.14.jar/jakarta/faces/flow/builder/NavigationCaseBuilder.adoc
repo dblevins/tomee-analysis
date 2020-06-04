@@ -1,0 +1,6 @@
+= jakarta/faces/flow/builder/NavigationCaseBuilder.class
+
+ - link:NavigationCaseBuilder-asmified.java[Asmified]
+
+== References
+

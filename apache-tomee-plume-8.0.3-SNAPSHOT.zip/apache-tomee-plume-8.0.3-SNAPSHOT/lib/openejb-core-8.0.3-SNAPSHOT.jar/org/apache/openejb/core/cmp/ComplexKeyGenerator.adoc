@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EntityBean - 4
- - javax.ejb.EJBException - 2

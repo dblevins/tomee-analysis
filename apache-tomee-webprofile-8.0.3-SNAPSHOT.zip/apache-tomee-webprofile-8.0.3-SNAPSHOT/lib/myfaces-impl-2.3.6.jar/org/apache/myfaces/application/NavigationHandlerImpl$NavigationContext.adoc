@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 13
- - javax.faces.flow.Flow - 12
- - javax.faces.application.Application - 8
- - javax.faces.flow.FlowHandler - 8
- - javax.faces.application.NavigationCase - 7
- - javax.faces.flow.FlowCallNode - 3

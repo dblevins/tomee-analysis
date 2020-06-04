@@ -4,4 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.ClientBuilder - 8

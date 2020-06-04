@@ -4,5 +4,3 @@
 
 == References
 
- - javax.transaction.UserTransaction - 5
- - javax.inject.Provider - 1

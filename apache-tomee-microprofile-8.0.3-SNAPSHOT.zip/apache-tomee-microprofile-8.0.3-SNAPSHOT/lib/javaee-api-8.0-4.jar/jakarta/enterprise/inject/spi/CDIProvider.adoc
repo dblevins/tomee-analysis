@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/CDIProvider.class
+
+ - link:CDIProvider-asmified.java[Asmified]
+
+== References
+

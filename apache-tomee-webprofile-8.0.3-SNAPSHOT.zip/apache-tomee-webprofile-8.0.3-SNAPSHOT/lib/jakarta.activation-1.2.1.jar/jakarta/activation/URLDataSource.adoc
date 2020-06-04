@@ -1,0 +1,6 @@
+= jakarta/activation/URLDataSource.class
+
+ - link:URLDataSource-asmified.java[Asmified]
+
+== References
+

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.MethodExpression - 26
- - javax.el.ELException - 12
- - javax.el.PropertyNotFoundException - 12
- - javax.el.MethodNotFoundException - 12
- - javax.el.ELContext - 4
- - javax.el.MethodInfo - 2
- - javax.faces.view.facelets.TagAttribute - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 36
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

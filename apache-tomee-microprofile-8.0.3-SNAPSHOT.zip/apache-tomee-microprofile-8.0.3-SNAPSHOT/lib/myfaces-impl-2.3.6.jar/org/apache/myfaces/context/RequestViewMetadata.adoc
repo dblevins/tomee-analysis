@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.application.ResourceDependency - 11
- - javax.faces.context.FacesContext - 10
- - javax.el.ELContext - 8
- - javax.faces.application.Application - 4
- - javax.el.ExpressionFactory - 4

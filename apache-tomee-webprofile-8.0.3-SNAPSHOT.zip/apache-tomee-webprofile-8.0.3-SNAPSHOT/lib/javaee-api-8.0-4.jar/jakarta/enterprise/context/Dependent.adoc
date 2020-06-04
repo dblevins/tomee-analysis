@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/Dependent.class
+
+ - link:Dependent-asmified.java[Asmified]
+
+== References
+

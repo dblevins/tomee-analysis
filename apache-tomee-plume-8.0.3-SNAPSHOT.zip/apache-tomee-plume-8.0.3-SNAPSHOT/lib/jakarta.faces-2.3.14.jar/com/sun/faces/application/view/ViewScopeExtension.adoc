@@ -4,14 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.BeanManager - 7
- - javax.enterprise.inject.spi.AfterBeanDiscovery - 5
- - javax.faces.view.ViewScoped - 4
- - javax.enterprise.event.Observes - 3
- - javax.enterprise.inject.spi.Annotated - 2
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 2
- - javax.enterprise.inject.spi.ProcessBean - 2
- - javax.enterprise.inject.spi.Bean - 2
- - javax.enterprise.context.spi.Context - 1
- - javax.faces.context.FacesContext - 1
- - javax.enterprise.inject.spi.Extension - 1

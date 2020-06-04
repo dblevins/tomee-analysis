@@ -4,15 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 43
- - javax.jms.JMSProducer - 31
- - javax.jms.MessageProducer - 31
- - javax.jms.JMSRuntimeException - 28
- - javax.jms.Message - 22
- - javax.jms.Destination - 20
- - javax.jms.MapMessage - 14
- - javax.jms.MessageFormatRuntimeException - 10
- - javax.jms.CompletionListener - 8
- - javax.jms.BytesMessage - 4
- - javax.jms.ObjectMessage - 2
- - javax.jms.TextMessage - 1

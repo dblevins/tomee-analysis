@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/DecimalMax.class
+
+ - link:DecimalMax-asmified.java[Asmified]
+
+== References
+

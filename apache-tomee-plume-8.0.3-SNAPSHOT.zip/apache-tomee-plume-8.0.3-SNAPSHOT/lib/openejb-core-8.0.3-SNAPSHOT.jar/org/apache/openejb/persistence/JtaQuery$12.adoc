@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.Parameter - 5
- - javax.persistence.Query - 4

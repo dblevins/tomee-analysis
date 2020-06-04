@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.ws.rs.container.ContainerResponseContext - 1

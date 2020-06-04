@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.event.SystemEvent - 40
- - javax.faces.event.SystemEventListener - 32
- - javax.faces.context.FacesContext - 17
- - javax.faces.event.FacesListener - 4
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.application.ProjectStage - 4
- - javax.faces.event.SystemEventListenerHolder - 3
- - javax.faces.event.AbortProcessingException - 3
- - javax.faces.application.Application - 2
- - javax.faces.event.ExceptionQueuedEvent - 2
- - javax.faces.event.ExceptionQueuedEventContext - 2

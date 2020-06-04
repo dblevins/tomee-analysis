@@ -4,8 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 15
- - javax.xml.bind.JAXBElement - 8
- - javax.validation.ConstraintDeclarationException - 6
- - javax.validation.ConstraintTarget - 6
- - javax.validation.Payload - 4

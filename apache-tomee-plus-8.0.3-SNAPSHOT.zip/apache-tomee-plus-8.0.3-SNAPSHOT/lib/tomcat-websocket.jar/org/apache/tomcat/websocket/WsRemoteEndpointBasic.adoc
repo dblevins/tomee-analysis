@@ -4,5 +4,3 @@
 
 == References
 
- - javax.websocket.RemoteEndpoint$Basic - 1
- - javax.websocket.EncodeException - 1

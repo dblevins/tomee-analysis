@@ -1,0 +1,6 @@
+= jakarta/persistence/Table.class
+
+ - link:Table-asmified.java[Asmified]
+
+== References
+

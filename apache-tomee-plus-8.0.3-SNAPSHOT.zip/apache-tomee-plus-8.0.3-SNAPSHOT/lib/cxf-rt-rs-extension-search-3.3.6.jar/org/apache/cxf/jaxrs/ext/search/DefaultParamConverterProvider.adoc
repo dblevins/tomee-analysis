@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.ext.ParamConverter - 3
- - javax.ws.rs.ext.ParamConverterProvider - 1

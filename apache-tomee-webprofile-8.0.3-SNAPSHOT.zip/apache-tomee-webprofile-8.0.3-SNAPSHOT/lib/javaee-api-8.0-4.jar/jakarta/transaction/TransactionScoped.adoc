@@ -1,0 +1,6 @@
+= jakarta/transaction/TransactionScoped.class
+
+ - link:TransactionScoped-asmified.java[Asmified]
+
+== References
+

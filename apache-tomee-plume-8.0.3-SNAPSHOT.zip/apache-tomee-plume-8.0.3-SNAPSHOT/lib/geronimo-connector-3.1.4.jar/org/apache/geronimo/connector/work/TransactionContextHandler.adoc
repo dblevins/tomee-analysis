@@ -4,8 +4,3 @@
 
 == References
 
- - javax.resource.spi.work.WorkCompletedException - 28
- - javax.resource.spi.work.TransactionContext - 22
- - javax.transaction.SystemException - 4
- - javax.resource.spi.work.WorkContext - 3
- - javax.transaction.InvalidTransactionException - 2

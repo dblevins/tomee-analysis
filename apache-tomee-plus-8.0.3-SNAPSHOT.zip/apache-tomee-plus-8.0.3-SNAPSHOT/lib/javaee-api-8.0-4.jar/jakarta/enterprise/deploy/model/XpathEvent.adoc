@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/model/XpathEvent.class
+
+ - link:XpathEvent-asmified.java[Asmified]
+
+== References
+

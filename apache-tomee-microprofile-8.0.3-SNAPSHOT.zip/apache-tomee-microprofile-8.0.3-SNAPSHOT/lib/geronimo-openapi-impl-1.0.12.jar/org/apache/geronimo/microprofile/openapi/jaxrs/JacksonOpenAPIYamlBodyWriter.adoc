@@ -4,11 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 1
- - javax.ws.rs.core.MediaType - 1
- - javax.ws.rs.Produces - 1
- - javax.ws.rs.ext.Provider - 1
- - javax.ws.rs.RuntimeType - 1
- - javax.ws.rs.ConstrainedTo - 1
- - javax.enterprise.context.Dependent - 1
- - javax.ws.rs.WebApplicationException - 1

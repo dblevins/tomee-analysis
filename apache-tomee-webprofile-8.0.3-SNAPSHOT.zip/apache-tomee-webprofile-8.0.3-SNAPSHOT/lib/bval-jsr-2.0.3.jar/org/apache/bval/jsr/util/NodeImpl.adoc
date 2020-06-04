@@ -4,11 +4,3 @@
 
 == References
 
- - javax.validation.Path$Node - 74
- - javax.validation.ElementKind - 6
- - javax.validation.Path$BeanNode - 5
- - javax.validation.Path$PropertyNode - 5
- - javax.validation.Path$ContainerElementNode - 5
- - javax.validation.Path$MethodNode - 3
- - javax.validation.Path$ConstructorNode - 3
- - javax.validation.Path$ParameterNode - 3

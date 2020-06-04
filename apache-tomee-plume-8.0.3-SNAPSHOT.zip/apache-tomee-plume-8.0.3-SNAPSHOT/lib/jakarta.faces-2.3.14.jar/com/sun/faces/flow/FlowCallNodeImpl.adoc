@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 32
- - javax.faces.context.FacesContext - 12
- - javax.el.ELContext - 8
- - javax.faces.flow.Parameter - 7
- - javax.faces.application.Application - 4
- - javax.el.ExpressionFactory - 4
- - javax.faces.flow.FlowCallNode - 2

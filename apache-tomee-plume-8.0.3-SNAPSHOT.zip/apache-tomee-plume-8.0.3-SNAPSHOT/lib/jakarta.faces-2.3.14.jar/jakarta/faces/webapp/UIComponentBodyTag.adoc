@@ -1,0 +1,6 @@
+= jakarta/faces/webapp/UIComponentBodyTag.class
+
+ - link:UIComponentBodyTag-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceContext - 1
- - javax.annotation.Resource - 1

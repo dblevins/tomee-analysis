@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.WriteListener - 15
- - javax.servlet.ServletOutputStream - 2

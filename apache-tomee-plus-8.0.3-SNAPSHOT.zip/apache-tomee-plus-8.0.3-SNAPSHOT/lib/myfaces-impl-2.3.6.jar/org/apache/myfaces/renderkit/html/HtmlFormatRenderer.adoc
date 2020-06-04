@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 31
- - javax.faces.context.FacesContext - 22
- - javax.faces.context.ResponseWriter - 15
- - javax.faces.component.UIParameter - 3
- - javax.faces.component.html.HtmlOutputFormat - 3
- - javax.faces.component.UIViewRoot - 2
- - javax.faces.component.UIOutput - 1

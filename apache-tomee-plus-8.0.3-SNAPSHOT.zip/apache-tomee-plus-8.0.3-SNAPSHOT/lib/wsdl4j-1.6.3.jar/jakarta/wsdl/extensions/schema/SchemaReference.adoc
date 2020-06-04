@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/schema/SchemaReference.class
+
+ - link:SchemaReference-asmified.java[Asmified]
+
+== References
+

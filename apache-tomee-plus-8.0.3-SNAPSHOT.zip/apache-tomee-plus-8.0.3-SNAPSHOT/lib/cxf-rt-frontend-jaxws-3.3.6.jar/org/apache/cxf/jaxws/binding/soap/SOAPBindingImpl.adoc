@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceException - 6
- - javax.xml.soap.SOAPException - 4
- - javax.xml.soap.MessageFactory - 2
- - javax.xml.soap.SOAPFactory - 2
- - javax.xml.ws.soap.SOAPBinding - 1

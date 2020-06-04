@@ -1,0 +1,6 @@
+= jakarta/enterprise/util/TypeLiteral.class
+
+ - link:TypeLiteral-asmified.java[Asmified]
+
+== References
+

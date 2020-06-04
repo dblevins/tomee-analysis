@@ -1,0 +1,6 @@
+= jakarta/jms/Destination.class
+
+ - link:Destination-asmified.java[Asmified]
+
+== References
+

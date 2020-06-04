@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 25
- - javax.faces.context.FacesContext - 9
- - javax.faces.application.Resource - 7
- - javax.faces.view.Location - 6

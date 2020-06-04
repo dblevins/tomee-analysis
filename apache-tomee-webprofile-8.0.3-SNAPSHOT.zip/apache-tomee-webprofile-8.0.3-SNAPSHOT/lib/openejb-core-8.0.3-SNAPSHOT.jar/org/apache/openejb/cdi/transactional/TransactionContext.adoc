@@ -4,9 +4,3 @@
 
 == References
 
- - javax.transaction.TransactionManager - 8
- - javax.transaction.TransactionSynchronizationRegistry - 3
- - javax.transaction.Transaction - 2
- - javax.enterprise.context.ContextNotActiveException - 2
- - javax.transaction.TransactionScoped - 1
- - javax.transaction.Synchronization - 1

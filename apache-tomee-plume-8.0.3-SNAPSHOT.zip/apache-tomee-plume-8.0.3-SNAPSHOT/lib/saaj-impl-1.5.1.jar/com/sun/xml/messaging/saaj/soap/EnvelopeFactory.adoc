@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPException - 8
- - javax.xml.soap.SOAPEnvelope - 3

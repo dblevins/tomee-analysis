@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.DiscriminatorColumn - 2
- - javax.persistence.FetchType - 2
- - javax.persistence.CascadeType - 1

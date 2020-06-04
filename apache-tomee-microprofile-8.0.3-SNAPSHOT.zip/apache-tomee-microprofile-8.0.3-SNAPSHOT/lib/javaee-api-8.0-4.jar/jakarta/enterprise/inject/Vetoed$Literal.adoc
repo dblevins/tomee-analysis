@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/Vetoed$Literal.class
+
+ - link:Vetoed$Literal-asmified.java[Asmified]
+
+== References
+

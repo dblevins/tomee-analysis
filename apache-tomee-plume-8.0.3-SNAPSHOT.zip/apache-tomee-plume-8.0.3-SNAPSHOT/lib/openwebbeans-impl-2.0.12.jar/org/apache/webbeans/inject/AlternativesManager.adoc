@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.Bean - 5
- - javax.enterprise.inject.spi.Prioritized - 4
- - javax.annotation.Priority - 2
- - javax.enterprise.inject.Alternative - 2

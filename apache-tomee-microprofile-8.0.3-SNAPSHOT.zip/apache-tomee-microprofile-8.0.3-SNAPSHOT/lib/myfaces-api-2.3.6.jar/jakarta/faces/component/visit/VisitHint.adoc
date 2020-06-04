@@ -1,0 +1,6 @@
+= jakarta/faces/component/visit/VisitHint.class
+
+ - link:VisitHint-asmified.java[Asmified]
+
+== References
+

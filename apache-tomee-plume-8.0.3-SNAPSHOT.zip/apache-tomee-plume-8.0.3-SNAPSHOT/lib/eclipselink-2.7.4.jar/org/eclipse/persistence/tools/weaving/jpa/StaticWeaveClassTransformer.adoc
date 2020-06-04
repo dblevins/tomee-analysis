@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.spi.ClassTransformer - 4
- - javax.persistence.spi.PersistenceUnitInfo - 1

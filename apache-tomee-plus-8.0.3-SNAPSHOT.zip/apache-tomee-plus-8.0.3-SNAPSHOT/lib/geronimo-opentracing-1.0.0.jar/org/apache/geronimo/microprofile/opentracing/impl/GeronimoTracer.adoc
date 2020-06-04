@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 11
- - javax.servlet.http.HttpServletRequest - 11
- - javax.inject.Inject - 4
- - javax.enterprise.event.Event - 3
- - javax.annotation.PostConstruct - 1
- - javax.enterprise.context.ApplicationScoped - 1

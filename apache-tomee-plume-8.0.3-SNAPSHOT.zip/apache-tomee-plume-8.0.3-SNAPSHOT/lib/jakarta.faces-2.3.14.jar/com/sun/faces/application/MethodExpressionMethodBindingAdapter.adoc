@@ -4,13 +4,3 @@
 
 == References
 
- - javax.faces.el.MethodBinding - 37
- - javax.faces.context.FacesContext - 23
- - javax.el.MethodInfo - 18
- - javax.el.ELContext - 15
- - javax.el.MethodExpression - 11
- - javax.el.ValueExpression - 6
- - javax.faces.component.StateHolder - 6
- - javax.el.ELException - 6
- - javax.el.ExpressionFactory - 5
- - javax.faces.application.Application - 2

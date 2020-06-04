@@ -1,0 +1,6 @@
+= jakarta/faces/component/SelectItemsIterator$GenericObjectSelectItemIterator$GenericObjectSelectItem.class
+
+ - link:SelectItemsIterator$GenericObjectSelectItemIterator$GenericObjectSelectItem-asmified.java[Asmified]
+
+== References
+

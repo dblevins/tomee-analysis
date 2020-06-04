@@ -4,12 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonGenerator - 59
- - javax.json.JsonValue - 24
- - javax.json.stream.JsonGenerationException - 18
- - javax.json.JsonNumber - 13
- - javax.json.JsonObject - 10
- - javax.json.JsonArray - 8
- - javax.json.JsonException - 6
- - javax.json.JsonString - 6
- - javax.json.JsonValue$ValueType - 4

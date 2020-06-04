@@ -4,12 +4,3 @@
 
 == References
 
- - javax.xml.bind.Unmarshaller - 22
- - javax.xml.bind.ValidationEventHandler - 11
- - javax.xml.bind.UnmarshalException - 9
- - javax.xml.bind.attachment.AttachmentUnmarshaller - 4
- - javax.xml.bind.JAXBContext - 4
- - javax.xml.bind.Unmarshaller$Listener - 3
- - javax.xml.bind.JAXBException - 3
- - javax.xml.bind.annotation.adapters.XmlAdapter - 2
- - javax.xml.bind.PropertyException - 2

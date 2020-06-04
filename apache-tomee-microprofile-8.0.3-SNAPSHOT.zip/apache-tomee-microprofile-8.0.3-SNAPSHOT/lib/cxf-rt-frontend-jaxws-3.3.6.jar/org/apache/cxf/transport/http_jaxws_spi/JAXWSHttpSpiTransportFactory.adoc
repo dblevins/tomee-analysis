@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.spi.http.HttpContext - 5
- - javax.xml.ws.spi.http.HttpHandler - 1

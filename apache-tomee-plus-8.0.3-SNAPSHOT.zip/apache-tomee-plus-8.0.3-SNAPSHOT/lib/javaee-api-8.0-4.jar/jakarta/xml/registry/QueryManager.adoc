@@ -1,0 +1,6 @@
+= jakarta/xml/registry/QueryManager.class
+
+ - link:QueryManager-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/websocket/MessageHandler$Partial.class
+
+ - link:MessageHandler$Partial-asmified.java[Asmified]
+
+== References
+

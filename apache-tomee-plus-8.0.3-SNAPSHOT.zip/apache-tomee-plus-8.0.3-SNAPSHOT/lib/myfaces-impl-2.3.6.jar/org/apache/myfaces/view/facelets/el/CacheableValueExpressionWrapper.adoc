@@ -4,7 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 33
- - javax.el.ELContext - 10
- - javax.el.ValueReference - 2
- - javax.faces.FacesWrapper - 1

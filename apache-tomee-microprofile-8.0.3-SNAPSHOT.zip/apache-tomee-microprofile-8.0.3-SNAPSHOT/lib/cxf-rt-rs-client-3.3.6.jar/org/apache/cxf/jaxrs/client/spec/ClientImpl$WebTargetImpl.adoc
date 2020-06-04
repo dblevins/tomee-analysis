@@ -4,11 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.UriBuilder - 51
- - javax.ws.rs.client.WebTarget - 48
- - javax.ws.rs.core.Configurable - 43
- - javax.ws.rs.core.Configuration - 24
- - javax.ws.rs.client.Invocation$Builder - 9
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.core.Feature - 1
- - javax.ws.rs.client.Client - 1

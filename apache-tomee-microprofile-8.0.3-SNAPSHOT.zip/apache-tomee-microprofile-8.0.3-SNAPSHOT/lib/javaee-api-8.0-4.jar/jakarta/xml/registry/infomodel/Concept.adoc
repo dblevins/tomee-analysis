@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/Concept.class
+
+ - link:Concept-asmified.java[Asmified]
+
+== References
+

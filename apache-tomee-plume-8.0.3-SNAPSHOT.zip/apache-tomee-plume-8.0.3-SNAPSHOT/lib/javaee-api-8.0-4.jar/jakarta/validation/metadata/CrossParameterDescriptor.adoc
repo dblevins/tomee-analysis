@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/CrossParameterDescriptor.class
+
+ - link:CrossParameterDescriptor-asmified.java[Asmified]
+
+== References
+

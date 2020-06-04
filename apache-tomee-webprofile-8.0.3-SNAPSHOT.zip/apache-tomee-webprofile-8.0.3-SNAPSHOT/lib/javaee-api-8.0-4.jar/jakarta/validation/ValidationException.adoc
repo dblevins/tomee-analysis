@@ -1,0 +1,6 @@
+= jakarta/validation/ValidationException.class
+
+ - link:ValidationException-asmified.java[Asmified]
+
+== References
+

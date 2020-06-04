@@ -1,0 +1,6 @@
+= jakarta/ejb/EJBObject.class
+
+ - link:EJBObject-asmified.java[Asmified]
+
+== References
+

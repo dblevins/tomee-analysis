@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 20
- - javax.faces.context.ExternalContext - 5
- - javax.faces.application.ResourceVisitOption - 5
- - javax.faces.flow.Flow - 4
- - javax.faces.application.Application - 2
- - javax.faces.FacesException - 2
- - javax.faces.flow.FlowHandler - 2

@@ -1,0 +1,6 @@
+= jakarta/cache/integration/CompletionListenerFuture.class
+
+ - link:CompletionListenerFuture-asmified.java[Asmified]
+
+== References
+

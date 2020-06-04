@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/ResponseProcessingException.class
+
+ - link:ResponseProcessingException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/jms/QueueConnectionFactory.class
+
+ - link:QueueConnectionFactory-asmified.java[Asmified]
+
+== References
+

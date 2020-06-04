@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.FacesException - 8
- - javax.el.ExpressionFactory - 2
- - javax.el.ValueExpression - 2
- - javax.el.ELContext - 2
- - javax.el.MethodExpression - 1

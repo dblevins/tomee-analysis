@@ -4,4 +4,3 @@
 
 == References
 
- - javax.faces.context.ResponseWriter - 7

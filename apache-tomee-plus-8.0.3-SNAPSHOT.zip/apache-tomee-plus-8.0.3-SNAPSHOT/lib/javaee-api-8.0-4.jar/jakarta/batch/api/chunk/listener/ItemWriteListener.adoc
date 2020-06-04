@@ -1,0 +1,6 @@
+= jakarta/batch/api/chunk/listener/ItemWriteListener.class
+
+ - link:ItemWriteListener-asmified.java[Asmified]
+
+== References
+

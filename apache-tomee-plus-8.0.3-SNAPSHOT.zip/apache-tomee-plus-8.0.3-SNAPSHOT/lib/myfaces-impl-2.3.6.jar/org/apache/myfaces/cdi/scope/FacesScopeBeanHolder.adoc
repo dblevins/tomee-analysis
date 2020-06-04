@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 12
- - javax.enterprise.inject.spi.BeanManager - 6

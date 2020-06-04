@@ -1,0 +1,6 @@
+= jakarta/jms/XAConnectionFactory.class
+
+ - link:XAConnectionFactory-asmified.java[Asmified]
+
+== References
+

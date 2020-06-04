@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/DomHandler.class
+
+ - link:DomHandler-asmified.java[Asmified]
+
+== References
+

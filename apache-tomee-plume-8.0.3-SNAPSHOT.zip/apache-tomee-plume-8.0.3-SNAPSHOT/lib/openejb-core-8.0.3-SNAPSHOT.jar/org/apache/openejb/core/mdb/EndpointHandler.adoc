@@ -4,5 +4,3 @@
 
 == References
 
- - javax.resource.spi.UnavailableException - 5
- - javax.resource.spi.ApplicationServerInternalException - 4

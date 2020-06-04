@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.Contextual - 10
- - javax.enterprise.inject.spi.Bean - 1

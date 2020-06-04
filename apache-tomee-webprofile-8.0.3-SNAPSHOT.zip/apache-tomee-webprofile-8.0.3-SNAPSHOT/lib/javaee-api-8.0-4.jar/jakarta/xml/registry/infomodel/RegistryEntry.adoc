@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/RegistryEntry.class
+
+ - link:RegistryEntry-asmified.java[Asmified]
+
+== References
+

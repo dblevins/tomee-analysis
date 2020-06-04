@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Configurable - 45
- - javax.ws.rs.core.FeatureContext - 19
- - javax.ws.rs.core.Configuration - 2

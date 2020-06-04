@@ -4,9 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedMethod - 12
- - javax.enterprise.inject.spi.Bean - 9
- - javax.enterprise.inject.spi.Producer - 3
- - javax.enterprise.inject.spi.AnnotatedMember - 2
- - javax.enterprise.inject.spi.AnnotatedCallable - 1
- - javax.enterprise.inject.spi.InjectionPoint - 1

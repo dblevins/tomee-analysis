@@ -1,0 +1,6 @@
+= jakarta/jms/DeliveryMode.class
+
+ - link:DeliveryMode-asmified.java[Asmified]
+
+== References
+

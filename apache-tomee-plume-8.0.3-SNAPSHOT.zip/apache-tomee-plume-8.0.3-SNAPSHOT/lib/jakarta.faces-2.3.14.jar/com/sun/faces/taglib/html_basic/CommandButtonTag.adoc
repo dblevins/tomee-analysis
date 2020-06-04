@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 210
- - javax.faces.component.UICommand - 34
- - javax.el.MethodExpression - 14
- - javax.faces.webapp.UIComponentELTag - 6
- - javax.servlet.jsp.JspException - 6
- - javax.faces.component.UIComponent - 3
- - javax.faces.event.MethodExpressionActionListener - 2
- - javax.faces.event.ActionListener - 1

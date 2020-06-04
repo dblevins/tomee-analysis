@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlElement - 6
- - javax.xml.bind.annotation.XmlAccessorType - 1
- - javax.xml.bind.annotation.XmlElementWrapper - 1
- - javax.xml.bind.annotation.XmlTransient - 1
- - javax.xml.bind.annotation.XmlAccessType - 1

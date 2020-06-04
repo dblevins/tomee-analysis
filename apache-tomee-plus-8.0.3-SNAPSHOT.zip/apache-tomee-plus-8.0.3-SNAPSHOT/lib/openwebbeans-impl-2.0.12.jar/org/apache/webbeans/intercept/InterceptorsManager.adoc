@@ -4,9 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 16
- - javax.enterprise.inject.spi.Interceptor - 15
- - javax.annotation.Priority - 2
- - javax.enterprise.inject.spi.InterceptionType - 2
- - javax.interceptor.Interceptor - 1
- - javax.enterprise.inject.spi.Bean - 1

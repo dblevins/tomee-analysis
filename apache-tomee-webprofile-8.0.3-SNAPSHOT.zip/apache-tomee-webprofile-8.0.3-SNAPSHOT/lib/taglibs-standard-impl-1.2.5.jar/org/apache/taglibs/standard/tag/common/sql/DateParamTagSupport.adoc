@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.JspException - 4
- - javax.servlet.jsp.jstl.sql.SQLExecutionTag - 3
- - javax.servlet.jsp.tagext.TagSupport - 2
- - javax.servlet.jsp.tagext.Tag - 2
- - javax.servlet.jsp.JspTagException - 2

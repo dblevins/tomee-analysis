@@ -1,0 +1,6 @@
+= jakarta/resource/spi/RetryableUnavailableException.class
+
+ - link:RetryableUnavailableException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/jms/TopicSession.class
+
+ - link:TopicSession-asmified.java[Asmified]
+
+== References
+

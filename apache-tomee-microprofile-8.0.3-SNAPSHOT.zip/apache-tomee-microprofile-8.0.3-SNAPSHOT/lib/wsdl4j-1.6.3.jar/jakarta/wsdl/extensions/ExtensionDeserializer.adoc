@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/ExtensionDeserializer.class
+
+ - link:ExtensionDeserializer-asmified.java[Asmified]
+
+== References
+

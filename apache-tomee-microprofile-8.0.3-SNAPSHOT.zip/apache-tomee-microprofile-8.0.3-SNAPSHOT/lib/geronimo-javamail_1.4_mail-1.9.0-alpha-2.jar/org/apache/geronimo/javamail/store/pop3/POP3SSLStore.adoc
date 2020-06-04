@@ -4,5 +4,3 @@
 
 == References
 
- - javax.mail.URLName - 2
- - javax.mail.Session - 2

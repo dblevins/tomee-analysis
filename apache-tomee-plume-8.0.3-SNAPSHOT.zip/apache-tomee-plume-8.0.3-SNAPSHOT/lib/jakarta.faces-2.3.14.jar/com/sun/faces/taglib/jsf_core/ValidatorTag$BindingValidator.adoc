@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 22
- - javax.faces.context.FacesContext - 9
- - javax.faces.validator.Validator - 8
- - javax.faces.component.UIComponent - 6
- - javax.faces.validator.ValidatorException - 3
- - javax.faces.application.FacesMessage - 2
- - javax.faces.component.StateHolder - 1

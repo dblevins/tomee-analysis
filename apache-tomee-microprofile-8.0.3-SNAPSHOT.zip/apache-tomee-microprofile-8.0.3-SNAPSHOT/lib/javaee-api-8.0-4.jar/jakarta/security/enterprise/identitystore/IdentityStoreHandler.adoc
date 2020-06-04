@@ -1,0 +1,6 @@
+= jakarta/security/enterprise/identitystore/IdentityStoreHandler.class
+
+ - link:IdentityStoreHandler-asmified.java[Asmified]
+
+== References
+

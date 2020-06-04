@@ -1,0 +1,6 @@
+= jakarta/annotation/security/PermitAll.class
+
+ - link:PermitAll-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/Stats.class
+
+ - link:Stats-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/shared/ActionType.class
+
+ - link:ActionType-asmified.java[Asmified]
+
+== References
+

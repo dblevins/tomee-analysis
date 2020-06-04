@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/ConversationScoped.class
+
+ - link:ConversationScoped-asmified.java[Asmified]
+
+== References
+

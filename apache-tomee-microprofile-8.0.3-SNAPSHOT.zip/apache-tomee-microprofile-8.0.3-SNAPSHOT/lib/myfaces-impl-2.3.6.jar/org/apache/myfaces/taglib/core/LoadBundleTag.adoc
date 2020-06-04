@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 10
- - javax.faces.context.FacesContext - 9
- - javax.servlet.jsp.JspException - 7
- - javax.faces.component.UIViewRoot - 5
- - javax.servlet.jsp.tagext.TagSupport - 2
- - javax.faces.context.ExternalContext - 2
- - javax.faces.application.Application - 2
- - javax.el.ELContext - 2

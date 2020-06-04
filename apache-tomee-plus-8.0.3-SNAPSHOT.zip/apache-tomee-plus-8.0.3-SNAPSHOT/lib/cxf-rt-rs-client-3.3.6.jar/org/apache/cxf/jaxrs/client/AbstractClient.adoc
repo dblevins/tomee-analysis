@@ -4,16 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 45
- - javax.ws.rs.core.UriBuilder - 39
- - javax.ws.rs.core.Response$ResponseBuilder - 21
- - javax.ws.rs.core.Response - 17
- - javax.ws.rs.core.MediaType - 13
- - javax.ws.rs.ext.ParamConverter - 7
- - javax.ws.rs.ProcessingException - 7
- - javax.ws.rs.PathParam - 3
- - javax.ws.rs.core.Form - 3
- - javax.ws.rs.client.InvocationCallback - 3
- - javax.ws.rs.core.EntityTag - 2
- - javax.ws.rs.core.Cookie - 2
- - javax.ws.rs.WebApplicationException - 2

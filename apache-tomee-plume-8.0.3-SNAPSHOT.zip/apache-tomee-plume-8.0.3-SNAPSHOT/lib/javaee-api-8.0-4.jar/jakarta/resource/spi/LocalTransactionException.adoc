@@ -1,0 +1,6 @@
+= jakarta/resource/spi/LocalTransactionException.class
+
+ - link:LocalTransactionException-asmified.java[Asmified]
+
+== References
+

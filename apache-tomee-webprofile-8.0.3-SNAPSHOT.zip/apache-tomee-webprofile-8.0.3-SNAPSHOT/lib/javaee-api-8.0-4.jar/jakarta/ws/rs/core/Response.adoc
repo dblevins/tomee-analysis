@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/Response.class
+
+ - link:Response-asmified.java[Asmified]
+
+== References
+

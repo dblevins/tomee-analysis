@@ -1,0 +1,6 @@
+= jakarta/resource/spi/ResourceAdapterInternalException.class
+
+ - link:ResourceAdapterInternalException-asmified.java[Asmified]
+
+== References
+

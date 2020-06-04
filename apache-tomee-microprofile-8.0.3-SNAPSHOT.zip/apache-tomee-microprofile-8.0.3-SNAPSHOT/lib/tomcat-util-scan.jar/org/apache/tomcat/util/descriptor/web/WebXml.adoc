@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 20
- - javax.servlet.DispatcherType - 2
- - javax.servlet.SessionTrackingMode - 2
- - javax.servlet.descriptor.JspConfigDescriptor - 1

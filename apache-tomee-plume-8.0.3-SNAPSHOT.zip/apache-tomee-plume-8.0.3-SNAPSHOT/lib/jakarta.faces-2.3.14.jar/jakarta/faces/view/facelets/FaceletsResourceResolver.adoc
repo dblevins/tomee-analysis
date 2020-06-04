@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/FaceletsResourceResolver.class
+
+ - link:FaceletsResourceResolver-asmified.java[Asmified]
+
+== References
+

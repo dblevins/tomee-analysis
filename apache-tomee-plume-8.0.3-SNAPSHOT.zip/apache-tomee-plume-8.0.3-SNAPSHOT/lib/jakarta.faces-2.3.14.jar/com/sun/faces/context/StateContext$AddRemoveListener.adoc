@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 11
- - javax.faces.component.UIComponent - 8
- - javax.faces.component.UIViewRoot - 5
- - javax.faces.event.PreRemoveFromViewEvent - 3
- - javax.faces.event.PostAddToViewEvent - 2
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.SystemEvent - 1
- - javax.faces.event.SystemEventListener - 1

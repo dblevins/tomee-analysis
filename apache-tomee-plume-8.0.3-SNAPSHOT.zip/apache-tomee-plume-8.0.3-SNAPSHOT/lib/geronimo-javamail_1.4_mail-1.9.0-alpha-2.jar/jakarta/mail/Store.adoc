@@ -1,0 +1,6 @@
+= jakarta/mail/Store.class
+
+ - link:Store-asmified.java[Asmified]
+
+== References
+

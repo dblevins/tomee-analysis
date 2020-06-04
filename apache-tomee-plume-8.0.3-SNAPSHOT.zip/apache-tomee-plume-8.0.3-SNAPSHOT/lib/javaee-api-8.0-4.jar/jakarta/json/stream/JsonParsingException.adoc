@@ -1,0 +1,6 @@
+= jakarta/json/stream/JsonParsingException.class
+
+ - link:JsonParsingException-asmified.java[Asmified]
+
+== References
+

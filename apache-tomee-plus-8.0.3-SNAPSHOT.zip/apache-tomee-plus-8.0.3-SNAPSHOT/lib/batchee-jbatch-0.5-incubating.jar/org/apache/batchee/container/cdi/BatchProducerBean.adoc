@@ -4,9 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.InjectionPoint - 47
- - javax.batch.api.BatchProperty - 28
- - javax.enterprise.inject.Produces - 25
- - javax.enterprise.inject.spi.Annotated - 2
- - javax.batch.runtime.context.JobContext - 1
- - javax.batch.runtime.context.StepContext - 1

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response - 22
- - javax.ws.rs.core.Response$ResponseBuilder - 9
- - javax.ws.rs.WebApplicationException - 9
- - javax.ws.rs.ext.ExceptionMapper - 1
- - javax.ws.rs.NotFoundException - 1

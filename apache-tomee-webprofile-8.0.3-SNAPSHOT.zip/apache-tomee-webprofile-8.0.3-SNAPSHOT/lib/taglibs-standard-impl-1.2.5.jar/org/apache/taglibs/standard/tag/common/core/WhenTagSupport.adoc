@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.jstl.core.ConditionalTagSupport - 2
- - javax.servlet.jsp.JspTagException - 2
- - javax.servlet.jsp.JspException - 1
- - javax.servlet.jsp.tagext.Tag - 1

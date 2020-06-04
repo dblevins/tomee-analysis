@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 10
- - javax.ws.rs.core.Response - 2
- - javax.ws.rs.core.UriBuilder - 2

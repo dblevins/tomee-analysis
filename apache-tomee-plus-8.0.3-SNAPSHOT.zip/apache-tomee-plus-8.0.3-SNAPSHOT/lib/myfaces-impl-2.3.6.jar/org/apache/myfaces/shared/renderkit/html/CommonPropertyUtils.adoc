@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 140
- - javax.faces.context.ResponseWriter - 135

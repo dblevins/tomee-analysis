@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/tagext/ValidationMessage.class
+
+ - link:ValidationMessage-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/websocket/WebSocketContainer.class
+
+ - link:WebSocketContainer-asmified.java[Asmified]
+
+== References
+

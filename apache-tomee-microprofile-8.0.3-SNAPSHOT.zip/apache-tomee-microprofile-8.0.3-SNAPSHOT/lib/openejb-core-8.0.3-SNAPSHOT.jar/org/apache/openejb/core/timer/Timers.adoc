@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.TimerService - 8
- - javax.ejb.Timer - 1

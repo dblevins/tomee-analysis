@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.SetAttribute - 1

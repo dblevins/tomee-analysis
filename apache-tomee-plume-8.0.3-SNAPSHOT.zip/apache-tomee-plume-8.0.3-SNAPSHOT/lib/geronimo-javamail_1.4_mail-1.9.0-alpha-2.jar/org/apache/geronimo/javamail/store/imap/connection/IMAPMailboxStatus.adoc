@@ -4,5 +4,3 @@
 
 == References
 
- - javax.mail.Flags - 8
- - javax.mail.MessagingException - 7

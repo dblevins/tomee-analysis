@@ -4,8 +4,3 @@
 
 == References
 
- - javax.el.ExpressionFactory - 13
- - javax.el.ValueExpression - 6
- - javax.el.ELContext - 4
- - javax.el.ELException - 3
- - javax.el.MethodExpression - 3

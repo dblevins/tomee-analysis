@@ -4,20 +4,3 @@
 
 == References
 
- - javax.json.bind.annotation.JsonbProperty - 35
- - javax.json.bind.annotation.JsonbDateFormat - 28
- - javax.json.bind.annotation.JsonbNumberFormat - 25
- - javax.json.bind.annotation.JsonbTypeAdapter - 25
- - javax.json.bind.config.PropertyVisibilityStrategy - 16
- - javax.json.bind.JsonbException - 14
- - javax.json.bind.annotation.JsonbNillable - 12
- - javax.json.bind.config.PropertyNamingStrategy - 10
- - javax.json.bind.annotation.JsonbPropertyOrder - 8
- - javax.json.spi.JsonProvider - 5
- - javax.json.bind.adapter.JsonbAdapter - 3
- - javax.json.JsonBuilderFactory - 2
- - javax.json.stream.JsonParserFactory - 2
- - javax.json.bind.annotation.JsonbCreator - 2
- - javax.json.bind.annotation.JsonbTypeDeserializer - 1
- - javax.json.bind.annotation.JsonbTypeSerializer - 1
- - javax.json.bind.annotation.JsonbTransient - 1

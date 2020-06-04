@@ -1,0 +1,6 @@
+= jakarta/batch/api/BatchProperty.class
+
+ - link:BatchProperty-asmified.java[Asmified]
+
+== References
+

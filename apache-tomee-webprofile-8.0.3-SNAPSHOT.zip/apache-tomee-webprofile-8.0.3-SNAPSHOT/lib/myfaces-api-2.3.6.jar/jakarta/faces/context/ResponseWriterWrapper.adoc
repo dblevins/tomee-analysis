@@ -1,0 +1,6 @@
+= jakarta/faces/context/ResponseWriterWrapper.class
+
+ - link:ResponseWriterWrapper-asmified.java[Asmified]
+
+== References
+

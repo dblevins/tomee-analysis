@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.ResponseWriter - 8
- - javax.faces.context.ExternalContext - 7
- - javax.faces.context.FacesContext - 4
- - javax.faces.context.PartialResponseWriter - 3

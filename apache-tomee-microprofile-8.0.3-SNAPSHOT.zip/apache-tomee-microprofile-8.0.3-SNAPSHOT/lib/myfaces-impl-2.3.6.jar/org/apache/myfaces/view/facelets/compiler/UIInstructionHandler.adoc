@@ -4,13 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 30
- - javax.faces.view.facelets.FaceletContext - 23
- - javax.faces.context.FacesContext - 12
- - javax.el.ExpressionFactory - 4
- - javax.el.ELException - 3
- - javax.faces.component.UniqueIdVendor - 3
- - javax.el.ELContext - 3
- - javax.faces.component.UIViewRoot - 1
- - javax.faces.FacesException - 1
- - javax.faces.view.facelets.FaceletException - 1

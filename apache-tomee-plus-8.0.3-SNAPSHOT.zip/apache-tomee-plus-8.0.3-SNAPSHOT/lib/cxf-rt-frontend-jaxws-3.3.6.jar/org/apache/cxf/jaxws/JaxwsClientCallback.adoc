@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.AsyncHandler - 9
- - javax.xml.ws.Response - 2

@@ -4,12 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Configuration - 9
- - javax.ws.rs.core.Configurable - 8
- - javax.ws.rs.RuntimeType - 2
- - javax.ws.rs.ext.ReaderInterceptor - 1
- - javax.ws.rs.ext.MessageBodyWriter - 1
- - javax.ws.rs.client.ClientResponseFilter - 1
- - javax.ws.rs.ext.WriterInterceptor - 1
- - javax.ws.rs.client.ClientRequestFilter - 1
- - javax.ws.rs.ext.MessageBodyReader - 1

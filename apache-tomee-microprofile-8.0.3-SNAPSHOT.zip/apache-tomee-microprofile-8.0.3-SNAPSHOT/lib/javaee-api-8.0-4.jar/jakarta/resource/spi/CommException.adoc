@@ -1,0 +1,6 @@
+= jakarta/resource/spi/CommException.class
+
+ - link:CommException-asmified.java[Asmified]
+
+== References
+

@@ -4,27 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 29
- - javax.enterprise.inject.spi.Bean - 24
- - javax.enterprise.inject.spi.BeanAttributes - 12
- - javax.enterprise.context.spi.CreationalContext - 8
- - javax.enterprise.inject.spi.AnnotatedMethod - 7
- - javax.enterprise.inject.spi.DefinitionException - 6
- - javax.enterprise.inject.spi.BeanManager - 6
- - javax.inject.Provider - 5
- - javax.enterprise.inject.spi.AnnotatedParameter - 4
- - javax.enterprise.context.Dependent - 3
- - javax.enterprise.context.spi.Context - 2
- - javax.enterprise.inject.spi.ObserverMethod - 2
- - javax.enterprise.context.spi.Contextual - 2
- - javax.enterprise.inject.spi.SessionBeanType - 2
- - javax.enterprise.inject.Specializes - 1
- - javax.enterprise.inject.Vetoed - 1
- - javax.servlet.Servlet - 1
- - javax.enterprise.inject.spi.AnnotatedField - 1
- - javax.enterprise.event.ObservesAsync - 1
- - javax.enterprise.inject.Disposes - 1
- - javax.servlet.jsp.tagext.JspTag - 1
- - javax.enterprise.context.ApplicationScoped - 1
- - javax.servlet.Filter - 1
- - javax.servlet.ServletContextListener - 1

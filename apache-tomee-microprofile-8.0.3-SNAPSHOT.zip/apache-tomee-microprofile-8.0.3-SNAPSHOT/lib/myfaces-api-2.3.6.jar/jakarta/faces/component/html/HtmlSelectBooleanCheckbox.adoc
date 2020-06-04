@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlSelectBooleanCheckbox.class
+
+ - link:HtmlSelectBooleanCheckbox-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/soap12/SOAP12Address.class
+
+ - link:SOAP12Address-asmified.java[Asmified]
+
+== References
+

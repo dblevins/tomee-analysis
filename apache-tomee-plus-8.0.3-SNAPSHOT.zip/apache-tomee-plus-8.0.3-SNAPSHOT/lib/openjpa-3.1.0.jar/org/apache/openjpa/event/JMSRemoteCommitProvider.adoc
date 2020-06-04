@@ -4,14 +4,3 @@
 
 == References
 
- - javax.jms.TopicConnection - 15
- - javax.jms.TopicSession - 9
- - javax.jms.JMSException - 6
- - javax.jms.TopicPublisher - 5
- - javax.jms.Topic - 3
- - javax.jms.MessageListener - 3
- - javax.jms.Message - 3
- - javax.jms.TopicSubscriber - 2
- - javax.jms.TopicConnectionFactory - 2
- - javax.jms.ExceptionListener - 2
- - javax.jms.ObjectMessage - 1

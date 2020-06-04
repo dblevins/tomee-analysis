@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.tagext.TagAttributeInfo - 36
- - javax.servlet.jsp.tagext.TagInfo - 17
- - javax.servlet.jsp.tagext.TagVariableInfo - 15
- - javax.servlet.ServletContext - 4

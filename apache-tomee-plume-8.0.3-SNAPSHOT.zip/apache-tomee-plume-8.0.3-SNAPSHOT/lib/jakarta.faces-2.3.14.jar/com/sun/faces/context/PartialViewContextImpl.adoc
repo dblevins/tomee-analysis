@@ -4,25 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 96
- - javax.faces.context.PartialResponseWriter - 44
- - javax.faces.component.UIViewRoot - 24
- - javax.faces.context.PartialViewContext - 22
- - javax.faces.context.ExternalContext - 20
- - javax.faces.component.UIComponent - 16
- - javax.faces.event.PhaseId - 14
- - javax.faces.context.ResponseWriter - 12
- - javax.faces.component.visit.VisitContext - 7
- - javax.faces.application.ResourceHandler - 5
- - javax.faces.render.RenderKit - 4
- - javax.faces.application.Application - 4
- - javax.faces.lifecycle.ClientWindow - 3
- - javax.faces.component.visit.VisitContextWrapper - 3
- - javax.faces.component.visit.VisitContextFactory - 3
- - javax.faces.render.RenderKitFactory - 2
- - javax.faces.FactoryFinder - 2
- - javax.faces.application.StateManager - 2
- - javax.faces.component.visit.VisitHint - 2
- - javax.faces.FacesException - 2
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.NamingContainer - 1

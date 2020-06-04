@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 6
- - javax.xml.bind.Unmarshaller - 4
- - javax.xml.bind.JAXBException - 4

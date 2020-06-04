@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.ELException - 26
- - javax.el.VariableMapper - 19
- - javax.el.FunctionMapper - 17
- - javax.el.ELContext - 4
- - javax.el.ValueExpression - 3
- - javax.el.MethodExpression - 1

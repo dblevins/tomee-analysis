@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EJBObject - 4
- - javax.ejb.Handle - 3

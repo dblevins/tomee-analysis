@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.EntityTransaction - 5
- - javax.persistence.TransactionRequiredException - 4

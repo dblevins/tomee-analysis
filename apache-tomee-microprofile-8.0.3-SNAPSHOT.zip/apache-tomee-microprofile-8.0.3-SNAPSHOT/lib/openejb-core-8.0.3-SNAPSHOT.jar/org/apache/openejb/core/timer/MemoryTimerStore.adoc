@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ejb.TimerConfig - 6
- - javax.transaction.Transaction - 5
- - javax.transaction.TransactionManager - 5
- - javax.ejb.ScheduleExpression - 2
- - javax.transaction.SystemException - 2

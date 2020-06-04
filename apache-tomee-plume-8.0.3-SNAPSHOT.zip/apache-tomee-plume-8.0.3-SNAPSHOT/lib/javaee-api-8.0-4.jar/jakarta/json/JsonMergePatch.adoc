@@ -1,0 +1,6 @@
+= jakarta/json/JsonMergePatch.class
+
+ - link:JsonMergePatch-asmified.java[Asmified]
+
+== References
+

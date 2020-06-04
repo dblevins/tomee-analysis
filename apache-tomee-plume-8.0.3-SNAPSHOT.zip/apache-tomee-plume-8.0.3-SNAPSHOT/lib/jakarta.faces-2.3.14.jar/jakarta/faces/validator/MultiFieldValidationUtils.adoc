@@ -1,0 +1,6 @@
+= jakarta/faces/validator/MultiFieldValidationUtils.class
+
+ - link:MultiFieldValidationUtils-asmified.java[Asmified]
+
+== References
+

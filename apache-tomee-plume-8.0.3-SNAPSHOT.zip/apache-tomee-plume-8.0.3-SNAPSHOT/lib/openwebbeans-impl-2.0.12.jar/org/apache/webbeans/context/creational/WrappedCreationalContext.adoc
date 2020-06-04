@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 7
- - javax.enterprise.context.spi.Contextual - 2

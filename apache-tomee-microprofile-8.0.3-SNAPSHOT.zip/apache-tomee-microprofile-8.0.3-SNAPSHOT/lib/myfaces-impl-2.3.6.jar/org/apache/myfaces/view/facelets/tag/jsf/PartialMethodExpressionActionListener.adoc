@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.event.MethodExpressionActionListener - 6
- - javax.el.MethodExpression - 6
- - javax.faces.context.FacesContext - 4
- - javax.faces.component.PartialStateHolder - 1

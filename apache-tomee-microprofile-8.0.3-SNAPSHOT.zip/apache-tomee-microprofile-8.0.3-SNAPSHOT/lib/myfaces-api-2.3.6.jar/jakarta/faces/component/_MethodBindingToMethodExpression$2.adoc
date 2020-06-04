@@ -1,0 +1,6 @@
+= jakarta/faces/component/_MethodBindingToMethodExpression$2.class
+
+ - link:_MethodBindingToMethodExpression$2-asmified.java[Asmified]
+
+== References
+

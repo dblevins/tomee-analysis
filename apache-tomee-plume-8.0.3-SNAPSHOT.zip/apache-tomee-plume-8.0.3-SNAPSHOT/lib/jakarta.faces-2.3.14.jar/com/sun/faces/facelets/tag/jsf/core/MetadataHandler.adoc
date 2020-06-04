@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.component.UIViewRoot - 11
- - javax.faces.component.UIComponent - 8
- - javax.faces.context.FacesContext - 4
- - javax.faces.view.facelets.FaceletContext - 4
- - javax.faces.application.Application - 2
- - javax.faces.view.facelets.TagConfig - 2
- - javax.faces.view.facelets.FaceletHandler - 2
- - javax.faces.component.UIPanel - 1

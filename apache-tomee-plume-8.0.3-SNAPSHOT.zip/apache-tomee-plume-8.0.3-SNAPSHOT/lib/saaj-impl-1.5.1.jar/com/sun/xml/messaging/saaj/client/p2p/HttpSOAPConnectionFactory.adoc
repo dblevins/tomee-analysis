@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPConnectionFactory - 2
- - javax.xml.soap.SOAPConnection - 1
- - javax.xml.soap.SOAPException - 1

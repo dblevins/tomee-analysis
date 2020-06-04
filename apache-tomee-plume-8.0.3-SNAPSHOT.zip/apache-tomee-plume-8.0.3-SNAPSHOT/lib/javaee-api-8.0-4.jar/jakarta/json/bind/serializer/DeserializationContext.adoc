@@ -1,0 +1,6 @@
+= jakarta/json/bind/serializer/DeserializationContext.class
+
+ - link:DeserializationContext-asmified.java[Asmified]
+
+== References
+

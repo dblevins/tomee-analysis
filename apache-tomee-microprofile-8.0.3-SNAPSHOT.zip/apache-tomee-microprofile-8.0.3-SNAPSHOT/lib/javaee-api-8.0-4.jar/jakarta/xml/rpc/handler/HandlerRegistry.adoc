@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/handler/HandlerRegistry.class
+
+ - link:HandlerRegistry-asmified.java[Asmified]
+
+== References
+

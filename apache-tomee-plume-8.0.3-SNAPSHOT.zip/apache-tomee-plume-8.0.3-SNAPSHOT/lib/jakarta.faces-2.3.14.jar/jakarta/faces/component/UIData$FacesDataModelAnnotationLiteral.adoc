@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIData$FacesDataModelAnnotationLiteral.class
+
+ - link:UIData$FacesDataModelAnnotationLiteral-asmified.java[Asmified]
+
+== References
+

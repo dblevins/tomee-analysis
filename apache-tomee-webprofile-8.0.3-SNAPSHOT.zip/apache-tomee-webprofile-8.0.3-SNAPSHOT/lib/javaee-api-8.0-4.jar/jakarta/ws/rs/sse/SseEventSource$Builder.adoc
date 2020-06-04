@@ -1,0 +1,6 @@
+= jakarta/ws/rs/sse/SseEventSource$Builder.class
+
+ - link:SseEventSource$Builder-asmified.java[Asmified]
+
+== References
+

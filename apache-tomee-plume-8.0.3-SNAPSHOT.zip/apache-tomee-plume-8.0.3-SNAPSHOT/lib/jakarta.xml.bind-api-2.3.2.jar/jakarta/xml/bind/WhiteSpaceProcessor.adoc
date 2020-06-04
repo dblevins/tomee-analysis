@@ -1,0 +1,6 @@
+= jakarta/xml/bind/WhiteSpaceProcessor.class
+
+ - link:WhiteSpaceProcessor-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.component.UIOutput - 2
- - javax.faces.component.behavior.ClientBehaviorHolder - 1

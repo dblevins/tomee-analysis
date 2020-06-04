@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 20
- - javax.faces.el.MethodBinding - 16
- - javax.faces.application.NavigationHandler - 11
- - javax.faces.component.UIComponent - 10
- - javax.faces.el.EvaluationException - 5
- - javax.faces.el.MethodNotFoundException - 5
- - javax.faces.FacesException - 4
- - javax.faces.event.ActionEvent - 4
- - javax.faces.application.Application - 2
- - javax.faces.component.ActionSource - 2
- - javax.faces.event.ActionListener - 1

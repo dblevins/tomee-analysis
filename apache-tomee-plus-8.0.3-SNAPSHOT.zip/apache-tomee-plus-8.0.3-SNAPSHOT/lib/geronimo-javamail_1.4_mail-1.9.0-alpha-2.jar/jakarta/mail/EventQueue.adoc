@@ -1,0 +1,6 @@
+= jakarta/mail/EventQueue.class
+
+ - link:EventQueue-asmified.java[Asmified]
+
+== References
+

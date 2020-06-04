@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 38
- - javax.faces.context.FacesContext - 22
- - javax.faces.context.ResponseWriter - 18
- - javax.faces.component.UIOutput - 6
- - javax.faces.context.ExternalContext - 2

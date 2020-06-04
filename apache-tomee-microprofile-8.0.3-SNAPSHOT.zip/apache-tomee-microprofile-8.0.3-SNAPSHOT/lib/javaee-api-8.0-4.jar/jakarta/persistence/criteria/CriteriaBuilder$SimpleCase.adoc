@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/CriteriaBuilder$SimpleCase.class
+
+ - link:CriteriaBuilder$SimpleCase-asmified.java[Asmified]
+
+== References
+

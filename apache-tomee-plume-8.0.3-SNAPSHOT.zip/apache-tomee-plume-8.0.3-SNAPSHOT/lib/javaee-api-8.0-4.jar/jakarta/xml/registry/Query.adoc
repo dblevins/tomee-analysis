@@ -1,0 +1,6 @@
+= jakarta/xml/registry/Query.class
+
+ - link:Query-asmified.java[Asmified]
+
+== References
+

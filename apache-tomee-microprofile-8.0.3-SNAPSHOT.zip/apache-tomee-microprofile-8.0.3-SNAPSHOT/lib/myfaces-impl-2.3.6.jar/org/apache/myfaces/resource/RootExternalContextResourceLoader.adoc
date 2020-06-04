@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 20
- - javax.faces.context.ExternalContext - 10
- - javax.faces.application.ResourceVisitOption - 4

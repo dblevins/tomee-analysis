@@ -4,14 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 15
- - javax.xml.bind.annotation.XmlElement - 13
- - javax.xml.bind.annotation.XmlElementWrapper - 7
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters - 6
- - javax.xml.bind.annotation.XmlMimeType - 4
- - javax.xml.bind.annotation.XmlAttachmentRef - 2
- - javax.xml.bind.annotation.XmlList - 2
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter$DEFAULT - 1
- - javax.xml.bind.annotation.XmlElement$DEFAULT - 1
- - javax.xml.bind.annotation.XmlNsForm - 1
- - javax.xml.ws.Holder - 1

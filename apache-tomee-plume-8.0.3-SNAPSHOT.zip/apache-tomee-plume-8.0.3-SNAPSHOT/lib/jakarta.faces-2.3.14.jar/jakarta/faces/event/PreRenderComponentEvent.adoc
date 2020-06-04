@@ -1,0 +1,6 @@
+= jakarta/faces/event/PreRenderComponentEvent.class
+
+ - link:PreRenderComponentEvent-asmified.java[Asmified]
+
+== References
+

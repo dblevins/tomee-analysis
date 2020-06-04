@@ -4,5 +4,3 @@
 
 == References
 
- - javax.annotation.Nonnull - 32
- - javax.annotation.Nullable - 3

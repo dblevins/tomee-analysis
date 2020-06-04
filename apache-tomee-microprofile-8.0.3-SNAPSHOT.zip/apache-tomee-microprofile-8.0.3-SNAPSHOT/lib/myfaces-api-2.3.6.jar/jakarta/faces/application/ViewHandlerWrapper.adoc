@@ -1,0 +1,6 @@
+= jakarta/faces/application/ViewHandlerWrapper.class
+
+ - link:ViewHandlerWrapper-asmified.java[Asmified]
+
+== References
+

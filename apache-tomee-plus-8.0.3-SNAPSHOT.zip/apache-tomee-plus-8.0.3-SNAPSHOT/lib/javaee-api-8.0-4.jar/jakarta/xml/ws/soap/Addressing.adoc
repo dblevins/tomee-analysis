@@ -1,0 +1,6 @@
+= jakarta/xml/ws/soap/Addressing.class
+
+ - link:Addressing-asmified.java[Asmified]
+
+== References
+

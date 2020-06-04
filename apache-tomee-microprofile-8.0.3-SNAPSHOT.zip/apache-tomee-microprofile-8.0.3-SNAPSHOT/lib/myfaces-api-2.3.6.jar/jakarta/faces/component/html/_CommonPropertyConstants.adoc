@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/_CommonPropertyConstants.class
+
+ - link:_CommonPropertyConstants-asmified.java[Asmified]
+
+== References
+

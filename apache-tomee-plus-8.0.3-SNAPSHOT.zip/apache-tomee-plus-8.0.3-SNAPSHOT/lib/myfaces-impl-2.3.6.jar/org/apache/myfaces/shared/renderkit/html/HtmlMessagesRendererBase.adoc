@@ -4,15 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 67
- - javax.faces.context.ResponseWriter - 39
- - javax.faces.component.html.HtmlMessages - 32
- - javax.faces.context.FacesContext - 25
- - javax.faces.component.UIMessages - 15
- - javax.faces.application.FacesMessage$Severity - 13
- - javax.faces.application.FacesMessage - 6
- - javax.faces.component.behavior.ClientBehaviorHolder - 6
- - javax.faces.component.search.SearchExpressionContext - 3
- - javax.faces.component.search.SearchExpressionHandler - 2
- - javax.faces.application.Application - 2
- - javax.faces.component.search.SearchExpressionHint - 1

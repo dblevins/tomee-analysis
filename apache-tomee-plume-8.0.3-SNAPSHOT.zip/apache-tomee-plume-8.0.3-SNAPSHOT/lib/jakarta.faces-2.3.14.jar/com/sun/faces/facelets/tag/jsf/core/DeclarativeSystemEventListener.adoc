@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.MethodExpression - 26
- - javax.el.ELContext - 4
- - javax.faces.context.FacesContext - 3
- - javax.faces.event.ComponentSystemEvent - 2
- - javax.faces.event.ComponentSystemEventListener - 1
- - javax.faces.event.AbortProcessingException - 1
- - javax.el.MethodNotFoundException - 1

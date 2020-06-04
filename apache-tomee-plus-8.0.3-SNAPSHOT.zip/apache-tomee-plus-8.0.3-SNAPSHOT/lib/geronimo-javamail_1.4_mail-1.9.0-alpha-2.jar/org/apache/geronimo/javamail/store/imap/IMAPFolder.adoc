@@ -4,18 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 80
- - javax.mail.Message - 79
- - javax.mail.Flags - 29
- - javax.mail.Folder - 28
- - javax.mail.Store - 12
- - javax.mail.search.SearchTerm - 6
- - javax.mail.Flags$Flag - 4
- - javax.mail.search.FlagTerm - 4
- - javax.mail.Quota - 4
- - javax.mail.FetchProfile - 3
- - javax.mail.Session - 3
- - javax.mail.FolderClosedException - 2
- - javax.mail.FolderNotFoundException - 2
- - javax.mail.ReadOnlyFolderException - 2
- - javax.mail.UIDFolder - 1

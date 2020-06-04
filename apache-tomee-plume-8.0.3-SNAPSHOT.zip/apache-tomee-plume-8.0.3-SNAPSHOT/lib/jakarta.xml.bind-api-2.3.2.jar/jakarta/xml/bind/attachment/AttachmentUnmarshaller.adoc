@@ -1,0 +1,6 @@
+= jakarta/xml/bind/attachment/AttachmentUnmarshaller.class
+
+ - link:AttachmentUnmarshaller-asmified.java[Asmified]
+
+== References
+

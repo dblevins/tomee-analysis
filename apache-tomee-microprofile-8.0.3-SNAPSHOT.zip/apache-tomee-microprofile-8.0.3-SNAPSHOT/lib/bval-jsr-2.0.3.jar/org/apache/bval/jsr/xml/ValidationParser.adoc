@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 10
- - javax.validation.executable.ExecutableType - 2
- - javax.validation.BootstrapConfiguration - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.AccessType - 4
- - javax.persistence.Access - 1

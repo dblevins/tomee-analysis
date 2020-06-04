@@ -1,8 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/openwebbeans-jsf-2.0.12.jar
 
- - link:org/apache/webbeans/jsf/ConversationAwareViewHandler.adoc[org/apache/webbeans/jsf/ConversationAwareViewHandler.class] - 38
- - link:org/apache/webbeans/jsf/OwbApplicationFactory.adoc[org/apache/webbeans/jsf/OwbApplicationFactory.class] - 26
- - link:org/apache/webbeans/jsf/JSFUtil.adoc[org/apache/webbeans/jsf/JSFUtil.class] - 21
- - link:org/apache/webbeans/jsf/OwbApplication.adoc[org/apache/webbeans/jsf/OwbApplication.class] - 20
- - link:org/apache/webbeans/jsf/OwbExceptionHandler.adoc[org/apache/webbeans/jsf/OwbExceptionHandler.class] - 16
- - link:org/apache/webbeans/jsf/OwbExceptionHandlerFactory.adoc[org/apache/webbeans/jsf/OwbExceptionHandlerFactory.class] - 10

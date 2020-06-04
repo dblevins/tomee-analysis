@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.core.Response - 1
- - javax.ws.rs.core.EntityTag - 1
- - javax.ws.rs.core.Cookie - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jms.Connection - 16
- - javax.jms.Destination - 4

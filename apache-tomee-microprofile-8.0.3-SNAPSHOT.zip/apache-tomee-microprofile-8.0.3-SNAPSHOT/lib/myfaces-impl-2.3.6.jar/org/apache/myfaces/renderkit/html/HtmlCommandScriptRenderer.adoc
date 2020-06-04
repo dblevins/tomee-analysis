@@ -4,19 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 55
- - javax.faces.context.FacesContext - 49
- - javax.faces.component.html.HtmlCommandScript - 34
- - javax.faces.component.behavior.ClientBehaviorContext - 29
- - javax.faces.component.behavior.AjaxBehavior - 24
- - javax.faces.component.search.SearchExpressionContext - 20
- - javax.faces.context.ResponseWriter - 14
- - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 6
- - javax.faces.context.ExternalContext - 4
- - javax.faces.component.search.SearchExpressionHint - 3
- - javax.faces.component.UIParameter - 3
- - javax.faces.component.search.SearchExpressionHandler - 3
- - javax.faces.event.ActionEvent - 2
- - javax.faces.application.Application - 2
- - javax.faces.event.FacesEvent - 1
- - javax.faces.component.behavior.ClientBehaviorHolder - 1

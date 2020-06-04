@@ -1,0 +1,6 @@
+= jakarta/mail/search/FromStringTerm.class
+
+ - link:FromStringTerm-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/batch/runtime/JobInstance.class
+
+ - link:JobInstance-asmified.java[Asmified]
+
+== References
+

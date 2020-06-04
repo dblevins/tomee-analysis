@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.JspTagException - 8
- - javax.servlet.jsp.jstl.core.LoopTagSupport - 5
- - javax.servlet.jsp.PageContext - 2
- - javax.servlet.jsp.JspException - 1
- - javax.servlet.jsp.tagext.Tag - 1

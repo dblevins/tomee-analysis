@@ -4,8 +4,3 @@
 
 == References
 
- - javax.resource.cci.ConnectionFactory - 14
- - javax.resource.cci.ConnectionSpec - 10
- - javax.resource.ResourceException - 4
- - javax.resource.cci.Connection - 3
- - javax.resource.cci.RecordFactory - 2

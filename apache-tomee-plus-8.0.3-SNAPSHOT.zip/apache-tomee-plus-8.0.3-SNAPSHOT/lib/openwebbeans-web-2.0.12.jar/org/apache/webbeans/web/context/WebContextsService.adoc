@@ -4,16 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpSession - 25
- - javax.servlet.http.HttpServletRequest - 15
- - javax.servlet.ServletRequestEvent - 6
- - javax.enterprise.context.spi.Context - 4
- - javax.enterprise.context.SessionScoped - 4
- - javax.inject.Singleton - 4
- - javax.enterprise.context.RequestScoped - 4
- - javax.enterprise.context.ApplicationScoped - 4
- - javax.enterprise.context.ConversationScoped - 3
- - javax.enterprise.context.Dependent - 3
- - javax.servlet.ServletContext - 3
- - javax.servlet.ServletRequest - 2
- - javax.enterprise.context.ContextException - 1

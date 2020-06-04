@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPElement - 10
- - javax.xml.soap.Name - 4
- - javax.xml.soap.SOAPFault - 1

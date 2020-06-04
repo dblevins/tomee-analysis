@@ -1,0 +1,6 @@
+= jakarta/mail/event/FolderAdapter.class
+
+ - link:FolderAdapter-asmified.java[Asmified]
+
+== References
+

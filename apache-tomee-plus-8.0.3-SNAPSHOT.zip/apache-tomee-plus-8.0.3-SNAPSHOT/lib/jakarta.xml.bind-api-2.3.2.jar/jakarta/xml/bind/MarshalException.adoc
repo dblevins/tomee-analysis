@@ -1,0 +1,6 @@
+= jakarta/xml/bind/MarshalException.class
+
+ - link:MarshalException-asmified.java[Asmified]
+
+== References
+

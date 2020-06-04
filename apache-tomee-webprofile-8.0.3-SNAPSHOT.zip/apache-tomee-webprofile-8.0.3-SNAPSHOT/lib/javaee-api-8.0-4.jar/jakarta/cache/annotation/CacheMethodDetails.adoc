@@ -1,0 +1,6 @@
+= jakarta/cache/annotation/CacheMethodDetails.class
+
+ - link:CacheMethodDetails-asmified.java[Asmified]
+
+== References
+

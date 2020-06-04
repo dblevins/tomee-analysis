@@ -1,8 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/commons-dbcp2-2.1.jar
 
- - link:org/apache/commons/dbcp2/managed/TransactionContext.adoc[org/apache/commons/dbcp2/managed/TransactionContext.class] - 24
- - link:org/apache/commons/dbcp2/managed/TransactionRegistry.adoc[org/apache/commons/dbcp2/managed/TransactionRegistry.class] - 14
- - link:org/apache/commons/dbcp2/managed/BasicManagedDataSource.adoc[org/apache/commons/dbcp2/managed/BasicManagedDataSource.class] - 10
- - link:org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory.adoc[org/apache/commons/dbcp2/managed/DataSourceXAConnectionFactory.class] - 5
- - link:org/apache/commons/dbcp2/managed/LocalXAConnectionFactory.adoc[org/apache/commons/dbcp2/managed/LocalXAConnectionFactory.class] - 3
- - link:org/apache/commons/dbcp2/managed/TransactionContext$1.adoc[org/apache/commons/dbcp2/managed/TransactionContext$1.class] - 1

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 82
- - javax.faces.context.ResponseWriter - 72
- - javax.faces.context.FacesContext - 46
- - javax.faces.component.html.HtmlPanelGrid - 16
- - javax.faces.component.behavior.ClientBehaviorHolder - 4
- - javax.faces.application.ProjectStage - 2
- - javax.faces.component.UIPanel - 1

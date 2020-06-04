@@ -1,0 +1,6 @@
+= jakarta/servlet/http/HttpSession.class
+
+ - link:HttpSession-asmified.java[Asmified]
+
+== References
+

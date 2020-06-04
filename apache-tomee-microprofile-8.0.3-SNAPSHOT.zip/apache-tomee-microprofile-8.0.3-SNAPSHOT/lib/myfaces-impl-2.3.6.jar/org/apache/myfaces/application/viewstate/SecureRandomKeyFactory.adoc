@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 17
- - javax.faces.context.ExternalContext - 14
- - javax.xml.bind.DatatypeConverter - 2

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagHandler - 2
- - javax.faces.view.facelets.TagConfig - 2
- - javax.faces.FacesException - 1

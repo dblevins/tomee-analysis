@@ -1,0 +1,6 @@
+= jakarta/xml/ws/ResponseWrapper.class
+
+ - link:ResponseWrapper-asmified.java[Asmified]
+
+== References
+

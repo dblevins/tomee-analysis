@@ -4,5 +4,3 @@
 
 == References
 
- - javax.transaction.Transaction - 4
- - javax.transaction.Synchronization - 1

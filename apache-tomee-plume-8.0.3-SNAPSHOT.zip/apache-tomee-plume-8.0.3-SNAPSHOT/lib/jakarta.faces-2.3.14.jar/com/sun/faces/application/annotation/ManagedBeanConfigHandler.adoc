@@ -4,13 +4,3 @@
 
 == References
 
- - javax.faces.bean.ManagedBean - 9
- - javax.faces.bean.ManagedProperty - 8
- - javax.faces.bean.CustomScoped - 4
- - javax.faces.context.ExternalContext - 2
- - javax.faces.bean.NoneScoped - 2
- - javax.faces.context.FacesContext - 2
- - javax.faces.bean.RequestScoped - 2
- - javax.faces.bean.ViewScoped - 2
- - javax.faces.bean.ApplicationScoped - 2
- - javax.faces.bean.SessionScoped - 2

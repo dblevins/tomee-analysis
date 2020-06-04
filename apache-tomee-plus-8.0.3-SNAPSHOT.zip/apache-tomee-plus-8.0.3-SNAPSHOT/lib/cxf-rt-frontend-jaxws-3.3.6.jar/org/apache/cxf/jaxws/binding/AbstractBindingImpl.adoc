@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.Handler - 3
- - javax.xml.ws.Binding - 1

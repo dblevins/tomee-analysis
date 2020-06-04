@@ -4,14 +4,3 @@
 
 == References
 
- - javax.persistence.Parameter - 31
- - javax.persistence.StoredProcedureQuery - 25
- - javax.persistence.TemporalType - 24
- - javax.persistence.Query - 14
- - javax.persistence.FlushModeType - 6
- - javax.persistence.PersistenceException - 4
- - javax.persistence.LockModeType - 4
- - javax.persistence.NonUniqueResultException - 2
- - javax.persistence.NoResultException - 2
- - javax.persistence.ParameterMode - 2
- - javax.persistence.TypedQuery - 2

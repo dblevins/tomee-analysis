@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 8
- - javax.el.CompositeELResolver - 4
- - javax.el.ELResolver - 4
- - javax.faces.context.ExternalContext - 2
- - javax.enterprise.inject.spi.BeanManager - 2

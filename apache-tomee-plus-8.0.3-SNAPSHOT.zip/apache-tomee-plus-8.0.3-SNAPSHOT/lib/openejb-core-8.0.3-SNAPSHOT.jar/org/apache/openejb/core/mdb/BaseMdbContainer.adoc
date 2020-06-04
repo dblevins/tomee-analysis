@@ -4,4 +4,3 @@
 
 == References
 
- - javax.resource.spi.ResourceAdapter - 1

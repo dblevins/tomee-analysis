@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/tagext/IterationTag.class
+
+ - link:IterationTag-asmified.java[Asmified]
+
+== References
+

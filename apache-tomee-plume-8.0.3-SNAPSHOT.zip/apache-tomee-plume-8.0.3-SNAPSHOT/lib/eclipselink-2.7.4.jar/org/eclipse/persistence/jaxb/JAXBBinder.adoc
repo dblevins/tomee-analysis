@@ -4,10 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 19
- - javax.xml.bind.ValidationEventHandler - 8
- - javax.xml.bind.PropertyException - 6
- - javax.xml.bind.JAXBException - 6
- - javax.xml.bind.UnmarshalException - 4
- - javax.xml.bind.MarshalException - 3
- - javax.xml.bind.Binder - 2

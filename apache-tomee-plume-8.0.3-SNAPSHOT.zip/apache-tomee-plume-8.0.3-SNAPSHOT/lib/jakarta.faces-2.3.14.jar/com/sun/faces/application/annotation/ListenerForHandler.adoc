@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.event.ListenerFor - 15
- - javax.faces.component.UIComponent - 6
- - javax.faces.application.Application - 5
- - javax.faces.event.SystemEventListener - 5
- - javax.faces.context.FacesContext - 4
- - javax.faces.event.ComponentSystemEventListener - 3

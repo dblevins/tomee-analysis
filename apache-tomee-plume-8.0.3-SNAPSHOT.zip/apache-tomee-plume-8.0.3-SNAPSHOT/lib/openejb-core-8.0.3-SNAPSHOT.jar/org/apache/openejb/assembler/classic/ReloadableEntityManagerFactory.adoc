@@ -4,16 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManagerFactory - 48
- - javax.persistence.EntityManager - 20
- - javax.persistence.SynchronizationType - 6
- - javax.persistence.SharedCacheMode - 3
- - javax.persistence.ValidationMode - 3
- - javax.persistence.spi.PersistenceUnitTransactionType - 3
- - javax.persistence.EntityGraph - 2
- - javax.persistence.Query - 2
- - javax.persistence.criteria.CriteriaBuilder - 2
- - javax.persistence.PersistenceUnitUtil - 2
- - javax.persistence.metamodel.Metamodel - 2
- - javax.persistence.Cache - 2
- - javax.persistence.spi.PersistenceUnitInfo - 1

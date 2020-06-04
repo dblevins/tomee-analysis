@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 9
- - javax.el.ELContext - 9
- - javax.el.PropertyNotFoundException - 8
- - javax.faces.application.Resource - 6
- - javax.faces.application.ResourceHandler - 6
- - javax.faces.context.ExternalContext - 4
- - javax.faces.component.UIComponent - 3
- - javax.el.ELException - 2
- - javax.el.ELResolver - 2

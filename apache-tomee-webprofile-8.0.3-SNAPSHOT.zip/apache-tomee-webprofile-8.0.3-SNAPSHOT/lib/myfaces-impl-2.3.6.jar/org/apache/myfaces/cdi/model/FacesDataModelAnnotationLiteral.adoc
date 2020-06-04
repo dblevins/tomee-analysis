@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.model.FacesDataModel - 5
- - javax.enterprise.util.AnnotationLiteral - 2

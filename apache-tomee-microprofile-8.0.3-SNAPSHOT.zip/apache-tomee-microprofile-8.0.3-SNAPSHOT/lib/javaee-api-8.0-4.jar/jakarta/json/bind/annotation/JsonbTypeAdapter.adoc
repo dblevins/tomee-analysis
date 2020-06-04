@@ -1,0 +1,6 @@
+= jakarta/json/bind/annotation/JsonbTypeAdapter.class
+
+ - link:JsonbTypeAdapter-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/persistence/JoinTable.class
+
+ - link:JoinTable-asmified.java[Asmified]
+
+== References
+

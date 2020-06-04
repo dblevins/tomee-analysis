@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 32
- - javax.faces.model.SelectItem - 22
- - javax.faces.component.UISelectItem - 16
- - javax.el.ValueExpression - 14
- - javax.faces.context.FacesContext - 13
- - javax.faces.component.UISelectItems - 13
- - javax.faces.context.ExternalContext - 6
- - javax.faces.application.ProjectStage - 2

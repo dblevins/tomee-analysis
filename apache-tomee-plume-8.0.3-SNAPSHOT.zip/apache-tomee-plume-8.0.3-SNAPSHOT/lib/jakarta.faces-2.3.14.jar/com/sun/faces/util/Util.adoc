@@ -4,22 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 101
- - javax.faces.context.ExternalContext - 43
- - javax.servlet.ServletContext - 22
- - javax.faces.component.UIComponent - 15
- - javax.faces.component.UIViewRoot - 13
- - javax.faces.FacesException - 13
- - javax.faces.application.Application - 11
- - javax.enterprise.inject.spi.BeanManager - 10
- - javax.el.ValueExpression - 7
- - javax.servlet.ServletRegistration - 6
- - javax.el.ELContext - 6
- - javax.faces.convert.Converter - 4
- - javax.faces.component.UINamingContainer - 3
- - javax.faces.application.ViewHandler - 3
- - javax.faces.application.StateManager - 2
- - javax.faces.event.AbortProcessingException - 2
- - javax.faces.application.ProjectStage - 2
- - javax.faces.component.NamingContainer - 1
- - javax.faces.webapp.FacesServlet - 1

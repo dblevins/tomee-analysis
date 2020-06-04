@@ -4,5 +4,3 @@
 
 == References
 
- - javax.annotation.PreDestroy - 1
- - javax.annotation.PostConstruct - 1

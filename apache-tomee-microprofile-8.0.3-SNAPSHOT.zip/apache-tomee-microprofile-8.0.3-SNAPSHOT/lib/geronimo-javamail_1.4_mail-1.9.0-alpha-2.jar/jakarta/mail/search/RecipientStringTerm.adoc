@@ -1,0 +1,6 @@
+= jakarta/mail/search/RecipientStringTerm.class
+
+ - link:RecipientStringTerm-asmified.java[Asmified]
+
+== References
+

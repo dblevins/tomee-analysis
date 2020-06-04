@@ -1,0 +1,6 @@
+= jakarta/faces/FactoryFinderInstance.class
+
+ - link:FactoryFinderInstance-asmified.java[Asmified]
+
+== References
+

@@ -4,22 +4,3 @@
 
 == References
 
- - javax.json.bind.JsonbConfig - 103
- - javax.json.spi.JsonProvider - 17
- - javax.json.bind.config.PropertyVisibilityStrategy - 13
- - javax.json.bind.serializer.JsonbDeserializer - 13
- - javax.json.bind.serializer.JsonbSerializer - 13
- - javax.json.bind.config.PropertyNamingStrategy - 11
- - javax.json.bind.adapter.JsonbAdapter - 6
- - javax.json.JsonBuilderFactory - 6
- - javax.json.JsonValue - 5
- - javax.json.bind.JsonbBuilder - 3
- - javax.json.bind.Jsonb - 3
- - javax.json.stream.JsonGenerator - 2
- - javax.json.stream.JsonParser - 2
- - javax.json.JsonReaderFactory - 2
- - javax.json.bind.JsonbException - 2
- - javax.json.stream.JsonGeneratorFactory - 2
- - javax.json.bind.serializer.DeserializationContext - 1
- - javax.json.stream.JsonParserFactory - 1
- - javax.json.bind.serializer.SerializationContext - 1

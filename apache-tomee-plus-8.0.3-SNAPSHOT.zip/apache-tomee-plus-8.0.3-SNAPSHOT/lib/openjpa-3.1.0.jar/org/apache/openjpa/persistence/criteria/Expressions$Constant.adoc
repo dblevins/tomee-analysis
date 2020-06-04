@@ -4,8 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Expression - 15
- - javax.persistence.criteria.Predicate - 12
- - javax.persistence.criteria.Selection - 2
- - javax.persistence.criteria.Root - 2
- - javax.persistence.metamodel.EntityType - 1

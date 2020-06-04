@@ -4,4 +4,3 @@
 
 == References
 
- - javax.validation.spi.ConfigurationState - 1

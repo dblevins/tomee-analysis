@@ -4,20 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.ObserverMethod - 55
- - javax.enterprise.event.NotificationOptions - 16
- - javax.enterprise.inject.spi.AnnotatedMethod - 12
- - javax.enterprise.inject.spi.AnnotatedParameter - 10
- - javax.enterprise.inject.spi.AnnotatedType - 9
- - javax.enterprise.event.TransactionPhase - 4
- - javax.enterprise.inject.spi.AnnotatedConstructor - 4
- - javax.enterprise.inject.spi.ProcessAnnotatedType - 3
- - javax.enterprise.context.RequestScoped - 3
- - javax.enterprise.inject.spi.AnnotatedCallable - 3
- - javax.enterprise.event.ObserverException - 2
- - javax.enterprise.inject.spi.AnnotatedField - 2
- - javax.enterprise.inject.spi.Extension - 1
- - javax.enterprise.inject.spi.ProcessProducer - 1
- - javax.enterprise.inject.spi.EventMetadata - 1
- - javax.enterprise.inject.spi.AfterDeploymentValidation - 1
- - javax.enterprise.inject.spi.EventContext - 1

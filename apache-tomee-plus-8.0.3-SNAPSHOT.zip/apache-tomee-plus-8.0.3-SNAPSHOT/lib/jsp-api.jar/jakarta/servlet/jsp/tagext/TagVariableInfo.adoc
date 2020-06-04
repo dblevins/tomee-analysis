@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/tagext/TagVariableInfo.class
+
+ - link:TagVariableInfo-asmified.java[Asmified]
+
+== References
+

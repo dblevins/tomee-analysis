@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.UniqueConstraint - 1
- - javax.persistence.PrimaryKeyJoinColumn - 1

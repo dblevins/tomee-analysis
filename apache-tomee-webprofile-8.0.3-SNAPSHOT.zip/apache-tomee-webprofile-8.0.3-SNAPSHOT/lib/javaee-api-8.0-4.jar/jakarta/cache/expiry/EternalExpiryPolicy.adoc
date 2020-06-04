@@ -1,0 +1,6 @@
+= jakarta/cache/expiry/EternalExpiryPolicy.class
+
+ - link:EternalExpiryPolicy-asmified.java[Asmified]
+
+== References
+

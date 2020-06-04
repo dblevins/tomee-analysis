@@ -1,0 +1,6 @@
+= jakarta/faces/component/SelectItemsIterator$SingleElementIterator.class
+
+ - link:SelectItemsIterator$SingleElementIterator-asmified.java[Asmified]
+
+== References
+

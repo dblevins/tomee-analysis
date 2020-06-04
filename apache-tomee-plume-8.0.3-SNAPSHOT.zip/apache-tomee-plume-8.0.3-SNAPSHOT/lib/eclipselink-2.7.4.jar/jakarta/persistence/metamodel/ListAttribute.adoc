@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/ListAttribute.class
+
+ - link:ListAttribute-asmified.java[Asmified]
+
+== References
+

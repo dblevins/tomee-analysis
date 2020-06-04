@@ -1,0 +1,6 @@
+= jakarta/faces/model/ResultSetDataModel$ResultSetMap.class
+
+ - link:ResultSetDataModel$ResultSetMap-asmified.java[Asmified]
+
+== References
+

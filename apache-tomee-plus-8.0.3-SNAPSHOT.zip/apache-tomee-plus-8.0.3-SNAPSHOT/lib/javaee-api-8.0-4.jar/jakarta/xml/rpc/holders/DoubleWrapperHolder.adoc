@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/DoubleWrapperHolder.class
+
+ - link:DoubleWrapperHolder-asmified.java[Asmified]
+
+== References
+

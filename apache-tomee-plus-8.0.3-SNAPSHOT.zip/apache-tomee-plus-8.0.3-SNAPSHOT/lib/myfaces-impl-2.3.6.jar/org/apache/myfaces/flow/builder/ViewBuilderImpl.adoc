@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.flow.builder.ViewBuilder - 4
- - javax.faces.flow.ViewNode - 1
- - javax.faces.flow.builder.NodeBuilder - 1

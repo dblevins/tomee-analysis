@@ -1,0 +1,6 @@
+= jakarta/jms/MessageEOFException.class
+
+ - link:MessageEOFException-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.resource.ResourceException - 18
- - javax.jms.JMSException - 6
- - javax.jms.ConnectionMetaData - 4
- - javax.resource.spi.ManagedConnectionMetaData - 1

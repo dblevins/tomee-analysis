@@ -4,8 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 13
- - javax.jms.IllegalStateException - 7
- - javax.jms.Destination - 6
- - javax.jms.Message - 6
- - javax.jms.MessageProducer - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/component/search/SearchExpressionHandlerWrapper.class
+
+ - link:SearchExpressionHandlerWrapper-asmified.java[Asmified]
+
+== References
+

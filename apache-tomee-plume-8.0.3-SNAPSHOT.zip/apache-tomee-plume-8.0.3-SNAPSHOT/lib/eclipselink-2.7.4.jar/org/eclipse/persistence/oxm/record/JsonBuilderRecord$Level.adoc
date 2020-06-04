@@ -4,6 +4,3 @@
 
 == References
 
- - javax.json.JsonObjectBuilder - 9
- - javax.json.JsonArrayBuilder - 8
- - javax.json.Json - 1

@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/Association.class
+
+ - link:Association-asmified.java[Asmified]
+
+== References
+

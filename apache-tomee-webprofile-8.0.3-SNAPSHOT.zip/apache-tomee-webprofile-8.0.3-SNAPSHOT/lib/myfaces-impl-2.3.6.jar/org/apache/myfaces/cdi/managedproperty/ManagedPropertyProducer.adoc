@@ -4,9 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 5
- - javax.faces.context.FacesContext - 5
- - javax.enterprise.inject.spi.BeanManager - 4
- - javax.faces.application.Application - 2
- - javax.faces.FacesException - 2
- - javax.enterprise.context.Dependent - 1

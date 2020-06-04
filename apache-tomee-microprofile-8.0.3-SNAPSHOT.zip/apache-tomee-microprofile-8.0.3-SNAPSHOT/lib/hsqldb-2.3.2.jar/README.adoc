@@ -1,4 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/hsqldb-2.3.2.jar
 
- - link:org/hsqldb/server/Servlet.adoc[org/hsqldb/server/Servlet.class] - 43
- - link:org/hsqldb/jdbc/JDBCSQLXML.adoc[org/hsqldb/jdbc/JDBCSQLXML.class] - 2

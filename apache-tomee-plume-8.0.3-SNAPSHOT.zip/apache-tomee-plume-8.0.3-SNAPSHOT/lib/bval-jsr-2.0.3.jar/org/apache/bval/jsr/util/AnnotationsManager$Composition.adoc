@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.OverridesAttribute - 13
- - javax.validation.ConstraintTarget - 6
- - javax.validation.ConstraintDefinitionException - 6

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 14
- - javax.faces.component.UIComponent - 14
- - javax.el.ValueExpression - 6
- - javax.faces.context.ExternalContext - 2
- - javax.el.ELContext - 2
- - javax.faces.view.AttachedObjectTarget - 1
- - javax.faces.component.UINamingContainer - 1

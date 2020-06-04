@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.Metamodel - 6
- - javax.persistence.criteria.ParameterExpression - 2

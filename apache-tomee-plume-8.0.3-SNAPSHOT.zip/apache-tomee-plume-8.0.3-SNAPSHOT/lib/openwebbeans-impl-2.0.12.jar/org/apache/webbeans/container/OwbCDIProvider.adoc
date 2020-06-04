@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.CDIProvider - 1
- - javax.enterprise.inject.spi.CDI - 1

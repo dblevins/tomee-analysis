@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.SessionCookieConfig - 5
- - javax.servlet.ServletContext - 4

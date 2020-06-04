@@ -1,0 +1,6 @@
+= jakarta/ejb/TransactionRequiredLocalException.class
+
+ - link:TransactionRequiredLocalException-asmified.java[Asmified]
+
+== References
+

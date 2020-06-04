@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 12
- - javax.faces.webapp.UIComponentELTag - 4
- - javax.faces.component.UIComponent - 4

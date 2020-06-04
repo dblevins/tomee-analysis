@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/model/DDBean.class
+
+ - link:DDBean-asmified.java[Asmified]
+
+== References
+

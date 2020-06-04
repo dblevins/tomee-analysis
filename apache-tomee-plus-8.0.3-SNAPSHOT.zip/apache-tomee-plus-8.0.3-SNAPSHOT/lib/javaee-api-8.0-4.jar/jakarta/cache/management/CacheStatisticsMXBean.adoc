@@ -1,0 +1,6 @@
+= jakarta/cache/management/CacheStatisticsMXBean.class
+
+ - link:CacheStatisticsMXBean-asmified.java[Asmified]
+
+== References
+

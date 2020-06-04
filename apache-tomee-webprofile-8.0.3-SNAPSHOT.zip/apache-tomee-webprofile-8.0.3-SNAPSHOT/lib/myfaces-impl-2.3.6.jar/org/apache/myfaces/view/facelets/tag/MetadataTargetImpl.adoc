@@ -4,4 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.MetadataTarget - 2

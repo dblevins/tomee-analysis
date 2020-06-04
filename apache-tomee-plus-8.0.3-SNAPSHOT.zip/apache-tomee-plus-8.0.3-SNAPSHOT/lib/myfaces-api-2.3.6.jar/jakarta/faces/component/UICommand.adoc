@@ -1,0 +1,6 @@
+= jakarta/faces/component/UICommand.class
+
+ - link:UICommand-asmified.java[Asmified]
+
+== References
+

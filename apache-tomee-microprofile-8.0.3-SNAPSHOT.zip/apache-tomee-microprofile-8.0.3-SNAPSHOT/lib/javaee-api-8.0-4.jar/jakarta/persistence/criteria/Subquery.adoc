@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Subquery.class
+
+ - link:Subquery-asmified.java[Asmified]
+
+== References
+

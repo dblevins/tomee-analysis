@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.Lock - 15
- - javax.ejb.LockType - 7

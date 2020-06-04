@@ -1,0 +1,6 @@
+= jakarta/servlet/Registration$Dynamic.class
+
+ - link:Registration$Dynamic-asmified.java[Asmified]
+
+== References
+

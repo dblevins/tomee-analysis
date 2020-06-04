@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Selection - 5
- - javax.persistence.criteria.Root - 1

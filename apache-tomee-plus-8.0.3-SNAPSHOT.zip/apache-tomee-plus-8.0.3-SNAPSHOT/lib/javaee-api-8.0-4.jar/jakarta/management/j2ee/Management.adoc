@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/Management.class
+
+ - link:Management-asmified.java[Asmified]
+
+== References
+

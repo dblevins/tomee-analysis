@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagAttribute - 7
- - javax.faces.component.EditableValueHolder - 4
- - javax.el.MethodExpression - 4
- - javax.faces.view.facelets.FaceletContext - 4
- - javax.faces.view.facelets.Metadata - 2
- - javax.faces.validator.Validator - 2
- - javax.faces.validator.MethodExpressionValidator - 2

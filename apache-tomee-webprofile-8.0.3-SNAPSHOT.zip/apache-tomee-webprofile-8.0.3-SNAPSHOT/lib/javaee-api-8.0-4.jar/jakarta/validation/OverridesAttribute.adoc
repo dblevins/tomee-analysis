@@ -1,0 +1,6 @@
+= jakarta/validation/OverridesAttribute.class
+
+ - link:OverridesAttribute-asmified.java[Asmified]
+
+== References
+

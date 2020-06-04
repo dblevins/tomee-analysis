@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlSelectManyListbox.class
+
+ - link:HtmlSelectManyListbox-asmified.java[Asmified]
+
+== References
+

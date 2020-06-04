@@ -1,0 +1,6 @@
+= jakarta/xml/ws/handler/MessageContext$Scope.class
+
+ - link:MessageContext$Scope-asmified.java[Asmified]
+
+== References
+

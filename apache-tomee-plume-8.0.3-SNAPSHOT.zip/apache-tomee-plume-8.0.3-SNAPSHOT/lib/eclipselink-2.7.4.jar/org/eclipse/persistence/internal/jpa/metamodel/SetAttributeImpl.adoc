@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.PluralAttribute$CollectionType - 2
- - javax.persistence.metamodel.SetAttribute - 1

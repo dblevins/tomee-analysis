@@ -4,25 +4,3 @@
 
 == References
 
- - javax.servlet.http.Cookie - 37
- - javax.servlet.ServletContext - 27
- - javax.servlet.http.HttpServletRequest - 20
- - javax.servlet.MultipartConfigElement - 19
- - javax.servlet.ServletException - 16
- - javax.servlet.ServletRequestAttributeEvent - 13
- - javax.servlet.ServletRequest - 12
- - javax.servlet.ServletRequestAttributeListener - 9
- - javax.servlet.http.HttpSession - 8
- - javax.servlet.FilterChain - 8
- - javax.servlet.http.Part - 8
- - javax.servlet.http.HttpServletResponse - 7
- - javax.servlet.ServletResponse - 7
- - javax.servlet.DispatcherType - 7
- - javax.servlet.http.HttpUpgradeHandler - 6
- - javax.servlet.AsyncContext - 4
- - javax.servlet.http.PushBuilder - 3
- - javax.servlet.RequestDispatcher - 3
- - javax.servlet.http.HttpServletRequestWrapper - 3
- - javax.servlet.ServletInputStream - 2
- - javax.servlet.SessionTrackingMode - 2
- - javax.servlet.http.HttpServletMapping - 2

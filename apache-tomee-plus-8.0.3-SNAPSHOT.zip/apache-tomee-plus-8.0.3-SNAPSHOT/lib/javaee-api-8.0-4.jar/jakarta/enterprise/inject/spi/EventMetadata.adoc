@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/EventMetadata.class
+
+ - link:EventMetadata-asmified.java[Asmified]
+
+== References
+

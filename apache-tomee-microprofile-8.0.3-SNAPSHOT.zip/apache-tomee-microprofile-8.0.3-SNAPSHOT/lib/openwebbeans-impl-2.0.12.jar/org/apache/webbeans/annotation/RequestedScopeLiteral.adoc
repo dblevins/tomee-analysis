@@ -4,4 +4,3 @@
 
 == References
 
- - javax.enterprise.context.RequestScoped - 2

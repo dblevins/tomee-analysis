@@ -1,0 +1,6 @@
+= jakarta/faces/view/ActionSource2AttachedObjectHandler.class
+
+ - link:ActionSource2AttachedObjectHandler-asmified.java[Asmified]
+
+== References
+

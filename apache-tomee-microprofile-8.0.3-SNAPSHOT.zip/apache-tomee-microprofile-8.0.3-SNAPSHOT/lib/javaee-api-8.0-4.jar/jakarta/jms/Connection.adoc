@@ -1,0 +1,6 @@
+= jakarta/jms/Connection.class
+
+ - link:Connection-asmified.java[Asmified]
+
+== References
+

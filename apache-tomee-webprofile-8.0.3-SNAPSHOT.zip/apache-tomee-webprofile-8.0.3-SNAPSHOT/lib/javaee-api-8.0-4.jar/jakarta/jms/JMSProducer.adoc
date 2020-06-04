@@ -1,0 +1,6 @@
+= jakarta/jms/JMSProducer.class
+
+ - link:JMSProducer-asmified.java[Asmified]
+
+== References
+

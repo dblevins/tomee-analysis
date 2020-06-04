@@ -1,0 +1,6 @@
+= jakarta/wsdl/Binding.class
+
+ - link:Binding-asmified.java[Asmified]
+
+== References
+

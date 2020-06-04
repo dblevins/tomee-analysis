@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintValidatorContext - 3
- - javax.validation.constraints.DecimalMin - 2

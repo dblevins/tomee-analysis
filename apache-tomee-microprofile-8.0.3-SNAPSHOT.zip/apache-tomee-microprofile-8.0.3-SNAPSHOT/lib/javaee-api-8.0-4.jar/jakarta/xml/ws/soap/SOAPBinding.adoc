@@ -1,0 +1,6 @@
+= jakarta/xml/ws/soap/SOAPBinding.class
+
+ - link:SOAPBinding-asmified.java[Asmified]
+
+== References
+

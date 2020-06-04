@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.AsyncListener - 1
- - javax.servlet.ServletException - 1

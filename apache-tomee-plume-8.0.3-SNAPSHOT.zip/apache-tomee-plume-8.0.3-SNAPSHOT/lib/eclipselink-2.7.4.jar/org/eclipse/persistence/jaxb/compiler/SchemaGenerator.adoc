@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlSchemaType - 10
- - javax.xml.bind.SchemaOutputResolver - 6
- - javax.xml.bind.annotation.XmlElementDecl$GLOBAL - 3

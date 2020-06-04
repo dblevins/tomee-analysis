@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.JspTagException - 3
- - javax.servlet.jsp.PageContext - 2
- - javax.servlet.jsp.JspException - 2
- - javax.servlet.jsp.tagext.Tag - 1

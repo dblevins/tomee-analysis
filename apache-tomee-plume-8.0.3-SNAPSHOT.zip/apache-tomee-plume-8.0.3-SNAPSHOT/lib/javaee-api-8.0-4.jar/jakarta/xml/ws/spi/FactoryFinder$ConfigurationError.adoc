@@ -1,0 +1,6 @@
+= jakarta/xml/ws/spi/FactoryFinder$ConfigurationError.class
+
+ - link:FactoryFinder$ConfigurationError-asmified.java[Asmified]
+
+== References
+

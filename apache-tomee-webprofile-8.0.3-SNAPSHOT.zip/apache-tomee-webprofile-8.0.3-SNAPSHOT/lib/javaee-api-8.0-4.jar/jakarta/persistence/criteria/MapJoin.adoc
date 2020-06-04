@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/MapJoin.class
+
+ - link:MapJoin-asmified.java[Asmified]
+
+== References
+

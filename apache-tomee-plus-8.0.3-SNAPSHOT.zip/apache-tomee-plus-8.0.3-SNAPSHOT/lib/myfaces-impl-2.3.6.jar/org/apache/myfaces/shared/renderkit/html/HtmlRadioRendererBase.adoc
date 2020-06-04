@@ -4,18 +4,3 @@
 
 == References
 
- - javax.faces.context.ResponseWriter - 94
- - javax.faces.context.FacesContext - 89
- - javax.faces.component.UIComponent - 74
- - javax.faces.component.UISelectOne - 37
- - javax.faces.model.SelectItem - 36
- - javax.faces.component.UIInput - 30
- - javax.faces.convert.Converter - 24
- - javax.faces.component.html.HtmlSelectOneRadio - 15
- - javax.faces.model.SelectItemGroup - 7
- - javax.faces.component.behavior.ClientBehaviorHolder - 7
- - javax.faces.component.visit.VisitContext - 3
- - javax.faces.component.visit.VisitHint - 3
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.convert.ConverterException - 1
- - javax.el.ValueExpression - 1

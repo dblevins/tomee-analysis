@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 9
- - javax.servlet.ServletConfig - 1

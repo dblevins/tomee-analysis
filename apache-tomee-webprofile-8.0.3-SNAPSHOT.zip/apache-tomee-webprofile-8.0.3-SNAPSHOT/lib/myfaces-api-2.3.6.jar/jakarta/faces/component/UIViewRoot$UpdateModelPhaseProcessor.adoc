@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIViewRoot$UpdateModelPhaseProcessor.class
+
+ - link:UIViewRoot$UpdateModelPhaseProcessor-asmified.java[Asmified]
+
+== References
+

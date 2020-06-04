@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.http.Cookie - 22
- - javax.servlet.SessionCookieConfig - 2
- - javax.servlet.ServletContext - 2
- - javax.servlet.ServletException - 1

@@ -4,9 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.JspException - 6
- - javax.servlet.jsp.tagext.BodyContent - 3
- - javax.servlet.jsp.tagext.BodyTagSupport - 3
- - javax.servlet.jsp.PageContext - 2
- - javax.servlet.jsp.JspWriter - 2
- - javax.servlet.jsp.JspTagException - 2

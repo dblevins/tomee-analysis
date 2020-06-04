@@ -4,8 +4,3 @@
 
 == References
 
- - javax.transaction.Transaction - 1
- - javax.transaction.UserTransaction - 1
- - javax.enterprise.inject.spi.ObserverMethod - 1
- - javax.transaction.TransactionManager - 1
- - javax.enterprise.event.TransactionPhase - 1

@@ -4,23 +4,3 @@
 
 == References
 
- - javax.faces.bean.ManagedBean - 13
- - javax.faces.convert.FacesConverter - 12
- - javax.faces.component.FacesComponent - 11
- - javax.faces.bean.ApplicationScoped - 10
- - javax.faces.render.FacesRenderer - 10
- - javax.faces.validator.FacesValidator - 9
- - javax.faces.render.FacesBehaviorRenderer - 8
- - javax.faces.component.behavior.FacesBehavior - 6
- - javax.faces.bean.ManagedProperty - 5
- - javax.faces.event.NamedEvent - 5
- - javax.faces.context.ExternalContext - 4
- - javax.faces.bean.CustomScoped - 4
- - javax.faces.bean.NoneScoped - 3
- - javax.faces.bean.RequestScoped - 3
- - javax.faces.bean.ViewScoped - 3
- - javax.faces.bean.SessionScoped - 3
- - javax.faces.view.facelets.FaceletsResourceResolver - 3
- - javax.faces.FacesException - 2
- - javax.faces.event.ComponentSystemEvent - 1
- - javax.faces.component.behavior.Behavior - 1

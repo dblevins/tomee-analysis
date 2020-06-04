@@ -1,0 +1,6 @@
+= jakarta/validation/Validation$GenericBootstrapImpl.class
+
+ - link:Validation$GenericBootstrapImpl-asmified.java[Asmified]
+
+== References
+

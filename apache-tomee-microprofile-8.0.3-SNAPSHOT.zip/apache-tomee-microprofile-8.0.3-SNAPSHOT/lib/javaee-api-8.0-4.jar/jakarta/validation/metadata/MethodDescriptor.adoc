@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/MethodDescriptor.class
+
+ - link:MethodDescriptor-asmified.java[Asmified]
+
+== References
+

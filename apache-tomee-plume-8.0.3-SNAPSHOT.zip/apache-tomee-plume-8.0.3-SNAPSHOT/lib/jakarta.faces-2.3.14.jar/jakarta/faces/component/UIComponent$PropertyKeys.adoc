@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponent$PropertyKeys.class
+
+ - link:UIComponent$PropertyKeys-asmified.java[Asmified]
+
+== References
+

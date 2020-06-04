@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/ClientBuilder.class
+
+ - link:ClientBuilder-asmified.java[Asmified]
+
+== References
+

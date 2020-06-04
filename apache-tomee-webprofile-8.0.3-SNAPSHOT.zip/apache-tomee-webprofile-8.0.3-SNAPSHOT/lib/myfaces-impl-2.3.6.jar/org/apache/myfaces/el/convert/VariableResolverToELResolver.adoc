@@ -4,12 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 21
- - javax.el.PropertyNotFoundException - 14
- - javax.faces.el.VariableResolver - 8
- - javax.el.ELException - 6
- - javax.faces.context.FacesContext - 5
- - javax.faces.el.PropertyNotFoundException - 3
- - javax.faces.el.EvaluationException - 3
- - javax.el.ELResolver - 2
- - javax.el.PropertyNotWritableException - 1

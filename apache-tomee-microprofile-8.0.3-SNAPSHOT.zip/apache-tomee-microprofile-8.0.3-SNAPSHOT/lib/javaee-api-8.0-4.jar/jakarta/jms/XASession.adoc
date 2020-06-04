@@ -1,0 +1,6 @@
+= jakarta/jms/XASession.class
+
+ - link:XASession-asmified.java[Asmified]
+
+== References
+

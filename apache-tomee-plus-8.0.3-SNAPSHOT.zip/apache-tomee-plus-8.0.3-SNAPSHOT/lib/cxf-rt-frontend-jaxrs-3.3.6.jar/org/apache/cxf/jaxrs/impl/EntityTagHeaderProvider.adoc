@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.EntityTag - 16
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

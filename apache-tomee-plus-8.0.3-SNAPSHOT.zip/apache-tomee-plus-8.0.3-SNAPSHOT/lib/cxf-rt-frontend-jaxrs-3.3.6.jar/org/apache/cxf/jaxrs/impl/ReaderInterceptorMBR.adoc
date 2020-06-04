@@ -4,10 +4,3 @@
 
 == References
 
- - javax.ws.rs.ext.MessageBodyReader - 14
- - javax.ws.rs.ext.ReaderInterceptorContext - 8
- - javax.ws.rs.core.MediaType - 6
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.ws.rs.ProcessingException - 2
- - javax.ws.rs.ext.ReaderInterceptor - 1
- - javax.ws.rs.WebApplicationException - 1

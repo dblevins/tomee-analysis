@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.webapp.FacesServlet - 14
- - javax.servlet.ServletContext - 9
- - javax.servlet.ServletConfig - 7
- - javax.faces.context.FacesContext - 3
- - javax.servlet.ServletRequest - 2
- - javax.servlet.ServletResponse - 2
- - javax.servlet.ServletException - 2
- - javax.servlet.Servlet - 1

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 35
- - javax.servlet.http.HttpSession - 5
- - javax.servlet.http.Cookie - 5
- - javax.servlet.http.HttpServletRequestWrapper - 2

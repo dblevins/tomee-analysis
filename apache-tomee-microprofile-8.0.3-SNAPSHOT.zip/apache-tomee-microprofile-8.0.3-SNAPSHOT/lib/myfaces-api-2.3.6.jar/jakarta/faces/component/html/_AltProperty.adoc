@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/_AltProperty.class
+
+ - link:_AltProperty-asmified.java[Asmified]
+
+== References
+

@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.MethodExpression - 32
- - javax.faces.view.Location - 21
- - javax.faces.context.FacesContext - 12
- - javax.el.ELContext - 8
- - javax.el.MethodInfo - 2
- - javax.faces.FacesWrapper - 1

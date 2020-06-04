@@ -4,10 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Path - 9
- - javax.persistence.criteria.Expression - 3
- - javax.persistence.metamodel.Bindable - 3
- - javax.persistence.metamodel.Metamodel - 2
- - javax.persistence.metamodel.MapAttribute - 1
- - javax.persistence.metamodel.SingularAttribute - 1
- - javax.persistence.metamodel.PluralAttribute - 1

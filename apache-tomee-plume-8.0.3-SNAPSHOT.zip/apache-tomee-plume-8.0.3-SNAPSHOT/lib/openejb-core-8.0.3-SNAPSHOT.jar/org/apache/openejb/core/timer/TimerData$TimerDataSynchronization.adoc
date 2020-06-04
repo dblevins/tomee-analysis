@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EJBException - 2
- - javax.transaction.Synchronization - 1

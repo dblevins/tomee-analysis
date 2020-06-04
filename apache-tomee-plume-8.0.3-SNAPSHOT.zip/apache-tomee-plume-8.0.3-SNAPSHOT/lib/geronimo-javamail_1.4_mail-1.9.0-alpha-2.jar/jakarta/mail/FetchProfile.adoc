@@ -1,0 +1,6 @@
+= jakarta/mail/FetchProfile.class
+
+ - link:FetchProfile-asmified.java[Asmified]
+
+== References
+

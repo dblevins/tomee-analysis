@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.InjectionTarget - 18
- - javax.enterprise.context.spi.CreationalContext - 5
- - javax.enterprise.context.Dependent - 1
- - javax.enterprise.inject.spi.InjectionPoint - 1
- - javax.enterprise.inject.spi.Bean - 1

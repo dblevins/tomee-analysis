@@ -1,0 +1,6 @@
+= jakarta/xml/ws/spi/FactoryFinder.class
+
+ - link:FactoryFinder-asmified.java[Asmified]
+
+== References
+

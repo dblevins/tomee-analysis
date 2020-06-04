@@ -4,4 +4,3 @@
 
 == References
 
- - javax.validation.Configuration - 1

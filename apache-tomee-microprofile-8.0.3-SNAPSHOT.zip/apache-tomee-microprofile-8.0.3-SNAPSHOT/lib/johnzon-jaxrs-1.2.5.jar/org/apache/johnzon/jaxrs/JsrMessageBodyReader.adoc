@@ -4,12 +4,3 @@
 
 == References
 
- - javax.json.JsonReader - 9
- - javax.json.JsonReaderFactory - 9
- - javax.ws.rs.core.MediaType - 9
- - javax.ws.rs.core.MultivaluedMap - 8
- - javax.json.JsonStructure - 7
- - javax.ws.rs.WebApplicationException - 2
- - javax.ws.rs.Consumes - 1
- - javax.json.Json - 1
- - javax.ws.rs.ext.MessageBodyReader - 1

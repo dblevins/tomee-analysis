@@ -4,10 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 2
- - javax.servlet.FilterChain - 2
- - javax.servlet.ServletRequest - 2
- - javax.servlet.ServletResponse - 2
- - javax.servlet.http.HttpSession - 1
- - javax.servlet.ServletException - 1
- - javax.servlet.Filter - 1

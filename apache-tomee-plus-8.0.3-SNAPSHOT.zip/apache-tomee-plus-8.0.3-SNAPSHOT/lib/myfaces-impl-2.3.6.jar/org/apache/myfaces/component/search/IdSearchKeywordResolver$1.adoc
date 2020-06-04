@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.search.SearchKeywordContext - 9
- - javax.faces.component.visit.VisitResult - 4
- - javax.faces.component.search.SearchExpressionContext - 4
- - javax.faces.component.UIComponent - 3
- - javax.faces.component.search.SearchExpressionHint - 1
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.visit.VisitContext - 1

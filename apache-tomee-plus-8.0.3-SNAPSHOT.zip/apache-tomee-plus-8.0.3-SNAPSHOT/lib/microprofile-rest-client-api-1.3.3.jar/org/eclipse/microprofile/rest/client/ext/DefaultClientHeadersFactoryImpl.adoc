@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 13
- - javax.ws.rs.core.MultivaluedHashMap - 2

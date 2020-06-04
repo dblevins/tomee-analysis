@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/jstl/core/IndexedValueExpression.class
+
+ - link:IndexedValueExpression-asmified.java[Asmified]
+
+== References
+

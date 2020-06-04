@@ -1,3 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/openejb-server-8.0.3-SNAPSHOT.jar
 
- - link:org/apache/openejb/server/context/RequestInfos.adoc[org/apache/openejb/server/context/RequestInfos.class] - 2

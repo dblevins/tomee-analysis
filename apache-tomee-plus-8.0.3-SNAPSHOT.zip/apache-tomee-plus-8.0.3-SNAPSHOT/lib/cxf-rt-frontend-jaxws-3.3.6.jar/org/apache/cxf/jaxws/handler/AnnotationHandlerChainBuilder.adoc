@@ -4,10 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceException - 16
- - javax.jws.HandlerChain - 9
- - javax.xml.bind.JAXBContext - 9
- - javax.jws.WebService - 7
- - javax.xml.ws.handler.Handler - 5
- - javax.xml.bind.JAXBException - 3
- - javax.xml.bind.JAXBElement - 2

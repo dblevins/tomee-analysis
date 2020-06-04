@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$FacetsMapEntrySet.class
+
+ - link:UIComponentBase$FacetsMapEntrySet-asmified.java[Asmified]
+
+== References
+

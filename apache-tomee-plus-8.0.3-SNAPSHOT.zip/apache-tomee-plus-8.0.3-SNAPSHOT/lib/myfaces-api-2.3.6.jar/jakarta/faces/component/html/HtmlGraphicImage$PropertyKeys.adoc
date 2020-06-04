@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlGraphicImage$PropertyKeys.class
+
+ - link:HtmlGraphicImage$PropertyKeys-asmified.java[Asmified]
+
+== References
+

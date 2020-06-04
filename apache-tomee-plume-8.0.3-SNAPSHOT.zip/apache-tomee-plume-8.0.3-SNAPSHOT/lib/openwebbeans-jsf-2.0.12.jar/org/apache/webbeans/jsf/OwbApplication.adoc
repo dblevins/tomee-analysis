@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ExpressionFactory - 10
- - javax.faces.application.Application - 8
- - javax.faces.application.ApplicationWrapper - 2

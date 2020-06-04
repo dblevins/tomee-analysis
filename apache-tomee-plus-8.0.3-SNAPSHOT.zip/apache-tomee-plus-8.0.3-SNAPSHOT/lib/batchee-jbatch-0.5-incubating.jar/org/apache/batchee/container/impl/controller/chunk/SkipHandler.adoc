@@ -4,6 +4,3 @@
 
 == References
 
- - javax.batch.api.chunk.listener.SkipProcessListener - 5
- - javax.batch.api.chunk.listener.SkipReadListener - 5
- - javax.batch.api.chunk.listener.SkipWriteListener - 5

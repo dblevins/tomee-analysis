@@ -4,5 +4,3 @@
 
 == References
 
- - javax.resource.spi.work.WorkEvent - 4
- - javax.resource.spi.work.WorkListener - 1

@@ -4,13 +4,3 @@
 
 == References
 
- - javax.persistence.SynchronizationType - 16
- - javax.persistence.EntityManager - 4
- - javax.persistence.spi.LoadState - 2
- - javax.persistence.PersistenceException - 2
- - javax.persistence.PersistenceUnitUtil - 2
- - javax.persistence.EntityGraph - 1
- - javax.persistence.Query - 1
- - javax.persistence.criteria.CriteriaBuilder - 1
- - javax.persistence.metamodel.Metamodel - 1
- - javax.persistence.Cache - 1

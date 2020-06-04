@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.MessageInterpolator - 8
- - javax.faces.context.FacesContext - 5
- - javax.validation.MessageInterpolator$Context - 4
- - javax.faces.component.UIViewRoot - 2

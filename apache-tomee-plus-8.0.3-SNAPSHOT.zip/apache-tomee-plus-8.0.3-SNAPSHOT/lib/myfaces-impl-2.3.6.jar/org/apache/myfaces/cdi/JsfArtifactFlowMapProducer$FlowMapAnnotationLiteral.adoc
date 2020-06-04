@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.annotation.FlowMap - 2
- - javax.enterprise.util.AnnotationLiteral - 2

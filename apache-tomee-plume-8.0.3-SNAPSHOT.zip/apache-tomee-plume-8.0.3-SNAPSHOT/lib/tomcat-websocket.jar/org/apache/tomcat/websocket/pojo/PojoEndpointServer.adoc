@@ -4,7 +4,3 @@
 
 == References
 
- - javax.websocket.server.ServerEndpointConfig - 8
- - javax.websocket.Session - 4
- - javax.websocket.EndpointConfig - 4
- - javax.websocket.server.ServerEndpointConfig$Configurator - 2

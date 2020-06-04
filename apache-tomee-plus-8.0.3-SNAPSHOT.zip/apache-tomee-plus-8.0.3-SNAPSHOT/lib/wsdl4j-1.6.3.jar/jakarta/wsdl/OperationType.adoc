@@ -1,0 +1,6 @@
+= jakarta/wsdl/OperationType.class
+
+ - link:OperationType-asmified.java[Asmified]
+
+== References
+

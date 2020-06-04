@@ -4,4 +4,3 @@
 
 == References
 
- - javax.enterprise.deploy.spi.Target - 1

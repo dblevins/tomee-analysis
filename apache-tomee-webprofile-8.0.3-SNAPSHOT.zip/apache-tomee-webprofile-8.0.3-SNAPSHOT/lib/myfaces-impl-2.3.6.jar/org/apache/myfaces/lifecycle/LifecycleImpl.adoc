@@ -4,19 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 62
- - javax.faces.event.PhaseId - 44
- - javax.faces.context.Flash - 15
- - javax.faces.context.ExternalContext - 14
- - javax.faces.event.PhaseListener - 10
- - javax.faces.lifecycle.ClientWindowFactory - 7
- - javax.faces.lifecycle.ClientWindow - 5
- - javax.faces.context.ExceptionHandler - 4
- - javax.faces.lifecycle.Lifecycle - 4
- - javax.faces.FacesException - 3
- - javax.faces.event.ExceptionQueuedEventContext - 2
- - javax.faces.application.ProjectStage - 2
- - javax.faces.application.Application - 2
- - javax.faces.FactoryFinder - 1
- - javax.faces.component.UIComponent - 1
- - javax.faces.event.ExceptionQueuedEvent - 1

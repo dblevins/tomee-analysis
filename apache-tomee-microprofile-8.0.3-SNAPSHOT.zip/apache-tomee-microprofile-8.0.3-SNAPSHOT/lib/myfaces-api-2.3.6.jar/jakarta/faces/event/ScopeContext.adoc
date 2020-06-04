@@ -1,0 +1,6 @@
+= jakarta/faces/event/ScopeContext.class
+
+ - link:ScopeContext-asmified.java[Asmified]
+
+== References
+

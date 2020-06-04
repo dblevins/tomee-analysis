@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.constraints.Digits - 6
- - javax.validation.ConstraintValidatorContext - 3
- - javax.validation.ConstraintValidator - 1

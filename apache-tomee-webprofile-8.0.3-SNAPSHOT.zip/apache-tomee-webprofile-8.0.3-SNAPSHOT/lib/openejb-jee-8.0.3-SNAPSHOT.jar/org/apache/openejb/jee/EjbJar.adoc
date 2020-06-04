@@ -4,15 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlElement - 9
- - javax.xml.bind.annotation.XmlAttribute - 3
- - javax.xml.bind.annotation.XmlTransient - 3
- - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 2
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 2
- - javax.xml.bind.annotation.XmlAccessorType - 1
- - javax.xml.bind.annotation.XmlType - 1
- - javax.xml.bind.annotation.XmlElements - 1
- - javax.xml.bind.annotation.XmlElementWrapper - 1
- - javax.xml.bind.annotation.XmlID - 1
- - javax.xml.bind.annotation.XmlRootElement - 1
- - javax.xml.bind.annotation.XmlAccessType - 1

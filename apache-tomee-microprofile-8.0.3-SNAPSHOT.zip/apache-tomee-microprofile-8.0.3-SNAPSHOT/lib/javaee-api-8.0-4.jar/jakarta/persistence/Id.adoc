@@ -1,0 +1,6 @@
+= jakarta/persistence/Id.class
+
+ - link:Id-asmified.java[Asmified]
+
+== References
+

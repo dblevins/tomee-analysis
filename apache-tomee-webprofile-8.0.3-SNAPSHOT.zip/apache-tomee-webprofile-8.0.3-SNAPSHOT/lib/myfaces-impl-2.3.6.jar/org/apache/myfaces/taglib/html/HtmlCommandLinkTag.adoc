@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 217
- - javax.faces.component.html.HtmlCommandLink - 36
- - javax.el.MethodExpression - 14
- - javax.faces.webapp.UIComponentELTag - 4
- - javax.faces.event.MethodExpressionActionListener - 2
- - javax.faces.component.UIComponent - 2
- - javax.faces.event.ActionListener - 1

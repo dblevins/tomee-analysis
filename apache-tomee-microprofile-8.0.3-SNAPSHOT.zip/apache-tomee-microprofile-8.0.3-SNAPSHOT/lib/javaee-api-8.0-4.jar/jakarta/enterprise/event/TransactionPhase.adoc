@@ -1,0 +1,6 @@
+= jakarta/enterprise/event/TransactionPhase.class
+
+ - link:TransactionPhase-asmified.java[Asmified]
+
+== References
+

@@ -4,13 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response$Status - 14
- - javax.ws.rs.core.Response$ResponseBuilder - 10
- - javax.ws.rs.core.HttpHeaders - 7
- - javax.ws.rs.core.MediaType - 6
- - javax.ws.rs.core.Response - 5
- - javax.xml.bind.Marshaller - 4
- - javax.ws.rs.core.UriInfo - 4
- - javax.ws.rs.core.Context - 2
- - javax.persistence.RollbackException - 1
- - javax.xml.bind.JAXBContext - 1

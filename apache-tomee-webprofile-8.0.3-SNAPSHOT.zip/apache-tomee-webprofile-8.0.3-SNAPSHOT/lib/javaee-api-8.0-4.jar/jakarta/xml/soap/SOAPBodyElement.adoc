@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SOAPBodyElement.class
+
+ - link:SOAPBodyElement-asmified.java[Asmified]
+
+== References
+

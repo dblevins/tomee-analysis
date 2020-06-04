@@ -4,7 +4,3 @@
 
 == References
 
- - javax.activation.DataSource - 5
- - javax.mail.internet.ContentType - 3
- - javax.mail.internet.MimeUtility - 1
- - javax.activation.DataContentHandler - 1

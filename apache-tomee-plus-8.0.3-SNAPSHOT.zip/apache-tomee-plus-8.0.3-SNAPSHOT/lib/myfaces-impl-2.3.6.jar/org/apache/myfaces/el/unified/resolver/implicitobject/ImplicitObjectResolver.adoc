@@ -4,8 +4,3 @@
 
 == References
 
- - javax.el.PropertyNotFoundException - 12
- - javax.el.ELContext - 10
- - javax.el.ELResolver - 5
- - javax.el.ELException - 4
- - javax.el.PropertyNotWritableException - 3

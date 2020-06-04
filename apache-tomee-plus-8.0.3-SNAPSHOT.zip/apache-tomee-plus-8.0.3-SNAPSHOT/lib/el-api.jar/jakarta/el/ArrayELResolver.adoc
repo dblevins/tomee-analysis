@@ -1,0 +1,6 @@
+= jakarta/el/ArrayELResolver.class
+
+ - link:ArrayELResolver-asmified.java[Asmified]
+
+== References
+

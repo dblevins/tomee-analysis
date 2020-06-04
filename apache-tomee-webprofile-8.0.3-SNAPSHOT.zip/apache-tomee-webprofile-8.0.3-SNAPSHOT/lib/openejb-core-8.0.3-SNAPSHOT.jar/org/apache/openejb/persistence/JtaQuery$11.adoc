@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.LockModeType - 5
- - javax.persistence.Query - 4

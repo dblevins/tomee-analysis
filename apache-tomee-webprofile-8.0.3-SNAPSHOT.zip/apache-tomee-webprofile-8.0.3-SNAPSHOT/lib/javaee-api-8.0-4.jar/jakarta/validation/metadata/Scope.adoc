@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/Scope.class
+
+ - link:Scope-asmified.java[Asmified]
+
+== References
+

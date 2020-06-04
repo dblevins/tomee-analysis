@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/jstl/fmt/LocaleSupport.class
+
+ - link:LocaleSupport-asmified.java[Asmified]
+
+== References
+

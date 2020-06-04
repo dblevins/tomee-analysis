@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/InterceptionFactory.class
+
+ - link:InterceptionFactory-asmified.java[Asmified]
+
+== References
+

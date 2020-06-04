@@ -4,6 +4,3 @@
 
 == References
 
- - javax.resource.spi.ConnectionEvent - 17
- - javax.resource.spi.ManagedConnection - 6
- - javax.resource.spi.ConnectionEventListener - 1

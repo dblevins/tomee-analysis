@@ -1,0 +1,6 @@
+= jakarta/jms/XATopicSession.class
+
+ - link:XATopicSession-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SOAPException.class
+
+ - link:SOAPException-asmified.java[Asmified]
+
+== References
+

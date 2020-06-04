@@ -1,0 +1,6 @@
+= jakarta/mail/search/SizeTerm.class
+
+ - link:SizeTerm-asmified.java[Asmified]
+
+== References
+

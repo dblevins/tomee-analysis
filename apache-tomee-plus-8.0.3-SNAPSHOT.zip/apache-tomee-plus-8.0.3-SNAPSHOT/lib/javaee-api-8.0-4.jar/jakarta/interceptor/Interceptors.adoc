@@ -1,0 +1,6 @@
+= jakarta/interceptor/Interceptors.class
+
+ - link:Interceptors-asmified.java[Asmified]
+
+== References
+

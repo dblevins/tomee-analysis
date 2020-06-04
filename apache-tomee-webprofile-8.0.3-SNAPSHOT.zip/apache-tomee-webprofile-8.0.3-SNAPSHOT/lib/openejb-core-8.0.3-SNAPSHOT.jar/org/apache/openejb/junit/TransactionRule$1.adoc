@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ejb.TransactionAttributeType - 5
- - javax.transaction.Transactional - 4
- - javax.ejb.TransactionAttribute - 4
- - javax.transaction.Transactional$TxType - 2

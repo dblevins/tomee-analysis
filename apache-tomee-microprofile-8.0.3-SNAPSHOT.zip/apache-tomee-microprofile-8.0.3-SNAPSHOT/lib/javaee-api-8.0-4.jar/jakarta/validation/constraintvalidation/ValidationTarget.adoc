@@ -1,0 +1,6 @@
+= jakarta/validation/constraintvalidation/ValidationTarget.class
+
+ - link:ValidationTarget-asmified.java[Asmified]
+
+== References
+

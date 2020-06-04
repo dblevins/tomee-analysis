@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jms.Destination - 59
- - javax.jms.JMSException - 30

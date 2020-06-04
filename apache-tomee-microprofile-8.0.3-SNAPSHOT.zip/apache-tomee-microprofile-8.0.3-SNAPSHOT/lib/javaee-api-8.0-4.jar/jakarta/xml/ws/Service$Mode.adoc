@@ -1,0 +1,6 @@
+= jakarta/xml/ws/Service$Mode.class
+
+ - link:Service$Mode-asmified.java[Asmified]
+
+== References
+

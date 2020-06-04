@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 16
- - javax.faces.component.UIComponent - 14
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.component.visit.VisitContextFactory - 2
- - javax.faces.view.EditableValueHolderAttachedObjectHandler - 2
- - javax.faces.view.AttachedObjectHandler - 2
- - javax.faces.component.UniqueIdVendor - 2
- - javax.faces.view.facelets.FaceletContext - 2
- - javax.faces.FactoryFinder - 1

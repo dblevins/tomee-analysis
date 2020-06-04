@@ -1,0 +1,6 @@
+= jakarta/inject/Singleton.class
+
+ - link:Singleton-asmified.java[Asmified]
+
+== References
+

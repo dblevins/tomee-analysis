@@ -4,6 +4,3 @@
 
 == References
 
- - javax.security.jacc.PolicyContextException - 5
- - javax.security.jacc.PolicyConfiguration - 3
- - javax.security.jacc.PolicyContext - 2

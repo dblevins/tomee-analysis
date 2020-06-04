@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.event.PostRestoreStateEvent - 6
- - javax.faces.component.UIComponent - 3
- - javax.faces.component.visit.VisitResult - 2
- - javax.faces.event.ComponentSystemEvent - 1
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.visit.VisitContext - 1

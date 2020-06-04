@@ -1,0 +1,6 @@
+= jakarta/persistence/NamedQuery.class
+
+ - link:NamedQuery-asmified.java[Asmified]
+
+== References
+

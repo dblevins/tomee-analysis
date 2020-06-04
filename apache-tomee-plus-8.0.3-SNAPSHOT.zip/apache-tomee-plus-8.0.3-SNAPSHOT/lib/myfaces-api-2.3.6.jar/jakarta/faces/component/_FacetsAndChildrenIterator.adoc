@@ -1,0 +1,6 @@
+= jakarta/faces/component/_FacetsAndChildrenIterator.class
+
+ - link:_FacetsAndChildrenIterator-asmified.java[Asmified]
+
+== References
+

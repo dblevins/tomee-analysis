@@ -4,10 +4,3 @@
 
 == References
 
- - javax.websocket.server.ServerEndpointConfig - 5
- - javax.websocket.server.HandshakeRequest - 3
- - javax.enterprise.inject.spi.CDI - 3
- - javax.enterprise.inject.spi.BeanManager - 3
- - javax.faces.context.ExternalContext - 2
- - javax.websocket.server.ServerEndpointConfig$Configurator - 2
- - javax.websocket.HandshakeResponse - 1

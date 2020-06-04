@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.el.PropertyNotFoundException - 33
- - javax.faces.el.PropertyResolver - 29
- - javax.faces.context.FacesContext - 20
- - javax.faces.application.Application - 10
- - javax.faces.el.EvaluationException - 9
- - javax.el.ELException - 9
- - javax.el.ELContext - 8
- - javax.el.ELResolver - 8
- - javax.el.PropertyNotFoundException - 5
- - javax.el.ExpressionFactory - 2
- - javax.el.PropertyNotWritableException - 1

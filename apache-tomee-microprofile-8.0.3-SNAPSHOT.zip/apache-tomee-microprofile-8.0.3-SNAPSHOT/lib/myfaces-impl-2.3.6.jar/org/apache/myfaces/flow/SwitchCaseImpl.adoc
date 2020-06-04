@@ -4,7 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 7
- - javax.faces.flow.SwitchCase - 2
- - javax.faces.context.FacesContext - 2
- - javax.el.ELContext - 2

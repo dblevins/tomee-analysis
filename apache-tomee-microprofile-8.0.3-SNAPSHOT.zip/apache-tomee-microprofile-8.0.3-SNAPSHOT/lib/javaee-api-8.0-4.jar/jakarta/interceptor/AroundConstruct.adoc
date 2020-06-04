@@ -1,0 +1,6 @@
+= jakarta/interceptor/AroundConstruct.class
+
+ - link:AroundConstruct-asmified.java[Asmified]
+
+== References
+

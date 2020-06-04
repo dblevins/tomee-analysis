@@ -4,19 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.tagext.TagAttributeInfo - 87
- - javax.servlet.jsp.tagext.TagInfo - 35
- - javax.el.ExpressionFactory - 14
- - javax.servlet.jsp.tagext.FunctionInfo - 8
- - javax.servlet.jsp.tagext.TagData - 6
- - javax.el.FunctionMapper - 5
- - javax.el.ELException - 5
- - javax.servlet.jsp.tagext.TagExtraInfo - 4
- - javax.servlet.jsp.JspFactory - 3
- - javax.servlet.jsp.tagext.TagLibraryInfo - 2
- - javax.servlet.jsp.JspApplicationContext - 2
- - javax.servlet.ServletContext - 2
- - javax.el.ELContext - 2
- - javax.servlet.jsp.tagext.VariableInfo - 2
- - javax.el.ValueExpression - 1
- - javax.servlet.jsp.tagext.TagVariableInfo - 1

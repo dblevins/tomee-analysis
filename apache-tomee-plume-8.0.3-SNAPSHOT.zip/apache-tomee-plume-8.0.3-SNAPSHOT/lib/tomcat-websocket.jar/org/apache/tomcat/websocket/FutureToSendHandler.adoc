@@ -4,5 +4,3 @@
 
 == References
 
- - javax.websocket.SendResult - 10
- - javax.websocket.SendHandler - 1

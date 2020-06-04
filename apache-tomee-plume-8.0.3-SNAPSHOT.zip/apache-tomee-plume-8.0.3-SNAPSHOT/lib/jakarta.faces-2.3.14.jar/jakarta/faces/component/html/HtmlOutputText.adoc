@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlOutputText.class
+
+ - link:HtmlOutputText-asmified.java[Asmified]
+
+== References
+

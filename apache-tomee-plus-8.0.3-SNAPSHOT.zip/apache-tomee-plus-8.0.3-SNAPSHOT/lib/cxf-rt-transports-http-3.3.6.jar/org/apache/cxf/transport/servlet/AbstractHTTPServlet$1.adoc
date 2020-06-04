@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.FilterConfig - 11
- - javax.servlet.ServletContext - 2
- - javax.servlet.ServletConfig - 1

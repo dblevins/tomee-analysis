@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 30
- - javax.el.ValueExpression - 24
- - javax.el.ELContext - 20
- - javax.faces.view.Location - 12
- - javax.el.ValueReference - 2
- - javax.faces.FacesWrapper - 1

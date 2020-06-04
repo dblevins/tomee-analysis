@@ -1,19 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/tomcat-util-scan.jar
 
- - link:org/apache/tomcat/util/descriptor/web/WebXml.adoc[org/apache/tomcat/util/descriptor/web/WebXml.class] - 25
- - link:org/apache/tomcat/util/descriptor/web/FilterMap.adoc[org/apache/tomcat/util/descriptor/web/FilterMap.class] - 20
- - link:org/apache/tomcat/util/descriptor/web/SecurityConstraint.adoc[org/apache/tomcat/util/descriptor/web/SecurityConstraint.class] - 20
- - link:org/apache/tomcat/util/scan/StandardJarScanner.adoc[org/apache/tomcat/util/scan/StandardJarScanner.class] - 10
- - link:org/apache/tomcat/util/descriptor/web/JspConfigDescriptorImpl.adoc[org/apache/tomcat/util/descriptor/web/JspConfigDescriptorImpl.class] - 7
- - link:org/apache/tomcat/util/descriptor/web/FilterDef.adoc[org/apache/tomcat/util/descriptor/web/FilterDef.class] - 6
- - link:org/apache/tomcat/util/descriptor/web/SessionConfig.adoc[org/apache/tomcat/util/descriptor/web/SessionConfig.class] - 5
- - link:org/apache/tomcat/util/descriptor/tld/TagXml.adoc[org/apache/tomcat/util/descriptor/tld/TagXml.class] - 4
- - link:org/apache/tomcat/util/descriptor/tld/TaglibXml.adoc[org/apache/tomcat/util/descriptor/tld/TaglibXml.class] - 4
- - link:org/apache/tomcat/util/descriptor/tld/TldRuleSet$Attribute.adoc[org/apache/tomcat/util/descriptor/tld/TldRuleSet$Attribute.class] - 3
- - link:org/apache/tomcat/util/descriptor/tld/TldRuleSet$Variable.adoc[org/apache/tomcat/util/descriptor/tld/TldRuleSet$Variable.class] - 3
- - link:org/apache/tomcat/util/descriptor/DigesterFactory.adoc[org/apache/tomcat/util/descriptor/DigesterFactory.class] - 2
- - link:org/apache/tomcat/util/descriptor/tagplugin/TagPluginParser.adoc[org/apache/tomcat/util/descriptor/tagplugin/TagPluginParser.class] - 2
- - link:org/apache/tomcat/util/descriptor/tld/TldRuleSet$ScriptVariableRule.adoc[org/apache/tomcat/util/descriptor/tld/TldRuleSet$ScriptVariableRule.class] - 1
- - link:org/apache/tomcat/util/descriptor/tld/TldRuleSet$TagAttributeRule.adoc[org/apache/tomcat/util/descriptor/tld/TldRuleSet$TagAttributeRule.class] - 1
- - link:org/apache/tomcat/util/descriptor/web/JspPropertyGroupDescriptorImpl.adoc[org/apache/tomcat/util/descriptor/web/JspPropertyGroupDescriptorImpl.class] - 1
- - link:org/apache/tomcat/util/descriptor/web/TaglibDescriptorImpl.adoc[org/apache/tomcat/util/descriptor/web/TaglibDescriptorImpl.class] - 1

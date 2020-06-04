@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/literal/InjectLiteral.class
+
+ - link:InjectLiteral-asmified.java[Asmified]
+
+== References
+

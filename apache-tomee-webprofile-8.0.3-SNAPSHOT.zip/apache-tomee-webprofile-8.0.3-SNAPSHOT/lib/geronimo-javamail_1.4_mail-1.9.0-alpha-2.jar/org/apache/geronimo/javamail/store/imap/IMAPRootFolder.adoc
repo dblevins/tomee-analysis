@@ -4,8 +4,3 @@
 
 == References
 
- - javax.mail.MethodNotSupportedException - 10
- - javax.mail.MessagingException - 7
- - javax.mail.Message - 2
- - javax.mail.Folder - 2
- - javax.mail.Store - 1

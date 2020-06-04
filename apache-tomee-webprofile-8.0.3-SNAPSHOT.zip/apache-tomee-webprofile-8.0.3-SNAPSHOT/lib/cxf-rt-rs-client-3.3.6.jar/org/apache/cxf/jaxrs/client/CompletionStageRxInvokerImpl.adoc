@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.Entity - 50
- - javax.ws.rs.core.GenericType - 46
- - javax.ws.rs.core.Response - 17
- - javax.ws.rs.client.SyncInvoker - 16
- - javax.ws.rs.client.CompletionStageRxInvoker - 1

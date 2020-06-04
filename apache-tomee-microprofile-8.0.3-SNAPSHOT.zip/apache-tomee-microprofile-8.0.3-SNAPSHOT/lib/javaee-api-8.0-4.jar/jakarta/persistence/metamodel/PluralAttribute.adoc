@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/PluralAttribute.class
+
+ - link:PluralAttribute-asmified.java[Asmified]
+
+== References
+

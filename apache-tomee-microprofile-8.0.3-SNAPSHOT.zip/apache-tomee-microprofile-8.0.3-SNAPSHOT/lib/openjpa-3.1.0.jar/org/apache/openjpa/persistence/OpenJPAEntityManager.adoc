@@ -4,9 +4,3 @@
 
 == References
 
- - javax.persistence.Query - 6
- - javax.persistence.LockModeType - 4
- - javax.persistence.EntityTransaction - 2
- - javax.persistence.EntityManagerFactory - 1
- - javax.persistence.criteria.CriteriaBuilder - 1
- - javax.persistence.EntityManager - 1

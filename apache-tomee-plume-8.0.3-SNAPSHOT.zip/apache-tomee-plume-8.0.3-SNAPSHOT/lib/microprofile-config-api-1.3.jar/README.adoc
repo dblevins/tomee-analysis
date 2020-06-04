@@ -1,3 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/microprofile-config-api-1.3.jar
 
- - link:org/eclipse/microprofile/config/inject/ConfigProperty.adoc[org/eclipse/microprofile/config/inject/ConfigProperty.class] - 3

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Selection - 6
- - javax.persistence.criteria.Root - 3
- - javax.persistence.metamodel.EntityType - 2
- - javax.persistence.metamodel.Bindable - 1

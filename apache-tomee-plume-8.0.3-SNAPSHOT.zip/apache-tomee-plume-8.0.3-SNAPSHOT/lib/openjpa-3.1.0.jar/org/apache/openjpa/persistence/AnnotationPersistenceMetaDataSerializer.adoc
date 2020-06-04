@@ -4,26 +4,3 @@
 
 == References
 
- - javax.persistence.CascadeType - 7
- - javax.persistence.FetchType - 5
- - javax.persistence.Entity - 1
- - javax.persistence.ManyToOne - 1
- - javax.persistence.IdClass - 1
- - javax.persistence.MappedSuperclass - 1
- - javax.persistence.Embedded - 1
- - javax.persistence.OneToMany - 1
- - javax.persistence.OneToOne - 1
- - javax.persistence.Basic - 1
- - javax.persistence.AttributeOverride - 1
- - javax.persistence.MapKey - 1
- - javax.persistence.Transient - 1
- - javax.persistence.EmbeddedId - 1
- - javax.persistence.SequenceGenerator - 1
- - javax.persistence.QueryHint - 1
- - javax.persistence.NamedQuery - 1
- - javax.persistence.NamedNativeQuery - 1
- - javax.persistence.OrderBy - 1
- - javax.persistence.Embeddable - 1
- - javax.persistence.ManyToMany - 1
- - javax.persistence.Version - 1
- - javax.persistence.Id - 1

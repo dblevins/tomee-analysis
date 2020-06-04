@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 25
- - javax.faces.context.ExternalContext - 8
- - javax.faces.FacesException - 8
- - javax.faces.application.Resource - 3

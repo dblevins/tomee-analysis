@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.JsonArrayBuilder - 9
- - javax.json.Json - 1

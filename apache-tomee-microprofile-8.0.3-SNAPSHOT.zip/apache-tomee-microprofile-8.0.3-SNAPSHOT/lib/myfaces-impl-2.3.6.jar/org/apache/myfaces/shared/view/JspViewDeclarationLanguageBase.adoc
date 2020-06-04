@@ -4,19 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 53
- - javax.faces.context.ResponseWriter - 29
- - javax.faces.context.ExternalContext - 25
- - javax.faces.component.UIViewRoot - 17
- - javax.faces.application.StateManager - 11
- - javax.faces.render.RenderKitFactory - 6
- - javax.faces.render.RenderKit - 6
- - javax.faces.application.Application - 6
- - javax.servlet.ServletResponse - 4
- - javax.servlet.http.HttpServletResponse - 3
- - javax.faces.application.Resource - 3
- - javax.servlet.ServletResponseWrapper - 3
- - javax.faces.context.PartialViewContext - 2
- - javax.faces.view.StateManagementStrategy - 1
- - javax.faces.FactoryFinder - 1
- - javax.faces.view.ViewMetadata - 1

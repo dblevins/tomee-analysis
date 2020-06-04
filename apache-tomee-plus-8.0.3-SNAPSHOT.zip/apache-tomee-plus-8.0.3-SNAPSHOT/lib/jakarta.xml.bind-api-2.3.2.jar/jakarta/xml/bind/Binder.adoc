@@ -1,0 +1,6 @@
+= jakarta/xml/bind/Binder.class
+
+ - link:Binder-asmified.java[Asmified]
+
+== References
+

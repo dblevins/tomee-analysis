@@ -4,10 +4,3 @@
 
 == References
 
- - javax.json.bind.annotation.JsonbProperty - 16
- - javax.json.JsonValue - 1
- - javax.json.JsonObject - 1
- - javax.json.JsonNumber - 1
- - javax.ws.rs.core.Response - 1
- - javax.json.JsonArray - 1
- - javax.json.JsonString - 1

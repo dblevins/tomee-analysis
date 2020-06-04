@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.Query - 4
- - javax.persistence.QueryTimeoutException - 4

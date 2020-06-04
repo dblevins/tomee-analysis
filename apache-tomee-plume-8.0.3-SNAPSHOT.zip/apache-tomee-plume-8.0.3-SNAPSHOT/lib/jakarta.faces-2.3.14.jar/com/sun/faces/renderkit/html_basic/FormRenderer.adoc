@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 32
- - javax.faces.context.ResponseWriter - 30
- - javax.faces.component.UIComponent - 22
- - javax.faces.component.UIViewRoot - 8
- - javax.faces.context.ExternalContext - 8
- - javax.faces.application.ViewHandler - 8
- - javax.faces.application.Application - 8
- - javax.faces.component.UIForm - 4

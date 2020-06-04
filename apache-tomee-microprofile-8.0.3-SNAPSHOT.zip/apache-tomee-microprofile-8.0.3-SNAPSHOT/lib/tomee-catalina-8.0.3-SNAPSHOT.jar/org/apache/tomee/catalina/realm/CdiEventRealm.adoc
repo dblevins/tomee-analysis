@@ -4,6 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.BeanManager - 16
- - javax.servlet.ServletRequest - 1
- - javax.servlet.http.HttpServletRequest - 1

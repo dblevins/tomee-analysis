@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SOAPHeader.class
+
+ - link:SOAPHeader-asmified.java[Asmified]
+
+== References
+

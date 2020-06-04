@@ -4,6 +4,3 @@
 
 == References
 
- - javax.jms.Message - 9
- - javax.jms.CompletionListener - 9
- - javax.jms.JMSException - 1

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.annotation.Nonnull - 14
- - javax.servlet.http.HttpServletResponse - 8
- - javax.annotation.Nullable - 6
- - javax.servlet.ServletOutputStream - 1

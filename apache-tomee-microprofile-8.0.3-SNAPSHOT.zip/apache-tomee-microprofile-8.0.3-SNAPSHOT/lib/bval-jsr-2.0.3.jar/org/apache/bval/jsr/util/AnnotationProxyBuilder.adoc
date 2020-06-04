@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 2
- - javax.validation.ConstraintTarget - 1
- - javax.validation.Payload - 1

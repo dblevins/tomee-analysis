@@ -4,12 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 20
- - javax.servlet.jsp.JspException - 6
- - javax.faces.component.UIComponent - 6
- - javax.faces.webapp.UIComponentClassicTagBase - 4
- - javax.faces.context.FacesContext - 4
- - javax.el.ELContext - 4
- - javax.servlet.jsp.tagext.TagSupport - 2
- - javax.servlet.jsp.PageContext - 2
- - javax.faces.webapp.UIComponentELTag - 1

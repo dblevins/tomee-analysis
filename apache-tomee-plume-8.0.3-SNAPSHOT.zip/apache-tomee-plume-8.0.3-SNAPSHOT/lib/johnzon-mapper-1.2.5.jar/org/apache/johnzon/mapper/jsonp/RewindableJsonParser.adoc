@@ -4,9 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonParser - 38
- - javax.json.stream.JsonParser$Event - 6
- - javax.json.JsonValue - 5
- - javax.json.JsonObject - 2
- - javax.json.stream.JsonLocation - 2
- - javax.json.JsonArray - 2

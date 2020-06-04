@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 8
- - javax.validation.valueextraction.ExtractedValue - 1
- - javax.validation.valueextraction.UnwrapByDefault - 1
- - javax.validation.valueextraction.ValueExtractor - 1

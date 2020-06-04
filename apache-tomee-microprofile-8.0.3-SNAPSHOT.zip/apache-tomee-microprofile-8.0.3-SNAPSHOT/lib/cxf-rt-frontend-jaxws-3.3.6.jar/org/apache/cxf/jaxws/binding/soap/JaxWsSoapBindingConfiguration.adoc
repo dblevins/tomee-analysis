@@ -4,6 +4,3 @@
 
 == References
 
- - javax.jws.soap.SOAPBinding - 10
- - javax.jws.soap.SOAPBinding$Style - 6
- - javax.jws.soap.SOAPBinding$Use - 6

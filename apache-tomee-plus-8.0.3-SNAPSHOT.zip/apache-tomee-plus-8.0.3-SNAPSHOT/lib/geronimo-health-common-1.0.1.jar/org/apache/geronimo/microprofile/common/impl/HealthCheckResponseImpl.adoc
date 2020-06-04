@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.bind.annotation.JsonbProperty - 1
- - javax.json.bind.annotation.JsonbTransient - 1

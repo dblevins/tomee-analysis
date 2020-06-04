@@ -1,0 +1,6 @@
+= jakarta/faces/component/search/SearchExpressionHint.class
+
+ - link:SearchExpressionHint-asmified.java[Asmified]
+
+== References
+

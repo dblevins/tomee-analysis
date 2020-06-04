@@ -4,4 +4,3 @@
 
 == References
 
- - javax.inject.Singleton - 1

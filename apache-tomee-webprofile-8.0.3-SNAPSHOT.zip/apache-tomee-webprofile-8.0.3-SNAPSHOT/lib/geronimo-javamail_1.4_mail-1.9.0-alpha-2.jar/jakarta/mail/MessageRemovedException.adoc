@@ -1,0 +1,6 @@
+= jakarta/mail/MessageRemovedException.class
+
+ - link:MessageRemovedException-asmified.java[Asmified]
+
+== References
+

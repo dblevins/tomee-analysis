@@ -1,0 +1,6 @@
+= jakarta/validation/Path.class
+
+ - link:Path-asmified.java[Asmified]
+
+== References
+

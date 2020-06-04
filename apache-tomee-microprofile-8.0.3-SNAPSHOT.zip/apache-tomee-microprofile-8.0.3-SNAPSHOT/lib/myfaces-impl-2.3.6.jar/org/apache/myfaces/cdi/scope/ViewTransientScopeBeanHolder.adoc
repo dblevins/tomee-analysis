@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 12
- - javax.faces.component.UIViewRoot - 8
- - javax.faces.component.TransientStateHelper - 8
- - javax.enterprise.inject.spi.BeanManager - 6

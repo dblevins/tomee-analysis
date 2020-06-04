@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 46
- - javax.faces.context.FacesContext - 40
- - javax.faces.context.ResponseWriter - 31
- - javax.faces.component.behavior.ClientBehaviorHolder - 7
- - javax.faces.component.html.HtmlInputTextarea - 3
- - javax.faces.component.UIOutput - 3
- - javax.faces.component.UIInput - 2
- - javax.faces.convert.ConverterException - 1

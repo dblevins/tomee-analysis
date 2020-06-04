@@ -1,0 +1,6 @@
+= jakarta/batch/api/partition/PartitionAnalyzer.class
+
+ - link:PartitionAnalyzer-asmified.java[Asmified]
+
+== References
+

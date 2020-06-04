@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBException - 31
- - javax.xml.bind.JAXBElement - 5

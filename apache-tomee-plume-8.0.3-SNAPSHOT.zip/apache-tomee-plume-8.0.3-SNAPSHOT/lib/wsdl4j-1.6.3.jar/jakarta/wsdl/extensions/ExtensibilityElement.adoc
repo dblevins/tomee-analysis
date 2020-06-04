@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/ExtensibilityElement.class
+
+ - link:ExtensibilityElement-asmified.java[Asmified]
+
+== References
+

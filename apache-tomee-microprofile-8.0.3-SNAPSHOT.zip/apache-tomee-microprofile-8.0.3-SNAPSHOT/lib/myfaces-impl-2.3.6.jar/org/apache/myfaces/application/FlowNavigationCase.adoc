@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.application.NavigationCase - 6
- - javax.faces.application.NavigationCaseWrapper - 2

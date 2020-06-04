@@ -1,0 +1,6 @@
+= jakarta/batch/api/partition/PartitionReducer$PartitionStatus.class
+
+ - link:PartitionReducer$PartitionStatus-asmified.java[Asmified]
+
+== References
+

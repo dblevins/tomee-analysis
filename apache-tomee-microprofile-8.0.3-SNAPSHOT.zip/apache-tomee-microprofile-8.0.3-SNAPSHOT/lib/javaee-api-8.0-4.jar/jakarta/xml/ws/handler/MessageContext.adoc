@@ -1,0 +1,6 @@
+= jakarta/xml/ws/handler/MessageContext.class
+
+ - link:MessageContext-asmified.java[Asmified]
+
+== References
+

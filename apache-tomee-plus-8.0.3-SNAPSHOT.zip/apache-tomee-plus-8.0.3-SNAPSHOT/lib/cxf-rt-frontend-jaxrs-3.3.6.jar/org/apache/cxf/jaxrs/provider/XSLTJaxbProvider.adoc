@@ -4,15 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 45
- - javax.ws.rs.core.MultivaluedMap - 14
- - javax.ws.rs.core.UriInfo - 13
- - javax.xml.bind.Unmarshaller - 9
- - javax.xml.bind.Marshaller - 9
- - javax.ws.rs.core.Response - 3
- - javax.ws.rs.WebApplicationException - 3
- - javax.ws.rs.core.PathSegment - 2
- - javax.xml.bind.JAXBException - 2
- - javax.ws.rs.ext.Provider - 1
- - javax.ws.rs.Consumes - 1
- - javax.ws.rs.Produces - 1

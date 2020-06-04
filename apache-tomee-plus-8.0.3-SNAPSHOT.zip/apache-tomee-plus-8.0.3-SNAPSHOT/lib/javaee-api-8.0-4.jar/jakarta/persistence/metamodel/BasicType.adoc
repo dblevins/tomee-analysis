@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/BasicType.class
+
+ - link:BasicType-asmified.java[Asmified]
+
+== References
+

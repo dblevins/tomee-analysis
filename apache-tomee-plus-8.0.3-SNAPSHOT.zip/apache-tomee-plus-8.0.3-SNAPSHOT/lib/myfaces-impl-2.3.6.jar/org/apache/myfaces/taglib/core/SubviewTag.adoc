@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.component.UIOutput - 6
- - javax.faces.webapp.UIComponentELTag - 4
- - javax.faces.context.FacesContext - 4
- - javax.faces.context.ExternalContext - 2
- - javax.faces.component.UIComponent - 2

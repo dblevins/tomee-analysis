@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Fetch.class
+
+ - link:Fetch-asmified.java[Asmified]
+
+== References
+

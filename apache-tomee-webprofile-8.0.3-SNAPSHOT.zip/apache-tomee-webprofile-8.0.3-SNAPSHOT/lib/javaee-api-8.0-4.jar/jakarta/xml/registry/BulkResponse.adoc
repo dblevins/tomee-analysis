@@ -1,0 +1,6 @@
+= jakarta/xml/registry/BulkResponse.class
+
+ - link:BulkResponse-asmified.java[Asmified]
+
+== References
+

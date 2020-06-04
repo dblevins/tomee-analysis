@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/BigDecimalHolder.class
+
+ - link:BigDecimalHolder-asmified.java[Asmified]
+
+== References
+

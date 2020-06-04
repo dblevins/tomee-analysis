@@ -4,5 +4,3 @@
 
 == References
 
- - javax.mail.internet.InternetAddress - 5
- - javax.mail.MessagingException - 2

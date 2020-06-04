@@ -4,9 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPHeaderElement - 33
- - javax.xml.soap.SOAPElement - 30
- - javax.xml.soap.SOAPException - 27
- - javax.xml.soap.Name - 23
- - javax.xml.soap.SOAPHeader - 1
- - javax.xml.soap.SOAPEnvelope - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 2
- - javax.servlet.annotation.ServletSecurity$TransportGuarantee - 2

@@ -1,0 +1,6 @@
+= jakarta/faces/component/_UISelectItem.class
+
+ - link:_UISelectItem-asmified.java[Asmified]
+
+== References
+

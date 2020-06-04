@@ -1,0 +1,6 @@
+= jakarta/jms/JMSContext.class
+
+ - link:JMSContext-asmified.java[Asmified]
+
+== References
+

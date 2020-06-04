@@ -4,5 +4,3 @@
 
 == References
 
- - javax.mail.Address - 6
- - javax.mail.SendFailedException - 2

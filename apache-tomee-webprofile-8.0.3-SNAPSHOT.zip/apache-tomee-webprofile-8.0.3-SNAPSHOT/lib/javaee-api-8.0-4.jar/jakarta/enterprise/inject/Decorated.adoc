@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/Decorated.class
+
+ - link:Decorated-asmified.java[Asmified]
+
+== References
+

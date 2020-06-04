@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.Handler - 5
- - javax.xml.ws.WebServiceException - 4
- - javax.xml.ws.Binding - 2

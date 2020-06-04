@@ -1,0 +1,6 @@
+= jakarta/faces/bean/CustomScoped.class
+
+ - link:CustomScoped-asmified.java[Asmified]
+
+== References
+

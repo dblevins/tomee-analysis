@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/BeforeDestroyed$Literal.class
+
+ - link:BeforeDestroyed$Literal-asmified.java[Asmified]
+
+== References
+

@@ -4,18 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletResponse - 24
- - javax.security.auth.message.config.AuthConfigProvider - 22
- - javax.security.auth.message.MessageInfo - 20
- - javax.servlet.http.Cookie - 9
- - javax.security.auth.message.config.ServerAuthContext - 8
- - javax.security.auth.message.AuthException - 8
- - javax.servlet.http.HttpServletRequest - 8
- - javax.servlet.ServletContext - 7
- - javax.security.auth.message.config.ServerAuthConfig - 6
- - javax.servlet.ServletException - 5
- - javax.security.auth.message.AuthStatus - 4
- - javax.security.auth.message.config.AuthConfigFactory - 4
- - javax.servlet.SessionCookieConfig - 2
- - javax.security.auth.message.config.RegistrationListener - 2
- - javax.servlet.DispatcherType - 2

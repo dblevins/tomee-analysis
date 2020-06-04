@@ -1,0 +1,6 @@
+= jakarta/json/bind/annotation/JsonbDateFormat.class
+
+ - link:JsonbDateFormat-asmified.java[Asmified]
+
+== References
+

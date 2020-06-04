@@ -4,5 +4,3 @@
 
 == References
 
- - javax.batch.runtime.StepExecution - 8
- - javax.batch.api.Decider - 3

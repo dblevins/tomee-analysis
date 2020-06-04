@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/ApplicationScoped.class
+
+ - link:ApplicationScoped-asmified.java[Asmified]
+
+== References
+

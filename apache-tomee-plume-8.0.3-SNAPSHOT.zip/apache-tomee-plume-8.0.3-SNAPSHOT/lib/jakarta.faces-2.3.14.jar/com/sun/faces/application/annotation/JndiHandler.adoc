@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 13
- - javax.faces.application.FacesMessage - 9
- - javax.faces.application.ProjectStage - 6

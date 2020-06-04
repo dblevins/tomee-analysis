@@ -4,12 +4,3 @@
 
 == References
 
- - javax.validation.Configuration - 44
- - javax.validation.BootstrapConfiguration - 5
- - javax.validation.ParameterNameProvider - 4
- - javax.validation.ClockProvider - 4
- - javax.validation.MessageInterpolator - 4
- - javax.validation.ConstraintValidatorFactory - 4
- - javax.validation.TraversableResolver - 4
- - javax.validation.ValidatorFactory - 3
- - javax.validation.valueextraction.ValueExtractor - 2

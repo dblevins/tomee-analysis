@@ -1,0 +1,6 @@
+= jakarta/faces/application/NavigationHandlerWrapper.class
+
+ - link:NavigationHandlerWrapper-asmified.java[Asmified]
+
+== References
+

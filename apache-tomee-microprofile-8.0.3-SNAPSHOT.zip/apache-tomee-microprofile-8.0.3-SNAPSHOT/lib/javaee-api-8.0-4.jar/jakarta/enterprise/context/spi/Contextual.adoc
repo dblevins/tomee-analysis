@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/spi/Contextual.class
+
+ - link:Contextual-asmified.java[Asmified]
+
+== References
+

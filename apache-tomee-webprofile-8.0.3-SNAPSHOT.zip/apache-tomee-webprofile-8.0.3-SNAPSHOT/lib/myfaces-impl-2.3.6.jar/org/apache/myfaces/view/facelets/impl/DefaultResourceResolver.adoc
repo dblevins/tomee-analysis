@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 7
- - javax.faces.application.ViewResource - 3
- - javax.faces.application.Application - 2
- - javax.faces.view.facelets.ResourceResolver - 2
- - javax.faces.application.ResourceHandler - 2

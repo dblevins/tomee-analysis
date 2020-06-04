@@ -4,33 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 129
- - javax.faces.context.FacesContext - 28
- - javax.servlet.ServletContextEvent - 14
- - javax.servlet.jsp.JspFactory - 12
- - javax.el.ExpressionFactory - 11
- - javax.faces.application.Application - 9
- - javax.el.ELContext - 8
- - javax.servlet.jsp.JspApplicationContext - 7
- - javax.faces.context.ExternalContext - 6
- - javax.faces.FactoryFinder - 6
- - javax.servlet.http.HttpSessionBindingEvent - 5
- - javax.servlet.ServletRequestAttributeEvent - 5
- - javax.el.ELResolver - 5
- - javax.servlet.ServletContextAttributeEvent - 5
- - javax.servlet.http.HttpSessionEvent - 4
- - javax.servlet.http.HttpSession - 4
- - javax.servlet.ServletRequestEvent - 4
- - javax.websocket.server.ServerContainer - 4
- - javax.websocket.server.ServerEndpointConfig$Builder - 3
- - javax.websocket.server.ServerEndpointConfig - 2
- - javax.faces.application.ProjectStage - 2
- - javax.faces.application.ApplicationFactory - 2
- - javax.servlet.ServletRequestListener - 1
- - javax.el.ELContextListener - 1
- - javax.servlet.http.HttpSessionAttributeListener - 1
- - javax.servlet.ServletContextAttributeListener - 1
- - javax.servlet.ServletContextListener - 1
- - javax.servlet.http.HttpSessionListener - 1
- - javax.servlet.ServletRequestAttributeListener - 1
- - javax.faces.event.PreDestroyApplicationEvent - 1

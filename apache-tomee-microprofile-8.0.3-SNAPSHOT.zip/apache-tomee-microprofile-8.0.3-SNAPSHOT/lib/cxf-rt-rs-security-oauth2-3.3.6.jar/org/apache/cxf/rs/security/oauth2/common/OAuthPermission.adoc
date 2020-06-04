@@ -4,11 +4,3 @@
 
 == References
 
- - javax.persistence.OrderColumn - 2
- - javax.persistence.FetchType - 2
- - javax.persistence.ElementCollection - 2
- - javax.persistence.Entity - 1
- - javax.persistence.Transient - 1
- - javax.persistence.Cacheable - 1
- - javax.xml.bind.annotation.XmlRootElement - 1
- - javax.persistence.Id - 1

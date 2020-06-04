@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.ValidationEventHandler - 7
- - javax.xml.bind.helpers.ValidationEventLocatorImpl - 4
- - javax.xml.bind.ValidationEvent - 2
- - javax.xml.bind.helpers.ValidationEventImpl - 2
- - javax.xml.bind.ValidationEventLocator - 1

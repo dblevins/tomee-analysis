@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/ProcessManagedBean.class
+
+ - link:ProcessManagedBean-asmified.java[Asmified]
+
+== References
+

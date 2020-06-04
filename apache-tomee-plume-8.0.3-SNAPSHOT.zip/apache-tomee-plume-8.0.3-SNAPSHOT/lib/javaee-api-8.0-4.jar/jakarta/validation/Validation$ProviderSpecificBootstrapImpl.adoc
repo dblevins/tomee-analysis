@@ -1,0 +1,6 @@
+= jakarta/validation/Validation$ProviderSpecificBootstrapImpl.class
+
+ - link:Validation$ProviderSpecificBootstrapImpl-asmified.java[Asmified]
+
+== References
+

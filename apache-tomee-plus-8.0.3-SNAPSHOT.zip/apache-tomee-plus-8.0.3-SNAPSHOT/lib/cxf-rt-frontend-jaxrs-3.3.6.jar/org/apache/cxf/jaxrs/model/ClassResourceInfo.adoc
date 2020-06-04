@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 10
- - javax.ws.rs.Consumes - 4
- - javax.ws.rs.Produces - 4
- - javax.ws.rs.core.Application - 4
- - javax.ws.rs.Path - 3
- - javax.ws.rs.BeanParam - 2

@@ -4,22 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.PageContext - 79
- - javax.el.ELContext - 13
- - javax.servlet.ServletContext - 9
- - javax.servlet.jsp.JspWriter - 6
- - javax.servlet.jsp.tagext.JspTag - 6
- - javax.servlet.ServletException - 5
- - javax.servlet.http.HttpSession - 4
- - javax.servlet.ServletRequest - 3
- - javax.servlet.jsp.JspFactory - 3
- - javax.servlet.ServletResponse - 3
- - javax.servlet.ServletConfig - 2
- - javax.servlet.jsp.el.ExpressionEvaluator - 2
- - javax.el.ELResolver - 2
- - javax.servlet.jsp.el.VariableResolver - 2
- - javax.servlet.jsp.tagext.BodyContent - 2
- - javax.servlet.jsp.JspContext - 2
- - javax.servlet.Servlet - 1
- - javax.servlet.jsp.el.ELException - 1
- - javax.servlet.jsp.JspApplicationContext - 1

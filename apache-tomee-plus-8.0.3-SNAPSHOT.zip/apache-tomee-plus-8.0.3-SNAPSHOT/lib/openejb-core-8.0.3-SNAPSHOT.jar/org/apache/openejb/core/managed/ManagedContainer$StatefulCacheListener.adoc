@@ -4,4 +4,3 @@
 
 == References
 
- - javax.ejb.SessionBean - 6

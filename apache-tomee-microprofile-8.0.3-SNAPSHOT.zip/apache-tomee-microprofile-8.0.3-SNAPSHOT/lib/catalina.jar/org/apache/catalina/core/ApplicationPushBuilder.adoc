@@ -4,9 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 27
- - javax.servlet.http.Cookie - 17
- - javax.servlet.http.PushBuilder - 10
- - javax.servlet.http.HttpSession - 4
- - javax.servlet.ServletContext - 2
- - javax.servlet.SessionTrackingMode - 2

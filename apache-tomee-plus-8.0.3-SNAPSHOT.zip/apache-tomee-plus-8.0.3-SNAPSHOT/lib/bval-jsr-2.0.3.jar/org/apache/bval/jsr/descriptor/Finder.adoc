@@ -4,10 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ElementDescriptor - 8
- - javax.validation.metadata.Scope - 7
- - javax.validation.metadata.ConstraintDescriptor - 5
- - javax.validation.metadata.ElementDescriptor$ConstraintFinder - 4
- - javax.validation.groups.Default - 3
- - javax.validation.GroupDefinitionException - 2
- - javax.validation.GroupSequence - 1

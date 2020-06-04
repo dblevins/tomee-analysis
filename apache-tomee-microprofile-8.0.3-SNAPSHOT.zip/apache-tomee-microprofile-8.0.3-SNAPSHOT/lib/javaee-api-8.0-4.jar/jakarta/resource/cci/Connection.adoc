@@ -1,0 +1,6 @@
+= jakarta/resource/cci/Connection.class
+
+ - link:Connection-asmified.java[Asmified]
+
+== References
+

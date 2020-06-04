@@ -1,0 +1,6 @@
+= jakarta/faces/bean/ApplicationScoped.class
+
+ - link:ApplicationScoped-asmified.java[Asmified]
+
+== References
+

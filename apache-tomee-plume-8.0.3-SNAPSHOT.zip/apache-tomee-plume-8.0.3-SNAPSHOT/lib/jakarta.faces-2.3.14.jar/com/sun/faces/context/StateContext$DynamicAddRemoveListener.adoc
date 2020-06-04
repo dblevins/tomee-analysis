@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 52
- - javax.faces.context.FacesContext - 12
- - javax.faces.FacesException - 6
- - javax.faces.event.SystemEvent - 2
- - javax.faces.event.AbortProcessingException - 1

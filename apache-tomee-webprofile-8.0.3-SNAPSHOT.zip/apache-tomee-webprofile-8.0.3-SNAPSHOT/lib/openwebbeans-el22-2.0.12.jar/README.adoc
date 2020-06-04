@@ -1,7 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/openwebbeans-el22-2.0.12.jar
 
- - link:org/apache/webbeans/el22/WrappedValueExpression.adoc[org/apache/webbeans/el22/WrappedValueExpression.class] - 44
- - link:org/apache/webbeans/el22/WebBeansELResolver.adoc[org/apache/webbeans/el22/WebBeansELResolver.class] - 41
- - link:org/apache/webbeans/el22/WrappedExpressionFactory.adoc[org/apache/webbeans/el22/WrappedExpressionFactory.class] - 29
- - link:org/apache/webbeans/el22/WrappedMethodExpression.adoc[org/apache/webbeans/el22/WrappedMethodExpression.class] - 26
- - link:org/apache/webbeans/el22/EL22Adaptor.adoc[org/apache/webbeans/el22/EL22Adaptor.class] - 4

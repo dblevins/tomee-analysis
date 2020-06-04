@@ -4,15 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 19
- - javax.el.VariableMapper - 18
- - javax.el.ValueExpression - 14
- - javax.el.ELException - 13
- - javax.el.ELResolver - 10
- - javax.el.PropertyNotFoundException - 8
- - javax.el.MethodExpression - 7
- - javax.el.ImportHandler - 4
- - javax.el.ValueReference - 2
- - javax.el.ELClass - 2
- - javax.el.MethodInfo - 2
- - javax.el.MethodNotFoundException - 2

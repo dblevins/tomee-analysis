@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/literal/QualifierLiteral.class
+
+ - link:QualifierLiteral-asmified.java[Asmified]
+
+== References
+

@@ -4,19 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 23
- - javax.servlet.http.HttpSession - 19
- - javax.servlet.ServletRequest - 9
- - javax.servlet.ServletRequestAttributeEvent - 8
- - javax.servlet.http.HttpSessionBindingEvent - 8
- - javax.servlet.ServletContextAttributeEvent - 8
- - javax.faces.context.FacesContext - 7
- - javax.servlet.http.HttpSessionEvent - 7
- - javax.faces.application.Application - 5
- - javax.servlet.http.HttpServletRequest - 5
- - javax.servlet.ServletRequestEvent - 5
- - javax.faces.application.ViewHandler - 3
- - javax.servlet.ServletContextEvent - 3
- - javax.faces.event.ExceptionQueuedEventContext - 2
- - javax.faces.context.ExceptionHandler - 2
- - javax.faces.event.ExceptionQueuedEvent - 1

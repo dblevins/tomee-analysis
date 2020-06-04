@@ -4,6 +4,3 @@
 
 == References
 
- - javax.security.auth.message.config.AuthConfigProvider - 10
- - javax.security.auth.message.config.RegistrationListener - 4
- - javax.security.auth.message.config.AuthConfigFactory$RegistrationContext - 1

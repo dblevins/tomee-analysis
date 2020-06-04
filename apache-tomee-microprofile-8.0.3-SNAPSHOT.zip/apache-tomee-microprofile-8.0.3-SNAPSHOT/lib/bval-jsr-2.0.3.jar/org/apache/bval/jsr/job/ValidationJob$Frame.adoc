@@ -4,14 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintValidator - 13
- - javax.validation.ConstraintViolation - 8
- - javax.validation.metadata.ValidateUnwrappedValue - 7
- - javax.validation.ValidationException - 6
- - javax.validation.valueextraction.ValueExtractor - 4
- - javax.validation.constraintvalidation.ValidationTarget - 4
- - javax.validation.ConstraintValidatorFactory - 3
- - javax.validation.Path - 3
- - javax.validation.UnexpectedTypeException - 2
- - javax.validation.metadata.ConstraintDescriptor - 1
- - javax.validation.ConstraintValidatorContext - 1

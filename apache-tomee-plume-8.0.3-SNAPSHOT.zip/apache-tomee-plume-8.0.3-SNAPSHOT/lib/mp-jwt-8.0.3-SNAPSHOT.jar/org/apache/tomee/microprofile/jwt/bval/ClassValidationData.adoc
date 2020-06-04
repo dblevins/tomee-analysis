@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.metadata.Scope - 2
- - javax.validation.ConstraintDefinitionException - 2
- - javax.validation.Validation - 1
- - javax.validation.ValidatorFactory - 1

@@ -1,0 +1,6 @@
+= jakarta/persistence/OneToMany.class
+
+ - link:OneToMany-asmified.java[Asmified]
+
+== References
+

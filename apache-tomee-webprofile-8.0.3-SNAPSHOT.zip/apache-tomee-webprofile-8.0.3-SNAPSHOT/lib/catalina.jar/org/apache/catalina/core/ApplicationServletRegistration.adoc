@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletSecurityElement - 7
- - javax.servlet.ServletRegistration$Dynamic - 3
- - javax.servlet.MultipartConfigElement - 2

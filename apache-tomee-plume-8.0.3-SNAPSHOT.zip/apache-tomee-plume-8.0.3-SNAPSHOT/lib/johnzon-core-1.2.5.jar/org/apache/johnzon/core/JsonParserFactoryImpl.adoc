@@ -4,7 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonParser - 5
- - javax.json.JsonObject - 2
- - javax.json.JsonArray - 2
- - javax.json.stream.JsonParserFactory - 1

@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 7
- - javax.faces.application.FacesMessage - 3
- - javax.faces.component.visit.VisitContext - 3
- - javax.faces.event.SystemEvent - 2
- - javax.faces.application.FacesMessage$Severity - 2
- - javax.faces.component.UIComponent - 2
- - javax.faces.component.UIViewRoot - 1
- - javax.faces.component.visit.VisitHint - 1
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.SystemEventListener - 1

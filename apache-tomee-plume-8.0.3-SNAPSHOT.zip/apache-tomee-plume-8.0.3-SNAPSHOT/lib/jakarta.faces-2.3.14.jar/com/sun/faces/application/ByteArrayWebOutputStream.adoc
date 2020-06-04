@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.FacesException - 4
- - javax.servlet.ServletOutputStream - 4
- - javax.servlet.WriteListener - 1

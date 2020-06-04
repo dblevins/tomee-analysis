@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 9
- - javax.faces.FacesException - 6
- - javax.faces.component.search.SearchExpressionContext - 5
- - javax.faces.context.FacesContext - 4
- - javax.faces.component.search.SearchKeywordContext - 4
- - javax.faces.component.search.SearchKeywordResolver - 2
- - javax.faces.component.search.UntargetableComponent - 1

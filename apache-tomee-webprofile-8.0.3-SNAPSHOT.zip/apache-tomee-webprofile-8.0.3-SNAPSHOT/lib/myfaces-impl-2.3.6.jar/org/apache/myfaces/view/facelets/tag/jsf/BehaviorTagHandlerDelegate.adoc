@@ -4,22 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.BehaviorHandler - 30
- - javax.faces.view.facelets.FaceletContext - 11
- - javax.faces.view.facelets.TagAttribute - 10
- - javax.faces.view.facelets.Tag - 8
- - javax.faces.component.UIComponent - 8
- - javax.faces.component.behavior.Behavior - 7
- - javax.faces.view.facelets.TagException - 6
- - javax.faces.context.FacesContext - 6
- - javax.faces.component.behavior.ClientBehaviorHolder - 6
- - javax.faces.view.facelets.MetaRuleset - 5
- - javax.faces.view.facelets.TagAttributeException - 4
- - javax.el.ValueExpression - 4
- - javax.faces.component.behavior.ClientBehavior - 3
- - javax.faces.application.Application - 2
- - javax.faces.view.facelets.TagHandlerDelegate - 2
- - javax.el.ELContext - 2
- - javax.faces.view.BehaviorHolderAttachedObjectHandler - 1
- - javax.faces.view.facelets.ComponentHandler - 1
- - javax.faces.view.AttachedObjectHandler - 1

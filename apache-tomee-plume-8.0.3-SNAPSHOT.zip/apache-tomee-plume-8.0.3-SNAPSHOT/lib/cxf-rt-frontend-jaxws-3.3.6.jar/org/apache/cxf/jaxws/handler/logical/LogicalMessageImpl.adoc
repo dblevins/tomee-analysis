@@ -4,18 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPMessage - 27
- - javax.xml.ws.Service$Mode - 21
- - javax.xml.soap.SOAPBody - 11
- - javax.xml.bind.JAXBContext - 10
- - javax.xml.soap.SOAPPart - 6
- - javax.xml.bind.JAXBException - 5
- - javax.xml.soap.MessageFactory - 4
- - javax.xml.ws.WebServiceException - 4
- - javax.xml.soap.SOAPEnvelope - 4
- - javax.xml.soap.SOAPException - 3
- - javax.xml.bind.Marshaller - 2
- - javax.xml.soap.SOAPElement - 2
- - javax.activation.DataSource - 2
- - javax.xml.ws.LogicalMessage - 1
- - javax.xml.soap.MimeHeaders - 1

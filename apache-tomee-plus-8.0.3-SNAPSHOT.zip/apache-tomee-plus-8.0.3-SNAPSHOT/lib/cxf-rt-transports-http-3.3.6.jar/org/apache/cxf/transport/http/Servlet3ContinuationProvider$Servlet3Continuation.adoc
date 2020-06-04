@@ -4,9 +4,3 @@
 
 == References
 
- - javax.servlet.AsyncContext - 20
- - javax.servlet.http.HttpServletRequest - 6
- - javax.servlet.AsyncEvent - 5
- - javax.servlet.AsyncListener - 3
- - javax.servlet.ServletOutputStream - 2
- - javax.servlet.http.HttpServletResponse - 2

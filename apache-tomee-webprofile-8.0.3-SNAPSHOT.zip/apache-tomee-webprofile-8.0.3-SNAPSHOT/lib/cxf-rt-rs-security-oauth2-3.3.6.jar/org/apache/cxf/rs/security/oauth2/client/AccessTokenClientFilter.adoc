@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.ws.rs.client.ClientRequestContext - 2
- - javax.ws.rs.client.ClientRequestFilter - 1

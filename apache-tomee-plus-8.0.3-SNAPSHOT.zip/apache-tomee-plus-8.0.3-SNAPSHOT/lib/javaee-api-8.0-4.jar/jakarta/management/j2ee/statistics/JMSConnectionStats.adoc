@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/JMSConnectionStats.class
+
+ - link:JMSConnectionStats-asmified.java[Asmified]
+
+== References
+

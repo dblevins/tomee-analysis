@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/CompletionStageRxInvoker.class
+
+ - link:CompletionStageRxInvoker-asmified.java[Asmified]
+
+== References
+

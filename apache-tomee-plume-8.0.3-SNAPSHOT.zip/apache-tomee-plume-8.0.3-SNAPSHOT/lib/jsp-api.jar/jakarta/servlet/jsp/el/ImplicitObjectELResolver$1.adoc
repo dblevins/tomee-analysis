@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/el/ImplicitObjectELResolver$1.class
+
+ - link:ImplicitObjectELResolver$1-asmified.java[Asmified]
+
+== References
+

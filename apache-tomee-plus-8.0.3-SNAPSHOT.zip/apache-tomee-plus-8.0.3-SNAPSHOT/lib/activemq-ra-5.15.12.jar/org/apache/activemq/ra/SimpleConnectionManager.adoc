@@ -4,10 +4,3 @@
 
 == References
 
- - javax.resource.spi.ManagedConnection - 11
- - javax.resource.spi.ConnectionEvent - 10
- - javax.resource.ResourceException - 9
- - javax.resource.spi.ConnectionRequestInfo - 3
- - javax.resource.spi.ConnectionEventListener - 2
- - javax.resource.spi.ManagedConnectionFactory - 2
- - javax.resource.spi.ConnectionManager - 1

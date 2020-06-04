@@ -4,4 +4,3 @@
 
 == References
 
- - javax.websocket.MessageHandler - 5

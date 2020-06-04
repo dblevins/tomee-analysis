@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/WorkException.class
+
+ - link:WorkException-asmified.java[Asmified]
+
+== References
+

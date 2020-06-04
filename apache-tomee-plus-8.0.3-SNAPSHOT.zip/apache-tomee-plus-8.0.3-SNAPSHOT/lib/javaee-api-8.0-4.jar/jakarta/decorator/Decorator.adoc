@@ -1,0 +1,6 @@
+= jakarta/decorator/Decorator.class
+
+ - link:Decorator-asmified.java[Asmified]
+
+== References
+

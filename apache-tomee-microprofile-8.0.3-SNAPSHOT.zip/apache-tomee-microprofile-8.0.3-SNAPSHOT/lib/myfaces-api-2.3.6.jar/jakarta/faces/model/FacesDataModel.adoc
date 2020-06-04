@@ -1,0 +1,6 @@
+= jakarta/faces/model/FacesDataModel.class
+
+ - link:FacesDataModel-asmified.java[Asmified]
+
+== References
+

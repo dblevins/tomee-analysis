@@ -4,12 +4,3 @@
 
 == References
 
- - javax.xml.soap.MimeHeaders - 38
- - javax.activation.DataHandler - 38
- - javax.xml.soap.SOAPException - 20
- - javax.activation.MailcapCommandMap - 11
- - javax.xml.soap.MimeHeader - 10
- - javax.activation.CommandInfo - 5
- - javax.xml.soap.AttachmentPart - 3
- - javax.activation.CommandMap - 2
- - javax.activation.DataSource - 2

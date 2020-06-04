@@ -1,0 +1,6 @@
+= jakarta/resource/spi/LazyEnlistableManagedConnection.class
+
+ - link:LazyEnlistableManagedConnection-asmified.java[Asmified]
+
+== References
+

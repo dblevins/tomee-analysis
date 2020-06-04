@@ -1,0 +1,6 @@
+= jakarta/mail/search/AddressStringTerm.class
+
+ - link:AddressStringTerm-asmified.java[Asmified]
+
+== References
+

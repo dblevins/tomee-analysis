@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.FeatureContext - 2
- - javax.ws.rs.core.Configurable - 1

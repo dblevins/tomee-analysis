@@ -4,11 +4,3 @@
 
 == References
 
- - javax.servlet.AsyncContext - 28
- - javax.servlet.ServletRequestEvent - 15
- - javax.servlet.ServletRequest - 13
- - javax.servlet.AsyncListener - 13
- - javax.servlet.ServletResponse - 4
- - javax.servlet.ServletContext - 4
- - javax.enterprise.context.RequestScoped - 2
- - javax.servlet.ServletException - 1

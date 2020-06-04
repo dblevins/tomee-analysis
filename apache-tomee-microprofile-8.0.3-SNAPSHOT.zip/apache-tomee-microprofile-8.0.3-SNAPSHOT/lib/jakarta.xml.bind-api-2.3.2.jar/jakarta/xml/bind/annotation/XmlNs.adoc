@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlNs.class
+
+ - link:XmlNs-asmified.java[Asmified]
+
+== References
+

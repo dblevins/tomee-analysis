@@ -4,6 +4,3 @@
 
 == References
 
- - javax.resource.ResourceException - 4
- - javax.resource.spi.DissociatableManagedConnection - 3
- - javax.resource.spi.ManagedConnection - 1

@@ -4,29 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 97
- - javax.faces.context.ExternalContext - 35
- - javax.faces.component.UIViewRoot - 25
- - javax.faces.application.ViewHandler - 23
- - javax.faces.view.ViewDeclarationLanguage - 21
- - javax.faces.FacesException - 17
- - javax.faces.render.ResponseStateManager - 11
- - javax.faces.flow.FlowHandler - 10
- - javax.faces.application.Application - 10
- - javax.faces.application.ProtectedViewException - 10
- - javax.faces.lifecycle.Lifecycle - 7
- - javax.faces.event.PhaseId - 6
- - javax.el.MethodExpression - 5
- - javax.faces.event.PostRestoreStateEvent - 5
- - javax.faces.view.ViewMetadata - 4
- - javax.faces.component.visit.VisitContext - 3
- - javax.faces.event.ExceptionQueuedEventContext - 2
- - javax.faces.event.PhaseEvent - 2
- - javax.faces.event.AbortProcessingException - 2
- - javax.faces.component.UIComponent - 2
- - javax.el.ELContext - 2
- - javax.faces.application.ViewExpiredException - 2
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.visit.VisitHint - 1
- - javax.faces.event.ExceptionQueuedEvent - 1
- - javax.faces.event.PhaseListener - 1

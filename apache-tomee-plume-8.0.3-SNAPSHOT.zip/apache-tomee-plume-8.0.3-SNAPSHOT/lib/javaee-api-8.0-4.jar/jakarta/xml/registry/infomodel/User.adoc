@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/User.class
+
+ - link:User-asmified.java[Asmified]
+
+== References
+

@@ -4,9 +4,3 @@
 
 == References
 
- - javax.json.bind.annotation.JsonbTypeAdapter - 30
- - javax.json.bind.annotation.JsonbDateFormat - 14
- - javax.json.bind.annotation.JsonbNumberFormat - 14
- - javax.json.bind.annotation.JsonbTypeDeserializer - 13
- - javax.json.JsonBuilderFactory - 5
- - javax.json.bind.serializer.JsonbDeserializer - 3

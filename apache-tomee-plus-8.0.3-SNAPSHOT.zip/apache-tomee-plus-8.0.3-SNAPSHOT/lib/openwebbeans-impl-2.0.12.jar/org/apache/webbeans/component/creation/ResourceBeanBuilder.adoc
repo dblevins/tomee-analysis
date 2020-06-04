@@ -4,9 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.BeanAttributes - 8
- - javax.enterprise.inject.spi.AnnotatedField - 4
- - javax.enterprise.inject.spi.AnnotatedMember - 1
- - javax.enterprise.context.Dependent - 1
- - javax.enterprise.inject.spi.ProducerFactory - 1
- - javax.enterprise.inject.spi.Bean - 1

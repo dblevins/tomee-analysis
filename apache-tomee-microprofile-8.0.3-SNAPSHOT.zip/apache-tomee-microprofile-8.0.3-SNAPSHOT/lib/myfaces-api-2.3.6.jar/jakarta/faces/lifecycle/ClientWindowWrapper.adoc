@@ -1,0 +1,6 @@
+= jakarta/faces/lifecycle/ClientWindowWrapper.class
+
+ - link:ClientWindowWrapper-asmified.java[Asmified]
+
+== References
+

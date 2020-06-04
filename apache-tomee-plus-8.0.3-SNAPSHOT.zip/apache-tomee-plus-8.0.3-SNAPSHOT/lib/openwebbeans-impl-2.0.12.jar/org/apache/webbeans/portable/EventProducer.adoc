@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.event.Event - 9
- - javax.enterprise.inject.spi.InjectionPoint - 9
- - javax.enterprise.inject.spi.Decorator - 4
- - javax.enterprise.inject.spi.EventMetadata - 1
- - javax.enterprise.inject.spi.Interceptor - 1

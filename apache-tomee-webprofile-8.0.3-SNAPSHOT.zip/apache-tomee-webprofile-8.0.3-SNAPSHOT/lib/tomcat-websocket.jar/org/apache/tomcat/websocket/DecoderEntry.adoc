@@ -4,4 +4,3 @@
 
 == References
 
- - javax.websocket.Decoder - 3

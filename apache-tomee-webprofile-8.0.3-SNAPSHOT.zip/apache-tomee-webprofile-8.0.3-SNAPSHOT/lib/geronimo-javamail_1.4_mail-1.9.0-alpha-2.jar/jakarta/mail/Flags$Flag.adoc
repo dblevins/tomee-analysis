@@ -1,0 +1,6 @@
+= jakarta/mail/Flags$Flag.class
+
+ - link:Flags$Flag-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/ejb/MessageDrivenContext.class
+
+ - link:MessageDrivenContext-asmified.java[Asmified]
+
+== References
+

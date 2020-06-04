@@ -4,4 +4,3 @@
 
 == References
 
- - javax.batch.api.chunk.CheckpointAlgorithm - 11

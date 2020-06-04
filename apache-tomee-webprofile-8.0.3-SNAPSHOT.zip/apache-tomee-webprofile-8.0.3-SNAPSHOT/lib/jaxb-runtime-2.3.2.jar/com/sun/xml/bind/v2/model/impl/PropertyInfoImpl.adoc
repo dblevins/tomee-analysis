@@ -4,16 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 27
- - javax.activation.MimeType - 8
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters - 5
- - javax.xml.bind.annotation.XmlSchema - 5
- - javax.xml.bind.annotation.XmlElementWrapper - 3
- - javax.xml.bind.annotation.XmlAttachmentRef - 3
- - javax.xml.bind.annotation.XmlElement - 3
- - javax.xml.bind.annotation.XmlMimeType - 2
- - javax.xml.bind.annotation.XmlNsForm - 2
- - javax.xml.bind.annotation.adapters.XmlAdapter - 1
- - javax.xml.bind.annotation.XmlIDREF - 1
- - javax.xml.bind.annotation.XmlID - 1
- - javax.xml.bind.annotation.XmlInlineBinaryData - 1

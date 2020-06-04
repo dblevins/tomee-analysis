@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Link - 7
- - javax.ws.rs.core.UriBuilder - 3

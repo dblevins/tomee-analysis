@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.component.UIPanel - 2
- - javax.faces.context.FacesContext - 1

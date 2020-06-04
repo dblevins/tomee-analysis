@@ -4,4 +4,3 @@
 
 == References
 
- - javax.decorator.Decorator - 1

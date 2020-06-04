@@ -1,0 +1,6 @@
+= jakarta/xml/bind/JAXBException.class
+
+ - link:JAXBException-asmified.java[Asmified]
+
+== References
+

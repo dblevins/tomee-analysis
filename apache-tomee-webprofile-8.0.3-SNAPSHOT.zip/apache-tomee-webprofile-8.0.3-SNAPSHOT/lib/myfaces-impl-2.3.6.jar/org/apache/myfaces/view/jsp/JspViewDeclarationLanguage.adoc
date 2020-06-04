@@ -4,17 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 28
- - javax.faces.context.ExternalContext - 19
- - javax.faces.FacesException - 15
- - javax.faces.component.UIViewRoot - 11
- - javax.servlet.ServletRequest - 9
- - javax.servlet.ServletResponse - 9
- - javax.servlet.http.HttpServletResponse - 5
- - javax.faces.render.ResponseStateManager - 4
- - javax.faces.application.ViewVisitOption - 3
- - javax.faces.render.RenderKit - 2
- - javax.faces.application.Application - 2
- - javax.faces.context.PartialViewContext - 2
- - javax.faces.event.PostAddToViewEvent - 1
- - javax.servlet.jsp.jstl.core.Config - 1

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.activation.DataSource - 7
- - javax.activation.ActivationDataFlavor - 4
- - javax.activation.DataContentHandler - 1

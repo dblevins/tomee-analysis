@@ -1,0 +1,6 @@
+= jakarta/xml/ws/soap/MTOM.class
+
+ - link:MTOM-asmified.java[Asmified]
+
+== References
+

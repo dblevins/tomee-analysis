@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.render.RenderKit - 5
- - javax.faces.render.RenderKitFactory - 3
- - javax.faces.context.FacesContext - 1

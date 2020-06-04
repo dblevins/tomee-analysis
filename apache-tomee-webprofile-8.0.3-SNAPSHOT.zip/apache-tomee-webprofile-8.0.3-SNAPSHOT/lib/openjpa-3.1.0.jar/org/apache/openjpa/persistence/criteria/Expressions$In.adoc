@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Expression - 31
- - javax.persistence.criteria.Predicate - 16
- - javax.persistence.criteria.CriteriaBuilder$In - 3
- - javax.persistence.criteria.Selection - 2

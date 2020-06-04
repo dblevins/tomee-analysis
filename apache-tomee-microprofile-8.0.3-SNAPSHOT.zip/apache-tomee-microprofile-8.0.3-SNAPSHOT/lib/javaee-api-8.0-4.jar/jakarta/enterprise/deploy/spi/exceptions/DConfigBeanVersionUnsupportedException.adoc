@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/exceptions/DConfigBeanVersionUnsupportedException.class
+
+ - link:DConfigBeanVersionUnsupportedException-asmified.java[Asmified]
+
+== References
+

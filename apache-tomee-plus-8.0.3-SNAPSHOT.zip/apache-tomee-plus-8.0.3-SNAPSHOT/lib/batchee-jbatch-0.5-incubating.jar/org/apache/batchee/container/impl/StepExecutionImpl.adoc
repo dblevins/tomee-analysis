@@ -4,7 +4,3 @@
 
 == References
 
- - javax.batch.runtime.Metric$MetricType - 16
- - javax.batch.runtime.BatchStatus - 10
- - javax.batch.runtime.Metric - 2
- - javax.batch.runtime.StepExecution - 1

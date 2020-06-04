@@ -1,0 +1,6 @@
+= jakarta/ejb/NoSuchEJBException.class
+
+ - link:NoSuchEJBException-asmified.java[Asmified]
+
+== References
+

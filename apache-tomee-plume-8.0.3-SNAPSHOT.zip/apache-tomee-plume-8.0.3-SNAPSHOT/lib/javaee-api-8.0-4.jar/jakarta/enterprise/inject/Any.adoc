@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/Any.class
+
+ - link:Any-asmified.java[Asmified]
+
+== References
+

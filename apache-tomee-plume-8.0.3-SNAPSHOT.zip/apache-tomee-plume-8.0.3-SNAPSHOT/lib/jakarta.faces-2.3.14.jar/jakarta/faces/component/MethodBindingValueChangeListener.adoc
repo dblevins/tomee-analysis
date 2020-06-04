@@ -1,0 +1,6 @@
+= jakarta/faces/component/MethodBindingValueChangeListener.class
+
+ - link:MethodBindingValueChangeListener-asmified.java[Asmified]
+
+== References
+

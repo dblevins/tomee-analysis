@@ -4,8 +4,3 @@
 
 == References
 
- - javax.jms.XASession - 3
- - javax.jms.ConnectionFactory - 2
- - javax.jms.Session - 1
- - javax.jms.JMSContext - 1
- - javax.jms.XAJMSContext - 1

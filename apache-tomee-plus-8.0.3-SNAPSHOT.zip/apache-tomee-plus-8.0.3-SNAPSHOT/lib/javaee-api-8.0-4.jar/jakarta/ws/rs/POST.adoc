@@ -1,0 +1,6 @@
+= jakarta/ws/rs/POST.class
+
+ - link:POST-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/enterprise/event/ImmutableNotificationOptions$Builder.class
+
+ - link:ImmutableNotificationOptions$Builder-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.annotation.Priority - 3
- - javax.ws.rs.core.MultivaluedMap - 1
- - javax.ws.rs.core.Response - 1

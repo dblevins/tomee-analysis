@@ -4,15 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 14
- - javax.jms.Connection - 10
- - javax.resource.ResourceException - 7
- - javax.resource.spi.ConnectionManager - 6
- - javax.jms.TopicConnection - 4
- - javax.jms.QueueConnection - 4
- - javax.resource.spi.ConnectionRequestInfo - 1
- - javax.resource.spi.ManagedConnectionFactory - 1
- - javax.jms.TopicConnectionFactory - 1
- - javax.jms.ConnectionFactory - 1
- - javax.resource.Referenceable - 1
- - javax.jms.QueueConnectionFactory - 1

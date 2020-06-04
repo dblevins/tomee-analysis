@@ -4,7 +4,3 @@
 
 == References
 
- - javax.xml.bind.Unmarshaller$Listener - 6
- - javax.xml.bind.ValidationEventLocator - 2
- - javax.xml.bind.helpers.ValidationEventImpl - 2
- - javax.xml.bind.ValidationEvent - 1

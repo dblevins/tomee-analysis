@@ -1,0 +1,6 @@
+= jakarta/cache/processor/EntryProcessor.class
+
+ - link:EntryProcessor-asmified.java[Asmified]
+
+== References
+

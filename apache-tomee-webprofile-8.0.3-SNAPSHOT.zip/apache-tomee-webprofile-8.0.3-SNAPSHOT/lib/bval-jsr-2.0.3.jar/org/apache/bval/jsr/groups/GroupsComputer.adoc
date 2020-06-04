@@ -4,8 +4,3 @@
 
 == References
 
- - javax.validation.GroupSequence - 15
- - javax.validation.metadata.GroupConversionDescriptor - 5
- - javax.validation.groups.Default - 3
- - javax.validation.ValidationException - 2
- - javax.validation.GroupDefinitionException - 2

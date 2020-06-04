@@ -1,0 +1,6 @@
+= jakarta/faces/model/DataModel$DataModelIterator.class
+
+ - link:DataModel$DataModelIterator-asmified.java[Asmified]
+
+== References
+

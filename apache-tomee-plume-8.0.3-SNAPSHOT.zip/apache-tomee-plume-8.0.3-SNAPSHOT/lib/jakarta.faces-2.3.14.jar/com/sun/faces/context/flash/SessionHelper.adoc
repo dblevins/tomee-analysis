@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.ExternalContext - 6
- - javax.servlet.http.HttpSessionEvent - 2
- - javax.servlet.http.HttpSessionActivationListener - 1

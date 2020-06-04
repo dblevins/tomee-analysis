@@ -1,0 +1,6 @@
+= jakarta/persistence/Cache.class
+
+ - link:Cache-asmified.java[Asmified]
+
+== References
+

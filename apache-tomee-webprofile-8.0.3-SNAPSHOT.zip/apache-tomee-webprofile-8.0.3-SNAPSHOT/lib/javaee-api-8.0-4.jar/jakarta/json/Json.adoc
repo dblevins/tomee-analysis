@@ -1,0 +1,6 @@
+= jakarta/json/Json.class
+
+ - link:Json-asmified.java[Asmified]
+
+== References
+

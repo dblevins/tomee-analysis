@@ -4,20 +4,3 @@
 
 == References
 
- - javax.websocket.MessageHandler - 37
- - javax.websocket.CloseReason - 31
- - javax.websocket.Endpoint - 17
- - javax.websocket.MessageHandler$Whole - 14
- - javax.websocket.EndpointConfig - 11
- - javax.websocket.CloseReason$CloseCode - 8
- - javax.websocket.CloseReason$CloseCodes - 7
- - javax.websocket.SendResult - 7
- - javax.websocket.Session - 6
- - javax.websocket.RemoteEndpoint$Basic - 4
- - javax.websocket.RemoteEndpoint$Async - 4
- - javax.websocket.DeploymentException - 3
- - javax.websocket.Extension - 3
- - javax.websocket.server.ServerEndpointConfig - 3
- - javax.websocket.PongMessage - 2
- - javax.websocket.MessageHandler$Partial - 1
- - javax.websocket.WebSocketContainer - 1

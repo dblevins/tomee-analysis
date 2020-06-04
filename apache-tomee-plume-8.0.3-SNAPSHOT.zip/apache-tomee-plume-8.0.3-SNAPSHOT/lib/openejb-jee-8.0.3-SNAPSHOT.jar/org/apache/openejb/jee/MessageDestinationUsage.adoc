@@ -4,4 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlEnumValue - 3

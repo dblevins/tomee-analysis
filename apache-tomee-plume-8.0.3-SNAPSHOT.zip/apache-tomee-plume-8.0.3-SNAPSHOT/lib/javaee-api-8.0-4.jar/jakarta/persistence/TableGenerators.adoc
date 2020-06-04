@@ -1,0 +1,6 @@
+= jakarta/persistence/TableGenerators.class
+
+ - link:TableGenerators-asmified.java[Asmified]
+
+== References
+

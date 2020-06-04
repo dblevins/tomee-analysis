@@ -1,0 +1,6 @@
+= jakarta/persistence/Access.class
+
+ - link:Access-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.resource.spi.LocalTransaction - 9
- - javax.resource.ResourceException - 6

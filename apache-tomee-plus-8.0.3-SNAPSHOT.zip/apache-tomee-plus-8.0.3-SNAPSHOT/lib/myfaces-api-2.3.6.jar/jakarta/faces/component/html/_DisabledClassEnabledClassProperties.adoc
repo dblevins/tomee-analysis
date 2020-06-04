@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/_DisabledClassEnabledClassProperties.class
+
+ - link:_DisabledClassEnabledClassProperties-asmified.java[Asmified]
+
+== References
+

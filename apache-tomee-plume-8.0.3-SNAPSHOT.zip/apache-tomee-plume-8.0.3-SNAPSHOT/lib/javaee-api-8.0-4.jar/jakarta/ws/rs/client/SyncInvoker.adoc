@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/SyncInvoker.class
+
+ - link:SyncInvoker-asmified.java[Asmified]
+
+== References
+

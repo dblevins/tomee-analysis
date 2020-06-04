@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/ExtrinsicObject.class
+
+ - link:ExtrinsicObject-asmified.java[Asmified]
+
+== References
+

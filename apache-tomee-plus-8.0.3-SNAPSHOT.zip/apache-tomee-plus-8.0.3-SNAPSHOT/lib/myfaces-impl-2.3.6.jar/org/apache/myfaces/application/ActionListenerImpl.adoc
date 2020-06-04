@@ -4,19 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 25
- - javax.el.MethodExpression - 10
- - javax.faces.component.UIComponent - 10
- - javax.faces.application.Application - 10
- - javax.faces.el.MethodBinding - 10
- - javax.faces.application.NavigationHandler - 6
- - javax.faces.application.NavigationCase - 5
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.event.PhaseId - 4
- - javax.faces.event.ActionEvent - 3
- - javax.faces.component.ActionSource - 3
- - javax.faces.component.ActionSource2 - 3
- - javax.faces.application.ConfigurableNavigationHandler - 3
- - javax.el.ELContext - 2
- - javax.faces.event.ActionListener - 1
- - javax.faces.event.AbortProcessingException - 1

@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Join.class
+
+ - link:Join-asmified.java[Asmified]
+
+== References
+

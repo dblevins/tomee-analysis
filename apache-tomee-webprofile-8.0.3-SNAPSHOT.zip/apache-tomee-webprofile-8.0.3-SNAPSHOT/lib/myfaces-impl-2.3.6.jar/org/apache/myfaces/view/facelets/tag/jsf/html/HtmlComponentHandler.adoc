@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.MetaRuleset - 4
- - javax.faces.view.facelets.ComponentHandler - 3
- - javax.faces.view.facelets.ComponentConfig - 2

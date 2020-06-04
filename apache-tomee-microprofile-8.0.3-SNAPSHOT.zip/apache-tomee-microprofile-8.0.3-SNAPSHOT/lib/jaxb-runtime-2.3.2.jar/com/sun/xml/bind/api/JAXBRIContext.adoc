@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBException - 6
- - javax.xml.bind.JAXBContext - 3
- - javax.xml.bind.SchemaOutputResolver - 1

@@ -4,4 +4,3 @@
 
 == References
 
- - javax.ejb.EntityContext - 1

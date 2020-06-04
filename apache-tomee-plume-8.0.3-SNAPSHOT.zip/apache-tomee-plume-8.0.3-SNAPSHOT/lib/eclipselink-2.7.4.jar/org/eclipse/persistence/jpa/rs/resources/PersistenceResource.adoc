@@ -4,14 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Context - 4
- - javax.ws.rs.core.HttpHeaders - 4
- - javax.ws.rs.core.Response - 4
- - javax.ws.rs.core.UriInfo - 4
- - javax.ws.rs.PathParam - 2
- - javax.ws.rs.Produces - 2
- - javax.xml.bind.JAXBException - 2
- - javax.ws.rs.POST - 1
- - javax.ws.rs.Consumes - 1
- - javax.ws.rs.GET - 1
- - javax.ws.rs.Path - 1

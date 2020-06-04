@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 12
- - javax.faces.context.FacesContext - 5
- - javax.el.ELContext - 5
- - javax.faces.application.Application - 2
- - javax.el.ExpressionFactory - 2
- - javax.faces.event.ActionEvent - 1
- - javax.faces.event.ActionListener - 1
- - javax.faces.event.AbortProcessingException - 1

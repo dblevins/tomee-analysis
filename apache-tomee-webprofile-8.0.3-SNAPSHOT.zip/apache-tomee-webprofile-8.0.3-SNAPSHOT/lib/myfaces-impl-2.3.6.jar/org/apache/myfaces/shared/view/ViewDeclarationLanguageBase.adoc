@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 15
- - javax.faces.component.UIViewRoot - 14
- - javax.faces.application.Application - 7
- - javax.faces.application.ViewHandler - 5
- - javax.faces.application.StateManager - 2
- - javax.faces.view.ViewDeclarationLanguage - 2
- - javax.faces.component.UIComponent - 1

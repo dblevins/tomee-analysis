@@ -4,5 +4,3 @@
 
 == References
 
- - javax.mail.PasswordAuthentication - 5
- - javax.mail.Authenticator - 2

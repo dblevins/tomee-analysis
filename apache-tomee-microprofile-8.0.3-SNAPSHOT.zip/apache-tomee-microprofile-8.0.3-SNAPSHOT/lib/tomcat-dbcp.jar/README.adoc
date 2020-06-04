@@ -1,8 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/tomcat-dbcp.jar
 
- - link:org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext.adoc[org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext.class] - 41
- - link:org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry.adoc[org/apache/tomcat/dbcp/dbcp2/managed/TransactionRegistry.class] - 20
- - link:org/apache/tomcat/dbcp/dbcp2/managed/BasicManagedDataSource.adoc[org/apache/tomcat/dbcp/dbcp2/managed/BasicManagedDataSource.class] - 17
- - link:org/apache/tomcat/dbcp/dbcp2/managed/DataSourceXAConnectionFactory.adoc[org/apache/tomcat/dbcp/dbcp2/managed/DataSourceXAConnectionFactory.class] - 17
- - link:org/apache/tomcat/dbcp/dbcp2/managed/LocalXAConnectionFactory.adoc[org/apache/tomcat/dbcp/dbcp2/managed/LocalXAConnectionFactory.class] - 2
- - link:org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext$1.adoc[org/apache/tomcat/dbcp/dbcp2/managed/TransactionContext$1.class] - 1

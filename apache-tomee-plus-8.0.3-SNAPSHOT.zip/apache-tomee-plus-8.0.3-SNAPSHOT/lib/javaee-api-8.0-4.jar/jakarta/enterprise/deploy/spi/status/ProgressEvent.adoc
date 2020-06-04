@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/status/ProgressEvent.class
+
+ - link:ProgressEvent-asmified.java[Asmified]
+
+== References
+

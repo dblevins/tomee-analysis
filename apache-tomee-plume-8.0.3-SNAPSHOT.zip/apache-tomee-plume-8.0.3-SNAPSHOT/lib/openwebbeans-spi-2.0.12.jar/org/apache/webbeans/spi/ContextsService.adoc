@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.Context - 2
- - javax.enterprise.context.ContextException - 1

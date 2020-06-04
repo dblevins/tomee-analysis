@@ -1,16 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/johnzon-jaxrs-1.2.5.jar
 
- - link:org/apache/johnzon/jaxrs/JsrMessageBodyWriter.adoc[org/apache/johnzon/jaxrs/JsrMessageBodyWriter.class] - 49
- - link:org/apache/johnzon/jaxrs/JsrMessageBodyReader.adoc[org/apache/johnzon/jaxrs/JsrMessageBodyReader.class] - 47
- - link:org/apache/johnzon/jaxrs/DelegateProvider.adoc[org/apache/johnzon/jaxrs/DelegateProvider.class] - 38
- - link:org/apache/johnzon/jaxrs/xml/WadlDocumentToJson.adoc[org/apache/johnzon/jaxrs/xml/WadlDocumentToJson.class] - 37
- - link:org/apache/johnzon/jaxrs/ConfigurableJohnzonProvider.adoc[org/apache/johnzon/jaxrs/ConfigurableJohnzonProvider.class] - 22
- - link:org/apache/johnzon/jaxrs/WildcardConfigurableJohnzonProvider.adoc[org/apache/johnzon/jaxrs/WildcardConfigurableJohnzonProvider.class] - 22
- - link:org/apache/johnzon/jaxrs/NoContentExceptionHandlerReader.adoc[org/apache/johnzon/jaxrs/NoContentExceptionHandlerReader.class] - 19
- - link:org/apache/johnzon/jaxrs/JsrProvider.adoc[org/apache/johnzon/jaxrs/JsrProvider.class] - 18
- - link:org/apache/johnzon/jaxrs/WadlDocumentMessageBodyWriter.adoc[org/apache/johnzon/jaxrs/WadlDocumentMessageBodyWriter.class] - 14
- - link:org/apache/johnzon/jaxrs/JohnzonMessageBodyWriter.adoc[org/apache/johnzon/jaxrs/JohnzonMessageBodyWriter.class] - 9
- - link:org/apache/johnzon/jaxrs/JohnzonMessageBodyReader.adoc[org/apache/johnzon/jaxrs/JohnzonMessageBodyReader.class] - 7
- - link:org/apache/johnzon/jaxrs/JohnzonProvider.adoc[org/apache/johnzon/jaxrs/JohnzonProvider.class] - 5
- - link:org/apache/johnzon/jaxrs/WildcardJohnzonProvider.adoc[org/apache/johnzon/jaxrs/WildcardJohnzonProvider.class] - 5
- - link:org/apache/johnzon/jaxrs/WildcardJsrProvider.adoc[org/apache/johnzon/jaxrs/WildcardJsrProvider.class] - 5

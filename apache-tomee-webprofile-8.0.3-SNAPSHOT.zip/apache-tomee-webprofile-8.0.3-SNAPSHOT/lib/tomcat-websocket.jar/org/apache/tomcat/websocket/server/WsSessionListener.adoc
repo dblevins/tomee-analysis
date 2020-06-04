@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpSession - 2
- - javax.servlet.http.HttpSessionEvent - 2
- - javax.servlet.http.HttpSessionListener - 1

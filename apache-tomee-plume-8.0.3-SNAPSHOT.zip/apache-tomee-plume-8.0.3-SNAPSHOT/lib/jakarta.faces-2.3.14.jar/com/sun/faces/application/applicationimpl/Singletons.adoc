@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.application.ViewHandler - 5
- - javax.faces.event.ActionListener - 5
- - javax.faces.application.StateManager - 5
- - javax.faces.application.ResourceHandler - 5
- - javax.faces.application.NavigationHandler - 5
- - javax.faces.flow.FlowHandler - 4
- - javax.faces.context.FacesContext - 2

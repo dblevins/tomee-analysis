@@ -1,0 +1,6 @@
+= jakarta/faces/component/behavior/AjaxBehavior.class
+
+ - link:AjaxBehavior-asmified.java[Asmified]
+
+== References
+

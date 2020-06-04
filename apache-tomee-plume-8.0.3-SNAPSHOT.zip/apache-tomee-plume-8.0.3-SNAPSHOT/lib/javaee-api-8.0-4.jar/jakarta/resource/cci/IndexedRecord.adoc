@@ -1,0 +1,6 @@
+= jakarta/resource/cci/IndexedRecord.class
+
+ - link:IndexedRecord-asmified.java[Asmified]
+
+== References
+

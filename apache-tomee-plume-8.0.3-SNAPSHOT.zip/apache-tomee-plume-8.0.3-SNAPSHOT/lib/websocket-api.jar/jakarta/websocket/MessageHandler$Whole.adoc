@@ -1,0 +1,6 @@
+= jakarta/websocket/MessageHandler$Whole.class
+
+ - link:MessageHandler$Whole-asmified.java[Asmified]
+
+== References
+

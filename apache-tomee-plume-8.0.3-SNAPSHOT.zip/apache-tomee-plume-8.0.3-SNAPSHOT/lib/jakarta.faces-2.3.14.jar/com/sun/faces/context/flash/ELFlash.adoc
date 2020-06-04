@@ -4,15 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 117
- - javax.faces.context.ExternalContext - 60
- - javax.servlet.http.Cookie - 38
- - javax.faces.event.PhaseId - 14
- - javax.faces.application.Application - 6
- - javax.faces.component.UIViewRoot - 3
- - javax.servlet.http.HttpServletRequest - 3
- - javax.faces.context.Flash - 2
- - javax.faces.application.FacesMessage - 2
- - javax.faces.event.PreRemoveFlashValueEvent - 1
- - javax.faces.event.PostPutFlashValueEvent - 1
- - javax.faces.event.PostKeepFlashValueEvent - 1

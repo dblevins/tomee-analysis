@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlSchema.class
+
+ - link:XmlSchema-asmified.java[Asmified]
+
+== References
+

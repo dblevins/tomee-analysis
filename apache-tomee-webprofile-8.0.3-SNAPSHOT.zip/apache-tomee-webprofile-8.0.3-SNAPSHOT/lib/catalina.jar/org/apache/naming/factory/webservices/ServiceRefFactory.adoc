@@ -4,9 +4,3 @@
 
 == References
 
- - javax.xml.rpc.Service - 29
- - javax.xml.rpc.ServiceFactory - 26
- - javax.xml.rpc.handler.HandlerInfo - 18
- - javax.xml.rpc.handler.HandlerRegistry - 15
- - javax.xml.rpc.handler.HandlerChain - 5
- - javax.xml.rpc.handler.Handler - 2

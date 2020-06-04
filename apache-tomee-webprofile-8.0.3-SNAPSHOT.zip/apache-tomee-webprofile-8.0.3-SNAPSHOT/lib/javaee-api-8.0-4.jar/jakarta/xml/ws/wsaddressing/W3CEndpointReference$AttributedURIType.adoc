@@ -1,0 +1,6 @@
+= jakarta/xml/ws/wsaddressing/W3CEndpointReference$AttributedURIType.class
+
+ - link:W3CEndpointReference$AttributedURIType-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/Instance.class
+
+ - link:Instance-asmified.java[Asmified]
+
+== References
+

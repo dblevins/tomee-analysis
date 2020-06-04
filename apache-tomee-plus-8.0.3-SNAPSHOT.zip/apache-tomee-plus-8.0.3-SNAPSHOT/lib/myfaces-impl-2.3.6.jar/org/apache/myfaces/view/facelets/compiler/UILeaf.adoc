@@ -4,20 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 29
- - javax.faces.context.FacesContext - 28
- - javax.faces.component.UIViewRoot - 10
- - javax.faces.component.UniqueIdVendor - 7
- - javax.faces.render.Renderer - 4
- - javax.faces.view.Location - 3
- - javax.faces.event.FacesListener - 3
- - javax.faces.FacesException - 3
- - javax.faces.event.AbortProcessingException - 2
- - javax.faces.el.ValueBinding - 2
- - javax.el.ValueExpression - 2
- - javax.faces.event.FacesEvent - 2
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.search.UntargetableComponent - 1
- - javax.faces.component.visit.VisitContext - 1
- - javax.faces.component.ContextCallback - 1
- - javax.faces.event.ComponentSystemEvent - 1

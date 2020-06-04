@@ -1,0 +1,6 @@
+= jakarta/persistence/DiscriminatorType.class
+
+ - link:DiscriminatorType-asmified.java[Asmified]
+
+== References
+

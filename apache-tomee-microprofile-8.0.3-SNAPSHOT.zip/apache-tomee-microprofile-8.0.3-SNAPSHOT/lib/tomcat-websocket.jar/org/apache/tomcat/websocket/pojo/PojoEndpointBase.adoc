@@ -4,8 +4,3 @@
 
 == References
 
- - javax.websocket.Session - 17
- - javax.websocket.EndpointConfig - 4
- - javax.websocket.MessageHandler - 3
- - javax.websocket.Endpoint - 2
- - javax.websocket.CloseReason - 2

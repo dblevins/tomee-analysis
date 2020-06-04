@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.event.Observes - 2
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 1
- - javax.enterprise.inject.spi.BeforeShutdown - 1
- - javax.enterprise.inject.spi.Extension - 1

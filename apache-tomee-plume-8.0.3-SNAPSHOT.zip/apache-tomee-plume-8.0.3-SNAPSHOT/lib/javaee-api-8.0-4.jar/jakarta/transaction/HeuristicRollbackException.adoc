@@ -1,0 +1,6 @@
+= jakarta/transaction/HeuristicRollbackException.class
+
+ - link:HeuristicRollbackException-asmified.java[Asmified]
+
+== References
+

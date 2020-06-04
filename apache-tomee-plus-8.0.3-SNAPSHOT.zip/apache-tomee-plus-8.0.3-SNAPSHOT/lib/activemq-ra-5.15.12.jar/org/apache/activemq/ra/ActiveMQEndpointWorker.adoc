@@ -4,17 +4,3 @@
 
 == References
 
- - javax.resource.spi.work.Work - 10
- - javax.resource.ResourceException - 8
- - javax.resource.spi.endpoint.MessageEndpointFactory - 5
- - javax.resource.spi.work.WorkManager - 5
- - javax.jms.JMSException - 4
- - javax.jms.Connection - 3
- - javax.jms.ConnectionConsumer - 3
- - javax.jms.Session - 3
- - javax.resource.spi.BootstrapContext - 2
- - javax.resource.spi.work.WorkException - 2
- - javax.resource.spi.work.ExecutionContext - 1
- - javax.jms.MessageListener - 1
- - javax.resource.spi.work.WorkListener - 1
- - javax.jms.Message - 1

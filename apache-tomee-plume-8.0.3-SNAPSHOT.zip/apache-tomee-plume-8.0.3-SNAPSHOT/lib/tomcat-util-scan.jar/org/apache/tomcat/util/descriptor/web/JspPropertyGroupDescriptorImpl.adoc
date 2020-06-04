@@ -4,4 +4,3 @@
 
 == References
 
- - javax.servlet.descriptor.JspPropertyGroupDescriptor - 1

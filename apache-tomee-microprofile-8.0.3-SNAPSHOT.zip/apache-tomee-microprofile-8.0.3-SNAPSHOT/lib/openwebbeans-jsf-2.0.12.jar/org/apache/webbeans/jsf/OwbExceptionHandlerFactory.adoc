@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.context.ExceptionHandlerFactory - 7
- - javax.faces.context.ExceptionHandler - 3

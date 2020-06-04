@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/InternationalString.class
+
+ - link:InternationalString-asmified.java[Asmified]
+
+== References
+

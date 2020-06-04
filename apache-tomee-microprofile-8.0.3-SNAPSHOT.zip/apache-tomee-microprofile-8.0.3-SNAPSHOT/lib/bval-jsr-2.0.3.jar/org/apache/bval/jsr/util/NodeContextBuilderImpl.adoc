@@ -4,9 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$NodeBuilderCustomizableContext - 3
- - javax.validation.ConstraintValidatorContext - 2
- - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$NodeBuilderDefinedContext - 2
- - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderCustomizableContext - 1
- - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$NodeContextBuilder - 1
- - javax.validation.ConstraintValidatorContext$ConstraintViolationBuilder$ContainerElementNodeBuilderCustomizableContext - 1

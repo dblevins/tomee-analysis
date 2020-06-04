@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.MethodExpression - 39
- - javax.el.MethodNotFoundException - 8
- - javax.el.ELContext - 6
- - javax.el.MethodInfo - 3
- - javax.el.ELException - 2
- - javax.el.PropertyNotFoundException - 2

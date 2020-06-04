@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ClientErrorException.class
+
+ - link:ClientErrorException-asmified.java[Asmified]
+
+== References
+

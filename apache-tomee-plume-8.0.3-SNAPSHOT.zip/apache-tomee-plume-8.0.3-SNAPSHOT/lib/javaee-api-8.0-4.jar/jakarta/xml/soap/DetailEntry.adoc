@@ -1,0 +1,6 @@
+= jakarta/xml/soap/DetailEntry.class
+
+ - link:DetailEntry-asmified.java[Asmified]
+
+== References
+

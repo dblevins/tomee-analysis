@@ -1,0 +1,6 @@
+= jakarta/json/JsonPointer.class
+
+ - link:JsonPointer-asmified.java[Asmified]
+
+== References
+

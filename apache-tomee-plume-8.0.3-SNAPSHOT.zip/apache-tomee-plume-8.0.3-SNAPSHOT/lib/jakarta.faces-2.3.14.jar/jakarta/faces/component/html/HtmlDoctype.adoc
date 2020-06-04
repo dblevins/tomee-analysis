@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlDoctype.class
+
+ - link:HtmlDoctype-asmified.java[Asmified]
+
+== References
+

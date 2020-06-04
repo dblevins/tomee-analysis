@@ -4,7 +4,3 @@
 
 == References
 
- - javax.transaction.Transaction - 25
- - javax.transaction.SystemException - 8
- - javax.transaction.InvalidTransactionException - 3
- - javax.resource.spi.XATerminator - 1

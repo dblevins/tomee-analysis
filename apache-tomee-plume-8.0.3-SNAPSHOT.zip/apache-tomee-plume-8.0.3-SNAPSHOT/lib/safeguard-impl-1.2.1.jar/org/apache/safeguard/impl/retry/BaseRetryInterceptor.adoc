@@ -4,6 +4,3 @@
 
 == References
 
- - javax.interceptor.InvocationContext - 13
- - javax.inject.Inject - 1
- - javax.interceptor.AroundInvoke - 1

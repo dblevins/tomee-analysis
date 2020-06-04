@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.application.Application - 6
- - javax.faces.context.FacesContext - 2
- - javax.faces.component.behavior.FacesBehavior - 1
- - javax.servlet.ServletContext - 1
- - javax.faces.component.behavior.Behavior - 1

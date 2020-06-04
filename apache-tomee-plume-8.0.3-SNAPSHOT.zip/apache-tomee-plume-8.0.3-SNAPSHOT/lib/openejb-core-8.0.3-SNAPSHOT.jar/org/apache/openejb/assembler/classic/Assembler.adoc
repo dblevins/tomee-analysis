@@ -4,32 +4,3 @@
 
 == References
 
- - javax.validation.ValidatorFactory - 40
- - javax.transaction.TransactionManager - 31
- - javax.enterprise.inject.spi.Bean - 18
- - javax.enterprise.context.spi.CreationalContext - 17
- - javax.enterprise.inject.spi.DefinitionException - 16
- - javax.resource.spi.ManagedConnectionFactory - 15
- - javax.resource.spi.ConnectionManager - 14
- - javax.resource.spi.ResourceAdapter - 13
- - javax.enterprise.inject.spi.BeanManager - 12
- - javax.transaction.TransactionSynchronizationRegistry - 9
- - javax.annotation.Resource - 8
- - javax.validation.Validator - 5
- - javax.resource.spi.XATerminator - 4
- - javax.validation.ValidationException - 4
- - javax.resource.spi.ResourceAdapterInternalException - 3
- - javax.resource.cci.ConnectionFactory - 3
- - javax.resource.spi.work.WorkManager - 3
- - javax.resource.cci.Connection - 3
- - javax.ejb.TimerConfig - 2
- - javax.annotation.PreDestroy - 2
- - javax.ejb.ScheduleExpression - 2
- - javax.resource.spi.BootstrapContext - 2
- - javax.enterprise.context.spi.Contextual - 2
- - javax.annotation.PostConstruct - 2
- - javax.servlet.ServletContext - 2
- - javax.ejb.EJB - 1
- - javax.resource.cci.ConnectionMetaData - 1
- - javax.enterprise.inject.spi.DeploymentException - 1
- - javax.enterprise.context.Dependent - 1

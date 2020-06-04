@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/TagAttributes.class
+
+ - link:TagAttributes-asmified.java[Asmified]
+
+== References
+

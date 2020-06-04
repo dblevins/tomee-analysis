@@ -1,0 +1,6 @@
+= jakarta/ws/rs/container/ContainerResponseFilter.class
+
+ - link:ContainerResponseFilter-asmified.java[Asmified]
+
+== References
+

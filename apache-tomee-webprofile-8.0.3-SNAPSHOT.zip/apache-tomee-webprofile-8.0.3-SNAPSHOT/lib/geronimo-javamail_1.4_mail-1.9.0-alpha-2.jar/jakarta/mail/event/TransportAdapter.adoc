@@ -1,0 +1,6 @@
+= jakarta/mail/event/TransportAdapter.class
+
+ - link:TransportAdapter-asmified.java[Asmified]
+
+== References
+

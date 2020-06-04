@@ -4,7 +4,3 @@
 
 == References
 
- - javax.xml.bind.Unmarshaller - 7
- - javax.xml.bind.JAXBContext - 5
- - javax.xml.bind.JAXBElement - 2
- - javax.xml.bind.annotation.XmlRootElement - 1

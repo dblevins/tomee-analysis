@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/WorkCompletedException.class
+
+ - link:WorkCompletedException-asmified.java[Asmified]
+
+== References
+

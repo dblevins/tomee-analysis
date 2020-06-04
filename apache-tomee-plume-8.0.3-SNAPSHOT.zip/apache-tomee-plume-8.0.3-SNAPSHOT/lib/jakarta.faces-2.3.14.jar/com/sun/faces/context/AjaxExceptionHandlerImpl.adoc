@@ -4,17 +4,3 @@
 
 == References
 
- - javax.faces.event.ExceptionQueuedEventContext - 18
- - javax.faces.context.FacesContext - 16
- - javax.faces.context.PartialResponseWriter - 12
- - javax.faces.event.ExceptionQueuedEvent - 12
- - javax.faces.context.ExternalContext - 6
- - javax.faces.component.UIComponent - 4
- - javax.faces.FacesException - 4
- - javax.faces.event.PhaseId - 4
- - javax.faces.context.ExceptionHandlerWrapper - 2
- - javax.faces.event.AbortProcessingException - 2
- - javax.faces.application.ProjectStage - 2
- - javax.faces.context.ExceptionHandler - 2
- - javax.faces.context.PartialViewContext - 2
- - javax.faces.event.SystemEvent - 1

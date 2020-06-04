@@ -4,24 +4,3 @@
 
 == References
 
- - javax.xml.ws.Binding - 13
- - javax.xml.ws.Service$Mode - 13
- - javax.xml.ws.Holder - 11
- - javax.xml.bind.JAXBContext - 11
- - javax.xml.soap.SOAPMessage - 9
- - javax.xml.ws.soap.SOAPBinding - 8
- - javax.xml.ws.WebServiceException - 8
- - javax.xml.ws.handler.MessageContext$Scope - 6
- - javax.xml.ws.http.HTTPException - 6
- - javax.xml.ws.AsyncHandler - 6
- - javax.xml.soap.SOAPFault - 6
- - javax.xml.ws.soap.SOAPFaultException - 5
- - javax.xml.ws.Response - 5
- - javax.xml.ws.EndpointReference - 4
- - javax.xml.soap.SOAPException - 4
- - javax.xml.ws.http.HTTPBinding - 2
- - javax.xml.bind.JAXBElement - 1
- - javax.xml.ws.Dispatch - 1
- - javax.activation.DataSource - 1
- - javax.xml.soap.SOAPBody - 1
- - javax.xml.ws.BindingProvider - 1

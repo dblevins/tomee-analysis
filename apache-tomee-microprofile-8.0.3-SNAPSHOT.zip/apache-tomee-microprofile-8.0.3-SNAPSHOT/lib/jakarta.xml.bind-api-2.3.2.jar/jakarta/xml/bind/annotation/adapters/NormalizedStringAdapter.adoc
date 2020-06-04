@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/adapters/NormalizedStringAdapter.class
+
+ - link:NormalizedStringAdapter-asmified.java[Asmified]
+
+== References
+

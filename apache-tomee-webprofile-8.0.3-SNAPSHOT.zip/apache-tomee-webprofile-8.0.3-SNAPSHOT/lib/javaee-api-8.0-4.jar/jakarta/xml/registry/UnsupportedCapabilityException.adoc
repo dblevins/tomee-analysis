@@ -1,0 +1,6 @@
+= jakarta/xml/registry/UnsupportedCapabilityException.class
+
+ - link:UnsupportedCapabilityException-asmified.java[Asmified]
+
+== References
+

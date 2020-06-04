@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagAttribute - 33
- - javax.faces.view.facelets.Tag - 24
- - javax.faces.view.facelets.TagAttributes - 9
- - javax.faces.view.Location - 8
- - javax.faces.view.facelets.FaceletException - 2
- - javax.faces.view.facelets.TagDecorator - 1

@@ -1,0 +1,6 @@
+= jakarta/json/JsonArrayBuilder.class
+
+ - link:JsonArrayBuilder-asmified.java[Asmified]
+
+== References
+

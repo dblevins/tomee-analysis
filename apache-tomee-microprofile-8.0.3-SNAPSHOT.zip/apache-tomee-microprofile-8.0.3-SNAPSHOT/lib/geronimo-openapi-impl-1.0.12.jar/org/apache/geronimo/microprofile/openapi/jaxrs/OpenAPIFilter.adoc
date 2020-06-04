@@ -4,20 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 28
- - javax.ws.rs.core.Response$ResponseBuilder - 12
- - javax.ws.rs.core.Response - 9
- - javax.ws.rs.container.ContainerRequestContext - 7
- - javax.ws.rs.ext.Providers - 3
- - javax.ws.rs.core.Context - 2
- - javax.ws.rs.core.Application - 2
- - javax.ws.rs.core.UriInfo - 2
- - javax.ws.rs.core.Request - 2
- - javax.ws.rs.ext.Provider - 1
- - javax.ws.rs.container.ContainerRequestFilter - 1
- - javax.inject.Inject - 1
- - javax.ws.rs.container.PreMatching - 1
- - javax.annotation.Priority - 1
- - javax.enterprise.context.Dependent - 1
- - javax.annotation.PostConstruct - 1
- - javax.ws.rs.ext.MessageBodyReader - 1

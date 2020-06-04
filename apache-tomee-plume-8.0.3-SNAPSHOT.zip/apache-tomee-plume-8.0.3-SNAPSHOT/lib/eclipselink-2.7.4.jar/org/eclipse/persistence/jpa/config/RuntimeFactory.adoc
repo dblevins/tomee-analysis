@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.spi.PersistenceUnitInfo - 9
- - javax.persistence.spi.ClassTransformer - 2
- - javax.persistence.EntityManagerFactory - 2

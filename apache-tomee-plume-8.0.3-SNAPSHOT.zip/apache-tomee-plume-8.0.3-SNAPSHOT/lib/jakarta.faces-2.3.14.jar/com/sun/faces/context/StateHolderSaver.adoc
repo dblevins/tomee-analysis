@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.component.StateHolder - 8
- - javax.faces.context.FacesContext - 7
- - javax.faces.component.UIComponent - 3

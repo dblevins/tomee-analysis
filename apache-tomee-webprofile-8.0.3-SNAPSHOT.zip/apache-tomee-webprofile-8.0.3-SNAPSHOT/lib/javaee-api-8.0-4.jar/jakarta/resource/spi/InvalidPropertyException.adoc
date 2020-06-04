@@ -1,0 +1,6 @@
+= jakarta/resource/spi/InvalidPropertyException.class
+
+ - link:InvalidPropertyException-asmified.java[Asmified]
+
+== References
+

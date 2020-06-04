@@ -1,0 +1,6 @@
+= jakarta/batch/api/partition/PartitionReducer.class
+
+ - link:PartitionReducer-asmified.java[Asmified]
+
+== References
+

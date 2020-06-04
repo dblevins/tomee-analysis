@@ -4,18 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 19
- - javax.el.MethodExpression - 12
- - javax.faces.flow.builder.FlowBuilder - 10
- - javax.el.ExpressionFactory - 6
- - javax.faces.application.Application - 6
- - javax.el.ValueExpression - 6
- - javax.el.ELContext - 6
- - javax.faces.flow.Parameter - 2
- - javax.faces.flow.builder.NavigationCaseBuilder - 1
- - javax.faces.flow.builder.ReturnBuilder - 1
- - javax.faces.flow.builder.ViewBuilder - 1
- - javax.faces.flow.builder.MethodCallBuilder - 1
- - javax.faces.flow.builder.FlowCallBuilder - 1
- - javax.faces.flow.builder.SwitchBuilder - 1
- - javax.faces.flow.Flow - 1

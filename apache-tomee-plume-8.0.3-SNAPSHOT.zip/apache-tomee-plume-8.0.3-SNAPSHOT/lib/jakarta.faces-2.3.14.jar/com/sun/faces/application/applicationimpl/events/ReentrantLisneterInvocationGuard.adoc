@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 8
- - javax.faces.event.SystemEvent - 4

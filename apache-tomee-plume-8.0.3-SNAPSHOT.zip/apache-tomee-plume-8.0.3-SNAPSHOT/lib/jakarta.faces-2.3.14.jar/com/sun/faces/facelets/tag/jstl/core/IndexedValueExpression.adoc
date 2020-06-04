@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 20
- - javax.el.ValueExpression - 19
- - javax.el.ELResolver - 8

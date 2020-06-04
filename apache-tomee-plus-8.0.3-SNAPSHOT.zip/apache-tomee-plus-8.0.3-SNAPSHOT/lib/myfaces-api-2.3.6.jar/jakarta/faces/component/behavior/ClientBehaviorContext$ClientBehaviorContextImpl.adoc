@@ -1,0 +1,6 @@
+= jakarta/faces/component/behavior/ClientBehaviorContext$ClientBehaviorContextImpl.class
+
+ - link:ClientBehaviorContext$ClientBehaviorContextImpl-asmified.java[Asmified]
+
+== References
+

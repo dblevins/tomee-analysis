@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/AuditableEvent.class
+
+ - link:AuditableEvent-asmified.java[Asmified]
+
+== References
+

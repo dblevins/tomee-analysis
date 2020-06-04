@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase.class
+
+ - link:UIComponentBase-asmified.java[Asmified]
+
+== References
+

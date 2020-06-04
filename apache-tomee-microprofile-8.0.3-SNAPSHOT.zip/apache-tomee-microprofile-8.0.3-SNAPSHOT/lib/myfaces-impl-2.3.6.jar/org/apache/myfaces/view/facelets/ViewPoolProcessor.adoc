@@ -4,15 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 113
- - javax.faces.component.UIComponent - 111
- - javax.faces.component.UIViewRoot - 100
- - javax.faces.context.ExternalContext - 10
- - javax.faces.application.Application - 10
- - javax.faces.view.ViewDeclarationLanguage - 8
- - javax.faces.application.ResourceDependency - 7
- - javax.faces.application.ViewHandler - 7
- - javax.faces.view.StateManagementStrategy - 4
- - javax.faces.event.PhaseId - 4
- - javax.faces.application.NavigationHandler - 4
- - javax.faces.application.ProjectStage - 2

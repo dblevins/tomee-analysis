@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.Marshaller - 3
- - javax.xml.bind.JAXBContext - 2

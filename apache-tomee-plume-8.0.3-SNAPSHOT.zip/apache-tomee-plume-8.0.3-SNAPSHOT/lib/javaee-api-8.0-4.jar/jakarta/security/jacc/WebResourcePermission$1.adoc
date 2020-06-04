@@ -1,0 +1,6 @@
+= jakarta/security/jacc/WebResourcePermission$1.class
+
+ - link:WebResourcePermission$1-asmified.java[Asmified]
+
+== References
+

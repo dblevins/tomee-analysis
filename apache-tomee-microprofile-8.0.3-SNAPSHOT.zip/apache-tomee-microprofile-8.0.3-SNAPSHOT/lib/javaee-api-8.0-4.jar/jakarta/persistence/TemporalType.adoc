@@ -1,0 +1,6 @@
+= jakarta/persistence/TemporalType.class
+
+ - link:TemporalType-asmified.java[Asmified]
+
+== References
+

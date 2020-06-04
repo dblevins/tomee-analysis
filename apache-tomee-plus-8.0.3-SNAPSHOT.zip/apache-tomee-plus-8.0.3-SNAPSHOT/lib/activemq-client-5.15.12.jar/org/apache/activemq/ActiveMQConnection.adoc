@@ -4,20 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 78
- - javax.jms.ServerSessionPool - 12
- - javax.jms.ConnectionConsumer - 10
- - javax.jms.IllegalStateException - 8
- - javax.jms.ExceptionListener - 8
- - javax.jms.Destination - 8
- - javax.jms.Connection - 5
- - javax.jms.Topic - 4
- - javax.jms.Session - 3
- - javax.jms.QueueSession - 2
- - javax.jms.TopicSession - 2
- - javax.jms.TopicConnection - 1
- - javax.jms.XAConnection - 1
- - javax.jms.QueueConnection - 1
- - javax.jms.ConnectionMetaData - 1
- - javax.jms.Queue - 1
- - javax.jms.InvalidDestinationException - 1

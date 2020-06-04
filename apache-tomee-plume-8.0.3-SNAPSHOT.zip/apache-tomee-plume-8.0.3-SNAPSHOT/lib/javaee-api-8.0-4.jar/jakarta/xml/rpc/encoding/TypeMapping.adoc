@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/encoding/TypeMapping.class
+
+ - link:TypeMapping-asmified.java[Asmified]
+
+== References
+

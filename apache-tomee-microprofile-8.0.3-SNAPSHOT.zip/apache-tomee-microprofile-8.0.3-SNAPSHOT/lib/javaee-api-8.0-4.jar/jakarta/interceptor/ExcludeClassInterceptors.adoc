@@ -1,0 +1,6 @@
+= jakarta/interceptor/ExcludeClassInterceptors.class
+
+ - link:ExcludeClassInterceptors-asmified.java[Asmified]
+
+== References
+

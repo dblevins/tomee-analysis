@@ -4,10 +4,3 @@
 
 == References
 
- - javax.enterprise.context.BeforeDestroyed - 8
- - javax.enterprise.util.AnnotationLiteral - 3
- - javax.enterprise.context.RequestScoped - 1
- - javax.enterprise.context.ConversationScoped - 1
- - javax.enterprise.context.ApplicationScoped - 1
- - javax.enterprise.context.SessionScoped - 1
- - javax.inject.Singleton - 1

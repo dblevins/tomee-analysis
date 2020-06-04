@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/ProcessSyntheticObserverMethod.class
+
+ - link:ProcessSyntheticObserverMethod-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/faces/event/PreDestroyApplicationEvent.class
+
+ - link:PreDestroyApplicationEvent-asmified.java[Asmified]
+
+== References
+

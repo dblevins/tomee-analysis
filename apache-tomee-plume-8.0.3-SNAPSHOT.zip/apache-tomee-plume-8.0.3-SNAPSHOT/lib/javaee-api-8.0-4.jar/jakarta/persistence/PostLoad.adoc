@@ -1,0 +1,6 @@
+= jakarta/persistence/PostLoad.class
+
+ - link:PostLoad-asmified.java[Asmified]
+
+== References
+

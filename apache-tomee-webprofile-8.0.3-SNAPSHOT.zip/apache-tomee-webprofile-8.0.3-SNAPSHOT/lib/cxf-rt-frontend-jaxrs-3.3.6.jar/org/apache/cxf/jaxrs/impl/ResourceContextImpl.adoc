@@ -4,4 +4,3 @@
 
 == References
 
- - javax.ws.rs.container.ResourceContext - 1

@@ -4,35 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 24
- - javax.servlet.ServletRegistration - 10
- - javax.servlet.ServletException - 5
- - javax.enterprise.inject.Instance - 4
- - javax.enterprise.inject.spi.CDI - 4
- - javax.servlet.ServletContainerInitializer - 3
- - javax.faces.event.ListenersFor - 1
- - javax.servlet.annotation.HandlesTypes - 1
- - javax.faces.application.ResourceDependencies - 1
- - javax.websocket.Endpoint - 1
- - javax.faces.event.NamedEvent - 1
- - javax.faces.webapp.FacesServlet - 1
- - javax.faces.annotation.FacesConfig - 1
- - javax.faces.component.FacesComponent - 1
- - javax.servlet.ServletRegistration$Dynamic - 1
- - javax.faces.application.ResourceDependency - 1
- - javax.faces.validator.FacesValidator - 1
- - javax.annotation.Resource - 1
- - javax.faces.render.Renderer - 1
- - javax.faces.convert.FacesConverter - 1
- - javax.faces.component.behavior.FacesBehavior - 1
- - javax.websocket.server.ServerEndpoint - 1
- - javax.faces.render.FacesBehaviorRenderer - 1
- - javax.faces.event.ListenerFor - 1
- - javax.faces.component.UIComponent - 1
- - javax.faces.convert.Converter - 1
- - javax.faces.event.PhaseListener - 1
- - javax.faces.bean.ManagedBean - 1
- - javax.websocket.server.ServerContainer - 1
- - javax.faces.validator.Validator - 1
- - javax.websocket.server.ServerApplicationConfig - 1
- - javax.faces.view.facelets.FaceletsResourceResolver - 1

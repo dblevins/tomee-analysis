@@ -4,10 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 5
- - javax.xml.bind.JAXBException - 4
- - javax.xml.bind.annotation.XmlElement - 3
- - javax.xml.bind.JAXBElement - 2
- - javax.xml.bind.Unmarshaller - 1
- - javax.xml.bind.annotation.XmlList - 1
- - javax.xml.bind.JAXBContext - 1

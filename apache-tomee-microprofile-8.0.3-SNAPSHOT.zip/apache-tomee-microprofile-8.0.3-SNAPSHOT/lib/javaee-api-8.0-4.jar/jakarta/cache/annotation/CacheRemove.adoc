@@ -1,0 +1,6 @@
+= jakarta/cache/annotation/CacheRemove.class
+
+ - link:CacheRemove-asmified.java[Asmified]
+
+== References
+

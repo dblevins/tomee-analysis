@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.Facelet - 8
- - javax.faces.FacesException - 4
- - javax.el.ELException - 4
- - javax.faces.view.facelets.FaceletException - 4
- - javax.faces.context.FacesContext - 3
- - javax.faces.view.facelets.FaceletContext - 1

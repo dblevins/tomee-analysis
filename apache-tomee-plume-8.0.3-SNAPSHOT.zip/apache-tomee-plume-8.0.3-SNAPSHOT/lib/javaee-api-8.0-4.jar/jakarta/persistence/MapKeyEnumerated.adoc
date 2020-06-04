@@ -1,0 +1,6 @@
+= jakarta/persistence/MapKeyEnumerated.class
+
+ - link:MapKeyEnumerated-asmified.java[Asmified]
+
+== References
+

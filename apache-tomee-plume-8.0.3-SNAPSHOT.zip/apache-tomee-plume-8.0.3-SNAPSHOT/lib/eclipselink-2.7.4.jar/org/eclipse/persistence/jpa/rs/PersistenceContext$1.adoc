@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.ValidationEvent - 2
- - javax.xml.bind.ValidationEventHandler - 1

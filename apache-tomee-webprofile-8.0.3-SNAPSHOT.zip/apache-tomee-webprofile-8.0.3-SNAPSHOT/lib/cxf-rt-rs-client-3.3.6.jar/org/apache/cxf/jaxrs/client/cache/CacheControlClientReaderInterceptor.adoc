@@ -4,11 +4,3 @@
 
 == References
 
- - javax.ws.rs.ext.ReaderInterceptorContext - 17
- - javax.ws.rs.core.CacheControl - 17
- - javax.ws.rs.core.MultivaluedMap - 13
- - javax.ws.rs.core.UriInfo - 3
- - javax.annotation.Priority - 1
- - javax.ws.rs.core.Context - 1
- - javax.ws.rs.ext.ReaderInterceptor - 1
- - javax.ws.rs.WebApplicationException - 1

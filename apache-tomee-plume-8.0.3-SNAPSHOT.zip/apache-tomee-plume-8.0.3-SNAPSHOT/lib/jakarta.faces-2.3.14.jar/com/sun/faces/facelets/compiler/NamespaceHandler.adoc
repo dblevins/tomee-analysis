@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.FunctionMapper - 12
- - javax.faces.view.facelets.FaceletContext - 8
- - javax.faces.view.facelets.FaceletHandler - 6
- - javax.faces.context.FacesContext - 4
- - javax.faces.component.UIComponent - 3
- - javax.el.ELContext - 2

@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/URIValidator.class
+
+ - link:URIValidator-asmified.java[Asmified]
+
+== References
+

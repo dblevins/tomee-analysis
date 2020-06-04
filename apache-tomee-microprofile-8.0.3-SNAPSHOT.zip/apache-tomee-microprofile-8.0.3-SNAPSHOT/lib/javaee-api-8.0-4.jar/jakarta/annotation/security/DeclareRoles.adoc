@@ -1,0 +1,6 @@
+= jakarta/annotation/security/DeclareRoles.class
+
+ - link:DeclareRoles-asmified.java[Asmified]
+
+== References
+

@@ -4,23 +4,3 @@
 
 == References
 
- - javax.validation.executable.ValidateOnExecution - 29
- - javax.validation.executable.ExecutableType - 24
- - javax.interceptor.InvocationContext - 18
- - javax.enterprise.inject.spi.AnnotatedType - 15
- - javax.validation.executable.ExecutableValidator - 13
- - javax.enterprise.inject.spi.AnnotatedMethod - 10
- - javax.enterprise.inject.spi.CDI - 9
- - javax.validation.ConstraintViolationException - 8
- - javax.enterprise.inject.spi.AnnotatedConstructor - 8
- - javax.validation.Validator - 7
- - javax.enterprise.inject.spi.BeanManager - 6
- - javax.validation.metadata.ConstructorDescriptor - 4
- - javax.validation.metadata.MethodDescriptor - 4
- - javax.validation.metadata.BeanDescriptor - 4
- - javax.validation.metadata.ExecutableDescriptor - 2
- - javax.inject.Inject - 2
- - javax.interceptor.Interceptor - 1
- - javax.annotation.Priority - 1
- - javax.interceptor.AroundConstruct - 1
- - javax.interceptor.AroundInvoke - 1

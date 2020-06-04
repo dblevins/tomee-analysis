@@ -4,7 +4,3 @@
 
 == References
 
- - javax.resource.spi.endpoint.MessageEndpoint - 11
- - javax.resource.spi.ActivationSpec - 6
- - javax.resource.spi.UnavailableException - 4
- - javax.resource.spi.endpoint.MessageEndpointFactory - 1

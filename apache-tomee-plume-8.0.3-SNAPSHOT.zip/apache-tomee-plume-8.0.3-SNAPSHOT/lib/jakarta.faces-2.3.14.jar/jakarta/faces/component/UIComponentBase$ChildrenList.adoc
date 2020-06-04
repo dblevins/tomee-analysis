@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$ChildrenList.class
+
+ - link:UIComponentBase$ChildrenList-asmified.java[Asmified]
+
+== References
+

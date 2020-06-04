@@ -1,0 +1,6 @@
+= jakarta/ws/rs/OPTIONS.class
+
+ - link:OPTIONS-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$PassThroughAttributesMap.class
+
+ - link:UIComponentBase$PassThroughAttributesMap-asmified.java[Asmified]
+
+== References
+

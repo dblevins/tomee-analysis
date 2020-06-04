@@ -1,0 +1,6 @@
+= jakarta/ejb/EJBMetaData.class
+
+ - link:EJBMetaData-asmified.java[Asmified]
+
+== References
+

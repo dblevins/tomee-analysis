@@ -1,0 +1,6 @@
+= jakarta/activation/MailcapCommandMap.class
+
+ - link:MailcapCommandMap-asmified.java[Asmified]
+
+== References
+

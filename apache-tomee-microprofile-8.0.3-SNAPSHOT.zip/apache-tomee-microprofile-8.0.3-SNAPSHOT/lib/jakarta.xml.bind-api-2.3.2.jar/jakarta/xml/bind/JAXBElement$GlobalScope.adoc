@@ -1,0 +1,6 @@
+= jakarta/xml/bind/JAXBElement$GlobalScope.class
+
+ - link:JAXBElement$GlobalScope-asmified.java[Asmified]
+
+== References
+

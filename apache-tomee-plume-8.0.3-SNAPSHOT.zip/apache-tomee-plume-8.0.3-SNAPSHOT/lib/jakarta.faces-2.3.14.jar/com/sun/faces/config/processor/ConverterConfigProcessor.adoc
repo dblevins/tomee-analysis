@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.application.Application - 9
- - javax.faces.convert.Converter - 2
- - javax.faces.context.FacesContext - 2
- - javax.faces.convert.FacesConverter - 1
- - javax.servlet.ServletContext - 1

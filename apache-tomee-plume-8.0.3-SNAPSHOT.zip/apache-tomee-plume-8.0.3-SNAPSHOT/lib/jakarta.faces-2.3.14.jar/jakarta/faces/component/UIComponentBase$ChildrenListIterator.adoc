@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$ChildrenListIterator.class
+
+ - link:UIComponentBase$ChildrenListIterator-asmified.java[Asmified]
+
+== References
+

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlSchema - 3
- - javax.xml.bind.annotation.XmlSeeAlso - 3
- - javax.xml.bind.annotation.XmlRegistry - 1
- - javax.xml.bind.JAXBElement - 1
- - javax.xml.bind.annotation.XmlTransient - 1

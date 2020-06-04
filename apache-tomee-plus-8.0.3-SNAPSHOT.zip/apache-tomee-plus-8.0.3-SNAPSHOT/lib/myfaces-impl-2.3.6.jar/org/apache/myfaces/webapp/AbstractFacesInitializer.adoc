@@ -4,22 +4,3 @@
 
 == References
 
- - javax.faces.context.ExternalContext - 78
- - javax.faces.context.FacesContext - 66
- - javax.servlet.ServletContext - 40
- - javax.faces.application.ProjectStage - 15
- - javax.servlet.ServletRegistration - 11
- - javax.el.ExpressionFactory - 8
- - javax.faces.application.Application - 7
- - javax.websocket.server.ServerEndpointConfig$Builder - 5
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.application.ViewVisitOption - 3
- - javax.websocket.server.ServerContainer - 3
- - javax.websocket.DeploymentException - 2
- - javax.faces.application.ViewHandler - 2
- - javax.websocket.server.ServerEndpointConfig - 2
- - javax.websocket.server.ServerEndpointConfig$Configurator - 1
- - javax.faces.context.ExceptionHandler - 1
- - javax.faces.event.SystemEvent - 1
- - javax.faces.event.PreDestroyApplicationEvent - 1
- - javax.faces.event.PostConstructApplicationEvent - 1

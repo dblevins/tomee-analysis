@@ -1,0 +1,6 @@
+= jakarta/wsdl/factory/WSDLFactory.class
+
+ - link:WSDLFactory-asmified.java[Asmified]
+
+== References
+

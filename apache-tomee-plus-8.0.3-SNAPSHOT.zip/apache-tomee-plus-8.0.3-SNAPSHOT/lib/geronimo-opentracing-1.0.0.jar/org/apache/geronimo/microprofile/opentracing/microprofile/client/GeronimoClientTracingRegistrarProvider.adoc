@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.ClientBuilder - 13
- - javax.enterprise.inject.Instance - 6
- - javax.enterprise.inject.spi.CDI - 5
- - javax.ws.rs.core.Configuration - 2
- - javax.ws.rs.core.Configurable - 2

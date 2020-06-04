@@ -1,0 +1,6 @@
+= jakarta/wsdl/PortType.class
+
+ - link:PortType-asmified.java[Asmified]
+
+== References
+

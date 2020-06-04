@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.application.FacesMessage - 9
- - javax.faces.context.FacesContext - 7
- - javax.el.ValueExpression - 3
- - javax.faces.application.FacesMessage$Severity - 3
- - javax.faces.el.ValueBinding - 3
- - javax.el.ELContext - 2

@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/Pattern.class
+
+ - link:Pattern-asmified.java[Asmified]
+
+== References
+

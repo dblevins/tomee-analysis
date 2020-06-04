@@ -4,13 +4,3 @@
 
 == References
 
- - javax.resource.spi.ResourceAdapter - 26
- - javax.resource.spi.BootstrapContext - 9
- - javax.validation.ValidatorFactory - 9
- - javax.resource.spi.ActivationSpec - 8
- - javax.resource.spi.endpoint.MessageEndpointFactory - 4
- - javax.resource.ResourceException - 3
- - javax.validation.ConstraintViolationException - 2
- - javax.resource.spi.ResourceAdapterAssociation - 2
- - javax.validation.Validator - 2
- - javax.resource.spi.ResourceAdapterInternalException - 1

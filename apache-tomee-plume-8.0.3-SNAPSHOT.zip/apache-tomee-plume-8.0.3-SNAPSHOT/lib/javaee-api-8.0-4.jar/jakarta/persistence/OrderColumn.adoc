@@ -1,0 +1,6 @@
+= jakarta/persistence/OrderColumn.class
+
+ - link:OrderColumn-asmified.java[Asmified]
+
+== References
+

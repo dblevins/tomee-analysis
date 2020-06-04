@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 21
- - javax.faces.context.ExternalContext - 12
- - javax.enterprise.inject.spi.BeanManager - 9
- - javax.servlet.ServletContext - 3

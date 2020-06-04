@@ -1,0 +1,6 @@
+= jakarta/xml/bind/helpers/Messages.class
+
+ - link:Messages-asmified.java[Asmified]
+
+== References
+

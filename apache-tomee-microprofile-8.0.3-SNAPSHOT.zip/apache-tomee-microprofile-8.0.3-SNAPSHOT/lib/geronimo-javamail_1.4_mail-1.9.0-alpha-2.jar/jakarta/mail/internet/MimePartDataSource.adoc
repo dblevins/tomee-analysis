@@ -1,0 +1,6 @@
+= jakarta/mail/internet/MimePartDataSource.class
+
+ - link:MimePartDataSource-asmified.java[Asmified]
+
+== References
+

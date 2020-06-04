@@ -4,16 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 136
- - javax.servlet.AsyncContext - 6
- - javax.servlet.ServletException - 5
- - javax.servlet.http.HttpSession - 4
- - javax.servlet.http.Part - 3
- - javax.servlet.ServletRequest - 2
- - javax.servlet.RequestDispatcher - 2
- - javax.servlet.ServletInputStream - 2
- - javax.servlet.http.HttpServletResponse - 2
- - javax.servlet.ServletResponse - 2
- - javax.servlet.DispatcherType - 2
- - javax.servlet.ServletContext - 2
- - javax.servlet.http.Cookie - 2

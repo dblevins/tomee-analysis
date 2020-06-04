@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 17
- - javax.faces.context.ResponseWriter - 13
- - javax.faces.application.StateManager - 11

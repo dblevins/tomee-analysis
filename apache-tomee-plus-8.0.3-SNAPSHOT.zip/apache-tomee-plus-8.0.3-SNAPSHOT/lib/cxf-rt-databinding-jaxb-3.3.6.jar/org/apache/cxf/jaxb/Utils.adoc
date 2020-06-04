@@ -4,9 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 50
- - javax.xml.bind.annotation.XmlAccessType - 24
- - javax.xml.bind.annotation.adapters.XmlAdapter - 18
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters - 10
- - javax.xml.bind.annotation.XmlAccessorType - 6
- - javax.xml.bind.annotation.XmlTransient - 3

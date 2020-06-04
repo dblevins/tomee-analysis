@@ -4,6 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 58
- - javax.jms.TransactionInProgressException - 6
- - javax.jms.TransactionRolledBackException - 6

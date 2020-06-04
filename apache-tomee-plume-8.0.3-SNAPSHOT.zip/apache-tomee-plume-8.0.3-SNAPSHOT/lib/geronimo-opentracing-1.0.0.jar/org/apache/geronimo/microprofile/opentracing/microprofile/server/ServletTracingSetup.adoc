@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.FilterRegistration$Dynamic - 3
- - javax.servlet.ServletContext - 2
- - javax.servlet.ServletContainerInitializer - 1
- - javax.servlet.DispatcherType - 1

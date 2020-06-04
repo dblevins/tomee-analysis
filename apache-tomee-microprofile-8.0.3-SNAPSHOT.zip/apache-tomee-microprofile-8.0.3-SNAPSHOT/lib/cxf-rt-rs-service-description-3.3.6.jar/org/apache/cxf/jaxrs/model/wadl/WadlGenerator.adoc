@@ -4,29 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 68
- - javax.ws.rs.core.UriInfo - 51
- - javax.ws.rs.core.Response - 31
- - javax.ws.rs.core.Response$ResponseBuilder - 26
- - javax.xml.bind.JAXBContext - 22
- - javax.ws.rs.core.Response$Status - 13
- - javax.ws.rs.core.UriBuilder - 12
- - javax.ws.rs.container.ContainerRequestContext - 11
- - javax.ws.rs.ext.MessageBodyWriter - 8
- - javax.ws.rs.DefaultValue - 8
- - javax.xml.bind.annotation.XmlRootElement - 7
- - javax.ws.rs.core.MultivaluedMap - 7
- - javax.xml.bind.annotation.XmlSeeAlso - 4
- - javax.ws.rs.core.HttpHeaders - 4
- - javax.xml.bind.annotation.XmlType - 3
- - javax.servlet.ServletRequest - 3
- - javax.ws.rs.WebApplicationException - 3
- - javax.ws.rs.Encoded - 2
- - javax.ws.rs.BeanParam - 2
- - javax.ws.rs.PathParam - 1
- - javax.ws.rs.container.ContainerRequestFilter - 1
- - javax.ws.rs.QueryParam - 1
- - javax.ws.rs.HeaderParam - 1
- - javax.ws.rs.FormParam - 1
- - javax.ws.rs.container.AsyncResponse - 1
- - javax.ws.rs.MatrixParam - 1

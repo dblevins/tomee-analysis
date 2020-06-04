@@ -1,0 +1,6 @@
+= jakarta/faces/render/ClientBehaviorRenderer.class
+
+ - link:ClientBehaviorRenderer-asmified.java[Asmified]
+
+== References
+

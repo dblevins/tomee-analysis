@@ -4,19 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 59
- - javax.ws.rs.WebApplicationException - 15
- - javax.ws.rs.core.Response$ResponseBuilder - 14
- - javax.ws.rs.core.Response - 13
- - javax.ws.rs.core.Application - 10
- - javax.ws.rs.core.GenericEntity - 6
- - javax.ws.rs.core.Response$Status - 6
- - javax.ws.rs.ext.Providers - 2
- - javax.ws.rs.core.PathSegment - 2
- - javax.ws.rs.core.SecurityContext - 2
- - javax.ws.rs.ext.ParamConverter - 2
- - javax.ws.rs.ext.ContextResolver - 2
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.core.HttpHeaders - 2
- - javax.ws.rs.core.Request - 2
- - javax.ws.rs.core.UriInfo - 2

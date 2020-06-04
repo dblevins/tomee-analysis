@@ -4,15 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 35
- - javax.ws.rs.core.Link - 31
- - javax.ws.rs.core.MediaType - 19
- - javax.ws.rs.core.Response$StatusType - 14
- - javax.ws.rs.ProcessingException - 9
- - javax.ws.rs.core.Link$Builder - 7
- - javax.ws.rs.core.Response - 6
- - javax.ws.rs.client.ResponseProcessingException - 6
- - javax.ws.rs.core.EntityTag - 6
- - javax.ws.rs.core.GenericType - 5
- - javax.ws.rs.core.NewCookie - 4
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 4

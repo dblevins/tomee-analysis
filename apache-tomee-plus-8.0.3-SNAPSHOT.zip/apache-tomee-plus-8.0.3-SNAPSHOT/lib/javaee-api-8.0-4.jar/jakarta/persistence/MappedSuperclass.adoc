@@ -1,0 +1,6 @@
+= jakarta/persistence/MappedSuperclass.class
+
+ - link:MappedSuperclass-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintValidator - 1
- - javax.validation.ConstraintValidatorContext - 1
- - javax.validation.constraints.NotNull - 1

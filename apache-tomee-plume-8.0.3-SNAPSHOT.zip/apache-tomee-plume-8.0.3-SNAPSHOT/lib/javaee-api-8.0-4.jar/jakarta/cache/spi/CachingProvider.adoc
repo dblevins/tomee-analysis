@@ -1,0 +1,6 @@
+= jakarta/cache/spi/CachingProvider.class
+
+ - link:CachingProvider-asmified.java[Asmified]
+
+== References
+

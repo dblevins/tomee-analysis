@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlNsForm.class
+
+ - link:XmlNsForm-asmified.java[Asmified]
+
+== References
+

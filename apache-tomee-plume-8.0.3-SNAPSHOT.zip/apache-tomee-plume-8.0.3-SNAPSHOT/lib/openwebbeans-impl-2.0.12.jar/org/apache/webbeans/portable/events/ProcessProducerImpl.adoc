@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.Producer - 9
- - javax.enterprise.inject.spi.AnnotatedMember - 5
- - javax.enterprise.inject.spi.ProcessProducer - 1
- - javax.enterprise.inject.spi.configurator.ProducerConfigurator - 1

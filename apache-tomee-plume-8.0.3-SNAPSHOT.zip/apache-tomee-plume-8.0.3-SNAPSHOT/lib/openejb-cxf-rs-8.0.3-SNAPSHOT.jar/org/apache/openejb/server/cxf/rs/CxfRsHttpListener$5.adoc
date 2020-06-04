@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.Validator - 5
- - javax.validation.metadata.MethodDescriptor - 3
- - javax.validation.metadata.BeanDescriptor - 2

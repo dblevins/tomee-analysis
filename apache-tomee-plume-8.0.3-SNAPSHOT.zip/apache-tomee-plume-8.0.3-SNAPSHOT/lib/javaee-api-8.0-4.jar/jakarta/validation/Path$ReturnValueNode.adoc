@@ -1,0 +1,6 @@
+= jakarta/validation/Path$ReturnValueNode.class
+
+ - link:Path$ReturnValueNode-asmified.java[Asmified]
+
+== References
+

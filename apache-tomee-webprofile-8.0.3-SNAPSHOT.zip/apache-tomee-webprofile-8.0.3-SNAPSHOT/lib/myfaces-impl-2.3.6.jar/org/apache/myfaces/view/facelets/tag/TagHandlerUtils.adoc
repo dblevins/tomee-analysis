@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.FaceletHandler - 16
- - javax.faces.view.facelets.CompositeFaceletHandler - 12

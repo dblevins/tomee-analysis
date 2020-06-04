@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 5
- - javax.enterprise.context.ApplicationScoped - 1

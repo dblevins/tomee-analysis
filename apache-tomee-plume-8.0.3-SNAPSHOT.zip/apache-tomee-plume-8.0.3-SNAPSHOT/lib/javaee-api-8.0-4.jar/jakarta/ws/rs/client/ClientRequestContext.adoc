@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/ClientRequestContext.class
+
+ - link:ClientRequestContext-asmified.java[Asmified]
+
+== References
+

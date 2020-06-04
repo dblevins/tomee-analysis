@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlSchema - 8
- - javax.xml.bind.annotation.XmlType - 6
- - javax.xml.bind.annotation.XmlRootElement - 5

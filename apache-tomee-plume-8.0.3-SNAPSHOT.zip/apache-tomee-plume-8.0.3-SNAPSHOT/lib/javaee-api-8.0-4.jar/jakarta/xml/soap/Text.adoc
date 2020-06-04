@@ -1,0 +1,6 @@
+= jakarta/xml/soap/Text.class
+
+ - link:Text-asmified.java[Asmified]
+
+== References
+

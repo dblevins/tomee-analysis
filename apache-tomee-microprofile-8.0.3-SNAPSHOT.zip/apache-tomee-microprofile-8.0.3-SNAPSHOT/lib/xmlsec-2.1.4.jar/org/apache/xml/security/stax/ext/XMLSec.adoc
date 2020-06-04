@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBContext - 3
- - javax.xml.bind.JAXBException - 2

@@ -1,0 +1,6 @@
+= jakarta/ws/rs/MatrixParam.class
+
+ - link:MatrixParam-asmified.java[Asmified]
+
+== References
+

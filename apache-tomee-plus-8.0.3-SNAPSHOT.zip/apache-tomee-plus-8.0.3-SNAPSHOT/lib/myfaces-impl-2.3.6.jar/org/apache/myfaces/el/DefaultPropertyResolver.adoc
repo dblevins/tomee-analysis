@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.el.PropertyNotFoundException - 8
- - javax.faces.el.EvaluationException - 8
- - javax.faces.context.FacesContext - 3
- - javax.faces.el.PropertyResolver - 2
- - javax.el.ELContext - 2

@@ -1,0 +1,6 @@
+= jakarta/websocket/server/DefaultServerEndpointConfig.class
+
+ - link:DefaultServerEndpointConfig-asmified.java[Asmified]
+
+== References
+

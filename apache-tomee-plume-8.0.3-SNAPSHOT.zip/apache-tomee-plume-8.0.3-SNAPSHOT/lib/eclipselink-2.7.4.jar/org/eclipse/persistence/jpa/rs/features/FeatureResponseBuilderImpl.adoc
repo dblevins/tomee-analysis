@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 5
- - javax.ws.rs.core.UriInfo - 5

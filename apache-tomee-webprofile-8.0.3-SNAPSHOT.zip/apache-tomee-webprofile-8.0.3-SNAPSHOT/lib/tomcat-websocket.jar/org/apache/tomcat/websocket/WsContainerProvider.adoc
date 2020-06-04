@@ -4,5 +4,3 @@
 
 == References
 
- - javax.websocket.ContainerProvider - 2
- - javax.websocket.WebSocketContainer - 1

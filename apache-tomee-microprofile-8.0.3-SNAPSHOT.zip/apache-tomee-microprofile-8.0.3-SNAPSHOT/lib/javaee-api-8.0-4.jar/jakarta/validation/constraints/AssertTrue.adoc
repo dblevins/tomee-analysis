@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/AssertTrue.class
+
+ - link:AssertTrue-asmified.java[Asmified]
+
+== References
+

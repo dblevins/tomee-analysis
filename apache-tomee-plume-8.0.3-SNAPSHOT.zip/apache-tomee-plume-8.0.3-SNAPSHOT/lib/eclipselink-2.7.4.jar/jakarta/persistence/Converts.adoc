@@ -1,0 +1,6 @@
+= jakarta/persistence/Converts.class
+
+ - link:Converts-asmified.java[Asmified]
+
+== References
+

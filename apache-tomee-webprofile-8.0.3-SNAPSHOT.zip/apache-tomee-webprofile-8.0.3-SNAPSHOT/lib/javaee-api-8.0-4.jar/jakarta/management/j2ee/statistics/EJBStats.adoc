@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/EJBStats.class
+
+ - link:EJBStats-asmified.java[Asmified]
+
+== References
+

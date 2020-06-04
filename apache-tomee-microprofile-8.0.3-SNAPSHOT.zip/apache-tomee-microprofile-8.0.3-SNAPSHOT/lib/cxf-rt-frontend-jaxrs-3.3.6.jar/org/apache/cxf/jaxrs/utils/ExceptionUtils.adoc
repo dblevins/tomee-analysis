@@ -4,14 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response - 43
- - javax.ws.rs.WebApplicationException - 33
- - javax.ws.rs.ext.ExceptionMapper - 3
- - javax.ws.rs.core.Response$ResponseBuilder - 2
- - javax.ws.rs.NotAcceptableException - 1
- - javax.ws.rs.ForbiddenException - 1
- - javax.ws.rs.NotAuthorizedException - 1
- - javax.ws.rs.BadRequestException - 1
- - javax.ws.rs.InternalServerErrorException - 1
- - javax.ws.rs.NotFoundException - 1
- - javax.ws.rs.NotSupportedException - 1

@@ -4,15 +4,3 @@
 
 == References
 
- - javax.websocket.DeploymentException - 17
- - javax.websocket.Session - 12
- - javax.websocket.EndpointConfig - 10
- - javax.websocket.CloseReason - 8
- - javax.websocket.DecodeException - 6
- - javax.websocket.OnOpen - 3
- - javax.websocket.OnError - 3
- - javax.websocket.OnClose - 3
- - javax.websocket.OnMessage - 3
- - javax.websocket.server.PathParam - 3
- - javax.websocket.MessageHandler - 1
- - javax.websocket.Decoder - 1

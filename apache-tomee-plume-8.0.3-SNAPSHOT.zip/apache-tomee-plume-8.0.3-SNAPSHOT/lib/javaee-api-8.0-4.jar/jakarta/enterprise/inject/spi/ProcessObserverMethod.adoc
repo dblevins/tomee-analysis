@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/ProcessObserverMethod.class
+
+ - link:ProcessObserverMethod-asmified.java[Asmified]
+
+== References
+

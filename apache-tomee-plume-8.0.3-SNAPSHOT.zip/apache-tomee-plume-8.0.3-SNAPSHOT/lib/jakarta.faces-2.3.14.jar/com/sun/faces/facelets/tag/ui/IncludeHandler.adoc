@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagAttribute - 12
- - javax.faces.view.facelets.FaceletContext - 11
- - javax.el.VariableMapper - 9
- - javax.faces.view.facelets.Tag - 6
- - javax.faces.component.UIComponent - 6
- - javax.faces.view.facelets.TagAttributeException - 4
- - javax.faces.view.facelets.TagConfig - 3
- - javax.faces.view.facelets.TagException - 2
- - javax.faces.view.facelets.FaceletHandler - 2

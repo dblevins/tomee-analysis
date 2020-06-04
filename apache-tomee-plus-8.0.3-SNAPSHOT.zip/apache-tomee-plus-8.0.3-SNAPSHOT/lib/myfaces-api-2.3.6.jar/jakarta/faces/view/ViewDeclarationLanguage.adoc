@@ -1,0 +1,6 @@
+= jakarta/faces/view/ViewDeclarationLanguage.class
+
+ - link:ViewDeclarationLanguage-asmified.java[Asmified]
+
+== References
+

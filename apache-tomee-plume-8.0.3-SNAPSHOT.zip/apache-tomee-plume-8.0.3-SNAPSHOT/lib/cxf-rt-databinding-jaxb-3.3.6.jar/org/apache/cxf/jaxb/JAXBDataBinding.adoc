@@ -4,13 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBContext - 31
- - javax.xml.bind.annotation.XmlElement - 11
- - javax.xml.bind.JAXBException - 7
- - javax.xml.bind.Unmarshaller$Listener - 5
- - javax.xml.bind.ValidationEventHandler - 5
- - javax.xml.bind.Marshaller$Listener - 5
- - javax.xml.bind.annotation.XmlElementRef - 4
- - javax.xml.bind.annotation.adapters.XmlAdapter - 3
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 3
- - javax.xml.bind.JAXBElement - 1

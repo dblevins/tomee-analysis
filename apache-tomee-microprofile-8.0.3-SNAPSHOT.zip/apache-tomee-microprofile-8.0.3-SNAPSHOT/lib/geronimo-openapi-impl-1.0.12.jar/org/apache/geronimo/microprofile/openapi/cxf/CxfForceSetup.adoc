@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.CDI - 6
- - javax.enterprise.inject.Instance - 6
- - javax.ws.rs.core.MediaType - 3
- - javax.enterprise.inject.Vetoed - 1

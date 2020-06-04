@@ -4,13 +4,3 @@
 
 == References
 
- - javax.ws.rs.RuntimeType - 24
- - javax.ws.rs.core.Configurable - 24
- - javax.ws.rs.core.Configuration - 8
- - javax.ws.rs.ConstrainedTo - 7
- - javax.ws.rs.core.Feature - 4
- - javax.ws.rs.core.FeatureContext - 1
- - javax.ws.rs.client.ClientResponseFilter - 1
- - javax.ws.rs.container.ContainerRequestFilter - 1
- - javax.ws.rs.client.ClientRequestFilter - 1
- - javax.ws.rs.container.ContainerResponseFilter - 1

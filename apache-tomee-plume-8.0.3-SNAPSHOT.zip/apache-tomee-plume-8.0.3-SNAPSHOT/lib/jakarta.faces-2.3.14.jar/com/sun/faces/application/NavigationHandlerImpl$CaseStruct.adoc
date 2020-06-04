@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.flow.Flow - 2
- - javax.faces.flow.FlowCallNode - 1
- - javax.faces.application.NavigationCase - 1

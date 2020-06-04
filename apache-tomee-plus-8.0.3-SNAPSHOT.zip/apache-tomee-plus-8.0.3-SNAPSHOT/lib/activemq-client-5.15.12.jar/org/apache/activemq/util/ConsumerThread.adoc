@@ -4,12 +4,3 @@
 
 == References
 
- - javax.jms.Session - 13
- - javax.jms.MessageConsumer - 10
- - javax.jms.JMSException - 10
- - javax.jms.Destination - 7
- - javax.jms.BytesMessage - 5
- - javax.jms.Message - 5
- - javax.jms.TextMessage - 3
- - javax.jms.Topic - 3
- - javax.jms.TopicSubscriber - 1

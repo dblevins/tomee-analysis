@@ -1,0 +1,6 @@
+= jakarta/json/bind/annotation/JsonbTypeDeserializer.class
+
+ - link:JsonbTypeDeserializer-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.descriptor.JspPropertyGroupDescriptor - 14
- - javax.servlet.ServletContext - 13
- - javax.servlet.descriptor.JspConfigDescriptor - 4

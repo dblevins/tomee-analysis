@@ -4,8 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 161
- - javax.faces.component.UIForm - 25
- - javax.faces.webapp.UIComponentELTag - 6
- - javax.servlet.jsp.JspException - 6
- - javax.faces.component.UIComponent - 3

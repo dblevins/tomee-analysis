@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/factories/DeploymentFactory.class
+
+ - link:DeploymentFactory-asmified.java[Asmified]
+
+== References
+

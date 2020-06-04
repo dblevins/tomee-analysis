@@ -4,14 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 12
- - javax.xml.bind.JAXBContext - 9
- - javax.xml.ws.WebServiceContext - 7
- - javax.xml.bind.Binder - 6
- - javax.xml.bind.util.JAXBSource - 4
- - javax.xml.ws.handler.MessageContext - 4
- - javax.xml.ws.ServiceMode - 1
- - javax.xml.bind.annotation.XmlAnyElement - 1
- - javax.annotation.Resource - 1
- - javax.xml.ws.Service$Mode - 1
- - javax.xml.ws.Provider - 1

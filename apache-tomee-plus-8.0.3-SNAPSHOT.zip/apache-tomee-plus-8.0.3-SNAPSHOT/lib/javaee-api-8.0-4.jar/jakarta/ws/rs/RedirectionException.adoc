@@ -1,0 +1,6 @@
+= jakarta/ws/rs/RedirectionException.class
+
+ - link:RedirectionException-asmified.java[Asmified]
+
+== References
+

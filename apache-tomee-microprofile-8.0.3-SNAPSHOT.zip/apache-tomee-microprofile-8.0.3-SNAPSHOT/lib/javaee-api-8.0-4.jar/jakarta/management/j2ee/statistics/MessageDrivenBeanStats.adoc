@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/MessageDrivenBeanStats.class
+
+ - link:MessageDrivenBeanStats-asmified.java[Asmified]
+
+== References
+

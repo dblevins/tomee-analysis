@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.MetadataTarget - 12
- - javax.faces.context.FacesContext - 3
- - javax.el.ValueExpression - 2
- - javax.el.ELContext - 2

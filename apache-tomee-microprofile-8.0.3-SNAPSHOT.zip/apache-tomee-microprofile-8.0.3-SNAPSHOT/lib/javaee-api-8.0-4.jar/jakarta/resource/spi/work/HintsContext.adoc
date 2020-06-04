@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/HintsContext.class
+
+ - link:HintsContext-asmified.java[Asmified]
+
+== References
+

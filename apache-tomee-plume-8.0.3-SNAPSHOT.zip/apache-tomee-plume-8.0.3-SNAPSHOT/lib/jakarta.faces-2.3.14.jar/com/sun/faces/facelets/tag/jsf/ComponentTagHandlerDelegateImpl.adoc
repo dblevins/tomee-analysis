@@ -4,27 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 126
- - javax.faces.view.facelets.FaceletContext - 65
- - javax.faces.context.FacesContext - 51
- - javax.faces.view.facelets.ComponentHandler - 32
- - javax.faces.view.facelets.TagAttribute - 23
- - javax.faces.view.facelets.MetaRuleset - 20
- - javax.faces.view.facelets.Tag - 13
- - javax.faces.application.Application - 8
- - javax.faces.component.EditableValueHolder - 7
- - javax.faces.component.UIViewRoot - 5
- - javax.faces.view.facelets.MetaRule - 5
- - javax.faces.application.ProjectStage - 4
- - javax.faces.component.UniqueIdVendor - 3
- - javax.el.ValueExpression - 3
- - javax.faces.view.facelets.ComponentConfig - 3
- - javax.faces.component.behavior.ClientBehaviorHolder - 3
- - javax.faces.view.facelets.TagException - 2
- - javax.faces.view.facelets.TagHandlerDelegate - 2
- - javax.faces.view.Location - 1
- - javax.faces.component.UISelectOne - 1
- - javax.faces.component.ValueHolder - 1
- - javax.faces.component.ActionSource - 1
- - javax.faces.component.UISelectMany - 1
- - javax.faces.component.NamingContainer - 1

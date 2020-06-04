@@ -1,0 +1,6 @@
+= jakarta/xml/ws/Holder.class
+
+ - link:Holder-asmified.java[Asmified]
+
+== References
+

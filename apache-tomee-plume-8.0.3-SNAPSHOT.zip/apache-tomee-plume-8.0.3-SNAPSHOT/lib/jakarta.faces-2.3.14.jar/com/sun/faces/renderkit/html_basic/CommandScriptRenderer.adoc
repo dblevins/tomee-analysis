@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 18
- - javax.faces.context.FacesContext - 16
- - javax.faces.context.ResponseWriter - 10
- - javax.faces.event.ActionEvent - 7
- - javax.faces.component.UICommand - 5
- - javax.faces.event.PhaseId - 4
- - javax.faces.component.html.HtmlCommandScript - 4
- - javax.faces.event.FacesEvent - 1
- - javax.faces.component.UIForm - 1

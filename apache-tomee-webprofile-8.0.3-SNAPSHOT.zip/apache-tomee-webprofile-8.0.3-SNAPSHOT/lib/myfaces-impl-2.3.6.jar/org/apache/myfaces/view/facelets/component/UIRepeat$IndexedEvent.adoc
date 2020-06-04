@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.event.FacesEvent - 15
- - javax.faces.event.FacesListener - 4
- - javax.faces.event.PhaseId - 4
- - javax.faces.component.UIComponent - 2

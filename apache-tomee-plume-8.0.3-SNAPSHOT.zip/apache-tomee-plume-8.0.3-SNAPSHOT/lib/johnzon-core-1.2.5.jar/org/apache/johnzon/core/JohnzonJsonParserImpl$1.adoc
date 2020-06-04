@@ -4,4 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonParser$Event - 18

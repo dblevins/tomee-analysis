@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ejb.EJBHome - 5
- - javax.ejb.EJBObject - 3
- - javax.ejb.HomeHandle - 1
- - javax.ejb.EJBMetaData - 1
- - javax.ejb.Handle - 1

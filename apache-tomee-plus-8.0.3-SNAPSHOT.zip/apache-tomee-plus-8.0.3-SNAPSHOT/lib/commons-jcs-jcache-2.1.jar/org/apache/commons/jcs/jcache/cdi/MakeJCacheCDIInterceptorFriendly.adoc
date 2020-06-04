@@ -4,12 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 6
- - javax.enterprise.inject.spi.BeanManager - 6
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 3
- - javax.enterprise.event.Observes - 3
- - javax.enterprise.inject.spi.AfterBeanDiscovery - 2
- - javax.enterprise.inject.spi.ProcessAnnotatedType - 2
- - javax.enterprise.inject.spi.InjectionTarget - 2
- - javax.enterprise.inject.spi.Extension - 1
- - javax.enterprise.inject.spi.Bean - 1

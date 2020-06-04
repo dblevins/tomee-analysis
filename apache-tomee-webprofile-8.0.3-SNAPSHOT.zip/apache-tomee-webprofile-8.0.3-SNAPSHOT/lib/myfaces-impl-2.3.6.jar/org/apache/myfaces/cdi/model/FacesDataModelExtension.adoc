@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.model.FacesDataModel - 6
- - javax.enterprise.inject.spi.AnnotatedType - 6
- - javax.enterprise.inject.spi.BeanManager - 6
- - javax.enterprise.event.Observes - 4
- - javax.enterprise.inject.spi.Annotated - 3
- - javax.enterprise.inject.spi.ProcessManagedBean - 3
- - javax.enterprise.inject.spi.AfterBeanDiscovery - 2
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 2
- - javax.enterprise.inject.spi.Extension - 1
- - javax.enterprise.inject.spi.AfterDeploymentValidation - 1
- - javax.enterprise.inject.spi.Bean - 1

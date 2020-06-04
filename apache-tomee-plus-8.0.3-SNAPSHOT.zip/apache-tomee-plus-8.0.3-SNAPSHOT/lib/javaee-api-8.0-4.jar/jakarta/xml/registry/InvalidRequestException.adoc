@@ -1,0 +1,6 @@
+= jakarta/xml/registry/InvalidRequestException.class
+
+ - link:InvalidRequestException-asmified.java[Asmified]
+
+== References
+

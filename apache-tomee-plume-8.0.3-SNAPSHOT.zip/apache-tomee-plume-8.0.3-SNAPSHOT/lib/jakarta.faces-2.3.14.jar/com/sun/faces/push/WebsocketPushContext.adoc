@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 2
- - javax.enterprise.context.SessionScoped - 1
- - javax.faces.push.PushContext - 1

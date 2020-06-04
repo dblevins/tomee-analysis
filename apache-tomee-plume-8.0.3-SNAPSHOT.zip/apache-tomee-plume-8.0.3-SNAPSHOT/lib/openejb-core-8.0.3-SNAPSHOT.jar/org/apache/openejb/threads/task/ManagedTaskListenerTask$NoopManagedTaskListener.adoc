@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.concurrent.ManagedExecutorService - 4
- - javax.enterprise.concurrent.ManagedTaskListener - 1

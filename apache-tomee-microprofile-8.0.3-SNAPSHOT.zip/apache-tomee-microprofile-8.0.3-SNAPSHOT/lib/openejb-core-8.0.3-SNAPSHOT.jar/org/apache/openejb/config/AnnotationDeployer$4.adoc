@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.ConcurrencyManagementType - 6
- - javax.ejb.TransactionManagementType - 6

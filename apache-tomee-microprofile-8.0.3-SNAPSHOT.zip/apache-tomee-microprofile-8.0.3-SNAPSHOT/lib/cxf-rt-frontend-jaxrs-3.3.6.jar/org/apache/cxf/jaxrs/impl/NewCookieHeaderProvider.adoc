@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.NewCookie - 23
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 1

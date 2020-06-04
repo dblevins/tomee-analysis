@@ -1,0 +1,6 @@
+= jakarta/enterprise/concurrent/ManagedExecutors$CallableAdapter.class
+
+ - link:ManagedExecutors$CallableAdapter-asmified.java[Asmified]
+
+== References
+

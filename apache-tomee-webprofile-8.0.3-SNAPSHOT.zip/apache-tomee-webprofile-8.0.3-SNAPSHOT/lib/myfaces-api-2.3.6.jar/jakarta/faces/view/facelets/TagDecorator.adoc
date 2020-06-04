@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/TagDecorator.class
+
+ - link:TagDecorator-asmified.java[Asmified]
+
+== References
+

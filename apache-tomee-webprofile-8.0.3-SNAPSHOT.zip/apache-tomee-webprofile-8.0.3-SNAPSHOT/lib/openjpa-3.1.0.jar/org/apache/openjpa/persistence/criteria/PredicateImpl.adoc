@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Predicate - 25
- - javax.persistence.criteria.Predicate$BooleanOperator - 19
- - javax.persistence.criteria.Expression - 19

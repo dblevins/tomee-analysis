@@ -4,18 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 24
- - javax.el.MethodExpression - 20
- - javax.faces.component.UIViewRoot - 18
- - javax.faces.context.FacesContext - 16
- - javax.faces.component.UIComponent - 7
- - javax.el.ELContext - 7
- - javax.servlet.jsp.PageContext - 6
- - javax.servlet.jsp.JspException - 5
- - javax.faces.webapp.UIComponentELTag - 5
- - javax.servlet.ServletRequest - 4
- - javax.faces.FacesException - 4
- - javax.faces.context.ExternalContext - 2
- - javax.servlet.jsp.JspWriter - 2
- - javax.servlet.jsp.jstl.core.Config - 2
- - javax.faces.application.Application - 2

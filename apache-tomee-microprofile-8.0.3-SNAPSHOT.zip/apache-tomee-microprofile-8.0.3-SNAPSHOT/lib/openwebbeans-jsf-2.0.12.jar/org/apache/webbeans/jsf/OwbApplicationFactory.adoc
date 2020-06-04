@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.application.ApplicationFactory - 14
- - javax.faces.application.Application - 12

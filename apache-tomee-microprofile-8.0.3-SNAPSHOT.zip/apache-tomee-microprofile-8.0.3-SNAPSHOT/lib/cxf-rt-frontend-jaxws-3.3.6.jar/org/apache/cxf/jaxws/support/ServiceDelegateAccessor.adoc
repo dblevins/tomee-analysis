@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.Service - 5
- - javax.xml.ws.WebServiceException - 2

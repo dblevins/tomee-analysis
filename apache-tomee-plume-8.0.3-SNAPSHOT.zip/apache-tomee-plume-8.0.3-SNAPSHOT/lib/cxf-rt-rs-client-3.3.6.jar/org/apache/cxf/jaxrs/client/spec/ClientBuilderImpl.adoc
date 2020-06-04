@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.ClientBuilder - 43
- - javax.ws.rs.core.Configurable - 22
- - javax.ws.rs.core.Configuration - 7
- - javax.ws.rs.ProcessingException - 4
- - javax.ws.rs.RuntimeType - 2
- - javax.ws.rs.client.Client - 1

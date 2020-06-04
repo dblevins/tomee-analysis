@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Predicate$BooleanOperator.class
+
+ - link:Predicate$BooleanOperator-asmified.java[Asmified]
+
+== References
+

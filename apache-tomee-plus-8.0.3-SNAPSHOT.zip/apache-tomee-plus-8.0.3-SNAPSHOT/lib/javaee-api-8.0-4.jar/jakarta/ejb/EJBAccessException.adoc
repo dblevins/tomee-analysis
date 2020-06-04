@@ -1,0 +1,6 @@
+= jakarta/ejb/EJBAccessException.class
+
+ - link:EJBAccessException-asmified.java[Asmified]
+
+== References
+

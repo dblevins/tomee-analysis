@@ -1,0 +1,6 @@
+= jakarta/faces/el/MethodBinding.class
+
+ - link:MethodBinding-asmified.java[Asmified]
+
+== References
+

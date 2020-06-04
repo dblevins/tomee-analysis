@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 6
- - javax.validation.spi.ValidationProvider - 2
- - javax.validation.ValidationProviderResolver - 1

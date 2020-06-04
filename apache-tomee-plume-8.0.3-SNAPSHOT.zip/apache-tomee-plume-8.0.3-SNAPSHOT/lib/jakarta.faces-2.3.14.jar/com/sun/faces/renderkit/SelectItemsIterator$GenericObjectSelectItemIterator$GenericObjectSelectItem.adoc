@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 13
- - javax.faces.component.UISelectItems - 8
- - javax.faces.context.ExternalContext - 2
- - javax.faces.model.SelectItem - 2

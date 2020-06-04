@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContextEvent - 5
- - javax.servlet.ServletContext - 2
- - javax.servlet.FilterConfig - 1

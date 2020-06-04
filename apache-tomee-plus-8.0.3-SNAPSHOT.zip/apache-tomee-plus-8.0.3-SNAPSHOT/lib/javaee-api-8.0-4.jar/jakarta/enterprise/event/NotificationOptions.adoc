@@ -1,0 +1,6 @@
+= jakarta/enterprise/event/NotificationOptions.class
+
+ - link:NotificationOptions-asmified.java[Asmified]
+
+== References
+

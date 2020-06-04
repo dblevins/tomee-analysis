@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpSession - 36
- - javax.faces.application.ProjectStage - 9
- - javax.servlet.http.HttpServletRequest - 5

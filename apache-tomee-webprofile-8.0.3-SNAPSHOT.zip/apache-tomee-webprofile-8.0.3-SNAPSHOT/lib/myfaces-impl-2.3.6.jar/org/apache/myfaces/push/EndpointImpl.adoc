@@ -4,15 +4,3 @@
 
 == References
 
- - javax.websocket.Session - 17
- - javax.websocket.CloseReason - 6
- - javax.enterprise.util.AnnotationLiteral - 6
- - javax.enterprise.inject.spi.CDI - 6
- - javax.faces.event.WebsocketEvent - 4
- - javax.websocket.CloseReason$CloseCode - 4
- - javax.enterprise.inject.spi.BeanManager - 4
- - javax.websocket.EndpointConfig - 3
- - javax.websocket.Endpoint - 2
- - javax.faces.event.WebsocketEvent$Opened - 1
- - javax.websocket.CloseReason$CloseCodes - 1
- - javax.faces.event.WebsocketEvent$Closed - 1

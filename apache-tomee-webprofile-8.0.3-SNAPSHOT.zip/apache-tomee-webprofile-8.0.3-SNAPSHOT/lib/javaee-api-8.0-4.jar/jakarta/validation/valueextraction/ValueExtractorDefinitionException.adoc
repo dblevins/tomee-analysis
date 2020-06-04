@@ -1,0 +1,6 @@
+= jakarta/validation/valueextraction/ValueExtractorDefinitionException.class
+
+ - link:ValueExtractorDefinitionException-asmified.java[Asmified]
+
+== References
+

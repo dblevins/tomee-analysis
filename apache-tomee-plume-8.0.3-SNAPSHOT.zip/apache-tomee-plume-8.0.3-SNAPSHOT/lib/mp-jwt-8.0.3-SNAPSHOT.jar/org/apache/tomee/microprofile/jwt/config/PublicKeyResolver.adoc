@@ -4,10 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.DeploymentException - 32
- - javax.json.JsonObject - 11
- - javax.json.JsonReader - 4
- - javax.json.stream.JsonParsingException - 4
- - javax.json.JsonArray - 3
- - javax.json.JsonValue - 2
- - javax.json.Json - 2

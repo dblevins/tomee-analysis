@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/ByteArrayHolder.class
+
+ - link:ByteArrayHolder-asmified.java[Asmified]
+
+== References
+

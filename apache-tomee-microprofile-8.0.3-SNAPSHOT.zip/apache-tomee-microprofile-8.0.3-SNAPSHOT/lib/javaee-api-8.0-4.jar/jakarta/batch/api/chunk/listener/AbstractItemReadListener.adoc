@@ -1,0 +1,6 @@
+= jakarta/batch/api/chunk/listener/AbstractItemReadListener.class
+
+ - link:AbstractItemReadListener-asmified.java[Asmified]
+
+== References
+

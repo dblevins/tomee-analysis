@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/Context.class
+
+ - link:Context-asmified.java[Asmified]
+
+== References
+

@@ -4,15 +4,3 @@
 
 == References
 
- - javax.servlet.ServletRegistration$Dynamic - 12
- - javax.servlet.ServletException - 12
- - javax.servlet.Servlet - 11
- - javax.servlet.FilterRegistration$Dynamic - 9
- - javax.servlet.Filter - 7
- - javax.servlet.RequestDispatcher - 6
- - javax.servlet.ServletContext - 6
- - javax.servlet.ServletRegistration - 4
- - javax.servlet.FilterRegistration - 4
- - javax.servlet.descriptor.JspConfigDescriptor - 3
- - javax.servlet.SessionCookieConfig - 3
- - javax.servlet.SessionTrackingMode - 3

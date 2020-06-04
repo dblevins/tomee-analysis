@@ -4,20 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManager - 14
- - javax.persistence.EntityManagerFactory - 14
- - javax.transaction.Transaction - 13
- - javax.persistence.SynchronizationType - 9
- - javax.enterprise.context.spi.CreationalContext - 7
- - javax.ejb.SessionContext - 4
- - javax.ejb.EJBException - 4
- - javax.ejb.RemoveException - 2
- - javax.ejb.ConcurrentAccessTimeoutException - 2
- - javax.transaction.UserTransaction - 2
- - javax.ejb.EJBAccessException - 2
- - javax.enterprise.inject.spi.InjectionTarget - 2
- - javax.ejb.SessionBean - 1
- - javax.ejb.EJBHome - 1
- - javax.enterprise.context.Dependent - 1
- - javax.ejb.EJBLocalHome - 1
- - javax.ejb.EJBContext - 1

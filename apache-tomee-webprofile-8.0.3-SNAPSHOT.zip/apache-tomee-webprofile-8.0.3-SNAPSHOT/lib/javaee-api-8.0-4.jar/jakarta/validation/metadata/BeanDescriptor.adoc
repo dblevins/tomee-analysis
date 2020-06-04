@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/BeanDescriptor.class
+
+ - link:BeanDescriptor-asmified.java[Asmified]
+
+== References
+

@@ -4,16 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 24
- - javax.el.MethodExpression - 23
- - javax.el.ELException - 15
- - javax.el.ValueExpression - 12
- - javax.faces.component.UIComponent - 11
- - javax.el.ELContext - 11
- - javax.faces.view.Location - 9
- - javax.faces.validator.ValidatorException - 4
- - javax.faces.event.PostAddToViewEvent - 2
- - javax.el.MethodNotFoundException - 2
- - javax.faces.event.ComponentSystemEventListener - 2
- - javax.faces.component.UIViewRoot - 2
- - javax.el.MethodInfo - 2

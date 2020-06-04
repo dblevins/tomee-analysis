@@ -1,5 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/tomee-common-8.0.3-SNAPSHOT.jar
 
- - link:org/apache/tomee/common/LegacyAnnotationProcessor.adoc[org/apache/tomee/common/LegacyAnnotationProcessor.class] - 42
- - link:org/apache/tomee/common/UserTransactionFactory.adoc[org/apache/tomee/common/UserTransactionFactory.class] - 5
- - link:org/apache/tomee/common/WsFactory.adoc[org/apache/tomee/common/WsFactory.class] - 4

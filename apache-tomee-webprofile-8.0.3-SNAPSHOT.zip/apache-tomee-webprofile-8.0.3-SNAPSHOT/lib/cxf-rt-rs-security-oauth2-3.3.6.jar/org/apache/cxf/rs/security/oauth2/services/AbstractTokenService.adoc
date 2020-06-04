@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 26
- - javax.ws.rs.core.Response - 11
- - javax.ws.rs.core.Response$ResponseBuilder - 10
- - javax.ws.rs.core.SecurityContext - 7
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.WebApplicationException - 1

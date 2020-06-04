@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 7
- - javax.servlet.http.HttpServletRequest - 2
- - javax.ws.rs.core.UriInfo - 2

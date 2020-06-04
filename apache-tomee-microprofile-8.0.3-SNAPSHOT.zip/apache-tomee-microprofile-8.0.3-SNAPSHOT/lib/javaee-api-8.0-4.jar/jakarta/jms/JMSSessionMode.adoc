@@ -1,0 +1,6 @@
+= jakarta/jms/JMSSessionMode.class
+
+ - link:JMSSessionMode-asmified.java[Asmified]
+
+== References
+

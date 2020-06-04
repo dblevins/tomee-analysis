@@ -1,0 +1,6 @@
+= jakarta/persistence/NamedSubgraph.class
+
+ - link:NamedSubgraph-asmified.java[Asmified]
+
+== References
+

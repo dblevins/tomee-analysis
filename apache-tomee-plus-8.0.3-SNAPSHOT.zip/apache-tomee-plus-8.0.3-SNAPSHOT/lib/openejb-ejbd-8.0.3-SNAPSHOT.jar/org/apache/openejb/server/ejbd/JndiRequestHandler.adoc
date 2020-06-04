@@ -4,8 +4,3 @@
 
 == References
 
- - javax.resource.Referenceable - 3
- - javax.validation.Validator - 2
- - javax.jms.Topic - 2
- - javax.validation.ValidatorFactory - 2
- - javax.jms.ConnectionFactory - 2

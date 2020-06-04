@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.AttributeConverter - 12
- - javax.persistence.PersistenceException - 4

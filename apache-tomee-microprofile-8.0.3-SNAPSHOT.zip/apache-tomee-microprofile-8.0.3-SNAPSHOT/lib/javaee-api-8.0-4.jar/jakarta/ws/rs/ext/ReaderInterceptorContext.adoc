@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ext/ReaderInterceptorContext.class
+
+ - link:ReaderInterceptorContext-asmified.java[Asmified]
+
+== References
+

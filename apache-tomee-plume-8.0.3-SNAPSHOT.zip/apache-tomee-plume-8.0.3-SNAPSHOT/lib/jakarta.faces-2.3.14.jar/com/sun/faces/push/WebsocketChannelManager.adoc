@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 9
- - javax.inject.Inject - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.application.Application - 2
- - javax.annotation.PreDestroy - 1
- - javax.enterprise.context.SessionScoped - 1

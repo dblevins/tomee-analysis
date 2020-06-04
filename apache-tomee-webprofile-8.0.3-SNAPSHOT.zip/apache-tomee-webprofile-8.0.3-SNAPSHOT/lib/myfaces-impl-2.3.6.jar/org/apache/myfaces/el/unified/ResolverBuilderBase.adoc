@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ELResolver - 17
- - javax.faces.el.PropertyResolver - 14
- - javax.faces.el.VariableResolver - 14
- - javax.faces.context.FacesContext - 7
- - javax.faces.context.ExternalContext - 6
- - javax.faces.annotation.FacesConfig$Version - 5
- - javax.enterprise.inject.spi.BeanManager - 3

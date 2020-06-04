@@ -1,23 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/taglibs-standard-spec-1.2.5.jar
 
- - link:javax/servlet/jsp/jstl/core/LoopTagSupport.adoc[javax/servlet/jsp/jstl/core/LoopTagSupport.class] - 99
- - link:javax/servlet/jsp/jstl/fmt/JakartaInline.adoc[javax/servlet/jsp/jstl/fmt/JakartaInline.class] - 63
- - link:javax/servlet/jsp/jstl/core/Config.adoc[javax/servlet/jsp/jstl/core/Config.class] - 50
- - link:javax/servlet/jsp/jstl/core/IndexedValueExpression.adoc[javax/servlet/jsp/jstl/core/IndexedValueExpression.class] - 47
- - link:javax/servlet/jsp/jstl/core/IteratedExpression$TypesEnum.adoc[javax/servlet/jsp/jstl/core/IteratedExpression$TypesEnum.class] - 41
- - link:javax/servlet/jsp/jstl/tlv/ScriptFreeTLV.adoc[javax/servlet/jsp/jstl/tlv/ScriptFreeTLV.class] - 35
- - link:javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV.adoc[javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV.class] - 33
- - link:javax/servlet/jsp/jstl/core/IteratedExpression.adoc[javax/servlet/jsp/jstl/core/IteratedExpression.class] - 30
- - link:javax/servlet/jsp/jstl/core/IteratedValueExpression.adoc[javax/servlet/jsp/jstl/core/IteratedValueExpression.class] - 29
- - link:javax/servlet/jsp/jstl/core/LoopTagSupport$1Status.adoc[javax/servlet/jsp/jstl/core/LoopTagSupport$1Status.class] - 25
- - link:javax/servlet/jsp/jstl/tlv/ScriptFreeTLV$MyContentHandler.adoc[javax/servlet/jsp/jstl/tlv/ScriptFreeTLV$MyContentHandler.class] - 23
- - link:javax/servlet/jsp/jstl/fmt/LocaleSupport.adoc[javax/servlet/jsp/jstl/fmt/LocaleSupport.class] - 19
- - link:javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV$PermittedTaglibsHandler.adoc[javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV$PermittedTaglibsHandler.class] - 18
- - link:javax/servlet/jsp/jstl/core/IteratedExpression$1.adoc[javax/servlet/jsp/jstl/core/IteratedExpression$1.class] - 12
- - link:javax/servlet/jsp/jstl/core/ConditionalTagSupport.adoc[javax/servlet/jsp/jstl/core/ConditionalTagSupport.class] - 11
- - link:javax/servlet/jsp/jstl/sql/ResultSupport.adoc[javax/servlet/jsp/jstl/sql/ResultSupport.class] - 6
- - link:javax/servlet/jsp/jstl/tlv/PageParser$1.adoc[javax/servlet/jsp/jstl/tlv/PageParser$1.class] - 5
- - link:javax/servlet/jsp/jstl/tlv/PageParser.adoc[javax/servlet/jsp/jstl/tlv/PageParser.class] - 5
- - link:javax/servlet/jsp/jstl/core/LoopTag.adoc[javax/servlet/jsp/jstl/core/LoopTag.class] - 2
- - link:javax/servlet/jsp/jstl/fmt/JakartaInline$1.adoc[javax/servlet/jsp/jstl/fmt/JakartaInline$1.class] - 1
- - link:javax/servlet/jsp/jstl/sql/ResultImpl.adoc[javax/servlet/jsp/jstl/sql/ResultImpl.class] - 1

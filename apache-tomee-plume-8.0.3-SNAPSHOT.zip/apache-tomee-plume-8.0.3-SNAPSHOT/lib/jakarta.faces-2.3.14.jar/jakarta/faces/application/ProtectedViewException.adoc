@@ -1,0 +1,6 @@
+= jakarta/faces/application/ProtectedViewException.class
+
+ - link:ProtectedViewException-asmified.java[Asmified]
+
+== References
+

@@ -4,14 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManager - 209
- - javax.persistence.TypedQuery - 67
- - javax.batch.runtime.BatchStatus - 37
- - javax.batch.runtime.Metric$MetricType - 32
- - javax.batch.runtime.Metric - 32
- - javax.batch.runtime.JobInstance - 15
- - javax.persistence.Query - 8
- - javax.batch.operations.NoSuchJobExecutionException - 4
- - javax.batch.runtime.StepExecution - 2
- - javax.persistence.TemporalType - 2
- - javax.persistence.NoResultException - 2

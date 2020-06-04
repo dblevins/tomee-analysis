@@ -1,0 +1,6 @@
+= jakarta/security/jacc/WebUserDataPermission$1.class
+
+ - link:WebUserDataPermission$1-asmified.java[Asmified]
+
+== References
+

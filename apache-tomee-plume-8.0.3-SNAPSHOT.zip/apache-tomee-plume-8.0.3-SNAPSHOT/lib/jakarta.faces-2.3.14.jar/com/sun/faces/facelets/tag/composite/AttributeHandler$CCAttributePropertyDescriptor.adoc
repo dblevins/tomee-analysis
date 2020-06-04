@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 7
- - javax.el.ELContext - 6
- - javax.faces.view.facelets.TagAttributeException - 2
- - javax.el.ValueExpression - 2
- - javax.faces.view.facelets.TagAttribute - 2
- - javax.faces.view.facelets.Tag - 2

@@ -1,0 +1,6 @@
+= jakarta/validation/Path$CrossParameterNode.class
+
+ - link:Path$CrossParameterNode-asmified.java[Asmified]
+
+== References
+

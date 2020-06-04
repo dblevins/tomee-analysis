@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 65
- - javax.faces.context.ResponseWriter - 52
- - javax.faces.context.FacesContext - 33

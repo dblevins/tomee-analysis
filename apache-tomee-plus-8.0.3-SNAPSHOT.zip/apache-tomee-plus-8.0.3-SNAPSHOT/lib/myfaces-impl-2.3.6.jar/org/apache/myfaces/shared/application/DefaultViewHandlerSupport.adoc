@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 67
- - javax.faces.context.ExternalContext - 21
- - javax.faces.view.ViewDeclarationLanguage - 3
- - javax.faces.application.ViewHandler - 2
- - javax.faces.application.Application - 2
- - javax.faces.render.ResponseStateManager - 2
- - javax.faces.render.RenderKit - 2

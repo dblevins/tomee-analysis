@@ -1,0 +1,6 @@
+= jakarta/xml/ws/WebServicePermission.class
+
+ - link:WebServicePermission-asmified.java[Asmified]
+
+== References
+

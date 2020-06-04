@@ -4,9 +4,3 @@
 
 == References
 
- - javax.websocket.Session - 11
- - javax.websocket.CloseReason - 9
- - javax.websocket.Endpoint - 2
- - javax.websocket.CloseReason$CloseCodes - 2
- - javax.websocket.CloseReason$CloseCode - 2
- - javax.websocket.EndpointConfig - 1

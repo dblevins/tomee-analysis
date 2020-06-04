@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 7
- - javax.ws.rs.core.MultivaluedMap - 5
- - javax.ws.rs.core.Form - 3
- - javax.ws.rs.WebApplicationException - 2
- - javax.ws.rs.Produces - 1
- - javax.ws.rs.ext.MessageBodyWriter - 1

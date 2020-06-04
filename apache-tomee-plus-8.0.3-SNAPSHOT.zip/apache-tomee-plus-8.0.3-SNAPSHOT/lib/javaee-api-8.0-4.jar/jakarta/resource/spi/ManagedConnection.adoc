@@ -1,0 +1,6 @@
+= jakarta/resource/spi/ManagedConnection.class
+
+ - link:ManagedConnection-asmified.java[Asmified]
+
+== References
+

@@ -4,23 +4,3 @@
 
 == References
 
- - javax.faces.component.behavior.AjaxBehavior - 27
- - javax.faces.component.UIComponent - 26
- - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 17
- - javax.faces.context.FacesContext - 16
- - javax.faces.component.behavior.ClientBehaviorContext - 11
- - javax.faces.component.html.HtmlCommandScript - 9
- - javax.faces.event.AjaxBehaviorEvent - 6
- - javax.faces.component.search.SearchExpressionContext - 6
- - javax.faces.component.search.SearchExpressionHandler - 5
- - javax.faces.event.PhaseId - 4
- - javax.faces.component.search.SearchExpressionHint - 3
- - javax.faces.component.EditableValueHolder - 3
- - javax.faces.component.ActionSource - 3
- - javax.faces.render.ClientBehaviorRenderer - 2
- - javax.faces.component.behavior.ClientBehavior - 2
- - javax.faces.application.Application - 2
- - javax.faces.component.search.ComponentNotFoundException - 2
- - javax.faces.component.UINamingContainer - 1
- - javax.faces.event.FacesEvent - 1
- - javax.faces.component.behavior.Behavior - 1

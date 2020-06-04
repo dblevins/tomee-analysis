@@ -4,7 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonGenerator - 8
- - javax.json.bind.serializer.SerializationContext - 8
- - javax.enterprise.inject.Vetoed - 1
- - javax.json.bind.serializer.JsonbSerializer - 1

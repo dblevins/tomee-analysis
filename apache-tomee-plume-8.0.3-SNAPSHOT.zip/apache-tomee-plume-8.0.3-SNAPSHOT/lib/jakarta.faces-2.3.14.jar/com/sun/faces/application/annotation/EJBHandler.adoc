@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EJB - 24
- - javax.faces.context.FacesContext - 12

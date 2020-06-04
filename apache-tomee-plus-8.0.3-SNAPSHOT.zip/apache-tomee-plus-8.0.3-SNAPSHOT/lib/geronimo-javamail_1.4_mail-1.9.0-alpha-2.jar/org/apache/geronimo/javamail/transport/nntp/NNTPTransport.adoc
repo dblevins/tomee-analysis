@@ -4,12 +4,3 @@
 
 == References
 
- - javax.mail.Address - 21
- - javax.mail.MessagingException - 16
- - javax.mail.Message - 7
- - javax.mail.Session - 5
- - javax.mail.URLName - 4
- - javax.mail.internet.NewsAddress - 3
- - javax.mail.Transport - 3
- - javax.mail.internet.InternetAddress - 2
- - javax.mail.internet.MimeMessage - 1

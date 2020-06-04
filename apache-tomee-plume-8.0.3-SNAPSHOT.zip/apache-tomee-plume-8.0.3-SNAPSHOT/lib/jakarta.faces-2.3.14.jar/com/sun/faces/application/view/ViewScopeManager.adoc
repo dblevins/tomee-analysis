@@ -4,19 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 37
- - javax.faces.component.UIViewRoot - 16
- - javax.faces.context.ExternalContext - 14
- - javax.faces.event.SystemEvent - 8
- - javax.servlet.http.HttpSession - 7
- - javax.servlet.http.HttpSessionEvent - 6
- - javax.faces.component.TransientStateHelper - 4
- - javax.faces.application.FacesMessage - 3
- - javax.faces.application.ProjectStage - 2
- - javax.servlet.ServletContext - 2
- - javax.faces.application.FacesMessage$Severity - 2
- - javax.servlet.http.HttpSessionListener - 1
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.PostConstructViewMapEvent - 1
- - javax.faces.event.ViewMapListener - 1
- - javax.faces.event.PreDestroyViewMapEvent - 1

@@ -4,17 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 49
- - javax.faces.component.UIViewRoot - 26
- - javax.faces.component.UIComponent - 20
- - javax.faces.render.ResponseStateManager - 12
- - javax.faces.render.RenderKitFactory - 9
- - javax.faces.view.StateManagementStrategy - 7
- - javax.faces.render.RenderKit - 7
- - javax.faces.view.ViewDeclarationLanguage - 7
- - javax.faces.application.ViewHandler - 4
- - javax.faces.application.Application - 4
- - javax.faces.application.StateManager - 2
- - javax.faces.component.UIComponentBase - 2
- - javax.faces.FactoryFinder - 1
- - javax.faces.component.NamingContainer - 1

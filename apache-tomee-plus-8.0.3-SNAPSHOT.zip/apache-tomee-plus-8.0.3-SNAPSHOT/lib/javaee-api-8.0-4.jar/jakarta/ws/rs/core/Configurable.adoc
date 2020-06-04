@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/Configurable.class
+
+ - link:Configurable-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/websocket/Encoder$TextStream.class
+
+ - link:Encoder$TextStream-asmified.java[Asmified]
+
+== References
+

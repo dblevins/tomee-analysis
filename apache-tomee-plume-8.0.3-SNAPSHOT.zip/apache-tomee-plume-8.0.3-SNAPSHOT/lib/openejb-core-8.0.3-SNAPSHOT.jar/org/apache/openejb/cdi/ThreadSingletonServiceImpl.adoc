@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.DeploymentException - 2
- - javax.enterprise.context.spi.Context - 1
- - javax.transaction.Transactional - 1
- - javax.enterprise.inject.spi.BeanManager - 1

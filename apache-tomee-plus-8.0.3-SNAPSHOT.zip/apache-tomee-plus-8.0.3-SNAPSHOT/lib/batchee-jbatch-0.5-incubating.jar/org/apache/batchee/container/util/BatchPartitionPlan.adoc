@@ -4,4 +4,3 @@
 
 == References
 
- - javax.batch.api.partition.PartitionPlan - 1

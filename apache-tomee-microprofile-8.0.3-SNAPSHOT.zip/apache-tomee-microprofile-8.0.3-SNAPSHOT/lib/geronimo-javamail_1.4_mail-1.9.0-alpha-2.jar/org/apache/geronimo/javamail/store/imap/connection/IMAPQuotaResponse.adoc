@@ -4,6 +4,3 @@
 
 == References
 
- - javax.mail.Quota$Resource - 6
- - javax.mail.Quota - 5
- - javax.mail.MessagingException - 1

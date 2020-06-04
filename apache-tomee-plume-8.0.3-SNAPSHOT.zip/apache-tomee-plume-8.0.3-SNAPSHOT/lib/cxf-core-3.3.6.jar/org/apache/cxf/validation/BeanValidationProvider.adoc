@@ -4,19 +4,3 @@
 
 == References
 
- - javax.validation.Configuration - 21
- - javax.validation.ValidatorFactory - 14
- - javax.validation.ValidationProviderResolver - 8
- - javax.validation.executable.ExecutableValidator - 8
- - javax.validation.ValidationException - 6
- - javax.validation.bootstrap.GenericBootstrap - 6
- - javax.validation.ParameterNameProvider - 4
- - javax.validation.Validator - 4
- - javax.validation.bootstrap.ProviderSpecificBootstrap - 4
- - javax.validation.ConstraintViolationException - 4
- - javax.validation.Validation - 4
- - javax.validation.TraversableResolver - 2
- - javax.validation.MessageInterpolator - 2
- - javax.validation.ConstraintValidatorFactory - 2
- - javax.validation.spi.ValidationProvider - 2
- - javax.validation.ConstraintViolation - 1

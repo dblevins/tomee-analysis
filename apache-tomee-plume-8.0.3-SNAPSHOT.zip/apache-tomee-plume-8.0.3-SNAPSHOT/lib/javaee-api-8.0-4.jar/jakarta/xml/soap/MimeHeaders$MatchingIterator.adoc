@@ -1,0 +1,6 @@
+= jakarta/xml/soap/MimeHeaders$MatchingIterator.class
+
+ - link:MimeHeaders$MatchingIterator-asmified.java[Asmified]
+
+== References
+

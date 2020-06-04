@@ -1,0 +1,6 @@
+= jakarta/validation/valueextraction/ValueExtractor.class
+
+ - link:ValueExtractor-asmified.java[Asmified]
+
+== References
+

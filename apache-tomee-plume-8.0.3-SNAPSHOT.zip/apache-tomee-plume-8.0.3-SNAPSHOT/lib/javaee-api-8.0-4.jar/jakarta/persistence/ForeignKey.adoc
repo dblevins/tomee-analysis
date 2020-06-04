@@ -1,0 +1,6 @@
+= jakarta/persistence/ForeignKey.class
+
+ - link:ForeignKey-asmified.java[Asmified]
+
+== References
+

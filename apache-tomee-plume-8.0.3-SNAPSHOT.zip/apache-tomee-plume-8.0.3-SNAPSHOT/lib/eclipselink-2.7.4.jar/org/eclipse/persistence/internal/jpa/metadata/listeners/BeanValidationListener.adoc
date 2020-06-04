@@ -4,11 +4,3 @@
 
 == References
 
- - javax.validation.Validator - 17
- - javax.validation.ValidatorFactory - 8
- - javax.validation.ValidatorContext - 4
- - javax.validation.ConstraintViolationException - 2
- - javax.validation.metadata.BeanDescriptor - 2
- - javax.validation.groups.Default - 1
- - javax.validation.ConstraintViolation - 1
- - javax.validation.TraversableResolver - 1

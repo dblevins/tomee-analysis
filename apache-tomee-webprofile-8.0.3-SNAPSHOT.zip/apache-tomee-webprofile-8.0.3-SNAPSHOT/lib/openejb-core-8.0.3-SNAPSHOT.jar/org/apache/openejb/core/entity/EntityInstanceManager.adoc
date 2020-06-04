@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ejb.EntityBean - 36
- - javax.ejb.NoSuchEntityException - 2
- - javax.ejb.EntityContext - 1
- - javax.ejb.EJBContext - 1

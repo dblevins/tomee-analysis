@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 25
- - javax.el.ELContext - 18
- - javax.faces.application.Application - 12
- - javax.el.PropertyNotFoundException - 8
- - javax.el.ELException - 3
- - javax.el.ELResolver - 2
- - javax.el.PropertyNotWritableException - 2

@@ -1,0 +1,6 @@
+= jakarta/xml/soap/AttachmentPart.class
+
+ - link:AttachmentPart-asmified.java[Asmified]
+
+== References
+

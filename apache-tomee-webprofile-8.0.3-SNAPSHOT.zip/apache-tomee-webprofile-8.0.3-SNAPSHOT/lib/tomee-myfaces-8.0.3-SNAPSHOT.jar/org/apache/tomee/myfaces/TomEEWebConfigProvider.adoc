@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletRegistration - 6
- - javax.servlet.ServletContext - 6
- - javax.faces.context.ExternalContext - 5

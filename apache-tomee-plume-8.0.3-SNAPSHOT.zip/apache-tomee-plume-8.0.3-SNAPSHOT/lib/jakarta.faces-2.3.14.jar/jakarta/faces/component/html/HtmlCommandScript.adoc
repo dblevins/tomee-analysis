@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlCommandScript.class
+
+ - link:HtmlCommandScript-asmified.java[Asmified]
+
+== References
+

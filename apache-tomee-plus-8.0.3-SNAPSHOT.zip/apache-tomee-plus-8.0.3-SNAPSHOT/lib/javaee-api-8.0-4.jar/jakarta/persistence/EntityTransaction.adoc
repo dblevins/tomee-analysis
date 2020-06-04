@@ -1,0 +1,6 @@
+= jakarta/persistence/EntityTransaction.class
+
+ - link:EntityTransaction-asmified.java[Asmified]
+
+== References
+

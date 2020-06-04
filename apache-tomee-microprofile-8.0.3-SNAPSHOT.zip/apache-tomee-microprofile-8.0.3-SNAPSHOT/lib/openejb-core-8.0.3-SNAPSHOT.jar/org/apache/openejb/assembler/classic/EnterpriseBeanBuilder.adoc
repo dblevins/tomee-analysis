@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManagerFactory - 13
- - javax.persistence.SynchronizationType - 8
- - javax.ejb.Timer - 2
- - javax.ejb.TimedObject - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/event/PostRenderViewEvent.class
+
+ - link:PostRenderViewEvent-asmified.java[Asmified]
+
+== References
+

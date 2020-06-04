@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.FacesException - 11
- - javax.faces.context.FacesContext - 10
- - javax.faces.component.UIViewRoot - 7
- - javax.faces.component.UIComponent - 7
- - javax.faces.application.Application - 2
- - javax.faces.application.ResourceHandler - 2
- - javax.faces.context.PartialViewContext - 2

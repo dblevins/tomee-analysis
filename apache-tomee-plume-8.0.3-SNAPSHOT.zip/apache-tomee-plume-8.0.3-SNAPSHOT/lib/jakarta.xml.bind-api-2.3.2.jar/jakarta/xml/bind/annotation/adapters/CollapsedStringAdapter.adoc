@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/adapters/CollapsedStringAdapter.class
+
+ - link:CollapsedStringAdapter-asmified.java[Asmified]
+
+== References
+

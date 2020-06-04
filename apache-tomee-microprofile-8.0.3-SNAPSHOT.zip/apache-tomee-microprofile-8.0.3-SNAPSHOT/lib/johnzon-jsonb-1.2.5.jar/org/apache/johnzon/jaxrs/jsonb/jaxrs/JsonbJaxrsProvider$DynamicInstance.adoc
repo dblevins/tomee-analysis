@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.ext.ContextResolver - 7
- - javax.json.bind.Jsonb - 6

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.PathSegment - 6
- - javax.ws.rs.core.MultivaluedMap - 5
- - javax.ws.rs.Path - 2

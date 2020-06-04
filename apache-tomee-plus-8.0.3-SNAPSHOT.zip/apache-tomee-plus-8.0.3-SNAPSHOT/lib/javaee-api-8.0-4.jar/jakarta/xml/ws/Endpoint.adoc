@@ -1,0 +1,6 @@
+= jakarta/xml/ws/Endpoint.class
+
+ - link:Endpoint-asmified.java[Asmified]
+
+== References
+

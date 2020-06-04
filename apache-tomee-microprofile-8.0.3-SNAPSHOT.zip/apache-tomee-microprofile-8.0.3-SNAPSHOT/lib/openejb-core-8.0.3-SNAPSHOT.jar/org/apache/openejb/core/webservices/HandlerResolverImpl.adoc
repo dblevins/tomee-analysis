@@ -4,12 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.PortInfo - 15
- - javax.xml.ws.handler.Handler - 12
- - javax.enterprise.inject.spi.Bean - 4
- - javax.enterprise.inject.InjectionException - 3
- - javax.xml.ws.WebServiceException - 2
- - javax.xml.ws.handler.LogicalHandler - 2
- - javax.enterprise.context.spi.CreationalContext - 1
- - javax.enterprise.context.spi.Contextual - 1
- - javax.xml.ws.handler.HandlerResolver - 1

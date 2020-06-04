@@ -1,0 +1,6 @@
+= jakarta/transaction/InvalidTransactionException.class
+
+ - link:InvalidTransactionException-asmified.java[Asmified]
+
+== References
+

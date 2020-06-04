@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response - 6
- - javax.ws.rs.ProcessingException - 3
- - javax.ws.rs.WebApplicationException - 1

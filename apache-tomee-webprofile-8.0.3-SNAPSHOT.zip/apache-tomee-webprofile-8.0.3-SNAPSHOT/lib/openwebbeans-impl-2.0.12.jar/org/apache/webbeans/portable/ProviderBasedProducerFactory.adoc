@@ -4,7 +4,3 @@
 
 == References
 
- - javax.inject.Provider - 5
- - javax.enterprise.inject.spi.ProducerFactory - 1
- - javax.enterprise.inject.spi.Producer - 1
- - javax.enterprise.inject.spi.Bean - 1

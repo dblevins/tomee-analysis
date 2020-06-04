@@ -1,0 +1,6 @@
+= jakarta/persistence/Parameter.class
+
+ - link:Parameter-asmified.java[Asmified]
+
+== References
+

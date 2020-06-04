@@ -1,3 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/tomcat-api.jar
 
- - link:org/apache/tomcat/JarScanner.adoc[org/apache/tomcat/JarScanner.class] - 1

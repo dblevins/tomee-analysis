@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 4
- - javax.servlet.ServletContext - 4

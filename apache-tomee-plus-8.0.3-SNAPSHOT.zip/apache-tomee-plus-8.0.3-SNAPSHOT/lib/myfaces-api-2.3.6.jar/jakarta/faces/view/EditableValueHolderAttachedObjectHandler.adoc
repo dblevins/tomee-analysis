@@ -1,0 +1,6 @@
+= jakarta/faces/view/EditableValueHolderAttachedObjectHandler.class
+
+ - link:EditableValueHolderAttachedObjectHandler-asmified.java[Asmified]
+
+== References
+

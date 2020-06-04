@@ -1,14 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/openwebbeans-ee-2.0.12.jar
 
- - link:org/apache/webbeans/ee/event/TransactionalEventNotifier.adoc[org/apache/webbeans/ee/event/TransactionalEventNotifier.class] - 33
- - link:org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization.adoc[org/apache/webbeans/ee/event/TransactionalEventNotifier$AbstractSynchronization.class] - 12
- - link:org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletionFailure.adoc[org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletionFailure.class] - 8
- - link:org/apache/webbeans/ee/event/TransactionalEventNotifier$BeforeCompletion.adoc[org/apache/webbeans/ee/event/TransactionalEventNotifier$BeforeCompletion.class] - 8
- - link:org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletionSuccess.adoc[org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletionSuccess.class] - 8
- - link:org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletion.adoc[org/apache/webbeans/ee/event/TransactionalEventNotifier$AfterCompletion.class] - 8
- - link:org/apache/webbeans/ee/beans/UserTransactionProvider.adoc[org/apache/webbeans/ee/beans/UserTransactionProvider.class] - 6
- - link:org/apache/webbeans/ee/beans/ValidatorProvider.adoc[org/apache/webbeans/ee/beans/ValidatorProvider.class] - 6
- - link:org/apache/webbeans/ee/beans/ValidatorBean.adoc[org/apache/webbeans/ee/beans/ValidatorBean.class] - 6
- - link:org/apache/webbeans/ee/beans/ValidatorFactoryBean.adoc[org/apache/webbeans/ee/beans/ValidatorFactoryBean.class] - 6
- - link:org/apache/webbeans/ee/beans/ValidatorFactoryProvider.adoc[org/apache/webbeans/ee/beans/ValidatorFactoryProvider.class] - 6
- - link:org/apache/webbeans/ee/beans/UserTransactionBean.adoc[org/apache/webbeans/ee/beans/UserTransactionBean.class] - 6

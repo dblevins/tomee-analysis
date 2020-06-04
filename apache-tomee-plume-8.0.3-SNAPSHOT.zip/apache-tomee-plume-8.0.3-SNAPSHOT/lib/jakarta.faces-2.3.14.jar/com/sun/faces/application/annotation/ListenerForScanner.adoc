@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.event.ListenerFor - 8
- - javax.faces.event.ListenersFor - 3

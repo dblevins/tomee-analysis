@@ -1,0 +1,6 @@
+= jakarta/xml/bind/JAXB$Cache.class
+
+ - link:JAXB$Cache-asmified.java[Asmified]
+
+== References
+

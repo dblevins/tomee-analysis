@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 30
- - javax.enterprise.inject.spi.BeanManager - 17
- - javax.faces.component.UIViewRoot - 12
- - javax.enterprise.context.spi.CreationalContext - 11
- - javax.enterprise.context.spi.Contextual - 10
- - javax.faces.context.ExternalContext - 9
- - javax.enterprise.inject.spi.Bean - 7
- - javax.enterprise.inject.spi.PassivationCapable - 6
- - javax.inject.Named - 6
- - javax.servlet.http.HttpSession - 5
- - javax.servlet.http.HttpSessionEvent - 3

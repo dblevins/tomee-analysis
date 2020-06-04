@@ -1,0 +1,6 @@
+= jakarta/jms/JMSSecurityRuntimeException.class
+
+ - link:JMSSecurityRuntimeException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/xml/bind/GetPropertyAction.class
+
+ - link:GetPropertyAction-asmified.java[Asmified]
+
+== References
+

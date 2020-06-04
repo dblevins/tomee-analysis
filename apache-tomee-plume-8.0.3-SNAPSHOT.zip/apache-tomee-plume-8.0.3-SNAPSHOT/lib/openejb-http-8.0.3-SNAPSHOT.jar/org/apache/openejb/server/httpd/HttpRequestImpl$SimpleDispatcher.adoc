@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletResponse - 7
- - javax.servlet.ServletRequest - 4
- - javax.servlet.ServletException - 4
- - javax.servlet.ServletResponse - 4
- - javax.servlet.RequestDispatcher - 1

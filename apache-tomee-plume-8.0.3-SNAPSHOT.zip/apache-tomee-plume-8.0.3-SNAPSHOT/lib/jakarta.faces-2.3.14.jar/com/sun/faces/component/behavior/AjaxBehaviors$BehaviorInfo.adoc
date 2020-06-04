@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 7
- - javax.faces.component.behavior.ClientBehaviorHolder - 7
- - javax.faces.component.behavior.ClientBehavior - 5
- - javax.faces.component.behavior.AjaxBehavior - 4
- - javax.faces.application.Application - 2
- - javax.faces.component.behavior.ClientBehaviorHint - 1
- - javax.faces.component.behavior.Behavior - 1

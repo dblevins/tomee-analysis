@@ -4,8 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ExecutableDescriptor - 4
- - javax.validation.metadata.ConstraintDescriptor - 4
- - javax.validation.Path$Node - 1
- - javax.validation.Path - 1
- - javax.validation.metadata.ReturnValueDescriptor - 1

@@ -4,4 +4,3 @@
 
 == References
 
- - javax.enterprise.concurrent.ManagedThreadFactory - 1

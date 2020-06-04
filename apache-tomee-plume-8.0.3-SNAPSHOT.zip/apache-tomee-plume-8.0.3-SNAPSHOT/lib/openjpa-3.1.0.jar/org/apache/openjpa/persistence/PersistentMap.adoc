@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.CascadeType - 2
- - javax.persistence.FetchType - 2

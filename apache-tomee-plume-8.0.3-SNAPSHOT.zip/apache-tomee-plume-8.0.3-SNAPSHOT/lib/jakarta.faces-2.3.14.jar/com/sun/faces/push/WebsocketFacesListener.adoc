@@ -4,15 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 17
- - javax.faces.component.UIViewRoot - 11
- - javax.faces.component.UIWebsocket - 9
- - javax.faces.context.PartialViewContext - 8
- - javax.faces.component.UIOutput - 7
- - javax.faces.event.SystemEventListener - 5
- - javax.faces.event.PreRenderViewEvent - 2
- - javax.faces.event.ComponentSystemEvent - 2
- - javax.faces.event.SystemEvent - 2
- - javax.faces.component.UIComponent - 2
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.PostAddToViewEvent - 1

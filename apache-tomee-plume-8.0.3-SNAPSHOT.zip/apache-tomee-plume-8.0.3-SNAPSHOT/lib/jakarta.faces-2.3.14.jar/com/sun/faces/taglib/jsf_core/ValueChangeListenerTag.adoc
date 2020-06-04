@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 20
- - javax.servlet.jsp.JspException - 9
- - javax.faces.webapp.UIComponentClassicTagBase - 5
- - javax.faces.event.ValueChangeListener - 3
- - javax.faces.component.EditableValueHolder - 3
- - javax.servlet.jsp.tagext.TagSupport - 2
- - javax.servlet.jsp.PageContext - 2
- - javax.faces.component.UIComponent - 2

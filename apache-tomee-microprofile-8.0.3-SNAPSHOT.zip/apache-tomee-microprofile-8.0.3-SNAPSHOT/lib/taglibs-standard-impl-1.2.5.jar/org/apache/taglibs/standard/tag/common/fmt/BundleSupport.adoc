@@ -4,10 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.jstl.fmt.LocalizationContext - 27
- - javax.servlet.jsp.PageContext - 12
- - javax.servlet.jsp.tagext.BodyTagSupport - 3
- - javax.servlet.http.HttpServletRequest - 2
- - javax.servlet.ServletRequest - 1
- - javax.servlet.jsp.JspException - 1
- - javax.servlet.jsp.jstl.core.Config - 1

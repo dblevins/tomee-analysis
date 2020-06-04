@@ -4,20 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.JoinType - 14
- - javax.persistence.criteria.Path - 6
- - javax.persistence.metamodel.Bindable - 4
- - javax.persistence.metamodel.Metamodel - 4
- - javax.persistence.criteria.Expression - 3
- - javax.persistence.metamodel.SingularAttribute - 2
- - javax.persistence.criteria.ListJoin - 2
- - javax.persistence.criteria.Join - 2
- - javax.persistence.criteria.CollectionJoin - 2
- - javax.persistence.criteria.SetJoin - 2
- - javax.persistence.metamodel.MapAttribute - 2
- - javax.persistence.criteria.MapJoin - 2
- - javax.persistence.metamodel.PluralAttribute - 1
- - javax.persistence.metamodel.SetAttribute - 1
- - javax.persistence.metamodel.CollectionAttribute - 1
- - javax.persistence.metamodel.ListAttribute - 1
- - javax.persistence.metamodel.ManagedType - 1

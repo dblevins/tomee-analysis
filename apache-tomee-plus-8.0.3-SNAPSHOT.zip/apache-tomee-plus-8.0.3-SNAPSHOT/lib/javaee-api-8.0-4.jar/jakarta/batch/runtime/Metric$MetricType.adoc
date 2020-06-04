@@ -1,0 +1,6 @@
+= jakarta/batch/runtime/Metric$MetricType.class
+
+ - link:Metric$MetricType-asmified.java[Asmified]
+
+== References
+

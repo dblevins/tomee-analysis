@@ -1,0 +1,6 @@
+= jakarta/ws/rs/client/Entity.class
+
+ - link:Entity-asmified.java[Asmified]
+
+== References
+

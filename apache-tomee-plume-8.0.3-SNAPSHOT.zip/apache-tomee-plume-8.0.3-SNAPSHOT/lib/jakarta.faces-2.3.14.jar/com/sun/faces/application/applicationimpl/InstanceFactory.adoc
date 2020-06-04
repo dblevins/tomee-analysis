@@ -4,23 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 76
- - javax.faces.component.UIComponent - 49
- - javax.faces.FacesException - 24
- - javax.faces.convert.Converter - 21
- - javax.faces.application.Resource - 17
- - javax.el.ValueExpression - 16
- - javax.enterprise.inject.spi.BeanManager - 14
- - javax.faces.convert.DateTimeConverter - 12
- - javax.el.ExpressionFactory - 11
- - javax.el.ELContext - 8
- - javax.faces.validator.Validator - 7
- - javax.faces.component.behavior.Behavior - 7
- - javax.faces.application.Application - 6
- - javax.faces.el.ValueBinding - 5
- - javax.faces.view.ViewDeclarationLanguage - 5
- - javax.faces.render.Renderer - 3
- - javax.faces.render.RenderKit - 3
- - javax.faces.context.ExternalContext - 2
- - javax.faces.component.UIViewRoot - 2
- - javax.faces.application.ViewHandler - 2

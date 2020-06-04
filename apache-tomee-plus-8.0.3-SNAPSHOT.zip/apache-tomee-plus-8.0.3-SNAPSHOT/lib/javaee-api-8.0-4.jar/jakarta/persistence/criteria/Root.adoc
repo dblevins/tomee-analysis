@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Root.class
+
+ - link:Root-asmified.java[Asmified]
+
+== References
+

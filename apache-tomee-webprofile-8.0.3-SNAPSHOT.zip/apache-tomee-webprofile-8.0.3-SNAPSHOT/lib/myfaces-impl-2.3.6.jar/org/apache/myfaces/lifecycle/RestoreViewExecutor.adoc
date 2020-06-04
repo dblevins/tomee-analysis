@@ -4,29 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 105
- - javax.faces.context.ExternalContext - 39
- - javax.faces.application.ViewHandler - 36
- - javax.faces.component.UIViewRoot - 31
- - javax.faces.application.Application - 20
- - javax.faces.render.RenderKitFactory - 9
- - javax.faces.view.ViewDeclarationLanguage - 8
- - javax.faces.render.ResponseStateManager - 5
- - javax.faces.render.RenderKit - 5
- - javax.faces.event.PhaseId - 5
- - javax.el.MethodExpression - 4
- - javax.faces.view.ViewMetadata - 4
- - javax.faces.FacesException - 4
- - javax.faces.lifecycle.Lifecycle - 4
- - javax.faces.lifecycle.ClientWindow - 3
- - javax.faces.event.PhaseEvent - 3
- - javax.faces.flow.FlowHandler - 3
- - javax.servlet.http.HttpServletResponse - 3
- - javax.faces.lifecycle.LifecycleFactory - 3
- - javax.faces.application.ProtectedViewException - 3
- - javax.faces.FactoryFinder - 2
- - javax.faces.application.ProjectStage - 2
- - javax.faces.component.UIComponent - 2
- - javax.el.ELContext - 2
- - javax.faces.application.ViewExpiredException - 2
- - javax.faces.event.PostAddToViewEvent - 1

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.Extension - 6
- - javax.enterprise.inject.spi.DeploymentException - 1
- - javax.enterprise.inject.spi.Bean - 1
- - javax.enterprise.inject.spi.DefinitionException - 1
- - javax.enterprise.inject.spi.BeanManager - 1

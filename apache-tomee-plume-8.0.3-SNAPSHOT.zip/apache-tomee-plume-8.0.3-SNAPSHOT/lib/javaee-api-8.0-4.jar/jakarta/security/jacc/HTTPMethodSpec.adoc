@@ -1,0 +1,6 @@
+= jakarta/security/jacc/HTTPMethodSpec.class
+
+ - link:HTTPMethodSpec-asmified.java[Asmified]
+
+== References
+

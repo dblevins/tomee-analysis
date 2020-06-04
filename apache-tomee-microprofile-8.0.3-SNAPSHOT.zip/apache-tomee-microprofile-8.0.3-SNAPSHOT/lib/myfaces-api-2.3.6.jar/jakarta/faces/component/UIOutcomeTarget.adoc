@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIOutcomeTarget.class
+
+ - link:UIOutcomeTarget-asmified.java[Asmified]
+
+== References
+

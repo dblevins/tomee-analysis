@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/CriteriaQuery.class
+
+ - link:CriteriaQuery-asmified.java[Asmified]
+
+== References
+

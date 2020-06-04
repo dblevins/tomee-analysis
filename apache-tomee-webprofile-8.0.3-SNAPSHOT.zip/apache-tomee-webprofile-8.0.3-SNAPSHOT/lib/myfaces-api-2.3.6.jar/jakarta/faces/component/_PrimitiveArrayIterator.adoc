@@ -1,0 +1,6 @@
+= jakarta/faces/component/_PrimitiveArrayIterator.class
+
+ - link:_PrimitiveArrayIterator-asmified.java[Asmified]
+
+== References
+

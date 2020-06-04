@@ -1,0 +1,6 @@
+= jakarta/ejb/EJBLocalHome.class
+
+ - link:EJBLocalHome-asmified.java[Asmified]
+
+== References
+

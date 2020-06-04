@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.context.RequestScoped - 2
- - javax.enterprise.context.spi.Context - 1

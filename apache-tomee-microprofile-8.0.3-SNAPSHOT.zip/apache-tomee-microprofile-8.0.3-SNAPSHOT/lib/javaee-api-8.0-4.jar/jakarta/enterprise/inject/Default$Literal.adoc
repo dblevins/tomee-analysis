@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/Default$Literal.class
+
+ - link:Default$Literal-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.transaction.SystemException - 2
- - javax.transaction.InvalidTransactionException - 1

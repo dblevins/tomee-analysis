@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 26
- - javax.faces.context.ExternalContext - 14
- - javax.faces.context.ResponseWriter - 14
- - javax.servlet.http.HttpSession - 3
- - javax.faces.component.UIViewRoot - 3
- - javax.faces.lifecycle.ClientWindow - 3
- - javax.faces.application.Application - 2
- - javax.faces.component.UIComponent - 2

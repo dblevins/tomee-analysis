@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/SecurityContext.class
+
+ - link:SecurityContext-asmified.java[Asmified]
+
+== References
+

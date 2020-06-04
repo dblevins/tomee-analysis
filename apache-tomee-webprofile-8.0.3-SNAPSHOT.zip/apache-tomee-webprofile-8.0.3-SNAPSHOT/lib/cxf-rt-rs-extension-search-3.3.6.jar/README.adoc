@@ -1,21 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/cxf-rt-rs-extension-search-3.3.6.jar
 
- - link:org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor.adoc[org/apache/cxf/jaxrs/ext/search/jpa/AbstractJPATypedQueryVisitor.class] - 199
- - link:org/apache/cxf/jaxrs/ext/search/jpa/JPACriteriaQueryVisitor.adoc[org/apache/cxf/jaxrs/ext/search/jpa/JPACriteriaQueryVisitor.class] - 141
- - link:org/apache/cxf/jaxrs/ext/search/tika/TikaContentExtractor.adoc[org/apache/cxf/jaxrs/ext/search/tika/TikaContentExtractor.class] - 16
- - link:org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor.adoc[org/apache/cxf/jaxrs/ext/search/jpa/JPATypedQueryVisitor.class] - 14
- - link:org/apache/cxf/jaxrs/ext/search/SearchContextImpl.adoc[org/apache/cxf/jaxrs/ext/search/SearchContextImpl.class] - 10
- - link:org/apache/cxf/jaxrs/ext/search/ParamConverterUtils.adoc[org/apache/cxf/jaxrs/ext/search/ParamConverterUtils.class] - 8
- - link:org/apache/cxf/jaxrs/ext/search/tika/TikaLuceneContentExtractor.adoc[org/apache/cxf/jaxrs/ext/search/tika/TikaLuceneContentExtractor.class] - 8
- - link:org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata.adoc[org/apache/cxf/jaxrs/ext/search/tika/LuceneDocumentMetadata.class] - 6
- - link:org/apache/cxf/jaxrs/ext/search/visitor/AbstractSearchConditionVisitor.adoc[org/apache/cxf/jaxrs/ext/search/visitor/AbstractSearchConditionVisitor.class] - 6
- - link:org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider.adoc[org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider.class] - 4
- - link:org/apache/cxf/jaxrs/ext/search/lucene/LuceneQueryVisitor.adoc[org/apache/cxf/jaxrs/ext/search/lucene/LuceneQueryVisitor.class] - 4
- - link:org/apache/cxf/jaxrs/ext/search/AbstractSearchConditionParser.adoc[org/apache/cxf/jaxrs/ext/search/AbstractSearchConditionParser.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$DateParamConverter.adoc[org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$DateParamConverter.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$DoubleParamConverter.adoc[org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$DoubleParamConverter.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$FloatParamConverter.adoc[org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$FloatParamConverter.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$IntegerParamConverter.adoc[org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$IntegerParamConverter.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$LongParamConverter.adoc[org/apache/cxf/jaxrs/ext/search/DefaultParamConverterProvider$LongParamConverter.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/QueryContextProvider.adoc[org/apache/cxf/jaxrs/ext/search/QueryContextProvider.class] - 1
- - link:org/apache/cxf/jaxrs/ext/search/SearchContextProvider.adoc[org/apache/cxf/jaxrs/ext/search/SearchContextProvider.class] - 1

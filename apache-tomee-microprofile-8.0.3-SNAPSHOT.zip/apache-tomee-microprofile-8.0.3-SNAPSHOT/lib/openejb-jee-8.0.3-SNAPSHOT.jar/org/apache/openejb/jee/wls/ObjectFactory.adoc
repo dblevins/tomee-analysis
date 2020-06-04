@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 21
- - javax.xml.bind.annotation.XmlElementDecl - 7
- - javax.xml.bind.annotation.adapters.CollapsedStringAdapter - 1
- - javax.xml.bind.annotation.XmlRegistry - 1
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1

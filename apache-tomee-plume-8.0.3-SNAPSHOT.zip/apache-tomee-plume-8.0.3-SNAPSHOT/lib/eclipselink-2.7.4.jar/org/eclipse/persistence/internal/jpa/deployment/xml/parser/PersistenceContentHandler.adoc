@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.spi.PersistenceUnitTransactionType - 3

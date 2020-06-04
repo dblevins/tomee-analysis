@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/handler/GenericHandler.class
+
+ - link:GenericHandler-asmified.java[Asmified]
+
+== References
+

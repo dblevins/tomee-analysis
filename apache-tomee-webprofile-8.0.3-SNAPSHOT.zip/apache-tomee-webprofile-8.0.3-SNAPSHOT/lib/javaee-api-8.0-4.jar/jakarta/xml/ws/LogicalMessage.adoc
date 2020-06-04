@@ -1,0 +1,6 @@
+= jakarta/xml/ws/LogicalMessage.class
+
+ - link:LogicalMessage-asmified.java[Asmified]
+
+== References
+

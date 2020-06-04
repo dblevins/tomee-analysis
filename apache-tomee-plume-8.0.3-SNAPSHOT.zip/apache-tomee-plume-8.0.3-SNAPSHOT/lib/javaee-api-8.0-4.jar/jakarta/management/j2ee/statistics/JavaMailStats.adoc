@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/JavaMailStats.class
+
+ - link:JavaMailStats-asmified.java[Asmified]
+
+== References
+

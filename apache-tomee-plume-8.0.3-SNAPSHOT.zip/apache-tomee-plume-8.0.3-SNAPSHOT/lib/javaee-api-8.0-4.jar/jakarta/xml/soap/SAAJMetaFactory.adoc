@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SAAJMetaFactory.class
+
+ - link:SAAJMetaFactory-asmified.java[Asmified]
+
+== References
+

@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.FunctionMapper - 9
- - javax.faces.view.facelets.FaceletHandler - 8
- - javax.faces.view.facelets.FaceletContext - 7
- - javax.faces.component.UIComponent - 3
- - javax.faces.FacesException - 1
- - javax.el.ELException - 1
- - javax.faces.view.facelets.FaceletException - 1
- - javax.faces.view.facelets.ComponentHandler - 1

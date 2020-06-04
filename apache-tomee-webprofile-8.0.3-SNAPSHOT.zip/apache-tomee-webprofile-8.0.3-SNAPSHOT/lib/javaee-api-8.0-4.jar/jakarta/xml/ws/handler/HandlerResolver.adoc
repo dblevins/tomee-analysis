@@ -1,0 +1,6 @@
+= jakarta/xml/ws/handler/HandlerResolver.class
+
+ - link:HandlerResolver-asmified.java[Asmified]
+
+== References
+

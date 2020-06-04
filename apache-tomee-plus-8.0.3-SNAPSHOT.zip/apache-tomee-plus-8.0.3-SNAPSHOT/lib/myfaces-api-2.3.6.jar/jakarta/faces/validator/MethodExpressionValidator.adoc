@@ -1,0 +1,6 @@
+= jakarta/faces/validator/MethodExpressionValidator.class
+
+ - link:MethodExpressionValidator-asmified.java[Asmified]
+
+== References
+

@@ -4,15 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response$Status - 24
- - javax.persistence.NonUniqueResultException - 1
- - javax.persistence.TransactionRequiredException - 1
- - javax.persistence.RollbackException - 1
- - javax.persistence.PersistenceException - 1
- - javax.persistence.OptimisticLockException - 1
- - javax.persistence.EntityExistsException - 1
- - javax.persistence.QueryTimeoutException - 1
- - javax.persistence.EntityNotFoundException - 1
- - javax.persistence.NoResultException - 1
- - javax.persistence.PessimisticLockException - 1
- - javax.xml.bind.JAXBException - 1

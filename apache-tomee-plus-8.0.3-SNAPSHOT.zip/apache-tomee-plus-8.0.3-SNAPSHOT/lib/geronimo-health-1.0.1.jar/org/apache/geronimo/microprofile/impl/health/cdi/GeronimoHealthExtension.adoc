@@ -4,13 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.Bean - 18
- - javax.enterprise.inject.spi.BeanManager - 12
- - javax.enterprise.context.spi.CreationalContext - 8
- - javax.enterprise.inject.spi.ProcessBean - 4
- - javax.enterprise.event.Observes - 3
- - javax.enterprise.inject.spi.Annotated - 2
- - javax.enterprise.inject.spi.BeforeShutdown - 1
- - javax.enterprise.inject.spi.Extension - 1
- - javax.enterprise.inject.spi.AfterDeploymentValidation - 1
- - javax.enterprise.context.spi.Contextual - 1

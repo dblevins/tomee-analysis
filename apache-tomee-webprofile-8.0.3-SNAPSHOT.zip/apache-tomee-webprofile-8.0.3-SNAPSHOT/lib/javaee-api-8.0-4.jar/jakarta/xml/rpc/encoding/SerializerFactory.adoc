@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/encoding/SerializerFactory.class
+
+ - link:SerializerFactory-asmified.java[Asmified]
+
+== References
+

@@ -4,13 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 59
- - javax.el.ELContext - 14
- - javax.faces.context.FacesContext - 9
- - javax.faces.convert.DateTimeConverter - 8
- - javax.faces.FacesException - 4
- - javax.faces.component.UIViewRoot - 2
- - javax.faces.convert.Converter - 2
- - javax.faces.application.Application - 2
- - javax.el.ExpressionFactory - 2
- - javax.servlet.jsp.JspException - 2

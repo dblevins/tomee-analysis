@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/AnnotatedMethod.class
+
+ - link:AnnotatedMethod-asmified.java[Asmified]
+
+== References
+

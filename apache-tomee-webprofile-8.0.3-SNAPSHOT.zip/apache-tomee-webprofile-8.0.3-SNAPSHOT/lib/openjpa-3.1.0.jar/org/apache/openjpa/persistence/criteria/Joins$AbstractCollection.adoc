@@ -4,13 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Selection - 16
- - javax.persistence.criteria.JoinType - 10
- - javax.persistence.metamodel.PluralAttribute - 3
- - javax.persistence.criteria.AbstractQuery - 2
- - javax.persistence.metamodel.Type - 1
- - javax.persistence.criteria.Join - 1
- - javax.persistence.metamodel.Attribute - 1
- - javax.persistence.criteria.PluralJoin - 1
- - javax.persistence.criteria.From - 1
- - javax.persistence.metamodel.Bindable - 1

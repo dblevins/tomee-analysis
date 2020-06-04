@@ -4,8 +4,3 @@
 
 == References
 
- - javax.json.JsonValue - 16
- - javax.json.JsonPatch$Operation - 15
- - javax.json.JsonObjectBuilder - 11
- - javax.json.spi.JsonProvider - 8
- - javax.json.JsonObject - 7

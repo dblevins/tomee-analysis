@@ -1,0 +1,6 @@
+= jakarta/mail/Message.class
+
+ - link:Message-asmified.java[Asmified]
+
+== References
+

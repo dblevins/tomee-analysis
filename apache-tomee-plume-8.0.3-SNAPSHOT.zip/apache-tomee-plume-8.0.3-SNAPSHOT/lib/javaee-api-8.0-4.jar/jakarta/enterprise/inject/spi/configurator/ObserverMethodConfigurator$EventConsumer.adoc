@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator$EventConsumer.class
+
+ - link:ObserverMethodConfigurator$EventConsumer-asmified.java[Asmified]
+
+== References
+

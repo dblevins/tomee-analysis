@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/NotEmpty.class
+
+ - link:NotEmpty-asmified.java[Asmified]
+
+== References
+

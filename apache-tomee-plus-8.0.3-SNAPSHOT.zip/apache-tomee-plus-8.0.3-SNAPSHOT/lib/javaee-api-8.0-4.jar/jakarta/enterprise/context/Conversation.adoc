@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/Conversation.class
+
+ - link:Conversation-asmified.java[Asmified]
+
+== References
+

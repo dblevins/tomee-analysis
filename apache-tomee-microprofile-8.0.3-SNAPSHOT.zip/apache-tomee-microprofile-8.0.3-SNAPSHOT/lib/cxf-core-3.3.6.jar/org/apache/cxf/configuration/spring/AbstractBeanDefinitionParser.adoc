@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.Unmarshaller - 17
- - javax.xml.bind.JAXBContext - 15
- - javax.xml.bind.JAXBElement - 8
- - javax.xml.bind.JAXBException - 4
- - javax.xml.bind.ValidationEventHandler - 1

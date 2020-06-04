@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Cookie - 4
- - javax.ws.rs.container.ContainerRequestContext - 2

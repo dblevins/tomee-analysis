@@ -4,7 +4,3 @@
 
 == References
 
- - javax.el.FunctionMapper - 4
- - javax.el.VariableMapper - 4
- - javax.el.ELContext - 2
- - javax.el.ELResolver - 2

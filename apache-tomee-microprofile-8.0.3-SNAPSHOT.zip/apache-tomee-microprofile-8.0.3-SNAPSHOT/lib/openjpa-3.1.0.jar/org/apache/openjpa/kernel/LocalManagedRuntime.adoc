@@ -4,8 +4,3 @@
 
 == References
 
- - javax.transaction.Synchronization - 23
- - javax.transaction.SystemException - 15
- - javax.transaction.NotSupportedException - 5
- - javax.transaction.Transaction - 4
- - javax.transaction.TransactionManager - 2

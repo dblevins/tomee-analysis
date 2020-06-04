@@ -1,0 +1,6 @@
+= jakarta/persistence/DiscriminatorColumn.class
+
+ - link:DiscriminatorColumn-asmified.java[Asmified]
+
+== References
+

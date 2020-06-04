@@ -1,0 +1,6 @@
+= jakarta/faces/component/UpdateModelException.class
+
+ - link:UpdateModelException-asmified.java[Asmified]
+
+== References
+

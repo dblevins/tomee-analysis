@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/el/ImplicitObjectELResolver$ScopeManager.class
+
+ - link:ImplicitObjectELResolver$ScopeManager-asmified.java[Asmified]
+
+== References
+

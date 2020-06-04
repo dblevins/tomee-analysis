@@ -4,7 +4,3 @@
 
 == References
 
- - javax.el.ELException - 8
- - javax.faces.context.FacesContext - 4
- - javax.faces.context.ResponseWriter - 2
- - javax.el.ELContext - 2

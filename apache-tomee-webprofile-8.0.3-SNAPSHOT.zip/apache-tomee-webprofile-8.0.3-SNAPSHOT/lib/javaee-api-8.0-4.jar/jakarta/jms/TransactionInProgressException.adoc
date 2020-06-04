@@ -1,0 +1,6 @@
+= jakarta/jms/TransactionInProgressException.class
+
+ - link:TransactionInProgressException-asmified.java[Asmified]
+
+== References
+

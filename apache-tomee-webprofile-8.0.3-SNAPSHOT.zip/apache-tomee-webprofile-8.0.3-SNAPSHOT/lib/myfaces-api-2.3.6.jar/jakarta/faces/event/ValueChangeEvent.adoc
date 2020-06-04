@@ -1,0 +1,6 @@
+= jakarta/faces/event/ValueChangeEvent.class
+
+ - link:ValueChangeEvent-asmified.java[Asmified]
+
+== References
+

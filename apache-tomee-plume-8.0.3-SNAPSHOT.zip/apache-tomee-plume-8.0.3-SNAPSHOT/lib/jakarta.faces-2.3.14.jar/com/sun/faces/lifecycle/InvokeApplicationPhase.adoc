@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.component.UIViewRoot - 3
- - javax.faces.FacesException - 3
- - javax.faces.context.FacesContext - 3
- - javax.faces.event.PhaseId - 2

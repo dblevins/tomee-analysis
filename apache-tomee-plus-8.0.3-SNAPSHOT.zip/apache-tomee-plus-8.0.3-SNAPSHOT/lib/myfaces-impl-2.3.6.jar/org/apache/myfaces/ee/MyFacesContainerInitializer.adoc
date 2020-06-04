@@ -4,37 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 29
- - javax.servlet.ServletRegistration$Dynamic - 4
- - javax.faces.context.ExternalContext - 3
- - javax.servlet.ServletRegistration - 2
- - javax.faces.event.ListenersFor - 1
- - javax.servlet.ServletException - 1
- - javax.servlet.annotation.HandlesTypes - 1
- - javax.faces.application.ResourceDependencies - 1
- - javax.faces.bean.CustomScoped - 1
- - javax.servlet.ServletContainerInitializer - 1
- - javax.faces.bean.ViewScoped - 1
- - javax.faces.event.NamedEvent - 1
- - javax.faces.webapp.FacesServlet - 1
- - javax.faces.bean.ApplicationScoped - 1
- - javax.faces.component.FacesComponent - 1
- - javax.faces.bean.SessionScoped - 1
- - javax.faces.application.ResourceDependency - 1
- - javax.faces.validator.FacesValidator - 1
- - javax.faces.bean.ManagedProperty - 1
- - javax.servlet.Servlet - 1
- - javax.faces.render.Renderer - 1
- - javax.faces.model.FacesDataModel - 1
- - javax.faces.convert.FacesConverter - 1
- - javax.faces.component.behavior.FacesBehavior - 1
- - javax.faces.render.FacesBehaviorRenderer - 1
- - javax.faces.event.ListenerFor - 1
- - javax.faces.component.UIComponent - 1
- - javax.faces.convert.Converter - 1
- - javax.faces.bean.NoneScoped - 1
- - javax.faces.bean.RequestScoped - 1
- - javax.faces.bean.ManagedBean - 1
- - javax.faces.validator.Validator - 1
- - javax.faces.bean.ReferencedBean - 1
- - javax.faces.render.FacesRenderer - 1

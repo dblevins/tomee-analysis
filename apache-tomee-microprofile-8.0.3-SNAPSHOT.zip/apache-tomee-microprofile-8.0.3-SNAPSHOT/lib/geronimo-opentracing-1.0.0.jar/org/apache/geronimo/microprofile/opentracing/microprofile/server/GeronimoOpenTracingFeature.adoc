@@ -4,14 +4,3 @@
 
 == References
 
- - javax.ws.rs.container.ResourceInfo - 23
- - javax.ws.rs.Path - 6
- - javax.ws.rs.core.FeatureContext - 4
- - javax.enterprise.inject.spi.CDI - 4
- - javax.ws.rs.HttpMethod - 4
- - javax.enterprise.inject.Instance - 4
- - javax.inject.Inject - 2
- - javax.ws.rs.core.Configurable - 2
- - javax.ws.rs.container.DynamicFeature - 1
- - javax.ws.rs.ext.Provider - 1
- - javax.enterprise.context.Dependent - 1

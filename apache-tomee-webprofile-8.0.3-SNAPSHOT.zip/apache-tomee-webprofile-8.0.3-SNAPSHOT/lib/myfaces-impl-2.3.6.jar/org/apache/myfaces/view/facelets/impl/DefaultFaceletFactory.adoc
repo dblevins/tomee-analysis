@@ -4,17 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.Facelet - 19
- - javax.faces.FacesException - 15
- - javax.faces.view.facelets.ResourceResolver - 15
- - javax.faces.context.FacesContext - 14
- - javax.faces.view.facelets.FaceletCache - 13
- - javax.faces.view.facelets.FaceletException - 13
- - javax.el.ELException - 11
- - javax.el.ExpressionFactory - 8
- - javax.faces.view.facelets.FaceletHandler - 8
- - javax.faces.view.facelets.FaceletCache$MemberFactory - 8
- - javax.faces.application.ViewResource - 6
- - javax.faces.view.facelets.FaceletCacheFactory - 3
- - javax.faces.view.facelets.FaceletContext - 2
- - javax.faces.FactoryFinder - 1

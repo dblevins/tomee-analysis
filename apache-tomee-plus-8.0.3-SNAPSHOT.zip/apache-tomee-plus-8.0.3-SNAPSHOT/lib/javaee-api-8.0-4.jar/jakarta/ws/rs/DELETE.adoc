@@ -1,0 +1,6 @@
+= jakarta/ws/rs/DELETE.class
+
+ - link:DELETE-asmified.java[Asmified]
+
+== References
+

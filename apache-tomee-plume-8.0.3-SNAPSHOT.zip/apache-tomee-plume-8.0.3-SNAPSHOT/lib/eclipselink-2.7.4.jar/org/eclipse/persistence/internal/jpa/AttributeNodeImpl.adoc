@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.Subgraph - 4
- - javax.persistence.AttributeNode - 1

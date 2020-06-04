@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$FacetsMapValuesIterator.class
+
+ - link:UIComponentBase$FacetsMapValuesIterator-asmified.java[Asmified]
+
+== References
+

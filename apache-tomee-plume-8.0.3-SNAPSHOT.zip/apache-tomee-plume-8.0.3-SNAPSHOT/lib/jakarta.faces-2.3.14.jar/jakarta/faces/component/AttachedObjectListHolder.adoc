@@ -1,0 +1,6 @@
+= jakarta/faces/component/AttachedObjectListHolder.class
+
+ - link:AttachedObjectListHolder-asmified.java[Asmified]
+
+== References
+

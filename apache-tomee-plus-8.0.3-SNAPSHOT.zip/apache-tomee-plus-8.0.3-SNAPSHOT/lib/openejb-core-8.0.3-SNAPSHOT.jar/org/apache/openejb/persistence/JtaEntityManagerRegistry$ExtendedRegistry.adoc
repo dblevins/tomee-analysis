@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManagerFactory - 14
- - javax.persistence.EntityManager - 11
- - javax.transaction.TransactionSynchronizationRegistry - 6
- - javax.persistence.TransactionRequiredException - 2

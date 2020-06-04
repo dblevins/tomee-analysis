@@ -4,36 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 122
- - javax.faces.component.UIComponent - 101
- - javax.faces.context.ResponseWriter - 29
- - javax.faces.component.behavior.ClientBehavior - 22
- - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 16
- - javax.faces.application.FacesMessage - 15
- - javax.faces.application.ResourceHandler - 15
- - javax.faces.component.behavior.ClientBehaviorHolder - 15
- - javax.faces.application.Application - 13
- - javax.faces.context.ExternalContext - 12
- - javax.faces.component.behavior.ClientBehaviorContext - 12
- - javax.faces.render.RenderKit - 10
- - javax.faces.application.ProjectStage - 10
- - javax.faces.component.html.HtmlMessages - 10
- - javax.faces.component.UIViewRoot - 9
- - javax.faces.FacesException - 9
- - javax.faces.render.RenderKitFactory - 8
- - javax.faces.component.UIForm - 7
- - javax.faces.render.Renderer - 7
- - javax.faces.application.FacesMessage$Severity - 7
- - javax.faces.application.Resource - 6
- - javax.faces.component.behavior.AjaxBehavior - 6
- - javax.faces.component.UIOutput - 5
- - javax.el.ValueExpression - 4
- - javax.faces.render.ResponseStateManager - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.FactoryFinder - 2
- - javax.faces.component.behavior.Behavior - 1
- - javax.faces.component.ActionSource - 1
- - javax.faces.component.behavior.ClientBehaviorHint - 1
- - javax.faces.model.SelectItem - 1
- - javax.faces.component.UIComponentBase - 1
- - javax.faces.component.ActionSource2 - 1

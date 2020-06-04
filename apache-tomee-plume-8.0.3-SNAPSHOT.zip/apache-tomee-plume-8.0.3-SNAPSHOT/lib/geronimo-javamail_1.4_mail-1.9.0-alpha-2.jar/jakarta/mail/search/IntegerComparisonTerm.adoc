@@ -1,0 +1,6 @@
+= jakarta/mail/search/IntegerComparisonTerm.class
+
+ - link:IntegerComparisonTerm-asmified.java[Asmified]
+
+== References
+

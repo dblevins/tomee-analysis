@@ -4,14 +4,3 @@
 
 == References
 
- - javax.servlet.ServletRequest - 20
- - javax.servlet.http.HttpServletRequest - 4
- - javax.servlet.jsp.PageContext - 4
- - javax.servlet.jsp.JspWriter - 4
- - javax.servlet.jsp.tagext.Tag - 4
- - javax.servlet.jsp.tagext.BodyContent - 3
- - javax.servlet.jsp.tagext.BodyTag - 3
- - javax.servlet.ServletResponse - 3
- - javax.servlet.RequestDispatcher - 2
- - javax.servlet.ServletException - 1
- - javax.servlet.jsp.JspException - 1

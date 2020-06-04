@@ -4,12 +4,3 @@
 
 == References
 
- - javax.persistence.FetchType - 6
- - javax.persistence.ElementCollection - 6
- - javax.persistence.OrderColumn - 5
- - javax.persistence.OneToOne - 1
- - javax.persistence.Lob - 1
- - javax.persistence.Entity - 1
- - javax.persistence.ManyToOne - 1
- - javax.persistence.MapKeyColumn - 1
- - javax.persistence.Id - 1

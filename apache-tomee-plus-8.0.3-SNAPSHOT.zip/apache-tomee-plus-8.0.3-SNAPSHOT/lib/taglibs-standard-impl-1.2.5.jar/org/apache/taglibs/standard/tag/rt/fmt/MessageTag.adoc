@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.jstl.fmt.LocalizationContext - 2
- - javax.servlet.jsp.JspTagException - 2

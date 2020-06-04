@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/LocalizedString.class
+
+ - link:LocalizedString-asmified.java[Asmified]
+
+== References
+

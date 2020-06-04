@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 15
- - javax.faces.component.UIColumn - 10
- - javax.faces.context.FacesContext - 6
- - javax.faces.context.ExternalContext - 4
- - javax.faces.component.UIData - 1

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 28
- - javax.enterprise.inject.spi.BeanManager - 24
- - javax.faces.flow.Flow - 13
- - javax.faces.application.Application - 6
- - javax.faces.context.ExternalContext - 4
- - javax.faces.flow.FlowHandler - 4
- - javax.faces.application.StateManager - 2

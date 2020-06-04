@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 3
- - javax.xml.bind.annotation.XmlAnyElement - 1
- - javax.xml.bind.annotation.XmlRootElement - 1

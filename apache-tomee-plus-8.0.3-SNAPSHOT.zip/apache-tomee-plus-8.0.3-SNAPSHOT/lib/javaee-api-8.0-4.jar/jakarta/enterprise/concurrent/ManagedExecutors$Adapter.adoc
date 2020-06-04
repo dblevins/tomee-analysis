@@ -1,0 +1,6 @@
+= jakarta/enterprise/concurrent/ManagedExecutors$Adapter.class
+
+ - link:ManagedExecutors$Adapter-asmified.java[Asmified]
+
+== References
+

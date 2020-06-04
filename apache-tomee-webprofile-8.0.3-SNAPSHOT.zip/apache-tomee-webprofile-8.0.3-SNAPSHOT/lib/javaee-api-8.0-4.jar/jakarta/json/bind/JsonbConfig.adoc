@@ -1,0 +1,6 @@
+= jakarta/json/bind/JsonbConfig.class
+
+ - link:JsonbConfig-asmified.java[Asmified]
+
+== References
+

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.MethodExpression - 8
- - javax.faces.view.facelets.TagAttribute - 7
- - javax.faces.component.ActionSource2 - 4
- - javax.faces.view.facelets.FaceletContext - 4
- - javax.faces.event.MethodExpressionActionListener - 2
- - javax.faces.view.facelets.Metadata - 2
- - javax.faces.event.ActionListener - 2

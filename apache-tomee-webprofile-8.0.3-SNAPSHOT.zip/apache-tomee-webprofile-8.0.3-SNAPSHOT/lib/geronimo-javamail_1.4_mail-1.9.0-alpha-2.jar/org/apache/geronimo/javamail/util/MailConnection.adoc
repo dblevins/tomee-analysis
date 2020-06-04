@@ -4,5 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 13
- - javax.mail.Session - 9

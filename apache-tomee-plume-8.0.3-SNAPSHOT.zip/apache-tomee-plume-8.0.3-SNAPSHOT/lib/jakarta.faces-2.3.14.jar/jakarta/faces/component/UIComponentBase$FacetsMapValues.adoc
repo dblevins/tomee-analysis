@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$FacetsMapValues.class
+
+ - link:UIComponentBase$FacetsMapValues-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.flow.builder.NavigationCaseBuilder - 9
- - javax.el.ValueExpression - 3
- - javax.faces.application.NavigationCase - 2
- - javax.faces.flow.builder.NavigationCaseBuilder$RedirectBuilder - 1

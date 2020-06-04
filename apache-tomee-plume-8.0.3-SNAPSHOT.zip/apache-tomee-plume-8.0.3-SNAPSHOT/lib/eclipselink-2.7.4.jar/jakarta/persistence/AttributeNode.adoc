@@ -1,0 +1,6 @@
+= jakarta/persistence/AttributeNode.class
+
+ - link:AttributeNode-asmified.java[Asmified]
+
+== References
+

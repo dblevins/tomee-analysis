@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.ElementKind - 8
- - javax.validation.ConstraintDeclarationException - 2
- - javax.validation.Valid - 1
- - javax.validation.executable.ValidateOnExecution - 1

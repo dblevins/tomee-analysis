@@ -1,0 +1,6 @@
+= jakarta/annotation/security/RolesAllowed.class
+
+ - link:RolesAllowed-asmified.java[Asmified]
+
+== References
+

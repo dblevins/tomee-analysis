@@ -1,0 +1,6 @@
+= jakarta/xml/soap/SOAPPart.class
+
+ - link:SOAPPart-asmified.java[Asmified]
+
+== References
+

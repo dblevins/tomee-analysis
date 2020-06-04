@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ForbiddenException.class
+
+ - link:ForbiddenException-asmified.java[Asmified]
+
+== References
+

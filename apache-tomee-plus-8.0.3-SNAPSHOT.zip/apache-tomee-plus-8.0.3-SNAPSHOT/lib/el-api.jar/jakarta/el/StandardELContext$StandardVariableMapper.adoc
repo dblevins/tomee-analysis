@@ -1,0 +1,6 @@
+= jakarta/el/StandardELContext$StandardVariableMapper.class
+
+ - link:StandardELContext$StandardVariableMapper-asmified.java[Asmified]
+
+== References
+

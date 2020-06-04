@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EJBException - 9
- - javax.ejb.EJBObject - 7

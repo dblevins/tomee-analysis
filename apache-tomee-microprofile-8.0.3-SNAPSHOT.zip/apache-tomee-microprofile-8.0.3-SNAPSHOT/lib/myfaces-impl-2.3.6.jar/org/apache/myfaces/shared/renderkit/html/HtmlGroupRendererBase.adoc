@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 26
- - javax.faces.context.FacesContext - 20
- - javax.faces.context.ResponseWriter - 17
- - javax.faces.component.html.HtmlPanelGroup - 6

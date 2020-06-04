@@ -4,13 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBElement - 14
- - javax.xml.bind.SchemaOutputResolver - 10
- - javax.xml.bind.JAXBException - 9
- - javax.xml.bind.JAXBContext - 7
- - javax.xml.bind.Marshaller - 4
- - javax.xml.bind.Binder - 2
- - javax.xml.bind.ValidationEventHandler - 2
- - javax.xml.bind.Unmarshaller - 1
- - javax.xml.bind.JAXBIntrospector - 1
- - javax.xml.bind.Validator - 1

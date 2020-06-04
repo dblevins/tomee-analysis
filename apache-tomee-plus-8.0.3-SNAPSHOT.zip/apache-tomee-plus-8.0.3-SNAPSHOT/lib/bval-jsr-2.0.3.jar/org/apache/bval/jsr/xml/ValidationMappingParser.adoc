@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 11
- - javax.validation.spi.ConfigurationState - 3

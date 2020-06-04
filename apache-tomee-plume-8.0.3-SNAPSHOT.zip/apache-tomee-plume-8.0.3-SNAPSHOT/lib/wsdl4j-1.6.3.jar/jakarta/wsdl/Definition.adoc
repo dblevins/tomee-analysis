@@ -1,0 +1,6 @@
+= jakarta/wsdl/Definition.class
+
+ - link:Definition-asmified.java[Asmified]
+
+== References
+

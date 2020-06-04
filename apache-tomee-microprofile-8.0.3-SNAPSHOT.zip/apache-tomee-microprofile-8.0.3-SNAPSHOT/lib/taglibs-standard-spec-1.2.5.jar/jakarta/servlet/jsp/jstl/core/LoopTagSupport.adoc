@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/jstl/core/LoopTagSupport.class
+
+ - link:LoopTagSupport-asmified.java[Asmified]
+
+== References
+

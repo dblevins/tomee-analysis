@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/configurator/BeanAttributesConfigurator.class
+
+ - link:BeanAttributesConfigurator-asmified.java[Asmified]
+
+== References
+

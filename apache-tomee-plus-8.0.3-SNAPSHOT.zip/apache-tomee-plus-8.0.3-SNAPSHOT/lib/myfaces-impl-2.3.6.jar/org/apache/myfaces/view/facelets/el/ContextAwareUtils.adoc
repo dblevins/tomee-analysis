@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 7
- - javax.faces.context.ExternalContext - 2
- - javax.el.ELContext - 2

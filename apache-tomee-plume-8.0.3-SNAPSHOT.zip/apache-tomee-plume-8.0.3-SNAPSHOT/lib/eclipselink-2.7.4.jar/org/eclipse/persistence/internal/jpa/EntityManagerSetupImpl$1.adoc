@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.PersistenceException - 2
- - javax.persistence.OptimisticLockException - 2

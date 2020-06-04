@@ -1,0 +1,6 @@
+= jakarta/xml/xpath/XPath.class
+
+ - link:XPath-asmified.java[Asmified]
+
+== References
+

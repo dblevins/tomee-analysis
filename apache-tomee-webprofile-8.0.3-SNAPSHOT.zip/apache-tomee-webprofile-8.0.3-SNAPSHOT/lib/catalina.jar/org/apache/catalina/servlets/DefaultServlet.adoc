@@ -4,15 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 146
- - javax.servlet.http.HttpServletResponse - 106
- - javax.servlet.ServletConfig - 60
- - javax.servlet.ServletOutputStream - 40
- - javax.servlet.ServletException - 17
- - javax.servlet.ServletResponse - 8
- - javax.servlet.ServletContext - 8
- - javax.servlet.DispatcherType - 7
- - javax.servlet.ServletResponseWrapper - 3
- - javax.servlet.http.HttpServlet - 3
- - javax.servlet.UnavailableException - 2
- - javax.servlet.ServletInputStream - 2

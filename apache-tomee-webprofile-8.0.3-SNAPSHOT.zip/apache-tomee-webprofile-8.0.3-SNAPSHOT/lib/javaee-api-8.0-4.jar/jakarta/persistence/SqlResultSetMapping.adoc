@@ -1,0 +1,6 @@
+= jakarta/persistence/SqlResultSetMapping.class
+
+ - link:SqlResultSetMapping-asmified.java[Asmified]
+
+== References
+

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.resource.spi.work.Work - 12
- - javax.resource.spi.work.WorkException - 8
- - javax.resource.spi.work.ExecutionContext - 6
- - javax.resource.spi.work.WorkListener - 6
- - javax.resource.spi.work.WorkCompletedException - 3
- - javax.resource.spi.work.WorkContext - 1
- - javax.resource.spi.work.WorkManager - 1

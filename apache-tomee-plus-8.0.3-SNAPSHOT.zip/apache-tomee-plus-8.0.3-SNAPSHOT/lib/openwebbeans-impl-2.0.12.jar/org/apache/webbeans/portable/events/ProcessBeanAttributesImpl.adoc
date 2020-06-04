@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.BeanAttributes - 12
- - javax.enterprise.inject.spi.Annotated - 5
- - javax.enterprise.inject.spi.configurator.BeanAttributesConfigurator - 1
- - javax.enterprise.inject.spi.ProcessBeanAttributes - 1

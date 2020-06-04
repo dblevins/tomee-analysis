@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/MetadataTarget.class
+
+ - link:MetadataTarget-asmified.java[Asmified]
+
+== References
+

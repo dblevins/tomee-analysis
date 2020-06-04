@@ -4,16 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 63
- - javax.faces.application.FacesMessage - 6
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.context.ResponseStream - 4
- - javax.faces.context.ExceptionHandler - 4
- - javax.faces.context.ResponseWriter - 4
- - javax.faces.event.PhaseId - 4
- - javax.faces.context.ExternalContext - 2
- - javax.faces.render.RenderKit - 2
- - javax.faces.application.Application - 2
- - javax.faces.application.FacesMessage$Severity - 2
- - javax.faces.context.PartialViewContext - 2
- - javax.el.ELContext - 2

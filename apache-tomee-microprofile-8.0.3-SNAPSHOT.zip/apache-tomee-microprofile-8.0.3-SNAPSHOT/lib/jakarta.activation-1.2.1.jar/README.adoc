@@ -1,25 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/jakarta.activation-1.2.1.jar
 
- - link:javax/activation/DataHandler.adoc[javax/activation/DataHandler.class] - 210
- - link:javax/activation/MimeType.adoc[javax/activation/MimeType.class] - 68
- - link:javax/activation/MailcapCommandMap.adoc[javax/activation/MailcapCommandMap.class] - 48
- - link:javax/activation/DataSourceDataContentHandler.adoc[javax/activation/DataSourceDataContentHandler.class] - 38
- - link:javax/activation/CommandMap.adoc[javax/activation/CommandMap.class] - 34
- - link:javax/activation/MimeTypeParameterList.adoc[javax/activation/MimeTypeParameterList.class] - 26
- - link:javax/activation/ObjectDataContentHandler.adoc[javax/activation/ObjectDataContentHandler.class] - 24
- - link:javax/activation/MimetypesFileTypeMap.adoc[javax/activation/MimetypesFileTypeMap.class] - 17
- - link:javax/activation/ActivationDataFlavor.adoc[javax/activation/ActivationDataFlavor.class] - 15
- - link:javax/activation/FileTypeMap.adoc[javax/activation/FileTypeMap.class] - 14
- - link:javax/activation/DataHandler$1.adoc[javax/activation/DataHandler$1.class] - 14
- - link:javax/activation/DataHandlerDataSource.adoc[javax/activation/DataHandlerDataSource.class] - 13
- - link:javax/activation/FileDataSource.adoc[javax/activation/FileDataSource.class] - 12
- - link:javax/activation/SecuritySupport.adoc[javax/activation/SecuritySupport.class] - 10
- - link:com/sun/activation/viewers/TextEditor.adoc[com/sun/activation/viewers/TextEditor.class] - 9
- - link:com/sun/activation/viewers/ImageViewer.adoc[com/sun/activation/viewers/ImageViewer.class] - 7
- - link:com/sun/activation/viewers/TextViewer.adoc[com/sun/activation/viewers/TextViewer.class] - 7
- - link:javax/activation/CommandInfo.adoc[javax/activation/CommandInfo.class] - 7
- - link:javax/activation/CommandInfo$Beans.adoc[javax/activation/CommandInfo$Beans.class] - 2
- - link:javax/activation/DataContentHandler.adoc[javax/activation/DataContentHandler.class] - 2
- - link:javax/activation/CommandObject.adoc[javax/activation/CommandObject.class] - 1
- - link:javax/activation/DataContentHandlerFactory.adoc[javax/activation/DataContentHandlerFactory.class] - 1
- - link:javax/activation/URLDataSource.adoc[javax/activation/URLDataSource.class] - 1

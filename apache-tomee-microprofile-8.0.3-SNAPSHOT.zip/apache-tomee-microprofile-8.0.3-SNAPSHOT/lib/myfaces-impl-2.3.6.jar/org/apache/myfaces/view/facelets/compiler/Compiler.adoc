@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.FaceletHandler - 12
- - javax.faces.view.facelets.TagDecorator - 9
- - javax.faces.view.facelets.FaceletException - 8
- - javax.faces.FacesException - 6
- - javax.el.ELException - 6
- - javax.el.ExpressionFactory - 4
- - javax.faces.context.FacesContext - 3
- - javax.faces.application.Application - 2

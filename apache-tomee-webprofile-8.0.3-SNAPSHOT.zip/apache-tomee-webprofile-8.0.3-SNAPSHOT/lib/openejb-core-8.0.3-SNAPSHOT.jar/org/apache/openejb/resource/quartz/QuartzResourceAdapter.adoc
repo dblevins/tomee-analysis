@@ -4,10 +4,3 @@
 
 == References
 
- - javax.resource.spi.endpoint.MessageEndpoint - 6
- - javax.resource.ResourceException - 6
- - javax.resource.spi.BootstrapContext - 6
- - javax.resource.spi.ActivationSpec - 5
- - javax.resource.spi.endpoint.MessageEndpointFactory - 4
- - javax.resource.spi.ResourceAdapterInternalException - 3
- - javax.resource.spi.ResourceAdapter - 1

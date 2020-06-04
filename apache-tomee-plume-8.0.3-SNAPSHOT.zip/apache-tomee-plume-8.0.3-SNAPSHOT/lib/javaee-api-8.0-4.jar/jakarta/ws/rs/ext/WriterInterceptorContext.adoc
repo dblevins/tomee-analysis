@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ext/WriterInterceptorContext.class
+
+ - link:WriterInterceptorContext-asmified.java[Asmified]
+
+== References
+

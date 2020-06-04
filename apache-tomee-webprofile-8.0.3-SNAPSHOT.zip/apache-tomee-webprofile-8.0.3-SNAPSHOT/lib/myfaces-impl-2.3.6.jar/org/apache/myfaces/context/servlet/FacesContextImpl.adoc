@@ -4,22 +4,3 @@
 
 == References
 
- - javax.faces.application.FacesMessage$Severity - 13
- - javax.faces.render.RenderKitFactory - 12
- - javax.faces.context.PartialViewContextFactory - 11
- - javax.faces.context.FacesContext - 9
- - javax.faces.context.PartialViewContext - 9
- - javax.faces.context.ResponseStream - 8
- - javax.faces.context.ResponseWriter - 8
- - javax.faces.application.FacesMessage - 8
- - javax.faces.context.ExternalContext - 7
- - javax.faces.event.PhaseId - 6
- - javax.faces.render.RenderKit - 4
- - javax.servlet.ServletRequest - 2
- - javax.faces.render.ResponseStateManager - 2
- - javax.faces.FactoryFinder - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.application.Application - 2
- - javax.faces.application.ApplicationFactory - 2
- - javax.servlet.ServletResponse - 2
- - javax.servlet.ServletContext - 2

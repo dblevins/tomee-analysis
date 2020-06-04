@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.valueextraction.ValueExtractor$ValueReceiver - 1
- - javax.validation.Path$Node - 1
- - javax.validation.Path - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/view/StateManagementStrategy.class
+
+ - link:StateManagementStrategy-asmified.java[Asmified]
+
+== References
+

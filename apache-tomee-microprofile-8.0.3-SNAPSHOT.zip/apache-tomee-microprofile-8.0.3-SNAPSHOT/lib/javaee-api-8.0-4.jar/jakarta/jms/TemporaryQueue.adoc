@@ -1,0 +1,6 @@
+= jakarta/jms/TemporaryQueue.class
+
+ - link:TemporaryQueue-asmified.java[Asmified]
+
+== References
+

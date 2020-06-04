@@ -1,0 +1,6 @@
+= jakarta/mail/internet/ContentCheckingOutputStream.class
+
+ - link:ContentCheckingOutputStream-asmified.java[Asmified]
+
+== References
+

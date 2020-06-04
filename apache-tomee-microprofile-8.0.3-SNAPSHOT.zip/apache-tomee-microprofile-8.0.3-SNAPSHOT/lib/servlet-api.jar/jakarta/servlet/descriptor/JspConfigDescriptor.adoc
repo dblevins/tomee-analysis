@@ -1,0 +1,6 @@
+= jakarta/servlet/descriptor/JspConfigDescriptor.class
+
+ - link:JspConfigDescriptor-asmified.java[Asmified]
+
+== References
+

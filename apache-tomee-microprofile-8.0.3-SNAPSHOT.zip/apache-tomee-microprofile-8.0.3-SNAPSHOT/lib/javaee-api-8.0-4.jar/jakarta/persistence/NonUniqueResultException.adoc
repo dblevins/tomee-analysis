@@ -1,0 +1,6 @@
+= jakarta/persistence/NonUniqueResultException.class
+
+ - link:NonUniqueResultException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/ComponentHandler.class
+
+ - link:ComponentHandler-asmified.java[Asmified]
+
+== References
+

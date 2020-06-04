@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 4
- - javax.faces.el.MethodBinding - 3
- - javax.faces.el.MethodNotFoundException - 2
- - javax.faces.el.EvaluationException - 1
- - javax.faces.component.StateHolder - 1

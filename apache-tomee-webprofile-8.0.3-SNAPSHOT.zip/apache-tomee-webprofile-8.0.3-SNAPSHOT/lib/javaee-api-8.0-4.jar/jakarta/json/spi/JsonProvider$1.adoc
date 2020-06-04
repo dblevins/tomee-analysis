@@ -1,0 +1,6 @@
+= jakarta/json/spi/JsonProvider$1.class
+
+ - link:JsonProvider$1-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.event.SystemEvent - 4
- - javax.faces.FacesException - 2
- - javax.faces.event.SystemEventListener - 2

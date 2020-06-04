@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.ext.MessageBodyWriter - 2

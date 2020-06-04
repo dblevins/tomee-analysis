@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.MessageContext - 12
- - javax.xml.ws.spi.Invoker - 6
- - javax.servlet.http.HttpServletResponse - 3
- - javax.xml.ws.handler.MessageContext$Scope - 2
- - javax.xml.ws.Provider - 2

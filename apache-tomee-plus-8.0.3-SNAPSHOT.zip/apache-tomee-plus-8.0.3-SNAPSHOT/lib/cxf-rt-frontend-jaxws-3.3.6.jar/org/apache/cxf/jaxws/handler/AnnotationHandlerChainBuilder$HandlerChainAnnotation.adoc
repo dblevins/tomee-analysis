@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jws.HandlerChain - 10
- - javax.xml.ws.WebServiceException - 2

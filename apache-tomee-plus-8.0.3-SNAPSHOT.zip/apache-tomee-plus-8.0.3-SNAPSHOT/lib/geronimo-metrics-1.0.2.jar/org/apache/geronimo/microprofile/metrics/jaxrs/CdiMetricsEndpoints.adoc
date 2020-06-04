@@ -4,7 +4,3 @@
 
 == References
 
- - javax.inject.Inject - 3
- - javax.annotation.PostConstruct - 1
- - javax.ws.rs.Path - 1
- - javax.enterprise.context.ApplicationScoped - 1

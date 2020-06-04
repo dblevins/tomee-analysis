@@ -1,0 +1,6 @@
+= jakarta/mail/internet/ParameterList.class
+
+ - link:ParameterList-asmified.java[Asmified]
+
+== References
+

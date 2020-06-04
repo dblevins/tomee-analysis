@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 7
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.view.facelets.FaceletContext - 2

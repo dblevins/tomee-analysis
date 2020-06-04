@@ -4,19 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 19
- - javax.servlet.ServletContext - 5
- - javax.enterprise.inject.spi.AnnotatedType - 4
- - javax.enterprise.inject.spi.InjectionTarget - 4
- - javax.enterprise.context.spi.Contextual - 2
- - javax.servlet.ServletRequestListener - 1
- - javax.servlet.http.HttpSessionListener - 1
- - javax.servlet.Servlet - 1
- - javax.servlet.http.HttpSessionIdListener - 1
- - javax.servlet.ServletRequestAttributeListener - 1
- - javax.servlet.http.HttpSessionActivationListener - 1
- - javax.servlet.http.HttpSessionAttributeListener - 1
- - javax.servlet.ServletContextAttributeListener - 1
- - javax.servlet.Filter - 1
- - javax.servlet.http.HttpSessionBindingListener - 1
- - javax.servlet.ServletContextListener - 1

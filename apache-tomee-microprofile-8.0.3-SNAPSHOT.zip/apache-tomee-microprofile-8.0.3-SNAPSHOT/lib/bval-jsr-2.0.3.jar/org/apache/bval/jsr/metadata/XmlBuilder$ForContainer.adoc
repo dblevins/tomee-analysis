@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 4
- - javax.validation.groups.Default - 1

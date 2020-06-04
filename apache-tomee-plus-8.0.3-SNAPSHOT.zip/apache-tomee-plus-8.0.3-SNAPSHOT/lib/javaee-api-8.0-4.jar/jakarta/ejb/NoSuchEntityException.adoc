@@ -1,0 +1,6 @@
+= jakarta/ejb/NoSuchEntityException.class
+
+ - link:NoSuchEntityException-asmified.java[Asmified]
+
+== References
+

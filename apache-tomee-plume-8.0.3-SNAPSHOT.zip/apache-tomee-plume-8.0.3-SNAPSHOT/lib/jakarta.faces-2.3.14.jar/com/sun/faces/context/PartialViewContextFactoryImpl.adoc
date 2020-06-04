@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.PartialViewContextFactory - 3
- - javax.faces.context.FacesContext - 2
- - javax.faces.context.PartialViewContext - 1

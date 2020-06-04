@@ -1,0 +1,6 @@
+= jakarta/faces/annotation/ManagedProperty.class
+
+ - link:ManagedProperty-asmified.java[Asmified]
+
+== References
+

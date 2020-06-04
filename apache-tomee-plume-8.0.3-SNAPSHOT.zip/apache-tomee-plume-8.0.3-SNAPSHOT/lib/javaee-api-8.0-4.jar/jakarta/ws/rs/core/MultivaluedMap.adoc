@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/MultivaluedMap.class
+
+ - link:MultivaluedMap-asmified.java[Asmified]
+
+== References
+

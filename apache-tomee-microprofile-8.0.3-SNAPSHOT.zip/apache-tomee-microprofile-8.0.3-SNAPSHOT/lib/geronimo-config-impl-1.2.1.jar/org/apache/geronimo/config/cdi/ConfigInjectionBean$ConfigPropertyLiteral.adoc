@@ -4,4 +4,3 @@
 
 == References
 
- - javax.enterprise.util.AnnotationLiteral - 2

@@ -1,0 +1,6 @@
+= jakarta/xml/ws/WebServiceException.class
+
+ - link:WebServiceException-asmified.java[Asmified]
+
+== References
+

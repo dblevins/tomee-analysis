@@ -4,15 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedMethod - 44
- - javax.enterprise.inject.spi.AnnotatedType - 20
- - javax.enterprise.inject.spi.InterceptionType - 9
- - javax.enterprise.inject.spi.BeanAttributes - 4
- - javax.enterprise.inject.spi.AnnotatedParameter - 4
- - javax.interceptor.AroundTimeout - 2
- - javax.annotation.PreDestroy - 1
- - javax.interceptor.AroundConstruct - 1
- - javax.enterprise.inject.Produces - 1
- - javax.interceptor.InvocationContext - 1
- - javax.annotation.PostConstruct - 1
- - javax.interceptor.AroundInvoke - 1

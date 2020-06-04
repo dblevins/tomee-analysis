@@ -4,16 +4,3 @@
 
 == References
 
- - javax.el.ELResolver - 35
- - javax.el.CompositeELResolver - 25
- - javax.el.FunctionMapper - 9
- - javax.el.VariableMapper - 7
- - javax.el.ExpressionFactory - 6
- - javax.el.ListELResolver - 4
- - javax.el.BeanELResolver - 4
- - javax.el.StaticFieldELResolver - 4
- - javax.el.ResourceBundleELResolver - 4
- - javax.el.MapELResolver - 4
- - javax.el.ArrayELResolver - 4
- - javax.el.ELContext - 2
- - javax.el.ELManager - 1

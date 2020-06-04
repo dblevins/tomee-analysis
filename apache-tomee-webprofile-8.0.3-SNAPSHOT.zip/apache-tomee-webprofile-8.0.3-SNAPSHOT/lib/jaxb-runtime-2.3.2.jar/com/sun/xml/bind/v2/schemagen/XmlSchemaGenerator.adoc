@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.SchemaOutputResolver - 4
- - javax.xml.bind.annotation.XmlElement - 4
- - javax.activation.MimeType - 1

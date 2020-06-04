@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIViewRoot$ViewMap.class
+
+ - link:UIViewRoot$ViewMap-asmified.java[Asmified]
+
+== References
+

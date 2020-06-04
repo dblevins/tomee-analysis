@@ -1,0 +1,6 @@
+= jakarta/jms/XAQueueConnectionFactory.class
+
+ - link:XAQueueConnectionFactory-asmified.java[Asmified]
+
+== References
+

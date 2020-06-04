@@ -4,7 +4,3 @@
 
 == References
 
- - javax.activation.DataSource - 13
- - javax.activation.MimeType - 3
- - javax.activation.MimeTypeParseException - 2
- - javax.activation.DataHandler - 2

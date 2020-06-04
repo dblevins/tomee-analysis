@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.metadata.CascadableDescriptor - 3
- - javax.validation.metadata.ContainerDescriptor - 2
- - javax.validation.metadata.GroupConversionDescriptor - 1
- - javax.validation.metadata.ContainerElementTypeDescriptor - 1

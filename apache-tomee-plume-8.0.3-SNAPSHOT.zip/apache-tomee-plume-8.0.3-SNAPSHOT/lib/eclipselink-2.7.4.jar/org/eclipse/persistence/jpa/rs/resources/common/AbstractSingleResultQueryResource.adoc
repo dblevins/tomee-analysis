@@ -4,10 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.UriInfo - 12
- - javax.ws.rs.core.HttpHeaders - 7
- - javax.ws.rs.core.Response - 7
- - javax.ws.rs.core.Response$ResponseBuilder - 6
- - javax.persistence.Query - 5
- - javax.xml.bind.JAXBElement - 2
- - javax.ws.rs.core.MediaType - 1

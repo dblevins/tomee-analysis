@@ -4,7 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 182
- - javax.faces.component.html.HtmlGraphicImage - 29
- - javax.faces.webapp.UIComponentELTag - 4
- - javax.faces.component.UIComponent - 2

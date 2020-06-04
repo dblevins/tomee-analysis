@@ -1,4 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/geronimo-health-1.0.1.jar
 
- - link:org/apache/geronimo/microprofile/impl/health/cdi/GeronimoHealthExtension.adoc[org/apache/geronimo/microprofile/impl/health/cdi/GeronimoHealthExtension.class] - 51
- - link:org/apache/geronimo/microprofile/impl/health/cdi/CdiHealthChecksEndpoint.adoc[org/apache/geronimo/microprofile/impl/health/cdi/CdiHealthChecksEndpoint.class] - 4

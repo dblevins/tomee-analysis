@@ -1,0 +1,6 @@
+= jakarta/persistence/Entity.class
+
+ - link:Entity-asmified.java[Asmified]
+
+== References
+

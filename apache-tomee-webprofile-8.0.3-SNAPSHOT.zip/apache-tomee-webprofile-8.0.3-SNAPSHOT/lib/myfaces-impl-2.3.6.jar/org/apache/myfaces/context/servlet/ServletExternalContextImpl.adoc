@@ -4,23 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 57
- - javax.servlet.ServletRequest - 52
- - javax.servlet.http.HttpServletResponse - 43
- - javax.faces.context.FacesContext - 39
- - javax.servlet.ServletResponse - 39
- - javax.servlet.http.HttpSession - 11
- - javax.faces.context.ExternalContext - 11
- - javax.faces.context.FlashFactory - 11
- - javax.servlet.http.Cookie - 11
- - javax.faces.context.Flash - 10
- - javax.faces.lifecycle.ClientWindow - 10
- - javax.servlet.http.PushBuilder - 8
- - javax.servlet.ServletContext - 7
- - javax.servlet.ServletException - 5
- - javax.faces.FacesException - 5
- - javax.faces.context.PartialResponseWriter - 4
- - javax.faces.context.PartialViewContext - 4
- - javax.servlet.RequestDispatcher - 3
- - javax.faces.FactoryFinder - 1
- - javax.servlet.ServletOutputStream - 1

@@ -1,0 +1,6 @@
+= jakarta/validation/ReportAsSingleViolation.class
+
+ - link:ReportAsSingleViolation-asmified.java[Asmified]
+
+== References
+

@@ -4,12 +4,3 @@
 
 == References
 
- - javax.persistence.AccessType - 12
- - javax.persistence.OneToOne - 1
- - javax.persistence.Entity - 1
- - javax.persistence.ManyToOne - 1
- - javax.persistence.MappedSuperclass - 1
- - javax.persistence.OneToMany - 1
- - javax.persistence.Embeddable - 1
- - javax.persistence.ManyToMany - 1
- - javax.persistence.Access - 1

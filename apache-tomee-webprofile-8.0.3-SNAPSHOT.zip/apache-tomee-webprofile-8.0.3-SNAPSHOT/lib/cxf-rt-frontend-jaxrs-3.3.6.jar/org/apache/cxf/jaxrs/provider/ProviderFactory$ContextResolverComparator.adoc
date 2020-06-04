@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.Produces - 6
- - javax.ws.rs.ext.ContextResolver - 5

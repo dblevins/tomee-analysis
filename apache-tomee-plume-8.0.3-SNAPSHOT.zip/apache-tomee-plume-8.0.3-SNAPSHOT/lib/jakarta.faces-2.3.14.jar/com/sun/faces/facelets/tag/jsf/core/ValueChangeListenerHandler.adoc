@@ -4,17 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagAttribute - 23
- - javax.faces.context.FacesContext - 10
- - javax.faces.view.facelets.FaceletContext - 9
- - javax.el.ValueExpression - 7
- - javax.faces.component.UIComponent - 6
- - javax.faces.component.EditableValueHolder - 4
- - javax.faces.view.facelets.TagConfig - 3
- - javax.faces.view.facelets.TagAttributeException - 2
- - javax.faces.view.facelets.TagException - 2
- - javax.faces.view.facelets.Tag - 2
- - javax.faces.event.ValueChangeListener - 2
- - javax.el.ELContext - 2
- - javax.faces.view.EditableValueHolderAttachedObjectHandler - 1
- - javax.faces.view.facelets.ComponentHandler - 1

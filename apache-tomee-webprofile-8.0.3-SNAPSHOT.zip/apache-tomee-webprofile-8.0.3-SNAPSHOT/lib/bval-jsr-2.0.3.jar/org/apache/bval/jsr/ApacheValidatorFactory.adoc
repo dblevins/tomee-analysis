@@ -4,17 +4,3 @@
 
 == References
 
- - javax.validation.spi.ConfigurationState - 15
- - javax.validation.ParameterNameProvider - 7
- - javax.validation.ClockProvider - 7
- - javax.validation.TraversableResolver - 7
- - javax.validation.MessageInterpolator - 7
- - javax.validation.ConstraintValidatorFactory - 7
- - javax.validation.valueextraction.ValueExtractor - 5
- - javax.validation.ValidationException - 4
- - javax.validation.ValidatorFactory - 3
- - javax.validation.Validator - 2
- - javax.validation.bootstrap.ProviderSpecificBootstrap - 2
- - javax.validation.ValidatorContext - 1
- - javax.validation.Configuration - 1
- - javax.validation.Validation - 1

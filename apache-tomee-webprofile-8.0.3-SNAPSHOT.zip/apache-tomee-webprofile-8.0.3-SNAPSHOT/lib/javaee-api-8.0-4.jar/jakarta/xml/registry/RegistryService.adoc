@@ -1,0 +1,6 @@
+= jakarta/xml/registry/RegistryService.class
+
+ - link:RegistryService-asmified.java[Asmified]
+
+== References
+

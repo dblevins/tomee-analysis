@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 23
- - javax.el.ELContext - 22
- - javax.faces.context.Flash - 17
- - javax.el.PropertyNotFoundException - 12
- - javax.faces.context.ExternalContext - 9
- - javax.el.PropertyNotWritableException - 5
- - javax.el.ELException - 4
- - javax.el.ELResolver - 2

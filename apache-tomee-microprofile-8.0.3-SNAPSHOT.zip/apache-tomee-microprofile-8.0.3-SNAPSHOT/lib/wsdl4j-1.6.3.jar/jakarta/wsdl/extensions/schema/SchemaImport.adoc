@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/schema/SchemaImport.class
+
+ - link:SchemaImport-asmified.java[Asmified]
+
+== References
+

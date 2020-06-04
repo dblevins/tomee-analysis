@@ -4,11 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.JspException - 13
- - javax.servlet.jsp.PageContext - 4
- - javax.servlet.jsp.JspTagException - 4
- - javax.servlet.jsp.tagext.BodyContent - 3
- - javax.servlet.jsp.tagext.BodyTagSupport - 2
- - javax.servlet.jsp.tagext.Tag - 2
- - javax.servlet.jsp.jstl.sql.SQLExecutionTag - 1
- - javax.servlet.jsp.tagext.TryCatchFinally - 1

@@ -1,0 +1,6 @@
+= jakarta/resource/spi/ResourceAdapterAssociation.class
+
+ - link:ResourceAdapterAssociation-asmified.java[Asmified]
+
+== References
+

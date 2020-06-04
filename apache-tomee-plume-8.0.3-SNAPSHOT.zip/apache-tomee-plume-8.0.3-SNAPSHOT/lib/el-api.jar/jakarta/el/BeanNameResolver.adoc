@@ -1,0 +1,6 @@
+= jakarta/el/BeanNameResolver.class
+
+ - link:BeanNameResolver-asmified.java[Asmified]
+
+== References
+

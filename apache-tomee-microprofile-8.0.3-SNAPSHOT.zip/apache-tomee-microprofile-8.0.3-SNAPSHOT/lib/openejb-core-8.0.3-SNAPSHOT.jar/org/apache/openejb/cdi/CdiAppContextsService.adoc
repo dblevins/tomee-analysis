@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 5
- - javax.servlet.ServletContextEvent - 4
- - javax.enterprise.inject.spi.InjectionPoint - 1

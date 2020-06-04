@@ -4,4 +4,3 @@
 
 == References
 
- - javax.resource.spi.ConnectionRequestInfo - 13

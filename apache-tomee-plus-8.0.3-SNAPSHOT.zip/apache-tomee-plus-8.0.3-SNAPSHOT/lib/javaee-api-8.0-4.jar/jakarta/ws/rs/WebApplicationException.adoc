@@ -1,0 +1,6 @@
+= jakarta/ws/rs/WebApplicationException.class
+
+ - link:WebApplicationException-asmified.java[Asmified]
+
+== References
+

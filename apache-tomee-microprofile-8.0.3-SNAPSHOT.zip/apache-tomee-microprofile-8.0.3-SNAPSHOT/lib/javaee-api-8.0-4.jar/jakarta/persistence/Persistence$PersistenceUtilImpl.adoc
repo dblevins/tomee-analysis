@@ -1,0 +1,6 @@
+= jakarta/persistence/Persistence$PersistenceUtilImpl.class
+
+ - link:Persistence$PersistenceUtilImpl-asmified.java[Asmified]
+
+== References
+

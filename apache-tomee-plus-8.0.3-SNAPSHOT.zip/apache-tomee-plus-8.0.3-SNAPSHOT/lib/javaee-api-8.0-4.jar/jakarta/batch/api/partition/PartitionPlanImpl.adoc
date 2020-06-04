@@ -1,0 +1,6 @@
+= jakarta/batch/api/partition/PartitionPlanImpl.class
+
+ - link:PartitionPlanImpl-asmified.java[Asmified]
+
+== References
+

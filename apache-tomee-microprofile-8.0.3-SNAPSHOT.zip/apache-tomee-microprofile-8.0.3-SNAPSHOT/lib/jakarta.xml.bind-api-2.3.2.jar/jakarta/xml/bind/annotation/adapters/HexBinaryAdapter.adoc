@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/adapters/HexBinaryAdapter.class
+
+ - link:HexBinaryAdapter-asmified.java[Asmified]
+
+== References
+

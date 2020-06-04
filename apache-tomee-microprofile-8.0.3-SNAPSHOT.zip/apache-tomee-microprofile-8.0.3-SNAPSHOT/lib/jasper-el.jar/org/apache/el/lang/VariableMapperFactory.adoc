@@ -4,5 +4,3 @@
 
 == References
 
- - javax.el.VariableMapper - 15
- - javax.el.ValueExpression - 7

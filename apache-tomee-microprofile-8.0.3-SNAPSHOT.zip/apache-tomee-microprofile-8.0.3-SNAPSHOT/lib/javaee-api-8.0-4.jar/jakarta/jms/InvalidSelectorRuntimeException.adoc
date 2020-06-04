@@ -1,0 +1,6 @@
+= jakarta/jms/InvalidSelectorRuntimeException.class
+
+ - link:InvalidSelectorRuntimeException-asmified.java[Asmified]
+
+== References
+

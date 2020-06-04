@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 6
- - javax.faces.component.search.SearchKeywordResolver - 2
- - javax.faces.component.search.SearchExpressionContext - 2
- - javax.faces.component.search.SearchExpressionHint - 1

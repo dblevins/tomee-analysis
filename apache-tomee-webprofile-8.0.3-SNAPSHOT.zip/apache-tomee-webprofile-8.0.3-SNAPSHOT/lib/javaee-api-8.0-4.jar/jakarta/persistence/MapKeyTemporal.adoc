@@ -1,0 +1,6 @@
+= jakarta/persistence/MapKeyTemporal.class
+
+ - link:MapKeyTemporal-asmified.java[Asmified]
+
+== References
+

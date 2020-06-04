@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/AbstractQuery.class
+
+ - link:AbstractQuery-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintDeclarationException - 6
- - javax.validation.Valid - 1
- - javax.validation.GroupSequence - 1
- - javax.validation.groups.ConvertGroup - 1

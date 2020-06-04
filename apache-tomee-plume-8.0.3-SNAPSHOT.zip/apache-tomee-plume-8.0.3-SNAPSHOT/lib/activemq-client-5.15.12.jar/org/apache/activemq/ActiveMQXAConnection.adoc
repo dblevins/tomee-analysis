@@ -4,11 +4,3 @@
 
 == References
 
- - javax.jms.Session - 4
- - javax.jms.JMSException - 4
- - javax.jms.XASession - 2
- - javax.jms.XAQueueSession - 2
- - javax.jms.XATopicSession - 2
- - javax.jms.XAQueueConnection - 1
- - javax.jms.XAConnection - 1
- - javax.jms.XATopicConnection - 1

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.el.VariableResolver - 10
- - javax.faces.context.FacesContext - 4
- - javax.faces.el.EvaluationException - 3
- - javax.faces.application.Application - 2
- - javax.el.ELException - 2
- - javax.el.ELContext - 2
- - javax.el.ELResolver - 2

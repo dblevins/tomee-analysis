@@ -4,8 +4,3 @@
 
 == References
 
- - javax.jms.Session - 5
- - javax.jms.JMSException - 5
- - javax.jms.ConnectionConsumer - 2
- - javax.jms.Topic - 2
- - javax.jms.ServerSessionPool - 2

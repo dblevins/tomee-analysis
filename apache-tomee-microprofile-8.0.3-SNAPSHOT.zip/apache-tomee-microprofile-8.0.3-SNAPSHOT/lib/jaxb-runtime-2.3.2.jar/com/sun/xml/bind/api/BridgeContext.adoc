@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.attachment.AttachmentUnmarshaller - 2
- - javax.xml.bind.attachment.AttachmentMarshaller - 2
- - javax.xml.bind.ValidationEventHandler - 1

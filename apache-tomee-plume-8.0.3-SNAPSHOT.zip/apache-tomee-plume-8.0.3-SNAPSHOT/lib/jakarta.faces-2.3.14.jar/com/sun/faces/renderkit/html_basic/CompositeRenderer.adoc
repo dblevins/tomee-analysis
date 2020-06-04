@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 6
- - javax.faces.context.FacesContext - 2
- - javax.faces.render.Renderer - 2

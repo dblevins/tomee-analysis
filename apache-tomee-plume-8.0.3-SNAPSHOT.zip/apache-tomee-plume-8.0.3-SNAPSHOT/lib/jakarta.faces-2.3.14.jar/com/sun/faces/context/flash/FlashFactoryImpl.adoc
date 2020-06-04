@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 3
- - javax.faces.context.FlashFactory - 3
- - javax.faces.context.ExternalContext - 2
- - javax.faces.context.Flash - 1

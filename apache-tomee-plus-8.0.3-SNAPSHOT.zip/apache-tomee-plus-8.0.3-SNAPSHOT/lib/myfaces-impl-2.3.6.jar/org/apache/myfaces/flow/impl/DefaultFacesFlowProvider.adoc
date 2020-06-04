@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 18
- - javax.faces.flow.Flow - 14
- - javax.faces.context.ExternalContext - 7
- - javax.faces.application.Application - 2
- - javax.faces.flow.FlowHandler - 2

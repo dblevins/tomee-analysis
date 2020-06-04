@@ -1,0 +1,6 @@
+= jakarta/faces/component/behavior/ClientBehaviorBase.class
+
+ - link:ClientBehaviorBase-asmified.java[Asmified]
+
+== References
+

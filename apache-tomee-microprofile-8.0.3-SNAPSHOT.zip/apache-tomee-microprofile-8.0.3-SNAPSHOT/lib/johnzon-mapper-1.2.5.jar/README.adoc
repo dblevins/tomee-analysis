@@ -1,19 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/johnzon-mapper-1.2.5.jar
 
- - link:org/apache/johnzon/mapper/MappingParserImpl.adoc[org/apache/johnzon/mapper/MappingParserImpl.class] - 598
- - link:org/apache/johnzon/mapper/Mapper.adoc[org/apache/johnzon/mapper/Mapper.class] - 329
- - link:org/apache/johnzon/mapper/MappingGeneratorImpl.adoc[org/apache/johnzon/mapper/MappingGeneratorImpl.class] - 297
- - link:org/apache/johnzon/mapper/JsonObjectGenerator.adoc[org/apache/johnzon/mapper/JsonObjectGenerator.class] - 187
- - link:org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator.adoc[org/apache/johnzon/mapper/DynamicMappingGenerator$InObjectOrPrimitiveJsonGenerator.class] - 143
- - link:org/apache/johnzon/mapper/jsonp/RewindableJsonParser.adoc[org/apache/johnzon/mapper/jsonp/RewindableJsonParser.class] - 55
- - link:org/apache/johnzon/mapper/MapperBuilder.adoc[org/apache/johnzon/mapper/MapperBuilder.class] - 45
- - link:org/apache/johnzon/mapper/Mapper$1.adoc[org/apache/johnzon/mapper/Mapper$1.class] - 22
- - link:org/apache/johnzon/mapper/DynamicMappingGenerator.adoc[org/apache/johnzon/mapper/DynamicMappingGenerator.class] - 16
- - link:org/apache/johnzon/mapper/Mapper$2.adoc[org/apache/johnzon/mapper/Mapper$2.class] - 12
- - link:org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser.adoc[org/apache/johnzon/mapper/MappingParserImpl$SuppressConversionMappingParser.class] - 7
- - link:org/apache/johnzon/mapper/JohnzonCores.adoc[org/apache/johnzon/mapper/JohnzonCores.class] - 6
- - link:org/apache/johnzon/mapper/MapperException.adoc[org/apache/johnzon/mapper/MapperException.class] - 4
- - link:org/apache/johnzon/mapper/MappingGenerator.adoc[org/apache/johnzon/mapper/MappingGenerator.class] - 4
- - link:org/apache/johnzon/mapper/MapperConfig$1.adoc[org/apache/johnzon/mapper/MapperConfig$1.class] - 1
- - link:org/apache/johnzon/mapper/MappingParser.adoc[org/apache/johnzon/mapper/MappingParser.class] - 1
- - link:org/apache/johnzon/mapper/ObjectConverter$Reader.adoc[org/apache/johnzon/mapper/ObjectConverter$Reader.class] - 1

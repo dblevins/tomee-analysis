@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.context.RequestScoped - 2
- - javax.enterprise.context.ConversationScoped - 2
- - javax.servlet.ServletContext - 2
- - javax.enterprise.context.ApplicationScoped - 2
- - javax.enterprise.context.SessionScoped - 2

@@ -1,0 +1,6 @@
+= jakarta/persistence/ColumnResult.class
+
+ - link:ColumnResult-asmified.java[Asmified]
+
+== References
+

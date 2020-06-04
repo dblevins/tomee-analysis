@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/ExternalLink.class
+
+ - link:ExternalLink-asmified.java[Asmified]
+
+== References
+

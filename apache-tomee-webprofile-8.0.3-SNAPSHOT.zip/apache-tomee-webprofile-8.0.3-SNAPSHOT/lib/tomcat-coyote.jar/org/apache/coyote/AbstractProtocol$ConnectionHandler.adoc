@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpUpgradeHandler - 14
- - javax.servlet.http.WebConnection - 4

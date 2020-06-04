@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.TransactionAttribute - 11
- - javax.ejb.TransactionAttributeType - 6

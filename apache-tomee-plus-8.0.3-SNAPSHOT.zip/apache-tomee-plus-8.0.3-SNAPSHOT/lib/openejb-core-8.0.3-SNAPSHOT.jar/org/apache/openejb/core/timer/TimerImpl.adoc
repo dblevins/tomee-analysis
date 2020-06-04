@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ejb.NoSuchObjectLocalException - 13
- - javax.ejb.NoMoreTimeoutsException - 4
- - javax.ejb.EJBException - 3
- - javax.ejb.ScheduleExpression - 2
- - javax.ejb.Timer - 1
- - javax.ejb.TimerHandle - 1

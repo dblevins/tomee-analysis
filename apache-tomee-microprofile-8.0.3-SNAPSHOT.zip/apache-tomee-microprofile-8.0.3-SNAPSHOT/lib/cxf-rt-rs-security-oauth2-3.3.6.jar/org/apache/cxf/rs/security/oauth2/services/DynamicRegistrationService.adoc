@@ -4,20 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response - 13
- - javax.ws.rs.core.Response$ResponseBuilder - 13
- - javax.ws.rs.core.SecurityContext - 9
- - javax.ws.rs.WebApplicationException - 6
- - javax.ws.rs.core.UriBuilder - 5
- - javax.ws.rs.Produces - 4
- - javax.ws.rs.Path - 4
- - javax.ws.rs.core.MediaType - 4
- - javax.ws.rs.PathParam - 3
- - javax.ws.rs.GET - 2
- - javax.ws.rs.Consumes - 2
- - javax.ws.rs.core.UriInfo - 2
- - javax.ws.rs.core.Context - 1
- - javax.ws.rs.POST - 1
- - javax.ws.rs.QueryParam - 1
- - javax.ws.rs.PUT - 1
- - javax.ws.rs.DELETE - 1

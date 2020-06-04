@@ -1,0 +1,6 @@
+= jakarta/persistence/SynchronizationType.class
+
+ - link:SynchronizationType-asmified.java[Asmified]
+
+== References
+

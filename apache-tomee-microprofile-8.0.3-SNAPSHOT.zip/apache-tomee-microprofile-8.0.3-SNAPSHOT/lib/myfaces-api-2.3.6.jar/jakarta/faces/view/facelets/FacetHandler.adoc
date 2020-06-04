@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/FacetHandler.class
+
+ - link:FacetHandler-asmified.java[Asmified]
+
+== References
+

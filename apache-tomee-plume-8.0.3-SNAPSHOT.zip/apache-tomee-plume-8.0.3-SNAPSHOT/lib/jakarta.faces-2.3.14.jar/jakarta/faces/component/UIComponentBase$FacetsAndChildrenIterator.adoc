@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponentBase$FacetsAndChildrenIterator.class
+
+ - link:UIComponentBase$FacetsAndChildrenIterator-asmified.java[Asmified]
+
+== References
+

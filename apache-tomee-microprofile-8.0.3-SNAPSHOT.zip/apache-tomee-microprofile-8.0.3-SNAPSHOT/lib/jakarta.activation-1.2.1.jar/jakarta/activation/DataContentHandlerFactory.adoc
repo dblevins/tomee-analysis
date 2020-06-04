@@ -1,0 +1,6 @@
+= jakarta/activation/DataContentHandlerFactory.class
+
+ - link:DataContentHandlerFactory-asmified.java[Asmified]
+
+== References
+

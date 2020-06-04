@@ -4,4 +4,3 @@
 
 == References
 
- - javax.resource.cci.InteractionSpec - 1

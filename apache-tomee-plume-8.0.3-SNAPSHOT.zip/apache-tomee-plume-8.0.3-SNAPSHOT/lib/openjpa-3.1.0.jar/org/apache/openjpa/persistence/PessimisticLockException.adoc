@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.PessimisticLockException - 4

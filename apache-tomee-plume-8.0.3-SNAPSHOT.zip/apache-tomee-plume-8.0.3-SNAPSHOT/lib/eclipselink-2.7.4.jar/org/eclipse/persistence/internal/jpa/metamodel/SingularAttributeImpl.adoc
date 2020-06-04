@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.Type - 10
- - javax.persistence.metamodel.Bindable$BindableType - 2
- - javax.persistence.metamodel.SingularAttribute - 1

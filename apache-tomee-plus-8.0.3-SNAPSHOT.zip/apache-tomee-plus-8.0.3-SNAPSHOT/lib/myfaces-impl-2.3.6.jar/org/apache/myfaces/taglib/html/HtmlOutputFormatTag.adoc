@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 67
- - javax.faces.component.html.HtmlOutputFormat - 13
- - javax.faces.webapp.UIComponentELTag - 4
- - javax.faces.convert.Converter - 2
- - javax.faces.application.Application - 2
- - javax.faces.context.FacesContext - 2
- - javax.faces.component.UIComponent - 2

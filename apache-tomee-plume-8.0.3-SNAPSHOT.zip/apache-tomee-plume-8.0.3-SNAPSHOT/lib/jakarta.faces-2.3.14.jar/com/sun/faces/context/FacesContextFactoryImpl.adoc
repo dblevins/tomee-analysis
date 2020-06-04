@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.context.ExternalContext - 20
- - javax.faces.context.FacesContext - 19
- - javax.faces.context.ExternalContextFactory - 5
- - javax.faces.context.ExceptionHandlerFactory - 5
- - javax.faces.context.FacesContextFactory - 3
- - javax.faces.context.ExceptionHandler - 2
- - javax.faces.FactoryFinder - 2
- - javax.faces.lifecycle.Lifecycle - 2
- - javax.faces.FacesException - 1

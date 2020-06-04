@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.Instance - 8
- - javax.enterprise.inject.spi.InjectionPoint - 7
- - javax.enterprise.context.spi.CreationalContext - 1
- - javax.enterprise.context.spi.Contextual - 1
- - javax.enterprise.inject.spi.Interceptor - 1

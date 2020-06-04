@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.PortInfo - 16
- - javax.xml.ws.handler.Handler - 9
- - javax.xml.ws.WebServiceException - 2
- - javax.xml.ws.handler.LogicalHandler - 2
- - javax.xml.ws.handler.HandlerResolver - 1

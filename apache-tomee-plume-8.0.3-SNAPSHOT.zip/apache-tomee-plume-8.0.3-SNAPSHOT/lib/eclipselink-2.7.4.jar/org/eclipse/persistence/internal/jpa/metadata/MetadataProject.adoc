@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.SharedCacheMode - 22
- - javax.persistence.spi.PersistenceUnitInfo - 11

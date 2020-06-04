@@ -4,19 +4,3 @@
 
 == References
 
- - javax.ejb.EntityBean - 78
- - javax.ejb.EJBException - 20
- - javax.transaction.TransactionSynchronizationRegistry - 14
- - javax.ejb.FinderException - 11
- - javax.ejb.ObjectNotFoundException - 6
- - javax.transaction.TransactionManager - 4
- - javax.ejb.RemoveException - 2
- - javax.ejb.EJBHome - 2
- - javax.ejb.Timer - 2
- - javax.ejb.EJBLocalHome - 2
- - javax.ejb.EJBAccessException - 2
- - javax.ejb.EntityContext - 1
- - javax.ejb.EJBObject - 1
- - javax.transaction.Synchronization - 1
- - javax.ejb.EJBLocalObject - 1
- - javax.ejb.EJBContext - 1

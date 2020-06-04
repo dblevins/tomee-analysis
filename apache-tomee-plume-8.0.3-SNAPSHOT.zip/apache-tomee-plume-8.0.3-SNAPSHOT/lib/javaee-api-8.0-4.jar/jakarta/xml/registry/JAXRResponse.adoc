@@ -1,0 +1,6 @@
+= jakarta/xml/registry/JAXRResponse.class
+
+ - link:JAXRResponse-asmified.java[Asmified]
+
+== References
+

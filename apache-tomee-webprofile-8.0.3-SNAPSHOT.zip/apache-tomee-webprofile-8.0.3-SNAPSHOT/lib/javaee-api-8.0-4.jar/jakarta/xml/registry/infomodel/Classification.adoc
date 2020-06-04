@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/Classification.class
+
+ - link:Classification-asmified.java[Asmified]
+
+== References
+

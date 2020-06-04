@@ -4,17 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response - 37
- - javax.ws.rs.NotAcceptableException - 4
- - javax.ws.rs.ForbiddenException - 4
- - javax.ws.rs.InternalServerErrorException - 4
- - javax.ws.rs.NotFoundException - 4
- - javax.ws.rs.WebApplicationException - 4
- - javax.ws.rs.NotAuthorizedException - 4
- - javax.ws.rs.BadRequestException - 4
- - javax.ws.rs.NotSupportedException - 4
- - javax.ws.rs.ClientErrorException - 3
- - javax.ws.rs.ServerErrorException - 3
- - javax.ws.rs.RedirectionException - 1
- - javax.ws.rs.NotAllowedException - 1
- - javax.ws.rs.ServiceUnavailableException - 1

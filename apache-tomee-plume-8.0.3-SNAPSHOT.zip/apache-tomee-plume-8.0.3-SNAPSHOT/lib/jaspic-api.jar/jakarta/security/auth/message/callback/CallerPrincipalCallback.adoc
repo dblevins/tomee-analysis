@@ -1,0 +1,6 @@
+= jakarta/security/auth/message/callback/CallerPrincipalCallback.class
+
+ - link:CallerPrincipalCallback-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.ServletResponse - 12
- - javax.servlet.jsp.JspWriter - 3

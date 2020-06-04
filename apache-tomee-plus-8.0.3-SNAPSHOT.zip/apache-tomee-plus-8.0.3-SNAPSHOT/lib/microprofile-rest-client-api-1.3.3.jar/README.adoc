@@ -1,9 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/microprofile-rest-client-api-1.3.3.jar
 
- - link:org/eclipse/microprofile/rest/client/ext/DefaultClientHeadersFactoryImpl.adoc[org/eclipse/microprofile/rest/client/ext/DefaultClientHeadersFactoryImpl.class] - 15
- - link:org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper.adoc[org/eclipse/microprofile/rest/client/ext/ResponseExceptionMapper.class] - 5
- - link:org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory.adoc[org/eclipse/microprofile/rest/client/ext/ClientHeadersFactory.class] - 3
- - link:org/eclipse/microprofile/rest/client/inject/RestClient$RestClientLiteral.adoc[org/eclipse/microprofile/rest/client/inject/RestClient$RestClientLiteral.class] - 2
- - link:org/eclipse/microprofile/rest/client/inject/RegisterRestClient.adoc[org/eclipse/microprofile/rest/client/inject/RegisterRestClient.class] - 2
- - link:org/eclipse/microprofile/rest/client/inject/RestClient.adoc[org/eclipse/microprofile/rest/client/inject/RestClient.class] - 1
- - link:org/eclipse/microprofile/rest/client/RestClientBuilder.adoc[org/eclipse/microprofile/rest/client/RestClientBuilder.class] - 1

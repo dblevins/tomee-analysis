@@ -4,14 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.CriteriaQuery - 43
- - javax.persistence.criteria.Selection - 28
- - javax.persistence.metamodel.SingularAttribute - 15
- - javax.persistence.criteria.CriteriaBuilder - 12
- - javax.persistence.EntityManager - 12
- - javax.persistence.TypedQuery - 12
- - javax.persistence.criteria.Root - 5
- - javax.persistence.criteria.Expression - 4
- - javax.persistence.criteria.Path - 4
- - javax.persistence.criteria.CompoundSelection - 3
- - javax.persistence.criteria.Order - 3

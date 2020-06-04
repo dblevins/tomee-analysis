@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 5
- - javax.ws.rs.core.Context - 1
- - javax.ws.rs.core.Response - 1
- - javax.ws.rs.WebApplicationException - 1

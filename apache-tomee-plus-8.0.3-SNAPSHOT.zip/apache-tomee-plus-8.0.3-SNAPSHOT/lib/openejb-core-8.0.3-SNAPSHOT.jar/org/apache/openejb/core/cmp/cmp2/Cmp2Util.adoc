@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ejb.EntityBean - 8
- - javax.ejb.EJBLocalObject - 3
- - javax.ejb.EJBObject - 1

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 41
- - javax.faces.context.ExternalContext - 21
- - javax.faces.context.FacesContext - 20
- - javax.faces.event.PhaseListener - 7
- - javax.faces.lifecycle.LifecycleFactory - 6
- - javax.faces.lifecycle.Lifecycle - 5
- - javax.faces.FactoryFinder - 1

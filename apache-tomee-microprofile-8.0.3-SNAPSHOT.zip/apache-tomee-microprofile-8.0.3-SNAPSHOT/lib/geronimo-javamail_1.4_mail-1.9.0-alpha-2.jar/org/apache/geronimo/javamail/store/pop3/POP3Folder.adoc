@@ -4,12 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 32
- - javax.mail.Message - 12
- - javax.mail.MethodNotSupportedException - 12
- - javax.mail.Folder - 9
- - javax.mail.FetchProfile$Item - 6
- - javax.mail.Store - 6
- - javax.mail.FetchProfile - 5
- - javax.mail.Flags - 4
- - javax.mail.Flags$Flag - 2

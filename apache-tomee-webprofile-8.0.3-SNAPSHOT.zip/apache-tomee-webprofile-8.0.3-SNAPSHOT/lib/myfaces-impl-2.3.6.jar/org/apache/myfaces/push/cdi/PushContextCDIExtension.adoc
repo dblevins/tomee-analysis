@@ -4,13 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 15
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 6
- - javax.enterprise.inject.spi.BeanManager - 6
- - javax.enterprise.inject.spi.ProcessProducer - 3
- - javax.faces.push.PushContext - 3
- - javax.enterprise.inject.spi.Producer - 3
- - javax.enterprise.inject.spi.AnnotatedMember - 2
- - javax.enterprise.event.Observes - 2
- - javax.enterprise.inject.spi.Extension - 1
- - javax.faces.push.Push - 1

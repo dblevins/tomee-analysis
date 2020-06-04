@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 28
- - javax.faces.context.FacesContext - 18
- - javax.faces.convert.Converter - 17
- - javax.faces.component.UIComponent - 12
- - javax.faces.convert.ConverterException - 4
- - javax.faces.application.FacesMessage - 4
- - javax.faces.component.StateHolder - 1

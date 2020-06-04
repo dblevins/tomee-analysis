@@ -1,0 +1,6 @@
+= jakarta/faces/component/PartialStateHolder.class
+
+ - link:PartialStateHolder-asmified.java[Asmified]
+
+== References
+

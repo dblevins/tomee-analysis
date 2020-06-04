@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 43
- - javax.faces.context.ResponseWriter - 29
- - javax.faces.context.FacesContext - 18
- - javax.faces.application.FacesMessage - 16
- - javax.faces.component.UIMessage - 12
- - javax.faces.application.FacesMessage$Severity - 8
- - javax.faces.component.UIOutput - 3

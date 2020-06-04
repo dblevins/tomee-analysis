@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/Service.class
+
+ - link:Service-asmified.java[Asmified]
+
+== References
+

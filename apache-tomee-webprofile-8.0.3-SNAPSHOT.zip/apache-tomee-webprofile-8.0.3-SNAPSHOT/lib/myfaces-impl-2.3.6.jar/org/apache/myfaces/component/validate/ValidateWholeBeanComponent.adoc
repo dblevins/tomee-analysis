@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.component.StateHelper - 8
- - javax.faces.component.UIInput - 4
- - javax.faces.validator.Validator - 4
- - javax.faces.context.FacesContext - 3
- - javax.faces.context.ExternalContext - 2
- - javax.faces.convert.Converter - 1

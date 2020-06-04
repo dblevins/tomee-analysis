@@ -1,0 +1,6 @@
+= jakarta/ejb/ActivationConfigProperty.class
+
+ - link:ActivationConfigProperty-asmified.java[Asmified]
+
+== References
+

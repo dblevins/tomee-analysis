@@ -4,5 +4,3 @@
 
 == References
 
- - javax.transaction.Transaction - 2
- - javax.resource.ResourceException - 2

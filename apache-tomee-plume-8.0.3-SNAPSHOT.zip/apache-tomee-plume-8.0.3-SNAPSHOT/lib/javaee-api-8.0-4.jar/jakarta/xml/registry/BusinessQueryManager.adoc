@@ -1,0 +1,6 @@
+= jakarta/xml/registry/BusinessQueryManager.class
+
+ - link:BusinessQueryManager-asmified.java[Asmified]
+
+== References
+

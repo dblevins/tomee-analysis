@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.ClientRequestContext - 14
- - javax.ws.rs.core.MultivaluedMap - 7
- - javax.ws.rs.core.Response$ResponseBuilder - 5
- - javax.ws.rs.core.Response - 3
- - javax.annotation.Priority - 1
- - javax.ws.rs.client.ClientRequestFilter - 1

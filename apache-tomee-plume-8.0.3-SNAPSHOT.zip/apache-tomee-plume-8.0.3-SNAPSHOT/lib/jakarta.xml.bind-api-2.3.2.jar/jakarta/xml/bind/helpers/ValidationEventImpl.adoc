@@ -1,0 +1,6 @@
+= jakarta/xml/bind/helpers/ValidationEventImpl.class
+
+ - link:ValidationEventImpl-asmified.java[Asmified]
+
+== References
+

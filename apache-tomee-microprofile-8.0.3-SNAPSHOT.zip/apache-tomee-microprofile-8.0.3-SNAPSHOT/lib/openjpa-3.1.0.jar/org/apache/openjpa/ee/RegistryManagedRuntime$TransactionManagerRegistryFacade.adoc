@@ -4,13 +4,3 @@
 
 == References
 
- - javax.transaction.SystemException - 26
- - javax.transaction.TransactionSynchronizationRegistry - 11
- - javax.transaction.Transaction - 4
- - javax.transaction.NotSupportedException - 3
- - javax.transaction.RollbackException - 3
- - javax.transaction.Synchronization - 2
- - javax.transaction.HeuristicRollbackException - 1
- - javax.transaction.InvalidTransactionException - 1
- - javax.transaction.HeuristicMixedException - 1
- - javax.transaction.TransactionManager - 1

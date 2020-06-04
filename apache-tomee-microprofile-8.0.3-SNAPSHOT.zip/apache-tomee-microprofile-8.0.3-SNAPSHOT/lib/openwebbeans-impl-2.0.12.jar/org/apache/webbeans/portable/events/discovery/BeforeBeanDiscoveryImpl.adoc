@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 11
- - javax.enterprise.inject.spi.Extension - 7
- - javax.enterprise.inject.spi.configurator.AnnotatedTypeConfigurator - 3
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 1

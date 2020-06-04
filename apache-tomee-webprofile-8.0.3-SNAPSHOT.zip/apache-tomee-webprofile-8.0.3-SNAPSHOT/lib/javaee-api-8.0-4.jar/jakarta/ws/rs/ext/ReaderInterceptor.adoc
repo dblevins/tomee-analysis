@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ext/ReaderInterceptor.class
+
+ - link:ReaderInterceptor-asmified.java[Asmified]
+
+== References
+

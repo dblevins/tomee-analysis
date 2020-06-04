@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 9
- - javax.faces.lifecycle.ClientWindow - 6
- - javax.faces.context.ExternalContext - 4

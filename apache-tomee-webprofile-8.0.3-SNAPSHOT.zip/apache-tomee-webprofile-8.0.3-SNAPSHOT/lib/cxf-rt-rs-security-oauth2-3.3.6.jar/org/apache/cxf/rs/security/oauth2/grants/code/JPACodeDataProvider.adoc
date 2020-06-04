@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManager - 18
- - javax.persistence.TypedQuery - 15
- - javax.persistence.EntityNotFoundException - 2

@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 16
- - javax.el.MethodExpression - 8
- - javax.faces.context.FacesContext - 7
- - javax.el.ELContext - 7
- - javax.faces.validator.Validator - 1
- - javax.faces.FacesWrapper - 1
- - javax.faces.validator.ValidatorException - 1
- - javax.faces.component.UIComponent - 1

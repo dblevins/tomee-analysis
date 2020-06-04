@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 12
- - javax.faces.flow.FlowHandler - 6
- - javax.faces.component.search.SearchExpressionHandler - 3
- - javax.faces.application.Application - 3
- - javax.faces.context.ExternalContext - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.flow.FlowHandlerFactory - 2
- - javax.faces.event.SystemEvent - 2
- - javax.faces.FactoryFinder - 1
- - javax.faces.view.ViewDeclarationLanguage - 1
- - javax.faces.event.SystemEventListener - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.DispatcherType - 4
- - javax.servlet.Filter - 1

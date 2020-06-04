@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/IntegerWrapperHolder.class
+
+ - link:IntegerWrapperHolder-asmified.java[Asmified]
+
+== References
+

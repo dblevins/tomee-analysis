@@ -1,0 +1,6 @@
+= jakarta/faces/validator/_LabeledFacesMessage.class
+
+ - link:_LabeledFacesMessage-asmified.java[Asmified]
+
+== References
+

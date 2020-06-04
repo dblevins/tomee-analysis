@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/literal/SingletonLiteral.class
+
+ - link:SingletonLiteral-asmified.java[Asmified]
+
+== References
+

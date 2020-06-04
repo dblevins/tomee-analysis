@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.constraints.NotEmpty - 2
- - javax.validation.OverridesAttribute - 1
- - javax.validation.Payload - 1
- - javax.validation.Constraint - 1

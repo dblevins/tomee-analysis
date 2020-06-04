@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.Binding - 4
- - javax.xml.ws.handler.LogicalMessageContext - 2

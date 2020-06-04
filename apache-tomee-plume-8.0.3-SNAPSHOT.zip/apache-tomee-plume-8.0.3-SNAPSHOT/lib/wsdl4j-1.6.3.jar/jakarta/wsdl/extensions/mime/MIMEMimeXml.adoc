@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/mime/MIMEMimeXml.class
+
+ - link:MIMEMimeXml-asmified.java[Asmified]
+
+== References
+

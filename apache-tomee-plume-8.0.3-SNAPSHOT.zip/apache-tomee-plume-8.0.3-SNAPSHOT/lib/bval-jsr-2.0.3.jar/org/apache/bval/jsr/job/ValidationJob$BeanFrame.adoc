@@ -4,10 +4,3 @@
 
 == References
 
- - javax.validation.TraversableResolver - 6
- - javax.validation.ValidationException - 4
- - javax.validation.metadata.PropertyDescriptor - 3
- - javax.validation.Path - 2
- - javax.validation.Path$Node - 1
- - javax.validation.ConstraintViolation - 1
- - javax.validation.metadata.ElementDescriptor - 1

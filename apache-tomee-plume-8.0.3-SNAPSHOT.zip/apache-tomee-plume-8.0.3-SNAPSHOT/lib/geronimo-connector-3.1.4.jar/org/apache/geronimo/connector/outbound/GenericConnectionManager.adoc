@@ -4,5 +4,3 @@
 
 == References
 
- - javax.resource.spi.ManagedConnectionFactory - 3
- - javax.transaction.TransactionManager - 1

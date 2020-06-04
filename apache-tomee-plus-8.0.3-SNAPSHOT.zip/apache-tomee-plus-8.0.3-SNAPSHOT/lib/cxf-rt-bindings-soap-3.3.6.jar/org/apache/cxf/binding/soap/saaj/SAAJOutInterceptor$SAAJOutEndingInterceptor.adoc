@@ -4,9 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPMessage - 12
- - javax.xml.soap.AttachmentPart - 9
- - javax.xml.soap.SOAPException - 3
- - javax.xml.soap.MimeHeader - 3
- - javax.activation.DataHandler - 2
- - javax.xml.soap.SOAPPart - 1

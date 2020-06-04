@@ -1,0 +1,6 @@
+= jakarta/ws/rs/NotAllowedException.class
+
+ - link:NotAllowedException-asmified.java[Asmified]
+
+== References
+

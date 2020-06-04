@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 45
- - javax.el.FunctionMapper - 5
- - javax.el.VariableMapper - 5
- - javax.el.EvaluationListener - 3
- - javax.el.ImportHandler - 2
- - javax.el.ELResolver - 2

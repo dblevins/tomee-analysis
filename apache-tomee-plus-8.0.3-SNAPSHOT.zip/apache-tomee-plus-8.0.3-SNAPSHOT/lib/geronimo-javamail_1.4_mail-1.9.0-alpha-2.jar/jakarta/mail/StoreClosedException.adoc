@@ -1,0 +1,6 @@
+= jakarta/mail/StoreClosedException.class
+
+ - link:StoreClosedException-asmified.java[Asmified]
+
+== References
+

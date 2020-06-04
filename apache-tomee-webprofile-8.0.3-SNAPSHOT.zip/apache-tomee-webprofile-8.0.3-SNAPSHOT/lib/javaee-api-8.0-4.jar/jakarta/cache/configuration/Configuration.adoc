@@ -1,0 +1,6 @@
+= jakarta/cache/configuration/Configuration.class
+
+ - link:Configuration-asmified.java[Asmified]
+
+== References
+

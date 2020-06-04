@@ -1,0 +1,6 @@
+= jakarta/faces/context/PartialViewContextWrapper.class
+
+ - link:PartialViewContextWrapper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/AfterTypeDiscovery.class
+
+ - link:AfterTypeDiscovery-asmified.java[Asmified]
+
+== References
+

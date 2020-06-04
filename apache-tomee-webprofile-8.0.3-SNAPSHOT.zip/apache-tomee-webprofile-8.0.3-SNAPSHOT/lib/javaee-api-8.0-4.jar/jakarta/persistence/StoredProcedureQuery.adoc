@@ -1,0 +1,6 @@
+= jakarta/persistence/StoredProcedureQuery.class
+
+ - link:StoredProcedureQuery-asmified.java[Asmified]
+
+== References
+

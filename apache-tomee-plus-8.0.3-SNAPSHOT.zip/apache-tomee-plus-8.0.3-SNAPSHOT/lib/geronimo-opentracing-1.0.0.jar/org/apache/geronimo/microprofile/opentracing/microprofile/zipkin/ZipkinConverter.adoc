@@ -4,8 +4,3 @@
 
 == References
 
- - javax.inject.Inject - 3
- - javax.enterprise.event.Event - 3
- - javax.enterprise.event.Observes - 1
- - javax.annotation.PostConstruct - 1
- - javax.enterprise.context.ApplicationScoped - 1

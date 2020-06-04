@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/LongHolder.class
+
+ - link:LongHolder-asmified.java[Asmified]
+
+== References
+

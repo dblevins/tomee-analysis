@@ -4,13 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.Context - 18
- - javax.enterprise.context.ContextException - 5
- - javax.enterprise.context.RequestScoped - 3
- - javax.enterprise.context.ConversationScoped - 3
- - javax.enterprise.context.ApplicationScoped - 3
- - javax.inject.Singleton - 3
- - javax.enterprise.context.SessionScoped - 3
- - javax.enterprise.context.BusyConversationException - 2
- - javax.enterprise.context.NonexistentConversationException - 2
- - javax.enterprise.context.Dependent - 1

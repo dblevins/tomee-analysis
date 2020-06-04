@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.TupleElement - 4
- - javax.persistence.Tuple - 1

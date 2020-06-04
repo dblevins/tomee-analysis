@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManagerFactory - 3
- - javax.persistence.Persistence - 1
- - javax.persistence.spi.PersistenceUnitInfo - 1

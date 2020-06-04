@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.ws.spi.http.HttpExchange - 9
- - javax.xml.ws.spi.http.HttpContext - 2
- - javax.xml.ws.spi.http.HttpHandler - 2
- - javax.servlet.http.HttpServletRequest - 1
- - javax.servlet.http.HttpServletResponse - 1

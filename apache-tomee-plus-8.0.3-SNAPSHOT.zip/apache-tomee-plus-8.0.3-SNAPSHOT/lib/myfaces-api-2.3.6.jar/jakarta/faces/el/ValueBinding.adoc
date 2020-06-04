@@ -1,0 +1,6 @@
+= jakarta/faces/el/ValueBinding.class
+
+ - link:ValueBinding-asmified.java[Asmified]
+
+== References
+

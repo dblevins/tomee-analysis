@@ -1,0 +1,6 @@
+= jakarta/security/enterprise/authentication/mechanism/http/HttpAuthenticationMechanismWrapper.class
+
+ - link:HttpAuthenticationMechanismWrapper-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/xml/registry/JAXRException.class
+
+ - link:JAXRException-asmified.java[Asmified]
+
+== References
+

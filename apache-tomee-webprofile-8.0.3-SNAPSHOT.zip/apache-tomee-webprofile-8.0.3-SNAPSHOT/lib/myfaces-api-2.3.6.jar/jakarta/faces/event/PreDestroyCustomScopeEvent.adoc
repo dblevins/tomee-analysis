@@ -1,0 +1,6 @@
+= jakarta/faces/event/PreDestroyCustomScopeEvent.class
+
+ - link:PreDestroyCustomScopeEvent-asmified.java[Asmified]
+
+== References
+

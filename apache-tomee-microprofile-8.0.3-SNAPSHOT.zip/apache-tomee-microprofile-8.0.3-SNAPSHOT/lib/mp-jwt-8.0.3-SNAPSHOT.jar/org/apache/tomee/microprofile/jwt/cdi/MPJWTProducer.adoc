@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 5
- - javax.inject.Inject - 1
- - javax.enterprise.inject.Produces - 1
- - javax.enterprise.context.RequestScoped - 1
- - javax.enterprise.context.ApplicationScoped - 1

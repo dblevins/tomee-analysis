@@ -1,0 +1,6 @@
+= jakarta/cache/Caching$CachingProviderRegistry.class
+
+ - link:Caching$CachingProviderRegistry-asmified.java[Asmified]
+
+== References
+

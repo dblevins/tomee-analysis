@@ -4,5 +4,3 @@
 
 == References
 
- - javax.el.ExpressionFactory - 3
- - javax.el.ELResolver - 2

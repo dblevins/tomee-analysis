@@ -4,7 +4,3 @@
 
 == References
 
- - javax.resource.spi.ManagedConnectionFactory - 1
- - javax.resource.spi.ResourceAdapter - 1
- - javax.transaction.TransactionManager - 1
- - javax.resource.spi.ConnectionManager - 1

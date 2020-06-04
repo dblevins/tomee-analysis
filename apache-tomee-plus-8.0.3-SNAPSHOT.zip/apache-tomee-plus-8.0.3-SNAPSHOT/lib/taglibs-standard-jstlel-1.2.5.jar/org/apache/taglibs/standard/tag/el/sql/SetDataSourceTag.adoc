@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.PageContext - 10
- - javax.servlet.jsp.tagext.Tag - 5
- - javax.servlet.jsp.JspException - 2

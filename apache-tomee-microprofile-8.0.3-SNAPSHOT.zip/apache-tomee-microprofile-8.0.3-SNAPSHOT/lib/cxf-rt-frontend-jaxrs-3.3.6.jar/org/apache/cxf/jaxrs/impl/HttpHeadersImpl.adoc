@@ -4,9 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 6
- - javax.ws.rs.core.Cookie - 4
- - javax.ws.rs.core.MultivaluedMap - 1
- - javax.ws.rs.core.HttpHeaders - 1
- - javax.ws.rs.core.Response - 1
- - javax.ws.rs.WebApplicationException - 1

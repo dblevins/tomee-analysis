@@ -4,16 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.JspTagException - 18
- - javax.servlet.jsp.PageContext - 10
- - javax.el.ValueExpression - 10
- - javax.el.VariableMapper - 6
- - javax.servlet.jsp.JspException - 5
- - javax.el.ExpressionFactory - 4
- - javax.servlet.jsp.tagext.BodyTagSupport - 3
- - javax.servlet.jsp.JspFactory - 3
- - javax.servlet.jsp.tagext.BodyContent - 3
- - javax.servlet.jsp.JspApplicationContext - 2
- - javax.el.ELException - 2
- - javax.servlet.ServletContext - 2
- - javax.el.ELContext - 2

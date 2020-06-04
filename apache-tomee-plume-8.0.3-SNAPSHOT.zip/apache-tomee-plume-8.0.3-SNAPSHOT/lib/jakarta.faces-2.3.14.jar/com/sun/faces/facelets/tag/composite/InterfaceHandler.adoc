@@ -4,18 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 42
- - javax.faces.context.FacesContext - 20
- - javax.faces.view.facelets.Tag - 18
- - javax.faces.view.facelets.FaceletContext - 9
- - javax.el.ValueExpression - 8
- - javax.faces.view.facelets.TagException - 7
- - javax.faces.view.facelets.TagAttribute - 5
- - javax.el.ELContext - 4
- - javax.faces.view.facelets.TagConfig - 2
- - javax.faces.application.ProjectStage - 2
- - javax.faces.application.Application - 2
- - javax.faces.view.facelets.TagAttributes - 2
- - javax.faces.view.facelets.FaceletHandler - 2
- - javax.faces.view.facelets.ComponentHandler - 1
- - javax.faces.application.Resource - 1

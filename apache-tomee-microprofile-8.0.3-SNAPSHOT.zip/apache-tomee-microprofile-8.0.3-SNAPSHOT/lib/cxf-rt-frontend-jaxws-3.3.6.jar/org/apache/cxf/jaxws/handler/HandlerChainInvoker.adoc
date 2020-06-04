@@ -4,16 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.MessageContext - 67
- - javax.xml.ws.handler.Handler - 35
- - javax.xml.soap.SOAPFault - 35
- - javax.xml.ws.soap.SOAPFaultException - 22
- - javax.xml.ws.handler.LogicalMessageContext - 12
- - javax.xml.soap.SOAPMessage - 9
- - javax.xml.ws.handler.LogicalHandler - 8
- - javax.xml.soap.Detail - 8
- - javax.xml.soap.SOAPBody - 5
- - javax.xml.ws.ProtocolException - 4
- - javax.xml.soap.SOAPPart - 4
- - javax.xml.soap.SOAPException - 3
- - javax.xml.soap.MessageFactory - 2

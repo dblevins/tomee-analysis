@@ -1,0 +1,6 @@
+= jakarta/servlet/annotation/HandlesTypes.class
+
+ - link:HandlesTypes-asmified.java[Asmified]
+
+== References
+

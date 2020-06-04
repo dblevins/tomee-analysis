@@ -4,8 +4,3 @@
 
 == References
 
- - javax.json.bind.JsonbConfig - 12
- - javax.json.bind.config.PropertyVisibilityStrategy - 1
- - javax.ws.rs.Consumes - 1
- - javax.ws.rs.Produces - 1
- - javax.ws.rs.ext.Provider - 1

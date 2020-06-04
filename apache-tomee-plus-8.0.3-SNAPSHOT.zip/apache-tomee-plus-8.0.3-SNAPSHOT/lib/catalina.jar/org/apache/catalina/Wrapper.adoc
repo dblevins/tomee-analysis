@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.ServletException - 5
- - javax.servlet.Servlet - 4
- - javax.servlet.MultipartConfigElement - 2
- - javax.servlet.UnavailableException - 1

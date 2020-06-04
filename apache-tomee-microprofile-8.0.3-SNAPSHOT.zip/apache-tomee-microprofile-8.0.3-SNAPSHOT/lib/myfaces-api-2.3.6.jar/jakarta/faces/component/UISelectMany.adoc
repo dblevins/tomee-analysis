@@ -1,0 +1,6 @@
+= jakarta/faces/component/UISelectMany.class
+
+ - link:UISelectMany-asmified.java[Asmified]
+
+== References
+

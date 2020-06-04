@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.concurrent.LastExecution - 7
- - javax.enterprise.concurrent.Trigger - 6
- - javax.enterprise.concurrent.ManagedExecutorService - 3
- - javax.enterprise.concurrent.SkippedException - 2

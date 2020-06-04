@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/DoubleHolder.class
+
+ - link:DoubleHolder-asmified.java[Asmified]
+
+== References
+

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 31
- - javax.faces.context.ExternalContext - 3
- - javax.faces.context.Flash - 2

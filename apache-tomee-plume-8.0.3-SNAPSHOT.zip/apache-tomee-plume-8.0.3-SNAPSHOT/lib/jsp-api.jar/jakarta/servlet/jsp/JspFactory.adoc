@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/JspFactory.class
+
+ - link:JspFactory-asmified.java[Asmified]
+
+== References
+

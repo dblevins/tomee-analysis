@@ -1,0 +1,6 @@
+= jakarta/faces/bean/ManagedProperty.class
+
+ - link:ManagedProperty-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 4
- - javax.ws.rs.ext.WriterInterceptorContext - 4
- - javax.ws.rs.WebApplicationException - 1
- - javax.ws.rs.ext.WriterInterceptor - 1

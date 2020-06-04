@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/mime/MIMEContent.class
+
+ - link:MIMEContent-asmified.java[Asmified]
+
+== References
+

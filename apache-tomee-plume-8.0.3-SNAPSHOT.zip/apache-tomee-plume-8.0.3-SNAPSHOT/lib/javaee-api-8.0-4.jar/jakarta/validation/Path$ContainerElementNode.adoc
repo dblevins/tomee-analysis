@@ -1,0 +1,6 @@
+= jakarta/validation/Path$ContainerElementNode.class
+
+ - link:Path$ContainerElementNode-asmified.java[Asmified]
+
+== References
+

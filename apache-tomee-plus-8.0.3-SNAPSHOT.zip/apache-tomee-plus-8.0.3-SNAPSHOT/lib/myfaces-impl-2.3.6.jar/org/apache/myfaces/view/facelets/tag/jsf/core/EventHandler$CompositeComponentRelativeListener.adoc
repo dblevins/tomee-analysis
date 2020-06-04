@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 21
- - javax.faces.context.FacesContext - 16
- - javax.el.MethodExpression - 10
- - javax.el.ELContext - 5
- - javax.el.MethodNotFoundException - 5
- - javax.faces.event.ComponentSystemEvent - 3
- - javax.faces.component.UIViewRoot - 2
- - javax.faces.event.ComponentSystemEventListener - 1

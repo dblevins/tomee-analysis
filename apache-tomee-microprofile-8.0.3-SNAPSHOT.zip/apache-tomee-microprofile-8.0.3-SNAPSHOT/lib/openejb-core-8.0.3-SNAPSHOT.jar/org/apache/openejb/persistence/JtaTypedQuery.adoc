@@ -4,10 +4,3 @@
 
 == References
 
- - javax.persistence.TypedQuery - 30
- - javax.persistence.Query - 29
- - javax.persistence.TemporalType - 24
- - javax.persistence.Parameter - 12
- - javax.persistence.FlushModeType - 4
- - javax.persistence.LockModeType - 4
- - javax.persistence.EntityManager - 2

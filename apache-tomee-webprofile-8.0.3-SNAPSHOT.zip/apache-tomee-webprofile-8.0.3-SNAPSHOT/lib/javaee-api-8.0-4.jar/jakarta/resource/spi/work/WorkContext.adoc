@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/WorkContext.class
+
+ - link:WorkContext-asmified.java[Asmified]
+
+== References
+

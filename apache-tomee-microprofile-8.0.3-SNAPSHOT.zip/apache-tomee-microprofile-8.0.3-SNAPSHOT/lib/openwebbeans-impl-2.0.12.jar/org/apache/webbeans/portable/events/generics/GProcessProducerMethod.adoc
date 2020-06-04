@@ -4,6 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedMethod - 4
- - javax.enterprise.inject.spi.AnnotatedParameter - 2
- - javax.enterprise.inject.spi.Bean - 2

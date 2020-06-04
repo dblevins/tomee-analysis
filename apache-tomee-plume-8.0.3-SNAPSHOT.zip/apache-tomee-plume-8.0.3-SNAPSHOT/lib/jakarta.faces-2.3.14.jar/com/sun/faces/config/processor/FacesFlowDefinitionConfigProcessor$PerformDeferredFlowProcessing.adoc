@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 6
- - javax.faces.event.SystemEvent - 3
- - javax.faces.FacesException - 2
- - javax.faces.application.Application - 1
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.SystemEventListener - 1

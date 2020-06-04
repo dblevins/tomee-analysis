@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 6
- - javax.persistence.Transient - 1
- - javax.persistence.MappedSuperclass - 1
- - javax.persistence.Id - 1

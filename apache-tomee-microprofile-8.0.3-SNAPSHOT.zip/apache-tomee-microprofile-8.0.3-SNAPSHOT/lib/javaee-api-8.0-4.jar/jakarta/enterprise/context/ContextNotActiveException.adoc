@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/ContextNotActiveException.class
+
+ - link:ContextNotActiveException-asmified.java[Asmified]
+
+== References
+

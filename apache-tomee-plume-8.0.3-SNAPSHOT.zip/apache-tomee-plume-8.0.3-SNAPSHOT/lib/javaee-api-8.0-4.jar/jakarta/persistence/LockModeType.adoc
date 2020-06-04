@@ -1,0 +1,6 @@
+= jakarta/persistence/LockModeType.class
+
+ - link:LockModeType-asmified.java[Asmified]
+
+== References
+

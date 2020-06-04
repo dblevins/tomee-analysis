@@ -4,6 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 4
- - javax.enterprise.context.ApplicationScoped - 1
- - javax.enterprise.inject.spi.ProducerFactory - 1

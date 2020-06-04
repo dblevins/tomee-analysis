@@ -4,11 +4,3 @@
 
 == References
 
- - javax.annotation.security.RolesAllowed - 10
- - javax.annotation.security.DenyAll - 8
- - javax.annotation.security.PermitAll - 8
- - javax.ws.rs.container.ResourceInfo - 4
- - javax.ws.rs.core.FeatureContext - 2
- - javax.ws.rs.container.DynamicFeature - 1
- - javax.ws.rs.ext.Provider - 1
- - javax.ws.rs.core.Configurable - 1

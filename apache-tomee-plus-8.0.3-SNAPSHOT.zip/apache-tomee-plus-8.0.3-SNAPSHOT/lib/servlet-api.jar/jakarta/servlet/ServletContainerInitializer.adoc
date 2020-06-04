@@ -1,0 +1,6 @@
+= jakarta/servlet/ServletContainerInitializer.class
+
+ - link:ServletContainerInitializer-asmified.java[Asmified]
+
+== References
+

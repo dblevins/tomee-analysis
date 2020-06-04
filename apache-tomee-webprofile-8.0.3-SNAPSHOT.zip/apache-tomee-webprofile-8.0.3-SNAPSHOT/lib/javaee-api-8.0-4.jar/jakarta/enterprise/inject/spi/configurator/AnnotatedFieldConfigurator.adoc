@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/configurator/AnnotatedFieldConfigurator.class
+
+ - link:AnnotatedFieldConfigurator-asmified.java[Asmified]
+
+== References
+

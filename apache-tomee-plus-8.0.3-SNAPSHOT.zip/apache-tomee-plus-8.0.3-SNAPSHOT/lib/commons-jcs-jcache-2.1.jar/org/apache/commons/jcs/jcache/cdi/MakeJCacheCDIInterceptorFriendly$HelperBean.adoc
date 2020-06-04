@@ -4,10 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.InjectionTarget - 15
- - javax.enterprise.context.spi.CreationalContext - 9
- - javax.enterprise.inject.spi.AnnotatedType - 7
- - javax.enterprise.inject.spi.PassivationCapable - 1
- - javax.enterprise.context.ApplicationScoped - 1
- - javax.enterprise.inject.spi.InjectionPoint - 1
- - javax.enterprise.inject.spi.Bean - 1

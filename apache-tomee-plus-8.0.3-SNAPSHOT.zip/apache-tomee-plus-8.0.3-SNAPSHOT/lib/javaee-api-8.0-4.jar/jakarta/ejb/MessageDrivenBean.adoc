@@ -1,0 +1,6 @@
+= jakarta/ejb/MessageDrivenBean.class
+
+ - link:MessageDrivenBean-asmified.java[Asmified]
+
+== References
+

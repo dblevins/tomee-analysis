@@ -1,0 +1,6 @@
+= jakarta/mail/FolderClosedException.class
+
+ - link:FolderClosedException-asmified.java[Asmified]
+
+== References
+

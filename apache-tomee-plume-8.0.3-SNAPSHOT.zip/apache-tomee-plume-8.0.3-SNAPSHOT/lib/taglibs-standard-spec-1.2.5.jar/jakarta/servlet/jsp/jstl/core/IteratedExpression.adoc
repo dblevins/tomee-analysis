@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/jstl/core/IteratedExpression.class
+
+ - link:IteratedExpression-asmified.java[Asmified]
+
+== References
+

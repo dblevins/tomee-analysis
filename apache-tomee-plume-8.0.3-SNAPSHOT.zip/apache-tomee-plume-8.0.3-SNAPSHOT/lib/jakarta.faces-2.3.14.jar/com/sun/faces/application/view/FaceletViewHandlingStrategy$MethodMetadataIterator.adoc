@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 6
- - javax.el.ValueExpression - 5
- - javax.el.ELContext - 2

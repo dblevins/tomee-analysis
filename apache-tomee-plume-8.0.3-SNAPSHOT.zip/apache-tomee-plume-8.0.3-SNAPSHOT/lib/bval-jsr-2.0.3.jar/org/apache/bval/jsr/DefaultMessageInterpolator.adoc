@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.MessageInterpolator$Context - 12
- - javax.validation.metadata.ConstraintDescriptor - 4
- - javax.validation.MessageInterpolator - 1

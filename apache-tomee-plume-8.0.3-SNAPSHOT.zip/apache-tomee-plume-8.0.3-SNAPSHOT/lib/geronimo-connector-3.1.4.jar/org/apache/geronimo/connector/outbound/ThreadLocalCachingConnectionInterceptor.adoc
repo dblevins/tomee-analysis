@@ -4,7 +4,3 @@
 
 == References
 
- - javax.resource.spi.ManagedConnection - 2
- - javax.resource.spi.ConnectionRequestInfo - 2
- - javax.resource.spi.ManagedConnectionFactory - 2
- - javax.resource.ResourceException - 1

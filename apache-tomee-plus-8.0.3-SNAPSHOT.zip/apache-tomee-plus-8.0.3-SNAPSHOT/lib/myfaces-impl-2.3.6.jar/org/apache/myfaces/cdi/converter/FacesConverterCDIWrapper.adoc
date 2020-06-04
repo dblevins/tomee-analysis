@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.convert.Converter - 18
- - javax.faces.context.FacesContext - 12
- - javax.faces.context.ExternalContext - 4
- - javax.enterprise.inject.spi.BeanManager - 4
- - javax.faces.component.UIComponent - 4
- - javax.faces.convert.ConverterException - 2
- - javax.faces.FacesWrapper - 1
- - javax.faces.component.PartialStateHolder - 1

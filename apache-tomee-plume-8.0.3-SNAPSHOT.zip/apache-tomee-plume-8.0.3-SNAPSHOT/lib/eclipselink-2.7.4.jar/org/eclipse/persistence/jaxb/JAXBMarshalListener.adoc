@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.Marshaller$Listener - 11
- - javax.xml.bind.Marshaller - 7
- - javax.xml.bind.JAXBElement - 2

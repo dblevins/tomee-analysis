@@ -4,13 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.Bean - 15
- - javax.enterprise.inject.spi.Interceptor - 8
- - javax.ws.rs.core.Response$ResponseBuilder - 4
- - javax.enterprise.inject.spi.Decorator - 4
- - javax.ws.rs.core.Response - 3
- - javax.ws.rs.WebApplicationException - 2
- - javax.enterprise.inject.InjectionException - 2
- - javax.enterprise.context.spi.CreationalContext - 1
- - javax.enterprise.inject.spi.InjectionTarget - 1
- - javax.enterprise.context.spi.Contextual - 1

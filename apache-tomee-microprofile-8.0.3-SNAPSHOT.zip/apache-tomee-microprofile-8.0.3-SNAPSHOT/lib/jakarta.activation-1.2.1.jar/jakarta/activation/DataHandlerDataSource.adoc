@@ -1,0 +1,6 @@
+= jakarta/activation/DataHandlerDataSource.class
+
+ - link:DataHandlerDataSource-asmified.java[Asmified]
+
+== References
+

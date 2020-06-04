@@ -4,6 +4,3 @@
 
 == References
 
- - javax.resource.spi.ManagedConnectionFactory - 10
- - javax.transaction.TransactionManager - 9
- - javax.resource.spi.ValidatingManagedConnectionFactory - 1

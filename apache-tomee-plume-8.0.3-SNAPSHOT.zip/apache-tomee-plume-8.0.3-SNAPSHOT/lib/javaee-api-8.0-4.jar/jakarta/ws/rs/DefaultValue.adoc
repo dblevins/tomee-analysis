@@ -1,0 +1,6 @@
+= jakarta/ws/rs/DefaultValue.class
+
+ - link:DefaultValue-asmified.java[Asmified]
+
+== References
+

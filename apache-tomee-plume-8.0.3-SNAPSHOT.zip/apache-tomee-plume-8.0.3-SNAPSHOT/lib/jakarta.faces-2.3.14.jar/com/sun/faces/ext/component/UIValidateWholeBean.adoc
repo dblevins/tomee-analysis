@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 19
- - javax.faces.context.FacesContext - 11
- - javax.faces.component.UIInput - 6
- - javax.faces.component.StateHelper - 4
- - javax.faces.component.UIForm - 3
- - javax.faces.validator.Validator - 3
- - javax.validation.groups.Default - 2
- - javax.faces.FacesException - 2
- - javax.faces.convert.Converter - 1
- - javax.faces.component.EditableValueHolder - 1
- - javax.faces.component.PartialStateHolder - 1

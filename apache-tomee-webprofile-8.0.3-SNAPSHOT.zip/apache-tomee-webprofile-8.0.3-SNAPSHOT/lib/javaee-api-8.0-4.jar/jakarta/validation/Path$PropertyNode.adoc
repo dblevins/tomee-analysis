@@ -1,0 +1,6 @@
+= jakarta/validation/Path$PropertyNode.class
+
+ - link:Path$PropertyNode-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/Slot.class
+
+ - link:Slot-asmified.java[Asmified]
+
+== References
+

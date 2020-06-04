@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.Column - 4
- - javax.persistence.FetchType - 2

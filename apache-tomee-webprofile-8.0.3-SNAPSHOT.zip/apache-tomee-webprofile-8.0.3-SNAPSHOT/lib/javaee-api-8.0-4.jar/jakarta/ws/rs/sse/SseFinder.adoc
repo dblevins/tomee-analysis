@@ -1,0 +1,6 @@
+= jakarta/ws/rs/sse/SseFinder.class
+
+ - link:SseFinder-asmified.java[Asmified]
+
+== References
+

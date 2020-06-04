@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonGenerator - 4
- - javax.json.bind.serializer.SerializationContext - 1

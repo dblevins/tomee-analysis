@@ -1,0 +1,6 @@
+= jakarta/wsdl/factory/WSDLFactory$1.class
+
+ - link:WSDLFactory$1-asmified.java[Asmified]
+
+== References
+

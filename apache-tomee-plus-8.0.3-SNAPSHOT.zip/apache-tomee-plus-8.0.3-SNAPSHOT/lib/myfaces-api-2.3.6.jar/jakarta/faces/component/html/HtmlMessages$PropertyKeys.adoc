@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlMessages$PropertyKeys.class
+
+ - link:HtmlMessages$PropertyKeys-asmified.java[Asmified]
+
+== References
+

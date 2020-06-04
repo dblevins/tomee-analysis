@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.JoinType - 14
- - javax.persistence.criteria.Join - 9
- - javax.persistence.criteria.Path - 1

@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/HttpHeaders.class
+
+ - link:HttpHeaders-asmified.java[Asmified]
+
+== References
+

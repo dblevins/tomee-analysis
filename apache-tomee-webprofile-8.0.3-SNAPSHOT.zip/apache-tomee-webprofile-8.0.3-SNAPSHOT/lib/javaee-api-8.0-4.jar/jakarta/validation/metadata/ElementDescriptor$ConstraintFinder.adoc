@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/ElementDescriptor$ConstraintFinder.class
+
+ - link:ElementDescriptor$ConstraintFinder-asmified.java[Asmified]
+
+== References
+

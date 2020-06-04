@@ -1,0 +1,6 @@
+= jakarta/mail/UIDFolder$FetchProfileItem.class
+
+ - link:UIDFolder$FetchProfileItem-asmified.java[Asmified]
+
+== References
+

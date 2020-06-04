@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Application - 3
- - javax.ws.rs.Path - 1

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 17
- - javax.faces.component.UIComponent - 8
- - javax.faces.component.UIViewRoot - 4
- - javax.faces.context.ExternalContext - 2
- - javax.faces.event.SystemEvent - 2
- - javax.faces.event.PostAddToViewEvent - 1
- - javax.faces.event.SystemEventListener - 1

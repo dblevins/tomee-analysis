@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jms.Topic - 1
- - javax.jms.JMSException - 1

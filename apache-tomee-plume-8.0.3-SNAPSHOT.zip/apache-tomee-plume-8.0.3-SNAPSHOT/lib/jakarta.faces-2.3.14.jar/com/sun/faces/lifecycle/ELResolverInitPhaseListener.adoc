@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.lifecycle.LifecycleFactory - 10
- - javax.faces.context.FacesContext - 8
- - javax.faces.lifecycle.Lifecycle - 7
- - javax.faces.context.ExternalContext - 6
- - javax.faces.event.PhaseListener - 6
- - javax.faces.event.PhaseId - 4
- - javax.faces.event.PhaseEvent - 4
- - javax.faces.application.Application - 3
- - javax.faces.FactoryFinder - 2

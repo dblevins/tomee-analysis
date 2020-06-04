@@ -4,15 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 21
- - javax.faces.context.FacesContext - 17
- - javax.faces.view.facelets.Facelet - 6
- - javax.faces.event.ComponentSystemEvent - 5
- - javax.faces.context.ExternalContext - 4
- - javax.faces.component.UIViewRoot - 2
- - javax.faces.application.ViewHandler - 2
- - javax.faces.application.Application - 2
- - javax.faces.FacesException - 2
- - javax.faces.event.ComponentSystemEventListener - 1
- - javax.faces.component.StateHolder - 1
- - javax.faces.view.ViewDeclarationLanguage - 1

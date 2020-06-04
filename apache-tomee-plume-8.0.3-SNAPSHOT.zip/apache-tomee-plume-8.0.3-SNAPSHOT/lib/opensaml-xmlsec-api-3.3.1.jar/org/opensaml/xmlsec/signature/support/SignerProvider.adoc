@@ -5,4 +5,3 @@
 == References
 
  - javax.annotation.concurrent.ThreadSafe - 1
- - javax.annotation.Nonnull - 1

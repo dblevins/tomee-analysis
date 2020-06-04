@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ejb.Lock - 1
- - javax.ejb.Singleton - 1
- - javax.ejb.Remote - 1
- - javax.ejb.LockType - 1

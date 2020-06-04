@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/shared/factories/DeploymentFactoryManager.class
+
+ - link:DeploymentFactoryManager-asmified.java[Asmified]
+
+== References
+

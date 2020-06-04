@@ -4,9 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 59
- - javax.mail.Flags$Flag - 14
- - javax.mail.internet.InternetAddress - 12
- - javax.mail.Flags - 12
- - javax.mail.internet.MailDateFormat - 8
- - javax.mail.internet.ParameterList - 4

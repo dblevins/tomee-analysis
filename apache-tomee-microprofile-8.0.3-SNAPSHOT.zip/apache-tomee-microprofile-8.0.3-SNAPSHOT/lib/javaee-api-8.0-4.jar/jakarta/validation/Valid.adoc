@@ -1,0 +1,6 @@
+= jakarta/validation/Valid.class
+
+ - link:Valid-asmified.java[Asmified]
+
+== References
+

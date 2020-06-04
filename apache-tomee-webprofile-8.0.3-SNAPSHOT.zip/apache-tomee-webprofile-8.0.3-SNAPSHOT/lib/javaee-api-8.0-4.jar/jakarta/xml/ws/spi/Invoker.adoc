@@ -1,0 +1,6 @@
+= jakarta/xml/ws/spi/Invoker.class
+
+ - link:Invoker-asmified.java[Asmified]
+
+== References
+

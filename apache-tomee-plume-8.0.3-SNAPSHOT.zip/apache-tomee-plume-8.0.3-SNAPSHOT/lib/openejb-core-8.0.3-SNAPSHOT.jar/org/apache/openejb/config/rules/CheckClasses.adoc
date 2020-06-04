@@ -4,29 +4,3 @@
 
 == References
 
- - javax.annotation.security.RolesAllowed - 1
- - javax.ejb.Timeout - 1
- - javax.ejb.PostActivate - 1
- - javax.annotation.security.DeclareRoles - 1
- - javax.ejb.EJBHome - 1
- - javax.annotation.PreDestroy - 1
- - javax.annotation.Resources - 1
- - javax.ejb.EJBObject - 1
- - javax.ejb.EJBs - 1
- - javax.ejb.TransactionAttribute - 1
- - javax.ejb.Local - 1
- - javax.ejb.EJB - 1
- - javax.annotation.security.DenyAll - 1
- - javax.jws.WebService - 1
- - javax.ejb.TransactionManagement - 1
- - javax.annotation.security.PermitAll - 1
- - javax.ejb.EntityBean - 1
- - javax.annotation.Resource - 1
- - javax.annotation.security.RunAs - 1
- - javax.ejb.Remove - 1
- - javax.ejb.PrePassivate - 1
- - javax.ejb.Init - 1
- - javax.ejb.EJBLocalHome - 1
- - javax.ejb.Remote - 1
- - javax.annotation.PostConstruct - 1
- - javax.ejb.EJBLocalObject - 1

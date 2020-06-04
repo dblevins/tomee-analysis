@@ -1,0 +1,6 @@
+= jakarta/websocket/OnOpen.class
+
+ - link:OnOpen-asmified.java[Asmified]
+
+== References
+

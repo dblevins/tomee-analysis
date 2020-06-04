@@ -4,15 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 5
- - javax.enterprise.inject.spi.ProcessAnnotatedType - 3
- - javax.faces.validator.FacesValidator - 1
- - javax.enterprise.inject.spi.Extension - 1
- - javax.enterprise.event.Observes - 1
- - javax.faces.bean.ManagedBean - 1
- - javax.faces.convert.FacesConverter - 1
- - javax.faces.component.behavior.FacesBehavior - 1
- - javax.faces.render.FacesBehaviorRenderer - 1
- - javax.faces.component.FacesComponent - 1
- - javax.faces.view.facelets.FaceletsResourceResolver - 1
- - javax.faces.render.FacesRenderer - 1

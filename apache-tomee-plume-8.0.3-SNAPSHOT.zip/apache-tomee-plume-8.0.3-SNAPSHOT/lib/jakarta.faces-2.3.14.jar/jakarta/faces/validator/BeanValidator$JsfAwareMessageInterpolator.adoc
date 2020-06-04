@@ -1,0 +1,6 @@
+= jakarta/faces/validator/BeanValidator$JsfAwareMessageInterpolator.class
+
+ - link:BeanValidator$JsfAwareMessageInterpolator-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.PersistenceContext - 17
- - javax.persistence.PersistenceProperty - 4
- - javax.persistence.PersistenceContextType - 3
- - javax.persistence.SynchronizationType - 2

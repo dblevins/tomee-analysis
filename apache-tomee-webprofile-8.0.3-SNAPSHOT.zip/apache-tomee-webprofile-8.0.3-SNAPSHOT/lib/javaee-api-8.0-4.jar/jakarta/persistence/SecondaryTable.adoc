@@ -1,0 +1,6 @@
+= jakarta/persistence/SecondaryTable.class
+
+ - link:SecondaryTable-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlID.class
+
+ - link:XmlID-asmified.java[Asmified]
+
+== References
+

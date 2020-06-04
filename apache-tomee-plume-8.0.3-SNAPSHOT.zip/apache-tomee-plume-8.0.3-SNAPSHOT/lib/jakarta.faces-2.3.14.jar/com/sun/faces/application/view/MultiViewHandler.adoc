@@ -4,19 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 106
- - javax.faces.context.ExternalContext - 23
- - javax.faces.view.ViewDeclarationLanguage - 23
- - javax.faces.component.UIViewRoot - 22
- - javax.faces.component.UIViewParameter - 20
- - javax.faces.view.ViewDeclarationLanguageFactory - 15
- - javax.faces.application.ViewHandler - 13
- - javax.faces.application.Application - 12
- - javax.faces.application.ViewVisitOption - 10
- - javax.faces.FacesException - 4
- - javax.faces.view.ViewMetadata - 4
- - javax.faces.render.ResponseStateManager - 2
- - javax.faces.context.ResponseWriter - 2
- - javax.faces.context.PartialViewContext - 2
- - javax.faces.FactoryFinder - 1
- - javax.el.ValueExpression - 1

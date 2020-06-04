@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpUpgradeHandler - 1
- - javax.servlet.ServletOutputStream - 1
- - javax.servlet.ServletInputStream - 1

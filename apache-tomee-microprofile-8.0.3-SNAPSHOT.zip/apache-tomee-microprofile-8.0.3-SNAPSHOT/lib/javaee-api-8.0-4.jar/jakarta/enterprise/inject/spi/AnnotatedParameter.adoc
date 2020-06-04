@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/AnnotatedParameter.class
+
+ - link:AnnotatedParameter-asmified.java[Asmified]
+
+== References
+

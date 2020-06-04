@@ -4,13 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlType - 19
- - javax.xml.bind.annotation.XmlAccessType - 18
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 17
- - javax.xml.bind.annotation.XmlAccessorOrder - 12
- - javax.xml.bind.annotation.XmlElement - 11
- - javax.xml.bind.annotation.XmlAccessOrder - 3
- - javax.xml.bind.annotation.adapters.XmlAdapter - 2
- - javax.xml.bind.JAXBContext - 2
- - javax.xml.bind.annotation.XmlTransient - 1
- - javax.xml.bind.annotation.XmlList - 1

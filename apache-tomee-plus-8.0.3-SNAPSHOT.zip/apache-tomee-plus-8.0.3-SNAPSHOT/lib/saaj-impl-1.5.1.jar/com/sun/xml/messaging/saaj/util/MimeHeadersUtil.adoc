@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.soap.MimeHeaders - 7
- - javax.xml.soap.MimeHeader - 3

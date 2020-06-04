@@ -1,0 +1,6 @@
+= jakarta/xml/registry/FindQualifier.class
+
+ - link:FindQualifier-asmified.java[Asmified]
+
+== References
+

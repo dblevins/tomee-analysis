@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ConstraintValidator - 4
- - javax.validation.ConstraintDefinitionException - 2

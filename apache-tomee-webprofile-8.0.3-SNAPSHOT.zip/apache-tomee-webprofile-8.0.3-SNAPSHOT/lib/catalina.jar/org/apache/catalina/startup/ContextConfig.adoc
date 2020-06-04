@@ -4,9 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContainerInitializer - 21
- - javax.servlet.ServletContext - 15
- - javax.servlet.annotation.HandlesTypes - 9
- - javax.servlet.SessionCookieConfig - 9
- - javax.servlet.MultipartConfigElement - 3
- - javax.servlet.descriptor.JspConfigDescriptor - 2

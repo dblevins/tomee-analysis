@@ -4,22 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Application - 56
- - javax.servlet.http.HttpServletRequest - 23
- - javax.servlet.http.HttpServletResponse - 8
- - javax.enterprise.context.spi.CreationalContext - 7
- - javax.servlet.ServletRequest - 6
- - javax.servlet.ServletException - 6
- - javax.servlet.ServletContext - 6
- - javax.servlet.http.HttpServletRequestWrapper - 4
- - javax.ws.rs.ConstrainedTo - 4
- - javax.enterprise.inject.spi.Bean - 4
- - javax.ws.rs.RuntimeType - 2
- - javax.validation.Validator - 2
- - javax.validation.ValidatorFactory - 2
- - javax.enterprise.context.spi.Contextual - 2
- - javax.ws.rs.core.MultivaluedHashMap - 2
- - javax.servlet.ServletOutputStream - 2
- - javax.servlet.ServletConfig - 1
- - javax.ws.rs.core.MultivaluedMap - 1
- - javax.validation.Validation - 1

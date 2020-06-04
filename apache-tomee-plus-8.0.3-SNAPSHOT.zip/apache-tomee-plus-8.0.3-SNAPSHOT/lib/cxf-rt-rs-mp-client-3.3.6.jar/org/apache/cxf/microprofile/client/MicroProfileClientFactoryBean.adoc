@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Configuration - 13
- - javax.ws.rs.client.ClientResponseFilter - 1
- - javax.ws.rs.client.ClientRequestFilter - 1

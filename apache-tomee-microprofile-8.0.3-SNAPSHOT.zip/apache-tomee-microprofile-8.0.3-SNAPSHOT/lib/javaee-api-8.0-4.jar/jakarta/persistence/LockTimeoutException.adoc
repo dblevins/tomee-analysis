@@ -1,0 +1,6 @@
+= jakarta/persistence/LockTimeoutException.class
+
+ - link:LockTimeoutException-asmified.java[Asmified]
+
+== References
+

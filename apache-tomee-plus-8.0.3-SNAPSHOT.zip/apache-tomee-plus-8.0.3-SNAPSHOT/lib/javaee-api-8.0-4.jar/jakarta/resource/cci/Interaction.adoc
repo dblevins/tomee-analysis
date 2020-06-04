@@ -1,0 +1,6 @@
+= jakarta/resource/cci/Interaction.class
+
+ - link:Interaction-asmified.java[Asmified]
+
+== References
+

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.ClientResponseContext - 5
- - javax.ws.rs.client.ClientRequestContext - 2
- - javax.annotation.Priority - 1
- - javax.enterprise.context.ApplicationScoped - 1
- - javax.ws.rs.client.ClientResponseFilter - 1

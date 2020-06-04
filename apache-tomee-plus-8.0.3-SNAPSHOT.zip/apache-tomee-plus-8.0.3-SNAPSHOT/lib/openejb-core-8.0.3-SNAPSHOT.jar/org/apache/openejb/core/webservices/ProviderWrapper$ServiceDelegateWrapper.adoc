@@ -4,14 +4,3 @@
 
 == References
 
- - javax.xml.ws.spi.ServiceDelegate - 37
- - javax.xml.ws.BindingProvider - 14
- - javax.xml.ws.Dispatch - 12
- - javax.xml.ws.Service$Mode - 8
- - javax.xml.ws.WebServiceFeature - 7
- - javax.jws.WebService - 5
- - javax.xml.ws.handler.HandlerResolver - 4
- - javax.xml.bind.JAXBContext - 4
- - javax.xml.ws.EndpointReference - 3
- - javax.xml.ws.soap.SOAPBinding - 3
- - javax.xml.ws.Binding - 2

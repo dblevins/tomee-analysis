@@ -4,12 +4,3 @@
 
 == References
 
- - javax.el.ELException - 22
- - javax.el.FunctionMapper - 8
- - javax.el.ELContext - 6
- - javax.el.ELResolver - 6
- - javax.el.ImportHandler - 4
- - javax.el.ELClass - 4
- - javax.el.ValueExpression - 4
- - javax.el.LambdaExpression - 4
- - javax.el.VariableMapper - 2

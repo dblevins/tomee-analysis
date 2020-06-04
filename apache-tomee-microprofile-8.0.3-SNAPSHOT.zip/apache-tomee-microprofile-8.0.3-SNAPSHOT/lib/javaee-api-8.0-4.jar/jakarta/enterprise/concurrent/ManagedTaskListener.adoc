@@ -1,0 +1,6 @@
+= jakarta/enterprise/concurrent/ManagedTaskListener.class
+
+ - link:ManagedTaskListener-asmified.java[Asmified]
+
+== References
+

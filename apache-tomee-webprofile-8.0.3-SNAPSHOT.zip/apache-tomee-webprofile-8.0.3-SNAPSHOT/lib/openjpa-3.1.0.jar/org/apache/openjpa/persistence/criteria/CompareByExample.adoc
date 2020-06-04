@@ -4,12 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Path - 19
- - javax.persistence.metamodel.SingularAttribute - 16
- - javax.persistence.criteria.Expression - 10
- - javax.persistence.metamodel.Attribute - 9
- - javax.persistence.criteria.CriteriaBuilder - 9
- - javax.persistence.criteria.Predicate$BooleanOperator - 7
- - javax.persistence.criteria.Predicate - 6
- - javax.persistence.metamodel.ManagedType - 6
- - javax.persistence.metamodel.Type - 1

@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/ManagementHome.class
+
+ - link:ManagementHome-asmified.java[Asmified]
+
+== References
+

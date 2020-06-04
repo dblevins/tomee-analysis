@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.PageContext - 21
- - javax.servlet.http.HttpServletRequest - 4
- - javax.servlet.ServletRequest - 4
- - javax.servlet.http.Cookie - 3
- - javax.servlet.ServletContext - 2

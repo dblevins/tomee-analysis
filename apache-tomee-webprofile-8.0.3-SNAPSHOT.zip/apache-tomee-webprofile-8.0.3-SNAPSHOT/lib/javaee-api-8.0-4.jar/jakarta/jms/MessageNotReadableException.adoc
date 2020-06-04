@@ -1,0 +1,6 @@
+= jakarta/jms/MessageNotReadableException.class
+
+ - link:MessageNotReadableException-asmified.java[Asmified]
+
+== References
+

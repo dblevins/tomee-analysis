@@ -1,0 +1,6 @@
+= jakarta/ws/rs/sse/InboundSseEvent.class
+
+ - link:InboundSseEvent-asmified.java[Asmified]
+
+== References
+

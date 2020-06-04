@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 212
- - javax.faces.context.ResponseWriter - 151
- - javax.faces.context.FacesContext - 144
- - javax.faces.component.UIData - 86
- - javax.faces.component.UIColumn - 25
- - javax.faces.component.html.HtmlDataTable - 14
- - javax.faces.component.html.HtmlColumn - 10
- - javax.faces.component.behavior.ClientBehaviorHolder - 6

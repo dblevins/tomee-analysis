@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ExpressionFactory - 6
- - javax.faces.context.ExternalContext - 3
- - javax.servlet.ServletContext - 2

@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/FeatureContext.class
+
+ - link:FeatureContext-asmified.java[Asmified]
+
+== References
+

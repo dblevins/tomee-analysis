@@ -4,6 +4,3 @@
 
 == References
 
- - javax.security.jacc.EJBMethodPermission - 2
- - javax.security.jacc.PolicyConfigurationFactory - 2
- - javax.servlet.http.HttpServletRequest - 1

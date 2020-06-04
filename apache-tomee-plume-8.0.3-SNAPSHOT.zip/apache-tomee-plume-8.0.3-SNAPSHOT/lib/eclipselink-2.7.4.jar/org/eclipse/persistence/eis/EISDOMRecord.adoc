@@ -4,5 +4,3 @@
 
 == References
 
- - javax.resource.cci.Record - 21
- - javax.resource.cci.MappedRecord - 1

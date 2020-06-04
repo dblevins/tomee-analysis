@@ -4,7 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 5
- - javax.faces.flow.Parameter - 5
- - javax.el.MethodExpression - 5
- - javax.faces.flow.MethodCallNode - 2

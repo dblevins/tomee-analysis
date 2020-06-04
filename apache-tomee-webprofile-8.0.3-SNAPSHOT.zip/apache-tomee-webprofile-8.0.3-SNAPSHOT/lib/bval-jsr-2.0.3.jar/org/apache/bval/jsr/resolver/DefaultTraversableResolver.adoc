@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.TraversableResolver - 13
- - javax.validation.Path$Node - 4
- - javax.validation.Path - 4

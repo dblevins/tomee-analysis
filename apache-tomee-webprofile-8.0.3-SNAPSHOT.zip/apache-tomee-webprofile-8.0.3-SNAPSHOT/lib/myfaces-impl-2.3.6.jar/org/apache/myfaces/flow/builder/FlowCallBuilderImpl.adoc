@@ -4,8 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 8
- - javax.faces.flow.builder.FlowCallBuilder - 7
- - javax.faces.flow.Parameter - 2
- - javax.faces.flow.builder.NodeBuilder - 1
- - javax.faces.flow.FlowCallNode - 1

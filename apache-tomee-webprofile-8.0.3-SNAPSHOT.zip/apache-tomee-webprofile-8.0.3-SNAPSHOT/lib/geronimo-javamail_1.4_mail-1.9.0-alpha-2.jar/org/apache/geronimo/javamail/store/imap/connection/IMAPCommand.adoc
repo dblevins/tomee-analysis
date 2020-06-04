@@ -4,32 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 21
- - javax.mail.search.SearchTerm - 21
- - javax.mail.Flags$Flag - 20
- - javax.mail.search.SizeTerm - 18
- - javax.mail.search.OrTerm - 12
- - javax.mail.FetchProfile$Item - 9
- - javax.mail.search.NotTerm - 8
- - javax.mail.search.SearchException - 8
- - javax.mail.search.AndTerm - 8
- - javax.mail.FetchProfile - 8
- - javax.mail.Message$RecipientType - 8
- - javax.mail.Address - 6
- - javax.mail.search.HeaderTerm - 6
- - javax.mail.Flags - 6
- - javax.mail.search.ReceivedDateTerm - 6
- - javax.mail.search.FlagTerm - 6
- - javax.mail.search.RecipientStringTerm - 6
- - javax.mail.search.SentDateTerm - 6
- - javax.mail.search.RecipientTerm - 6
- - javax.mail.search.FromStringTerm - 5
- - javax.mail.search.FromTerm - 5
- - javax.mail.search.MessageIDTerm - 5
- - javax.mail.search.BodyTerm - 5
- - javax.mail.search.SubjectTerm - 5
- - javax.mail.Quota$Resource - 4
- - javax.mail.search.AddressTerm - 3
- - javax.mail.search.StringTerm - 3
- - javax.mail.Quota - 1
- - javax.mail.UIDFolder$FetchProfileItem - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/event/ComponentSystemEvent.class
+
+ - link:ComponentSystemEvent-asmified.java[Asmified]
+
+== References
+

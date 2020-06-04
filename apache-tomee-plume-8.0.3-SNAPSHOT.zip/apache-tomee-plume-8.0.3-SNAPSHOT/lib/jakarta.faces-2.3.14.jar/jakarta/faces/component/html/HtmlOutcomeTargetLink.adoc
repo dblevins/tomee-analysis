@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlOutcomeTargetLink.class
+
+ - link:HtmlOutcomeTargetLink-asmified.java[Asmified]
+
+== References
+

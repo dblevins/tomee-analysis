@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jms.TopicConnection - 8
- - javax.jms.Topic - 8

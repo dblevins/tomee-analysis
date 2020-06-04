@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/Decorator.class
+
+ - link:Decorator-asmified.java[Asmified]
+
+== References
+

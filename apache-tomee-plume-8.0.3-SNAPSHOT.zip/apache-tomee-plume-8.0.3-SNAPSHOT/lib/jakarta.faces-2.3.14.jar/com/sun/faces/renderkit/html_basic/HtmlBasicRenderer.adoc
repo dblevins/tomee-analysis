@@ -4,22 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 108
- - javax.faces.context.FacesContext - 43
- - javax.faces.component.UIParameter - 13
- - javax.faces.component.behavior.ClientBehaviorHolder - 11
- - javax.faces.convert.Converter - 5
- - javax.faces.context.ResponseWriter - 5
- - javax.faces.component.UIInput - 4
- - javax.faces.component.search.SearchExpressionHint - 3
- - javax.faces.component.behavior.ClientBehaviorContext$Parameter - 3
- - javax.faces.component.search.SearchExpressionContext - 3
- - javax.faces.component.ValueHolder - 3
- - javax.faces.component.behavior.ClientBehavior - 3
- - javax.faces.component.search.SearchExpressionHandler - 3
- - javax.faces.context.ExternalContext - 2
- - javax.faces.render.Renderer - 2
- - javax.faces.application.Application - 2
- - javax.faces.convert.ConverterException - 2
- - javax.faces.component.UIViewRoot - 1
- - javax.faces.component.NamingContainer - 1

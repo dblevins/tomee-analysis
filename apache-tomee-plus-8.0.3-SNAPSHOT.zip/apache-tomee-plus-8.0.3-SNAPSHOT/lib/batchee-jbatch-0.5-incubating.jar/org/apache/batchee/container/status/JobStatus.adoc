@@ -4,5 +4,3 @@
 
 == References
 
- - javax.batch.runtime.BatchStatus - 8
- - javax.batch.runtime.JobInstance - 7

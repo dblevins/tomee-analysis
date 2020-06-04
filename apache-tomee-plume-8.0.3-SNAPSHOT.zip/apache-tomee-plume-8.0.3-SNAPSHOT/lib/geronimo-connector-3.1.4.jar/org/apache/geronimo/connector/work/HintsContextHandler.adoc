@@ -4,6 +4,3 @@
 
 == References
 
- - javax.resource.spi.work.HintsContext - 8
- - javax.resource.spi.work.WorkCompletedException - 4
- - javax.resource.spi.work.WorkContext - 3

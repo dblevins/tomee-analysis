@@ -1,0 +1,6 @@
+= jakarta/json/JsonBuilderFactory.class
+
+ - link:JsonBuilderFactory-asmified.java[Asmified]
+
+== References
+

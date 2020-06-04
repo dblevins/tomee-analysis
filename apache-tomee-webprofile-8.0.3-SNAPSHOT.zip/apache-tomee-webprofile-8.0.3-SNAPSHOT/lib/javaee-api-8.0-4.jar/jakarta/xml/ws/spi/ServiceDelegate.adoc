@@ -1,0 +1,6 @@
+= jakarta/xml/ws/spi/ServiceDelegate.class
+
+ - link:ServiceDelegate-asmified.java[Asmified]
+
+== References
+

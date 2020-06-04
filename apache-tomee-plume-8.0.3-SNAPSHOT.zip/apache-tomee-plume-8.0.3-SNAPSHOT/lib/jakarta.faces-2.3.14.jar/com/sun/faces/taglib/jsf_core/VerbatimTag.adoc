@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 13
- - javax.faces.component.UIComponent - 7
- - javax.servlet.jsp.tagext.BodyContent - 5
- - javax.faces.webapp.UIComponentELTag - 3
- - javax.faces.component.UIOutput - 2
- - javax.servlet.jsp.JspException - 1

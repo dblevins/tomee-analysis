@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 6
- - javax.servlet.http.HttpServletResponse - 4
- - javax.servlet.ServletSecurityElement - 2

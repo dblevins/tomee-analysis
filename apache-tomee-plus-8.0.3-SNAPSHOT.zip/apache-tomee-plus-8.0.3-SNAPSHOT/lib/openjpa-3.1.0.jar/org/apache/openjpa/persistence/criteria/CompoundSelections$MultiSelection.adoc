@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.TupleElement - 3
- - javax.persistence.criteria.Selection - 2
- - javax.persistence.Tuple - 1

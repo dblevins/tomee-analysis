@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.adapters.XmlAdapter - 1
- - javax.xml.bind.JAXBElement - 1
- - javax.activation.DataHandler - 1

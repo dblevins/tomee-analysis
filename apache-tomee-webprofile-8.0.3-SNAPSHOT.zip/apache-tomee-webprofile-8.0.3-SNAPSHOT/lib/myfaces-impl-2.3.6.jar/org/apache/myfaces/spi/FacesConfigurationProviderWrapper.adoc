@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.context.ExternalContext - 18
- - javax.faces.FacesWrapper - 1

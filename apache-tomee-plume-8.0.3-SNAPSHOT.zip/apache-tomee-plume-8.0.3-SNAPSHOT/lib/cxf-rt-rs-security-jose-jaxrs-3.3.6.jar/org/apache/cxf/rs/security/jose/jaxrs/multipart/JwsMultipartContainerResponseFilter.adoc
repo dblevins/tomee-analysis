@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.container.ContainerResponseContext - 4
- - javax.ws.rs.core.MediaType - 3
- - javax.annotation.Priority - 1
- - javax.ws.rs.container.ContainerResponseFilter - 1
- - javax.ws.rs.container.ContainerRequestContext - 1

@@ -4,4 +4,3 @@
 
 == References
 
- - javax.websocket.Extension$Parameter - 1

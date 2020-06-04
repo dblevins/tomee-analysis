@@ -1,0 +1,6 @@
+= jakarta/faces/lifecycle/LifecycleFactory.class
+
+ - link:LifecycleFactory-asmified.java[Asmified]
+
+== References
+

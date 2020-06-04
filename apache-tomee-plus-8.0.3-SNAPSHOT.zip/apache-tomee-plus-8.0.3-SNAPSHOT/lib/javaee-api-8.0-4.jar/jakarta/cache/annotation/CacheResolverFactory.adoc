@@ -1,0 +1,6 @@
+= jakarta/cache/annotation/CacheResolverFactory.class
+
+ - link:CacheResolverFactory-asmified.java[Asmified]
+
+== References
+

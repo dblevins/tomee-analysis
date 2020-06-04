@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/configurator/AnnotatedConstructorConfigurator.class
+
+ - link:AnnotatedConstructorConfigurator-asmified.java[Asmified]
+
+== References
+

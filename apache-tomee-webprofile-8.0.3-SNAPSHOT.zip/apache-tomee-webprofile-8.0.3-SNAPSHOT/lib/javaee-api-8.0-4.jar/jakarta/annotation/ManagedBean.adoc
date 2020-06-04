@@ -1,0 +1,6 @@
+= jakarta/annotation/ManagedBean.class
+
+ - link:ManagedBean-asmified.java[Asmified]
+
+== References
+

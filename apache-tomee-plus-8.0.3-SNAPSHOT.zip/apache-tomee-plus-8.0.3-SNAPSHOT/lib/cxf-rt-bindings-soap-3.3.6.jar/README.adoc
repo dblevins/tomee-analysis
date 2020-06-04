@@ -1,11 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/cxf-rt-bindings-soap-3.3.6.jar
 
- - link:org/apache/cxf/binding/soap/saaj/SAAJStreamWriter.adoc[org/apache/cxf/binding/soap/saaj/SAAJStreamWriter.class] - 145
- - link:org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.adoc[org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.class] - 108
- - link:org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.adoc[org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.class] - 53
- - link:org/apache/cxf/binding/soap/saaj/SAAJUtils.adoc[org/apache/cxf/binding/soap/saaj/SAAJUtils.class] - 41
- - link:org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver.adoc[org/apache/cxf/binding/soap/saaj/SAAJFactoryResolver.class] - 37
- - link:org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor$SAAJOutEndingInterceptor.adoc[org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor$SAAJOutEndingInterceptor.class] - 30
- - link:org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor.adoc[org/apache/cxf/binding/soap/saaj/SAAJInInterceptor$SAAJPreInInterceptor.class] - 20
- - link:org/apache/cxf/binding/soap/SOAPBindingUtil.adoc[org/apache/cxf/binding/soap/SOAPBindingUtil.class] - 6
- - link:org/apache/cxf/binding/soap/jms/interceptor/JMSFaultType.adoc[org/apache/cxf/binding/soap/jms/interceptor/JMSFaultType.class] - 3

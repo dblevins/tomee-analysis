@@ -1,0 +1,6 @@
+= jakarta/ejb/Handle.class
+
+ - link:Handle-asmified.java[Asmified]
+
+== References
+

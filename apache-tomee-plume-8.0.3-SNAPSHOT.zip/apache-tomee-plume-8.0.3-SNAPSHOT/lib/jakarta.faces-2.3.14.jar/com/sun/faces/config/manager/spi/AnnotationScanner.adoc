@@ -4,13 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 11
- - javax.faces.validator.FacesValidator - 1
- - javax.faces.bean.ManagedBean - 1
- - javax.faces.convert.FacesConverter - 1
- - javax.faces.event.NamedEvent - 1
- - javax.faces.component.behavior.FacesBehavior - 1
- - javax.faces.render.FacesBehaviorRenderer - 1
- - javax.faces.component.FacesComponent - 1
- - javax.faces.view.facelets.FaceletsResourceResolver - 1
- - javax.faces.render.FacesRenderer - 1

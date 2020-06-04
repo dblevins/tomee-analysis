@@ -1,0 +1,6 @@
+= jakarta/json/stream/JsonGenerationException.class
+
+ - link:JsonGenerationException-asmified.java[Asmified]
+
+== References
+

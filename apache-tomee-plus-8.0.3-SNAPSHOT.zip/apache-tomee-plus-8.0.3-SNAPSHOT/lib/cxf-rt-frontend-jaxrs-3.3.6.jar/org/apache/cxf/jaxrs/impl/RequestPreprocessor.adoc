@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 11
- - javax.ws.rs.core.UriInfo - 8
- - javax.ws.rs.core.HttpHeaders - 3

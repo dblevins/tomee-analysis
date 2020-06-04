@@ -4,6 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 7
- - javax.faces.context.FacesContext - 5
- - javax.faces.component.UIComponent - 5

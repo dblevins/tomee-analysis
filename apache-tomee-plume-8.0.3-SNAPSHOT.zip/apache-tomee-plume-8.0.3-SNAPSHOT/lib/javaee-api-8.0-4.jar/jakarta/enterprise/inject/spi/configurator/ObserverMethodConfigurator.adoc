@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/configurator/ObserverMethodConfigurator.class
+
+ - link:ObserverMethodConfigurator-asmified.java[Asmified]
+
+== References
+

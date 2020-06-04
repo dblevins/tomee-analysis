@@ -4,5 +4,3 @@
 
 == References
 
- - javax.batch.runtime.BatchStatus - 52
- - javax.batch.api.listener.JobListener - 6

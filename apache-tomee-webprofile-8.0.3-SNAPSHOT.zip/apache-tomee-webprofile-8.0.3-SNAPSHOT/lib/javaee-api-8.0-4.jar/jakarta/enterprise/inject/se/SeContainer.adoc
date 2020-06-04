@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/se/SeContainer.class
+
+ - link:SeContainer-asmified.java[Asmified]
+
+== References
+

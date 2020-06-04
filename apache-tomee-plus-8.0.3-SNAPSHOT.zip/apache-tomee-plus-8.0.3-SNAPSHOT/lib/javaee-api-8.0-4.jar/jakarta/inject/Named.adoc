@@ -1,0 +1,6 @@
+= jakarta/inject/Named.class
+
+ - link:Named-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/mail/internet/SharedInputStream.class
+
+ - link:SharedInputStream-asmified.java[Asmified]
+
+== References
+

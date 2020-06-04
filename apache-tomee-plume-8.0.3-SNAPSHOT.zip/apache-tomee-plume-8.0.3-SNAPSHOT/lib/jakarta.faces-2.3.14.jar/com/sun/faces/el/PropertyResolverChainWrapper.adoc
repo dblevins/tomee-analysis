@@ -4,11 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 68
- - javax.faces.context.FacesContext - 33
- - javax.faces.el.EvaluationException - 25
- - javax.faces.el.PropertyResolver - 20
- - javax.el.ELException - 20
- - javax.faces.application.Application - 8
- - javax.el.ExpressionFactory - 8
- - javax.el.ELResolver - 2

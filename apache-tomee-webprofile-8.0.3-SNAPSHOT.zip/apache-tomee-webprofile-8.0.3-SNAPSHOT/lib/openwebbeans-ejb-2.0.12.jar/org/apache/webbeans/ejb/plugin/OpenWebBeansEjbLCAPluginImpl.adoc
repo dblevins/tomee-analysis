@@ -4,6 +4,3 @@
 
 == References
 
- - javax.interceptor.AroundTimeout - 1
- - javax.ejb.PrePassivate - 1
- - javax.ejb.PostActivate - 1

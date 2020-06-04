@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.DomHandler - 13
- - javax.xml.bind.ValidationEventHandler - 7

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Request - 15
- - javax.ws.rs.core.Response$ResponseBuilder - 8
- - javax.ws.rs.core.EntityTag - 4
- - javax.ws.rs.core.Variant - 3

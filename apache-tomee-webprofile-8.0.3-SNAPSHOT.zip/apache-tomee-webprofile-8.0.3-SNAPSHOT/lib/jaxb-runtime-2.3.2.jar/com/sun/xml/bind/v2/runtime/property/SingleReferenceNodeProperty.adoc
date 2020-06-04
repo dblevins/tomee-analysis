@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.DomHandler - 10
- - javax.xml.bind.JAXBException - 2

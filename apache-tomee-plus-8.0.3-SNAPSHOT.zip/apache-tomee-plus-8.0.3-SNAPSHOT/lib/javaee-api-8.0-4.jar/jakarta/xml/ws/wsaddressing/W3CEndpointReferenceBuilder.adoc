@@ -1,0 +1,6 @@
+= jakarta/xml/ws/wsaddressing/W3CEndpointReferenceBuilder.class
+
+ - link:W3CEndpointReferenceBuilder-asmified.java[Asmified]
+
+== References
+

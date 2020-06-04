@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.util.TypeLiteral - 2
- - javax.enterprise.event.Event - 1

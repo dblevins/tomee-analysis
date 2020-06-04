@@ -1,0 +1,6 @@
+= jakarta/mail/event/MessageChangedListener.class
+
+ - link:MessageChangedListener-asmified.java[Asmified]
+
+== References
+

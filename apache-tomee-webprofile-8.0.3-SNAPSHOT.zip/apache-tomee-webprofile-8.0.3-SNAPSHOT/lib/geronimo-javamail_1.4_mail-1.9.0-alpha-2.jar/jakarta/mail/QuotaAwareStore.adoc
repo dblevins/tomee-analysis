@@ -1,0 +1,6 @@
+= jakarta/mail/QuotaAwareStore.class
+
+ - link:QuotaAwareStore-asmified.java[Asmified]
+
+== References
+

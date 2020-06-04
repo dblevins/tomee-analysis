@@ -1,0 +1,6 @@
+= jakarta/faces/model/ScalarDataModel.class
+
+ - link:ScalarDataModel-asmified.java[Asmified]
+
+== References
+

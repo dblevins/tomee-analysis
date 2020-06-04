@@ -1,0 +1,6 @@
+= jakarta/resource/cci/RecordFactory.class
+
+ - link:RecordFactory-asmified.java[Asmified]
+
+== References
+

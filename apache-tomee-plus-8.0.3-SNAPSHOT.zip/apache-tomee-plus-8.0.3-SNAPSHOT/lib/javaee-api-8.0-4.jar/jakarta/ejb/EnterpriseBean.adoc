@@ -1,0 +1,6 @@
+= jakarta/ejb/EnterpriseBean.class
+
+ - link:EnterpriseBean-asmified.java[Asmified]
+
+== References
+

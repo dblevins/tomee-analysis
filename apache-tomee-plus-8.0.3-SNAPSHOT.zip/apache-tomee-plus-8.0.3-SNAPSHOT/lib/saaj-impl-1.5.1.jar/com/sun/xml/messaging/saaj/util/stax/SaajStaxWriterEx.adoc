@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.soap.SOAPElement - 9
- - javax.activation.DataHandler - 8
- - javax.xml.soap.SOAPException - 3
- - javax.xml.soap.SOAPMessage - 2
- - javax.xml.bind.attachment.AttachmentMarshaller - 1

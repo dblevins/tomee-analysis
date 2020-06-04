@@ -4,15 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Selection - 52
- - javax.persistence.criteria.Expression - 28
- - javax.persistence.criteria.CriteriaQuery - 25
- - javax.persistence.criteria.AbstractQuery - 14
- - javax.persistence.criteria.Predicate - 14
- - javax.persistence.criteria.Order - 8
- - javax.persistence.metamodel.Type$PersistenceType - 6
- - javax.persistence.metamodel.Metamodel - 4
- - javax.persistence.criteria.Root - 4
- - javax.persistence.criteria.Path - 3
- - javax.persistence.Tuple - 3
- - javax.persistence.criteria.CommonAbstractCriteria - 2

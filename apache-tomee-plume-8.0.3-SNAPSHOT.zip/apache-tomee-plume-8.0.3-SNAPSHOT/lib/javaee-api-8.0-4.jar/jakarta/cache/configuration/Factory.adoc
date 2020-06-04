@@ -1,0 +1,6 @@
+= jakarta/cache/configuration/Factory.class
+
+ - link:Factory-asmified.java[Asmified]
+
+== References
+

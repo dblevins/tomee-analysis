@@ -1,0 +1,6 @@
+= jakarta/xml/bind/DatatypeConverterInterface.class
+
+ - link:DatatypeConverterInterface-asmified.java[Asmified]
+
+== References
+

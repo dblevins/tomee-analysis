@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/JCAConnectionStats.class
+
+ - link:JCAConnectionStats-asmified.java[Asmified]
+
+== References
+

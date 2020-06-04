@@ -1,0 +1,6 @@
+= jakarta/faces/component/NamingContainer.class
+
+ - link:NamingContainer-asmified.java[Asmified]
+
+== References
+

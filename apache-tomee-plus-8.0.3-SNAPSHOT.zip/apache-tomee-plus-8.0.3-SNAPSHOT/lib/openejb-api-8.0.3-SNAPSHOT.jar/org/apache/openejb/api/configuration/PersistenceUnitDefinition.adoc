@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.SharedCacheMode - 2
- - javax.persistence.ValidationMode - 2

@@ -1,0 +1,6 @@
+= jakarta/faces/model/ArrayDataModel.class
+
+ - link:ArrayDataModel-asmified.java[Asmified]
+
+== References
+

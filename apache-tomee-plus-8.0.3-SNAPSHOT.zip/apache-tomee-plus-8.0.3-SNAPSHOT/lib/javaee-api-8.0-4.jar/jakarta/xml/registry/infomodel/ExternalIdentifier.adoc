@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/ExternalIdentifier.class
+
+ - link:ExternalIdentifier-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/MediaType$1.class
+
+ - link:MediaType$1-asmified.java[Asmified]
+
+== References
+

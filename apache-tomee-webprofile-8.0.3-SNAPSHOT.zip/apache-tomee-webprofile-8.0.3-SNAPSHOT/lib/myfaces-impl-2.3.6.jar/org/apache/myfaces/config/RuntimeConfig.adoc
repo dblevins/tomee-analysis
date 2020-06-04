@@ -4,9 +4,3 @@
 
 == References
 
- - javax.el.ELResolver - 12
- - javax.faces.el.PropertyResolver - 10
- - javax.faces.el.VariableResolver - 10
- - javax.el.ExpressionFactory - 5
- - javax.faces.context.ExternalContext - 3
- - javax.faces.component.search.SearchKeywordResolver - 3

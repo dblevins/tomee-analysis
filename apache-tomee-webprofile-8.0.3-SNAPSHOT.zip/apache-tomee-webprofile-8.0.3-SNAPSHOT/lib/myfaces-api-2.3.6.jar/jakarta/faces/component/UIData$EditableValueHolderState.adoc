@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIData$EditableValueHolderState.class
+
+ - link:UIData$EditableValueHolderState-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.inject.Provider - 10
- - javax.interceptor.InvocationContext - 1

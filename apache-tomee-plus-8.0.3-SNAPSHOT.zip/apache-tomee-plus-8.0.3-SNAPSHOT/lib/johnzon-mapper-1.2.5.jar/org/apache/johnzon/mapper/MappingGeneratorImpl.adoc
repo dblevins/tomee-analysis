@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonGenerator - 275
- - javax.json.JsonValue - 22

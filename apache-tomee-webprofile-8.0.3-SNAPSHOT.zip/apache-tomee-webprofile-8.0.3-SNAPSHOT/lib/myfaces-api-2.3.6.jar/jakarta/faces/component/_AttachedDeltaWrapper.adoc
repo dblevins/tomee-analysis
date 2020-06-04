@@ -1,0 +1,6 @@
+= jakarta/faces/component/_AttachedDeltaWrapper.class
+
+ - link:_AttachedDeltaWrapper-asmified.java[Asmified]
+
+== References
+

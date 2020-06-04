@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 17
- - javax.faces.event.PhaseId - 15
- - javax.faces.component.UIComponent - 6
- - javax.faces.context.PartialResponseWriter - 3
- - javax.faces.component.visit.VisitResult - 2
- - javax.faces.FacesException - 2
- - javax.faces.context.PartialViewContext - 2
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.visit.VisitContext - 1

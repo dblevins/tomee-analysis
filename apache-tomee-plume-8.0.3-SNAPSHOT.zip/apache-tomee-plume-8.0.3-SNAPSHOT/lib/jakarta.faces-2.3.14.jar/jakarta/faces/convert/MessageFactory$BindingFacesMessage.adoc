@@ -1,0 +1,6 @@
+= jakarta/faces/convert/MessageFactory$BindingFacesMessage.class
+
+ - link:MessageFactory$BindingFacesMessage-asmified.java[Asmified]
+
+== References
+

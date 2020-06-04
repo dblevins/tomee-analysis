@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/IntHolder.class
+
+ - link:IntHolder-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/validation/ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderDefinedContext.class
+
+ - link:ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderDefinedContext-asmified.java[Asmified]
+
+== References
+

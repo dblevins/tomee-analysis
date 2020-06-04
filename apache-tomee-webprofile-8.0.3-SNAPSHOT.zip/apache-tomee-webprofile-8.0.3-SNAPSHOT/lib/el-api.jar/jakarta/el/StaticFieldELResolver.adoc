@@ -1,0 +1,6 @@
+= jakarta/el/StaticFieldELResolver.class
+
+ - link:StaticFieldELResolver-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/batch/operations/JobStartException.class
+
+ - link:JobStartException-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/ejb/HomeHandle.class
+
+ - link:HomeHandle-asmified.java[Asmified]
+
+== References
+

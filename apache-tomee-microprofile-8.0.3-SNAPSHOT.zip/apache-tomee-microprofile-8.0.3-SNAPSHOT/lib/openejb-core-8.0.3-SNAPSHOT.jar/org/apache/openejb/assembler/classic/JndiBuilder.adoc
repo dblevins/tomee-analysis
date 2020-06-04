@@ -4,7 +4,3 @@
 
 == References
 
- - javax.jms.MessageListener - 3
- - javax.ejb.EJBHome - 1
- - javax.ejb.EJBLocalHome - 1
- - javax.ejb.embeddable.EJBContainer - 1

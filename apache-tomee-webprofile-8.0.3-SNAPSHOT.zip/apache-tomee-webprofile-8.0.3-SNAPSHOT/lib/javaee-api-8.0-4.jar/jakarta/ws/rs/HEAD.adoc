@@ -1,0 +1,6 @@
+= jakarta/ws/rs/HEAD.class
+
+ - link:HEAD-asmified.java[Asmified]
+
+== References
+

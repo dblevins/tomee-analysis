@@ -1,0 +1,6 @@
+= jakarta/mail/internet/AddressParser.class
+
+ - link:AddressParser-asmified.java[Asmified]
+
+== References
+

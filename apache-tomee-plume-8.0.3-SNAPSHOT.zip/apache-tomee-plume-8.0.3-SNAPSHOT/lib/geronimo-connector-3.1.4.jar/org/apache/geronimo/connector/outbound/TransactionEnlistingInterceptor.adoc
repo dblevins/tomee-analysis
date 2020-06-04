@@ -4,8 +4,3 @@
 
 == References
 
- - javax.transaction.TransactionManager - 8
- - javax.resource.ResourceException - 7
- - javax.transaction.Transaction - 6
- - javax.transaction.SystemException - 4
- - javax.transaction.RollbackException - 2

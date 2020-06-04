@@ -1,0 +1,6 @@
+= jakarta/faces/context/FlashWrapper.class
+
+ - link:FlashWrapper-asmified.java[Asmified]
+
+== References
+

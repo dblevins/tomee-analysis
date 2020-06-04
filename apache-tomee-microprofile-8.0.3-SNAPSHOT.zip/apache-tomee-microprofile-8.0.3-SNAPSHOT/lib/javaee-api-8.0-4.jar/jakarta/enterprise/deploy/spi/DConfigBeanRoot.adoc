@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/DConfigBeanRoot.class
+
+ - link:DConfigBeanRoot-asmified.java[Asmified]
+
+== References
+

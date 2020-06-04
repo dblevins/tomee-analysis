@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 13
- - javax.faces.context.ExternalContext - 6
- - javax.servlet.http.Cookie - 6
- - javax.servlet.http.HttpServletResponse - 3

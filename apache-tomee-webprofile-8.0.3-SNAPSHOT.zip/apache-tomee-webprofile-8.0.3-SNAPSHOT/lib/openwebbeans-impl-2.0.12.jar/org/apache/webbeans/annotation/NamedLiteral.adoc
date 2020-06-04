@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.util.AnnotationLiteral - 3
- - javax.inject.Named - 2

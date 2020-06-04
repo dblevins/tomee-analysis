@@ -1,0 +1,6 @@
+= jakarta/faces/component/UISelectMany$ArrayIterator.class
+
+ - link:UISelectMany$ArrayIterator-asmified.java[Asmified]
+
+== References
+

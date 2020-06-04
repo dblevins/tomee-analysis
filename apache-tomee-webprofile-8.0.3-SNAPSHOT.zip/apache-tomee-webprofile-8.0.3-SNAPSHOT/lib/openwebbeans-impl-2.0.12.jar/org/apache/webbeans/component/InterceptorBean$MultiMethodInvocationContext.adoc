@@ -4,6 +4,3 @@
 
 == References
 
- - javax.interceptor.InvocationContext - 19
- - javax.enterprise.inject.spi.InterceptionType - 5
- - javax.enterprise.inject.spi.Interceptor - 5

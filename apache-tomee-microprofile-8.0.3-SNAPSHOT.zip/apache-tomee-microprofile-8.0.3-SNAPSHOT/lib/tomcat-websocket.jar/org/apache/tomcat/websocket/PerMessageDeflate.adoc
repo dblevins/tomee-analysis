@@ -4,6 +4,3 @@
 
 == References
 
- - javax.websocket.SendHandler - 26
- - javax.websocket.Extension$Parameter - 11
- - javax.websocket.Extension - 3

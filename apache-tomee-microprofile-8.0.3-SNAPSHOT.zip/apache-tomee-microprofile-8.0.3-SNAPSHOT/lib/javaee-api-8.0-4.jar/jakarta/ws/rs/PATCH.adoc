@@ -1,0 +1,6 @@
+= jakarta/ws/rs/PATCH.class
+
+ - link:PATCH-asmified.java[Asmified]
+
+== References
+

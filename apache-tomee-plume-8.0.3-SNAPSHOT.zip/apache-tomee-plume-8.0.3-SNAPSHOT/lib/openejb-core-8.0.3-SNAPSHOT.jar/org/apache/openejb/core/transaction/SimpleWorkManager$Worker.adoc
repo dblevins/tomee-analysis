@@ -4,9 +4,3 @@
 
 == References
 
- - javax.resource.spi.work.Work - 16
- - javax.resource.spi.work.WorkException - 15
- - javax.resource.spi.work.WorkEvent - 15
- - javax.resource.spi.work.WorkListener - 14
- - javax.resource.spi.work.WorkRejectedException - 2
- - javax.resource.spi.work.WorkCompletedException - 2

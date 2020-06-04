@@ -1,0 +1,6 @@
+= jakarta/faces/validator/_ParametrizableFacesMessage.class
+
+ - link:_ParametrizableFacesMessage-asmified.java[Asmified]
+
+== References
+

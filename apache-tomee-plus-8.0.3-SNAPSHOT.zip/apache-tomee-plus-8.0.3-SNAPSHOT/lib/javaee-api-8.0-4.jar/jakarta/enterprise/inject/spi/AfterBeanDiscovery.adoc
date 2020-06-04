@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/AfterBeanDiscovery.class
+
+ - link:AfterBeanDiscovery-asmified.java[Asmified]
+
+== References
+

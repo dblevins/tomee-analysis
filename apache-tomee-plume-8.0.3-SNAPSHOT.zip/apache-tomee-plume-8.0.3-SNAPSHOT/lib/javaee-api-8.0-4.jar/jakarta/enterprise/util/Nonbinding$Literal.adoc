@@ -1,0 +1,6 @@
+= jakarta/enterprise/util/Nonbinding$Literal.class
+
+ - link:Nonbinding$Literal-asmified.java[Asmified]
+
+== References
+

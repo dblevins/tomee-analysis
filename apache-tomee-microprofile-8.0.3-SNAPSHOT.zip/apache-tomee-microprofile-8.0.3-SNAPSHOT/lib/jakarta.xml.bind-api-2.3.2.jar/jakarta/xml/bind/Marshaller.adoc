@@ -1,0 +1,6 @@
+= jakarta/xml/bind/Marshaller.class
+
+ - link:Marshaller-asmified.java[Asmified]
+
+== References
+

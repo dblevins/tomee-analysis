@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/BoundedRangeStatistic.class
+
+ - link:BoundedRangeStatistic-asmified.java[Asmified]
+
+== References
+

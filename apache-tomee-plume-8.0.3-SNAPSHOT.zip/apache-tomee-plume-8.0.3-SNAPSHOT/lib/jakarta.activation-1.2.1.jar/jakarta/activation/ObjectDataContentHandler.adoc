@@ -1,0 +1,6 @@
+= jakarta/activation/ObjectDataContentHandler.class
+
+ - link:ObjectDataContentHandler-asmified.java[Asmified]
+
+== References
+

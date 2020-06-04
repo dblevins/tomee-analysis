@@ -1,0 +1,6 @@
+= jakarta/faces/component/_ArrayMap.class
+
+ - link:_ArrayMap-asmified.java[Asmified]
+
+== References
+

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.Contextual - 19
- - javax.enterprise.inject.spi.Bean - 18
- - javax.enterprise.inject.spi.EventMetadata - 6
- - javax.enterprise.inject.spi.InjectionPoint - 6
- - javax.enterprise.context.spi.CreationalContext - 3

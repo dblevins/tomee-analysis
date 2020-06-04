@@ -4,7 +4,3 @@
 
 == References
 
- - javax.annotation.Resource - 56
- - javax.annotation.Resources - 7
- - javax.annotation.PreDestroy - 4
- - javax.annotation.PostConstruct - 4

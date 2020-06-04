@@ -1,0 +1,6 @@
+= jakarta/faces/webapp/UIComponentTag$UIComponentTagAdapter.class
+
+ - link:UIComponentTag$UIComponentTagAdapter-asmified.java[Asmified]
+
+== References
+

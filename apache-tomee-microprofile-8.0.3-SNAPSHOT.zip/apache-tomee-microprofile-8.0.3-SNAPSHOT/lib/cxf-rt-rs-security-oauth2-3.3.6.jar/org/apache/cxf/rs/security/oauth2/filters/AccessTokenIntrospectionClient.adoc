@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MultivaluedMap - 4
- - javax.ws.rs.WebApplicationException - 2

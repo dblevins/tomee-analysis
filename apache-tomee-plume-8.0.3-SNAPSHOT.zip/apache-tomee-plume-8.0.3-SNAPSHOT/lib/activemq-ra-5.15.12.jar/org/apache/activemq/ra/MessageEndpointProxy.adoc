@@ -4,7 +4,3 @@
 
 == References
 
- - javax.resource.spi.endpoint.MessageEndpoint - 8
- - javax.jms.MessageListener - 7
- - javax.resource.ResourceException - 2
- - javax.jms.Message - 2

@@ -1,0 +1,6 @@
+= jakarta/security/auth/message/ServerAuth.class
+
+ - link:ServerAuth-asmified.java[Asmified]
+
+== References
+

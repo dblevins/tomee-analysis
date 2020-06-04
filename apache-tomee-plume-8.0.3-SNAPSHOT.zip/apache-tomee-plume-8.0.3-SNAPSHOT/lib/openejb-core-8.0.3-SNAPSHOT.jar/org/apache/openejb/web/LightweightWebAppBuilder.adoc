@@ -4,12 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 63
- - javax.servlet.ServletContextEvent - 50
- - javax.servlet.annotation.WebFilter - 15
- - javax.servlet.annotation.WebInitParam - 13
- - javax.servlet.annotation.WebListener - 8
- - javax.servlet.annotation.WebServlet - 7
- - javax.servlet.FilterConfig - 3
- - javax.servlet.ServletContextListener - 3
- - javax.ws.rs.core.Application - 2

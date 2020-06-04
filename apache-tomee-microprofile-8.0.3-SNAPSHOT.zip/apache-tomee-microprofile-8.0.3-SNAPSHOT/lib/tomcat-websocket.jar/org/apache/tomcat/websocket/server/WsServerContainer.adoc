@@ -4,20 +4,3 @@
 
 == References
 
- - javax.websocket.server.ServerEndpointConfig - 34
- - javax.websocket.DeploymentException - 29
- - javax.servlet.ServletContext - 18
- - javax.websocket.server.ServerEndpoint - 14
- - javax.websocket.server.ServerEndpointConfig$Builder - 11
- - javax.websocket.CloseReason - 6
- - javax.websocket.server.ServerEndpointConfig$Configurator - 6
- - javax.servlet.FilterRegistration$Dynamic - 3
- - javax.servlet.http.HttpServletResponse - 2
- - javax.servlet.http.HttpServletRequest - 2
- - javax.servlet.DispatcherType - 2
- - javax.websocket.CloseReason$CloseCodes - 1
- - javax.servlet.ServletException - 1
- - javax.websocket.Encoder - 1
- - javax.websocket.CloseReason$CloseCode - 1
- - javax.servlet.Filter - 1
- - javax.websocket.server.ServerContainer - 1

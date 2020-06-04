@@ -1,0 +1,6 @@
+= jakarta/ejb/EJBTransactionRolledbackException.class
+
+ - link:EJBTransactionRolledbackException-asmified.java[Asmified]
+
+== References
+

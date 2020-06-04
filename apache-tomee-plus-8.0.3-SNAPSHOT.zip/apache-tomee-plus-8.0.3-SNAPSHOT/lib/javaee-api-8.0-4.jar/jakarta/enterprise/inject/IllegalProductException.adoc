@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/IllegalProductException.class
+
+ - link:IllegalProductException-asmified.java[Asmified]
+
+== References
+

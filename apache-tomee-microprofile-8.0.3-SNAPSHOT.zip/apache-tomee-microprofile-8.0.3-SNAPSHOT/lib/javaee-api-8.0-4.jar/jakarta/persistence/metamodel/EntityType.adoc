@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/EntityType.class
+
+ - link:EntityType-asmified.java[Asmified]
+
+== References
+

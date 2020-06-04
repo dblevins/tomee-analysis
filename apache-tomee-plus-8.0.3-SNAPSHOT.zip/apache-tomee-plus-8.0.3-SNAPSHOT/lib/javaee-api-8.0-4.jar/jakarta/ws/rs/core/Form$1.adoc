@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/Form$1.class
+
+ - link:Form$1-asmified.java[Asmified]
+
+== References
+

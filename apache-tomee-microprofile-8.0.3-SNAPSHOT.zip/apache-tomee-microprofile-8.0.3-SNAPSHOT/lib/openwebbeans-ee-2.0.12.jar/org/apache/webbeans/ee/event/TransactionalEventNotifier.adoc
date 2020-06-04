@@ -4,11 +4,3 @@
 
 == References
 
- - javax.transaction.Transaction - 9
- - javax.enterprise.inject.spi.EventMetadata - 7
- - javax.enterprise.inject.spi.ObserverMethod - 7
- - javax.enterprise.event.TransactionPhase - 5
- - javax.transaction.RollbackException - 2
- - javax.transaction.SystemException - 1
- - javax.enterprise.inject.spi.EventContext - 1
- - javax.transaction.Synchronization - 1

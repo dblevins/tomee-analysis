@@ -1,0 +1,6 @@
+= jakarta/jms/XAQueueSession.class
+
+ - link:XAQueueSession-asmified.java[Asmified]
+
+== References
+

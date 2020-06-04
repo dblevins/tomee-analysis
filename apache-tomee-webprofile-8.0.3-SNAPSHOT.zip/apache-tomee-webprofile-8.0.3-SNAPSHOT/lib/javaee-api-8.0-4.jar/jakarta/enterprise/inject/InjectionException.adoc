@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/InjectionException.class
+
+ - link:InjectionException-asmified.java[Asmified]
+
+== References
+

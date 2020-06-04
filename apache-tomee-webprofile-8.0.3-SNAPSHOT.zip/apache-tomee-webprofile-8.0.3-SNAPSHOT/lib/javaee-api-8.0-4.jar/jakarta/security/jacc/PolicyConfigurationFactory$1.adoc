@@ -1,0 +1,6 @@
+= jakarta/security/jacc/PolicyConfigurationFactory$1.class
+
+ - link:PolicyConfigurationFactory$1-asmified.java[Asmified]
+
+== References
+

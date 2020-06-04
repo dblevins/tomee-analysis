@@ -1,0 +1,6 @@
+= jakarta/persistence/EntityManagerFactory.class
+
+ - link:EntityManagerFactory-asmified.java[Asmified]
+
+== References
+

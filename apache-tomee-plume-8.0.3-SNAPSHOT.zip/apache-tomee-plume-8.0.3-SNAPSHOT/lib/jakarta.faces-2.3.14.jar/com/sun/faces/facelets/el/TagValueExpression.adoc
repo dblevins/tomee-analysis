@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 35
- - javax.el.ELException - 20
- - javax.el.PropertyNotFoundException - 20
- - javax.el.ELContext - 10
- - javax.el.PropertyNotWritableException - 5
- - javax.el.ValueReference - 2
- - javax.faces.view.facelets.TagAttribute - 1

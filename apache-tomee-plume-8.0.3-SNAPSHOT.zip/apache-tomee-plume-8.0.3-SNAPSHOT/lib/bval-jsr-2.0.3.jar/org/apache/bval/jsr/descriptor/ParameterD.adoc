@@ -4,4 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ParameterDescriptor - 1

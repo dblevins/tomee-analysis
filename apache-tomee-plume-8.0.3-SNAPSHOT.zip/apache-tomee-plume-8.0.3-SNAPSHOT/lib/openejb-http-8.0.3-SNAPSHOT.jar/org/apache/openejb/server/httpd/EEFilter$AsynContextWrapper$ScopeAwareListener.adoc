@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.AsyncEvent - 16
- - javax.servlet.AsyncListener - 12

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.resource.cci.IndexedRecord - 11
- - javax.resource.cci.MappedRecord - 6
- - javax.resource.ResourceException - 3
- - javax.resource.cci.RecordFactory - 2
- - javax.resource.cci.Record - 2

@@ -1,0 +1,6 @@
+= jakarta/servlet/FilterRegistration$Dynamic.class
+
+ - link:FilterRegistration$Dynamic-asmified.java[Asmified]
+
+== References
+

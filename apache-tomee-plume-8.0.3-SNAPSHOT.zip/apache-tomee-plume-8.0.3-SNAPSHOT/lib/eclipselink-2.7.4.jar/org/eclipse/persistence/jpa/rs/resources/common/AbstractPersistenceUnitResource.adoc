@@ -4,8 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.HttpHeaders - 23
- - javax.ws.rs.core.UriInfo - 23
- - javax.ws.rs.core.Response - 12
- - javax.ws.rs.core.MediaType - 8
- - javax.ws.rs.core.Response$ResponseBuilder - 8

@@ -1,0 +1,6 @@
+= jakarta/persistence/PostRemove.class
+
+ - link:PostRemove-asmified.java[Asmified]
+
+== References
+

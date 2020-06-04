@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/_HtmlCommandLink.class
+
+ - link:_HtmlCommandLink-asmified.java[Asmified]
+
+== References
+

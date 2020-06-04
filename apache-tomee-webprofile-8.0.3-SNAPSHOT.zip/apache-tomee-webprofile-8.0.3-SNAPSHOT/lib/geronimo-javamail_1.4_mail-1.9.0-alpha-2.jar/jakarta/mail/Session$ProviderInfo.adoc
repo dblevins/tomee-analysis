@@ -1,0 +1,6 @@
+= jakarta/mail/Session$ProviderInfo.class
+
+ - link:Session$ProviderInfo-asmified.java[Asmified]
+
+== References
+

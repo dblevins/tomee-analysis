@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/soap/SOAPBinding.class
+
+ - link:SOAPBinding-asmified.java[Asmified]
+
+== References
+

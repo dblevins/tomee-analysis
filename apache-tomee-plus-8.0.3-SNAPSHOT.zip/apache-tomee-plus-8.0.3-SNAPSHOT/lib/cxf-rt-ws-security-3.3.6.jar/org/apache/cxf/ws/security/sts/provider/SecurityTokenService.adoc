@@ -4,11 +4,3 @@
 
 == References
 
- - javax.jws.WebParam - 7
- - javax.jws.WebMethod - 7
- - javax.jws.WebResult - 7
- - javax.xml.ws.Action - 6
- - javax.jws.WebService - 1
- - javax.jws.soap.SOAPBinding - 1
- - javax.jws.soap.SOAPBinding$ParameterStyle - 1
- - javax.xml.bind.annotation.XmlSeeAlso - 1

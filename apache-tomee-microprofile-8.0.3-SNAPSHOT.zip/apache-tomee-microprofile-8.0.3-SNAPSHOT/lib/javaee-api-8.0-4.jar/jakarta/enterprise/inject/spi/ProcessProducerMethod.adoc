@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/ProcessProducerMethod.class
+
+ - link:ProcessProducerMethod-asmified.java[Asmified]
+
+== References
+

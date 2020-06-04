@@ -4,5 +4,3 @@
 
 == References
 
- - javax.activation.DataSource - 1
- - javax.xml.soap.SOAPMessage - 1

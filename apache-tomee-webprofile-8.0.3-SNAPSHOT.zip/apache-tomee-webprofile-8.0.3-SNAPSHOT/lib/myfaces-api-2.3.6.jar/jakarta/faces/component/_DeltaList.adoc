@@ -1,0 +1,6 @@
+= jakarta/faces/component/_DeltaList.class
+
+ - link:_DeltaList-asmified.java[Asmified]
+
+== References
+

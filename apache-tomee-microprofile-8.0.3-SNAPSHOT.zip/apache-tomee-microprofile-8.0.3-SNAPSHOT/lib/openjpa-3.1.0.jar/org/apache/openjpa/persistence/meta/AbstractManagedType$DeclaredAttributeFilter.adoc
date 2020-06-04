@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.ManagedType - 13
- - javax.persistence.metamodel.Attribute - 6

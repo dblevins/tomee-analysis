@@ -4,20 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Application - 24
- - javax.enterprise.inject.spi.CDI - 20
- - javax.enterprise.inject.Instance - 11
- - javax.enterprise.inject.spi.Annotated - 8
- - javax.enterprise.inject.spi.AnnotatedType - 7
- - javax.enterprise.inject.spi.Bean - 6
- - javax.enterprise.inject.spi.ProcessBean - 5
- - javax.ws.rs.core.MediaType - 5
- - javax.enterprise.inject.spi.BeanManager - 5
- - javax.enterprise.inject.spi.AnnotatedMethod - 4
- - javax.enterprise.event.Observes - 3
- - javax.servlet.ServletContext - 3
- - javax.enterprise.inject.spi.ProcessAnnotatedType - 2
- - javax.json.JsonReaderFactory - 1
- - javax.enterprise.inject.spi.Extension - 1
- - javax.ws.rs.Path - 1
- - javax.enterprise.inject.spi.BeforeBeanDiscovery - 1

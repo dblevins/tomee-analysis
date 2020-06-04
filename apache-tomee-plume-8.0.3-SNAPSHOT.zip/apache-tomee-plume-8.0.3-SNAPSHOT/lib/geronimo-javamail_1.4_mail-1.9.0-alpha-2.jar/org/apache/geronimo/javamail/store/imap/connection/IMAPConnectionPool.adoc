@@ -4,6 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 17
- - javax.mail.StoreClosedException - 10
- - javax.mail.Store - 5

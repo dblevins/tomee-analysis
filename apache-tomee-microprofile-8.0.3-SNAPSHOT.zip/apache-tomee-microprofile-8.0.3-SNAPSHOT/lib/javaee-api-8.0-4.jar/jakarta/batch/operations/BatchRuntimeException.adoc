@@ -1,0 +1,6 @@
+= jakarta/batch/operations/BatchRuntimeException.class
+
+ - link:BatchRuntimeException-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.JsonNumber - 10
- - javax.json.JsonValue - 5

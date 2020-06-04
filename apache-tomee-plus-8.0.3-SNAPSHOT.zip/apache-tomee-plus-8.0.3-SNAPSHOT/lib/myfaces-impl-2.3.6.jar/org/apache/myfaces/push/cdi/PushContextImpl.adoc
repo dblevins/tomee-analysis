@@ -4,9 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.BeanManager - 16
- - javax.faces.context.FacesContext - 8
- - javax.enterprise.inject.spi.CDI - 6
- - javax.faces.context.ExternalContext - 4
- - javax.faces.FacesException - 4
- - javax.faces.push.PushContext - 1

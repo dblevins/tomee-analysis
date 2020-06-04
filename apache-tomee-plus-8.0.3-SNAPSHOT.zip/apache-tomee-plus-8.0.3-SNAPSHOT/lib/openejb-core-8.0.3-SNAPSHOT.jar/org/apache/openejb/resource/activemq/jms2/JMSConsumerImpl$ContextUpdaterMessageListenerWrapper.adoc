@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jms.MessageListener - 8
- - javax.jms.Message - 6

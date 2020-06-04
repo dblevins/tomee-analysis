@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletResponse - 76
- - javax.servlet.ServletOutputStream - 2
- - javax.servlet.http.Cookie - 2

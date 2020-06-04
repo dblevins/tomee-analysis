@@ -4,4 +4,3 @@
 
 == References
 
- - javax.security.auth.message.config.RegistrationListener - 7

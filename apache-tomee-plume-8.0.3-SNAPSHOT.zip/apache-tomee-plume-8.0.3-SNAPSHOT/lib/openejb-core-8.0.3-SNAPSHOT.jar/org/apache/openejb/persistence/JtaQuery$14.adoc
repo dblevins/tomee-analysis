@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.TemporalType - 5
- - javax.persistence.Parameter - 5
- - javax.persistence.Query - 4

@@ -4,15 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 242
- - javax.faces.component.html.HtmlInputTextarea - 40
- - javax.el.MethodExpression - 14
- - javax.faces.webapp.UIComponentELTag - 4
- - javax.faces.convert.Converter - 2
- - javax.faces.application.Application - 2
- - javax.faces.context.FacesContext - 2
- - javax.faces.event.MethodExpressionValueChangeListener - 2
- - javax.faces.validator.MethodExpressionValidator - 2
- - javax.faces.component.UIComponent - 2
- - javax.faces.event.ValueChangeListener - 1
- - javax.faces.validator.Validator - 1

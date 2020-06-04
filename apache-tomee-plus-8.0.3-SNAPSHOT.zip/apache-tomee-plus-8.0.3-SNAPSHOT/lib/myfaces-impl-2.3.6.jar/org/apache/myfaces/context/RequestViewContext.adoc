@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 21
- - javax.faces.component.UIViewRoot - 9
- - javax.faces.component.UIComponent - 8
- - javax.faces.application.ResourceDependency - 4
- - javax.faces.component.visit.VisitContext - 3
- - javax.faces.component.visit.VisitHint - 2
- - javax.faces.component.visit.VisitCallback - 1

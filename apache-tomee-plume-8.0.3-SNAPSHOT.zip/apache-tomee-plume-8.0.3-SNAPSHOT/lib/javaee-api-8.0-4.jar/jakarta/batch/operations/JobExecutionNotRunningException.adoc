@@ -1,0 +1,6 @@
+= jakarta/batch/operations/JobExecutionNotRunningException.class
+
+ - link:JobExecutionNotRunningException-asmified.java[Asmified]
+
+== References
+

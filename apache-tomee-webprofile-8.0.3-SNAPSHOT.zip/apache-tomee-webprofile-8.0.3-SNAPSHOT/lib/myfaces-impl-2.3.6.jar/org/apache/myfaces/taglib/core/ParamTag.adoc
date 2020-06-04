@@ -4,5 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 5
- - javax.faces.component.UIComponent - 3

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.batch.runtime.Metric$MetricType - 5
- - javax.batch.runtime.Metric - 1

@@ -4,9 +4,3 @@
 
 == References
 
- - javax.jms.Topic - 10
- - javax.jms.MessageConsumer - 8
- - javax.jms.JMSException - 8
- - javax.jms.Destination - 4
- - javax.jms.TopicSubscriber - 4
- - javax.jms.MessageProducer - 2

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.validator.FacesValidator - 6
- - javax.faces.application.Application - 4
- - javax.faces.context.FacesContext - 2

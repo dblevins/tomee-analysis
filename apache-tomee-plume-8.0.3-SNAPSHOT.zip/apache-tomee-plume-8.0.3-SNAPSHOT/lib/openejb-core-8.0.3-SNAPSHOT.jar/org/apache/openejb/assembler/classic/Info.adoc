@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBException - 8
- - javax.xml.bind.JAXBContext - 8
- - javax.xml.bind.Marshaller - 7
- - javax.xml.bind.Unmarshaller - 4
- - javax.xml.bind.annotation.XmlRootElement - 1

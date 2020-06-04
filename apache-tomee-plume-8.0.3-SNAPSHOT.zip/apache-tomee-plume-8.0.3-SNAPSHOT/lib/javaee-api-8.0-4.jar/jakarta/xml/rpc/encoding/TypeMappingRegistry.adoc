@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/encoding/TypeMappingRegistry.class
+
+ - link:TypeMappingRegistry-asmified.java[Asmified]
+
+== References
+

@@ -1,24 +1,3 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/opensaml-profile-api-3.3.1.jar
 
- - link:org/opensaml/profile/action/AbstractProfileAction.adoc[org/opensaml/profile/action/AbstractProfileAction.class] - 24
- - link:org/opensaml/profile/action/EventIds.adoc[org/opensaml/profile/action/EventIds.class] - 17
- - link:org/opensaml/profile/context/MetricContext.adoc[org/opensaml/profile/context/MetricContext.class] - 17
- - link:org/opensaml/profile/logic/IPRangePredicate.adoc[org/opensaml/profile/logic/IPRangePredicate.class] - 14
- - link:org/opensaml/profile/action/EventException.adoc[org/opensaml/profile/action/EventException.class] - 9
- - link:org/opensaml/profile/logic/PredicateAccessControl.adoc[org/opensaml/profile/logic/PredicateAccessControl.class] - 9
- - link:org/opensaml/profile/context/AccessControlContext.adoc[org/opensaml/profile/context/AccessControlContext.class] - 8
- - link:org/opensaml/profile/context/ProfileRequestContext.adoc[org/opensaml/profile/context/ProfileRequestContext.class] - 5
- - link:org/opensaml/profile/action/AbstractConditionalProfileAction.adoc[org/opensaml/profile/action/AbstractConditionalProfileAction.class] - 4
- - link:org/opensaml/profile/context/navigate/CurrentOrPreviousEventLookup.adoc[org/opensaml/profile/context/navigate/CurrentOrPreviousEventLookup.class] - 4
- - link:org/opensaml/profile/context/navigate/InboundMessageContextLookup.adoc[org/opensaml/profile/context/navigate/InboundMessageContextLookup.class] - 4
- - link:org/opensaml/profile/context/navigate/OutboundMessageContextLookup.adoc[org/opensaml/profile/context/navigate/OutboundMessageContextLookup.class] - 4
- - link:org/opensaml/profile/context/navigate/ProfileIdLookup.adoc[org/opensaml/profile/context/navigate/ProfileIdLookup.class] - 4
- - link:org/opensaml/profile/logic/MessageContextPredicateAdapter.adoc[org/opensaml/profile/logic/MessageContextPredicateAdapter.class] - 4
- - link:org/opensaml/profile/logic/ProfileIdPredicate.adoc[org/opensaml/profile/logic/ProfileIdPredicate.class] - 4
- - link:org/opensaml/profile/action/ActionSupport.adoc[org/opensaml/profile/action/ActionSupport.class] - 3
- - link:org/opensaml/profile/context/EventContext.adoc[org/opensaml/profile/context/EventContext.class] - 3
- - link:org/opensaml/profile/action/MessageEncoderFactory.adoc[org/opensaml/profile/action/MessageEncoderFactory.class] - 2
- - link:org/opensaml/profile/logic/BrowserProfilePredicate.adoc[org/opensaml/profile/logic/BrowserProfilePredicate.class] - 2
- - link:org/opensaml/profile/logic/NoConfidentialityMessageChannelPredicate.adoc[org/opensaml/profile/logic/NoConfidentialityMessageChannelPredicate.class] - 2
- - link:org/opensaml/profile/logic/NoIntegrityMessageChannelPredicate.adoc[org/opensaml/profile/logic/NoIntegrityMessageChannelPredicate.class] - 2
- - link:org/opensaml/profile/action/ProfileAction.adoc[org/opensaml/profile/action/ProfileAction.class] - 1
+ - link:org/opensaml/profile/context/ProfileRequestContext.adoc[org/opensaml/profile/context/ProfileRequestContext.class] - 1

@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/From.class
+
+ - link:From-asmified.java[Asmified]
+
+== References
+

@@ -4,14 +4,3 @@
 
 == References
 
- - javax.faces.component.UIWebsocket - 20
- - javax.faces.context.FacesContext - 18
- - javax.faces.context.ResponseWriter - 5
- - javax.faces.component.UIComponent - 5
- - javax.faces.component.behavior.ClientBehaviorContext - 3
- - javax.faces.event.ComponentSystemEvent - 2
- - javax.faces.component.behavior.ClientBehavior - 2
- - javax.faces.event.ComponentSystemEventListener - 1
- - javax.faces.event.AbortProcessingException - 1
- - javax.faces.event.PostAddToViewEvent - 1
- - javax.faces.event.ListenerFor - 1

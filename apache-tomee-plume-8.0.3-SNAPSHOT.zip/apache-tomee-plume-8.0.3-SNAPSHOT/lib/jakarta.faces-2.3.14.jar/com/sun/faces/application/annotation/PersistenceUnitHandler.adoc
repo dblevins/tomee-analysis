@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.PersistenceUnit - 18
- - javax.faces.context.FacesContext - 10

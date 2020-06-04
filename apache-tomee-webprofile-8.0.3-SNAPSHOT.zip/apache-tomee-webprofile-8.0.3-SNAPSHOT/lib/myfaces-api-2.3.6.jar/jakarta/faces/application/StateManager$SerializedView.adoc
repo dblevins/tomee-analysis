@@ -1,0 +1,6 @@
+= jakarta/faces/application/StateManager$SerializedView.class
+
+ - link:StateManager$SerializedView-asmified.java[Asmified]
+
+== References
+

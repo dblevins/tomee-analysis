@@ -4,26 +4,3 @@
 
 == References
 
- - javax.servlet.ServletException - 17
- - javax.servlet.Servlet - 15
- - javax.servlet.SessionTrackingMode - 14
- - javax.servlet.ServletContext - 14
- - javax.servlet.ServletContextAttributeEvent - 13
- - javax.servlet.ServletRegistration$Dynamic - 11
- - javax.servlet.ServletContextAttributeListener - 11
- - javax.servlet.Filter - 9
- - javax.servlet.FilterRegistration$Dynamic - 7
- - javax.servlet.annotation.ServletSecurity - 6
- - javax.servlet.SessionCookieConfig - 4
- - javax.servlet.http.HttpServletMapping - 3
- - javax.servlet.ServletSecurityElement - 3
- - javax.servlet.ServletContextListener - 3
- - javax.servlet.ServletRequestListener - 2
- - javax.servlet.descriptor.JspConfigDescriptor - 2
- - javax.servlet.ServletRegistration - 2
- - javax.servlet.http.HttpSessionListener - 2
- - javax.servlet.RequestDispatcher - 2
- - javax.servlet.http.HttpSessionIdListener - 2
- - javax.servlet.ServletRequestAttributeListener - 2
- - javax.servlet.FilterRegistration - 2
- - javax.servlet.http.HttpSessionAttributeListener - 2

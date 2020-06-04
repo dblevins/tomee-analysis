@@ -1,0 +1,6 @@
+= jakarta/faces/component/TransientStateHolder.class
+
+ - link:TransientStateHolder-asmified.java[Asmified]
+
+== References
+

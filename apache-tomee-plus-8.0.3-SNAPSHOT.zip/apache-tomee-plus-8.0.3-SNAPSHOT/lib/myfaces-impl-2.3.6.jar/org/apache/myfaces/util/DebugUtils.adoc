@@ -4,16 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 22
- - javax.faces.event.FacesListener - 8
- - javax.faces.component.UIViewRoot - 6
- - javax.faces.FacesException - 6
- - javax.faces.component.UIInput - 5
- - javax.faces.context.FacesContext - 4
- - javax.faces.component.UICommand - 3
- - javax.el.MethodExpression - 3
- - javax.el.ValueExpression - 3
- - javax.faces.validator.Validator - 2
- - javax.faces.event.ActionListener - 1
- - javax.faces.component.ValueHolder - 1
- - javax.faces.event.ValueChangeListener - 1

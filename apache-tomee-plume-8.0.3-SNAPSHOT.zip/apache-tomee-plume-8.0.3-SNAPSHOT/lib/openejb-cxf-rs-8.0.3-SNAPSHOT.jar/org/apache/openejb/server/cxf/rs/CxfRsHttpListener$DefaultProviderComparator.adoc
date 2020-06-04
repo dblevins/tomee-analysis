@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 8
- - javax.ws.rs.ext.MessageBodyWriter - 7
- - javax.ws.rs.ext.MessageBodyReader - 7
- - javax.ws.rs.core.Configuration - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/flow/builder/SwitchBuilder.class
+
+ - link:SwitchBuilder-asmified.java[Asmified]
+
+== References
+

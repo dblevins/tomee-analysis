@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.component.UISelectOne - 11
- - javax.faces.component.visit.VisitResult - 3
- - javax.faces.context.FacesContext - 2
- - javax.faces.component.visit.VisitContext - 2
- - javax.el.ValueExpression - 1
- - javax.faces.component.visit.VisitCallback - 1
- - javax.faces.component.UIComponent - 1

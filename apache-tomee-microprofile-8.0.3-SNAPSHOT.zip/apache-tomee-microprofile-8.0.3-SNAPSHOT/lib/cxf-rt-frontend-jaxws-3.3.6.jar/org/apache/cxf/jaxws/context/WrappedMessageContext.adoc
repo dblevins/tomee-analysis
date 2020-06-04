@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.ws.handler.MessageContext$Scope - 18
- - javax.xml.ws.handler.MessageContext - 1

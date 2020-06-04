@@ -1,0 +1,6 @@
+= jakarta/enterprise/deploy/spi/status/ProgressObject.class
+
+ - link:ProgressObject-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/PluralJoin.class
+
+ - link:PluralJoin-asmified.java[Asmified]
+
+== References
+

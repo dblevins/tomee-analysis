@@ -4,4 +4,3 @@
 
 == References
 
- - javax.batch.api.listener.JobListener - 3

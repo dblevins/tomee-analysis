@@ -4,6 +4,3 @@
 
 == References
 
- - javax.jms.JMSContext - 7
- - javax.jms.JMSRuntimeException - 4
- - javax.annotation.PreDestroy - 1

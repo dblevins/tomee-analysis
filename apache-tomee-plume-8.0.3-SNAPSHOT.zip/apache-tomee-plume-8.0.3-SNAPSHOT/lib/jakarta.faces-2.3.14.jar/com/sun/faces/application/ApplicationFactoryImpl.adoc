@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.application.Application - 9
- - javax.faces.application.ApplicationFactory - 3
- - javax.faces.context.FacesContext - 3

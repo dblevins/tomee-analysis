@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.http.Part - 28
- - javax.faces.context.FacesContext - 2
- - javax.faces.component.StateHolder - 1
- - javax.faces.FacesWrapper - 1

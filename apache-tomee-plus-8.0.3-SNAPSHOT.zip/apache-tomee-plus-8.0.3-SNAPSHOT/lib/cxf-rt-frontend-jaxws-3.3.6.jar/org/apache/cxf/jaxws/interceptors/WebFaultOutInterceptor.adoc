@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebFault - 24
- - javax.xml.ws.soap.SOAPFaultException - 11
- - javax.xml.soap.SOAPFault - 8

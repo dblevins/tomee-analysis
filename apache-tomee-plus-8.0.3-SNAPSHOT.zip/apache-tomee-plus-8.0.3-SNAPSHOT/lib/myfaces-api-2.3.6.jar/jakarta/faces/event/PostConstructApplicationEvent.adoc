@@ -1,0 +1,6 @@
+= jakarta/faces/event/PostConstructApplicationEvent.class
+
+ - link:PostConstructApplicationEvent-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/resource/cci/Streamable.class
+
+ - link:Streamable-asmified.java[Asmified]
+
+== References
+

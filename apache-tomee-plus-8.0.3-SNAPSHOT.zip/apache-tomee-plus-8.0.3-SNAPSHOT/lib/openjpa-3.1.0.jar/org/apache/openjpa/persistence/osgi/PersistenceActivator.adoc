@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.spi.PersistenceProvider - 1

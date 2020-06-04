@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 8
- - javax.faces.component.UIViewRoot - 6
- - javax.faces.context.ExternalContext - 2

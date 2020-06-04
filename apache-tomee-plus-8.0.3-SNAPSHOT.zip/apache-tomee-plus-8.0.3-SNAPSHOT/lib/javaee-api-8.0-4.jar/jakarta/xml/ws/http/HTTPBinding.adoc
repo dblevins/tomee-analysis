@@ -1,0 +1,6 @@
+= jakarta/xml/ws/http/HTTPBinding.class
+
+ - link:HTTPBinding-asmified.java[Asmified]
+
+== References
+

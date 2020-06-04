@@ -1,12 +1,2 @@
 = apache-tomee-microprofile-8.0.3-SNAPSHOT/lib/stax-ex-1.8.1.jar
 
- - link:org/jvnet/staxex/Base64Data.adoc[org/jvnet/staxex/Base64Data.class] - 32
- - link:org/jvnet/staxex/Base64Data$FilterDataHandler.adoc[org/jvnet/staxex/Base64Data$FilterDataHandler.class] - 8
- - link:org/jvnet/staxex/StreamingDataHandler.adoc[org/jvnet/staxex/StreamingDataHandler.class] - 6
- - link:org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter.adoc[org/jvnet/staxex/util/XMLStreamReaderToXMLStreamWriter.class] - 6
- - link:org/jvnet/staxex/Base64Data$Base64StreamingDataHandler.adoc[org/jvnet/staxex/Base64Data$Base64StreamingDataHandler.class] - 4
- - link:org/jvnet/staxex/BinaryText.adoc[org/jvnet/staxex/BinaryText.class] - 1
- - link:org/jvnet/staxex/MtomEnabled.adoc[org/jvnet/staxex/MtomEnabled.class] - 1
- - link:org/jvnet/staxex/Base64Data$Base64DataSource.adoc[org/jvnet/staxex/Base64Data$Base64DataSource.class] - 1
- - link:org/jvnet/staxex/util/MtomStreamWriter.adoc[org/jvnet/staxex/util/MtomStreamWriter.class] - 1
- - link:org/jvnet/staxex/XMLStreamWriterEx.adoc[org/jvnet/staxex/XMLStreamWriterEx.class] - 1

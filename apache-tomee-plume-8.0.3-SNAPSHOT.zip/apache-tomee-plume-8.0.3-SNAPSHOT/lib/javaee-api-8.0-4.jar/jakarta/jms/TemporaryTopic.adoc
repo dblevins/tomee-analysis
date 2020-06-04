@@ -1,0 +1,6 @@
+= jakarta/jms/TemporaryTopic.class
+
+ - link:TemporaryTopic-asmified.java[Asmified]
+
+== References
+

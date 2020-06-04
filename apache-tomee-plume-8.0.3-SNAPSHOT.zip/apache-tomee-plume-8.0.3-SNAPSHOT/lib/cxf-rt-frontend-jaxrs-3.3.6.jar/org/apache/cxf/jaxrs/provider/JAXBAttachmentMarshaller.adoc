@@ -4,5 +4,3 @@
 
 == References
 
- - javax.activation.DataHandler - 4
- - javax.xml.bind.attachment.AttachmentMarshaller - 2

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContainerInitializer - 15
- - javax.ws.rs.core.Application - 2
- - javax.servlet.http.HttpServlet - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Expression - 4
- - javax.persistence.criteria.Order - 2

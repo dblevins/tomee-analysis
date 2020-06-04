@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/DecimalMin$List.class
+
+ - link:DecimalMin$List-asmified.java[Asmified]
+
+== References
+

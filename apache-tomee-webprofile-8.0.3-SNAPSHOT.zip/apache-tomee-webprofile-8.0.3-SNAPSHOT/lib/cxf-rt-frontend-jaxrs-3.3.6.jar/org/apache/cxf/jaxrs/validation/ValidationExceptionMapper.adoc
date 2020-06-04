@@ -4,12 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response$Status - 15
- - javax.validation.ConstraintViolation - 10
- - javax.validation.ValidationException - 9
- - javax.validation.ConstraintViolationException - 8
- - javax.ws.rs.core.Response - 7
- - javax.ws.rs.core.Response$ResponseBuilder - 7
- - javax.ws.rs.ext.Provider - 1
- - javax.ws.rs.ext.ExceptionMapper - 1
- - javax.validation.Path - 1

@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.Unmarshaller - 7
- - javax.xml.ws.EndpointReference - 6
- - javax.xml.bind.JAXBContext - 2

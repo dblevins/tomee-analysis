@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBException - 33
- - javax.xml.bind.Marshaller - 26
- - javax.xml.bind.Unmarshaller - 25
- - javax.xml.bind.attachment.AttachmentMarshaller - 12
- - javax.xml.bind.attachment.AttachmentUnmarshaller - 10

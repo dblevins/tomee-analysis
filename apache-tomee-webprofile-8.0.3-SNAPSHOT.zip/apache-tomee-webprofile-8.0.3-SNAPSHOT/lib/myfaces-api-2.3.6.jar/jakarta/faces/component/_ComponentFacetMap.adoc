@@ -1,0 +1,6 @@
+= jakarta/faces/component/_ComponentFacetMap.class
+
+ - link:_ComponentFacetMap-asmified.java[Asmified]
+
+== References
+

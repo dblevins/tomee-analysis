@@ -4,10 +4,3 @@
 
 == References
 
- - javax.security.auth.message.callback.PasswordValidationCallback - 9
- - javax.security.auth.message.callback.GroupPrincipalCallback - 3
- - javax.security.auth.message.callback.CallerPrincipalCallback - 3
- - javax.security.auth.message.callback.TrustStoreCallback - 1
- - javax.security.auth.message.callback.SecretKeyCallback - 1
- - javax.security.auth.message.callback.PrivateKeyCallback - 1
- - javax.security.auth.message.callback.CertStoreCallback - 1

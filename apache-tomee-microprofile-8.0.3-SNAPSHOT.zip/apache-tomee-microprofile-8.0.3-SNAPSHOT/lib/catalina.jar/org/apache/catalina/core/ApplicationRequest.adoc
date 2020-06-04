@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.ServletRequest - 11
- - javax.servlet.ServletRequestWrapper - 3

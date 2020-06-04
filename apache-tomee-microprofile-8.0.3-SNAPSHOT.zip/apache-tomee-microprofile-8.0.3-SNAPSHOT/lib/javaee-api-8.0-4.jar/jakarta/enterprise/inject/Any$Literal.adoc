@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/Any$Literal.class
+
+ - link:Any$Literal-asmified.java[Asmified]
+
+== References
+

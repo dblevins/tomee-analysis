@@ -4,10 +4,3 @@
 
 == References
 
- - javax.xml.bind.ValidationEventHandler - 8
- - javax.xml.bind.JAXBContext - 7
- - javax.xml.bind.attachment.AttachmentUnmarshaller - 1
- - javax.xml.bind.annotation.XmlAttachmentRef - 1
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 1
- - javax.xml.bind.annotation.XmlList - 1
- - javax.xml.bind.attachment.AttachmentMarshaller - 1

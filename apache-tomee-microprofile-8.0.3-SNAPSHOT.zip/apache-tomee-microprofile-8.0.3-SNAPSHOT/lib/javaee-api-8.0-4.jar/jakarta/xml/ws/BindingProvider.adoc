@@ -1,0 +1,6 @@
+= jakarta/xml/ws/BindingProvider.class
+
+ - link:BindingProvider-asmified.java[Asmified]
+
+== References
+

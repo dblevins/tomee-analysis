@@ -1,0 +1,6 @@
+= jakarta/ws/rs/container/AsyncResponse.class
+
+ - link:AsyncResponse-asmified.java[Asmified]
+
+== References
+

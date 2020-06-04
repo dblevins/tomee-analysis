@@ -1,0 +1,6 @@
+= jakarta/xml/bind/annotation/XmlElement.class
+
+ - link:XmlElement-asmified.java[Asmified]
+
+== References
+

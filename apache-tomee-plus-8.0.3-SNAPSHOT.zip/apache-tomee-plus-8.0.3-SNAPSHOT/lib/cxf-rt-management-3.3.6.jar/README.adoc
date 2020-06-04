@@ -1,6 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/cxf-rt-management-3.3.6.jar
 
- - link:org/apache/cxf/management/jmx/type/JMXConnectorPolicyType.adoc[org/apache/cxf/management/jmx/type/JMXConnectorPolicyType.class] - 7
- - link:org/apache/cxf/management/jmx/type/ObjectFactory.adoc[org/apache/cxf/management/jmx/type/ObjectFactory.class] - 5
- - link:org/apache/cxf/management/jmx/InstrumentationManagerImpl.adoc[org/apache/cxf/management/jmx/InstrumentationManagerImpl.class] - 1
- - link:org/apache/cxf/management/jmx/type/package-info.adoc[org/apache/cxf/management/jmx/type/package-info.class] - 1

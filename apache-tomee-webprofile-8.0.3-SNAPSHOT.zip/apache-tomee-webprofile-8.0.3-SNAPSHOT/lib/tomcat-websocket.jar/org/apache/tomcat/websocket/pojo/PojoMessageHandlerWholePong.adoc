@@ -4,6 +4,3 @@
 
 == References
 
- - javax.websocket.PongMessage - 4
- - javax.websocket.Session - 2
- - javax.websocket.DecodeException - 1

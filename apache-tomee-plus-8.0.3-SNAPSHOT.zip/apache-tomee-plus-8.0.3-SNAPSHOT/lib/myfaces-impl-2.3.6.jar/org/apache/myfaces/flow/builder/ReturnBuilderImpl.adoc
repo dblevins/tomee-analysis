@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.flow.builder.ReturnBuilder - 6
- - javax.el.ValueExpression - 4
- - javax.faces.flow.ReturnNode - 1
- - javax.faces.flow.builder.NodeBuilder - 1

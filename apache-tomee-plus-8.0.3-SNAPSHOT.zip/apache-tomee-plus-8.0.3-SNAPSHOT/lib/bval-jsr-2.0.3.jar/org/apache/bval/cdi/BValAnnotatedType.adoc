@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.AnnotatedType - 17
- - javax.enterprise.inject.spi.AnnotatedField - 1
- - javax.enterprise.inject.spi.AnnotatedMethod - 1
- - javax.enterprise.inject.spi.AnnotatedConstructor - 1

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.FaceletHandler - 7
- - javax.faces.view.facelets.FaceletException - 6
- - javax.faces.context.FacesContext - 4
- - javax.faces.context.ExternalContext - 2

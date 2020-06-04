@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/WithAnnotations.class
+
+ - link:WithAnnotations-asmified.java[Asmified]
+
+== References
+

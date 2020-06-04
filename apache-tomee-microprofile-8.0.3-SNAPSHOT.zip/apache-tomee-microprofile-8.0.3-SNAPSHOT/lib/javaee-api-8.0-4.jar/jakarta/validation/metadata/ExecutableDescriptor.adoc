@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/ExecutableDescriptor.class
+
+ - link:ExecutableDescriptor-asmified.java[Asmified]
+
+== References
+

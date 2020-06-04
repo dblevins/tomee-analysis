@@ -1,0 +1,6 @@
+= jakarta/security/enterprise/authentication/mechanism/http/HttpAuthenticationMechanism.class
+
+ - link:HttpAuthenticationMechanism-asmified.java[Asmified]
+
+== References
+

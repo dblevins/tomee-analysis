@@ -1,0 +1,6 @@
+= jakarta/jms/StreamMessage.class
+
+ - link:StreamMessage-asmified.java[Asmified]
+
+== References
+

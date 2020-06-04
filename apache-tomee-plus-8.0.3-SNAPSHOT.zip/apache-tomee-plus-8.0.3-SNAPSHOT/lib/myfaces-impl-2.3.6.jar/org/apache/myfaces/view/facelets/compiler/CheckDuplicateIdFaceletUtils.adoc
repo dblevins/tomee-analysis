@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 34
- - javax.faces.context.FacesContext - 20
- - javax.faces.view.Location - 3
- - javax.faces.component.UIViewRoot - 2
- - javax.faces.application.Application - 2
- - javax.faces.event.PhaseId - 2
- - javax.faces.event.ExceptionQueuedEventContext - 2
- - javax.faces.event.ExceptionQueuedEvent - 1

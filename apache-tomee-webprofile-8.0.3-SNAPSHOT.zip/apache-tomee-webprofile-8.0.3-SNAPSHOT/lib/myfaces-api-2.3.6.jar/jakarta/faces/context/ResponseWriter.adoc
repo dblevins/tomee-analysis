@@ -1,0 +1,6 @@
+= jakarta/faces/context/ResponseWriter.class
+
+ - link:ResponseWriter-asmified.java[Asmified]
+
+== References
+

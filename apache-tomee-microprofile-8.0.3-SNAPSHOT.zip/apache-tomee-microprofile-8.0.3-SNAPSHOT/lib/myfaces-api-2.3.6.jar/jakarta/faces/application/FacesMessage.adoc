@@ -1,0 +1,6 @@
+= jakarta/faces/application/FacesMessage.class
+
+ - link:FacesMessage-asmified.java[Asmified]
+
+== References
+

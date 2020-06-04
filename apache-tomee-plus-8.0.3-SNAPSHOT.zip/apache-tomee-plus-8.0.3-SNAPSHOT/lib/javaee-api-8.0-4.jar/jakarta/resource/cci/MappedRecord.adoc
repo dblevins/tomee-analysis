@@ -1,0 +1,6 @@
+= jakarta/resource/cci/MappedRecord.class
+
+ - link:MappedRecord-asmified.java[Asmified]
+
+== References
+

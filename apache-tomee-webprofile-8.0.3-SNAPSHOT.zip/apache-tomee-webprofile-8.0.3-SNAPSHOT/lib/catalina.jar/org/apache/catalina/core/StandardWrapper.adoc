@@ -4,12 +4,3 @@
 
 == References
 
- - javax.servlet.Servlet - 60
- - javax.servlet.ServletException - 34
- - javax.servlet.ServletContext - 20
- - javax.servlet.MultipartConfigElement - 10
- - javax.servlet.UnavailableException - 9
- - javax.servlet.annotation.MultipartConfig - 3
- - javax.servlet.ServletConfig - 3
- - javax.servlet.http.HttpServlet - 2
- - javax.servlet.SingleThreadModel - 1

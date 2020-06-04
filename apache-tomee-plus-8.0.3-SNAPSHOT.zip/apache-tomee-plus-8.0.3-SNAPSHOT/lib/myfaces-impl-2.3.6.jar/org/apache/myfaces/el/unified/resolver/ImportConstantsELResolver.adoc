@@ -4,13 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 11
- - javax.faces.context.FacesContext - 9
- - javax.faces.component.UIViewRoot - 7
- - javax.el.PropertyNotFoundException - 6
- - javax.faces.component.TransientStateHelper - 4
- - javax.el.ELException - 4
- - javax.faces.component.UIImportConstants - 4
- - javax.el.ELResolver - 2
- - javax.faces.view.ViewMetadata - 1
- - javax.el.PropertyNotWritableException - 1

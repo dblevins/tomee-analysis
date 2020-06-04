@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.context.ExternalContext - 298
- - javax.faces.context.FacesContext - 152
- - javax.faces.application.ProjectStage - 4

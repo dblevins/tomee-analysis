@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Expression - 28
- - javax.persistence.criteria.Predicate - 12
- - javax.persistence.criteria.Selection - 2

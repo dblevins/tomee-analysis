@@ -4,7 +4,3 @@
 
 == References
 
- - javax.jms.StreamMessage - 52
- - javax.jms.JMSException - 26
- - javax.jms.MessageFormatException - 2
- - javax.jms.Message - 1

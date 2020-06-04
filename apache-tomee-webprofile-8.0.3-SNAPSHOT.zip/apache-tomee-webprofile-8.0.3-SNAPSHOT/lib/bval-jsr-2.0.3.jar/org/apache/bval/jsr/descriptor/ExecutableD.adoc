@@ -4,8 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ElementDescriptor - 2
- - javax.validation.metadata.ExecutableDescriptor - 1
- - javax.validation.metadata.ParameterDescriptor - 1
- - javax.validation.metadata.CrossParameterDescriptor - 1
- - javax.validation.metadata.ReturnValueDescriptor - 1

@@ -4,26 +4,3 @@
 
 == References
 
- - javax.el.ELResolver - 30
- - javax.faces.context.FacesContext - 23
- - javax.faces.context.ExternalContext - 15
- - javax.el.ExpressionFactory - 13
- - javax.faces.el.ReferenceSyntaxException - 10
- - javax.el.CompositeELResolver - 10
- - javax.el.ValueExpression - 8
- - javax.faces.el.PropertyResolver - 7
- - javax.faces.el.VariableResolver - 7
- - javax.el.ListELResolver - 5
- - javax.el.BeanELResolver - 5
- - javax.el.ResourceBundleELResolver - 5
- - javax.el.MapELResolver - 5
- - javax.el.ArrayELResolver - 5
- - javax.faces.application.Application - 4
- - javax.el.ELContext - 4
- - javax.enterprise.inject.spi.BeanManager - 4
- - javax.servlet.jsp.JspFactory - 3
- - javax.faces.component.UIViewRoot - 3
- - javax.servlet.ServletContext - 3
- - javax.faces.el.EvaluationException - 2
- - javax.faces.FacesException - 2
- - javax.servlet.jsp.JspApplicationContext - 2

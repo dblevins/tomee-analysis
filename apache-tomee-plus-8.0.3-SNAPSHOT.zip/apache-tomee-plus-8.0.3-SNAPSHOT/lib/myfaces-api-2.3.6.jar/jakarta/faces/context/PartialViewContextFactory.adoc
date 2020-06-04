@@ -1,0 +1,6 @@
+= jakarta/faces/context/PartialViewContextFactory.class
+
+ - link:PartialViewContextFactory-asmified.java[Asmified]
+
+== References
+

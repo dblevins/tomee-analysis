@@ -4,8 +4,3 @@
 
 == References
 
- - javax.interceptor.InvocationContext - 21
- - javax.inject.Inject - 1
- - javax.interceptor.Interceptor - 1
- - javax.annotation.Priority - 1
- - javax.interceptor.AroundInvoke - 1

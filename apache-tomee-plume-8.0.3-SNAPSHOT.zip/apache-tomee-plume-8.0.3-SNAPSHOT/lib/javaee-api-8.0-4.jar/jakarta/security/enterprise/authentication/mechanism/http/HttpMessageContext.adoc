@@ -1,0 +1,6 @@
+= jakarta/security/enterprise/authentication/mechanism/http/HttpMessageContext.class
+
+ - link:HttpMessageContext-asmified.java[Asmified]
+
+== References
+

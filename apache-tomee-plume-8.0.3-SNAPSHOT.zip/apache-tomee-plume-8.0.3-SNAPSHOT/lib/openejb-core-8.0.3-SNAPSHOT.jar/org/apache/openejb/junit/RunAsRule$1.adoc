@@ -4,4 +4,3 @@
 
 == References
 
- - javax.annotation.security.RunAs - 5

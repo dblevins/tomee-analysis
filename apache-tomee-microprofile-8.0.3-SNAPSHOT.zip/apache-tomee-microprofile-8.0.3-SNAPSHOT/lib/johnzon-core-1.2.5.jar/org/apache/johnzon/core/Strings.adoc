@@ -4,5 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonLocation - 2
- - javax.json.stream.JsonParsingException - 2

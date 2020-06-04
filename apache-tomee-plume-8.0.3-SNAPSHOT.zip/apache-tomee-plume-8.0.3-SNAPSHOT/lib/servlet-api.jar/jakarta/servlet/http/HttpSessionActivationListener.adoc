@@ -1,0 +1,6 @@
+= jakarta/servlet/http/HttpSessionActivationListener.class
+
+ - link:HttpSessionActivationListener-asmified.java[Asmified]
+
+== References
+

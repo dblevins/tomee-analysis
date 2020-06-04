@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/Versionable.class
+
+ - link:Versionable-asmified.java[Asmified]
+
+== References
+

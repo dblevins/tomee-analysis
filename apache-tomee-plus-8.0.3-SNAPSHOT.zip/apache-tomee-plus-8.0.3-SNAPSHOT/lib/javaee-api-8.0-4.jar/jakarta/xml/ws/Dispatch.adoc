@@ -1,0 +1,6 @@
+= jakarta/xml/ws/Dispatch.class
+
+ - link:Dispatch-asmified.java[Asmified]
+
+== References
+

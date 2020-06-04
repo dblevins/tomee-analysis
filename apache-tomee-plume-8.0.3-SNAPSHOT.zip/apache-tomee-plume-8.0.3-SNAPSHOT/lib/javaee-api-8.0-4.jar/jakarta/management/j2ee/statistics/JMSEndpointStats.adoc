@@ -1,0 +1,6 @@
+= jakarta/management/j2ee/statistics/JMSEndpointStats.class
+
+ - link:JMSEndpointStats-asmified.java[Asmified]
+
+== References
+

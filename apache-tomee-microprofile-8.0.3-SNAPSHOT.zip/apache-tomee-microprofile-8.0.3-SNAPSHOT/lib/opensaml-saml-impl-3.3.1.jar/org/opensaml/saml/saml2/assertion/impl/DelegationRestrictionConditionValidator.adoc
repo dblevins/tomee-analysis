@@ -4,5 +4,4 @@
 
 == References
 
- - javax.annotation.Nonnull - 5
  - javax.annotation.concurrent.ThreadSafe - 1

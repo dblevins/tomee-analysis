@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/ApplicationScoped$Literal.class
+
+ - link:ApplicationScoped$Literal-asmified.java[Asmified]
+
+== References
+

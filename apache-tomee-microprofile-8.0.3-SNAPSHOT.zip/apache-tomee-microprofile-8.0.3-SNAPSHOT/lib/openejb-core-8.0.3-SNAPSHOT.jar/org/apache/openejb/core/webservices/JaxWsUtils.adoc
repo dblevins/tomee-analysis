@@ -4,7 +4,3 @@
 
 == References
 
- - javax.jws.WebService - 38
- - javax.xml.ws.WebServiceProvider - 18
- - javax.xml.ws.WebServiceClient - 9
- - javax.xml.ws.BindingType - 4

@@ -4,11 +4,3 @@
 
 == References
 
- - javax.resource.ResourceException - 23
- - javax.resource.cci.Record - 22
- - javax.resource.cci.Interaction - 18
- - javax.resource.cci.Connection - 15
- - javax.resource.cci.LocalTransaction - 6
- - javax.resource.cci.RecordFactory - 5
- - javax.resource.cci.InteractionSpec - 4
- - javax.resource.cci.ConnectionMetaData - 4

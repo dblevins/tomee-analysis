@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.ParameterNameProvider - 3
- - javax.validation.ElementKind - 1

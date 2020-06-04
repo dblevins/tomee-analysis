@@ -4,12 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 48
- - javax.faces.application.Application - 20
- - javax.faces.context.ResponseWriter - 15
- - javax.faces.component.UIComponent - 15
- - javax.faces.application.ResourceHandler - 14
- - javax.faces.context.PartialViewContext - 10
- - javax.faces.application.Resource - 8
- - javax.faces.context.ExternalContext - 6
- - javax.faces.FacesWrapper - 3

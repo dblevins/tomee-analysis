@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/AnnotatedMember.class
+
+ - link:AnnotatedMember-asmified.java[Asmified]
+
+== References
+

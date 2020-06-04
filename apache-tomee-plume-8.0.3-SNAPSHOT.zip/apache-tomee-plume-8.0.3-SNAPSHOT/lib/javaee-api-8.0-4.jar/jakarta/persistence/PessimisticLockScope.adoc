@@ -1,0 +1,6 @@
+= jakarta/persistence/PessimisticLockScope.class
+
+ - link:PessimisticLockScope-asmified.java[Asmified]
+
+== References
+

@@ -4,14 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceFeature - 58
- - javax.xml.ws.WebServiceException - 30
- - javax.xml.ws.Service$Mode - 18
- - javax.xml.bind.JAXBContext - 14
- - javax.jws.WebService - 13
- - javax.xml.ws.Dispatch - 13
- - javax.xml.ws.handler.HandlerResolver - 10
- - javax.xml.ws.Binding - 6
- - javax.xml.ws.EndpointReference - 6
- - javax.xml.ws.handler.PortInfo - 4
- - javax.xml.ws.spi.ServiceDelegate - 2

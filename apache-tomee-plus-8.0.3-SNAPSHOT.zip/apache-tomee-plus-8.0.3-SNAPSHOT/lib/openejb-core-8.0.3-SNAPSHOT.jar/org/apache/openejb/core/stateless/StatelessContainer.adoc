@@ -4,12 +4,3 @@
 
 == References
 
- - javax.xml.rpc.handler.MessageContext - 5
- - javax.xml.ws.handler.MessageContext - 5
- - javax.enterprise.context.spi.CreationalContext - 2
- - javax.ejb.EJBAccessException - 2
- - javax.ejb.EJBHome - 1
- - javax.ejb.EJBObject - 1
- - javax.ejb.EJBLocalHome - 1
- - javax.interceptor.AroundInvoke - 1
- - javax.ejb.EJBLocalObject - 1

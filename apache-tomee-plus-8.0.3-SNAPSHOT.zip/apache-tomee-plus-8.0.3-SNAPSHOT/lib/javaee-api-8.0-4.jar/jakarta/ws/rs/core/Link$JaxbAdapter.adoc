@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/Link$JaxbAdapter.class
+
+ - link:Link$JaxbAdapter-asmified.java[Asmified]
+
+== References
+

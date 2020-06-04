@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.Contextual - 22
- - javax.enterprise.context.spi.CreationalContext - 12
- - javax.enterprise.context.ContextNotActiveException - 2
- - javax.enterprise.inject.spi.Bean - 1
- - javax.enterprise.context.spi.AlterableContext - 1

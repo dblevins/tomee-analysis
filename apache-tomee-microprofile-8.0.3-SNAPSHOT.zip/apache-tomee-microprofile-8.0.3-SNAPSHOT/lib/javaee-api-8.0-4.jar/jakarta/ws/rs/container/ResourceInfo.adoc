@@ -1,0 +1,6 @@
+= jakarta/ws/rs/container/ResourceInfo.class
+
+ - link:ResourceInfo-asmified.java[Asmified]
+
+== References
+

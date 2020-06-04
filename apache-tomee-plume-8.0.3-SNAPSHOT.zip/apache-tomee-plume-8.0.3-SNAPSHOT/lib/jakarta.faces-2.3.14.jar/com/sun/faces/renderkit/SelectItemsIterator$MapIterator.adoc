@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.model.SelectItem - 16
- - javax.faces.component.UIComponent - 7

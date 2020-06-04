@@ -4,5 +4,3 @@
 
 == References
 
- - javax.jms.InvalidSelectorException - 1
- - javax.jms.JMSException - 1

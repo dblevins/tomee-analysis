@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/ExtensibleObject.class
+
+ - link:ExtensibleObject-asmified.java[Asmified]
+
+== References
+

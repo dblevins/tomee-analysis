@@ -1,0 +1,6 @@
+= jakarta/security/jacc/EJBMethodPermission$EJBMethodPermissionCollection.class
+
+ - link:EJBMethodPermission$EJBMethodPermissionCollection-asmified.java[Asmified]
+
+== References
+

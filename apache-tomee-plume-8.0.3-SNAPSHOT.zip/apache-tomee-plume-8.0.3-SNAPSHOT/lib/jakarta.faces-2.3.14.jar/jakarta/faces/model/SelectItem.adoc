@@ -1,0 +1,6 @@
+= jakarta/faces/model/SelectItem.class
+
+ - link:SelectItem-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/faces/annotation/ApplicationMap.class
+
+ - link:ApplicationMap-asmified.java[Asmified]
+
+== References
+

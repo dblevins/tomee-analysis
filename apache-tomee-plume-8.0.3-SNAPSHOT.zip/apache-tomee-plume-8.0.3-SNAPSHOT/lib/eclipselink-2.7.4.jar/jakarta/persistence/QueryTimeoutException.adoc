@@ -1,0 +1,6 @@
+= jakarta/persistence/QueryTimeoutException.class
+
+ - link:QueryTimeoutException-asmified.java[Asmified]
+
+== References
+

@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.event.PhaseListener - 14
- - javax.el.ValueExpression - 9
- - javax.faces.context.FacesContext - 5
- - javax.faces.event.PhaseId - 4
- - javax.el.ELContext - 4
- - javax.faces.event.PhaseEvent - 4
- - javax.faces.event.AbortProcessingException - 2

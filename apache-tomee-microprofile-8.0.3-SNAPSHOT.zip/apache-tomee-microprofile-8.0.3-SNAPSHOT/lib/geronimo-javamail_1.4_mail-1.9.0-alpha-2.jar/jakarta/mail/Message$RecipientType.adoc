@@ -1,0 +1,6 @@
+= jakarta/mail/Message$RecipientType.class
+
+ - link:Message$RecipientType-asmified.java[Asmified]
+
+== References
+

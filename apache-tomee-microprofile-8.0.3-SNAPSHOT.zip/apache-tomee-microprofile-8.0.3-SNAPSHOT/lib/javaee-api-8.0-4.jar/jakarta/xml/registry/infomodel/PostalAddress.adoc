@@ -1,0 +1,6 @@
+= jakarta/xml/registry/infomodel/PostalAddress.class
+
+ - link:PostalAddress-asmified.java[Asmified]
+
+== References
+

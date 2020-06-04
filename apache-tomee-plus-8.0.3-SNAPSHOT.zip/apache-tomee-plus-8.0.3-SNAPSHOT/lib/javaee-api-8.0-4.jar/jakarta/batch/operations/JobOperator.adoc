@@ -1,0 +1,6 @@
+= jakarta/batch/operations/JobOperator.class
+
+ - link:JobOperator-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/el/BeanELResolver$BeanProperty.class
+
+ - link:BeanELResolver$BeanProperty-asmified.java[Asmified]
+
+== References
+

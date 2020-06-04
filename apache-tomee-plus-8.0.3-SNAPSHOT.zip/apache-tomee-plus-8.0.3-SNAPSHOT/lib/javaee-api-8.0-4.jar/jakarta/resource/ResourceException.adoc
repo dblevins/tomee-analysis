@@ -1,0 +1,6 @@
+= jakarta/resource/ResourceException.class
+
+ - link:ResourceException-asmified.java[Asmified]
+
+== References
+

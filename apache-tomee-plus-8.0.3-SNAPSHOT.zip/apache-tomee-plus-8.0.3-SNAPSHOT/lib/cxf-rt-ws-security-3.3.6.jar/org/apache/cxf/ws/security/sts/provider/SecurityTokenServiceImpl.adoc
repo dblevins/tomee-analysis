@@ -4,10 +4,3 @@
 
 == References
 
- - javax.xml.ws.WebServiceContext - 5
- - javax.xml.soap.SOAPFault - 3
- - javax.xml.ws.soap.SOAPFaultException - 2
- - javax.xml.soap.SOAPException - 2
- - javax.xml.soap.SOAPFactory - 2
- - javax.annotation.Resource - 1
- - javax.xml.ws.handler.MessageContext - 1

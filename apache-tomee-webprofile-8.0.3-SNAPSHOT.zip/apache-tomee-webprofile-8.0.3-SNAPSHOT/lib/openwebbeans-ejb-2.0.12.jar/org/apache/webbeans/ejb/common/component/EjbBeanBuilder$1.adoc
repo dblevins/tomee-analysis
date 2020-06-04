@@ -4,5 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 2
- - javax.enterprise.inject.spi.AnnotatedType - 2

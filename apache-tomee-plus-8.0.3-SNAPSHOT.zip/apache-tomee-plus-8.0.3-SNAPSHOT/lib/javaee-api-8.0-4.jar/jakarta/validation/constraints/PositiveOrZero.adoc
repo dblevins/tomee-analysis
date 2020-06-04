@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/PositiveOrZero.class
+
+ - link:PositiveOrZero-asmified.java[Asmified]
+
+== References
+

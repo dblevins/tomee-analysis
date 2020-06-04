@@ -4,8 +4,3 @@
 
 == References
 
- - javax.mail.internet.MimeMessage - 6
- - javax.mail.internet.MimePartDataSource - 5
- - javax.mail.internet.InternetAddress - 3
- - javax.mail.Session - 3
- - javax.mail.internet.MimePart - 1

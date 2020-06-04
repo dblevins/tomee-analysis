@@ -4,11 +4,3 @@
 
 == References
 
- - javax.annotation.Resource - 45
- - javax.annotation.Resources - 6
- - javax.annotation.security.DeclareRoles - 5
- - javax.annotation.Resource$AuthenticationType - 4
- - javax.annotation.security.RunAs - 4
- - javax.servlet.annotation.ServletSecurity - 3
- - javax.servlet.ServletSecurityElement - 3
- - javax.servlet.ServletRegistration$Dynamic - 1

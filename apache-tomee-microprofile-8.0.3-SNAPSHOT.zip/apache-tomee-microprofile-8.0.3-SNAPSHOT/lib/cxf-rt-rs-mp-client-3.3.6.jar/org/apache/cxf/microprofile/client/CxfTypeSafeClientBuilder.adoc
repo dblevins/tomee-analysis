@@ -4,6 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Configurable - 20
- - javax.ws.rs.core.Configuration - 6
- - javax.ws.rs.ProcessingException - 4

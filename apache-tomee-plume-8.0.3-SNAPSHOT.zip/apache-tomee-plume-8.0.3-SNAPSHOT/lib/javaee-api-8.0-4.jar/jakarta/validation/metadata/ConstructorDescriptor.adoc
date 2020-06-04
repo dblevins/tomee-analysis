@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/ConstructorDescriptor.class
+
+ - link:ConstructorDescriptor-asmified.java[Asmified]
+
+== References
+

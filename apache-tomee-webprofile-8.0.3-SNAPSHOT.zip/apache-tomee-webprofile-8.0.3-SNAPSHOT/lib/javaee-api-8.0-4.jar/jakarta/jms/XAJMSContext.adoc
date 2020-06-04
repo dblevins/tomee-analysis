@@ -1,0 +1,6 @@
+= jakarta/jms/XAJMSContext.class
+
+ - link:XAJMSContext-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/xml/ws/handler/soap/SOAPHandler.class
+
+ - link:SOAPHandler-asmified.java[Asmified]
+
+== References
+

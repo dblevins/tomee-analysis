@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContextEvent - 3
- - javax.servlet.ServletContext - 2
- - javax.servlet.ServletContextListener - 1
- - javax.servlet.annotation.WebListener - 1

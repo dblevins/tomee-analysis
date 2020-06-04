@@ -1,0 +1,6 @@
+= jakarta/resource/spi/AdministeredObject.class
+
+ - link:AdministeredObject-asmified.java[Asmified]
+
+== References
+

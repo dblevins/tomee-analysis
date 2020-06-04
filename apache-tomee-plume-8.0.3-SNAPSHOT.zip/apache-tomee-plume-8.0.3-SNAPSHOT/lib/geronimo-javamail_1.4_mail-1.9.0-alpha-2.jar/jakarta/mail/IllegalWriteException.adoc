@@ -1,0 +1,6 @@
+= jakarta/mail/IllegalWriteException.class
+
+ - link:IllegalWriteException-asmified.java[Asmified]
+
+== References
+

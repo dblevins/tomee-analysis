@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletResponse - 5
- - javax.servlet.ServletOutputStream - 1

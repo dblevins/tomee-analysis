@@ -4,17 +4,3 @@
 
 == References
 
- - javax.websocket.SendHandler - 45
- - javax.websocket.SendResult - 26
- - javax.websocket.Encoder - 24
- - javax.websocket.CloseReason - 18
- - javax.websocket.Encoder$Binary - 6
- - javax.websocket.Encoder$Text - 6
- - javax.websocket.CloseReason$CloseCodes - 6
- - javax.websocket.Encoder$TextStream - 6
- - javax.websocket.CloseReason$CloseCode - 6
- - javax.websocket.Encoder$BinaryStream - 6
- - javax.websocket.EndpointConfig - 5
- - javax.websocket.EncodeException - 5
- - javax.websocket.DeploymentException - 3
- - javax.websocket.RemoteEndpoint - 1

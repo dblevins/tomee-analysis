@@ -4,16 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 106
- - javax.faces.context.FacesContext - 83
- - javax.faces.context.ResponseWriter - 40
- - javax.faces.context.ExternalContext - 20
- - javax.faces.component.UIParameter - 11
- - javax.faces.component.html.HtmlCommandButton - 9
- - javax.faces.component.behavior.ClientBehaviorHolder - 4
- - javax.faces.component.ValueHolder - 3
- - javax.faces.component.html.HtmlCommandLink - 3
- - javax.faces.component.UICommand - 2
- - javax.faces.event.ActionEvent - 2
- - javax.faces.component.behavior.ClientBehavior - 1
- - javax.faces.event.FacesEvent - 1

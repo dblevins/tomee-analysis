@@ -1,0 +1,6 @@
+= jakarta/faces/bean/ViewScoped.class
+
+ - link:ViewScoped-asmified.java[Asmified]
+
+== References
+

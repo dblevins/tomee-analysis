@@ -1,0 +1,6 @@
+= jakarta/faces/el/CompositeComponentExpressionHolder.class
+
+ - link:CompositeComponentExpressionHolder-asmified.java[Asmified]
+
+== References
+

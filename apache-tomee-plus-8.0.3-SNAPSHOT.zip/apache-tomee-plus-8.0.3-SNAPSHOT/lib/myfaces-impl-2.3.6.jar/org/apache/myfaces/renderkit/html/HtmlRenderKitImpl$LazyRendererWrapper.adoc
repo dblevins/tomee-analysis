@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.render.Renderer - 7
- - javax.faces.render.RendererWrapper - 2

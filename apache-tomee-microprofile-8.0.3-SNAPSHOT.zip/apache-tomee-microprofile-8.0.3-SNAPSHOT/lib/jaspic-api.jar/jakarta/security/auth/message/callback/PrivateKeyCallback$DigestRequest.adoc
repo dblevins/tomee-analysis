@@ -1,0 +1,6 @@
+= jakarta/security/auth/message/callback/PrivateKeyCallback$DigestRequest.class
+
+ - link:PrivateKeyCallback$DigestRequest-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/resource/spi/ConnectionManager.class
+
+ - link:ConnectionManager-asmified.java[Asmified]
+
+== References
+

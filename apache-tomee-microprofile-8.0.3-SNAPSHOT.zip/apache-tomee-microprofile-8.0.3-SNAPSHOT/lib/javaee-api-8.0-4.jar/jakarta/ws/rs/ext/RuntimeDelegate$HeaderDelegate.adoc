@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ext/RuntimeDelegate$HeaderDelegate.class
+
+ - link:RuntimeDelegate$HeaderDelegate-asmified.java[Asmified]
+
+== References
+

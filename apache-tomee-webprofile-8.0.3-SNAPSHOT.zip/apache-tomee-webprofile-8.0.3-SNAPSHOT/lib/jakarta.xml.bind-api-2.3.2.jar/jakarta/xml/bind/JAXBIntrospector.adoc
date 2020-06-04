@@ -1,0 +1,6 @@
+= jakarta/xml/bind/JAXBIntrospector.class
+
+ - link:JAXBIntrospector-asmified.java[Asmified]
+
+== References
+

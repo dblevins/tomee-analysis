@@ -4,29 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 46
- - javax.enterprise.context.spi.Contextual - 43
- - javax.enterprise.inject.spi.Bean - 28
- - javax.enterprise.inject.spi.Interceptor - 21
- - javax.ejb.EJBHome - 14
- - javax.enterprise.inject.spi.AnnotatedType - 11
- - javax.ejb.LockType - 11
- - javax.ejb.EJBLocalHome - 10
- - javax.enterprise.inject.spi.InjectionTarget - 8
- - javax.ejb.ApplicationException - 5
- - javax.ejb.EJBObject - 5
- - javax.ejb.EJBLocalObject - 5
- - javax.enterprise.inject.spi.Decorator - 5
- - javax.ejb.Lock - 4
- - javax.enterprise.inject.spi.AnnotatedMethod - 3
- - javax.ejb.TimedObject - 2
- - javax.ejb.SessionBean - 2
- - javax.ejb.Timer - 2
- - javax.ejb.Handle - 2
- - javax.enterprise.context.Conversation - 2
- - javax.persistence.EntityManagerFactory - 2
- - javax.enterprise.inject.spi.InterceptionType - 2
- - javax.enterprise.context.ConversationScoped - 1
- - javax.ejb.MessageDrivenBean - 1
- - javax.ejb.EntityBean - 1
- - javax.enterprise.inject.spi.BeanManager - 1

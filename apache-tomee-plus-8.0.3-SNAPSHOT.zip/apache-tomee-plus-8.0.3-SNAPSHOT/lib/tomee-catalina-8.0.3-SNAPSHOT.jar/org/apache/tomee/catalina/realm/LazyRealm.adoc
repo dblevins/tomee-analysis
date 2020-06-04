@@ -4,7 +4,3 @@
 
 == References
 
- - javax.enterprise.context.spi.CreationalContext - 7
- - javax.enterprise.inject.spi.BeanManager - 5
- - javax.enterprise.inject.spi.Bean - 3
- - javax.enterprise.context.spi.Contextual - 1

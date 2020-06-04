@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ValueExpression - 18
- - javax.servlet.jsp.JspException - 7
- - javax.faces.context.FacesContext - 6
- - javax.faces.convert.Converter - 5
- - javax.el.ELContext - 5
- - javax.faces.application.Application - 4
- - javax.faces.webapp.ConverterELTag - 3

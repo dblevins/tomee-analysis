@@ -4,8 +4,3 @@
 
 == References
 
- - javax.security.auth.message.module.ServerAuthModule - 8
- - javax.security.auth.message.MessageInfo - 8
- - javax.security.auth.message.AuthStatus - 6
- - javax.security.auth.message.AuthException - 3
- - javax.security.auth.message.config.ServerAuthContext - 1

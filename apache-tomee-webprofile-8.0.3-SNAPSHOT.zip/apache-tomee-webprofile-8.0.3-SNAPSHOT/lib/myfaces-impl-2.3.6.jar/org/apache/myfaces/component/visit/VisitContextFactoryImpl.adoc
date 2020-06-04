@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 3
- - javax.faces.component.visit.VisitContextFactory - 2
- - javax.faces.component.visit.VisitHint - 1
- - javax.faces.component.visit.VisitContext - 1

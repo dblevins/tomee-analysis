@@ -4,8 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 16
- - javax.mail.Folder - 9
- - javax.mail.Session - 7
- - javax.mail.URLName - 6
- - javax.mail.Store - 5

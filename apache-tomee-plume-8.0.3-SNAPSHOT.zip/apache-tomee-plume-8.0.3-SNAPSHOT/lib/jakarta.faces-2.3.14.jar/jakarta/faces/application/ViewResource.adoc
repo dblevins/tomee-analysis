@@ -1,0 +1,6 @@
+= jakarta/faces/application/ViewResource.class
+
+ - link:ViewResource-asmified.java[Asmified]
+
+== References
+

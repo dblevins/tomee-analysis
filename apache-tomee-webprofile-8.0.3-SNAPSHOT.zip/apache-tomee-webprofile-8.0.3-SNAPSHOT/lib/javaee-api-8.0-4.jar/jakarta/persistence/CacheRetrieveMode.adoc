@@ -1,0 +1,6 @@
+= jakarta/persistence/CacheRetrieveMode.class
+
+ - link:CacheRetrieveMode-asmified.java[Asmified]
+
+== References
+

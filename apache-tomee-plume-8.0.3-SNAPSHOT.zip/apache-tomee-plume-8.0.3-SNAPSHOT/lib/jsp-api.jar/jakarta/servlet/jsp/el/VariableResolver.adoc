@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/el/VariableResolver.class
+
+ - link:VariableResolver-asmified.java[Asmified]
+
+== References
+

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.ValidationEvent - 12
- - javax.xml.bind.ValidationEventLocator - 10
- - javax.xml.bind.helpers.ValidationEventImpl - 8
- - javax.xml.bind.ValidationEventHandler - 7
- - javax.xml.bind.UnmarshalException - 5

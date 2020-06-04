@@ -1,0 +1,6 @@
+= jakarta/security/auth/message/config/ClientAuthConfig.class
+
+ - link:ClientAuthConfig-asmified.java[Asmified]
+
+== References
+

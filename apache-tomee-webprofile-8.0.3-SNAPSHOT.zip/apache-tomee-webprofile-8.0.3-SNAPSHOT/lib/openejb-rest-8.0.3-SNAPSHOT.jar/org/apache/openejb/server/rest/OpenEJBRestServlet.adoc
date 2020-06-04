@@ -4,4 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServlet - 2

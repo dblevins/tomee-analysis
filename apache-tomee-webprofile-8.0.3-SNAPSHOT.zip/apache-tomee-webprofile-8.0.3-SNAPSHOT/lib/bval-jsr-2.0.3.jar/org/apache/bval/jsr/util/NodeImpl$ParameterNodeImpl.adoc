@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.Path$ParameterNode - 6
- - javax.validation.Path$Node - 2
- - javax.validation.ElementKind - 2

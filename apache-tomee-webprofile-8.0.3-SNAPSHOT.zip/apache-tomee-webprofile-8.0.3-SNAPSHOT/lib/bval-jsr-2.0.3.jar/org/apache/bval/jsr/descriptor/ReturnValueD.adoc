@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.metadata.ConstraintDescriptor - 12
- - javax.validation.UnexpectedTypeException - 2
- - javax.validation.metadata.ReturnValueDescriptor - 1

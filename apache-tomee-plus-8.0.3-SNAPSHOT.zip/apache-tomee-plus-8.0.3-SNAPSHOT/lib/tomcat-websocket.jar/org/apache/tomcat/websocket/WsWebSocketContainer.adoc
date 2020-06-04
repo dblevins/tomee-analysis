@@ -4,18 +4,3 @@
 
 == References
 
- - javax.websocket.DeploymentException - 50
- - javax.websocket.ClientEndpointConfig - 45
- - javax.websocket.Endpoint - 36
- - javax.websocket.Session - 15
- - javax.websocket.HandshakeResponse - 15
- - javax.websocket.ClientEndpointConfig$Builder - 12
- - javax.websocket.Extension - 10
- - javax.websocket.ClientEndpoint - 10
- - javax.websocket.ClientEndpointConfig$Configurator - 9
- - javax.websocket.CloseReason - 6
- - javax.websocket.Extension$Parameter - 3
- - javax.websocket.EndpointConfig - 2
- - javax.websocket.CloseReason$CloseCodes - 1
- - javax.websocket.CloseReason$CloseCode - 1
- - javax.websocket.WebSocketContainer - 1

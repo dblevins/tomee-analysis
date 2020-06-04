@@ -1,0 +1,6 @@
+= jakarta/resource/spi/work/DistributableWork.class
+
+ - link:DistributableWork-asmified.java[Asmified]
+
+== References
+

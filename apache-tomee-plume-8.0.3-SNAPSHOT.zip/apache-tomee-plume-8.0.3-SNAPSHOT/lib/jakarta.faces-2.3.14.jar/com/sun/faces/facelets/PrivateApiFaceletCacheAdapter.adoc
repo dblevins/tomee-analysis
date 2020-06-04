@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.FaceletCache$MemberFactory - 10
- - javax.faces.view.facelets.FaceletCache - 2

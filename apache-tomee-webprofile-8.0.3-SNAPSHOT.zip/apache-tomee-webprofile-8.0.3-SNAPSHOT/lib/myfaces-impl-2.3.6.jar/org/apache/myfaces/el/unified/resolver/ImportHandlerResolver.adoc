@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 3
- - javax.el.ELException - 1
- - javax.el.PropertyNotFoundException - 1

@@ -4,11 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.PageContext - 19
- - javax.servlet.ServletRequest - 9
- - javax.servlet.ServletResponse - 9
- - javax.servlet.Servlet - 9
- - javax.servlet.ServletContext - 3
- - javax.servlet.jsp.JspApplicationContext - 2
- - javax.servlet.jsp.JspFactory - 2
- - javax.servlet.jsp.JspEngineInfo - 1

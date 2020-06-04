@@ -4,8 +4,3 @@
 
 == References
 
- - javax.persistence.SharedCacheMode - 7
- - javax.persistence.ValidationMode - 5
- - javax.persistence.spi.PersistenceUnitTransactionType - 5
- - javax.xml.bind.Marshaller - 3
- - javax.xml.bind.JAXBContext - 2

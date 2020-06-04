@@ -1,0 +1,6 @@
+= jakarta/faces/application/ResourceWrapper.class
+
+ - link:ResourceWrapper-asmified.java[Asmified]
+
+== References
+

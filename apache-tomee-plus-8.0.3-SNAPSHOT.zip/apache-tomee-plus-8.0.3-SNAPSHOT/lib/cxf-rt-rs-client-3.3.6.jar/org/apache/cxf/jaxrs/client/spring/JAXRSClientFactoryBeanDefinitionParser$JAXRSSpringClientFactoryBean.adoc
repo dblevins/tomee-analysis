@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.Path - 5
- - javax.ws.rs.ext.Provider - 2

@@ -1,0 +1,6 @@
+= jakarta/faces/component/behavior/_AjaxBehaviorDeltaStateHelper$InternalMap.class
+
+ - link:_AjaxBehaviorDeltaStateHelper$InternalMap-asmified.java[Asmified]
+
+== References
+

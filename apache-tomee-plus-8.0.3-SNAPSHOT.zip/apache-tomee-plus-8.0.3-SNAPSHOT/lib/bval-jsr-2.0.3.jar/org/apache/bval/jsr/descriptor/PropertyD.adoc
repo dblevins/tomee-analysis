@@ -4,6 +4,3 @@
 
 == References
 
- - javax.validation.ValidationException - 5
- - javax.validation.Path - 1
- - javax.validation.metadata.PropertyDescriptor - 1

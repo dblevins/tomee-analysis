@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.tagext.TagLibraryInfo - 2
- - javax.servlet.jsp.tagext.TagInfo - 2

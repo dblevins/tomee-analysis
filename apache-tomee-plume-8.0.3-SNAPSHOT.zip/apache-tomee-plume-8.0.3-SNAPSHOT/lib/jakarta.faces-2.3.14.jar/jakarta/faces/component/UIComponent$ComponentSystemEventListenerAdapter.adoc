@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIComponent$ComponentSystemEventListenerAdapter.class
+
+ - link:UIComponent$ComponentSystemEventListenerAdapter-asmified.java[Asmified]
+
+== References
+

@@ -4,13 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 10
- - javax.faces.component.visit.VisitResult - 6
- - javax.faces.component.visit.VisitContext - 6
- - javax.el.ValueReference - 4
- - javax.el.ValueExpression - 4
- - javax.faces.component.UIComponent - 4
- - javax.el.ELContext - 3
- - javax.el.ELResolver - 3
- - javax.faces.application.Application - 2
- - javax.faces.component.visit.VisitCallback - 1

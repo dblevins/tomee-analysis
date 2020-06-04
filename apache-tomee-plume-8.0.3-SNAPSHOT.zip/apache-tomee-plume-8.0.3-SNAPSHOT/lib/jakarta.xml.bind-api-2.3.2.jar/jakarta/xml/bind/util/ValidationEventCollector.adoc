@@ -1,0 +1,6 @@
+= jakarta/xml/bind/util/ValidationEventCollector.class
+
+ - link:ValidationEventCollector-asmified.java[Asmified]
+
+== References
+

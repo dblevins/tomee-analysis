@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagHandler - 4
- - javax.faces.component.UIComponent - 2

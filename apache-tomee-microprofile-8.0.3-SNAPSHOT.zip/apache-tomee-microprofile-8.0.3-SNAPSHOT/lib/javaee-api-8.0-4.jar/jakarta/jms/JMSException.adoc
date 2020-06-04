@@ -1,0 +1,6 @@
+= jakarta/jms/JMSException.class
+
+ - link:JMSException-asmified.java[Asmified]
+
+== References
+

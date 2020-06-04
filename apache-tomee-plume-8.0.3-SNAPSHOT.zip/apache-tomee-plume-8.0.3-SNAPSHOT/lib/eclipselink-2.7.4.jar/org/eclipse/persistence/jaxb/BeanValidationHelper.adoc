@@ -4,28 +4,3 @@
 
 == References
 
- - javax.validation.constraints.Past$List - 1
- - javax.validation.constraints.Size - 1
- - javax.validation.constraints.Digits$List - 1
- - javax.validation.constraints.Future - 1
- - javax.validation.constraints.DecimalMax$List - 1
- - javax.validation.constraints.Max$List - 1
- - javax.validation.constraints.AssertFalse$List - 1
- - javax.validation.constraints.DecimalMin - 1
- - javax.validation.constraints.Pattern$List - 1
- - javax.validation.constraints.Min - 1
- - javax.validation.constraints.AssertTrue - 1
- - javax.validation.constraints.NotNull - 1
- - javax.validation.constraints.Size$List - 1
- - javax.validation.Valid - 1
- - javax.validation.constraints.Past - 1
- - javax.validation.constraints.DecimalMax - 1
- - javax.validation.constraints.Pattern - 1
- - javax.validation.constraints.Digits - 1
- - javax.validation.constraints.Min$List - 1
- - javax.validation.constraints.Max - 1
- - javax.validation.constraints.NotNull$List - 1
- - javax.validation.constraints.AssertFalse - 1
- - javax.validation.constraints.AssertTrue$List - 1
- - javax.validation.constraints.Future$List - 1
- - javax.validation.constraints.DecimalMin$List - 1

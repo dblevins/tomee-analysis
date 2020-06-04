@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response - 7
- - javax.ws.rs.WebApplicationException - 1

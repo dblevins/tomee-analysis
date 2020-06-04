@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/CascadableDescriptor.class
+
+ - link:CascadableDescriptor-asmified.java[Asmified]
+
+== References
+

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.executable.ExecutableType - 9
- - javax.xml.bind.annotation.adapters.XmlAdapter - 2

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.JAXBException - 8
- - javax.xml.bind.MarshalException - 6

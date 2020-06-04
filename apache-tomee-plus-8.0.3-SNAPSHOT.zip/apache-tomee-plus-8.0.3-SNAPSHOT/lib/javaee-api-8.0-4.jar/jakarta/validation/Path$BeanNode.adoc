@@ -1,0 +1,6 @@
+= jakarta/validation/Path$BeanNode.class
+
+ - link:Path$BeanNode-asmified.java[Asmified]
+
+== References
+

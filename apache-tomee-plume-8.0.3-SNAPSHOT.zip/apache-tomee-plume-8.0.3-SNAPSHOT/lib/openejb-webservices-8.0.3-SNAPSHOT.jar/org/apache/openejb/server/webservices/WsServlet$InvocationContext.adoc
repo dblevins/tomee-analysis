@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.http.HttpServletRequest - 11
- - javax.servlet.http.HttpSession - 2
- - javax.xml.rpc.handler.MessageContext - 2
- - javax.xml.rpc.server.ServletEndpointContext - 1
- - javax.servlet.ServletContext - 1

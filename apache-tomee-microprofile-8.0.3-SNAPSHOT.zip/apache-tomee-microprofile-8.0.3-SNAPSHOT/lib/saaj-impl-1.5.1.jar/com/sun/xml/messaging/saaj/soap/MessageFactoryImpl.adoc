@@ -4,7 +4,3 @@
 
 == References
 
- - javax.xml.soap.MimeHeaders - 12
- - javax.xml.soap.SOAPException - 7
- - javax.xml.soap.SOAPMessage - 5
- - javax.xml.soap.MessageFactory - 2

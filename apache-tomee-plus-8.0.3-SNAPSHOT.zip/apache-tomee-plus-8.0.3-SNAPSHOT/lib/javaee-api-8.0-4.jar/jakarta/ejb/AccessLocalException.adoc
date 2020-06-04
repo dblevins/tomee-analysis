@@ -1,0 +1,6 @@
+= jakarta/ejb/AccessLocalException.class
+
+ - link:AccessLocalException-asmified.java[Asmified]
+
+== References
+

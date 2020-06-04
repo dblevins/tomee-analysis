@@ -1,0 +1,6 @@
+= jakarta/websocket/RemoteEndpoint$Basic.class
+
+ - link:RemoteEndpoint$Basic-asmified.java[Asmified]
+
+== References
+

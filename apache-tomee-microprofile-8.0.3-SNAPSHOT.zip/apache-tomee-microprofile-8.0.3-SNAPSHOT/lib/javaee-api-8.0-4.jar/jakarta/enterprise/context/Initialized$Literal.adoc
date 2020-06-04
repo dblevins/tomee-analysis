@@ -1,0 +1,6 @@
+= jakarta/enterprise/context/Initialized$Literal.class
+
+ - link:Initialized$Literal-asmified.java[Asmified]
+
+== References
+

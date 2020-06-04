@@ -1,0 +1,6 @@
+= jakarta/activation/UnsupportedDataTypeException.class
+
+ - link:UnsupportedDataTypeException-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.json.bind.annotation.JsonbTransient - 7
- - javax.json.bind.annotation.JsonbProperty - 6
- - javax.json.bind.annotation.JsonbTypeAdapter - 5
- - javax.enterprise.inject.Vetoed - 1

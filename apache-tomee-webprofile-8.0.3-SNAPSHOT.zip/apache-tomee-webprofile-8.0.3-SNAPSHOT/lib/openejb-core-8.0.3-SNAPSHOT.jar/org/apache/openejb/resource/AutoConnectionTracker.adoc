@@ -4,11 +4,3 @@
 
 == References
 
- - javax.transaction.TransactionSynchronizationRegistry - 13
- - javax.transaction.TransactionManager - 9
- - javax.resource.ResourceException - 4
- - javax.transaction.Transaction - 2
- - javax.transaction.SystemException - 2
- - javax.resource.spi.DissociatableManagedConnection - 1
- - javax.resource.spi.ManagedConnection - 1
- - javax.transaction.Synchronization - 1

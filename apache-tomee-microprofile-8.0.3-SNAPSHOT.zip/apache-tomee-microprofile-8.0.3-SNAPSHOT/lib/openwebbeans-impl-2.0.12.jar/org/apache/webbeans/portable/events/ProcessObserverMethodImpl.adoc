@@ -4,8 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.ObserverMethod - 10
- - javax.enterprise.inject.spi.Extension - 5
- - javax.enterprise.inject.spi.AnnotatedMethod - 5
- - javax.enterprise.inject.spi.configurator.ObserverMethodConfigurator - 1
- - javax.enterprise.inject.spi.ProcessObserverMethod - 1

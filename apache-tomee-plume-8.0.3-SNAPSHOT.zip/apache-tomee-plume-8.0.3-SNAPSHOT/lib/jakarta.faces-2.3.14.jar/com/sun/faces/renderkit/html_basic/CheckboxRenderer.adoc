@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.component.UIComponent - 18
- - javax.faces.context.FacesContext - 14
- - javax.faces.context.ResponseWriter - 11
- - javax.faces.context.ExternalContext - 2
- - javax.faces.convert.ConverterException - 1

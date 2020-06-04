@@ -4,6 +4,3 @@
 
 == References
 
- - javax.el.ELContext - 88
- - javax.el.ELException - 46
- - javax.el.ELResolver - 12

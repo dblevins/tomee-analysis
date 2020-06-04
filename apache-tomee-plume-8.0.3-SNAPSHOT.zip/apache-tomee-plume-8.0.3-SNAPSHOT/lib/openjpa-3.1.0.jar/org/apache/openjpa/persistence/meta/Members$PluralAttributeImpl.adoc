@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.Attribute$PersistentAttributeType - 2
- - javax.persistence.metamodel.Bindable$BindableType - 2
- - javax.persistence.metamodel.Type - 2
- - javax.persistence.metamodel.PluralAttribute - 1

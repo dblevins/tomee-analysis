@@ -4,6 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlSchema - 19
- - javax.xml.bind.annotation.XmlNsForm - 4
- - javax.xml.bind.annotation.XmlNs - 2

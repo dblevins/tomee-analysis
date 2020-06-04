@@ -4,36 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.MediaType - 218
- - javax.ws.rs.core.MultivaluedMap - 140
- - javax.ws.rs.core.Response - 37
- - javax.ws.rs.core.Response$ResponseBuilder - 30
- - javax.ws.rs.WebApplicationException - 18
- - javax.ws.rs.core.Cookie - 8
- - javax.ws.rs.Produces - 7
- - javax.ws.rs.Consumes - 7
- - javax.ws.rs.container.ContainerRequestContext - 6
- - javax.ws.rs.core.Response$Status - 6
- - javax.ws.rs.core.HttpHeaders - 6
- - javax.ws.rs.ext.MessageBodyWriter - 5
- - javax.ws.rs.ext.ContextResolver - 5
- - javax.ws.rs.core.PathSegment - 5
- - javax.ws.rs.core.SecurityContext - 4
- - javax.ws.rs.ext.ReaderInterceptor - 3
- - javax.ws.rs.ext.WriterInterceptor - 3
- - javax.ws.rs.core.UriInfo - 3
- - javax.ws.rs.ext.MessageBodyReader - 3
- - javax.ws.rs.core.Configuration - 2
- - javax.ws.rs.core.Application - 2
- - javax.ws.rs.container.ContainerRequestFilter - 2
- - javax.ws.rs.container.ContainerResponseFilter - 2
- - javax.ws.rs.container.ContainerResponseContext - 2
- - javax.ws.rs.ext.ReaderInterceptorContext - 1
- - javax.ws.rs.ClientErrorException - 1
- - javax.ws.rs.container.ResourceInfo - 1
- - javax.ws.rs.ext.Providers - 1
- - javax.ws.rs.container.AsyncResponse - 1
- - javax.ws.rs.core.StreamingOutput - 1
- - javax.ws.rs.ext.WriterInterceptorContext - 1
- - javax.ws.rs.container.ResourceContext - 1
- - javax.ws.rs.core.Request - 1

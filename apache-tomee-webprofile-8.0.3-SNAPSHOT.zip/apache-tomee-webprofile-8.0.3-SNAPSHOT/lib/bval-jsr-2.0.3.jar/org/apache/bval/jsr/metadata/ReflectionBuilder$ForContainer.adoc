@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.groups.ConvertGroup - 6
- - javax.validation.Valid - 1

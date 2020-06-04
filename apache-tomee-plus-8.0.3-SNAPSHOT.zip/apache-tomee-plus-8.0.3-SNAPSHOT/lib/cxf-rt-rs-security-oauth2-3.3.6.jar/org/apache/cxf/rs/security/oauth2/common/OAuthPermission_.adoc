@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.SingularAttribute - 4
- - javax.persistence.metamodel.ListAttribute - 2
- - javax.persistence.metamodel.StaticMetamodel - 1

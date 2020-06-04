@@ -4,21 +4,3 @@
 
 == References
 
- - javax.persistence.EnumType - 7
- - javax.persistence.TemporalType - 6
- - javax.persistence.JoinTable - 2
- - javax.persistence.Lob - 1
- - javax.persistence.InheritanceType - 1
- - javax.persistence.FieldResult - 1
- - javax.persistence.UniqueConstraint - 1
- - javax.persistence.EntityResult - 1
- - javax.persistence.SecondaryTable - 1
- - javax.persistence.SqlResultSetMapping - 1
- - javax.persistence.DiscriminatorValue - 1
- - javax.persistence.Table - 1
- - javax.persistence.DiscriminatorColumn - 1
- - javax.persistence.Inheritance - 1
- - javax.persistence.TableGenerator - 1
- - javax.persistence.Temporal - 1
- - javax.persistence.ColumnResult - 1
- - javax.persistence.Enumerated - 1

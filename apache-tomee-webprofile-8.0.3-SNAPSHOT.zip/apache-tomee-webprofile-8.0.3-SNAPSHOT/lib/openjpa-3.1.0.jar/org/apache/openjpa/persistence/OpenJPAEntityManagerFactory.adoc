@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.EntityManager - 2
- - javax.persistence.EntityManagerFactory - 1
- - javax.persistence.criteria.CriteriaBuilder - 1

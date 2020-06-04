@@ -4,5 +4,3 @@
 
 == References
 
- - javax.transaction.TransactionManager - 8
- - javax.transaction.TransactionSynchronizationRegistry - 6

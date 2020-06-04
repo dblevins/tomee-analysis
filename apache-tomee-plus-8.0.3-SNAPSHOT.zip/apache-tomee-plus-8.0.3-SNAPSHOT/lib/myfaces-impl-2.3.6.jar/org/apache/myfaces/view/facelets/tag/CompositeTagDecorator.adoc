@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagDecorator - 7
- - javax.faces.view.facelets.Tag - 5

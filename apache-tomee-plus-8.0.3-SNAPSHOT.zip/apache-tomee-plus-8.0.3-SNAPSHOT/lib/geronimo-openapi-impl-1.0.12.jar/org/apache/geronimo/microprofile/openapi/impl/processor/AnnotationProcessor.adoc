@@ -4,27 +4,3 @@
 
 == References
 
- - javax.json.JsonReader - 25
- - javax.ws.rs.Path - 17
- - javax.ws.rs.PathParam - 13
- - javax.ws.rs.QueryParam - 13
- - javax.ws.rs.HeaderParam - 13
- - javax.ws.rs.CookieParam - 13
- - javax.json.JsonValue - 11
- - javax.ws.rs.Produces - 10
- - javax.json.JsonNumber - 10
- - javax.json.JsonReaderFactory - 9
- - javax.ws.rs.HttpMethod - 4
- - javax.ws.rs.ApplicationPath - 3
- - javax.json.JsonValue$ValueType - 2
- - javax.ws.rs.container.Suspended - 2
- - javax.ws.rs.POST - 1
- - javax.ws.rs.core.Context - 1
- - javax.ws.rs.GET - 1
- - javax.enterprise.inject.Vetoed - 1
- - javax.ws.rs.OPTIONS - 1
- - javax.ws.rs.core.Response - 1
- - javax.json.Json - 1
- - javax.ws.rs.PUT - 1
- - javax.ws.rs.DELETE - 1
- - javax.ws.rs.HEAD - 1

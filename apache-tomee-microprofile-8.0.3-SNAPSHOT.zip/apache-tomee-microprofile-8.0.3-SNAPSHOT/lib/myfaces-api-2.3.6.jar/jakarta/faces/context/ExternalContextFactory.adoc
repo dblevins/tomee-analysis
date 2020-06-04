@@ -1,0 +1,6 @@
+= jakarta/faces/context/ExternalContextFactory.class
+
+ - link:ExternalContextFactory-asmified.java[Asmified]
+
+== References
+

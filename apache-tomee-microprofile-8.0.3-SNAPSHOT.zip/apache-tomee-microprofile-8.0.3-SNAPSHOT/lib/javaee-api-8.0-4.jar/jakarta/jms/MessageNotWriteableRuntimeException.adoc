@@ -1,0 +1,6 @@
+= jakarta/jms/MessageNotWriteableRuntimeException.class
+
+ - link:MessageNotWriteableRuntimeException-asmified.java[Asmified]
+
+== References
+

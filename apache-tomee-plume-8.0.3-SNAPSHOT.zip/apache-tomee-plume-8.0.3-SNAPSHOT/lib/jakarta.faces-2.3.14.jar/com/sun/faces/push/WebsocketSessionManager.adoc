@@ -4,16 +4,3 @@
 
 == References
 
- - javax.websocket.Session - 35
- - javax.websocket.CloseReason - 13
- - javax.enterprise.util.AnnotationLiteral - 11
- - javax.websocket.CloseReason$CloseCode - 4
- - javax.enterprise.inject.spi.BeanManager - 4
- - javax.faces.context.FacesContext - 3
- - javax.faces.event.WebsocketEvent - 2
- - javax.websocket.RemoteEndpoint$Async - 2
- - javax.websocket.CloseReason$CloseCodes - 1
- - javax.faces.event.WebsocketEvent$Closed - 1
- - javax.inject.Inject - 1
- - javax.faces.event.WebsocketEvent$Opened - 1
- - javax.enterprise.context.ApplicationScoped - 1

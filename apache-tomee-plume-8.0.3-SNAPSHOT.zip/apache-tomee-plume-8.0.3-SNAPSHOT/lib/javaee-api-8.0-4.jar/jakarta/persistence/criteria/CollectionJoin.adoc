@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/CollectionJoin.class
+
+ - link:CollectionJoin-asmified.java[Asmified]
+
+== References
+

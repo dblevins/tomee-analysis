@@ -1,0 +1,6 @@
+= jakarta/faces/view/facelets/BehaviorConfig.class
+
+ - link:BehaviorConfig-asmified.java[Asmified]
+
+== References
+

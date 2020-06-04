@@ -1,0 +1,6 @@
+= jakarta/activation/CommandInfo.class
+
+ - link:CommandInfo-asmified.java[Asmified]
+
+== References
+

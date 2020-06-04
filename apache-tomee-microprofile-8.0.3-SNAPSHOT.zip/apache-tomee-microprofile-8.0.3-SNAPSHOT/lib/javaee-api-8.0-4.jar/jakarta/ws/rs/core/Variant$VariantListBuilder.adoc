@@ -1,0 +1,6 @@
+= jakarta/ws/rs/core/Variant$VariantListBuilder.class
+
+ - link:Variant$VariantListBuilder-asmified.java[Asmified]
+
+== References
+

@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.Path$Node - 2
- - javax.validation.ElementKind - 2
- - javax.validation.Path - 1
- - javax.validation.ConstraintViolation - 1

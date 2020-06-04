@@ -4,6 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 33
- - javax.faces.lifecycle.ClientWindow - 7
- - javax.faces.context.ExternalContext - 2

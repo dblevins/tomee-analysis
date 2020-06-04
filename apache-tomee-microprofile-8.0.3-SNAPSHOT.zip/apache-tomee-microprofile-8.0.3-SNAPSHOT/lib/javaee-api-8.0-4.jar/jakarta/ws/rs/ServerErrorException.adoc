@@ -1,0 +1,6 @@
+= jakarta/ws/rs/ServerErrorException.class
+
+ - link:ServerErrorException-asmified.java[Asmified]
+
+== References
+

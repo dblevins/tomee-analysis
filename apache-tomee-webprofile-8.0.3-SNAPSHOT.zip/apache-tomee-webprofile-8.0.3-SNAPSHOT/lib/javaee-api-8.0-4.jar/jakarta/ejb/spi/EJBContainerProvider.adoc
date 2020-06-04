@@ -1,0 +1,6 @@
+= jakarta/ejb/spi/EJBContainerProvider.class
+
+ - link:EJBContainerProvider-asmified.java[Asmified]
+
+== References
+

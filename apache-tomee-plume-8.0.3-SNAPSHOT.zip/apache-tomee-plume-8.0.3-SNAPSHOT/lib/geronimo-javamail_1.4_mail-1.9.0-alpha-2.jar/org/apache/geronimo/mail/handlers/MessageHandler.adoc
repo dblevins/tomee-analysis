@@ -4,12 +4,3 @@
 
 == References
 
- - javax.activation.ActivationDataFlavor - 9
- - javax.mail.MessagingException - 4
- - javax.activation.DataSource - 4
- - javax.mail.Message - 3
- - javax.mail.MessageAware - 3
- - javax.mail.MessageContext - 2
- - javax.mail.Session - 2
- - javax.mail.internet.MimeMessage - 2
- - javax.activation.DataContentHandler - 1

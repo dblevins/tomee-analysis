@@ -1,0 +1,6 @@
+= jakarta/mail/event/ConnectionAdapter.class
+
+ - link:ConnectionAdapter-asmified.java[Asmified]
+
+== References
+

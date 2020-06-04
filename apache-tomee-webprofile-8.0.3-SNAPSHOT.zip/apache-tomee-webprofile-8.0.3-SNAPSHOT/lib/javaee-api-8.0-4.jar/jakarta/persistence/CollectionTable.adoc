@@ -1,0 +1,6 @@
+= jakarta/persistence/CollectionTable.class
+
+ - link:CollectionTable-asmified.java[Asmified]
+
+== References
+

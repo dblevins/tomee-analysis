@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.application.Application - 2
- - javax.faces.context.FacesContext - 2
- - javax.faces.flow.FlowHandler - 2
- - javax.el.ELContext - 2

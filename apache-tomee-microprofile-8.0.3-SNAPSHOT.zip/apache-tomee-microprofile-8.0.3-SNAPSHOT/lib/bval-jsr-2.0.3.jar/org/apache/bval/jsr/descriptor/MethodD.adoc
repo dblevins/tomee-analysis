@@ -4,5 +4,3 @@
 
 == References
 
- - javax.validation.metadata.MethodType - 7
- - javax.validation.metadata.MethodDescriptor - 1

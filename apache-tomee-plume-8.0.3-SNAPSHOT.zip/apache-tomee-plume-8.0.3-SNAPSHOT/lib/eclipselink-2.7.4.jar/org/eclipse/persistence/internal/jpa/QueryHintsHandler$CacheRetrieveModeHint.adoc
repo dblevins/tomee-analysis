@@ -4,4 +4,3 @@
 
 == References
 
- - javax.persistence.CacheRetrieveMode - 5

@@ -1,0 +1,6 @@
+= jakarta/ws/rs/NotAuthorizedException.class
+
+ - link:NotAuthorizedException-asmified.java[Asmified]
+
+== References
+

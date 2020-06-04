@@ -1,0 +1,6 @@
+= jakarta/mail/search/ComparisonTerm.class
+
+ - link:ComparisonTerm-asmified.java[Asmified]
+
+== References
+

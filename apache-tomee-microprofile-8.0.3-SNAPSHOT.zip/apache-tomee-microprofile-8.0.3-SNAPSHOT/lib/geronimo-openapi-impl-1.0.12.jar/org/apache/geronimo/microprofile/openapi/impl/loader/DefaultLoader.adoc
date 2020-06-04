@@ -4,9 +4,3 @@
 
 == References
 
- - javax.json.bind.Jsonb - 12
- - javax.servlet.ServletContext - 5
- - javax.json.bind.JsonbConfig - 5
- - javax.inject.Inject - 1
- - javax.json.bind.JsonbBuilder - 1
- - javax.enterprise.context.ApplicationScoped - 1

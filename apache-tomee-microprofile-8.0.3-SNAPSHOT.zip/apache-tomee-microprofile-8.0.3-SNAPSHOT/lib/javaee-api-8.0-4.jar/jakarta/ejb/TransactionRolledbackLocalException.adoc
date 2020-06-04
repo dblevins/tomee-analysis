@@ -1,0 +1,6 @@
+= jakarta/ejb/TransactionRolledbackLocalException.class
+
+ - link:TransactionRolledbackLocalException-asmified.java[Asmified]
+
+== References
+

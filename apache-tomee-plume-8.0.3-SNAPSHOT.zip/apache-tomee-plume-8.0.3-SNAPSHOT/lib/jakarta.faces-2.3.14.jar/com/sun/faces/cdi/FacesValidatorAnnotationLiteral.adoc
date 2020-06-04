@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.validator.FacesValidator - 2
- - javax.enterprise.util.AnnotationLiteral - 2

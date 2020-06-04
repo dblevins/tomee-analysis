@@ -4,7 +4,3 @@
 
 == References
 
- - javax.servlet.jsp.tagext.JspTag - 6
- - javax.servlet.jsp.JspContext - 6
- - javax.servlet.jsp.PageContext - 5
- - javax.servlet.jsp.tagext.JspFragment - 2

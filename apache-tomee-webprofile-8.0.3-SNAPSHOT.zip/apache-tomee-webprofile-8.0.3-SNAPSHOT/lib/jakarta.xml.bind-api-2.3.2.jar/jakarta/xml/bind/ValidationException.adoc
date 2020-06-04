@@ -1,0 +1,6 @@
+= jakarta/xml/bind/ValidationException.class
+
+ - link:ValidationException-asmified.java[Asmified]
+
+== References
+

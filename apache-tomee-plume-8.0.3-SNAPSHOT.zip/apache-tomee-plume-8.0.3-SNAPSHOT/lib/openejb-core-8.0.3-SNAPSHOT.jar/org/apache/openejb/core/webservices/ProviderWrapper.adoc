@@ -4,12 +4,3 @@
 
 == References
 
- - javax.xml.ws.spi.Provider - 37
- - javax.xml.ws.spi.ServiceDelegate - 11
- - javax.xml.ws.WebServiceFeature - 9
- - javax.xml.ws.WebServiceException - 8
- - javax.xml.ws.EndpointReference - 7
- - javax.xml.ws.Service$Mode - 4
- - javax.xml.ws.Endpoint - 4
- - javax.xml.ws.wsaddressing.W3CEndpointReference - 2
- - javax.xml.bind.JAXBContext - 2

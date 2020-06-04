@@ -4,9 +4,3 @@
 
 == References
 
- - javax.faces.validator.Validator - 9
- - javax.enterprise.context.spi.CreationalContext - 6
- - javax.enterprise.inject.spi.BeanManager - 5
- - javax.faces.FacesException - 2
- - javax.enterprise.context.Dependent - 1
- - javax.enterprise.inject.Typed - 1

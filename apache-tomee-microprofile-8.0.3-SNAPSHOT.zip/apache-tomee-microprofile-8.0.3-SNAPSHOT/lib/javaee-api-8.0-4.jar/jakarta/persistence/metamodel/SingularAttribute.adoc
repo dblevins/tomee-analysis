@@ -1,0 +1,6 @@
+= jakarta/persistence/metamodel/SingularAttribute.class
+
+ - link:SingularAttribute-asmified.java[Asmified]
+
+== References
+

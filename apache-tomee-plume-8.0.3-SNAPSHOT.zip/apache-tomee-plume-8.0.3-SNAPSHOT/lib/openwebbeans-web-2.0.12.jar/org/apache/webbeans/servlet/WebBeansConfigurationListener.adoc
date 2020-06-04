@@ -4,15 +4,3 @@
 
 == References
 
- - javax.servlet.ServletRequestEvent - 14
- - javax.servlet.ServletContextEvent - 9
- - javax.servlet.http.HttpSession - 7
- - javax.servlet.http.HttpSessionEvent - 7
- - javax.servlet.ServletContext - 6
- - javax.servlet.ServletRequest - 5
- - javax.enterprise.context.spi.Context - 3
- - javax.enterprise.context.RequestScoped - 3
- - javax.enterprise.context.SessionScoped - 2
- - javax.servlet.ServletRequestListener - 1
- - javax.servlet.http.HttpSessionListener - 1
- - javax.servlet.ServletContextListener - 1

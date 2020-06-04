@@ -1,23 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/cxf-rt-databinding-jaxb-3.3.6.jar
 
- - link:org/apache/cxf/jaxb/JAXBEncoderDecoder.adoc[org/apache/cxf/jaxb/JAXBEncoderDecoder.class] - 235
- - link:org/apache/cxf/jaxb/Utils.adoc[org/apache/cxf/jaxb/Utils.class] - 111
- - link:org/apache/cxf/jaxb/JAXBSchemaInitializer.adoc[org/apache/cxf/jaxb/JAXBSchemaInitializer.class] - 86
- - link:org/apache/cxf/jaxb/JAXBDataBinding.adoc[org/apache/cxf/jaxb/JAXBDataBinding.class] - 75
- - link:org/apache/cxf/jaxb/io/DataWriterImpl.adoc[org/apache/cxf/jaxb/io/DataWriterImpl.class] - 75
- - link:org/apache/cxf/jaxb/JAXBContextInitializer.adoc[org/apache/cxf/jaxb/JAXBContextInitializer.class] - 69
- - link:org/apache/cxf/jaxb/io/DataReaderImpl.adoc[org/apache/cxf/jaxb/io/DataReaderImpl.class] - 60
- - link:org/apache/cxf/jaxb/JAXBDataBase.adoc[org/apache/cxf/jaxb/JAXBDataBase.class] - 20
- - link:org/apache/cxf/jaxb/io/DataReaderImpl$WSUIDValidationHandler.adoc[org/apache/cxf/jaxb/io/DataReaderImpl$WSUIDValidationHandler.class] - 10
- - link:org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler.adoc[org/apache/cxf/jaxb/io/DataWriterImpl$MtomValidationHandler.class] - 10
- - link:org/apache/cxf/jaxb/attachment/JAXBAttachmentUnmarshaller.adoc[org/apache/cxf/jaxb/attachment/JAXBAttachmentUnmarshaller.class] - 9
- - link:org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller.adoc[org/apache/cxf/jaxb/attachment/JAXBAttachmentMarshaller.class] - 6
- - link:org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack.adoc[org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack.class] - 6
- - link:org/apache/cxf/jaxb/JAXBEncoderDecoder$3.adoc[org/apache/cxf/jaxb/JAXBEncoderDecoder$3.class] - 5
- - link:org/apache/cxf/jaxb/JAXBWrapperHelper.adoc[org/apache/cxf/jaxb/JAXBWrapperHelper.class] - 3
- - link:org/apache/cxf/jaxb/WrapperHelperCompiler.adoc[org/apache/cxf/jaxb/WrapperHelperCompiler.class] - 3
- - link:org/apache/cxf/jaxb/io/DataWriterImpl$1.adoc[org/apache/cxf/jaxb/io/DataWriterImpl$1.class] - 3
- - link:org/apache/cxf/jaxb/MarshallerAwareXMLWriter.adoc[org/apache/cxf/jaxb/MarshallerAwareXMLWriter.class] - 1
- - link:org/apache/cxf/jaxb/MarshallerEventHandler.adoc[org/apache/cxf/jaxb/MarshallerEventHandler.class] - 1
- - link:org/apache/cxf/jaxb/UnmarshallerAwareXMLReader.adoc[org/apache/cxf/jaxb/UnmarshallerAwareXMLReader.class] - 1
- - link:org/apache/cxf/jaxb/UnmarshallerEventHandler.adoc[org/apache/cxf/jaxb/UnmarshallerEventHandler.class] - 1

@@ -1,0 +1,6 @@
+= jakarta/wsdl/extensions/http/HTTPAddress.class
+
+ - link:HTTPAddress-asmified.java[Asmified]
+
+== References
+

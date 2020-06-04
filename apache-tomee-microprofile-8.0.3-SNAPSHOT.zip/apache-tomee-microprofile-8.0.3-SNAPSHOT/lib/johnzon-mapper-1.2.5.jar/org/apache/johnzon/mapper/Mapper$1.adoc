@@ -4,9 +4,3 @@
 
 == References
 
- - javax.json.JsonValue - 12
- - javax.json.JsonStructure - 3
- - javax.json.JsonObject - 2
- - javax.json.JsonArray - 2
- - javax.json.JsonValue$ValueType - 2
- - javax.json.JsonReader - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/component/_MethodBindingToMethodExpression$Invoker.class
+
+ - link:_MethodBindingToMethodExpression$Invoker-asmified.java[Asmified]
+
+== References
+

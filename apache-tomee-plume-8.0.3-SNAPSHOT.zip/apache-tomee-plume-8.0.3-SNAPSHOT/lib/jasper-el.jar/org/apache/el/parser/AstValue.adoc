@@ -4,10 +4,3 @@
 
 == References
 
- - javax.el.ELResolver - 17
- - javax.el.PropertyNotFoundException - 16
- - javax.el.ELException - 15
- - javax.el.ELContext - 12
- - javax.el.ValueReference - 3
- - javax.el.MethodInfo - 3
- - javax.el.LambdaExpression - 1

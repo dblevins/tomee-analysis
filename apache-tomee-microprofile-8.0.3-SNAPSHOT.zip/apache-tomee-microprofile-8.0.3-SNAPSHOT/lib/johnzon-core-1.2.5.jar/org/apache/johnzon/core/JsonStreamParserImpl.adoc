@@ -4,7 +4,3 @@
 
 == References
 
- - javax.json.stream.JsonParsingException - 54
- - javax.json.stream.JsonParser$Event - 40
- - javax.json.stream.JsonLocation - 11
- - javax.json.JsonException - 2

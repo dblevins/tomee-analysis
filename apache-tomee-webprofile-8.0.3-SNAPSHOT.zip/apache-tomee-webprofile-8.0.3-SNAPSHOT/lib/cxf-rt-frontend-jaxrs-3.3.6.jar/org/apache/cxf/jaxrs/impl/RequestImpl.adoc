@@ -4,13 +4,3 @@
 
 == References
 
- - javax.ws.rs.core.Response$ResponseBuilder - 34
- - javax.ws.rs.core.EntityTag - 26
- - javax.ws.rs.core.Variant - 26
- - javax.ws.rs.core.HttpHeaders - 18
- - javax.ws.rs.core.Response$Status - 16
- - javax.ws.rs.core.MediaType - 14
- - javax.ws.rs.core.Response - 7
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.servlet.http.HttpServletResponse - 2
- - javax.ws.rs.core.Request - 1

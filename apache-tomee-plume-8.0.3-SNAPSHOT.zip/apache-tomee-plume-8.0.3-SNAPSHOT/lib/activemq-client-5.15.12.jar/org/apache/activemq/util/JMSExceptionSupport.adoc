@@ -4,7 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 24
- - javax.jms.MessageFormatException - 5
- - javax.jms.MessageEOFException - 5
- - javax.jms.JMSSecurityException - 4

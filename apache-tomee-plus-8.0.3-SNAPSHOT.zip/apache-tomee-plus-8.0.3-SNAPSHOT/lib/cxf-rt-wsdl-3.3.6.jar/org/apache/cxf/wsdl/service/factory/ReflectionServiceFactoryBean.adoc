@@ -4,8 +4,3 @@
 
 == References
 
- - javax.xml.bind.annotation.XmlMimeType - 3
- - javax.xml.bind.annotation.XmlList - 3
- - javax.xml.bind.annotation.XmlAttachmentRef - 2
- - javax.xml.bind.annotation.XmlElementWrapper - 2
- - javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter - 2

@@ -1,0 +1,6 @@
+= jakarta/security/enterprise/authentication/mechanism/http/LoginToContinue$Literal.class
+
+ - link:LoginToContinue$Literal-asmified.java[Asmified]
+
+== References
+

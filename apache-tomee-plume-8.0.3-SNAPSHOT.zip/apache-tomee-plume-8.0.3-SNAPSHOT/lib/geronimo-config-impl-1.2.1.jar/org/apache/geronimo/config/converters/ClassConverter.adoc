@@ -4,5 +4,3 @@
 
 == References
 
- - javax.annotation.Priority - 1
- - javax.enterprise.inject.Vetoed - 1

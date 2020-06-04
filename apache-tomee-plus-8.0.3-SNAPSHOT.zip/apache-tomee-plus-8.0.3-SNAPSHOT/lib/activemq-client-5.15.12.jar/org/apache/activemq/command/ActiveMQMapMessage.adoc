@@ -4,7 +4,3 @@
 
 == References
 
- - javax.jms.JMSException - 32
- - javax.jms.MessageFormatException - 20
- - javax.jms.MessageNotWriteableException - 1
- - javax.jms.MapMessage - 1

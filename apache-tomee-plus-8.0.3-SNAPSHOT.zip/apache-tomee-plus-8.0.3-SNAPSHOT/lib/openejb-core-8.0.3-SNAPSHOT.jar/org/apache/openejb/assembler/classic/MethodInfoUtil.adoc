@@ -4,7 +4,3 @@
 
 == References
 
- - javax.ejb.EJBHome - 1
- - javax.ejb.EJBObject - 1
- - javax.ejb.EJBLocalHome - 1
- - javax.ejb.EJBLocalObject - 1

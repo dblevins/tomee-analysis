@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlOutcomeTargetButton.class
+
+ - link:HtmlOutcomeTargetButton-asmified.java[Asmified]
+
+== References
+

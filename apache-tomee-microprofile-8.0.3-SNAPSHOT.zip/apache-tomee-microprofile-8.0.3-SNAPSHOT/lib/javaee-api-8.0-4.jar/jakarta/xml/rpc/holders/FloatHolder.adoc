@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/FloatHolder.class
+
+ - link:FloatHolder-asmified.java[Asmified]
+
+== References
+

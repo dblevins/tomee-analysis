@@ -4,4 +4,3 @@
 
 == References
 
- - javax.validation.constraints.Pattern$Flag - 1

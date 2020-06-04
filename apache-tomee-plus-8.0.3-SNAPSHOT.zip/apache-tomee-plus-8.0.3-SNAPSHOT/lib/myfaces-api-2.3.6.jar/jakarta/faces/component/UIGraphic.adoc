@@ -1,0 +1,6 @@
+= jakarta/faces/component/UIGraphic.class
+
+ - link:UIGraphic-asmified.java[Asmified]
+
+== References
+

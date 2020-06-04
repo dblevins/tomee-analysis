@@ -4,7 +4,3 @@
 
 == References
 
- - javax.resource.spi.InvalidPropertyException - 9
- - javax.resource.spi.endpoint.MessageEndpoint - 5
- - javax.resource.spi.ResourceAdapter - 5
- - javax.resource.spi.ActivationSpec - 1

@@ -4,8 +4,3 @@
 
 == References
 
- - javax.servlet.ServletContext - 34
- - javax.servlet.ServletContextEvent - 12
- - javax.faces.context.FacesContext - 5
- - javax.faces.FactoryFinder - 1
- - javax.servlet.ServletContextListener - 1

@@ -1,0 +1,6 @@
+= jakarta/faces/component/behavior/_AttachedListStateWrapper.class
+
+ - link:_AttachedListStateWrapper-asmified.java[Asmified]
+
+== References
+

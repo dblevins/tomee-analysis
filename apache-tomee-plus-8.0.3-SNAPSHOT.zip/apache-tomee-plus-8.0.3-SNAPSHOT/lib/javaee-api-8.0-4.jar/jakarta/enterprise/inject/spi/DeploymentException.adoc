@@ -1,0 +1,6 @@
+= jakarta/enterprise/inject/spi/DeploymentException.class
+
+ - link:DeploymentException-asmified.java[Asmified]
+
+== References
+

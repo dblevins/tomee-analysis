@@ -1,6 +1,2 @@
 = apache-tomee-plume-8.0.3-SNAPSHOT/lib/cxf-rt-wsdl-3.3.6.jar
 
- - link:org/apache/cxf/wsdl/JAXBExtensionHelper.adoc[org/apache/cxf/wsdl/JAXBExtensionHelper.class] - 67
- - link:org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.adoc[org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.class] - 12
- - link:org/apache/cxf/wsdl/TExtensibilityElementImpl.adoc[org/apache/cxf/wsdl/TExtensibilityElementImpl.class] - 3
- - link:org/apache/cxf/wsdl11/WSDLManagerImpl.adoc[org/apache/cxf/wsdl11/WSDLManagerImpl.class] - 1

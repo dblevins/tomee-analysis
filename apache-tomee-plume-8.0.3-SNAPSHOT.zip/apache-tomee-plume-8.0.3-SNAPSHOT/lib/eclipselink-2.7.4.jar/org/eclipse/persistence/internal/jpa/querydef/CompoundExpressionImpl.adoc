@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.metamodel.Metamodel - 6
- - javax.persistence.criteria.Predicate$BooleanOperator - 3
- - javax.persistence.criteria.Expression - 3
- - javax.persistence.criteria.Predicate - 2

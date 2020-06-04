@@ -4,7 +4,3 @@
 
 == References
 
- - javax.persistence.Entity - 1
- - javax.persistence.OrderColumn - 1
- - javax.persistence.FetchType - 1
- - javax.persistence.ElementCollection - 1

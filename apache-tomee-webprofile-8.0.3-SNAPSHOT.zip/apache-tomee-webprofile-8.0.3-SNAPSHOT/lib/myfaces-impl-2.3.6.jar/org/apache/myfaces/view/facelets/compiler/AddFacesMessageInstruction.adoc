@@ -4,8 +4,3 @@
 
 == References
 
- - javax.faces.application.FacesMessage$Severity - 5
- - javax.faces.context.FacesContext - 3
- - javax.faces.application.FacesMessage - 3
- - javax.el.ExpressionFactory - 1
- - javax.el.ELContext - 1

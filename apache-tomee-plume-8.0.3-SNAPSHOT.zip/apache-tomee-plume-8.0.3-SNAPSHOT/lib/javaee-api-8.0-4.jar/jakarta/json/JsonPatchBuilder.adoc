@@ -1,0 +1,6 @@
+= jakarta/json/JsonPatchBuilder.class
+
+ - link:JsonPatchBuilder-asmified.java[Asmified]
+
+== References
+

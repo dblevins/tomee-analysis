@@ -4,5 +4,3 @@
 
 == References
 
- - javax.persistence.EntityTransaction - 8
- - javax.persistence.EntityManager - 2

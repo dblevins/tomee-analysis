@@ -4,11 +4,3 @@
 
 == References
 
- - javax.faces.view.facelets.TagAttribute - 53
- - javax.faces.view.facelets.MetadataTarget - 15
- - javax.faces.view.facelets.Tag - 15
- - javax.faces.view.facelets.Metadata - 13
- - javax.faces.view.facelets.MetaRule - 7
- - javax.faces.view.facelets.MetaRuleset - 7
- - javax.faces.view.facelets.TagAttributes - 6
- - javax.faces.view.facelets.TagException - 2

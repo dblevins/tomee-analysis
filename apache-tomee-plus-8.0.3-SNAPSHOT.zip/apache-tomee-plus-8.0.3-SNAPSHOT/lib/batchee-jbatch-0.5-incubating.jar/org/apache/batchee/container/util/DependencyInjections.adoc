@@ -4,7 +4,3 @@
 
 == References
 
- - javax.batch.api.BatchProperty - 6
- - javax.inject.Inject - 3
- - javax.batch.runtime.context.JobContext - 3
- - javax.batch.runtime.context.StepContext - 3

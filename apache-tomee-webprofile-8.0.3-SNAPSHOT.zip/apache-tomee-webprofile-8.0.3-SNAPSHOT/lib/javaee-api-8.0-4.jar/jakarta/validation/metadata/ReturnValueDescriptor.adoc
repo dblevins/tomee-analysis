@@ -1,0 +1,6 @@
+= jakarta/validation/metadata/ReturnValueDescriptor.class
+
+ - link:ReturnValueDescriptor-asmified.java[Asmified]
+
+== References
+

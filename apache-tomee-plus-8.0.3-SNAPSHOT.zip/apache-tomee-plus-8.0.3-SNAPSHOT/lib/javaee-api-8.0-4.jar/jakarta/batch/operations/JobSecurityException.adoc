@@ -1,0 +1,6 @@
+= jakarta/batch/operations/JobSecurityException.class
+
+ - link:JobSecurityException-asmified.java[Asmified]
+
+== References
+

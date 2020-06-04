@@ -4,6 +4,3 @@
 
 == References
 
- - javax.annotation.Priority - 3
- - javax.enterprise.inject.spi.CDI - 3
- - javax.enterprise.inject.Instance - 2

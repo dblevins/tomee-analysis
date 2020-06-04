@@ -4,5 +4,3 @@
 
 == References
 
- - javax.faces.render.ResponseStateManager - 6
- - javax.faces.FacesWrapper - 6

@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/CriteriaDelete.class
+
+ - link:CriteriaDelete-asmified.java[Asmified]
+
+== References
+

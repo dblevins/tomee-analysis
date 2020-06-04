@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EJBException - 8
- - javax.transaction.RollbackException - 8

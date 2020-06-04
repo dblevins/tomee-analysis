@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.soap.AttachmentPart - 14
- - javax.xml.soap.MimeHeaders - 5

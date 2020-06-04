@@ -4,10 +4,3 @@
 
 == References
 
- - javax.enterprise.inject.spi.InterceptionType - 11
- - javax.enterprise.inject.spi.AnnotatedType - 9
- - javax.enterprise.inject.spi.BeanAttributes - 8
- - javax.interceptor.InvocationContext - 6
- - javax.enterprise.inject.spi.Interceptor - 2
- - javax.enterprise.context.Dependent - 1
- - javax.enterprise.inject.spi.InjectionTargetFactory - 1

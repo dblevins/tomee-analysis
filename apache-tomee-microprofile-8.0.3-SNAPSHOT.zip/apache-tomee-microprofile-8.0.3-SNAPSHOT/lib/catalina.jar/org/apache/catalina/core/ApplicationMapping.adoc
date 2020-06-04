@@ -4,5 +4,3 @@
 
 == References
 
- - javax.servlet.http.MappingMatch - 14
- - javax.servlet.http.HttpServletMapping - 12

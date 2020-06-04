@@ -4,6 +4,3 @@
 
 == References
 
- - javax.jms.ConnectionFactory - 6
- - javax.jms.JMSContext - 4
- - javax.jms.XAJMSContext - 2

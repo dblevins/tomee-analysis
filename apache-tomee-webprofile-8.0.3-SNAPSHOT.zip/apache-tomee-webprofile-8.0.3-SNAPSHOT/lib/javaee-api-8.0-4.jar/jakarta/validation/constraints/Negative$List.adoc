@@ -1,0 +1,6 @@
+= jakarta/validation/constraints/Negative$List.class
+
+ - link:Negative$List-asmified.java[Asmified]
+
+== References
+

@@ -1,0 +1,6 @@
+= jakarta/persistence/criteria/Expression.class
+
+ - link:Expression-asmified.java[Asmified]
+
+== References
+

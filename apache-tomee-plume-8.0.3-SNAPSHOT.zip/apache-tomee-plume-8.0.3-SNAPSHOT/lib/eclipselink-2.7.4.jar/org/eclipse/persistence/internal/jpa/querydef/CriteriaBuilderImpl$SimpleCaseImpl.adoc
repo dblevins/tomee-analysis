@@ -4,6 +4,3 @@
 
 == References
 
- - javax.persistence.criteria.Expression - 13
- - javax.persistence.metamodel.Metamodel - 4
- - javax.persistence.criteria.CriteriaBuilder$SimpleCase - 3

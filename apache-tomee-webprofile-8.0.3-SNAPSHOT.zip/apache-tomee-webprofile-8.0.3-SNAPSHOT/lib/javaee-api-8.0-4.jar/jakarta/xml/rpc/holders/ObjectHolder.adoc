@@ -1,0 +1,6 @@
+= jakarta/xml/rpc/holders/ObjectHolder.class
+
+ - link:ObjectHolder-asmified.java[Asmified]
+
+== References
+

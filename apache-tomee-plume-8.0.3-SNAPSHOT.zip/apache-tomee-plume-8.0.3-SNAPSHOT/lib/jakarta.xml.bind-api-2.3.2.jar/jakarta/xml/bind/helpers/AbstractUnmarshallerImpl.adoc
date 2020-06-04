@@ -1,0 +1,6 @@
+= jakarta/xml/bind/helpers/AbstractUnmarshallerImpl.class
+
+ - link:AbstractUnmarshallerImpl-asmified.java[Asmified]
+
+== References
+

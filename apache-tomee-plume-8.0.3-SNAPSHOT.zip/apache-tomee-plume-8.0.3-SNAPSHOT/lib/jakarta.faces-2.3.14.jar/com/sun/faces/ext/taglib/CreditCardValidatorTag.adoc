@@ -4,7 +4,3 @@
 
 == References
 
- - javax.faces.context.FacesContext - 3
- - javax.faces.webapp.ValidatorELTag - 2
- - javax.faces.application.Application - 2
- - javax.faces.validator.Validator - 2

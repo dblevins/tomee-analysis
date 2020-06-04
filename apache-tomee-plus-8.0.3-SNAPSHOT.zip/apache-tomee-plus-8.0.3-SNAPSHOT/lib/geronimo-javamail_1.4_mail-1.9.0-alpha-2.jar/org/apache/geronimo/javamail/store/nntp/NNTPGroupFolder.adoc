@@ -4,10 +4,3 @@
 
 == References
 
- - javax.mail.MessagingException - 13
- - javax.mail.Message - 8
- - javax.mail.FetchProfile$Item - 8
- - javax.mail.FetchProfile - 5
- - javax.mail.FolderNotFoundException - 3
- - javax.mail.Folder - 2
- - javax.mail.Store - 2

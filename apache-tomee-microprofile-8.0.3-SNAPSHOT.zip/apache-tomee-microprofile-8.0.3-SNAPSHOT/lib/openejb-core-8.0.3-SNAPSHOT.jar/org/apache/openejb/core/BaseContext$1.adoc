@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.EJBException - 1
- - javax.ejb.Timer - 1

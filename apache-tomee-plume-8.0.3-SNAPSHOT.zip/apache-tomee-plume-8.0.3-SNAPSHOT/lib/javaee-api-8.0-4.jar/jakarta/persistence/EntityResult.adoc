@@ -1,0 +1,6 @@
+= jakarta/persistence/EntityResult.class
+
+ - link:EntityResult-asmified.java[Asmified]
+
+== References
+

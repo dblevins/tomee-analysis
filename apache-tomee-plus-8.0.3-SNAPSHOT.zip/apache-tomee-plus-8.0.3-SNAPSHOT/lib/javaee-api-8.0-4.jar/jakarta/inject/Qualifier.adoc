@@ -1,0 +1,6 @@
+= jakarta/inject/Qualifier.class
+
+ - link:Qualifier-asmified.java[Asmified]
+
+== References
+

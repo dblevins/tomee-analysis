@@ -4,7 +4,3 @@
 
 == References
 
- - javax.transaction.TransactionManager - 5
- - javax.resource.spi.TransactionSupport$TransactionSupportLevel - 4
- - javax.resource.spi.ManagedConnectionFactory - 4
- - javax.resource.spi.TransactionSupport - 4

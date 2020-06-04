@@ -1,0 +1,6 @@
+= jakarta/jms/IllegalStateRuntimeException.class
+
+ - link:IllegalStateRuntimeException-asmified.java[Asmified]
+
+== References
+

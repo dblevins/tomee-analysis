@@ -1,21 +1,2 @@
 = apache-tomee-webprofile-8.0.3-SNAPSHOT/lib/openwebbeans-web-2.0.12.jar
 
- - link:org/apache/webbeans/web/context/WebContextsService.adoc[org/apache/webbeans/web/context/WebContextsService.class] - 78
- - link:org/apache/webbeans/servlet/WebBeansConfigurationListener.adoc[org/apache/webbeans/servlet/WebBeansConfigurationListener.class] - 59
- - link:org/apache/webbeans/servlet/WebBeansConfigurationFilter.adoc[org/apache/webbeans/servlet/WebBeansConfigurationFilter.class] - 56
- - link:org/apache/webbeans/web/lifecycle/WebContainerLifecycle.adoc[org/apache/webbeans/web/lifecycle/WebContainerLifecycle.class] - 51
- - link:org/apache/webbeans/web/lifecycle/test/MockServletContext.adoc[org/apache/webbeans/web/lifecycle/test/MockServletContext.class] - 31
- - link:org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener.adoc[org/apache/webbeans/servlet/WebBeansConfigurationHttpSessionListener.class] - 20
- - link:org/apache/webbeans/web/context/WebConversationService.adoc[org/apache/webbeans/web/context/WebConversationService.class] - 16
- - link:org/apache/webbeans/web/context/WebConversationFilter.adoc[org/apache/webbeans/web/context/WebConversationFilter.class] - 12
- - link:org/apache/webbeans/web/lifecycle/test/EnterpriseTestLifeCycle.adoc[org/apache/webbeans/web/lifecycle/test/EnterpriseTestLifeCycle.class] - 10
- - link:org/apache/webbeans/web/lifecycle/ServletContextBean.adoc[org/apache/webbeans/web/lifecycle/ServletContextBean.class] - 9
- - link:org/apache/webbeans/servlet/WebBeansConfigurationListener$Auto.adoc[org/apache/webbeans/servlet/WebBeansConfigurationListener$Auto.class] - 8
- - link:org/apache/webbeans/web/lifecycle/ServletContextBean$1.adoc[org/apache/webbeans/web/lifecycle/ServletContextBean$1.class] - 8
- - link:org/apache/webbeans/web/context/ServletRequestContext.adoc[org/apache/webbeans/web/context/ServletRequestContext.class] - 7
- - link:org/apache/webbeans/web/lifecycle/ServletRequestBean.adoc[org/apache/webbeans/web/lifecycle/ServletRequestBean.class] - 7
- - link:org/apache/webbeans/web/scanner/WebScannerService.adoc[org/apache/webbeans/web/scanner/WebScannerService.class] - 6
- - link:org/apache/webbeans/web/util/ServletCompatibilityUtil.adoc[org/apache/webbeans/web/util/ServletCompatibilityUtil.class] - 6
- - link:org/apache/webbeans/web/lifecycle/ServletRequestBean$1.adoc[org/apache/webbeans/web/lifecycle/ServletRequestBean$1.class] - 6
- - link:org/apache/webbeans/web/lifecycle/test/MockServletContextEvent.adoc[org/apache/webbeans/web/lifecycle/test/MockServletContextEvent.class] - 3
- - link:org/apache/webbeans/web/lifecycle/test/MockHttpSession.adoc[org/apache/webbeans/web/lifecycle/test/MockHttpSession.class] - 3

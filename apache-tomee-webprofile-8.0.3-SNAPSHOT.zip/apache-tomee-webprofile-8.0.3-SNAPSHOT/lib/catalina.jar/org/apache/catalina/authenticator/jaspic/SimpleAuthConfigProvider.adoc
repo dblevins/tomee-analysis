@@ -4,8 +4,3 @@
 
 == References
 
- - javax.security.auth.message.config.ServerAuthConfig - 12
- - javax.security.auth.message.config.AuthConfigFactory - 3
- - javax.security.auth.message.AuthException - 2
- - javax.security.auth.message.config.AuthConfigProvider - 2
- - javax.security.auth.message.config.ClientAuthConfig - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.ejb.ScheduleExpression - 13
- - javax.ejb.TimerConfig - 2

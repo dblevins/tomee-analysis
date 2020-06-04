@@ -1,0 +1,6 @@
+= jakarta/faces/component/html/HtmlSelectOneRadio$PropertyKeys.class
+
+ - link:HtmlSelectOneRadio$PropertyKeys-asmified.java[Asmified]
+
+== References
+

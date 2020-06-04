@@ -1,0 +1,6 @@
+= jakarta/faces/application/ApplicationFactory.class
+
+ - link:ApplicationFactory-asmified.java[Asmified]
+
+== References
+

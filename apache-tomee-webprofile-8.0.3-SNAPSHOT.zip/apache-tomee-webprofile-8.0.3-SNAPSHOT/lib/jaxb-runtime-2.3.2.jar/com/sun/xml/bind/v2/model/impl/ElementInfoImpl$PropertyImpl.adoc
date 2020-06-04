@@ -4,5 +4,3 @@
 
 == References
 
- - javax.activation.MimeType - 2
- - javax.xml.bind.annotation.XmlElementDecl - 2

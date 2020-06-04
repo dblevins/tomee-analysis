@@ -4,5 +4,3 @@
 
 == References
 
- - javax.xml.bind.attachment.AttachmentUnmarshaller - 11
- - javax.activation.DataHandler - 2

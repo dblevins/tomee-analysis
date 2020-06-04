@@ -4,8 +4,3 @@
 
 == References
 
- - javax.activation.ActivationDataFlavor - 11
- - javax.mail.internet.MimeMultipart - 6
- - javax.activation.DataSource - 4
- - javax.mail.MessagingException - 3
- - javax.activation.DataContentHandler - 1

@@ -4,5 +4,3 @@
 
 == References
 
- - javax.batch.runtime.BatchStatus - 13
- - javax.batch.api.Batchlet - 8

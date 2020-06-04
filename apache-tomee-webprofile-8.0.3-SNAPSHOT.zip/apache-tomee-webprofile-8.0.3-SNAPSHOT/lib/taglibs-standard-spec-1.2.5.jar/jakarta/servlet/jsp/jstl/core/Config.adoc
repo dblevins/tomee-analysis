@@ -1,0 +1,6 @@
+= jakarta/servlet/jsp/jstl/core/Config.class
+
+ - link:Config-asmified.java[Asmified]
+
+== References
+

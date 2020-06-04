@@ -4,19 +4,3 @@
 
 == References
 
- - javax.ws.rs.client.SyncInvoker - 53
- - javax.ws.rs.client.Entity - 24
- - javax.ws.rs.core.Response - 18
- - javax.ws.rs.core.GenericType - 16
- - javax.ws.rs.client.Invocation$Builder - 12
- - javax.ws.rs.client.Invocation - 10
- - javax.ws.rs.ext.RuntimeDelegate - 7
- - javax.ws.rs.core.Configuration - 5
- - javax.ws.rs.ext.RuntimeDelegate$HeaderDelegate - 3
- - javax.ws.rs.client.CompletionStageRxInvoker - 2
- - javax.ws.rs.core.Cookie - 2
- - javax.ws.rs.client.AsyncInvoker - 2
- - javax.ws.rs.core.MultivaluedMap - 2
- - javax.ws.rs.core.MediaType - 2
- - javax.ws.rs.client.RxInvoker - 2
- - javax.ws.rs.core.CacheControl - 2

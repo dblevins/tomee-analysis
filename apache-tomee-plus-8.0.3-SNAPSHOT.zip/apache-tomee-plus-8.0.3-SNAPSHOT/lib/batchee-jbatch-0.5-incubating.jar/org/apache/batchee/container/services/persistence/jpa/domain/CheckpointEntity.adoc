@@ -4,13 +4,3 @@
 
 == References
 
- - javax.persistence.NamedQuery - 3
- - javax.persistence.EnumType - 1
- - javax.persistence.Lob - 1
- - javax.persistence.Entity - 1
- - javax.persistence.ManyToOne - 1
- - javax.persistence.Table - 1
- - javax.persistence.GeneratedValue - 1
- - javax.persistence.Enumerated - 1
- - javax.persistence.NamedQueries - 1
- - javax.persistence.Id - 1

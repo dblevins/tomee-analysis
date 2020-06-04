@@ -1,0 +1,6 @@
+= jakarta/faces/component/MethodBindingValidator.class
+
+ - link:MethodBindingValidator-asmified.java[Asmified]
+
+== References
+

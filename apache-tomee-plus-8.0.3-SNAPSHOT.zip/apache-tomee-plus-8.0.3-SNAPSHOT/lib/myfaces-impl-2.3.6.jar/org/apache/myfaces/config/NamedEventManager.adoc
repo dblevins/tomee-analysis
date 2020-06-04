@@ -4,10 +4,3 @@
 
 == References
 
- - javax.faces.event.ComponentSystemEvent - 4
- - javax.faces.event.PreRenderViewEvent - 1
- - javax.faces.event.PostValidateEvent - 1
- - javax.faces.event.PreValidateEvent - 1
- - javax.faces.event.PreRenderComponentEvent - 1
- - javax.faces.event.PostAddToViewEvent - 1
- - javax.faces.event.PostRenderViewEvent - 1

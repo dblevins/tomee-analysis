@@ -4,6 +4,3 @@
 
 == References
 
- - javax.faces.event.SystemEventListener - 14
- - javax.faces.event.SystemEvent - 6
- - javax.faces.context.FacesContext - 3

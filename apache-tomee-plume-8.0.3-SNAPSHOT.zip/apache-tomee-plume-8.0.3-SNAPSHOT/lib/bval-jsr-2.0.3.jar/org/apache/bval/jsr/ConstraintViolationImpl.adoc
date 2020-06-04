@@ -4,7 +4,3 @@
 
 == References
 
- - javax.validation.Path - 8
- - javax.validation.metadata.ConstraintDescriptor - 7
- - javax.validation.ValidationException - 2
- - javax.validation.ConstraintViolation - 1

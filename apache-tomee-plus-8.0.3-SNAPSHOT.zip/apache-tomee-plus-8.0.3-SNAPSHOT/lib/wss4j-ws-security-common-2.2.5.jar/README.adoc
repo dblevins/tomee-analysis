@@ -1,3 +1,2 @@
 = apache-tomee-plus-8.0.3-SNAPSHOT/lib/wss4j-ws-security-common-2.2.5.jar
 
- - link:org/apache/wss4j/common/util/AttachmentUtils.adoc[org/apache/wss4j/common/util/AttachmentUtils.class] - 7
